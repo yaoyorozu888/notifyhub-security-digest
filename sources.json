@@ -1,0 +1,22 @@
+[
+  {"name":"CISA Alerts","category":"reporting","feed_url":"https://www.cisa.gov/news.xml","enabled":true,"weight":3},
+  {"name":"CISA KEV","category":"reporting","feed_url":"https://www.cisa.gov/cybersecurity-advisories/ics-advisories.xml","enabled":true,"weight":3},
+  {"name":"NIST NVD","category":"reporting","feed_url":"https://nvd.nist.gov/feeds/xml/cve/misc/nvd-rss.xml","enabled":true,"weight":3},
+  {"name":"BleepingComputer","category":"reporting","feed_url":"https://www.bleepingcomputer.com/feed/","enabled":true,"weight":1},
+  {"name":"The Hacker News","category":"reporting","feed_url":"https://thehackernews.com/feeds/posts/default","enabled":true,"weight":1},
+  {"name":"SANS ISC","category":"reporting","feed_url":"https://isc.sans.edu/rssfeed.xml","enabled":true,"weight":2},
+  {"name":"Shadowserver","category":"reporting","feed_url":"https://www.shadowserver.org/sitemap.xml","enabled":true,"weight":2,"fetch_method":"sitemap","url_include_prefix":"https://www.shadowserver.org/news/","max_entries":200},
+  {"name":"Microsoft MSRC","category":"reporting","feed_url":"https://msrc.microsoft.com/update-guide/","enabled":false,"weight":3},
+  {"name":"Azure Security Blog","category":"reporting","feed_url":"https://azure.microsoft.com/en-us/blog/topics/security/feed/","enabled":true,"weight":2},
+  {"name":"Google Security Blog","category":"reporting","feed_url":"https://security.googleblog.com/feeds/posts/default","enabled":true,"weight":2},
+  {"name":"Cisco Security Blog","category":"reporting","feed_url":"https://blogs.cisco.com/security/feed","enabled":true,"weight":2},
+  {"name":"Mandiant","category":"reporting","feed_url":"https://www.mandiant.com/resources/blog/rss.xml","enabled":true,"weight":2},
+  {"name":"Unit 42","category":"reporting","feed_url":"https://unit42.paloaltonetworks.com/feed/","enabled":true,"weight":2},
+  {"name":"CERT/CC","category":"reporting","feed_url":"https://www.kb.cert.org/vuls/atomfeed/","enabled":true,"weight":1},
+
+  {"name":"JPCERT/CC","category":"reporting","feed_url":"https://www.jpcert.or.jp/rss/jpcert.rdf","enabled":true,"weight":3},
+  {"name":"IPA","category":"reporting","feed_url":"https://www.ipa.go.jp/security/alert-rss.rdf","enabled":true,"weight":3},
+  {"name":"NICT NOTICE","category":"reporting","feed_url":"https://www.nict.go.jp/rss/latestnews.rdf","enabled":true,"weight":2},
+  {"name":"IIJ SECT","category":"reporting","feed_url":"https://sect.iij.ad.jp/feed/","enabled":true,"weight":2},
+  {"name":"ScanNetSecurity","category":"reporting","feed_url":"https://scan.netsecurity.ne.jp/rss/index.rdf","enabled":true,"weight":1}
+]

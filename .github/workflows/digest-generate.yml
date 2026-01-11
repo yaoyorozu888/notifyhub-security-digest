@@ -1,0 +1,133 @@
+name: Generate daily digest
+
+on:
+  workflow_dispatch:
+    inputs:
+      send_email:
+        description: "Send email via ACS"
+        required: false
+        default: "false"
+        type: choice
+        options:
+          - "false"
+          - "true"
+  schedule:
+    # JST 06:05 == UTC 21:05 (previous day)
+    - cron: "5 21 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: digest-generate
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python -m pip install -U pip
+          python -m pip install ".[azure,acs]"
+
+      - name: Compute run_at (JST)
+        id: runat
+        run: |
+          python - <<'PY'
+          from datetime import datetime
+          from zoneinfo import ZoneInfo
+          jst = ZoneInfo('Asia/Tokyo')
+          now = datetime.now(jst)
+          run_at = now.replace(hour=6, minute=0, second=0, microsecond=0)
+          day = run_at.date().isoformat()
+          print(f"run_at={run_at.isoformat()}")
+          print(f"day={day}")
+          with open("runat.env", "w", encoding="utf-8") as f:
+              f.write(f"RUN_AT={run_at.isoformat()}\n")
+              f.write(f"DAY={day}\n")
+          PY
+
+          cat runat.env >> $GITHUB_OUTPUT
+
+      - name: Generate digest (optionally send email)
+        env:
+          # Publish URL (fixed)
+          DIGEST_BASE_URL: "https://notifyhub.site/digest"
+
+          # Read-store (recommended: Azure Table backend)
+          READ_STORE_BACKEND: ${{ secrets.READ_STORE_BACKEND || 'azure' }}
+          AZURE_STORAGE_CONNECTION_STRING: ${{ secrets.AZURE_STORAGE_CONNECTION_STRING }}
+          AZURE_TABLE_ACCOUNT_URL: ${{ secrets.AZURE_TABLE_ACCOUNT_URL }}
+          AZURE_TABLE_NAME: ${{ secrets.AZURE_TABLE_NAME || 'notifyhubRead' }}
+          AZURE_TABLE_PARTITION_KEY: ${{ secrets.AZURE_TABLE_PARTITION_KEY || 'read' }}
+
+          # ACS Email (optional)
+          ACS_EMAIL_CONNECTION_STRING: ${{ secrets.ACS_EMAIL_CONNECTION_STRING }}
+          ACS_EMAIL_SENDER: ${{ secrets.ACS_EMAIL_SENDER }}
+          ACS_EMAIL_TO: ${{ secrets.ACS_EMAIL_TO }}
+          ACS_EMAIL_SUBJECT_PREFIX: ${{ secrets.ACS_EMAIL_SUBJECT_PREFIX }}
+
+          # OpenAI (optional)
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ secrets.OPENAI_MODEL }}
+
+          # Logging / HTTP
+          LOG_LEVEL: INFO
+        run: |
+          set -euo pipefail
+          source <(cat runat.env)
+
+          # Scheduled run: send email by default.
+          SEND_EMAIL=true
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+            SEND_EMAIL="${{ inputs.send_email }}"
+          fi
+
+          EMAIL_FLAG="--no-send-email"
+          if [[ "$SEND_EMAIL" == "true" ]]; then
+            EMAIL_FLAG="--send-email"
+          fi
+
+          notifyhub-digest run \
+            --out-dir site \
+            --state-dir state_gh \
+            --run-at "$RUN_AT" \
+            $EMAIL_FLAG
+
+      - name: Upload artifact (generated digest)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: digest-${{ steps.runat.outputs.DAY }}
+          path: site/digest/${{ steps.runat.outputs.DAY }}/
+
+      - name: Commit & push generated site
+        run: |
+          set -euo pipefail
+          source <(cat runat.env)
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add site/digest/"$DAY" || true
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+
+          git commit -m "chore(digest): publish $DAY"
+          git push

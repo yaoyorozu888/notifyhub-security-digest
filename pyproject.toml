@@ -1,0 +1,52 @@
+[build-system]
+requires = ["hatchling>=1.24"]
+build-backend = "hatchling.build"
+
+[project]
+name = "notifyhub-security-digest"
+version = "0.1.0"
+description = "notifyhub.site CSIRT 日次セキュリティレポート生成 (ローカル実行版)"
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+license = { text = "Proprietary" }
+authors = [{ name = "notifyhub" }]
+dependencies = [
+  "feedparser>=6.0.11",
+  "httpx>=0.27.0",
+  "python-dateutil>=2.9.0.post0",
+  "tzdata>=2024.1",
+  "bleach>=6.1.0",
+  "pydantic>=2.7.0",
+  "typer>=0.12.3",
+  "rich>=13.7.1",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.2.0",
+  "ruff>=0.6.0",
+]
+
+azure = [
+  "azure-data-tables>=12.7.0",
+  "azure-identity>=1.17.0",
+]
+
+acs = [
+  "azure-communication-email>=1.1.0",
+]
+
+[project.scripts]
+notifyhub-digest = "notifyhub_digest.cli:app"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/notifyhub_digest"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
+[tool.pytest.ini_options]
+addopts = "-q"

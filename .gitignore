@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Envs
+.venv/
+.env
+
+# Build
+build/
+dist/
+*.egg-info/
+
+# Runtime outputs
+out/
+out_backdate/
+state/*.sqlite3
+state/*.db
+state/*.json
+state_backdate/
+
+# VS Code Azure Copilot generated prompts (not part of product)
+.github/chatmodes/
+.github/prompts/
