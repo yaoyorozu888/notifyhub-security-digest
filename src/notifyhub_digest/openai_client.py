@@ -2,7 +2,9 @@ from __future__ import annotations
 
 import json
 import os
+import re
 from dataclasses import dataclass
+from typing import Any
 
 import httpx
 
@@ -14,12 +16,14 @@ class OpenAIConfig:
     api_key: str
     model: str
     base_url: str = "https://api.openai.com/v1"
+    max_tokens: int = 700
+    temperature: float = 0.2
 
 
 SYSTEM_PROMPT = (
     "あなたはCSIRT実務者向けのアナリストです。\n"
     "与えられたRSS記事メタ情報から、実務判断に役立つ要約と分析を作成してください。\n"
-    "必ずJSONのみを返してください。"
+    "必ずJSONのみを返してください。前置きやコードフェンス(``` )は不要です。"
 )
 
 
@@ -45,7 +49,96 @@ def load_openai_config() -> OpenAIConfig | None:
     if not api_key:
         return None
     model = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
-    return OpenAIConfig(api_key=api_key, model=model)
+    base_url = os.getenv("OPENAI_BASE_URL", "https://api.openai.com/v1")
+    try:
+        max_tokens = int(os.getenv("OPENAI_MAX_TOKENS", "700"))
+    except Exception:
+        max_tokens = 700
+    try:
+        temperature = float(os.getenv("OPENAI_TEMPERATURE", "0.2"))
+    except Exception:
+        temperature = 0.2
+    return OpenAIConfig(
+        api_key=api_key,
+        model=model,
+        base_url=base_url,
+        max_tokens=max(200, min(max_tokens, 2000)),
+        temperature=max(0.0, min(temperature, 1.0)),
+    )
+
+
+_FENCE_RE = re.compile(r"^```(?:json)?\s*|\s*```$", re.IGNORECASE)
+
+
+def _extract_json_object(text: str) -> dict[str, Any]:
+    """Extract a JSON object from model output.
+
+    The model *should* return JSON only, but in practice it may wrap with code fences
+    or add a short preface. We try a few safe heuristics.
+    """
+
+    s = (text or "").strip()
+    if not s:
+        raise ValueError("empty model output")
+
+    # 1) Plain JSON
+    try:
+        obj = json.loads(s)
+        if isinstance(obj, dict):
+            return obj
+    except Exception:
+        pass
+
+    # 2) Code-fenced JSON
+    s2 = _FENCE_RE.sub("", s).strip()
+    try:
+        obj = json.loads(s2)
+        if isinstance(obj, dict):
+            return obj
+    except Exception:
+        pass
+
+    # 3) Best-effort: take substring from first '{' to last '}'
+    i = s2.find("{")
+    j = s2.rfind("}")
+    if 0 <= i < j:
+        try:
+            obj = json.loads(s2[i : j + 1])
+            if isinstance(obj, dict):
+                return obj
+        except Exception:
+            pass
+
+    raise ValueError("could not parse JSON object")
+
+
+def _coerce_analysis_result(parsed: dict[str, Any]) -> AnalysisResult:
+    """Be tolerant to minor schema drift and fill defaults."""
+
+    if not isinstance(parsed, dict):
+        return AnalysisResult(summary_html="", technical_terms=[], impact_level="Unknown", threat_type="-")
+
+    # Normalize common variations.
+    if "impact_level" in parsed and isinstance(parsed["impact_level"], str):
+        v = parsed["impact_level"].strip().capitalize()
+        if v not in {"Critical", "High", "Medium", "Low", "Info"}:
+            parsed["impact_level"] = "Unknown"
+        else:
+            parsed["impact_level"] = v
+
+    if "threat_type" in parsed and isinstance(parsed["threat_type"], str):
+        parsed["threat_type"] = parsed["threat_type"].strip() or "-"
+
+    try:
+        return AnalysisResult.model_validate(parsed)
+    except Exception:
+        # Partial fallback
+        return AnalysisResult(
+            summary_html=str(parsed.get("summary_html") or ""),
+            technical_terms=[],
+            impact_level=str(parsed.get("impact_level") or "Unknown"),
+            threat_type=str(parsed.get("threat_type") or "-"),
+        )
 
 
 def analyze_item(
@@ -76,7 +169,8 @@ def analyze_item(
 
     payload = {
         "model": cfg.model,
-        "temperature": 0.2,
+        "temperature": cfg.temperature,
+        "max_tokens": cfg.max_tokens,
         "response_format": {"type": "json_object"},
         "messages": [
             {"role": "system", "content": SYSTEM_PROMPT},
@@ -92,14 +186,10 @@ def analyze_item(
     res.raise_for_status()
 
     data = res.json()
-    content = (
-        data.get("choices", [{}])[0]
-        .get("message", {})
-        .get("content", "")
-    )
+    content = data.get("choices", [{}])[0].get("message", {}).get("content", "")
 
     try:
-        parsed = json.loads(content)
-        return AnalysisResult.model_validate(parsed)
+        parsed = _extract_json_object(content)
+        return _coerce_analysis_result(parsed)
     except Exception:
         return AnalysisResult(summary_html="", technical_terms=[], impact_level="Unknown", threat_type="-")
