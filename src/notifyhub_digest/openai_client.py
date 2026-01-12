@@ -89,6 +89,32 @@ _FENCE_RE = re.compile(r"^```(?:json)?\s*|\s*```$", re.IGNORECASE)
 _URL_RE = re.compile(r"https?://[^\s)\"']+")
 
 
+def _extract_response_text(data: dict[str, Any]) -> str:
+    """Extract output text from Responses API payload."""
+
+    if not isinstance(data, dict):
+        return ""
+
+    text = data.get("output_text")
+    if isinstance(text, str) and text.strip():
+        return text
+
+    output = data.get("output")
+    if not isinstance(output, list):
+        return ""
+
+    for item in output:
+        content = item.get("content") if isinstance(item, dict) else None
+        if not isinstance(content, list):
+            continue
+        for part in content:
+            if not isinstance(part, dict):
+                continue
+            if part.get("type") == "output_text" and isinstance(part.get("text"), str):
+                return part.get("text")
+    return ""
+
+
 def _extract_json_object(text: str) -> dict[str, Any]:
     """Extract a JSON object from model output.
 
@@ -193,23 +219,23 @@ def analyze_item(
     payload = {
         "model": cfg.model,
         "temperature": cfg.temperature,
-        "max_tokens": cfg.max_tokens,
+        "max_output_tokens": cfg.max_tokens,
         "response_format": {"type": "json_object"},
-        "messages": [
+        "input": [
             {"role": "system", "content": SYSTEM_PROMPT},
             {"role": "user", "content": _analysis_schema_hint() + "\n\n入力:\n" + json.dumps(user, ensure_ascii=False)},
         ],
     }
 
     res = client.post(
-        f"{cfg.base_url}/chat/completions",
+        f"{cfg.base_url}/responses",
         headers={"Authorization": f"Bearer {cfg.api_key}"},
         json=payload,
     )
     res.raise_for_status()
 
     data = res.json()
-    content = data.get("choices", [{}])[0].get("message", {}).get("content", "")
+    content = _extract_response_text(data)
 
     try:
         parsed = _extract_json_object(content)
