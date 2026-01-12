@@ -9,8 +9,10 @@ __pycache__/
 # Envs
 .venv/
 .venv
-site/
 .env
+site/*
+!site/digest/
+site/digest/**
 
 # Build
 build/
