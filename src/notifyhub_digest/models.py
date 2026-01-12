@@ -21,11 +21,13 @@ class Source(BaseModel):
     # - auto: try RSS/Atom first, then fall back for known sites
     # - rss: force RSS/Atom parsing
     # - sitemap: parse XML sitemap <urlset>/<sitemapindex>
-    fetch_method: Literal["auto", "rss", "sitemap"] = "auto"
+    # - json: fetch JSON feed (json_kind decides schema)
+    fetch_method: Literal["auto", "rss", "sitemap", "json"] = "auto"
 
     # Optional filtering/tuning for non-RSS sources.
     url_include_prefix: str | None = None
     max_entries: int | None = None
+    json_kind: Literal["cisa-kev", "nvd", "msrc-cvrf"] | None = None
 
 
 class TechnicalTerm(BaseModel):

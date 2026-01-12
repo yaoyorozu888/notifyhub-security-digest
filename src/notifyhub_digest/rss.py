@@ -1,6 +1,8 @@
 from __future__ import annotations
 
+import gzip
 import hashlib
+import json
 import re
 from dataclasses import dataclass
 from datetime import datetime
@@ -58,6 +60,9 @@ def fetch_feed_entries(
     source: Source,
     user_agent: str,
 ) -> list[RawEntry]:
+    if source.fetch_method == "json":
+        return fetch_json_entries(client, source, user_agent=user_agent)
+
     if source.fetch_method == "sitemap":
         return fetch_sitemap_entries(client, source, user_agent=user_agent)
 
@@ -101,6 +106,25 @@ def fetch_feed_entries(
             return fallback
 
     return out
+
+
+def fetch_json_entries(
+    client: httpx.Client,
+    source: Source,
+    user_agent: str,
+) -> list[RawEntry]:
+    res = client.get(source.feed_url, headers=_make_json_request_headers(user_agent))
+    res.raise_for_status()
+    data = _load_json_response(res)
+
+    if source.json_kind == "cisa-kev":
+        return _parse_cisa_kev_json(source, data)
+    if source.json_kind == "nvd":
+        return _parse_nvd_json(source, data)
+    if source.json_kind == "msrc-cvrf":
+        return _parse_msrc_cvrf_json(source, data)
+
+    return []
 
 
 def fetch_sitemap_entries(
@@ -255,6 +279,134 @@ def _make_request_headers(user_agent: str) -> dict[str, str]:
         # CISA等でbr/gzip圧縮のネゴシエーションが原因で切断されるケースがあるため、明示的に無圧縮を要求する。
         "Accept-Encoding": "identity",
     }
+
+
+def _make_json_request_headers(user_agent: str) -> dict[str, str]:
+    return {
+        "User-Agent": user_agent,
+        "Accept": "application/json, */*;q=0.8",
+        "Accept-Encoding": "identity",
+    }
+
+
+def _load_json_response(res: httpx.Response) -> dict:
+    if res.headers.get("content-encoding", "").lower() == "gzip" or res.url.path.endswith(".gz"):
+        try:
+            raw = gzip.decompress(res.content)
+            return json.loads(raw.decode("utf-8"))
+        except Exception:
+            pass
+    return res.json()
+
+
+def _parse_cisa_kev_json(source: Source, data: dict) -> list[RawEntry]:
+    items = data.get("vulnerabilities") or []
+    out: list[RawEntry] = []
+    for it in items:
+        cve_id = str(it.get("cveID") or "").strip()
+        name = str(it.get("vulnerabilityName") or "").strip()
+        date_added = str(it.get("dateAdded") or "").strip()
+        if not cve_id or not date_added:
+            continue
+        try:
+            published = dtparser.parse(date_added)
+            if published.tzinfo is None:
+                published = published.replace(tzinfo=UTC)
+            published = published.astimezone(UTC)
+        except Exception:
+            continue
+
+        title = f"{cve_id} {name}".strip()
+        vendor = str(it.get("vendorProject") or "").strip()
+        product = str(it.get("product") or "").strip()
+        summary = " / ".join([p for p in (vendor, product) if p]) or None
+        link = "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+
+        entry_id = _stable_entry_id(source.name, cve_id)
+        out.append(
+            RawEntry(
+                entry_id=entry_id,
+                title=title,
+                link=link,
+                published_at_utc=published,
+                summary=summary,
+            )
+        )
+    return out
+
+
+def _parse_nvd_json(source: Source, data: dict) -> list[RawEntry]:
+    items = data.get("vulnerabilities") or []
+    out: list[RawEntry] = []
+    for wrap in items:
+        cve = wrap.get("cve") or {}
+        cve_id = str(cve.get("id") or "").strip()
+        if not cve_id:
+            continue
+        published_raw = cve.get("published") or cve.get("lastModified") or ""
+        try:
+            published = dtparser.parse(str(published_raw))
+            if published.tzinfo is None:
+                published = published.replace(tzinfo=UTC)
+            published = published.astimezone(UTC)
+        except Exception:
+            continue
+
+        title = cve_id
+        link = f"https://nvd.nist.gov/vuln/detail/{cve_id}"
+        summary = None
+        for desc in cve.get("descriptions") or []:
+            if str(desc.get("lang") or "").lower() == "en":
+                text = str(desc.get("value") or "").strip()
+                summary = text or None
+                break
+
+        entry_id = _stable_entry_id(source.name, cve_id)
+        out.append(
+            RawEntry(
+                entry_id=entry_id,
+                title=title,
+                link=link,
+                published_at_utc=published,
+                summary=summary,
+            )
+        )
+    return out
+
+
+def _parse_msrc_cvrf_json(source: Source, data: dict) -> list[RawEntry]:
+    items = data.get("value") or []
+    out: list[RawEntry] = []
+    for it in items:
+        update_id = str(it.get("ID") or it.get("Alias") or "").strip()
+        title_raw = str(it.get("DocumentTitle") or "").strip()
+        if not update_id:
+            continue
+        published_raw = it.get("CurrentReleaseDate") or it.get("InitialReleaseDate") or ""
+        try:
+            published = dtparser.parse(str(published_raw))
+            if published.tzinfo is None:
+                published = published.replace(tzinfo=UTC)
+            published = published.astimezone(UTC)
+        except Exception:
+            continue
+
+        title = f"{update_id} {title_raw}".strip()
+        link = str(it.get("CvrfUrl") or "").strip() or "https://msrc.microsoft.com/update-guide/"
+        severity = str(it.get("Severity") or "").strip()
+        summary = f"Severity: {severity}" if severity else None
+
+        entry_id = _stable_entry_id(source.name, update_id)
+        out.append(
+            RawEntry(
+                entry_id=entry_id,
+                title=title,
+                link=link,
+                published_at_utc=published,
+                summary=summary,
+            )
+        )
+    return out
 
 
 def _looks_like_html_response(res: httpx.Response) -> bool:

@@ -7,7 +7,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="robots" content="noindex,nofollow" />
-  <title>YARA-X 1.11.0 Release: Hash Function Warnings, (Sun, Jan 11th) | CSIRT 日次レポート</title>
+  <title>CVE-2026-0842 | CSIRT 日次レポート</title>
   <style>
     :root{
       --bg:#0b1020; --panel:#0f1730; --panel2:#121c3a;
@@ -198,27 +198,27 @@
         <!-- ../index.html は通常 "../index.html" でOK -->
         <a href="../index.html">← 日次トップへ戻る</a>
       </div>
-      <div class="chip">entry_id <strong class="mono">009d8e516183eb55</strong></div>
+      <div class="chip">entry_id <strong class="mono">e125861a5a6fde58</strong></div>
     </div>
 
     <div class="panel">
       <div class="head">
-        <h1>YARA-X 1.11.0 Release: Hash Function Warnings, (Sun, Jan 11th)</h1>
+        <h1>CVE-2026-0842</h1>
 
         <div class="meta">
-          <span>🗞️ SANS ISC</span>
-          <span>🕒 2026-01-11T20:10:24+09:00</span>
-          <span>🔗 <a href="https://isc.sans.edu/diary/rss/32616" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
+          <span>🗞️ NIST NVD</span>
+          <span>🕒 2026-01-11T17:16:00.150000+09:00</span>
+          <span>🔗 <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-0842" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
         </div>
 
         <div class="tags">
-          <span class="tag level-Low">Impact: Low</span>
-          <span class="tag rule-LOW">Rule: LOW</span>
-          <span class="tag">ツールアップデート／セキュリティ品質改善</span>
+          <span class="tag level-Medium">Impact: Medium</span>
+          <span class="tag rule-MEDIUM">Rule: MEDIUM</span>
+          <span class="tag">Software Vulnerability</span>
         </div>
 
         <div class="btnRow">
-          <a class="linkbtn" href="https://isc.sans.edu/diary/rss/32616" target="_blank" rel="noopener noreferrer">原文リンク</a>
+          <a class="linkbtn" href="https://nvd.nist.gov/vuln/detail/CVE-2026-0842" target="_blank" rel="noopener noreferrer">原文リンク</a>
           <a class="linkbtn" href="https://www.notifyhub.site/digest/2026-01-12/">日次トップ</a>
         </div>
       </div>
@@ -226,33 +226,30 @@
       <div class="body">
         <div class="section">
           <h2>🧠 ルール判定根拠（MVP）</h2>
-          <div class="ruleReason">LOW: 該当なし（MVPルール）</div>
+          <div class="ruleReason">MEDIUM: CVE検出: CVE-2026-0842
+（MVPルール）</div>
         </div>
 
         <div class="section summary">
           <h2>🧾 要約（ChatGPT）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          <div><h4>YARA-X 1.11.0 のリリース概要</h4><p>SANS ISCによると、YARA-X 1.11.0 が公開され、ハッシュ関数に関する警告機能が追加されたことが報告されています。この更新は、マルウェア解析や脅威ハンティングで使用されるYARAルールの品質向上を目的としています。</p><p>主な変更点として、非推奨または脆弱なハッシュ関数（例: MD5, SHA1）を使用しているルールに対して警告を出す仕組みが導入されました。これにより、アナリストは安全性の高いハッシュ関数（SHA256など）への移行を促されます。</p><p>本リリースは機能改善が中心であり、緊急対応を要する脆弱性修正ではありませんが、YARAルールの保守性と信頼性を高める観点からアップデートが推奨されます。</p></div>
+          <div><h4>CVE-2026-0842 の概要</h4><p>NIST NVDで公開されたCVE-2026-0842は、2026年1月11日に登録された脆弱性情報です。現時点では詳細な技術情報は限定的ですが、NVDがCVEを割り当てていることから、特定のソフトウェアまたはコンポーネントにおけるセキュリティ上の欠陥が確認されています。</p><p>CSIRTとしては、該当製品の利用有無を確認し、ベンダーからの更新情報やパッチ提供状況を継続的に監視することが推奨されます。</p><ul><li>公開元: NIST NVD</li><li>公開日時: 2026-01-11</li><li>深刻度（初期評価）: Medium</li></ul><p>今後、CVSSスコアや攻撃コードの有無などが更新される可能性があるため、定期的な情報追跡が必要です。</p></div>
         </div>
 
         <div class="section">
           <h2>📌 キーワード解説</h2>
           <div class="terms">
             <div class="termCard">
-  <div class="term">YARA</div>
-  <p class="exp">マルウェアや疑わしいファイルを識別するためのパターンマッチングツール。セキュリティ分析や脅威ハンティングで広く利用される。</p>
+  <div class="term">CVE</div>
+  <p class="exp">Common Vulnerabilities and Exposuresの略で、公開された脆弱性を一意に識別するためのID体系。</p>
 </div>
 <div class="termCard">
-  <div class="term">ハッシュ関数</div>
-  <p class="exp">入力データから固定長の値を生成する関数。データの同一性確認やファイル識別に用いられるが、古い関数は衝突リスクがある。</p>
+  <div class="term">NVD</div>
+  <p class="exp">National Vulnerability Database。米国NISTが運営する脆弱性情報データベース。</p>
 </div>
 <div class="termCard">
-  <div class="term">MD5/SHA1</div>
-  <p class="exp">古いハッシュアルゴリズムであり、衝突攻撃が実証されているため、セキュリティ用途では非推奨。</p>
-</div>
-<div class="termCard">
-  <div class="term">SHA256</div>
-  <p class="exp">現在推奨される安全性の高いハッシュ関数の一つ。</p>
+  <div class="term">CSIRT</div>
+  <p class="exp">Computer Security Incident Response Team。組織内のセキュリティインシデント対応を担う専門チーム。</p>
 </div>
           </div>
         </div>
