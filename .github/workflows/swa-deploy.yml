@@ -58,6 +58,20 @@ jobs:
         run: |
           set -euo pipefail
           notifyhub-digest run --out-dir site --no-send-email
+      - name: Debug env (non-secret)
+        run: |
+          echo "DIGEST_BASE_URL=${DIGEST_BASE_URL}"
+          echo "ACS_EMAIL_SUBJECT_PREFIX=${ACS_EMAIL_SUBJECT_PREFIX}"
+          echo "ACS_EMAIL_ENABLED=${ACS_EMAIL_ENABLED}"
+          echo "OPENAI_MODEL=${OPENAI_MODEL}"
+          echo "OPENAI_MAX_TOKENS=${OPENAI_MAX_TOKENS}"
+          echo "OPENAI_BASE_URL=${OPENAI_BASE_URL}"
+          echo "OPENAI_TEMPERATURE=${OPENAI_TEMPERATURE}"
+          echo "NOTIFYHUB_USER_AGENT=${NOTIFYHUB_USER_AGENT}"
+          echo "DOTENV_OVERRIDE=${DOTENV_OVERRIDE}"
+          echo "NOTIFYHUB_HTTP_TIMEOUT=${NOTIFYHUB_HTTP_TIMEOUT}"
+          echo "NOTIFYHUB_HTTP_RETRIES=${NOTIFYHUB_HTTP_RETRIES}"
+          echo "LOG_LEVEL=${LOG_LEVEL}"
 
       - name: Deploy
         uses: Azure/static-web-apps-deploy@v1
@@ -67,4 +81,4 @@ jobs:
           app_location: "site"
           api_location: ""
           # Build output is the same folder for this repo (pre-rendered static files)
-          app_artifact_location: "."
+          app_artifact_location: "site"
