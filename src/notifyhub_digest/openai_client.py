@@ -224,7 +224,7 @@ def analyze_item(
         "model": cfg.model,
         "temperature": cfg.temperature,
         "max_output_tokens": cfg.max_tokens,
-        "response_format": {"type": "json_object"},
+        "text": {"format": {"type": "json_object"}},
         "input": [
             {
                 "role": "system",
