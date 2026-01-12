@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import html
 import json
 import logging
 import os
@@ -70,8 +71,8 @@ def load_openai_config() -> OpenAIConfig | None:
     api_key = os.getenv("OPENAI_API_KEY")
     if not api_key:
         return None
-    model = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
-    base_url = os.getenv("OPENAI_BASE_URL", "https://api.openai.com/v1")
+    model = (os.getenv("OPENAI_MODEL") or "").strip() or "gpt-4o-mini"
+    base_url = (os.getenv("OPENAI_BASE_URL") or "").strip() or "https://api.openai.com/v1"
     try:
         max_tokens = int(os.getenv("OPENAI_MAX_TOKENS", "700"))
     except Exception:
@@ -116,6 +117,8 @@ def _extract_response_text(data: dict[str, Any]) -> str:
                 continue
             if part.get("type") == "output_text" and isinstance(part.get("text"), str):
                 return part.get("text")
+            if part.get("type") == "output_json" and isinstance(part.get("json"), dict):
+                return json.dumps(part.get("json"), ensure_ascii=False)
     return ""
 
 
@@ -189,6 +192,15 @@ def _coerce_analysis_result(parsed: dict[str, Any]) -> AnalysisResult:
             impact_reason=str(parsed.get("impact_reason") or ""),
             threat_type=str(parsed.get("threat_type") or "-"),
         )
+
+
+def _fallback_summary_html(summary: str | None) -> str:
+    s = (summary or "").strip()
+    if not s:
+        return ""
+    if "<" in s and ">" in s:
+        return s
+    return f"<p>{html.escape(s)}</p>"
 
 
 def analyze_item(
@@ -272,6 +284,19 @@ def analyze_item(
 
     try:
         parsed = _extract_json_object(content)
-        return _coerce_analysis_result(parsed)
-    except Exception:
-        return AnalysisResult(summary_html="", technical_terms=[], impact_level="Unknown", threat_type="-")
+        result = _coerce_analysis_result(parsed)
+        if not result.summary_html:
+            result.summary_html = _fallback_summary_html(summary)
+        return result
+    except Exception as e:
+        if content.strip():
+            logger.warning("OpenAI response parse failed: %s body=%s", e, content[:2000])
+        else:
+            logger.warning("OpenAI response parse failed: %s (empty body)", e)
+        return AnalysisResult(
+            summary_html=_fallback_summary_html(summary),
+            technical_terms=[],
+            impact_level="Unknown",
+            impact_reason="",
+            threat_type="-",
+        )

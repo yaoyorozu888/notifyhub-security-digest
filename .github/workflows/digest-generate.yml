@@ -91,11 +91,17 @@ jobs:
           set -euo pipefail
           source <(cat runat.env)
 
-          # Scheduled run: send email by default.
-          SEND_EMAIL=true
+          # Scheduled run: follow ACS_EMAIL_ENABLED unless manually overridden.
+          SEND_EMAIL=false
           if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
             SEND_EMAIL="${{ inputs.send_email }}"
+          else
+            SEND_EMAIL="${{ vars.ACS_EMAIL_ENABLED }}"
           fi
+          case "${SEND_EMAIL,,}" in
+            1|true|yes|on) SEND_EMAIL=true ;;
+            *) SEND_EMAIL=false ;;
+          esac
 
           EMAIL_FLAG="--no-send-email"
           if [[ "$SEND_EMAIL" == "true" ]]; then
@@ -135,3 +141,13 @@ jobs:
 
           git commit -m "chore(digest): publish $DAY"
           git push
+
+      - name: Deploy
+        uses: Azure/static-web-apps-deploy@v1
+        with:
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_WONDERFUL_GROUND_0436BEE00 }}
+          action: "upload"
+          skip_app_build: true
+          app_location: "site"
+          api_location: ""
+          app_artifact_location: "site"

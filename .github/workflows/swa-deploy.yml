@@ -78,6 +78,7 @@ jobs:
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_WONDERFUL_GROUND_0436BEE00 }}
           action: "upload"
+          skip_app_build: true
           app_location: "site"
           api_location: ""
           # Build output is the same folder for this repo (pre-rendered static files)
