@@ -212,9 +212,9 @@
         </div>
 
         <div class="tags">
-          <span class="tag level-Unknown">Impact: Unknown</span>
+          <span class="tag level-Medium">Impact: Medium</span>
           <span class="tag rule-MEDIUM">Rule: MEDIUM</span>
-          <span class="tag">-</span>
+          <span class="tag">Input Validation Vulnerability / 入力検証不備</span>
         </div>
 
         <div class="btnRow">
@@ -233,13 +233,24 @@
         <div class="section summary">
           <h2>🧾 要約（ChatGPT）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          <p>分析に失敗しました（HTML検証エラー）</p>
+          <div><h4>概要</h4><p>Apache Struts において XML 検証が欠落している脆弱性（CVE-2025-68493）が報告されています。影響範囲はバージョン 2.0.0 から 6.1.0 までで、6.1.1 で修正されています。XML 入力を適切に検証しないことで、細工された XML データを介してアプリケーションの動作を意図せず変更されたり、情報漏えいにつながる可能性があります。</p><h4>現場の学び</h4><ul><li>XML パーサの設定や入力検証の欠如は、外部エンティティ攻撃（XXE）や DoS の温床となることがある。</li><li>ライブラリ更新の際には、依存関係全体の互換性確認を怠らないことが重要。</li><li>Struts のようなフレームワークは長期的に利用されるため、セキュリティアドバイザリの定期監視が必要。</li></ul><h4>初動・継続対応の示唆</h4><ul><li>該当バージョンを使用している場合は、速やかに 6.1.1 へアップグレードする。</li><li>XML 処理を行うアプリケーションでは、外部エンティティの無効化やスキーマ検証の有効化を確認する。</li><li>脆弱性管理プロセスにおいて、依存ライブラリの自動スキャンと更新サイクルを組み込む。</li></ul></div>
         </div>
 
         <div class="section">
           <h2>📌 キーワード解説</h2>
           <div class="terms">
-            
+            <div class="termCard">
+  <div class="term">XML Validation / XML検証</div>
+  <p class="exp">XML データが定義されたスキーマや構文に従っているかを確認する処理。欠落すると不正な入力を許す可能性がある。</p>
+</div>
+<div class="termCard">
+  <div class="term">Apache Struts / アパッチ・ストラッツ</div>
+  <p class="exp">Java ベースの Web アプリケーションフレームワークで、MVC モデルを採用している。</p>
+</div>
+<div class="termCard">
+  <div class="term">XXE (XML External Entity) / XML外部エンティティ攻撃</div>
+  <p class="exp">XML パーサが外部エンティティを処理する際に、機密情報の漏えいやサーバー側リソースアクセスを引き起こす攻撃手法。</p>
+</div>
           </div>
         </div>
 
@@ -247,7 +258,7 @@
           <h2>🕘 生成情報</h2>
           <div class="ruleReason">
 対象期間：2026-01-11T06:00:00+09:00 〜 2026-01-12T06:00:00+09:00
-生成時刻：2026-01-12T17:12:06.231770+09:00
+生成時刻：2026-01-12T06:00:00+09:00
 免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
           </div>
         </div>

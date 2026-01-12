@@ -7,7 +7,7 @@
   "counts": {
     "total": 15
   },
-  "generated_at_jst": "2026-01-12T17:12:06.231770+09:00",
+  "generated_at_jst": "2026-01-12T06:00:00+09:00",
   "items": [
     {
       "entry_id": "643b017bfd62b1a0",
@@ -16,8 +16,8 @@
       "category": "reporting",
       "published_at": "2026-01-11T02:15:58.890000+00:00",
       "rule_severity": "MEDIUM",
-      "impact_level": "Medium",
-      "threat_type": "Cross-Site Scripting (XSS)",
+      "impact_level": "Unknown",
+      "threat_type": "-",
       "article_path": "articles/643b017bfd62b1a0.html",
       "original_url": "https://nvd.nist.gov/vuln/detail/CVE-2025-15505"
     },
@@ -76,8 +76,8 @@
       "category": "reporting",
       "published_at": "2026-01-11T07:15:49.680000+00:00",
       "rule_severity": "MEDIUM",
-      "impact_level": "Unknown",
-      "threat_type": "-",
+      "impact_level": "High",
+      "threat_type": "Remote Code Execution",
       "article_path": "articles/eefee74e4ee12228.html",
       "original_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-0840"
     },
@@ -89,7 +89,7 @@
       "published_at": "2026-01-11T08:15:59.153000+00:00",
       "rule_severity": "MEDIUM",
       "impact_level": "High",
-      "threat_type": "Remote Code Execution / リモートコード実行",
+      "threat_type": "Remote Code Execution",
       "article_path": "articles/f41f8c1a2796c76b.html",
       "original_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-0841"
     },
@@ -101,7 +101,7 @@
       "published_at": "2026-01-11T08:16:00.150000+00:00",
       "rule_severity": "MEDIUM",
       "impact_level": "Medium",
-      "threat_type": "IoTデバイスの認証欠如による不正操作リスク",
+      "threat_type": "IoTデバイスにおける認証欠如脆弱性",
       "article_path": "articles/e125861a5a6fde58.html",
       "original_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-0842"
     },
@@ -112,8 +112,8 @@
       "category": "reporting",
       "published_at": "2026-01-11T09:15:50.810000+00:00",
       "rule_severity": "MEDIUM",
-      "impact_level": "Medium",
-      "threat_type": "SQL Injection",
+      "impact_level": "Unknown",
+      "threat_type": "-",
       "article_path": "articles/5bed89115dc465b4.html",
       "original_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-0843"
     },
@@ -136,8 +136,8 @@
       "category": "reporting",
       "published_at": "2026-01-11T13:15:45.610000+00:00",
       "rule_severity": "MEDIUM",
-      "impact_level": "Unknown",
-      "threat_type": "-",
+      "impact_level": "Medium",
+      "threat_type": "Input Validation Vulnerability / 入力検証不備",
       "article_path": "articles/11425308d3813f30.html",
       "original_url": "https://nvd.nist.gov/vuln/detail/CVE-2025-68493"
     },
@@ -173,7 +173,7 @@
       "published_at": "2026-01-11T00:29:10+00:00",
       "rule_severity": "LOW",
       "impact_level": "Low",
-      "threat_type": "Service Change / 機能廃止",
+      "threat_type": "Service Change / 機能廃止・サービス変更",
       "article_path": "articles/7874af9ff2d3e058.html",
       "original_url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-is-retiring-send-to-kindle-in-word/"
     },

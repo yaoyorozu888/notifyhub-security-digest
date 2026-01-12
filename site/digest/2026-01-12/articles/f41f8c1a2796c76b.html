@@ -214,7 +214,7 @@
         <div class="tags">
           <span class="tag level-High">Impact: High</span>
           <span class="tag rule-MEDIUM">Rule: MEDIUM</span>
-          <span class="tag">Remote Code Execution / リモートコード実行</span>
+          <span class="tag">Remote Code Execution</span>
         </div>
 
         <div class="btnRow">
@@ -233,7 +233,7 @@
         <div class="section summary">
           <h2>🧾 要約（ChatGPT）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          <div><h4>概要</h4><p>UTT製ルータ「进取 520W」ファームウェア1.7.7-180627において、<code>/goform/formPictureUrl</code>内の<code>strcpy</code>関数処理に起因するバッファオーバーフロー脆弱性（CVE-2026-0841）が報告されています。攻撃者は<code>importpictureurl</code>引数を細工することで任意コード実行やサービス停止を引き起こす可能性があります。リモートから悪用可能であり、すでにエクスプロイトが公開されています。ベンダーからの公式対応は確認されていません。</p><h4>現場の学び</h4><ul><li>組み込み機器でもWebフォーム経由の入力処理が脆弱性の起点となることを再認識する。</li><li>公開済みエクスプロイトが存在する場合、PoC検証や攻撃観測を優先的に実施すべきである。</li><li>ベンダー未対応の機器では、ネットワーク分離やアクセス制御による防御層の強化が重要となる。</li></ul><h4>初動・継続対応の示唆</h4><ul><li>該当機器の利用有無を資産管理台帳やネットワークスキャンで確認し、該当する場合は外部公開を停止する。</li><li>IPS/IDSで<code>/goform/formPictureUrl</code>への異常なPOSTリクエストを検知・遮断するルールを適用する。</li><li>ベンダーからの修正版提供がない場合、代替製品への移行計画を検討する。</li></ul></div>
+          <div><h4>概要</h4><p>UTT社のルータ「进取 520W」ファームウェア（バージョン1.7.7-180627）において、<code>/goform/formPictureUrl</code>内の<code>strcpy</code>関数処理に起因するバッファオーバーフロー脆弱性（CVE-2026-0841）が報告されています。攻撃者は<code>importpictureurl</code>パラメータを細工することで任意コード実行やサービス妨害を引き起こす可能性があります。リモートから悪用可能であり、すでにエクスプロイトコードが公開されています。ベンダーからの公式対応は確認されていません。</p><h4>現場の学び</h4><ul><li>組み込み機器でもWebフォーム入力処理の境界チェック不足が深刻なリスクとなる。</li><li>エクスプロイトが公開済みの場合、PoC（概念実証）から実攻撃までの時間が短く、迅速な防御策が求められる。</li><li>ベンダー対応が遅い製品では、ネットワーク分離やアクセス制御によるリスク低減が現実的な対策となる。</li></ul><h4>初動・継続対応の示唆</h4><ul><li>該当機器を使用している場合は、管理インターフェースを外部公開しない設定を確認する。</li><li>ファームウェア更新が提供されていない場合は、代替機器の検討やセグメント分離を実施する。</li><li>公開エクスプロイトの挙動を分析し、IDS/IPSシグネチャやWAFルールへの反映を検討する。</li></ul></div>
         </div>
 
         <div class="section">
@@ -245,11 +245,15 @@
 </div>
 <div class="termCard">
   <div class="term">Exploit / エクスプロイト</div>
-  <p class="exp">脆弱性を悪用してシステムを攻撃するためのコードや手法。</p>
+  <p class="exp">脆弱性を悪用してシステムに不正な動作をさせる攻撃コードや手法。</p>
 </div>
 <div class="termCard">
   <div class="term">PoC (Proof of Concept) / 概念実証コード</div>
-  <p class="exp">脆弱性の存在や影響を確認するための実証的な攻撃コード。</p>
+  <p class="exp">脆弱性の存在や影響を確認するために作成された実証用コード。</p>
+</div>
+<div class="termCard">
+  <div class="term">Firmware / ファームウェア</div>
+  <p class="exp">ネットワーク機器などのハードウェア上で動作する制御ソフトウェア。</p>
 </div>
           </div>
         </div>
@@ -258,7 +262,7 @@
           <h2>🕘 生成情報</h2>
           <div class="ruleReason">
 対象期間：2026-01-11T06:00:00+09:00 〜 2026-01-12T06:00:00+09:00
-生成時刻：2026-01-12T17:12:06.231770+09:00
+生成時刻：2026-01-12T06:00:00+09:00
 免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
           </div>
         </div>

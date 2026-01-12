@@ -212,9 +212,9 @@
         </div>
 
         <div class="tags">
-          <span class="tag level-Medium">Impact: Medium</span>
+          <span class="tag level-Unknown">Impact: Unknown</span>
           <span class="tag rule-MEDIUM">Rule: MEDIUM</span>
-          <span class="tag">SQL Injection</span>
+          <span class="tag">-</span>
         </div>
 
         <div class="btnRow">
@@ -233,24 +233,13 @@
         <div class="section summary">
           <h2>🧾 要約（ChatGPT）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          <div><h4>概要</h4><p>本脆弱性（CVE-2026-0843）は、<code>jiujiujia/victor123/wxw850227 jjjfood</code>および<code>jjjshop_food</code>において、<code>/index.php/api/product.category/index</code>の処理に存在するSQLインジェクションの欠陥です。<code>latitude</code>パラメータの不正操作により、リモートから任意のSQLクエリを実行される可能性があります。脆弱性情報はすでに公開されており、実際に悪用されるリスクがあります。開発元への連絡は行われたものの、応答は得られていません。</p><h4>現場の学び</h4><ul><li>入力パラメータのバリデーション不足が、API経由でも重大なリスクを生むことを再確認できる。</li><li>OSSや派生プロジェクトが複数名義で配布される場合、脆弱性管理の責任範囲が不明確になりやすい。</li><li>公開済みエクスプロイトが存在する場合、PoC検証を通じて自組織環境への影響を早期に把握することが重要。</li></ul><h4>初動・継続対応の示唆</h4><ul><li>該当製品を利用している場合は、即時に外部からのAPIアクセスを制限し、SQLインジェクションの有無をログで確認する。</li><li>ベンダーからの修正版提供がない場合、WAFや入力サニタイズの追加実装などで一時的な防御策を講じる。</li><li>同一コードベースを利用する派生プロジェクトも含め、脆弱性の影響範囲を棚卸しする。</li></ul></div>
+          <p>分析に失敗しました（HTML検証エラー）</p>
         </div>
 
         <div class="section">
           <h2>📌 キーワード解説</h2>
           <div class="terms">
-            <div class="termCard">
-  <div class="term">SQL Injection / SQLインジェクション</div>
-  <p class="exp">アプリケーションの入力値を通じて不正なSQL文を実行させる攻撃手法。データ漏えいや改ざんにつながる。</p>
-</div>
-<div class="termCard">
-  <div class="term">Proof of Concept (PoC) / 概念実証コード</div>
-  <p class="exp">脆弱性の存在を確認するための実証用コード。攻撃者に悪用されるリスクもある。</p>
-</div>
-<div class="termCard">
-  <div class="term">Input Validation / 入力検証</div>
-  <p class="exp">ユーザー入力を受け取る際に、想定外の値や形式を排除するセキュリティ対策。</p>
-</div>
+            
           </div>
         </div>
 
@@ -258,7 +247,7 @@
           <h2>🕘 生成情報</h2>
           <div class="ruleReason">
 対象期間：2026-01-11T06:00:00+09:00 〜 2026-01-12T06:00:00+09:00
-生成時刻：2026-01-12T17:12:06.231770+09:00
+生成時刻：2026-01-12T06:00:00+09:00
 免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
           </div>
         </div>
