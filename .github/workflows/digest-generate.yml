@@ -64,21 +64,29 @@ jobs:
 
       - name: Generate digest (optionally send email)
         env:
-          # Publish URL (fixed)
-          DIGEST_BASE_URL: "https://www.notifyhub.site/digest"
+          # Publish URL
+          DIGEST_BASE_URL: ${{ vars.DIGEST_BASE_URL }}
 
           # ACS Email (optional)
           ACS_EMAIL_CONNECTION_STRING: ${{ secrets.ACS_EMAIL_CONNECTION_STRING }}
           ACS_EMAIL_SENDER: ${{ secrets.ACS_EMAIL_SENDER }}
           ACS_EMAIL_TO: ${{ secrets.ACS_EMAIL_TO }}
-          ACS_EMAIL_SUBJECT_PREFIX: ${{ secrets.ACS_EMAIL_SUBJECT_PREFIX }}
+          ACS_EMAIL_SUBJECT_PREFIX: ${{ vars.ACS_EMAIL_SUBJECT_PREFIX }}
+          ACS_EMAIL_ENABLED: ${{ vars.ACS_EMAIL_ENABLED }}
 
           # OpenAI (optional)
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          OPENAI_MODEL: ${{ secrets.OPENAI_MODEL }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
+          OPENAI_MAX_TOKENS: ${{ vars.OPENAI_MAX_TOKENS }}
+          OPENAI_BASE_URL: ${{ vars.OPENAI_BASE_URL }}
+          OPENAI_TEMPERATURE: ${{ vars.OPENAI_TEMPERATURE }}
 
           # Logging / HTTP
-          LOG_LEVEL: INFO
+          NOTIFYHUB_USER_AGENT: ${{ vars.NOTIFYHUB_USER_AGENT }}
+          DOTENV_OVERRIDE: ${{ vars.DOTENV_OVERRIDE }}
+          NOTIFYHUB_HTTP_TIMEOUT: ${{ vars.NOTIFYHUB_HTTP_TIMEOUT }}
+          NOTIFYHUB_HTTP_RETRIES: ${{ vars.NOTIFYHUB_HTTP_RETRIES }}
+          LOG_LEVEL: ${{ vars.LOG_LEVEL }}
         run: |
           set -euo pipefail
           source <(cat runat.env)
