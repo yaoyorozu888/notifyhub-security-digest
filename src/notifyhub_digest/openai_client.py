@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import logging
 import os
 import re
 from dataclasses import dataclass
@@ -9,6 +10,9 @@ from typing import Any
 import httpx
 
 from notifyhub_digest.models import AnalysisResult
+
+
+logger = logging.getLogger(__name__)
 
 
 @dataclass(frozen=True)
@@ -245,7 +249,23 @@ def analyze_item(
         headers={"Authorization": f"Bearer {cfg.api_key}"},
         json=payload,
     )
-    res.raise_for_status()
+    try:
+        res.raise_for_status()
+    except httpx.HTTPStatusError as e:
+        body = ""
+        try:
+            body = e.response.text
+        except Exception:
+            body = ""
+        if body:
+            logger.warning(
+                "OpenAI API error: status=%s body=%s",
+                e.response.status_code,
+                body[:2000],
+            )
+        else:
+            logger.warning("OpenAI API error: status=%s", e.response.status_code)
+        raise
 
     data = res.json()
     content = _extract_response_text(data)
