@@ -50,11 +50,30 @@ def load_acs_email_config() -> AcsEmailConfig | None:
     if not conn or not sender or not to_raw:
         return None
 
+    # Be forgiving for local .env mistakes.
+    # Azure SDK expects: endpoint=https://<ResourceUrl>/;accesskey=<KeyValue>
+    conn_norm = conn.strip()
+    if '"' in conn_norm:
+        # Handle common patterns like endpoint="https://.../";accesskey=... (or accidental quoting)
+        conn_norm = conn_norm.replace('"', "")
+    if conn_norm.lower().startswith("https://") and "accesskey=" in conn_norm.lower() and "endpoint=" not in conn_norm.lower():
+        conn_norm = "endpoint=" + conn_norm
+
+    # Ensure endpoint has a trailing slash before the ';'
+    low = conn_norm.lower()
+    if "endpoint=" in low:
+        start = low.find("endpoint=") + len("endpoint=")
+        end = conn_norm.find(";", start)
+        if end != -1:
+            endpoint_val = conn_norm[start:end].strip()
+            if endpoint_val and not endpoint_val.endswith("/"):
+                conn_norm = conn_norm[:start] + endpoint_val + "/" + conn_norm[end:]
+
     to_addrs = _split_addresses(to_raw)
     if not to_addrs:
         return None
 
-    return AcsEmailConfig(connection_string=conn, sender_address=sender.strip(), to_addresses=to_addrs)
+    return AcsEmailConfig(connection_string=conn_norm, sender_address=sender.strip(), to_addresses=to_addrs)
 
 
 def _safe_url(url: str) -> str:

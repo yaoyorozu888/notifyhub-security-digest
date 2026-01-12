@@ -27,11 +27,6 @@ dev = [
   "ruff>=0.6.0",
 ]
 
-azure = [
-  "azure-data-tables>=12.7.0",
-  "azure-identity>=1.17.0",
-]
-
 acs = [
   "azure-communication-email>=1.1.0",
 ]

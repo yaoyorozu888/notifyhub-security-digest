@@ -41,7 +41,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install -U pip
-          python -m pip install ".[azure,acs]"
+          python -m pip install ".[acs]"
 
       - name: Compute run_at (JST)
         id: runat
@@ -67,13 +67,6 @@ jobs:
           # Publish URL (fixed)
           DIGEST_BASE_URL: "https://notifyhub.site/digest"
 
-          # Read-store (recommended: Azure Table backend)
-          READ_STORE_BACKEND: ${{ secrets.READ_STORE_BACKEND || 'azure' }}
-          AZURE_STORAGE_CONNECTION_STRING: ${{ secrets.AZURE_STORAGE_CONNECTION_STRING }}
-          AZURE_TABLE_ACCOUNT_URL: ${{ secrets.AZURE_TABLE_ACCOUNT_URL }}
-          AZURE_TABLE_NAME: ${{ secrets.AZURE_TABLE_NAME || 'notifyhubRead' }}
-          AZURE_TABLE_PARTITION_KEY: ${{ secrets.AZURE_TABLE_PARTITION_KEY || 'read' }}
-
           # ACS Email (optional)
           ACS_EMAIL_CONNECTION_STRING: ${{ secrets.ACS_EMAIL_CONNECTION_STRING }}
           ACS_EMAIL_SENDER: ${{ secrets.ACS_EMAIL_SENDER }}
@@ -90,8 +83,8 @@ jobs:
           set -euo pipefail
           source <(cat runat.env)
 
-          # Scheduled run: send email by default.
-          SEND_EMAIL=true
+          # Scheduled run: generate site only (no email) by default.
+          SEND_EMAIL=false
           if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
             SEND_EMAIL="${{ inputs.send_email }}"
           fi
@@ -103,7 +96,6 @@ jobs:
 
           notifyhub-digest run \
             --out-dir site \
-            --state-dir state_gh \
             --run-at "$RUN_AT" \
             $EMAIL_FLAG
 
@@ -122,7 +114,11 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add site/digest/"$DAY" || true
+          git add \
+            site/index.html \
+            site/digest/index.html \
+            site/digest/latest/index.html \
+            site/digest/"$DAY" || true
 
           if git diff --cached --quiet; then
             echo "No changes to commit"

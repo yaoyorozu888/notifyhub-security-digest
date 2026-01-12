@@ -28,23 +28,17 @@ Python起動時に `UnicodeDecodeError: 'cp932'` が発生することがあり�
 notifyhub-digest run --out-dir .\out
 ```
 
-## 既読管理をAzure Table Storageへ切替（B案の先行実装）
+### `.env`（ローカル用）
 
-1) Azure依存を追加インストール
+本ツールは起動時にカレントディレクトリの `.env` を自動で読み込みます（存在する場合）。
+
+- すでにPowerShell等で同名の環境変数が設定されている場合、`.env` の値を反映したいときは新しいターミナルで実行するか、`DOTENV_OVERRIDE=1` を設定してください。
 
 ```powershell
-pip install ".[azure]"
+Copy-Item .env.example .env
 ```
 
-2) 環境変数でバックエンドを切替
-
-- `READ_STORE_BACKEND=azure`
-- 認証はいずれか
-	- `AZURE_STORAGE_CONNECTION_STRING`（最も簡単。FunctionsではKey Vault経由推奨）
-	- `AZURE_TABLE_ACCOUNT_URL`（例: `https://<account>.table.core.windows.net`） + Managed Identity / Entra ID（`DefaultAzureCredential`）
-- 任意
-	- `AZURE_TABLE_NAME`（既定: `notifyhubRead`）
-	- `AZURE_TABLE_PARTITION_KEY`（既定: `read`）
+`.env` に ACS / OpenAI の値を設定してから実行してください（`.env` は `.gitignore` 済み）。
 
 ## ACS Emailで送信（B案の先行実装）
 
@@ -102,8 +96,6 @@ notifyhub-digest email-preview --out-dir .\out
 
 出力先は `out/digest/YYYY-MM-DD/email_preview.html` です。
 
-※ `--send-email` 指定時は「送信が成功した分だけ既読更新」します（送信失敗時は次回に再送され得ます）。
-
 ### 環境変数
 
 - `OPENAI_API_KEY` : OpenAI APIキー（未設定の場合はAI分析をスキップしプレースホルダを出力）
@@ -133,9 +125,6 @@ SWAでの公開が必須の前提で、GitHub Actionsのスケジュール実行
 
 必須
 - `AZURE_STATIC_WEB_APPS_API_TOKEN` : SWAのデプロイトークン
-
-推奨（既読の重複送信を避けるため）
-- `AZURE_STORAGE_CONNECTION_STRING` : Table Storage を含むストレージ接続文字列
 
 任意（Email送信をする場合）
 - `ACS_EMAIL_CONNECTION_STRING`

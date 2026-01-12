@@ -146,3 +146,67 @@ def write_article_html(
         raise ValueError("Invalid article output path")
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(rendered, encoding="utf-8")
+
+
+def _redirect_html(*, title: str, href: str) -> str:
+    safe_title = html.escape(title)
+    safe_href = html.escape(href, quote=True)
+    return "\n".join(
+        [
+            "<!doctype html>",
+            '<html lang="ja">',
+            "<head>",
+            '  <meta charset="utf-8" />',
+            '  <meta name="viewport" content="width=device-width,initial-scale=1" />',
+            "  <meta name=\"robots\" content=\"noindex,nofollow\" />",
+            f"  <title>{safe_title}</title>",
+            f'  <meta http-equiv="refresh" content="0; url={safe_href}" />',
+            "  <style>",
+            "    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,\"Noto Sans JP\",sans-serif; padding:24px}",
+            "    a{color:#2563eb}",
+            "  </style>",
+            "</head>",
+            "<body>",
+            f"  <p>Redirecting to <a href=\"{safe_href}\">{safe_href}</a> ...</p>",
+            "  <script>",
+            f"    location.replace(\"{safe_href}\");",
+            "  </script>",
+            "</body>",
+            "</html>",
+            "",
+        ]
+    )
+
+
+def write_digest_landing_pages(out_dir: Path, *, day: str) -> None:
+    """Write landing pages so `/` and `/digest/` work.
+
+    The daily report lives at `/digest/<day>/`. Without these, users who open
+    `/` or `/digest/` may land on a page that cannot fetch `manifest.json`.
+    """
+
+    out_dir = out_dir.resolve()
+
+    # Root landing -> /digest/<day>/
+    out_dir.mkdir(parents=True, exist_ok=True)
+    (out_dir / "index.html").write_text(
+        _redirect_html(title="CSIRT 日次レポート", href=f"./digest/{day}/"), encoding="utf-8"
+    )
+
+    # /digest/ landing -> /digest/<day>/
+    digest_root = (out_dir / "digest").resolve()
+    if out_dir not in digest_root.parents and digest_root != out_dir:
+        raise ValueError("Invalid out_dir")
+    digest_root.mkdir(parents=True, exist_ok=True)
+    (digest_root / "index.html").write_text(
+        _redirect_html(title="CSIRT 日次レポート", href=f"./{day}/"), encoding="utf-8"
+    )
+
+    # Stable permalink: /digest/latest/ -> /digest/<day>/
+    latest_dir = (digest_root / "latest").resolve()
+    if digest_root not in latest_dir.parents and latest_dir != digest_root:
+        raise ValueError("Invalid out_dir")
+    latest_dir.mkdir(parents=True, exist_ok=True)
+    (latest_dir / "index.html").write_text(
+        _redirect_html(title="CSIRT 日次レポート", href=f"../{day}/"), encoding="utf-8"
+    )

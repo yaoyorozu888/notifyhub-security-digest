@@ -14,6 +14,57 @@ from notifyhub_digest.runner import build_digest_outputs, run_digest
 app = typer.Typer(add_completion=False, no_args_is_help=True)
 
 
+def _load_dotenv(*, path: Path = Path(".env")) -> None:
+    """Load environment variables from a .env file if present.
+
+    - No dependency (python-dotenv) required.
+    - Does not override existing environment variables.
+    - Supports simple KEY=VALUE lines; ignores blank lines and comments.
+    """
+
+    try:
+        if not path.exists() or not path.is_file():
+            return
+
+        override = os.getenv("DOTENV_OVERRIDE", "0").strip().lower() in ("1", "true", "yes", "on")
+        loaded_keys: list[str] = []
+
+        for raw_line in path.read_text(encoding="utf-8").splitlines():
+            line = raw_line.strip()
+            if not line or line.startswith("#"):
+                continue
+
+            if line.lower().startswith("export "):
+                line = line[7:].lstrip()
+
+            if "=" not in line:
+                continue
+
+            key, value = line.split("=", 1)
+            key = key.strip()
+            if not key:
+                continue
+
+            value = value.strip()
+            if len(value) >= 2 and ((value[0] == value[-1] == '"') or (value[0] == value[-1] == "'")):
+                value = value[1:-1]
+
+            if override or key not in os.environ:
+                os.environ[key] = value
+                loaded_keys.append(key)
+
+        if os.getenv("LOG_LEVEL", "").strip().upper() == "DEBUG":
+            logging.getLogger(__name__).debug(
+                "Loaded .env: path=%s keys=%d override=%s",
+                str(path),
+                len(loaded_keys),
+                override,
+            )
+    except Exception:
+        # .env はローカル便利機能なので、壊れていても実行は続行する
+        return
+
+
 def _configure_logging() -> None:
     level = os.getenv("LOG_LEVEL", "INFO").strip().upper() or "INFO"
     logging.basicConfig(level=level, format="%(asctime)s %(levelname)s %(name)s: %(message)s")
@@ -33,7 +84,6 @@ def version() -> None:
 def run(
     out_dir: Path = typer.Option(Path("out"), "--out-dir", help="出力先ディレクトリ"),
     sources_path: Path = typer.Option(Path("sources.json"), "--sources", help="sources.json のパス"),
-    state_dir: Path = typer.Option(Path("state"), "--state-dir", help="既読管理の保存先"),
     run_at_iso: str | None = typer.Option(
         None,
         "--run-at",
@@ -47,12 +97,12 @@ def run(
 ):
     """日次レポートを生成します（ローカル実行版）。"""
 
+    _load_dotenv()
     _configure_logging()
 
     run_digest(
         out_dir=out_dir,
         sources_path=sources_path,
-        state_dir=state_dir,
         run_at_iso=run_at_iso,
         send_email=send_email,
     )
@@ -62,7 +112,6 @@ def run(
 def email_preview(
     out_dir: Path = typer.Option(Path("out"), "--out-dir", help="出力先ディレクトリ"),
     sources_path: Path = typer.Option(Path("sources.json"), "--sources", help="sources.json のパス"),
-    state_dir: Path = typer.Option(Path("state"), "--state-dir", help="既読管理の保存先"),
     run_at_iso: str | None = typer.Option(
         None,
         "--run-at",
@@ -71,9 +120,10 @@ def email_preview(
 ):
     """メールHTML（送信しない）を生成し、ローカルで崩れ確認できるようにします。"""
 
+    _load_dotenv()
     _configure_logging()
 
-    built = build_digest_outputs(out_dir=out_dir, sources_path=sources_path, state_dir=state_dir, run_at_iso=run_at_iso)
+    built = build_digest_outputs(out_dir=out_dir, sources_path=sources_path, run_at_iso=run_at_iso)
     html_body = build_digest_email_html(
         day=built.day,
         digest_root_url=built.digest_root_url,

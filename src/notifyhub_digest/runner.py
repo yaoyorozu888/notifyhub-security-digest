@@ -19,12 +19,17 @@ from notifyhub_digest.acs_email import (
 )
 from notifyhub_digest.models import AnalysisResult, FeedItem
 from notifyhub_digest.openai_client import analyze_item, load_openai_config
-from notifyhub_digest.render import compute_digest_paths, write_article_html, write_index_html, write_manifest
+from notifyhub_digest.render import (
+    compute_digest_paths,
+    write_article_html,
+    write_digest_landing_pages,
+    write_index_html,
+    write_manifest,
+)
 from notifyhub_digest.rss import fetch_feed_entries, iter_enabled_sources
 from notifyhub_digest.rules import evaluate_rule
 from notifyhub_digest.sanitize import sanitize_summary_html
 from notifyhub_digest.sources import load_sources
-from notifyhub_digest.store import get_read_store
 from notifyhub_digest.timeutils import JST, compute_daily_window
 
 
@@ -50,7 +55,6 @@ class BuiltDigest:
     window_to_jst: datetime
     digest_root_url: str
     items: list[FeedItem]
-    succeeded_entry_ids: list[str]
     digest_dir: Path
 
 
@@ -58,21 +62,15 @@ def build_digest_outputs(
     *,
     out_dir: Path,
     sources_path: Path,
-    state_dir: Path,
     run_at_iso: str | None,
 ) -> BuiltDigest:
-    """Generate digest outputs (index/articles/manifest) and return in-memory context.
-
-    Note: This function does NOT update the read store.
-    """
+    """Generate digest outputs (index/articles/manifest) and return in-memory context."""
 
     run_at_jst = _parse_run_at(run_at_iso)
     window = compute_daily_window(run_at_jst)
 
     sources = load_sources(sources_path)
     enabled = list(iter_enabled_sources(sources))
-
-    store = get_read_store(state_dir)
 
     user_agent = os.getenv("NOTIFYHUB_USER_AGENT", "notifyhub-security-digest/0.1")
     timeout = float(os.getenv("NOTIFYHUB_HTTP_TIMEOUT", "20"))
@@ -81,7 +79,6 @@ def build_digest_outputs(
     openai_cfg = load_openai_config()
 
     items: list[FeedItem] = []
-    succeeded_entry_ids: list[str] = []
 
     transport = httpx.HTTPTransport(retries=retries)
     with httpx.Client(timeout=timeout, follow_redirects=True, transport=transport) as client:
@@ -94,8 +91,6 @@ def build_digest_outputs(
 
             for e in entries:
                 if not (window.start_utc <= e.published_at_utc < window.end_utc):
-                    continue
-                if store.has(e.entry_id):
                     continue
 
                 rule = evaluate_rule(e.title, e.summary)
@@ -162,7 +157,6 @@ def build_digest_outputs(
             generated_at_jst=run_at_jst.isoformat(),
             digest_root_url=digest_root_url,
         )
-        succeeded_entry_ids.append(it.entry_id)
 
     # manifest
     write_manifest(
@@ -174,6 +168,9 @@ def build_digest_outputs(
         items=items,
     )
 
+    # landing pages (/, /digest/, /digest/latest/)
+    write_digest_landing_pages(out_dir, day=day)
+
     return BuiltDigest(
         day=day,
         run_at_jst=run_at_jst,
@@ -181,7 +178,6 @@ def build_digest_outputs(
         window_to_jst=window.end_jst,
         digest_root_url=digest_root_url,
         items=items,
-        succeeded_entry_ids=succeeded_entry_ids,
         digest_dir=paths.digest_dir,
     )
 
@@ -190,11 +186,10 @@ def run_digest(
     *,
     out_dir: Path,
     sources_path: Path,
-    state_dir: Path,
     run_at_iso: str | None,
     send_email: bool = False,
 ) -> None:
-    built = build_digest_outputs(out_dir=out_dir, sources_path=sources_path, state_dir=state_dir, run_at_iso=run_at_iso)
+    built = build_digest_outputs(out_dir=out_dir, sources_path=sources_path, run_at_iso=run_at_iso)
 
     # Email送信（有効時は送信成功時のみ既読更新）
     if should_send_email(send_email):
@@ -215,10 +210,7 @@ def run_digest(
         )
 
         if not send_acs_email(cfg=cfg, subject=subject, html_body=html_body):
-            logger.error("ACS Email send did not succeed; skipping read-store update")
+            logger.error("ACS Email send did not succeed")
             return
 
-    # 成功分のみ既読更新
-    store = get_read_store(state_dir)
-    store.mark_many(built.succeeded_entry_ids)
-    store.save()
+    return
