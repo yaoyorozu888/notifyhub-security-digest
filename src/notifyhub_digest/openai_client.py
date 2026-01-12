@@ -222,8 +222,21 @@ def analyze_item(
         "max_output_tokens": cfg.max_tokens,
         "response_format": {"type": "json_object"},
         "input": [
-            {"role": "system", "content": SYSTEM_PROMPT},
-            {"role": "user", "content": _analysis_schema_hint() + "\n\n入力:\n" + json.dumps(user, ensure_ascii=False)},
+            {
+                "role": "system",
+                "content": [{"type": "input_text", "text": SYSTEM_PROMPT}],
+            },
+            {
+                "role": "user",
+                "content": [
+                    {
+                        "type": "input_text",
+                        "text": _analysis_schema_hint()
+                        + "\n\n入力:\n"
+                        + json.dumps(user, ensure_ascii=False),
+                    }
+                ],
+            },
         ],
     }
 
