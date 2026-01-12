@@ -7,7 +7,6 @@ from pydantic import BaseModel, Field
 
 
 ImpactLevel = Literal["Critical", "High", "Medium", "Low", "Info", "Unknown"]
-RuleSeverity = Literal["HIGH", "MEDIUM", "LOW"]
 
 
 class Source(BaseModel):
@@ -39,6 +38,7 @@ class AnalysisResult(BaseModel):
     summary_html: str = ""
     technical_terms: list[TechnicalTerm] = Field(default_factory=list)
     impact_level: ImpactLevel = "Unknown"
+    impact_reason: str = ""
     threat_type: str = "-"
 
 
@@ -49,9 +49,6 @@ class FeedItem(BaseModel):
     category: str = "reporting"
     published_at: datetime
     original_url: str
-
-    rule_severity: RuleSeverity
-    rule_reason: str
 
     analysis: AnalysisResult
 

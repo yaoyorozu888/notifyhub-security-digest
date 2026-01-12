@@ -26,6 +26,7 @@ SYSTEM_PROMPT = (
     "入力に含まれる参考URLや引用の文脈がある場合は、その情報も考慮してください。\n"
     "本文中でソフトウェア名・ライブラリ名・組織名が出てくる場合は、それが何かを短く補足してください。\n"
     "出力は簡潔にし、無駄な繰り返しや長い前置きを避けてください。\n"
+    "もしCVE番号が含まれていれば、CVSSスコアについて記載してください。\n"
     "必ずJSONのみを返してください。前置きやコードフェンス(``` )は不要です。"
 )
 
@@ -37,15 +38,23 @@ def _analysis_schema_hint() -> str:
         '  "summary_html": "<div>...</div>",\n'
         '  "technical_terms": [{"term":"...","explanation":"..."}],\n'
         '  "impact_level": "Critical|High|Medium|Low|Info",\n'
+        '  "impact_reason": "...",\n'
         '  "threat_type": "..."\n'
         "}\n"
         "summary_htmlには <p><ul><ol><li><strong><h4><code><br><div> 以外を含めないでください。属性は付けないでください。\n"
         "summary_htmlは <h4>概要</h4><p>..</p><h4>現場の学び</h4><ul><li>..</li></ul>"
         "<h4>初動・継続対応の示唆</h4><ul><li>..</li></ul> の流れを意識してください。\n"
-        "各セクションは短く、合計で200〜300文字程度に収めてください。\n"
-        "technical_terms は最大2件、各 explanation は1〜2文に収めてください。\n"
+        "各セクションは短く、合計で600〜800文字程度に収めてください。\n"
+        "technical_terms は最大4件、各 explanation は1〜4文に収めてください。\n"
         "technical_terms.term は英語の表記を先に書き、その後に日本語の用語名を付けてください（例: "
-        '"Exploit Chain / 攻撃連鎖"）。explanation は日本語で簡潔に説明してください。'
+        '"Exploit Chain / 攻撃連鎖"）。explanation は日本語で簡潔に説明してください。\n'
+        "impact_levelはサイバーセキュリティの観点で判断してください。基準の目安:\n"
+        "- Critical: 広範囲に影響し即時対応が必要、既に悪用/大規模被害が確認、または安全性に重大な影響。\n"
+        "- High: 重大な影響が想定され、悪用容易・被害が大きいがCriticalほどの緊急性ではない。\n"
+        "- Medium: 影響はあるが限定的、悪用には条件が必要、または回避策/緩和策が有効。\n"
+        "- Low: 影響は軽微、限定環境のみ、情報提供や注意喚起レベル。\n"
+        "- Info: 影響や脅威が不明、もしくは更新情報・観測情報で直接的なリスクが低い。\n"
+        "impact_reasonはimpact_levelの判断理由を2?3行程度で簡潔に書いてください。"
     )
 
 
@@ -126,7 +135,7 @@ def _coerce_analysis_result(parsed: dict[str, Any]) -> AnalysisResult:
     """Be tolerant to minor schema drift and fill defaults."""
 
     if not isinstance(parsed, dict):
-        return AnalysisResult(summary_html="", technical_terms=[], impact_level="Unknown", threat_type="-")
+        return AnalysisResult(summary_html="", technical_terms=[], impact_level="Unknown", impact_reason="", threat_type="-")
 
     # Normalize common variations.
     if "impact_level" in parsed and isinstance(parsed["impact_level"], str):
@@ -147,6 +156,7 @@ def _coerce_analysis_result(parsed: dict[str, Any]) -> AnalysisResult:
             summary_html=str(parsed.get("summary_html") or ""),
             technical_terms=[],
             impact_level=str(parsed.get("impact_level") or "Unknown"),
+            impact_reason=str(parsed.get("impact_reason") or ""),
             threat_type=str(parsed.get("threat_type") or "-"),
         )
 
@@ -160,8 +170,6 @@ def analyze_item(
     published_at_iso: str,
     original_url: str,
     summary: str | None,
-    rule_severity: str,
-    rule_reason: str,
 ) -> AnalysisResult:
     """OpenAI Chat Completionsを使いJSONを返させる（ローカル版）。
 
@@ -180,8 +188,6 @@ def analyze_item(
         "original_url": original_url,
         "summary": summary or "",
         "reference_urls": refs[:5],
-        "rule_severity": rule_severity,
-        "rule_reason": rule_reason,
     }
 
     payload = {

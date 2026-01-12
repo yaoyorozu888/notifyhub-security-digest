@@ -27,7 +27,6 @@ from notifyhub_digest.render import (
     write_manifest,
 )
 from notifyhub_digest.rss import fetch_feed_entries, iter_enabled_sources
-from notifyhub_digest.rules import evaluate_rule
 from notifyhub_digest.sanitize import sanitize_summary_html
 from notifyhub_digest.sources import load_sources
 from notifyhub_digest.timeutils import JST, compute_daily_window
@@ -93,8 +92,6 @@ def build_digest_outputs(
                 if not (window.start_utc <= e.published_at_utc < window.end_utc):
                     continue
 
-                rule = evaluate_rule(e.title, e.summary)
-
                 analysis = AnalysisResult(summary_html="", technical_terms=[], impact_level="Unknown", threat_type="-")
                 if openai_cfg is not None:
                     try:
@@ -106,8 +103,6 @@ def build_digest_outputs(
                             published_at_iso=e.published_at_utc.isoformat(),
                             original_url=e.link,
                             summary=e.summary,
-                            rule_severity=rule.severity,
-                            rule_reason=rule.reason,
                         )
                     except Exception as ai_e:
                         logger.warning("OpenAI analysis failed: %s (%s)", e.entry_id, ai_e)
@@ -125,8 +120,6 @@ def build_digest_outputs(
                     category=src.category,
                     published_at=e.published_at_utc,
                     original_url=e.link,
-                    rule_severity=rule.severity,
-                    rule_reason=rule.reason,
                     analysis=analysis,
                 )
 

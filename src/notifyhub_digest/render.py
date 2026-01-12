@@ -100,7 +100,6 @@ def write_manifest(
                 "source_name": it.source_name,
                 "category": it.category,
                 "published_at": it.published_at.isoformat(),
-                "rule_severity": it.rule_severity,
                 "impact_level": it.analysis.impact_level,
                 "threat_type": it.analysis.threat_type,
                 "summary_preview": _summary_preview(it.analysis.summary_html),
@@ -141,9 +140,8 @@ def write_article_html(
         "published_at_jst": html.escape(item.published_at.astimezone(JST).isoformat()),
         "original_url": html.escape(_safe_url(item.original_url)),
         "impact_level": html.escape(item.analysis.impact_level),
-        "rule_severity": html.escape(item.rule_severity),
+        "impact_reason": html.escape(item.analysis.impact_reason),
         "threat_type": html.escape(item.analysis.threat_type),
-        "rule_reason": html.escape(item.rule_reason),
         # summary_htmlは既にサニタイズ済み前提（属性禁止/許可タグのみ）
         "summary_html": item.analysis.summary_html,
         "technical_terms_html": _term_cards_html(item),

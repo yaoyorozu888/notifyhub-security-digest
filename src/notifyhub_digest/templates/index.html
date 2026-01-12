@@ -59,7 +59,7 @@
     }
     .controls{
       display:grid;
-      grid-template-columns: 1.2fr 0.6fr 0.6fr 0.6fr 0.6fr;
+      grid-template-columns: 1.4fr 0.6fr 0.6fr 0.6fr;
       gap:10px;
       padding:14px;
       background:rgba(18,28,58,.6);
@@ -173,9 +173,6 @@
     .tag.level-Medium{border-color:rgba(122,162,255,.65); color:#dbe6ff}
     .tag.level-Low{border-color:rgba(74,222,128,.55); color:#d0ffe2}
     .tag.level-Info{border-color:rgba(169,180,223,.55); color:rgba(169,180,223,.95)}
-    .tag.rule-HIGH{border-color:rgba(251,113,133,.55); color:#ffd0d7}
-    .tag.rule-MEDIUM{border-color:rgba(251,191,36,.55); color:#ffe9b0}
-    .tag.rule-LOW{border-color:rgba(169,180,223,.45); color:rgba(169,180,223,.95)}
     .content{min-width:0; flex:1}
     .content h3{
       margin:0;
@@ -263,7 +260,7 @@
         <div class="metaRow">
           <span class="chip">総件数 <strong id="total">-</strong></span>
           <span class="chip">表示中 <strong id="shown">-</strong></span>
-          <span class="chip">並び <strong id="sortLabel">重要度→新着</strong></span>
+          <span class="chip">並び <strong id="sortLabel">Impact→新着</strong></span>
         </div>
       </div>
       <div class="metaRow" style="justify-content:flex-end">
@@ -276,7 +273,7 @@
         <div class="ctrl" style="grid-column: span 2;">
           <label for="q" class="labelRow">
             <span>検索（タイトル / ソース / 種別）</span>
-            <span class="help" data-tip="タイトル、ソース名、種別（Threat/Rule/Impact）を横断検索します。キーワードは部分一致。"></span>
+            <span class="help" data-tip="タイトル、ソース名、種別（Threat/Impact）を横断検索します。キーワードは部分一致。"></span>
           </label>
           <input id="q" type="search" placeholder="例: CVE, Microsoft, ransomware, zero-day ..." />
         </div>
@@ -289,19 +286,6 @@
           <select id="impact">
             <option value="">すべて</option>
             <option>Critical</option><option>High</option><option>Medium</option><option>Low</option><option>Info</option>
-          </select>
-        </div>
-
-        <div class="ctrl">
-          <label for="rule" class="labelRow">
-            <span>Rule（既存）</span>
-            <span class="help" data-tip="MVPルール（キーワード/CVE検出）による分類です。再現性優先のシグナル。"></span>
-          </label>
-          <select id="rule">
-            <option value="">すべて</option>
-            <option value="HIGH">HIGH</option>
-            <option value="MEDIUM">MEDIUM</option>
-            <option value="LOW">LOW</option>
           </select>
         </div>
 
@@ -319,13 +303,12 @@
         <div class="ctrl">
           <label for="sort" class="labelRow">
             <span>並び替え</span>
-            <span class="help" data-tip="重要度/Impact/新着順/タイトルで並び替えます。"></span>
+            <span class="help" data-tip="Impact/新着順/タイトルで並び替えます。"></span>
           </label>
           <select id="sort">
-            <option value="severity_then_time">重要度→新着</option>
+            <option value="impact_then_time">Impact→新着</option>
             <option value="time_desc">新着</option>
             <option value="time_asc">古い順</option>
-            <option value="impact_then_time">Impact→新着</option>
             <option value="title_asc">タイトル(A→Z)</option>
           </select>
         </div>
@@ -333,7 +316,7 @@
 
       <div class="summaryBar">
         <div>
-          <span class="tiny">Tip:</span> 重大度は <span class="mono">Rule</span>（既存）と <span class="mono">Impact</span>（AI）を併記しています。
+          <span class="tiny">Tip:</span> 重大度は <span class="mono">Impact</span>（AI）で表示しています。
         </div>
         <div class="right">
           <button class="btn" id="reset">条件リセット</button>
@@ -371,7 +354,6 @@
 
     // ---- Severity ranking
     const impactRank = { "Critical":0, "High":1, "Medium":2, "Low":3, "Info":4, "Unknown":5, "":5, null:5, undefined:5 };
-    const ruleRank   = { "HIGH":0, "MEDIUM":1, "LOW":2, "":3, null:3, undefined:3 };
 
     // ---- State
     let manifest = null;
@@ -394,7 +376,6 @@
         const src = it.source_name ?? "-";
         const pub = toJstLabel(it.published_at);
         const impact = it.impact_level ?? "Unknown";
-        const rule = it.rule_severity ?? "-";
         const threat = it.threat_type ?? "-";
         const summary = it.summary_preview ?? "";
         const detailHref = it.article_path ?? ("articles/" + entryId + ".html");
@@ -408,7 +389,6 @@
         badgeCol.innerHTML = `
           <div class="tagRow">
             <span class="tag level-${escapeHtml(impact)}">Impact: ${escapeHtml(impact)}</span>
-            <span class="tag rule-${escapeHtml(rule)}">Rule: ${escapeHtml(rule)}</span>
           </div>
           <div class="tagRow">
             <span class="tag">${escapeHtml(threat)}</span>
@@ -439,7 +419,6 @@
     function applyFilters(){
       const q = qs("q").value.trim().toLowerCase();
       const impact = qs("impact").value;
-      const rule = qs("rule").value;
       const category = qs("category").value;
       const sort = qs("sort").value;
 
@@ -448,16 +427,13 @@
       if(q){
         items = items.filter(it => {
           const hay = [
-            it.title, it.source_name, it.threat_type, it.rule_severity, it.impact_level
+            it.title, it.source_name, it.threat_type, it.impact_level
           ].filter(Boolean).join(" ").toLowerCase();
           return hay.includes(q);
         });
       }
       if(impact){
         items = items.filter(it => (it.impact_level ?? "Unknown") === impact);
-      }
-      if(rule){
-        items = items.filter(it => (it.rule_severity ?? "") === rule);
       }
       if(category){
         items = items.filter(it => (it.category ?? "") === category);
@@ -467,15 +443,7 @@
       const byTimeDesc = (a,b) => new Date(b.published_at||0) - new Date(a.published_at||0);
       const byTimeAsc  = (a,b) => new Date(a.published_at||0) - new Date(b.published_at||0);
 
-      if(sort === "severity_then_time"){
-        items.sort((a,b) => {
-          const ra = ruleRank[a.rule_severity] ?? 3;
-          const rb = ruleRank[b.rule_severity] ?? 3;
-          if(ra !== rb) return ra - rb;
-          return byTimeDesc(a,b);
-        });
-        qs("sortLabel").textContent = "重要度→新着";
-      }else if(sort === "impact_then_time"){
+      if(sort === "impact_then_time"){
         items.sort((a,b) => {
           const ia = impactRank[a.impact_level] ?? 5;
           const ib = impactRank[b.impact_level] ?? 5;
@@ -507,8 +475,7 @@
           ...x,
           // normalize defaults
           category: x.category ?? "reporting",
-          impact_level: x.impact_level ?? "Unknown",
-          rule_severity: x.rule_severity ?? ""
+          impact_level: x.impact_level ?? "Unknown"
         }));
 
         qs("total").textContent = String(allItems.length);
@@ -519,7 +486,7 @@
         qs("window").textContent = `${from} 〜 ${to}`;
         qs("generated").textContent = manifest.generated_at_jst ? toJstLabel(manifest.generated_at_jst) : "-";
         // Hook events
-        ["q","impact","rule","category","sort"].forEach(id => {
+        ["q","impact","category","sort"].forEach(id => {
           qs(id).addEventListener("input", applyFilters);
           qs(id).addEventListener("change", applyFilters);
         });
@@ -527,9 +494,8 @@
         qs("reset").addEventListener("click", () => {
           qs("q").value = "";
           qs("impact").value = "";
-          qs("rule").value = "";
           qs("category").value = "";
-          qs("sort").value = "severity_then_time";
+          qs("sort").value = "impact_then_time";
         applyFilters();
         });
 

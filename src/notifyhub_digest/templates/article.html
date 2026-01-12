@@ -97,9 +97,6 @@
     .tag.level-Medium{border-color:rgba(122,162,255,.65); color:#dbe6ff}
     .tag.level-Low{border-color:rgba(74,222,128,.55); color:#d0ffe2}
     .tag.level-Info{border-color:rgba(169,180,223,.55); color:rgba(169,180,223,.95)}
-    .tag.rule-HIGH{border-color:rgba(251,113,133,.55); color:#ffd0d7}
-    .tag.rule-MEDIUM{border-color:rgba(251,191,36,.55); color:#ffe9b0}
-    .tag.rule-LOW{border-color:rgba(169,180,223,.45); color:rgba(169,180,223,.95)}
     .body{
       padding:16px;
       display:flex;
@@ -213,7 +210,6 @@
 
         <div class="tags">
           <span class="tag level-{{impact_level}}">Impact: {{impact_level}}</span>
-          <span class="tag rule-{{rule_severity}}">Rule: {{rule_severity}}</span>
           <span class="tag">{{threat_type}}</span>
         </div>
 
@@ -225,10 +221,9 @@
 
       <div class="body">
         <div class="section">
-          <h2>🧠 ルール判定根拠（MVP）</h2>
-          <div class="ruleReason">{{rule_reason}}</div>
+          <h2>Impact判定理由</h2>
+          <div class="ruleReason">{{impact_reason}}</div>
         </div>
-
         <div class="section summary">
           <h2>🧾 要約（ChatGPT）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->

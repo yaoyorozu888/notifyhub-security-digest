@@ -115,9 +115,7 @@ def _render_items_html(*, items: list[FeedItem], digest_root_url: str) -> str:
     for it in items:
         title = html.escape(it.title)
         src = html.escape(it.source_name)
-        sev = html.escape(it.rule_severity)
         impact = html.escape(it.analysis.impact_level)
-        reason = html.escape(it.rule_reason)
 
         original = _safe_url(it.original_url)
         original_attr = html.escape(original, quote=True)
@@ -130,13 +128,11 @@ def _render_items_html(*, items: list[FeedItem], digest_root_url: str) -> str:
                 [
                     '<div style="padding:14px;border:1px solid #e5e7eb;border-radius:12px;margin-bottom:12px;">',
                     '  <div style="font-size:14px;line-height:1.4;">'
-                    f"    <span style=\"display:inline-block;padding:2px 8px;border-radius:999px;background:#111827;color:#fff;font-size:12px;\">{sev}</span> "
                     f"    <a href=\"{original_attr}\" style=\"color:#111827;text-decoration:none;font-weight:700;\">{title}</a>"
                     f"    <span style=\"font-size:12px;margin-left:6px;\"><a href=\"{article_attr}\" style=\"color:#2563eb;\">(Web版)</a></span>"
                     f"    <span style=\"color:#6b7280;font-size:12px;\"> ({src})</span>"
                     "  </div>",
                     f'  <div style="margin-top:6px;font-size:12px;color:#374151;">Impact: <strong>{impact}</strong></div>',
-                    f'  <div style="margin-top:6px;font-size:12px;color:#6b7280;">Rule: {reason}</div>',
                     "</div>",
                 ]
             )
@@ -165,7 +161,6 @@ def _render_summary_html(items: list[FeedItem]) -> str:
         parts = [f"{k} {counts[k]}" for k in order]
         return " / ".join(parts)
 
-    rule_counts = count_by("rule_severity", ["HIGH", "MEDIUM", "LOW"])
     impact_counts = count_by("analysis", ["Critical", "High", "Medium", "Low", "Info", "Unknown"])
     sources = len({it.source_name for it in items if it.source_name})
     by_source: dict[str, int] = {}
@@ -182,7 +177,6 @@ def _render_summary_html(items: list[FeedItem]) -> str:
         [
             '<div style="padding:12px 14px;background:#f9fafb;border:1px solid #e5e7eb;border-radius:10px;">',
             f'  <div style="font-size:13px;color:#111827;">このレポートには <strong>{total}</strong> 件の記事が含まれます。</div>',
-            f'  <div style="margin-top:6px;font-size:12px;color:#374151;">Rule: {rule_counts}</div>',
             f'  <div style="margin-top:4px;font-size:12px;color:#374151;">Impact(AI): {impact_counts}</div>',
             f'  <div style="margin-top:4px;font-size:12px;color:#6b7280;">対象ソース数: {sources}</div>',
             (
