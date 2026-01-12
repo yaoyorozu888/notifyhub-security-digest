@@ -6,7 +6,7 @@ on:
       send_email:
         description: "Send email via ACS"
         required: false
-        default: "false"
+        default: "true"
         type: choice
         options:
           - "false"
@@ -83,8 +83,8 @@ jobs:
           set -euo pipefail
           source <(cat runat.env)
 
-          # Scheduled run: generate site only (no email) by default.
-          SEND_EMAIL=false
+          # Scheduled run: send email by default.
+          SEND_EMAIL=true
           if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
             SEND_EMAIL="${{ inputs.send_email }}"
           fi
