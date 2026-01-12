@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import html
 import json
+import re
 from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
@@ -30,6 +31,18 @@ def _render_template(template: str, mapping: dict[str, str]) -> str:
     for k, v in mapping.items():
         out = out.replace("{{" + k + "}}", v)
     return out
+
+
+_TAG_RE = re.compile(r"<[^>]+>")
+
+
+def _summary_preview(summary_html: str, *, max_len: int = 180) -> str:
+    text = _TAG_RE.sub("", summary_html or "").strip()
+    if not text:
+        return ""
+    if len(text) <= max_len:
+        return text
+    return text[: max_len - 1] + "…"
 
 
 def _term_cards_html(item: FeedItem) -> str:
@@ -90,6 +103,7 @@ def write_manifest(
                 "rule_severity": it.rule_severity,
                 "impact_level": it.analysis.impact_level,
                 "threat_type": it.analysis.threat_type,
+                "summary_preview": _summary_preview(it.analysis.summary_html),
                 "article_path": it.article_path,
                 "original_url": it.original_url,
             }

@@ -11,10 +11,10 @@ def sanitize_summary_html(summary_html: str) -> str:
     失敗時は固定メッセージに置換。
     """
 
-    fallback = "<p>分析に失敗しました（HTML検証エラー）</p>"
+    fallback = ""
     raw = (summary_html or "").strip()
     if not raw:
-        return fallback
+        return ""
 
     try:
         cleaned = bleach.clean(
@@ -27,6 +27,6 @@ def sanitize_summary_html(summary_html: str) -> str:
 
         # Allowlist sanitization is sufficient; accept cleaned output to avoid
         # unnecessary fallbacks caused by minor formatting differences.
-        return cleaned if cleaned else fallback
+        return cleaned if cleaned else ""
     except Exception:
         return fallback

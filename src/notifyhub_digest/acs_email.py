@@ -117,7 +117,6 @@ def _render_items_html(*, items: list[FeedItem], digest_root_url: str) -> str:
         src = html.escape(it.source_name)
         sev = html.escape(it.rule_severity)
         impact = html.escape(it.analysis.impact_level)
-        threat = html.escape(it.analysis.threat_type)
         reason = html.escape(it.rule_reason)
 
         original = _safe_url(it.original_url)
@@ -125,9 +124,6 @@ def _render_items_html(*, items: list[FeedItem], digest_root_url: str) -> str:
 
         article_url = _safe_url(urljoin(_safe_url(digest_root_url), it.article_path))
         article_attr = html.escape(article_url, quote=True)
-
-        # summary_html is already strictly sanitized (allowlist tags, no attrs)
-        summary = it.analysis.summary_html or ""
 
         blocks.append(
             "\n".join(
@@ -139,9 +135,8 @@ def _render_items_html(*, items: list[FeedItem], digest_root_url: str) -> str:
                     f"    <span style=\"font-size:12px;margin-left:6px;\"><a href=\"{article_attr}\" style=\"color:#2563eb;\">(Web版)</a></span>"
                     f"    <span style=\"color:#6b7280;font-size:12px;\"> ({src})</span>"
                     "  </div>",
-                    f'  <div style="margin-top:6px;font-size:12px;color:#374151;">Impact: <strong>{impact}</strong> / Threat: <strong>{threat}</strong></div>',
+                    f'  <div style="margin-top:6px;font-size:12px;color:#374151;">Impact: <strong>{impact}</strong></div>',
                     f'  <div style="margin-top:6px;font-size:12px;color:#6b7280;">Rule: {reason}</div>',
-                    (f'  <div style="margin-top:10px;font-size:13px;color:#111827;line-height:1.6;">{summary}</div>' if summary else ""),
                     "</div>",
                 ]
             )
@@ -173,6 +168,15 @@ def _render_summary_html(items: list[FeedItem]) -> str:
     rule_counts = count_by("rule_severity", ["HIGH", "MEDIUM", "LOW"])
     impact_counts = count_by("analysis", ["Critical", "High", "Medium", "Low", "Info", "Unknown"])
     sources = len({it.source_name for it in items if it.source_name})
+    by_source: dict[str, int] = {}
+    for it in items:
+        if not it.source_name:
+            continue
+        by_source[it.source_name] = by_source.get(it.source_name, 0) + 1
+    top_sources = ", ".join(
+        f"{name} {count}"
+        for name, count in sorted(by_source.items(), key=lambda x: (-x[1], x[0]))[:5]
+    )
 
     return "\n".join(
         [
@@ -181,6 +185,11 @@ def _render_summary_html(items: list[FeedItem]) -> str:
             f'  <div style="margin-top:6px;font-size:12px;color:#374151;">Rule: {rule_counts}</div>',
             f'  <div style="margin-top:4px;font-size:12px;color:#374151;">Impact(AI): {impact_counts}</div>',
             f'  <div style="margin-top:4px;font-size:12px;color:#6b7280;">対象ソース数: {sources}</div>',
+            (
+                f'  <div style="margin-top:4px;font-size:12px;color:#6b7280;">主なソース: {html.escape(top_sources)}</div>'
+                if top_sources
+                else ""
+            ),
             "</div>",
         ]
     )
