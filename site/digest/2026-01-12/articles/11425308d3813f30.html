@@ -214,7 +214,7 @@
         <div class="tags">
           <span class="tag level-Medium">Impact: Medium</span>
           <span class="tag rule-MEDIUM">Rule: MEDIUM</span>
-          <span class="tag">Input Validation Flaw / 入力検証不備</span>
+          <span class="tag">Input Validation Vulnerability / 入力検証不備</span>
         </div>
 
         <div class="btnRow">
@@ -233,7 +233,7 @@
         <div class="section summary">
           <h2>🧾 要約（ChatGPT）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          <div><h4>概要</h4><p>Apache Software Foundationが開発するJavaベースのWebアプリケーションフレームワーク「Apache Struts」において、XML入力の検証が欠落している脆弱性（CVE-2025-68493）が報告されています。この欠陥は、バージョン2.0.0から6.1.0までの全系統に影響し、不正なXMLデータを処理する際に想定外の動作や情報漏えいを引き起こす可能性があります。修正版は6.1.1で提供されています。</p><h4>現場の学び</h4><ul><li>入力データのバリデーション欠如は、古典的ながら依然として重大なリスク要因である。</li><li>Strutsのような基盤フレームワークでは、アプリケーションコード側での防御だけでなく、ライブラリ更新の継続的な追従が不可欠。</li><li>XMLパーサーの設定（外部エンティティの無効化など）も併せて確認することで、類似の脆弱性を防止できる。</li></ul><h4>初動・継続対応の示唆</h4><ul><li>影響バージョンを使用しているシステムを特定し、速やかに6.1.1へアップグレードする。</li><li>XML入力を扱う機能の有無を棚卸しし、不要なXML処理を無効化する。</li><li>脆弱性管理プロセスにおいて、Strutsなどの基盤ソフトウェアを定期的に監査対象に含める。</li></ul></div>
+          <div><h4>概要</h4><p>Apache Software Foundationが開発するJavaベースのWebアプリケーションフレームワーク「Apache Struts」において、XML入力の検証が欠落している脆弱性（CVE-2025-68493）が報告されています。この欠陥は、バージョン2.0.0から6.1.0までの全系統に影響し、不正なXMLデータを処理する際に想定外の動作や情報漏えい、サービス障害を引き起こす可能性があります。修正版は6.1.1で提供されています。</p><h4>現場の学び</h4><ul><li>入力データの検証不足は、古典的ながら依然として重大なリスク要因であることを再確認できる。</li><li>長期間にわたるバージョン系列に影響が及ぶため、ライブラリの依存関係管理と定期的な棚卸しの重要性が高い。</li><li>XML処理を行うアプリケーションでは、外部エンティティ（XXE）やスキーマ検証の設定を明示的に制御することが推奨される。</li></ul><h4>初動・継続対応の示唆</h4><ul><li>使用中のStrutsバージョンを確認し、6.1.1以降へ速やかにアップグレードする。</li><li>XML入力を受け付ける機能がある場合、スキーマ検証や入力制限を強化する。</li><li>依存ライブラリの更新をCI/CDパイプラインに組み込み、脆弱性情報の自動監視を行う。</li></ul></div>
         </div>
 
         <div class="section">
@@ -245,11 +245,11 @@
 </div>
 <div class="termCard">
   <div class="term">XML Validation / XML検証</div>
-  <p class="exp">XMLデータが定義されたスキーマや構造に従っているかを確認する処理。</p>
+  <p class="exp">XMLデータが定義されたスキーマやDTDに準拠しているかを確認する処理。</p>
 </div>
 <div class="termCard">
-  <div class="term">Input Validation / 入力検証</div>
-  <p class="exp">外部から受け取るデータが期待された形式・値であるかを確認するセキュリティ対策。</p>
+  <div class="term">XXE (XML External Entity) / XML外部実体参照</div>
+  <p class="exp">XMLパーサが外部エンティティを処理する際に発生する脆弱性で、情報漏えいなどにつながる。</p>
 </div>
           </div>
         </div>

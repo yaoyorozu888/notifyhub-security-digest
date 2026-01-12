@@ -214,7 +214,7 @@
         <div class="tags">
           <span class="tag level-Medium">Impact: Medium</span>
           <span class="tag rule-MEDIUM">Rule: MEDIUM</span>
-          <span class="tag">IoTデバイスにおける認証欠如脆弱性</span>
+          <span class="tag">IoTデバイスの認証欠如による不正操作</span>
         </div>
 
         <div class="btnRow">
@@ -233,7 +233,7 @@
         <div class="section summary">
           <h2>🧾 要約（ChatGPT）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          <div><h4>概要</h4><p>Flycatcher Toys社の教育用デバイス「smART Sketcher」バージョン2.0までに、Bluetooth Low Energy（BLE）インターフェースに認証欠如の脆弱性（CVE-2026-0842）が確認されています。攻撃者はローカルネットワーク範囲内でBLE通信を操作することで、認証を経ずにデバイスへアクセスできる可能性があります。すでにエクスプロイトコードが公開されており、実際の悪用リスクが存在します。ベンダーは報告を受けたものの、現時点で対応を行っていないとされています。</p><h4>現場の学び</h4><ul><li>IoTデバイスや教育玩具など、一般消費者向け製品でもBLEなどの無線通信経路に認証欠如が残るケースがある。</li><li>ローカルネットワーク限定の攻撃でも、家庭内や教育機関など閉域環境でのリスク評価が必要。</li><li>ベンダー対応が遅れる場合、利用者側での物理的・ネットワーク的なアクセス制限が重要となる。</li></ul><h4>初動・継続対応の示唆</h4><ul><li>対象デバイスを業務ネットワークから分離し、BLE通信を無効化または制限する。</li><li>ベンダーからの修正版提供がない場合、利用停止や代替製品の検討を行う。</li><li>同様のBLE機能を持つ他製品についても、認証や暗号化設定の有無を点検する。</li></ul></div>
+          <div><h4>概要</h4><p>玩具メーカーFlycatcher Toysの製品「smART Sketcher」バージョン2.0以前に、Bluetooth Low Energy（BLE）インターフェースに認証欠如の脆弱性（CVE-2026-0842）が確認されました。攻撃者は同一ローカルネットワーク内からBLE通信を操作することで、認証を経ずに機器制御や情報取得を行える可能性があります。既にエクスプロイトコードが公開されており、実際の悪用リスクが存在します。ベンダーからの公式対応は報告されていません。</p><h4>現場の学び</h4><ul><li>IoT玩具や教育デバイスなど、一般消費者向け製品でもBLE通信の認証欠如が深刻なセキュリティリスクとなる。</li><li>ローカルネットワーク限定の攻撃であっても、家庭内Wi-Fiや教育施設内ネットワークなど、実際の利用環境では攻撃機会が存在する。</li><li>ベンダー対応がない場合、利用者側でのリスク低減策（通信遮断、物理的隔離など）が重要となる。</li></ul><h4>初動・継続対応の示唆</h4><ul><li>該当製品を使用している場合、BLE機能を無効化するか、ネットワーク接続を制限する。</li><li>IoT資産管理台帳を確認し、同様のBLE機能を持つ未更新デバイスを洗い出す。</li><li>ベンダーからの修正版提供がない場合、利用停止や代替製品の検討を推奨。</li><li>CSIRTとしては、公開済みエクスプロイトの挙動を確認し、社内ネットワークでの不審なBLE通信の検知ルールを整備する。</li></ul></div>
         </div>
 
         <div class="section">
@@ -241,19 +241,15 @@
           <div class="terms">
             <div class="termCard">
   <div class="term">Bluetooth Low Energy (BLE) / 低消費電力Bluetooth</div>
-  <p class="exp">短距離無線通信規格の一種で、IoT機器やウェアラブルデバイスで広く利用される。</p>
+  <p class="exp">短距離無線通信規格Bluetoothの省電力版で、IoT機器やウェアラブルデバイスで広く利用される。</p>
 </div>
 <div class="termCard">
   <div class="term">Exploit / エクスプロイト</div>
-  <p class="exp">脆弱性を悪用してシステムを攻撃するためのコードや手法。</p>
+  <p class="exp">脆弱性を悪用してシステムを不正に操作するためのコードや手法。</p>
 </div>
 <div class="termCard">
   <div class="term">Authentication / 認証</div>
-  <p class="exp">通信相手やユーザーの正当性を確認する仕組み。</p>
-</div>
-<div class="termCard">
-  <div class="term">Local Network / ローカルネットワーク</div>
-  <p class="exp">家庭や企業など限られた範囲内で構成されるネットワーク。</p>
+  <p class="exp">通信相手や利用者が正当なものであることを確認する仕組み。</p>
 </div>
           </div>
         </div>

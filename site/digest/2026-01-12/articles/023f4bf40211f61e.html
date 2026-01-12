@@ -212,9 +212,9 @@
         </div>
 
         <div class="tags">
-          <span class="tag level-Unknown">Impact: Unknown</span>
+          <span class="tag level-High">Impact: High</span>
           <span class="tag rule-MEDIUM">Rule: MEDIUM</span>
-          <span class="tag">-</span>
+          <span class="tag">Remote Code Execution</span>
         </div>
 
         <div class="btnRow">
@@ -233,13 +233,28 @@
         <div class="section summary">
           <h2>🧾 要約（ChatGPT）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          
+          <div><h4>概要</h4><p>UTT社の無線ルータ「进取 520W」ファームウェア（バージョン1.7.7-180627）に、<code>/goform/formFireWall</code>内の<code>strcpy</code>関数処理に起因するバッファオーバーフロー脆弱性（CVE-2026-0837）が確認されています。攻撃者は<code>GroupName</code>引数を細工することでリモートから任意コード実行やサービス停止を引き起こす可能性があります。既にエクスプロイトコードが公開されており、ベンダからの対応は報告されていません。</p><h4>現場の学び</h4><ul><li>組み込み機器でもWeb管理インターフェース経由の入力検証不備が重大なリスクとなる。</li><li>ベンダが応答しない場合、利用者側でのネットワーク分離やアクセス制御が重要。</li><li>公開エクスプロイトが存在する場合、攻撃観測や検知ルールの更新を優先すべき。</li></ul><h4>初動・継続対応の示唆</h4><ul><li>該当機器をインターネットから隔離し、管理画面へのアクセスを制限する。</li><li>IPS/IDSで<code>/goform/formFireWall</code>への異常なPOSTリクエストを監視する。</li><li>代替機器の検討やファームウェア更新情報の継続的な追跡を行う。</li></ul></div>
         </div>
 
         <div class="section">
           <h2>📌 キーワード解説</h2>
           <div class="terms">
-            
+            <div class="termCard">
+  <div class="term">Buffer Overflow / バッファオーバーフロー</div>
+  <p class="exp">プログラムが確保したメモリ領域を超えてデータを書き込むことで、任意コード実行やクラッシュを引き起こす脆弱性。</p>
+</div>
+<div class="termCard">
+  <div class="term">Exploit / エクスプロイト</div>
+  <p class="exp">脆弱性を悪用してシステムを攻撃するための具体的なコードや手法。</p>
+</div>
+<div class="termCard">
+  <div class="term">Firmware / ファームウェア</div>
+  <p class="exp">ハードウェア機器に組み込まれた制御用ソフトウェア。更新により脆弱性修正が行われることがある。</p>
+</div>
+<div class="termCard">
+  <div class="term">Remote Code Execution / リモートコード実行</div>
+  <p class="exp">攻撃者がネットワーク経由で任意のコードを実行できる状態。</p>
+</div>
           </div>
         </div>
 

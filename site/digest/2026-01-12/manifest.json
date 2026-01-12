@@ -42,9 +42,9 @@
       "category": "reporting",
       "published_at": "2026-01-11T05:15:58.893000+00:00",
       "rule_severity": "MEDIUM",
-      "impact_level": "Unknown",
-      "threat_type": "-",
-      "summary_preview": "",
+      "impact_level": "High",
+      "threat_type": "Remote Code Execution",
+      "summary_preview": "概要UTT社の無線ルータ「进取 520W」ファームウェア（バージョン1.7.7-180627）に、/goform/formFireWall内のstrcpy関数処理に起因するバッファオーバーフロー脆弱性（CVE-2026-0837）が確認されています。攻撃者はGroupName引数を細工することでリモートから任意コード実行やサービス停止を引き起こす可能性があ…",
       "article_path": "articles/023f4bf40211f61e.html",
       "original_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-0837"
     },
@@ -108,8 +108,8 @@
       "published_at": "2026-01-11T08:16:00.150000+00:00",
       "rule_severity": "MEDIUM",
       "impact_level": "Medium",
-      "threat_type": "IoTデバイスにおける認証欠如脆弱性",
-      "summary_preview": "概要Flycatcher Toys社の教育用デバイス「smART Sketcher」バージョン2.0までに、Bluetooth Low Energy（BLE）インターフェースに認証欠如の脆弱性（CVE-2026-0842）が確認されています。攻撃者はローカルネットワーク範囲内でBLE通信を操作することで、認証を経ずにデバイスへアクセスできる可能性があります…",
+      "threat_type": "IoTデバイスの認証欠如による不正操作",
+      "summary_preview": "概要玩具メーカーFlycatcher Toysの製品「smART Sketcher」バージョン2.0以前に、Bluetooth Low Energy（BLE）インターフェースに認証欠如の脆弱性（CVE-2026-0842）が確認されました。攻撃者は同一ローカルネットワーク内からBLE通信を操作することで、認証を経ずに機器制御や情報取得を行える可能性がありま…",
       "article_path": "articles/e125861a5a6fde58.html",
       "original_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-0842"
     },
@@ -147,7 +147,7 @@
       "published_at": "2026-01-11T13:15:45.610000+00:00",
       "rule_severity": "MEDIUM",
       "impact_level": "Medium",
-      "threat_type": "Input Validation Flaw / 入力検証不備",
+      "threat_type": "Input Validation Vulnerability / 入力検証不備",
       "summary_preview": "概要Apache Software Foundationが開発するJavaベースのWebアプリケーションフレームワーク「Apache Struts」において、XML入力の検証が欠落している脆弱性（CVE-2025-68493）が報告されています。この欠陥は、バージョン2.0.0から6.1.0までの全系統に影響し、不正なXMLデータを処理する際に想定外の動作…",
       "article_path": "articles/11425308d3813f30.html",
       "original_url": "https://nvd.nist.gov/vuln/detail/CVE-2025-68493"
@@ -173,8 +173,8 @@
       "published_at": "2026-01-11T15:23:34+00:00",
       "rule_severity": "LOW",
       "impact_level": "Low",
-      "threat_type": "Legal / Compliance",
-      "summary_preview": "概要カリフォルニア州の個人情報保護機関であるCalifornia Privacy Protection Agency（CalPrivacy）は、データブローカーとして登録せずに数百万人分の健康・個人データを販売していたマーケティング企業Datamastersに対し、データ再販を禁止する措置を取った。これは州のデータブローカー法に基づく執行であり、健康関連デ…",
+      "threat_type": "Privacy & Legal Compliance",
+      "summary_preview": "概要カリフォルニア州のプライバシー保護機関であるCalifornia Privacy Protection Agency（CalPrivacy）は、データブローカーとして登録せずに数百万人分の健康・個人データを販売していたマーケティング企業Datamastersに対して措置を講じた。新たな州法により、健康データの再販を禁止する規制が強化され、個人情報の商業…",
       "article_path": "articles/2fd12c88771b3ee0.html",
       "original_url": "https://www.bleepingcomputer.com/news/legal/california-bans-data-broker-reselling-health-data-of-millions/"
     },
@@ -186,8 +186,8 @@
       "published_at": "2026-01-11T00:29:10+00:00",
       "rule_severity": "LOW",
       "impact_level": "Low",
-      "threat_type": "Service Change / 機能廃止",
-      "summary_preview": "概要Microsoftは、文書作成ソフトウェアであるWordに搭載されていた「Send to Kindle」機能を廃止することを発表した。この機能は、Wordから直接Amazonの電子書籍リーダーKindleへ文書を送信できるもので、ユーザーの利便性を高めていた。今後は、Amazonが提供する「Send to Kindle」アプリやWebサービスを利用する…",
+      "threat_type": "Service Change / 機能廃止・サービス変更",
+      "summary_preview": "概要Microsoftは、文書作成ソフトウェアであるWordに搭載されていた「Send to Kindle（Kindleへ送信）」機能を廃止すると発表した。この機能は、Wordから直接Amazonの電子書籍リーダーKindleへ文書を送信できるもので、ユーザーの利便性向上を目的に提供されていた。廃止の理由は明示されていないが、Microsoftのクラウド連…",
       "article_path": "articles/7874af9ff2d3e058.html",
       "original_url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-is-retiring-send-to-kindle-in-word/"
     },
@@ -200,7 +200,7 @@
       "rule_severity": "LOW",
       "impact_level": "Low",
       "threat_type": "Tool Update / ツール更新",
-      "summary_preview": "概要マルウェア解析や脅威ハンティングで利用されるパターンマッチングツール「YARA-X」のバージョン1.11.0がリリースされた。このリリースでは、新たにハッシュ関数に関する警告機能が追加された。これにより、ルール作成時に非推奨または誤用されているハッシュ関数の利用を検知し、解析精度やパフォーマンスの低下を防ぐことが可能となる。現場の学びYARA-Xは従来…",
+      "summary_preview": "概要マルウェア解析や脅威ハンティングで利用されるパターンマッチングツール「YARA-X」のバージョン1.11.0がリリースされた。このリリースでは、新機能としてハッシュ関数に関する警告機能が追加された。これにより、ルール作成時に非推奨または誤用の可能性があるハッシュ関数を検出し、解析精度や再現性を高めることができる。現場の学びYARA-XはYARAの後継的…",
       "article_path": "articles/009d8e516183eb55.html",
       "original_url": "https://isc.sans.edu/diary/rss/32616"
     }
