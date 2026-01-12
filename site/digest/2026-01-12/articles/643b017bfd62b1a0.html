@@ -212,14 +212,14 @@
         </div>
 
         <div class="tags">
-          <span class="tag level-Unknown">Impact: Unknown</span>
+          <span class="tag level-Medium">Impact: Medium</span>
           <span class="tag rule-MEDIUM">Rule: MEDIUM</span>
-          <span class="tag">-</span>
+          <span class="tag">Cross-Site Scripting (XSS)</span>
         </div>
 
         <div class="btnRow">
           <a class="linkbtn" href="https://nvd.nist.gov/vuln/detail/CVE-2025-15505" target="_blank" rel="noopener noreferrer">原文リンク</a>
-          <a class="linkbtn" href="https://notifyhub.site/digest/2026-01-12/">日次トップ</a>
+          <a class="linkbtn" href="https://www.notifyhub.site/digest/2026-01-12/">日次トップ</a>
         </div>
       </div>
 
@@ -233,13 +233,24 @@
         <div class="section summary">
           <h2>🧾 要約（ChatGPT）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          <p>分析に失敗しました（HTML検証エラー）</p>
+          <div><h4>概要</h4><p>Luxul XWR-600（バージョン4.0.1まで）のWeb管理インターフェースにおいて、Guest Network/Wireless Profile SSIDパラメータの処理に不備があり、クロスサイトスクリプティング（XSS）が発生する脆弱性が報告されています。攻撃者はリモートから悪意あるスクリプトを埋め込み、管理者のブラウザ上で任意のコードを実行させる可能性があります。既にエクスプロイトコードが公開されており、ベンダーからの技術的な対応声明は確認されていません。</p><h4>現場の学び</h4><ul><li>家庭用・中小企業向けルータ製品でも、Web管理UIの入力検証不備が攻撃対象となる。</li><li>ベンダーからの対応が遅れるケースでは、利用者側での緩和策（管理UIの外部公開制限など）が重要。</li><li>公開済みエクスプロイトがある場合、PoC検証や攻撃観測の優先度を上げるべき。</li></ul><h4>初動・継続対応の示唆</h4><ul><li>管理インターフェースをインターネットから隔離し、アクセス制御を強化する。</li><li>該当機器のファームウェア更新情報を継続的に監視し、ベンダー対応が出た場合は速やかに適用する。</li><li>ログ監視で不審な管理画面アクセスやXSS試行を検知できるように設定を見直す。</li></ul></div>
         </div>
 
         <div class="section">
           <h2>📌 キーワード解説</h2>
           <div class="terms">
-            
+            <div class="termCard">
+  <div class="term">Cross-Site Scripting (XSS) / クロスサイトスクリプティング</div>
+  <p class="exp">Webアプリケーションの入力値を適切にエスケープしないことで、攻撃者が任意のスクリプトを埋め込む脆弱性。</p>
+</div>
+<div class="termCard">
+  <div class="term">Web Administration Interface / Web管理インターフェース</div>
+  <p class="exp">ネットワーク機器やシステムをブラウザ経由で設定・管理するためのWebベースの管理画面。</p>
+</div>
+<div class="termCard">
+  <div class="term">Exploit / エクスプロイト</div>
+  <p class="exp">脆弱性を悪用してシステムに不正な動作を引き起こすためのコードや手法。</p>
+</div>
           </div>
         </div>
 
@@ -247,7 +258,7 @@
           <h2>🕘 生成情報</h2>
           <div class="ruleReason">
 対象期間：2026-01-11T06:00:00+09:00 〜 2026-01-12T06:00:00+09:00
-生成時刻：2026-01-12T06:00:00+09:00
+生成時刻：2026-01-12T17:12:06.231770+09:00
 免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
           </div>
         </div>

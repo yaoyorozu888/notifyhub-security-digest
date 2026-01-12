@@ -212,14 +212,14 @@
         </div>
 
         <div class="tags">
-          <span class="tag level-Unknown">Impact: Unknown</span>
+          <span class="tag level-Medium">Impact: Medium</span>
           <span class="tag rule-MEDIUM">Rule: MEDIUM</span>
-          <span class="tag">-</span>
+          <span class="tag">IoTデバイスの認証欠如による不正操作リスク</span>
         </div>
 
         <div class="btnRow">
           <a class="linkbtn" href="https://nvd.nist.gov/vuln/detail/CVE-2026-0842" target="_blank" rel="noopener noreferrer">原文リンク</a>
-          <a class="linkbtn" href="https://notifyhub.site/digest/2026-01-12/">日次トップ</a>
+          <a class="linkbtn" href="https://www.notifyhub.site/digest/2026-01-12/">日次トップ</a>
         </div>
       </div>
 
@@ -233,13 +233,28 @@
         <div class="section summary">
           <h2>🧾 要約（ChatGPT）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          <p>分析に失敗しました（HTML検証エラー）</p>
+          <div><h4>概要</h4><p>Flycatcher Toys社のsmART Sketcher（バージョン2.0まで）において、Bluetooth Low Energy（BLE）インターフェースに認証欠如の脆弱性（CVE-2026-0842）が確認されています。攻撃者はローカルネットワーク範囲内でBLE通信を悪用し、認証を経ずにデバイス操作や情報取得を行う可能性があります。既にエクスプロイトコードが公開されており、実際の悪用リスクが存在します。ベンダーからの公式対応は現時点で確認されていません。</p><h4>現場の学び</h4><ul><li>IoT玩具などのBLE機器でも、認証欠如が実際の攻撃経路となり得ることを再認識する。</li><li>公開エクスプロイトの存在は、PoC段階を超えた実運用リスクを意味するため、脆弱性管理の優先度を上げる必要がある。</li><li>ベンダー未対応のケースでは、利用制限や通信遮断など運用側でのリスク低減策を検討する。</li></ul><h4>初動・継続対応の示唆</h4><ul><li>対象デバイスのBLE通信を監視し、不審な接続試行を検知するルールを導入する。</li><li>物理的・ネットワーク的にBLE通信範囲を制限し、攻撃者の接近を防ぐ。</li><li>ベンダーからの修正情報がない場合は、利用停止や代替製品の検討を含めたリスク評価を行う。</li></ul></div>
         </div>
 
         <div class="section">
           <h2>📌 キーワード解説</h2>
           <div class="terms">
-            
+            <div class="termCard">
+  <div class="term">Bluetooth Low Energy (BLE) / 低消費電力Bluetooth</div>
+  <p class="exp">短距離通信を行う無線規格で、IoT機器やウェアラブルデバイスで広く利用される。</p>
+</div>
+<div class="termCard">
+  <div class="term">Missing Authentication / 認証欠如</div>
+  <p class="exp">通信や操作において、正当な利用者確認が行われない状態を指す。</p>
+</div>
+<div class="termCard">
+  <div class="term">Exploit / エクスプロイト</div>
+  <p class="exp">脆弱性を悪用してシステムを攻撃するための手法やコード。</p>
+</div>
+<div class="termCard">
+  <div class="term">Proof of Concept (PoC) / 概念実証コード</div>
+  <p class="exp">脆弱性が実際に悪用可能であることを示すための検証用コード。</p>
+</div>
           </div>
         </div>
 
@@ -247,7 +262,7 @@
           <h2>🕘 生成情報</h2>
           <div class="ruleReason">
 対象期間：2026-01-11T06:00:00+09:00 〜 2026-01-12T06:00:00+09:00
-生成時刻：2026-01-12T06:00:00+09:00
+生成時刻：2026-01-12T17:12:06.231770+09:00
 免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
           </div>
         </div>

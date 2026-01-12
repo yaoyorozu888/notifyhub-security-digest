@@ -65,7 +65,7 @@ jobs:
       - name: Generate digest (optionally send email)
         env:
           # Publish URL (fixed)
-          DIGEST_BASE_URL: "https://notifyhub.site/digest"
+          DIGEST_BASE_URL: "https://www.notifyhub.site/digest"
 
           # ACS Email (optional)
           ACS_EMAIL_CONNECTION_STRING: ${{ secrets.ACS_EMAIL_CONNECTION_STRING }}

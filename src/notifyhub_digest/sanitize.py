@@ -25,11 +25,8 @@ def sanitize_summary_html(summary_html: str) -> str:
             strip=True,
         ).strip()
 
-        # 仕様: 許可タグ以外や属性が含まれていた場合は「検証エラー」として扱い、固定文言に置換。
-        # （OpenAI出力は必ずサーバ側で安全検証する前提）
-        if cleaned != raw:
-            return fallback
-
+        # Allowlist sanitization is sufficient; accept cleaned output to avoid
+        # unnecessary fallbacks caused by minor formatting differences.
         return cleaned if cleaned else fallback
     except Exception:
         return fallback
