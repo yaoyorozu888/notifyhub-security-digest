@@ -214,12 +214,12 @@
         <div class="tags">
           <span class="tag level-Low">Impact: Low</span>
           <span class="tag rule-LOW">Rule: LOW</span>
-          <span class="tag">Data Exposure / データ露出</span>
+          <span class="tag">Data Scraping / 情報スクレイピング</span>
         </div>
 
         <div class="btnRow">
           <a class="linkbtn" href="https://www.bleepingcomputer.com/news/security/instagram-denies-breach-amid-claims-of-17-million-account-data-leak/" target="_blank" rel="noopener noreferrer">原文リンク</a>
-          <a class="linkbtn" href="https://www.notifyhub.site/digest/2026-01-12/">日次トップ</a>
+          <a class="linkbtn" href="https://notifyhub.site/digest/2026-01-12/">日次トップ</a>
         </div>
       </div>
 
@@ -232,7 +232,7 @@
         <div class="section summary">
           <h2>🧾 要約（ChatGPT）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          <div><h4>概要</h4><p>Instagramは、約1,700万件のアカウントデータが漏えいしたとする主張に対し、侵害は発生していないと否定した。報告によると、攻撃者はパスワードリセットメールを大量に要求できる不具合を悪用し、公開情報をスクレイピングしてデータベースを構築した可能性がある。Instagramはこの不具合を修正済みであり、内部システムへの不正アクセスは確認されていないと説明している。</p><h4>現場の学び</h4><ul><li>「侵害」と「スクレイピングによる情報収集」は異なる事象であり、初動判断時に区別する必要がある。</li><li>外部で公開される「漏えいデータ」の真偽を検証する際は、データ構造や時系列、既知の公開情報との一致度を確認することが重要。</li><li>サービス提供者側の公式声明や修正対応の有無を追跡し、誤情報拡散を防ぐことがCSIRTの役割となる。</li></ul><h4>初動・継続対応の示唆</h4><ul><li>自組織の利用者に対して、パスワードリセットや多要素認証の有効化を促す周知を行う。</li><li>スクレイピングや自動化リクエストを悪用した攻撃の兆候を検知できるよう、API利用ログやレート制限設定を点検する。</li><li>外部リーク情報を監視し、同一メールアドレスやユーザー名が含まれていないかを継続的に確認する。</li></ul></div>
+          <div><h4>概要</h4><p>Instagramは、約1,700万件のアカウントデータが流出したとする報告に対し、侵害は発生していないと否定した。報告によると、攻撃者はパスワードリセットメールを大量に要求できる不具合を悪用し、ユーザー名やメールアドレスなどの情報をスクレイピングした可能性がある。Instagramはこの不具合を修正済みであり、システム侵入やパスワード漏えいは確認されていないと説明している。</p><h4>現場の学び</h4><ul><li>スクレイピングによる情報収集は「侵害」ではなくても、ユーザー体験やブランド信頼に影響を与えるリスクがある。</li><li>パスワードリセット機能など、認証関連のAPIはレートリミットやCAPTCHAなどの防御策を常に検証する必要がある。</li><li>「データ流出」と「不正取得（スクレイピング）」の区別を明確にし、社内外への説明方針を整理しておくことが重要。</li></ul><h4>初動・継続対応の示唆</h4><ul><li>自組織の公開APIやフォームに対して、異常なリクエスト頻度を検知する監視ルールを再点検する。</li><li>外部で自社ドメインやブランド名を含む「流出データ」が報告された場合、侵害の有無を技術的に検証し、広報・法務と連携して迅速に説明を行う。</li><li>スクレイピング対策として、Bot検知やアクセス制御の強化を継続的に実施する。</li></ul></div>
         </div>
 
         <div class="section">
@@ -240,15 +240,15 @@
           <div class="terms">
             <div class="termCard">
   <div class="term">Scraping / スクレイピング</div>
-  <p class="exp">ウェブサイト上の公開情報を自動的に収集する行為。正規利用と悪用の境界が問題となる。</p>
+  <p class="exp">Webサイトなどから自動的にデータを収集する行為。正規APIを介さずに情報を取得する場合、利用規約違反やセキュリティリスクとなることがある。</p>
+</div>
+<div class="termCard">
+  <div class="term">Rate Limiting / レートリミット</div>
+  <p class="exp">一定時間内のリクエスト数を制限する仕組み。サービスの乱用や攻撃を防ぐ目的で用いられる。</p>
 </div>
 <div class="termCard">
   <div class="term">Password Reset Abuse / パスワードリセット悪用</div>
-  <p class="exp">パスワードリセット機能を大量にリクエストして情報を得たり、サービス妨害を狙う攻撃手法。</p>
-</div>
-<div class="termCard">
-  <div class="term">Data Leak / データ漏えい</div>
-  <p class="exp">意図せず外部に個人情報や機密情報が流出する事象。スクレイピングによる公開情報収集とは区別される。</p>
+  <p class="exp">パスワードリセット機能を大量に利用して情報を推測・収集する攻撃手法。通知メールやレスポンスの挙動からユーザー情報を得ることがある。</p>
 </div>
           </div>
         </div>
@@ -257,7 +257,7 @@
           <h2>🕘 生成情報</h2>
           <div class="ruleReason">
 対象期間：2026-01-11T06:00:00+09:00 〜 2026-01-12T06:00:00+09:00
-生成時刻：2026-01-12T16:23:58.360906+09:00
+生成時刻：2026-01-12T06:00:00+09:00
 免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
           </div>
         </div>

@@ -219,7 +219,7 @@
 
         <div class="btnRow">
           <a class="linkbtn" href="https://nvd.nist.gov/vuln/detail/CVE-2026-0838" target="_blank" rel="noopener noreferrer">原文リンク</a>
-          <a class="linkbtn" href="https://www.notifyhub.site/digest/2026-01-12/">日次トップ</a>
+          <a class="linkbtn" href="https://notifyhub.site/digest/2026-01-12/">日次トップ</a>
         </div>
       </div>
 
@@ -233,7 +233,7 @@
         <div class="section summary">
           <h2>🧾 要約（ChatGPT）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          <div><h4>概要</h4><p>UTT製ルータ「进取 520W」ファームウェア1.7.7-180627において、<code>/goform/ConfigWirelessBase</code>内の<code>strcpy</code>関数処理にバッファオーバーフローの脆弱性（CVE-2026-0838）が確認されています。攻撃者が<code>ssid</code>引数を細工することで任意コード実行やサービス停止を引き起こす可能性があります。リモートからの悪用が可能であり、既にエクスプロイトコードが公開されています。ベンダーからの対応は報告されていません。</p><h4>現場の学び</h4><ul><li>組み込み機器でもWeb管理インターフェース経由の入力検証不備が深刻なリスクを生む。</li><li>エクスプロイトが公開済みの場合、PoC検証や攻撃観測を優先的に行う必要がある。</li><li>ベンダー対応がない製品では、ネットワーク分離やアクセス制御による防御が現実的な対策となる。</li></ul><h4>初動・継続対応の示唆</h4><ul><li>対象機器の利用有無を資産管理情報から即時確認し、外部公開されている場合は遮断を検討する。</li><li>ファームウェア更新が提供されていない場合、代替機器の導入やセグメント分離を実施する。</li><li>IDS/IPSやログ監視で<code>/goform/ConfigWirelessBase</code>への異常なPOSTリクエストを検知するルールを追加する。</li></ul></div>
+          <div><h4>概要</h4><p>UTT社の無線ルータ「进取 520W」ファームウェア（バージョン1.7.7-180627）に、<code>/goform/ConfigWirelessBase</code>内の<code>strcpy</code>関数処理に起因するバッファオーバーフロー脆弱性（CVE-2026-0838）が確認されています。攻撃者は<code>ssid</code>パラメータを細工することでリモートから任意コード実行やサービス妨害を引き起こす可能性があります。既にエクスプロイトコードが公開されており、実際の攻撃利用リスクが高まっています。ベンダからの公式対応は報告されていません。</p><h4>現場の学び</h4><ul><li>組み込み機器でもWeb設定機能経由での入力検証不備が重大なリスクとなる。</li><li>公開済みエクスプロイトが存在する場合、PoC段階から攻撃実行までの時間が短いことを前提に対応を検討する。</li><li>ベンダ対応が不明な製品では、ネットワーク分離やアクセス制御によるリスク低減策が重要。</li></ul><h4>初動・継続対応の示唆</h4><ul><li>該当機器の利用有無を棚卸しし、外部からの管理画面アクセスを遮断する。</li><li>ファームウェア更新が提供されていない場合は、代替機器の検討やセグメント分離を実施する。</li><li>IDS/IPSで<code>/goform/ConfigWirelessBase</code>への不審リクエストを監視し、攻撃兆候を早期検知する。</li></ul></div>
         </div>
 
         <div class="section">
@@ -245,11 +245,15 @@
 </div>
 <div class="termCard">
   <div class="term">Exploit / エクスプロイト</div>
-  <p class="exp">脆弱性を悪用してシステムを攻撃するためのコードや手法。</p>
+  <p class="exp">脆弱性を悪用してシステムを攻撃するための具体的なコードや手法。</p>
 </div>
 <div class="termCard">
   <div class="term">Firmware / ファームウェア</div>
   <p class="exp">ハードウェア機器に組み込まれた制御用ソフトウェアで、更新により脆弱性修正が行われることがある。</p>
+</div>
+<div class="termCard">
+  <div class="term">Remote Code Execution / リモートコード実行</div>
+  <p class="exp">攻撃者がネットワーク経由で任意のコードを実行できる状態を指す。</p>
 </div>
           </div>
         </div>
@@ -258,7 +262,7 @@
           <h2>🕘 生成情報</h2>
           <div class="ruleReason">
 対象期間：2026-01-11T06:00:00+09:00 〜 2026-01-12T06:00:00+09:00
-生成時刻：2026-01-12T16:23:58.360906+09:00
+生成時刻：2026-01-12T06:00:00+09:00
 免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
           </div>
         </div>

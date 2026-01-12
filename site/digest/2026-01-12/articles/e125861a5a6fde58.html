@@ -212,14 +212,14 @@
         </div>
 
         <div class="tags">
-          <span class="tag level-Medium">Impact: Medium</span>
+          <span class="tag level-Unknown">Impact: Unknown</span>
           <span class="tag rule-MEDIUM">Rule: MEDIUM</span>
-          <span class="tag">IoTデバイスの認証欠如による不正アクセス</span>
+          <span class="tag">-</span>
         </div>
 
         <div class="btnRow">
           <a class="linkbtn" href="https://nvd.nist.gov/vuln/detail/CVE-2026-0842" target="_blank" rel="noopener noreferrer">原文リンク</a>
-          <a class="linkbtn" href="https://www.notifyhub.site/digest/2026-01-12/">日次トップ</a>
+          <a class="linkbtn" href="https://notifyhub.site/digest/2026-01-12/">日次トップ</a>
         </div>
       </div>
 
@@ -233,28 +233,13 @@
         <div class="section summary">
           <h2>🧾 要約（ChatGPT）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          <div><h4>概要</h4><p>Flycatcher Toys社のsmART Sketcher（バージョン2.0まで）において、Bluetooth Low Energy（BLE）インターフェースに認証欠如の脆弱性（CVE-2026-0842）が確認されています。攻撃者はローカルネットワーク範囲内でBLE通信を操作することで、認証を経ずに機器へアクセスできる可能性があります。すでにエクスプロイトコードが公開されており、実際の悪用リスクが存在します。ベンダーからの対応は現時点で報告されていません。</p><h4>現場の学び</h4><ul><li>IoT玩具などのBLE機器でも、認証・暗号化の欠如が深刻なリスクを生むことを再認識する。</li><li>公開済みエクスプロイトがある場合、PoCレベルでも容易に再現可能であるため、物理的・無線的なアクセス制御が重要。</li><li>ベンダー未対応のケースでは、利用者側でのリスク低減策（通信遮断、利用制限）を検討する必要がある。</li></ul><h4>初動・継続対応の示唆</h4><ul><li>対象製品を使用している場合は、BLE通信を無効化するか、信頼できるネットワーク環境下でのみ使用する。</li><li>脆弱性情報の更新を継続的に監視し、ベンダーからの修正版提供があれば速やかに適用する。</li><li>IoT機器の導入時には、BLEやWi-Fiなど無線通信のセキュリティ設計を事前に評価する体制を整備する。</li></ul></div>
+          <p>分析に失敗しました（HTML検証エラー）</p>
         </div>
 
         <div class="section">
           <h2>📌 キーワード解説</h2>
           <div class="terms">
-            <div class="termCard">
-  <div class="term">Bluetooth Low Energy (BLE) / 低消費電力Bluetooth</div>
-  <p class="exp">短距離無線通信規格の一種で、IoT機器やウェアラブルデバイスで広く利用される。</p>
-</div>
-<div class="termCard">
-  <div class="term">Authentication / 認証</div>
-  <p class="exp">通信相手の正当性を確認する仕組み。欠如すると不正アクセスが容易になる。</p>
-</div>
-<div class="termCard">
-  <div class="term">Exploit / エクスプロイト</div>
-  <p class="exp">脆弱性を悪用するための具体的な攻撃コードや手法。</p>
-</div>
-<div class="termCard">
-  <div class="term">Local Network / ローカルネットワーク</div>
-  <p class="exp">限定された範囲の通信ネットワーク。BLE通信は通常この範囲内で行われる。</p>
-</div>
+            
           </div>
         </div>
 
@@ -262,7 +247,7 @@
           <h2>🕘 生成情報</h2>
           <div class="ruleReason">
 対象期間：2026-01-11T06:00:00+09:00 〜 2026-01-12T06:00:00+09:00
-生成時刻：2026-01-12T16:23:58.360906+09:00
+生成時刻：2026-01-12T06:00:00+09:00
 免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
           </div>
         </div>
