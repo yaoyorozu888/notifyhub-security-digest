@@ -14,6 +14,23 @@ jobs:
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
     runs-on: ubuntu-latest
     name: Build and Deploy Job
+    env:
+      DIGEST_BASE_URL: ${{ vars.DIGEST_BASE_URL }}
+      ACS_EMAIL_CONNECTION_STRING: ${{ secrets.ACS_EMAIL_CONNECTION_STRING }}
+      ACS_EMAIL_SENDER: ${{ secrets.ACS_EMAIL_SENDER }}
+      ACS_EMAIL_TO: ${{ secrets.ACS_EMAIL_TO }}
+      ACS_EMAIL_SUBJECT_PREFIX: ${{ vars.ACS_EMAIL_SUBJECT_PREFIX }}
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
+      OPENAI_MAX_TOKENS: ${{ vars.OPENAI_MAX_TOKENS }}
+      OPENAI_BASE_URL: ${{ vars.OPENAI_BASE_URL }}
+      OPENAI_TEMPERATURE: ${{ vars.OPENAI_TEMPERATURE }}
+      NOTIFYHUB_USER_AGENT: ${{ vars.NOTIFYHUB_USER_AGENT }}
+      ACS_EMAIL_ENABLED: ${{ vars.ACS_EMAIL_ENABLED }}
+      DOTENV_OVERRIDE: ${{ vars.DOTENV_OVERRIDE }}
+      NOTIFYHUB_HTTP_TIMEOUT: ${{ vars.NOTIFYHUB_HTTP_TIMEOUT }}
+      NOTIFYHUB_HTTP_RETRIES: ${{ vars.NOTIFYHUB_HTTP_RETRIES }}
+      LOG_LEVEL: ${{ vars.LOG_LEVEL }}
     steps:
       - uses: actions/checkout@v3
         with:
