@@ -212,9 +212,9 @@
         </div>
 
         <div class="tags">
-          <span class="tag level-Medium">Impact: Medium</span>
+          <span class="tag level-Unknown">Impact: Unknown</span>
           <span class="tag rule-MEDIUM">Rule: MEDIUM</span>
-          <span class="tag">Cross-Site Scripting (XSS)</span>
+          <span class="tag">-</span>
         </div>
 
         <div class="btnRow">
@@ -233,24 +233,13 @@
         <div class="section summary">
           <h2>🧾 要約（ChatGPT）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          <div><h4>概要</h4><p>Luxul社の無線ルーター「XWR-600」（バージョン4.0.1まで）において、Web管理インターフェースの不明な機能にクロスサイトスクリプティング（XSS）の脆弱性が確認されています。攻撃者はリモートから「Guest Network / Wireless Profile SSID」パラメータを操作することで、任意のスクリプトを実行させる可能性があります。既にエクスプロイトコードが公開されており、悪用リスクが現実的です。ベンダーからの技術的な対応声明は現時点で確認されていません。</p><h4>現場の学び</h4><ul><li>家庭用・SOHO向けネットワーク機器でも、Web管理UIを介したXSS脆弱性が依然として多く、管理画面の公開範囲管理が重要である。</li><li>ベンダーが迅速に対応しないケースでは、利用者側での防御策（管理画面の外部非公開化、ファームウェア更新の監視）が不可欠。</li><li>公開済みエクスプロイトの存在は、PoC（概念実証コード）を基にした自動スキャン攻撃の増加を示唆する。</li></ul><h4>初動・継続対応の示唆</h4><ul><li>該当機器を利用している場合、管理画面をインターネットから隔離し、SSID設定などの入力値を最小限に制限する。</li><li>Luxul社のサポート情報やコミュニティフォーラムを定期的に確認し、修正版ファームウェアの提供有無を追跡する。</li><li>CSIRTとしては、同型機器の利用状況を資産管理台帳で確認し、影響範囲を特定した上で暫定的なアクセス制御策を提示する。</li></ul></div>
+          
         </div>
 
         <div class="section">
           <h2>📌 キーワード解説</h2>
           <div class="terms">
-            <div class="termCard">
-  <div class="term">Cross-Site Scripting (XSS) / クロスサイトスクリプティング</div>
-  <p class="exp">Webアプリケーションに悪意あるスクリプトを埋め込み、利用者のブラウザ上で実行させる攻撃手法。</p>
-</div>
-<div class="termCard">
-  <div class="term">Exploit / エクスプロイト</div>
-  <p class="exp">脆弱性を悪用して不正な動作を引き起こすためのコードや手法。</p>
-</div>
-<div class="termCard">
-  <div class="term">Web Administration Interface / Web管理インターフェース</div>
-  <p class="exp">ネットワーク機器やソフトウェアの設定を行うためのWebベースの管理画面。</p>
-</div>
+            
           </div>
         </div>
 
@@ -258,7 +247,7 @@
           <h2>🕘 生成情報</h2>
           <div class="ruleReason">
 対象期間：2026-01-11T06:00:00+09:00 〜 2026-01-12T06:00:00+09:00
-生成時刻：2026-01-12T18:36:51.252167+09:00
+生成時刻：2026-01-12T06:00:00+09:00
 免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
           </div>
         </div>
