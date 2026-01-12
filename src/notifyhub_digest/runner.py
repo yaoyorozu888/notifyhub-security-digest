@@ -105,6 +105,7 @@ def build_digest_outputs(
                             source_name=src.name,
                             published_at_iso=e.published_at_utc.isoformat(),
                             original_url=e.link,
+                            summary=e.summary,
                             rule_severity=rule.severity,
                             rule_reason=rule.reason,
                         )

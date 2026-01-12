@@ -150,6 +150,42 @@ def _render_items_html(*, items: list[FeedItem], digest_root_url: str) -> str:
     return "\n".join(blocks)
 
 
+def _render_summary_html(items: list[FeedItem]) -> str:
+    total = len(items)
+    if total == 0:
+        return (
+            '<div style="padding:12px 14px;background:#f9fafb;border:1px solid #e5e7eb;border-radius:10px;">'
+            "本日の対象記事は0件です。"
+            "</div>"
+        )
+
+    def count_by(getter: str, order: list[str]) -> str:
+        counts = {k: 0 for k in order}
+        for it in items:
+            key = getattr(it, getter, None)
+            if getter == "analysis":
+                key = it.analysis.impact_level
+            if key in counts:
+                counts[key] += 1
+        parts = [f"{k} {counts[k]}" for k in order]
+        return " / ".join(parts)
+
+    rule_counts = count_by("rule_severity", ["HIGH", "MEDIUM", "LOW"])
+    impact_counts = count_by("analysis", ["Critical", "High", "Medium", "Low", "Info", "Unknown"])
+    sources = len({it.source_name for it in items if it.source_name})
+
+    return "\n".join(
+        [
+            '<div style="padding:12px 14px;background:#f9fafb;border:1px solid #e5e7eb;border-radius:10px;">',
+            f'  <div style="font-size:13px;color:#111827;">このレポートには <strong>{total}</strong> 件の記事が含まれます。</div>',
+            f'  <div style="margin-top:6px;font-size:12px;color:#374151;">Rule: {rule_counts}</div>',
+            f'  <div style="margin-top:4px;font-size:12px;color:#374151;">Impact(AI): {impact_counts}</div>',
+            f'  <div style="margin-top:4px;font-size:12px;color:#6b7280;">対象ソース数: {sources}</div>',
+            "</div>",
+        ]
+    )
+
+
 def build_digest_email_html(
     *,
     day: str,
@@ -172,6 +208,7 @@ def build_digest_email_html(
         "generated_at_jst": html.escape(generated_at_jst),
         "digest_url": html.escape(digest_url, quote=True),
         "count_total": html.escape(str(len(items))),
+        "summary_html": _render_summary_html(items),
         "items_html": _render_items_html(items=items, digest_root_url=digest_root_url),
     }
 

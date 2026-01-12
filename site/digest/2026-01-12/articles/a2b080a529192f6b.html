@@ -212,9 +212,9 @@
         </div>
 
         <div class="tags">
-          <span class="tag level-Medium">Impact: Medium</span>
+          <span class="tag level-High">Impact: High</span>
           <span class="tag rule-MEDIUM">Rule: MEDIUM</span>
-          <span class="tag">Software Vulnerability</span>
+          <span class="tag">Remote Code Execution</span>
         </div>
 
         <div class="btnRow">
@@ -233,23 +233,23 @@
         <div class="section summary">
           <h2>🧾 要約（ChatGPT）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          <div><h4>CVE-2026-0838 の概要</h4><p>NIST NVDで公開されたCVE-2026-0838は、2026年1月11日に登録された脆弱性情報です。現時点では詳細な技術情報は限定的ですが、NVDでの登録により、該当ソフトウェアやサービスにおけるセキュリティリスクが確認されています。</p><p>CSIRTとしては、該当製品のベンダーからの公式アドバイザリやパッチ情報を確認し、影響範囲の特定と修正計画の策定を行うことが推奨されます。</p><ul><li>公開元: NIST NVD</li><li>公開日時: 2026-01-11</li><li>深刻度（初期評価）: Medium</li></ul><p>今後の更新によりCVSSスコアや影響範囲が変更される可能性があるため、継続的なモニタリングが必要です。</p></div>
+          <div><h4>概要</h4><p>UTT製ルータ「进取 520W」ファームウェア1.7.7-180627において、<code>/goform/ConfigWirelessBase</code>内の<code>strcpy</code>関数処理にバッファオーバーフローの脆弱性（CVE-2026-0838）が確認されています。攻撃者が<code>ssid</code>引数を細工することで任意コード実行やサービス停止を引き起こす可能性があります。リモートからの悪用が可能であり、既にエクスプロイトコードが公開されています。ベンダーからの対応は報告されていません。</p><h4>現場の学び</h4><ul><li>組み込み機器でもWeb管理インターフェース経由の入力検証不備が深刻なリスクを生む。</li><li>エクスプロイトが公開済みの場合、PoC検証や攻撃観測を優先的に行う必要がある。</li><li>ベンダー対応がない製品では、ネットワーク分離やアクセス制御による防御が現実的な対策となる。</li></ul><h4>初動・継続対応の示唆</h4><ul><li>対象機器の利用有無を資産管理情報から即時確認し、外部公開されている場合は遮断を検討する。</li><li>ファームウェア更新が提供されていない場合、代替機器の導入やセグメント分離を実施する。</li><li>IDS/IPSやログ監視で<code>/goform/ConfigWirelessBase</code>への異常なPOSTリクエストを検知するルールを追加する。</li></ul></div>
         </div>
 
         <div class="section">
           <h2>📌 キーワード解説</h2>
           <div class="terms">
             <div class="termCard">
-  <div class="term">NVD</div>
-  <p class="exp">National Vulnerability Database。米国NISTが運営する脆弱性情報データベース。</p>
+  <div class="term">Buffer Overflow / バッファオーバーフロー</div>
+  <p class="exp">プログラムが確保したメモリ領域を超えてデータを書き込むことで、任意コード実行やクラッシュを引き起こす脆弱性。</p>
 </div>
 <div class="termCard">
-  <div class="term">CVE</div>
-  <p class="exp">Common Vulnerabilities and Exposures。脆弱性を一意に識別するためのID体系。</p>
+  <div class="term">Exploit / エクスプロイト</div>
+  <p class="exp">脆弱性を悪用してシステムを攻撃するためのコードや手法。</p>
 </div>
 <div class="termCard">
-  <div class="term">CSIRT</div>
-  <p class="exp">Computer Security Incident Response Team。組織内外のセキュリティインシデント対応を行う専門チーム。</p>
+  <div class="term">Firmware / ファームウェア</div>
+  <p class="exp">ハードウェア機器に組み込まれた制御用ソフトウェアで、更新により脆弱性修正が行われることがある。</p>
 </div>
           </div>
         </div>
@@ -258,7 +258,7 @@
           <h2>🕘 生成情報</h2>
           <div class="ruleReason">
 対象期間：2026-01-11T06:00:00+09:00 〜 2026-01-12T06:00:00+09:00
-生成時刻：2026-01-12T15:10:46.483440+09:00
+生成時刻：2026-01-12T16:23:58.360906+09:00
 免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
           </div>
         </div>

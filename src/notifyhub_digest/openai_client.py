@@ -22,7 +22,8 @@ class OpenAIConfig:
 
 SYSTEM_PROMPT = (
     "あなたはCSIRT実務者向けのアナリストです。\n"
-    "与えられたRSS記事メタ情報から、実務判断に役立つ要約と分析を作成してください。\n"
+    "実務経験3年程度の担当者でも学びがある深さで、実務判断に役立つ要約と分析を作成してください。\n"
+    "入力に含まれる参考URLや引用の文脈がある場合は、その情報も考慮してください。\n"
     "必ずJSONのみを返してください。前置きやコードフェンス(``` )は不要です。"
 )
 
@@ -36,7 +37,11 @@ def _analysis_schema_hint() -> str:
         '  "impact_level": "Critical|High|Medium|Low|Info",\n'
         '  "threat_type": "..."\n'
         "}\n"
-        "summary_htmlには <p><ul><ol><li><strong><h4><code><br><div> 以外を含めないでください。属性は付けないでください。"
+        "summary_htmlには <p><ul><ol><li><strong><h4><code><br><div> 以外を含めないでください。属性は付けないでください。\n"
+        "summary_htmlは <h4>概要</h4><p>..</p><h4>現場の学び</h4><ul><li>..</li></ul>"
+        "<h4>初動・継続対応の示唆</h4><ul><li>..</li></ul> の流れを意識してください。\n"
+        "technical_terms.term は英語の表記を先に書き、その後に日本語の用語名を付けてください（例: "
+        '"Exploit Chain / 攻撃連鎖"）。explanation は日本語で簡潔に説明してください。'
     )
 
 
@@ -68,6 +73,7 @@ def load_openai_config() -> OpenAIConfig | None:
 
 
 _FENCE_RE = re.compile(r"^```(?:json)?\s*|\s*```$", re.IGNORECASE)
+_URL_RE = re.compile(r"https?://[^\s)\"']+")
 
 
 def _extract_json_object(text: str) -> dict[str, Any]:
@@ -149,6 +155,7 @@ def analyze_item(
     source_name: str,
     published_at_iso: str,
     original_url: str,
+    summary: str | None,
     rule_severity: str,
     rule_reason: str,
 ) -> AnalysisResult:
@@ -158,11 +165,17 @@ def analyze_item(
     - JSONパースに失敗した場合はUnknown/空で返す。
     """
 
+    refs: list[str] = []
+    if summary:
+        refs = _URL_RE.findall(summary)
+
     user = {
         "title": title,
         "source_name": source_name,
         "published_at": published_at_iso,
         "original_url": original_url,
+        "summary": summary or "",
+        "reference_urls": refs[:5],
         "rule_severity": rule_severity,
         "rule_reason": rule_reason,
     }

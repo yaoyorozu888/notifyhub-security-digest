@@ -55,7 +55,7 @@
       border:1px solid rgba(34,48,91,.9);
       border-radius: var(--radius);
       box-shadow: var(--shadow);
-      overflow:hidden;
+      overflow:visible;
     }
     .controls{
       display:grid;
@@ -64,6 +64,7 @@
       padding:14px;
       background:rgba(18,28,58,.6);
       border-bottom:1px solid rgba(34,48,91,.9);
+      overflow:visible;
     }
     @media (max-width: 980px){
       .controls{grid-template-columns: 1fr 1fr; }
@@ -73,6 +74,41 @@
       min-width:0;
     }
     .ctrl label{font-size:11px; color:var(--muted)}
+    .labelRow{display:flex; align-items:center; justify-content:space-between; gap:6px}
+    .help{
+      position:relative;
+      width:14px; height:14px;
+      border-radius:50%;
+      border:1px solid rgba(169,180,223,.5);
+      color:rgba(169,180,223,.9);
+      font-size:10px; line-height:12px;
+      text-align:center;
+      cursor:help;
+      flex:0 0 auto;
+      background:rgba(11,16,32,.5);
+    }
+    .help::after{content:"?";}
+    .help::before{
+      content:attr(data-tip);
+      position:absolute;
+      right:0;
+      top:-8px;
+      transform:translateY(-100%);
+      background:#0b1220;
+      color:#e7ecff;
+      border:1px solid rgba(34,48,91,.9);
+      border-radius:10px;
+      padding:8px 10px;
+      width:220px;
+      max-width:260px;
+      font-size:11px;
+      line-height:1.5;
+      opacity:0;
+      pointer-events:none;
+      box-shadow: var(--shadow);
+      z-index:10;
+    }
+    .help:hover::before{opacity:1;}
     input[type="search"], select{
       width:100%;
       padding:10px 11px;
@@ -93,6 +129,40 @@
     .summaryBar .right{
       display:flex; gap:10px; align-items:center; flex-wrap:wrap;
     }
+    .historyPanel{
+      display:flex; gap:12px; align-items:flex-start; flex-wrap:wrap;
+      padding:12px 14px;
+      border-bottom:1px solid rgba(34,48,91,.9);
+      background:rgba(12,19,40,.55);
+    }
+    .historyPanel .left{
+      min-width:260px;
+      flex:1 1 320px;
+    }
+    .historyPanel .right{
+      flex:2 1 480px;
+      display:flex; flex-direction:column; gap:8px;
+    }
+    .historyRow{
+      display:flex; gap:8px; align-items:center; flex-wrap:wrap;
+    }
+    .historyRow input{
+      flex:1 1 200px;
+    }
+    .historyList{
+      display:flex; flex-wrap:wrap; gap:8px;
+    }
+    .historyLink{
+      display:inline-flex; align-items:center; gap:6px;
+      padding:6px 10px;
+      border-radius:999px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      color:var(--muted);
+      text-decoration:none;
+      font-size:12px;
+    }
+    .historyLink:hover{border-color:rgba(122,162,255,.65); color:var(--text)}
     .btn{
       appearance:none; border:1px solid rgba(34,48,91,.9);
       background:rgba(11,16,32,.55);
@@ -214,12 +284,18 @@
     <div class="panel">
       <div class="controls">
         <div class="ctrl" style="grid-column: span 2;">
-          <label for="q">検索（タイトル / ソース / 種別）</label>
+          <label for="q" class="labelRow">
+            <span>検索（タイトル / ソース / 種別）</span>
+            <span class="help" data-tip="タイトル、ソース名、種別（Threat/Rule/Impact）を横断検索します。キーワードは部分一致。"></span>
+          </label>
           <input id="q" type="search" placeholder="例: CVE, Microsoft, ransomware, zero-day ..." />
         </div>
 
         <div class="ctrl">
-          <label for="impact">Impact（AI）</label>
+          <label for="impact" class="labelRow">
+            <span>Impact（AI）</span>
+            <span class="help" data-tip="AI推定の影響度で絞り込みます。重大度と必ずしも一致しません。"></span>
+          </label>
           <select id="impact">
             <option value="">すべて</option>
             <option>Critical</option><option>High</option><option>Medium</option><option>Low</option><option>Info</option>
@@ -227,7 +303,10 @@
         </div>
 
         <div class="ctrl">
-          <label for="rule">Rule（既存）</label>
+          <label for="rule" class="labelRow">
+            <span>Rule（既存）</span>
+            <span class="help" data-tip="MVPルール（キーワード/CVE検出）による分類です。再現性優先のシグナル。"></span>
+          </label>
           <select id="rule">
             <option value="">すべて</option>
             <option value="HIGH">HIGH</option>
@@ -237,7 +316,10 @@
         </div>
 
         <div class="ctrl">
-          <label for="category">カテゴリ</label>
+          <label for="category" class="labelRow">
+            <span>カテゴリ</span>
+            <span class="help" data-tip="情報源のカテゴリで絞り込みます。将来の分類拡張に備えた枠です。"></span>
+          </label>
           <select id="category">
             <option value="">すべて</option>
             <option value="reporting">reporting</option>
@@ -245,7 +327,10 @@
         </div>
 
         <div class="ctrl">
-          <label for="sort">並び替え</label>
+          <label for="sort" class="labelRow">
+            <span>並び替え</span>
+            <span class="help" data-tip="重要度/Impact/新着順/タイトルで並び替えます。"></span>
+          </label>
           <select id="sort">
             <option value="severity_then_time">重要度→新着</option>
             <option value="time_desc">新着</option>
@@ -263,6 +348,22 @@
         <div class="right">
           <button class="btn" id="reset">条件リセット</button>
           <button class="btn" id="copyLink">このページURLをコピー</button>
+        </div>
+      </div>
+
+      <div class="historyPanel">
+        <div class="left">
+          <div style="font-size:12px;color:#e7ecff;font-weight:600;">過去レポート検索</div>
+          <div class="tiny" style="margin-top:6px;">この端末で閲覧した日付を保存し、すばやく遷移できます。</div>
+        </div>
+        <div class="right">
+          <div class="historyRow">
+            <input id="historyInput" type="search" placeholder="YYYY-MM-DD で検索 / 入力" />
+            <button class="btn" id="historyOpen">開く</button>
+            <button class="btn" id="historyLatest">最新へ</button>
+            <button class="btn" id="historyClear">履歴クリア</button>
+          </div>
+          <div class="historyList" id="historyList"></div>
         </div>
       </div>
 
@@ -292,6 +393,37 @@
           hour:"2-digit", minute:"2-digit"
         }).format(d) + " JST";
       }catch{ return iso; }
+    };
+    const HISTORY_KEY = "nh_digest_history";
+
+    const loadHistory = () => {
+      try{
+        const raw = localStorage.getItem(HISTORY_KEY);
+        const items = raw ? JSON.parse(raw) : [];
+        if(Array.isArray(items)) return items;
+      }catch{}
+      return [];
+    };
+    const saveHistory = (items) => {
+      try{ localStorage.setItem(HISTORY_KEY, JSON.stringify(items)); }catch{}
+    };
+    const historyUrl = (date) => new URL(`../${date}/`, location.href).href;
+    const upsertHistory = (date, generatedAt) => {
+      const items = loadHistory().filter(x => x && x.date && x.date !== date);
+      items.unshift({ date, generated_at: generatedAt || "" });
+      saveHistory(items.slice(0, 60));
+    };
+    const renderHistory = (query = "") => {
+      const list = qs("historyList");
+      const q = query.trim();
+      const items = loadHistory().filter(x => !q || (x.date || "").includes(q));
+      if(items.length === 0){
+        list.innerHTML = '<span class="tiny">該当する履歴がありません。</span>';
+        return;
+      }
+      list.innerHTML = items.map(x => (
+        `<a class="historyLink" href="${escapeHtml(historyUrl(x.date))}">${escapeHtml(x.date)}</a>`
+      )).join("");
     };
 
     // ---- Severity ranking
@@ -441,6 +573,10 @@
         const to = w.to ? toJstLabel(w.to) : "-";
         qs("window").textContent = `${from} 〜 ${to}`;
         qs("generated").textContent = manifest.generated_at_jst ? toJstLabel(manifest.generated_at_jst) : "-";
+        if(manifest.date){
+          upsertHistory(manifest.date, manifest.generated_at_jst);
+        }
+        renderHistory("");
 
         // Hook events
         ["q","impact","rule","category","sort"].forEach(id => {
@@ -454,7 +590,26 @@
           qs("rule").value = "";
           qs("category").value = "";
           qs("sort").value = "severity_then_time";
-          applyFilters();
+          qs("historyInput").addEventListener("input", (e) => {
+          renderHistory(e.target.value || "");
+        });
+        qs("historyOpen").addEventListener("click", () => {
+          const v = qs("historyInput").value.trim();
+          if(!v){
+            alert("日付（YYYY-MM-DD）を入力してください。");
+            return;
+          }
+          location.href = historyUrl(v);
+        });
+        qs("historyLatest").addEventListener("click", () => {
+          location.href = "../latest/";
+        });
+        qs("historyClear").addEventListener("click", () => {
+          saveHistory([]);
+          renderHistory("");
+        });
+
+        applyFilters();
         });
 
         qs("copyLink").addEventListener("click", async () => {
