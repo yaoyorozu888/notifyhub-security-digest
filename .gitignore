@@ -10,9 +10,6 @@ __pycache__/
 .venv/
 .venv
 .env
-site/*
-!site/digest/
-site/digest/**
 
 # Build
 build/
@@ -26,6 +23,9 @@ state/*.sqlite3
 state/*.db
 state/*.json
 state_backdate/
+
+# Generated site (committed for deployment)
+# - `site/**` is intentionally tracked for Azure Static Web Apps deployment.
 
 # VS Code Azure Copilot generated prompts (not part of product)
 .github/chatmodes/

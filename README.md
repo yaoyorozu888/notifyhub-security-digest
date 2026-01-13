@@ -110,10 +110,21 @@ notifyhub-digest email-preview --out-dir .\out
 
 ## SWA + GitHub Actions（スケジュール生成→デプロイ）
 
-SWAでの公開が必須の前提で、GitHub Actionsのスケジュール実行で日次生成し、生成物を `site/` に蓄積してコミット→SWAへデプロイします。
+SWAでの公開が必須の前提で、GitHub Actionsのスケジュール実行で日次生成し、生成物を `site/` に蓄積してコミットします。デプロイは `site/**` の push をトリガーに別workflowで行います。
 
 - 日次生成（スケジュール）: [.github/workflows/digest-generate.yml](.github/workflows/digest-generate.yml)
 - SWAデプロイ（pushトリガ）: [.github/workflows/swa-deploy.yml](.github/workflows/swa-deploy.yml)
+
+### 生成とデプロイの流れ
+
+1) `digest-generate.yml` が `notifyhub-digest run --out-dir site` で静的サイトを生成します（手動実行時は email 送信ON/OFFを選択可能）。
+2) 生成物を `site/` 配下にコミットして `main` へ push します。
+3) `swa-deploy.yml` がその push（`site/**` の変更）をトリガーに、リポジトリ上の `site/` を Azure Static Web Apps へアップロードします（再生成はしません）。
+
+### Actionsログ出力（vars / secrets）
+
+- workflow実行中に vars は `name=value` でログ出力します。
+- secrets は値を出さず、参照している「シークレット名」だけをログ出力します。
 
 ### 前提
 
@@ -124,7 +135,7 @@ SWAでの公開が必須の前提で、GitHub Actionsのスケジュール実行
 ### GitHub Secrets（必須/推奨）
 
 必須
-- `AZURE_STATIC_WEB_APPS_API_TOKEN` : SWAのデプロイトークン
+- `AZURE_STATIC_WEB_APPS_API_TOKEN_WONDERFUL_GROUND_0436BEE00` : SWAのデプロイトークン（workflow内で参照しているシークレット名）
 
 任意（Email送信をする場合）
 - `ACS_EMAIL_CONNECTION_STRING`

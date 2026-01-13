@@ -62,6 +62,60 @@ jobs:
 
           cat runat.env >> $GITHUB_OUTPUT
 
+      - name: Debug vars / secrets (safe)
+        env:
+          # Publish URL
+          DIGEST_BASE_URL: ${{ vars.DIGEST_BASE_URL }}
+
+          # ACS Email (optional)
+          ACS_EMAIL_CONNECTION_STRING: ${{ secrets.ACS_EMAIL_CONNECTION_STRING }}
+          ACS_EMAIL_SENDER: ${{ secrets.ACS_EMAIL_SENDER }}
+          ACS_EMAIL_TO: ${{ secrets.ACS_EMAIL_TO }}
+          ACS_EMAIL_SUBJECT_PREFIX: ${{ vars.ACS_EMAIL_SUBJECT_PREFIX }}
+          ACS_EMAIL_ENABLED: ${{ vars.ACS_EMAIL_ENABLED }}
+
+          # OpenAI (optional)
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
+          OPENAI_MAX_TOKENS: ${{ vars.OPENAI_MAX_TOKENS }}
+          OPENAI_BASE_URL: ${{ vars.OPENAI_BASE_URL }}
+          OPENAI_TEMPERATURE: ${{ vars.OPENAI_TEMPERATURE }}
+
+          # Logging / HTTP
+          NOTIFYHUB_USER_AGENT: ${{ vars.NOTIFYHUB_USER_AGENT }}
+          DOTENV_OVERRIDE: ${{ vars.DOTENV_OVERRIDE }}
+          NOTIFYHUB_HTTP_TIMEOUT: ${{ vars.NOTIFYHUB_HTTP_TIMEOUT }}
+          NOTIFYHUB_HTTP_RETRIES: ${{ vars.NOTIFYHUB_HTTP_RETRIES }}
+          LOG_LEVEL: ${{ vars.LOG_LEVEL }}
+        run: |
+          set -euo pipefail
+          source <(cat runat.env)
+
+          echo "== Run context =="
+          echo "RUN_AT=${RUN_AT-}"
+          echo "DAY=${DAY-}"
+          echo "event_name=${{ github.event_name }}"
+
+          echo "== Vars (name=value) =="
+          echo "DIGEST_BASE_URL=${DIGEST_BASE_URL-}"
+          echo "ACS_EMAIL_SUBJECT_PREFIX=${ACS_EMAIL_SUBJECT_PREFIX-}"
+          echo "ACS_EMAIL_ENABLED=${ACS_EMAIL_ENABLED-}"
+          echo "OPENAI_MODEL=${OPENAI_MODEL-}"
+          echo "OPENAI_MAX_TOKENS=${OPENAI_MAX_TOKENS-}"
+          echo "OPENAI_BASE_URL=${OPENAI_BASE_URL-}"
+          echo "OPENAI_TEMPERATURE=${OPENAI_TEMPERATURE-}"
+          echo "NOTIFYHUB_USER_AGENT=${NOTIFYHUB_USER_AGENT-}"
+          echo "DOTENV_OVERRIDE=${DOTENV_OVERRIDE-}"
+          echo "NOTIFYHUB_HTTP_TIMEOUT=${NOTIFYHUB_HTTP_TIMEOUT-}"
+          echo "NOTIFYHUB_HTTP_RETRIES=${NOTIFYHUB_HTTP_RETRIES-}"
+          echo "LOG_LEVEL=${LOG_LEVEL-}"
+
+          echo "== Secrets (names only) =="
+          echo "ACS_EMAIL_CONNECTION_STRING"
+          echo "ACS_EMAIL_SENDER"
+          echo "ACS_EMAIL_TO"
+          echo "OPENAI_API_KEY"
+
       - name: Generate digest (optionally send email)
         env:
           # Publish URL
@@ -141,13 +195,3 @@ jobs:
 
           git commit -m "chore(digest): publish $DAY"
           git push
-
-      - name: Deploy
-        uses: Azure/static-web-apps-deploy@v1
-        with:
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_WONDERFUL_GROUND_0436BEE00 }}
-          action: "upload"
-          skip_app_build: true
-          app_location: "site"
-          api_location: ""
-          app_artifact_location: "site"
