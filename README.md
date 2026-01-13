@@ -110,18 +110,9 @@ notifyhub-digest email-preview --out-dir .\out
 
 ## SWA + GitHub Actions（スケジュール生成→デプロイ）
 
-SWAでの公開が必須の前提で、GitHub Actionsのスケジュール実行で日次生成し、生成物を `site/` に蓄積してコミットします。デプロイは `site/**` の push をトリガーに別workflowで行います。
+SWAでの公開が必須の前提で、GitHub Actionsのスケジュール実行で日次生成し、生成物を `site/` に蓄積してコミットしつつ、そのままSWAへデプロイします。
 
-- 日次生成（スケジュール）: [.github/workflows/digest-generate.yml](.github/workflows/digest-generate.yml)
-- SWAデプロイ（pushトリガ）: [.github/workflows/swa-deploy.yml](.github/workflows/swa-deploy.yml)
-
-### 生成とデプロイの流れ
-
-1) `digest-generate.yml` が `notifyhub-digest run --out-dir site` で静的サイトを生成します（手動実行時は email 送信ON/OFFを選択可能）。
-2) 生成物を `site/` 配下にコミットして `main` へ push します。
-3) `swa-deploy.yml` がその push（`site/**` の変更）をトリガーに、リポジトリ上の `site/` を Azure Static Web Apps へアップロードします（再生成はしません）。
-
-※ `swa-deploy.yml` は `site/index.html`（または `site/Index.html`）が無い場合はデプロイをスキップします（workflowファイル変更だけの push 等で失敗しないため）。
+- 日次生成 + デプロイ（スケジュール/手動）: [.github/workflows/digest-generate.yml](.github/workflows/digest-generate.yml)
 
 ### Actionsログ出力（vars / secrets）
 
