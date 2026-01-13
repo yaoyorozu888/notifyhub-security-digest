@@ -129,7 +129,7 @@ def email_preview(
         digest_root_url=built.digest_root_url,
         window_from_jst=built.window_from_jst.isoformat(),
         window_to_jst=built.window_to_jst.isoformat(),
-        generated_at_jst=built.run_at_jst.isoformat(),
+        generated_at_jst=built.generated_at_jst.isoformat(),
         items=built.items,
     )
 

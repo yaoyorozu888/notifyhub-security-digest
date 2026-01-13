@@ -50,6 +50,7 @@ def _parse_run_at(run_at_iso: str | None) -> datetime:
 class BuiltDigest:
     day: str
     run_at_jst: datetime
+    generated_at_jst: datetime
     window_from_jst: datetime
     window_to_jst: datetime
     digest_root_url: str
@@ -125,6 +126,8 @@ def build_digest_outputs(
 
                 items.append(item)
 
+    generated_at_jst = datetime.now(tz=JST)
+
     # 出力先
     day = run_at_jst.date().isoformat()
     paths = compute_digest_paths(out_dir, day)
@@ -148,7 +151,7 @@ def build_digest_outputs(
             it,
             window_from_jst=window.start_jst.isoformat(),
             window_to_jst=window.end_jst.isoformat(),
-            generated_at_jst=run_at_jst.isoformat(),
+            generated_at_jst=generated_at_jst.isoformat(),
             digest_root_url=digest_root_url,
         )
 
@@ -158,7 +161,7 @@ def build_digest_outputs(
         day=day,
         window_from_iso=window.start_jst.isoformat(),
         window_to_iso=window.end_jst.isoformat(),
-        generated_at_iso=run_at_jst.isoformat(),
+        generated_at_iso=generated_at_jst.isoformat(),
         items=items,
     )
 
@@ -168,6 +171,7 @@ def build_digest_outputs(
     return BuiltDigest(
         day=day,
         run_at_jst=run_at_jst,
+        generated_at_jst=generated_at_jst,
         window_from_jst=window.start_jst,
         window_to_jst=window.end_jst,
         digest_root_url=digest_root_url,
@@ -199,7 +203,7 @@ def run_digest(
             digest_root_url=built.digest_root_url,
             window_from_jst=built.window_from_jst.isoformat(),
             window_to_jst=built.window_to_jst.isoformat(),
-            generated_at_jst=built.run_at_jst.isoformat(),
+            generated_at_jst=built.generated_at_jst.isoformat(),
             items=built.items,
         )
 
