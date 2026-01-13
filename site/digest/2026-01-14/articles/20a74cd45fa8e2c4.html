@@ -7,7 +7,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="robots" content="noindex,nofollow" />
-  <title>Facebook login thieves now using browser-in-browser trick | NotifyHub Cybersecurity Daily Report</title>
+  <title>Malicious Chrome Extension Steals MEXC API Keys by Masquerading as Trading Tool | NotifyHub Cybersecurity Daily Report</title>
   <style>
     :root{
       --bg:#0b1020; --panel:#0f1730; --panel2:#121c3a;
@@ -195,26 +195,26 @@
         <!-- ../index.html は通常 "../index.html" でOK -->
         <a href="../index.html">← 日次トップへ戻る</a>
       </div>
-      <div class="chip">entry_id <strong class="mono">451adf7d3dbb5211</strong></div>
+      <div class="chip">entry_id <strong class="mono">20a74cd45fa8e2c4</strong></div>
     </div>
 
     <div class="panel">
       <div class="head">
-        <h1>Facebook login thieves now using browser-in-browser trick</h1>
+        <h1>Malicious Chrome Extension Steals MEXC API Keys by Masquerading as Trading Tool</h1>
 
         <div class="meta">
-          <span>🗞️ BleepingComputer</span>
-          <span>🕒 2026-01-13T06:05:43+09:00</span>
-          <span>🔗 <a href="https://www.bleepingcomputer.com/news/security/facebook-login-thieves-now-using-browser-in-browser-trick/" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
+          <span>🗞️ The Hacker News</span>
+          <span>🕒 2026-01-14T02:22:00+09:00</span>
+          <span>🔗 <a href="https://thehackernews.com/2026/01/malicious-chrome-extension-steals-mexc.html" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
         </div>
 
         <div class="tags">
           <span class="tag level-High">Impact: High</span>
-          <span class="tag">Other</span>
+          <span class="tag">Credential Theft</span>
         </div>
 
         <div class="btnRow">
-          <a class="linkbtn" href="https://www.bleepingcomputer.com/news/security/facebook-login-thieves-now-using-browser-in-browser-trick/" target="_blank" rel="noopener noreferrer">原文リンク</a>
+          <a class="linkbtn" href="https://thehackernews.com/2026/01/malicious-chrome-extension-steals-mexc.html" target="_blank" rel="noopener noreferrer">原文リンク</a>
           <a class="linkbtn" href="https://www.notifyhub.site/digest/2026-01-14/">日次トップ</a>
         </div>
       </div>
@@ -222,32 +222,32 @@
       <div class="body">
         <div class="section">
           <h2>Impact判定理由</h2>
-          <div class="ruleReason">BitB攻撃は既存のフィッシング対策を回避でき、主要SNSやOAuth連携サービスの認証情報を直接狙うため被害範囲が広い。悪用事例が増加しており、即時の教育・技術的対策が求められるが、システム脆弱性ではないためCriticalには至らない。</div>
+          <div class="ruleReason">APIキーの窃取により暗号資産の不正送金や取引操作が可能となるため、金銭的被害の潜在リスクは高い。ただし感染拡大は限定的で、即時の大規模被害は確認されていない点からCriticalではなくHighと判断。</div>
         </div>
         <div class="section summary">
           <h2>🧾 要約（ChatGPT）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          <div><h4>概要</h4><p>攻撃者がFacebookの認証情報を窃取するために「Browser-in-the-Browser（BitB）」手法を活用する事例が増加している。BitBは、正規のログインポップアップを模倣した偽ウィンドウをブラウザ内に生成し、ユーザーに本物と誤認させて認証情報を入力させるフィッシング技術である。特にFacebookやGoogleなどOAuth認証を利用するサービスで効果的に悪用されており、従来のURL確認やSSL証明書のチェックでは見抜きにくい点が特徴である。</p><h4>現場の学び</h4><ul><li>BitB攻撃はWebブラウザのUIを模倣するため、従来のドメイン確認教育だけでは防ぎにくい。ユーザー教育の更新が必要。</li><li>攻撃者は正規ブランドのデザインを完全に再現するため、セキュリティ製品によるURLベース検知が困難。</li><li>企業環境では、SSO（シングルサインオン）やMFA（多要素認証）の導入により被害を限定できる。</li></ul><h4>初動・継続対応の示唆</h4><ul><li>社内啓発では「ポップアップの見た目ではなく、ブラウザのアドレスバーで確認する」行動を強調する。</li><li>セキュリティチームはBitB検知を支援するブラウザ拡張やEDRの導入を検討。</li><li>インシデント発生時は、被害アカウントのトークン無効化とパスワードリセットを即時実施する。</li></ul></div>
+          <div><h4>概要</h4><p>研究者は、暗号資産取引所MEXCのAPIキーを窃取する悪意あるGoogle Chrome拡張機能「MEXC API Automator」を確認した。この拡張は自動取引用ツールを装い、インストール後にユーザのブラウザからAPIキーを取得して外部に送信する。被害は現時点で限定的（29件のダウンロード）だが、取引アカウントの不正操作や資産流出につながる恐れがある。</p><h4>現場の学び</h4><ul><li>ブラウザ拡張は公式ストア経由でも悪意あるものが混入する可能性があり、導入前の開発者確認と権限レビューが必須。</li><li>APIキーはアクセス制御（IP制限・権限分離）を行い、漏洩時の被害を最小化する設計が求められる。</li><li>暗号資産関連のツールは特に攻撃者の標的となりやすく、利用者教育と監視体制の強化が重要。</li></ul><h4>初動・継続対応の示唆</h4><ul><li>組織内でChrome拡張の利用を制限・監査し、疑わしい拡張のインストールを検知する仕組みを導入する。</li><li>MEXC APIキーを利用している場合、即時にキーを再発行し、アクセスログを確認して不正操作の有無を調査する。</li><li>継続的にブラウザ拡張の脅威インテリジェンスを収集し、セキュリティポリシーに反映させる。</li></ul></div>
         </div>
 
         <div class="section">
           <h2>📌 キーワード解説</h2>
           <div class="terms">
             <div class="termCard">
-  <div class="term">Browser-in-the-Browser (BitB) / ブラウザ内ブラウザ攻撃</div>
-  <p class="exp">Webページ内に偽のブラウザウィンドウを表示し、正規のログイン画面に見せかけて認証情報を盗むフィッシング手法。UIを模倣するため、URLやSSL証明書の確認では見抜きにくい。</p>
+  <div class="term">API Key / APIキー</div>
+  <p class="exp">アプリケーションが外部サービスと通信する際の認証情報。漏洩すると第三者が正規ユーザになりすまして操作できる。</p>
 </div>
 <div class="termCard">
-  <div class="term">OAuth</div>
-  <p class="exp">外部サービスの認証を安全に委任するためのプロトコル。FacebookやGoogleログインなどで広く利用されるが、BitB攻撃ではこの認証画面が偽装対象となる。</p>
+  <div class="term">Browser Extension / ブラウザ拡張機能</div>
+  <p class="exp">ブラウザの機能を拡張する小規模プログラム。利便性を高める一方で、権限を悪用して情報を窃取するリスクがある。</p>
 </div>
 <div class="termCard">
-  <div class="term">Single Sign-On (SSO) / シングルサインオン</div>
-  <p class="exp">一度の認証で複数のサービスにアクセスできる仕組み。認証情報の集中管理により、漏えい時の影響範囲を制御しやすい。</p>
+  <div class="term">CEX (Centralized Exchange) / 中央集権型取引所</div>
+  <p class="exp">暗号資産を集中管理する取引所。APIを通じて自動取引が可能だが、キー漏洩時の被害が大きい。</p>
 </div>
 <div class="termCard">
-  <div class="term">Multi-Factor Authentication (MFA) / 多要素認証</div>
-  <p class="exp">パスワードに加え、物理トークンや生体認証など複数の要素で認証を行う仕組み。BitB攻撃によるパスワード窃取の被害を軽減できる。</p>
+  <div class="term">Credential Theft / 認証情報窃取</div>
+  <p class="exp">攻撃者がパスワードやAPIキーなどの認証情報を不正に取得する行為。マルウェアやフィッシングなど多様な手法がある。</p>
 </div>
           </div>
         </div>

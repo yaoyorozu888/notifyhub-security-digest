@@ -7,7 +7,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="robots" content="noindex,nofollow" />
-  <title>Facebook login thieves now using browser-in-browser trick | NotifyHub Cybersecurity Daily Report</title>
+  <title>Belgian hospital AZ Monica shuts down servers after cyberattack | NotifyHub Cybersecurity Daily Report</title>
   <style>
     :root{
       --bg:#0b1020; --panel:#0f1730; --panel2:#121c3a;
@@ -195,26 +195,26 @@
         <!-- ../index.html は通常 "../index.html" でOK -->
         <a href="../index.html">← 日次トップへ戻る</a>
       </div>
-      <div class="chip">entry_id <strong class="mono">451adf7d3dbb5211</strong></div>
+      <div class="chip">entry_id <strong class="mono">f19e18d9af2bfb61</strong></div>
     </div>
 
     <div class="panel">
       <div class="head">
-        <h1>Facebook login thieves now using browser-in-browser trick</h1>
+        <h1>Belgian hospital AZ Monica shuts down servers after cyberattack</h1>
 
         <div class="meta">
           <span>🗞️ BleepingComputer</span>
-          <span>🕒 2026-01-13T06:05:43+09:00</span>
-          <span>🔗 <a href="https://www.bleepingcomputer.com/news/security/facebook-login-thieves-now-using-browser-in-browser-trick/" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
+          <span>🕒 2026-01-14T05:27:22+09:00</span>
+          <span>🔗 <a href="https://www.bleepingcomputer.com/news/security/belgian-hospital-az-monica-shuts-down-servers-after-cyberattack/" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
         </div>
 
         <div class="tags">
-          <span class="tag level-High">Impact: High</span>
-          <span class="tag">Other</span>
+          <span class="tag level-Critical">Impact: Critical</span>
+          <span class="tag">Ransomware</span>
         </div>
 
         <div class="btnRow">
-          <a class="linkbtn" href="https://www.bleepingcomputer.com/news/security/facebook-login-thieves-now-using-browser-in-browser-trick/" target="_blank" rel="noopener noreferrer">原文リンク</a>
+          <a class="linkbtn" href="https://www.bleepingcomputer.com/news/security/belgian-hospital-az-monica-shuts-down-servers-after-cyberattack/" target="_blank" rel="noopener noreferrer">原文リンク</a>
           <a class="linkbtn" href="https://www.notifyhub.site/digest/2026-01-14/">日次トップ</a>
         </div>
       </div>
@@ -222,32 +222,32 @@
       <div class="body">
         <div class="section">
           <h2>Impact判定理由</h2>
-          <div class="ruleReason">BitB攻撃は既存のフィッシング対策を回避でき、主要SNSやOAuth連携サービスの認証情報を直接狙うため被害範囲が広い。悪用事例が増加しており、即時の教育・技術的対策が求められるが、システム脆弱性ではないためCriticalには至らない。</div>
+          <div class="ruleReason">医療機関の全サーバ停止と患者転送を伴う事態であり、医療提供の継続性と患者安全に直接影響。ランサムウェアなどの悪用可能性が高く、即時対応が必要な重大インシデントと判断される。</div>
         </div>
         <div class="section summary">
           <h2>🧾 要約（ChatGPT）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          <div><h4>概要</h4><p>攻撃者がFacebookの認証情報を窃取するために「Browser-in-the-Browser（BitB）」手法を活用する事例が増加している。BitBは、正規のログインポップアップを模倣した偽ウィンドウをブラウザ内に生成し、ユーザーに本物と誤認させて認証情報を入力させるフィッシング技術である。特にFacebookやGoogleなどOAuth認証を利用するサービスで効果的に悪用されており、従来のURL確認やSSL証明書のチェックでは見抜きにくい点が特徴である。</p><h4>現場の学び</h4><ul><li>BitB攻撃はWebブラウザのUIを模倣するため、従来のドメイン確認教育だけでは防ぎにくい。ユーザー教育の更新が必要。</li><li>攻撃者は正規ブランドのデザインを完全に再現するため、セキュリティ製品によるURLベース検知が困難。</li><li>企業環境では、SSO（シングルサインオン）やMFA（多要素認証）の導入により被害を限定できる。</li></ul><h4>初動・継続対応の示唆</h4><ul><li>社内啓発では「ポップアップの見た目ではなく、ブラウザのアドレスバーで確認する」行動を強調する。</li><li>セキュリティチームはBitB検知を支援するブラウザ拡張やEDRの導入を検討。</li><li>インシデント発生時は、被害アカウントのトークン無効化とパスワードリセットを即時実施する。</li></ul></div>
+          <div><h4>概要</h4><p>ベルギーの病院AZ Monicaがサイバー攻撃を受け、全サーバを停止し、予定されていた医療処置を中止、重症患者を他院へ転送した。攻撃の詳細は公表されていないが、医療業務の継続に直接影響を与える深刻な事態である。医療機関を狙う攻撃は、ランサムウェアや内部ネットワーク侵入を伴うケースが多く、患者安全と運用継続性の両面で重大なリスクをもたらす。</p><h4>現場の学び</h4><ul><li>医療機関では、IT停止が即座に診療停止に直結するため、BCP（事業継続計画）とDR（災害復旧計画）の実効性が問われる。</li><li>攻撃初動でサーバを停止する判断は感染拡大防止に有効だが、同時に医療提供体制への影響を最小化する代替手段が必要。</li><li>医療情報システムは多層的なネットワーク分離と、バックアップのオフライン保管が不可欠。</li></ul><h4>初動・継続対応の示唆</h4><ul><li>感染経路の特定と、攻撃者が残した持続化手段（バックドア等）の除去を優先する。</li><li>患者データの暗号化・漏えい有無を早期に確認し、法的報告義務（GDPR等）を遵守する。</li><li>医療機関間での情報共有を強化し、同様の攻撃手法への早期警戒を促す。</li></ul></div>
         </div>
 
         <div class="section">
           <h2>📌 キーワード解説</h2>
           <div class="terms">
             <div class="termCard">
-  <div class="term">Browser-in-the-Browser (BitB) / ブラウザ内ブラウザ攻撃</div>
-  <p class="exp">Webページ内に偽のブラウザウィンドウを表示し、正規のログイン画面に見せかけて認証情報を盗むフィッシング手法。UIを模倣するため、URLやSSL証明書の確認では見抜きにくい。</p>
+  <div class="term">Ransomware / ランサムウェア</div>
+  <p class="exp">データを暗号化し、復号のために金銭を要求するマルウェア。医療機関では業務停止や患者安全への影響が大きく、社会的被害が拡大しやすい。</p>
 </div>
 <div class="termCard">
-  <div class="term">OAuth</div>
-  <p class="exp">外部サービスの認証を安全に委任するためのプロトコル。FacebookやGoogleログインなどで広く利用されるが、BitB攻撃ではこの認証画面が偽装対象となる。</p>
+  <div class="term">Business Continuity Plan (BCP) / 事業継続計画</div>
+  <p class="exp">災害やサイバー攻撃などの緊急事態においても、重要業務を継続または早期復旧するための計画。医療分野では生命維持に直結するため実効性が重要。</p>
 </div>
 <div class="termCard">
-  <div class="term">Single Sign-On (SSO) / シングルサインオン</div>
-  <p class="exp">一度の認証で複数のサービスにアクセスできる仕組み。認証情報の集中管理により、漏えい時の影響範囲を制御しやすい。</p>
+  <div class="term">Disaster Recovery (DR) / 災害復旧計画</div>
+  <p class="exp">システム障害や攻撃後にIT環境を復旧させるための手順と体制。バックアップの整備と復旧訓練が鍵となる。</p>
 </div>
 <div class="termCard">
-  <div class="term">Multi-Factor Authentication (MFA) / 多要素認証</div>
-  <p class="exp">パスワードに加え、物理トークンや生体認証など複数の要素で認証を行う仕組み。BitB攻撃によるパスワード窃取の被害を軽減できる。</p>
+  <div class="term">Persistence Mechanism / 持続化手段</div>
+  <p class="exp">攻撃者が侵入後に再侵入や制御を維持するために設置する仕組み。バックドアやスケジュールタスクなどが含まれる。</p>
 </div>
           </div>
         </div>

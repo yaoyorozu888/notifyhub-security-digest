@@ -222,32 +222,32 @@
       <div class="body">
         <div class="section">
           <h2>Impact判定理由</h2>
-          <div class="ruleReason">Remcos RATは遠隔操作・情報窃取が可能で、永続化機能を持つため被害は深刻。ただし、現時点で限定的なキャンペーン報告であり、広範な感染拡大は確認されていないためCriticalではなくHighと判断する。</div>
+          <div class="ruleReason">Remcos RATは商用ツールであり入手容易かつ多機能で、標的型攻撃や情報窃取に悪用されやすい。多段階の難読化により検知が困難で、永続化機構を伴うため感染後の被害が長期化する可能性が高い。</div>
         </div>
         <div class="section summary">
           <h2>🧾 要約（ChatGPT）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          <div><h4>概要</h4><p>2026年1月、研究者が「SHADOW#REACTOR」と名付けた新たなマルウェアキャンペーンを報告した。この攻撃は多段階の感染チェーンを用い、商用リモート管理ツールであるRemcos RAT（Remote Access Trojan）を最終的に展開する。攻撃は難読化されたVBSスクリプトを<code>wscript.exe</code>経由で実行し、検知を回避しながら永続的なリモートアクセスを確立する点が特徴である。</p><h4>現場の学び</h4><ul><li>Remcos RATは正規ツールとして販売されているが、攻撃者により不正利用されるケースが多く、商用RATの検知・封じ込めが依然として課題である。</li><li>多段階構造により、初期段階では一般的なスクリプト実行に見えるため、EDR（Endpoint Detection and Response）やSIEMでの相関分析が重要となる。</li><li>難読化VBSや<code>wscript.exe</code>の異常利用を監視することで、早期検知の可能性を高められる。</li></ul><h4>初動・継続対応の示唆</h4><ul><li>感染端末のネットワーク分離と、Remcos RAT通信先ドメイン・IPのブロックを即時実施する。</li><li>PowerShellやVBSの実行ログを精査し、同様のスクリプト活動を横展開調査する。</li><li>多段階攻撃を想定した検知ルールの強化と、商用RATの利用兆候をIOCとして継続監視する。</li></ul></div>
+          <div><h4>概要</h4><p>2026年1月、研究者は「SHADOW#REACTOR」と名付けられた新たなマルウェアキャンペーンを報告した。この攻撃は多段階の実行チェーンを用い、商用リモート管理ツールであるRemcos RAT（Remote Access Trojan）を最終的に展開する。初期段階では難読化されたVBSスクリプトが経由で実行され、複数の中間ステージを経て永続的なリモートアクセスを確立する点が特徴である。</p><h4>現場の学び</h4><ul><li>Remcos RATは正規ツールを悪用した攻撃に多用され、検知回避のために難読化や多段階ロードを組み合わせる傾向がある。</li><li>スクリプト実行やPowerShell呼び出しの監視強化、特にやの利用状況把握が有効である。</li><li>多段階攻撃では各ステージのIOC（Indicator of Compromise）を個別に収集・相関分析することで、早期検知の精度を高められる。</li></ul><h4>初動・継続対応の示唆</h4><ul><li>初動では、対象端末のスクリプト実行履歴とレジストリの永続化設定を確認し、Remcos RATの通信先ドメインをブロックする。</li><li>継続対応として、商用RATの利用検知ルールをEDR（Endpoint Detection and Response）に追加し、類似の多段階攻撃チェーンを再現・検証して防御策を強化する。</li><li>ユーザ教育として、メール経由のスクリプト実行リスクを再周知し、実行ポリシーを厳格化する。</li></ul></div>
         </div>
 
         <div class="section">
           <h2>📌 キーワード解説</h2>
           <div class="terms">
             <div class="termCard">
-  <div class="term">Remcos RAT / リモートアクセス型トロイの木馬</div>
-  <p class="exp">Remcosは正規のリモート管理ツールとして販売されているが、攻撃者が不正アクセスや情報窃取に悪用することが多い。感染端末に常駐し、遠隔操作やデータ送信を行う。</p>
+  <div class="term">Remcos RAT (Remote Access Trojan)</div>
+  <p class="exp">商用のリモート管理ツールを悪用したマルウェアで、攻撃者が感染端末を遠隔操作できる。キーロギングやスクリーンキャプチャ、データ窃取など多機能である。</p>
 </div>
 <div class="termCard">
   <div class="term">VBS (Visual Basic Script)</div>
-  <p class="exp">Windows環境で動作するスクリプト言語で、管理タスクの自動化に使われる。攻撃者は難読化したVBSを利用してマルウェアを実行・展開することがある。</p>
+  <p class="exp">Windows環境で動作するスクリプト言語。攻撃者はこれを難読化して実行することで、検知を回避しつつマルウェアを段階的に展開する。</p>
 </div>
 <div class="termCard">
   <div class="term">wscript.exe</div>
-  <p class="exp">Windows Script Hostの実行ファイルで、VBSやJSスクリプトを実行する。正規プロセスであるため、悪用されると検知が難しい。</p>
+  <p class="exp">Windows Script Hostの実行ファイルで、VBSやJSスクリプトを実行する。攻撃者はこれを利用して正規プロセスを装い、セキュリティ監視を回避する。</p>
 </div>
 <div class="termCard">
-  <div class="term">Multi-Stage Attack Chain / 多段階攻撃チェーン</div>
-  <p class="exp">複数の段階を経て最終的なペイロードを展開する攻撃手法。各段階で検知回避や権限昇格などを行い、侵入の痕跡を隠す。</p>
+  <div class="term">Persistence / 永続化</div>
+  <p class="exp">マルウェアが再起動後も活動を継続できるようにする仕組み。レジストリ変更やスケジュールタスク登録などが典型的手法である。</p>
 </div>
           </div>
         </div>
@@ -256,7 +256,7 @@
           <h2>🕘 生成情報</h2>
           <div class="ruleReason">
 対象期間：2026-01-13T06:00:00+09:00 〜 2026-01-14T06:00:00+09:00
-生成時刻：2026-01-14T01:56:50.580025+09:00
+生成時刻：2026-01-14T06:31:55.777822+09:00
 免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
           </div>
         </div>

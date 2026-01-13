@@ -7,7 +7,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="robots" content="noindex,nofollow" />
-  <title>Facebook login thieves now using browser-in-browser trick | NotifyHub Cybersecurity Daily Report</title>
+  <title>Microsoft January 2026 Patch Tuesday fixes 3 zero-days, 114 flaws | NotifyHub Cybersecurity Daily Report</title>
   <style>
     :root{
       --bg:#0b1020; --panel:#0f1730; --panel2:#121c3a;
@@ -195,26 +195,26 @@
         <!-- ../index.html は通常 "../index.html" でOK -->
         <a href="../index.html">← 日次トップへ戻る</a>
       </div>
-      <div class="chip">entry_id <strong class="mono">451adf7d3dbb5211</strong></div>
+      <div class="chip">entry_id <strong class="mono">9dbba4ad487a03bf</strong></div>
     </div>
 
     <div class="panel">
       <div class="head">
-        <h1>Facebook login thieves now using browser-in-browser trick</h1>
+        <h1>Microsoft January 2026 Patch Tuesday fixes 3 zero-days, 114 flaws</h1>
 
         <div class="meta">
           <span>🗞️ BleepingComputer</span>
-          <span>🕒 2026-01-13T06:05:43+09:00</span>
-          <span>🔗 <a href="https://www.bleepingcomputer.com/news/security/facebook-login-thieves-now-using-browser-in-browser-trick/" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
+          <span>🕒 2026-01-14T03:34:08+09:00</span>
+          <span>🔗 <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-january-2026-patch-tuesday-fixes-3-zero-days-114-flaws/" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
         </div>
 
         <div class="tags">
           <span class="tag level-High">Impact: High</span>
-          <span class="tag">Other</span>
+          <span class="tag">Vulnerability</span>
         </div>
 
         <div class="btnRow">
-          <a class="linkbtn" href="https://www.bleepingcomputer.com/news/security/facebook-login-thieves-now-using-browser-in-browser-trick/" target="_blank" rel="noopener noreferrer">原文リンク</a>
+          <a class="linkbtn" href="https://www.bleepingcomputer.com/news/microsoft/microsoft-january-2026-patch-tuesday-fixes-3-zero-days-114-flaws/" target="_blank" rel="noopener noreferrer">原文リンク</a>
           <a class="linkbtn" href="https://www.notifyhub.site/digest/2026-01-14/">日次トップ</a>
         </div>
       </div>
@@ -222,32 +222,32 @@
       <div class="body">
         <div class="section">
           <h2>Impact判定理由</h2>
-          <div class="ruleReason">BitB攻撃は既存のフィッシング対策を回避でき、主要SNSやOAuth連携サービスの認証情報を直接狙うため被害範囲が広い。悪用事例が増加しており、即時の教育・技術的対策が求められるが、システム脆弱性ではないためCriticalには至らない。</div>
+          <div class="ruleReason">3件のゼロデイを含み、うち1件は実際に悪用が確認されているため緊急性が高い。ただし、現時点で大規模被害の報告は限定的であり、Criticalには至らない。</div>
         </div>
         <div class="section summary">
           <h2>🧾 要約（ChatGPT）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          <div><h4>概要</h4><p>攻撃者がFacebookの認証情報を窃取するために「Browser-in-the-Browser（BitB）」手法を活用する事例が増加している。BitBは、正規のログインポップアップを模倣した偽ウィンドウをブラウザ内に生成し、ユーザーに本物と誤認させて認証情報を入力させるフィッシング技術である。特にFacebookやGoogleなどOAuth認証を利用するサービスで効果的に悪用されており、従来のURL確認やSSL証明書のチェックでは見抜きにくい点が特徴である。</p><h4>現場の学び</h4><ul><li>BitB攻撃はWebブラウザのUIを模倣するため、従来のドメイン確認教育だけでは防ぎにくい。ユーザー教育の更新が必要。</li><li>攻撃者は正規ブランドのデザインを完全に再現するため、セキュリティ製品によるURLベース検知が困難。</li><li>企業環境では、SSO（シングルサインオン）やMFA（多要素認証）の導入により被害を限定できる。</li></ul><h4>初動・継続対応の示唆</h4><ul><li>社内啓発では「ポップアップの見た目ではなく、ブラウザのアドレスバーで確認する」行動を強調する。</li><li>セキュリティチームはBitB検知を支援するブラウザ拡張やEDRの導入を検討。</li><li>インシデント発生時は、被害アカウントのトークン無効化とパスワードリセットを即時実施する。</li></ul></div>
+          <div><h4>概要</h4><p>Microsoftは2026年1月の月例パッチ（Patch Tuesday）で、合計114件の脆弱性を修正した。このうち3件はゼロデイ（Zero-day）脆弱性で、1件はすでに実際の攻撃で悪用が確認され、2件は公に情報が開示されていた。修正対象はWindows OS、Office製品、Azure、Exchange Serverなど広範囲に及ぶ。これらの脆弱性の中にはリモートコード実行（RCE）や権限昇格を可能にするものが含まれており、企業環境での影響が大きい。</p><h4>現場の学び</h4><ul><li>ゼロデイのうち少なくとも1件が実際に悪用されている点から、パッチ適用の優先順位付けを迅速に行う必要がある。</li><li>Microsoft製品群の多層的な依存関係を踏まえ、ExchangeやAzureなどクラウド連携部分の更新検証を怠らないことが重要。</li><li>公開済み脆弱性情報をもとに攻撃コードが短期間で出回る傾向があるため、SOCやEDRでの検知ルール更新を即時実施すべき。</li></ul><h4>初動・継続対応の示唆</h4><ul><li>まずゼロデイ関連CVEを特定し、該当システムへのパッチ適用を最優先とする。</li><li>パッチ適用前後での異常挙動監視を強化し、既存の侵害有無を確認する。</li><li>継続的にMicrosoftのセキュリティガイダンスを参照し、追加の緩和策や既知の不具合情報を追跡する。</li></ul></div>
         </div>
 
         <div class="section">
           <h2>📌 キーワード解説</h2>
           <div class="terms">
             <div class="termCard">
-  <div class="term">Browser-in-the-Browser (BitB) / ブラウザ内ブラウザ攻撃</div>
-  <p class="exp">Webページ内に偽のブラウザウィンドウを表示し、正規のログイン画面に見せかけて認証情報を盗むフィッシング手法。UIを模倣するため、URLやSSL証明書の確認では見抜きにくい。</p>
+  <div class="term">Zero-day vulnerability / ゼロデイ脆弱性</div>
+  <p class="exp">ベンダーが修正パッチを提供する前に攻撃者に悪用される脆弱性。防御側が対策を講じる時間がないため、被害拡大のリスクが高い。</p>
 </div>
 <div class="termCard">
-  <div class="term">OAuth</div>
-  <p class="exp">外部サービスの認証を安全に委任するためのプロトコル。FacebookやGoogleログインなどで広く利用されるが、BitB攻撃ではこの認証画面が偽装対象となる。</p>
+  <div class="term">Patch Tuesday / 月例パッチ</div>
+  <p class="exp">Microsoftが毎月第2火曜日に公開する定例のセキュリティ更新日。複数製品の脆弱性修正が一括で提供される。</p>
 </div>
 <div class="termCard">
-  <div class="term">Single Sign-On (SSO) / シングルサインオン</div>
-  <p class="exp">一度の認証で複数のサービスにアクセスできる仕組み。認証情報の集中管理により、漏えい時の影響範囲を制御しやすい。</p>
+  <div class="term">Remote Code Execution (RCE) / リモートコード実行</div>
+  <p class="exp">攻撃者が遠隔から任意のコードを実行できる脆弱性。システム乗っ取りや情報漏えいにつながる重大なリスクを持つ。</p>
 </div>
 <div class="termCard">
-  <div class="term">Multi-Factor Authentication (MFA) / 多要素認証</div>
-  <p class="exp">パスワードに加え、物理トークンや生体認証など複数の要素で認証を行う仕組み。BitB攻撃によるパスワード窃取の被害を軽減できる。</p>
+  <div class="term">Privilege Escalation / 権限昇格</div>
+  <p class="exp">通常のユーザー権限から管理者権限などへ不正に昇格する攻撃手法。内部侵害の拡大や持続的なアクセス維持に利用される。</p>
 </div>
           </div>
         </div>

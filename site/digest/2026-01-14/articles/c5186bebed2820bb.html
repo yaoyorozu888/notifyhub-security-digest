@@ -7,7 +7,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="robots" content="noindex,nofollow" />
-  <title>Facebook login thieves now using browser-in-browser trick | NotifyHub Cybersecurity Daily Report</title>
+  <title>Threat Brief: MongoDB Vulnerability (CVE-2025-14847) | NotifyHub Cybersecurity Daily Report</title>
   <style>
     :root{
       --bg:#0b1020; --panel:#0f1730; --panel2:#121c3a;
@@ -195,26 +195,26 @@
         <!-- ../index.html は通常 "../index.html" でOK -->
         <a href="../index.html">← 日次トップへ戻る</a>
       </div>
-      <div class="chip">entry_id <strong class="mono">451adf7d3dbb5211</strong></div>
+      <div class="chip">entry_id <strong class="mono">c5186bebed2820bb</strong></div>
     </div>
 
     <div class="panel">
       <div class="head">
-        <h1>Facebook login thieves now using browser-in-browser trick</h1>
+        <h1>Threat Brief: MongoDB Vulnerability (CVE-2025-14847)</h1>
 
         <div class="meta">
-          <span>🗞️ BleepingComputer</span>
-          <span>🕒 2026-01-13T06:05:43+09:00</span>
-          <span>🔗 <a href="https://www.bleepingcomputer.com/news/security/facebook-login-thieves-now-using-browser-in-browser-trick/" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
+          <span>🗞️ Unit 42</span>
+          <span>🕒 2026-01-14T05:30:02+09:00</span>
+          <span>🔗 <a href="https://unit42.paloaltonetworks.com/mongobleed-cve-2025-14847/" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
         </div>
 
         <div class="tags">
           <span class="tag level-High">Impact: High</span>
-          <span class="tag">Other</span>
+          <span class="tag">Data Breach</span>
         </div>
 
         <div class="btnRow">
-          <a class="linkbtn" href="https://www.bleepingcomputer.com/news/security/facebook-login-thieves-now-using-browser-in-browser-trick/" target="_blank" rel="noopener noreferrer">原文リンク</a>
+          <a class="linkbtn" href="https://unit42.paloaltonetworks.com/mongobleed-cve-2025-14847/" target="_blank" rel="noopener noreferrer">原文リンク</a>
           <a class="linkbtn" href="https://www.notifyhub.site/digest/2026-01-14/">日次トップ</a>
         </div>
       </div>
@@ -222,32 +222,32 @@
       <div class="body">
         <div class="section">
           <h2>Impact判定理由</h2>
-          <div class="ruleReason">BitB攻撃は既存のフィッシング対策を回避でき、主要SNSやOAuth連携サービスの認証情報を直接狙うため被害範囲が広い。悪用事例が増加しており、即時の教育・技術的対策が求められるが、システム脆弱性ではないためCriticalには至らない。</div>
+          <div class="ruleReason">認証不要でメモリ内容が漏洩するため、情報漏えいリスクが高い。CVSS 8.7と評価され、PoCも確認されているが、リモートコード実行には至らないためCriticalではなくHighと判断。</div>
         </div>
         <div class="section summary">
           <h2>🧾 要約（ChatGPT）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          <div><h4>概要</h4><p>攻撃者がFacebookの認証情報を窃取するために「Browser-in-the-Browser（BitB）」手法を活用する事例が増加している。BitBは、正規のログインポップアップを模倣した偽ウィンドウをブラウザ内に生成し、ユーザーに本物と誤認させて認証情報を入力させるフィッシング技術である。特にFacebookやGoogleなどOAuth認証を利用するサービスで効果的に悪用されており、従来のURL確認やSSL証明書のチェックでは見抜きにくい点が特徴である。</p><h4>現場の学び</h4><ul><li>BitB攻撃はWebブラウザのUIを模倣するため、従来のドメイン確認教育だけでは防ぎにくい。ユーザー教育の更新が必要。</li><li>攻撃者は正規ブランドのデザインを完全に再現するため、セキュリティ製品によるURLベース検知が困難。</li><li>企業環境では、SSO（シングルサインオン）やMFA（多要素認証）の導入により被害を限定できる。</li></ul><h4>初動・継続対応の示唆</h4><ul><li>社内啓発では「ポップアップの見た目ではなく、ブラウザのアドレスバーで確認する」行動を強調する。</li><li>セキュリティチームはBitB検知を支援するブラウザ拡張やEDRの導入を検討。</li><li>インシデント発生時は、被害アカウントのトークン無効化とパスワードリセットを即時実施する。</li></ul></div>
+          <div><h4>概要</h4><p>MongoDBで報告された脆弱性「CVE-2025-14847（通称MongoBleed）」は、認証不要でメモリ内容が漏洩する欠陥であり、CVSSスコアは8.7（High）と評価されている。攻撃者は特定のリクエストを送信するだけで、機密データを含むメモリ領域を取得できる可能性がある。Unit 42（Palo Alto Networksの脅威調査チーム）は、公開直後からPoC（概念実証コード）の流通を確認しており、クラウド環境やオンプレミス双方での影響が懸念されている。</p><h4>現場の学び</h4><ul><li>メモリリーク型の脆弱性は、直接的なコード実行に至らなくても認証情報やトークン流出を引き起こすため、情報漏えいリスクとして重大である。</li><li>データベース層の脆弱性はアプリケーション層の防御を迂回する可能性があり、ゼロトラスト設計でも内部通信の最小化が重要となる。</li><li>PoCが早期に出回る場合、攻撃者によるスキャン活動が急増する傾向があるため、脆弱性公開直後の監視強化が有効である。</li></ul><h4>初動・継続対応の示唆</h4><ul><li>MongoDBの最新パッチを即時適用し、該当バージョンの露出を外部スキャンで確認する。</li><li>監査ログやネットワークフローを分析し、異常なクエリや不審な接続を早期検知する。</li><li>クラウド管理者はIAM権限やネットワークACLを再確認し、データベースへの直接アクセス経路を最小化する。</li></ul></div>
         </div>
 
         <div class="section">
           <h2>📌 キーワード解説</h2>
           <div class="terms">
             <div class="termCard">
-  <div class="term">Browser-in-the-Browser (BitB) / ブラウザ内ブラウザ攻撃</div>
-  <p class="exp">Webページ内に偽のブラウザウィンドウを表示し、正規のログイン画面に見せかけて認証情報を盗むフィッシング手法。UIを模倣するため、URLやSSL証明書の確認では見抜きにくい。</p>
+  <div class="term">Memory Disclosure / メモリ情報漏えい</div>
+  <p class="exp">アプリケーションが意図せずメモリ上のデータを外部に返す脆弱性。機密情報や認証トークンが含まれる場合、情報漏えいに直結する。</p>
 </div>
 <div class="termCard">
-  <div class="term">OAuth</div>
-  <p class="exp">外部サービスの認証を安全に委任するためのプロトコル。FacebookやGoogleログインなどで広く利用されるが、BitB攻撃ではこの認証画面が偽装対象となる。</p>
+  <div class="term">Proof of Concept (PoC) / 概念実証コード</div>
+  <p class="exp">脆弱性の存在を確認するために作成された最小限の攻撃コード。公開されると攻撃者による悪用が加速する傾向がある。</p>
 </div>
 <div class="termCard">
-  <div class="term">Single Sign-On (SSO) / シングルサインオン</div>
-  <p class="exp">一度の認証で複数のサービスにアクセスできる仕組み。認証情報の集中管理により、漏えい時の影響範囲を制御しやすい。</p>
+  <div class="term">CVSS (Common Vulnerability Scoring System)</div>
+  <p class="exp">脆弱性の深刻度を定量的に評価する標準スコアリング手法。8.7は高リスク（High）に分類され、即時対応が推奨される。</p>
 </div>
 <div class="termCard">
-  <div class="term">Multi-Factor Authentication (MFA) / 多要素認証</div>
-  <p class="exp">パスワードに加え、物理トークンや生体認証など複数の要素で認証を行う仕組み。BitB攻撃によるパスワード窃取の被害を軽減できる。</p>
+  <div class="term">Zero Trust Architecture / ゼロトラストアーキテクチャ</div>
+  <p class="exp">内部ネットワークを信頼せず、すべての通信を検証する設計思想。データベース層の脆弱性対策にも有効である。</p>
 </div>
           </div>
         </div>

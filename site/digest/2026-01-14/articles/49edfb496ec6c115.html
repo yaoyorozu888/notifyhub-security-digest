@@ -7,7 +7,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="robots" content="noindex,nofollow" />
-  <title>Facebook login thieves now using browser-in-browser trick | NotifyHub Cybersecurity Daily Report</title>
+  <title>Long-Running Web Skimming Campaign Steals Credit Cards From Online Checkout Pages | NotifyHub Cybersecurity Daily Report</title>
   <style>
     :root{
       --bg:#0b1020; --panel:#0f1730; --panel2:#121c3a;
@@ -195,17 +195,17 @@
         <!-- ../index.html は通常 "../index.html" でOK -->
         <a href="../index.html">← 日次トップへ戻る</a>
       </div>
-      <div class="chip">entry_id <strong class="mono">451adf7d3dbb5211</strong></div>
+      <div class="chip">entry_id <strong class="mono">49edfb496ec6c115</strong></div>
     </div>
 
     <div class="panel">
       <div class="head">
-        <h1>Facebook login thieves now using browser-in-browser trick</h1>
+        <h1>Long-Running Web Skimming Campaign Steals Credit Cards From Online Checkout Pages</h1>
 
         <div class="meta">
-          <span>🗞️ BleepingComputer</span>
-          <span>🕒 2026-01-13T06:05:43+09:00</span>
-          <span>🔗 <a href="https://www.bleepingcomputer.com/news/security/facebook-login-thieves-now-using-browser-in-browser-trick/" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
+          <span>🗞️ The Hacker News</span>
+          <span>🕒 2026-01-14T02:30:00+09:00</span>
+          <span>🔗 <a href="https://thehackernews.com/2026/01/long-running-web-skimming-campaign.html" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
         </div>
 
         <div class="tags">
@@ -214,7 +214,7 @@
         </div>
 
         <div class="btnRow">
-          <a class="linkbtn" href="https://www.bleepingcomputer.com/news/security/facebook-login-thieves-now-using-browser-in-browser-trick/" target="_blank" rel="noopener noreferrer">原文リンク</a>
+          <a class="linkbtn" href="https://thehackernews.com/2026/01/long-running-web-skimming-campaign.html" target="_blank" rel="noopener noreferrer">原文リンク</a>
           <a class="linkbtn" href="https://www.notifyhub.site/digest/2026-01-14/">日次トップ</a>
         </div>
       </div>
@@ -222,32 +222,32 @@
       <div class="body">
         <div class="section">
           <h2>Impact判定理由</h2>
-          <div class="ruleReason">BitB攻撃は既存のフィッシング対策を回避でき、主要SNSやOAuth連携サービスの認証情報を直接狙うため被害範囲が広い。悪用事例が増加しており、即時の教育・技術的対策が求められるが、システム脆弱性ではないためCriticalには至らない。</div>
+          <div class="ruleReason">複数の主要決済ネットワークに関連する企業が標的となり、クレジットカード情報の漏えいリスクが高い。攻撃は長期間継続し、検知回避技術を用いているため、広範な被害拡大の可能性があるが、現時点で特定の大規模被害報告は限定的である。</div>
         </div>
         <div class="section summary">
           <h2>🧾 要約（ChatGPT）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          <div><h4>概要</h4><p>攻撃者がFacebookの認証情報を窃取するために「Browser-in-the-Browser（BitB）」手法を活用する事例が増加している。BitBは、正規のログインポップアップを模倣した偽ウィンドウをブラウザ内に生成し、ユーザーに本物と誤認させて認証情報を入力させるフィッシング技術である。特にFacebookやGoogleなどOAuth認証を利用するサービスで効果的に悪用されており、従来のURL確認やSSL証明書のチェックでは見抜きにくい点が特徴である。</p><h4>現場の学び</h4><ul><li>BitB攻撃はWebブラウザのUIを模倣するため、従来のドメイン確認教育だけでは防ぎにくい。ユーザー教育の更新が必要。</li><li>攻撃者は正規ブランドのデザインを完全に再現するため、セキュリティ製品によるURLベース検知が困難。</li><li>企業環境では、SSO（シングルサインオン）やMFA（多要素認証）の導入により被害を限定できる。</li></ul><h4>初動・継続対応の示唆</h4><ul><li>社内啓発では「ポップアップの見た目ではなく、ブラウザのアドレスバーで確認する」行動を強調する。</li><li>セキュリティチームはBitB検知を支援するブラウザ拡張やEDRの導入を検討。</li><li>インシデント発生時は、被害アカウントのトークン無効化とパスワードリセットを即時実施する。</li></ul></div>
+          <div><h4>概要</h4><p>2022年1月以降継続している大規模なWebスキミング（Magecart型）キャンペーンが確認された。攻撃者はオンライン決済ページに悪意あるJavaScriptを挿入し、American Express、Mastercard、UnionPayなど主要決済ネットワークの加盟企業を標的としてクレジットカード情報を窃取している。Silent Push社の報告によると、影響は企業のECサイト運営者に及び、長期間にわたり検知を回避して活動していた可能性が高い。</p><h4>現場の学び</h4><ul><li>攻撃はサプライチェーン経由（外部スクリプトやCDNの改ざん）で侵入するケースが多く、Web資産管理と外部依存関係の可視化が重要。</li><li>スキミングコードは難読化やドメイン偽装を用いるため、単純なシグネチャ検知では不十分。振る舞い分析やCSP（Content Security Policy）の適用が有効。</li><li>長期潜伏を許した要因として、改ざん検知の自動化不足や監査ログの不備が挙げられる。</li></ul><h4>初動・継続対応の示唆</h4><ul><li>決済ページのJavaScript依存関係を棚卸しし、外部リソースの整合性検証（Subresource Integrity）を導入する。</li><li>Web Application Firewall（WAF）やRASPによるスクリプト挙動監視を強化し、異常なデータ送信を検知する。</li><li>インシデント発生時は、改ざんスクリプトの除去に加え、漏えいした可能性のある顧客情報の範囲特定と通知対応を迅速に行う。</li></ul></div>
         </div>
 
         <div class="section">
           <h2>📌 キーワード解説</h2>
           <div class="terms">
             <div class="termCard">
-  <div class="term">Browser-in-the-Browser (BitB) / ブラウザ内ブラウザ攻撃</div>
-  <p class="exp">Webページ内に偽のブラウザウィンドウを表示し、正規のログイン画面に見せかけて認証情報を盗むフィッシング手法。UIを模倣するため、URLやSSL証明書の確認では見抜きにくい。</p>
+  <div class="term">Web Skimming / ウェブスキミング</div>
+  <p class="exp">オンライン決済ページに悪意あるスクリプトを挿入し、入力されたクレジットカード情報を盗み取る攻撃手法。Magecartグループなどが代表的な攻撃者として知られる。</p>
 </div>
 <div class="termCard">
-  <div class="term">OAuth</div>
-  <p class="exp">外部サービスの認証を安全に委任するためのプロトコル。FacebookやGoogleログインなどで広く利用されるが、BitB攻撃ではこの認証画面が偽装対象となる。</p>
+  <div class="term">Content Security Policy (CSP)</div>
+  <p class="exp">Webブラウザに対し、許可されたスクリプトやリソースの読み込み元を制限するセキュリティ機構。外部スクリプト改ざんによる情報漏えいを防ぐ効果がある。</p>
 </div>
 <div class="termCard">
-  <div class="term">Single Sign-On (SSO) / シングルサインオン</div>
-  <p class="exp">一度の認証で複数のサービスにアクセスできる仕組み。認証情報の集中管理により、漏えい時の影響範囲を制御しやすい。</p>
+  <div class="term">Subresource Integrity (SRI)</div>
+  <p class="exp">外部リソースの改ざん検知を目的とした仕組みで、HTML内にハッシュ値を埋め込み、読み込むスクリプトの整合性を検証する。</p>
 </div>
 <div class="termCard">
-  <div class="term">Multi-Factor Authentication (MFA) / 多要素認証</div>
-  <p class="exp">パスワードに加え、物理トークンや生体認証など複数の要素で認証を行う仕組み。BitB攻撃によるパスワード窃取の被害を軽減できる。</p>
+  <div class="term">Silent Push</div>
+  <p class="exp">脅威インテリジェンスを提供するセキュリティ企業で、攻撃インフラやマルウェアキャンペーンの追跡を専門とする。</p>
 </div>
           </div>
         </div>

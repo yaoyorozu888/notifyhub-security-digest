@@ -7,7 +7,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="robots" content="noindex,nofollow" />
-  <title>Facebook login thieves now using browser-in-browser trick | NotifyHub Cybersecurity Daily Report</title>
+  <title>Target employees confirm leaked source code is authentic | NotifyHub Cybersecurity Daily Report</title>
   <style>
     :root{
       --bg:#0b1020; --panel:#0f1730; --panel2:#121c3a;
@@ -195,26 +195,26 @@
         <!-- ../index.html は通常 "../index.html" でOK -->
         <a href="../index.html">← 日次トップへ戻る</a>
       </div>
-      <div class="chip">entry_id <strong class="mono">451adf7d3dbb5211</strong></div>
+      <div class="chip">entry_id <strong class="mono">9e0d908d49dfd4d3</strong></div>
     </div>
 
     <div class="panel">
       <div class="head">
-        <h1>Facebook login thieves now using browser-in-browser trick</h1>
+        <h1>Target employees confirm leaked source code is authentic</h1>
 
         <div class="meta">
           <span>🗞️ BleepingComputer</span>
-          <span>🕒 2026-01-13T06:05:43+09:00</span>
-          <span>🔗 <a href="https://www.bleepingcomputer.com/news/security/facebook-login-thieves-now-using-browser-in-browser-trick/" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
+          <span>🕒 2026-01-13T22:08:25+09:00</span>
+          <span>🔗 <a href="https://www.bleepingcomputer.com/news/security/target-employees-confirm-leaked-source-code-is-authentic/" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
         </div>
 
         <div class="tags">
           <span class="tag level-High">Impact: High</span>
-          <span class="tag">Other</span>
+          <span class="tag">Data Breach</span>
         </div>
 
         <div class="btnRow">
-          <a class="linkbtn" href="https://www.bleepingcomputer.com/news/security/facebook-login-thieves-now-using-browser-in-browser-trick/" target="_blank" rel="noopener noreferrer">原文リンク</a>
+          <a class="linkbtn" href="https://www.bleepingcomputer.com/news/security/target-employees-confirm-leaked-source-code-is-authentic/" target="_blank" rel="noopener noreferrer">原文リンク</a>
           <a class="linkbtn" href="https://www.notifyhub.site/digest/2026-01-14/">日次トップ</a>
         </div>
       </div>
@@ -222,32 +222,32 @@
       <div class="body">
         <div class="section">
           <h2>Impact判定理由</h2>
-          <div class="ruleReason">BitB攻撃は既存のフィッシング対策を回避でき、主要SNSやOAuth連携サービスの認証情報を直接狙うため被害範囲が広い。悪用事例が増加しており、即時の教育・技術的対策が求められるが、システム脆弱性ではないためCriticalには至らない。</div>
+          <div class="ruleReason">内部ソースコードの真正性が確認されており、攻撃者が内部構造を解析して脆弱性を特定する可能性が高い。顧客データ流出は未確認だが、企業システムへの侵入リスクが上昇しているため高リスクと判断する。</div>
         </div>
         <div class="section summary">
           <h2>🧾 要約（ChatGPT）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          <div><h4>概要</h4><p>攻撃者がFacebookの認証情報を窃取するために「Browser-in-the-Browser（BitB）」手法を活用する事例が増加している。BitBは、正規のログインポップアップを模倣した偽ウィンドウをブラウザ内に生成し、ユーザーに本物と誤認させて認証情報を入力させるフィッシング技術である。特にFacebookやGoogleなどOAuth認証を利用するサービスで効果的に悪用されており、従来のURL確認やSSL証明書のチェックでは見抜きにくい点が特徴である。</p><h4>現場の学び</h4><ul><li>BitB攻撃はWebブラウザのUIを模倣するため、従来のドメイン確認教育だけでは防ぎにくい。ユーザー教育の更新が必要。</li><li>攻撃者は正規ブランドのデザインを完全に再現するため、セキュリティ製品によるURLベース検知が困難。</li><li>企業環境では、SSO（シングルサインオン）やMFA（多要素認証）の導入により被害を限定できる。</li></ul><h4>初動・継続対応の示唆</h4><ul><li>社内啓発では「ポップアップの見た目ではなく、ブラウザのアドレスバーで確認する」行動を強調する。</li><li>セキュリティチームはBitB検知を支援するブラウザ拡張やEDRの導入を検討。</li><li>インシデント発生時は、被害アカウントのトークン無効化とパスワードリセットを即時実施する。</li></ul></div>
+          <div><h4>概要</h4><p>米小売大手Target社の内部ソースコードが流出し、現職・元従業員がその真正性を確認した。流出は脅威アクターによるGitサーバからの漏えいとみられ、報道後に同社はVPN経由でのみアクセス可能とする緊急ロックダウンを実施した。現時点で顧客データ流出の報告はないが、内部システム構成や認証ロジックが外部に露出した可能性がある。</p><h4>現場の学び</h4><ul><li>ソースコード流出は直接的な機密情報漏えいだけでなく、脆弱性解析や攻撃連鎖（Exploit Chain）の足掛かりとなる。</li><li>Gitサーバのアクセス制御は、VPNや多要素認証（MFA）を前提としたゼロトラスト設計が求められる。</li><li>報道や外部通報を契機に初動対応を迅速化する体制整備が重要である。</li></ul><h4>初動・継続対応の示唆</h4><ul><li>流出範囲の特定と、認証情報・APIキーの即時ローテーションを実施する。</li><li>ソースコード内の秘密情報検出ツール（例: truffleHog, GitGuardian）を活用し、再発防止策を自動化する。</li><li>脅威アクターの公開情報を継続監視し、関連する攻撃キャンペーンへの早期検知体制を維持する。</li></ul></div>
         </div>
 
         <div class="section">
           <h2>📌 キーワード解説</h2>
           <div class="terms">
             <div class="termCard">
-  <div class="term">Browser-in-the-Browser (BitB) / ブラウザ内ブラウザ攻撃</div>
-  <p class="exp">Webページ内に偽のブラウザウィンドウを表示し、正規のログイン画面に見せかけて認証情報を盗むフィッシング手法。UIを模倣するため、URLやSSL証明書の確認では見抜きにくい。</p>
+  <div class="term">Git server / Gitサーバ</div>
+  <p class="exp">ソースコードのバージョン管理に用いられるサーバ。アクセス制御が不十分な場合、内部コードや認証情報が外部に漏れるリスクがある。</p>
 </div>
 <div class="termCard">
-  <div class="term">OAuth</div>
-  <p class="exp">外部サービスの認証を安全に委任するためのプロトコル。FacebookやGoogleログインなどで広く利用されるが、BitB攻撃ではこの認証画面が偽装対象となる。</p>
+  <div class="term">VPN (Virtual Private Network) / 仮想私設網</div>
+  <p class="exp">安全な通信経路を確立する技術。社内システムへのアクセスをVPN経由に限定することで、外部からの不正接続を防ぐ。</p>
 </div>
 <div class="termCard">
-  <div class="term">Single Sign-On (SSO) / シングルサインオン</div>
-  <p class="exp">一度の認証で複数のサービスにアクセスできる仕組み。認証情報の集中管理により、漏えい時の影響範囲を制御しやすい。</p>
+  <div class="term">Exploit Chain / 攻撃連鎖</div>
+  <p class="exp">複数の脆弱性や設定不備を連続的に悪用して目的を達成する攻撃手法。ソースコード流出はその初期段階の情報源となる。</p>
 </div>
 <div class="termCard">
-  <div class="term">Multi-Factor Authentication (MFA) / 多要素認証</div>
-  <p class="exp">パスワードに加え、物理トークンや生体認証など複数の要素で認証を行う仕組み。BitB攻撃によるパスワード窃取の被害を軽減できる。</p>
+  <div class="term">Zero Trust / ゼロトラスト</div>
+  <p class="exp">すべてのアクセスを信頼せず、常に検証するセキュリティモデル。内部ネットワークでも認証・認可を厳格に行う。</p>
 </div>
           </div>
         </div>
