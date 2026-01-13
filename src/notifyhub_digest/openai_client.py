@@ -168,7 +168,68 @@ def _coerce_analysis_result(parsed: dict[str, Any]) -> AnalysisResult:
     """Be tolerant to minor schema drift and fill defaults."""
 
     if not isinstance(parsed, dict):
-        return AnalysisResult(summary_html="", technical_terms=[], impact_level="Unknown", impact_reason="", threat_type="-")
+        return AnalysisResult(summary_html="", technical_terms=[], impact_level="Unknown", impact_reason="", threat_type="Unknown")
+
+    def _normalize_threat_type(raw: str) -> str:
+        v = (raw or "").strip()
+        if not v or v == "-":
+            return "Unknown"
+
+        v_l = v.lower()
+
+        # Prefer explicit English labels.
+        allowed = {
+            "vulnerability": "Vulnerability",
+            "exploit": "Exploit",
+            "malware": "Malware",
+            "ransomware": "Ransomware",
+            "phishing": "Phishing",
+            "credential theft": "Credential Theft",
+            "intrusion": "Intrusion",
+            "data breach": "Data Breach",
+            "ddos": "DDoS",
+            "supply chain": "Supply Chain",
+            "advisory": "Advisory",
+            "other": "Other",
+            "unknown": "Unknown",
+        }
+        for k, mapped in allowed.items():
+            if v_l == k:
+                return mapped
+
+        # Accept a few common variants.
+        if v_l in {"cred theft", "credential-theft", "credentials"}:
+            return "Credential Theft"
+        if v_l in {"dos", "ddos attack", "denial of service"}:
+            return "DDoS"
+        if v_l in {"supply-chain", "supplychain"}:
+            return "Supply Chain"
+
+        # Japanese -> English mapping (best-effort).
+        if any(x in v for x in ("脆弱性", "ぜいじゃくせい", "vuln", "cve")):
+            return "Vulnerability"
+        if any(x in v for x in ("エクスプロイト", "攻撃コード", "悪用", "exploit")):
+            return "Exploit"
+        if any(x in v for x in ("マルウェア", "ウイルス", "トロイ", "botnet", "ボットネット")):
+            return "Malware"
+        if any(x in v for x in ("ランサム", "身代金", "ransom")):
+            return "Ransomware"
+        if any(x in v for x in ("フィッシング", "phish")):
+            return "Phishing"
+        if any(x in v for x in ("認証情報", "資格情報", "credential", "パスワード")):
+            return "Credential Theft"
+        if any(x in v for x in ("侵害", "不正アクセス", "侵入", "compromise")):
+            return "Intrusion"
+        if any(x in v for x in ("情報漏えい", "漏えい", "流出", "data breach")):
+            return "Data Breach"
+        if any(x in v for x in ("DDoS", "ddos", "サービス妨害", "dos")):
+            return "DDoS"
+        if any(x in v for x in ("サプライチェーン", "供給網", "supply")):
+            return "Supply Chain"
+        if any(x in v for x in ("注意喚起", "アドバイザリ", "更新", "リリース", "advisory")):
+            return "Advisory"
+
+        return "Other"
 
     # Normalize common variations.
     if "impact_level" in parsed and isinstance(parsed["impact_level"], str):
@@ -179,7 +240,7 @@ def _coerce_analysis_result(parsed: dict[str, Any]) -> AnalysisResult:
             parsed["impact_level"] = v
 
     if "threat_type" in parsed and isinstance(parsed["threat_type"], str):
-        parsed["threat_type"] = parsed["threat_type"].strip() or "-"
+        parsed["threat_type"] = _normalize_threat_type(parsed["threat_type"])
 
     try:
         return AnalysisResult.model_validate(parsed)
@@ -190,7 +251,7 @@ def _coerce_analysis_result(parsed: dict[str, Any]) -> AnalysisResult:
             technical_terms=[],
             impact_level=str(parsed.get("impact_level") or "Unknown"),
             impact_reason=str(parsed.get("impact_reason") or ""),
-            threat_type=str(parsed.get("threat_type") or "-"),
+            threat_type=_normalize_threat_type(str(parsed.get("threat_type") or "")),
         )
 
 
@@ -298,5 +359,5 @@ def analyze_item(
             technical_terms=[],
             impact_level="Unknown",
             impact_reason="",
-            threat_type="-",
+            threat_type="Unknown",
         )

@@ -116,6 +116,7 @@ def _render_items_html(*, items: list[FeedItem], digest_root_url: str) -> str:
         title = html.escape(it.title)
         src = html.escape(it.source_name)
         impact = html.escape(it.analysis.impact_level)
+        threat = html.escape(it.analysis.threat_type)
 
         original = _safe_url(it.original_url)
         original_attr = html.escape(original, quote=True)
@@ -132,7 +133,13 @@ def _render_items_html(*, items: list[FeedItem], digest_root_url: str) -> str:
                     f"    <span style=\"font-size:12px;margin-left:6px;\"><a href=\"{article_attr}\" style=\"color:#2563eb;\">(Web版)</a></span>"
                     f"    <span style=\"color:#6b7280;font-size:12px;\"> ({src})</span>"
                     "  </div>",
-                    f'  <div style="margin-top:6px;font-size:12px;color:#374151;">Impact: <strong>{impact}</strong></div>',
+                    (
+                        f'  <div style="margin-top:6px;font-size:12px;color:#374151;">'
+                        f'Impact: <strong>{impact}</strong>'
+                        f' <span style="color:#9ca3af;">/</span> '
+                        f'Threat: <strong>{threat}</strong>'
+                        f"</div>"
+                    ),
                     "</div>",
                 ]
             )

@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="robots" content="noindex,nofollow" />
-  <title>Cybersecurity 日次レポート</title>
+  <title>NotifyHub Cybersecurity Daily Report</title>
   <style>
     :root{
       --bg:#0b1020; --panel:#0f1730; --panel2:#121c3a;
@@ -41,6 +41,11 @@
     .metaRow{
       display:flex; gap:10px; flex-wrap:wrap; margin-top:6px;
     }
+    .impactSummary{
+      display:flex; gap:8px; flex-wrap:wrap;
+      margin-top:8px;
+    }
+    .tag.zero{opacity:.45}
     .chip{
       display:inline-flex; align-items:center; gap:8px;
       background:rgba(27,38,80,.75);
@@ -249,7 +254,7 @@
   <div class="wrap">
     <header>
       <div class="title">
-        <h1>Cybersecurity 日次レポート</h1>
+        <h1>NotifyHub Cybersecurity Daily Report</h1>
         <div class="subtitle">
           対象期間：<span id="window"></span><span class="sep">｜</span>
           生成：<span id="generated"></span>
@@ -257,6 +262,7 @@
         <div class="intro">
           日次で収集したセキュリティ関連の公開情報を一覧化しています。詳細は各Web記事で確認してください。
         </div>
+        <div class="impactSummary" id="impactSummary"></div>
         <div class="metaRow">
           <span class="chip">総件数 <strong id="total">-</strong></span>
           <span class="chip">表示中 <strong id="shown">-</strong></span>
@@ -479,6 +485,22 @@
         }));
 
         qs("total").textContent = String(allItems.length);
+
+        // Impact summary (counts by impact_level)
+        const impactOrder = ["Critical","High","Medium","Low","Info","Unknown"];
+        const counts = Object.fromEntries(impactOrder.map(k => [k, 0]));
+        for(const it of allItems){
+          const k = impactOrder.includes(it.impact_level) ? it.impact_level : "Unknown";
+          counts[k] = (counts[k] ?? 0) + 1;
+        }
+        const summary = qs("impactSummary");
+        if(summary){
+          summary.innerHTML = impactOrder.map(k => {
+            const n = counts[k] ?? 0;
+            const zero = n === 0 ? " zero" : "";
+            return `<span class="tag level-${escapeHtml(k)}${zero}">${escapeHtml(k)} <strong>${n}</strong></span>`;
+          }).join("");
+        }
 
         const w = manifest.window || {};
         const from = w.from ? toJstLabel(w.from) : "-";

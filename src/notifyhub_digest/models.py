@@ -7,6 +7,21 @@ from pydantic import BaseModel, Field
 
 
 ImpactLevel = Literal["Critical", "High", "Medium", "Low", "Info", "Unknown"]
+ThreatType = Literal[
+    "Vulnerability",
+    "Exploit",
+    "Malware",
+    "Ransomware",
+    "Phishing",
+    "Credential Theft",
+    "Intrusion",
+    "Data Breach",
+    "DDoS",
+    "Supply Chain",
+    "Advisory",
+    "Other",
+    "Unknown",
+]
 
 
 class Source(BaseModel):
@@ -39,7 +54,7 @@ class AnalysisResult(BaseModel):
     technical_terms: list[TechnicalTerm] = Field(default_factory=list)
     impact_level: ImpactLevel = "Unknown"
     impact_reason: str = ""
-    threat_type: str = "-"
+    threat_type: ThreatType = "Unknown"
 
 
 class FeedItem(BaseModel):

@@ -93,7 +93,7 @@ def build_digest_outputs(
                 if not (window.start_utc <= e.published_at_utc < window.end_utc):
                     continue
 
-                analysis = AnalysisResult(summary_html="", technical_terms=[], impact_level="Unknown", threat_type="-")
+                analysis = AnalysisResult(summary_html="", technical_terms=[], impact_level="Unknown", threat_type="Unknown")
                 if openai_cfg is not None:
                     try:
                         analysis = analyze_item(
@@ -108,7 +108,7 @@ def build_digest_outputs(
                     except Exception as ai_e:
                         logger.warning("OpenAI analysis failed: %s (%s)", e.entry_id, ai_e)
                         analysis = AnalysisResult(
-                            summary_html="", technical_terms=[], impact_level="Unknown", threat_type="-"
+                            summary_html="", technical_terms=[], impact_level="Unknown", threat_type="Unknown"
                         )
 
                 # summary_htmlは必ずサニタイズ（仕様必須）
