@@ -1,0 +1,271 @@
+<!-- article.html テンプレート（生成用） (例: /digest/YYYY-MM-DD/articles/<entry_id>.html)
+     サーバ側（Function）で {{...}} を置換して出力してください。
+-->
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <title>AuraInspector: Auditing Salesforce Aura for Data Exposure | Cybersecurity 日次レポート</title>
+  <style>
+    :root{
+      --bg:#0b1020; --panel:#0f1730; --panel2:#121c3a;
+      --text:#e7ecff; --muted:#a9b4df; --line:#22305b;
+      --accent:#7aa2ff; --good:#4ade80; --warn:#fbbf24; --bad:#fb7185;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+      --radius:18px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      background: radial-gradient(1000px 700px at 20% -10%, rgba(122,162,255,.25), transparent 60%),
+                  radial-gradient(900px 600px at 90% 10%, rgba(251,113,133,.12), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+    }
+    a{color:inherit}
+    .wrap{max-width:960px; margin:0 auto; padding:22px 18px 44px}
+    .topbar{
+      display:flex; justify-content:space-between; align-items:center; gap:12px;
+      margin-bottom:12px;
+    }
+    .crumb a{
+      text-decoration:none;
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .crumb a:hover{border-color:rgba(122,162,255,.65)}
+    .chip{
+      display:inline-flex; align-items:center; gap:8px;
+      background:rgba(27,38,80,.75);
+      border:1px solid rgba(34,48,91,.9);
+      padding:7px 10px; border-radius:999px;
+      font-size:12px; color:var(--muted);
+      backdrop-filter: blur(10px);
+      white-space:nowrap;
+    }
+    .chip strong{color:var(--text); font-weight:650}
+    .panel{
+      background: linear-gradient(180deg, rgba(15,23,48,.9), rgba(15,23,48,.75));
+      border:1px solid rgba(34,48,91,.9);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .head{
+      padding:16px 16px 12px;
+      border-bottom:1px solid rgba(34,48,91,.9);
+      background:rgba(18,28,58,.55);
+    }
+    h1{
+      margin:0;
+      font-size:20px;
+      line-height:1.35;
+      letter-spacing:.15px;
+    }
+    .meta{
+      margin-top:10px;
+      display:flex; gap:10px; flex-wrap:wrap;
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.6;
+    }
+    .meta a{color:var(--muted)}
+    .meta a:hover{color:var(--accent)}
+    .tags{
+      margin-top:12px;
+      display:flex; gap:8px; flex-wrap:wrap;
+    }
+    .tag{
+      font-size:11px;
+      padding:6px 9px;
+      border-radius:999px;
+      background:rgba(27,38,80,.65);
+      border:1px solid rgba(34,48,91,.9);
+      color:var(--muted);
+      white-space:nowrap;
+    }
+    .tag.level-Critical{border-color:rgba(251,113,133,.65); color:#ffd0d7}
+    .tag.level-High{border-color:rgba(251,191,36,.65); color:#ffe9b0}
+    .tag.level-Medium{border-color:rgba(122,162,255,.65); color:#dbe6ff}
+    .tag.level-Low{border-color:rgba(74,222,128,.55); color:#d0ffe2}
+    .tag.level-Info{border-color:rgba(169,180,223,.55); color:rgba(169,180,223,.95)}
+    .body{
+      padding:16px;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+    }
+    .section{
+      background:rgba(18,28,58,.35);
+      border:1px solid rgba(34,48,91,.75);
+      border-radius:16px;
+      padding:14px;
+    }
+    .section h2{
+      margin:0 0 10px;
+      font-size:14px;
+      letter-spacing:.1px;
+    }
+    .ruleReason{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.65;
+      white-space:pre-wrap;
+    }
+
+    /* --- summary_html styles (OpenAI output uses h4/p/ul/li/strong/code/br) --- */
+    .summary h4{margin:12px 0 8px; font-size:13px}
+    .summary p{margin:8px 0; color:rgba(231,236,255,.92); line-height:1.75}
+    .summary ul, .summary ol{margin:8px 0 8px 1.2em; padding:0}
+    .summary li{margin:6px 0; color:rgba(231,236,255,.92); line-height:1.7}
+    .summary strong{color:var(--text)}
+    .summary code{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 8px;
+      background: rgba(11,16,32,.6);
+      border: 1px solid rgba(34,48,91,.85);
+      color: rgba(231,236,255,.95);
+      white-space: nowrap;
+    }
+
+    .terms{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:10px;
+    }
+    @media (max-width: 860px){
+      .terms{grid-template-columns: 1fr}
+    }
+    .termCard{
+      background:rgba(11,16,32,.45);
+      border:1px solid rgba(34,48,91,.85);
+      border-radius:14px;
+      padding:12px;
+      min-width:0;
+    }
+    .termCard .term{
+      font-weight:700;
+      font-size:13px;
+      margin:0 0 8px;
+      word-break:break-word;
+    }
+    .termCard .exp{
+      margin:0;
+      color:rgba(231,236,255,.9);
+      line-height:1.7;
+      font-size:12px;
+      white-space:pre-wrap;
+    }
+
+    .footer{
+      margin-top:14px;
+      color:rgba(169,180,223,.75);
+      font-size:12px;
+      line-height:1.7;
+      text-align:center;
+    }
+    .btnRow{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px}
+    .linkbtn{
+      text-decoration:none;
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .linkbtn:hover{border-color:rgba(122,162,255,.65)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="crumb">
+        <!-- ../index.html は通常 "../index.html" でOK -->
+        <a href="../index.html">← 日次トップへ戻る</a>
+      </div>
+      <div class="chip">entry_id <strong class="mono">96382426ef6d26d2</strong></div>
+    </div>
+
+    <div class="panel">
+      <div class="head">
+        <h1>AuraInspector: Auditing Salesforce Aura for Data Exposure</h1>
+
+        <div class="meta">
+          <span>🗞️ Mandiant</span>
+          <span>🕒 2026-01-12T23:00:00+09:00</span>
+          <span>🔗 <a href="https://cloud.google.com/blog/topics/threat-intelligence/auditing-salesforce-aura-data-exposure/" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
+        </div>
+
+        <div class="tags">
+          <span class="tag level-High">Impact: High</span>
+          <span class="tag">Data Exposure / データ漏えい</span>
+        </div>
+
+        <div class="btnRow">
+          <a class="linkbtn" href="https://cloud.google.com/blog/topics/threat-intelligence/auditing-salesforce-aura-data-exposure/" target="_blank" rel="noopener noreferrer">原文リンク</a>
+          <a class="linkbtn" href="https://www.notifyhub.site/digest/2026-01-13/">日次トップ</a>
+        </div>
+      </div>
+
+      <div class="body">
+        <div class="section">
+          <h2>Impact判定理由</h2>
+          <div class="ruleReason">AuraやGraphQLの誤設定により、認証なしで機密データが大量に取得される恐れがある。脆弱性自体ではなく設定不備が原因だが、影響範囲が広く、攻撃再現性も高いため高リスクと評価される。</div>
+        </div>
+        <div class="section summary">
+          <h2>🧾 要約（ChatGPT）</h2>
+          <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
+          <div><h4>概要</h4><p>Mandiantは、SalesforceのAuraフレームワークにおけるアクセス制御ミス構成を検出・監査するためのオープンソースツール「AuraInspector」を公開した。Salesforce Experience Cloudでは、誤った共有設定によりゲストユーザーが機密データへアクセスできる事例が多く、AuraエンドポイントやGraphQLコントローラを悪用すると2,000件制限を超えるデータ取得も可能となる。AuraInspectorはこれらのリスクを自動検出し、管理者が安全に設定を見直す支援を行う。</p><h4>現場の学び</h4><ul><li>SalesforceのAuraエンドポイントはUI操作の裏で多くのデータを扱うため、アクセス制御の誤設定が即データ漏えいにつながる。</li><li>GraphQL Auraコントローラは公式APIと同等の機能を持ち、誤設定時には大量データの抽出が容易になる。</li><li>「boxcar'ing」による複数アクションの一括送信やRecord List機能など、開発者向け機能が攻撃面を拡大しうる。</li><li>AuraInspectorはこれらの挙動を安全に可視化し、ゲスト権限・自己登録設定・公開URLの監査を自動化できる。</li></ul><h4>初動・継続対応の示唆</h4><ul><li>ゲストユーザー権限を最小化し、不要なオブジェクト・フィールド公開を停止する。</li><li>自己登録機能を無効化し、共有ルールや組織全体のデフォルト設定を再確認する。</li><li>Salesforce Security Health CheckやAuraInspectorを定期的に実行し、設定逸脱を早期検知する。</li><li>監視では/auraエンドポイントへのPOST通信を検知条件に加え、潜在的な不正アクセスを特定する。</li></ul></div>
+        </div>
+
+        <div class="section">
+          <h2>📌 キーワード解説</h2>
+          <div class="terms">
+            <div class="termCard">
+  <div class="term">Aura Framework / Auraフレームワーク</div>
+  <p class="exp">SalesforceのLightning Experienceを支えるUIコンポーネントフレームワークで、フロントエンドとバックエンド間のデータ通信を行う。</p>
+</div>
+<div class="termCard">
+  <div class="term">GraphQL Controller / GraphQLコントローラ</div>
+  <p class="exp">SalesforceのUIAPIを通じてデータを取得・操作する仕組み。Aura経由でも利用可能で、誤設定時には大量データ取得が可能になる。</p>
+</div>
+<div class="termCard">
+  <div class="term">Boxcar&#x27;ing / アクション一括送信</div>
+  <p class="exp">Auraが複数のサーバーアクションを1つのHTTPリクエストにまとめて送信する最適化手法。誤用するとデータ抽出効率を高める攻撃に悪用される可能性がある。</p>
+</div>
+<div class="termCard">
+  <div class="term">AuraInspector / オーラインスペクター</div>
+  <p class="exp">Mandiantが公開したオープンソースCLIツールで、Salesforce Aura環境のアクセス制御ミス構成を自動検出し、修正指針を提示する。</p>
+</div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>🕘 生成情報</h2>
+          <div class="ruleReason">
+対象期間：2026-01-12T06:00:00+09:00 〜 2026-01-13T06:00:00+09:00
+生成時刻：2026-01-13T06:00:00+09:00
+免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      notifyhub.site
+    </div>
+  </div>
+</body>
+</html>
