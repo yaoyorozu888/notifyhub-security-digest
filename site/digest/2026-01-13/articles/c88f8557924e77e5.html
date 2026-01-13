@@ -210,7 +210,7 @@
 
         <div class="tags">
           <span class="tag level-Medium">Impact: Medium</span>
-          <span class="tag">Privacy and Data Governance Risk</span>
+          <span class="tag">Privacy &amp; Data Governance</span>
         </div>
 
         <div class="btnRow">
@@ -222,12 +222,12 @@
       <div class="body">
         <div class="section">
           <h2>Impact判定理由</h2>
-          <div class="ruleReason">現時点では脆弱性や侵害事例は報告されていないが、外部クラウドAIとの連携によりデータ保護・アクセス制御の複雑性が増す。プライバシーリスクや設定不備による情報漏えいの可能性があるため、運用面での注意が必要。</div>
+          <div class="ruleReason">現時点では脆弱性や侵害事例は報告されていないが、AI統合によるデータ処理経路の拡大が潜在的リスクを増加させる。特にクラウド連携部分の監査・制御が不十分な場合、情報漏えいの可能性があるため中程度の影響と評価する。</div>
         </div>
         <div class="section summary">
           <h2>🧾 要約（ChatGPT）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          <div><h4>概要</h4><p>Appleは次期Siriにおいて、Googleの大規模言語モデル「Gemini」とGoogle Cloudを活用することを正式に発表した。両社は複数年にわたる協業を行い、Apple Intelligenceの一部として自然言語処理や生成AI機能を強化する。一方で、Appleはプライバシー保護を最優先とし、ユーザーデータの処理は可能な限りオンデバイスで行う方針を強調している。</p><h4>現場の学び</h4><ul><li>生成AI基盤が外部クラウド（Google Cloud）に依存する場合、データの越境移転や第三者アクセスリスクを再評価する必要がある。</li><li>Appleの「オンデバイス処理」方針は、ゼロトラスト設計やデータ最小化の実装例として参考になる。</li><li>マルチベンダーAI連携では、モデル更新やAPI変更による挙動変化がセキュリティ監視に影響する点を考慮すべき。</li></ul><h4>初動・継続対応の示唆</h4><ul><li>クラウドAI連携を利用するアプリやサービスでは、データ送信範囲・暗号化方式・ログ保持方針を明確化し、利用規約やDPA（データ処理契約）を確認する。</li><li>AIモデル更新時の挙動変化を検知できる監査・モニタリング体制を整備する。</li><li>AppleおよびGoogleのプライバシー実装方針の更新を継続的に追跡し、組織内のリスク評価を定期的に見直す。</li></ul></div>
+          <div><h4>概要</h4><p>Appleは次期SiriにGoogleの大規模言語モデル「Gemini」を採用し、Google Cloudを活用する複数年契約を発表した。両社はプライバシー保護を最優先とし、ユーザーデータの処理はデバイス上で行う設計を維持する方針を示している。Apple Intelligenceの一部としてGeminiを統合することで、自然言語理解や生成能力の向上を狙うが、クラウド連携によるデータ移動範囲の拡大が懸念される。</p><h4>現場の学び</h4><ul><li>生成AIの統合は利便性向上と同時に、データフローの複雑化を招く。CSIRTはクラウド連携時のデータ境界を明確に把握する必要がある。</li><li>AppleとGoogleの協業は、異なるプライバシーポリシーやログ管理の差異を理解した上で、リスク評価を行う好例となる。</li><li>AIモデル更新やAPI連携の変更がセキュリティ設定に影響する可能性があるため、構成管理と監査ログの追跡を強化すべきである。</li></ul><h4>初動・継続対応の示唆</h4><ul><li>組織内でSiriやGeminiを業務利用する場合、データ送信先・保存範囲を明示し、利用ポリシーを再確認する。</li><li>クラウド経由のAI処理に関して、通信経路の暗号化とアクセス制御の有効性を定期的に検証する。</li><li>AI統合による新たなサプライチェーンリスクを想定し、ベンダー間の責任分界点を契約上で明確化する。</li></ul></div>
         </div>
 
         <div class="section">
@@ -235,19 +235,19 @@
           <div class="terms">
             <div class="termCard">
   <div class="term">Large Language Model (LLM) / 大規模言語モデル</div>
-  <p class="exp">大量のテキストデータを学習し、人間のような自然言語生成や理解を行うAIモデル。GeminiはGoogleが開発したLLM。</p>
+  <p class="exp">大量のテキストデータを学習し、人間のように自然な文章を生成・理解するAIモデル。GeminiはGoogleが開発したLLMであり、Siriの応答精度向上に利用される。</p>
 </div>
 <div class="termCard">
-  <div class="term">On-device Processing / オンデバイス処理</div>
-  <p class="exp">データをクラウドに送信せず、端末内で処理する方式。プライバシー保護や遅延低減に有効。</p>
+  <div class="term">On-device Processing / デバイス上処理</div>
+  <p class="exp">ユーザーデータをクラウドに送信せず、端末内で処理を完結させる方式。プライバシー保護とレイテンシ低減の両立を目的とする。</p>
 </div>
 <div class="termCard">
-  <div class="term">Data Processing Agreement (DPA) / データ処理契約</div>
-  <p class="exp">クラウドサービス提供者と利用者間でデータの取り扱い責任を定める契約。GDPRなどの法令遵守に関わる。</p>
+  <div class="term">Data Boundary / データ境界</div>
+  <p class="exp">データがどのシステムやクラウドに渡るかを定義する概念。AI統合時には、境界の不明確さが情報漏えいリスクを高める。</p>
 </div>
 <div class="termCard">
-  <div class="term">Zero Trust Architecture / ゼロトラストアーキテクチャ</div>
-  <p class="exp">すべての通信やアクセスを信頼せず、常に検証するセキュリティ設計思想。AI連携環境でも重要。</p>
+  <div class="term">Supply Chain Risk / サプライチェーンリスク</div>
+  <p class="exp">外部ベンダーやサービス連携を通じて発生するセキュリティリスク。AIモデル提供元やクラウド運用者もリスク要因となる。</p>
 </div>
           </div>
         </div>
@@ -256,7 +256,7 @@
           <h2>🕘 生成情報</h2>
           <div class="ruleReason">
 対象期間：2026-01-12T06:00:00+09:00 〜 2026-01-13T06:00:00+09:00
-生成時刻：2026-01-13T06:00:00+09:00
+生成時刻：2026-01-13T23:39:03.653558+09:00
 免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
           </div>
         </div>

@@ -210,7 +210,7 @@
 
         <div class="tags">
           <span class="tag level-High">Impact: High</span>
-          <span class="tag">Data Exposure / データ漏えい</span>
+          <span class="tag">Data Exposure / 誤設定による情報漏えい</span>
         </div>
 
         <div class="btnRow">
@@ -222,12 +222,12 @@
       <div class="body">
         <div class="section">
           <h2>Impact判定理由</h2>
-          <div class="ruleReason">AuraやGraphQLコントローラの誤設定により、未認証ユーザーが大量の機密データへアクセス可能となるリスクがある。脆弱性自体ではなく設定不備が原因だが、影響範囲が広く、攻撃難易度も低いため重大度は高い。</div>
+          <div class="ruleReason">AuraやGraphQLコントローラの誤設定により、未認証ユーザーが大量の機密データへアクセス可能となる恐れがある。脆弱性自体ではなく設定不備が原因だが、影響範囲が広く、悪用容易性が高いため高リスクと判断される。</div>
         </div>
         <div class="section summary">
           <h2>🧾 要約（ChatGPT）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          <div><h4>概要</h4><p>Mandiantは、Salesforce Experience Cloud環境におけるアクセス制御の誤設定を検出するためのオープンソースツール「AuraInspector」を公開した。Salesforce Auraフレームワークのエンドポイントは、誤設定により未認証ユーザーが機密データ（顧客情報や医療情報など）へアクセスできるリスクがある。特にGraphQL Auraコントローラを悪用すると、通常の2,000件制限を超えて大量のレコードを取得可能となる。AuraInspectorはこれらの誤設定を自動検出し、修正指針を提示することで防御者の監査を支援する。</p><h4>現場の学び</h4><ul><li>SalesforceのAuraエンドポイントはUI操作を通じてデータを取得する仕組みであり、オブジェクト共有ルールの複雑さが誤設定を生みやすい。</li><li>GraphQL Auraコントローラは公式に文書化されていないが、誤設定時には大量データ漏えいの経路となる。</li><li>「boxcar'ing」による複数アクションの一括送信やRecord List機能など、正規機能の組み合わせが攻撃連鎖を形成し得る。</li><li>AuraInspectorはAuraエンドポイント、Record List、Self-Registration設定などを自動検出し、侵入経路の可視化を支援する。</li></ul><h4>初動・継続対応の示唆</h4><ul><li>Salesforce管理者はGuestユーザー権限を最小化し、共有ルールと組織全体のデフォルト設定を定期監査する。</li><li>不要なSelf-Registration機能を無効化し、外部公開ページのアクセス制御を再確認する。</li><li>CSIRTはAuraエンドポイント（/aura）へのPOST通信を監視し、異常なレコード取得リクエストを検知するUDMクエリを活用する。</li><li>Burp SuiteなどのスキャナにSalesforceドメイン検出ルールを組み込み、潜在的な統合アプリを特定する。</li></ul></div>
+          <div><h4>概要</h4><p>Mandiantは、SalesforceのAuraフレームワークにおけるアクセス制御ミス構成を検出・監査するためのオープンソースツール「AuraInspector」を公開した。AuraはSalesforce Lightning Experienceの基盤であり、誤設定によりゲストユーザーが機密データ（顧客情報、医療情報など）へ不正アクセスできる事例が多い。特にAuraエンドポイントやGraphQL Auraコントローラを悪用すると、通常の制限（2,000件）を超えて大量のレコードを取得できる可能性がある。AuraInspectorはこれらの設定不備を自動検出し、修正指針を提示する。</p><h4>現場の学び</h4><ul><li>SalesforceのAuraエンドポイントは複数の権限階層に依存し、誤設定が複雑に連鎖するため、定期的な権限監査が必須である。</li><li>GraphQL Auraコントローラは公式文書が少なく、UIAPI経由で広範なオブジェクトにアクセス可能なため、潜在的なデータ露出リスクを理解しておく必要がある。</li><li>「boxcar'ing」による複数アクションの一括送信やRecord List機能など、正規機能が攻撃面を拡大し得る点を意識する。</li><li>自動登録（Self-Registration）の無効化やゲストユーザー権限の最小化は、外部からの侵入経路を減らす基本対策である。</li></ul><h4>初動・継続対応の示唆</h4><ul><li>Salesforce管理者はAuraInspectorを用いてAuraエンドポイント、Record List、Home URL、自動登録設定を定期的に点検する。</li><li>監査ログやWebトラフィックから「/aura」POSTリクエストを検出し、未認証アクセスの有無を確認する。</li><li>CSIRTはGraphQLリクエストの異常増加や大量データ取得試行を監視し、誤設定を早期に特定する。</li><li>SalesforceのSecurity Health Checkや共有ルール監査を継続的に実施し、最小権限原則を維持する。</li></ul></div>
         </div>
 
         <div class="section">
@@ -235,19 +235,19 @@
           <div class="terms">
             <div class="termCard">
   <div class="term">Salesforce Aura Framework / Salesforce Auraフレームワーク</div>
-  <p class="exp">SalesforceのLightning Experienceを支えるUIコンポーネントフレームワークで、フロントエンドとバックエンド間のデータ通信を行う。</p>
+  <p class="exp">SalesforceのLightning Experienceで使用されるコンポーネントベースのUIフレームワーク。フロントエンドとバックエンド間でデータを交換するAuraエンドポイントを持つ。</p>
 </div>
 <div class="termCard">
   <div class="term">GraphQL Aura Controller / GraphQL Auraコントローラ</div>
-  <p class="exp">Salesforce内部でGraphQLクエリを処理するAuraの非公開API。誤設定時に大量データ取得が可能となる。</p>
+  <p class="exp">SalesforceのAura経由でGraphQLクエリを実行できる非公開API。UIAPI対応オブジェクトに対し、標準API制限を超えるデータ取得が可能。</p>
 </div>
 <div class="termCard">
   <div class="term">Boxcar&#x27;ing / アクション一括送信</div>
-  <p class="exp">Auraが複数のサーバーサイドアクションを1つのHTTPリクエストにまとめて送信する最適化機構。誤用でデータ漏えい範囲が拡大する可能性がある。</p>
+  <p class="exp">Auraが複数のサーバーアクションを1つのHTTPリクエストにまとめる仕組み。通信効率を高めるが、誤設定時には大量データ取得を容易にする。</p>
 </div>
 <div class="termCard">
-  <div class="term">AuraInspector / AuraInspectorツール</div>
-  <p class="exp">Mandiantが公開したオープンソースCLIツール。Salesforce Aura環境のアクセス制御誤設定を自動検出し、修正指針を提示する。</p>
+  <div class="term">Self-Registration / 自己登録</div>
+  <p class="exp">Salesforce Experience Cloudで外部ユーザーが自らアカウントを作成できる機能。無効化されていないと不正アカウント作成のリスクがある。</p>
 </div>
           </div>
         </div>
@@ -256,7 +256,7 @@
           <h2>🕘 生成情報</h2>
           <div class="ruleReason">
 対象期間：2026-01-12T06:00:00+09:00 〜 2026-01-13T06:00:00+09:00
-生成時刻：2026-01-13T06:00:00+09:00
+生成時刻：2026-01-13T23:39:03.653558+09:00
 免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
           </div>
         </div>
