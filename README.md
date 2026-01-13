@@ -121,6 +121,8 @@ SWAでの公開が必須の前提で、GitHub Actionsのスケジュール実行
 2) 生成物を `site/` 配下にコミットして `main` へ push します。
 3) `swa-deploy.yml` がその push（`site/**` の変更）をトリガーに、リポジトリ上の `site/` を Azure Static Web Apps へアップロードします（再生成はしません）。
 
+※ `swa-deploy.yml` は `site/index.html`（または `site/Index.html`）が無い場合はデプロイをスキップします（workflowファイル変更だけの push 等で失敗しないため）。
+
 ### Actionsログ出力（vars / secrets）
 
 - workflow実行中に vars は `name=value` でログ出力します。
