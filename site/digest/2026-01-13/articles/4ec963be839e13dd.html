@@ -209,8 +209,8 @@
         </div>
 
         <div class="tags">
-          <span class="tag level-Medium">Impact: Medium</span>
-          <span class="tag">Service Discontinuation / サービス終了リスク</span>
+          <span class="tag level-Low">Impact: Low</span>
+          <span class="tag">Service Discontinuation / サービス終了</span>
         </div>
 
         <div class="btnRow">
@@ -222,32 +222,32 @@
       <div class="body">
         <div class="section">
           <h2>Impact判定理由</h2>
-          <div class="ruleReason">アプリ廃止自体は脆弱性ではないが、業務利用中のデータアクセスやセキュリティ更新停止に伴うリスクが発生する。特にクラウド連携や個人情報を扱う環境では、移行計画を怠ると情報漏えいや業務停止の恐れがあるため、注意が必要。</div>
+          <div class="ruleReason">Lensの廃止自体は脆弱性や攻撃リスクを直接伴わないが、業務利用していた場合にデータ移行やアクセス管理の不備が生じる可能性があるため、限定的ながら運用上の注意が必要。</div>
         </div>
         <div class="section summary">
           <h2>🧾 要約（ChatGPT）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          <div><h4>概要</h4><p>Microsoftは、iOSおよびAndroid向けのドキュメントスキャンアプリ「Microsoft Lens」を2026年1月9日から段階的に廃止し、翌月にはアプリストアから削除する計画を発表した。LensはPDFスキャンやOCR（文字認識）機能を備え、OneDriveやOfficeアプリと連携していた。今回の廃止は、機能統合やクラウドサービスへの移行を目的とした戦略的判断とみられる。</p><h4>現場の学び</h4><ul><li>業務で利用しているモバイルスキャンアプリが廃止される場合、データ保存先や認証情報の扱いを早期に確認する必要がある。</li><li>クラウド連携型アプリの終了は、データ残存リスクやアクセス不能リスクを伴うため、代替手段の選定と移行計画を明確にしておくことが重要。</li><li>モバイル端末に残るキャッシュやローカルデータの扱いも、情報漏えい防止の観点から確認すべきである。</li></ul><h4>初動・継続対応の示唆</h4><ul><li>Lensを業務利用している場合は、OneDriveやMicrosoft 365の統合機能への移行を検討し、利用者への周知を早急に行う。</li><li>アプリ削除前にスキャン済みデータをバックアップし、組織のデータ保持ポリシーに沿って安全に移行する。</li><li>廃止に伴うサポート終了後は、非公式アプリや改変版の利用を避け、正規のMicrosoftサービスを利用するよう指導する。</li></ul></div>
+          <div><h4>概要</h4><p>Microsoftは、iOSおよびAndroid向けのドキュメントスキャンアプリ「Microsoft Lens」を2026年1月9日から段階的に廃止し、翌月にはアプリストアから削除する予定である。Lensは画像からPDFやテキストを生成し、Microsoft 365やOneDriveと連携する機能を持っていた。今回の廃止は、同社の生産性アプリ群の統合方針の一環とみられる。</p><h4>現場の学び</h4><ul><li>業務でLensを利用していた場合、データの保存先や同期設定を早期に確認し、代替手段（例: OneDriveアプリのスキャン機能）への移行計画を立てる必要がある。</li><li>モバイルアプリのライフサイクル終了は、利用者データの保持ポリシーやアクセス権限の見直しを促す好機である。</li><li>組織内での非公式利用（Shadow IT）を把握し、廃止アプリに依存した業務プロセスが残っていないか確認することが望ましい。</li></ul><h4>初動・継続対応の示唆</h4><ul><li>Lens経由で保存されたデータがクラウド上に残存している場合、アクセス権限と削除ポリシーを点検する。</li><li>代替アプリ導入時には、モバイル端末管理（MDM）ポリシーへの適合性とデータ暗号化要件を再確認する。</li><li>ユーザーへの周知を早め、サポート終了後のアプリ利用を防止する運用ルールを整備する。</li></ul></div>
         </div>
 
         <div class="section">
           <h2>📌 キーワード解説</h2>
           <div class="terms">
             <div class="termCard">
-  <div class="term">OCR / 光学文字認識</div>
-  <p class="exp">画像内の文字を自動的に解析し、テキストデータとして抽出する技術。スキャンアプリで文書をデジタル化する際に利用される。</p>
+  <div class="term">End of Life (EoL) / サポート終了</div>
+  <p class="exp">ソフトウェアやサービスの提供・更新が終了する段階を指す。セキュリティ更新が止まるため、利用継続はリスクとなる。</p>
 </div>
 <div class="termCard">
-  <div class="term">OneDrive / ワンドライブ</div>
-  <p class="exp">Microsoftが提供するクラウドストレージサービスで、ファイルの同期・共有・バックアップを行う。</p>
+  <div class="term">Shadow IT / 影のIT</div>
+  <p class="exp">組織の正式な承認を得ずに従業員が導入・利用するITツールやサービス。情報漏えいの温床となることがある。</p>
 </div>
 <div class="termCard">
-  <div class="term">App Retirement / アプリ廃止</div>
-  <p class="exp">ソフトウェア提供元がアプリの配布やサポートを終了すること。セキュリティ更新が止まるため、利用継続はリスクとなる。</p>
+  <div class="term">Mobile Device Management (MDM) / モバイル端末管理</div>
+  <p class="exp">企業が従業員のスマートフォンやタブレットを一元管理し、セキュリティ設定やアプリ配布を制御する仕組み。</p>
 </div>
 <div class="termCard">
-  <div class="term">Data Migration / データ移行</div>
-  <p class="exp">既存システムやアプリから新しい環境へデータを安全に移すプロセス。業務継続性と情報保護の観点で重要。</p>
+  <div class="term">Data Retention Policy / データ保持ポリシー</div>
+  <p class="exp">データをどの期間・方法で保存し、いつ削除するかを定めた方針。アプリ廃止時のデータ処理に関わる。</p>
 </div>
           </div>
         </div>

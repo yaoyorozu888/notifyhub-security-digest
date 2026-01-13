@@ -209,8 +209,8 @@
         </div>
 
         <div class="tags">
-          <span class="tag level-High">Impact: High</span>
-          <span class="tag">Data Privacy / 情報漏えいリスク</span>
+          <span class="tag level-Medium">Impact: Medium</span>
+          <span class="tag">Data Privacy / データプライバシー</span>
         </div>
 
         <div class="btnRow">
@@ -222,32 +222,32 @@
       <div class="body">
         <div class="section">
           <h2>Impact判定理由</h2>
-          <div class="ruleReason">医療情報という高機密データをAIが処理する点で、漏えいや不正アクセス時の影響が重大。現時点で脆弱性報告はないが、設計や運用の不備があれば高リスク化する可能性があるため、高レベルの影響度と判断する。</div>
+          <div class="ruleReason">現時点では脆弱性や侵害事例は報告されていないが、医療データという高機密情報をAIが処理する点で潜在的リスクが高い。適切なアクセス制御や法令遵守が確保されない場合、重大な情報漏えいにつながる可能性があるため、注意が必要。</div>
         </div>
         <div class="section summary">
           <h2>🧾 要約（ChatGPT）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          <div><h4>概要</h4><p>Anthropic社は、AIアシスタント「Claude」に医療分野向け機能を追加し、米国の有料プラン利用者が自分の検査結果や電子カルテ情報を安全に連携できる「Claude for Healthcare」を発表した。これにより、ユーザーはAIを通じて健康データの要約や理解を支援されるが、医療情報という高機密データを扱うため、アクセス制御やデータ保護の実装が重要となる。</p><h4>現場の学び</h4><ul><li>医療データ連携を行うAIサービスでは、HIPAA（米国医療情報保護法）準拠や暗号化通信の実装確認が必須である。</li><li>AIモデルが個人情報を学習・保持しない設計（データ分離・一時処理）が求められる。</li><li>外部API連携時の認証・認可フロー（OAuthなど）の安全性検証がCSIRTの監査対象となる。</li></ul><h4>初動・継続対応の示唆</h4><ul><li>導入組織は、AIサービス提供者とのデータ処理契約（DPA）を確認し、情報漏えい時の責任範囲を明確化する。</li><li>アクセスログやデータ転送経路の監視を強化し、異常なアクセスパターンを早期検知できる体制を整える。</li><li>医療情報を扱うAI利用時には、利用者教育と内部統制を組み合わせたリスク低減策を継続的に実施する。</li></ul></div>
+          <div><h4>概要</h4><p>Anthropic社は、AIアシスタント「Claude」に医療分野向け機能を追加し、「Claude for Healthcare」として提供を開始した。米国のClaude ProおよびMaxプラン利用者は、ラボ検査結果や電子健康記録（EHR）を安全に接続し、AIによる説明や健康情報の理解支援を受けられる。データアクセスはユーザー同意に基づき、セキュリティとプライバシー保護を重視した設計とされる。</p><h4>現場の学び</h4><ul><li>医療データ連携型AIでは、PHI（個人医療情報）の取り扱いが中心課題となる。CSIRTはAIベンダーとのデータ共有経路や暗号化方式を確認し、HIPAAなど法的要件を踏まえたリスク評価が必要。</li><li>生成AIが医療情報を解析する場合、誤出力やデータ漏えいのリスクを想定し、アクセス制御・監査ログの実装状況を確認することが重要。</li><li>クラウド連携時には、API認証やトークン管理の不備が攻撃経路となるため、IAM（Identity and Access Management）の設定監査を定期化すべき。</li></ul><h4>初動・継続対応の示唆</h4><ul><li>導入検討時は、AIサービス提供者のセキュリティアーキテクチャを精査し、データ保持ポリシーと削除手順を確認する。</li><li>医療機関側では、AI連携を行う端末やネットワークの分離を検討し、アクセスログの異常検知ルールを強化する。</li><li>継続的にAIモデルの更新内容を追跡し、データ処理範囲や外部連携仕様の変更がないかを監視する。</li></ul></div>
         </div>
 
         <div class="section">
           <h2>📌 キーワード解説</h2>
           <div class="terms">
             <div class="termCard">
-  <div class="term">HIPAA / 米国医療保険の相互運用性と説明責任に関する法</div>
-  <p class="exp">米国で医療情報の保護とプライバシーを定める法律。医療機関や関連サービス提供者はこれに準拠する必要がある。</p>
+  <div class="term">PHI / 個人医療情報</div>
+  <p class="exp">Personal Health Informationの略で、個人を特定できる健康関連データを指す。米国ではHIPAA法により厳格な保護が義務付けられている。</p>
 </div>
 <div class="termCard">
-  <div class="term">OAuth / 認可プロトコル</div>
-  <p class="exp">外部サービス間で安全に認証・認可を行うための標準プロトコル。ユーザーの資格情報を共有せずにアクセス権を付与できる。</p>
+  <div class="term">EHR / 電子健康記録</div>
+  <p class="exp">Electronic Health Recordの略。医療機関が患者の診療情報を電子的に管理・共有する仕組み。</p>
 </div>
 <div class="termCard">
-  <div class="term">Data Processing Agreement (DPA) / データ処理契約</div>
-  <p class="exp">データ管理者と処理者の間で、個人データの取り扱い責任や保護措置を定める契約。GDPRや各国法令で義務付けられることが多い。</p>
+  <div class="term">IAM / アイデンティティおよびアクセス管理</div>
+  <p class="exp">ユーザー認証や権限管理を統合的に行う仕組み。クラウドやAPI連携の安全性を確保する基盤となる。</p>
 </div>
 <div class="termCard">
-  <div class="term">Encryption / 暗号化</div>
-  <p class="exp">データを第三者が読み取れない形式に変換する技術。通信経路や保存データの保護に不可欠。</p>
+  <div class="term">HIPAA / 医療保険の相互運用性と説明責任に関する法</div>
+  <p class="exp">米国の医療情報保護法で、医療データの取り扱い・共有・保護に関する基準を定めている。</p>
 </div>
           </div>
         </div>

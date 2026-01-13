@@ -210,7 +210,7 @@
 
         <div class="tags">
           <span class="tag level-High">Impact: High</span>
-          <span class="tag">Account Hijacking / アカウント乗っ取り</span>
+          <span class="tag">Account Takeover / アカウント乗っ取り</span>
         </div>
 
         <div class="btnRow">
@@ -222,12 +222,12 @@
       <div class="body">
         <div class="section">
           <h2>Impact判定理由</h2>
-          <div class="ruleReason">プレイヤー操作の乗っ取りという直接的な被害が発生しており、攻撃が実際に行われた事実が確認されている。個人情報流出は報告されていないが、リアルタイムサービスの信頼性を損なう重大な事案であるためHighと判断。</div>
+          <div class="ruleReason">攻撃はリアルタイムで多数のユーザーに影響し、アカウント操作権の奪取を伴うため深刻。ただし、現時点で個人情報流出や永続的被害は確認されておらず、Criticalには至らない。</div>
         </div>
         <div class="section summary">
           <h2>🧾 要約（ChatGPT）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          <div><h4>概要</h4><p>オンライン対戦ゲーム「Apex Legends」（Electronic Arts社が提供）で、攻撃者がプレイヤーのキャラクターをライブマッチ中に乗っ取り、強制切断やニックネーム変更を行う事案が発生した。これはゲームサーバーまたはクライアント通信の不正操作を伴うもので、正規プレイヤーの操作権を奪う形で悪用された可能性がある。現時点でEAは調査中とされ、脆弱性の詳細は公表されていない。</p><h4>現場の学び</h4><ul><li>ゲームクライアントやAPI通信の改ざんは、一般的なWebアプリケーション攻撃と同様にセッション管理や認証の欠陥を突くことが多い。</li><li>リアルタイムサービスでは、攻撃の影響が即座にユーザー体験に現れるため、監視とインシデントレスポンスの迅速化が重要。</li><li>ゲーム業界の事例は、他のSaaSやクラウドサービスにおけるアカウントハイジャック対策にも応用できる。</li></ul><h4>初動・継続対応の示唆</h4><ul><li>影響範囲を特定し、サーバーログや通信トレースを分析して不正アクセス経路を特定する。</li><li>クライアント更新やAPI署名強化など、認証・整合性検証の強化を検討する。</li><li>ユーザーへの注意喚起と、アカウント保護（多要素認証・再ログイン要求）を早期に実施する。</li></ul></div>
+          <div><h4>概要</h4><p>2026年1月、人気バトルロイヤルゲーム「Apex Legends」（開発：Respawn Entertainment、配信：Electronic Arts）で、プレイヤーのキャラクターが試合中に第三者によって乗っ取られる事案が発生した。攻撃者はキャラクター操作権を奪い、強制切断やニックネーム変更を行うなど、ゲームプレイを妨害した。現時点では攻撃経路や脆弱性の詳細は公表されていないが、サーバー側の権限操作やAPI悪用の可能性が指摘されている。</p><h4>現場の学び</h4><ul><li>オンラインサービスでは、アプリケーション層の脆弱性だけでなく、リアルタイム通信や認証トークンの扱いにも注意が必要。</li><li>攻撃者が正規セッションを奪取できる場合、ゲームやSaaSなどのクラウド基盤でも同様のリスクが存在する。</li><li>ユーザー影響が即時に可視化される事案では、技術的分析と同時に広報・サポート対応の連携が重要。</li></ul><h4>初動・継続対応の示唆</h4><ul><li>運営側はセッション管理・認証APIの監査を実施し、不正リクエストの検知ロジックを強化する。</li><li>CSIRTは、攻撃発生時のログ（特にセッションID・トークン再発行履歴）を確保し、再現性調査を優先する。</li><li>ユーザー通知や一時的なアクセス制限を含む緊急対応計画を整備し、再発防止策を早期に共有する。</li></ul></div>
         </div>
 
         <div class="section">
@@ -235,19 +235,19 @@
           <div class="terms">
             <div class="termCard">
   <div class="term">Session Hijacking / セッションハイジャック</div>
-  <p class="exp">正規ユーザーのセッションIDや通信情報を奪取し、本人になりすまして操作を行う攻撃手法。</p>
+  <p class="exp">正規ユーザーのセッションIDやトークンを奪取し、本人になりすまして操作を行う攻撃手法。</p>
 </div>
 <div class="termCard">
-  <div class="term">API Manipulation / API改ざん</div>
-  <p class="exp">クライアントとサーバー間の通信を不正に変更し、想定外のコマンドやデータを送信する行為。</p>
+  <div class="term">API Abuse / API悪用</div>
+  <p class="exp">公開または内部APIを想定外の方法で利用し、認可外の操作や情報取得を行う行為。</p>
 </div>
 <div class="termCard">
-  <div class="term">Real-time Game Server / リアルタイムゲームサーバー</div>
-  <p class="exp">プレイヤー間の同期通信を管理するサーバーで、遅延や不正通信が即座に影響する。</p>
+  <div class="term">Real-time Game Server / リアルタイムゲームサーバ</div>
+  <p class="exp">プレイヤー間の通信を同期させるためのサーバで、遅延や認証処理の最適化が求められる。</p>
 </div>
 <div class="termCard">
-  <div class="term">Account Takeover / アカウント乗っ取り</div>
-  <p class="exp">不正アクセスによりユーザーアカウントの制御権を奪う攻撃。ゲームやSaaSで頻発する。</p>
+  <div class="term">Incident Response / インシデント対応</div>
+  <p class="exp">セキュリティ事案発生時に、影響範囲の特定・封じ込め・復旧・再発防止を行う一連のプロセス。</p>
 </div>
           </div>
         </div>

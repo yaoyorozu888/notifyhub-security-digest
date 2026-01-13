@@ -210,7 +210,7 @@
 
         <div class="tags">
           <span class="tag level-Medium">Impact: Medium</span>
-          <span class="tag">Privacy and Data Governance</span>
+          <span class="tag">Privacy and Data Governance Risk</span>
         </div>
 
         <div class="btnRow">
@@ -222,32 +222,32 @@
       <div class="body">
         <div class="section">
           <h2>Impact判定理由</h2>
-          <div class="ruleReason">直接的な脆弱性や攻撃リスクは確認されていないが、クラウドAI連携によるデータ取り扱い範囲の拡大が新たなプライバシーリスクを生む可能性があるため。企業利用時には情報管理体制の見直しが必要。</div>
+          <div class="ruleReason">現時点では脆弱性や侵害事例は報告されていないが、外部クラウドAIとの連携によりデータ保護・アクセス制御の複雑性が増す。プライバシーリスクや設定不備による情報漏えいの可能性があるため、運用面での注意が必要。</div>
         </div>
         <div class="section summary">
           <h2>🧾 要約（ChatGPT）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          <div><h4>概要</h4><p>Appleは次期SiriにGoogleの生成AIモデル「Gemini」とGoogle Cloudを採用することを正式に発表した。両社は複数年にわたる協業を行い、Siriの自然言語理解や生成能力を強化する。一方でAppleは、ユーザーデータの匿名化やオンデバイス処理を重視し、プライバシー保護を最優先とする姿勢を強調している。この提携はAIアシスタント分野の競争構造を変える可能性がある。</p><h4>現場の学び</h4><ul><li>クラウドAI連携では、データの送信経路や保存先の管理が重要であり、サプライヤー間の責任分界を明確にする必要がある。</li><li>生成AIを組み込む製品では、モデル更新時の挙動変化や誤生成リスクを踏まえたリスクアセスメントが求められる。</li><li>Appleのような「オンデバイス処理＋クラウド補完」構成は、プライバシーと機能性のバランスを取る実装例として参考になる。</li></ul><h4>初動・継続対応の示唆</h4><ul><li>企業内でSiriやGemini連携機能を利用する場合、送信データの範囲と暗号化方式を確認し、情報漏えいリスクを評価する。</li><li>AIサービスの利用規約やデータ保持ポリシーを定期的に確認し、変更時には社内利用ルールを更新する。</li><li>生成AIを活用する他製品への波及を想定し、クラウド依存度とプライバシー要件の両立を検討する。</li></ul></div>
+          <div><h4>概要</h4><p>Appleは次期Siriにおいて、Googleの大規模言語モデル「Gemini」とGoogle Cloudを活用することを正式に発表した。両社は複数年にわたる協業を行い、Apple Intelligenceの一部として自然言語処理や生成AI機能を強化する。一方で、Appleはプライバシー保護を最優先とし、ユーザーデータの処理は可能な限りオンデバイスで行う方針を強調している。</p><h4>現場の学び</h4><ul><li>生成AI基盤が外部クラウド（Google Cloud）に依存する場合、データの越境移転や第三者アクセスリスクを再評価する必要がある。</li><li>Appleの「オンデバイス処理」方針は、ゼロトラスト設計やデータ最小化の実装例として参考になる。</li><li>マルチベンダーAI連携では、モデル更新やAPI変更による挙動変化がセキュリティ監視に影響する点を考慮すべき。</li></ul><h4>初動・継続対応の示唆</h4><ul><li>クラウドAI連携を利用するアプリやサービスでは、データ送信範囲・暗号化方式・ログ保持方針を明確化し、利用規約やDPA（データ処理契約）を確認する。</li><li>AIモデル更新時の挙動変化を検知できる監査・モニタリング体制を整備する。</li><li>AppleおよびGoogleのプライバシー実装方針の更新を継続的に追跡し、組織内のリスク評価を定期的に見直す。</li></ul></div>
         </div>
 
         <div class="section">
           <h2>📌 キーワード解説</h2>
           <div class="terms">
             <div class="termCard">
-  <div class="term">Gemini / ジェミニ</div>
-  <p class="exp">Googleが開発する大規模言語モデル（LLM）で、自然言語理解や生成を行うAI基盤。ChatGPTなどと同様の生成AI技術を用いる。</p>
+  <div class="term">Large Language Model (LLM) / 大規模言語モデル</div>
+  <p class="exp">大量のテキストデータを学習し、人間のような自然言語生成や理解を行うAIモデル。GeminiはGoogleが開発したLLM。</p>
 </div>
 <div class="termCard">
-  <div class="term">Google Cloud / グーグルクラウド</div>
-  <p class="exp">Googleが提供するクラウドコンピューティングサービス群。AIモデルのホスティングやデータ処理基盤として利用される。</p>
-</div>
-<div class="termCard">
-  <div class="term">On-device processing / オンデバイス処理</div>
+  <div class="term">On-device Processing / オンデバイス処理</div>
   <p class="exp">データをクラウドに送信せず、端末内で処理する方式。プライバシー保護や遅延低減に有効。</p>
 </div>
 <div class="termCard">
-  <div class="term">Data anonymization / データ匿名化</div>
-  <p class="exp">個人を特定できる情報を削除または変換し、プライバシーを保護する手法。AI学習や分析時に重要な技術。</p>
+  <div class="term">Data Processing Agreement (DPA) / データ処理契約</div>
+  <p class="exp">クラウドサービス提供者と利用者間でデータの取り扱い責任を定める契約。GDPRなどの法令遵守に関わる。</p>
+</div>
+<div class="termCard">
+  <div class="term">Zero Trust Architecture / ゼロトラストアーキテクチャ</div>
+  <p class="exp">すべての通信やアクセスを信頼せず、常に検証するセキュリティ設計思想。AI連携環境でも重要。</p>
 </div>
           </div>
         </div>

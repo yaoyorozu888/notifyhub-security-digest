@@ -210,7 +210,7 @@
 
         <div class="tags">
           <span class="tag level-High">Impact: High</span>
-          <span class="tag">Botnet / Credential Attack</span>
+          <span class="tag">Credential brute-force / ボットネット感染拡大</span>
         </div>
 
         <div class="btnRow">
@@ -222,12 +222,12 @@
       <div class="body">
         <div class="section">
           <h2>Impact判定理由</h2>
-          <div class="ruleReason">暗号資産関連インフラを標的とし、複数の一般的サービスを悪用してボットネット化するため、被害範囲と影響は重大。ただし既知の認証強化やアクセス制限で防御可能なため、Criticalには至らない。</div>
+          <div class="ruleReason">暗号資産関連のサーバを標的とし、複数の一般的サービスを悪用してボットネット化するため被害範囲が広い。既知の脆弱な認証設定を突く攻撃で再現性が高く、即時の認証強化が必要だが、ゼロデイではないためCriticalには至らない。</div>
         </div>
         <div class="section summary">
           <h2>🧾 要約（ChatGPT）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          <div><h4>概要</h4><p>暗号資産関連プロジェクトのデータベースを狙う新たなGoBruteforcerボットネット攻撃が確認された。Go言語で書かれたこのマルウェアは、Linuxサーバ上のFTP、MySQL、PostgreSQL、phpMyAdminなどのサービスに対して総当たり攻撃を行い、弱い認証情報を悪用して侵入する。特にAI生成のサーバ構築例を再利用した設定ミスが感染拡大の一因とされる。</p><h4>現場の学び</h4><ul><li>AI生成コードや設定例の無批判な利用は、共通の脆弱構成を広めるリスクがある。</li><li>データベースや管理ツールの認証強度を軽視すると、ボットネットの踏み台にされる可能性が高い。</li><li>Go製マルウェアは軽量で移植性が高く、クラウド環境にも容易に拡散する。</li></ul><h4>初動・継続対応の示唆</h4><ul><li>全サーバでの認証情報監査と、辞書攻撃防御（fail2ban等）の導入を優先する。</li><li>AI生成設定の採用時には、セキュリティレビューを必須化する。</li><li>侵入検知ログで異常な認証試行を監視し、感染兆候を早期に特定する。</li></ul></div>
+          <div><h4>概要</h4><p>暗号資産・ブロックチェーン関連プロジェクトのデータベースを狙うGoBruteforcerボットネットの新たな攻撃波が確認された。攻撃者はLinuxサーバ上で<code>FTP</code>、<code>MySQL</code>、<code>PostgreSQL</code>、<code>phpMyAdmin</code>などのサービスに対し総当たり攻撃を行い、脆弱な認証情報を悪用して侵入・ボット化している。特にAI生成のサーバ構築例を再利用した設定の平易化が攻撃成功率を高めているとされる。</p><h4>現場の学び</h4><ul><li>AI生成コードや設定例をそのまま利用することで、既知の弱い認証設定が広範に再現されるリスクがある。</li><li>GoBruteforcerはGo言語で実装されており、軽量かつ並列処理性能が高いため、短時間で多数の認証試行が可能。</li><li>暗号資産関連環境は金銭的動機の攻撃者に狙われやすく、公開DBや管理ツールの認証強度が特に重要。</li></ul><h4>初動・継続対応の示唆</h4><ul><li>全サーバの認証情報を点検し、推測困難なパスワードと多要素認証を導入する。</li><li>ログ監視で異常な認証試行を早期検知し、IPブロックやレート制限を設定する。</li><li>AI生成設定例を利用する際は、セキュリティ初期設定（root無効化、強制TLS、不要ポート閉鎖）を必ず見直す。</li></ul></div>
         </div>
 
         <div class="section">
@@ -235,19 +235,19 @@
           <div class="terms">
             <div class="termCard">
   <div class="term">GoBruteforcer / GoBruteforcerボットネット</div>
-  <p class="exp">Go言語で開発されたボットネット型マルウェアで、弱い認証情報を総当たり攻撃により突破し、感染ホストを拡大する。</p>
+  <p class="exp">Go言語で作成されたボットネット型マルウェアで、サーバ上の各種サービスに対して総当たり攻撃を行い感染拡大する。</p>
 </div>
 <div class="termCard">
-  <div class="term">Brute-force Attack / 総当たり攻撃</div>
-  <p class="exp">全てのパスワード候補を試行して認証を突破する攻撃手法。認証強度が低い場合に特に有効。</p>
+  <div class="term">Brute-force attack / 総当たり攻撃</div>
+  <p class="exp">パスワードや鍵を全通り試すことで認証突破を狙う攻撃手法。弱い認証情報を持つシステムが標的となる。</p>
 </div>
 <div class="termCard">
   <div class="term">phpMyAdmin / phpMyAdmin管理ツール</div>
-  <p class="exp">WebベースのMySQL管理ツール。誤設定や弱いパスワードが攻撃対象になりやすい。</p>
+  <p class="exp">MySQLデータベースをWebブラウザ上で管理するためのPHP製ツール。認証設定が甘いと外部から不正アクセスされやすい。</p>
 </div>
 <div class="termCard">
-  <div class="term">AI-generated Configuration / AI生成設定</div>
-  <p class="exp">生成AIが自動生成したサーバ設定例。利便性が高い反面、セキュリティ検証が不十分な場合がある。</p>
+  <div class="term">AI-generated configuration / AI生成設定</div>
+  <p class="exp">生成AIが出力したサーバ構築例や設定テンプレート。利便性が高い一方で、セキュリティ考慮が不足している場合がある。</p>
 </div>
           </div>
         </div>
