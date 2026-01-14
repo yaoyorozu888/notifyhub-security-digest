@@ -1,0 +1,76 @@
+name: Preview (Azure Static Web Apps)
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, closed]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+concurrency:
+  group: swa-preview-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  build_and_deploy:
+    if: github.event.action != 'closed' && github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python -m pip install -U pip
+          python -m pip install .
+
+      - name: Compute run_at (JST)
+        run: |
+          python - <<'PY'
+          from datetime import datetime
+          from zoneinfo import ZoneInfo
+          jst = ZoneInfo("Asia/Tokyo")
+          now = datetime.now(jst)
+          run_at = now.replace(hour=6, minute=0, second=0, microsecond=0)
+          print(f"RUN_AT={run_at.isoformat()}")
+          with open("runat.env", "w", encoding="utf-8") as f:
+              f.write(f"RUN_AT={run_at.isoformat()}\n")
+          PY
+
+      - name: Generate digest (no email)
+        run: |
+          set -euo pipefail
+          source <(cat runat.env)
+          notifyhub-digest run --out-dir site --run-at "$RUN_AT" --no-send-email
+
+      - name: Deploy (preview)
+        uses: Azure/static-web-apps-deploy@v1
+        with:
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_WONDERFUL_GROUND_0436BEE00 }}
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          action: upload
+          skip_app_build: true
+          app_location: site
+          api_location: ""
+          app_artifact_location: site
+
+  close_preview:
+    if: github.event.action == 'closed' && github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Close preview
+        uses: Azure/static-web-apps-deploy@v1
+        with:
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_WONDERFUL_GROUND_0436BEE00 }}
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          action: close
+
