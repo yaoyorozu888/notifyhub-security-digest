@@ -210,7 +210,7 @@
 
         <div class="tags">
           <span class="tag level-High">Impact: High</span>
-          <span class="tag">Credential Theft</span>
+          <span class="tag">Advisory</span>
         </div>
 
         <div class="btnRow">
@@ -222,12 +222,12 @@
       <div class="body">
         <div class="section">
           <h2>Impact判定理由</h2>
-          <div class="ruleReason">AIエージェントが自動的にコードを実行・デプロイする環境では、認証情報の管理不備が即座にシステム侵害につながる可能性がある。現時点で大規模被害は報告されていないが、悪用容易性と潜在的影響の大きさから高リスクと判断される。</div>
+          <div class="ruleReason">AIエージェントが自律的にコードを実行・デプロイする環境では、APIキーや制御層の侵害が即座にシステム全体の不正操作につながる。現時点で実害報告は限定的だが、構造的リスクが高く、早期の対策が求められる。</div>
         </div>
         <div class="section summary">
           <h2>🧾 要約（ChatGPT）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          <div><h4>概要</h4><p>AIエージェントがコード生成だけでなく実行・デプロイまで自動化する時代となり、開発効率が飛躍的に向上している。一方で、Copilot（GitHubのAI支援開発ツール）やClaude Code、Codexなどが利用する「Machine Control Plane（MCP）」層やAPIキー管理の不備が新たな攻撃面を生んでいる。特に「Shadow API Key Sprawl（影のAPIキー拡散）」は、組織が把握していない認証情報の漏洩・濫用リスクを高めている。</p><h4>現場の学び</h4><ul><li>AIエージェントが自動で外部ツールやクラウドリソースにアクセスする際、認証情報の管理責任が曖昧になりやすい。</li><li>開発環境と運用環境の境界が薄れることで、従来のCI/CDセキュリティモデルでは検知が困難な挙動が増加する。</li><li>APIキーやトークンの棚卸し・スコープ制御を自動化し、AIエージェントの実行権限を最小化する設計が求められる。</li></ul><h4>初動・継続対応の示唆</h4><ul><li>AIエージェントが利用する全APIキーを可視化し、利用範囲・発行元・有効期限を定期的に監査する。</li><li>MCP層へのアクセス制御を強化し、監査ログをSIEM（Security Information and Event Management）で一元管理する。</li><li>AIツール導入時にはセキュリティレビューを標準プロセス化し、開発部門とCSIRTの連携を早期に確立する。</li></ul></div>
+          <div><h4>概要</h4><p>AIエージェント（例: GitHub Copilot、Anthropic Claude Code、OpenAI Codex）は、コード生成だけでなく実行・デプロイまで自動化する段階に進化している。これにより開発効率は飛躍的に向上する一方、エージェントがアクセスするツールやAPIキー、Machine Control Plane（MCP）と呼ばれる制御層のセキュリティが盲点となっている。特に「Shadow API Key Sprawl（影のAPIキー拡散）」は、認証情報管理の不備から権限逸脱や不正実行を引き起こすリスクが高い。</p><h4>現場の学び</h4><ul><li>AIエージェントが自律的に外部ツールへアクセスする構造は、従来のCI/CDパイプラインよりも複雑で、権限境界の可視化が困難。</li><li>APIキーやトークンがコード生成過程で自動的に扱われるため、開発者が意図せず秘匿情報を露出させるケースが増加。</li><li>MCP層の監査・制御が不十分な場合、AIエージェントが誤って危険な操作（例: 本番環境へのデプロイ）を実行する恐れがある。</li><li>AIツールの利用ログやアクセス権限を統合的に監視する仕組みが、今後のセキュリティ運用に不可欠となる。</li></ul><h4>初動・継続対応の示唆</h4><ul><li>AIエージェントが利用するAPIキー・トークンの棚卸しとスコープ制限を実施し、不要な権限を削除する。</li><li>MCP層に対してゼロトラスト原則を適用し、実行権限を最小化する。</li><li>AIエージェントの行動ログをSIEM（Security Information and Event Management）に統合し、異常なアクセスパターンを検知可能にする。</li><li>開発チームとセキュリティチームが共同でAIツール利用ポリシーを策定し、APIキー管理を自動化する仕組みを導入する。</li></ul></div>
         </div>
 
         <div class="section">
@@ -235,19 +235,19 @@
           <div class="terms">
             <div class="termCard">
   <div class="term">Machine Control Plane (MCP) / マシン制御プレーン</div>
-  <p class="exp">AIエージェントがコード実行やデプロイを行う際に利用する制御層。クラウドリソースやツールへのアクセスを仲介するが、認証・権限管理が不十分だと攻撃者に悪用されるリスクがある。</p>
+  <p class="exp">AIエージェントが外部ツールや実行環境を制御する中核層。アクセス権限や実行コマンドを仲介するため、侵害されると全自動化プロセスが乗っ取られるリスクがある。</p>
 </div>
 <div class="termCard">
   <div class="term">Shadow API Key Sprawl / 影のAPIキー拡散</div>
-  <p class="exp">組織内で管理されていないAPIキーやトークンが多数存在し、漏洩や不正利用の温床となる状態。特にAIエージェントが自動生成・利用するキーが監視外に置かれやすい。</p>
+  <p class="exp">管理されていないAPIキーやトークンが開発環境やAIエージェント経由で散在する状態。漏洩や権限乱用の温床となる。</p>
 </div>
 <div class="termCard">
-  <div class="term">AI Agent / AIエージェント</div>
-  <p class="exp">自律的にタスクを実行するAIシステム。コード生成・実行・デプロイなどを自動化できるが、誤設定や権限過剰によりセキュリティリスクを拡大させる可能性がある。</p>
+  <div class="term">Zero Trust / ゼロトラスト</div>
+  <p class="exp">全てのアクセスを信頼せず、常に検証するセキュリティモデル。AIエージェントのような自律実行環境では、権限の最小化と継続的な認証が重要。</p>
 </div>
 <div class="termCard">
-  <div class="term">SIEM (Security Information and Event Management)</div>
-  <p class="exp">セキュリティイベントを集中管理・分析するシステム。AIエージェントの行動ログを統合することで異常検知や追跡が容易になる。</p>
+  <div class="term">SIEM / セキュリティ情報イベント管理</div>
+  <p class="exp">ログやイベントを集約・分析し、異常行動を検知する仕組み。AIエージェントの行動監視や不正アクセス検出に有効。</p>
 </div>
           </div>
         </div>
@@ -256,7 +256,7 @@
           <h2>🕘 生成情報</h2>
           <div class="ruleReason">
 対象期間：2026-01-13T06:00:00+09:00 〜 2026-01-14T06:00:00+09:00
-生成時刻：2026-01-14T06:31:55.777822+09:00
+生成時刻：2026-01-14T21:47:38.201097+09:00
 免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
           </div>
         </div>

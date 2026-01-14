@@ -209,8 +209,8 @@
         </div>
 
         <div class="tags">
-          <span class="tag level-High">Impact: High</span>
-          <span class="tag">Other</span>
+          <span class="tag level-Medium">Impact: Medium</span>
+          <span class="tag">Patch</span>
         </div>
 
         <div class="btnRow">
@@ -222,32 +222,32 @@
       <div class="body">
         <div class="section">
           <h2>Impact判定理由</h2>
-          <div class="ruleReason">Secure Boot証明書の更新はシステム起動の信頼性に直結し、未更新環境ではブートキット攻撃や起動不能リスクが発生する可能性があるため。自動更新対象外の環境では特に注意が必要。</div>
+          <div class="ruleReason">今回の更新は脆弱性対応ではなく証明書の有効期限管理に関する措置であり、即時の攻撃リスクは低い。ただし未更新環境ではSecure Bootの信頼性が低下し、改ざんブートや持続化攻撃の検知遅延につながる可能性があるため、運用上の重要度は中程度と判断される。</div>
         </div>
         <div class="section summary">
           <h2>🧾 要約（ChatGPT）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          <div><h4>概要</h4><p>Microsoftは、Windows 11 24H2および25H2向けに新しいSecure Boot証明書を自動配信し、既存の期限切れ証明書を置き換える更新を開始した。Secure BootはUEFI（Unified Extensible Firmware Interface）環境での起動時に信頼できるコードのみを実行させる仕組みであり、この更新は署名チェーンの信頼性維持を目的としている。これにより、古い証明書を悪用したブートキット攻撃のリスクを低減し、将来的なセキュリティ維持を図るものとみられる。</p><h4>現場の学び</h4><ul><li>Secure Boot証明書の有効期限管理は、OS更新サイクルと密接に関係しており、証明書失効による起動障害を防ぐための監視が重要である。</li><li>証明書更新はセキュリティ強化だけでなく、古い署名を利用した攻撃経路の遮断にも寄与するため、資産管理と連動した更新確認が求められる。</li><li>特にオフライン環境や長期運用システムでは、自動更新が適用されないケースを想定し、手動適用手順を整備しておく必要がある。</li></ul><h4>初動・継続対応の示唆</h4><ul><li>Windows Update経由での証明書更新適用状況を確認し、未適用端末を特定する。</li><li>Secure Boot設定の有効化状態と証明書チェーンの整合性を点検し、改ざんや不正署名の混入がないかを検証する。</li><li>今後の証明書ローテーションに備え、UEFIレベルの更新手順や監査ログ取得を標準運用に組み込む。</li></ul></div>
+          <div><h4>概要</h4><p>Microsoftは、Windows 11 24H2および25H2向けに新しいSecure Boot証明書の配布を開始した。これは既存の証明書の有効期限切れに伴う更新であり、UEFI Secure Boot機構を維持するために必要な措置である。更新は自動的に適用され、信頼されたブートローダーやOSコンポーネントの検証に使用される証明書が置き換えられる。これにより、古い証明書を悪用した改ざんブートやマルウェアの持続化リスクを低減する。</p><h4>現場の学び</h4><ul><li>Secure Bootの信頼チェーンは証明書の有効期限や署名アルゴリズムに依存しており、期限切れや失効が発生するとブート失敗やセキュリティ低下を招く。</li><li>証明書更新は通常のWindows Update経由で行われるが、オフライン環境やカスタムUEFI構成では手動対応が必要な場合がある。</li><li>CSIRTとしては、更新適用後のブート検証ログやイベントID（特にCode Integrity関連）を監視し、異常な署名拒否やブート失敗を早期検知することが重要。</li></ul><h4>初動・継続対応の示唆</h4><ul><li>資産管理台帳でSecure Boot有効化状況とUEFI証明書の更新適用状況を確認し、未適用端末を特定する。</li><li>オフライン端末や特殊ブート構成（例：BitLocker併用、カスタム署名）では、更新適用手順を検証環境で事前確認する。</li><li>今後の証明書ローテーションに備え、UEFIキー管理ポリシーと更新手順を標準運用手順書（SOP）に明記しておく。</li></ul></div>
         </div>
 
         <div class="section">
           <h2>📌 キーワード解説</h2>
           <div class="terms">
             <div class="termCard">
-  <div class="term">Secure Boot / セキュアブート</div>
-  <p class="exp">UEFIの機能で、起動時に信頼された署名付きコードのみを実行する仕組み。マルウェアがブートプロセスに介入することを防ぐ。</p>
-</div>
-<div class="termCard">
-  <div class="term">UEFI (Unified Extensible Firmware Interface)</div>
-  <p class="exp">従来のBIOSに代わるファームウェアインターフェース。OS起動前のハードウェア初期化やセキュリティ機能を提供する。</p>
-</div>
-<div class="termCard">
-  <div class="term">Bootkit / ブートキット</div>
-  <p class="exp">OS起動前に感染し、システム制御を奪うマルウェア。Secure Bootが無効または脆弱な場合に侵入が可能となる。</p>
+  <div class="term">UEFI Secure Boot / セキュアブート</div>
+  <p class="exp">UEFI（Unified Extensible Firmware Interface）の機能で、OS起動時に署名済みのブートローダーやカーネルのみを実行することで改ざんを防ぐ仕組み。信頼の根はMicrosoftなどの認証局が発行する証明書に基づく。</p>
 </div>
 <div class="termCard">
   <div class="term">Certificate Chain / 証明書チェーン</div>
-  <p class="exp">信頼の根（ルート証明書）から対象証明書までの署名関係を示す連鎖構造。これが破損または期限切れになると信頼性が失われる。</p>
+  <p class="exp">信頼されたルート証明書からエンドエンティティ証明書までの署名関係を指す。Secure Bootではこのチェーンによりブートコンポーネントの正当性を検証する。</p>
+</div>
+<div class="termCard">
+  <div class="term">Code Integrity / コード整合性</div>
+  <p class="exp">Windowsのセキュリティ機構の一部で、実行ファイルやドライバが改ざんされていないかを署名検証する。Secure Bootと連携してブート時の整合性を保証する。</p>
+</div>
+<div class="termCard">
+  <div class="term">Key Rotation / 鍵ローテーション</div>
+  <p class="exp">暗号鍵や証明書を定期的に更新・置換する運用。期限切れや漏洩リスクを低減し、信頼性を維持するために不可欠なプロセス。</p>
 </div>
           </div>
         </div>
@@ -256,7 +256,7 @@
           <h2>🕘 生成情報</h2>
           <div class="ruleReason">
 対象期間：2026-01-13T06:00:00+09:00 〜 2026-01-14T06:00:00+09:00
-生成時刻：2026-01-14T06:31:55.777822+09:00
+生成時刻：2026-01-14T21:47:38.201097+09:00
 免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
           </div>
         </div>

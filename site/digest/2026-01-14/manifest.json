@@ -5,9 +5,9 @@
     "to": "2026-01-14T06:00:00+09:00"
   },
   "counts": {
-    "total": 37
+    "total": 33
   },
-  "generated_at_jst": "2026-01-14T06:31:55.777822+09:00",
+  "generated_at_jst": "2026-01-14T21:47:38.201097+09:00",
   "items": [
     {
       "entry_id": "e88e6ee851432d39",
@@ -16,8 +16,8 @@
       "category": "reporting",
       "published_at": "2026-01-13T00:00:00+00:00",
       "impact_level": "High",
-      "threat_type": "Other",
-      "summary_preview": "概要CVE-2026-20805は、Microsoft Windowsに存在する情報漏えい（Information Disclosure）の脆弱性である。CISAのKnown Exploited Vulnerabilities（KEV）カタログに登録されており、実際に悪用が確認されている。攻撃者は特定のシステム情報やメモリ内容を取得することで、後続の権限昇…",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CVE-2026-20805は、Microsoft Windowsに存在する情報漏えい（Information Disclosure）の脆弱性である。CISA（米国サイバーセキュリティ・インフラセキュリティ庁）のKnown Exploited Vulnerabilities（KEV）カタログに登録されたことから、実際に悪用が確認されている。攻撃者はこの…",
       "article_path": "articles/e88e6ee851432d39.html",
       "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
     },
@@ -29,7 +29,7 @@
       "published_at": "2026-01-13T20:32:29+00:00",
       "impact_level": "High",
       "threat_type": "Data Breach",
-      "summary_preview": "概要米国メイン州の医療機関Central Maine Healthcare（CMH）で発生したデータ侵害により、14万5千人以上の個人情報が流出した。漏えいした情報には氏名、住所、生年月日、医療情報、保険情報などが含まれる可能性がある。調査によれば、侵害は2024年に発生し、第三者による不正アクセスが原因とされる。医療分野では依然としてランサムウェアやサプ…",
+      "summary_preview": "概要米国メイン州の医療機関Central Maine Healthcare（CMH）で発生したデータ侵害により、14万5千人以上の個人情報が流出した。漏えいした情報には氏名、住所、生年月日、医療記録番号、保険情報などが含まれる可能性がある。調査によれば、攻撃者は外部システムへの不正アクセスを通じて内部ネットワークに侵入し、データを窃取したとみられる。CMH…",
       "article_path": "articles/9c87371559224a3f.html",
       "original_url": "https://www.bleepingcomputer.com/news/security/central-maine-healthcare-breach-exposed-data-of-over-145-000-people/"
     },
@@ -41,7 +41,7 @@
       "published_at": "2026-01-13T20:27:22+00:00",
       "impact_level": "Critical",
       "threat_type": "Ransomware",
-      "summary_preview": "概要ベルギーの病院AZ Monicaがサイバー攻撃を受け、全サーバを停止し、予定されていた医療処置を中止、重症患者を他院へ転送した。攻撃の詳細は公表されていないが、医療業務の継続に直接影響を与える深刻な事態である。医療機関を狙う攻撃は、ランサムウェアや内部ネットワーク侵入を伴うケースが多く、患者安全と運用継続性の両面で重大なリスクをもたらす。現場の学び医療…",
+      "summary_preview": "概要ベルギーの病院AZ Monicaがサイバー攻撃を受け、全サーバを緊急停止し、予定されていた医療処置を中止、重症患者を他施設へ転送した。攻撃の詳細は公表されていないが、業務継続に直結するシステム停止が発生しており、医療機関特有の高い可用性要求を突いた攻撃とみられる。医療分野ではランサムウェアやネットワーク侵入による業務停止が近年増加しており、今回も同様の…",
       "article_path": "articles/f19e18d9af2bfb61.html",
       "original_url": "https://www.bleepingcomputer.com/news/security/belgian-hospital-az-monica-shuts-down-servers-after-cyberattack/"
     },
@@ -51,9 +51,9 @@
       "source_name": "BleepingComputer",
       "category": "reporting",
       "published_at": "2026-01-13T19:57:33+00:00",
-      "impact_level": "High",
-      "threat_type": "Other",
-      "summary_preview": "概要Microsoftは、Windows 11 24H2および25H2向けに新しいSecure Boot証明書を自動配信し、既存の期限切れ証明書を置き換える更新を開始した。Secure BootはUEFI（Unified Extensible Firmware Interface）環境での起動時に信頼できるコードのみを実行させる仕組みであり、この更新は署名…",
+      "impact_level": "Medium",
+      "threat_type": "Patch",
+      "summary_preview": "概要Microsoftは、Windows 11 24H2および25H2向けに新しいSecure Boot証明書の配布を開始した。これは既存の証明書の有効期限切れに伴う更新であり、UEFI Secure Boot機構を維持するために必要な措置である。更新は自動的に適用され、信頼されたブートローダーやOSコンポーネントの検証に使用される証明書が置き換えられる。…",
       "article_path": "articles/e3b54b9ca42aa042.html",
       "original_url": "https://www.bleepingcomputer.com/news/security/microsoft-rolls-out-new-secure-boot-certificates-for-windows-devices/"
     },
@@ -64,8 +64,8 @@
       "category": "reporting",
       "published_at": "2026-01-13T18:56:21+00:00",
       "impact_level": "High",
-      "threat_type": "Vulnerability",
-      "summary_preview": "概要MicrosoftはWindows 10向けに拡張セキュリティ更新プログラムKB5073724を公開した。この更新には、3件のゼロデイ脆弱性修正と、有効期限切れが迫るSecure Boot証明書の更新が含まれる。これらは2026年1月のPatch Tuesdayの一環であり、サポート終了後の環境でも継続的な防御を維持する目的がある。特にSecure B…",
+      "threat_type": "Patch",
+      "summary_preview": "概要MicrosoftはWindows 10向けに拡張セキュリティ更新プログラム（KB5073724）を公開し、1月のPatch Tuesdayで報告された複数の脆弱性を修正した。今回の更新には3件のゼロデイ脆弱性の修正と、有効期限切れが迫るSecure Boot証明書の更新が含まれる。これにより、署名検証の失効によるブートプロセスの信頼性低下を防ぎ、既知…",
       "article_path": "articles/f4429fdde74b48f3.html",
       "original_url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-windows-10-kb5073724-extended-security-update/"
     },
@@ -76,8 +76,8 @@
       "category": "reporting",
       "published_at": "2026-01-13T18:53:24+00:00",
       "impact_level": "High",
-      "threat_type": "Vulnerability",
-      "summary_preview": "概要MicrosoftはWindows 11の累積更新プログラムKB5074109（バージョン25H2/24H2向け）およびKB5073455（23H2向け）を公開した。これらは月例のPatch Tuesday更新に該当し、複数のセキュリティ脆弱性修正、安定性改善、新機能追加を含む。特にカーネルやWindowsカーネルモードドライバ、Edgeブラウザ関連の…",
+      "threat_type": "Patch",
+      "summary_preview": "概要MicrosoftはWindows 11向けに累積更新プログラムKB5074109（バージョン25H2/24H2用）およびKB5073455（バージョン23H2用）を公開した。これらは月例のセキュリティ更新を含み、既知の脆弱性修正、安定性向上、および新機能追加を目的としている。特に、カーネルやネットワークスタックに関する修正が含まれる可能性があり、企業…",
       "article_path": "articles/7025a9e67bbd5d01.html",
       "original_url": "https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5074109-and-kb5073455-cumulative-updates-released/"
     },
@@ -88,8 +88,8 @@
       "category": "reporting",
       "published_at": "2026-01-13T18:34:08+00:00",
       "impact_level": "High",
-      "threat_type": "Vulnerability",
-      "summary_preview": "概要Microsoftは2026年1月の月例パッチ（Patch Tuesday）で、合計114件の脆弱性を修正した。このうち3件はゼロデイ（Zero-day）脆弱性で、1件はすでに実際の攻撃で悪用が確認され、2件は公に情報が開示されていた。修正対象はWindows OS、Office製品、Azure、Exchange Serverなど広範囲に及ぶ。これらの…",
+      "threat_type": "Patch",
+      "summary_preview": "概要Microsoftは2026年1月の月例パッチ（Patch Tuesday）で、合計114件の脆弱性を修正した。そのうち3件はゼロデイ（Zero-day）脆弱性で、1件はすでに実際の攻撃で悪用されている。修正対象にはWindowsカーネル、Office、Exchange Server、.NET、Edge（Chromiumベース）など広範な製品群が含まれ…",
       "article_path": "articles/9dbba4ad487a03bf.html",
       "original_url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-january-2026-patch-tuesday-fixes-3-zero-days-114-flaws/"
     },
@@ -100,70 +100,10 @@
       "category": "reporting",
       "published_at": "2026-01-13T18:25:04+00:00",
       "impact_level": "Low",
-      "threat_type": "Other",
-      "summary_preview": "概要Googleは、Android端末でアクセシビリティ機能を有効にしている場合に音量ボタンが正しく動作しない不具合を確認した。この問題は特定のソフトウェア構成で発生し、音量調整やメディア制御が不能になるケースが報告されている。現時点ではセキュリティ脆弱性ではなく、機能障害として扱われているが、ユーザビリティや端末操作性に影響を与える可能性がある。現場の学…",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Googleは、Android端末でアクセシビリティ機能を有効にしている場合に音量ボタンが正しく動作しない不具合を確認した。この問題は特定のソフトウェア構成下で発生し、ユーザー操作に影響を与えるが、セキュリティ侵害やデータ漏えいを伴うものではない。Googleは修正版を準備中で、今後のアップデートで修正が提供される見込みである。現場の学び機能不具合であ…",
       "article_path": "articles/220d82b2ac15b6cc.html",
       "original_url": "https://www.bleepingcomputer.com/news/google/google-confirms-android-bug-causing-volume-key-issues/"
-    },
-    {
-      "entry_id": "9540a684867dcfa2",
-      "title": "Betterment confirms data breach after wave of crypto scam emails",
-      "source_name": "BleepingComputer",
-      "category": "reporting",
-      "published_at": "2026-01-13T16:46:02+00:00",
-      "impact_level": "High",
-      "threat_type": "Other",
-      "summary_preview": "概要米国のデジタル投資アドバイザー企業Bettermentが、外部からの不正アクセスにより一部顧客データが流出し、暗号資産関連を装った詐欺メールが送信されたと公表した。攻撃者は正規の通信経路を悪用して信頼性を偽装し、顧客をフィッシングサイトへ誘導した可能性がある。Bettermentは影響範囲の特定と通知を進めており、現時点では資産の不正移動は確認されてい…",
-      "article_path": "articles/9540a684867dcfa2.html",
-      "original_url": "https://www.bleepingcomputer.com/news/security/betterment-confirms-data-breach-after-wave-of-crypto-scam-emails/"
-    },
-    {
-      "entry_id": "ec85c2a2ce6f51df",
-      "title": "Convincing LinkedIn comment-reply tactic used in new phishing",
-      "source_name": "BleepingComputer",
-      "category": "reporting",
-      "published_at": "2026-01-13T15:45:00+00:00",
-      "impact_level": "High",
-      "threat_type": "Other",
-      "summary_preview": "概要LinkedIn上で新たなフィッシング手法が確認された。攻撃者は投稿のコメント欄に「ポリシー違反の警告」などを装った返信を投稿し、ユーザーを外部リンクへ誘導して認証情報を詐取する。この際、LinkedIn公式の短縮URLサービス「lnkd.in」を悪用することで、正規リンクに見せかけて信頼性を高めている。これにより、企業アカウントや採用担当者など、業務…",
-      "article_path": "articles/ec85c2a2ce6f51df.html",
-      "original_url": "https://www.bleepingcomputer.com/news/security/convincing-linkedin-comment-reply-tactic-used-in-new-phishing/"
-    },
-    {
-      "entry_id": "9e0d908d49dfd4d3",
-      "title": "Target employees confirm leaked source code is authentic",
-      "source_name": "BleepingComputer",
-      "category": "reporting",
-      "published_at": "2026-01-13T13:08:25+00:00",
-      "impact_level": "High",
-      "threat_type": "Data Breach",
-      "summary_preview": "概要米小売大手Target社の内部ソースコードが流出し、現職・元従業員がその真正性を確認した。流出は脅威アクターによるGitサーバからの漏えいとみられ、報道後に同社はVPN経由でのみアクセス可能とする緊急ロックダウンを実施した。現時点で顧客データ流出の報告はないが、内部システム構成や認証ロジックが外部に露出した可能性がある。現場の学びソースコード流出は直接…",
-      "article_path": "articles/9e0d908d49dfd4d3.html",
-      "original_url": "https://www.bleepingcomputer.com/news/security/target-employees-confirm-leaked-source-code-is-authentic/"
-    },
-    {
-      "entry_id": "1c9c29265fa42c8b",
-      "title": "Hacker gets seven years for breaching Rotterdam and Antwerp ports",
-      "source_name": "BleepingComputer",
-      "category": "reporting",
-      "published_at": "2026-01-12T23:06:47+00:00",
-      "impact_level": "High",
-      "threat_type": "Other",
-      "summary_preview": "概要オランダの控訴裁判所は、ロッテルダム港およびアントワープ港のシステム侵入に関与した44歳のオランダ人に対し、懲役7年の判決を下した。被告は港湾の物流システムに不正アクセスし、貨物情報を改ざんして麻薬密輸を支援したほか、関係者への恐喝も試みたとされる。この事件は、港湾インフラにおけるサイバー攻撃が物理的な犯罪と結びつく典型例として注目されている。現場の学…",
-      "article_path": "articles/1c9c29265fa42c8b.html",
-      "original_url": "https://www.bleepingcomputer.com/news/security/hacker-gets-seven-years-for-breaching-rotterdam-and-antwerp-ports/"
-    },
-    {
-      "entry_id": "451adf7d3dbb5211",
-      "title": "Facebook login thieves now using browser-in-browser trick",
-      "source_name": "BleepingComputer",
-      "category": "reporting",
-      "published_at": "2026-01-12T21:05:43+00:00",
-      "impact_level": "High",
-      "threat_type": "Other",
-      "summary_preview": "概要攻撃者がFacebookの認証情報を窃取するために「Browser-in-the-Browser（BitB）」手法を活用する事例が増加している。BitBは、正規のログインポップアップを模倣した偽ウィンドウをブラウザ内に生成し、ユーザーに本物と誤認させて認証情報を入力させるフィッシング技術である。特にFacebookやGoogleなどOAuth認証を利用…",
-      "article_path": "articles/451adf7d3dbb5211.html",
-      "original_url": "https://www.bleepingcomputer.com/news/security/facebook-login-thieves-now-using-browser-in-browser-trick/"
     },
     {
       "entry_id": "49edfb496ec6c115",
@@ -172,8 +112,8 @@
       "category": "reporting",
       "published_at": "2026-01-13T17:30:00+00:00",
       "impact_level": "High",
-      "threat_type": "Other",
-      "summary_preview": "概要2022年1月以降継続している大規模なWebスキミング（Magecart型）キャンペーンが確認された。攻撃者はオンライン決済ページに悪意あるJavaScriptを挿入し、American Express、Mastercard、UnionPayなど主要決済ネットワークの加盟企業を標的としてクレジットカード情報を窃取している。Silent Push社の報告…",
+      "threat_type": "Malware",
+      "summary_preview": "概要2022年1月から継続している大規模なWebスキミング（Magecart型）キャンペーンが確認された。攻撃者はオンライン決済ページに悪意あるJavaScriptを挿入し、入力されたクレジットカード情報を窃取している。標的はAmerican Express、Diners Club、Discover、JCB、Mastercard、UnionPayなど主要な…",
       "article_path": "articles/49edfb496ec6c115.html",
       "original_url": "https://thehackernews.com/2026/01/long-running-web-skimming-campaign.html"
     },
@@ -184,8 +124,8 @@
       "category": "reporting",
       "published_at": "2026-01-13T17:22:00+00:00",
       "impact_level": "High",
-      "threat_type": "Credential Theft",
-      "summary_preview": "概要研究者は、暗号資産取引所MEXCのAPIキーを窃取する悪意あるGoogle Chrome拡張機能「MEXC API Automator」を確認した。この拡張は自動取引用ツールを装い、インストール後にユーザのブラウザからAPIキーを取得して外部に送信する。被害は現時点で限定的（29件のダウンロード）だが、取引アカウントの不正操作や資産流出につながる恐れが…",
+      "threat_type": "Malware",
+      "summary_preview": "概要セキュリティ研究者は、暗号資産取引所MEXC（中央集権型取引所）向けの自動取引ツールを装った悪意あるGoogle Chrome拡張機能「MEXC API Automator（ID: pppdfgkfdemgfknfnhpkibbkabhghhfh）」を確認した。この拡張は、ユーザが入力したAPIキーを窃取し、攻撃者のサーバへ送信する機能を持つ。ダウンロ…",
       "article_path": "articles/20a74cd45fa8e2c4.html",
       "original_url": "https://thehackernews.com/2026/01/malicious-chrome-extension-steals-mexc.html"
     },
@@ -196,8 +136,8 @@
       "category": "reporting",
       "published_at": "2026-01-13T13:44:00+00:00",
       "impact_level": "High",
-      "threat_type": "Credential Theft",
-      "summary_preview": "概要AIエージェントがコード生成だけでなく実行・デプロイまで自動化する時代となり、開発効率が飛躍的に向上している。一方で、Copilot（GitHubのAI支援開発ツール）やClaude Code、Codexなどが利用する「Machine Control Plane（MCP）」層やAPIキー管理の不備が新たな攻撃面を生んでいる。特に「Shadow API …",
+      "threat_type": "Advisory",
+      "summary_preview": "概要AIエージェント（例: GitHub Copilot、Anthropic Claude Code、OpenAI Codex）は、コード生成だけでなく実行・デプロイまで自動化する段階に進化している。これにより開発効率は飛躍的に向上する一方、エージェントがアクセスするツールやAPIキー、Machine Control Plane（MCP）と呼ばれる制御層の…",
       "article_path": "articles/5e95b7fb8b0c932f.html",
       "original_url": "https://thehackernews.com/2026/01/webinar-t-from-mcps-and-tool-access-to.html"
     },
@@ -208,8 +148,8 @@
       "category": "reporting",
       "published_at": "2026-01-13T11:57:00+00:00",
       "impact_level": "High",
-      "threat_type": "Other",
-      "summary_preview": "概要Check Point Researchが報告した「VoidLink」は、Linuxベースのクラウドおよびコンテナ環境を標的とする新しいマルウェアフレームワークである。複数のカスタムローダー、インプラント、ルートキット、モジュール構成を持ち、長期的かつステルス性の高い持続的アクセスを目的として設計されている。従来のLinuxマルウェアよりもクラウドネイ…",
+      "threat_type": "Malware",
+      "summary_preview": "概要Check Point Researchが報告した「VoidLink」は、Linuxベースのクラウドおよびコンテナ環境を標的とする新しいマルウェアフレームワークである。複数のカスタムローダー、インプラント、ルートキット、モジュール群で構成され、長期的かつステルス性の高いアクセス維持を目的としている。クラウドネイティブ環境に特化しており、従来のエンドポイ…",
       "article_path": "articles/3ba8f748f6f1ec06.html",
       "original_url": "https://thehackernews.com/2026/01/new-advanced-linux-voidlink-malware.html"
     },
@@ -220,8 +160,8 @@
       "category": "reporting",
       "published_at": "2026-01-13T11:55:00+00:00",
       "impact_level": "High",
-      "threat_type": "Other",
-      "summary_preview": "概要2025年の攻撃動向では、AI（人工知能）を活用した攻撃が注目されたが、実際には従来の攻撃手法をAIで効率化・自動化したケースが多い。攻撃者はフィッシング、脆弱な認証、誤設定といった基本的な侵入経路をAIで最適化し、より短時間で広範囲に攻撃を展開している。一方、防御側は新技術への対応に追われ、基本的なセキュリティ衛生の維持が後手に回る傾向が見られる。現…",
+      "threat_type": "Advisory",
+      "summary_preview": "概要2025年の攻撃動向では、AI（人工知能）を活用した攻撃が注目されたが、実際には従来手法の効率化・自動化にAIが利用されているに過ぎない。攻撃者は新技術を追うよりも、既存の侵入経路（脆弱な認証、未更新のソフトウェア、フィッシングなど）をAIで最適化し、スケールを拡大している。つまり「古い戦術の新しい規模化」が進行しており、防御側が新概念に気を取られる間…",
       "article_path": "articles/7a139e9d6b15a7e5.html",
       "original_url": "https://thehackernews.com/2026/01/what-should-we-learn-from-how-attackers.html"
     },
@@ -232,8 +172,8 @@
       "category": "reporting",
       "published_at": "2026-01-13T11:47:00+00:00",
       "impact_level": "Critical",
-      "threat_type": "Other",
-      "summary_preview": "概要ServiceNowのAI Platformにおいて、認証されていない攻撃者が他ユーザーをなりすまし任意操作を実行できる重大な脆弱性（CVE-2025-12420、CVSS 9.3）が修正された。脆弱性はAppOmniにより「BodySnatcher」と命名され、AI機能のリクエスト処理における認証検証の欠如が原因とされる。これにより、権限昇格や機密デ…",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要ServiceNowのAI Platformにおいて、認証されていない攻撃者が他ユーザーをなりすまし、任意の操作を実行できる重大な脆弱性（CVE-2025-12420、CVSS 9.3）が修正された。この欠陥はAppOmniによって「BodySnatcher」と命名され、AI機能を統合したSaaS環境における権限境界の不備を突くものである。Servic…",
       "article_path": "articles/fba534c31f0c3d17.html",
       "original_url": "https://thehackernews.com/2026/01/servicenow-patches-critical-ai-platform.html"
     },
@@ -245,7 +185,7 @@
       "published_at": "2026-01-13T09:08:00+00:00",
       "impact_level": "High",
       "threat_type": "Malware",
-      "summary_preview": "概要2026年1月、研究者は「SHADOW#REACTOR」と名付けられた新たなマルウェアキャンペーンを報告した。この攻撃は多段階の実行チェーンを用い、商用リモート管理ツールであるRemcos RAT（Remote Access Trojan）を最終的に展開する。初期段階では難読化されたVBSスクリプトが経由で実行され、複数の中間ステージを経て永続的なリモ…",
+      "summary_preview": "概要2026年1月、研究者は「SHADOW#REACTOR」と名付けられた新たなマルウェアキャンペーンを報告した。この攻撃は多段階の実行チェーンを用い、商用リモート管理ツールであるRemcos RAT（Remote Access Trojan）を最終的に展開する。初期段階では難読化されたVBSスクリプトが経由で実行され、複数のステージを経て永続的なリモート…",
       "article_path": "articles/af4c55c4de1c0fb8.html",
       "original_url": "https://thehackernews.com/2026/01/new-malware-campaign-delivers-remcos.html"
     },
@@ -257,7 +197,7 @@
       "published_at": "2026-01-13T07:15:00+00:00",
       "impact_level": "High",
       "threat_type": "Vulnerability",
-      "summary_preview": "概要米国CISA（Cybersecurity and Infrastructure Security Agency）は、Gitリポジトリ管理ツール「Gogs」に存在する重大な脆弱性CVE-2025-8110（CVSS 8.7）が実際に悪用されているとして、既知の悪用脆弱性（KEV）カタログに追加した。この脆弱性はリポジトリのファイルエディタ機能におけるパス…",
+      "summary_preview": "概要米国CISA（Cybersecurity and Infrastructure Security Agency）は、Gitリポジトリ管理ソフトウェア「Gogs」に存在する高深刻度の脆弱性CVE-2025-8110（CVSS 8.7）が実際に悪用されているとして、Known Exploited Vulnerabilities（KEV）カタログに追加した。…",
       "article_path": "articles/060dc487b8b1447e.html",
       "original_url": "https://thehackernews.com/2026/01/cisa-warns-of-active-exploitation-of.html"
     },
@@ -268,8 +208,8 @@
       "category": "reporting",
       "published_at": "2026-01-13T19:05:41+00:00",
       "impact_level": "High",
-      "threat_type": "Vulnerability",
-      "summary_preview": "概要2026年1月のMicrosoft月例パッチでは、合計113件の脆弱性が修正された。そのうち1件はChromiumプロジェクトで先行修正されたEdgeブラウザ関連の脆弱性であり、ブラウザエンジンの共通基盤に起因する問題である。修正対象はWindows OS、Office製品、Azure関連コンポーネントなど多岐にわたり、リモートコード実行（RCE）や特…",
+      "threat_type": "Patch",
+      "summary_preview": "概要2026年1月のMicrosoft Patch Tuesdayでは、合計113件の脆弱性が修正された。内訳にはWindows OS、Office製品、Azure関連サービス、そしてEdgeブラウザ（Chromiumベース）の修正が含まれる。特にEdgeの修正はChromiumプロジェクト側で先行対応されたもので、サプライチェーン的な依存関係を示している…",
       "article_path": "articles/78482f0287e4b3f4.html",
       "original_url": "https://isc.sans.edu/diary/rss/32624"
     },
@@ -280,8 +220,8 @@
       "category": "reporting",
       "published_at": "2026-01-13T02:00:03+00:00",
       "impact_level": "High",
-      "threat_type": "Other",
-      "summary_preview": "概要SANS ISCの2026年1月13日配信Stormcastでは、年初に観測された脅威動向として、Microsoft 365アカウントを狙うフィッシングキャンペーン、Log4j以降も続くサプライチェーン型攻撃の再燃、そして新たなマルウェア配布手法の変化が報告された。特に、正規クラウドサービスを悪用した認証情報窃取が増加しており、従来のURLフィルタリン…",
+      "threat_type": "Advisory",
+      "summary_preview": "概要SANS ISCの2026年1月13日配信Stormcastでは、複数の脆弱性と攻撃動向が報告された。特に、主要なWebアプリケーションフレームワークにおけるリモートコード実行（RCE）脆弱性の悪用が観測され、PoC（概念実証）コードが公開されたことにより、攻撃者による自動化スキャンが増加している。また、最近のフィッシングキャンペーンでは、生成AIを用…",
       "article_path": "articles/16302c8496ac78a2.html",
       "original_url": "https://isc.sans.edu/diary/rss/32622"
     },
@@ -292,8 +232,8 @@
       "category": "reporting",
       "published_at": "2026-01-13T20:30:02+00:00",
       "impact_level": "High",
-      "threat_type": "Data Breach",
-      "summary_preview": "概要MongoDBで報告された脆弱性「CVE-2025-14847（通称MongoBleed）」は、認証不要でメモリ内容が漏洩する欠陥であり、CVSSスコアは8.7（High）と評価されている。攻撃者は特定のリクエストを送信するだけで、機密データを含むメモリ領域を取得できる可能性がある。Unit 42（Palo Alto Networksの脅威調査チーム）…",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Unit 42が報告したCVE-2025-14847（通称「MongoBleed」）は、MongoDBに存在する認証不要のメモリ情報漏えい脆弱性であり、CVSSスコアは8.7（High）と評価されている。攻撃者は特定のリクエストを送信するだけで、サーバメモリ上の機密データ（認証トークンやクエリ情報など）を取得できる可能性がある。MongoDBはオープン…",
       "article_path": "articles/c5186bebed2820bb.html",
       "original_url": "https://unit42.paloaltonetworks.com/mongobleed-cve-2025-14847/"
     },
@@ -304,10 +244,22 @@
       "category": "reporting",
       "published_at": "2026-01-13T11:00:39+00:00",
       "impact_level": "High",
-      "threat_type": "Other",
-      "summary_preview": "概要Unit 42（Palo Alto Networksの脅威分析チーム）は、Apple、Salesforce、NVIDIAが公開するオープンソースAI/MLライブラリにリモートコード実行（RCE）脆弱性が存在することを報告した。これらの脆弱性は、AIモデルやデータフォーマットの読み込み処理に起因し、細工されたファイルを開くだけで任意コードが実行される可能…",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Palo Alto Networksの脅威分析チームUnit 42は、Apple、Salesforce、NVIDIAが公開しているオープンソースAI/MLライブラリにリモートコード実行（RCE）脆弱性が存在することを報告した。これらの脆弱性は、AIモデルファイル（例：pickle、ONNX、HDF5など）を読み込む際に任意コードが実行される可能性がある…",
       "article_path": "articles/ae479d98f9affef6.html",
       "original_url": "https://unit42.paloaltonetworks.com/rce-vulnerabilities-in-ai-python-libraries/"
+    },
+    {
+      "entry_id": "5fd7f4ce43a131c0",
+      "title": "Microsoft 製品の脆弱性対策について(2026年1月)",
+      "source_name": "IPA",
+      "category": "reporting",
+      "published_at": "2026-01-13T15:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Patch",
+      "summary_preview": "概要IPA（情報処理推進機構）は2026年1月のMicrosoft製品に関する月例セキュリティ更新を公表した。Windows、Microsoft Office、Exchange Server、Edgeなど複数製品に深刻な脆弱性が含まれ、リモートコード実行（RCE）や特権昇格（Privilege Escalation）を可能にするものがある。特にCVE-20…",
+      "article_path": "articles/5fd7f4ce43a131c0.html",
+      "original_url": "https://www.ipa.go.jp/security/security-alert/2025/0114-ms.html"
     },
     {
       "entry_id": "74cadef00363b167",
@@ -316,8 +268,8 @@
       "category": "reporting",
       "published_at": "2026-01-13T05:05:00+00:00",
       "impact_level": "Info",
-      "threat_type": "Other",
-      "summary_preview": "概要情報通信研究機構（NICT）は、量子技術分野で顕著な業績を挙げた研究者を顕彰する「Quantum 100」に、佐々木雅英フェローが選出されたと発表した。佐々木氏は量子暗号通信や量子ネットワークの研究を長年牽引しており、国内外での標準化活動や実証実験にも貢献している。この選出は、量子通信技術の社会実装やセキュリティ応用の進展を象徴する出来事といえる。現場…",
+      "threat_type": "Advisory",
+      "summary_preview": "概要情報通信研究機構（NICT）は、量子技術分野で顕著な業績を上げた研究者を顕彰する「Quantum 100」に、佐々木雅英フェローが選出されたと発表した。佐々木氏は量子暗号通信や量子鍵配送（QKD）の研究で国際的に高い評価を受けており、日本の量子セキュリティ技術の発展に大きく寄与している。この選出は研究成果の社会実装や国際標準化への貢献を評価したものであ…",
       "article_path": "articles/74cadef00363b167.html",
       "original_url": "/publicity/topics/2026/01/13-1.html"
     },
@@ -328,8 +280,8 @@
       "category": "reporting",
       "published_at": "2026-01-13T05:00:00+00:00",
       "impact_level": "Info",
-      "threat_type": "Other",
-      "summary_preview": "概要本件は国立研究開発法人情報通信研究機構（NICT）が実施する令和8年度の助成金公募に関する告知であり、字幕番組や手話番組などの制作・普及を支援する制度の案内である。内容は行政的な公募情報であり、サイバーセキュリティ上の脅威や脆弱性報告ではない。対象は放送事業者や制作団体で、ICTを活用した情報アクセシビリティ向上を目的としている。現場の学びCSIRTと…",
+      "threat_type": "Advisory",
+      "summary_preview": "概要本件は、情報通信研究機構（NICT）が令和8年度に実施する字幕・解説・手話番組制作支援に関する助成金公募の告知であり、セキュリティインシデントや脆弱性情報ではない。目的は放送・通信分野におけるアクセシビリティ向上であり、CSIRT実務に直接的な脅威要素は含まれない。ただし、助成金申請や運用に関わる情報システムの管理・保護は、個人情報や申請データの取り扱…",
       "article_path": "articles/856a2303a98209ed.html",
       "original_url": "/press/2026/01/13-1.html"
     },
@@ -340,8 +292,8 @@
       "category": "reporting",
       "published_at": "2026-01-12T23:10:02+00:00",
       "impact_level": "High",
-      "threat_type": "Exploit",
-      "summary_preview": "概要NSecSoft社が提供するWindows向けカーネルドライバーに、任意のプロセスを停止できる脆弱性が報告された。攻撃者が管理者権限を取得していなくても、特定のIOCTL（入出力制御コード）を悪用することで任意のプロセスを強制終了できる可能性がある。この問題はサービス妨害（DoS）やセキュリティ製品の無効化につながる恐れがあり、企業環境での影響が大きい…",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要NSecSoft社のWindows向けカーネルドライバーに、任意のプロセスを停止できる脆弱性が確認された。ドライバーはシステム権限で動作しており、悪用されると通常の権限制御を回避して任意プロセスの強制終了が可能となる。この問題はローカル権限昇格（Privilege Escalation）やサービス妨害（DoS）につながる恐れがあり、攻撃者が管理者権限を…",
       "article_path": "articles/6c554b98bae1adf0.html",
       "original_url": "https://scan.netsecurity.ne.jp/article/2026/01/13/54399.html"
     },
@@ -351,9 +303,9 @@
       "source_name": "ScanNetSecurity",
       "category": "reporting",
       "published_at": "2026-01-12T23:05:11+00:00",
-      "impact_level": "Medium",
+      "impact_level": "Low",
       "threat_type": "Other",
-      "summary_preview": "概要2026年1月、ある自治体で宅地建物取引士証の交付時に、誤った顔写真が貼付された事案が発生した。証明書発行業務の過程で、本人確認用データと写真データの突合処理に誤りがあり、別人の写真が登録・印刷されたことが原因とされる。発行後に本人からの指摘で判明し、該当証の回収と再発行が行われた。現場の学び本人確認や証明書発行プロセスにおけるデータ照合の自動化・二重…",
+      "summary_preview": "概要2026年1月、ある自治体で宅地建物取引士証の交付時に、別人の顔写真を誤って貼り付けた事案が発生した。原因は証明書作成工程での確認不足と、本人確認プロセスの不備によるもので、情報システム上の侵害ではなく人的ミスに分類される。誤交付された証明書は回収済みで、現時点で不正利用の報告はない。現場の学び情報セキュリティ事故はシステム脆弱性だけでなく、業務プロセ…",
       "article_path": "articles/f283660f3fb2f8a1.html",
       "original_url": "https://scan.netsecurity.ne.jp/article/2026/01/13/54398.html"
     },
@@ -365,7 +317,7 @@
       "published_at": "2026-01-12T23:05:08+00:00",
       "impact_level": "High",
       "threat_type": "Data Breach",
-      "summary_preview": "概要TOKAIコミュニケーションズが提供する法人向けメールサービス「OneOffice Mail Solution」で、不正アクセスにより顧客の個人情報が漏えいした可能性が判明した。攻撃者は外部からシステムに侵入し、メールアカウント情報や利用者情報にアクセスしたとみられる。影響範囲の特定と原因調査が進められており、現時点ではサービス停止や改修対応が実施され…",
+      "summary_preview": "概要TOKAIコミュニケーションズが提供する法人向けメールサービス「OneOffice Mail Solution」において、不正アクセスが発生し、顧客の個人情報が漏えいした可能性があると公表された。攻撃者は外部からシステムに侵入し、一部のメールアカウント情報や通信ログにアクセスしたとみられる。現時点で不正利用の報告はないが、影響範囲の特定と原因調査が継続…",
       "article_path": "articles/945cd86589c54be7.html",
       "original_url": "https://scan.netsecurity.ne.jp/article/2026/01/13/54397.html"
     },
@@ -377,7 +329,7 @@
       "published_at": "2026-01-12T23:05:06+00:00",
       "impact_level": "High",
       "threat_type": "Data Breach",
-      "summary_preview": "概要2026年1月、FCLコンポーネント（自動車部品メーカー）の海外子会社が不正アクセスを受け、社内システムから情報が流出した可能性が報告された。攻撃者は外部からの侵入経路を確保し、内部ネットワーク上のデータを窃取したとみられる。流出情報の一部がダークウェブ上で確認されたことから、実際の漏えいが発生している可能性が高い。現場の学び海外拠点や子会社のセキュリ…",
+      "summary_preview": "概要2026年1月、FCLコンポーネント（自動車部品メーカー）の海外子会社が不正アクセスを受け、社内システムから情報が流出した可能性が報告された。攻撃者は外部ネットワーク経由で侵入し、一部の業務サーバを経由してデータを窃取したとみられる。現時点で顧客情報や取引先情報の一部がダークウェブ上で流出しているとの指摘があり、同社は外部専門機関と連携して調査を進めて…",
       "article_path": "articles/c5f86fdfd9f3c49c.html",
       "original_url": "https://scan.netsecurity.ne.jp/article/2026/01/13/54396.html"
     },
@@ -387,9 +339,9 @@
       "source_name": "ScanNetSecurity",
       "category": "reporting",
       "published_at": "2026-01-12T23:05:02+00:00",
-      "impact_level": "High",
+      "impact_level": "Medium",
       "threat_type": "Intrusion",
-      "summary_preview": "概要みずほリース株式会社が発電事業投資に関するシステムで不正アクセスを受けたと公表した。現時点で業務への影響や情報漏えいは確認されていないが、外部からの侵入経路やアクセス範囲の特定を進めている。対象システムは発電関連の投資管理を行うもので、金融・エネルギー両分野にまたがる情報を扱うため、潜在的なリスクは高い。現場の学び業務影響が表面化していなくても、投資・…",
+      "summary_preview": "概要みずほリース株式会社が投資する発電事業関連システムに対し、不正アクセスが確認された。現時点では業務への影響や情報漏えいは確認されていないが、外部からの侵入経路やアクセス範囲の特定を進めている。対象システムは発電事業の投資管理に関わるもので、グループ全体の基幹システムとは分離されているとされる。調査は外部専門機関と連携して実施中であり、原因究明と再発防止…",
       "article_path": "articles/e9f49576912217ed.html",
       "original_url": "https://scan.netsecurity.ne.jp/article/2026/01/13/54395.html"
     },
@@ -400,8 +352,8 @@
       "category": "reporting",
       "published_at": "2026-01-12T23:00:20+00:00",
       "impact_level": "Medium",
-      "threat_type": "Data Breach",
-      "summary_preview": "概要AIを用いた模擬裁判システムが、架空の訴訟事案を入力として判決予測を行う取り組みが報じられた。司法分野でのAI活用は、法的判断の透明性向上や教育・研究目的での利用が期待される一方、入力データの扱い方やAIモデルのバイアス、結果の誤用といったリスクも内包する。特に、実在の個人情報や企業データが誤って入力される場合、情報漏えいや名誉毀損などのセキュリティ・…",
+      "threat_type": "Advisory",
+      "summary_preview": "概要AIを用いた模擬裁判システムが、架空の訴訟事案を入力として判決予測を行う実験が報告された。これは司法分野でのAI活用を検証する試みであり、自然言語処理（NLP）技術を用いて訴訟文書を解析し、過去の判例データベースと照合して結果を推定する。セキュリティ観点では、訴訟データという高機密情報をAIモデルに入力する際の情報漏えいリスクや、生成結果の信頼性・改ざ…",
       "article_path": "articles/76b55bd95e8fb104.html",
       "original_url": "https://scan.netsecurity.ne.jp/article/2026/01/13/54394.html"
     },
@@ -412,8 +364,8 @@
       "category": "reporting",
       "published_at": "2026-01-12T23:00:16+00:00",
       "impact_level": "Info",
-      "threat_type": "Other",
-      "summary_preview": "概要エーアイセキュリティラボが開催するWebセミナー「限られたリソースを活かす 生成AI協働メソッド」は、セキュリティ運用やインシデント対応における生成AIの活用をテーマとしている。特にCSIRTやSOC（Security Operation Center）など、人的リソースが限られる現場でのAI支援の実践的手法を共有する内容とみられる。生成AIを単なる自…",
+      "threat_type": "Advisory",
+      "summary_preview": "概要エーアイセキュリティラボが開催するWebセミナー「限られたリソースを活かす 生成AI協働メソッド」は、セキュリティ運用における生成AIの活用をテーマとしている。特にCSIRTやSOC（Security Operation Center）など、人的リソースが限られる組織において、AIをどのように業務補助や分析支援に組み込むかを議論する内容とみられる。生成…",
       "article_path": "articles/922ce8ee78e27e8c.html",
       "original_url": "https://scan.netsecurity.ne.jp/article/2026/01/13/54393.html"
     },
@@ -424,8 +376,8 @@
       "category": "reporting",
       "published_at": "2026-01-12T23:00:13+00:00",
       "impact_level": "Info",
-      "threat_type": "Other",
-      "summary_preview": "概要総務省は「サイバーセキュリティに関する総務大臣奨励賞」の募集を開始した。これは、官民・学術・地域など多様な分野での優れたサイバーセキュリティ実践や啓発活動を表彰する制度であり、応募期間は2月6日までとされている。対象は企業・団体・個人を問わず、技術的対策だけでなく人材育成や地域連携などの取り組みも評価対象となる。現場の学び技術的防御だけでなく、組織文化…",
+      "threat_type": "Advisory",
+      "summary_preview": "概要総務省は「サイバーセキュリティに関する総務大臣奨励賞」の募集を開始した。本賞は、官民・教育機関・個人を問わず、サイバーセキュリティ分野で顕著な功績を挙げた取り組みを表彰するもので、応募期間は2月6日まで。対象は技術的対策だけでなく、啓発活動や人材育成、地域連携など幅広い分野を含む。受賞事例は今後の政策形成や産学官連携のモデルケースとして活用される見込み…",
       "article_path": "articles/8a45dbd1869a5b7b.html",
       "original_url": "https://scan.netsecurity.ne.jp/article/2026/01/13/54392.html"
     },
@@ -436,8 +388,8 @@
       "category": "reporting",
       "published_at": "2026-01-12T23:00:10+00:00",
       "impact_level": "Info",
-      "threat_type": "Other",
-      "summary_preview": "概要クラウドセキュリティサービスを提供するHENNGE株式会社が、インドネシア市場への進出を発表した。HENNGEは日本国内で「HENNGE One」などのID管理・アクセス制御ソリューションを展開しており、今回の進出により東南アジア地域でのクラウドセキュリティ需要拡大に対応する狙いがある。現地企業との連携や法規制対応を通じ、ゼロトラストモデルの普及を推進…",
+      "threat_type": "Advisory",
+      "summary_preview": "概要HENNGE株式会社がインドネシア市場へ進出し、クラウドセキュリティおよびアクセス制御ソリューションの提供を開始した。HENNGEは日本国内で「HENNGE One」などのID管理・アクセス制御サービスを展開しており、今回の進出は東南アジア地域でのクラウド利用拡大に伴うセキュリティ需要の高まりを背景としている。現地企業のクラウド移行支援やゼロトラストモ…",
       "article_path": "articles/ac03114852400df0.html",
       "original_url": "https://scan.netsecurity.ne.jp/article/2026/01/13/54391.html"
     },
@@ -448,8 +400,8 @@
       "category": "reporting",
       "published_at": "2026-01-12T23:00:03+00:00",
       "impact_level": "High",
-      "threat_type": "Supply Chain",
-      "summary_preview": "概要Pioneer製の複数ソフトウェアインストーラーにおいて、DLL読み込み処理に関する脆弱性が確認された。インストーラー実行時に、同一ディレクトリ上の不正DLLを優先的に読み込む可能性があり、攻撃者が細工したDLLを配置することで任意コード実行が発生し得る。影響はインストール時に限定されるが、ユーザー権限での実行を前提とするため、システム改ざんや情報漏え…",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Pioneer製の複数ソフトウェアインストーラーにおいて、DLL読み込み処理に関する脆弱性が確認された。インストーラー実行時に、同一ディレクトリに配置された悪意あるDLLが正規DLLより優先して読み込まれる可能性があり、任意コード実行（RCE）につながる恐れがある。影響範囲はインストール時に限定されるが、ユーザー権限でのコード実行が可能となるため、攻撃…",
       "article_path": "articles/2ab27aa2bfa85ae7.html",
       "original_url": "https://scan.netsecurity.ne.jp/article/2026/01/13/54390.html"
     }

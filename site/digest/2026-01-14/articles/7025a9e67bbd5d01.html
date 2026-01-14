@@ -210,7 +210,7 @@
 
         <div class="tags">
           <span class="tag level-High">Impact: High</span>
-          <span class="tag">Vulnerability</span>
+          <span class="tag">Patch</span>
         </div>
 
         <div class="btnRow">
@@ -222,12 +222,12 @@
       <div class="body">
         <div class="section">
           <h2>Impact判定理由</h2>
-          <div class="ruleReason">Windowsカーネルやドライバ層の脆弱性修正を含むため、未適用時には権限昇格やリモートコード実行のリスクが高い。ゼロデイ対応の可能性もあり、企業環境では迅速な適用が推奨される。</div>
+          <div class="ruleReason">本更新は複数のセキュリティ脆弱性を修正しており、未適用環境では既知の攻撃手法で悪用されるリスクが高い。特にWindowsカーネルやネットワーク関連の修正が含まれる可能性があるため、企業環境では迅速な適用が推奨される。</div>
         </div>
         <div class="section summary">
           <h2>🧾 要約（ChatGPT）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          <div><h4>概要</h4><p>MicrosoftはWindows 11の累積更新プログラムKB5074109（バージョン25H2/24H2向け）およびKB5073455（23H2向け）を公開した。これらは月例のPatch Tuesday更新に該当し、複数のセキュリティ脆弱性修正、安定性改善、新機能追加を含む。特にカーネルやWindowsカーネルモードドライバ、Edgeブラウザ関連の修正が含まれており、既知のゼロデイ脆弱性への対応も行われている可能性がある。</p><h4>現場の学び</h4><ul><li>累積更新は過去の修正をすべて含むため、適用遅延は脆弱性放置に直結する。特に業務端末やVDI環境では、更新適用の自動化と検証プロセスの両立が重要。</li><li>ゼロデイ対応の有無をMSRC（Microsoft Security Response Center）のリリースノートで確認し、CVEごとのCVSSスコアを基に優先度を判断する。</li><li>更新適用後の不具合（印刷、ネットワーク、認証関連など）を想定し、ロールバック手順や影響範囲のモニタリングを準備しておく。</li></ul><h4>初動・継続対応の示唆</h4><ul><li>全社的なWindows Update適用計画を即時見直し、特に外部公開端末や管理者権限を持つ端末を優先的に更新する。</li><li>更新適用後は、イベントログやEDR（Endpoint Detection and Response）で異常挙動を監視し、更新由来の誤検知や通信異常を早期に検出する。</li><li>CSIRTとしては、CVE情報を基に脆弱性管理台帳を更新し、未適用端末の可視化を継続的に行うことが望ましい。</li></ul></div>
+          <div><h4>概要</h4><p>MicrosoftはWindows 11向けに累積更新プログラムKB5074109（バージョン25H2/24H2用）およびKB5073455（バージョン23H2用）を公開した。これらは月例のセキュリティ更新を含み、既知の脆弱性修正、安定性向上、および新機能追加を目的としている。特に、カーネルやネットワークスタックに関する修正が含まれる可能性があり、企業環境では早期適用が推奨される。</p><h4>現場の学び</h4><ul><li>累積更新は過去の修正をすべて含むため、パッチ適用の遅延が脆弱性残存リスクを高める。テスト環境での検証を経て迅速な展開が望ましい。</li><li>Windows Updateの適用失敗や再起動ループなど、更新プロセス自体の障害もインシデント要因となるため、更新ログ（Windows UpdateログやEvent Viewer）を定期的に確認する。</li><li>更新内容に含まれるセキュリティ修正のCVE一覧を確認し、自組織の資産管理台帳と突合して影響範囲を特定することが重要。</li></ul><h4>初動・継続対応の示唆</h4><ul><li>パッチ適用前にバックアップを取得し、ロールバック手順を明確化する。</li><li>更新後は脆弱性スキャンを実施し、修正が反映されているかを検証する。</li><li>脆弱性管理プロセスにおいて、MicrosoftのPatch Tuesday情報を自動収集・分析する仕組みを整備することで、対応の属人化を防ぐ。</li></ul></div>
         </div>
 
         <div class="section">
@@ -235,19 +235,19 @@
           <div class="terms">
             <div class="termCard">
   <div class="term">Cumulative Update / 累積更新</div>
-  <p class="exp">Windowsの更新方式の一つで、過去の修正をすべて含むパッケージ。最新の累積更新を適用することで、以前の更新を個別に適用する必要がなくなる。</p>
+  <p class="exp">Windowsの更新方式で、過去の修正をすべて含むパッケージ。最新の累積更新を適用することで、以前のパッチも同時に反映される。</p>
 </div>
 <div class="termCard">
-  <div class="term">Zero-day Vulnerability / ゼロデイ脆弱性</div>
-  <p class="exp">公開前または修正前に悪用される脆弱性。攻撃者が先行して利用するため、パッチ適用までの防御が難しい。</p>
+  <div class="term">Patch Tuesday / 月例更新</div>
+  <p class="exp">Microsoftが毎月第2火曜日に公開する定例のセキュリティ更新日。脆弱性修正の集中リリースにより、組織は定期的なパッチ管理を行いやすくなる。</p>
 </div>
 <div class="termCard">
-  <div class="term">MSRC (Microsoft Security Response Center)</div>
-  <p class="exp">Microsoftのセキュリティ対応組織で、脆弱性情報や修正プログラムを公開する。Patch Tuesdayの詳細情報もここで確認できる。</p>
+  <div class="term">Vulnerability Management / 脆弱性管理</div>
+  <p class="exp">脆弱性の特定、評価、優先順位付け、修正を継続的に行うプロセス。パッチ適用だけでなく、リスク評価と検証を含む。</p>
 </div>
 <div class="termCard">
-  <div class="term">EDR (Endpoint Detection and Response)</div>
-  <p class="exp">端末上の挙動を監視し、攻撃の兆候を検知・対応するセキュリティ製品。更新後の挙動変化を監視する際に有効。</p>
+  <div class="term">Rollback / ロールバック</div>
+  <p class="exp">更新適用後に不具合が発生した際、以前の状態に戻す手順。システムの可用性維持に重要で、更新前のバックアップとセットで運用される。</p>
 </div>
           </div>
         </div>
@@ -256,7 +256,7 @@
           <h2>🕘 生成情報</h2>
           <div class="ruleReason">
 対象期間：2026-01-13T06:00:00+09:00 〜 2026-01-14T06:00:00+09:00
-生成時刻：2026-01-14T06:31:55.777822+09:00
+生成時刻：2026-01-14T21:47:38.201097+09:00
 免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
           </div>
         </div>

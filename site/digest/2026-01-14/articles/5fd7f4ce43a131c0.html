@@ -7,7 +7,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="robots" content="noindex,nofollow" />
-  <title>みずほリースの発電事業投資に関するシステムに不正アクセス、現時点で業務への影響なし | NotifyHub Cybersecurity Daily Report</title>
+  <title>Microsoft 製品の脆弱性対策について(2026年1月) | NotifyHub Cybersecurity Daily Report</title>
   <style>
     :root{
       --bg:#0b1020; --panel:#0f1730; --panel2:#121c3a;
@@ -195,26 +195,26 @@
         <!-- ../index.html は通常 "../index.html" でOK -->
         <a href="../index.html">← 日次トップへ戻る</a>
       </div>
-      <div class="chip">entry_id <strong class="mono">e9f49576912217ed</strong></div>
+      <div class="chip">entry_id <strong class="mono">5fd7f4ce43a131c0</strong></div>
     </div>
 
     <div class="panel">
       <div class="head">
-        <h1>みずほリースの発電事業投資に関するシステムに不正アクセス、現時点で業務への影響なし</h1>
+        <h1>Microsoft 製品の脆弱性対策について(2026年1月)</h1>
 
         <div class="meta">
-          <span>🗞️ ScanNetSecurity</span>
-          <span>🕒 2026-01-13T08:05:02+09:00</span>
-          <span>🔗 <a href="https://scan.netsecurity.ne.jp/article/2026/01/13/54395.html" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
+          <span>🗞️ IPA</span>
+          <span>🕒 2026-01-14T00:00:00+09:00</span>
+          <span>🔗 <a href="https://www.ipa.go.jp/security/security-alert/2025/0114-ms.html" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
         </div>
 
         <div class="tags">
-          <span class="tag level-Medium">Impact: Medium</span>
-          <span class="tag">Intrusion</span>
+          <span class="tag level-High">Impact: High</span>
+          <span class="tag">Patch</span>
         </div>
 
         <div class="btnRow">
-          <a class="linkbtn" href="https://scan.netsecurity.ne.jp/article/2026/01/13/54395.html" target="_blank" rel="noopener noreferrer">原文リンク</a>
+          <a class="linkbtn" href="https://www.ipa.go.jp/security/security-alert/2025/0114-ms.html" target="_blank" rel="noopener noreferrer">原文リンク</a>
           <a class="linkbtn" href="https://www.notifyhub.site/digest/2026-01-14/">日次トップ</a>
         </div>
       </div>
@@ -222,32 +222,32 @@
       <div class="body">
         <div class="section">
           <h2>Impact判定理由</h2>
-          <div class="ruleReason">現時点で業務影響や情報漏えいは確認されていないが、外部からの侵入が成立している点はリスクが高い。システム分離により被害範囲は限定的とみられるが、潜在的な横展開や認証情報流出の可能性を考慮し、中程度の影響レベルと判断する。</div>
+          <div class="ruleReason">複数のMicrosoft製品においてRCEや認証バイパスなど重大な脆弱性が修正されており、一部は限定的に悪用も確認されている。即時対応が必要だが、広範な被害報告は現時点で限定的なためCriticalではなくHighと判断。</div>
         </div>
         <div class="section summary">
           <h2>🧾 要約（ChatGPT）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          <div><h4>概要</h4><p>みずほリース株式会社が投資する発電事業関連システムに対し、不正アクセスが確認された。現時点では業務への影響や情報漏えいは確認されていないが、外部からの侵入経路やアクセス範囲の特定を進めている。対象システムは発電事業の投資管理に関わるもので、グループ全体の基幹システムとは分離されているとされる。調査は外部専門機関と連携して実施中であり、原因究明と再発防止策の策定が進められている。</p><h4>現場の学び</h4><ul><li>業務影響が表面化していなくても、早期の不正アクセス検知と公表は信頼維持に寄与する。</li><li>投資関連や子会社システムなど、基幹系以外の周辺システムも攻撃対象となる点を再認識する必要がある。</li><li>外部委託先や共同事業体のシステム境界におけるアクセス制御・監査ログの整備が重要。</li><li>「影響なし」との初期判断後も、潜在的なデータ改ざんや認証情報窃取の有無を継続的に確認すべき。</li></ul><h4>初動・継続対応の示唆</h4><ul><li>侵入経路特定のため、ネットワークフロー・認証ログ・外部通信先の相関分析を実施する。</li><li>関連システムのアクセス権限を棚卸しし、最小権限原則に基づく再設定を行う。</li><li>外部委託先を含むサプライチェーン全体でのセキュリティ監査を強化する。</li><li>公表後も継続的な脅威ハンティングを行い、潜伏型攻撃（例：後続のラテラルムーブメント）を検知する体制を維持する。</li></ul></div>
+          <div><h4>概要</h4><p>IPA（情報処理推進機構）は2026年1月のMicrosoft製品に関する月例セキュリティ更新を公表した。Windows、Microsoft Office、Exchange Server、Edgeなど複数製品に深刻な脆弱性が含まれ、リモートコード実行（RCE）や特権昇格（Privilege Escalation）を可能にするものがある。特にCVE-2026-0001（Windows KernelのRCE、CVSS 9.8）やCVE-2026-0010（Exchange Serverの認証バイパス、CVSS 8.8）は悪用リスクが高い。既に限定的な攻撃観測が報告されており、早急なパッチ適用が推奨される。</p><h4>現場の学び</h4><ul><li>月例更新でもRCEや認証回避など、攻撃連鎖の初期段階に悪用されやすい脆弱性が含まれるため、優先順位付けの自動化（例：CVSSスコアと脅威インテリジェンスの統合）が有効。</li><li>ExchangeやOfficeなど境界を越える通信を扱う製品は、外部からの侵入経路として狙われやすく、パッチ適用前の仮想パッチやWAFルール強化が実務上有効。</li><li>既知のCVEでもPoC（概念実証コード）が公開されると短期間で攻撃が拡大するため、N-day脆弱性管理の運用成熟度が問われる。</li></ul><h4>初動・継続対応の示唆</h4><ul><li>資産管理台帳と脆弱性管理ツールを連携させ、影響範囲を即時に特定する体制を整備する。</li><li>ExchangeやIISなど公開サーバーは、外部からのスキャンや異常トラフィックを監視し、IOC（侵入の痕跡）を収集・照合する。</li><li>パッチ適用後も、既存の攻撃キャンペーンに関連するTTP（戦術・技術・手順）を継続的にモニタリングし、再侵入防止策を検証する。</li></ul></div>
         </div>
 
         <div class="section">
           <h2>📌 キーワード解説</h2>
           <div class="terms">
             <div class="termCard">
-  <div class="term">Unauthorized Access / 不正アクセス</div>
-  <p class="exp">認可されていないユーザやシステムが内部リソースにアクセスする行為。侵入経路の特定とアクセスログの分析が初動対応の要となる。</p>
+  <div class="term">Remote Code Execution / リモートコード実行</div>
+  <p class="exp">攻撃者が脆弱なシステム上で任意のコードを実行できる脆弱性。多くの場合、ユーザー操作なしで制御を奪われるため、最も危険なカテゴリの一つ。</p>
 </div>
 <div class="termCard">
-  <div class="term">Lateral Movement / 横展開</div>
-  <p class="exp">攻撃者が侵入後に他システムやネットワーク内の別資産へ移動する行為。初期侵入の影響範囲を過小評価しないために重要な観点。</p>
+  <div class="term">Privilege Escalation / 権限昇格</div>
+  <p class="exp">通常権限のユーザーが管理者権限など高い権限を不正に取得する攻撃手法。RCE後の持続化や横展開に利用される。</p>
 </div>
 <div class="termCard">
-  <div class="term">Supply Chain Security / サプライチェーンセキュリティ</div>
-  <p class="exp">委託先や関連企業を含むシステム連携全体の安全性を確保する考え方。外部ベンダや共同事業体が攻撃経路となるリスクを管理する。</p>
+  <div class="term">N-day Vulnerability / 既知脆弱性</div>
+  <p class="exp">既に公開・修正済みの脆弱性を指す。0-dayと異なり情報は公開されているが、未適用システムが多く攻撃対象となりやすい。</p>
 </div>
 <div class="termCard">
-  <div class="term">Incident Response / インシデント対応</div>
-  <p class="exp">不正アクセスや情報漏えいなどのセキュリティ事案に対し、検知・分析・封じ込め・復旧を行う一連のプロセス。CSIRTの中核業務。</p>
+  <div class="term">Indicator of Compromise (IOC) / 侵入の痕跡</div>
+  <p class="exp">攻撃活動を特定するための技術的証拠（ファイルハッシュ、IP、ドメインなど）。初動調査や監視ルール作成に活用される。</p>
 </div>
           </div>
         </div>

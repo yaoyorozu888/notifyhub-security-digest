@@ -210,7 +210,7 @@
 
         <div class="tags">
           <span class="tag level-High">Impact: High</span>
-          <span class="tag">Other</span>
+          <span class="tag">Vulnerability</span>
         </div>
 
         <div class="btnRow">
@@ -222,12 +222,12 @@
       <div class="body">
         <div class="section">
           <h2>Impact判定理由</h2>
-          <div class="ruleReason">CISA KEVに登録されており実際の悪用が確認されている。情報漏えい自体は直接的なシステム破壊を伴わないが、他の脆弱性と組み合わせることで重大な侵害に発展する可能性が高い。</div>
+          <div class="ruleReason">CISA KEVに登録されており、実際の悪用が確認されている。情報漏えい自体は直接のRCE（リモートコード実行）ではないが、他の脆弱性と組み合わせることで重大な侵害につながる可能性が高い。</div>
         </div>
         <div class="section summary">
           <h2>🧾 要約（ChatGPT）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          <div><h4>概要</h4><p>CVE-2026-20805は、Microsoft Windowsに存在する情報漏えい（Information Disclosure）の脆弱性である。CISAのKnown Exploited Vulnerabilities（KEV）カタログに登録されており、実際に悪用が確認されている。攻撃者は特定のシステム情報やメモリ内容を取得することで、後続の権限昇格や横展開攻撃の足掛かりを得る可能性がある。影響範囲はWindowsの複数バージョンに及ぶとみられる。</p><h4>現場の学び</h4><ul><li>情報漏えい型の脆弱性は単体では即座の侵害を引き起こさないが、他の脆弱性と組み合わせることで攻撃連鎖（Exploit Chain）の一部となる。</li><li>KEV登録は「実際に悪用されている」ことを意味し、パッチ適用の優先度を上げる判断材料となる。</li><li>Windows環境では、メモリ保護やログ監視を強化し、異常なプロセスアクセスを早期に検知する体制が重要である。</li></ul><h4>初動・継続対応の示唆</h4><ul><li>Microsoftの月例パッチ（Patch Tuesday）で該当更新プログラムを確認し、優先的に適用する。</li><li>影響を受けるシステムの範囲を資産管理台帳で特定し、未更新端末を早期に隔離または更新する。</li><li>既に悪用が確認されているため、脆弱性スキャンやEDRログを用いて不審な情報取得行為の痕跡を調査する。</li></ul></div>
+          <div><h4>概要</h4><p>CVE-2026-20805は、Microsoft Windowsに存在する情報漏えい（Information Disclosure）の脆弱性である。CISA（米国サイバーセキュリティ・インフラセキュリティ庁）のKnown Exploited Vulnerabilities（KEV）カタログに登録されたことから、実際に悪用が確認されている。攻撃者はこの脆弱性を利用して、システム内部情報やメモリ内容などを不正に取得し、後続の権限昇格や横展開攻撃の足掛かりとする可能性がある。</p><h4>現場の学び</h4><ul><li>情報漏えい型の脆弱性は単体では即座の侵害に直結しない場合もあるが、攻撃連鎖（Exploit Chain）の初期段階として利用されることが多い。</li><li>KEV登録は「既に実際の攻撃で悪用された」ことを意味するため、パッチ適用の優先度は高い。</li><li>Windows環境では、脆弱性の影響範囲が広く、特に共通ライブラリやカーネルレベルの情報漏えいは他の脆弱性との組み合わせで深刻化する。</li></ul><h4>初動・継続対応の示唆</h4><ul><li>該当するWindowsバージョンを特定し、Microsoftのセキュリティ更新プログラムを早急に適用する。</li><li>既存の検知ルール（EDR/SIEM）で、異常な情報取得やメモリアクセスの挙動を監視する。</li><li>脆弱性悪用の痕跡（IOC）を確認し、内部情報の漏えいが他の攻撃段階に利用されていないかを継続的に分析する。</li></ul></div>
         </div>
 
         <div class="section">
@@ -235,19 +235,19 @@
           <div class="terms">
             <div class="termCard">
   <div class="term">Information Disclosure / 情報漏えい</div>
-  <p class="exp">システム内部の機密情報（メモリ内容、認証情報、構成情報など）が意図せず外部に露出する脆弱性。攻撃者はこれを利用して後続攻撃の準備を行う。</p>
-</div>
-<div class="termCard">
-  <div class="term">CISA KEV Catalog / CISA既知悪用脆弱性カタログ</div>
-  <p class="exp">米国サイバーセキュリティ・インフラセキュリティ庁（CISA）が管理する、実際に悪用が確認された脆弱性の一覧。登録は即時対応が推奨される指標となる。</p>
+  <p class="exp">システム内部の機密情報が意図せず外部に露出する脆弱性。攻撃者はこれを利用して環境情報や認証データを収集し、後続攻撃を有利に進める。</p>
 </div>
 <div class="termCard">
   <div class="term">Exploit Chain / 攻撃連鎖</div>
-  <p class="exp">複数の脆弱性を段階的に利用して最終的な侵害を達成する攻撃手法。情報漏えいは初期段階で利用されることが多い。</p>
+  <p class="exp">複数の脆弱性や手法を組み合わせて段階的に侵害を進める攻撃手法。情報漏えいは初期偵察や権限昇格の前段階として利用されやすい。</p>
 </div>
 <div class="termCard">
-  <div class="term">Patch Tuesday / 月例パッチ</div>
-  <p class="exp">Microsoftが毎月第2火曜日に公開するセキュリティ更新プログラム群。企業はこれを基準にパッチ適用計画を立てる。</p>
+  <div class="term">KEV Catalog / 既知悪用脆弱性カタログ</div>
+  <p class="exp">CISAが管理する、実際に悪用が確認された脆弱性の一覧。登録された脆弱性は即時対応が推奨される。</p>
+</div>
+<div class="termCard">
+  <div class="term">Privilege Escalation / 権限昇格</div>
+  <p class="exp">攻撃者が低権限アカウントから管理者権限などへ不正に昇格する行為。情報漏えい脆弱性はその前段階として利用されることがある。</p>
 </div>
           </div>
         </div>
@@ -256,7 +256,7 @@
           <h2>🕘 生成情報</h2>
           <div class="ruleReason">
 対象期間：2026-01-13T06:00:00+09:00 〜 2026-01-14T06:00:00+09:00
-生成時刻：2026-01-14T06:31:55.777822+09:00
+生成時刻：2026-01-14T21:47:38.201097+09:00
 免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
           </div>
         </div>
