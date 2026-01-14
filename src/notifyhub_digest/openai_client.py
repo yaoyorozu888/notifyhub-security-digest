@@ -44,13 +44,18 @@ def _analysis_schema_hint() -> str:
         '  "technical_terms": [{"term":"...","explanation":"..."}],\n'
         '  "impact_level": "Critical|High|Medium|Low|Info",\n'
         '  "impact_reason": "...",\n'
-        '  "threat_type": "..."\n'
+        '  "threat_type": "Vulnerability|Exploit|Zero-day|Vulnerability Disclosure|Patch|Misconfiguration|Malware|Ransomware|Botnet|Cryptojacking|Phishing|Business Email Compromise|Scam/Fraud|Credential Theft|Intrusion|Data Breach|DDoS|Supply Chain|Advisory|Other|Unknown"\n'
         "}\n"
         "summary_htmlには <p><ul><ol><li><strong><h4><code><br><div> 以外を含めないでください。属性は付けないでください。\n"
         "summary_htmlは <h4>概要</h4><p>..</p><h4>現場の学び</h4><ul><li>..</li></ul>"
         "<h4>初動・継続対応の示唆</h4><ul><li>..</li></ul> の流れを意識してください。\n"
-        "各セクションは短く、合計で600〜800文字程度に収めてください。\n"
+        "各セクションは短く、合計で800〜1000文字程度に収めてください。\n"
         "technical_terms は最大4件、各 explanation は2〜4文に収めてください。\n"
+        "technical_terms の選定基準（重要）:\n"
+        "- 記事の理解や実務判断に直結する「中核概念」を優先（攻撃手法/脆弱性クラス/防御観点）。\n"
+        "- 初動対応で調査・検知・封じ込めに役立つ用語を優先（例: IOC/TTP/C2/RCE/Privilege Escalation/Lateral Movement）。\n"
+        "- 誤解しやすい/定義がズレやすい用語は優先して補足（例: 0-day vs N-day、PoC vs weaponized）。\n"
+        "- 一般名詞や固有名詞の羅列は避け、粒度は「その記事の文脈で意味があるレベル」にする。\n"
         "technical_terms.term は英語表記が一般的ではない場合、英語の用語名を先に書き、その後に日本語の用語名を付けてください（例: "
         '"Exploit Chain / 攻撃連鎖"）。explanation は日本語で簡潔に説明してください。\n'
         "impact_levelはサイバーセキュリティの観点で判断してください。基準の目安:\n"
@@ -181,9 +186,23 @@ def _coerce_analysis_result(parsed: dict[str, Any]) -> AnalysisResult:
         allowed = {
             "vulnerability": "Vulnerability",
             "exploit": "Exploit",
+            "zero-day": "Zero-day",
+            "zeroday": "Zero-day",
+            "0day": "Zero-day",
+            "0-day": "Zero-day",
+            "vulnerability disclosure": "Vulnerability Disclosure",
+            "patch": "Patch",
+            "misconfiguration": "Misconfiguration",
             "malware": "Malware",
             "ransomware": "Ransomware",
+            "botnet": "Botnet",
+            "cryptojacking": "Cryptojacking",
             "phishing": "Phishing",
+            "business email compromise": "Business Email Compromise",
+            "bec": "Business Email Compromise",
+            "scam/fraud": "Scam/Fraud",
+            "scam": "Scam/Fraud",
+            "fraud": "Scam/Fraud",
             "credential theft": "Credential Theft",
             "intrusion": "Intrusion",
             "data breach": "Data Breach",
@@ -204,18 +223,46 @@ def _coerce_analysis_result(parsed: dict[str, Any]) -> AnalysisResult:
             return "DDoS"
         if v_l in {"supply-chain", "supplychain"}:
             return "Supply Chain"
+        if v_l in {"vuln disclosure", "disclosure"}:
+            return "Vulnerability Disclosure"
+        if v_l in {"patching", "security patch", "update"}:
+            return "Patch"
+        if v_l in {"config", "configuration", "misconfig"}:
+            return "Misconfiguration"
+        if v_l in {"crypto-jacking", "crypto mining", "cryptomining", "coin mining"}:
+            return "Cryptojacking"
+        if v_l in {"email compromise", "business email"}:
+            return "Business Email Compromise"
+        if v_l in {"fraud/scam"}:
+            return "Scam/Fraud"
 
         # Japanese -> English mapping (best-effort).
         if any(x in v for x in ("脆弱性", "ぜいじゃくせい", "vuln", "cve")):
             return "Vulnerability"
+        if any(x in v for x in ("ゼロデイ", "0デイ", "0day", "ゼロ・デイ", "未公開", "未修正")):
+            return "Zero-day"
+        if any(x in v for x in ("開示", "公開", "disclosure")):
+            return "Vulnerability Disclosure"
+        if any(x in v for x in ("パッチ", "修正", "更新", "アップデート", "update", "patch")):
+            return "Patch"
+        if any(x in v for x in ("設定ミス", "誤設定", "構成ミス", "misconfig", "misconfiguration")):
+            return "Misconfiguration"
         if any(x in v for x in ("エクスプロイト", "攻撃コード", "悪用", "exploit")):
             return "Exploit"
-        if any(x in v for x in ("マルウェア", "ウイルス", "トロイ", "botnet", "ボットネット")):
+        if any(x in v for x in ("ボットネット", "botnet", "C2", "C&C")):
+            return "Botnet"
+        if any(x in v for x in ("クリプトジャッキング", "暗号資産マイニング", "不正マイニング", "cryptojacking", "coin mining")):
+            return "Cryptojacking"
+        if any(x in v for x in ("マルウェア", "ウイルス", "トロイ", "worm", "trojan")):
             return "Malware"
         if any(x in v for x in ("ランサム", "身代金", "ransom")):
             return "Ransomware"
         if any(x in v for x in ("フィッシング", "phish")):
             return "Phishing"
+        if any(x in v for x in ("BEC", "ビジネスメール詐欺", "メール詐欺", "business email compromise")):
+            return "Business Email Compromise"
+        if any(x in v for x in ("詐欺", "騙し", "scam", "fraud")):
+            return "Scam/Fraud"
         if any(x in v for x in ("認証情報", "資格情報", "credential", "パスワード")):
             return "Credential Theft"
         if any(x in v for x in ("侵害", "不正アクセス", "侵入", "compromise")):

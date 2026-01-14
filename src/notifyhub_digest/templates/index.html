@@ -296,13 +296,12 @@
         </div>
 
         <div class="ctrl">
-          <label for="category" class="labelRow">
-            <span>カテゴリ</span>
-            <span class="help" data-tip="情報源のカテゴリで絞り込みます。将来の分類拡張に備えた枠です。"></span>
+          <label for="threat_type" class="labelRow">
+            <span>種別</span>
+            <span class="help" data-tip="AI推定の種別（threat_type）で絞り込みます。"></span>
           </label>
-          <select id="category">
+          <select id="threat_type">
             <option value="">すべて</option>
-            <option value="reporting">reporting</option>
           </select>
         </div>
 
@@ -365,6 +364,62 @@
     let manifest = null;
     let allItems = [];
 
+    function populateThreatTypeOptions(items){
+      const threatOrder = [
+        "Vulnerability",
+        "Exploit",
+        "Zero-day",
+        "Vulnerability Disclosure",
+        "Patch",
+        "Misconfiguration",
+        "Malware",
+        "Ransomware",
+        "Botnet",
+        "Cryptojacking",
+        "Phishing",
+        "Business Email Compromise",
+        "Scam/Fraud",
+        "Credential Theft",
+        "Intrusion",
+        "Data Breach",
+        "DDoS",
+        "Supply Chain",
+        "Advisory",
+        "Other",
+        "Unknown",
+      ];
+
+      const uniq = new Set();
+      for(const it of items){
+        uniq.add(it?.threat_type ?? "Unknown");
+      }
+
+      const values = Array.from(uniq);
+      values.sort((a,b) => {
+        const ia = threatOrder.indexOf(a);
+        const ib = threatOrder.indexOf(b);
+        if(ia === -1 && ib === -1) return String(a).localeCompare(String(b), "ja");
+        if(ia === -1) return 1;
+        if(ib === -1) return -1;
+        return ia - ib;
+      });
+
+      const sel = qs("threat_type");
+      sel.innerHTML = "";
+
+      const optAll = document.createElement("option");
+      optAll.value = "";
+      optAll.textContent = "すべて";
+      sel.appendChild(optAll);
+
+      for(const v of values){
+        const opt = document.createElement("option");
+        opt.value = v;
+        opt.textContent = v;
+        sel.appendChild(opt);
+      }
+    }
+
     function render(items){
       const list = qs("list");
       list.innerHTML = "";
@@ -382,7 +437,7 @@
         const src = it.source_name ?? "-";
         const pub = toJstLabel(it.published_at);
         const impact = it.impact_level ?? "Unknown";
-        const threat = it.threat_type ?? "-";
+        const threat = it.threat_type ?? "Unknown";
         const summary = it.summary_preview ?? "";
         const detailHref = it.article_path ?? ("articles/" + entryId + ".html");
         const originalHref = it.original_url ?? "#";
@@ -425,7 +480,7 @@
     function applyFilters(){
       const q = qs("q").value.trim().toLowerCase();
       const impact = qs("impact").value;
-      const category = qs("category").value;
+      const threatType = qs("threat_type").value;
       const sort = qs("sort").value;
 
       let items = allItems.slice();
@@ -441,8 +496,8 @@
       if(impact){
         items = items.filter(it => (it.impact_level ?? "Unknown") === impact);
       }
-      if(category){
-        items = items.filter(it => (it.category ?? "") === category);
+      if(threatType){
+        items = items.filter(it => (it.threat_type ?? "Unknown") === threatType);
       }
 
       // Sorting
@@ -480,11 +535,12 @@
         allItems = (manifest.items ?? []).map(x => ({
           ...x,
           // normalize defaults
-          category: x.category ?? "reporting",
-          impact_level: x.impact_level ?? "Unknown"
+          impact_level: x.impact_level ?? "Unknown",
+          threat_type: x.threat_type ?? "Unknown",
         }));
 
         qs("total").textContent = String(allItems.length);
+        populateThreatTypeOptions(allItems);
 
         // Impact summary (counts by impact_level)
         const impactOrder = ["Critical","High","Medium","Low","Info","Unknown"];
@@ -508,7 +564,7 @@
         qs("window").textContent = `${from} 〜 ${to}`;
         qs("generated").textContent = manifest.generated_at_jst ? toJstLabel(manifest.generated_at_jst) : "-";
         // Hook events
-        ["q","impact","category","sort"].forEach(id => {
+        ["q","impact","threat_type","sort"].forEach(id => {
           qs(id).addEventListener("input", applyFilters);
           qs(id).addEventListener("change", applyFilters);
         });
@@ -516,7 +572,7 @@
         qs("reset").addEventListener("click", () => {
           qs("q").value = "";
           qs("impact").value = "";
-          qs("category").value = "";
+          qs("threat_type").value = "";
           qs("sort").value = "impact_then_time";
         applyFilters();
         });
