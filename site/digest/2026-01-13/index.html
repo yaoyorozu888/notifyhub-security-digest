@@ -27,10 +27,13 @@
     .wrap{max-width:1100px; margin:0 auto; padding:28px 18px 42px}
     header{
       display:flex; gap:16px; align-items:flex-start; justify-content:space-between;
+      flex-wrap:wrap;
       margin-bottom:18px;
     }
     .title{
       display:flex; flex-direction:column; gap:6px;
+      flex:1 1 520px;
+      min-width:0;
     }
     .title h1{
       margin:0; font-size:22px; letter-spacing:.2px;
@@ -40,6 +43,10 @@
     }
     .metaRow{
       display:flex; gap:10px; flex-wrap:wrap; margin-top:6px;
+    }
+    .headerMeta{
+      flex:0 0 auto;
+      justify-content:flex-end;
     }
     .chip{
       display:inline-flex; align-items:center; gap:8px;
@@ -239,6 +246,8 @@
       line-height:1.6;
     }
     @media (max-width: 720px){
+      header{flex-direction:column; align-items:stretch}
+      .headerMeta{justify-content:flex-start; margin-top:0}
       .controls{grid-template-columns: 1fr;}
       .card{flex-direction:column;}
       .badgeCol{min-width:auto; flex-direction:row; flex-wrap:wrap;}
@@ -263,7 +272,7 @@
           <span class="chip">並び <strong id="sortLabel">Impact→新着</strong></span>
         </div>
       </div>
-      <div class="metaRow" style="justify-content:flex-end">
+      <div class="metaRow headerMeta">
         <span class="chip">ソース：<strong class="mono">manifest.json</strong></span>
       </div>
     </header>
