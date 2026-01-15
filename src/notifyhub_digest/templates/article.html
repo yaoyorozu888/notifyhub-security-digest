@@ -122,11 +122,24 @@
     }
 
     /* --- summary_html styles (OpenAI output uses h4/p/ul/li/strong/code/br) --- */
-    .summary h4{margin:12px 0 8px; font-size:13px}
+    .summary h4{
+      margin:14px 0 8px;
+      font-size:13px;
+      letter-spacing:.1px;
+      padding-left:10px;
+      border-left:3px solid rgba(122,162,255,.65);
+      color: rgba(231,236,255,.95);
+    }
     .summary p{margin:8px 0; color:rgba(231,236,255,.92); line-height:1.75}
     .summary ul, .summary ol{margin:8px 0 8px 1.2em; padding:0}
     .summary li{margin:6px 0; color:rgba(231,236,255,.92); line-height:1.7}
-    .summary strong{color:var(--text)}
+    .summary strong{
+      color:var(--text);
+      font-weight:750;
+      padding:0 .2em;
+      border-radius:8px;
+      background: linear-gradient(transparent 60%, rgba(122,162,255,.22) 60%);
+    }
     .summary code{
       font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
       font-size: 12px;
