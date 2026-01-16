@@ -1,0 +1,284 @@
+<!-- article.html テンプレート（生成用） (例: /digest/YYYY-MM-DD/articles/<entry_id>.html)
+     サーバ側（Function）で {{...}} を置換して出力してください。
+-->
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <title>中露北の関与が疑われるサイバー脅威主体を紹介 ～ 公安調査庁「令和 8 年 内外情勢の回顧と展望」公表 | NotifyHub Cybersecurity Daily Report</title>
+  <style>
+    :root{
+      --bg:#0b1020; --panel:#0f1730; --panel2:#121c3a;
+      --text:#e7ecff; --muted:#a9b4df; --line:#22305b;
+      --accent:#7aa2ff; --good:#4ade80; --warn:#fbbf24; --bad:#fb7185;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+      --radius:18px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      background: radial-gradient(1000px 700px at 20% -10%, rgba(122,162,255,.25), transparent 60%),
+                  radial-gradient(900px 600px at 90% 10%, rgba(251,113,133,.12), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+    }
+    a{color:inherit}
+    .wrap{max-width:960px; margin:0 auto; padding:22px 18px 44px}
+    .topbar{
+      display:flex; justify-content:space-between; align-items:center; gap:12px;
+      margin-bottom:12px;
+    }
+    .crumb a{
+      text-decoration:none;
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .crumb a:hover{border-color:rgba(122,162,255,.65)}
+    .chip{
+      display:inline-flex; align-items:center; gap:8px;
+      background:rgba(27,38,80,.75);
+      border:1px solid rgba(34,48,91,.9);
+      padding:7px 10px; border-radius:999px;
+      font-size:12px; color:var(--muted);
+      backdrop-filter: blur(10px);
+      white-space:nowrap;
+    }
+    .chip strong{color:var(--text); font-weight:650}
+    .panel{
+      background: linear-gradient(180deg, rgba(15,23,48,.9), rgba(15,23,48,.75));
+      border:1px solid rgba(34,48,91,.9);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .head{
+      padding:16px 16px 12px;
+      border-bottom:1px solid rgba(34,48,91,.9);
+      background:rgba(18,28,58,.55);
+    }
+    h1{
+      margin:0;
+      font-size:20px;
+      line-height:1.35;
+      letter-spacing:.15px;
+    }
+    .meta{
+      margin-top:10px;
+      display:flex; gap:10px; flex-wrap:wrap;
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.6;
+    }
+    .meta a{color:var(--muted)}
+    .meta a:hover{color:var(--accent)}
+    .tags{
+      margin-top:12px;
+      display:flex; gap:8px; flex-wrap:wrap;
+    }
+    .tag{
+      font-size:11px;
+      padding:6px 9px;
+      border-radius:999px;
+      background:rgba(27,38,80,.65);
+      border:1px solid rgba(34,48,91,.9);
+      color:var(--muted);
+      white-space:nowrap;
+    }
+    .tag.level-Critical{border-color:rgba(251,113,133,.65); color:#ffd0d7}
+    .tag.level-High{border-color:rgba(251,191,36,.65); color:#ffe9b0}
+    .tag.level-Medium{border-color:rgba(122,162,255,.65); color:#dbe6ff}
+    .tag.level-Low{border-color:rgba(74,222,128,.55); color:#d0ffe2}
+    .tag.level-Info{border-color:rgba(169,180,223,.55); color:rgba(169,180,223,.95)}
+    .body{
+      padding:16px;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+    }
+    .section{
+      background:rgba(18,28,58,.35);
+      border:1px solid rgba(34,48,91,.75);
+      border-radius:16px;
+      padding:14px;
+    }
+    .section h2{
+      margin:0 0 10px;
+      font-size:14px;
+      letter-spacing:.1px;
+    }
+    .ruleReason{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.65;
+      white-space:pre-wrap;
+    }
+
+    /* --- summary_html styles (OpenAI output uses h4/p/ul/li/strong/code/br) --- */
+    .summary h4{
+      margin:14px 0 8px;
+      font-size:13px;
+      letter-spacing:.1px;
+      padding-left:10px;
+      border-left:3px solid rgba(122,162,255,.65);
+      color: rgba(231,236,255,.95);
+    }
+    .summary p{margin:8px 0; color:rgba(231,236,255,.92); line-height:1.75}
+    .summary ul, .summary ol{margin:8px 0 8px 1.2em; padding:0}
+    .summary li{margin:6px 0; color:rgba(231,236,255,.92); line-height:1.7}
+    .summary strong{
+      color:var(--text);
+      font-weight:750;
+      padding:0 .2em;
+      border-radius:8px;
+      background: linear-gradient(transparent 60%, rgba(122,162,255,.22) 60%);
+    }
+    .summary code{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 8px;
+      background: rgba(11,16,32,.6);
+      border: 1px solid rgba(34,48,91,.85);
+      color: rgba(231,236,255,.95);
+      white-space: nowrap;
+    }
+
+    .terms{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:10px;
+    }
+    @media (max-width: 860px){
+      .terms{grid-template-columns: 1fr}
+    }
+    .termCard{
+      background:rgba(11,16,32,.45);
+      border:1px solid rgba(34,48,91,.85);
+      border-radius:14px;
+      padding:12px;
+      min-width:0;
+    }
+    .termCard .term{
+      font-weight:700;
+      font-size:13px;
+      margin:0 0 8px;
+      word-break:break-word;
+    }
+    .termCard .exp{
+      margin:0;
+      color:rgba(231,236,255,.9);
+      line-height:1.7;
+      font-size:12px;
+      white-space:pre-wrap;
+    }
+
+    .footer{
+      margin-top:14px;
+      color:rgba(169,180,223,.75);
+      font-size:12px;
+      line-height:1.7;
+      text-align:center;
+    }
+    .btnRow{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px}
+    .linkbtn{
+      text-decoration:none;
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .linkbtn:hover{border-color:rgba(122,162,255,.65)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="crumb">
+        <!-- ../index.html は通常 "../index.html" でOK -->
+        <a href="../index.html">← 日次トップへ戻る</a>
+      </div>
+      <div class="chip">entry_id <strong class="mono">24df03319b03179b</strong></div>
+    </div>
+
+    <div class="panel">
+      <div class="head">
+        <h1>中露北の関与が疑われるサイバー脅威主体を紹介 ～ 公安調査庁「令和 8 年 内外情勢の回顧と展望」公表</h1>
+
+        <div class="meta">
+          <span>🗞️ ScanNetSecurity</span>
+          <span>🕒 2026-01-16T08:00:07+09:00</span>
+          <span>🔗 <a href="https://scan.netsecurity.ne.jp/article/2026/01/16/54422.html" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
+        </div>
+
+        <div class="tags">
+          <span class="tag level-High">Impact: High</span>
+          <span class="tag">Advisory</span>
+        </div>
+
+        <div class="btnRow">
+          <a class="linkbtn" href="https://scan.netsecurity.ne.jp/article/2026/01/16/54422.html" target="_blank" rel="noopener noreferrer">原文リンク</a>
+          <a class="linkbtn" href="https://www.notifyhub.site/digest/2026-01-17/">日次トップ</a>
+        </div>
+      </div>
+
+      <div class="body">
+        <div class="section">
+          <h2>Impact判定理由</h2>
+          <div class="ruleReason">国家支援型攻撃の活動実態を示す報告であり、直接的な脆弱性情報ではないが、重要インフラ・政府機関を狙う長期的脅威の存在を裏付ける。組織の防御態勢や監視設計に直結するため、実務上の影響は高い。</div>
+        </div>
+        <div class="section summary">
+          <h2>🧾 要約（ChatGPT）</h2>
+          <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
+          <div><h4>概要</h4><p>公安調査庁が公表した「令和8年 内外情勢の回顧と展望」では、<strong>中国・ロシア・北朝鮮</strong>の関与が疑われる国家支援型サイバー脅威主体の活動が整理された。報告は、政府機関・防衛産業・重要インフラを標的とした<strong>情報窃取・破壊・攪乱</strong>を目的とする攻撃が継続していると指摘。特に北朝鮮系グループによる<strong>暗号資産窃取</strong>や、ロシア系による<strong>情報操作・影響工作</strong>の傾向が強調された。これらは単発の攻撃ではなく、<strong>長期的な諜報・影響活動</strong>として継続している点が特徴である。</p><h4>現場の学び</h4><ul><li>国家支援型攻撃は、<strong>技術的TTP（戦術・技法・手順）</strong>よりも目的志向で変化し、検知を回避するために正規ツールやクラウド基盤を悪用する傾向がある。</li><li>防衛・エネルギー・通信などの重要インフラでは、<strong>情報流出と業務妨害の両面</strong>を想定した防御設計が必要。</li><li>北朝鮮系の金銭目的攻撃は、<strong>サプライチェーン経由</strong>で侵入する事例が増加しており、取引先リスク評価が重要。</li><li>ロシア系の影響工作は、<strong>情報操作と技術的侵入の複合</strong>として展開され、SOCでは技術ログだけでなく情報流通の監視も求められる。</li></ul><h4>初動・継続対応の示唆</h4><ul><li>IOC（侵入指標）の単純照合では不十分で、<strong>攻撃者の目的・行動パターン</strong>を踏まえた相関分析が必要。</li><li>クラウド・VPN・リモート管理ツールの利用状況を再点検し、<strong>正規利用と悪用の境界</strong>を明確化する。</li><li>国家系攻撃は長期潜伏が多く、<strong>継続的な脅威ハンティング</strong>とログ保持期間の延長が有効。</li><li>報告書に挙げられた脅威主体の活動を自組織の資産・業務領域にマッピングし、<strong>優先監視対象</strong>を明確化する。</li></ul></div>
+        </div>
+
+        <div class="section">
+          <h2>📌 キーワード解説</h2>
+          <div class="terms">
+            <div class="termCard">
+  <div class="term">APT / Advanced Persistent Threat（持続的標的型攻撃）</div>
+  <p class="exp">国家や高度な組織が長期間にわたり特定の標的を狙う攻撃。単発の侵入ではなく、情報収集・潜伏・影響操作を組み合わせる。防御側は短期的な封じ込めだけでなく、継続的な監視が必要。</p>
+</div>
+<div class="termCard">
+  <div class="term">TTP / Tactics, Techniques, and Procedures（戦術・技法・手順）</div>
+  <p class="exp">攻撃者の行動パターンを体系化した概念。IOCよりも抽象度が高く、攻撃者の意図や行動の一貫性を理解するのに有効。脅威インテリジェンス分析の基礎となる。</p>
+</div>
+<div class="termCard">
+  <div class="term">Supply Chain Attack / サプライチェーン攻撃</div>
+  <p class="exp">標的組織に直接侵入せず、取引先やソフトウェア更新経路を経由して侵入する手法。防御が難しく、信頼関係を悪用する点が特徴。</p>
+</div>
+<div class="termCard">
+  <div class="term">Threat Hunting / 脅威ハンティング</div>
+  <p class="exp">既知のアラートに依存せず、潜在的な侵入や異常行動を能動的に探索する活動。国家系攻撃のような長期潜伏型の検知に有効。</p>
+</div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>🕘 生成情報</h2>
+          <div class="ruleReason">
+対象期間：2026-01-16T06:00:00+09:00 〜 2026-01-17T06:00:00+09:00
+生成時刻：2026-01-17T06:29:18.015372+09:00
+免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      notifyhub.site
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,284 @@
+<!-- article.html テンプレート（生成用） (例: /digest/YYYY-MM-DD/articles/<entry_id>.html)
+     サーバ側（Function）で {{...}} を置換して出力してください。
+-->
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <title>Black Basta boss makes it onto Interpol&#x27;s &#x27;Red Notice&#x27; list | NotifyHub Cybersecurity Daily Report</title>
+  <style>
+    :root{
+      --bg:#0b1020; --panel:#0f1730; --panel2:#121c3a;
+      --text:#e7ecff; --muted:#a9b4df; --line:#22305b;
+      --accent:#7aa2ff; --good:#4ade80; --warn:#fbbf24; --bad:#fb7185;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+      --radius:18px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      background: radial-gradient(1000px 700px at 20% -10%, rgba(122,162,255,.25), transparent 60%),
+                  radial-gradient(900px 600px at 90% 10%, rgba(251,113,133,.12), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+    }
+    a{color:inherit}
+    .wrap{max-width:960px; margin:0 auto; padding:22px 18px 44px}
+    .topbar{
+      display:flex; justify-content:space-between; align-items:center; gap:12px;
+      margin-bottom:12px;
+    }
+    .crumb a{
+      text-decoration:none;
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .crumb a:hover{border-color:rgba(122,162,255,.65)}
+    .chip{
+      display:inline-flex; align-items:center; gap:8px;
+      background:rgba(27,38,80,.75);
+      border:1px solid rgba(34,48,91,.9);
+      padding:7px 10px; border-radius:999px;
+      font-size:12px; color:var(--muted);
+      backdrop-filter: blur(10px);
+      white-space:nowrap;
+    }
+    .chip strong{color:var(--text); font-weight:650}
+    .panel{
+      background: linear-gradient(180deg, rgba(15,23,48,.9), rgba(15,23,48,.75));
+      border:1px solid rgba(34,48,91,.9);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .head{
+      padding:16px 16px 12px;
+      border-bottom:1px solid rgba(34,48,91,.9);
+      background:rgba(18,28,58,.55);
+    }
+    h1{
+      margin:0;
+      font-size:20px;
+      line-height:1.35;
+      letter-spacing:.15px;
+    }
+    .meta{
+      margin-top:10px;
+      display:flex; gap:10px; flex-wrap:wrap;
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.6;
+    }
+    .meta a{color:var(--muted)}
+    .meta a:hover{color:var(--accent)}
+    .tags{
+      margin-top:12px;
+      display:flex; gap:8px; flex-wrap:wrap;
+    }
+    .tag{
+      font-size:11px;
+      padding:6px 9px;
+      border-radius:999px;
+      background:rgba(27,38,80,.65);
+      border:1px solid rgba(34,48,91,.9);
+      color:var(--muted);
+      white-space:nowrap;
+    }
+    .tag.level-Critical{border-color:rgba(251,113,133,.65); color:#ffd0d7}
+    .tag.level-High{border-color:rgba(251,191,36,.65); color:#ffe9b0}
+    .tag.level-Medium{border-color:rgba(122,162,255,.65); color:#dbe6ff}
+    .tag.level-Low{border-color:rgba(74,222,128,.55); color:#d0ffe2}
+    .tag.level-Info{border-color:rgba(169,180,223,.55); color:rgba(169,180,223,.95)}
+    .body{
+      padding:16px;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+    }
+    .section{
+      background:rgba(18,28,58,.35);
+      border:1px solid rgba(34,48,91,.75);
+      border-radius:16px;
+      padding:14px;
+    }
+    .section h2{
+      margin:0 0 10px;
+      font-size:14px;
+      letter-spacing:.1px;
+    }
+    .ruleReason{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.65;
+      white-space:pre-wrap;
+    }
+
+    /* --- summary_html styles (OpenAI output uses h4/p/ul/li/strong/code/br) --- */
+    .summary h4{
+      margin:14px 0 8px;
+      font-size:13px;
+      letter-spacing:.1px;
+      padding-left:10px;
+      border-left:3px solid rgba(122,162,255,.65);
+      color: rgba(231,236,255,.95);
+    }
+    .summary p{margin:8px 0; color:rgba(231,236,255,.92); line-height:1.75}
+    .summary ul, .summary ol{margin:8px 0 8px 1.2em; padding:0}
+    .summary li{margin:6px 0; color:rgba(231,236,255,.92); line-height:1.7}
+    .summary strong{
+      color:var(--text);
+      font-weight:750;
+      padding:0 .2em;
+      border-radius:8px;
+      background: linear-gradient(transparent 60%, rgba(122,162,255,.22) 60%);
+    }
+    .summary code{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 8px;
+      background: rgba(11,16,32,.6);
+      border: 1px solid rgba(34,48,91,.85);
+      color: rgba(231,236,255,.95);
+      white-space: nowrap;
+    }
+
+    .terms{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:10px;
+    }
+    @media (max-width: 860px){
+      .terms{grid-template-columns: 1fr}
+    }
+    .termCard{
+      background:rgba(11,16,32,.45);
+      border:1px solid rgba(34,48,91,.85);
+      border-radius:14px;
+      padding:12px;
+      min-width:0;
+    }
+    .termCard .term{
+      font-weight:700;
+      font-size:13px;
+      margin:0 0 8px;
+      word-break:break-word;
+    }
+    .termCard .exp{
+      margin:0;
+      color:rgba(231,236,255,.9);
+      line-height:1.7;
+      font-size:12px;
+      white-space:pre-wrap;
+    }
+
+    .footer{
+      margin-top:14px;
+      color:rgba(169,180,223,.75);
+      font-size:12px;
+      line-height:1.7;
+      text-align:center;
+    }
+    .btnRow{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px}
+    .linkbtn{
+      text-decoration:none;
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .linkbtn:hover{border-color:rgba(122,162,255,.65)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="crumb">
+        <!-- ../index.html は通常 "../index.html" でOK -->
+        <a href="../index.html">← 日次トップへ戻る</a>
+      </div>
+      <div class="chip">entry_id <strong class="mono">367cf33da29efc17</strong></div>
+    </div>
+
+    <div class="panel">
+      <div class="head">
+        <h1>Black Basta boss makes it onto Interpol&#x27;s &#x27;Red Notice&#x27; list</h1>
+
+        <div class="meta">
+          <span>🗞️ BleepingComputer</span>
+          <span>🕒 2026-01-17T04:00:20+09:00</span>
+          <span>🔗 <a href="https://www.bleepingcomputer.com/news/security/black-basta-boss-makes-it-onto-interpols-red-notice-list/" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
+        </div>
+
+        <div class="tags">
+          <span class="tag level-High">Impact: High</span>
+          <span class="tag">Ransomware</span>
+        </div>
+
+        <div class="btnRow">
+          <a class="linkbtn" href="https://www.bleepingcomputer.com/news/security/black-basta-boss-makes-it-onto-interpols-red-notice-list/" target="_blank" rel="noopener noreferrer">原文リンク</a>
+          <a class="linkbtn" href="https://www.notifyhub.site/digest/2026-01-17/">日次トップ</a>
+        </div>
+      </div>
+
+      <div class="body">
+        <div class="section">
+          <h2>Impact判定理由</h2>
+          <div class="ruleReason">主要運営者の特定は組織的活動の一部抑止につながるが、RaaSモデルの特性上、アフィリエイトによる継続的な攻撃リスクが残る。既存の被害・再編リスクを考慮すると、依然として高い脅威水準にある。</div>
+        </div>
+        <div class="section summary">
+          <h2>🧾 要約（ChatGPT）</h2>
+          <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
+          <div><h4>概要</h4><p>ウクライナおよびドイツの法執行機関が、<strong>Black Bastaランサムウェア</strong>運営者の身元を特定し、<strong>InterpolのRed Notice（国際手配）</strong>に登録した。Black Bastaは2022年以降、医療・製造・政府機関などを標的にした<strong>二重恐喝型ランサムウェア</strong>として知られ、Contiグループの分派とみられている。今回の指名手配は、国際的な法執行連携によるサイバー犯罪組織への圧力強化を示す動きである。</p><h4>現場の学び</h4><ul><li>攻撃者の特定は<strong>運営基盤の分断</strong>につながるが、既存の侵入オペレーションや再ブランド化による活動継続の可能性がある。</li><li>Black Bastaは<strong>RaaS（Ransomware-as-a-Service）</strong>モデルを採用しており、運営者逮捕後もアフィリエイトが独自に活動を続けるリスクが残る。</li><li>被害拡大の経路は主に<strong>初期侵入（VPN・RDP・フィッシング）</strong>からの横展開であり、内部ネットワークでの権限昇格とデータ窃取がセットで行われる。</li><li>検知の観点では、<strong>Cobalt StrikeやQakBot</strong>などのツール利用が多く、これらの通信・実行痕跡をIOCとして監視することが有効。</li></ul><h4>初動・継続対応の示唆</h4><ul><li>関連する<strong>インフラ（C2サーバ・暗号化鍵共有サイト）</strong>の稼働状況を継続監視し、活動再開の兆候を早期に検知する。</li><li>過去にBlack Basta関連の侵入痕跡（暗号化ツール名・拡張子・TorリークサイトURLなど）がないか、ログ・バックアップを再確認する。</li><li>法執行機関の動きにより、<strong>脅威アクターの再編</strong>や新ブランド化（例：別名義のRaaS）に備えたIOC更新が必要。</li><li>被害報告やリークサイト更新を継続的にトラッキングし、業界横断での情報共有（ISAC等）を強化する。</li></ul></div>
+        </div>
+
+        <div class="section">
+          <h2>📌 キーワード解説</h2>
+          <div class="terms">
+            <div class="termCard">
+  <div class="term">Ransomware-as-a-Service (RaaS) / サービス型ランサムウェア</div>
+  <p class="exp">攻撃者がランサムウェアをサービスとして提供し、アフィリエイトが実際の侵入や感染活動を行うモデル。運営者逮捕後もアフィリエイトが独自に活動を継続できるため、封じ込めが難しい。</p>
+</div>
+<div class="termCard">
+  <div class="term">Double Extortion / 二重恐喝</div>
+  <p class="exp">被害者のデータを暗号化するだけでなく、窃取した情報を公開すると脅迫する手法。支払い拒否時に情報漏えいリスクが発生するため、対応判断が複雑化する。</p>
+</div>
+<div class="termCard">
+  <div class="term">Command and Control (C2) / 指令・制御サーバ</div>
+  <p class="exp">攻撃者が感染端末を遠隔操作するための通信基盤。Cobalt Strikeなどのツールが利用されることが多く、通信パターンの検知が封じ込めの鍵となる。</p>
+</div>
+<div class="termCard">
+  <div class="term">Red Notice / 国際手配通知</div>
+  <p class="exp">Interpolが加盟国に対して発行する国際的な逮捕要請。サイバー犯罪組織の主要人物を特定・拘束するための国際協力の枠組み。</p>
+</div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>🕘 生成情報</h2>
+          <div class="ruleReason">
+対象期間：2026-01-16T06:00:00+09:00 〜 2026-01-17T06:00:00+09:00
+生成時刻：2026-01-17T06:29:18.015372+09:00
+免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      notifyhub.site
+    </div>
+  </div>
+</body>
+</html>
