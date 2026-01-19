@@ -1,0 +1,193 @@
+{
+  "date": "2026-01-20",
+  "window": {
+    "from": "2026-01-19T06:00:00+09:00",
+    "to": "2026-01-20T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 15
+  },
+  "generated_at_jst": "2026-01-20T06:25:37.601790+09:00",
+  "items": [
+    {
+      "entry_id": "03bd94f7b7ccdb01",
+      "title": "Google Gemini Prompt Injection Flaw Exposed Private Calendar Data via Malicious Invites",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-01-19T17:21:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要研究者が、Google Geminiのプロンプトインジェクション脆弱性を悪用し、Google Calendarの非公開データを不正取得できる手法を報告した。攻撃は、Geminiが外部リソース（例：招待メールやカレンダー情報）にアクセスする際の権限境界の不備を突くもので、悪意ある招待リンクを経由してGeminiに不正な指示を埋め込み、ユーザの認可を経ずに…",
+      "article_path": "articles/03bd94f7b7ccdb01.html",
+      "original_url": "https://thehackernews.com/2026/01/google-gemini-prompt-injection-flaw.html"
+    },
+    {
+      "entry_id": "32b1d34409b36591",
+      "title": "⚡ Weekly Recap: Fortinet Exploits, RedLine Clipjack, NTLM Crack, Copilot Attack & More",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-01-19T13:17:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要今週のセキュリティ動向では、Fortinet製品の脆弱性悪用、RedLine Stealer派生のClipjack機能、NTLMハッシュの高速クラック、およびGitHub Copilot経由の攻撃手法が報告された。いずれも既知技術の再利用やAI支援による攻撃効率化が特徴であり、従来の防御モデルの前提を崩す傾向が見られる。特にFortinetの件は、既存…",
+      "article_path": "articles/32b1d34409b36591.html",
+      "original_url": "https://thehackernews.com/2026/01/weekly-recap-fortinet-exploits-redline.html"
+    },
+    {
+      "entry_id": "83a8b42c8493cfd5",
+      "title": "DevOps & SaaS Downtime: The High (and Hidden) Costs for Cloud-First Businesses",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-01-19T11:55:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要本記事は、クラウド依存型企業におけるSaaS・DevOps基盤のダウンタイムがもたらす実質的コストと、共有責任モデルの限界を論じている。クラウドやSaaSが「常時稼働」「自動復旧」を前提に設計されているという幻想が、実際の障害対応やセキュリティ・インシデント時に重大な盲点となる点を指摘。特に、CI/CDパイプラインやID連携など業務継続の中核をクラウド…",
+      "article_path": "articles/83a8b42c8493cfd5.html",
+      "original_url": "https://thehackernews.com/2026/01/high-costs-of-devops-saas-downtime.html"
+    },
+    {
+      "entry_id": "8ccf6cfcfb2391f7",
+      "title": "New StackWarp Hardware Flaw Breaks AMD SEV-SNP Protections on Zen 1–5 CPUs",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-01-19T11:31:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要ドイツCISPA研究所の報告によると、AMD Zen 1〜5世代のCPUにおいてStackWarpと名付けられた新たなハードウェア脆弱性が確認された。これはAMDのSEV-SNP（Secure Encrypted Virtualization – Secure Nested Paging）による仮想マシン隔離を破るもので、ホスト側で特権を持つ攻撃者が、…",
+      "article_path": "articles/8ccf6cfcfb2391f7.html",
+      "original_url": "https://thehackernews.com/2026/01/new-stackwarp-hardware-flaw-breaks-amd.html"
+    },
+    {
+      "entry_id": "30f8dd795a80c006",
+      "title": "CrashFix Chrome Extension Delivers ModeloRAT Using ClickFix-Style Browser Crash Lures",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-01-19T09:09:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要研究者は、「KongTuke」キャンペーンとして追跡される攻撃を報告した。攻撃者は「CrashFix」という偽のChrome拡張機能を配布し、広告ブロッカーを装ってユーザーにインストールさせる。この拡張は意図的にブラウザをクラッシュさせ、「ClickFix」型の誘導手口でユーザーに修復操作を促し、最終的にModeloRATと呼ばれる新しいリモートアクセ…",
+      "article_path": "articles/30f8dd795a80c006.html",
+      "original_url": "https://thehackernews.com/2026/01/crashfix-chrome-extension-delivers.html"
+    },
+    {
+      "entry_id": "e209fa834aa9e8fd",
+      "title": "Security Bug in StealC Malware Panel Let Researchers Spy on Threat Actor Operations",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-01-19T06:53:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Malware",
+      "summary_preview": "概要情報窃取型マルウェアStealCの運用者が使用する管理パネルにXSS脆弱性が存在し、研究者がこれを悪用して攻撃者の活動を観測できたと報告された。脆弱性により、攻撃者のセッション情報やシステム指紋が取得可能であり、結果として攻撃者の運用実態の一部が明らかになった。この事例は、攻撃者側のインフラも脆弱であることを示すとともに、マルウェア運用基盤の観測・追跡…",
+      "article_path": "articles/e209fa834aa9e8fd.html",
+      "original_url": "https://thehackernews.com/2026/01/security-bug-in-stealc-malware-panel.html"
+    },
+    {
+      "entry_id": "296923d653c6b7d5",
+      "title": "仙台 DC と福岡 DC で物流システムを使用した商品出荷再開 ～ アスクルへのランサムウェア攻撃 [2025.12.25]",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-01-18T23:05:16+00:00",
+      "impact_level": "High",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要2025年12月に発生したアスクルへのランサムウェア攻撃の影響により停止していた物流システムが、仙台および福岡のデータセンターで再稼働したことが報じられた。攻撃は基幹システムを直撃し、出荷業務に長期停止をもたらした。記事では、復旧の進展が確認された一方で、全拠点の完全復旧には至っていない可能性が示唆されている。攻撃経路や暗号化範囲の詳細は未公表だが、被…",
+      "article_path": "articles/296923d653c6b7d5.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/01/19/54437.html"
+    },
+    {
+      "entry_id": "aa6540d91ded8f52",
+      "title": "生徒の個人情報を含むファイルが複数削除 ～ 群馬県の県立高校等でサポート詐欺被害",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-01-18T23:05:13+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Scam/Fraud",
+      "summary_preview": "概要群馬県の県立高校などで、職員がサポート詐欺に遭い、学校業務用PC上のファイルが複数削除される事案が発生した。被害ファイルには生徒の個人情報が含まれており、復旧作業が進められている。報道によれば、職員が偽の警告画面を信じて遠隔操作を許可した結果、攻撃者がシステム操作権を得て削除行為を行ったとみられる。金銭被害は確認されていないが、教育機関の業務端末が標的…",
+      "article_path": "articles/aa6540d91ded8f52.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/01/19/54436.html"
+    },
+    {
+      "entry_id": "a5dbdd7752fbe123",
+      "title": "アカウント乗っ取られ iPhone は初期化 ～ 業務用スマホにセキュリティ強化求める SMS が届き ID/PW 入力",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-01-18T23:05:10+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Phishing",
+      "summary_preview": "概要報道によると、業務用スマートフォンにセキュリティ強化を装ったSMSが届き、指示に従ってIDとパスワードを入力した結果、Apple IDが乗っ取られ、iPhoneが遠隔初期化された事案が発生した。これは典型的なフィッシング攻撃の一形態であり、業務端末の管理・認証情報が個人端末と混在している環境では被害が業務資産にも波及する恐れがある。攻撃者は正規サポート…",
+      "article_path": "articles/a5dbdd7752fbe123.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/01/19/54435.html"
+    },
+    {
+      "entry_id": "d0a319efce1a7582",
+      "title": "全ての書類が戻ったことを確認 ～ 川崎市内で紛失したカバンを第三者が届ける",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-01-18T23:05:06+00:00",
+      "impact_level": "Low",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要川崎市が職員の業務用カバンを紛失した事案について、全ての書類が第三者により無事返却されたと報告された。紛失当初は個人情報を含む可能性があり、情報漏えいリスクが懸念されていたが、現時点で外部流出の痕跡は確認されていない。行政機関における物理媒体の管理不備が発端であり、技術的侵害ではないものの、CSIRTとしては情報資産の取り扱い手順と報告ルートの再点検を…",
+      "article_path": "articles/d0a319efce1a7582.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/01/19/54434.html"
+    },
+    {
+      "entry_id": "a20b43baa629c16b",
+      "title": "デンソーグループ内全従業員に Microsoft SharePoint Online 内のデータの閲覧・ダウンロード権限付与",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-01-18T23:05:02+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Misconfiguration",
+      "summary_preview": "概要デンソーグループ内で、Microsoft SharePoint Online の設定誤りにより、全従業員が特定データを閲覧・ダウンロード可能な状態になっていた。外部流出ではなく、社内の過剰権限付与が原因とされる。クラウドサービスのアクセス制御設定が複雑化する中、組織内の境界意識の希薄化が露呈した事例である。特にM365環境では、グループ単位の共有設定や…",
+      "article_path": "articles/a20b43baa629c16b.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/01/19/54433.html"
+    },
+    {
+      "entry_id": "816aba5e63ea4b3a",
+      "title": "ダークウェブ調査や侵害後シナリオ再現も ～ NTT-AT「VPNセキュリティ診断サービス」",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-01-18T23:00:14+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要NTTアドバンステクノロジ（NTT-AT）は、企業ネットワークのVPN環境を対象にした「VPNセキュリティ診断サービス」を発表した。本サービスは、VPN装置や認証基盤の設定不備を検出するだけでなく、侵害後のシナリオ再現やダークウェブ上での認証情報流出調査も含む。特にゼロトラスト移行が進む中で、VPNの残存リスクを可視化し、攻撃者視点での侵入経路を再評価…",
+      "article_path": "articles/816aba5e63ea4b3a.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/01/19/54432.html"
+    },
+    {
+      "entry_id": "69443fc9a706377c",
+      "title": "Chainlit にアクセス制限不備の脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-01-18T23:00:10+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要オープンソースのAIアプリ開発支援フレームワーク「Chainlit」に、アクセス制限の不備に起因する脆弱性が報告された。特定条件下で、認証を経ずにアプリ内部のリソースや推論結果へアクセスできる可能性がある。ScanNetSecurityによる報道であり、開発元から公式アドバイザリは現時点で確認されていない。ChainlitはLLMアプリケーションのUI…",
+      "article_path": "articles/69443fc9a706377c.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/01/19/54431.html"
+    },
+    {
+      "entry_id": "010c747076f8134a",
+      "title": "悪用の事実を確認済みの脆弱性が 1 件 ～ マイクロソフト 1 月のセキュリティ情報公開",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-01-18T23:00:06+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Microsoftが2026年1月の月例セキュリティ更新を公開し、悪用が確認された脆弱性（1件）を含む計60件超の修正を実施した。悪用確認済みのものはWindowsコンポーネントに関する特権昇格（EoP）脆弱性で、限定的ながら実際の攻撃で利用されている。CISAのKEVリスト入りが予想され、パッチ未適用端末の残存リスクが高い。その他にはExchange…",
+      "article_path": "articles/010c747076f8134a.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/01/19/54430.html"
+    },
+    {
+      "entry_id": "27d5ab6996bff650",
+      "title": "1 / 20 開催ウェビナー「2025年のインシデント振り返りと教訓 今年の展望」に HENNGE 川田篤志 氏 登壇",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-01-18T23:00:04+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要本記事は、HENNGE社の川田篤志氏が登壇するウェビナー「2025年のインシデント振り返りと教訓 今年の展望」に関する告知であり、特定の脆弱性や攻撃事例の新情報ではない。内容は2025年に発生した主要なサイバーインシデントの傾向を整理し、2026年に向けた対策・体制強化の方向性を議論するものである。CSIRT実務に直結する新たな脅威情報ではないが、過去…",
+      "article_path": "articles/27d5ab6996bff650.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/01/19/54429.html"
+    }
+  ]
+}
