@@ -1,0 +1,217 @@
+{
+  "date": "2026-01-24",
+  "window": {
+    "from": "2026-01-23T06:00:00+09:00",
+    "to": "2026-01-24T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 17
+  },
+  "generated_at_jst": "2026-01-24T06:27:52.895051+09:00",
+  "items": [
+    {
+      "entry_id": "998d242ba15001b1",
+      "title": "CVE-2024-37079 Broadcom VMware vCenter Server Out-of-bounds Write Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-01-23T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Exploit",
+      "summary_preview": "概要米CISAは、CVE-2024-37079（Broadcom VMware vCenter ServerのOut-of-bounds Write脆弱性）をKnown Exploited Vulnerabilities（KEV）に追加した。これはvCenter Serverのネットワークスタック処理に起因し、リモートからの認証不要RCEを引き起こす可能性…",
+      "article_path": "articles/998d242ba15001b1.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "646cb2816f006b41",
+      "title": "CISA Updates KEV Catalog with Four Actively Exploited Software Vulnerabilities",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-01-23T15:24:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要米国CISAがKnown Exploited Vulnerabilities（KEV）カタログに4件の脆弱性を追加した。いずれも実際に悪用が確認されており、特にZimbra Collaboration Suite（ZCS）のPHPリモートファイルインクルード脆弱性（CVE-2025-68645、CVSS 8.8）が注目される。Zimbraはメール・カレ…",
+      "article_path": "articles/646cb2816f006b41.html",
+      "original_url": "https://thehackernews.com/2026/01/cisa-updates-kev-catalog-with-four.html"
+    },
+    {
+      "entry_id": "2b8c2d2f7833af51",
+      "title": "Fortinet Confirms Active FortiCloud SSO Bypass on Fully Patched FortiGate Firewalls",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-01-23T12:30:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要Fortinetは、最新パッチ適用済みのFortiGateファイアウォールにおいても、FortiCloud SSO認証バイパス脆弱性が悪用されている事例を確認したと発表した。報告によれば、攻撃者はクラウド連携機能を経由して認証を回避し、管理アクセスを取得している可能性がある。これは既知の脆弱性修正後にも継続する攻撃であり、修正版の不完全性または新たなバ…",
+      "article_path": "articles/2b8c2d2f7833af51.html",
+      "original_url": "https://thehackernews.com/2026/01/fortinet-confirms-active-forticloud-sso.html"
+    },
+    {
+      "entry_id": "3ffd97a329943d6e",
+      "title": "TikTok Forms U.S. Joint Venture to Continue Operations Under 2025 Executive Order",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-01-23T11:30:00+00:00",
+      "impact_level": "Low",
+      "threat_type": "Advisory",
+      "summary_preview": "概要TikTokは、2025年9月に署名された米国大統領令への対応として、米国内での事業継続を目的とした合弁会社「TikTok USDS Joint Venture LLC」を設立した。これは、データ主権や国家安全保障上の懸念を背景に、米国内ユーザーデータの管理・運用を現地法人で完結させる体制を整えるものとされる。運用上は、既存のTikTokアプリやクラウ…",
+      "article_path": "articles/3ffd97a329943d6e.html",
+      "original_url": "https://thehackernews.com/2026/01/tiktok-forms-us-joint-venture-to.html"
+    },
+    {
+      "entry_id": "a90bc14e9da24900",
+      "title": "Phishing Attack Uses Stolen Credentials to Install LogMeIn RMM for Persistent Access",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-01-23T11:18:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Phishing",
+      "summary_preview": "概要KnowBe4の調査によると、攻撃者が盗まれた認証情報を利用し、正規のリモート監視管理（RMM）ツール「LogMeIn」を導入して持続的なアクセスを確保するフィッシング攻撃が確認された。従来のマルウェアではなく、管理者が信頼するITツールを悪用することで、EDRやアンチウイルスの検知を回避しつつ、恒常的なリモート制御を実現している点が特徴である。攻撃は…",
+      "article_path": "articles/a90bc14e9da24900.html",
+      "original_url": "https://thehackernews.com/2026/01/phishing-attack-uses-stolen-credentials.html"
+    },
+    {
+      "entry_id": "8b2d0cf825bfb716",
+      "title": "Microsoft Flags Multi-Stage AitM Phishing and BEC Attacks Targeting Energy Firms",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-01-23T08:25:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Phishing",
+      "summary_preview": "概要Microsoft Defender セキュリティリサーチチームは、エネルギー業界を標的とした多段階の Adversary‑in‑the‑Middle (AitM) フィッシングおよび Business Email Compromise (BEC) 攻撃を警告した。攻撃者はまず SharePoint のファイル共有リンクを悪用してフィッシングページを配…",
+      "article_path": "articles/8b2d0cf825bfb716.html",
+      "original_url": "https://thehackernews.com/2026/01/microsoft-flags-multi-stage-aitm.html"
+    },
+    {
+      "entry_id": "0970afd2b73791ff",
+      "title": "ISC Stormcast For Friday, January 23rd, 2026 https://isc.sans.edu/podcastdetail/9778, (Fri, Jan 23rd)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-01-23T02:00:02+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要SANS ISCの1月23日配信Stormcastでは、直近の脆弱性悪用動向と観測トレンドが報告された。主な話題は、旧バージョンのWordPressプラグインを狙うスキャン増加、未修正のFortinet機器に対する認証前攻撃、およびMicrosoft 365でのフィッシング検知回避手口である。いずれも既知の脆弱性や設定不備を突くもので、ゼロデイではない…",
+      "article_path": "articles/0970afd2b73791ff.html",
+      "original_url": "https://isc.sans.edu/diary/rss/32652"
+    },
+    {
+      "entry_id": "ac4df33000bf3ab7",
+      "title": "Tenable、1/28 ウェビナー開催：ランサムウェアから「心臓部」をどう守るか？ “IDエクスポージャー対策”が不可欠な理由",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-01-22T23:10:04+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要Tenableが開催するウェビナーは、ランサムウェア攻撃における「IDエクスポージャー」（認証情報や権限の露出）を中心に、組織の「心臓部」＝重要システムを守るための防御戦略を扱う。特に、攻撃者が侵入後に横展開や権限昇格を行う際のActive DirectoryやクラウドIDの脆弱性をどう可視化・抑制するかが焦点となる。技術的な新情報というより、脅威動向…",
+      "article_path": "articles/ac4df33000bf3ab7.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/01/23/54469.html"
+    },
+    {
+      "entry_id": "0d73747c3b3d129b",
+      "title": "沖縄県立看護大学にランサムウェア攻撃、教務支援システムが利用できない状態に",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-01-22T23:05:14+00:00",
+      "impact_level": "High",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要沖縄県立看護大学がランサムウェア攻撃を受け、教務支援システムが利用不能となった。記事によると、攻撃は学内ネットワークの一部に影響し、学生・教職員の業務に支障が出ている。現時点で個人情報流出の有無は調査中とされ、復旧作業と外部専門機関による分析が進められている。教育機関特有のオンプレミスとクラウドの混在環境が攻撃面を拡大させた可能性がある。現場の学び大学…",
+      "article_path": "articles/0d73747c3b3d129b.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/01/23/54468.html"
+    },
+    {
+      "entry_id": "32a97ab4b198777a",
+      "title": "スマレジの外部アプリベンダーが保有する会員データ流出",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-01-22T23:05:12+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要クラウドPOS「スマレジ」の外部アプリベンダーが保有する会員データが不正アクセスにより流出したと報じられた。流出対象はスマレジ本体ではなく、連携アプリを提供する外部事業者の管理環境であり、顧客情報（氏名・メールアドレス等）が含まれていた。スマレジは自社システムへの侵害は確認していないが、API連携を介したデータ共有構造のため、利用企業側でも影響範囲の確…",
+      "article_path": "articles/32a97ab4b198777a.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/01/23/54467.html"
+    },
+    {
+      "entry_id": "0f9b94e83db79704",
+      "title": "興和江守でランサムウェア感染、取引先への受注出荷業務に遅滞",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-01-22T23:05:10+00:00",
+      "impact_level": "High",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要化学製品商社の興和江守がランサムウェア攻撃を受け、受注・出荷業務に遅延が発生したと報じられた。記事によれば、感染は社内システムの一部に及び、取引先とのデータ連携にも影響が出ている。現時点で情報漏えいの有無は確認中とされるが、業務停止に伴うサプライチェーン上の波及が懸念される。製造・流通系企業でのランサムウェア被害は、直接の金銭被害よりも業務継続性の喪失…",
+      "article_path": "articles/0f9b94e83db79704.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/01/23/54466.html"
+    },
+    {
+      "entry_id": "2070e2383b7a4120",
+      "title": "ドキュメント共有を装うフィッシングメール発信で認知 ～ 東京都立大学教員の Google アカウントに不正アクセス",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-01-22T23:05:07+00:00",
+      "impact_level": "High",
+      "threat_type": "Phishing",
+      "summary_preview": "概要東京都立大学の教員が使用するGoogle アカウントに不正アクセスが発生し、当該アカウントからドキュメント共有を装ったフィッシングメールが学内外に送信された事案が報告された。攻撃者は正規アカウントを乗っ取ることで、受信者にとって信頼性の高い送信元を偽装し、リンククリックや認証情報入力を誘導したとみられる。現時点で学内システムへの二次侵入や情報漏えいは確…",
+      "article_path": "articles/2070e2383b7a4120.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/01/23/54465.html"
+    },
+    {
+      "entry_id": "3c8ffe365c2684e6",
+      "title": "マイページへのアクセスが不可能に ～ カンバスにランサムウェア攻撃",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-01-22T23:05:03+00:00",
+      "impact_level": "High",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要教育機関向けLMS「Canvas（カンバス）」を運営する企業がランサムウェア攻撃を受け、利用者のマイページへのアクセスが不能となったと報じられた。記事によれば、攻撃により一部のシステムが暗号化され、学習履歴や教材データへのアクセスが停止。現時点で個人情報流出の有無は調査中とされている。教育機関や委託先事業者を巻き込む形でサービス停止が波及しており、学期…",
+      "article_path": "articles/3c8ffe365c2684e6.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/01/23/54464.html"
+    },
+    {
+      "entry_id": "df9d0163e6683809",
+      "title": "セキュアイノベーション、TwoFive の「PHISHNET/25」の販売代理店契約締結",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-01-22T23:00:13+00:00",
+      "impact_level": "Low",
+      "threat_type": "Advisory",
+      "summary_preview": "概要セキュアイノベーション社が、TwoFive社のメールセキュリティ製品「PHISHNET/25」の販売代理店契約を締結した。PHISHNET/25は、フィッシングメール検知・分析支援を目的としたソリューションで、メール本文・ヘッダ・URLの多層解析を行う。今回の契約により、国内での導入・運用支援体制が拡充され、組織CSIRTやSOCが自前で行ってきたフィ…",
+      "article_path": "articles/df9d0163e6683809.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/01/23/54463.html"
+    },
+    {
+      "entry_id": "70ca10797b112de4",
+      "title": "DevSecOps・脆弱性診断・バグバウンティをワンストップで提供「IssueHunt One」",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-01-22T23:00:11+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要ScanNetSecurityが報じた「IssueHunt One」は、DevSecOps、脆弱性診断、バグバウンティを統合的に提供する新サービスである。開発プロセスの初期段階からセキュリティテストを組み込み、診断から報奨金プログラムまでを一元管理できる点が特徴。従来の分断された運用（開発・診断・報告）を統合することで、脆弱性対応のリードタイム短縮とナ…",
+      "article_path": "articles/70ca10797b112de4.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/01/23/54462.html"
+    },
+    {
+      "entry_id": "7a7a9a4e815ac841",
+      "title": "悪用する攻撃も確認 ～ Cisco Secure Email Gateway に任意のコマンド実行の脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-01-22T23:00:08+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Cisco Secure Email Gateway（旧ESA）において、認証前に任意コマンドを実行可能な脆弱性が報告され、実際の悪用も確認されている。影響を受けるのはオンプレミス版で、クラウド提供のCisco Secure Email Cloud Gatewayは対象外。攻撃者は特定のHTTPリクエストを介してシステム権限でコマンドを実行でき、メール…",
+      "article_path": "articles/7a7a9a4e815ac841.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/01/23/54461.html"
+    },
+    {
+      "entry_id": "8c40297da40e56e2",
+      "title": "大企業の 66.8 ％がセキュリティ不備を理由に取引停止や契約更新を見送る しかし取引停止された中小企業は景気悪化等が理由と誤認識",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-01-22T23:00:04+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要ScanNetSecurityによる調査報告では、大企業の約7割（66.8％）がサプライヤーや委託先との取引停止・契約更新見送りの理由としてセキュリティ不備を挙げた。一方で、取引を打ち切られた中小企業側はその理由を「景気悪化」「コスト削減」と誤認識しているケースが多く、リスク認識の非対称性が浮き彫りとなった。CSIRT視点では、取引先のセキュリティ成熟…",
+      "article_path": "articles/8c40297da40e56e2.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/01/23/54460.html"
+    }
+  ]
+}
