@@ -1,0 +1,253 @@
+{
+  "date": "2026-01-28",
+  "window": {
+    "from": "2026-01-27T06:00:00+09:00",
+    "to": "2026-01-28T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 20
+  },
+  "generated_at_jst": "2026-01-28T06:27:12.535114+09:00",
+  "items": [
+    {
+      "entry_id": "41282da75724b9de",
+      "title": "WhatsApp Rolls Out Lockdown-Style Security Mode to Protect Targeted Users From Spyware",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-01-27T16:54:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要MetaはWhatsAppに「Strict Account Settings」を導入し、標的型スパイウェア攻撃から特定ユーザーを保護する「ロックダウン型」モードを提供開始した。この機能はAppleのLockdown ModeやAndroidのAdvanced Protectionに類似し、ジャーナリストや公的立場の人物など、攻撃リスクの高い利用者を想定…",
+      "article_path": "articles/41282da75724b9de.html",
+      "original_url": "https://thehackernews.com/2026/01/whatsapp-rolls-out-lockdown-style.html"
+    },
+    {
+      "entry_id": "ea0be13d3db07c52",
+      "title": "Experts Detect Pakistan-Linked Cyber Campaigns Aimed at Indian Government Entities",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-01-27T16:45:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要Zscaler ThreatLabzは、パキスタン関連の攻撃者によるインド政府機関を標的とした2つのサイバーキャンペーン「Gopher Strike」と「Sheet Attack」を報告した。これらは2025年9月に観測され、従来のAPT活動と類似点を持ちながらも、未確認の新しい手法が用いられている。特に、文書ファイルやクラウドサービスを悪用した感染経…",
+      "article_path": "articles/ea0be13d3db07c52.html",
+      "original_url": "https://thehackernews.com/2026/01/experts-detect-pakistan-linked-cyber.html"
+    },
+    {
+      "entry_id": "92d1f5a63addd2db",
+      "title": "ClickFix Attacks Expand Using Fake CAPTCHAs, Microsoft Scripts, and Trusted Web Services",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-01-27T14:38:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要研究者は、偽CAPTCHAページ（ClickFix手法）と署名付きMicrosoft App-Vスクリプトを組み合わせた新たな攻撃キャンペーンを確認した。攻撃者は、ユーザにCAPTCHA通過を装ってクリックを促し、背後でApp-Vスクリプトを実行して情報窃取型マルウェア「Amatera」を展開する。このスクリプトは正規署名を悪用しており、従来のPowe…",
+      "article_path": "articles/92d1f5a63addd2db.html",
+      "original_url": "https://thehackernews.com/2026/01/clickfix-attacks-expand-using-fake.html"
+    },
+    {
+      "entry_id": "dcdf3c3e533afc73",
+      "title": "CTEM in Practice: Prioritization, Validation, and Outcomes That Matter",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-01-27T11:50:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要本記事は、Continuous Threat Exposure Management（CTEM）の実践的な運用に焦点を当て、単なる脆弱性管理ではなく「実際に攻撃可能な露出」に基づく優先順位付けと検証の重要性を論じている。従来のスキャン中心の脆弱性管理では、リスクの文脈が欠落し、修正作業が膨大化する傾向がある。CTEMは、脅威・脆弱性・環境構成の交点を継…",
+      "article_path": "articles/dcdf3c3e533afc73.html",
+      "original_url": "https://thehackernews.com/2026/01/ctem-in-practice-prioritization.html"
+    },
+    {
+      "entry_id": "e427e2569f8c03c0",
+      "title": "Microsoft Office Zero-Day (CVE-2026-21509) - Emergency Patch Issued for Active Exploitation",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-01-27T10:37:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Zero-day",
+      "summary_preview": "概要Microsoftは、CVE-2026-21509として追跡されるMicrosoft Officeのゼロデイ脆弱性に対し、緊急のOut-of-Bandパッチを公開した。本件はCVSS 7.8（高）と評価され、セキュリティ機能バイパスによりOfficeが信頼できない入力を誤って安全と判断する問題である。すでに限定的ながら実際の攻撃で悪用が確認されており、…",
+      "article_path": "articles/e427e2569f8c03c0.html",
+      "original_url": "https://thehackernews.com/2026/01/microsoft-issues-emergency-patch-for.html"
+    },
+    {
+      "entry_id": "59939eb1cb6cb666",
+      "title": "Critical Grist-Core Vulnerability Allows RCE Attacks via Spreadsheet Formulas",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-01-27T10:36:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要オープンソースのセルフホスト型スプレッドシートデータベース「Grist‑Core」において、CVE‑2026‑24002（CVSS 9.1）の重大な脆弱性が報告された。研究者により「Cellbreak」と名付けられたこの欠陥は、スプレッドシート内の悪意ある数式を介してリモートコード実行（RCE）を引き起こす可能性がある。攻撃者は、共有テンプレートや共同…",
+      "article_path": "articles/59939eb1cb6cb666.html",
+      "original_url": "https://thehackernews.com/2026/01/critical-grist-core-vulnerability.html"
+    },
+    {
+      "entry_id": "e2e59aff33422929",
+      "title": "China-Linked Hackers Have Used the PeckBirdy JavaScript C2 Framework Since 2023",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-01-27T09:01:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要Trend Microの分析によると、中国系APTが2023年以降に使用しているJScriptベースのC2フレームワーク「PeckBirdy」が確認された。対象は中国国内のギャンブル業界に加え、アジア地域の政府・民間組織にも及ぶ。PeckBirdyはWeb技術を悪用しており、HTTP経由でのC2通信やスクリプト難読化により、従来のネットワーク監視を回避…",
+      "article_path": "articles/e2e59aff33422929.html",
+      "original_url": "https://thehackernews.com/2026/01/china-linked-hackers-have-used.html"
+    },
+    {
+      "entry_id": "cdccbd40ad7c827e",
+      "title": "Initial Stages of Romance Scams &#x5b;Guest Diary&#x5d;, (Tue, Jan 27th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-01-27T02:10:52+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Scam/Fraud",
+      "summary_preview": "概要SANS ISCのゲストダイアリでは、恋愛詐欺（Romance Scam）の初期段階に焦点を当て、攻撃者がどのように信頼関係を構築し、被害者を心理的に取り込むかを分析している。SNSや出会い系アプリを起点に、長期間にわたり感情的なつながりを演出し、最終的に金銭や暗号資産の送金を誘導する手口が多い。初期段階では、攻撃者は「共感」「共通の趣味」「日常的な会…",
+      "article_path": "articles/cdccbd40ad7c827e.html",
+      "original_url": "https://isc.sans.edu/diary/rss/32650"
+    },
+    {
+      "entry_id": "3669d50bca455b5e",
+      "title": "ISC Stormcast For Tuesday, January 27th, 2026 https://isc.sans.edu/podcastdetail/9782, (Tue, Jan 27th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-01-27T02:00:02+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Exploit",
+      "summary_preview": "概要SANS ISC Stormcast（2026年1月27日号）は、複数の脆弱性と攻撃動向を短く整理したポッドキャスト形式の更新である。主な話題は、公開Webサービスへのスキャン増加、旧バージョンのVPN機器に対する認証前攻撃、および最近公開されたPoCコードの拡散状況である。いずれも既知のCVEに基づくもので、ゼロデイではないが、既存の露出資産が攻撃対…",
+      "article_path": "articles/3669d50bca455b5e.html",
+      "original_url": "https://isc.sans.edu/diary/rss/32658"
+    },
+    {
+      "entry_id": "678a2caa0ef85601",
+      "title": "New Android Theft Protection Feature Updates: Smarter, Stronger",
+      "source_name": "Google Security Blog",
+      "category": "reporting",
+      "published_at": "2026-01-27T16:59:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要GoogleはAndroid 16以降を対象に、端末盗難対策機能の強化を発表した。主な更新は、認証失敗時の自動ロック制御、生体認証を用いたIdentity Checkの拡張、PIN推測耐性の向上、そしてRemote Lockの強化である。さらにブラジルでは、盗難検知ロックとリモートロックを初期設定で有効化する「Default-On」化を進めている。これ…",
+      "article_path": "articles/678a2caa0ef85601.html",
+      "original_url": "http://security.googleblog.com/2026/01/android-theft-protection-feature-updates.html"
+    },
+    {
+      "entry_id": "783344da942226d2",
+      "title": "Diverse Threat Actors Exploiting Critical WinRAR Vulnerability CVE-2025-8088",
+      "source_name": "Mandiant",
+      "category": "reporting",
+      "published_at": "2026-01-27T14:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Exploit",
+      "summary_preview": "概要Google Threat Intelligence Group（GTIG）は、WinRARの重大脆弱性CVE-2025-8088が、国家支援・金銭目的の双方の攻撃者により広範に悪用され続けていると報告した。脆弱性はパストラバーサルとAlternate Data Streams（ADS）を悪用し、ユーザがRARアーカイブを開くだけでWindowsのSt…",
+      "article_path": "articles/783344da942226d2.html",
+      "original_url": "https://cloud.google.com/blog/topics/threat-intelligence/exploiting-critical-winrar-vulnerability/"
+    },
+    {
+      "entry_id": "e4587beca8fa4aa4",
+      "title": "ロシア政府が自国のサイバー犯罪者を逮捕する異例の事態 ～ 国家によるサイバー攻撃能力の積極的な利活用と管理",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-01-26T23:15:04+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要ロシア当局が、自国拠点のサイバー犯罪グループ構成員を逮捕したと報じられた。これまで同国は国外標的への攻撃を黙認・支援する傾向が強かったが、今回は国家の攻撃能力を維持しつつ統制を強化する動きとみられる。背景には、国際的制裁下でのサイバー資源の再編や、制御不能な犯罪者による外交的リスクの抑制があると考えられる。これにより、国家系・犯罪系の境界がさらに曖昧化…",
+      "article_path": "articles/e4587beca8fa4aa4.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/01/27/54487.html"
+    },
+    {
+      "entry_id": "de180362a0c031f1",
+      "title": "Proofpoint Blog 53回「攻撃は『入口』で防げているか？ ─ 復旧前提のセキュリティから、攻撃起点防御への転換」",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-01-26T23:10:03+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要Proofpointが解説する本稿は、メールを起点とする攻撃が依然として主要な侵入経路である現実を踏まえ、従来の「侵入後の復旧」中心の防御から、攻撃起点での遮断へと戦略を転換すべきだと提言している。特に、生成AIを用いたフィッシング文面の精度向上や、正規サービスを悪用した配信経路の多様化により、従来のシグネチャ型防御では検知が難しい状況が増えている。記…",
+      "article_path": "articles/de180362a0c031f1.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/01/27/54486.html"
+    },
+    {
+      "entry_id": "7c61f0dc98458146",
+      "title": "医師が診察室内で撮影した写真を SNS に投稿、患者の個人情報が判別可能な状態で拡散",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-01-26T23:05:26+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要医療機関に勤務する医師が、診察室内で撮影した写真を個人のSNSに投稿し、患者の顔やカルテの一部が判別可能な状態で拡散した事案が報じられた。組織としての公式SNSではなく、個人端末・個人アカウントからの投稿であり、業務中に撮影された画像が含まれていた。これにより、患者の個人情報が第三者に漏えいし、医療機関の信頼失墜や法的責任が生じる可能性がある。技術的侵…",
+      "article_path": "articles/7c61f0dc98458146.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/01/27/54485.html"
+    },
+    {
+      "entry_id": "966f7e89663d93cc",
+      "title": "4 名の東北大 ID を不正利用し情報機器に不正アクセス",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-01-26T23:05:08+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要東北大学は、学内アカウント4件が不正利用され、学内情報機器への不正アクセスが発生したと公表した。外部からの侵入経路は学外ネットワーク経由であり、認証情報が何らかの形で漏えい・窃取された可能性が高い。現時点で学内システムの改ざんや個人情報流出は確認されていないが、認証情報再発行とアクセス制御の強化が実施された。攻撃の詳細手口は未公表だが、教育機関で頻発す…",
+      "article_path": "articles/966f7e89663d93cc.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/01/27/54484.html"
+    },
+    {
+      "entry_id": "b536917b9bfd82b9",
+      "title": "向上高等学校の職員用グループウェアにランサムウェア攻撃、約 400 件の個人情報が流出した可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-01-26T23:05:04+00:00",
+      "impact_level": "High",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要神奈川県の向上高等学校が運用する職員用グループウェアがランサムウェア攻撃を受け、約400件の個人情報（職員・関係者の氏名や連絡先など）が流出した可能性があると報告された。攻撃経路や使用されたマルウェアの詳細は現時点で未公表だが、学校法人が運用するオンプレミス型の情報共有基盤が侵害されたとみられる。教育機関を狙うランサムウェア攻撃は、限定的なIT運用リソ…",
+      "article_path": "articles/b536917b9bfd82b9.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/01/27/54483.html"
+    },
+    {
+      "entry_id": "c1d352928e7f3341",
+      "title": "Cloudbase の設定ミススキャン機能、新規の AWS コンプライアンスに対応",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-01-26T23:00:31+00:00",
+      "impact_level": "Low",
+      "threat_type": "Advisory",
+      "summary_preview": "概要クラウド設定監査ツール「Cloudbase」が、AWSの新しいコンプライアンス基準（例: NIST 800-53 Rev.5やCIS AWS Foundations Benchmarkの更新）に対応したスキャン機能を追加した。これにより、組織はAWS環境の設定ミスや逸脱を自動検出し、監査証跡を維持しやすくなる。記事自体は製品アップデートの紹介であり、脆…",
+      "article_path": "articles/c1d352928e7f3341.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/01/27/54482.html"
+    },
+    {
+      "entry_id": "6b72e3457584dd4c",
+      "title": "Microsoft 365 の暗号化仕様変更に伴うリコー製品への影響、OAuth2.0 認証対応にかかわらず Exchange Online でのメール送受信を利用できず",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-01-26T23:00:11+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要Microsoft 365（Exchange Online）の暗号化仕様変更により、リコー製複合機など一部製品でOAuth2.0認証を設定済みでもメール送受信が行えない事象が発生している。Microsoft側のセキュリティ強化措置（暗号スイートやTLS設定の更新）が背景にあり、SMTP/IMAP通信経路での互換性問題が原因とみられる。これは脆弱性ではな…",
+      "article_path": "articles/6b72e3457584dd4c.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/01/27/54481.html"
+    },
+    {
+      "entry_id": "c4fc26b503b4c5e7",
+      "title": "Trend Micro Apex Central に複数の脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-01-26T23:00:09+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Trend Micro の集中管理製品 Apex Central に複数の脆弱性が報告された。報道によれば、いずれも認証済みユーザによる権限昇格やコマンド実行につながる可能性があり、管理サーバが侵害された場合には組織全体のセキュリティ製品設定やログ改ざんに直結する。現時点で悪用の公的確認はないが、攻撃者視点では SOC/CSIRT 管理基盤への横展開の…",
+      "article_path": "articles/c4fc26b503b4c5e7.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/01/27/54480.html"
+    },
+    {
+      "entry_id": "0ee8e0cb1dea5bbe",
+      "title": "ISC BIND にサービス運用妨害（DoS）につながる脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-01-26T23:00:05+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要ISCが提供するDNSサーバソフトウェアBINDに、特定のクエリ処理でサービス運用妨害（DoS）を引き起こす脆弱性が報告された。攻撃者は細工したDNSリクエストを送信することで、namedプロセスをクラッシュさせる可能性がある。再起動で復旧可能だが、再発を繰り返すことで可用性を低下させる恐れがある。影響範囲は主にインターネット向け権威DNSサーバおよび…",
+      "article_path": "articles/0ee8e0cb1dea5bbe.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/01/27/54479.html"
+    }
+  ]
+}
