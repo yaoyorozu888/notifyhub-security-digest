@@ -1,0 +1,229 @@
+{
+  "date": "2026-02-03",
+  "window": {
+    "from": "2026-02-02T06:00:00+09:00",
+    "to": "2026-02-03T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 18
+  },
+  "generated_at_jst": "2026-02-03T08:59:35.146768+09:00",
+  "items": [
+    {
+      "entry_id": "fa07fd022b1a8f5a",
+      "title": "Researchers Find 341 Malicious ClawHub Skills Stealing Data from OpenClaw Users",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-02-02T17:49:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要Koi Securityの調査により、AIアシスタント「OpenClaw」向けの拡張機能マーケットプレイス「ClawHub」で341件の悪意あるスキルが確認された。全2,857スキル中の約12%が不正であり、複数のキャンペーンにまたがってデータ窃取や権限濫用を行っていた。これらのスキルは、正規開発者を装い、ユーザーデータやAPIキーを外部へ送信するなど…",
+      "article_path": "articles/fa07fd022b1a8f5a.html",
+      "original_url": "https://thehackernews.com/2026/02/researchers-find-341-malicious-clawhub.html"
+    },
+    {
+      "entry_id": "5262e05005218ec9",
+      "title": "OpenClaw Bug Enables One-Click Remote Code Execution via Malicious Link",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-02-02T16:28:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要OpenClaw（旧称 Clawdbot/Moltbot）において、CVE-2026-25253 として追跡されるリモートコード実行（RCE）脆弱性が公開された。攻撃者は細工したリンクをユーザにクリックさせるだけで、トークンを奪取し任意コードを実行できる。CVSSスコアは8.8（高）で、2026年1月30日公開のバージョン2026.1.29で修正済み。…",
+      "article_path": "articles/5262e05005218ec9.html",
+      "original_url": "https://thehackernews.com/2026/02/openclaw-bug-enables-one-click-remote.html"
+    },
+    {
+      "entry_id": "80aa6875815cc70b",
+      "title": "Microsoft Begins NTLM Phase-Out With Three-Stage Plan to Move Windows to Kerberos",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-02-02T15:59:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要Microsoftは、Windows環境で長年利用されてきた認証プロトコルNTLMを段階的に廃止し、より安全なKerberosへの移行を進める三段階計画を発表した。NTLMはリレー攻撃やハッシュ再利用攻撃に弱く、内部ネットワークでも攻撃者による横展開の起点となることが多い。今回の計画は、まずWindows 11およびWindows Serverの新バー…",
+      "article_path": "articles/80aa6875815cc70b.html",
+      "original_url": "https://thehackernews.com/2026/02/microsoft-begins-ntlm-phase-out-with.html"
+    },
+    {
+      "entry_id": "f78d1cc1c523a08b",
+      "title": "⚡ Weekly Recap: Proxy Botnet, Office Zero-Day, MongoDB Ransoms, AI Hijacks & New Threats",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-02-02T11:59:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要The Hacker Newsによる週次まとめでは、Office製品のゼロデイ脆弱性、プロキシ型ボットネットの拡大、MongoDBを狙ったランサム活動、およびAIシステムの乗っ取り事例が報告された。これらは個別事象ではあるが、共通して「クラウド・生成AI・SaaSへの依存増大」と「攻撃面の多層化」に起因する防御困難性を示している。特にOfficeゼロデ…",
+      "article_path": "articles/f78d1cc1c523a08b.html",
+      "original_url": "https://thehackernews.com/2026/02/weekly-recap-proxy-botnet-office-zero.html"
+    },
+    {
+      "entry_id": "c2b6e7f84d3c88e9",
+      "title": "Securing the Mid-Market Across the Complete Threat Lifecycle",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-02-02T11:45:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要中堅規模の組織を対象に、脅威ライフサイクル全体を通じた防御戦略の重要性を論じた記事。攻撃面の拡大に対し、予防的対策とリアルタイム防御の両立が求められる一方で、ツールの複雑化やコスト増が障壁となっている。特に、SOCやCSIRTのリソースが限られる環境では、統合的な可視化と自動化が鍵となる。記事は特定の脆弱性や攻撃事例ではなく、運用面の最適化に焦点を当て…",
+      "article_path": "articles/c2b6e7f84d3c88e9.html",
+      "original_url": "https://thehackernews.com/2026/02/securing-mid-market-across-complete.html"
+    },
+    {
+      "entry_id": "a18deaa50e213196",
+      "title": "Notepad++ Official Update Mechanism Hijacked to Deliver Malware to Select Users",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-02-02T08:55:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要テキストエディタNotepad++の公式更新メカニズムが、国家支援型攻撃者によってハイジャックされ、特定ユーザにマルウェアを配布する攻撃が確認された。攻撃者はホスティングインフラ層を侵害し、更新要求を本来のサーバから悪意あるサーバへリダイレクトすることで、正規更新に見せかけた不正コード配布を実現した。開発者Don Ho氏によると、侵害はnotepad-…",
+      "article_path": "articles/a18deaa50e213196.html",
+      "original_url": "https://thehackernews.com/2026/02/notepad-official-update-mechanism.html"
+    },
+    {
+      "entry_id": "42259ca6be4c7bb3",
+      "title": "eScan Antivirus Update Servers Compromised to Deliver Multi-Stage Malware",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-02-02T05:47:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要インドのセキュリティ企業MicroWorld Technologiesが提供するeScan Antivirusの更新サーバが侵害され、正規のアップデート経路を通じて多段階マルウェアが配布された。攻撃者は署名済み更新を悪用し、エンタープライズおよび個人ユーザ環境に持続的ダウンローダを展開。これにより、通常の検証プロセスを通過した形で感染が成立した。現時点…",
+      "article_path": "articles/42259ca6be4c7bb3.html",
+      "original_url": "https://thehackernews.com/2026/02/escan-antivirus-update-servers.html"
+    },
+    {
+      "entry_id": "fca00b5589c2c9f4",
+      "title": "Open VSX Supply Chain Attack Used Compromised Dev Account to Spread GlassWorm",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-02-02T05:04:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要2026年1月末、Open VSX Registry（Visual Studio Code互換拡張のオープン配布プラットフォーム）がサプライチェーン攻撃を受け、正規開発者アカウントが侵害されました。攻撃者は「oorzc」名義の4つの拡張機能を改ざんし、GlassWormと呼ばれるマルウェアを組み込んだ悪意あるバージョンを公開。これにより、拡張を更新した…",
+      "article_path": "articles/fca00b5589c2c9f4.html",
+      "original_url": "https://thehackernews.com/2026/02/open-vsx-supply-chain-attack-used.html"
+    },
+    {
+      "entry_id": "ce700c50ac0494ae",
+      "title": "Scanning for exposed Anthropic Models, (Mon, Feb 2nd)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-02-02T15:14:47+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Misconfiguration",
+      "summary_preview": "概要SANS ISCは、Tor出口ノードからのスキャン活動を観測し、Anthropic APIノードを探索している可能性があると報告した。特定のIP（204.76.203.210）が複数のセンサーを対象にスキャンを実施しており、AIモデルAPIの露出を狙う試行とみられる。現時点で侵入や悪用の報告はないが、生成AI関連APIの認証・公開設定を誤ると、モデル呼…",
+      "article_path": "articles/ce700c50ac0494ae.html",
+      "original_url": "https://isc.sans.edu/diary/rss/32674"
+    },
+    {
+      "entry_id": "604123ba5e71821c",
+      "title": "ISC Stormcast For Monday, February 2nd, 2026 https://isc.sans.edu/podcastdetail/9790, (Mon, Feb 2nd)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-02-02T02:00:02+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要SANS ISCのStormcast（2026年2月2日号）は、週末に観測された脆弱性や攻撃動向を短く整理したポッドキャストである。今回の内容は特定のゼロデイや新規マルウェアではなく、既知脆弱性の悪用継続や、公開サービスへのスキャン増加、およびクラウド設定不備の悪用例など、運用面での注意点が中心であった。特に、旧バージョンのVPNゲートウェイやCMSプ…",
+      "article_path": "articles/604123ba5e71821c.html",
+      "original_url": "https://isc.sans.edu/diary/rss/32672"
+    },
+    {
+      "entry_id": "50a8cb4dbc854fb6",
+      "title": "“我々はもはやサイバーセキュリティの仕事をしているのではない”",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-02-01T23:15:03+00:00",
+      "impact_level": "Low",
+      "threat_type": "Advisory",
+      "summary_preview": "概要ScanNetSecurity掲載の寄稿記事では、「我々はもはやサイバーセキュリティの仕事をしているのではない」という挑発的な表現を通じ、CSIRTやSOCが担う役割の変質を論じている。技術的防御だけでなく、事業継続・経営判断・リスクコミュニケーションの一部としてセキュリティが組み込まれている現実を指摘。特に近年の攻撃は、単なる脆弱性悪用ではなく、業務…",
+      "article_path": "articles/50a8cb4dbc854fb6.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/02/02/54530.html"
+    },
+    {
+      "entry_id": "502ffbff31cbc883",
+      "title": "企業で検討したが正式導入しなかったアプリに不正アクセス、顧客の氏名と電話番号流出",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-02-01T23:05:25+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要ある企業が正式導入前に評価中だった外部アプリケーションに対し、不正アクセスを受け、顧客の氏名と電話番号が流出した。アプリは社内検証環境で利用されていたが、クラウド上に残存していた設定が攻撃者に悪用されたとみられる。正式導入を見送った後も、アカウントやデータが削除されていなかったことが原因とされる。攻撃経路は未公表だが、APIキーや管理者権限の残存、ある…",
+      "article_path": "articles/502ffbff31cbc883.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/02/02/54529.html"
+    },
+    {
+      "entry_id": "05e5f1f84095d9d9",
+      "title": "エフエム東京へのサイバー攻撃指摘する SNS 投稿、データの一部が流出した事実はあるが機密性の高い情報は含まれず",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-02-01T23:05:07+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要エフエム東京（TOKYO FM）は、SNS上で指摘されたサイバー攻撃に関し、一部データの流出を確認したと公表した。流出した情報には機密性の高い個人情報や業務上の重要データは含まれていないと説明している。現時点で攻撃経路や攻撃者の特定には至っておらず、不正アクセスの範囲と再発防止策の確認を継続中とされる。報道によると、流出データは外部のファイル共有サービ…",
+      "article_path": "articles/05e5f1f84095d9d9.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/02/02/54528.html"
+    },
+    {
+      "entry_id": "aae5a0f9f53a0e56",
+      "title": "笹だんご「田中屋本店」に不正アクセス 677 名のカード情報が漏えい",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-02-01T23:05:03+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要和菓子製造販売の田中屋本店が運営するオンラインショップが不正アクセスを受け、677名分のクレジットカード情報が漏えいした。攻撃はECサイト構築プラットフォームの脆弱性を突かれた可能性があり、決済代行会社からの指摘により発覚している。漏えい対象は2025年中に同サイトでカード決済を行った利用者で、カード番号・有効期限・セキュリティコードが含まれると報告さ…",
+      "article_path": "articles/aae5a0f9f53a0e56.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/02/02/54527.html"
+    },
+    {
+      "entry_id": "59833d607e4638e1",
+      "title": "2/20 開催「ITソリューション体験フェア2026」にスリーシェイク「Securify」「Reckoner」出展",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-02-01T23:00:59+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要スリーシェイク社が2026年2月20日に開催される「ITソリューション体験フェア2026」において、セキュリティサービスSecurifyとデータ連携基盤Reckonerを出展するとの案内。内容は製品紹介・体験イベントであり、脆弱性情報や攻撃観測とは無関係。CSIRT業務に直結する技術的リスク情報は含まれていない。現場の学び記事はマーケティング目的であり…",
+      "article_path": "articles/59833d607e4638e1.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/02/02/54526.html"
+    },
+    {
+      "entry_id": "0c5124f07014299c",
+      "title": "Tenable、Gartner Peer Insights の CNAPP 分野で「Customers' Choice」に選出",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-02-01T23:00:41+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要TenableがGartner Peer InsightsのCNAPP（Cloud-Native Application Protection Platform）分野で「Customers' Choice」に選出されたという報道。これは製品の市場評価に関するニュースであり、脆弱性や攻撃事例の情報ではない。Tenableは脆弱性管理・クラウドセキュリティ…",
+      "article_path": "articles/0c5124f07014299c.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/02/02/54525.html"
+    },
+    {
+      "entry_id": "2af380eda2abd992",
+      "title": "防災備蓄管理「Kuranosuke」が Okta Integration Network に対応、SSO 設定が容易に",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-02-01T23:00:23+00:00",
+      "impact_level": "Low",
+      "threat_type": "Advisory",
+      "summary_preview": "概要防災備蓄管理クラウド「Kuranosuke」が、Okta Integration Network（OIN）に対応し、Oktaを利用する組織でのシングルサインオン（SSO）設定が容易化された。これにより、Okta管理下のID情報を用いた認証連携が可能となり、利用者の利便性とアカウント管理の一元化が進む。一方で、SSO連携は利便性向上と同時に、認証基盤への…",
+      "article_path": "articles/2af380eda2abd992.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/02/02/54524.html"
+    },
+    {
+      "entry_id": "e20486fe57d6a774",
+      "title": "3 / 3・4 開催オンライン展示会「ITトレンドEXPO 2026 Spring」に HENNGE 圓一樹氏 登壇",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-02-01T23:00:04+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要本記事は、HENNGE社の圓一樹氏がオンライン展示会「ITトレンドEXPO 2026 Spring」に登壇するというイベント告知であり、具体的な脆弱性情報や攻撃事例は含まれていない。講演テーマはクラウドセキュリティやゼロトラスト関連と推測されるが、技術的詳細や新たな脅威情報は示されていない。したがって、CSIRTとしては直接的な対応を要する内容ではなく…",
+      "article_path": "articles/e20486fe57d6a774.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/02/02/54523.html"
+    }
+  ]
+}

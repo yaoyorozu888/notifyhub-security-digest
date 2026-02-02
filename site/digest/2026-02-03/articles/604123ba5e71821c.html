@@ -1,0 +1,284 @@
+<!-- article.html テンプレート（生成用） (例: /digest/YYYY-MM-DD/articles/<entry_id>.html)
+     サーバ側（Function）で {{...}} を置換して出力してください。
+-->
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <title>ISC Stormcast For Monday, February 2nd, 2026 https://isc.sans.edu/podcastdetail/9790, (Mon, Feb 2nd) | NotifyHub Cybersecurity Daily Report</title>
+  <style>
+    :root{
+      --bg:#0b1020; --panel:#0f1730; --panel2:#121c3a;
+      --text:#e7ecff; --muted:#a9b4df; --line:#22305b;
+      --accent:#7aa2ff; --good:#4ade80; --warn:#fbbf24; --bad:#fb7185;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+      --radius:18px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      background: radial-gradient(1000px 700px at 20% -10%, rgba(122,162,255,.25), transparent 60%),
+                  radial-gradient(900px 600px at 90% 10%, rgba(251,113,133,.12), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+    }
+    a{color:inherit}
+    .wrap{max-width:960px; margin:0 auto; padding:22px 18px 44px}
+    .topbar{
+      display:flex; justify-content:space-between; align-items:center; gap:12px;
+      margin-bottom:12px;
+    }
+    .crumb a{
+      text-decoration:none;
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .crumb a:hover{border-color:rgba(122,162,255,.65)}
+    .chip{
+      display:inline-flex; align-items:center; gap:8px;
+      background:rgba(27,38,80,.75);
+      border:1px solid rgba(34,48,91,.9);
+      padding:7px 10px; border-radius:999px;
+      font-size:12px; color:var(--muted);
+      backdrop-filter: blur(10px);
+      white-space:nowrap;
+    }
+    .chip strong{color:var(--text); font-weight:650}
+    .panel{
+      background: linear-gradient(180deg, rgba(15,23,48,.9), rgba(15,23,48,.75));
+      border:1px solid rgba(34,48,91,.9);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .head{
+      padding:16px 16px 12px;
+      border-bottom:1px solid rgba(34,48,91,.9);
+      background:rgba(18,28,58,.55);
+    }
+    h1{
+      margin:0;
+      font-size:20px;
+      line-height:1.35;
+      letter-spacing:.15px;
+    }
+    .meta{
+      margin-top:10px;
+      display:flex; gap:10px; flex-wrap:wrap;
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.6;
+    }
+    .meta a{color:var(--muted)}
+    .meta a:hover{color:var(--accent)}
+    .tags{
+      margin-top:12px;
+      display:flex; gap:8px; flex-wrap:wrap;
+    }
+    .tag{
+      font-size:11px;
+      padding:6px 9px;
+      border-radius:999px;
+      background:rgba(27,38,80,.65);
+      border:1px solid rgba(34,48,91,.9);
+      color:var(--muted);
+      white-space:nowrap;
+    }
+    .tag.level-Critical{border-color:rgba(251,113,133,.65); color:#ffd0d7}
+    .tag.level-High{border-color:rgba(251,191,36,.65); color:#ffe9b0}
+    .tag.level-Medium{border-color:rgba(122,162,255,.65); color:#dbe6ff}
+    .tag.level-Low{border-color:rgba(74,222,128,.55); color:#d0ffe2}
+    .tag.level-Info{border-color:rgba(169,180,223,.55); color:rgba(169,180,223,.95)}
+    .body{
+      padding:16px;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+    }
+    .section{
+      background:rgba(18,28,58,.35);
+      border:1px solid rgba(34,48,91,.75);
+      border-radius:16px;
+      padding:14px;
+    }
+    .section h2{
+      margin:0 0 10px;
+      font-size:14px;
+      letter-spacing:.1px;
+    }
+    .ruleReason{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.65;
+      white-space:pre-wrap;
+    }
+
+    /* --- summary_html styles (OpenAI output uses h4/p/ul/li/strong/code/br) --- */
+    .summary h4{
+      margin:14px 0 8px;
+      font-size:13px;
+      letter-spacing:.1px;
+      padding-left:10px;
+      border-left:3px solid rgba(122,162,255,.65);
+      color: rgba(231,236,255,.95);
+    }
+    .summary p{margin:8px 0; color:rgba(231,236,255,.92); line-height:1.75}
+    .summary ul, .summary ol{margin:8px 0 8px 1.2em; padding:0}
+    .summary li{margin:6px 0; color:rgba(231,236,255,.92); line-height:1.7}
+    .summary strong{
+      color:var(--text);
+      font-weight:750;
+      padding:0 .2em;
+      border-radius:8px;
+      background: linear-gradient(transparent 60%, rgba(122,162,255,.22) 60%);
+    }
+    .summary code{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 8px;
+      background: rgba(11,16,32,.6);
+      border: 1px solid rgba(34,48,91,.85);
+      color: rgba(231,236,255,.95);
+      white-space: nowrap;
+    }
+
+    .terms{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:10px;
+    }
+    @media (max-width: 860px){
+      .terms{grid-template-columns: 1fr}
+    }
+    .termCard{
+      background:rgba(11,16,32,.45);
+      border:1px solid rgba(34,48,91,.85);
+      border-radius:14px;
+      padding:12px;
+      min-width:0;
+    }
+    .termCard .term{
+      font-weight:700;
+      font-size:13px;
+      margin:0 0 8px;
+      word-break:break-word;
+    }
+    .termCard .exp{
+      margin:0;
+      color:rgba(231,236,255,.9);
+      line-height:1.7;
+      font-size:12px;
+      white-space:pre-wrap;
+    }
+
+    .footer{
+      margin-top:14px;
+      color:rgba(169,180,223,.75);
+      font-size:12px;
+      line-height:1.7;
+      text-align:center;
+    }
+    .btnRow{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px}
+    .linkbtn{
+      text-decoration:none;
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .linkbtn:hover{border-color:rgba(122,162,255,.65)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="crumb">
+        <!-- ../index.html は通常 "../index.html" でOK -->
+        <a href="../index.html">← 日次トップへ戻る</a>
+      </div>
+      <div class="chip">entry_id <strong class="mono">604123ba5e71821c</strong></div>
+    </div>
+
+    <div class="panel">
+      <div class="head">
+        <h1>ISC Stormcast For Monday, February 2nd, 2026 https://isc.sans.edu/podcastdetail/9790, (Mon, Feb 2nd)</h1>
+
+        <div class="meta">
+          <span>🗞️ SANS ISC</span>
+          <span>🕒 2026-02-02T11:00:02+09:00</span>
+          <span>🔗 <a href="https://isc.sans.edu/diary/rss/32672" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
+        </div>
+
+        <div class="tags">
+          <span class="tag level-Medium">Impact: Medium</span>
+          <span class="tag">Advisory</span>
+        </div>
+
+        <div class="btnRow">
+          <a class="linkbtn" href="https://isc.sans.edu/diary/rss/32672" target="_blank" rel="noopener noreferrer">原文リンク</a>
+          <a class="linkbtn" href="https://www.notifyhub.site/digest/2026-02-03/">日次トップ</a>
+        </div>
+      </div>
+
+      <div class="body">
+        <div class="section">
+          <h2>Impact判定理由</h2>
+          <div class="ruleReason">新規ゼロデイや大規模被害報告はなく、主に既知脆弱性悪用や設定不備の継続観測。SANS ISCは観測系メディア情報源のため、実被害リスクは中程度に据え置き。</div>
+        </div>
+        <div class="section summary">
+          <h2>🧾 要約（ChatGPT）</h2>
+          <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
+          <div><h4>概要</h4><p>SANS ISCのStormcast（2026年2月2日号）は、週末に観測された脆弱性や攻撃動向を短く整理したポッドキャストである。今回の内容は特定のゼロデイや新規マルウェアではなく、<strong>既知脆弱性の悪用継続</strong>や、<strong>公開サービスへのスキャン増加</strong>、およびクラウド設定不備の悪用例など、運用面での注意点が中心であった。特に、旧バージョンのVPNゲートウェイやCMSプラグインを狙う攻撃が依然として観測されており、<strong>パッチ未適用資産の長期露出</strong>が攻撃者ROIを高めている点が強調された。</p><h4>現場の学び</h4><ul><li>「既知脆弱性の悪用」は一過性ではなく、<strong>攻撃者の定常的なスキャン対象</strong>として残り続ける。KEV掲載済み項目の再点検を怠らない。</li><li>クラウド環境では、<strong>権限委譲ミスや公開設定</strong>が侵入経路となる。IAMポリシーの差分監査を定期化する。</li><li>VPNやCMSなど外部公開系の中間層機器は、<strong>パッチ適用後も構成変更や再起動漏れ</strong>が残存リスクになる。</li></ul><h4>初動・継続対応の示唆</h4><ul><li>自組織の外部公開資産を対象に、<strong>KEV・CISA・JPCERT注意喚起リストとの突合</strong>を自動化し、残存脆弱性を可視化する。</li><li>クラウド構成監査では、<strong>公開ストレージ・過剰権限ロール</strong>を検出するルールをSOCで継続運用する。</li><li>週次の脅威サマリ（SANS ISC等）は、<strong>攻撃者の関心推移を読む材料</strong>として、定例レビューに組み込む。</li></ul></div>
+        </div>
+
+        <div class="section">
+          <h2>📌 キーワード解説</h2>
+          <div class="terms">
+            <div class="termCard">
+  <div class="term">KEV (Known Exploited Vulnerabilities) カタログ</div>
+  <p class="exp">CISAが公表する実際に悪用されている脆弱性一覧。CVSSよりも攻撃現実性を重視する点が特徴。</p>
+</div>
+<div class="termCard">
+  <div class="term">ROI (Return on Investment)</div>
+  <p class="exp">攻撃者が費用対効果で攻撃対象を選ぶ際の指標。防御側はROIを下げる運用で抑止を図る。</p>
+</div>
+<div class="termCard">
+  <div class="term">IAM (Identity and Access Management)</div>
+  <p class="exp">クラウド権限管理の仕組み。RBACやポリシー設定と混同されやすいが、より包括的な概念。</p>
+</div>
+<div class="termCard">
+  <div class="term">外部公開資産</div>
+  <p class="exp">インターネットから直接到達可能なシステム群。内部専用資産と異なり、脆弱性露出が即リスク化する。</p>
+</div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>🕘 生成情報</h2>
+          <div class="ruleReason">
+対象期間：2026-02-02T06:00:00+09:00 〜 2026-02-03T06:00:00+09:00
+生成時刻：2026-02-03T08:59:35.146768+09:00
+免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      notifyhub.site
+    </div>
+  </div>
+</body>
+</html>
