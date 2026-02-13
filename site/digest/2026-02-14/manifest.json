@@ -1,0 +1,241 @@
+{
+  "date": "2026-02-14",
+  "window": {
+    "from": "2026-02-13T06:00:00+09:00",
+    "to": "2026-02-14T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 19
+  },
+  "generated_at_jst": "2026-02-14T06:41:36.046600+09:00",
+  "items": [
+    {
+      "entry_id": "b28b7c206a5197d5",
+      "title": "Google Ties Suspected Russian Actor to CANFAIL Malware Attacks on Ukrainian Orgs",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-02-13T17:27:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要Google Threat Intelligence Group（GTIG）は、ロシア情報機関と関連が疑われる新たな攻撃者が、ウクライナの防衛・政府・エネルギー関連組織を標的にCANFAILマルウェアを使用していると報告した。このマルウェアはこれまで文書化されておらず、カスタムのバックドア機能を持つとみられる。攻撃は標的型フィッシングやサプライチェーン…",
+      "article_path": "articles/b28b7c206a5197d5.html",
+      "original_url": "https://thehackernews.com/2026/02/google-ties-suspected-russian-actor-to.html"
+    },
+    {
+      "entry_id": "2da7ecb26c7a7f13",
+      "title": "Google Links China, Iran, Russia, North Korea to Coordinated Defense Sector Cyber Operations",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-02-13T16:23:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要Google Threat Intelligence Group（GTIG）は、中国・イラン・ロシア・北朝鮮の国家支援型攻撃者および関連するハクティビスト・犯罪グループが、防衛産業基盤（DIB）を標的とした一連の協調的サイバー作戦を展開していると報告した。攻撃は防衛関連企業やそのサプライチェーンを中心に、情報窃取・サプライチェーン侵害・スパイ活動・影響…",
+      "article_path": "articles/2da7ecb26c7a7f13.html",
+      "original_url": "https://thehackernews.com/2026/02/google-links-china-iran-russia-north.html"
+    },
+    {
+      "entry_id": "bfba27add26c6b81",
+      "title": "UAT-9921 Deploys VoidLink Malware to Target Technology and Financial Sectors",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-02-13T15:23:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要Cisco Talosが報告した新たな攻撃者グループUAT-9921は、VoidLinkと呼ばれるモジュラー型マルウェアフレームワークを用いて、テクノロジーおよび金融業界を標的に攻撃を展開している。活動は2019年頃から確認されており、VoidLinkは近年のキャンペーンで観測された新しい要素とされる。モジュール構造により、情報窃取、リモート制御、持続…",
+      "article_path": "articles/bfba27add26c6b81.html",
+      "original_url": "https://thehackernews.com/2026/02/uat-9921-deploys-voidlink-malware-to.html"
+    },
+    {
+      "entry_id": "78789ae484216035",
+      "title": "Malicious Chrome Extensions Caught Stealing Business Data, Emails, and Browsing History",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-02-13T11:25:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要研究者が、Meta Business SuiteやFacebook Business Managerのデータを窃取する悪意あるChrome拡張機能「CL Suite」を発見した。拡張は正規の業務支援ツールを装い、ブラウザ上での認証情報・メール・閲覧履歴を収集する。特に業務アカウントでChromeを利用するユーザが標的となり、企業の広告運用やSNS管理の…",
+      "article_path": "articles/78789ae484216035.html",
+      "original_url": "https://thehackernews.com/2026/02/malicious-chrome-extensions-caught.html"
+    },
+    {
+      "entry_id": "875855c7004765d5",
+      "title": "npm’s Update to Harden Their Supply Chain, and Points to Consider",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-02-13T10:45:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要npmは2025年12月、Sha1-Hulud事件を受けて認証基盤を刷新し、サプライチェーン攻撃耐性を高めた。新体制では発行トークンの管理強化、多要素認証の必須化、パッケージ署名の拡張などが行われている。ただし、これらは「完全防御」ではなく、悪意ある依存関係の混入やアカウント乗っ取りによるマルウェア配布リスクは依然残る。npmレジストリの信頼性向上は進…",
+      "article_path": "articles/875855c7004765d5.html",
+      "original_url": "https://thehackernews.com/2026/02/npms-update-to-harden-their-supply.html"
+    },
+    {
+      "entry_id": "409362862f10f8b0",
+      "title": "Researchers Observe In-the-Wild Exploitation of BeyondTrust CVSS 9.9 Vulnerability",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-02-13T08:34:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Exploit",
+      "summary_preview": "概要BeyondTrustのRemote Support (RS)およびPrivileged Remote Access (PRA)製品に存在するCVSS 9.9の重大な脆弱性が、watchTowrの観測によって実際に悪用されていることが確認された。攻撃者は公開されたサービスを標的にし、認証を経ずにリモートコード実行を行うことで、管理権限を奪取する可能性が…",
+      "article_path": "articles/409362862f10f8b0.html",
+      "original_url": "https://thehackernews.com/2026/02/researchers-observe-in-wild.html"
+    },
+    {
+      "entry_id": "0538c4fa212a7859",
+      "title": "AI-Powered Knowledge Graph Generator &#x26; APTs, (Thu, Feb 12th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-02-13T03:04:48+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要SANS ISCが紹介した記事では、大規模言語モデル（LLM）を用いて非構造化テキストから知識グラフを自動生成する手法が取り上げられた。APTレポートなどの長文情報を、主語・述語・目的語（SPO）トリプレットとして抽出し、攻撃者・手口・被害対象の関係を可視化する試みである。これにより、アナリストが手動で行ってきた脅威関連情報の整理を効率化できる可能性が…",
+      "article_path": "articles/0538c4fa212a7859.html",
+      "original_url": "https://isc.sans.edu/diary/rss/32712"
+    },
+    {
+      "entry_id": "0ae68fd8bfcc21a6",
+      "title": "ISC Stormcast For Friday, February 13th, 2026 https://isc.sans.edu/podcastdetail/9808, (Fri, Feb 13th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-02-13T02:00:02+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要SANS ISCのStormcast（2026年2月13日号）は、最近の脆弱性動向と観測トレンドを短く整理したものである。特筆すべき新規ゼロデイや大規模攻撃の報告はなく、主に既知の脆弱性悪用の継続、クラウド構成ミスによる露出、そしてメール経由の認証情報窃取キャンペーンの増加が言及された。CSIRTとしては、既知脆弱性の再悪用とクラウド設定の逸脱検知を重…",
+      "article_path": "articles/0ae68fd8bfcc21a6.html",
+      "original_url": "https://isc.sans.edu/diary/rss/32714"
+    },
+    {
+      "entry_id": "4d82d30ec8ca308c",
+      "title": "注意喚起: FileZenにおけるOSコマンドインジェクションの脆弱性（CVE-2026-25108）に関する注意喚起  (公開)",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-02-13T04:27:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要JPCERT/CCは、FileZenに存在するOSコマンドインジェクション脆弱性（CVE-2026-25108）について注意喚起を発出した。本脆弱性は、認証済みユーザが細工した入力を送信することで、サーバ上で任意のコマンドを実行できる可能性がある。FileZenは官公庁・企業間でのファイル転送や情報共有に広く利用されており、過去にも同製品を狙った侵害事…",
+      "article_path": "articles/4d82d30ec8ca308c.html",
+      "original_url": "https://www.jpcert.or.jp/at/2026/at260004.html"
+    },
+    {
+      "entry_id": "0143153596f2b459",
+      "title": "英国陸軍が AI 装備に 146 億円投入 ～ 戦場での索敵プロセス 劇的高速化",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-02-12T23:15:04+00:00",
+      "impact_level": "Low",
+      "threat_type": "Other",
+      "summary_preview": "概要英国陸軍が約146億円を投じ、戦場での索敵・目標識別を自動化するAI装備の導入を進めている。これは映像・センサーデータをリアルタイム解析し、敵位置や脅威度を高速に提示するシステムであり、従来の人間中心の判断プロセスを大幅に短縮することを狙う。軍事分野の話題ではあるが、AIによる自動判断・自動応答の導入という点で、企業CSIRTの自動検知・自動封じ込めの…",
+      "article_path": "articles/0143153596f2b459.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/02/13/54621.html"
+    },
+    {
+      "entry_id": "f9713eb8ddf76b73",
+      "title": "2/25 ～ 27開催「Japan IT Week 名古屋展」に HENNGE が出展、大村翼氏による講演も",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-02-12T23:10:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要HENNGEが「Japan IT Week 名古屋展」に出展し、同社の大村翼氏による講演が行われるとの告知。講演内容はクラウドセキュリティやゼロトラスト関連の最新動向が中心とみられるが、記事自体は製品・サービス紹介に近い性格であり、脅威情報や脆弱性情報は含まれていない。CSIRTとしては直接的な対応を要する内容ではなく、クラウド認証やアクセス制御の運用…",
+      "article_path": "articles/f9713eb8ddf76b73.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/02/13/54620.html"
+    },
+    {
+      "entry_id": "6bddf8b41b7d4837",
+      "title": "JAL「手荷物当日配送サービス」予約システムに不正アクセス、データの外部漏えいの有無について調査を進める",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-02-12T23:05:14+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要日本航空（JAL）は、外部委託先が運営する「手荷物当日配送サービス」の予約システムに対して不正アクセスが発生したと公表した。現時点では、個人情報や予約データの外部漏えい有無を調査中であり、攻撃経路や影響範囲は未確定とされている。対象システムはJAL本体の基幹ネットワークとは分離されているが、委託先システムの脆弱性を突かれた可能性がある。この種の事案は、…",
+      "article_path": "articles/6bddf8b41b7d4837.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/02/13/54619.html"
+    },
+    {
+      "entry_id": "c5dc4ae5852b2f97",
+      "title": "厚生労働省運営「あかるい職場応援団」改ざん被害",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-02-12T23:05:12+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要厚生労働省が運営する職場環境改善支援サイト「あかるい職場応援団」が、外部からの不正アクセスにより改ざん被害を受けたと報じられた。閲覧者を不審サイトへ誘導するスクリプト挿入が確認され、攻撃経路はCMSやプラグインの脆弱性悪用が疑われている。公的機関ドメインの信頼性を悪用した手口であり、フィッシングやマルウェア配布の踏み台として利用されるリスクがある。現時…",
+      "article_path": "articles/c5dc4ae5852b2f97.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/02/13/54618.html"
+    },
+    {
+      "entry_id": "4bb4479f80e93a86",
+      "title": "伸栄産業社員が送信元の OneDrive ファイル共有を装うフィッシングメールに注意を呼びかけ",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-02-12T23:05:09+00:00",
+      "impact_level": "High",
+      "threat_type": "Phishing",
+      "summary_preview": "概要伸栄産業の社員を装い、OneDrive のファイル共有通知を偽装したフィッシングメールが確認された。メールは実在の社員名や署名を模倣し、受信者にリンクをクリックさせてMicrosoft アカウントの認証情報を窃取する手口である。リンク先は正規ドメイン風の URL を用い、業務文脈に即した文面で信頼を誘う。現時点で組織内メールアカウントの侵害報告はないが…",
+      "article_path": "articles/4bb4479f80e93a86.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/02/13/54617.html"
+    },
+    {
+      "entry_id": "9b3a6f314dd3bbb7",
+      "title": "ジャストカーテンオンラインショップに不正アクセス、10,423 名のカード情報が漏えいした可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-02-12T23:05:07+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要カーテン通販サイト「ジャストカーテン」のオンラインショップが不正アクセスを受け、10,423名分のクレジットカード情報が漏えいした可能性があると公表された。攻撃は2025年12月頃に発生し、2026年1月に決済代行会社からの指摘で判明した。漏えい対象にはカード番号・有効期限・名義人・セキュリティコードが含まれる可能性があり、決済フォーム改ざん型の攻撃（…",
+      "article_path": "articles/9b3a6f314dd3bbb7.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/02/13/54616.html"
+    },
+    {
+      "entry_id": "bcb2d4b9fe8acef3",
+      "title": "THE BRIDGE で閲覧障害、「stream.ts」がダウンロードされるものの危険なファイルではない",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-02-12T23:05:03+00:00",
+      "impact_level": "Low",
+      "threat_type": "Advisory",
+      "summary_preview": "概要国内メディアサイト「THE BRIDGE」で、一時的に「stream.ts」ファイルのダウンロードが発生する閲覧障害が報告された。これは動画配信関連のファイルであり、マルウェアや不正スクリプトではないことが確認されている。原因はCDNや広告配信経路の設定不整合、またはブラウザキャッシュ挙動による誤動作の可能性が高い。記事では、利用者が誤って実行ファイル…",
+      "article_path": "articles/bcb2d4b9fe8acef3.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/02/13/54615.html"
+    },
+    {
+      "entry_id": "b15a2e255c5235c8",
+      "title": "2025 年は過去最多を更新 ～ デジタルアーツ、過去 3 年分の国内セキュリティインシデントを集計",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-02-12T23:00:12+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要デジタルアーツが公開した2022〜2025年の国内インシデント集計によると、2025年の報告件数が過去最多を記録した。特に標的型メールや情報漏えいの報告が増加し、教育・自治体・医療など官民混在領域での被害が目立つ。報告件数の増加は単なる検知精度向上ではなく、攻撃対象の裾野拡大と業務委託・クラウド利用の複雑化が背景にあるとされる。CSIRTにとっては、単…",
+      "article_path": "articles/b15a2e255c5235c8.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/02/13/54614.html"
+    },
+    {
+      "entry_id": "aa630e85b593c569",
+      "title": "スリーシェイクのエンジニア 5 名が翻訳を担当『アーキテクチャモダナイゼーション 組織とビジネスの未来を設計する』2 / 24 発売",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-02-12T23:00:09+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要ScanNetSecurityの記事は、スリーシェイク社のエンジニアが翻訳を担当した書籍『アーキテクチャモダナイゼーション 組織とビジネスの未来を設計する』の刊行を紹介している。内容はシステムのモダナイゼーションと組織変革を扱うものであり、セキュリティ脅威やインシデント対応に直接関係する情報ではない。ただし、レガシー環境の刷新やクラウド移行時の設計判断…",
+      "article_path": "articles/aa630e85b593c569.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/02/13/54613.html"
+    },
+    {
+      "entry_id": "180d8afcd517063b",
+      "title": "沖電気工業製品およびその OEM 製品に引用符で囲まれていないファイルパスの脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-02-12T23:00:04+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要沖電気工業（OKI）製品およびそのOEM製品において、引用符で囲まれていないファイルパスの扱いに起因する脆弱性が報告された。Windows環境でサービス起動時にパス中の空白を誤解釈し、意図しない実行ファイルを読み込む可能性がある。攻撃者がシステム上に細工した実行ファイルを配置できる場合、権限昇格や任意コード実行につながる恐れがある。現時点で悪用事例は確…",
+      "article_path": "articles/180d8afcd517063b.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/02/13/54612.html"
+    }
+  ]
+}
