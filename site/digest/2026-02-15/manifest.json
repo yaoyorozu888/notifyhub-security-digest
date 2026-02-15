@@ -7,7 +7,7 @@
   "counts": {
     "total": 1
   },
-  "generated_at_jst": "2026-02-15T06:28:04.007967+09:00",
+  "generated_at_jst": "2026-02-15T15:16:24.112500+09:00",
   "items": [
     {
       "entry_id": "831dc0689b3463e7",
@@ -15,9 +15,9 @@
       "source_name": "Unit 42",
       "category": "reporting",
       "published_at": "2026-02-13T23:00:48+00:00",
-      "impact_level": "Medium",
+      "impact_level": "High",
       "threat_type": "Phishing",
-      "summary_preview": "概要Palo Alto NetworksのUnit 42は、QRコードを悪用したフィッシング手法の拡大を報告している。攻撃者はURL短縮サービスやモバイルアプリのディープリンクを利用し、正規アプリ内での遷移を装って不正サイトやAPKを配布する。特に、メール・ポスター・請求書などの物理媒体を介してモバイル端末を直接誘導するため、従来のURLフィルタやゲートウ…",
+      "summary_preview": "概要Palo Alto NetworksのUnit 42が、QRコードを悪用したフィッシング攻撃の拡大を報告。攻撃者はURL短縮サービスやアプリ内ディープリンク、直接APKを配布する手法を組み合わせ、モバイル端末のセキュリティ制御を回避している。特にBYOD環境や外部連携業務で、個人端末を経由した認証情報窃取やマルウェア感染が懸念される。攻撃はメール・ポス…",
       "article_path": "articles/831dc0689b3463e7.html",
       "original_url": "https://unit42.paloaltonetworks.com/qr-codes-as-attack-vector/"
     }
