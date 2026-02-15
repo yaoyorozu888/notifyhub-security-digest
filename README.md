@@ -2,6 +2,9 @@
 
 仕様: `SPEC_NOTIFYHUB_CSIRT_DAILY_REPORT.md`（添付仕様に準拠）
 
+本プロジェクトの公開サイトは https://www.notifyhub.site/ です。
+サイバーセキュリティに関する記事を日次で収集してわかりやすくまとめています。
+
 ## セットアップ（Python 3.11）
 
 ```powershell
