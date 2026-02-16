@@ -1,0 +1,229 @@
+{
+  "date": "2026-02-17",
+  "window": {
+    "from": "2026-02-16T06:00:00+09:00",
+    "to": "2026-02-17T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 18
+  },
+  "generated_at_jst": "2026-02-17T06:34:06.400252+09:00",
+  "items": [
+    {
+      "entry_id": "c218afe572fe2be7",
+      "title": "Infostealer Steals OpenClaw AI Agent Configuration Files and Gateway Tokens",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-02-16T18:43:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要研究者は、情報窃取型マルウェア（Infostealer）がOpenClaw AIエージェントの構成ファイルとゲートウェイトークンを窃取した事例を報告した。従来のブラウザ資格情報や暗号資産ウォレットではなく、AIエージェントの「人格」や動作設定を奪う点が特徴であり、攻撃者はこれを再利用して被害者のAIを偽装・悪用する可能性がある。OpenClawは個人・…",
+      "article_path": "articles/c218afe572fe2be7.html",
+      "original_url": "https://thehackernews.com/2026/02/infostealer-steals-openclaw-ai-agent.html"
+    },
+    {
+      "entry_id": "30fe0c9494e5740b",
+      "title": "Study Uncovers 25 Password Recovery Attacks in Major Cloud Password Managers",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-02-16T18:06:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要研究者によると、Bitwarden・Dashlane・LastPassなどのクラウド型パスワードマネージャで、パスワードリカバリ機構に関する25種類の攻撃手法が確認された。条件次第では組織全体の保管庫（vault）を完全に掌握される可能性があるという。問題の多くは暗号鍵管理やリカバリ手順の実装差異に起因し、特にアカウント復旧時の信頼境界の曖昧さが悪用さ…",
+      "article_path": "articles/30fe0c9494e5740b.html",
+      "original_url": "https://thehackernews.com/2026/02/study-uncovers-25-password-recovery.html"
+    },
+    {
+      "entry_id": "38f77a588ade1c36",
+      "title": "Weekly Recap: Outlook Add-Ins Hijack, 0-Day Patches, Wormable Botnet & AI Malware",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-02-16T12:55:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要今週のまとめでは、Outlookアドインの乗っ取り、ゼロデイ修正、自己増殖型ボットネット、およびAI支援型マルウェアといった多様な脅威が報告された。特筆すべきは、攻撃者が既存の信頼済み機能やツールを悪用し、従来の防御境界をすり抜けている点である。Outlookアドインの悪用は、ユーザ操作を介さずにコード実行や情報窃取を可能にし、クラウド連携環境では横展…",
+      "article_path": "articles/38f77a588ade1c36.html",
+      "original_url": "https://thehackernews.com/2026/02/weekly-recap-outlook-add-ins-hijack-0.html"
+    },
+    {
+      "entry_id": "952a654b9b853bd0",
+      "title": "Safe and Inclusive E‑Society: How Lithuania Is Bracing for AI‑Driven Cyber Fraud",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-02-16T11:55:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Scam/Fraud",
+      "summary_preview": "概要リトアニアの研究コンソーシアムが推進する「安全で包摂的なデジタル社会」構想では、AIを悪用したサイバー詐欺への備えが主要テーマとして取り上げられた。特に、生成AIによるディープフェイク詐欺や、音声・映像を用いた社会的信頼の攪乱が現実的脅威と認識されている。国家レベルでの教育・技術・政策の連携を通じ、個人・企業・行政の防御力を底上げする取り組みが進められ…",
+      "article_path": "articles/952a654b9b853bd0.html",
+      "original_url": "https://thehackernews.com/2026/02/safe-and-inclusive-esociety-how.html"
+    },
+    {
+      "entry_id": "347fb84934916130",
+      "title": "New ZeroDayRAT Mobile Spyware Enables Real-Time Surveillance and Data Theft",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-02-16T10:24:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要研究者が新たなモバイルスパイウェア「ZeroDayRAT」を確認した。これはTelegram上で販売されており、AndroidおよびiOS端末のリアルタイム監視や機密データ窃取を目的とする。開発者は販売・サポート・更新を一元的に提供しており、商用RAT市場の成熟を示す。感染経路は未確定だが、サイドローディングや脆弱アプリの悪用が想定される。企業端末やB…",
+      "article_path": "articles/347fb84934916130.html",
+      "original_url": "https://thehackernews.com/2026/02/new-zerodayrat-mobile-spyware-enables.html"
+    },
+    {
+      "entry_id": "cb334cacb264a86e",
+      "title": "New Chrome Zero-Day (CVE-2026-2441) Under Active Attack — Patch Released",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-02-16T06:38:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Zero-day",
+      "summary_preview": "概要Googleは、Chromeブラウザのゼロデイ脆弱性（CVE-2026-2441）に対処する緊急アップデートを公開した。これはCSSコンポーネントにおけるUse-After-Freeの欠陥で、すでに実際の攻撃で悪用されている。CVSSスコアは8.8（高）であり、攻撃者は特製のWebページを介して任意コード実行を狙う可能性がある。GoogleはWindo…",
+      "article_path": "articles/cb334cacb264a86e.html",
+      "original_url": "https://thehackernews.com/2026/02/new-chrome-zero-day-cve-2026-2441-under.html"
+    },
+    {
+      "entry_id": "aa6173b481b33f1b",
+      "title": "2026 64-Bits Malware Trend, (Mon, Feb 16th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-02-16T07:46:36+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Malware",
+      "summary_preview": "概要SANS ISCの分析では、64ビット環境が主流化した2026年時点でも32ビットマルウェアが依然として広く流通している実態が報告された。Windowsの互換性機構（WOW64）が依然有効であるため、攻撃者は32ビットコードを維持することでより多くのシステムを標的化できる。64ビット化による恩恵（ASLR強化、ドライバ署名制約など）はあるが、攻撃者は依…",
+      "article_path": "articles/aa6173b481b33f1b.html",
+      "original_url": "https://isc.sans.edu/diary/rss/32718"
+    },
+    {
+      "entry_id": "1a33d438127c8459",
+      "title": "ISC Stormcast For Monday, February 16th, 2026 https://isc.sans.edu/podcastdetail/9810, (Mon, Feb 16th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-02-16T02:00:02+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要SANS ISCの2月16日付Stormcastでは、直近の脆弱性動向や攻撃観測の短報がまとめられている。特に注目すべきは、公開サービスを狙うスキャン活動の増加と、最近修正された脆弱性へのPoC流通である。これらは既知脆弱性の再悪用フェーズに入りつつある兆候であり、パッチ適用済みかどうかの棚卸しが重要となる。また、ISCではクラウド構成ミスやAPIキー…",
+      "article_path": "articles/1a33d438127c8459.html",
+      "original_url": "https://isc.sans.edu/diary/rss/32716"
+    },
+    {
+      "entry_id": "e9d71e309734cc41",
+      "title": "AI-Native Networks White Paperの発行",
+      "source_name": "NICT NOTICE",
+      "category": "reporting",
+      "published_at": "2026-02-16T05:00:00+00:00",
+      "impact_level": "Low",
+      "threat_type": "Advisory",
+      "summary_preview": "概要NICTが「AI-Native Networks White Paper」を発行した。本資料は、AIをネットワーク制御・運用の中核に組み込む「AIネイティブ」な通信基盤の将来像を整理したもので、ネットワーク自律化・最適化・セキュリティ運用の高度化を含む。CSIRT視点では、AIが意思決定や制御経路に直接関与することで、誤学習やモデル汚染による運用リスク…",
+      "article_path": "articles/e9d71e309734cc41.html",
+      "original_url": "https://www2.nict.go.jp/aipromo/whitepaper/index.html"
+    },
+    {
+      "entry_id": "c50b22c7626c2364",
+      "title": "「いやいや」セキュリティをやっている世の全ての管理者に寄り添う ～ スリーシェイク手塚卓也の Securify 開発哲学",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-02-15T23:10:04+00:00",
+      "impact_level": "Low",
+      "threat_type": "Advisory",
+      "summary_preview": "概要本記事は、スリーシェイク社の手塚卓也氏によるセキュリティプラットフォーム「Securify」の開発思想を紹介している。焦点は、「いやいやセキュリティをやっている管理者」が現実的に運用できる仕組みをどう設計するかにある。技術的脆弱性や攻撃情報ではなく、組織運用・人材リソースの制約を前提としたセキュリティ実装の考え方に関する内容である。特に、セキュリティ担…",
+      "article_path": "articles/c50b22c7626c2364.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/02/16/54631.html"
+    },
+    {
+      "entry_id": "c4a6aeb8b5c392cf",
+      "title": "パッケージショップ.jp への不正アクセス、1,395名のカード情報が漏えい",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-02-15T23:05:10+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要通販サイト「パッケージショップ.jp」を運営する企業が、外部からの不正アクセスを受け、2024年7月〜2025年1月にかけて利用された1,395名分のクレジットカード情報が漏えいした可能性を公表した。攻撃はECサイトの決済処理部分を狙ったもので、第三者によるスキミング型の改ざんが行われたとみられる。調査はカード会社の指摘を契機に開始され、該当期間中にサ…",
+      "article_path": "articles/c4a6aeb8b5c392cf.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/02/16/54630.html"
+    },
+    {
+      "entry_id": "da9ceaf666848858",
+      "title": "PR TIMES で Microsoft365 関連ドメインへのプレスリリース配信の一部が送信失敗、ブラックリスト解除を申請",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-02-15T23:05:08+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Misconfiguration",
+      "summary_preview": "概要PR TIMES が発表した内容によると、同社のプレスリリース配信において Microsoft 365 関連ドメイン宛ての一部メールが送信失敗 する事象が発生した。原因は自社メール送信元 IP が Microsoft 側のブラックリストに登録 されたためであり、現在は解除申請を行っているという。攻撃や情報漏えいの兆候は確認されておらず、主に メール配信…",
+      "article_path": "articles/da9ceaf666848858.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/02/16/54629.html"
+    },
+    {
+      "entry_id": "5f9c96a3b050e47c",
+      "title": "スマレジ・アプリマーケット上の外部連携アプリへの不正アクセス、釜浅商店の会員情報が第三者に不正取得",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-02-15T23:05:06+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要クラウドPOS「スマレジ」のアプリマーケット上で提供されていた外部連携アプリに対し、不正アクセスが行われ、釜浅商店の会員情報が第三者に不正取得された。侵害対象はスマレジ本体ではなく、外部事業者が提供する連携アプリであり、API連携を通じて顧客データが流出した可能性がある。現時点で流出件数や攻撃手法の詳細は公表されていないが、OAuthトークンやAPIキ…",
+      "article_path": "articles/5f9c96a3b050e47c.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/02/16/54628.html"
+    },
+    {
+      "entry_id": "66b74dee27135243",
+      "title": "My SoftBank ログイン時に他人の情報が表示、プロキシーサーバのソフトウェアの不具合が原因",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-02-15T23:05:03+00:00",
+      "impact_level": "High",
+      "threat_type": "Misconfiguration",
+      "summary_preview": "概要2026年2月、My SoftBankへのログイン時に他人の契約情報が表示される事象が発生した。原因は、同社が利用するプロキシーサーバのソフトウェア不具合で、キャッシュ制御の誤動作によりセッション情報が誤って共有された可能性がある。影響範囲は限定的とされるが、個人情報（契約者名義、電話番号、料金情報など）が一時的に他人へ表示された点で、認証・セッション…",
+      "article_path": "articles/66b74dee27135243.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/02/16/54627.html"
+    },
+    {
+      "entry_id": "3ff15a01e35c4fc1",
+      "title": "統合セキュリティプラットフォーム「Securify」に新オプション「パスワード漏洩調査サービス」",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-02-15T23:00:12+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要国内の統合セキュリティプラットフォーム「Securify」に、新たにパスワード漏洩調査サービスが追加された。これは、既知の漏洩データベースやダークウェブ上のクレデンシャル情報を照合し、組織内アカウントの漏洩有無を検知するオプションである。技術的には脅威情報フィードの活用と自動照合基盤の強化により、従来の手動調査よりも迅速な検知を可能にしている。CSIR…",
+      "article_path": "articles/3ff15a01e35c4fc1.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/02/16/54625.html"
+    },
+    {
+      "entry_id": "dc66bd2c2930b388",
+      "title": "Cloudbase、「ソフトウェアコンポーネント機能」をリリース、SBOM 情報を直感的かつ俯瞰的に把握可能に",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-02-15T23:00:10+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要Cloudbaseが新たに提供を開始した「ソフトウェアコンポーネント機能」は、SBOM（Software Bill of Materials）情報を可視化・俯瞰的に把握できる機能である。これにより、組織が利用するソフトウェアやライブラリの構成要素を直感的に確認し、脆弱性管理やライセンスリスクの評価を効率化できる。特に、サプライチェーン全体での依存関係を…",
+      "article_path": "articles/dc66bd2c2930b388.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/02/16/54624.html"
+    },
+    {
+      "entry_id": "ce0791415b487947",
+      "title": "マイクロソフトが 2 月のセキュリティ情報公開、悪用の事実を確認済みの脆弱性が 6 件",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-02-15T23:00:07+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Microsoftは2026年2月の月例セキュリティ更新で73件の脆弱性を修正し、そのうち6件がすでに悪用確認済みと公表された。対象にはWindows、Office、Exchange Server、SQL Serverなど基盤系製品が含まれる。特にCVE-2026-XXXX（Windowsカーネル特権昇格）やCVE-2026-YYYY（Exchange…",
+      "article_path": "articles/ce0791415b487947.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/02/16/54623.html"
+    },
+    {
+      "entry_id": "7a80ba2a6ccd7c3a",
+      "title": "M-Audio 製 M-Track Duo HD インストーラに任意の DLL 読み込みの脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-02-15T23:00:04+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要M-Audio 製オーディオインターフェース「M-Track Duo HD」用の Windows インストーラに、任意の DLL 読み込みが可能となる脆弱性が報告された。攻撃者が細工した DLL を同一ディレクトリに配置することで、インストーラ実行時に任意コードが実行される可能性がある。脆弱性はローカル環境での DLL サーチパスの不備に起因し、管理者…",
+      "article_path": "articles/7a80ba2a6ccd7c3a.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/02/16/54622.html"
+    }
+  ]
+}
