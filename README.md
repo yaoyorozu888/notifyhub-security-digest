@@ -1,11 +1,19 @@
-# notifyhub-security-digest (ローカル実行版 / A案)
+# notifyhub-security-digest
 
-仕様: `SPEC_NOTIFYHUB_CSIRT_DAILY_REPORT.md`（添付仕様に準拠）
+サイバーセキュリティ関連の記事を日次で収集・要約し、Webページとメールで配信するためのツールです。
 
-本プロジェクトの公開サイトは https://www.notifyhub.site/ です。
-サイバーセキュリティに関する記事を日次で収集してわかりやすくまとめています。
+- 公開サイト: https://www.notifyhub.site/
+## 概要
 
-## セットアップ（Python 3.11）
+このプロジェクトは、ニュースソースから記事を集約し、読みやすい日次ダイジェストとして出力します。
+
+- Web公開用の静的ファイルを生成
+- 必要に応じて ACS Email で配信
+- OpenAI API キー設定時は AI 分析を利用（未設定時はプレースホルダで継続実行）
+
+## クイックスタート（ローカル実行）
+
+### 1) セットアップ（Python 3.11）
 
 ```powershell
 py -3.11 -m venv .venv
@@ -15,140 +23,132 @@ python -m pip install -U pip
 pip install ".[dev]"
 ```
 
-### Windowsでの注意（日本語パス + editable install）
-
-OneDrive等の日本語パス上で `pip install -e` を行うと、`.pth` のエンコーディング不一致で
-Python起動時に `UnicodeDecodeError: 'cp932'` が発生することがあります。
-
-その場合は以下のどちらかで回避できます。
-
-- 環境変数 `PYTHONUTF8=1` を設定してUTF-8モードで実行
-- 本リポジトリの `src` パスを指す `.pth` をcp932で書き直す（例: PowerShellで修正）
-
-## 実行
-
-```powershell
-notifyhub-digest run --out-dir .\out
-```
-
-### `.env`（ローカル用）
-
-本ツールは起動時にカレントディレクトリの `.env` を自動で読み込みます（存在する場合）。
-
-- すでにPowerShell等で同名の環境変数が設定されている場合、`.env` の値を反映したいときは新しいターミナルで実行するか、`DOTENV_OVERRIDE=1` を設定してください。
+### 2) `.env` を作成
 
 ```powershell
 Copy-Item .env.example .env
 ```
 
-`.env` に ACS / OpenAI の値を設定してから実行してください（`.env` は `.gitignore` 済み）。
+本ツールは起動時にカレントディレクトリの `.env` を自動で読み込みます（存在する場合）。
 
-## ACS Emailで送信（B案の先行実装）
+- すでに同名の環境変数が設定されている場合は、`DOTENV_OVERRIDE=1` を設定するか、新しいターミナルで実行してください。
+- `.env` は `.gitignore` 済みです。ACS / OpenAI の設定値を入力して利用してください。
 
-接続文字列で送信します（ローカル実行の最小構成）。
+### 3) 実行
 
-1) ACS Email依存を追加インストール
+```powershell
+notifyhub-digest run --out-dir .\out
+```
+
+### 4) 出力先
+
+`out/digest/YYYY-MM-DD/`
+
+- `index.html`
+- `manifest.json`
+- `articles/<entry_id>.html`
+
+### Windowsでの注意（日本語パス + editable install）
+
+OneDrive など日本語パス上で `pip install -e` を行うと、`.pth` のエンコーディング不一致により、
+Python 起動時に `UnicodeDecodeError: 'cp932'` が発生することがあります。
+
+回避方法:
+
+- 環境変数 `PYTHONUTF8=1` を設定して UTF-8 モードで実行
+- 本リポジトリの `src` パスを指す `.pth` を cp932 で書き直す（例: PowerShell で修正）
+
+## メール送信（ACS Email）
+
+接続文字列を使ってメール送信できます（ローカル実行の最小構成）。
+
+### 1) 依存を追加インストール
 
 ```powershell
 pip install ".[acs]"
 ```
 
-2) 環境変数を設定
+### 2) 環境変数を設定
 
-- 必須
-	- `ACS_EMAIL_CONNECTION_STRING`（ACS リソースの接続文字列）
-	- `ACS_EMAIL_SENDER`（検証済みドメインの MailFrom アドレス）
-	- `ACS_EMAIL_TO`（宛先。カンマ区切りで複数可）
-- 任意
-	- `ACS_EMAIL_SUBJECT_PREFIX`（件名プレフィックス）
-	- `DIGEST_BASE_URL`（Web版のベースURL。既定: `https://notifyhub.site/digest`）
+必須
 
-3) 送信を有効にして実行
+- `ACS_EMAIL_CONNECTION_STRING`（ACS リソースの接続文字列）
+- `ACS_EMAIL_SENDER`（検証済みドメインの MailFrom アドレス）
+- `ACS_EMAIL_TO`（宛先。カンマ区切りで複数指定可）
 
-```powershell
-notifyhub-digest run --out-dir .\out --send-email
-```
+任意
 
-### 実機確認（Succeeded確認 + 表示崩れ確認）
+- `ACS_EMAIL_SUBJECT_PREFIX`（件名プレフィックス）
+- `DIGEST_BASE_URL`（Web版ベースURL。既定: `https://notifyhub.site/digest`）
 
-1) 依存を入れる
+AI分析用（任意）
 
-```powershell
-pip install ".[acs]"
-```
+- `OPENAI_API_KEY`（未設定時は AI 分析をスキップ）
+- `OPENAI_MODEL`（例: `gpt-4o-mini`）
 
-2) 環境変数を設定（例: `.env.example` を参照）
-
-3) 送信を1回通す
+### 3) 送信を有効化して実行
 
 ```powershell
 notifyhub-digest run --out-dir .\out --send-email
 ```
-
-- ログに `ACS Email send result: status=Succeeded ...` が出ること
-- ACS 側（Emailの送信ログ）でも `Succeeded` になっていること
-- 受信したメールのレイアウトが崩れていないこと（Outlook/モバイル等）
 
 ### メールHTMLのローカルプレビュー
 
-送信前にHTMLだけ生成して、ブラウザで見た目確認できます。
+送信前に HTML だけ生成して見た目を確認できます。
 
 ```powershell
 notifyhub-digest email-preview --out-dir .\out
 ```
 
-出力先は `out/digest/YYYY-MM-DD/email_preview.html` です。
+出力先: `out/digest/YYYY-MM-DD/email_preview.html`
 
-### 環境変数
+### 実機確認ポイント
 
-- `OPENAI_API_KEY` : OpenAI APIキー（未設定の場合はAI分析をスキップしプレースホルダを出力）
-- `OPENAI_MODEL` : モデル名（例: `gpt-4o-mini`）
+- ログに `ACS Email send result: status=Succeeded ...` が出ること
+- ACS 側の送信ログでも `Succeeded` になること
+- 受信メールのレイアウトが崩れていないこと（Outlook / モバイルなど）
 
-## 出力
+## SWA + GitHub Actions（日次生成とデプロイ）
 
-`out/digest/YYYY-MM-DD/`
-- `index.html`
-- `manifest.json`
-- `articles/<entry_id>.html`
+GitHub Actions のスケジュール実行で日次生成し、`site/` 配下に生成物を蓄積して Azure Static Web Apps にデプロイします。
 
-## SWA + GitHub Actions（スケジュール生成→デプロイ）
-
-SWAでの公開が必須の前提で、GitHub Actionsのスケジュール実行で日次生成し、生成物を `site/` に蓄積してコミットしつつ、そのままSWAへデプロイします。
-
-- 日次生成 + デプロイ（スケジュール/手動）: [.github/workflows/digest-generate.yml](.github/workflows/digest-generate.yml)
-
-### Actionsログ出力（vars / secrets）
-
-- workflow実行中に vars は `name=value` でログ出力します。
-- secrets は値を出さず、参照している「シークレット名」だけをログ出力します。
+- ワークフロー: [.github/workflows/digest-generate.yml](.github/workflows/digest-generate.yml)
 
 ### 前提
 
-- リポジトリのデフォルトブランチが `main`
+- デフォルトブランチが `main`
 - Azure Static Web Apps リソースを作成済み
-- SWAのデプロイトークンを GitHub Secrets に登録済み
+- SWA デプロイトークンを GitHub Secrets に登録済み
 
-### GitHub Secrets（必須/推奨）
+### GitHub Secrets
 
 必須
-- `AZURE_STATIC_WEB_APPS_API_TOKEN_WONDERFUL_GROUND_0436BEE00` : SWAのデプロイトークン（workflow内で参照しているシークレット名）
 
-任意（Email送信をする場合）
+- `AZURE_STATIC_WEB_APPS_API_TOKEN` : SWAのデプロイトークン（workflow内で参照しているシークレット名）
+
+任意（メール送信時）
+
 - `ACS_EMAIL_CONNECTION_STRING`
 - `ACS_EMAIL_SENDER`
 - `ACS_EMAIL_TO`
-- `ACS_EMAIL_SUBJECT_PREFIX`（任意）
+- `ACS_EMAIL_SUBJECT_PREFIX`
 
-任意（AI分析を有効化する場合）
+任意（AI分析時）
+
 - `OPENAI_API_KEY`
 - `OPENAI_MODEL`
 
-### 生成物
+### Actionsログ出力（vars / secrets）
 
-- 公開物は `site/` 配下に生成され、SWAへアップロードされます
-- URL例: `https://notifyhub.site/digest/YYYY-MM-DD/`
+- `vars` は `name=value` 形式でログ出力
+- `secrets` は値を出力せず、参照しているシークレット名のみログ出力
+
+### 公開先
+
+- 生成物は `site/` 配下に出力され、SWA にアップロードされます
+- URL 例: `https://notifyhub.site/digest/YYYY-MM-DD/`
 
 ## セキュリティ
 
-- `summary_html` は許可タグのみ・属性禁止でサーバ側サニタイズします。
-- APIキー等の秘密情報は `.env` に保存せず、環境変数で渡してください。
+- `summary_html` は許可タグのみ・属性禁止でサーバー側サニタイズを実施
+- API キーなどの秘密情報はリポジトリにコミットしないでください（`.env` はローカル専用）
