@@ -1,0 +1,73 @@
+{
+  "date": "2026-02-22",
+  "window": {
+    "from": "2026-02-21T06:00:00+09:00",
+    "to": "2026-02-22T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 5
+  },
+  "generated_at_jst": "2026-02-22T06:27:21.218229+09:00",
+  "items": [
+    {
+      "entry_id": "c6b938f3780a2c7e",
+      "title": "AI-Assisted Threat Actor Compromises 600+ FortiGate Devices in 55 Countries",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-02-21T14:49:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要Amazon Threat Intelligenceの報告によると、ロシア語圏の金銭目的攻撃者が商用生成AIサービスを活用し、55か国で600台以上のFortiGateデバイスを侵害したとされる。活動期間は2026年1月11日〜2月18日で、既知のFortiGate脆弱性をAI支援で効率的に探索・悪用した可能性がある。AIは攻撃スクリプト生成や設定解析…",
+      "article_path": "articles/c6b938f3780a2c7e.html",
+      "original_url": "https://thehackernews.com/2026/02/ai-assisted-threat-actor-compromises.html"
+    },
+    {
+      "entry_id": "d11799ef8d5458c0",
+      "title": "Anthropic Launches Claude Code Security for AI-Powered Vulnerability Scanning",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-02-21T07:58:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要Anthropicが提供するAI開発支援ツール「Claude Code」に、新機能Claude Code Securityが追加された。これはコードベースを自動スキャンし、脆弱性の検出と修正案の提示を行う機能で、現在はEnterpriseおよびTeam向けの研究プレビュー段階にある。AIによるコード解析を通じて、開発段階でのセキュリティ欠陥の早期発見を…",
+      "article_path": "articles/d11799ef8d5458c0.html",
+      "original_url": "https://thehackernews.com/2026/02/anthropic-launches-claude-code-security.html"
+    },
+    {
+      "entry_id": "9a175fafe91dd990",
+      "title": "CISA Adds Two Actively Exploited Roundcube Flaws to KEV Catalog",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-02-21T07:21:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CISAは、Roundcube Webmailに存在する2件の脆弱性（CVE-2025-49113など）をKnown Exploited Vulnerabilities（KEV）カタログに追加した。これらは既に実際の攻撃で悪用されていることが確認されており、特にCVE-2025-49113（CVSS 9.9）は信頼されていないデータのデシリアライズを悪…",
+      "article_path": "articles/9a175fafe91dd990.html",
+      "original_url": "https://thehackernews.com/2026/02/cisa-adds-two-actively-exploited.html"
+    },
+    {
+      "entry_id": "d8dfa20e4e2bacb5",
+      "title": "EC-Council Expands AI Certification Portfolio to Strengthen U.S. AI Workforce Readiness and Security",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-02-21T04:30:00+00:00",
+      "impact_level": "Low",
+      "threat_type": "Advisory",
+      "summary_preview": "概要EC-Councilが、AI関連のセキュリティおよびガバナンス能力を強化するために新たな認定資格群「Enterprise AI Credential Suite」を発表した。背景には、世界で5.5兆ドル規模のAIリスクと、米国内で再教育を要する70万人の人材ギャップがある。新資格群はAIシステム導入に伴うセキュリティ・倫理・運用上の課題に対応し、既存の…",
+      "article_path": "articles/d8dfa20e4e2bacb5.html",
+      "original_url": "https://thehackernews.com/2026/02/ec-council-expands-ai-certification.html"
+    },
+    {
+      "entry_id": "5742ad0f2655e2c9",
+      "title": "Japanese-Language Phishing Emails, (Sat, Feb 21st)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-02-21T06:03:36+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Phishing",
+      "summary_preview": "概要SANS ISCが、日本語で作成されたフィッシングメールの観測事例を報告した。内容は国内利用者を狙ったもので、実在企業名や宅配業者を装う典型的な手口が確認されている。文面は自然な日本語で、過去の機械翻訳的な不自然さが減少しており、ローカライズ精度の向上が攻撃者側の成熟を示す。リンク先は正規ドメインを模倣したフィッシングサイトで、スマートフォン経由のアク…",
+      "article_path": "articles/5742ad0f2655e2c9.html",
+      "original_url": "https://isc.sans.edu/diary/rss/32734"
+    }
+  ]
+}
