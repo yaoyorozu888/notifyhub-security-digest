@@ -1,0 +1,109 @@
+{
+  "date": "2026-02-24",
+  "window": {
+    "from": "2026-02-23T06:00:00+09:00",
+    "to": "2026-02-24T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 8
+  },
+  "generated_at_jst": "2026-02-24T06:51:34.889870+09:00",
+  "items": [
+    {
+      "entry_id": "1d2d351dcd3bffb0",
+      "title": "APT28 Targeted European Entities Using Webhook-Based Macro Malware",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-02-23T19:41:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要ロシア関連の国家支援型攻撃者APT28が、西欧および中欧の特定組織を標的とした新たなキャンペーン「Operation MacroMaze」を展開していたと報告された。活動期間は2025年9月から2026年1月で、感染経路はマクロ有効Office文書を介したフィッシングメール。特徴的なのは、C2通信に通常のHTTPではなくWebhookサービス（正規クラ…",
+      "article_path": "articles/1d2d351dcd3bffb0.html",
+      "original_url": "https://thehackernews.com/2026/02/apt28-targeted-european-entities-using.html"
+    },
+    {
+      "entry_id": "ce613be335f49127",
+      "title": "Wormable XMRig Campaign Uses BYOVD Exploit and Time-Based Logic Bomb",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-02-23T17:59:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要研究者が報告した新たな暗号資産マイニング（XMRig）キャンペーンは、海賊版ソフトウェアを誘引に使い、感染端末へ多段階のドロッパーを展開する。特徴的なのは、BYOVD（Bring Your Own Vulnerable Driver）手法で脆弱なドライバを導入し、カーネル権限を奪取する点と、時間ベースのロジックボムで遅延実行・検知回避を図る点である。感…",
+      "article_path": "articles/ce613be335f49127.html",
+      "original_url": "https://thehackernews.com/2026/02/wormable-xmrig-campaign-uses-byovd.html"
+    },
+    {
+      "entry_id": "09d613b38a899d33",
+      "title": "⚡ Weekly Recap: Double-Tap Skimmers, PromptSpy AI, 30Tbps DDoS, Docker Malware & More",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-02-23T13:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Advisory",
+      "summary_preview": "概要The Hacker Newsによる週次まとめでは、クレジットカードスキマー「Double-Tap」、AIプロンプト窃取型マルウェア「PromptSpy」、30Tbps規模のDDoS攻撃、およびDocker環境を悪用するマルウェアが報告された。いずれも技術的には異なるが、共通して「既存の信頼関係や既定設定を突く」攻撃が目立つ。特にクラウド・コンテナ環境…",
+      "article_path": "articles/09d613b38a899d33.html",
+      "original_url": "https://thehackernews.com/2026/02/weekly-recap-double-tap-skimmers.html"
+    },
+    {
+      "entry_id": "b55e9b945b5ea80b",
+      "title": "How Exposed Endpoints Increase Risk Across LLM Infrastructure",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-02-23T11:58:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Misconfiguration",
+      "summary_preview": "概要組織が自前で大規模言語モデル（LLM）を運用する際、モデル本体よりもLLMを支える周辺インフラが攻撃面を拡大させている。特に、推論API・管理用エンドポイント・自動化スクリプトなどが社内外に露出し、認証不備やアクセス制御の緩さを突かれるケースが増加している。攻撃者はこれらを足掛かりに、クラウド認証情報の窃取や内部ネットワークへの横展開を狙う傾向がある。…",
+      "article_path": "articles/b55e9b945b5ea80b.html",
+      "original_url": "https://thehackernews.com/2026/02/how-exposed-endpoints-increase-risk.html"
+    },
+    {
+      "entry_id": "871c7a688a17c60d",
+      "title": "Malicious npm Packages Harvest Crypto Keys, CI Secrets, and API Tokens",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-02-23T10:20:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要研究者が、npmリポジトリ上で19種類以上の悪意あるパッケージを利用したサプライチェーン攻撃を確認した。攻撃は「SANDWORM_MODE」と名付けられ、過去のShai-Hulud系列の活動と類似している。これらのパッケージは、インストール時にスクリプトを実行し、暗号資産ウォレット鍵・CI環境のシークレット・APIトークンなどを窃取する。特にCI/CD…",
+      "article_path": "articles/871c7a688a17c60d.html",
+      "original_url": "https://thehackernews.com/2026/02/malicious-npm-packages-harvest-crypto.html"
+    },
+    {
+      "entry_id": "97fd261acaecb14e",
+      "title": "MuddyWater Targets MENA Organizations with GhostFetch, CHAR, and HTTP_VIP",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-02-23T07:25:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要イラン系APTグループMuddyWater（別名Earth Vetala, Mango Sandstorm）が、2026年初頭から中東・北アフリカ（MENA）地域の政府・通信・防衛関連組織を標的とした新キャンペーン「Operation Olalampo」を展開している。新たに確認されたマルウェアGhostFetch、CHAR、HTTP_VIPは、従来の…",
+      "article_path": "articles/97fd261acaecb14e.html",
+      "original_url": "https://thehackernews.com/2026/02/muddywater-targets-mena-organizations.html"
+    },
+    {
+      "entry_id": "7f8e9ce058fcd46a",
+      "title": "Another day, another malicious JPEG, (Mon, Feb 23rd)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-02-23T14:26:39+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要SANS ISCの観測によると、JPEG画像にマルウェアを埋め込む手法を利用した新たなスパムキャンペーンが確認された。過去数週間で複数の類似事例が報告されており、今回は顧客のメールプロキシを通過した添付ファイルから検出された。画像ファイルに見せかけたMSI形式の実行ファイルや、ステガノグラフィを用いたペイロード隠蔽が特徴である。攻撃者はユーザの視覚的信…",
+      "article_path": "articles/7f8e9ce058fcd46a.html",
+      "original_url": "https://isc.sans.edu/diary/rss/32738"
+    },
+    {
+      "entry_id": "40c12e7d687c543c",
+      "title": "ISC Stormcast For Monday, February 23rd, 2026 https://isc.sans.edu/podcastdetail/9820, (Mon, Feb 23rd)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-02-23T02:45:11+00:00",
+      "impact_level": "Low",
+      "threat_type": "Advisory",
+      "summary_preview": "概要SANS ISCのStormcast（2026年2月23日号）は、直近の脅威動向を要約した短報形式のポッドキャストであり、特定の脆弱性やゼロデイの新規報告は含まれていない。内容は主に週末に観測されたスキャン動向、マルウェア配布キャンペーンの変化、ならびに一般的なセキュリティ運用上の注意点に関するものである。CSIRTとしては即時の封じ込め対応を要する情…",
+      "article_path": "articles/40c12e7d687c543c.html",
+      "original_url": "https://isc.sans.edu/diary/rss/32736"
+    }
+  ]
+}
