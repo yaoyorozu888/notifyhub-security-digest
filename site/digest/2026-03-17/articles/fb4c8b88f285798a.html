@@ -1,0 +1,284 @@
+<!-- article.html テンプレート（生成用） (例: /digest/YYYY-MM-DD/articles/<entry_id>.html)
+     サーバ側（Function）で {{...}} を置換して出力してください。
+-->
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <title>Android 17 Blocks Non-Accessibility Apps from Accessibility API to Prevent Malware Abuse | NotifyHub Cybersecurity Daily Report</title>
+  <style>
+    :root{
+      --bg:#0b1020; --panel:#0f1730; --panel2:#121c3a;
+      --text:#e7ecff; --muted:#a9b4df; --line:#22305b;
+      --accent:#7aa2ff; --good:#4ade80; --warn:#fbbf24; --bad:#fb7185;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+      --radius:18px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      background: radial-gradient(1000px 700px at 20% -10%, rgba(122,162,255,.25), transparent 60%),
+                  radial-gradient(900px 600px at 90% 10%, rgba(251,113,133,.12), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+    }
+    a{color:inherit}
+    .wrap{max-width:960px; margin:0 auto; padding:22px 18px 44px}
+    .topbar{
+      display:flex; justify-content:space-between; align-items:center; gap:12px;
+      margin-bottom:12px;
+    }
+    .crumb a{
+      text-decoration:none;
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .crumb a:hover{border-color:rgba(122,162,255,.65)}
+    .chip{
+      display:inline-flex; align-items:center; gap:8px;
+      background:rgba(27,38,80,.75);
+      border:1px solid rgba(34,48,91,.9);
+      padding:7px 10px; border-radius:999px;
+      font-size:12px; color:var(--muted);
+      backdrop-filter: blur(10px);
+      white-space:nowrap;
+    }
+    .chip strong{color:var(--text); font-weight:650}
+    .panel{
+      background: linear-gradient(180deg, rgba(15,23,48,.9), rgba(15,23,48,.75));
+      border:1px solid rgba(34,48,91,.9);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .head{
+      padding:16px 16px 12px;
+      border-bottom:1px solid rgba(34,48,91,.9);
+      background:rgba(18,28,58,.55);
+    }
+    h1{
+      margin:0;
+      font-size:20px;
+      line-height:1.35;
+      letter-spacing:.15px;
+    }
+    .meta{
+      margin-top:10px;
+      display:flex; gap:10px; flex-wrap:wrap;
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.6;
+    }
+    .meta a{color:var(--muted)}
+    .meta a:hover{color:var(--accent)}
+    .tags{
+      margin-top:12px;
+      display:flex; gap:8px; flex-wrap:wrap;
+    }
+    .tag{
+      font-size:11px;
+      padding:6px 9px;
+      border-radius:999px;
+      background:rgba(27,38,80,.65);
+      border:1px solid rgba(34,48,91,.9);
+      color:var(--muted);
+      white-space:nowrap;
+    }
+    .tag.level-Critical{border-color:rgba(251,113,133,.65); color:#ffd0d7}
+    .tag.level-High{border-color:rgba(251,191,36,.65); color:#ffe9b0}
+    .tag.level-Medium{border-color:rgba(122,162,255,.65); color:#dbe6ff}
+    .tag.level-Low{border-color:rgba(74,222,128,.55); color:#d0ffe2}
+    .tag.level-Info{border-color:rgba(169,180,223,.55); color:rgba(169,180,223,.95)}
+    .body{
+      padding:16px;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+    }
+    .section{
+      background:rgba(18,28,58,.35);
+      border:1px solid rgba(34,48,91,.75);
+      border-radius:16px;
+      padding:14px;
+    }
+    .section h2{
+      margin:0 0 10px;
+      font-size:14px;
+      letter-spacing:.1px;
+    }
+    .ruleReason{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.65;
+      white-space:pre-wrap;
+    }
+
+    /* --- summary_html styles (OpenAI output uses h4/p/ul/li/strong/code/br) --- */
+    .summary h4{
+      margin:14px 0 8px;
+      font-size:13px;
+      letter-spacing:.1px;
+      padding-left:10px;
+      border-left:3px solid rgba(122,162,255,.65);
+      color: rgba(231,236,255,.95);
+    }
+    .summary p{margin:8px 0; color:rgba(231,236,255,.92); line-height:1.75}
+    .summary ul, .summary ol{margin:8px 0 8px 1.2em; padding:0}
+    .summary li{margin:6px 0; color:rgba(231,236,255,.92); line-height:1.7}
+    .summary strong{
+      color:var(--text);
+      font-weight:750;
+      padding:0 .2em;
+      border-radius:8px;
+      background: linear-gradient(transparent 60%, rgba(122,162,255,.22) 60%);
+    }
+    .summary code{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 8px;
+      background: rgba(11,16,32,.6);
+      border: 1px solid rgba(34,48,91,.85);
+      color: rgba(231,236,255,.95);
+      white-space: nowrap;
+    }
+
+    .terms{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:10px;
+    }
+    @media (max-width: 860px){
+      .terms{grid-template-columns: 1fr}
+    }
+    .termCard{
+      background:rgba(11,16,32,.45);
+      border:1px solid rgba(34,48,91,.85);
+      border-radius:14px;
+      padding:12px;
+      min-width:0;
+    }
+    .termCard .term{
+      font-weight:700;
+      font-size:13px;
+      margin:0 0 8px;
+      word-break:break-word;
+    }
+    .termCard .exp{
+      margin:0;
+      color:rgba(231,236,255,.9);
+      line-height:1.7;
+      font-size:12px;
+      white-space:pre-wrap;
+    }
+
+    .footer{
+      margin-top:14px;
+      color:rgba(169,180,223,.75);
+      font-size:12px;
+      line-height:1.7;
+      text-align:center;
+    }
+    .btnRow{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px}
+    .linkbtn{
+      text-decoration:none;
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .linkbtn:hover{border-color:rgba(122,162,255,.65)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="crumb">
+        <!-- ../index.html は通常 "../index.html" でOK -->
+        <a href="../index.html">← 日次トップへ戻る</a>
+      </div>
+      <div class="chip">entry_id <strong class="mono">fb4c8b88f285798a</strong></div>
+    </div>
+
+    <div class="panel">
+      <div class="head">
+        <h1>Android 17 Blocks Non-Accessibility Apps from Accessibility API to Prevent Malware Abuse</h1>
+
+        <div class="meta">
+          <span>🗞️ The Hacker News</span>
+          <span>🕒 2026-03-16T14:43:00+09:00</span>
+          <span>🔗 <a href="https://thehackernews.com/2026/03/android-17-blocks-non-accessibility.html" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
+        </div>
+
+        <div class="tags">
+          <span class="tag level-Medium">Impact: Medium</span>
+          <span class="tag">Advisory</span>
+        </div>
+
+        <div class="btnRow">
+          <a class="linkbtn" href="https://thehackernews.com/2026/03/android-17-blocks-non-accessibility.html" target="_blank" rel="noopener noreferrer">原文リンク</a>
+          <a class="linkbtn" href="https://www.notifyhub.site/digest/2026-03-17/">日次トップ</a>
+        </div>
+      </div>
+
+      <div class="body">
+        <div class="section">
+          <h2>Impact判定理由</h2>
+          <div class="ruleReason">既存の脆弱性ではなく、Googleによるセキュリティ強化施策。マルウェア悪用経路の封じ込めとして意義は高いが、即時の脅威ではない。情報源はメディア（The Hacker News）であり、一次情報ではないため緊急度を据え置き。運用面での互換性影響を考慮しMediumとした。</div>
+        </div>
+        <div class="section summary">
+          <h2>🧾 要約（ChatGPT）</h2>
+          <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
+          <div><h4>概要</h4><p>Googleは<strong>Android 17 Beta 2</strong>で、<strong>Accessibility API</strong>の悪用を防ぐ新しい制限を導入した。<strong>非アクセシビリティ目的のアプリ</strong>がこのAPIを利用できなくなり、<strong>マルウェアが権限を不正取得する経路</strong>を遮断する狙いがある。この変更は<strong>Android Advanced Protection Mode (AAPM)</strong>の一部として実装され、Android 16で導入された高保護モードをさらに強化するもの。過去にはバンキングトロジャンや情報窃取型マルウェアがAccessibility APIを利用し、ユーザー操作の模倣や権限昇格を行っていたため、Googleはプラットフォームレベルでの封じ込めに踏み切った。</p><h4>現場の学び</h4><ul><li>攻撃者は<strong>ユーザー補助機能を権限昇格の抜け道</strong>として悪用しており、アプリ審査やMDM制御だけでは防ぎきれない領域が存在する。</li><li>この変更は<strong>モバイル端末管理ポリシー</strong>や業務アプリの挙動にも影響しうるため、独自アプリがAccessibility APIを利用していないか早期確認が必要。</li><li>Googleの施策は「利用制限によるリスク低減」の典型例であり、CSIRTは同様の考え方を他のAPIやクラウド権限設定にも応用できる。</li></ul><h4>初動・継続対応の示唆</h4><ul><li>自組織で配布している業務アプリがAccessibility APIを利用している場合、<strong>Android 17以降で動作不能となるリスク</strong>を評価し、開発部門と調整する。</li><li>モバイル端末のセキュリティ監視では、<strong>Accessibility権限要求の異常増加</strong>を検知指標として活用する。</li><li>モバイル脅威情報の収集方針を見直し、AAPM対応デバイスと非対応デバイスでの<strong>脅威モデル差</strong>を明確化しておく。</li></ul></div>
+        </div>
+
+        <div class="section">
+          <h2>📌 キーワード解説</h2>
+          <div class="terms">
+            <div class="termCard">
+  <div class="term">Accessibility API（ユーザー補助API）</div>
+  <p class="exp">本来は障害者支援目的でUI操作を補助するAPI。悪用されると権限昇格や情報窃取に利用される。通常のアプリ権限とは異なる。</p>
+</div>
+<div class="termCard">
+  <div class="term">Android Advanced Protection Mode (AAPM)</div>
+  <p class="exp">Googleが提供する強化保護モード。未知アプリや権限要求を制限し、標準モードより攻撃面を狭める。</p>
+</div>
+<div class="termCard">
+  <div class="term">権限昇格（Privilege Escalation）</div>
+  <p class="exp">通常より高い権限を不正に得る行為。API悪用や脆弱性利用で発生し、持続化・情報窃取の起点となる。</p>
+</div>
+<div class="termCard">
+  <div class="term">モバイル端末管理（MDM）</div>
+  <p class="exp">企業が端末設定やアプリ配布を集中管理する仕組み。OS側の制限強化と競合する場合がある。</p>
+</div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>🕘 生成情報</h2>
+          <div class="ruleReason">
+対象期間：2026-03-16T06:00:00+09:00 〜 2026-03-17T06:00:00+09:00
+生成時刻：2026-03-17T06:46:09.710388+09:00
+免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      notifyhub.site
+    </div>
+  </div>
+</body>
+</html>
