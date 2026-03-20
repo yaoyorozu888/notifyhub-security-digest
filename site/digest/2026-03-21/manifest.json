@@ -1,0 +1,205 @@
+{
+  "date": "2026-03-21",
+  "window": {
+    "from": "2026-03-20T06:00:00+09:00",
+    "to": "2026-03-21T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 16
+  },
+  "generated_at_jst": "2026-03-21T06:36:58.489534+09:00",
+  "items": [
+    {
+      "entry_id": "06896157108e83df",
+      "title": "CVE-2025-32432 Craft CMS Code Injection Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-03-20T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CISAのKnown Exploited Vulnerabilities（KEV）カタログに、CVE-2025-32432としてCraft CMSにおけるコードインジェクション脆弱性が追加された。Craft CMSはPHP製のコンテンツ管理システムで、企業サイトや官公庁サイトなどでも利用例がある。CISAの掲載は、すでに実際の悪用が確認されたことを意味…",
+      "article_path": "articles/06896157108e83df.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "6c65be669135d32d",
+      "title": "CVE-2025-54068 Laravel Livewire Code Injection Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-03-20T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CISAのKnown Exploited Vulnerabilities（KEV）カタログに、CVE-2025-54068としてLaravel Livewireにおけるコードインジェクション脆弱性が追加された。LivewireはLaravelフレームワーク上で動的UIを実装するためのコンポーネントライブラリであり、開発者がBladeテンプレートとPHP…",
+      "article_path": "articles/6c65be669135d32d.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "b0aaf54b03e9710b",
+      "title": "CVE-2025-43510 Apple Multiple Products Improper Locking Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-03-20T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CISAのKnown Exploited Vulnerabilities（KEV）カタログに、CVE-2025-43510としてApple製品群（iOS、macOS、iPadOSなど）におけるImproper Locking（不適切なロック処理）の脆弱性が追加された。Appleは既に修正版を提供済みだが、CISAがKEVに掲載したことは実際の悪用が確認…",
+      "article_path": "articles/b0aaf54b03e9710b.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "f7d03d3a8689ce89",
+      "title": "CVE-2025-43520 Apple Multiple Products Classic Buffer Overflow Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-03-20T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CISAのKnown Exploited Vulnerabilities（KEV）カタログに、CVE-2025-43520としてApple製品群に影響するバッファオーバーフロー脆弱性が追加された。対象はmacOS、iOS、iPadOS、watchOSなど複数製品で、すでに悪用が確認済みとされる。攻撃者は細工したデータを処理させることで、任意コード実行ま…",
+      "article_path": "articles/f7d03d3a8689ce89.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "26b829c5208db113",
+      "title": "CVE-2025-31277 Apple Multiple Products Buffer Overflow Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-03-20T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Exploit",
+      "summary_preview": "概要CISAのKnown Exploited Vulnerabilities（KEV）カタログに、CVE-2025-31277 が追加された。これはAppleの複数製品（macOS、iOS、iPadOS、Safariなど）に影響するバッファオーバーフロー脆弱性で、既に悪用が確認されている。攻撃者は特定のコンテンツを処理させることで任意コード実行に至る可能性…",
+      "article_path": "articles/26b829c5208db113.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "4d7d571c33ffb421",
+      "title": "Trivy Security Scanner GitHub Actions Breached, 75 Tags Hijacked to Steal CI/CD Secrets",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-03-20T17:47:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要オープンソースの脆弱性スキャナ Trivy の GitHub Actions リポジトリが再び侵害され、75のタグが乗っ取られ、悪意あるコードが挿入された。改ざんされたアクション（aquasecurity/trivy-action および aquasecurity/setup-trivy）は、CI/CD 環境で利用される際に 認証情報やトークンを窃取 …",
+      "article_path": "articles/4d7d571c33ffb421.html",
+      "original_url": "https://thehackernews.com/2026/03/trivy-security-scanner-github-actions.html"
+    },
+    {
+      "entry_id": "cb1752a610963704",
+      "title": "Critical Langflow Flaw CVE-2026-33017 Triggers Attacks within 20 Hours of Disclosure",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-03-20T15:15:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Exploit",
+      "summary_preview": "概要オープンソースのAIアプリ構築ツールLangflowにおいて、認証欠如とコードインジェクションが組み合わさった重大な脆弱性CVE-2026-33017（CVSS 9.3）が公開からわずか20時間で実際の攻撃に悪用された。攻撃者は認証なしでPOST /api/v1エンドポイントにアクセスし、任意コード実行を行える。LangflowはAIワークフローをWe…",
+      "article_path": "articles/cb1752a610963704.html",
+      "original_url": "https://thehackernews.com/2026/03/critical-langflow-flaw-cve-2026-33017.html"
+    },
+    {
+      "entry_id": "d8faa797ad03c0f5",
+      "title": "Google Adds 24-Hour Wait for Unverified App Sideloading to Reduce Malware and Scams",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-03-20T10:57:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要Googleは、未検証開発者によるAndroidアプリのサイドローディングに対し、24時間の待機期間を導入する「Advanced Protection Flow」を発表した。目的は、マルウェアや詐欺アプリの即時インストールを防ぎ、ユーザがリスクを再考する時間を設けることにある。これは、昨年開始された開発者検証制度（Verified Developer …",
+      "article_path": "articles/d8faa797ad03c0f5.html",
+      "original_url": "https://thehackernews.com/2026/03/google-adds-24-hour-wait-for-unverified.html"
+    },
+    {
+      "entry_id": "92b8e4ab524895ae",
+      "title": "The Importance of Behavioral Analytics in AI-Enabled Cyber Attacks",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-03-20T10:00:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要AIの進化により、攻撃者が行動分析（Behavioral Analytics）を逆手に取る事例が増えている。特に、AI生成による個別最適化されたフィッシングや、通常ユーザの操作を模倣するマルウェアが登場し、従来のシグネチャベース検知やルール型UEBAでは検出が困難になっている。攻撃者はAIを用いて正規ユーザの行動パターンを学習し、異常検知の閾値を回避す…",
+      "article_path": "articles/92b8e4ab524895ae.html",
+      "original_url": "https://thehackernews.com/2026/03/the-importance-of-behavioral-analytics.html"
+    },
+    {
+      "entry_id": "45e0ffc31a05d03f",
+      "title": "Magento PolyShell Flaw Enables Unauthenticated Uploads, RCE and Account Takeover",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-03-20T09:30:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Sansecは、MagentoのREST APIに存在する重大な脆弱性「PolyShell」を報告した。この欠陥は認証なしで任意ファイルをアップロードできる問題で、攻撃者は画像ファイルに偽装したコードを送信し、リモートコード実行（RCE）やアカウント乗っ取りを実現できる。報告時点では悪用の証拠はないが、攻撃手法が単純で自動化しやすいことから、今後の悪用…",
+      "article_path": "articles/45e0ffc31a05d03f.html",
+      "original_url": "https://thehackernews.com/2026/03/magento-polyshell-flaw-enables.html"
+    },
+    {
+      "entry_id": "5d79c2952a9a4cc4",
+      "title": "DoJ Disrupts 3 Million-Device IoT Botnets Behind Record 31.4 Tbps Global DDoS Attacks",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-03-20T06:25:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Botnet",
+      "summary_preview": "概要米国司法省（DoJ）は、約300万台のIoT機器を感染させていた複数のボットネット（AISURU、Kimwolf、JackSkid、Mossadなど）のC2インフラを摘発・無力化したと発表した。これらは過去に31.4Tbps規模のDDoS攻撃を引き起こしており、史上最大級のトラフィック量とされる。カナダ・ドイツ当局も協力し、運営者の特定・拘束を進めてい…",
+      "article_path": "articles/5d79c2952a9a4cc4.html",
+      "original_url": "https://thehackernews.com/2026/03/doj-disrupts-3-million-device-iot.html"
+    },
+    {
+      "entry_id": "2fd23ac5b19092f7",
+      "title": "Apple Warns Older iPhones Vulnerable to Coruna, DarkSword Exploit Kit Attacks",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-03-20T05:16:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要Appleは、旧バージョンのiOSを実行しているiPhoneが、CorunaおよびDarkSwordと呼ばれるエクスプロイトキットによるWeb経由攻撃の標的となっていると警告した。これらの攻撃は悪意あるWebコンテンツを介して旧iOSの脆弱性を突き、ユーザデータの窃取やデバイス乗っ取りを引き起こす。攻撃はすでに観測されており、Appleは最新iOSへの…",
+      "article_path": "articles/2fd23ac5b19092f7.html",
+      "original_url": "https://thehackernews.com/2026/03/apple-warns-older-iphones-vulnerable-to.html"
+    },
+    {
+      "entry_id": "ff36551082364241",
+      "title": "GSocket Backdoor Delivered Through Bash Script, (Fri, Mar 20th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-03-20T08:40:15+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要SANS ISCが、Bashスクリプト経由でGSocketバックドアを設置する事例を報告した。スクリプトは感染端末にGSocketを導入し、外部と双方向通信を確立する。配布経路は不明だが、手動実行型の初期侵入や、既存侵害後の持続化手段として利用された可能性がある。GSocketは通常のネットワーク制御を迂回し、ファイアウォール越しでもC2通信を成立させ…",
+      "article_path": "articles/ff36551082364241.html",
+      "original_url": "https://isc.sans.edu/diary/rss/32816"
+    },
+    {
+      "entry_id": "5597196a6fc36eff",
+      "title": "ISC Stormcast For Friday, March 20th, 2026 https://isc.sans.edu/podcastdetail/9858, (Fri, Mar 20th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-03-20T02:00:02+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要SANS ISCの3月20日配信回では、最近の脆弱性悪用動向と観測データを踏まえ、公開サービスへのスキャン増加や、古いVPN機器への攻撃継続が報告された。特に、既知CVEを狙う自動化攻撃が依然として多く、パッチ未適用機器が踏み台化するリスクが強調された。また、クラウド環境での認証情報漏えいからの侵入事例にも触れられ、構成ミスや権限過大設定が攻撃者の初期…",
+      "article_path": "articles/5597196a6fc36eff.html",
+      "original_url": "https://isc.sans.edu/diary/rss/32814"
+    },
+    {
+      "entry_id": "0cf1ae16d0397c1a",
+      "title": "Meet Your Incident Responders",
+      "source_name": "Cisco Security Blog",
+      "category": "reporting",
+      "published_at": "2026-03-20T12:00:00+00:00",
+      "impact_level": "Low",
+      "threat_type": "Advisory",
+      "summary_preview": "概要Cisco Security Blogの記事「Meet Your Incident Responders」は、同社のインシデントレスポンス（IR）チームの役割や対応プロセスを紹介する内容であり、特定の脆弱性や攻撃事例の速報ではない。主題は「製品だけでは防げない攻撃に対し、人による対応力が重要」というメッセージで、Cisco Talos IRチームの実際…",
+      "article_path": "articles/0cf1ae16d0397c1a.html",
+      "original_url": "https://blogs.cisco.com/security/meet-your-incident-responders/"
+    },
+    {
+      "entry_id": "959030ebfe3e3337",
+      "title": "Identity is the Battleground",
+      "source_name": "Cisco Security Blog",
+      "category": "reporting",
+      "published_at": "2026-03-20T12:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Advisory",
+      "summary_preview": "概要Cisco Security Blogが「Identity is the Battleground」と題し、アイデンティティを中心とした攻撃面の拡大を論じている。記事はVoidLinkキャンペーンの振り返りを踏まえ、クラウド・SaaS・ハイブリッド環境での認証情報の奪取と悪用が主要な侵入経路となっている現状を指摘する。特に、攻撃者が従来の脆弱性攻撃から…",
+      "article_path": "articles/959030ebfe3e3337.html",
+      "original_url": "https://blogs.cisco.com/security/identity-is-the-battleground/"
+    }
+  ]
+}
