@@ -177,6 +177,10 @@ def _redirect_html(*, title: str, href: str) -> str:
             '  <meta charset="utf-8" />',
             '  <meta name="viewport" content="width=device-width,initial-scale=1" />',
             "  <meta name=\"robots\" content=\"noindex,nofollow\" />",
+            '  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png" />',
+            '  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png" />',
+            '  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" />',
+            '  <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/favicon-192.png" />',
             f"  <title>{safe_title}</title>",
             f'  <meta http-equiv="refresh" content="0; url={safe_href}" />',
             "  <style>",
@@ -210,7 +214,7 @@ def write_digest_landing_pages(out_dir: Path, *, day: str) -> None:
     # Root landing -> /digest/<yyyy>/<mm>/<dd>/
     out_dir.mkdir(parents=True, exist_ok=True)
     (out_dir / "index.html").write_text(
-        _redirect_html(title="CSIRT 日次レポート", href=f"./digest/{digest_url_path}/"), encoding="utf-8"
+        _redirect_html(title="NotifyHub Cybersecurity Daily Report", href=f"./digest/{digest_url_path}/"), encoding="utf-8"
     )
 
     # /digest/ landing -> /digest/<yyyy>/<mm>/<dd>/
@@ -219,7 +223,7 @@ def write_digest_landing_pages(out_dir: Path, *, day: str) -> None:
         raise ValueError("Invalid out_dir")
     digest_root.mkdir(parents=True, exist_ok=True)
     (digest_root / "index.html").write_text(
-        _redirect_html(title="CSIRT 日次レポート", href=f"./{digest_url_path}/"), encoding="utf-8"
+        _redirect_html(title="NotifyHub Cybersecurity Daily Report", href=f"./{digest_url_path}/"), encoding="utf-8"
     )
 
     # Stable permalink: /digest/latest/ -> /digest/<yyyy>/<mm>/<dd>/
@@ -228,7 +232,7 @@ def write_digest_landing_pages(out_dir: Path, *, day: str) -> None:
         raise ValueError("Invalid out_dir")
     latest_dir.mkdir(parents=True, exist_ok=True)
     (latest_dir / "index.html").write_text(
-        _redirect_html(title="CSIRT 日次レポート", href=f"../{digest_url_path}/"), encoding="utf-8"
+        _redirect_html(title="NotifyHub Cybersecurity Daily Report", href=f"../{digest_url_path}/"), encoding="utf-8"
     )
 
 
@@ -242,6 +246,10 @@ def _calendar_html(*, default_day: str) -> str:
             '  <meta charset="utf-8" />',
             '  <meta name="viewport" content="width=device-width,initial-scale=1" />',
             '  <meta name="robots" content="noindex,nofollow" />',
+            '  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png" />',
+            '  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png" />',
+            '  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" />',
+            '  <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/favicon-192.png" />',
             "  <title>NotifyHub Calendar</title>",
             "  <style>",
             "    :root{color-scheme:dark}",

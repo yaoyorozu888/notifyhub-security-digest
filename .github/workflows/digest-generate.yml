@@ -53,11 +53,14 @@ jobs:
           now = datetime.now(jst)
           run_at = now.replace(hour=6, minute=0, second=0, microsecond=0)
           day = run_at.date().isoformat()
+            day_path = day.replace('-', '/')
           print(f"run_at={run_at.isoformat()}")
           print(f"day={day}")
+            print(f"day_path={day_path}")
           with open("runat.env", "w", encoding="utf-8") as f:
               f.write(f"RUN_AT={run_at.isoformat()}\n")
               f.write(f"DAY={day}\n")
+              f.write(f"DAY_PATH={day_path}\n")
           PY
 
           cat runat.env >> $GITHUB_OUTPUT
@@ -172,7 +175,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: digest-${{ steps.runat.outputs.DAY }}
-          path: site/digest/${{ steps.runat.outputs.DAY }}/
+          path: site/digest/${{ steps.runat.outputs.DAY_PATH }}/
 
       - name: Commit & push generated site
         run: |
@@ -186,7 +189,7 @@ jobs:
             site/index.html \
             site/digest/index.html \
             site/digest/latest/index.html \
-            site/digest/"$DAY" || true
+            site/digest/"$DAY_PATH" || true
 
           if git diff --cached --quiet; then
             echo "No changes to commit"
