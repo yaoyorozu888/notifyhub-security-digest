@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/favicon-192.png" />
+  <title>NotifyHub Calendar</title>
+  <style>
+    :root{color-scheme:dark}
+    body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI","Noto Sans JP",sans-serif;background:#0b1020;color:#e7ecff}
+    .wrap{max-width:940px;margin:0 auto;padding:28px 18px 36px}
+    .panel{border:1px solid #22305b;background:#0f1730;border-radius:18px;padding:22px}
+    h1{margin:0 0 8px;font-size:22px}
+    p{margin:0;color:#a9b4df;line-height:1.6}
+    .row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:18px}
+    input[type=date]{background:#0b1020;color:#e7ecff;border:1px solid #22305b;border-radius:12px;padding:10px 12px}
+    button,a{display:inline-flex;align-items:center;justify-content:center;padding:9px 12px;border-radius:12px;border:1px solid #22305b;background:#121c3a;color:#e7ecff;text-decoration:none}
+    button:hover,a:hover{border-color:#7aa2ff}
+    .tiny{margin-top:14px;font-size:12px;color:#a9b4df}
+    .grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:16px}
+    .card{border:1px solid #22305b;background:#121c3a;border-radius:14px;padding:14px}
+    .card h2{margin:0 0 8px;font-size:15px}
+    .path{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:#e7ecff;background:#0b1020;border:1px solid #22305b;border-radius:10px;padding:8px 10px;font-size:12px;word-break:break-all}
+    .hero{margin-top:8px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="panel">
+      <h1>📅 NotifyHub Calendar</h1>
+      <p class="hero">日付を選択して、対象日のセキュリティダイジェストへ移動できます。</p>
+      <div class="row">
+        <input id="day" type="date" value="2026-03-23" />
+        <button id="go" type="button">この日を開く</button>
+        <a href="/digest/latest/">最新を開く</a>
+      </div>
+      <div class="tiny" id="msg"></div>
+      <div class="grid">
+        <div class="card">
+          <h2>URL形式</h2>
+          <p class="tiny" style="margin:0 0 8px;">日次ページは以下の構造で公開されます。</p>
+          <div class="path">/digest/YYYY/MM/DD/</div>
+          <p class="tiny" style="margin-top:10px;">例（既定日）</p>
+          <div class="path">/digest/2026/03/23/</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const input = document.getElementById('day');
+    const msg = document.getElementById('msg');
+    const go = () => {
+      const v = input.value;
+      if(!v){ msg.textContent = '日付を選択してください。'; return; }
+      const [y,m,d] = v.split('-');
+      if(!y || !m || !d){ msg.textContent = '日付形式が不正です。'; return; }
+      location.href = `/digest/${y}/${m}/${d}/`;
+    };
+    document.getElementById('go').addEventListener('click', go);
+    input.addEventListener('keydown', (e) => { if(e.key === 'Enter') go(); });
+  </script>
+</body>
+</html>

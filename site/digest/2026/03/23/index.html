@@ -1,10 +1,14 @@
-<!-- index.html  (例: /digest/YYYY-MM-DD/index.html) -->
+<!-- index.html  (例: /digest/YYYY/MM/DD/index.html) -->
 <!doctype html>
 <html lang="ja">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="robots" content="noindex,nofollow" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/favicon-192.png" />
   <title>NotifyHub Cybersecurity Daily Report</title>
   <style>
     :root{
@@ -62,6 +66,7 @@
       backdrop-filter: blur(10px);
     }
     .chip strong{color:var(--text); font-weight:650}
+    a.chip{text-decoration:none}
     .panel{
       background: linear-gradient(180deg, rgba(15,23,48,.9), rgba(15,23,48,.75));
       border:1px solid rgba(34,48,91,.9);
@@ -281,6 +286,7 @@
       </div>
       <div class="metaRow headerMeta">
         <span class="chip">ソース：<strong class="mono">manifest.json</strong></span>
+        <a class="chip" href="/calendar/">📅 カレンダー</a>
       </div>
     </header>
 
