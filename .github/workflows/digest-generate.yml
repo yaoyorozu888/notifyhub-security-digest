@@ -53,10 +53,10 @@ jobs:
           now = datetime.now(jst)
           run_at = now.replace(hour=6, minute=0, second=0, microsecond=0)
           day = run_at.date().isoformat()
-            day_path = day.replace('-', '/')
+          day_path = day.replace('-', '/')
           print(f"run_at={run_at.isoformat()}")
           print(f"day={day}")
-            print(f"day_path={day_path}")
+          print(f"day_path={day_path}")
           with open("runat.env", "w", encoding="utf-8") as f:
               f.write(f"RUN_AT={run_at.isoformat()}\n")
               f.write(f"DAY={day}\n")
