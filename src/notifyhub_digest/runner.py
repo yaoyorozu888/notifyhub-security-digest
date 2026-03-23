@@ -20,8 +20,10 @@ from notifyhub_digest.acs_email import (
 from notifyhub_digest.models import AnalysisResult, FeedItem
 from notifyhub_digest.openai_client import analyze_item, load_openai_config
 from notifyhub_digest.render import (
+    compute_digest_url_path,
     compute_digest_paths,
     write_article_html,
+    write_calendar_page,
     write_digest_landing_pages,
     write_index_html,
     write_manifest,
@@ -134,7 +136,7 @@ def build_digest_outputs(
     paths.articles_dir.mkdir(parents=True, exist_ok=True)
 
     digest_base_url = normalize_digest_base_url(os.getenv("DIGEST_BASE_URL", "https://notifyhub.site/digest"))
-    digest_root_url = f"{digest_base_url}/{day}/"
+    digest_root_url = f"{digest_base_url}/{compute_digest_url_path(day)}/"
 
     template_dir = Path(__file__).resolve().parent / "templates"
     index_tpl = template_dir / "index.html"
@@ -167,6 +169,7 @@ def build_digest_outputs(
 
     # landing pages (/, /digest/, /digest/latest/)
     write_digest_landing_pages(out_dir, day=day)
+    write_calendar_page(out_dir, default_day=day)
 
     return BuiltDigest(
         day=day,

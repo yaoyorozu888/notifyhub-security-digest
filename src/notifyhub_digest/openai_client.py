@@ -21,7 +21,7 @@ class OpenAIConfig:
     api_key: str
     model: str
     base_url: str = "https://api.openai.com/v1"
-    max_tokens: int = 700
+    max_tokens: int = 900
     temperature: float = 0.4
 
 
@@ -122,19 +122,26 @@ def _analysis_schema_hint() -> str:
         "- 属性（class/id/style等）は付けない\n"
         "- 以下の構成を厳守:\n"
         "  <h4>概要</h4><p>...</p>\n"
-        "  <h4>現場の学び</h4><ul><li>...</li></ul>\n"
-        "  <h4>初動・継続対応の示唆</h4><ul><li>...</li></ul>\n"
+        "  <h4>判断ポイント</h4><ul><li>...</li></ul>\n"
+        "  <h4>対応アクション（今すぐ・継続）</h4><ul><li>...</li></ul>\n"
         "\n"
-        "現場の学び / 初動・継続対応の示唆:\n"
+        "概要:\n"
+        "- 4〜6文で記述し、記事理解のための文脈を厚めに書く\n"
+        "- 最低でも以下を含める: 何が起きたか / どう悪用されるか / どこまで影響が広がるか / 未確認事項\n"
+        "- 単なる出来事の言い換えではなく、判断に必要な背景を補う\n"
+        "\n"
+        "判断ポイント / 対応アクション（今すぐ・継続）:\n"
         "- それぞれ最大3項目まで\n"
-        "- 抽象論ではなく、判断・行動に直結する内容のみ\n"
+        "- 判断ポイント: 根拠・前提条件・優先度の理由のみ（具体作業は書かない）\n"
+        "- 対応アクション: 実施タスクのみ（抽象論は書かない）\n"
+        "- 対応アクションの各項目は先頭に [今すぐ] または [継続] を付ける\n"
         "\n"
         "強調ルール:\n"
         "- 意思決定に影響する語句のみ <strong>…</strong> で強調\n"
         "- 最大8箇所、短いフレーズ単位\n"
         "\n"
         "文字量:\n"
-        "- summary_html 全体で800〜1000文字程度\n"
+        "- summary_html 全体で900〜1200文字程度\n"
         "\n"
         "technical_terms 制約:\n"
         "- 最大4件\n"
@@ -172,9 +179,9 @@ def load_openai_config() -> OpenAIConfig | None:
     model = (os.getenv("OPENAI_MODEL") or "").strip() or "gpt-4o-mini"
     base_url = (os.getenv("OPENAI_BASE_URL") or "").strip() or "https://api.openai.com/v1"
     try:
-        max_tokens = int(os.getenv("OPENAI_MAX_TOKENS", "700"))
+        max_tokens = int(os.getenv("OPENAI_MAX_TOKENS", "900"))
     except Exception:
-        max_tokens = 700
+        max_tokens = 900
     try:
         temperature = float(os.getenv("OPENAI_TEMPERATURE", "0.4"))
     except Exception:

@@ -54,7 +54,7 @@ def test_runner_marks_read_only_when_email_succeeds(tmp_path: Path, monkeypatch)
     )
 
     assert send_calls == [True]
-    assert (tmp_path / "out" / "digest" / "2026-01-12" / "manifest.json").exists()
+    assert (tmp_path / "out" / "digest" / "2026" / "01" / "12" / "manifest.json").exists()
 
 
 def test_runner_does_not_mark_read_when_email_fails(tmp_path: Path, monkeypatch):
@@ -68,4 +68,4 @@ def test_runner_does_not_mark_read_when_email_fails(tmp_path: Path, monkeypatch)
     )
 
     assert send_calls == [True]
-    assert (tmp_path / "out" / "digest" / "2026-01-12" / "manifest.json").exists()
+    assert (tmp_path / "out" / "digest" / "2026" / "01" / "12" / "manifest.json").exists()

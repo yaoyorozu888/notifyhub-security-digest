@@ -56,7 +56,7 @@ notifyhub-digest run --out-dir .\out
 
 ### 4) 出力先
 
-`out/digest/YYYY-MM-DD/`
+`out/digest/YYYY/MM/DD/`
 
 - `index.html`
 - `manifest.json`
@@ -114,7 +114,7 @@ notifyhub-digest run --out-dir .\out --send-email
 notifyhub-digest email-preview --out-dir .\out
 ```
 
-出力先: `out/digest/YYYY-MM-DD/email_preview.html`
+出力先: `out/digest/YYYY/MM/DD/email_preview.html`
 
 ### 実機確認ポイント
 
@@ -160,7 +160,8 @@ GitHub Actions のスケジュール実行で日次生成し、`site/` 配下に
 ### 公開先
 
 - 生成物は `site/` 配下に出力され、SWA にアップロードされます
-- URL 例: `https://notifyhub.site/digest/YYYY-MM-DD/`
+- URL 例: `https://notifyhub.site/digest/YYYY/MM/DD/`
+- カレンダー: `https://notifyhub.site/calendar/`
 
 ## セキュリティ
 
