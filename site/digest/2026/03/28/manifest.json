@@ -1,0 +1,253 @@
+{
+  "date": "2026-03-28",
+  "window": {
+    "from": "2026-03-27T06:00:00+09:00",
+    "to": "2026-03-28T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 20
+  },
+  "generated_at_jst": "2026-03-28T06:40:42.842251+09:00",
+  "items": [
+    {
+      "entry_id": "1a8ac58477d7e852",
+      "title": "CVE-2025-53521 F5 BIG-IP Unspecified Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-03-27T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CISAのKnown Exploited Vulnerabilities（KEV）カタログに、CVE-2025-53521としてF5 BIG-IP製品の未詳細（Unspecified）脆弱性が追加された。現時点でF5からの公式技術情報は限定的だが、KEV掲載は実際の悪用が確認済みであることを意味する。脆弱性の内容は未公開ながら、過去のBIG-IP関連事…",
+      "article_path": "articles/1a8ac58477d7e852.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "93a2a50a853a2574",
+      "title": "Apple Sends Lock Screen Alerts to Outdated iPhones Over Active Web-Based Exploits",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-03-27T17:22:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要Appleは、旧バージョンのiOS/iPadOSを実行中の端末に対し、ロック画面上で直接脆弱性悪用の警告通知を送信していることが報告された。これは、Web経由の攻撃が実際に観測されている状況を受けた対応であり、ユーザに即時アップデートを促すものとみられる。攻撃はSafariやWebKitを介して行われ、特定のサイト閲覧のみでコード実行が成立する可能性が…",
+      "article_path": "articles/93a2a50a853a2574.html",
+      "original_url": "https://thehackernews.com/2026/03/apple-sends-lock-screen-alerts-to.html"
+    },
+    {
+      "entry_id": "e4755d7af9cd52b4",
+      "title": "TeamPCP Pushes Malicious Telnyx Versions to PyPI, Hides Stealer in WAV Files",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-03-27T16:53:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要オープンソースのPythonパッケージリポジトリPyPIで、TeamPCPと呼ばれる攻撃者がtelnyxパッケージの悪意あるバージョン（4.87.1および4.87.2）を公開したことが確認された。これらのバージョンは、.WAVファイル内に隠された情報窃取機能を含み、実行時に認証情報などの機密データを外部へ送信する。TeamPCPは以前にもTrivyやK…",
+      "article_path": "articles/e4755d7af9cd52b4.html",
+      "original_url": "https://thehackernews.com/2026/03/teampcp-pushes-malicious-telnyx.html"
+    },
+    {
+      "entry_id": "650663782a732801",
+      "title": "Open VSX Bug Let Malicious VS Code Extensions Bypass Pre-Publish Security Checks",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-03-27T13:57:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要Open VSX Registry の 拡張機能公開前スキャン処理に存在した不具合が修正された。問題は、スキャン結果を判定するブール値の実装ミスにより、スキャナが実行されなかった場合でも「安全」と誤認され、悪意ある VS Code 拡張機能が審査を通過して公開される可能性があった点にある。これにより、利用者が信頼してインストールした拡張経由でコード実行…",
+      "article_path": "articles/650663782a732801.html",
+      "original_url": "https://thehackernews.com/2026/03/open-vsx-bug-let-malicious-vs-code.html"
+    },
+    {
+      "entry_id": "7ff24b01bf316866",
+      "title": "AitM Phishing Targets TikTok Business Accounts Using Cloudflare Turnstile Evasion",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-03-27T12:03:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Phishing",
+      "summary_preview": "概要Push Securityの報告によると、攻撃者がAdversary-in-the-Middle（AitM）型フィッシングを用いて、TikTok for Businessアカウントの乗っ取りを狙う新たなキャンペーンが観測された。攻撃者はCloudflareのTurnstile認証を回避する仕組みを組み込み、正規のログインページを中継してセッションCoo…",
+      "article_path": "articles/7ff24b01bf316866.html",
+      "original_url": "https://thehackernews.com/2026/03/aitm-phishing-targets-tiktok-business.html"
+    },
+    {
+      "entry_id": "c5dcc9f87fef4c03",
+      "title": "We Are At War",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-03-27T11:00:00+00:00",
+      "impact_level": "Low",
+      "threat_type": "Advisory",
+      "summary_preview": "概要本記事は特定の脆弱性や攻撃事例ではなく、地政学的緊張とサイバー作戦の連動を論じた論考である。国家間対立がサイバー空間に波及し、技術スタックやクラウド基盤そのものが政治的選択となりつつある点を指摘している。特定の攻撃キャンペーンやマルウェア名は示されておらず、実務的には脅威インテリジェンスの背景理解に位置づけられる内容である。したがって、直接的な脆弱性対…",
+      "article_path": "articles/c5dcc9f87fef4c03.html",
+      "original_url": "https://thehackernews.com/2026/03/we-are-at-war.html"
+    },
+    {
+      "entry_id": "ae2c97570991ff5e",
+      "title": "Bearlyfy Hits Russian Firms with Custom GenieLocker Ransomware",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-03-27T10:04:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要2025年初頭から活動が確認されている親ウクライナ系グループ「Bearlyfy（別名Labubu）」が、ロシア企業70社以上を標的に攻撃を実施していると報告された。最新の攻撃では、独自開発のWindows向けランサムウェア「GenieLocker」が使用されており、標的環境に合わせたカスタマイズが行われている。攻撃は政治的動機を背景にしているが、ツール…",
+      "article_path": "articles/ae2c97570991ff5e.html",
+      "original_url": "https://thehackernews.com/2026/03/bearlyfy-hits-70-russian-firms-with.html"
+    },
+    {
+      "entry_id": "cb22a195f0fe5e19",
+      "title": "LangChain, LangGraph Flaws Expose Files, Secrets, Databases in Widely Used AI Frameworks",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-03-27T08:07:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要オープンソースのLLMアプリケーション開発フレームワークであるLangChainおよびLangGraphに、3件の脆弱性が報告された。これらの欠陥は、アプリケーションが外部入力を通じてファイルシステムや環境変数、会話履歴などの機密情報へアクセスできる構造を持つことに起因する。悪用されると、AIアプリケーションをホストするサーバ上のシークレットキーやデー…",
+      "article_path": "articles/cb22a195f0fe5e19.html",
+      "original_url": "https://thehackernews.com/2026/03/langchain-langgraph-flaws-expose-files.html"
+    },
+    {
+      "entry_id": "65e2b604977a52ef",
+      "title": "TeamPCP Supply Chain Campaign: Update 002 - Telnyx PyPI Compromise, Vect Ransomware Mass Affiliate Program, and First Named Victim Claim, (Fri, Mar 27th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-03-27T14:34:44+00:00",
+      "impact_level": "High",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要SANS ISCが報告した「TeamPCP」サプライチェーン攻撃キャンペーンの第2報では、PyPIリポジトリのTelnyx関連パッケージが侵害され、マルウェア配布に悪用されたことが明らかになった。攻撃者は開発者向けの正規パッケージを装い、依存関係経由で組織内に侵入する手法を継続している。また、Vectランサムウェアのアフィリエイトプログラム化が進み、複…",
+      "article_path": "articles/65e2b604977a52ef.html",
+      "original_url": "https://isc.sans.edu/diary/rss/32838"
+    },
+    {
+      "entry_id": "37ecc7bc6b6f7c30",
+      "title": "ISC Stormcast For Friday, March 27th, 2026 https://isc.sans.edu/podcastdetail/9868, (Fri, Mar 27th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-03-27T02:00:02+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要SANS ISCの3月27日付Stormcastでは、直近の脆弱性悪用動向や観測トレンドが簡潔に整理されている。特定のCVEやゼロデイの新情報はなく、主に既知の脆弱性に対するスキャン増加や、クラウド環境での設定不備悪用といった継続的なリスクが取り上げられた。内容は日次の観測速報に近く、個別対応よりも「どの領域で攻撃者がROIを見出しているか」を把握する…",
+      "article_path": "articles/37ecc7bc6b6f7c30.html",
+      "original_url": "https://isc.sans.edu/diary/rss/32836"
+    },
+    {
+      "entry_id": "be402176513b099f",
+      "title": "Threat Brief: March 2026 Escalation of Cyber Risk Related to Iran (Updated March 26)",
+      "source_name": "Unit 42",
+      "category": "reporting",
+      "published_at": "2026-03-26T22:10:07+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要Unit 42は、2026年3月時点でのイラン関連のサイバー活動の活発化を報告している。観測されたのは、政府系・ハクティビスト・犯罪系の複数グループによるフィッシング、情報窃取、DDoS、ウェブ改ざんなどの混在攻撃である。特に、地政学的緊張の高まりを背景に、民間インフラや政府関連組織への報復的攻撃が増加している点が特徴だ。攻撃手法は既知のマルウェアやオ…",
+      "article_path": "articles/be402176513b099f.html",
+      "original_url": "https://unit42.paloaltonetworks.com/iranian-cyberattacks-2026/"
+    },
+    {
+      "entry_id": "8cc32e88d516887b",
+      "title": "Converging Interests: Analysis of Threat Clusters Targeting a Southeast Asian Government",
+      "source_name": "Unit 42",
+      "category": "reporting",
+      "published_at": "2026-03-26T22:00:32+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要Palo Alto Networks の Unit 42 は、東南アジアの政府機関を標的とした複数のサイバー諜報活動クラスターを分析し、USB 経由の感染拡大を行う USBFect、および複数のRAT（リモートアクセス型マルウェア）やローダーの使用を確認した。これらの活動は、国家支援が疑われる複数のアクターが同一の標的を同時期に狙う「利益の収斂」的な構…",
+      "article_path": "articles/8cc32e88d516887b.html",
+      "original_url": "https://unit42.paloaltonetworks.com/espionage-campaigns-target-se-asian-government-org/"
+    },
+    {
+      "entry_id": "73ffee01c642b534",
+      "title": "メディカ出版にランサムウェア攻撃、商品の受注・発送業務、問い合わせ窓口等の対応が停止",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-03-26T23:05:06+00:00",
+      "impact_level": "High",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要医療・看護分野の専門出版社であるメディカ出版がランサムウェア攻撃を受け、商品の受注・発送、問い合わせ窓口など複数の業務が停止している。記事によれば、攻撃は業務システム全体に影響し、復旧作業が進行中である。現時点で顧客情報や医療関連データの漏えい有無は確認中とされており、攻撃経路や使用されたマルウェアファミリは未公表である。出版・医療教育分野はサプライチ…",
+      "article_path": "articles/73ffee01c642b534.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/03/27/54924.html"
+    },
+    {
+      "entry_id": "4a45681c6f89a337",
+      "title": "コスモスイニシアのメールアドレスに不正アクセス、無作為に選ばれた宛先へのスパムメール送信を確認",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-03-26T23:05:03+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Credential Theft",
+      "summary_preview": "概要不動産関連企業コスモスイニシアが、社外発信用メールアドレスへの不正アクセスを受け、第三者によるスパムメール送信が確認された。攻撃者は認証情報を入手し、正規ドメインを利用して無作為な宛先にメールを送信したとみられる。現時点で社内システム侵入や顧客情報漏えいは確認されていないが、ドメインなりすましによる信頼毀損リスクが発生している。攻撃経路は未公表であり、…",
+      "article_path": "articles/4a45681c6f89a337.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/03/27/54923.html"
+    },
+    {
+      "entry_id": "d5751a5d3f82b46d",
+      "title": "シンガポールのセキュリティ認証制度「CLS」と日本の「JC-STAR」のセキュリティ要件を相互承認",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-03-26T23:00:20+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要シンガポールのサイバーセキュリティ庁（CSA）が運用する製品セキュリティ認証制度「Cybersecurity Labelling Scheme（CLS）」と、日本の情報通信研究機構（NICT）が運用する「JC-STAR」が、セキュリティ要件の相互承認を行った。これにより、IoT機器などの製品が一方の制度で認証を得ると、他方でも同等の評価として扱われる。…",
+      "article_path": "articles/d5751a5d3f82b46d.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/03/27/54922.html"
+    },
+    {
+      "entry_id": "bffe205fc8b50225",
+      "title": "令和7年度「サイバーセキュリティに関する総務大臣奨励賞」九州大学 小出洋氏が受賞",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-03-26T23:00:16+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要総務省は令和7年度「サイバーセキュリティに関する総務大臣奨励賞」を九州大学の小出洋氏に授与した。受賞理由は、学術的研究と実務を橋渡しする活動や、地域・産学官連携による人材育成への貢献とされる。これは直接的な脅威情報ではないが、官民連携・人材育成を重視する国の方向性を示すシグナルであり、CSIRT運営方針や教育投資の判断に影響し得る。特に、地方拠点や大学…",
+      "article_path": "articles/bffe205fc8b50225.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/03/27/54921.html"
+    },
+    {
+      "entry_id": "9585c1fa0acf8cc5",
+      "title": "日ASEANサイバーセキュリティ能力構築センター主催演習にGMOサイバーセキュリティ byイエラエが協力",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-03-26T23:00:13+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要ASEAN諸国の政府・CSIRT担当者を対象にしたサイバー演習が、日ASEANサイバーセキュリティ能力構築センター（AJCCBC）主催で実施され、GMOサイバーセキュリティ byイエラエが技術協力を行った。本演習は、インシデント対応や脅威分析の実践力を高める目的で設計され、実際の攻撃シナリオを模したハンズオン形式が採用された。国家間・官民混在環境での情…",
+      "article_path": "articles/9585c1fa0acf8cc5.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/03/27/54920.html"
+    },
+    {
+      "entry_id": "168c82971ea99d5d",
+      "title": "中央大学の学生がインターネットアーキテクチャ研究会で学生研究奨励賞を受賞「未知の攻撃に対する2段階分類侵入検知モデルの汎用性検証」",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-03-26T23:00:11+00:00",
+      "impact_level": "Low",
+      "threat_type": "Advisory",
+      "summary_preview": "概要中央大学の学生が、インターネットアーキテクチャ研究会で未知の攻撃に対する2段階分類侵入検知モデルを提案し、学生研究奨励賞を受賞した。本研究は、既知シグネチャに依存しない機械学習ベースの侵入検知を対象としており、未知攻撃への汎用性を実験的に検証している。既存のIDS/IPSが抱える「未知攻撃への検知遅延」課題に対し、段階的分類により誤検知率を抑えつつ検知…",
+      "article_path": "articles/168c82971ea99d5d.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/03/27/54919.html"
+    },
+    {
+      "entry_id": "f9642501e98d77b5",
+      "title": "IPA、AI セーフティ評価の実証活動を報告",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-03-26T23:00:08+00:00",
+      "impact_level": "Low",
+      "threat_type": "Advisory",
+      "summary_preview": "概要IPAは、生成AIなどの活用に伴うリスクを評価するための「AIセーフティ評価」の実証活動結果を公表した。内容は、AIシステムの安全性・信頼性を定量的に評価する枠組みの検証であり、特定の脆弱性や攻撃事例を扱うものではない。評価対象には、出力の誤情報リスク、モデルの挙動安定性、データ漏えいの可能性などが含まれ、AI導入時のリスク管理指針として整理されている…",
+      "article_path": "articles/f9642501e98d77b5.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/03/27/54918.html"
+    },
+    {
+      "entry_id": "7e037e19d3437c36",
+      "title": "3 割の組織がクラウド上のデータやセキュリティを外国任せにせず自分たちの管理下に ほか ～ ガートナー展望",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-03-26T23:00:04+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要ガートナーが発表した展望によれば、今後3年以内に約3割の組織がクラウド上のデータやセキュリティ制御を自社管理下へ戻すと予測されている。背景には、クラウド事業者依存による可視性の欠如、法規制やデータ主権への懸念、AI活用時のデータガバナンス問題がある。特に官民混在環境では、クラウドの共有責任モデルにおける境界の曖昧さがリスク要因となりやすい。記事では、セ…",
+      "article_path": "articles/7e037e19d3437c36.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/03/27/54917.html"
+    }
+  ]
+}
