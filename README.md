@@ -11,20 +11,6 @@
 - 必要に応じて ACS Email で配信
 - OpenAI API キー設定時は AI 分析を利用（未設定時はプレースホルダで継続実行）
 
-## UI
-
-### 日次レポート画面
-#### ① 元記事タイトル、② ニュースソース、 ③ 概要
-<img width="1860" height="1276" alt="image" src="https://github.com/user-attachments/assets/9a5d0f4f-96e8-4df3-8211-5e3c18dda25a" />
-
-### 個別記事の要約画面
-#### ④ 元記事タイトル、⑤ ニュースソース
-<img width="1888" height="2552" alt="image" src="https://github.com/user-attachments/assets/4bc57685-ceb2-43ff-adbb-63bc7318d979" />
-
-### 更新通知メール
-#### ⑥ 元記事タイトル、⑦ ニュースソース
-<img width="1888" height="2200" alt="image" src="https://github.com/user-attachments/assets/c9ab4ab9-28c4-426a-82ca-8a4560d4e0d1" />
-
 ## クイックスタート（ローカル実行）
 
 ### 1) セットアップ（Python 3.11）
@@ -61,6 +47,20 @@ notifyhub-digest run --out-dir .\out
 - `index.html`
 - `manifest.json`
 - `articles/<entry_id>.html`
+
+### 5) Pagefindインデックスを生成（ローカル）
+
+検索UIは `/calendar/` で利用し、検索対象はサイト全体です（`/digest/YYYY/MM/DD/` と `articles` を含む）。
+インデックスは生成済みHTMLに対して後段で作成します。
+
+```powershell
+npx --yes pagefind --site site --output-path site/pagefind
+```
+
+- 上記コマンドは `site/pagefind/` にインデックスを出力します
+- 運用はローカル/CIともに毎回の全量再生成で統一します
+- `site/calendar/index.html` は生成結果確認用です。直接編集せず、`src/notifyhub_digest/render.py` を修正してください
+- 配信物には `site/pagefind/` を含めてコミットします
 
 ### Windowsでの注意（日本語パス + editable install）
 
