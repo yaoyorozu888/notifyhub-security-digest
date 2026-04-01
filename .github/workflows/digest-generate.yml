@@ -38,6 +38,11 @@ jobs:
           python-version: "3.11"
           cache: pip
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
       - name: Install dependencies
         run: |
           python -m pip install -U pip
@@ -170,6 +175,11 @@ jobs:
             --run-at "$RUN_AT" \
             $EMAIL_FLAG
 
+      - name: Generate Pagefind index
+        run: |
+          set -euo pipefail
+          npx --yes pagefind --site site --output-path site/pagefind
+
       - name: Upload artifact (generated digest)
         if: always()
         uses: actions/upload-artifact@v4
@@ -189,6 +199,7 @@ jobs:
             site/index.html \
             site/digest/index.html \
             site/digest/latest/index.html \
+            site/pagefind \
             site/digest/"$DAY_PATH" || true
 
           if git diff --cached --quiet; then

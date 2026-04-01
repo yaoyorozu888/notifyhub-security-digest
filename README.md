@@ -49,6 +49,20 @@ notifyhub-digest run --out-dir .\out
 - `manifest.json`
 - `articles/<entry_id>.html`
 
+### 5) Pagefindインデックスを生成（ローカル）
+
+検索UIは `/calendar/` で利用し、検索対象はサイト全体です（`/digest/YYYY/MM/DD/` と `articles` を含む）。
+インデックスは生成済みHTMLに対して後段で作成します。
+
+```powershell
+npx --yes pagefind --site site --output-path site/pagefind
+```
+
+- 上記コマンドは `site/pagefind/` にインデックスを出力します
+- 運用はローカル/CIともに毎回の全量再生成で統一します
+- `site/calendar/index.html` は生成結果確認用です。直接編集せず、`src/notifyhub_digest/render.py` を修正してください
+- 配信物には `site/pagefind/` を含めてコミットします
+
 ### Windowsでの注意（日本語パス + editable install）
 
 OneDrive など日本語パス上で `pip install -e` を行うと、`.pth` のエンコーディング不一致により、
