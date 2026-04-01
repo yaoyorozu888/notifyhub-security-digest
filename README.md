@@ -3,6 +3,7 @@
 サイバーセキュリティ関連の記事を日次で収集・要約し、Webページとメールで配信するためのツールです。
 
 - 公開サイト: https://www.notifyhub.site/
+
 ## 概要
 
 このプロジェクトは、ニュースソースから記事を集約し、読みやすい日次ダイジェストとして出力します。
@@ -10,20 +11,6 @@
 - Web公開用の静的ファイルを生成
 - 必要に応じて ACS Email で配信
 - OpenAI API キー設定時は AI 分析を利用（未設定時はプレースホルダで継続実行）
-
-## UI
-
-### 日次レポート画面
-#### ① 元記事タイトル、② ニュースソース、 ③ 概要
-<img width="1860" height="1276" alt="image" src="https://github.com/user-attachments/assets/9a5d0f4f-96e8-4df3-8211-5e3c18dda25a" />
-
-### 個別記事の要約画面
-#### ④ 元記事タイトル、⑤ ニュースソース
-<img width="1888" height="2552" alt="image" src="https://github.com/user-attachments/assets/4bc57685-ceb2-43ff-adbb-63bc7318d979" />
-
-### 更新通知メール
-#### ⑥ 元記事タイトル、⑦ ニュースソース
-<img width="1888" height="2200" alt="image" src="https://github.com/user-attachments/assets/c9ab4ab9-28c4-426a-82ca-8a4560d4e0d1" />
 
 ## クイックスタート（ローカル実行）
 
