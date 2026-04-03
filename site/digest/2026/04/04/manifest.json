@@ -1,0 +1,229 @@
+{
+  "date": "2026-04-04",
+  "window": {
+    "from": "2026-04-03T06:00:00+09:00",
+    "to": "2026-04-04T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 18
+  },
+  "generated_at_jst": "2026-04-04T06:19:28.436690+09:00",
+  "items": [
+    {
+      "entry_id": "5d0a44117bb3fca3",
+      "title": "China-Linked TA416 Targets European Governments with PlugX and OAuth-Based Phishing",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-04-03T17:34:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要中国系とされる脅威グループTA416が、2025年半ば以降に欧州政府・外交機関を標的とした新たなキャンペーンを展開している。過去に活動が沈静化していた同グループは、再びPlugXマルウェアを用いた攻撃を再開し、加えてOAuth認証を悪用したフィッシングを組み合わせている点が特徴である。攻撃は正規のクラウドサービスを踏み台にしており、メールセキュリティや…",
+      "article_path": "articles/5d0a44117bb3fca3.html",
+      "original_url": "https://thehackernews.com/2026/04/china-linked-ta416-targets-european.html"
+    },
+    {
+      "entry_id": "6f11b66bc7862c29",
+      "title": "Microsoft Details Cookie-Controlled PHP Web Shells Persisting via Cron on Linux Servers",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-04-03T15:32:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要Microsoft Defender Security Research Teamは、Linuxサーバ上で稼働するPHPベースのWebシェルが、HTTPクッキーを利用してコマンド制御を行う新たな手法を確認したと報告した。従来のURLパラメータやPOSTボディを使う方式と異なり、攻撃者が送信する特定のクッキー値をトリガーとしてリモートコード実行を行う。こ…",
+      "article_path": "articles/6f11b66bc7862c29.html",
+      "original_url": "https://thehackernews.com/2026/04/microsoft-details-cookie-controlled-php.html"
+    },
+    {
+      "entry_id": "0148b14ba8ae87df",
+      "title": "UNC1069 Social Engineering of Axios Maintainer Led to npm Supply Chain Attack",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-04-03T11:04:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要Axios npmパッケージのメンテナが北朝鮮系攻撃グループUNC1069によるソーシャルエンジニアリングを受け、パッケージが改ざんされるサプライチェーン攻撃が発生した。攻撃者はメンテナ本人を標的に、信頼関係を装ってアクセス権を得た後、悪意あるコードをnpm上に公開したとされる。Axiosは広く利用されるHTTPクライアントであり、依存関係を通じて多数…",
+      "article_path": "articles/0148b14ba8ae87df.html",
+      "original_url": "https://thehackernews.com/2026/04/unc1069-social-engineering-of-axios.html"
+    },
+    {
+      "entry_id": "9365d05ede72e35b",
+      "title": "Why Third-Party Risk Is the Biggest Gap in Your Clients' Security Posture",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-04-03T11:00:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要本記事は、近年の重大な情報漏えいの多くが第三者ベンダーやSaaSサービス経由で発生している点を指摘し、従来の境界防御中心のセキュリティモデルが限界に達していることを論じている。攻撃者は、委託業者や外部ツールを利用して信頼関係を悪用し、内部ネットワークへの間接的な侵入を図る。この種のリスクは、契約・調達・運用の各段階に潜むため、技術的制御だけでは防ぎきれ…",
+      "article_path": "articles/9365d05ede72e35b.html",
+      "original_url": "https://thehackernews.com/2026/04/why-third-party-risk-is-biggest-gap-in.html"
+    },
+    {
+      "entry_id": "719b4022b77c57e6",
+      "title": "New SparkCat Variant in iOS, Android Apps Steals Crypto Wallet Recovery Phrase Images",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-04-03T09:10:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要研究者は、iOSおよびAndroid向け公式ストア上で新たなSparkCatマルウェア亜種を確認した。この亜種は、企業向けメッセンジャーやフードデリバリーなど一見無害なアプリに偽装し、端末内の暗号資産ウォレットのリカバリーフレーズ画像を窃取する機能を持つ。従来のSparkCatは主に情報窃取型トロイとして知られていたが、今回の変種では画像解析によるシー…",
+      "article_path": "articles/719b4022b77c57e6.html",
+      "original_url": "https://thehackernews.com/2026/04/new-sparkcat-variant-in-ios-android.html"
+    },
+    {
+      "entry_id": "c8ae435b5d9db580",
+      "title": "Drift Loses $285 Million in Durable Nonce Social Engineering Attack Linked to DPRK",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-04-03T08:35:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要Solana上の分散型取引所Driftが、約2億8500万ドルを失う重大な攻撃を受けた。攻撃者はSolanaのトランザクション機能であるdurable nonceを悪用し、DriftのSecurity Council権限を奪取して資金を不正送金した。durable nonceはオフライン署名や再送防止のための仕組みだが、実装上の権限検証や再利用制御の不…",
+      "article_path": "articles/c8ae435b5d9db580.html",
+      "original_url": "https://thehackernews.com/2026/04/drift-loses-285-million-in-durable.html"
+    },
+    {
+      "entry_id": "8764e93f56807e88",
+      "title": "TeamPCP Supply Chain Campaign: Update 006 - CERT-EU Confirms European Commission Cloud Breach, Sportradar Details Emerge, and Mandiant Quantifies Campaign at 1,000&#x2b; SaaS Environments, (Fri, Apr 3rd)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-04-03T13:18:01+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要欧州委員会のクラウド環境侵害がCERT-EUにより正式確認され、TeamPCPサプライチェーン攻撃キャンペーンの影響範囲が拡大している。Mandiantは本件で1,000件以上のSaaS環境が影響を受けていると推定し、Sportradarなど複数の欧州企業でも関連事象が報告された。攻撃はセキュリティスキャナを悪用した検証用コードの汚染を起点とし、クラウ…",
+      "article_path": "articles/8764e93f56807e88.html",
+      "original_url": "https://isc.sans.edu/diary/rss/32864"
+    },
+    {
+      "entry_id": "417b7ed808bb1878",
+      "title": "ISC Stormcast For Friday, April 3rd, 2026 https://isc.sans.edu/podcastdetail/9878, (Fri, Apr 3rd)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-04-03T02:00:02+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要SANS ISCのStormcast（2026年4月3日号）は、直近数日の脆弱性・攻撃動向を短く整理したポッドキャスト形式の更新である。内容は複数の話題を網羅する速報的なもので、特定のCVEや攻撃キャンペーンに関する一次情報ではない。通常、ISC Stormcastは観測トレンドやPoC出現、スキャン増加の兆候を扱うが、今回のエントリ自体には個別の技術…",
+      "article_path": "articles/417b7ed808bb1878.html",
+      "original_url": "https://isc.sans.edu/diary/rss/32862"
+    },
+    {
+      "entry_id": "ca37a1b021458956",
+      "title": "当機構に関する人事のお知らせ",
+      "source_name": "NICT NOTICE",
+      "category": "reporting",
+      "published_at": "2026-04-03T01:00:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要本件はNICTによる人事異動の公表であり、セキュリティインシデントや脆弱性情報ではない。内容は組織運営上の通知にとどまり、CSIRT活動や脅威情報への直接的な影響は確認されていない。この種の情報は、関係機関との連絡体制や窓口変更に関係する場合のみ、間接的に業務へ影響する可能性がある。現時点では技術的・運用的な対応を要する要素はなく、確認すべき未確定事項…",
+      "article_path": "articles/ca37a1b021458956.html",
+      "original_url": "/publicity/topics/2026/04/03-1.html"
+    },
+    {
+      "entry_id": "d8d4c4583100b895",
+      "title": "4 / 24 開催「後手に回らないためのセキュリティ再点検 10大脅威トップ3から読み解く、次の一手とは」HENNGE 小笠原真美氏が登壇",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-04-02T23:10:03+00:00",
+      "impact_level": "Low",
+      "threat_type": "Advisory",
+      "summary_preview": "概要本記事は、HENNGE社によるセミナー告知であり、IPA「情報セキュリティ10大脅威」の上位3項目を題材に、組織が後手に回らないためのセキュリティ再点検を促す内容である。実際の脅威分析や新たな攻撃手法の報告ではなく、教育・啓発目的のイベント紹介にあたる。想定されるテーマは、生成AIの悪用、ランサムウェア、情報漏えいなど、既知のリスク領域の再確認である。…",
+      "article_path": "articles/d8d4c4583100b895.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/04/03/54979.html"
+    },
+    {
+      "entry_id": "f97a6aa721a72f3e",
+      "title": "撮影と投稿は医療従事者としてあってはならないこと ～ 看護師が自分の電子カルテ画面を Instagram に投稿",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-04-02T23:05:12+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要看護師が勤務先の電子カルテ（EHR）画面を撮影し、Instagramに投稿した事案が報じられた。投稿には患者識別情報が含まれており、個人情報保護法および医療情報ガイドラインに抵触する可能性がある。意図的な漏えいではなく「SNSでの自己表現」の一環とみられるが、結果的に医療機関の信頼失墜や法的責任を招く。CSIRT観点では、内部者による情報漏えいの典型例…",
+      "article_path": "articles/f97a6aa721a72f3e.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/04/03/54978.html"
+    },
+    {
+      "entry_id": "8540f4b4c1f5f77b",
+      "title": "看護師が患者のカルテ画像を SNS に投稿",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-04-02T23:05:09+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要医療機関に勤務する看護師が、患者のカルテ画像をSNSに投稿した事案が報じられた。画像には患者の氏名や診療情報が含まれており、個人情報保護法および医療情報ガイドラインに抵触する可能性が高い。投稿は個人端末から行われたとみられ、組織のネットワークや電子カルテシステム自体への侵害は確認されていない。とはいえ、内部者による意図的・偶発的な情報漏えいのリスクを再…",
+      "article_path": "articles/8540f4b4c1f5f77b.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/04/03/54977.html"
+    },
+    {
+      "entry_id": "1ba5fb55a692a36f",
+      "title": "がんばる舎 Webサイトへの不正アクセス、個人情報が漏えいした事実は確認されておらず",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-04-02T23:05:06+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要教育関連サービスを提供する「がんばる舎」のWebサイトが不正アクセスを受け、一時的に改ざんや情報漏えいの懸念が生じた事案が報告された。現時点で個人情報漏えいは確認されていないが、攻撃経路や侵入範囲の詳細は未公表であり、CMSやプラグインの脆弱性、あるいは管理アカウントの不正利用が想定される。教育・通信販売系サイトは顧客情報と決済情報を併せ持つため、侵入…",
+      "article_path": "articles/1ba5fb55a692a36f.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/04/03/54976.html"
+    },
+    {
+      "entry_id": "e81c8c3ee35a3ce5",
+      "title": "Microsoft Defender SmartScreen の誤検知で受講システムへのアクセスに不具合",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-04-02T23:05:03+00:00",
+      "impact_level": "Low",
+      "threat_type": "Other",
+      "summary_preview": "概要Microsoft Defender SmartScreen において、特定の教育機関の受講システムへのアクセスが誤ってブロックされる不具合が発生した。SmartScreen は URL やダウンロードを安全性評価する仕組みだが、今回の事象では正規サイトが フィッシングサイトと誤判定 されたことにより、ユーザーがログインや教材閲覧を行えない状態となった…",
+      "article_path": "articles/e81c8c3ee35a3ce5.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/04/03/54975.html"
+    },
+    {
+      "entry_id": "38dc79324e0852dc",
+      "title": "月額550円 / ID ～ GMOグローバルサインが病院 診療所 薬局向けに IDM・SSO サービス提供",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-04-02T23:00:14+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要GMOグローバルサインが、病院・診療所・薬局向けに月額制のID管理（IDM）・シングルサインオン（SSO）サービスを提供開始した。医療機関ではクラウドサービスの利用拡大に伴い、職員アカウントの管理負荷とアクセス制御の不備が情報漏えいリスクを高めている。今回のサービスは、医療情報システムガイドラインに適合した認証統合を容易にし、複数システム間の認証強化と…",
+      "article_path": "articles/38dc79324e0852dc.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/04/03/54974.html"
+    },
+    {
+      "entry_id": "9eb830cfc6e1e4de",
+      "title": "F5 BIG-IP Access Policy Manager に認証を必要としないリモートコードの実行につながる脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-04-02T23:00:11+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要F5 BIG-IP Access Policy Manager（APM）において、認証を必要としないリモートコード実行（RCE）が可能となる深刻な脆弱性が報告された。攻撃者は管理インターフェースまたは特定の公開エンドポイントにアクセスできる場合、任意のコマンドを実行し、システム制御を奪取できる可能性がある。影響範囲はAPMを有効化したBIG-IP全体で…",
+      "article_path": "articles/9eb830cfc6e1e4de.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/04/03/54973.html"
+    },
+    {
+      "entry_id": "6d4af5cb5cdf51c7",
+      "title": "法人向けサービス GMO BIZアクセスで「DNSセキュリティ ソリューション」提供、危険な Web サイトへのアクセスを DNS で遮断",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-04-02T23:00:07+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要GMOインターネットグループは、法人向けネットワークサービス「GMO BIZアクセス」において、新たにDNSセキュリティ ソリューションを提供開始した。これは、悪意あるWebサイトやフィッシングサイトへのアクセスをDNSレベルで遮断する仕組みで、既存の通信経路に介入せず導入できる点が特徴である。DNSリクエストをクラウド上のフィルタリング基盤で解析し、…",
+      "article_path": "articles/6d4af5cb5cdf51c7.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/04/03/54972.html"
+    },
+    {
+      "entry_id": "0e99b6511fc6cf8f",
+      "title": "4/14～17 フランス開催「Botconf 2026」に GMOサイバーセキュリティ byイエラエのウェブ テオ氏と熊坂駿吾氏 登壇",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-04-02T23:00:04+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要フランスで開催される国際セキュリティカンファレンス「Botconf 2026」において、GMOサイバーセキュリティ byイエラエの研究者が登壇することが発表された。Botconfはマルウェア、ボットネット、脅威インテリジェンスを中心とした技術研究会であり、欧州を中心に実運用レベルの知見共有が行われる場として知られている。今回の登壇は、攻撃インフラの観測…",
+      "article_path": "articles/0e99b6511fc6cf8f.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/04/03/54971.html"
+    }
+  ]
+}
