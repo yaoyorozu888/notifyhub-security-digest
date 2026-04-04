@@ -1,0 +1,37 @@
+{
+  "date": "2026-04-05",
+  "window": {
+    "from": "2026-04-04T06:00:00+09:00",
+    "to": "2026-04-05T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 2
+  },
+  "generated_at_jst": "2026-04-05T06:15:49.450474+09:00",
+  "items": [
+    {
+      "entry_id": "6333d9f0433805a2",
+      "title": "When an Attacker Meets a Group of Agents: Navigating Amazon Bedrock's Multi-Agent Applications",
+      "source_name": "Unit 42",
+      "category": "reporting",
+      "published_at": "2026-04-03T22:00:38+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要Palo Alto NetworksのUnit 42は、Amazon Bedrock上で構築されるマルチエージェントAIアプリケーションにおける新たな攻撃面を分析した。複数のエージェントが協調してタスクを実行する構造では、1つのエージェントがプロンプトインジェクションを受けると他のエージェントへ誤情報を伝播させ、連鎖的な誤動作や情報漏えいを引き起こす可…",
+      "article_path": "articles/6333d9f0433805a2.html",
+      "original_url": "https://unit42.paloaltonetworks.com/amazon-bedrock-multiagent-applications/"
+    },
+    {
+      "entry_id": "0661fa8fec91757f",
+      "title": "DNP、自治体職員向けサイバーセキュリティ研修プログラム提供",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-04-03T23:00:04+00:00",
+      "impact_level": "Low",
+      "threat_type": "Advisory",
+      "summary_preview": "概要大日本印刷（DNP）は、自治体職員を対象としたサイバーセキュリティ研修プログラムの提供を開始した。本プログラムは、行政業務における情報漏えいやランサムウェア感染などのリスク増大を受け、職員の実践的対応力を高めることを目的としている。内容は、標的型メール訓練やインシデント初動対応演習などを含み、自治体特有の業務フローや委託事業者との連携を踏まえた構成とな…",
+      "article_path": "articles/0661fa8fec91757f.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/04/04/54980.html"
+    }
+  ]
+}
