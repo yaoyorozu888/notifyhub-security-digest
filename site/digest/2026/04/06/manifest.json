@@ -1,0 +1,49 @@
+{
+  "date": "2026-04-06",
+  "window": {
+    "from": "2026-04-05T06:00:00+09:00",
+    "to": "2026-04-06T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 3
+  },
+  "generated_at_jst": "2026-04-06T06:15:53.111616+09:00",
+  "items": [
+    {
+      "entry_id": "751df622457a437c",
+      "title": "$285 Million Drift Hack Traced to Six-Month DPRK Social Engineering Operation",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-04-05T18:25:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要Solanaベースの分散型取引所Driftが2026年4月1日に被った約2億8500万ドルの暗号資産流出は、北朝鮮（DPRK）による6か月にわたる社会工学的作戦の結果であると明らかにされた。攻撃者は2025年秋から、開発者や運用担当者を標的に偽装採用や協業依頼を通じて信頼関係を構築し、内部アクセス権を取得したとされる。侵害は単一の脆弱性ではなく、人的要…",
+      "article_path": "articles/751df622457a437c.html",
+      "original_url": "https://thehackernews.com/2026/04/285-million-drift-hack-traced-to-six.html"
+    },
+    {
+      "entry_id": "738d2ada983274fd",
+      "title": "36 Malicious npm Packages Exploited Redis, PostgreSQL to Deploy Persistent Implants",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-04-05T05:07:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要研究者は、npmレジストリ上で36個の悪意あるパッケージを確認した。これらはStrapi CMS向けプラグインを装い、インストール時にRedisやPostgreSQLへの不正アクセスを試み、リバースシェルや資格情報窃取、永続化用インプラントを展開する機能を持つ。攻撃者はnpmのサプライチェーンを経由して開発・運用環境双方に侵入可能であり、CI/CD環境…",
+      "article_path": "articles/738d2ada983274fd.html",
+      "original_url": "https://thehackernews.com/2026/04/36-malicious-npm-packages-exploited.html"
+    },
+    {
+      "entry_id": "4f684b4e6a5fc3c3",
+      "title": "Fortinet Patches Actively Exploited CVE-2026-35616 in FortiClient EMS",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-04-05T04:32:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Fortinetは、FortiClient EMSに存在する重大な脆弱性CVE-2026-35616（CVSS 9.1）に対し、緊急パッチを公開した。この欠陥は認証前のAPIアクセス制御不備により、攻撃者が認証を経ずに特権操作を実行できる点が特徴である。すでに実際の攻撃で悪用が確認されており、管理サーバーを標的にした侵入経路として利用される可能性が高い…",
+      "article_path": "articles/4f684b4e6a5fc3c3.html",
+      "original_url": "https://thehackernews.com/2026/04/fortinet-patches-actively-exploited-cve.html"
+    }
+  ]
+}
