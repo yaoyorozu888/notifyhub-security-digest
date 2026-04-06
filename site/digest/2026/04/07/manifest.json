@@ -1,0 +1,241 @@
+{
+  "date": "2026-04-07",
+  "window": {
+    "from": "2026-04-06T06:00:00+09:00",
+    "to": "2026-04-07T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 19
+  },
+  "generated_at_jst": "2026-04-07T06:23:16.377489+09:00",
+  "items": [
+    {
+      "entry_id": "2bade54be3205664",
+      "title": "CVE-2026-35616 Fortinet FortiClient EMS Improper Access Control Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-04-06T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要米CISAのKnown Exploited Vulnerabilities（KEV）カタログに、CVE-2026-35616としてFortinetのFortiClient EMSにおける不適切なアクセス制御（Improper Access Control）脆弱性が追加された。これは、管理サーバー機能を持つEMSにおいて、認可チェックの欠落または不十分な…",
+      "article_path": "articles/2bade54be3205664.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "be1956813d64da3b",
+      "title": "Iran-Linked Password-Spraying Campaign Targets 300+ Israeli Microsoft 365 Organizations",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-04-06T18:37:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要Check Pointの報告によると、イラン関連の攻撃者がMicrosoft 365環境を標的にした大規模なパスワードスプレー攻撃を実施している。対象は主にイスラエルおよびUAEの300以上の組織で、2026年3月に3回の攻撃波が確認された。攻撃は認証試行を分散させることでロックアウト検知を回避しつつ、クラウド認証基盤を突破することを狙っている。現時点…",
+      "article_path": "articles/be1956813d64da3b.html",
+      "original_url": "https://thehackernews.com/2026/04/iran-linked-password-spraying-campaign.html"
+    },
+    {
+      "entry_id": "e456c02df7297628",
+      "title": "DPRK-Linked Hackers Use GitHub as C2 in Multi-Stage Attacks Targeting South Korea",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-04-06T16:24:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要北朝鮮（DPRK）と関連する攻撃者が、GitHubをC2（Command and Control）サーバとして悪用する多段階攻撃を実施していることがFortinet FortiGuard Labsにより報告された。攻撃は難読化されたWindowsショートカット（LNK）ファイルを起点とし、ユーザが開くとPDFを装ったデコイを表示しつつ、バックドア通信を…",
+      "article_path": "articles/e456c02df7297628.html",
+      "original_url": "https://thehackernews.com/2026/04/dprk-linked-hackers-use-github-as-c2-in.html"
+    },
+    {
+      "entry_id": "44c57b5ccde92177",
+      "title": "Multi-OS Cyberattacks: How SOCs Close a Critical Risk in 3 Steps",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-04-06T13:00:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要本記事は、攻撃者がWindows・macOS・Linux・モバイルを横断して活動する「マルチOS攻撃」の増加を指摘している。従来のSOCやCSIRT運用はOSごとに監視・検知体制が分断されており、この構造的ギャップを突かれると初動対応や相関分析が遅れる。攻撃者は、権限昇格やクラウド認証情報の窃取を経て、異なるOS間を横展開し、検知を回避する傾向が強まっ…",
+      "article_path": "articles/44c57b5ccde92177.html",
+      "original_url": "https://thehackernews.com/2026/04/multi-os-cyberattacks-how-socs-close.html"
+    },
+    {
+      "entry_id": "a0cf916e2ea102ea",
+      "title": "⚡ Weekly Recap: Axios Hack, Chrome 0-Day, Fortinet Exploits, Paragon Spyware and More",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-04-06T12:46:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要今週の主要トピックは、Axios社の侵害、Google Chromeのゼロデイ脆弱性、およびFortinet製品の既知脆弱性悪用である。Axiosの事例は報道機関を狙った標的型侵入の一環とみられ、情報操作や認証情報窃取のリスクがある。Chromeのゼロデイは実際に悪用が確認されており、ブラウザ利用者全体に影響が及ぶ。Fortinetの脆弱性は既に修正済…",
+      "article_path": "articles/a0cf916e2ea102ea.html",
+      "original_url": "https://thehackernews.com/2026/04/weekly-recap-axios-hack-chrome-0-day.html"
+    },
+    {
+      "entry_id": "46a92c16ccf72818",
+      "title": "How LiteLLM Turned Developer Machines Into Credential Vaults for Attackers",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-04-06T11:45:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要2026年3月、脅威グループTeamPCPが開発者向けライブラリLiteLLMを悪用し、開発環境を経由して認証情報を窃取するサプライチェーン攻撃を行ったと報じられた。LiteLLMは複数のAI APIを統一的に扱うためのPythonライブラリで、開発者のローカル環境に保存されたAPIキーやトークンを自動的に参照する設計が特徴である。攻撃者はこの設計を利…",
+      "article_path": "articles/46a92c16ccf72818.html",
+      "original_url": "https://thehackernews.com/2026/04/how-litellm-turned-developer-machines.html"
+    },
+    {
+      "entry_id": "448c0f800b9c705a",
+      "title": "Qilin and Warlock Ransomware Use Vulnerable Drivers to Disable 300+ EDR Tools",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-04-06T10:07:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要Cisco TalosおよびTrend Microの分析によると、QilinおよびWarlockランサムウェア運用者が、BYOVD（Bring Your Own Vulnerable Driver）手法を用いてEDRやAVなどのセキュリティツールを無効化していることが確認された。攻撃者は正規署名済みだが脆弱なドライバを持ち込み、カーネル権限でプロセス停…",
+      "article_path": "articles/448c0f800b9c705a.html",
+      "original_url": "https://thehackernews.com/2026/04/qilin-and-warlock-ransomware-use.html"
+    },
+    {
+      "entry_id": "c94240dac0513793",
+      "title": "BKA Identifies REvil Leaders Behind 130 German Ransomware Attacks",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-04-06T06:59:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要ドイツ連邦刑事庁（BKA）は、かつて活動していたREvil（Sodinokibi）ランサムウェア運営者のうち2名の実名を特定したと発表した。REvilは2019年以降、RaaS（Ransomware-as-a-Service）モデルで世界中の企業・公共機関を標的にし、ドイツ国内でも130件以上の攻撃に関与していたとされる。今回の特定は、国際的な法執行協…",
+      "article_path": "articles/c94240dac0513793.html",
+      "original_url": "https://thehackernews.com/2026/04/bka-identifies-revil-leaders-behind-130.html"
+    },
+    {
+      "entry_id": "71bb5402af99309e",
+      "title": "How often are redirects used in phishing in 2026&#x3f;, (Mon, Apr 6th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-04-06T08:50:27+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Phishing",
+      "summary_preview": "概要SANS ISCの観測記事は、フィッシング攻撃でのリダイレクト悪用の頻度と傾向を分析している。攻撃者は、オープンリダイレクトを利用してURL検査やメールゲートウェイの検知を回避し、信頼できるドメインを踏み台にして最終的な悪性サイトへ誘導する。特にクラウドサービスや大手ブランドのドメインを経由するケースが増加しており、ユーザーの警戒心を下げる効果が高い。…",
+      "article_path": "articles/71bb5402af99309e.html",
+      "original_url": "https://isc.sans.edu/diary/rss/32870"
+    },
+    {
+      "entry_id": "86d731dde6a4cf23",
+      "title": "ISC Stormcast For Monday, April 6th, 2026 https://isc.sans.edu/podcastdetail/9880, (Mon, Apr 6th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-04-06T02:00:02+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要SANS ISCの4月6日付Stormcastでは、複数の脆弱性悪用動向と観測トレンドが報告された。特に、公開WebサービスやVPN機器を狙うスキャン活動の増加が確認され、既知のCVEを悪用した侵入試行が続いている。また、生成AI関連のフィッシング誘導など、社会的話題を利用した攻撃も取り上げられた。これらはゼロデイではないが、パッチ未適用環境や設定不備…",
+      "article_path": "articles/86d731dde6a4cf23.html",
+      "original_url": "https://isc.sans.edu/diary/rss/32868"
+    },
+    {
+      "entry_id": "86ba6b9d0fcc0525",
+      "title": "2/16 USBメモリ紛失、個人で探索続けるも発見できず 3/4 警察へ遺失物届",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-04-05T23:05:08+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要自治体職員が業務用のUSBメモリを持ち出し中に紛失し、個人で探索を続けたものの発見できず、最終的に警察へ遺失物届を提出した事案が報告された。現時点で情報流出の確認はないが、USB内には住民情報などの個人データが含まれていた可能性がある。暗号化やパスワード保護の有無は明示されておらず、リスク評価が困難な状態である。組織としての報告・封じ込め手順よりも個人…",
+      "article_path": "articles/86ba6b9d0fcc0525.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/04/06/54989.html"
+    },
+    {
+      "entry_id": "b8f1ade9a23a7ae0",
+      "title": "大阪マラソン2026のボランティア登録情報システムで個人情報が閲覧可能に",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-04-05T23:05:06+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要大阪マラソン2026のボランティア登録システムにおいて、個人情報が外部から閲覧可能な状態になっていたことが報告された。閲覧可能となったのは、氏名・住所・連絡先など登録者の識別に直結する情報であり、アクセス制御設定の不備またはURL推測による参照が原因とみられる。現時点で不正アクセスや情報の悪用は確認されていないが、公開範囲の誤設定という構成上の問題であ…",
+      "article_path": "articles/b8f1ade9a23a7ae0.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/04/06/54988.html"
+    },
+    {
+      "entry_id": "3ec7878bcba6afac",
+      "title": "三晃空調へのランサムウェア攻撃、現時点で外部への情報漏えいを示す証跡は確認されず",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-04-05T23:05:03+00:00",
+      "impact_level": "High",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要三晃空調株式会社がランサムウェア攻撃を受け、一部システムが暗号化される被害が発生したと報じられた。現時点では外部への情報漏えいを示す証跡は確認されていないが、調査は継続中であり、攻撃経路や侵入時期などの詳細は未公表である。報道によれば、業務システムの停止により一部業務に遅延が生じたものの、復旧作業が進行している。攻撃者グループの名乗りやリークサイトでの…",
+      "article_path": "articles/3ec7878bcba6afac.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/04/06/54987.html"
+    },
+    {
+      "entry_id": "c62fcd0f79de2c02",
+      "title": "JETROビジネス短信 ～ 国際サイバーセキュリティー業界団体クレスト（CREST）",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-04-05T23:00:19+00:00",
+      "impact_level": "Low",
+      "threat_type": "Advisory",
+      "summary_preview": "概要JETROが発行するビジネス短信において、国際的なサイバーセキュリティ業界団体であるCRESTの動向が紹介された。CRESTはペネトレーションテストやインシデント対応の認定制度を運営しており、各国の政府機関・金融・重要インフラ分野で信頼性指標として用いられている。記事では、各国での認定制度の整備や、国際的な標準化・人材育成の連携強化が進む状況が報告され…",
+      "article_path": "articles/c62fcd0f79de2c02.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/04/06/54986.html"
+    },
+    {
+      "entry_id": "e94b466b87507d3a",
+      "title": "経産省中部経済産業局、産学官連携によるサイバーセキュリティ人材育成と地域定着の仕組み構築に向けた実証事業を開始",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-04-05T23:00:17+00:00",
+      "impact_level": "Low",
+      "threat_type": "Advisory",
+      "summary_preview": "概要経済産業省中部経済産業局が、産学官連携によるサイバーセキュリティ人材育成と地域定着を目的とした実証事業を開始した。本事業は、大学・企業・自治体が連携し、実践的な教育プログラムや地域内での就業機会創出を通じて、地方における人材不足を解消する狙いがある。特に中小企業や自治体のCSIRT・SOC機能を支える人材の確保が課題とされ、実務経験を積める仕組みの整備…",
+      "article_path": "articles/e94b466b87507d3a.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/04/06/54985.html"
+    },
+    {
+      "entry_id": "1c3f838487443742",
+      "title": "福井県鯖江市「サイバーセキュリティを確保するための方針」策定",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-04-05T23:00:14+00:00",
+      "impact_level": "Low",
+      "threat_type": "Advisory",
+      "summary_preview": "概要福井県鯖江市が、自治体としての情報資産保護と業務継続性を目的に「サイバーセキュリティを確保するための方針」を策定した。本方針は、国のガイドライン（総務省・内閣サイバーセキュリティセンター等）を踏まえ、自治体DX推進とクラウド利用拡大に伴うセキュリティリスクへの対応を明文化している。特に、職員の意識向上・委託業者管理・インシデント対応体制の整備を重点に据…",
+      "article_path": "articles/1c3f838487443742.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/04/06/54984.html"
+    },
+    {
+      "entry_id": "6e50cfb25b6244da",
+      "title": "AIセキュリティ製品「Cloudbase AI」提供開始、社員の AI 利用を可視化",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-04-05T23:00:10+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要クラウドセキュリティ企業が、生成AIやSaaS上でのAI利用を可視化・制御する新製品「Cloudbase AI」を発表した。社内でのAI利用が拡大する中、どの従業員がどのAIサービスにどのデータを送信しているかを把握できない状況が多く、情報漏えいリスクやコンプライアンス違反が懸念されている。本製品はAPIトラフィックや認証情報を解析し、AI利用の傾向や…",
+      "article_path": "articles/6e50cfb25b6244da.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/04/06/54983.html"
+    },
+    {
+      "entry_id": "eece68213f835110",
+      "title": "名古屋市が廃止したドメイン名を第三者が再取得、注意を呼びかけ",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-04-05T23:00:07+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Misconfiguration",
+      "summary_preview": "概要名古屋市が以前使用していた公式ドメイン名を廃止後、第三者が同一ドメインを再取得した事案が報じられた。現時点で悪用は確認されていないが、過去のメールアドレスやリンクが残存している場合、なりすましやフィッシングへの転用リスクがある。特に自治体や大規模組織では、廃止ドメインが公文書・通知・システム設定に残ることが多く、内部・外部双方への誤誘導が発生しやすい。…",
+      "article_path": "articles/eece68213f835110.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/04/06/54982.html"
+    },
+    {
+      "entry_id": "910666f67e57dbbb",
+      "title": "NetScaler ADC および NetScaler Gateway に境界外読み取りの脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-04-05T23:00:04+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CitrixのNetScaler ADCおよびNetScaler Gatewayに、境界外読み取り（Out-of-Bounds Read）の脆弱性が報告された。攻撃者は細工したリクエストを送信することで、メモリ上の情報を不正に読み取れる可能性がある。認証前に悪用可能な場合、機密データの漏えいやクラッシュを引き起こし、サービス停止を誘発する恐れがある。現…",
+      "article_path": "articles/910666f67e57dbbb.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/04/06/54981.html"
+    }
+  ]
+}
