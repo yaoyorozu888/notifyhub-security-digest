@@ -1,0 +1,253 @@
+{
+  "date": "2026-04-08",
+  "window": {
+    "from": "2026-04-07T06:00:00+09:00",
+    "to": "2026-04-08T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 20
+  },
+  "generated_at_jst": "2026-04-08T06:26:41.265003+09:00",
+  "items": [
+    {
+      "entry_id": "0d412bff6a6d5335",
+      "title": "Russian State-Linked APT28 Exploits SOHO Routers in Global DNS Hijacking Campaign",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-04-07T16:48:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要ロシア国家支援系とされるAPT28（Forest Blizzard）が、2025年5月以降に世界規模でSOHOルータ（MikroTik・TP-Link）を侵害し、DNS設定を改ざんして悪意あるインフラとして利用していたことが報告された。攻撃者は既知の脆弱性や初期設定のままの認証情報を悪用し、ルータを踏み台にしてDNSハイジャックやトラフィックの中継を行…",
+      "article_path": "articles/0d412bff6a6d5335.html",
+      "original_url": "https://thehackernews.com/2026/04/russian-state-linked-apt28-exploits.html"
+    },
+    {
+      "entry_id": "4e0afc7774491234",
+      "title": "[Webinar] How to Close Identity Gaps in 2026 Before AI Exploits Enterprise Risk",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-04-07T16:29:00+00:00",
+      "impact_level": "Low",
+      "threat_type": "Advisory",
+      "summary_preview": "概要本記事はThe Hacker Newsによるウェビナー告知であり、テーマは「AI時代におけるアイデンティティギャップの解消」である。Ponemon Instituteの調査によると、多くの企業では数百の業務アプリケーションが依然として中央のID管理から外れており、これらの「ダークアプリケーション」が攻撃者に悪用されるリスクが高まっている。AIを活用した…",
+      "article_path": "articles/4e0afc7774491234.html",
+      "original_url": "https://thehackernews.com/2026/04/webinar-how-to-close-identity-gaps-in.html"
+    },
+    {
+      "entry_id": "78ea4c7996e9dbeb",
+      "title": "Docker CVE-2026-34040 Lets Attackers Bypass Authorization and Gain Host Access",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-04-07T15:15:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Docker Engineにおいて、CVE-2026-34040（CVSS 8.8）の脆弱性が公開された。これは2024年に報告されたCVE-2024-41110の不完全な修正に起因し、認可プラグイン（AuthZ）を迂回して不正操作を実行できる可能性がある。攻撃者は特定条件下でDocker APIを経由し、コンテナ操作やホストアクセスにまで到達する恐れ…",
+      "article_path": "articles/78ea4c7996e9dbeb.html",
+      "original_url": "https://thehackernews.com/2026/04/docker-cve-2026-34040-lets-attackers.html"
+    },
+    {
+      "entry_id": "1e211f1473258344",
+      "title": "Over 1,000 Exposed ComfyUI Instances Targeted in Cryptomining Botnet Campaign",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-04-07T12:46:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Botnet",
+      "summary_preview": "概要クラウド上で稼働する画像生成プラットフォームComfyUIの公開インスタンス約1,000件以上が、暗号通貨マイニングおよびプロキシボットネットへの参加を目的とした攻撃キャンペーンに悪用されていることが確認された。攻撃者はPython製のスキャナを用い、主要クラウドIPレンジを継続的に探索し、ComfyUI-Manager経由で自動的に不正ノードを導入し…",
+      "article_path": "articles/1e211f1473258344.html",
+      "original_url": "https://thehackernews.com/2026/04/over-1000-exposed-comfyui-instances.html"
+    },
+    {
+      "entry_id": "7674f2744fed305d",
+      "title": "The Hidden Cost of Recurring Credential Incidents",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-04-07T11:30:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要本記事は、認証情報漏えいの再発がもたらす隠れたコストに焦点を当てている。多くの組織ではデータ侵害防止に注力する一方で、漏えい後に同一または類似の資格情報が繰り返し悪用されることで、継続的な損害や運用負荷が発生している。特に、パスワード再利用や不十分な資格情報ローテーションにより、侵害後も攻撃者が長期間アクセスを維持するケースが多い。これらは単発の侵害よ…",
+      "article_path": "articles/7674f2744fed305d.html",
+      "original_url": "https://thehackernews.com/2026/04/the-hidden-cost-of-recurring-credential.html"
+    },
+    {
+      "entry_id": "8a6a9fc108d8bc5d",
+      "title": "New GPUBreach Attack Enables Full CPU Privilege Escalation via GDDR6 Bit-Flips",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-04-07T08:38:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要新たな学術研究により、GPUメモリ（GDDR6）を標的としたRowHammer系攻撃が実証され、これによりCPU側の完全な権限昇格が可能となることが示された。攻撃群は「GPUBreach」「GDDRHammer」「GeForge」と命名されており、従来のGPUHammerよりも一歩進んだ形で、GPUメモリ空間からホストシステムへの侵入を可能にしている。…",
+      "article_path": "articles/8a6a9fc108d8bc5d.html",
+      "original_url": "https://thehackernews.com/2026/04/new-gpubreach-attack-enables-full-cpu.html"
+    },
+    {
+      "entry_id": "4b7d4c71c810f103",
+      "title": "China-Linked Storm-1175 Exploits Zero-Days to Rapidly Deploy Medusa Ransomware",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-04-07T06:35:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要中国系とされる攻撃グループStorm-1175が、複数のゼロデイおよびNデイ脆弱性を組み合わせて、Medusaランサムウェアを迅速に展開する攻撃を実施していると報告された。対象は主にインターネット公開システムで、脆弱な境界資産を自動的に特定し、短時間で侵入・暗号化まで到達する「高速度攻撃」が特徴とされる。攻撃チェーンは、初期侵入後に権限昇格・横展開を経…",
+      "article_path": "articles/4b7d4c71c810f103.html",
+      "original_url": "https://thehackernews.com/2026/04/china-linked-storm-1175-exploits-zero.html"
+    },
+    {
+      "entry_id": "52aefc3664c4031f",
+      "title": "Flowise AI Agent Builder Under Active CVSS 10.0 RCE Exploitation; 12,000+ Instances Exposed",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-04-07T05:56:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Exploit",
+      "summary_preview": "概要VulnCheckの報告によると、Flowise AI Agent Builderに存在するCVE-2025-59528（CVSS 10.0）のコードインジェクション脆弱性が、すでに実際に悪用されている。FlowiseはオープンソースのAIエージェント構築プラットフォームであり、攻撃者はCustomMCPノードの設定入力を悪用して任意コードを実行できる…",
+      "article_path": "articles/52aefc3664c4031f.html",
+      "original_url": "https://thehackernews.com/2026/04/flowise-ai-agent-builder-under-active.html"
+    },
+    {
+      "entry_id": "a79d5a59072f1155",
+      "title": "A Little Bit Pivoting: What Web Shells are Attackers Looking for&#x3f;, (Tue, Apr 7th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-04-07T18:28:16+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要SANS ISCは、攻撃者が依然としてWebシェルを用いて侵害済みWebサーバ上で永続化を確立している実態を報告した。多くのケースで、任意ファイル書き込みやリモートコード実行（RCE）脆弱性を悪用し、小さなスクリプトを設置して後続のペイロード実行に利用している。ファイル名は正規ファイルに紛れるように変化し、検知を困難にしている。また、Webシェル自体が…",
+      "article_path": "articles/a79d5a59072f1155.html",
+      "original_url": "https://isc.sans.edu/diary/rss/32874"
+    },
+    {
+      "entry_id": "f143b7ec2d25977c",
+      "title": "ISC Stormcast For Tuesday, April 7th, 2026 https://isc.sans.edu/podcastdetail/9882, (Tue, Apr 7th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-04-07T02:00:02+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要SANS ISCのStormcast（2026年4月7日号）は、複数の最新脆弱性と攻撃動向を短く総括した内容である。特に注目されたのは、公開Webサービスへのスキャン増加と、旧バージョンのVPN機器を狙う認証バイパス攻撃の観測報告である。これらは既知CVEを悪用した継続的な攻撃活動の一部とみられ、ゼロデイ要素は確認されていない。また、クラウド環境での誤…",
+      "article_path": "articles/f143b7ec2d25977c.html",
+      "original_url": "https://isc.sans.edu/diary/rss/32872"
+    },
+    {
+      "entry_id": "f54e187495112d08",
+      "title": "Understanding Current Threats to Kubernetes Environments",
+      "source_name": "Unit 42",
+      "category": "reporting",
+      "published_at": "2026-04-06T22:00:08+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要Unit 42は、Kubernetes環境を狙う攻撃の増加を報告している。特に、クラウドネイティブ構成におけるアイデンティティの濫用と、既知のコンテナ関連脆弱性の悪用が組み合わされる傾向が顕著だ。攻撃者は、誤設定されたRBAC権限やサービスアカウントトークンを利用して、クラスタ内での横移動や持続化を実現している。これらの攻撃は、単一ノード侵害からクラウ…",
+      "article_path": "articles/f54e187495112d08.html",
+      "original_url": "https://unit42.paloaltonetworks.com/modern-kubernetes-threats/"
+    },
+    {
+      "entry_id": "2f4a1379ca66ff6e",
+      "title": "Amazon、AI 活用でペンテスト効率 40 ％向上 ～ 意思決定力は 7 歳児と同等",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-04-06T23:15:03+00:00",
+      "impact_level": "Low",
+      "threat_type": "Other",
+      "summary_preview": "概要Amazonが自社のペネトレーションテスト（ペンテスト）業務にAIを導入し、テスト効率を約40％向上させたと報じられた。AIは脆弱性探索や報告書作成の自動化を支援するが、意思決定や攻撃シナリオ設計ではまだ人間の熟練度に劣るとされる。記事ではAIの判断力を「7歳児程度」と比喩しており、現状では人間のレビューと統制が不可欠であることを示唆している。AI支援…",
+      "article_path": "articles/2f4a1379ca66ff6e.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/04/07/54998.html"
+    },
+    {
+      "entry_id": "2e8a5f9e3ced89c3",
+      "title": "無料オンラインセミナー「情報セキュリティ10大脅威 に見る 生成 AI 時代の企業リスクとは」を4 / 21開催",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-04-06T23:10:04+00:00",
+      "impact_level": "Low",
+      "threat_type": "Advisory",
+      "summary_preview": "概要ScanNetSecurityが、IPAの「情報セキュリティ10大脅威」を題材にした無料オンラインセミナーを開催する。テーマは生成AI時代における企業リスクであり、AI生成コンテンツの信頼性、社内データの取り扱い、AI利用ポリシーの整備などが議論される見込みである。直接的な脆弱性情報や攻撃事例ではないが、生成AIが業務に浸透する中で、情報漏えい・誤情報…",
+      "article_path": "articles/2e8a5f9e3ced89c3.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/04/07/54997.html"
+    },
+    {
+      "entry_id": "6a0f7dcb70cc1118",
+      "title": "20万2,581件のスパムメール送信の可能性 ～ 国交省「子育てエコホーム支援事業」事務事業者 博報堂が利用するメールサーバに不正アクセス",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-04-06T23:05:09+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要国土交通省の「子育てエコホーム支援事業」事務事業者である博報堂が利用するメールサーバが不正アクセスを受け、約20万件超のスパムメール送信に悪用された可能性が報告された。現時点で個人情報の流出は確認されていないが、攻撃者はSMTP認証情報を奪取し、正規ドメインを利用したスパム拡散を行ったとみられる。これにより、送信元ドメインの信頼性低下や、同一ドメインを…",
+      "article_path": "articles/6a0f7dcb70cc1118.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/04/07/54996.html"
+    },
+    {
+      "entry_id": "1e33203e7dcded20",
+      "title": "九州電子 台湾子会社にランサムウェア攻撃、受注・出荷を含む各種業務に影響",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-04-06T23:05:07+00:00",
+      "impact_level": "High",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要九州電子の台湾子会社がランサムウェア攻撃を受け、受注・出荷などの基幹業務が停止したと報じられた。攻撃の詳細な侵入経路や暗号化対象は未公表だが、業務停止範囲から製造・物流システムが直接影響を受けた可能性が高い。現時点で暗号化以外の情報流出は確認されていないが、攻撃者が二重恐喝型である場合、後日データ公開リスクも残る。海外拠点を狙った攻撃は、親会社ネットワ…",
+      "article_path": "articles/1e33203e7dcded20.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/04/07/54995.html"
+    },
+    {
+      "entry_id": "c40b26b672363a5c",
+      "title": "町役場へ「USBメモリを拾得したのでお返しします」と綴った手紙（ただし USB は同封されず）",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-04-06T23:05:03+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Scam/Fraud",
+      "summary_preview": "概要地方自治体の町役場に対し、「USBメモリを拾得したので返送する」と記した手紙が届いたが、実際にはUSBメモリは同封されていなかったという事案が報告された。現時点でマルウェア感染や情報漏えいなどの被害は確認されていないが、物理的な社会工学攻撃（ソーシャルエンジニアリング）の前段階として注目すべき事例である。このような手口は、信頼関係を利用して職員にUSB…",
+      "article_path": "articles/c40b26b672363a5c.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/04/07/54994.html"
+    },
+    {
+      "entry_id": "f4e2eff847c97a24",
+      "title": "AI for Security と Security for AI ～ IPA が AI セキュリティ短信 2026 年 3 月号公開",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-04-06T23:00:16+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要IPAが公開した「AIセキュリティ短信 2026年3月号」は、生成AIの業務利用拡大に伴うリスクと防御の両面を整理したものである。特に、AIを活用したセキュリティ運用（AI for Security）と、AI自体を守るための対策（Security for AI）の二軸を明確に区別している点が特徴だ。前者では脅威検知やログ分析へのAI適用の精度・再現性の…",
+      "article_path": "articles/f4e2eff847c97a24.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/04/07/54993.html"
+    },
+    {
+      "entry_id": "2b32e3d7a26ad2b4",
+      "title": "ワークショップ「CSIRT のはじめ方 - そして続けられるように」を 5 / 12 開催、関東勤務・在住者は無料",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-04-06T23:00:11+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要ScanNetSecurityが、CSIRTの立ち上げと継続運用をテーマにしたワークショップ「CSIRTのはじめ方 - そして続けられるように」を開催する。対象は関東勤務・在住者で、無料参加が可能とされている。内容は、CSIRT設立初期の課題整理や、運用を継続するための体制・予算・人材維持など、実務的な論点を扱うとみられる。技術的な脅威情報ではなく、組…",
+      "article_path": "articles/2b32e3d7a26ad2b4.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/04/07/54992.html"
+    },
+    {
+      "entry_id": "513765ef768c242f",
+      "title": "NEC Aterm シリーズに複数の脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-04-06T23:00:09+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要NEC製の家庭用およびSOHO向けルータ「Aterm」シリーズにおいて、複数の脆弱性が公表された。報告によると、特定条件下でリモートからの不正操作や設定情報の漏えいにつながる可能性がある。影響範囲は機種やファームウェアバージョンによって異なるが、外部公開インタフェースを有効にしている環境では攻撃成立リスクが高い。現時点で悪用の公的確認はないが、家庭・小…",
+      "article_path": "articles/513765ef768c242f.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/04/07/54991.html"
+    },
+    {
+      "entry_id": "3b1cd393c9f5fa86",
+      "title": "HENNGE One のユーザーコミュニティ「chameleon」のプラットフォーム刷新",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-04-06T23:00:04+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要HENNGEは、自社クラウドサービス「HENNGE One」のユーザーコミュニティサイト「chameleon」を刷新したと発表した。新プラットフォームでは、ユーザー同士の情報共有やナレッジ蓄積を促進する仕組みが強化され、UIやアクセス性の向上が図られている。記事内容からはセキュリティインシデントや脆弱性情報は確認されておらず、主にコミュニティ運営基盤の…",
+      "article_path": "articles/3b1cd393c9f5fa86.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/04/07/54990.html"
+    }
+  ]
+}
