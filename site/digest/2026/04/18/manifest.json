@@ -1,0 +1,229 @@
+{
+  "date": "2026-04-18",
+  "window": {
+    "from": "2026-04-17T06:00:00+09:00",
+    "to": "2026-04-18T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 18
+  },
+  "generated_at_jst": "2026-04-18T06:25:16.758304+09:00",
+  "items": [
+    {
+      "entry_id": "d29b28db0eec4b55",
+      "title": "Three Microsoft Defender Zero-Days Actively Exploited; Two Still Unpatched",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-04-17T13:21:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Zero-day",
+      "summary_preview": "概要Huntressは、Microsoft Defenderに存在する3件のゼロデイ脆弱性（コードネーム：BlueHammer、RedSun、UnDefend）が実際に悪用されていると警告している。これらは研究者Chaotic Eclipseによって公開され、うち2件は未修正の状態である。攻撃者はこれらの欠陥を利用して権限昇格を行い、既に侵害されたシステム…",
+      "article_path": "articles/d29b28db0eec4b55.html",
+      "original_url": "https://thehackernews.com/2026/04/three-microsoft-defender-zero-days.html"
+    },
+    {
+      "entry_id": "d902925b718901bb",
+      "title": "Google Blocks 8.3B Policy-Violating Ads in 2025, Launches Android 17 Privacy Overhaul",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-04-17T10:47:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要Googleは2025年に83億件のポリシー違反広告をブロックし、約2,490万の広告アカウントを停止したと発表した。同時に、Android 17で連絡先・位置情報アクセス権限の見直しを含むプライバシー強化策を導入する。これにより、サードパーティアプリが個人情報にアクセスする際の透明性と制御性が高まる見込みである。広告詐欺や不正アプリ配信の温床となる経…",
+      "article_path": "articles/d902925b718901bb.html",
+      "original_url": "https://thehackernews.com/2026/04/google-blocks-83b-policy-violating-ads.html"
+    },
+    {
+      "entry_id": "b7ce695383b372ae",
+      "title": "NIST Limits CVE Enrichment After 263% Surge in Vulnerability Submissions",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-04-17T07:14:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要米国NISTは、National Vulnerability Database（NVD）に登録される脆弱性情報の処理方針を変更し、今後は一定条件を満たすCVEのみを詳細にエンリッチメント（影響範囲やスコア付与など）する方針を発表した。背景には、過去1年で263%増加脆弱性管理の自動化や優先順位付けに影響が出る可能性がある。攻撃者側はこの空白を利用し、未…",
+      "article_path": "articles/b7ce695383b372ae.html",
+      "original_url": "https://thehackernews.com/2026/04/nist-limits-cve-enrichment-after-263.html"
+    },
+    {
+      "entry_id": "eec7e0a4d550a29e",
+      "title": "Operation PowerOFF Seizes 53 DDoS Domains, Exposes 3 Million Criminal Accounts",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-04-17T05:46:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "DDoS",
+      "summary_preview": "概要国際的な法執行機関の共同作戦「Operation PowerOFF」により、DDoS-for-hire（DDoS代行）サービスを提供していた53のドメインが押収され、4名が逮捕された。これらのサービスは7万5千人以上の攻撃者に利用され、約300万件のアカウント情報が関連していたとされる。押収対象は「booter」「stresser」などの名で運営されて…",
+      "article_path": "articles/eec7e0a4d550a29e.html",
+      "original_url": "https://thehackernews.com/2026/04/operation-poweroff-seizes-53-ddos.html"
+    },
+    {
+      "entry_id": "4b13ec3ae8aa63ea",
+      "title": "Apache ActiveMQ CVE-2026-34197 Added to CISA KEV Amid Active Exploitation",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-04-17T03:22:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Exploit",
+      "summary_preview": "概要Apache ActiveMQ Classicに存在するCVE-2026-34197（CVSS 8.8）の脆弱性が、CISAのKEVカタログに追加された。これは既に実際の攻撃で悪用が確認されていることを意味する。脆弱性はリモートからのコード実行を許す可能性があり、認証前アクセスが成立する構成では踏み台化や横展開の起点となる。ActiveMQはメッセージ…",
+      "article_path": "articles/4b13ec3ae8aa63ea.html",
+      "original_url": "https://thehackernews.com/2026/04/apache-activemq-cve-2026-34197-added-to.html"
+    },
+    {
+      "entry_id": "31d49a5124890b6b",
+      "title": "ISC Stormcast For Friday, April 17th, 2026 https://isc.sans.edu/podcastdetail/9896, (Fri, Apr 17th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-04-17T02:00:03+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要SANS ISCの4月17日配信分では、最近観測された脆弱性悪用や攻撃トレンドが複数取り上げられた。特に注目されたのは、公開サービスを狙うスキャン活動の増加と、旧バージョンのVPN機器を標的とした侵入試行である。これらは既知のCVEを悪用したもので、PoCが広く出回っている点が懸念される。また、クラウド環境での設定不備を突く攻撃も報告され、オンプレミス…",
+      "article_path": "articles/31d49a5124890b6b.html",
+      "original_url": "https://isc.sans.edu/diary/rss/32906"
+    },
+    {
+      "entry_id": "edc28ae4bbe4c09e",
+      "title": "Lumma Stealer infection with Sectop RAT (ArechClient2), (Fri, Apr 17th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-04-17T00:30:27+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要SANS ISCは、Lumma Stealer感染後にSectop RAT（ArechClient2）が展開される事例を報告した。Lummaは情報窃取型マルウェアで、ブラウザ認証情報や暗号資産ウォレットデータを窃取する。今回の観測では、感染後に追加のRATが導入され、攻撃者が継続的なリモート制御を確立している点が特徴である。感染経路は明示されていないが…",
+      "article_path": "articles/edc28ae4bbe4c09e.html",
+      "original_url": "https://isc.sans.edu/diary/rss/32904"
+    },
+    {
+      "entry_id": "cde9f5c5d00ffa54",
+      "title": "A Deep Dive Into Attempted Exploitation of CVE-2023-33538",
+      "source_name": "Unit 42",
+      "category": "reporting",
+      "published_at": "2026-04-16T22:00:13+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要Unit 42は、CVE-2023-33538（TP-Linkルータのコマンドインジェクション脆弱性）を狙った攻撃試行を分析し、Mirai系ボットネットに特徴的なペイロードを確認したと報告した。この脆弱性は認証不要でリモートから任意コマンドを実行できるもので、既に複数の攻撃キャンペーンで利用が観測されている。攻撃者は主にIoT機器を踏み台化し、DDoS…",
+      "article_path": "articles/cde9f5c5d00ffa54.html",
+      "original_url": "https://unit42.paloaltonetworks.com/exploitation-of-cve-2023-33538/"
+    },
+    {
+      "entry_id": "4b484796cc88ee66",
+      "title": "1,350ドルの AI が EDR を出し抜く日 ～ 小型特化モデル「Dante」が示すマルウェア自動生成の新局面",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-04-16T23:10:03+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要AIモデル「Dante」が1,350ドルで販売され、EDRを回避するマルウェア生成が実演可能になったと報じられている。従来の大規模言語モデルでは検知回避コード生成は制限されていたが、Danteは小型特化型として訓練され、暗号化・難読化・動的ロードなどの手法を自動適用するという。これにより、攻撃者は専門知識を持たずともEDR回避型マルウェアを量産できる可…",
+      "article_path": "articles/4b484796cc88ee66.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/04/17/55087.html"
+    },
+    {
+      "entry_id": "d14ee696fb4beafe",
+      "title": "発送先の氏名と住所の行にズレ ～ 東京型銭湯のスタンプラリーイベントの運営等を委託していた吉本興業が誤発送",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-04-16T23:05:09+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要吉本興業は、東京型銭湯スタンプラリーイベントの運営業務を委託していた外部業者において、景品発送時に氏名と住所の対応がずれたことにより、他人の個人情報を含む郵送物を誤発送したと発表した。誤送付は一部の当選者に限定されるが、氏名・住所といった識別性の高い情報が第三者に渡った点で個人情報保護法上の報告義務対象となる可能性がある。原因はデータの整列ミスと確認工…",
+      "article_path": "articles/d14ee696fb4beafe.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/04/17/55086.html"
+    },
+    {
+      "entry_id": "2459f9f7178fb396",
+      "title": "「FNJPNews」が改ざん被害、Google reCAPTCHA を模した偽のポップアップが表示される状態に",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-04-16T23:05:06+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要日本のニュースサイト「FNJPNews」が改ざんされ、訪問者にGoogle reCAPTCHAを模した偽ポップアップを表示する状態となっていた。ユーザが「確認」などの操作を行うと、外部の悪意あるスクリプトが実行され、マルウェア配布やフィッシングサイトへの誘導につながる可能性がある。改ざんはサイト側のCMSや広告スクリプト経由で挿入されたとみられるが、侵…",
+      "article_path": "articles/2459f9f7178fb396.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/04/17/55085.html"
+    },
+    {
+      "entry_id": "c689975a5d43bb7e",
+      "title": "長野マラソン実行委員の給水担当競技役員が複数の宛先を「CC」に設定し業務連絡メール送信",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-04-16T23:05:03+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要長野マラソン実行委員会において、給水担当の競技役員が業務連絡メールを送信する際、複数の宛先を誤って「BCC」ではなく「CC」に設定したことにより、受信者間でメールアドレスが閲覧可能となる情報漏えいが発生した。漏えいしたのはボランティア関係者などのメールアドレスであり、氏名や住所などの個人情報は含まれていないとされる。現時点で第三者による不正利用は確認さ…",
+      "article_path": "articles/c689975a5d43bb7e.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/04/17/55084.html"
+    },
+    {
+      "entry_id": "5566c63f6cb24187",
+      "title": "金融庁「金融機関のサードパーティ・サイバーセキュリティリスク管理強化に関する調査」報告書公表",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-04-16T23:00:23+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要金融庁は、金融機関におけるサードパーティ・リスク管理の実態を調査し、特にクラウドや外部委託先を通じたサイバーリスクの増大に対する課題をまとめた報告書を公表した。報告では、委託先のセキュリティ評価が形式的に留まり、契約・監査・インシデント共有の仕組みが不十分なケースが多いと指摘されている。攻撃者はこうした委託構造の隙を突き、サプライチェーン経由での侵入や…",
+      "article_path": "articles/5566c63f6cb24187.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/04/17/55083.html"
+    },
+    {
+      "entry_id": "4eee3dd25f2bce3c",
+      "title": "法政大学情報セキュリティハンドブック公開",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-04-16T23:00:19+00:00",
+      "impact_level": "Low",
+      "threat_type": "Advisory",
+      "summary_preview": "概要法政大学が、学内外の利用者向けに情報セキュリティハンドブックを公開した。内容は大学環境における情報資産の扱い方や、標的型メール・SNS利用など日常的なリスクへの対処を中心としている。特定の脆弱性や攻撃事例を扱うものではなく、教育・啓発を目的としたガイドライン的資料である。大学独自のポリシーを明文化し、学内CSIRT活動や利用者教育の基礎資料として活用可…",
+      "article_path": "articles/4eee3dd25f2bce3c.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/04/17/55082.html"
+    },
+    {
+      "entry_id": "d27670e713e36308",
+      "title": "OKB証券がDMARC導入",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-04-16T23:00:17+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要OKB証券が自社ドメインに対しDMARCを導入したと報じられた。DMARCは送信ドメイン認証技術であり、なりすましメールの検知・拒否を可能にする。金融系組織ではブランド悪用や顧客詐欺への波及が多く、導入は攻撃者のROIを下げる有効策といえる。一方で、導入初期は正当なメールが誤判定されるリスクがあり、設定ポリシーやモニタリング体制が重要となる。現時点で攻…",
+      "article_path": "articles/d27670e713e36308.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/04/17/55081.html"
+    },
+    {
+      "entry_id": "d8af376fe69b77ab",
+      "title": "クラウド型データ連携ツール「Reckoner」に Python および JavaScript によるコード実行機能",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-04-16T23:00:13+00:00",
+      "impact_level": "High",
+      "threat_type": "Misconfiguration",
+      "summary_preview": "概要クラウド型データ連携ツール「Reckoner」に、ユーザーが任意の Python および JavaScript コードを実行できる機能が追加された。これはデータ変換・加工処理を柔軟に行う目的で提供されるが、設計上の誤用や権限設定の不備があると、実質的に 任意コード実行 のリスクを内包する。特に、共有ジョブや外部入力を処理するワークフローでこの機能を利用…",
+      "article_path": "articles/d8af376fe69b77ab.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/04/17/55080.html"
+    },
+    {
+      "entry_id": "0d87ce1f51e06bc8",
+      "title": "JIPDEC、アクセス権限設定不備による個人情報誤公開に注意呼びかけ",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-04-16T23:00:08+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Misconfiguration",
+      "summary_preview": "概要JIPDECは、企業や団体がクラウドストレージや共有ドライブを利用する際のアクセス権限設定不備によって、個人情報や機微情報が意図せずインターネット上に公開される事例が継続的に発生しているとして注意を呼びかけた。特に、リンク共有機能を「全員に公開」設定のまま運用しているケースや、外部委託先とのファイル共有において再利用されたURLが残存しているケースが問…",
+      "article_path": "articles/0d87ce1f51e06bc8.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/04/17/55079.html"
+    },
+    {
+      "entry_id": "ea30eb232665fde3",
+      "title": "Adobe Acrobat および Reader に悪用の事実を確認済みの脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-04-16T23:00:04+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Adobeは、AcrobatおよびReader製品群に存在する複数の脆弱性のうち、少なくとも1件について実際の悪用が確認されたと公表した。対象はWindowsおよびmacOS版で、攻撃者は細工したPDFを開かせることで任意コード実行を行える可能性がある。悪用事例は限定的とされるが、CISAのKEVリストにも追加されており、攻撃が継続的に観測されている。…",
+      "article_path": "articles/ea30eb232665fde3.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/04/17/55078.html"
+    }
+  ]
+}
