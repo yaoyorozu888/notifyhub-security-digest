@@ -57,9 +57,15 @@ class TechnicalTerm(BaseModel):
     explanation: str
 
 
+class Lesson(BaseModel):
+    title: str
+    body: str
+
+
 class AnalysisResult(BaseModel):
     summary_html: str = ""
     technical_terms: list[TechnicalTerm] = Field(default_factory=list)
+    lessons: list[Lesson] = Field(default_factory=list)
     impact_level: ImpactLevel = "Unknown"
     impact_reason: str = ""
     threat_type: ThreatType = "Unknown"

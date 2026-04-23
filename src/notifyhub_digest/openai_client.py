@@ -10,7 +10,7 @@ from typing import Any
 
 import httpx
 
-from notifyhub_digest.models import AnalysisResult
+from notifyhub_digest.models import AnalysisResult, Lesson
 
 
 logger = logging.getLogger(__name__)
@@ -62,29 +62,18 @@ SYSTEM_PROMPT = (
     "    - ただし観測が広域でも自組織に関係が薄い場合は据え置き/下げも可。\n"
     "- 補正を適用した根拠は impact_reason に必ず含める（例: 公的注意喚起/KEV、ベンダーパッチ済み、観測増加、メディア二次情報 など）。\n"
     "\n"
-    "『読む/流す/捨てる』フラグ判定ロジック（重要）:\n"
-    "- read_action を次の3値から必ず選び、CSIRTが次に取るべき扱いを示す:\n"
-    "  * Read（読む）: 即判断やアクションが必要/自組織影響が高い可能性/検知・封じ込め設計に直結\n"
-    "  * Pass（流す）: 参考情報として共有価値はあるが、即アクション不要（状況監視/次回判断材料）\n"
-    "  * Drop（捨てる）: 自組織への関連が薄い・重複・実務価値が低い\n"
-    "- 判定の具体基準（複合判断）:\n"
-    "  * Read を強く推奨:\n"
-    "    - impact_level が Critical/High\n"
-    "    - 既に悪用確認、KEV掲載、ゼロデイ/活発な攻撃波及、認証前RCEなど\n"
-    "    - 自組織で該当製品/クラウド/公開資産を使っている前提で影響が大きい\n"
-    "  * Pass を推奨:\n"
-    "    - Medium/Lowで、対策はあるが緊急性が低い\n"
-    "    - ベンダーの更新情報、運用ベストプラクティス、注意喚起（直接の攻撃波及は未確認）\n"
-    "  * Drop を推奨:\n"
-    "    - IT一般の話題でCSIRT業務への接続が薄い（セキュリティ示唆が小さい）\n"
-    "    - 既報の焼き直し、具体性のない憶測記事、対象がニッチで自組織に関係しにくい\n"
-    "- 判断根拠は action_reason に短く含める。\n"
-    "\n"
     "technical_terms（用語解説）ルール:\n"
     "- 同じ用語が過去にも使われていることを前提とし、毎回同じ説明を繰り返さない\n"
     "- 今回の記事文脈で『なぜ重要か』に焦点を当てる\n"
     "- 可能な限り対立概念・混同されやすい概念と対比して説明する\n"
     "- explanation は100文字以内、日本語2〜3文\n"
+    "\n"
+    "lessons（深掘り解説）ルール:\n"
+    "- 記事中の技術用語、製品情報、法令、制度などから最も学習価値が高いものを1つだけ選ぶ\n"
+    "- 技術的な本質を短く教える補助教材として書く。単なる用語の言い換えは禁止\n"
+    "- 3〜5分で理解できる分量を目安にし、具体例を必ず含める\n"
+    "- 同じ用語でも毎回切り口を固定せず、実装、処理フロー、運用上の注意、関連リスクなど記事文脈に最も合う軸を選ぶ\n"
+    "- 適切な題材が見当たらない場合は lessons に 1 件だけ title=なし, body=なし を入れる\n"
     "\n"
     "分析観点の指針:\n"
     "- 前提条件: 攻撃成立に必要な構成・権限・露出条件\n"
@@ -110,11 +99,10 @@ def _analysis_schema_hint() -> str:
         "{\n"
         '  \"summary_html\": \"<div>...</div>\",\n'
         '  \"technical_terms\": [{\"term\":\"...\",\"explanation\":\"...\"}],\n'
+        '  \"lessons\": [{\"title\":\"...\",\"body\":\"...\"}],\n'
         '  \"impact_level\": \"Critical|High|Medium|Low|Info\",\n'
         '  \"impact_reason\": \"...\",\n'
-        '  \"threat_type\": \"Vulnerability|Exploit|Zero-day|Vulnerability Disclosure|Patch|Misconfiguration|Malware|Ransomware|Botnet|Cryptojacking|Phishing|Business Email Compromise|Scam/Fraud|Credential Theft|Intrusion|Data Breach|DDoS|Supply Chain|Advisory|Other|Unknown\",\n'
-        '  \"read_action\": \"Read|Pass|Drop\",\n'
-        '  \"action_reason\": \"...\"\n'
+        '  \"threat_type\": \"Vulnerability|Exploit|Zero-day|Vulnerability Disclosure|Patch|Misconfiguration|Malware|Ransomware|Botnet|Cryptojacking|Phishing|Business Email Compromise|Scam/Fraud|Credential Theft|Intrusion|Data Breach|DDoS|Supply Chain|Advisory|Other|Unknown\"\n'
         "}\n"
         "\n"
         "summary_html 制約:\n"
@@ -122,32 +110,31 @@ def _analysis_schema_hint() -> str:
         "- 属性（class/id/style等）は付けない\n"
         "- 以下の構成を厳守:\n"
         "  <h4>概要</h4><p>...</p>\n"
-        "  <h4>判断ポイント</h4><ul><li>...</li></ul>\n"
-        "  <h4>対応アクション（今すぐ・継続）</h4><ul><li>...</li></ul>\n"
         "\n"
         "概要:\n"
         "- 4〜6文で記述し、記事理解のための文脈を厚めに書く\n"
         "- 最低でも以下を含める: 何が起きたか / どう悪用されるか / どこまで影響が広がるか / 未確認事項\n"
         "- 単なる出来事の言い換えではなく、判断に必要な背景を補う\n"
         "\n"
-        "判断ポイント / 対応アクション（今すぐ・継続）:\n"
-        "- それぞれ最大3項目まで\n"
-        "- 判断ポイント: 根拠・前提条件・優先度の理由のみ（具体作業は書かない）\n"
-        "- 対応アクション: 実施タスクのみ（抽象論は書かない）\n"
-        "- 対応アクションの各項目は先頭に [今すぐ] または [継続] を付ける\n"
-        "\n"
         "強調ルール:\n"
         "- 意思決定に影響する語句のみ <strong>…</strong> で強調\n"
         "- 最大8箇所、短いフレーズ単位\n"
         "\n"
         "文字量:\n"
-        "- summary_html 全体で900〜1200文字程度\n"
+        "- summary_html 全体で500〜800文字程度\n"
         "\n"
         "technical_terms 制約:\n"
         "- 最大4件\n"
         "- explanation は100文字以内、2〜3文\n"
         "- 対立概念・混同されやすい概念があれば必ず対比\n"
         "- 一般名詞・単なる固有名詞の列挙は禁止\n"
+        "\n"
+        "lessons 制約:\n"
+        "- 0〜1件ではなく、常に1件入れる\n"
+        "- 学習価値の高い題材がある場合は title/body を埋める\n"
+        "- 題材が弱い場合は title=なし, body=なし とする\n"
+        "- body は3〜5分で読み切れる長さで、少なくとも1つ具体例を含める\n"
+        "- 記事内容の焼き直しではなく、背景理解や実務判断に効く説明を書く\n"
         "\n"
         "term 表記:\n"
         "- 英語が一般的な場合は英語→日本語併記\n"
@@ -158,10 +145,6 @@ def _analysis_schema_hint() -> str:
         "impact_reason:\n"
         "- impact_level の根拠を2〜3行で簡潔に\n"
         "- 技術的深刻度 + 運用影響 + 情報源補正の根拠\n"
-        "\n"
-        "read_action / action_reason:\n"
-        "- read_action は Read|Pass|Drop のいずれか\n"
-        "- action_reason に短く根拠（緊急性/自組織関連/二次情報/重複など）\n"
         "\n"
         "threat_type:\n"
         "- 複数該当しそうな場合は、CSIRTが最初に意識すべき1種を選択\n"
@@ -273,7 +256,7 @@ def _coerce_analysis_result(parsed: dict[str, Any]) -> AnalysisResult:
     """Be tolerant to minor schema drift and fill defaults."""
 
     if not isinstance(parsed, dict):
-        return AnalysisResult(summary_html="", technical_terms=[], impact_level="Unknown", impact_reason="", threat_type="Unknown")
+        return AnalysisResult(summary_html="", technical_terms=[], lessons=[], impact_level="Unknown", impact_reason="", threat_type="Unknown")
 
     def _normalize_threat_type(raw: str) -> str:
         v = (raw or "").strip()
@@ -389,6 +372,29 @@ def _coerce_analysis_result(parsed: dict[str, Any]) -> AnalysisResult:
     if "threat_type" in parsed and isinstance(parsed["threat_type"], str):
         parsed["threat_type"] = _normalize_threat_type(parsed["threat_type"])
 
+    raw_lessons = parsed.get("lessons")
+    if isinstance(raw_lessons, list):
+        normalized_lessons: list[dict[str, str]] = []
+        for entry in raw_lessons[:1]:
+            if not isinstance(entry, dict):
+                continue
+            title = str(entry.get("title") or "").strip()
+            body = str(entry.get("body") or "").strip()
+            if not title and not body:
+                continue
+            if not title:
+                title = "なし" if body == "なし" else "補足"
+            if not body:
+                body = "なし" if title == "なし" else "説明なし"
+            normalized_lessons.append({"title": title, "body": body})
+        parsed["lessons"] = normalized_lessons
+    elif isinstance(raw_lessons, dict):
+        title = str(raw_lessons.get("title") or "").strip() or "補足"
+        body = str(raw_lessons.get("body") or "").strip() or "説明なし"
+        parsed["lessons"] = [{"title": title, "body": body}]
+    else:
+        parsed["lessons"] = []
+
     try:
         return AnalysisResult.model_validate(parsed)
     except Exception:
@@ -396,6 +402,7 @@ def _coerce_analysis_result(parsed: dict[str, Any]) -> AnalysisResult:
         return AnalysisResult(
             summary_html=str(parsed.get("summary_html") or ""),
             technical_terms=[],
+            lessons=[Lesson(title="なし", body="なし")],
             impact_level=str(parsed.get("impact_level") or "Unknown"),
             impact_reason=str(parsed.get("impact_reason") or ""),
             threat_type=_normalize_threat_type(str(parsed.get("threat_type") or "")),
@@ -504,6 +511,7 @@ def analyze_item(
         return AnalysisResult(
             summary_html=_fallback_summary_html(summary),
             technical_terms=[],
+            lessons=[Lesson(title="なし", body="なし")],
             impact_level="Unknown",
             impact_reason="",
             threat_type="Unknown",
