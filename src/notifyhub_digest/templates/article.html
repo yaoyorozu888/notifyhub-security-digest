@@ -183,6 +183,22 @@
       font-size:12px;
       white-space:pre-wrap;
     }
+    .subSectionTitle{
+      margin:16px 0 8px;
+      font-size:12px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:var(--muted);
+    }
+    .deepDive{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:10px;
+      margin-top:8px;
+    }
+    .deepDiveCard{
+      background:rgba(12,20,38,.6);
+    }
 
     .footer{
       margin-top:14px;
@@ -251,6 +267,10 @@
           <h2>📌 キーワード解説</h2>
           <div class="terms">
             {{technical_terms_html}}
+          </div>
+          <h3 class="subSectionTitle">深掘り解説</h3>
+          <div class="deepDive">
+            {{deep_dive_html}}
           </div>
         </div>
 

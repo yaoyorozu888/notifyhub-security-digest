@@ -24,6 +24,9 @@ python -m pip install -U pip
 pip install ".[dev]"
 ```
 
+- VS Code もこの `.venv` を使う前提です。ワークスペースを開いたまま作成した場合は `Developer: Reload Window` を実行し、必要なら Python インタープリタとして `.venv\Scripts\python.exe` を選択してください。
+- ターミナルで直接実行する場合も、未アクティブなら `.\.venv\Scripts\python.exe -m ...` の形で呼び出すと system Python を避けられます。
+
 ### 2) `.env` を作成
 
 ```powershell
@@ -39,6 +42,12 @@ Copy-Item .env.example .env
 
 ```powershell
 notifyhub-digest run --out-dir .\out
+```
+
+未アクティブのターミナルでは次でも同じです。
+
+```powershell
+.\.venv\Scripts\python.exe -m notifyhub_digest.cli run --out-dir .\out
 ```
 
 ### 4) 出力先

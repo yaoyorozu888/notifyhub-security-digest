@@ -4,7 +4,7 @@ import html
 import json
 import re
 from dataclasses import dataclass
-from datetime import date, datetime
+from datetime import date
 from pathlib import Path
 from urllib.parse import urlparse
 
@@ -56,6 +56,31 @@ def _term_cards_html(item: FeedItem) -> str:
                     '<div class="termCard">',
                     f'  <div class="term">{term}</div>',
                     f'  <p class="exp">{exp}</p>',
+                    "</div>",
+                ]
+            )
+        )
+    return "\n".join(parts)
+
+
+def _lesson_cards_html(item: FeedItem) -> str:
+    lessons = item.analysis.lessons or []
+    if not lessons:
+        lessons = [{"title": "なし", "body": "なし"}]  # type: ignore[assignment]
+
+    parts: list[str] = []
+    for lesson in lessons:
+        title = html.escape(getattr(lesson, "title", "なし"))
+        body = html.escape(getattr(lesson, "body", "なし"))
+        body_html = f'  <p class="exp">{body}</p>'
+        if title == "なし" and body == "なし":
+            body_html = ""
+        parts.append(
+            "\n".join(
+                [
+                    '<div class="termCard deepDiveCard">',
+                    f'  <div class="term">{title}</div>',
+                    body_html,
                     "</div>",
                 ]
             )
@@ -151,6 +176,7 @@ def write_article_html(
         # summary_htmlは既にサニタイズ済み前提（属性禁止/許可タグのみ）
         "summary_html": item.analysis.summary_html,
         "technical_terms_html": _term_cards_html(item),
+        "deep_dive_html": _lesson_cards_html(item),
         "window_from_jst": html.escape(window_from_jst),
         "window_to_jst": html.escape(window_to_jst),
         "generated_at_jst": html.escape(generated_at_jst),
