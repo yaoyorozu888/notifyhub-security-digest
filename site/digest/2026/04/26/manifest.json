@@ -1,0 +1,49 @@
+{
+  "date": "2026-04-26",
+  "window": {
+    "from": "2026-04-25T06:00:00+09:00",
+    "to": "2026-04-26T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 3
+  },
+  "generated_at_jst": "2026-04-26T06:19:53.961389+09:00",
+  "items": [
+    {
+      "entry_id": "80cf488009c65792",
+      "title": "Researchers Uncover Pre-Stuxnet ‘fast16’ Malware Targeting Engineering Software",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-04-25T09:26:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要SentinelOneの報告によれば、2005年頃に作成された未公開のサイバー破壊用マルウェア「fast16」が発見された。これはLuaで実装され、後のStuxnetに先行する形で工学系ソフトウェアを改ざんし、産業制御プロセスを妨害する目的を持っていたとされる。標的は高精度計算や制御設計に用いられるエンジニアリングツールで、結果的に物理的な装置制御に誤…",
+      "article_path": "articles/80cf488009c65792.html",
+      "original_url": "https://thehackernews.com/2026/04/researchers-uncover-pre-stuxnet-fast16.html"
+    },
+    {
+      "entry_id": "2a3564ef4fdacade",
+      "title": "CISA Adds 4 Exploited Flaws to KEV, Sets May 2026 Federal Deadline",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-04-25T05:08:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要米国CISAは、SimpleHelp、Samsung MagicINFO 9 Server、およびD-Link DIR-823Xシリーズルータに関する4件の脆弱性をKnown Exploited Vulnerabilities (KEV)カタログに追加した。これらはすでに実際の攻撃で悪用が確認されており、米国連邦機関には2026年5月までの修正対応が義…",
+      "article_path": "articles/2a3564ef4fdacade.html",
+      "original_url": "https://thehackernews.com/2026/04/cisa-adds-4-exploited-flaws-to-kev-sets.html"
+    },
+    {
+      "entry_id": "ccec0dab7431c9cc",
+      "title": "The npm Threat Landscape: Attack Surface and Mitigations",
+      "source_name": "Unit 42",
+      "category": "reporting",
+      "published_at": "2026-04-24T21:40:33+00:00",
+      "impact_level": "High",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要Palo Alto NetworksのUnit 42は、npmエコシステムにおけるサプライチェーン攻撃の進化を分析し、Shai Hulud事件以降の傾向を整理している。報告では、wormable型マルウェアや、CI/CD環境への持続化を狙う攻撃、複数段階での侵入・横展開を行うマルウェアなどが確認された。攻撃者はnpmパッケージの依存関係を悪用し、開発者…",
+      "article_path": "articles/ccec0dab7431c9cc.html",
+      "original_url": "https://unit42.paloaltonetworks.com/monitoring-npm-supply-chain-attacks/"
+    }
+  ]
+}
