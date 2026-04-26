@@ -88,6 +88,13 @@ def _lesson_cards_html(item: FeedItem) -> str:
     return "\n".join(parts)
 
 
+def _analysis_heading(item: FeedItem) -> str:
+    model_version = (item.analysis.model_version or "").strip()
+    if not model_version:
+        return "要約（ChatGPT）"
+    return f"要約（ChatGPT / {html.escape(model_version)}）"
+
+
 @dataclass(frozen=True)
 class DigestPaths:
     digest_dir: Path
@@ -173,6 +180,7 @@ def write_article_html(
         "impact_level": html.escape(item.analysis.impact_level),
         "impact_reason": html.escape(item.analysis.impact_reason),
         "threat_type": html.escape(item.analysis.threat_type),
+        "analysis_heading": _analysis_heading(item),
         # summary_htmlは既にサニタイズ済み前提（属性禁止/許可タグのみ）
         "summary_html": item.analysis.summary_html,
         "technical_terms_html": _term_cards_html(item),

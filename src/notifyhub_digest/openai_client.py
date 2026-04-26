@@ -210,6 +210,15 @@ def _extract_response_text(data: dict[str, Any]) -> str:
     return ""
 
 
+def _extract_response_model(data: dict[str, Any]) -> str:
+    if not isinstance(data, dict):
+        return ""
+    model = data.get("model")
+    if isinstance(model, str):
+        return model.strip()
+    return ""
+
+
 def _extract_json_object(text: str) -> dict[str, Any]:
     """Extract a JSON object from model output.
 
@@ -406,6 +415,7 @@ def _coerce_analysis_result(parsed: dict[str, Any]) -> AnalysisResult:
             impact_level=str(parsed.get("impact_level") or "Unknown"),
             impact_reason=str(parsed.get("impact_reason") or ""),
             threat_type=_normalize_threat_type(str(parsed.get("threat_type") or "")),
+            model_version=str(parsed.get("model_version") or ""),
         )
 
 
@@ -496,12 +506,14 @@ def analyze_item(
 
     data = res.json()
     content = _extract_response_text(data)
+    model_version = _extract_response_model(data) or cfg.model
 
     try:
         parsed = _extract_json_object(content)
         result = _coerce_analysis_result(parsed)
         if not result.summary_html:
             result.summary_html = _fallback_summary_html(summary)
+        result.model_version = model_version
         return result
     except Exception as e:
         if content.strip():
@@ -515,4 +527,5 @@ def analyze_item(
             impact_level="Unknown",
             impact_reason="",
             threat_type="Unknown",
+            model_version=model_version,
         )

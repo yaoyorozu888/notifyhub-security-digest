@@ -69,6 +69,7 @@ class AnalysisResult(BaseModel):
     impact_level: ImpactLevel = "Unknown"
     impact_reason: str = ""
     threat_type: ThreatType = "Unknown"
+    model_version: str = ""
 
 
 class FeedItem(BaseModel):
