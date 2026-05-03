@@ -1,0 +1,37 @@
+{
+  "date": "2026-05-04",
+  "window": {
+    "from": "2026-05-03T06:00:00+09:00",
+    "to": "2026-05-04T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 2
+  },
+  "generated_at_jst": "2026-05-04T06:23:27.482425+09:00",
+  "items": [
+    {
+      "entry_id": "37fb5885f851b015",
+      "title": "CISA Adds Actively Exploited Linux Root Access Bug CVE-2026-31431 to KEV",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-05-03T06:26:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要米国CISAは、CVE-2026-31431 を Known Exploited Vulnerabilities (KEV) カタログに追加した。この脆弱性は複数のLinuxディストリビューションに影響するローカル権限昇格（LPE）であり、CVSS 7.8と評価されている。攻撃者は既にシステム上でコード実行権を得ている必要があるが、これを利用してroo…",
+      "article_path": "articles/37fb5885f851b015.html",
+      "original_url": "https://thehackernews.com/2026/05/cisa-adds-actively-exploited-linux-root.html"
+    },
+    {
+      "entry_id": "ade8b4d92a0af1b1",
+      "title": "Wireshark 4.6.5 Released, (Sun, May 3rd)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-05-03T16:49:04+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Patch",
+      "summary_preview": "概要ネットワーク解析ツールWireshark 4.6.5がリリースされ、38件のCVEを含む43件の脆弱性と35件のバグが修正された。これらの脆弱性の多くはパケット解析時のクラッシュやメモリ破損を引き起こすもので、悪意あるパケットを読み込むだけでDoSや任意コード実行に至る可能性がある。攻撃成立にはユーザが不正なpcapを開く、またはライブキャプチャで攻撃…",
+      "article_path": "articles/ade8b4d92a0af1b1.html",
+      "original_url": "https://isc.sans.edu/diary/rss/32944"
+    }
+  ]
+}
