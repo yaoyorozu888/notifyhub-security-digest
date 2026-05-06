@@ -1,0 +1,133 @@
+{
+  "date": "2026-05-07",
+  "window": {
+    "from": "2026-05-06T06:00:00+09:00",
+    "to": "2026-05-07T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 10
+  },
+  "generated_at_jst": "2026-05-07T06:33:51.618487+09:00",
+  "items": [
+    {
+      "entry_id": "f29c9696b1a98451",
+      "title": "CVE-2026-0300 Palo Alto Networks PAN-OS Out-of-bounds Write Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-05-06T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CISAのKnown Exploited Vulnerabilities（KEV）カタログに、CVE-2026-0300としてPalo Alto NetworksのPAN-OSにおけるOut-of-bounds Write脆弱性が追加された。この登録は、既に実際の悪用が確認されたことを示すものであり、単なる理論上の欠陥ではない。攻撃者は特定条件下でメモ…",
+      "article_path": "articles/f29c9696b1a98451.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "dcbe2f364297c8c0",
+      "title": "Mirai-Based xlabs_v1 Botnet Exploits ADB to Hijack IoT Devices for DDoS Attacks",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-05-06T20:21:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Botnet",
+      "summary_preview": "概要研究者は、新たなMirai派生ボットネット「xlabs_v1」を確認した。これはAndroid Debug Bridge（ADB）が有効化されたままインターネットに露出しているIoT機器を標的とし、感染後はDDoS攻撃用のボットとして動作する。Hunt.ioによると、オランダ国内のホスティング環境で発見された公開ディレクトリからマルウェアが特定されたと…",
+      "article_path": "articles/dcbe2f364297c8c0.html",
+      "original_url": "https://thehackernews.com/2026/05/mirai-based-xlabsv1-botnet-exploits-adb.html"
+    },
+    {
+      "entry_id": "115dca5ea9b5cc85",
+      "title": "MuddyWater Uses Microsoft Teams to Steal Credentials in False Flag Ransomware Attack",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-05-06T13:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Phishing",
+      "summary_preview": "概要イラン政府系とされるMuddyWaterが、Microsoft Teamsを悪用した偽装ランサムウェア攻撃を実行した事例が報告された。Rapid7の観測によれば、攻撃者はTeams上でのソーシャルエンジニアリングを用い、正規ユーザーを装って悪意あるリンクやファイルを送信し、認証情報を窃取したうえでマルウェア感染を誘発している。この攻撃は「false f…",
+      "article_path": "articles/115dca5ea9b5cc85.html",
+      "original_url": "https://thehackernews.com/2026/05/muddywater-uses-microsoft-teams-to.html"
+    },
+    {
+      "entry_id": "a008c6f5b7512593",
+      "title": "The Hacker News Launches 'Cybersecurity Stars Awards 2026' — Submissions Now Open",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-05-06T12:03:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要The Hacker Newsが、サイバーセキュリティ分野での功績を称える「Cybersecurity Stars Awards 2026」を開始した。これは脆弱性情報や攻撃キャンペーンの報告ではなく、業界内での優れた実践・製品・リーダーシップを評価する取り組みである。CSIRT実務に直接の脅威はないが、防御側の成熟度や運用文化を可視化する動きとして注…",
+      "article_path": "articles/a008c6f5b7512593.html",
+      "original_url": "https://thehackernews.com/2026/05/the-hacker-news-launches-cybersecurity.html"
+    },
+    {
+      "entry_id": "42228326f114ffe1",
+      "title": "Your AI Agents Are Already Inside the Perimeter. Do You Know What They're Doing?",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-05-06T10:57:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要企業内で導入が進むAIエージェントが、既にネットワーク境界内で稼働しており、セキュリティ統制の成熟度を上回る速度で展開されていると報告された。これらのエージェントは業務自動化や支援を目的に導入されるが、権限委譲やデータアクセスの設計が不十分な場合、意図せず機密情報を外部へ転送したり、誤操作を通じてシステム変更を行うリスクがある。攻撃者視点では、AIエー…",
+      "article_path": "articles/42228326f114ffe1.html",
+      "original_url": "https://thehackernews.com/2026/05/your-ai-agents-are-already-inside.html"
+    },
+    {
+      "entry_id": "1fc7523ad04c303a",
+      "title": "Google's Android Apps Get Public Verification to Stop Supply Chain Attacks",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-05-06T09:13:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要Googleは、Androidアプリのサプライチェーン攻撃対策として「Binary Transparency」を拡張し、Google製アプリの公開検証仕組みを導入した。これは、端末に配布されるアプリがGoogleが意図したバイナリと一致するかを公開台帳で確認できるようにするもので、改ざんや不正署名の検出を容易にする。従来のPixel Binary Tr…",
+      "article_path": "articles/1fc7523ad04c303a.html",
+      "original_url": "https://thehackernews.com/2026/05/android-apps-get-public-verification.html"
+    },
+    {
+      "entry_id": "1023d31fd0d45354",
+      "title": "Windows Phone Link Exploited by CloudZ RAT to Steal Credentials and OTPs",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-05-06T08:34:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要研究者は、CloudZ RATと呼ばれるリモートアクセスツールが、WindowsのPhone Link機能を悪用して認証情報やワンタイムパスワード（OTP）を窃取する攻撃を確認した。CloudZは新たに発見されたPhenoプラグインを用い、スマートフォンとPC間の連携経路を介して資格情報を傍受する。攻撃者は、ユーザが正規のPhone Linkを利用して…",
+      "article_path": "articles/1023d31fd0d45354.html",
+      "original_url": "https://thehackernews.com/2026/05/windows-phone-link-exploited-by-cloudz.html"
+    },
+    {
+      "entry_id": "4bf780a19465ce5d",
+      "title": "Palo Alto PAN-OS Flaw Under Active Exploitation Enables Remote Code Execution",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-05-06T06:14:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Exploit",
+      "summary_preview": "概要Palo Alto Networksは、PAN-OSに存在する重大なバッファオーバーフロー脆弱性（CVE-2026-0300）が実際に悪用されていることを警告した。問題はUser-ID Authentication Portalがインターネットからアクセス可能な状態で構成されている場合に、認証なしでリモートコード実行を許す点にある。CVSSスコアは9.…",
+      "article_path": "articles/4bf780a19465ce5d.html",
+      "original_url": "https://thehackernews.com/2026/05/palo-alto-pan-os-flaw-under-active.html"
+    },
+    {
+      "entry_id": "c629e0058c2e14f8",
+      "title": "ISC Stormcast For Wednesday, May 6th, 2026 https://isc.sans.edu/podcastdetail/9920, (Wed, May 6th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-05-06T02:00:03+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要SANS ISCの5月6日付Stormcastでは、最近観測された複数の脆弱性悪用と攻撃傾向が報告された。特に、公開済みPoCを伴う中堅ベンダー製品のRCE脆弱性や、古いVPN装置を狙うスキャン増加が注目されている。これらは既知のCVEを再利用する形であり、攻撃者はパッチ未適用環境を効率的に探索しているとみられる。企業ネットワークでは、VPNやリモート…",
+      "article_path": "articles/c629e0058c2e14f8.html",
+      "original_url": "https://isc.sans.edu/diary/rss/32960"
+    },
+    {
+      "entry_id": "ccc9009d28f87b9c",
+      "title": "Copy Fail: What You Need to Know About the Most Severe Linux Threat in Years",
+      "source_name": "Unit 42",
+      "category": "reporting",
+      "published_at": "2026-05-05T23:00:33+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CVE-2026-31431（通称 Copy Fail）は、Linuxカーネルに存在するローカル権限昇格（LPE）脆弱性であり、非特権ユーザーがカーネルメモリ操作の不備を突いてroot権限を奪取できる。Unit 42の分析によれば、影響範囲は主要ディストリビューションを含む数百万台規模に及ぶ可能性がある。攻撃者は既存の侵入経路（WebアプリやSSH経由…",
+      "article_path": "articles/ccc9009d28f87b9c.html",
+      "original_url": "https://unit42.paloaltonetworks.com/cve-2026-31431-copy-fail/"
+    }
+  ]
+}
