@@ -8,7 +8,7 @@ from pathlib import Path
 from typing import Iterable
 from urllib.parse import urljoin, urlparse
 
-from notifyhub_digest.models import FeedItem
+from notifyhub_digest.models import FeaturedTopic, FeedItem
 
 
 logger = logging.getLogger(__name__)
@@ -148,6 +148,42 @@ def _render_items_html(*, items: list[FeedItem], digest_root_url: str) -> str:
     return "\n".join(blocks)
 
 
+def _render_featured_topics_html(*, featured_topics: list[FeaturedTopic], digest_root_url: str) -> str:
+    if not featured_topics:
+        return ""
+
+    blocks: list[str] = [
+        '<div style="margin-top:14px;">',
+        '  <div style="font-size:15px;font-weight:700;color:#111827;margin-bottom:10px;">今日の注目トピック</div>',
+    ]
+
+    for topic in featured_topics:
+        title = html.escape(topic.title)
+        src = html.escape(topic.source_name)
+        reason = html.escape(topic.selection_reason)
+
+        original = _safe_url(topic.original_url)
+        original_attr = html.escape(original, quote=True)
+        article_url = _safe_url(urljoin(_safe_url(digest_root_url), topic.article_path))
+        article_attr = html.escape(article_url, quote=True)
+
+        blocks.extend(
+            [
+                '  <div style="padding:14px;border:1px solid #dbe3f4;border-radius:12px;margin-bottom:12px;background:#f8fbff;">',
+                '    <div style="font-size:14px;line-height:1.4;">'
+                f'      <a href="{original_attr}" style="color:#111827;text-decoration:none;font-weight:700;">{title}</a>'
+                f'      <span style="font-size:12px;margin-left:6px;"><a href="{article_attr}" style="color:#2563eb;">(特集Web版)</a></span>'
+                f'      <span style="color:#6b7280;font-size:12px;"> ({src})</span>'
+                '    </div>',
+                (f'    <div style="margin-top:6px;font-size:12px;color:#4b5563;line-height:1.5;">{reason}</div>' if reason else ''),
+                '  </div>',
+            ]
+        )
+
+    blocks.append('</div>')
+    return "\n".join(blocks)
+
+
 def _render_summary_html(items: list[FeedItem]) -> str:
     total = len(items)
     if total == 0:
@@ -204,9 +240,11 @@ def build_digest_email_html(
     window_to_jst: str,
     generated_at_jst: str,
     items: list[FeedItem],
+    featured_topics: list[FeaturedTopic] | None = None,
 ) -> str:
     digest_url = _safe_url(digest_root_url)
     subject = build_digest_email_subject(day=day)
+    featured_topics = featured_topics or []
 
     template_path = Path(__file__).resolve().parent / "templates" / "email.html"
     template = _load_template(template_path)
@@ -219,6 +257,7 @@ def build_digest_email_html(
         "digest_url": html.escape(digest_url, quote=True),
         "count_total": html.escape(str(len(items))),
         "summary_html": _render_summary_html(items),
+        "featured_topics_html": _render_featured_topics_html(featured_topics=featured_topics, digest_root_url=digest_root_url),
         "items_html": _render_items_html(items=items, digest_root_url=digest_root_url),
     }
 

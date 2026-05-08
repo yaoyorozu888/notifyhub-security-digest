@@ -89,6 +89,14 @@ jobs:
           OPENAI_BASE_URL: ${{ vars.OPENAI_BASE_URL }}
           OPENAI_TEMPERATURE: ${{ vars.OPENAI_TEMPERATURE }}
 
+          # Grok / featured topics (optional)
+          GROK_API_KEY: ${{ secrets.GROK_API_KEY }}
+          GROK_MODEL: ${{ vars.GROK_MODEL }}
+          GROK_MAX_TOKENS: ${{ vars.GROK_MAX_TOKENS }}
+          GROK_TEMPERATURE: ${{ vars.GROK_TEMPERATURE }}
+          FEATURED_TOPIC_COUNT: ${{ vars.FEATURED_TOPIC_COUNT }}
+          FEATURED_TOPIC_CATEGORIES: ${{ vars.FEATURED_TOPIC_CATEGORIES }}
+
           # Logging / HTTP
           NOTIFYHUB_USER_AGENT: ${{ vars.NOTIFYHUB_USER_AGENT }}
           DOTENV_OVERRIDE: ${{ vars.DOTENV_OVERRIDE }}
@@ -112,6 +120,11 @@ jobs:
           echo "OPENAI_MAX_TOKENS=${OPENAI_MAX_TOKENS-}"
           echo "OPENAI_BASE_URL=${OPENAI_BASE_URL-}"
           echo "OPENAI_TEMPERATURE=${OPENAI_TEMPERATURE-}"
+          echo "GROK_MODEL=${GROK_MODEL-}"
+          echo "GROK_MAX_TOKENS=${GROK_MAX_TOKENS-}"
+          echo "GROK_TEMPERATURE=${GROK_TEMPERATURE-}"
+          echo "FEATURED_TOPIC_COUNT=${FEATURED_TOPIC_COUNT-}"
+          echo "FEATURED_TOPIC_CATEGORIES=${FEATURED_TOPIC_CATEGORIES-}"
           echo "NOTIFYHUB_USER_AGENT=${NOTIFYHUB_USER_AGENT-}"
           echo "DOTENV_OVERRIDE=${DOTENV_OVERRIDE-}"
           echo "NOTIFYHUB_HTTP_TIMEOUT=${NOTIFYHUB_HTTP_TIMEOUT-}"
@@ -123,6 +136,7 @@ jobs:
           echo "ACS_EMAIL_SENDER"
           echo "ACS_EMAIL_TO"
           echo "OPENAI_API_KEY"
+          echo "GROK_API_KEY"
 
       - name: Generate digest (optionally send email)
         env:
@@ -142,6 +156,14 @@ jobs:
           OPENAI_MAX_TOKENS: ${{ vars.OPENAI_MAX_TOKENS }}
           OPENAI_BASE_URL: ${{ vars.OPENAI_BASE_URL }}
           OPENAI_TEMPERATURE: ${{ vars.OPENAI_TEMPERATURE }}
+
+          # Grok / featured topics (optional)
+          GROK_API_KEY: ${{ secrets.GROK_API_KEY }}
+          GROK_MODEL: ${{ vars.GROK_MODEL }}
+          GROK_MAX_TOKENS: ${{ vars.GROK_MAX_TOKENS }}
+          GROK_TEMPERATURE: ${{ vars.GROK_TEMPERATURE }}
+          FEATURED_TOPIC_COUNT: ${{ vars.FEATURED_TOPIC_COUNT }}
+          FEATURED_TOPIC_CATEGORIES: ${{ vars.FEATURED_TOPIC_CATEGORIES }}
 
           # Logging / HTTP
           NOTIFYHUB_USER_AGENT: ${{ vars.NOTIFYHUB_USER_AGENT }}

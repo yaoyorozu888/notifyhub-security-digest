@@ -62,6 +62,12 @@ class Lesson(BaseModel):
     body: str
 
 
+class InformationSource(BaseModel):
+    title: str
+    url: str
+    source_type: str = "web"
+
+
 class AnalysisResult(BaseModel):
     summary_html: str = ""
     technical_terms: list[TechnicalTerm] = Field(default_factory=list)
@@ -85,3 +91,35 @@ class FeedItem(BaseModel):
     @property
     def article_path(self) -> str:
         return f"articles/{self.entry_id}.html"
+
+
+class FeaturedTopic(BaseModel):
+    topic_id: str = "featured-topic-1"
+    title: str
+    source_name: str
+    published_at: datetime
+    original_url: str
+    analysis: AnalysisResult
+    selection_reason: str = ""
+    requested_category: str = ""
+    information_sources: list[InformationSource] = Field(default_factory=list)
+
+    @property
+    def article_path(self) -> str:
+        return f"articles/{self.topic_id}.html"
+
+    def as_feed_item(self) -> FeedItem:
+        impact_reason = (self.analysis.impact_reason or "").strip()
+        selection_reason = (self.selection_reason or "").strip()
+        if selection_reason:
+            impact_reason = f"AI選定理由: {selection_reason}\n\n{impact_reason}".strip()
+
+        return FeedItem(
+            entry_id=self.topic_id,
+            title=self.title,
+            source_name=self.source_name,
+            category="featured",
+            published_at=self.published_at,
+            original_url=self.original_url,
+            analysis=self.analysis.model_copy(update={"impact_reason": impact_reason}),
+        )

@@ -108,7 +108,16 @@ pip install ".[acs]"
 AI分析用（任意）
 
 - `OPENAI_API_KEY`（未設定時は AI 分析をスキップ）
-- `OPENAI_MODEL`（例: `gpt-4o-mini`）
+- `OPENAI_MODEL`（既定: `gpt-5.5`）
+
+特集トピック生成用（任意・既存記事生成とは完全に分離）
+
+- `GROK_API_KEY`
+- `GROK_MODEL`（既定: `grok-4.3`）
+- `FEATURED_TOPIC_COUNT`（既定: `1`）
+- `FEATURED_TOPIC_CATEGORIES`（カンマ区切り。例: `Ransomware`。複数指定するなら `FEATURED_TOPIC_COUNT` も増やす）
+
+`GROK_API_KEY` を設定した場合のみ、Grok が `web_search` と `x_search` を使って X 投稿とニュースサイトを横断検索し、「今日の注目トピック」を生成します。通常記事生成は引き続き `OPENAI_*` と `sources.json` を使うため、相互に影響しません。
 
 ### 3) 送信を有効化して実行
 
@@ -161,6 +170,10 @@ GitHub Actions のスケジュール実行で日次生成し、`site/` 配下に
 
 - `OPENAI_API_KEY`
 - `OPENAI_MODEL`
+- `GROK_API_KEY`
+- `GROK_MODEL`
+- `FEATURED_TOPIC_COUNT`
+- `FEATURED_TOPIC_CATEGORIES`
 
 ### Actionsログ出力（vars / secrets）
 

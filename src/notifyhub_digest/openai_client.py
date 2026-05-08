@@ -155,18 +155,18 @@ def has_api_key() -> bool:
     return bool(os.getenv("OPENAI_API_KEY"))
 
 
-def load_openai_config() -> OpenAIConfig | None:
-    api_key = os.getenv("OPENAI_API_KEY")
+def load_openai_config(*, prefix: str = "OPENAI") -> OpenAIConfig | None:
+    api_key = os.getenv(f"{prefix}_API_KEY")
     if not api_key:
         return None
-    model = (os.getenv("OPENAI_MODEL") or "").strip() or "gpt-4o-mini"
-    base_url = (os.getenv("OPENAI_BASE_URL") or "").strip() or "https://api.openai.com/v1"
+    model = (os.getenv(f"{prefix}_MODEL") or "").strip() or "gpt-5.5"
+    base_url = (os.getenv(f"{prefix}_BASE_URL") or "").strip() or "https://api.openai.com/v1"
     try:
-        max_tokens = int(os.getenv("OPENAI_MAX_TOKENS", "900"))
+        max_tokens = int(os.getenv(f"{prefix}_MAX_TOKENS", "900"))
     except Exception:
         max_tokens = 900
     try:
-        temperature = float(os.getenv("OPENAI_TEMPERATURE", "0.4"))
+        temperature = float(os.getenv(f"{prefix}_TEMPERATURE", "0.4"))
     except Exception:
         temperature = 0.4
     return OpenAIConfig(

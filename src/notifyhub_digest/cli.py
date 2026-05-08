@@ -131,6 +131,7 @@ def email_preview(
         window_to_jst=built.window_to_jst.isoformat(),
         generated_at_jst=built.generated_at_jst.isoformat(),
         items=built.items,
+        featured_topics=built.featured_topics,
     )
 
     out_path = built.digest_dir / "email_preview.html"

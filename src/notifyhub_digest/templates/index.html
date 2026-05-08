@@ -74,6 +74,67 @@
       box-shadow: var(--shadow);
       overflow:visible;
     }
+    .featureShell{
+      margin-bottom:16px;
+    }
+    .featurePanel{
+      padding:14px;
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+    }
+    .postFeatureMeta{
+      padding:0 14px 16px;
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+    }
+    .featureHead{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+    .featureTitle{
+      display:flex;
+      flex-direction:column;
+      gap:4px;
+    }
+    .featureTitle h2{
+      margin:0;
+      font-size:16px;
+      letter-spacing:.15px;
+    }
+    .featureTitle p{
+      margin:0;
+      font-size:12px;
+      color:var(--muted);
+      line-height:1.6;
+    }
+    .featureBody{
+      display:flex;
+      flex-direction:column;
+      gap:8px;
+    }
+    .featureCard{
+      padding:12px;
+      border:1px solid rgba(34,48,91,.8);
+      border-radius:14px;
+      background:rgba(12,18,38,.4);
+    }
+    .featureCard .tagRow{
+      margin-bottom:6px;
+    }
+    .featureBody h3{
+      margin:0;
+      font-size:15px;
+      line-height:1.4;
+    }
+    .featureBody h3 a{
+      text-decoration:none;
+    }
+    .featureBody h3 a:hover{color:var(--accent)}
     .controls{
       display:grid;
       grid-template-columns: 1.4fr 0.6fr 0.6fr 0.6fr;
@@ -277,12 +338,6 @@
         <div class="intro">
           日次で収集したセキュリティ関連の公開情報を一覧化しています。詳細は各Web記事で確認してください。
         </div>
-        <div class="impactSummary" id="impactSummary"></div>
-        <div class="metaRow">
-          <span class="chip">総件数 <strong id="total">-</strong></span>
-          <span class="chip">表示中 <strong id="shown">-</strong></span>
-          <span class="chip">並び <strong id="sortLabel">Impact→新着</strong></span>
-        </div>
       </div>
       <div class="metaRow headerMeta">
         <span class="chip">ソース：<strong class="mono">manifest.json</strong></span>
@@ -290,7 +345,29 @@
       </div>
     </header>
 
+    <section id="featureShell" class="panel featureShell" style="display:none;">
+      <div id="featurePanel" class="featurePanel">
+        <div class="featureHead">
+          <div class="featureTitle">
+            <h2>今日の注目トピック</h2>
+            <p>Grok が X 投稿とニュースサイトを横断検索し、指定件数と指定カテゴリに沿って選定・要約しています。</p>
+          </div>
+          <div id="featureConfig" class="metaRow"></div>
+        </div>
+        <div id="featureBody" class="featureBody"></div>
+      </div>
+    </section>
+
     <div class="panel">
+      <div class="postFeatureMeta">
+        <div class="impactSummary" id="impactSummary"></div>
+        <div class="metaRow">
+          <span class="chip">総件数 <strong id="total">-</strong></span>
+          <span class="chip">表示中 <strong id="shown">-</strong></span>
+          <span class="chip">並び <strong id="sortLabel">Impact→新着</strong></span>
+        </div>
+      </div>
+
       <div class="controls">
         <div class="ctrl" style="grid-column: span 2;">
           <label for="q" class="labelRow">
@@ -379,6 +456,53 @@
     // ---- State
     let manifest = null;
     let allItems = [];
+
+    function renderFeaturedItems(items, config){
+      const shell = qs("featureShell");
+      const panel = qs("featurePanel");
+      const body = qs("featureBody");
+      const configNode = qs("featureConfig");
+      if(!shell || !panel || !body || !configNode) return;
+      if(!items || items.length === 0){
+        shell.style.display = "none";
+        body.innerHTML = "";
+        configNode.innerHTML = "";
+        return;
+      }
+
+      const categories = Array.isArray(config?.categories) ? config.categories : [];
+      const requestedCount = config?.count ?? items.length;
+      configNode.innerHTML = `
+        <span class="chip">件数 <strong>${escapeHtml(String(requestedCount))}</strong></span>
+        <span class="chip">カテゴリ <strong>${escapeHtml(categories.length ? categories.join(", ") : "指定なし")}</strong></span>
+      `;
+
+      body.innerHTML = items.map((item) => {
+        const detailHref = item.article_path ?? ("articles/" + (item.topic_id ?? item.entry_id) + ".html");
+        const originalHref = item.original_url ?? "#";
+        const summary = item.summary_preview ?? "";
+        const pub = toJstLabel(item.published_at);
+        const selectionReason = item.selection_reason ?? "";
+        const requestedCategory = item.requested_category ?? "";
+        return `
+          <article class="featureCard">
+            ${requestedCategory ? `<div class="tagRow"><span class="tag">${escapeHtml(requestedCategory)}</span></div>` : ""}
+            <h3><a href="${escapeHtml(detailHref)}">${escapeHtml(item.title ?? "(no title)")}</a></h3>
+            <div class="meta">
+              <span>🗞️ ${escapeHtml(item.source_name ?? "-")}</span>
+              <span>🕒 ${escapeHtml(pub)}</span>
+            </div>
+            ${selectionReason ? `<div class="summary">${escapeHtml(selectionReason)}</div>` : ""}
+            ${summary ? `<div class="summary">${escapeHtml(summary)}</div>` : ""}
+            <div class="actions">
+              <a class="linkbtn" href="${escapeHtml(detailHref)}">AI 要約を見る</a>
+              <a class="linkbtn" href="${escapeHtml(originalHref)}" target="_blank" rel="noopener noreferrer">原文を開く</a>
+            </div>
+          </article>
+        `;
+      }).join("");
+      shell.style.display = "block";
+    }
 
     function populateThreatTypeOptions(items){
       const threatOrder = [
@@ -557,6 +681,7 @@
 
         qs("total").textContent = String(allItems.length);
         populateThreatTypeOptions(allItems);
+      renderFeaturedItems(manifest.featured_topics ?? [], manifest.featured_topics_config ?? {});
 
         // Impact summary (counts by impact_level)
         const impactOrder = ["Critical","High","Medium","Low","Info","Unknown"];

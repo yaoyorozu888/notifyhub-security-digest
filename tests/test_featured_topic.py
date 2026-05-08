@@ -1,0 +1,194 @@
+from __future__ import annotations
+
+import json
+from datetime import datetime, timedelta
+from pathlib import Path
+
+from notifyhub_digest.models import AnalysisResult, FeaturedTopic, InformationSource, Source
+from notifyhub_digest.rss import RawEntry
+from notifyhub_digest.featured_topic import _build_user_prompt, _infer_category_policy, _looks_mismatched_for_category
+from notifyhub_digest.runner import build_digest_outputs
+from notifyhub_digest.timeutils import JST, compute_daily_window
+
+
+def _patch_digest_sources(monkeypatch, entry: RawEntry) -> None:
+    src = Source(name="Digest Source", feed_url="https://example.com/feed", enabled=True)
+    monkeypatch.setattr("notifyhub_digest.runner.load_sources", lambda _p: [src])
+    monkeypatch.setattr("notifyhub_digest.runner.iter_enabled_sources", lambda sources: list(sources))
+    monkeypatch.setattr("notifyhub_digest.runner.fetch_feed_entries", lambda _client, _src, user_agent: [entry])
+
+
+def test_build_digest_outputs_keeps_existing_items_when_featured_topics_enabled(tmp_path: Path, monkeypatch) -> None:
+    run_at_iso = "2026-01-12T06:00:00+09:00"
+    window = compute_daily_window(datetime.fromisoformat(run_at_iso))
+    digest_entry = RawEntry(
+        entry_id="digest-1",
+        title="Digest Title",
+        link="https://example.com/digest",
+        published_at_utc=window.start_utc + timedelta(minutes=1),
+        summary="digest summary",
+    )
+    _patch_digest_sources(monkeypatch, digest_entry)
+
+    featured = [
+        FeaturedTopic(
+            topic_id="featured-topic-1",
+            title="Featured Topic 1",
+            source_name="Grok x_search",
+            published_at=window.start_utc + timedelta(hours=1),
+            original_url="https://example.com/featured-1",
+            analysis=AnalysisResult(
+                summary_html="<h4>概要</h4><p>featured summary 1</p>",
+                technical_terms=[],
+                lessons=[],
+                impact_level="High",
+                impact_reason="featured reason 1",
+                threat_type="Advisory",
+                model_version="grok-4.3",
+            ),
+            selection_reason="今日の運用判断にもっとも効くトピックです。",
+            requested_category="Advisory",
+            information_sources=[
+                InformationSource(title="Official blog", url="https://example.com/source-1", source_type="official"),
+                InformationSource(title="X post", url="https://x.com/example/status/1", source_type="x"),
+            ],
+        ),
+        FeaturedTopic(
+            topic_id="featured-topic-2",
+            title="Featured Topic 2",
+            source_name="Grok web_search",
+            published_at=window.start_utc + timedelta(hours=2),
+            original_url="https://example.com/featured-2",
+            analysis=AnalysisResult(
+                summary_html="<h4>概要</h4><p>featured summary 2</p>",
+                technical_terms=[],
+                lessons=[],
+                impact_level="Medium",
+                impact_reason="featured reason 2",
+                threat_type="Ransomware",
+                model_version="grok-4.3",
+            ),
+            selection_reason="X とニュース双方で確認できる話題です。",
+            requested_category="Ransomware",
+            information_sources=[
+                InformationSource(title="News article", url="https://example.com/source-2", source_type="news"),
+            ],
+        ),
+    ]
+
+    class _Settings:
+        count = 2
+        categories = ["Advisory", "Ransomware"]
+
+    monkeypatch.setattr("notifyhub_digest.runner.build_featured_topics", lambda *args, **kwargs: featured)
+    monkeypatch.setattr("notifyhub_digest.runner.load_grok_config", lambda: object())
+    monkeypatch.setattr("notifyhub_digest.runner.load_featured_topics_settings", lambda: _Settings())
+
+    built = build_digest_outputs(
+        out_dir=tmp_path / "out",
+        sources_path=tmp_path / "sources.json",
+        run_at_iso=run_at_iso,
+    )
+
+    assert len(built.items) == 1
+    assert built.items[0].entry_id == "digest-1"
+    assert len(built.featured_topics) == 2
+    assert built.featured_topics[0].title == "Featured Topic 1"
+
+    manifest_path = tmp_path / "out" / "digest" / "2026" / "01" / "12" / "manifest.json"
+    payload = json.loads(manifest_path.read_text(encoding="utf-8"))
+    assert payload["items"][0]["entry_id"] == "digest-1"
+    assert payload["featured_topics_config"]["count"] == 2
+    assert payload["featured_topics"][0]["title"] == "Featured Topic 1"
+    assert payload["featured_topics"][1]["requested_category"] == "Ransomware"
+    assert payload["featured_topics"][0]["information_sources"][0]["source_type"] == "official"
+    assert (tmp_path / "out" / "digest" / "2026" / "01" / "12" / "articles" / "featured-topic-1.html").exists()
+    assert (tmp_path / "out" / "digest" / "2026" / "01" / "12" / "articles" / "featured-topic-2.html").exists()
+    article_html = (tmp_path / "out" / "digest" / "2026" / "01" / "12" / "articles" / "featured-topic-1.html").read_text(encoding="utf-8")
+    assert "Official blog" in article_html
+    assert "情報ソース" in article_html
+    assert article_html.index("📌 キーワード解説") < article_html.index("情報ソース")
+    assert article_html.index("深掘り解説") < article_html.index("情報ソース")
+    assert "Impact判定理由" not in article_html
+    assert "Impact: High" not in article_html
+    assert "Advisory</span>" not in article_html
+    assert 'class="infoSourceRow"' in article_html
+
+
+def test_build_digest_outputs_ignores_featured_topic_failures(tmp_path: Path, monkeypatch) -> None:
+    run_at_iso = "2026-01-12T06:00:00+09:00"
+    window = compute_daily_window(datetime.fromisoformat(run_at_iso))
+    digest_entry = RawEntry(
+        entry_id="digest-1",
+        title="Digest Title",
+        link="https://example.com/digest",
+        published_at_utc=window.start_utc + timedelta(minutes=1),
+        summary="digest summary",
+    )
+    _patch_digest_sources(monkeypatch, digest_entry)
+
+    class _Settings:
+        count = 2
+        categories = ["Advisory", "Ransomware"]
+
+    monkeypatch.setattr("notifyhub_digest.runner.build_featured_topics", lambda *args, **kwargs: (_ for _ in ()).throw(RuntimeError("boom")))
+    monkeypatch.setattr("notifyhub_digest.runner.load_grok_config", lambda: object())
+    monkeypatch.setattr("notifyhub_digest.runner.load_featured_topics_settings", lambda: _Settings())
+
+    built = build_digest_outputs(
+        out_dir=tmp_path / "out",
+        sources_path=tmp_path / "sources.json",
+        run_at_iso=run_at_iso,
+    )
+
+    assert len(built.items) == 1
+    assert built.featured_topics == []
+    assert (tmp_path / "out" / "digest" / "2026" / "01" / "12" / "manifest.json").exists()
+
+
+def test_build_user_prompt_adds_generic_tech_trend_guidance() -> None:
+    class _Settings:
+        count = 3
+        categories = ["Cybersecurity", "AI", "cloud platform trends"]
+
+    prompt = _build_user_prompt(
+        window_start_utc=datetime(2026, 5, 8, 0, 0),
+        window_end_utc=datetime(2026, 5, 9, 0, 0),
+        settings=_Settings(),
+    )
+
+    assert "cloud platform trends" in prompt
+    assert "クラウド、開発者ツール、半導体、AI基盤" in prompt
+    assert "サイバー攻撃・脆弱性・情報漏えい・インシデント対応そのものは原則として選ばない" in prompt
+
+
+def test_generic_tech_trend_category_rejects_cybersecurity_incident_topics() -> None:
+    assert _looks_mismatched_for_category(
+        requested_category="cloud platform trends",
+        threat_type="Data Breach",
+        title="Canvas LMS大規模侵害",
+        summary_html="<h4>概要</h4><p>学生データ漏えいとサイバー攻撃の話題</p>",
+    )
+
+    assert not _looks_mismatched_for_category(
+        requested_category="cloud platform trends",
+        threat_type="Other",
+        title="新しいクラウドネイティブ開発基盤が登場",
+        summary_html="<h4>概要</h4><p>開発者ツールとAI基盤の最新動向をまとめる</p>",
+    )
+
+
+def test_infer_category_policy_is_not_hardcoded_to_one_literal() -> None:
+    policy = _infer_category_policy("enterprise IT technology trends")
+    assert policy.exclude_cybersecurity_incidents is True
+    assert "技術トレンド" in policy.guidance
+
+    security_policy = _infer_category_policy("product security updates")
+    assert security_policy.exclude_cybersecurity_incidents is False
+    assert "セキュリティ実務" in security_policy.guidance
+
+
+def test_infer_category_policy_avoids_substring_false_positives() -> None:
+    policy = _infer_category_policy("retail operations")
+    assert policy.guidance == ""
+    assert policy.exclude_cybersecurity_incidents is False

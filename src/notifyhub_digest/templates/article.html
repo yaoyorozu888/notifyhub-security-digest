@@ -124,6 +124,18 @@
       line-height:1.65;
       white-space:pre-wrap;
     }
+    .infoSources{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.5;
+    }
+    .infoSourceRow{
+      margin:0;
+      padding:0;
+    }
+    .infoSourceRow + .infoSourceRow{
+      margin-top:2px;
+    }
 
     /* --- summary_html styles (OpenAI output uses h4/p/ul/li/strong/code/br) --- */
     .summary h4{
@@ -242,8 +254,7 @@
         </div>
 
         <div class="tags">
-          <span class="tag level-{{impact_level}}">Impact: {{impact_level}}</span>
-          <span class="tag">{{threat_type}}</span>
+{{article_tags_html}}
         </div>
 
         <div class="btnRow">
@@ -253,10 +264,8 @@
       </div>
 
       <div class="body">
-        <div class="section">
-          <h2>Impact判定理由</h2>
-          <div class="ruleReason">{{impact_reason}}</div>
-        </div>
+        {{selection_reason_section}}
+{{impact_reason_section}}
         <div class="section summary">
           <h2>🧾 {{analysis_heading}}</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
@@ -273,6 +282,8 @@
             {{deep_dive_html}}
           </div>
         </div>
+
+        {{information_sources_section}}
 
         <div class="section">
           <h2>🕘 生成情報</h2>

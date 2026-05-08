@@ -17,9 +17,15 @@ from notifyhub_digest.acs_email import (
     send_acs_email,
     should_send_email,
 )
-from notifyhub_digest.models import AnalysisResult, FeedItem
+from notifyhub_digest.featured_topic import (
+    build_featured_topics,
+    load_featured_topics_settings,
+    load_grok_config,
+)
+from notifyhub_digest.models import AnalysisResult, FeedItem, FeaturedTopic
 from notifyhub_digest.openai_client import analyze_item, load_openai_config
 from notifyhub_digest.render import (
+    _information_sources_html,
     compute_digest_url_path,
     compute_digest_paths,
     write_article_html,
@@ -57,6 +63,7 @@ class BuiltDigest:
     window_to_jst: datetime
     digest_root_url: str
     items: list[FeedItem]
+    featured_topics: list[FeaturedTopic]
     digest_dir: Path
 
 
@@ -79,8 +86,11 @@ def build_digest_outputs(
     retries = int(os.getenv("NOTIFYHUB_HTTP_RETRIES", "2"))
 
     openai_cfg = load_openai_config()
+    grok_cfg = load_grok_config()
+    featured_settings = load_featured_topics_settings()
 
     items: list[FeedItem] = []
+    featured_topics: list[FeaturedTopic] = []
 
     transport = httpx.HTTPTransport(retries=retries)
     with httpx.Client(timeout=timeout, follow_redirects=True, transport=transport) as client:
@@ -128,6 +138,21 @@ def build_digest_outputs(
 
                 items.append(item)
 
+        if grok_cfg is not None and featured_settings.count > 0:
+            try:
+                featured_topics = build_featured_topics(
+                    client,
+                    cfg=grok_cfg,
+                    window_start_utc=window.start_utc,
+                    window_end_utc=window.end_utc,
+                    settings=featured_settings,
+                )
+                for topic in featured_topics:
+                    topic.analysis.summary_html = sanitize_summary_html(topic.analysis.summary_html)
+            except Exception as exc:
+                logger.warning("Featured topic generation failed: %s", exc)
+                featured_topics = []
+
     generated_at_jst = datetime.now(tz=JST)
 
     # 出力先
@@ -157,6 +182,19 @@ def build_digest_outputs(
             digest_root_url=digest_root_url,
         )
 
+    for featured_topic in featured_topics:
+        write_article_html(
+            article_tpl,
+            paths.digest_dir,
+            featured_topic.as_feed_item(),
+            window_from_jst=window.start_jst.isoformat(),
+            window_to_jst=window.end_jst.isoformat(),
+            generated_at_jst=generated_at_jst.isoformat(),
+            digest_root_url=digest_root_url,
+            selection_reason=featured_topic.selection_reason,
+            information_sources_html=_information_sources_html(featured_topic.information_sources),
+        )
+
     # manifest
     write_manifest(
         paths.digest_dir,
@@ -165,6 +203,11 @@ def build_digest_outputs(
         window_to_iso=window.end_jst.isoformat(),
         generated_at_iso=generated_at_jst.isoformat(),
         items=items,
+        featured_topics=featured_topics,
+        featured_topics_config={
+            "count": featured_settings.count,
+            "categories": featured_settings.categories,
+        },
     )
 
     # landing pages (/, /digest/, /digest/latest/)
@@ -179,6 +222,7 @@ def build_digest_outputs(
         window_to_jst=window.end_jst,
         digest_root_url=digest_root_url,
         items=items,
+        featured_topics=featured_topics,
         digest_dir=paths.digest_dir,
     )
 
@@ -208,6 +252,7 @@ def run_digest(
             window_to_jst=built.window_to_jst.isoformat(),
             generated_at_jst=built.generated_at_jst.isoformat(),
             items=built.items,
+            featured_topics=built.featured_topics,
         )
 
         if not send_acs_email(cfg=cfg, subject=subject, html_body=html_body):

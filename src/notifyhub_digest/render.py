@@ -8,7 +8,7 @@ from datetime import date
 from pathlib import Path
 from urllib.parse import urlparse
 
-from notifyhub_digest.models import FeedItem
+from notifyhub_digest.models import FeedItem, FeaturedTopic, InformationSource
 from notifyhub_digest.timeutils import JST
 
 
@@ -88,10 +88,28 @@ def _lesson_cards_html(item: FeedItem) -> str:
     return "\n".join(parts)
 
 
+def _information_sources_html(sources: list[InformationSource]) -> str:
+    if not sources:
+        return ""
+
+    parts: list[str] = ['<div class="section">', '  <h2>情報ソース</h2>', '  <div class="infoSources">']
+    for source in sources:
+        title = html.escape(source.title or source.url)
+        url = html.escape(_safe_url(source.url))
+        source_type = html.escape(source.source_type or "web")
+        parts.append(
+            f'    <div class="infoSourceRow"><strong>{source_type}</strong> <a href="{url}" target="_blank" rel="noopener noreferrer">{title}</a></div>'
+        )
+    parts.extend(['  </div>', "</div>"])
+    return "\n".join(parts)
+
+
 def _analysis_heading(item: FeedItem) -> str:
     model_version = (item.analysis.model_version or "").strip()
     if not model_version:
         return "要約（ChatGPT）"
+    if "grok" in model_version.lower():
+        return f"要約（Grok / {html.escape(model_version)}）"
     return f"要約（ChatGPT / {html.escape(model_version)}）"
 
 
@@ -125,12 +143,40 @@ def write_manifest(
     window_to_iso: str,
     generated_at_iso: str,
     items: list[FeedItem],
+    featured_topics: list[FeaturedTopic] | None = None,
+    featured_topics_config: dict[str, object] | None = None,
 ) -> None:
+    featured_topics = featured_topics or []
     payload = {
         "date": day,
         "window": {"from": window_from_iso, "to": window_to_iso},
         "counts": {"total": len(items)},
         "generated_at_jst": generated_at_iso,
+        "featured_topics_config": featured_topics_config or {"count": 0, "categories": []},
+        "featured_topics": [
+            {
+                "topic_id": topic.topic_id,
+                "title": topic.title,
+                "source_name": topic.source_name,
+                "published_at": topic.published_at.isoformat(),
+                "impact_level": topic.analysis.impact_level,
+                "threat_type": topic.analysis.threat_type,
+                "summary_preview": _summary_preview(topic.analysis.summary_html),
+                "article_path": topic.article_path,
+                "original_url": topic.original_url,
+                "selection_reason": topic.selection_reason,
+                "requested_category": topic.requested_category,
+                "information_sources": [
+                    {
+                        "title": source.title,
+                        "url": source.url,
+                        "source_type": source.source_type,
+                    }
+                    for source in topic.information_sources
+                ],
+            }
+            for topic in featured_topics
+        ],
         "items": [
             {
                 "entry_id": it.entry_id,
@@ -167,8 +213,39 @@ def write_article_html(
     window_to_jst: str,
     generated_at_jst: str,
     digest_root_url: str,
+    selection_reason: str = "",
+    information_sources_html: str = "",
 ) -> None:
     digest_index_path = "../index.html"
+    selection_reason = (selection_reason or "").strip()
+    is_featured_topic = bool(selection_reason)
+    selection_reason_section = ""
+    if selection_reason:
+        selection_reason_section = "\n".join(
+            [
+                '<div class="section">',
+                '  <h2>AI選定理由</h2>',
+                f'  <div class="ruleReason">{html.escape(selection_reason)}</div>',
+                '</div>',
+            ]
+        )
+    article_tags_html = "\n".join(
+        [
+            f'          <span class="tag level-{html.escape(item.analysis.impact_level)}">Impact: {html.escape(item.analysis.impact_level)}</span>',
+            f'          <span class="tag">{html.escape(item.analysis.threat_type)}</span>',
+        ]
+    )
+    impact_reason_section = "\n".join(
+        [
+            '        <div class="section">',
+            '          <h2>Impact判定理由</h2>',
+            f'          <div class="ruleReason">{html.escape(item.analysis.impact_reason)}</div>',
+            '        </div>',
+        ]
+    )
+    if is_featured_topic:
+        article_tags_html = ""
+        impact_reason_section = ""
     mapping = {
         "digest_index_path": html.escape(digest_index_path),
         "digest_root_url": html.escape(_safe_url(digest_root_url)),
@@ -177,9 +254,8 @@ def write_article_html(
         "source_name": html.escape(item.source_name),
         "published_at_jst": html.escape(item.published_at.astimezone(JST).isoformat()),
         "original_url": html.escape(_safe_url(item.original_url)),
-        "impact_level": html.escape(item.analysis.impact_level),
-        "impact_reason": html.escape(item.analysis.impact_reason),
-        "threat_type": html.escape(item.analysis.threat_type),
+        "article_tags_html": article_tags_html,
+        "impact_reason_section": impact_reason_section,
         "analysis_heading": _analysis_heading(item),
         # summary_htmlは既にサニタイズ済み前提（属性禁止/許可タグのみ）
         "summary_html": item.analysis.summary_html,
@@ -188,6 +264,8 @@ def write_article_html(
         "window_from_jst": html.escape(window_from_jst),
         "window_to_jst": html.escape(window_to_jst),
         "generated_at_jst": html.escape(generated_at_jst),
+        "selection_reason_section": selection_reason_section,
+        "information_sources_section": information_sources_html,
     }
 
     template = _load_template(template_path)
