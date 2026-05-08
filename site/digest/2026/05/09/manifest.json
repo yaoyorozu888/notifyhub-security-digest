@@ -1,0 +1,415 @@
+{
+  "date": "2026-05-09",
+  "window": {
+    "from": "2026-05-08T06:00:00+09:00",
+    "to": "2026-05-09T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 26
+  },
+  "generated_at_jst": "2026-05-09T06:32:29.496891+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "2026年のクラウドとAIインフラ：ハイブリッド戦略と最適化が鍵に",
+      "source_name": "Civo",
+      "published_at": "2026-05-06T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要2026年、クラウドとAIは採用段階から実行・最適化段階へ移行。ハイブリッドクラウドが標準となり、AIインフラ需要の高まりでGPUクラスタやFinOpsの重要性が増す。競争優位性は管理・ガバナンスの巧みさで決まる。",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://www.civo.com/blog/state-of-cloud-in-2026",
+      "selection_reason": "AIワークロードの拡大に伴うクラウド戦略の実行・最適化フェーズへの移行を、最新調査に基づき実務的に解説",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "The state of cloud and AI in 2026",
+          "url": "https://www.civo.com/blog/state-of-cloud-in-2026",
+          "source_type": "web"
+        },
+        {
+          "title": "Digital Infrastructure Trends to Watch in 2026",
+          "url": "https://www.tierpoint.com/blog/cloud/digital-infrastructure-trends/",
+          "source_type": "web"
+        },
+        {
+          "title": "Power, land, cooling... AI infrastructure bottlenecks",
+          "url": "https://x.com/AvivArazi/status/2052538852552708489",
+          "source_type": "x"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "AIが自らの研究開発を自動化する時代へ",
+      "source_name": "Yahoo Tech",
+      "published_at": "2026-05-08T10:46:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要AIラボが自らの研究開発サイクルをAIに委ねる正のフィードバックループが目前。モデル改善の速度が指数関数的に向上し、AIの進化がさらに加速する可能性が高い。",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://tech.yahoo.com/ai/articles/research-development-ai-could-soon-104635181.html",
+      "selection_reason": "AIラボのR&Dサイクル自動化が現実味を帯び、AI進化の加速要因として注目",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "Research and development of new AI could soon be undertaken by AI",
+          "url": "https://tech.yahoo.com/ai/articles/research-development-ai-could-soon-104635181.html",
+          "source_type": "web"
+        },
+        {
+          "title": "AI Updates Today (May 2026)",
+          "url": "https://llm-stats.com/llm-updates",
+          "source_type": "web"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "CISA、BerriAI LiteLLMのSQLインジェクション脆弱性をKEVに追加",
+      "source_name": "CISA",
+      "published_at": "2026-05-08T20:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CISAがBerriAI LiteLLMのSQLインジェクション脆弱性（CVE-2026-42208）をKEVカタログに追加。連邦機関は即時対応を求められ、AIツール利用企業にも波及するリスク。",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://www.cisa.gov/news-events/alerts/2026/05/08/cisa-adds-one-known-exploited-vulnerability-catalog",
+      "selection_reason": "AI関連ツールの積極的悪用事例として、セキュリティ実務に即した最新アラート",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+          "url": "https://www.cisa.gov/news-events/alerts/2026/05/08/cisa-adds-one-known-exploited-vulnerability-catalog",
+          "source_type": "web"
+        },
+        {
+          "title": "Linux Kernel Dirty Frag LPE Exploit",
+          "url": "https://thehackernews.com/2026/05/linux-kernel-dirty-frag-lpe-exploit.html",
+          "source_type": "web"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "f13424eff3dcc0ec",
+      "title": "CVE-2026-42208 BerriAI LiteLLM SQL Injection Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-05-08T00:00:00+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/f13424eff3dcc0ec.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "2e203743281096e3",
+      "title": "TCLBANKER Banking Trojan Targets Financial Platforms via WhatsApp and Outlook Worms",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-05-08T18:12:00+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/2e203743281096e3.html",
+      "original_url": "https://thehackernews.com/2026/05/tclbanker-banking-trojan-targets.html"
+    },
+    {
+      "entry_id": "2682580f4739eb19",
+      "title": "Fake Call History Apps Stole Payments From Users After 7.3 Million Play Store Downloads",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-05-08T15:08:00+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/2682580f4739eb19.html",
+      "original_url": "https://thehackernews.com/2026/05/fake-call-history-apps-stole-payments.html"
+    },
+    {
+      "entry_id": "e248bd3951fa3312",
+      "title": "One Click, Total Shutdown: The \"Patient Zero\" Webinar on Killing Stealth Breaches",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-05-08T14:01:00+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/e248bd3951fa3312.html",
+      "original_url": "https://thehackernews.com/2026/05/one-click-total-shutdown-patient-zero.html"
+    },
+    {
+      "entry_id": "0a8d78b06d39db8d",
+      "title": "Quasar Linux RAT Steals Developer Credentials for Software Supply Chain Compromise",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-05-08T11:00:00+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/0a8d78b06d39db8d.html",
+      "original_url": "https://thehackernews.com/2026/05/quasar-linux-rat-steals-developer.html"
+    },
+    {
+      "entry_id": "245ff9fd22665387",
+      "title": "One Missed Threat Per Week: What 25M Alerts Reveal About Low-Severity Risk",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-05-08T10:30:00+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/245ff9fd22665387.html",
+      "original_url": "https://thehackernews.com/2026/05/one-missed-threat-per-week-what-25m.html"
+    },
+    {
+      "entry_id": "0611826dc2c08d8b",
+      "title": "New Linux PamDOORa Backdoor Uses PAM Modules to Steal SSH Credentials",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-05-08T08:41:00+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/0611826dc2c08d8b.html",
+      "original_url": "https://thehackernews.com/2026/05/new-linux-pamdoora-backdoor-uses-pam.html"
+    },
+    {
+      "entry_id": "966ac00dad19a510",
+      "title": "Linux Kernel Dirty Frag LPE Exploit Enables Root Access Across Major Distributions",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-05-08T05:12:00+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/966ac00dad19a510.html",
+      "original_url": "https://thehackernews.com/2026/05/linux-kernel-dirty-frag-lpe-exploit.html"
+    },
+    {
+      "entry_id": "5247b4abda0b59ad",
+      "title": "Another Universal Linux Local Privilege Escalation (LPE) Vulnerability: Dirty Frag, (Fri, May 8th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-05-08T14:57:03+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/5247b4abda0b59ad.html",
+      "original_url": "https://isc.sans.edu/diary/rss/32968"
+    },
+    {
+      "entry_id": "900e208a0c8d1852",
+      "title": "ISC Stormcast For Friday, May 8th, 2026 https://isc.sans.edu/podcastdetail/9924, (Fri, May 8th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-05-08T02:00:03+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/900e208a0c8d1852.html",
+      "original_url": "https://isc.sans.edu/diary/rss/32966"
+    },
+    {
+      "entry_id": "bad6c4dc6ce65eed",
+      "title": "VU#260001: Linux kernel contains local privilege escalation vulnerability (Copy Fail)",
+      "source_name": "CERT/CC",
+      "category": "reporting",
+      "published_at": "2026-05-08T19:23:16+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/bad6c4dc6ce65eed.html",
+      "original_url": "https://kb.cert.org/vuls/id/260001"
+    },
+    {
+      "entry_id": "66e6f4b98d568d75",
+      "title": "マネーフォワードが利用する「GitHub」の認証情報が漏えい、リポジトリがコピーされる",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-07T23:05:34+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/66e6f4b98d568d75.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/08/55222.html"
+    },
+    {
+      "entry_id": "9e629067c7195082",
+      "title": "エフワンにランサムウェア攻撃、約 17 万件の個人情報が流出",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-07T23:05:31+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/9e629067c7195082.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/08/55221.html"
+    },
+    {
+      "entry_id": "4e9a0a5baaa5a393",
+      "title": "第一工業にサイバー攻撃、一部のサーバでシステム障害が発生",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-07T23:05:29+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/4e9a0a5baaa5a393.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/08/55220.html"
+    },
+    {
+      "entry_id": "15254e8afc708fff",
+      "title": "歯科衛生士転職サイト「メグリー」への不正アクセス、データが窃取された可能性が高いことを確認",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-07T23:05:26+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/15254e8afc708fff.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/08/55219.html"
+    },
+    {
+      "entry_id": "563899ac3f427653",
+      "title": "九電不動産 再委託先の日本テレネットにランサムウェア攻撃",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-07T23:05:24+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/563899ac3f427653.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/08/55218.html"
+    },
+    {
+      "entry_id": "8a76c2a6d4f65899",
+      "title": "インテグラルのウェブサイトに不正アクセス、一定期間にわたり外部から操作されていたことが判明",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-07T23:05:20+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/8a76c2a6d4f65899.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/08/55217.html"
+    },
+    {
+      "entry_id": "62319d77fd8e597f",
+      "title": "メディカ出版へのランサムウェア攻撃、別システムで構築されたサービスの安全性を確認",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-07T23:05:18+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/62319d77fd8e597f.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/08/55216.html"
+    },
+    {
+      "entry_id": "08f4586a17399f29",
+      "title": "エフワンにランサムウェア攻撃、スーツ購入顧客の情報が漏えいした可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-07T23:05:16+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/08f4586a17399f29.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/08/55215.html"
+    },
+    {
+      "entry_id": "c24c93ef03d4e1b2",
+      "title": "AGS 再委託先にランサムウェア攻撃、情報が外部に漏えいした可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-07T23:05:12+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/c24c93ef03d4e1b2.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/08/55214.html"
+    },
+    {
+      "entry_id": "9cbb20ee3994512a",
+      "title": "「いえらぶ CLOUD」に特定のクライアントアカウントを利用した不正アクセス、日本財託グループで部屋探しをした顧客の情報が漏えいした可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-07T23:05:09+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/9cbb20ee3994512a.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/08/55213.html"
+    },
+    {
+      "entry_id": "ce3d337d820253a8",
+      "title": "穴吹ハウジングサービスへのランサムウェア攻撃、松山市営住宅入居者の個人情報が漏えい",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-07T23:05:06+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/ce3d337d820253a8.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/08/55212.html"
+    },
+    {
+      "entry_id": "666a651914cad7f6",
+      "title": "新エフエイコムにランサムウェア攻撃、個人情報外部流出について調査中",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-07T23:05:04+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/666a651914cad7f6.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/08/55211.html"
+    },
+    {
+      "entry_id": "466a19457f72370f",
+      "title": "IPA「令和7年度セキュリティ人材活用環境整備に係る業務」公表",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-07T23:00:13+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/466a19457f72370f.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/08/55210.html"
+    },
+    {
+      "entry_id": "3027a2a0a5ba1d1b",
+      "title": "HENNGE One 「ITreview Grid Award 2026 Spring」 5 部門で最高位 Leader 受賞",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-07T23:00:09+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/3027a2a0a5ba1d1b.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/08/55209.html"
+    },
+    {
+      "entry_id": "129f4e4d88430299",
+      "title": "業務実態に沿ったDMARCポリシー設計ほか ～ フォーティエンスコンサルティングと TwoFive が協業",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-07T23:00:04+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/129f4e4d88430299.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/08/55208.html"
+    }
+  ]
+}
