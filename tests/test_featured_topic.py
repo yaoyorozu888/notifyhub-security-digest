@@ -6,7 +6,7 @@ from pathlib import Path
 
 from notifyhub_digest.models import AnalysisResult, FeaturedTopic, InformationSource, Source
 from notifyhub_digest.rss import RawEntry
-from notifyhub_digest.featured_topic import _build_user_prompt, _infer_category_policy, _looks_mismatched_for_category
+from notifyhub_digest.featured_topic import FEATURED_SYSTEM_PROMPT, _build_user_prompt, _infer_category_policy, _looks_mismatched_for_category, _schema_hint
 from notifyhub_digest.runner import build_digest_outputs
 from notifyhub_digest.timeutils import JST, compute_daily_window
 
@@ -192,3 +192,12 @@ def test_infer_category_policy_avoids_substring_false_positives() -> None:
     policy = _infer_category_policy("retail operations")
     assert policy.guidance == ""
     assert policy.exclude_cybersecurity_incidents is False
+
+
+def test_featured_topic_prompts_require_plain_japanese_style() -> None:
+    assert "常体" in FEATURED_SYSTEM_PROMPT
+    assert "です・ます調" in FEATURED_SYSTEM_PROMPT
+
+    schema_hint = _schema_hint(1)
+    assert "常体" in schema_hint
+    assert "です・ます調" in schema_hint
