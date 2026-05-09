@@ -254,8 +254,8 @@
         </div>
 
         <div class="tags">
-          <span class="tag level-Unknown">Impact: Unknown</span>
-          <span class="tag">Unknown</span>
+          <span class="tag level-Info">Impact: Info</span>
+          <span class="tag">Advisory</span>
         </div>
 
         <div class="btnRow">
@@ -268,24 +268,36 @@
         
         <div class="section">
           <h2>Impact判定理由</h2>
-          <div class="ruleReason"></div>
+          <div class="ruleReason">入力本文に具体的な脆弱性、侵害、悪用観測、影響製品がなく、技術的深刻度と運用影響を評価できる材料が不足している。
+SANS ISCは有用なコミュニティ観測源だが、今回はメディア/コミュニティ系の概況メタ情報に留まり、情報源補正で重要度を引き上げる根拠はない。</div>
         </div>
         <div class="section summary">
-          <h2>🧾 要約（ChatGPT）</h2>
+          <h2>🧾 要約（ChatGPT / gpt-5.5-2026-04-23）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          
+          <div><h4>概要</h4><p>SANS ISCの「Stormcast」2026年5月8日分が公開された、というメタ情報のみが入力されており、個別の脆弱性、マルウェア、攻撃キャンペーンの詳細は本文から確認できません。Stormcastは日次の脅威概況として有用ですが、この入力だけでは<strong>何が悪用対象か</strong>、攻撃に必要な前提条件、PoCや実悪用の有無を判断できないため、CSIRTの即時対応案件として扱う根拠は不足しています。悪用シナリオや影響範囲も、特定製品・CVE・侵害手口が示されていないため、現時点では<strong>自組織の露出確認</strong>や封じ込め判断に直結しません。運用上は、SANS ISCというコミュニティ観測源からの注意喚起候補としてキューに入れ、原文音声・日記本文・リンク先の一次情報で、対象技術、悪用観測、対処可否を確認するのが妥当です。未確認事項は、取り上げられた具体的トピック、CVE/CVSS、影響製品、攻撃観測、推奨対応の有無です。</p></div>
         </div>
 
         <div class="section">
           <h2>📌 キーワード解説</h2>
           <div class="terms">
-            
+            <div class="termCard">
+  <div class="term">Stormcast（日次脅威概況）</div>
+  <p class="exp">SANS ISCの短時間概況。単一CVEの一次情報ではなく、複数話題の入口として扱うべきです。</p>
+</div>
+<div class="termCard">
+  <div class="term">二次情報（Secondary reporting）</div>
+  <p class="exp">一次情報の要約・再配信です。KEVやベンダー告知と異なり、緊急度は原典確認で補正します。</p>
+</div>
+<div class="termCard">
+  <div class="term">トリアージ（Triage）</div>
+  <p class="exp">全件対応ではなく優先順位付けです。話題性より、自組織の露出と検知可能性で切り分けます。</p>
+</div>
           </div>
           <h3 class="subSectionTitle">深掘り解説</h3>
           <div class="deepDive">
             <div class="termCard deepDiveCard">
-  <div class="term">なし</div>
-
+  <div class="term">日次脅威概況をCSIRTの判断材料に変える手順</div>
+  <p class="exp">日次ポッドキャストやニュースまとめは、早期把握には有用ですが、そのまま緊急対応に落とすと判断がぶれます。実務では、まず「対象が自組織に存在するか」「外部公開か内部限定か」「認証前に悪用可能か」「修正または回避策があるか」の4点に分解します。例えば、概況でVPN製品の脆弱性が触れられていた場合、最初に資産管理と外部ASMで該当製品の公開有無を確認し、次にベンダー advisory やCISA KEVで実悪用の有無を確認します。ここで外部公開かつKEV掲載なら緊急対応に寄せますが、社内限定の管理画面でパッチ済みなら通常変更枠で足りる場合があります。重要なのは、情報源の信頼度だけでなく、攻撃者が短時間で利益を得られる露出条件が自組織にあるかを見ることです。概況情報は「対応指示」ではなく「調査開始のトリガー」として扱うと、過剰反応と見逃しの両方を減らせます。</p>
 </div>
           </div>
         </div>
@@ -296,7 +308,7 @@
           <h2>🕘 生成情報</h2>
           <div class="ruleReason">
 対象期間：2026-05-08T06:00:00+09:00 〜 2026-05-09T06:00:00+09:00
-生成時刻：2026-05-09T11:01:00.888076+09:00
+生成時刻：2026-05-09T11:30:17.403075+09:00
 免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
           </div>
         </div>

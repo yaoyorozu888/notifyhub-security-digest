@@ -254,8 +254,8 @@
         </div>
 
         <div class="tags">
-          <span class="tag level-Unknown">Impact: Unknown</span>
-          <span class="tag">Unknown</span>
+          <span class="tag level-Info">Impact: Info</span>
+          <span class="tag">Phishing</span>
         </div>
 
         <div class="btnRow">
@@ -268,24 +268,41 @@
         
         <div class="section">
           <h2>Impact判定理由</h2>
-          <div class="ruleReason"></div>
+          <div class="ruleReason">技術的にはフィッシング起点の初期侵入と横展開を扱うが、具体的なキャンペーン、IOC、CVE、悪用確認は提示されていない。
+運用面では初動隔離やID失効手順の見直しに有用だが、直ちに緊急対応を要する情報ではない。
+情報源はメディア記事かつウェビナー告知色が強いため、情報源補正として重要度は引き上げずInfoと評価する。</div>
         </div>
         <div class="section summary">
-          <h2>🧾 要約（ChatGPT）</h2>
+          <h2>🧾 要約（ChatGPT / gpt-5.5-2026-04-23）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          
+          <div><h4>概要</h4><p>この記事は、The Hacker Newsに掲載されたウェビナー告知に近い内容で、単一の従業員端末が侵害される<strong>Patient Zero</strong>を起点に、組織全体へ侵害が広がるリスクを扱っています。想定される悪用は、AIで自然化されたフィッシングメールや誘導ページにより初回クリックを発生させ、認証情報窃取、マルウェア実行、端末上のセッション悪用へ進む流れです。影響は感染端末だけでなく、VPN、SSO、共有ファイル、管理ツールを介して<strong>横展開</strong>や業務停止に波及し得るため、CSIRTとしては「検知後に調べる」より先に<strong>隔離判断の基準</strong>を持つことが重要です。ただし本文には具体的な攻撃キャンペーン、IOC、脆弱性番号、実被害事例の詳細は示されておらず、実在する脅威情報としての裏取りは未確認です。したがって本件は緊急対応対象というより、初動手順、EDR隔離権限、ID失効、端末再投入基準を見直すための運用リマインドとして扱うのが妥当です。</p></div>
         </div>
 
         <div class="section">
           <h2>📌 キーワード解説</h2>
           <div class="terms">
-            
+            <div class="termCard">
+  <div class="term">Patient Zero→初発感染端末</div>
+  <p class="exp">最初に侵害された端末を指す。単なる感染端末ではなく、横展開の起点として重要。</p>
+</div>
+<div class="termCard">
+  <div class="term">Initial Access→初期侵入</div>
+  <p class="exp">攻撃者が最初に組織へ入る段階。侵入後活動や権限昇格とは切り分けて見る。</p>
+</div>
+<div class="termCard">
+  <div class="term">Endpoint Isolation→端末隔離</div>
+  <p class="exp">EDR等で端末通信を制限する措置。駆除ではなく、拡大防止を優先する操作。</p>
+</div>
+<div class="termCard">
+  <div class="term">AI-generated Phishing→AI生成フィッシング</div>
+  <p class="exp">文面の不自然さで見抜く対策を弱める。従来型フィッシングと検知観点が異なる。</p>
+</div>
           </div>
           <h3 class="subSectionTitle">深掘り解説</h3>
           <div class="deepDive">
             <div class="termCard deepDiveCard">
-  <div class="term">なし</div>
-
+  <div class="term">初発感染端末で迷わないための隔離判断</div>
+  <p class="exp">初発感染端末への対応で難しいのは、マルウェア有無の確定ではなく、業務影響を受け入れてでも隔離するタイミングです。実務では、利用者からの申告、EDRの中信頼度アラート、IdPの異常サインイン、メールゲートウェイのクリックログが別々に出ます。この時点で「証拠が揃うまで待つ」と、攻撃者にVPN、SSO、ブラウザ内セッション、保存済みトークンを使う時間を与えます。例えば、経理担当者がフィッシングURLを踏み、その直後に海外IPからMicrosoft 365へ成功ログインし、同じ端末でPowerShellの不審起動が見えた場合、端末フォレンジックの前にEDR隔離、対象アカウントのセッション失効、MFA再登録確認を同時に進めるべきです。一方で、隔離は業務停止を伴うため、役員端末、工場端末、医療系端末などは事前に代替端末、ネットワーク遮断の例外、現場承認者を決めておかないと初動が遅れます。CSIRTの補助線としては、単一シグナルではなく「クリック事実」「認証異常」「端末挙動」のうち2系統が揃ったら暫定隔離、特権IDや共有領域へのアクセスが絡む場合は1系統でも隔離候補、といった運用基準を定義しておくと判断のブレを減らせます。</p>
 </div>
           </div>
         </div>
@@ -296,7 +313,7 @@
           <h2>🕘 生成情報</h2>
           <div class="ruleReason">
 対象期間：2026-05-08T06:00:00+09:00 〜 2026-05-09T06:00:00+09:00
-生成時刻：2026-05-09T11:01:00.888076+09:00
+生成時刻：2026-05-09T11:30:17.403075+09:00
 免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
           </div>
         </div>

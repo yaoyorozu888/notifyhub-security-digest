@@ -254,8 +254,8 @@
         </div>
 
         <div class="tags">
-          <span class="tag level-Unknown">Impact: Unknown</span>
-          <span class="tag">Unknown</span>
+          <span class="tag level-High">Impact: High</span>
+          <span class="tag">Malware</span>
         </div>
 
         <div class="btnRow">
@@ -268,24 +268,45 @@
         
         <div class="section">
           <h2>Impact判定理由</h2>
-          <div class="ruleReason"></div>
+          <div class="ruleReason">RATとしての資格情報窃取、キーロギング、トンネリング機能により、開発端末侵害からCI/CD・クラウド・リポジトリへ波及する実運用上の影響が大きい。
+ただし侵入経路、観測規模、IoC、一次情報は入力上未確認であり、全組織一律のCritical判断には不足する。
+情報源はメディア二次情報のため上方補正は行わず、供給網リスクを踏まえてHighに据え置く。</div>
         </div>
         <div class="section summary">
-          <h2>🧾 要約（ChatGPT）</h2>
+          <h2>🧾 要約（ChatGPT / gpt-5.5-2026-04-23）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          
+          <div><h4>概要</h4><p>The Hacker Newsは、これまで公に文書化されていなかったLinux向けインプラント「Quasar Linux RAT（QLNX）」が、開発者端末を狙い、<strong>DevOps資格情報の窃取</strong>やキーロギング、ファイル操作、クリップボード監視、ネットワークトンネリングを行うと報じています。攻撃者にとって開発端末は、ソースコード、SSH鍵、Gitトークン、CI/CDシークレット、クラウド認証情報が同居しやすく、単なる端末侵害から<strong>ソフトウェア供給網侵害</strong>へ発展するROIの高い入口になります。影響は感染端末に閉じず、盗まれた認証情報を使ったリポジトリ改ざん、ビルド環境への侵入、内部ネットワークへのトンネル化により、開発組織全体や顧客環境へ波及し得ます。一方で、現時点の入力情報では侵入経路、配布方法、対象業種、観測規模、具体的なIoCや検知ロジックは<strong>未確認</strong>であり、全Linux端末への一律緊急対応ではなく、開発者・CI/CD周辺の露出と資格情報管理を優先して確認すべきです。メディア報道ベースであるため誇張の可能性は考慮しつつ、Linux開発端末を「通常の業務端末」ではなく<strong>高権限資産</strong>として扱う判断が必要です。</p></div>
         </div>
 
         <div class="section">
           <h2>📌 キーワード解説</h2>
           <div class="terms">
-            
+            <div class="termCard">
+  <div class="term">RAT（Remote Access Trojan／遠隔操作型トロイ）</div>
+  <p class="exp">正規のリモート管理と違い、隠密性と不正操作が目的。端末内の認証情報を使い横展開しやすい点が重要。</p>
+</div>
+<div class="termCard">
+  <div class="term">Software Supply Chain Compromise（ソフトウェア供給網侵害）</div>
+  <p class="exp">完成品ではなく開発・配布過程を侵す攻撃。単一端末の被害に見えて、利用者側へ連鎖する点が異なる。</p>
+</div>
+<div class="termCard">
+  <div class="term">Network Tunneling（ネットワークトンネリング）</div>
+  <p class="exp">通信を別経路に包んで内部到達性を得る手法。単なる外向き通信ログでは侵入範囲を過小評価しやすい。</p>
+</div>
+<div class="termCard">
+  <div class="term">DevOps Credentials（DevOps資格情報）</div>
+  <p class="exp">Git、CI/CD、クラウド、コンテナレジストリの鍵やトークン。個人IDでも実質的に本番権限を持つ場合がある。</p>
+</div>
           </div>
           <h3 class="subSectionTitle">深掘り解説</h3>
           <div class="deepDive">
             <div class="termCard deepDiveCard">
-  <div class="term">なし</div>
+  <div class="term">開発者端末を「高権限境界」として見る理由</div>
+  <p class="exp">開発者端末の侵害は、通常の業務端末侵害よりも影響範囲を読み違えやすい領域です。理由は、端末そのものの権限ではなく、端末に保存・キャッシュ・一時展開される資格情報が強いからです。たとえば、SSH秘密鍵、GitHubやGitLabのPersonal Access Token、npmやPyPIの公開トークン、Dockerレジストリの認証情報、Kubernetesのkubeconfig、クラウドCLIの一時認証情報などは、OS上ではユーザ権限のファイルに見えても、実際にはリポジトリ変更、ビルド実行、成果物公開、本番環境操作につながることがあります。
 
+具体例として、攻撃者がLinux開発端末上のGitトークンとCI/CD設定を窃取した場合を考えます。端末内のソースコードを盗むだけなら情報漏えいですが、トークンでリポジトリにアクセスできれば、依存ライブラリのバージョン固定を外す、ビルドスクリプトに外部通信を追加する、リリースブランチへ小さな変更を混入する、といった供給網侵害に移行できます。さらにCIのシークレットを読める場合、クラウド環境やコンテナレジストリへ到達し、正規のビルド成果物として悪意あるコードを配布する可能性があります。
+
+CSIRTの初動では、感染端末の隔離だけで完了とせず、その端末が過去にアクセスしたリポジトリ、発行済みトークン、CIジョブ、クラウドロール、レジストリ操作履歴を時系列で確認する必要があります。封じ込めも端末停止だけでは不足し、該当ユーザのトークン失効、SSH鍵ローテーション、CI/CDシークレット再発行、直近コミットとリリース成果物の整合性確認までを一つの範囲として扱うべきです。反対に、すべての開発基盤を止めると業務影響が大きいため、端末上の認証情報の種類と到達可能な権限を棚卸しし、悪用可能性の高いものから失効・監査する優先順位付けが実務上重要です。</p>
 </div>
           </div>
         </div>
@@ -296,7 +317,7 @@
           <h2>🕘 生成情報</h2>
           <div class="ruleReason">
 対象期間：2026-05-08T06:00:00+09:00 〜 2026-05-09T06:00:00+09:00
-生成時刻：2026-05-09T11:01:00.888076+09:00
+生成時刻：2026-05-09T11:30:17.403075+09:00
 免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
           </div>
         </div>

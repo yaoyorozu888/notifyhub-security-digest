@@ -254,8 +254,8 @@
         </div>
 
         <div class="tags">
-          <span class="tag level-Unknown">Impact: Unknown</span>
-          <span class="tag">Unknown</span>
+          <span class="tag level-Medium">Impact: Medium</span>
+          <span class="tag">Credential Theft</span>
         </div>
 
         <div class="btnRow">
@@ -268,24 +268,40 @@
         
         <div class="section">
           <h2>Impact判定理由</h2>
-          <div class="ruleReason"></div>
+          <div class="ruleReason">認証情報漏えいによりGitHubリポジトリがコピーされており、ソースコード・設定・秘密情報の二次悪用リスクがある。一方、顧客情報流出、書き込み権限、改ざん、マルウェア混入は未確認。
+情報源はメディア記事であり、一次情報や詳細な侵害範囲が入力にないため、話題性だけで引き上げずMediumと評価する。</div>
         </div>
         <div class="section summary">
-          <h2>🧾 要約（ChatGPT）</h2>
+          <h2>🧾 要約（ChatGPT / gpt-5.5-2026-04-23）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          
+          <div><h4>概要</h4><p>マネーフォワードが利用する<strong>GitHubの認証情報が漏えい</strong>し、リポジトリが第三者にコピーされたと報じられています。攻撃者は漏えいしたトークンやアカウント認証情報を使い、正規ユーザーとしてリポジトリへアクセスした可能性があり、単なる閲覧ではなく<strong>ソースコードや設定情報の持ち出し</strong>が問題の中心です。影響は、流出したコード内の秘密情報、内部仕様、脆弱性の手掛かり、CI/CD連携権限の有無によって変わり、書き込み権限があった場合は<strong>サプライチェーン改ざん</strong>まで確認範囲を広げる必要があります。一方で現時点の入力情報からは、漏えいした認証情報の種類、権限範囲、対象リポジトリ数、顧客データの含有、悪意あるコミットやリリース改ざんの有無は<strong>未確認</strong>です。CSIRTとしては、自組織が同社サービスや連携APIを利用している場合の通知確認に加え、自組織内でもGitHub認証情報の棚卸し、監査ログ確認、リポジトリ内シークレットの再発行を優先して判断すべき事案です。</p></div>
         </div>
 
         <div class="section">
           <h2>📌 キーワード解説</h2>
           <div class="terms">
-            
+            <div class="termCard">
+  <div class="term">Personal Access Token（個人アクセストークン）</div>
+  <p class="exp">パスワードと違いAPI操作に使われる鍵。権限範囲と有効期限が広いほど被害が拡大する。</p>
+</div>
+<div class="termCard">
+  <div class="term">Repository Exfiltration（リポジトリ持ち出し）</div>
+  <p class="exp">コード閲覧ではなく丸ごと複製される状態。削除しても攻撃者側のコピーは消えない。</p>
+</div>
+<div class="termCard">
+  <div class="term">Secrets Scanning（秘密情報検出）</div>
+  <p class="exp">コード中の鍵やトークンを探す仕組み。脆弱性診断と異なり、再発行判断に直結する。</p>
+</div>
+<div class="termCard">
+  <div class="term">Supply Chain Risk（サプライチェーンリスク）</div>
+  <p class="exp">自社侵害でなく取引先や開発基盤経由で波及するリスク。情報漏えいとは影響範囲が異なる。</p>
+</div>
           </div>
           <h3 class="subSectionTitle">深掘り解説</h3>
           <div class="deepDive">
             <div class="termCard deepDiveCard">
-  <div class="term">なし</div>
-
+  <div class="term">GitHub認証情報漏えい時は「読む権限」でも封じ込めが長引く</div>
+  <p class="exp">GitHubの認証情報漏えいでは、書き込み権限の有無だけで初動を軽く見ないことが重要です。読み取り専用でも、攻撃者はリポジトリを丸ごとコピーし、ソースコード、設定例、CI/CD定義、テスト用認証情報、内部APIの命名規則などを後から分析できます。これは侵入直後に大きな破壊が起きないため検知しにくい一方、数週間後に別経路の攻撃材料として使われることがあります。具体例として、漏えいしたPATにrepo読み取り権限しかなかった場合でも、GitHub Actionsのworkflowファイルから利用クラウド、コンテナレジストリ、デプロイ先、環境変数名が分かります。さらに過去コミットに削除済みのAPIキーが残っていれば、現在も有効かどうかを攻撃者が試す可能性があります。封じ込めでは、当該トークンの失効だけでなく、同一ユーザーのSSHキー、OAuth App、GitHub App、Deploy key、CI/CD側の連携資格情報を横断的に確認します。また、リポジトリ監査ログでclone、fetch、token利用元IP、異常なUser-Agent、短時間の大量アクセスを確認し、持ち出された可能性のあるリポジトリ単位でシークレット再発行を判断します。ここでの実務上の落とし穴は、『漏えいした鍵だけを無効化して終わる』ことです。コードが既に外部へ出た前提で、鍵の再発行、権限最小化、ブランチ保護、リリース成果物の真正性確認までを一連の対応として扱う必要があります。</p>
 </div>
           </div>
         </div>
@@ -296,7 +312,7 @@
           <h2>🕘 生成情報</h2>
           <div class="ruleReason">
 対象期間：2026-05-08T06:00:00+09:00 〜 2026-05-09T06:00:00+09:00
-生成時刻：2026-05-09T11:01:00.888076+09:00
+生成時刻：2026-05-09T11:30:17.403075+09:00
 免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
           </div>
         </div>

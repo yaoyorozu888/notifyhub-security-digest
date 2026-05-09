@@ -254,8 +254,8 @@
         </div>
 
         <div class="tags">
-          <span class="tag level-Unknown">Impact: Unknown</span>
-          <span class="tag">Unknown</span>
+          <span class="tag level-High">Impact: High</span>
+          <span class="tag">Exploit</span>
         </div>
 
         <div class="btnRow">
@@ -268,24 +268,44 @@
         
         <div class="section">
           <h2>Impact判定理由</h2>
-          <div class="ruleReason"></div>
+          <div class="ruleReason">SQLインジェクションによりDB内の認証情報、利用ログ、設定情報へ到達する可能性があり、LLMプロキシ用途では影響が複数部門・複数LLM APIに広がり得る。
+CVSS、認証要否、影響バージョンは未確認のためCriticalにはしないが、CISA KEV掲載は悪用現実性の高い公的シグナルであり、ベース評価を引き上げてHighとする。</div>
         </div>
         <div class="section summary">
-          <h2>🧾 要約（ChatGPT）</h2>
+          <h2>🧾 要約（ChatGPT / gpt-5.5-2026-04-23）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          
+          <div><h4>概要</h4><p>CISAのKEVカタログに、BerriAIの<strong>LiteLLMにおけるCVE-2026-42208</strong>が追加され、脆弱性種別は<strong>SQLインジェクション</strong>とされています。LiteLLMは複数LLM APIへのプロキシ／ゲートウェイとして使われることがあり、攻撃者は入力値を介してバックエンドDBへの不正なクエリ実行を狙う可能性があります。影響は単なるWebアプリの情報漏えいにとどまらず、利用者情報、APIキー、モデル利用ログ、管理設定などがDBに保存されている構成では、<strong>AI利用基盤全体の信頼境界</strong>に波及します。一方で、現時点の入力情報からはCVSSスコア、悪用に必要な認証有無、影響を受けるバージョン、PoCの有無、具体的な侵害手順は<strong>未確認</strong>です。CSIRTとしては、インターネット公開の有無、管理画面/APIの到達性、DB権限、LiteLLMに保存しているシークレットの種類を優先して確認し、KEV掲載を踏まえて<strong>既侵害前提のログ確認</strong>まで進める判断が妥当です。</p></div>
         </div>
 
         <div class="section">
           <h2>📌 キーワード解説</h2>
           <div class="terms">
-            
+            <div class="termCard">
+  <div class="term">KEV（Known Exploited Vulnerabilities）</div>
+  <p class="exp">実際の悪用確認を重視する一覧。CVSSの高さではなく、攻撃現実性のシグナルとして扱う。</p>
+</div>
+<div class="termCard">
+  <div class="term">SQL Injection（SQLインジェクション）</div>
+  <p class="exp">入力をSQL文として解釈させる攻撃。XSSと違い、主な影響先は利用者ブラウザではなくDB。</p>
+</div>
+<div class="termCard">
+  <div class="term">LiteLLM Proxy（LLMプロキシ）</div>
+  <p class="exp">複数LLM APIの中継・認証・記録を担う層。単なるSDKより、侵害時の影響範囲が広い。</p>
+</div>
+<div class="termCard">
+  <div class="term">CVSS</div>
+  <p class="exp">脆弱性の標準スコア。今回は未提示であり、KEV掲載による悪用実態を別軸で評価する。</p>
+</div>
           </div>
           <h3 class="subSectionTitle">深掘り解説</h3>
           <div class="deepDive">
             <div class="termCard deepDiveCard">
-  <div class="term">なし</div>
+  <div class="term">LLMゲートウェイのSQLインジェクションを通常のWeb脆弱性として過小評価しない</div>
+  <p class="exp">SQLインジェクションの本質は、アプリケーションが「データ」として扱うべき入力を、DBが「命令」として解釈してしまう点にあります。従来のWebアプリでは顧客情報やセッション情報の漏えいが主な論点でしたが、LLMゲートウェイでは保存されるデータの性質が異なります。例えばLiteLLMのようなプロキシが、利用者ごとのAPIキー、モデル利用履歴、組織別のルーティング設定、プロンプトや応答ログをDBに保存している場合、SQLインジェクションはAI利用基盤の横断的な侵害につながります。
 
+具体例として、社内の複数部門が同じLiteLLMプロキシ経由でOpenAI、Azure OpenAI、Anthropic等を使っている構成を考えます。このプロキシのDBから部門別キーや利用ログが読まれると、攻撃者は外部LLM APIの不正利用だけでなく、機密プロンプトの収集、利用者なりすまし、管理設定の改ざんを狙えます。さらにDBユーザーに過大な権限が付与されていれば、単なる参照にとどまらず、管理者アカウント追加や監査ログ改ざんの可能性も出ます。
+
+実務上の判断では、まずインターネット公開有無だけでなく、社内限定でもVPN利用者・委託先・開発環境から到達できるかを確認します。次に、LiteLLMのDBに何を保存しているか、DBユーザーが読み取り専用に近い権限か、シークレットが平文または復号可能な形で残っていないかを確認します。検知では、LiteLLMのアプリログ、リバースプロキシログ、DB監査ログを突き合わせ、SQL構文片を含む異常なリクエスト、管理APIへの連続アクセス、通常と異なる大量検索・エクスポート挙動を見ます。封じ込めでは、パッチ適用だけで終えず、保存済みAPIキーや管理トークンのローテーション、DB権限の縮小、外部公開経路の遮断をセットで実施することが重要です。</p>
 </div>
           </div>
         </div>
@@ -296,7 +316,7 @@
           <h2>🕘 生成情報</h2>
           <div class="ruleReason">
 対象期間：2026-05-08T06:00:00+09:00 〜 2026-05-09T06:00:00+09:00
-生成時刻：2026-05-09T11:01:00.888076+09:00
+生成時刻：2026-05-09T11:30:17.403075+09:00
 免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
           </div>
         </div>

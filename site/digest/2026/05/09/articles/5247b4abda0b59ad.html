@@ -254,8 +254,8 @@
         </div>
 
         <div class="tags">
-          <span class="tag level-Unknown">Impact: Unknown</span>
-          <span class="tag">Unknown</span>
+          <span class="tag level-High">Impact: High</span>
+          <span class="tag">Vulnerability Disclosure</span>
         </div>
 
         <div class="btnRow">
@@ -268,24 +268,47 @@
         
         <div class="section">
           <h2>Impact判定理由</h2>
-          <div class="ruleReason"></div>
+          <div class="ruleReason">LinuxカーネルのLPEは初期侵入ではない一方、低権限侵害をroot化し、封じ込め・監査・横展開防止を破るため技術的影響は大きい。
+影響範囲やDirty FragのCVE/CVSS、修正状況、PoC成熟度は未確認であり、全資産一律の緊急停止までは判断できない。
+情報源はSANS ISCのコミュニティ記事で、公的KEVやベンダー一次パッチ情報ではないため、メディア/コミュニティ補正としてベース評価を引き上げずHighとする。</div>
         </div>
         <div class="section summary">
-          <h2>🧾 要約（ChatGPT）</h2>
+          <h2>🧾 要約（ChatGPT / gpt-5.5-2026-04-23）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          
+          <div><h4>概要</h4><p>SANS ISCは、Linuxカーネルの新たなローカル権限昇格脆弱性「Dirty Frag」が公開されたことを取り上げ、2週間弱前に公開されたCopy Fail（<code>CVE-2026-31431</code>、CVSSは入力情報上未確認）との関係や緩和策を説明しています。Dirty Frag自体のCVE番号、CVSS、影響を受けるカーネル版、修正コミット、PoCの成熟度は入力情報からは<strong>未確認</strong>です。攻撃成立には通常、攻撃者が対象Linux上で何らかのコード実行・低権限アカウント・侵害済みサービス権限を得ていることが前提で、そこから<strong>root権限取得</strong>に進む可能性があります。単体では初期侵入ではありませんが、公開Webサーバ、VDI、踏み台、CI/CD Runner、コンテナホストなどで悪用されると、既存侵害の封じ込めを破り、認証情報窃取、EDR停止、横展開に波及し得ます。現時点の判断では、まず自組織のLinux資産で<strong>ローカル実行可能な攻撃面</strong>が大きい領域を特定し、ベンダー修正・一時緩和・監視強化を分けて扱うべきです。</p></div>
         </div>
 
         <div class="section">
           <h2>📌 キーワード解説</h2>
           <div class="terms">
-            
+            <div class="termCard">
+  <div class="term">LPE（Local Privilege Escalation／ローカル権限昇格）</div>
+  <p class="exp">初期侵入ではなく、侵入後に権限を上げる脆弱性。RCEと混同せず、侵害済み端末での被害拡大として評価する。</p>
+</div>
+<div class="termCard">
+  <div class="term">Linux kernel（Linuxカーネル）</div>
+  <p class="exp">OSの中核で、ここを奪われるとユーザー空間の制御を超える。通常アプリの脆弱性より封じ込めが難しい。</p>
+</div>
+<div class="termCard">
+  <div class="term">CVE/CVSS</div>
+  <p class="exp">CVEは識別子、CVSSは深刻度スコア。スコアが未確定でも、露出資産と攻撃前提で優先度は変わる。</p>
+</div>
+<div class="termCard">
+  <div class="term">PoC（Proof of Concept／概念実証コード）</div>
+  <p class="exp">脆弱性の再現コードで、即実戦投入コードとは限らない。ただしLPEでは攻撃チェーン化を早める要因になる。</p>
+</div>
           </div>
           <h3 class="subSectionTitle">深掘り解説</h3>
           <div class="deepDive">
             <div class="termCard deepDiveCard">
-  <div class="term">なし</div>
+  <div class="term">Linux LPEを「ローカルだから後回し」にしない判断軸</div>
+  <p class="exp">ローカル権限昇格は、外部から直接叩けるRCEと違い、単独では侵入経路にならないことが多いです。そのためパッチ会議では優先度を下げられがちですが、CSIRT視点では「既に低権限で入られた後に、どの防御線を突破されるか」で評価する必要があります。
 
+例えば、公開Webアプリの脆弱性でwww-data権限のシェルを取られたケースを考えます。通常であれば、OS設定、権限分離、監査ログ、EDR、ファイル権限によって被害範囲を限定できます。しかしカーネルLPEでrootを取られると、攻撃者は認証情報の探索、ログ改ざん、セキュリティエージェント停止、永続化、他サーバへのSSH鍵窃取まで進めやすくなります。つまりLPEは「侵入の入口」ではなく「封じ込め境界を壊す部品」です。
+
+運用上は、全Linuxを同じ緊急度で扱うより、攻撃者が低権限コードを実行しやすい場所を先に見るのが現実的です。優先度が高いのは、インターネット公開サーバ、開発者が任意コードを走らせるCI/CD Runner、マルチユーザーの踏み台、VDI、コンテナを高密度に載せるホストです。一方、閉域で単一用途・強い変更管理下にあるアプライアンス的サーバは、ベンダー修正確認を待つ判断もあり得ます。
+
+検知では、LPEそのものの痕跡だけに依存せず、直前の低権限侵害と直後のroot化行動をつなげます。具体例として、Webサーバプロセスからの不自然なシェル起動、未知バイナリの/tmpや/dev/shm配置、短時間でのUID 0プロセス生成、カーネルクラッシュ、監査設定やEDRサービスの停止を相関します。封じ込めでは、対象ホストのネットワーク隔離だけでなく、同ホストに置かれたSSH鍵、CIトークン、クラウド資格情報を侵害済みとして扱うかを早期に決めることが重要です。</p>
 </div>
           </div>
         </div>
@@ -296,7 +319,7 @@
           <h2>🕘 生成情報</h2>
           <div class="ruleReason">
 対象期間：2026-05-08T06:00:00+09:00 〜 2026-05-09T06:00:00+09:00
-生成時刻：2026-05-09T11:01:00.888076+09:00
+生成時刻：2026-05-09T11:30:17.403075+09:00
 免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
           </div>
         </div>

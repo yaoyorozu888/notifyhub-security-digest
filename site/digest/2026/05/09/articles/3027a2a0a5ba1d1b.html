@@ -254,8 +254,8 @@
         </div>
 
         <div class="tags">
-          <span class="tag level-Unknown">Impact: Unknown</span>
-          <span class="tag">Unknown</span>
+          <span class="tag level-Info">Impact: Info</span>
+          <span class="tag">Other</span>
         </div>
 
         <div class="btnRow">
@@ -268,18 +268,27 @@
         
         <div class="section">
           <h2>Impact判定理由</h2>
-          <div class="ruleReason"></div>
+          <div class="ruleReason">技術的には脆弱性、悪用、侵害、設定不備の情報ではなく、CSIRTの即応対象ではない。
+運用影響は、当該製品を利用・検討している組織でのベンダー評価や調達資料確認に限定される。
+情報源はメディア掲載の製品評価・広報系情報であり、RSS種別補正として重要度を引き上げる根拠はないためInfoとした。</div>
         </div>
         <div class="section summary">
-          <h2>🧾 要約（ChatGPT）</h2>
+          <h2>🧾 要約（ChatGPT / gpt-5.5-2026-04-23）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          
+          <div><h4>概要</h4><p>ScanNetSecurityの記事タイトルから確認できる範囲では、HENNGE Oneが「ITreview Grid Award 2026 Spring」の5部門で最高位Leaderを受賞した、という製品評価・広報寄りの情報です。これは<strong>脆弱性・侵害・設定不備の情報ではない</strong>ため、本件自体が攻撃者に悪用される経路や、直ちに確認すべきIoCを示すものではありません。CSIRT観点では、影響は技術的な緊急対応ではなく、<strong>自組織の導入有無</strong>、ID管理・メールセキュリティ・SaaS統制などで同製品を使っている場合の製品評価材料に限られます。被害の広がり方として想定すべき新規リスクは本文情報からは確認できず、調達・ベンダー管理で参照する場合も、受賞歴をセキュリティ保証や脆弱性対応力と混同しないことが重要です。未確認事項は、記事本文で示される評価対象部門、評価基準、HENNGE Oneの機能変更やセキュリティ改善の有無であり、現時点では<strong>運用変更を判断する材料は不足</strong>しています。</p></div>
         </div>
 
         <div class="section">
           <h2>📌 キーワード解説</h2>
           <div class="terms">
-            
+            <div class="termCard">
+  <div class="term">第三者レビュー評価</div>
+  <p class="exp">利用者評価であり、監査証跡や認証とは異なる。製品選定の参考にはなるが、リスク受容の根拠には弱い。</p>
+</div>
+<div class="termCard">
+  <div class="term">IDaaS（Identity as a Service）</div>
+  <p class="exp">クラウド型の認証・ID管理基盤。単なるSSOと異なり、条件付きアクセスや統制範囲が判断点になる。</p>
+</div>
           </div>
           <h3 class="subSectionTitle">深掘り解説</h3>
           <div class="deepDive">
@@ -296,7 +305,7 @@
           <h2>🕘 生成情報</h2>
           <div class="ruleReason">
 対象期間：2026-05-08T06:00:00+09:00 〜 2026-05-09T06:00:00+09:00
-生成時刻：2026-05-09T11:01:00.888076+09:00
+生成時刻：2026-05-09T11:30:17.403075+09:00
 免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
           </div>
         </div>

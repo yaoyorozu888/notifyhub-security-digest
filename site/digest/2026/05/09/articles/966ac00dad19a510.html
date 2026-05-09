@@ -254,8 +254,8 @@
         </div>
 
         <div class="tags">
-          <span class="tag level-Unknown">Impact: Unknown</span>
-          <span class="tag">Unknown</span>
+          <span class="tag level-High">Impact: High</span>
+          <span class="tag">Zero-day</span>
         </div>
 
         <div class="btnRow">
@@ -268,24 +268,45 @@
         
         <div class="section">
           <h2>Impact判定理由</h2>
-          <div class="ruleReason"></div>
+          <div class="ruleReason">未修正のLinuxカーネルLPEで、成立にはローカル実行権限が必要だが、侵害後にroot取得・防御無効化・横展開準備へ直結するため技術的影響は大きい。
+主要ディストリビューション横断の可能性があり、サーバ、CI/CD、仮想化・コンテナ基盤で運用影響が広がり得る。一方、Dirty Frag自体のCVE/CVSS、影響範囲、実悪用は未確認。
+情報源はメディア二次情報であり、関連CVE-2026-31431（CVSS 7.8）の悪用確認は重いシグナルだが、補正での引き上げは行わずHighに据え置く。</div>
         </div>
         <div class="section summary">
-          <h2>🧾 要約（ChatGPT）</h2>
+          <h2>🧾 要約（ChatGPT / gpt-5.5-2026-04-23）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          
+          <div><h4>概要</h4><p>Linux Kernelに新たな未修正のローカル権限昇格脆弱性「Dirty Frag」が報じられ、主要ディストリビューションでroot権限取得につながる可能性があるとされています。攻撃者は通常、先にSSH認証情報の窃取、Webアプリ侵害、コンテナ内侵入などで<strong>ローカル実行権限</strong>を得た後、この種のLPEを使って<strong>root化</strong>し、防御機構の無効化、認証情報収集、横展開の足場化を狙います。関連して言及されたCopy Fail（CVE-2026-31431、CVSS 7.8）は既に悪用が確認されており、CVSS上はHigh相当でも、侵害後の権限拡大手段としては体感リスクが高くなります。影響は単一ホストに留まらず、共通ベースイメージ、仮想化基盤、CI/CD runner、管理用Linuxサーバに波及すると、複数環境で同じ侵害後手順が再利用されます。現時点でDirty Frag自体のCVE番号、影響カーネル版、ディストリ別修正状況、野生での悪用有無、コンテナ境界を越える条件は<strong>未確認事項</strong>として扱うべきです。</p></div>
         </div>
 
         <div class="section">
           <h2>📌 キーワード解説</h2>
           <div class="terms">
-            
+            <div class="termCard">
+  <div class="term">LPE（Local Privilege Escalation／ローカル権限昇格）</div>
+  <p class="exp">初期侵入ではなく、侵入後に権限を上げる手段。RCEと混同すると、露出有無の判断を誤る。</p>
+</div>
+<div class="termCard">
+  <div class="term">Zero-day（ゼロデイ）</div>
+  <p class="exp">修正が利用可能になる前に知られた脆弱性。PoC公開済みと悪用確認済みは別に扱う。</p>
+</div>
+<div class="termCard">
+  <div class="term">CVSS</div>
+  <p class="exp">脆弱性の技術的深刻度の尺度。運用上の優先度は露出、権限、資産価値で変わる。</p>
+</div>
+<div class="termCard">
+  <div class="term">Kernel exploit（カーネル悪用）</div>
+  <p class="exp">ユーザ空間の不具合より権限境界に近い。成功時は監視回避や改ざんの余地が大きい。</p>
+</div>
           </div>
           <h3 class="subSectionTitle">深掘り解説</h3>
           <div class="deepDive">
             <div class="termCard deepDiveCard">
-  <div class="term">なし</div>
+  <div class="term">LPE脆弱性の優先度は「入口」ではなく「侵害後の増幅力」で見る</div>
+  <p class="exp">ローカル権限昇格は、インターネット越しに直接侵入されるRCEより低く見積もられがちです。しかしCSIRTの実務では、LPEは「侵害後の被害をどこまで増幅するか」で評価する必要があります。攻撃者が一般ユーザ権限やサービスアカウント権限を得る経路は、脆弱なWebアプリ、漏えいSSH鍵、CI/CDのジョブ実行、保守用VPN、コンテナ内シェルなど多く存在します。その後にカーネルLPEでroot化できると、EDRの停止、ログ改ざん、/etc/shadowや秘密鍵の取得、他ホストへの踏み台化が現実的になります。
 
+具体例として、公開Webサーバ上のCMS脆弱性でwww-data権限を取られたケースを考えます。通常ならアプリ権限内の調査と封じ込めで済む可能性がありますが、未修正カーネルLPEが成立するとroot権限でcron、systemd unit、SSH authorized_keys、iptables設定を変更され、再起動後も残る持続化を置かれます。さらに同じOSテンプレートを使う検証環境やCI runnerにも同じ弱点があれば、攻撃手順は再利用されます。
+
+判断の補助線は三つです。第一に、外部公開サーバ、踏み台、CI/CD、管理サーバなど「低権限コード実行が起きやすい場所」を優先します。第二に、コンテナ基盤ではホストカーネル共有のため、単なるコンテナ内問題として片付けず、特権コンテナ、hostPID、hostPath、CAP_SYS_ADMIN付与の有無を確認します。第三に、パッチ未提供時は一律停止ではなく、不要なローカルログイン停止、信頼できないジョブの停止、権限過大なサービスの分離、監査ログ保全を先行させます。LPEの本質は入口ではなく、攻撃者にroot後の選択肢を与える点にあります。</p>
 </div>
           </div>
         </div>
@@ -296,7 +317,7 @@
           <h2>🕘 生成情報</h2>
           <div class="ruleReason">
 対象期間：2026-05-08T06:00:00+09:00 〜 2026-05-09T06:00:00+09:00
-生成時刻：2026-05-09T11:01:00.888076+09:00
+生成時刻：2026-05-09T11:30:17.403075+09:00
 免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
           </div>
         </div>

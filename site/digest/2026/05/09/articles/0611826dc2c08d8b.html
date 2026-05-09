@@ -254,8 +254,8 @@
         </div>
 
         <div class="tags">
-          <span class="tag level-Unknown">Impact: Unknown</span>
-          <span class="tag">Unknown</span>
+          <span class="tag level-Medium">Impact: Medium</span>
+          <span class="tag">Malware</span>
         </div>
 
         <div class="btnRow">
@@ -268,24 +268,45 @@
         
         <div class="section">
           <h2>Impact判定理由</h2>
-          <div class="ruleReason"></div>
+          <div class="ruleReason">PAM組み込み型のLinuxバックドアで、導入済みならSSH認証情報窃取と持続化により横展開リスクは高い。
+一方、攻撃成立には通常root相当の事前侵害が必要で、現時点で感染規模や実攻撃確認は入力情報上未確認。
+情報源はメディア二次情報であり、話題性による引き上げは行わず、ベース評価を据え置いた。</div>
         </div>
         <div class="section summary">
-          <h2>🧾 要約（ChatGPT）</h2>
+          <h2>🧾 要約（ChatGPT / gpt-5.5-2026-04-23）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          
+          <div><h4>概要</h4><p>The Hacker Newsは、ロシア語系サイバー犯罪フォーラムで販売されているLinux向けバックドア「PamDOORa」について報じています。これは脆弱性を突く初期侵入ツールではなく、攻撃者が既にLinuxサーバへ高権限で到達した後に、<strong>PAMモジュール</strong>として組み込み、SSH認証を悪用する<strong>ポストエクスプロイト型</strong>の道具と見るべきです。悪用されると、特定ポートと<strong>マジックパスワード</strong>の組み合わせで持続的なSSHアクセスを得るほか、PAMを通過する認証情報を窃取し、同一管理者アカウントや使い回し認証情報を通じて他のLinux、仮想基盤、クラウド運用端末へ被害が広がる可能性があります。特に踏み台サーバ、監視サーバ、CI/CDノードのように多数の管理接続が集まるホストでは、単体感染に見えても<strong>横展開の起点</strong>になり得ます。一方で、現時点の入力情報では実運用環境での感染件数、標的業種、具体的IoC、初期侵入手口は<strong>未確認</strong>であり、露出SSHの有無だけでなくPAM設定・共有ライブラリの改変有無を確認する判断が必要です。</p></div>
         </div>
 
         <div class="section">
           <h2>📌 キーワード解説</h2>
           <div class="terms">
-            
+            <div class="termCard">
+  <div class="term">PAM（Pluggable Authentication Module）</div>
+  <p class="exp">Linuxの認証処理を差し替える仕組み。単なるSSH設定と違い、認証経路そのものを悪用される点が重要。</p>
+</div>
+<div class="termCard">
+  <div class="term">Post-exploitation（侵入後活動）</div>
+  <p class="exp">初期侵入ではなく、侵入後の維持・拡大段階を指す。脆弱性対応だけでは検知できない。</p>
+</div>
+<div class="termCard">
+  <div class="term">Magic password（マジックパスワード）</div>
+  <p class="exp">通常認証を迂回する秘密の合言葉。バックドア用であり、正規の緊急管理パスワードとは別物。</p>
+</div>
+<div class="termCard">
+  <div class="term">Credential Theft（認証情報窃取）</div>
+  <p class="exp">端末内の秘密鍵取得だけでなく、認証処理中の入力を盗む場合もある。PAM悪用では後者が問題になる。</p>
+</div>
           </div>
           <h3 class="subSectionTitle">深掘り解説</h3>
           <div class="deepDive">
             <div class="termCard deepDiveCard">
-  <div class="term">なし</div>
+  <div class="term">PAMバックドアで見る「認証基盤を改変される」リスク</div>
+  <p class="exp">PAMは、Linuxでログイン、SSH、sudo、suなどの認証処理を部品化する仕組みです。通常、管理者は/etc/pam.d/sshdのような設定ファイルで、どの認証モジュールをどの順番で呼び出すかを定義します。攻撃者がroot権限を得て悪意ある.soライブラリを配置し、PAM設定に組み込めば、利用者が正しいパスワードでログインする瞬間にその情報を横取りしたり、特定条件だけ認証成功にしたりできます。
 
+実務上の難しさは、sshd_configやユーザー追加だけを見ても異常が見えないことです。例えば、/lib/security/配下に見慣れないpam_xxx.soが追加され、/etc/pam.d/sshdに「auth sufficient pam_xxx.so」のような行が挿入されていた場合、通常のアカウント監査では検出を逃す可能性があります。さらに、バックドアが特定ポートや特定パスワードでのみ動く設計なら、平常時のログイン試行からは目立ちにくくなります。
+
+封じ込めでは、感染疑いホストのネットワーク遮断だけでなく、直近にそのホストへSSHログインした管理者のパスワード・鍵・踏み台経路を汚染済みとして扱う必要があります。PAMが盗聴点になっていた場合、ホスト単体の再構築だけでは不十分です。確認例としては、PAM設定ファイルの差分、/lib/securityや/usr/lib/security配下の更新時刻、パッケージ管理外ファイル、sshd再起動履歴、認証ログの不自然な成功、既知ベースラインとの差分を組み合わせて見るのが現実的です。</p>
 </div>
           </div>
         </div>
@@ -296,7 +317,7 @@
           <h2>🕘 生成情報</h2>
           <div class="ruleReason">
 対象期間：2026-05-08T06:00:00+09:00 〜 2026-05-09T06:00:00+09:00
-生成時刻：2026-05-09T11:01:00.888076+09:00
+生成時刻：2026-05-09T11:30:17.403075+09:00
 免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
           </div>
         </div>

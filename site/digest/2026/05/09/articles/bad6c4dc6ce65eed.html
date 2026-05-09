@@ -254,8 +254,8 @@
         </div>
 
         <div class="tags">
-          <span class="tag level-Unknown">Impact: Unknown</span>
-          <span class="tag">Unknown</span>
+          <span class="tag level-High">Impact: High</span>
+          <span class="tag">Vulnerability</span>
         </div>
 
         <div class="btnRow">
@@ -268,24 +268,43 @@
         
         <div class="section">
           <h2>Impact判定理由</h2>
-          <div class="ruleReason"></div>
+          <div class="ruleReason">CVE-2026-31431はLinux kernel 4.17以降の広範なローカル権限昇格で、公開PoCにより侵入後のroot取得手段として再利用されやすい。リモートから直接成立する脆弱性ではないためCriticalまでは上げないが、サーバ・VDI・コンテナ基盤では横展開や防御回避に直結する。CERT/CCによる公的アドバイザリで悪用現実性のシグナルは強い一方、成立にはローカル実行権限と該当機能の利用可否が必要なためHigh評価とする。</div>
         </div>
         <div class="section summary">
-          <h2>🧾 要約（ChatGPT）</h2>
+          <h2>🧾 要約（ChatGPT / gpt-5.5-2026-04-23）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          
+          <div><h4>概要</h4><p>CERT/CCは、Linux kernel 4.17以降に存在するローカル権限昇格脆弱性「Copy Fail」CVE-2026-31431を公表しています。<strong>未特権ローカルユーザー</strong>が<code>algif_aead</code>/<code>AF_ALG</code>の不具合を使い、読み取り可能なファイルのページキャッシュへ制御した4バイトを書き込み、<strong>setuidバイナリのメモリ上の内容</strong>を変えてroot権限を得る流れが示されています。ディスク上のファイルは変更されず、破損ページもdirty扱いにならないため、ファイル整合性監視やチェックサムでは見逃し得る点が実務上の盲点です。影響は単一ホストのroot奪取に留まらず、侵入済み端末・サーバでの防御回避、認証情報窃取、永続化に進み、コンテナ環境では条件次第で<strong>コンテナ脱出</strong>の足掛かりになり得ます。一方で、標準的な仮想化ではゲストからホストへの直接脱出には使えないとされ、成立にはローカル実行権限、該当カーネル、<code>algif_aead</code>利用可否が必要です。CVSSスコアは本文中では未提示で、各ディストリビューションの修正提供状況、既定でモジュールが有効か、実環境での悪用観測は未確認事項です。</p></div>
         </div>
 
         <div class="section">
           <h2>📌 キーワード解説</h2>
           <div class="terms">
-            
+            <div class="termCard">
+  <div class="term">Local Privilege Escalation（ローカル権限昇格）</div>
+  <p class="exp">初期侵入ではなく、侵入後にroot等へ上がる攻撃。RCEと違い露出面より端末・サーバ内の実行権限が前提。</p>
+</div>
+<div class="termCard">
+  <div class="term">Page Cache（ページキャッシュ）</div>
+  <p class="exp">ディスク内容をメモリに保持する仕組み。ディスク改ざんと異なり、整合性監視をすり抜ける場合がある。</p>
+</div>
+<div class="termCard">
+  <div class="term">setuid binary（setuidバイナリ）</div>
+  <p class="exp">実行者ではなく所有者権限で動くUnix系の仕組み。通常の実行権限と異なり、改ざん時の影響がroot直結になりやすい。</p>
+</div>
+<div class="termCard">
+  <div class="term">AF_ALG</div>
+  <p class="exp">ユーザー空間からカーネル暗号APIを使うインターフェース。通常ソケット通信とは異なり、暗号処理の入口になる。</p>
+</div>
           </div>
           <h3 class="subSectionTitle">深掘り解説</h3>
           <div class="deepDive">
             <div class="termCard deepDiveCard">
-  <div class="term">なし</div>
+  <div class="term">ページキャッシュ改ざん型LPEで、ファイル整合性監視だけに頼れない理由</div>
+  <p class="exp">多くのLinux運用では、重要ファイルの改ざん検知を「ディスク上のファイルが変わったか」で判断します。たとえばパッケージ検証、ハッシュ照合、FIM製品は、/usr/bin配下のsetuidバイナリが実際に書き換わったかを確認する設計が中心です。しかし今回のようにページキャッシュ上の内容だけが変わる場合、ディスクのinodeやファイル内容は変化せず、後続の読み取りだけが汚染されたメモリ内容を返す可能性があります。
 
+実務上のポイントは、検知対象を「ファイル差分」だけに閉じないことです。具体例として、侵害済みWebサーバ上で攻撃者が低権限ユーザーを得た後、setuidバイナリをメモリ上で変化させてrootシェルを得た場合、/bin/suやsudoのハッシュは正常でも、短時間だけ異常な権限遷移が発生します。この場合に効くのは、ファイルハッシュではなく、auditd/eBPF/EDRによるsetuid実行、uid遷移、AF_ALGソケット生成、通常ユーザーからの異常なrootプロセス生成の相関です。
+
+封じ込めでも注意が必要です。再起動すればページキャッシュ上の一時的な改ざんは消える可能性がありますが、攻撃者がその間にSSH鍵追加、cron/systemd timer、カーネルモジュール、認証情報窃取などの永続化を済ませていれば、再起動だけでは解決しません。したがって初動では、該当カーネルの更新またはAF_ALG制限と並行して、直近の権限昇格イベント、setuidバイナリ実行履歴、root権限で作成・変更された永続化ポイントを確認する必要があります。</p>
 </div>
           </div>
         </div>
@@ -296,7 +315,7 @@
           <h2>🕘 生成情報</h2>
           <div class="ruleReason">
 対象期間：2026-05-08T06:00:00+09:00 〜 2026-05-09T06:00:00+09:00
-生成時刻：2026-05-09T11:01:00.888076+09:00
+生成時刻：2026-05-09T11:30:17.403075+09:00
 免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
           </div>
         </div>

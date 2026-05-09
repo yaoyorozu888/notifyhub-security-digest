@@ -254,8 +254,8 @@
         </div>
 
         <div class="tags">
-          <span class="tag level-Unknown">Impact: Unknown</span>
-          <span class="tag">Unknown</span>
+          <span class="tag level-Medium">Impact: Medium</span>
+          <span class="tag">Intrusion</span>
         </div>
 
         <div class="btnRow">
@@ -268,24 +268,41 @@
         
         <div class="section">
           <h2>Impact判定理由</h2>
-          <div class="ruleReason"></div>
+          <div class="ruleReason">実被害としてサーバ障害が発生しており、侵入が成立していれば横展開や情報窃取に広がる可能性があるため軽視はできない。
+一方、攻撃手法・侵害範囲・情報流出・ランサムウェア性はいずれも未確認で、自組織への直接影響も不明。
+情報源はメディア記事であり二次情報の性格が強いため、ベース評価を引き上げずMediumとする。</div>
         </div>
         <div class="section summary">
-          <h2>🧾 要約（ChatGPT）</h2>
+          <h2>🧾 要約（ChatGPT / gpt-5.5-2026-04-23）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          
+          <div><h4>概要</h4><p>ScanNetSecurityは、第一工業が<strong>サイバー攻撃</strong>を受け、一部サーバで<strong>システム障害</strong>が発生したと報じています。現時点の入力情報では、侵入経路、攻撃種別、影響を受けた業務、復旧状況、情報流出の有無は確認できず、ランサムウェアや脆弱性悪用と断定できる材料もありません。攻撃者視点では、サーバ侵害が成立していれば、業務停止だけでなく、認証情報の窃取、管理系サーバへの横展開、バックアップやログの破壊に進む余地があり、被害範囲は<strong>単一サーバ障害</strong>から<strong>社内ネットワーク全体の侵害</strong>まで振れます。CSIRTとしては、自組織への直接影響よりも、取引先接続、ファイル授受、VPN・EDI・保守回線などを通じた<strong>波及可能性</strong>を確認する局面です。未確認事項が多いため、現段階では過度な断定を避けつつ、同社との通信、アカウント連携、最近受領したファイルやメールの有無を確認するのが実務的です。</p></div>
         </div>
 
         <div class="section">
           <h2>📌 キーワード解説</h2>
           <div class="terms">
-            
+            <div class="termCard">
+  <div class="term">Initial Access（初期侵入）</div>
+  <p class="exp">攻撃者が最初に入る経路。脆弱性悪用、認証情報悪用、メール起点は調査観点が異なる。</p>
+</div>
+<div class="termCard">
+  <div class="term">Lateral Movement（横展開）</div>
+  <p class="exp">侵害端末から別サーバへ移る動き。単なる障害調査と異なり、認証ログの連鎖確認が重要。</p>
+</div>
+<div class="termCard">
+  <div class="term">Business Impact（業務影響）</div>
+  <p class="exp">技術的被害ではなく業務停止の度合い。CVSSより復旧優先度を左右する。</p>
+</div>
           </div>
           <h3 class="subSectionTitle">深掘り解説</h3>
           <div class="deepDive">
             <div class="termCard deepDiveCard">
-  <div class="term">なし</div>
+  <div class="term">外部組織の障害公表を、自組織CSIRTはどう読むべきか</div>
+  <p class="exp">外部企業の「サイバー攻撃により一部サーバで障害」という公表は、技術詳細が少ないため、脆弱性対応のように単純なパッチ判断へ落とし込みにくい情報です。CSIRTでは、まず「自組織が同じ攻撃を受ける可能性」と「当該組織を経由して自組織に波及する可能性」を分けて考えると判断がぶれにくくなります。
 
+前者は、攻撃手法が未公表である限り、同一製品や同一CVEの有無を急いで断定する段階ではありません。一方で、後者は早めに確認できます。例えば、当該企業とVPN接続、EDI連携、保守用アカウント、クラウド共有フォルダ、定期的なファイル授受がある場合、相手側の侵害が認証情報やファイルを通じて自組織へ広がる可能性があります。
+
+具体例として、取引先の一部サーバが侵害された後、攻撃者が過去の請求書メールを流用してマルウェア付き返信を送る、共有ストレージ上の正規ファイルを差し替える、保守用VPNアカウントを悪用する、といった経路があります。このため、初動では「相手の原因究明を待つ」だけでなく、直近の通信ログ、受信添付ファイル、共有領域の更新履歴、取引先専用アカウントの認証履歴を確認するのが現実的です。</p>
 </div>
           </div>
         </div>
@@ -296,7 +313,7 @@
           <h2>🕘 生成情報</h2>
           <div class="ruleReason">
 対象期間：2026-05-08T06:00:00+09:00 〜 2026-05-09T06:00:00+09:00
-生成時刻：2026-05-09T11:01:00.888076+09:00
+生成時刻：2026-05-09T11:30:17.403075+09:00
 免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
           </div>
         </div>

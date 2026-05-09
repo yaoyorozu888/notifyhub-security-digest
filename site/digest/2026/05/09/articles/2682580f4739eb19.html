@@ -254,8 +254,8 @@
         </div>
 
         <div class="tags">
-          <span class="tag level-Unknown">Impact: Unknown</span>
-          <span class="tag">Unknown</span>
+          <span class="tag level-Medium">Impact: Medium</span>
+          <span class="tag">Scam/Fraud</span>
         </div>
 
         <div class="btnRow">
@@ -268,24 +268,45 @@
         
         <div class="section">
           <h2>Impact判定理由</h2>
-          <div class="ruleReason"></div>
+          <div class="ruleReason">公式ストア上で大規模配布され、継続課金による金銭被害が発生し得るため、利用者規模と運用対応の観点では無視できない。
+ただし入力情報上、認証情報窃取・端末侵害・社内横展開は確認されておらず、企業ネットワークへの直接影響は限定的。
+情報源はメディア記事であり二次情報の可能性があるため、ベース評価から引き上げずMediumとする。</div>
         </div>
         <div class="section summary">
-          <h2>🧾 要約（ChatGPT）</h2>
+          <h2>🧾 要約（ChatGPT / gpt-5.5-2026-04-23）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          
+          <div><h4>概要</h4><p>Google Play上で、任意の電話番号の通話履歴を確認できると偽るAndroidアプリ28件が見つかり、合計<strong>730万回以上ダウンロード</strong>されていたと報じられています。悪用の中心は端末侵害そのものではなく、利用者の関心や不安を利用して<strong>有料サブスクリプションへ誘導</strong>し、実際には偽のデータを提示して金銭被害を発生させる手口です。企業CSIRTの観点では、社給端末やBYODで公式ストア利用を許可している場合、個人被害に見えても<strong>ヘルプデスク対応、端末利用ポリシー、決済統制</strong>に波及し得ます。一方で、現時点の入力情報からは、通話履歴・連絡先・認証情報の窃取、社内ネットワークへの侵入、特定組織を狙った攻撃は確認できません。未確認事項は、対象アプリ名、要求権限、Googleによる削除状況、返金可否、業務端末へのインストール有無であり、組織内影響判断には<strong>MDM/EMMの導入状況確認</strong>が必要です。</p></div>
         </div>
 
         <div class="section">
           <h2>📌 キーワード解説</h2>
           <div class="terms">
-            
+            <div class="termCard">
+  <div class="term">Subscription fraud（サブスクリプション詐欺）</div>
+  <p class="exp">買い切り詐欺と違い、継続課金で被害が伸びる。検知はマルウェア挙動より決済履歴確認が重要。</p>
+</div>
+<div class="termCard">
+  <div class="term">Official store abuse（公式ストア悪用）</div>
+  <p class="exp">公式配布は安全保証ではなく、信頼の悪用。野良APK対策だけでは防げない点が重要。</p>
+</div>
+<div class="termCard">
+  <div class="term">BYOD（私物端末利用）</div>
+  <p class="exp">社給端末と違い統制が弱い。個人被害でも業務連絡先や認証アプリに影響し得る。</p>
+</div>
+<div class="termCard">
+  <div class="term">MDM/EMM（モバイル端末管理）</div>
+  <p class="exp">端末監視ツールではなく、利用可能アプリや設定を制御する基盤。EDRとは役割が異なる。</p>
+</div>
           </div>
           <h3 class="subSectionTitle">深掘り解説</h3>
           <div class="deepDive">
             <div class="termCard deepDiveCard">
-  <div class="term">なし</div>
+  <div class="term">公式ストア配布アプリをCSIRTでどう扱うか</div>
+  <p class="exp">公式アプリストアに掲載されていることは、審査を通過したという意味ではありますが、組織利用に適していることや、詐欺的なビジネスロジックがないことまでは保証しません。今回のようなケースでは、端末上でマルウェアらしい通信や権限昇格が起きないため、従来の侵害調査だけでは被害を見落とします。CSIRTは「不審アプリ＝マルウェア」という発想だけでなく、「不審アプリ＝決済・プライバシー・業務規程違反」の観点で扱う必要があります。
 
+具体例として、社給AndroidでGoogle Playを自由利用でき、利用者が会社支給の決済手段や経費精算でサブスクリプションを処理できる環境を考えます。この場合、感染端末の隔離より先に、MDM/EMMで当該パッケージのインストール有無を確認し、管理対象端末ではアンインストールまたはブロック、経理側では同種の継続課金がないかを確認する方が実効的です。BYOD環境では端末内を直接調査できないことも多いため、注意喚起、業務用アカウントの分離、承認済みアプリカタログの提示が現実的な対応になります。
+
+判断の補助線は、アプリの悪性度だけでなく「業務データに触れるか」「継続課金が発生するか」「公式ストア由来として利用者が警戒を下げるか」です。これらが重なる場合、ネットワーク侵害でなくてもCSIRTが関与する価値があります。</p>
 </div>
           </div>
         </div>
@@ -296,7 +317,7 @@
           <h2>🕘 生成情報</h2>
           <div class="ruleReason">
 対象期間：2026-05-08T06:00:00+09:00 〜 2026-05-09T06:00:00+09:00
-生成時刻：2026-05-09T11:01:00.888076+09:00
+生成時刻：2026-05-09T11:30:17.403075+09:00
 免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
           </div>
         </div>
