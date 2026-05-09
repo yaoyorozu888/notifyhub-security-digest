@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from notifyhub_digest.openai_client import OpenAIConfig, _build_analysis_payload, _coerce_analysis_result
+from notifyhub_digest.openai_client import SYSTEM_PROMPT, OpenAIConfig, _analysis_schema_hint, _build_analysis_payload, _coerce_analysis_result
 
 
 def test_coerce_analysis_result_accepts_lesson_payload() -> None:
@@ -67,3 +67,12 @@ def test_build_analysis_payload_keeps_temperature_for_non_gpt5_models() -> None:
     payload = _build_analysis_payload(cfg, {"title": "sample"})
 
     assert payload["temperature"] == 0.4
+
+
+def test_analysis_prompts_require_plain_japanese_style() -> None:
+    assert "常体" in SYSTEM_PROMPT
+    assert "です・ます調" in SYSTEM_PROMPT
+
+    schema_hint = _analysis_schema_hint()
+    assert "常体" in schema_hint
+    assert "です・ます調" in schema_hint
