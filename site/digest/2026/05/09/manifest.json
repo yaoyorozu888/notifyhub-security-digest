@@ -7,7 +7,7 @@
   "counts": {
     "total": 26
   },
-  "generated_at_jst": "2026-05-09T06:32:29.496891+09:00",
+  "generated_at_jst": "2026-05-09T11:01:00.888076+09:00",
   "featured_topics_config": {
     "count": 3,
     "categories": [
@@ -19,81 +19,91 @@
   "featured_topics": [
     {
       "topic_id": "featured-topic-1",
-      "title": "2026年のクラウドとAIインフラ：ハイブリッド戦略と最適化が鍵に",
-      "source_name": "Civo",
-      "published_at": "2026-05-06T00:00:00+00:00",
+      "title": "CISA、AI駆動の脆弱性発見加速で重要欠陥の修復期限を3日間に短縮検討",
+      "source_name": "CSO Online",
+      "published_at": "2026-05-08T09:00:00+00:00",
       "impact_level": "High",
-      "threat_type": "Other",
-      "summary_preview": "概要2026年、クラウドとAIは採用段階から実行・最適化段階へ移行。ハイブリッドクラウドが標準となり、AIインフラ需要の高まりでGPUクラスタやFinOpsの重要性が増す。競争優位性は管理・ガバナンスの巧みさで決まる。",
+      "threat_type": "Advisory",
+      "summary_preview": "概要米CISAが、AIモデル（AnthropicのClaude Mythosなど）による脆弱性発見の加速を受け、Known Exploited Vulnerabilities（KEV）カタログ掲載の重要欠陥に対する連邦政府機関の修復期限を現行の14日程度から72時間（3日間）へ大幅短縮する検討を進めている。Reuters報道を基に、AIが攻撃者の脆弱性悪用…",
       "article_path": "articles/featured-topic-1.html",
-      "original_url": "https://www.civo.com/blog/state-of-cloud-in-2026",
-      "selection_reason": "AIワークロードの拡大に伴うクラウド戦略の実行・最適化フェーズへの移行を、最新調査に基づき実務的に解説",
-      "requested_category": "the latest trends in IT",
+      "original_url": "https://www.csoonline.com/article/4167422/cisa-mulls-new-three-day-remediation-deadline-for-critical-flaws.html",
+      "selection_reason": "AIモデルによる脆弱性発見の高速化がパッチ適用サイクルを上回るリスクを浮き彫りにし、政府機関の対応体制に直接影響する政策変更の動きを報じた実務的トピック",
+      "requested_category": "Cybersecurity",
       "information_sources": [
         {
-          "title": "The state of cloud and AI in 2026",
-          "url": "https://www.civo.com/blog/state-of-cloud-in-2026",
-          "source_type": "web"
+          "title": "CISA mulls new three-day remediation deadline for critical flaws",
+          "url": "https://www.csoonline.com/article/4167422/cisa-mulls-new-three-day-remediation-deadline-for-critical-flaws.html",
+          "source_type": "news"
         },
         {
-          "title": "Digital Infrastructure Trends to Watch in 2026",
-          "url": "https://www.tierpoint.com/blog/cloud/digital-infrastructure-trends/",
-          "source_type": "web"
+          "title": "CISA reportedly considers 3-day patch deadline for KEV flaws",
+          "url": "https://www.scworld.com/news/cisa-reportedly-considers-3-day-patch-deadline-for-kev-flaws",
+          "source_type": "news"
         },
         {
-          "title": "Power, land, cooling... AI infrastructure bottlenecks",
-          "url": "https://x.com/AvivArazi/status/2052538852552708489",
-          "source_type": "x"
+          "title": "May 2026 Patch Tuesday forecast: AI starts driving security industry changes",
+          "url": "https://www.helpnetsecurity.com/2026/05/08/may-2026-patch-tuesday-forecast/",
+          "source_type": "news"
         }
       ]
     },
     {
       "topic_id": "featured-topic-2",
-      "title": "AIが自らの研究開発を自動化する時代へ",
-      "source_name": "Yahoo Tech",
-      "published_at": "2026-05-08T10:46:00+00:00",
+      "title": "AIチップ市場、2036年までに6702億ドル規模へ急拡大",
+      "source_name": "Research and Markets",
+      "published_at": "2026-05-08T09:45:00+00:00",
       "impact_level": "High",
       "threat_type": "Other",
-      "summary_preview": "概要AIラボが自らの研究開発サイクルをAIに委ねる正のフィードバックループが目前。モデル改善の速度が指数関数的に向上し、AIの進化がさらに加速する可能性が高い。",
+      "summary_preview": "概要Research and Marketsの最新レポートによると、AIチップ市場は2026年の876億ドルから2036年までに6702億ドル規模へ拡大し、年平均成長率22.6%を記録する見通し。GPU・ASIC・TPUなどの専用チップ需要が生成AIの学習・推論を支え、クラウド/データセンター向けが最大シェアを占める。北米が主導し、自動車・ヘルスケア分野へ…",
       "article_path": "articles/featured-topic-2.html",
-      "original_url": "https://tech.yahoo.com/ai/articles/research-development-ai-could-soon-104635181.html",
-      "selection_reason": "AIラボのR&Dサイクル自動化が現実味を帯び、AI進化の加速要因として注目",
+      "original_url": "https://www.globenewswire.com/news-release/2026/05/08/3291168/0/en/global-ai-chip-market-to-soar-to-670-2-billion-by-2036-amid-generative-ai-boom.html",
+      "selection_reason": "生成AIブームを背景にAI専用チップ需要が爆発的に伸び、半導体業界全体の構造変化を予測する市場レポートとして実務判断に寄与",
       "requested_category": "AI",
       "information_sources": [
         {
-          "title": "Research and development of new AI could soon be undertaken by AI",
-          "url": "https://tech.yahoo.com/ai/articles/research-development-ai-could-soon-104635181.html",
-          "source_type": "web"
+          "title": "Global AI Chip Market to Soar to $670.2 Billion by 2036 Amid Generative AI Boom",
+          "url": "https://www.globenewswire.com/news-release/2026/05/08/3291168/0/en/global-ai-chip-market-to-soar-to-670-2-billion-by-2036-amid-generative-ai-boom.html",
+          "source_type": "news"
         },
         {
-          "title": "AI Updates Today (May 2026)",
-          "url": "https://llm-stats.com/llm-updates",
-          "source_type": "web"
+          "title": "AI Data Center Market to Hit USD 2.02 Trillion by 2032",
+          "url": "https://www.globenewswire.com/news-release/2026/05/08/3291149/0/en/AI-Data-Center-Market-to-Hit-USD-2-02-Trillion-by-2032-Rising-from-USD-471-6-Billion-in-2026-Analysis-of-Market-Dynamics-Opportunities-and-Key-Players.html",
+          "source_type": "news"
+        },
+        {
+          "title": "Stock Market Today, May 8: Rackspace Surges on AMD AI Cloud Agreement",
+          "url": "https://www.fool.com/coverage/stock-market-today/2026/05/08/stock-market-today-may-8-rackspace-surges-after-amd-ai-cloud-agreement/",
+          "source_type": "news"
         }
       ]
     },
     {
       "topic_id": "featured-topic-3",
-      "title": "CISA、BerriAI LiteLLMのSQLインジェクション脆弱性をKEVに追加",
-      "source_name": "CISA",
-      "published_at": "2026-05-08T20:00:00+00:00",
-      "impact_level": "Critical",
-      "threat_type": "Vulnerability",
-      "summary_preview": "概要CISAがBerriAI LiteLLMのSQLインジェクション脆弱性（CVE-2026-42208）をKEVカタログに追加。連邦機関は即時対応を求められ、AIツール利用企業にも波及するリスク。",
+      "title": "AIデータセンター市場、2032年までに2兆ドル規模へ拡大",
+      "source_name": "Research and Markets",
+      "published_at": "2026-05-08T13:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要AIデータセンター市場は2026年の4716億ドルから2032年までに2兆200億ドル規模へ急成長し、年平均27.5%で拡大する。GPUベースのハイパースケール施設が主流となり、高帯域幅メモリや高速インターコネクトの進化が支える。エッジAI向けにもAlif Semiconductorの低消費電力プロセッサとMountAInの最適化スタックが登場し、クラ…",
       "article_path": "articles/featured-topic-3.html",
-      "original_url": "https://www.cisa.gov/news-events/alerts/2026/05/08/cisa-adds-one-known-exploited-vulnerability-catalog",
-      "selection_reason": "AI関連ツールの積極的悪用事例として、セキュリティ実務に即した最新アラート",
-      "requested_category": "Cybersecurity",
+      "original_url": "https://www.globenewswire.com/news-release/2026/05/08/3291149/0/en/AI-Data-Center-Market-to-Hit-USD-2-02-Trillion-by-2032-Rising-from-USD-471-6-Billion-in-2026-Analysis-of-Market-Dynamics-Opportunities-and-Key-Players.html",
+      "selection_reason": "生成AI需要に伴うデータセンター投資の爆発的増加を定量的に示し、エンタープライズIT基盤戦略に直結するトレンドを報じた",
+      "requested_category": "the latest trends in IT",
       "information_sources": [
         {
-          "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
-          "url": "https://www.cisa.gov/news-events/alerts/2026/05/08/cisa-adds-one-known-exploited-vulnerability-catalog",
-          "source_type": "web"
+          "title": "AI Data Center Market to Hit USD 2.02 Trillion by 2032",
+          "url": "https://www.globenewswire.com/news-release/2026/05/08/3291149/0/en/AI-Data-Center-Market-to-Hit-USD-2-02-Trillion-by-2032-Rising-from-USD-471-6-Billion-in-2026-Analysis-of-Market-Dynamics-Opportunities-and-Key-Players.html",
+          "source_type": "news"
         },
         {
-          "title": "Linux Kernel Dirty Frag LPE Exploit",
-          "url": "https://thehackernews.com/2026/05/linux-kernel-dirty-frag-lpe-exploit.html",
-          "source_type": "web"
+          "title": "MountAIn disrupts Edge AI landscape to Deliver Cloud-Grade Computer Vision Stack on Alif Semiconductor's Ensemble and Balletto Processors",
+          "url": "https://www.newswire.ca/news-releases/mountain-disrupts-edge-ai-landscape-to-deliver-cloud-grade-computer-vision-stack-on-alif-semiconductor-s-ensemble-and-balletto-processors-882470314.html",
+          "source_type": "news"
+        },
+        {
+          "title": "Key Trends Shaping the Semiconductor Industry in 2026",
+          "url": "https://www.edge-ai-vision.com/2026/04/key-trends-shaping-the-semiconductor-industry-in-2026/",
+          "source_type": "news"
         }
       ]
     }
