@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from notifyhub_digest.openai_client import _coerce_analysis_result
+from notifyhub_digest.openai_client import OpenAIConfig, _build_analysis_payload, _coerce_analysis_result
 
 
 def test_coerce_analysis_result_accepts_lesson_payload() -> None:
@@ -50,3 +50,20 @@ def test_coerce_analysis_result_ignores_removed_read_action_fields() -> None:
 
     assert result.impact_level == "Medium"
     assert result.lessons[0].title == "なし"
+
+
+def test_build_analysis_payload_omits_temperature_for_gpt5_models() -> None:
+    cfg = OpenAIConfig(api_key="test", model="gpt-5.5", temperature=0.4)
+
+    payload = _build_analysis_payload(cfg, {"title": "sample"})
+
+    assert payload["model"] == "gpt-5.5"
+    assert "temperature" not in payload
+
+
+def test_build_analysis_payload_keeps_temperature_for_non_gpt5_models() -> None:
+    cfg = OpenAIConfig(api_key="test", model="gpt-4.1", temperature=0.4)
+
+    payload = _build_analysis_payload(cfg, {"title": "sample"})
+
+    assert payload["temperature"] == 0.4

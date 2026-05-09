@@ -16,6 +16,9 @@ from notifyhub_digest.models import AnalysisResult, Lesson
 logger = logging.getLogger(__name__)
 
 
+_TEMPERATURE_UNSUPPORTED_MODEL_RE = re.compile(r"^gpt-5(?:[.-]|$)", re.IGNORECASE)
+
+
 @dataclass(frozen=True)
 class OpenAIConfig:
     api_key: str
@@ -153,6 +156,41 @@ def _analysis_schema_hint() -> str:
 
 def has_api_key() -> bool:
     return bool(os.getenv("OPENAI_API_KEY"))
+
+
+def _supports_temperature(model: str) -> bool:
+    normalized = (model or "").strip()
+    if not normalized:
+        return True
+    return _TEMPERATURE_UNSUPPORTED_MODEL_RE.search(normalized) is None
+
+
+def _build_analysis_payload(cfg: OpenAIConfig, user: dict[str, Any]) -> dict[str, Any]:
+    payload = {
+        "model": cfg.model,
+        "max_output_tokens": cfg.max_tokens,
+        "text": {"format": {"type": "json_object"}},
+        "input": [
+            {
+                "role": "system",
+                "content": [{"type": "input_text", "text": SYSTEM_PROMPT}],
+            },
+            {
+                "role": "user",
+                "content": [
+                    {
+                        "type": "input_text",
+                        "text": _analysis_schema_hint()
+                        + "\n\n入力:\n"
+                        + json.dumps(user, ensure_ascii=False),
+                    }
+                ],
+            },
+        ],
+    }
+    if _supports_temperature(cfg.model):
+        payload["temperature"] = cfg.temperature
+    return payload
 
 
 def load_openai_config(*, prefix: str = "OPENAI") -> OpenAIConfig | None:
@@ -457,29 +495,7 @@ def analyze_item(
         "reference_urls": refs[:5],
     }
 
-    payload = {
-        "model": cfg.model,
-        "temperature": cfg.temperature,
-        "max_output_tokens": cfg.max_tokens,
-        "text": {"format": {"type": "json_object"}},
-        "input": [
-            {
-                "role": "system",
-                "content": [{"type": "input_text", "text": SYSTEM_PROMPT}],
-            },
-            {
-                "role": "user",
-                "content": [
-                    {
-                        "type": "input_text",
-                        "text": _analysis_schema_hint()
-                        + "\n\n入力:\n"
-                        + json.dumps(user, ensure_ascii=False),
-                    }
-                ],
-            },
-        ],
-    }
+    payload = _build_analysis_payload(cfg, user)
 
     res = client.post(
         f"{cfg.base_url}/responses",
