@@ -197,7 +197,17 @@ def test_infer_category_policy_avoids_substring_false_positives() -> None:
 def test_featured_topic_prompts_require_plain_japanese_style() -> None:
     assert "常体" in FEATURED_SYSTEM_PROMPT
     assert "です・ます調" in FEATURED_SYSTEM_PROMPT
+    assert "「〜だ」「〜である」で終えない" in FEATURED_SYSTEM_PROMPT
+    assert "速報性、影響度、話題性" in FEATURED_SYSTEM_PROMPT
 
     schema_hint = _schema_hint(1)
-    assert "常体" in schema_hint
+    assert "summary_html・lessons.body は常体" in schema_hint
     assert "です・ます調" in schema_hint
+    assert "technical_terms（用語解説）ルール" in schema_hint
+    assert "「〜だ」「〜である」で終えない" in schema_hint
+    assert "同じ用語が過去にも使われていることを前提" in schema_hint
+    assert "lessons（深掘り解説）ルール" in schema_hint
+    assert "title=なし, body=なし" in schema_hint
+    assert "4〜6文で書く" in schema_hint
+    assert "最大8箇所" in schema_hint
+    assert "summary_html 全体で500〜800文字程度" in schema_hint
