@@ -1,0 +1,334 @@
+<!-- article.html テンプレート（生成用） (例: /digest/YYYY/MM/DD/articles/<entry_id>.html)
+     サーバ側（Function）で {{...}} を置換して出力してください。
+-->
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/favicon-192.png" />
+  <title>YARA-X 1.16.0 Release, (Sun, May 10th) | NotifyHub Cybersecurity Daily Report</title>
+  <style>
+    :root{
+      --bg:#0b1020; --panel:#0f1730; --panel2:#121c3a;
+      --text:#e7ecff; --muted:#a9b4df; --line:#22305b;
+      --accent:#7aa2ff; --good:#4ade80; --warn:#fbbf24; --bad:#fb7185;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+      --radius:18px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      background: radial-gradient(1000px 700px at 20% -10%, rgba(122,162,255,.25), transparent 60%),
+                  radial-gradient(900px 600px at 90% 10%, rgba(251,113,133,.12), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+    }
+    a{color:inherit}
+    .wrap{max-width:960px; margin:0 auto; padding:22px 18px 44px}
+    .topbar{
+      display:flex; justify-content:space-between; align-items:center; gap:12px;
+      margin-bottom:12px;
+    }
+    .crumb a{
+      text-decoration:none;
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .crumb a:hover{border-color:rgba(122,162,255,.65)}
+    .chip{
+      display:inline-flex; align-items:center; gap:8px;
+      background:rgba(27,38,80,.75);
+      border:1px solid rgba(34,48,91,.9);
+      padding:7px 10px; border-radius:999px;
+      font-size:12px; color:var(--muted);
+      backdrop-filter: blur(10px);
+      white-space:nowrap;
+    }
+    .chip strong{color:var(--text); font-weight:650}
+    .panel{
+      background: linear-gradient(180deg, rgba(15,23,48,.9), rgba(15,23,48,.75));
+      border:1px solid rgba(34,48,91,.9);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .head{
+      padding:16px 16px 12px;
+      border-bottom:1px solid rgba(34,48,91,.9);
+      background:rgba(18,28,58,.55);
+    }
+    h1{
+      margin:0;
+      font-size:20px;
+      line-height:1.35;
+      letter-spacing:.15px;
+    }
+    .meta{
+      margin-top:10px;
+      display:flex; gap:10px; flex-wrap:wrap;
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.6;
+    }
+    .meta a{color:var(--muted)}
+    .meta a:hover{color:var(--accent)}
+    .tags{
+      margin-top:12px;
+      display:flex; gap:8px; flex-wrap:wrap;
+    }
+    .tag{
+      font-size:11px;
+      padding:6px 9px;
+      border-radius:999px;
+      background:rgba(27,38,80,.65);
+      border:1px solid rgba(34,48,91,.9);
+      color:var(--muted);
+      white-space:nowrap;
+    }
+    .tag.level-Critical{border-color:rgba(251,113,133,.65); color:#ffd0d7}
+    .tag.level-High{border-color:rgba(251,191,36,.65); color:#ffe9b0}
+    .tag.level-Medium{border-color:rgba(122,162,255,.65); color:#dbe6ff}
+    .tag.level-Low{border-color:rgba(74,222,128,.55); color:#d0ffe2}
+    .tag.level-Info{border-color:rgba(169,180,223,.55); color:rgba(169,180,223,.95)}
+    .body{
+      padding:16px;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+    }
+    .section{
+      background:rgba(18,28,58,.35);
+      border:1px solid rgba(34,48,91,.75);
+      border-radius:16px;
+      padding:14px;
+    }
+    .section h2{
+      margin:0 0 10px;
+      font-size:14px;
+      letter-spacing:.1px;
+    }
+    .ruleReason{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.65;
+      white-space:pre-wrap;
+    }
+    .infoSources{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.5;
+    }
+    .infoSourceRow{
+      margin:0;
+      padding:0;
+    }
+    .infoSourceRow + .infoSourceRow{
+      margin-top:2px;
+    }
+
+    /* --- summary_html styles (OpenAI output uses h4/p/ul/li/strong/code/br) --- */
+    .summary h4{
+      margin:14px 0 8px;
+      font-size:13px;
+      letter-spacing:.1px;
+      padding-left:10px;
+      border-left:3px solid rgba(122,162,255,.65);
+      color: rgba(231,236,255,.95);
+    }
+    .summary p{margin:8px 0; color:rgba(231,236,255,.92); line-height:1.75}
+    .summary ul, .summary ol{margin:8px 0 8px 1.2em; padding:0}
+    .summary li{margin:6px 0; color:rgba(231,236,255,.92); line-height:1.7}
+    .summary strong{
+      color:var(--text);
+      font-weight:750;
+      padding:0 .2em;
+      border-radius:8px;
+      background: linear-gradient(transparent 60%, rgba(122,162,255,.22) 60%);
+    }
+    .summary code{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 8px;
+      background: rgba(11,16,32,.6);
+      border: 1px solid rgba(34,48,91,.85);
+      color: rgba(231,236,255,.95);
+      white-space: nowrap;
+    }
+
+    .terms{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:10px;
+    }
+    @media (max-width: 860px){
+      .terms{grid-template-columns: 1fr}
+    }
+    .termCard{
+      background:rgba(11,16,32,.45);
+      border:1px solid rgba(34,48,91,.85);
+      border-radius:14px;
+      padding:12px;
+      min-width:0;
+    }
+    .termCard .term{
+      font-weight:700;
+      font-size:13px;
+      margin:0 0 8px;
+      word-break:break-word;
+    }
+    .termCard .exp{
+      margin:0;
+      color:rgba(231,236,255,.9);
+      line-height:1.7;
+      font-size:12px;
+      white-space:pre-wrap;
+    }
+    .subSectionTitle{
+      margin:16px 0 8px;
+      font-size:12px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:var(--muted);
+    }
+    .deepDive{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:10px;
+      margin-top:8px;
+    }
+    .deepDiveCard{
+      background:rgba(12,20,38,.6);
+    }
+
+    .footer{
+      margin-top:14px;
+      color:rgba(169,180,223,.75);
+      font-size:12px;
+      line-height:1.7;
+      text-align:center;
+    }
+    .btnRow{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px}
+    .linkbtn{
+      text-decoration:none;
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .linkbtn:hover{border-color:rgba(122,162,255,.65)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="crumb">
+        <!-- ../index.html は通常 "../index.html" でOK -->
+        <a href="../index.html">← 日次トップへ戻る</a>
+      </div>
+      <div class="chip">entry_id <strong class="mono">46e1ed7fdee33603</strong></div>
+    </div>
+
+    <div class="panel">
+      <div class="head">
+        <h1>YARA-X 1.16.0 Release, (Sun, May 10th)</h1>
+
+        <div class="meta">
+          <span>🗞️ SANS ISC</span>
+          <span>🕒 2026-05-11T07:37:08+09:00</span>
+          <span>🔗 <a href="https://isc.sans.edu/diary/rss/32970" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
+        </div>
+
+        <div class="tags">
+          <span class="tag level-Info">Impact: Info</span>
+          <span class="tag">Patch</span>
+        </div>
+
+        <div class="btnRow">
+          <a class="linkbtn" href="https://isc.sans.edu/diary/rss/32970" target="_blank" rel="noopener noreferrer">原文リンク</a>
+          <a class="linkbtn" href="https://www.notifyhub.site/digest/2026/05/12/">日次トップ</a>
+        </div>
+      </div>
+
+      <div class="body">
+        
+        <div class="section">
+          <h2>Impact判定理由</h2>
+          <div class="ruleReason">YARA-X 1.16.0の改善・バグ修正告知であり、入力情報上はCVE、悪用、緊急回避策、侵害発生を示す情報がない。
+運用影響はYARA-Xを検知・分析パイプラインに組み込む組織での判定差分や互換性確認に限定される。
+情報源はSANS ISCのコミュニティ/メディア系情報で、二次的なリリース紹介に近いためimpactは引き上げない。</div>
+        </div>
+        <div class="section summary">
+          <h2>🧾 要約（ChatGPT / gpt-5.5-2026-04-23）</h2>
+          <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
+          <h4>概要</h4><p>SANS ISCが、YARA-X 1.16.0のリリースを取り上げており、内容は4件の改善と4件のバグ修正というツール更新の告知に近い。現時点の入力情報だけでは、脆弱性修正、悪用確認、CVE、緊急回避策の有無は示されておらず、<strong>直接的な侵害リスクは低い</strong>と見るべき案件だ。一方で、CSIRTやSOCがYARA-Xをマルウェアハンティング、ファイル検査、EDR補助分析、隔離環境での自動分類に組み込んでいる場合、ルール評価の挙動差やバグ修正により、<strong>検知結果の差分</strong>が運用影響になり得る。攻撃者がこのリリースを直接悪用する構図ではないが、組織側の検知基盤に既知の誤判定や未検知が残ると、マルウェアの亜種や難読化サンプルが<strong>検知をすり抜ける余地</strong>を残す。影響範囲はYARA-Xを導入している分析・検疫・CI/CD検査の範囲に限定され、全社ネットワークへ即時波及する性質ではない。未確認事項は、各修正の詳細、既存ルールとの互換性、性能変化、セキュリティ修正を含むかどうかであり、適用前にリリースノートと代表ルールセットでの回帰確認が必要だ。</p>
+        </div>
+
+        <div class="section">
+          <h2>📌 キーワード解説</h2>
+          <div class="terms">
+            <div class="termCard">
+  <div class="term">YARA-X（YARAルールエンジン）</div>
+  <p class="exp">ファイルやメモリをルールで照合する検知基盤だ。AVの製品シグネチャと違い、組織独自の観測知を反映しやすい。</p>
+</div>
+<div class="termCard">
+  <div class="term">回帰テスト（Regression Test）</div>
+  <p class="exp">更新後も既存の検知が崩れないか確認する試験だ。新機能確認とは違い、過去に正しかった挙動の維持を見る。</p>
+</div>
+<div class="termCard">
+  <div class="term">False Negative（未検知）</div>
+  <p class="exp">悪性を正常と見逃す状態だ。False Positiveは誤検知であり、インシデント見逃しの観点では未検知の方が危険になりやすい。</p>
+</div>
+<div class="termCard">
+  <div class="term">ハンティングルール</div>
+  <p class="exp">既知IOCだけでなく、攻撃手法の特徴を探すルールだ。単純なハッシュ照合より亜種検出に強いが、調整不足だとノイズも増える。</p>
+</div>
+          </div>
+          <h3 class="subSectionTitle">深掘り解説</h3>
+          <div class="deepDive">
+            <div class="termCard deepDiveCard">
+  <div class="term">検知エンジン更新で見るべきは「最新版か」ではなく「判定差分」</div>
+  <p class="exp">YARA系ツールの更新は、脆弱性対応のように即時適用だけを判断軸にすると失敗しやすい。重要なのは、同じルールと同じサンプルを与えたときに、旧版と新版で何が変わるかだ。検知エンジンはルール構文、正規表現、モジュール処理、ファイルパーサ、性能最適化の影響を受けるため、バグ修正であっても結果が変わることがある。
+
+例えば、メールゲートウェイで添付ファイルを展開し、YARA-Xでマクロ付き文書やスクリプトを検査している環境を考える。新版でパーサの不具合が直ると、これまで解析できなかったファイルを正しく評価できるようになり検知率が上がる。一方、正規表現や文字列条件の扱いが厳密化されると、曖昧なルールが一致しなくなり、これまで検知していた検体が落ちる可能性もある。どちらも「修正」だが、運用上は検知件数、誤検知件数、処理時間、タイムアウト率の変化として現れる。
+
+CSIRTが取るべき現実的な確認は、代表サンプルセットを固定して旧版・新版を並走させることだ。既知マルウェア、社内で過去に誤検知した業務ファイル、難読化スクリプト、サイズの大きいアーカイブを含め、ルールごとの一致差分を出す。差分が出たルールは、エンジンの不具合修正による改善なのか、ルール側の曖昧さが露呈したのかを切り分ける。特に自動隔離やチケット自動起票に接続している場合、更新直後の検知急増は業務停止やSOCのアラート過多につながるため、段階適用が妥当だ。
+
+つまり、検知基盤の更新は「セキュリティを上げる作業」であると同時に「監視品質を変える変更管理」でもある。リリースノート確認、差分テスト、ロールバック手順、初期数日のメトリクス監視をセットにすると、ツール更新を原因とする判断ブレを減らせる。</p>
+</div>
+          </div>
+        </div>
+
+        
+
+        <div class="section">
+          <h2>🕘 生成情報</h2>
+          <div class="ruleReason">
+対象期間：2026-05-11T06:00:00+09:00 〜 2026-05-12T06:00:00+09:00
+生成時刻：2026-05-12T06:52:12.208940+09:00
+免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      notifyhub.site
+    </div>
+  </div>
+</body>
+</html>

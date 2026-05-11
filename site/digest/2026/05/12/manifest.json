@@ -1,0 +1,390 @@
+{
+  "date": "2026-05-12",
+  "window": {
+    "from": "2026-05-11T06:00:00+09:00",
+    "to": "2026-05-12T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 26
+  },
+  "generated_at_jst": "2026-05-12T06:52:12.208940+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "Google、AIによるゼロデイ脆弱性発見を初確認",
+      "source_name": "Google Threat Intelligence Group",
+      "published_at": "2026-05-11T09:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Zero-day",
+      "summary_preview": "概要Google Threat Intelligence Groupは、犯罪グループがAIモデルを活用して未知の脆弱性を発見・悪用するゼロデイ攻撃を初めて確認したと発表した。対象は人気のオープンソースWeb管理ツールで、Pythonコードによる2FAバイパスが可能だった。Googleは即座に開発元へ報告しパッチを適用、攻撃を未然に防いだ。報告書ではAIが攻…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://www.politico.com/news/2026/05/11/google-hackers-ai-security-00913247",
+      "selection_reason": "AIを活用したサイバー攻撃の新段階を示す初の公式報告で、実務判断に直結する最新動向",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "Google says hackers used AI to develop a major security flaw",
+          "url": "https://www.politico.com/news/2026/05/11/google-hackers-ai-security-00913247",
+          "source_type": "news"
+        },
+        {
+          "title": "Google Says Criminal Hackers Used A.I. to Find a Major Software Flaw",
+          "url": "https://www.nytimes.com/2026/05/11/us/politics/google-hackers-attack-ai.html",
+          "source_type": "news"
+        },
+        {
+          "title": "Google: Hackers used AI to develop zero-day exploit for web admin tool",
+          "url": "https://www.bleepingcomputer.com/news/security/google-hackers-used-ai-to-develop-zero-day-exploit-for-web-admin-tool/",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "AIモデルがサイバーセキュリティ分野で急速に進化",
+      "source_name": "Google Threat Intelligence Group",
+      "published_at": "2026-05-11T09:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要Googleの報告により、AnthropicのMythosやOpenAIのGPT-5.5-Cyberなど特定AIモデルが脆弱性発見に有効であることが明らかになった。攻撃側はこれらを悪用し、防御側も同等レベルのモデルで対抗する必要性が増している。Googleは自社Geminiは使用されていないと明言し、商用モデルの管理強化を促す。専門家はAI生成コードの…",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://www.nytimes.com/2026/05/11/us/politics/google-hackers-attack-ai.html",
+      "selection_reason": "AIの攻防両面での実用化が進み、モデル選択や規制判断に影響する最新報告",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "Google Says Criminal Hackers Used A.I. to Find a Major Software Flaw",
+          "url": "https://www.nytimes.com/2026/05/11/us/politics/google-hackers-attack-ai.html",
+          "source_type": "news"
+        },
+        {
+          "title": "Google researchers uncover criminal zero-day exploit likely built with AI",
+          "url": "https://www.helpnetsecurity.com/2026/05/11/google-ai-vulnerability-exploitation/",
+          "source_type": "news"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "6fd2d81c8d378127",
+      "title": "TeamPCP Compromises Checkmarx Jenkins AST Plugin Weeks After KICS Supply Chain Attack",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-05-11T18:30:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要Checkmarxは、Jenkins AST Pluginの改変版がJenkins Marketplaceに公開されていたことを確認したと報じられている。対象プラグインをCI/CD基盤に導入していた組織では、Jenkinsが保持するSCM認証情報、ビルド時の環境変数、成果物公開用トークンに到達される可能性があり、単なる開発端末の侵害よりもリリース経路そ…",
+      "article_path": "articles/6fd2d81c8d378127.html",
+      "original_url": "https://thehackernews.com/2026/05/teampcp-compromises-checkmarx-jenkins.html"
+    },
+    {
+      "entry_id": "79e23d877a87be60",
+      "title": "cPanel CVE-2026-41940 Under Active Exploitation to Deploy Filemanager Backdoor",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-05-11T17:54:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要The Hacker Newsは、cPanelおよびWebHost Managerに影響するCVE-2026-41940が悪用され、Mr_Rot13とされる攻撃者がFilemanagerバックドアを設置していると報じている。記事情報では、この脆弱性は認証バイパスにつながり、リモート攻撃者が管理機能へ高い権限で到達できる可能性があるため、インターネット公…",
+      "article_path": "articles/79e23d877a87be60.html",
+      "original_url": "https://thehackernews.com/2026/05/cpanel-cve-2026-41940-under-active.html"
+    },
+    {
+      "entry_id": "c446c160709e9319",
+      "title": "Hackers Used AI to Develop First Known Zero-Day 2FA Bypass for Mass Exploitation",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-05-11T15:45:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Zero-day",
+      "summary_preview": "概要The Hacker Newsは、Googleが未知の脅威アクターによるゼロデイの2FAバイパス悪用を確認したと報じた。記事の要点は、AIが脆弱性探索やエクスプロイト生成に使われた可能性があり、かつ大量悪用に向いた形で使われたという点にある。悪用の成立条件は、対象サービスや2FA実装の詳細が未提示のため断定できないが、認証前後の処理不備を突かれる場合、…",
+      "article_path": "articles/c446c160709e9319.html",
+      "original_url": "https://thehackernews.com/2026/05/hackers-used-ai-to-develop-first-known.html"
+    },
+    {
+      "entry_id": "db7e2ce0619853f7",
+      "title": "⚡ Weekly Recap: Linux Rootkit, macOS Crypto Stealer, WebSocket Skimmers and More",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-05-11T12:36:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Malware",
+      "summary_preview": "概要The Hacker Newsの週間まとめとして、Linux rootkit、macOS向け暗号資産窃取、WebSocketを使う決済情報スキマー、信頼されたダウンロードの汚染、クラウドサーバの不正利用、古い脆弱性の継続悪用が列挙された。単一のキャンペーン詳細ではなく、攻撃者が既存の信頼経路、放置された公開面、未修正の既知脆弱性を組み合わせ、初期侵入か…",
+      "article_path": "articles/db7e2ce0619853f7.html",
+      "original_url": "https://thehackernews.com/2026/05/weekly-recap-linux-rootkit-macos-crypto.html"
+    },
+    {
+      "entry_id": "13ee00d405a579e3",
+      "title": "Your Purple Team Isn't Purple — It's Just Red and Blue in the Same Room",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-05-11T11:30:00+00:00",
+      "impact_level": "Low",
+      "threat_type": "Advisory",
+      "summary_preview": "概要この記事は、Purple Teamが単にRed TeamとBlue Teamを同じ会議体に置いただけになり、検知・対応・修正の流れが人手の受け渡しで詰まっている状態を問題化している。悪用されるのは特定の脆弱性ではなく、IOCの手作業投入、Red Team手順の再利用不能、悪用可能期間より長い変更承認といった運用遅延であり、攻撃者はその間に認証情報窃取、…",
+      "article_path": "articles/13ee00d405a579e3.html",
+      "original_url": "https://thehackernews.com/2026/05/your-purple-team-isnt-purple-its-just.html"
+    },
+    {
+      "entry_id": "100cccb5368eb4e5",
+      "title": "Fake OpenAI Privacy Filter Repo Hits #1 on Hugging Face, Draws 244K Downloads",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-05-11T07:05:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要Hugging Face上で、OpenAIの正規モデルに見せかけた偽リポジトリがトレンド上位に入り、約24.4万ダウンロードを集めたと報じられた。偽プロジェクトは説明文や名称を模倣し、利用者に正規のPrivacy Filterモデルだと誤認させたうえで、Windows環境にRust製情報窃取マルウェアを配布する構図とされる。攻撃成立には、単なる閲覧では…",
+      "article_path": "articles/100cccb5368eb4e5.html",
+      "original_url": "https://thehackernews.com/2026/05/fake-openai-privacy-filter-repo-hits-1.html"
+    },
+    {
+      "entry_id": "da4601044887fb87",
+      "title": "Why we use CAPTCHAs, (Mon, May 11th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-05-11T14:20:16+00:00",
+      "impact_level": "Info",
+      "threat_type": "Botnet",
+      "summary_preview": "概要SANS ISCの記事は、サイトの一部ページにCloudflare Turnstile CAPTCHAを導入した背景として、ボット traffic が性能へ与える負荷を取り上げている。悪用の形は単一ではなく、クローリング、スクレイピング、フォーム投稿、ログイン試行、脆弱性探索のような自動アクセスが、人間向けWeb導線やバックエンド資源を消費する構図にな…",
+      "article_path": "articles/da4601044887fb87.html",
+      "original_url": "https://isc.sans.edu/diary/rss/32974"
+    },
+    {
+      "entry_id": "51a5f8c123078224",
+      "title": "ISC Stormcast For Monday, May 11th, 2026 https://isc.sans.edu/podcastdetail/9926, (Mon, May 11th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-05-11T02:15:11+00:00",
+      "impact_level": "Info",
+      "threat_type": "Unknown",
+      "summary_preview": "概要本入力はSANS ISCのStormcast掲載通知で、タイトル、URL、公開時刻のみが示され、本文要約や参照URLは含まれていない。現時点では、特定の脆弱性、マルウェア、攻撃キャンペーン、設定不備のいずれが扱われたかを確認できず、悪用手口や対象製品は未確認である。したがって、攻撃者がどの条件を満たす環境を狙うのか、認証前悪用なのか、資格情報悪用なのか…",
+      "article_path": "articles/51a5f8c123078224.html",
+      "original_url": "https://isc.sans.edu/diary/rss/32972"
+    },
+    {
+      "entry_id": "46e1ed7fdee33603",
+      "title": "YARA-X 1.16.0 Release, (Sun, May 10th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-05-10T22:37:08+00:00",
+      "impact_level": "Info",
+      "threat_type": "Patch",
+      "summary_preview": "概要SANS ISCが、YARA-X 1.16.0のリリースを取り上げており、内容は4件の改善と4件のバグ修正というツール更新の告知に近い。現時点の入力情報だけでは、脆弱性修正、悪用確認、CVE、緊急回避策の有無は示されておらず、直接的な侵害リスクは低いと見るべき案件だ。一方で、CSIRTやSOCがYARA-Xをマルウェアハンティング、ファイル検査、EDR…",
+      "article_path": "articles/46e1ed7fdee33603.html",
+      "original_url": "https://isc.sans.edu/diary/rss/32970"
+    },
+    {
+      "entry_id": "16f3e524dee55368",
+      "title": "GTIG AI Threat Tracker: Adversaries Leverage AI for Vulnerability Exploitation, Augmented Operations, and Initial Access",
+      "source_name": "Mandiant",
+      "category": "reporting",
+      "published_at": "2026-05-11T14:00:00+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "Executive Summary\nSince our February 2026 report on AI-related threat activity, Google Threat Intelligence Group (GTIG) has continued to track a maturing transition from nascent A…",
+      "article_path": "articles/16f3e524dee55368.html",
+      "original_url": "https://cloud.google.com/blog/topics/threat-intelligence/ai-vulnerability-exploitation-initial-access/"
+    },
+    {
+      "entry_id": "b38ff2417b51a7e2",
+      "title": "VU#471747: dnsmasq contains several vulnerabilities, including attacker DNS redirect, privilege escalation, and heap manipulation",
+      "source_name": "CERT/CC",
+      "category": "reporting",
+      "published_at": "2026-05-11T16:49:36+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CERT/CCは、DNS/DHCP/ネットブート機能を提供するdnsmasqに複数の脆弱性があると公表し、修正版2.92rel2が公開された。対象はCVE-2026-2291、CVE-2026-4890、CVE-2026-4891、CVE-2026-4892、CVE-2026-4893、CVE-2026-5172で、入力情報内にCVSS値は示されていな…",
+      "article_path": "articles/b38ff2417b51a7e2.html",
+      "original_url": "https://kb.cert.org/vuls/id/471747"
+    },
+    {
+      "entry_id": "91329d1457248730",
+      "title": "VU#937808: Casdoor contains Arbitrary File Write vulnerability",
+      "source_name": "CERT/CC",
+      "category": "reporting",
+      "published_at": "2026-05-11T14:48:19+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CERT/CCは、オープンソースIAM/MCPゲートウェイCasdoorのLocal File Systemストレージ実装に、CVE-2026-6815の任意ファイル書き込み脆弱性があると公開した。認証済みでファイルアップロード権限を持つ攻撃者が、/api/upload-resourceで渡すpathPrefixに../../などを混ぜ、想定された$C…",
+      "article_path": "articles/91329d1457248730.html",
+      "original_url": "https://kb.cert.org/vuls/id/937808"
+    },
+    {
+      "entry_id": "1a3a9a14b5226d59",
+      "title": "「.com」や「.co.jp」ではなく「ブランドTLD」を選ぶ理由と 14 年ぶりの再開発 ～ GMOブランドセキュリティ「.貴社名（ドットきしゃめい）」",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-10T23:15:04+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要ScanNetSecurityは、GMOブランドセキュリティによる「.貴社名」のようなブランドTLD活用を取り上げ、「.com」や「.co.jp」ではなく自社名のトップレベルドメインを選ぶ理由と、約14年ぶりの新規申請再開という文脈を紹介している。これは脆弱性情報ではなく、CSIRT観点ではなりすましドメイン、フィッシング、ブランド悪用の統制をどこまで…",
+      "article_path": "articles/1a3a9a14b5226d59.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/11/55236.html"
+    },
+    {
+      "entry_id": "68b3c5aa80895aa1",
+      "title": "5 / 13～15 開催 EDIX東京に HENNGE が出展",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-10T23:10:06+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要ScanNetSecurityの記事タイトルから確認できる範囲では、HENNGEが2026年5月13日から15日に開催されるEDIX東京へ出展するというイベント出展告知であり、脆弱性、侵害、マルウェア、設定不備の報告ではない。この記事自体に、攻撃者が悪用できる手順、対象製品の欠陥、露出条件、侵害指標は示されておらず、CSIRTの即時対応対象とは見なしに…",
+      "article_path": "articles/68b3c5aa80895aa1.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/11/55235.html"
+    },
+    {
+      "entry_id": "94b80e42907d0130",
+      "title": "5 / 21 開催「Security Innovation Conference」にエーアイセキュリティラボ 阿部一真氏 登壇",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-10T23:10:04+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要ScanNetSecurityは、5月21日開催の「Security Innovation Conference」にエーアイセキュリティラボの阿部一真氏が登壇することを告知した。本件は脆弱性、侵害、マルウェア観測ではなく、イベント登壇情報に分類されるため、CSIRTが直ちにパッチ適用や封じ込めを判断する材料ではない。悪用という観点では、記事そのものが攻…",
+      "article_path": "articles/94b80e42907d0130.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/11/55234.html"
+    },
+    {
+      "entry_id": "ea2217db6ad92dcc",
+      "title": "山一電機 フィリピン子会社にランサムウェア攻撃",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-10T23:05:21+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要山一電機のフィリピン子会社がランサムウェア攻撃を受けたと報じられたが、入力情報だけでは侵入経路、暗号化範囲、データ窃取の有無、復旧状況は確認できない。ランサムウェアは端末やサーバを暗号化するだけでなく、認証情報を奪ってファイルサーバ、業務システム、バックアップ領域へ広がるため、現地拠点単独の障害に見えても親会社・グループ共通基盤に影響が波及する可能性が…",
+      "article_path": "articles/ea2217db6ad92dcc.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/11/55233.html"
+    },
+    {
+      "entry_id": "2a187165c1388d94",
+      "title": "東山産業へのランサムウェア攻撃、データの公開を確認",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-10T23:05:19+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要ScanNetSecurityは、東山産業が受けたランサムウェア攻撃について、攻撃者側によるデータ公開を確認したと報じている。本文情報が限られるため、侵入経路、暗号化被害の有無、公開されたデータの種類や件数、攻撃グループ名は未確認だが、公開確認という段階は単なる感染報告よりも情報漏えい対応へ重心が移ったことを意味する。悪用面では、公開ファイルに取引先情…",
+      "article_path": "articles/2a187165c1388d94.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/11/55232.html"
+    },
+    {
+      "entry_id": "c0500c45271d26c4",
+      "title": "ファイルが暗号化されておりランサムウェアである可能性が高い ～ オーミケンシへのサイバー攻撃によるシステム障害",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-10T23:05:17+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要ScanNetSecurityは、オーミケンシがサイバー攻撃を受け、システム障害が発生している件について、ファイル暗号化が確認されランサムウェアの可能性が高いと報じている。攻撃者は何らかの経路で社内環境へ侵入し、サーバや共有領域上のファイルを暗号化して業務継続を阻害した可能性があるが、現時点で侵入経路、マルウェア名、攻撃グループ、認証情報悪用の有無は未…",
+      "article_path": "articles/c0500c45271d26c4.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/11/55231.html"
+    },
+    {
+      "entry_id": "b49ab6ed8d10ca7c",
+      "title": "エスペックの従業員のメールアカウントにブルートフォース攻撃、不審メール送信",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-10T23:05:14+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Credential Theft",
+      "summary_preview": "概要エスペックで従業員のメールアカウントがブルートフォース攻撃を受け、不審メール送信に使われたと報じられた。攻撃者は弱いパスワード、過去漏えいした認証情報、MFA未適用の経路を足掛かりにメールボックスへ入り、取引先や社内関係者に対して信頼済み送信者を装ったメールを送れる状態になった可能性がある。影響は当該アカウント単体に見えても、メール履歴・署名・添付ファ…",
+      "article_path": "articles/b49ab6ed8d10ca7c.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/11/55230.html"
+    },
+    {
+      "entry_id": "e001af082061f8a9",
+      "title": "いえらぶCLOUDへの不正アクセス、一誠商事が取り扱う顧客情報の一部が流出した可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-10T23:05:11+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要ScanNetSecurityは、いえらぶCLOUDへの不正アクセスにより、一誠商事が取り扱う顧客情報の一部が流出した可能性があると報じた。いえらぶCLOUDは不動産業務向けSaaSであり、侵害経路が管理者アカウントの窃取なのか、サービス側の脆弱性・設定不備なのかで、影響範囲と初動の優先順位が大きく変わる。悪用面では、顧客の連絡先、契約・問い合わせ情報…",
+      "article_path": "articles/e001af082061f8a9.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/11/55229.html"
+    },
+    {
+      "entry_id": "d466612f96d098e7",
+      "title": "いえらぶCLOUDへの不正アクセス、アットホームに問い合わせを行った一部顧客情報漏えいの可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-10T23:05:08+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要ScanNetSecurityは、いえらぶCLOUDへの不正アクセスにより、アットホームに問い合わせを行った一部顧客情報が漏えいした可能性があると報じている。現時点で入力情報から確認できるのはSaaS環境への不正アクセスと問い合わせ情報の漏えい可能性であり、侵入経路、侵害された権限、漏えい項目、件数、期間は未確認だ。攻撃者視点では、物件問い合わせ情報は…",
+      "article_path": "articles/d466612f96d098e7.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/11/55228.html"
+    },
+    {
+      "entry_id": "f77f1e40edc2c3f1",
+      "title": "いえらぶCLOUDへの不正アクセス、イオンモールにも影響",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-10T23:05:06+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要不動産関連SaaSとみられるいえらぶCLOUDへの不正アクセスが報じられ、その影響先としてイオンモールにも波及した可能性が示されている。攻撃の成立条件、侵入口、侵害された権限、閲覧・取得されたデータ範囲は入力情報だけでは確認できず、現時点では委託先SaaS経由の影響確認案件として扱うのが妥当だ。悪用の観点では、SaaS上の顧客情報、問い合わせ情報、契約…",
+      "article_path": "articles/f77f1e40edc2c3f1.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/11/55227.html"
+    },
+    {
+      "entry_id": "335846177fd49b85",
+      "title": "いえらぶGROUPへの不正アクセス、システムにおける脆弱性が発端に",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-10T23:05:03+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要ScanNetSecurityは、いえらぶGROUPへの不正アクセスについて、同社システムに存在した脆弱性が発端になったと報じている。入力情報からは、対象となった製品・システム、CVE番号、攻撃経路、侵害範囲、個人情報や顧客データの流出有無は確認できないため、現時点で一般組織が直ちに同一脆弱性の有無を照合できる段階ではない。攻撃者視点では、外部公開シス…",
+      "article_path": "articles/335846177fd49b85.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/11/55226.html"
+    },
+    {
+      "entry_id": "d151666556d59666",
+      "title": "Apache HTTP Server 2.4 に複数の脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-10T23:00:11+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要ScanNetSecurityが、Apache HTTP Server 2.4に複数の脆弱性が存在することを伝えているが、入力情報だけではCVE番号、CVSS、該当バージョン、修正版、悪用有無は確認できない。Apache HTTP Serverはインターネット公開Webサーバやリバースプロキシとして使われるため、脆弱性の種類がRCE、認証回避、リクエス…",
+      "article_path": "articles/d151666556d59666.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/11/55225.html"
+    },
+    {
+      "entry_id": "3543a99562c6e4c3",
+      "title": "米CISA、CISA ICS Advisory / ICS Medical Advisory 公表",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-10T23:00:07+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/3543a99562c6e4c3.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/11/55224.html"
+    },
+    {
+      "entry_id": "8d0fd0c0b7bf0355",
+      "title": "Palo Alto Networks 製 PAN-OS にバッファオーバーフローの脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-10T23:00:04+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要ScanNetSecurityが、Palo Alto Networks製PAN-OSにバッファオーバーフローの脆弱性があることを報じている。現時点の入力情報だけでは、CVE番号、CVSS、対象バージョン、影響を受ける機能、認証要否、既知悪用の有無が確認できないため、境界機器の脆弱性として優先確認しつつも、緊急遮断レベルの判断には一次情報の照合が必要とな…",
+      "article_path": "articles/8d0fd0c0b7bf0355.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/11/55223.html"
+    }
+  ]
+}
