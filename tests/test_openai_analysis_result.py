@@ -72,7 +72,9 @@ def test_build_analysis_payload_keeps_temperature_for_non_gpt5_models() -> None:
 def test_analysis_prompts_require_plain_japanese_style() -> None:
     assert "常体" in SYSTEM_PROMPT
     assert "です・ます調" in SYSTEM_PROMPT
+    assert "「〜だ」「〜である」で終える文を避ける" in SYSTEM_PROMPT
 
     schema_hint = _analysis_schema_hint()
     assert "常体" in schema_hint
     assert "です・ます調" in schema_hint
+    assert "「〜だ」「〜である」で終えない" in schema_hint
