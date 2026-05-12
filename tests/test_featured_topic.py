@@ -6,7 +6,7 @@ from pathlib import Path
 
 from notifyhub_digest.models import AnalysisResult, FeaturedTopic, InformationSource, Source
 from notifyhub_digest.rss import RawEntry
-from notifyhub_digest.featured_topic import FEATURED_SYSTEM_PROMPT, _build_user_prompt, _infer_category_policy, _looks_mismatched_for_category, _schema_hint
+from notifyhub_digest.featured_topic import FEATURED_SYSTEM_PROMPT, _build_user_prompt, _infer_category_policy, _looks_mismatched_for_category, _resolve_requested_category, _schema_hint, load_featured_topics_settings
 from notifyhub_digest.runner import build_digest_outputs
 from notifyhub_digest.timeutils import JST, compute_daily_window
 
@@ -162,6 +162,24 @@ def test_build_user_prompt_adds_generic_tech_trend_guidance() -> None:
     assert "サイバー攻撃・脆弱性・情報漏えい・インシデント対応そのものは原則として選ばない" in prompt
 
 
+def test_build_user_prompt_adds_generic_guidance_for_arbitrary_categories() -> None:
+    class _Settings:
+        count = 3
+        categories = ["教育", "宗教", "健康政策"]
+
+    prompt = _build_user_prompt(
+        window_start_utc=datetime(2026, 5, 8, 0, 0),
+        window_end_utc=datetime(2026, 5, 9, 0, 0),
+        settings=_Settings(),
+    )
+
+    assert "categories は固定候補ではなく自由なテーマ名として解釈" in prompt
+    assert "requested_category には指定されたカテゴリ名をそのまま使う" in prompt
+    assert "カテゴリ「教育」では、その分野そのものの動き" in prompt
+    assert "カテゴリ「宗教」では、その分野そのものの動き" in prompt
+    assert "カテゴリ「健康政策」では、その分野そのものの動き" in prompt
+
+
 def test_generic_tech_trend_category_rejects_cybersecurity_incident_topics() -> None:
     assert _looks_mismatched_for_category(
         requested_category="cloud platform trends",
@@ -190,8 +208,24 @@ def test_infer_category_policy_is_not_hardcoded_to_one_literal() -> None:
 
 def test_infer_category_policy_avoids_substring_false_positives() -> None:
     policy = _infer_category_policy("retail operations")
-    assert policy.guidance == ""
+    assert "カテゴリ「retail operations」" in policy.guidance
     assert policy.exclude_cybersecurity_incidents is False
+
+
+def test_load_featured_topics_settings_dedupes_arbitrary_categories(monkeypatch) -> None:
+    monkeypatch.setenv("FEATURED_TOPIC_COUNT", "3")
+    monkeypatch.setenv("FEATURED_TOPIC_CATEGORIES", "教育, health policy, 教育, Health-Policy")
+
+    settings = load_featured_topics_settings()
+
+    assert settings.count == 3
+    assert settings.categories == ["教育", "health policy"]
+
+
+def test_resolve_requested_category_maps_back_to_requested_label() -> None:
+    resolved = _resolve_requested_category("Health-Policy", ["教育", "health policy"])
+
+    assert resolved == "health policy"
 
 
 def test_featured_topic_prompts_require_plain_japanese_style() -> None:
@@ -203,6 +237,7 @@ def test_featured_topic_prompts_require_plain_japanese_style() -> None:
     schema_hint = _schema_hint(1)
     assert "summary_html・lessons.body は常体" in schema_hint
     assert "です・ます調" in schema_hint
+    assert "requested_category は categories に指定された文字列をそのまま使う" in schema_hint
     assert "technical_terms（用語解説）ルール" in schema_hint
     assert "「〜だ」「〜である」で終えない" in schema_hint
     assert "同じ用語が過去にも使われていることを前提" in schema_hint
