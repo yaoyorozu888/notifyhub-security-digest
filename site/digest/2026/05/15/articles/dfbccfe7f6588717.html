@@ -1,0 +1,334 @@
+<!-- article.html テンプレート（生成用） (例: /digest/YYYY/MM/DD/articles/<entry_id>.html)
+     サーバ側（Function）で {{...}} を置換して出力してください。
+-->
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/favicon-192.png" />
+  <title>Cisco Catalyst SD-WAN Controller Auth Bypass Actively Exploited to Gain Admin Access | NotifyHub Cybersecurity Daily Report</title>
+  <style>
+    :root{
+      --bg:#0b1020; --panel:#0f1730; --panel2:#121c3a;
+      --text:#e7ecff; --muted:#a9b4df; --line:#22305b;
+      --accent:#7aa2ff; --good:#4ade80; --warn:#fbbf24; --bad:#fb7185;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+      --radius:18px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      background: radial-gradient(1000px 700px at 20% -10%, rgba(122,162,255,.25), transparent 60%),
+                  radial-gradient(900px 600px at 90% 10%, rgba(251,113,133,.12), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+    }
+    a{color:inherit}
+    .wrap{max-width:960px; margin:0 auto; padding:22px 18px 44px}
+    .topbar{
+      display:flex; justify-content:space-between; align-items:center; gap:12px;
+      margin-bottom:12px;
+    }
+    .crumb a{
+      text-decoration:none;
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .crumb a:hover{border-color:rgba(122,162,255,.65)}
+    .chip{
+      display:inline-flex; align-items:center; gap:8px;
+      background:rgba(27,38,80,.75);
+      border:1px solid rgba(34,48,91,.9);
+      padding:7px 10px; border-radius:999px;
+      font-size:12px; color:var(--muted);
+      backdrop-filter: blur(10px);
+      white-space:nowrap;
+    }
+    .chip strong{color:var(--text); font-weight:650}
+    .panel{
+      background: linear-gradient(180deg, rgba(15,23,48,.9), rgba(15,23,48,.75));
+      border:1px solid rgba(34,48,91,.9);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .head{
+      padding:16px 16px 12px;
+      border-bottom:1px solid rgba(34,48,91,.9);
+      background:rgba(18,28,58,.55);
+    }
+    h1{
+      margin:0;
+      font-size:20px;
+      line-height:1.35;
+      letter-spacing:.15px;
+    }
+    .meta{
+      margin-top:10px;
+      display:flex; gap:10px; flex-wrap:wrap;
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.6;
+    }
+    .meta a{color:var(--muted)}
+    .meta a:hover{color:var(--accent)}
+    .tags{
+      margin-top:12px;
+      display:flex; gap:8px; flex-wrap:wrap;
+    }
+    .tag{
+      font-size:11px;
+      padding:6px 9px;
+      border-radius:999px;
+      background:rgba(27,38,80,.65);
+      border:1px solid rgba(34,48,91,.9);
+      color:var(--muted);
+      white-space:nowrap;
+    }
+    .tag.level-Critical{border-color:rgba(251,113,133,.65); color:#ffd0d7}
+    .tag.level-High{border-color:rgba(251,191,36,.65); color:#ffe9b0}
+    .tag.level-Medium{border-color:rgba(122,162,255,.65); color:#dbe6ff}
+    .tag.level-Low{border-color:rgba(74,222,128,.55); color:#d0ffe2}
+    .tag.level-Info{border-color:rgba(169,180,223,.55); color:rgba(169,180,223,.95)}
+    .body{
+      padding:16px;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+    }
+    .section{
+      background:rgba(18,28,58,.35);
+      border:1px solid rgba(34,48,91,.75);
+      border-radius:16px;
+      padding:14px;
+    }
+    .section h2{
+      margin:0 0 10px;
+      font-size:14px;
+      letter-spacing:.1px;
+    }
+    .ruleReason{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.65;
+      white-space:pre-wrap;
+    }
+    .infoSources{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.5;
+    }
+    .infoSourceRow{
+      margin:0;
+      padding:0;
+    }
+    .infoSourceRow + .infoSourceRow{
+      margin-top:2px;
+    }
+
+    /* --- summary_html styles (OpenAI output uses h4/p/ul/li/strong/code/br) --- */
+    .summary h4{
+      margin:14px 0 8px;
+      font-size:13px;
+      letter-spacing:.1px;
+      padding-left:10px;
+      border-left:3px solid rgba(122,162,255,.65);
+      color: rgba(231,236,255,.95);
+    }
+    .summary p{margin:8px 0; color:rgba(231,236,255,.92); line-height:1.75}
+    .summary ul, .summary ol{margin:8px 0 8px 1.2em; padding:0}
+    .summary li{margin:6px 0; color:rgba(231,236,255,.92); line-height:1.7}
+    .summary strong{
+      color:var(--text);
+      font-weight:750;
+      padding:0 .2em;
+      border-radius:8px;
+      background: linear-gradient(transparent 60%, rgba(122,162,255,.22) 60%);
+    }
+    .summary code{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 8px;
+      background: rgba(11,16,32,.6);
+      border: 1px solid rgba(34,48,91,.85);
+      color: rgba(231,236,255,.95);
+      white-space: nowrap;
+    }
+
+    .terms{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:10px;
+    }
+    @media (max-width: 860px){
+      .terms{grid-template-columns: 1fr}
+    }
+    .termCard{
+      background:rgba(11,16,32,.45);
+      border:1px solid rgba(34,48,91,.85);
+      border-radius:14px;
+      padding:12px;
+      min-width:0;
+    }
+    .termCard .term{
+      font-weight:700;
+      font-size:13px;
+      margin:0 0 8px;
+      word-break:break-word;
+    }
+    .termCard .exp{
+      margin:0;
+      color:rgba(231,236,255,.9);
+      line-height:1.7;
+      font-size:12px;
+      white-space:pre-wrap;
+    }
+    .subSectionTitle{
+      margin:16px 0 8px;
+      font-size:12px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:var(--muted);
+    }
+    .deepDive{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:10px;
+      margin-top:8px;
+    }
+    .deepDiveCard{
+      background:rgba(12,20,38,.6);
+    }
+
+    .footer{
+      margin-top:14px;
+      color:rgba(169,180,223,.75);
+      font-size:12px;
+      line-height:1.7;
+      text-align:center;
+    }
+    .btnRow{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px}
+    .linkbtn{
+      text-decoration:none;
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .linkbtn:hover{border-color:rgba(122,162,255,.65)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="crumb">
+        <!-- ../index.html は通常 "../index.html" でOK -->
+        <a href="../index.html">← 日次トップへ戻る</a>
+      </div>
+      <div class="chip">entry_id <strong class="mono">dfbccfe7f6588717</strong></div>
+    </div>
+
+    <div class="panel">
+      <div class="head">
+        <h1>Cisco Catalyst SD-WAN Controller Auth Bypass Actively Exploited to Gain Admin Access</h1>
+
+        <div class="meta">
+          <span>🗞️ The Hacker News</span>
+          <span>🕒 2026-05-15T02:45:20+09:00</span>
+          <span>🔗 <a href="https://thehackernews.com/2026/05/cisco-catalyst-sd-wan-controller-auth.html" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
+        </div>
+
+        <div class="tags">
+          <span class="tag level-Critical">Impact: Critical</span>
+          <span class="tag">Exploit</span>
+        </div>
+
+        <div class="btnRow">
+          <a class="linkbtn" href="https://thehackernews.com/2026/05/cisco-catalyst-sd-wan-controller-auth.html" target="_blank" rel="noopener noreferrer">原文リンク</a>
+          <a class="linkbtn" href="https://www.notifyhub.site/digest/2026/05/15/">日次トップ</a>
+        </div>
+      </div>
+
+      <div class="body">
+        
+        <div class="section">
+          <h2>Impact判定理由</h2>
+          <div class="ruleReason">CVE-2026-20182はCVSS 10.0の認証バイパスで、限定的ながら悪用確認があり、管理者アクセス取得につながる点が重い。
+SD-WAN制御系の侵害は拠点間通信やポリシー配布へ波及し、単一機器の問題で終わらない運用影響がある。
+情報源はメディア二次情報のため補正で引き上げず、ただし悪用確認とベンダー更新済みの内容から緊急度は下げない。</div>
+        </div>
+        <div class="section summary">
+          <h2>🧾 要約（ChatGPT / gpt-5.5-2026-04-23）</h2>
+          <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
+          <div><h4>概要</h4><p>Cisco Catalyst SD-WAN ControllerおよびSD-WAN Managerに、ピアリング認証の不備を突く<strong>認証バイパス</strong>が見つかり、Ciscoは更新を公開し、限定的な悪用を確認したとされる。対象はCVE-2026-20182で、CVSSは<strong>10.0</strong>と最大値になっており、攻撃者が認証を回避して<strong>管理者アクセス</strong>を得る経路として扱う必要がある。SD-WANの制御系が侵害されると、単一サーバの権限奪取にとどまらず、拠点間通信、ルーティング、ポリシー配布、証明書・トンネル設定の改変を通じて、広域ネットワーク全体へ影響が広がる。攻撃成立には対象コンポーネントへの到達性や脆弱なバージョン、管理・制御プレーンの露出条件が関係すると考えられるため、インターネット露出だけでなく、閉域網内の踏み台経由到達も確認が要る。現時点で記事からは悪用手順、侵害後の具体的な操作、影響バージョン範囲、IoCの有無が十分に確認できず、<strong>未確認事項</strong>としてベンダーアドバイザリとの突合が残る。</p></div>
+        </div>
+
+        <div class="section">
+          <h2>📌 キーワード解説</h2>
+          <div class="terms">
+            <div class="termCard">
+  <div class="term">Authentication Bypass（認証バイパス）</div>
+  <p class="exp">認証を経ず管理者権限に到達する欠陥。認可不備と異なり、入口の本人確認自体をすり抜ける点が重い</p>
+</div>
+<div class="termCard">
+  <div class="term">SD-WAN Controller（SD-WAN制御装置）</div>
+  <p class="exp">拠点間通信の経路やポリシーを集中制御する装置。単なるVPN終端より、設定配布範囲が広い</p>
+</div>
+<div class="termCard">
+  <div class="term">CVSS</div>
+  <p class="exp">脆弱性の技術的深刻度を数値化する指標。実運用リスクは露出範囲、補完統制、悪用状況で変わる</p>
+</div>
+<div class="termCard">
+  <div class="term">Control Plane（制御プレーン）</div>
+  <p class="exp">経路、認証、ポリシーを決める面。データ通信そのものを流すデータプレーンと分けて考える</p>
+</div>
+          </div>
+          <h3 class="subSectionTitle">深掘り解説</h3>
+          <div class="deepDive">
+            <div class="termCard deepDiveCard">
+  <div class="term">SD-WAN制御プレーン侵害で優先して見るべき範囲</div>
+  <p class="exp">SD-WANの管理・制御系は、通常の業務サーバよりも「侵害後に触れる範囲」が広い。ファイルサーバ侵害なら影響は共有領域や認証基盤への横展開が中心になるが、SD-WAN ControllerやManagerでは、拠点間トンネル、ルーティング、アプリケーション制御、証明書、デバイス登録、管理者アカウントまで一括して扱うことが多い。認証バイパスで管理者アクセスを得られる場合、攻撃者はマルウェアを置かなくても通信経路やポリシーを変えられる可能性がある。
+
+具体例として、攻撃者がSD-WAN Managerに管理者として入った場合を考える。ある拠点から本社データセンターへの経路を変更し、特定通信だけ攻撃者が観測できる経路へ流す、またはセキュリティ検査を通らないポリシーを一時的に配布する、といった操作が理論上の焦点になる。ログ上は「設定変更」や「テンプレート配布」に見えるため、EDRのアラートだけでは検知しにくい。
+
+初動では、パッチ適用だけで完了と見なさない方がよい。管理者ログイン履歴、API利用履歴、デバイス登録・削除、証明書再発行、テンプレート変更、ポリシー配布時刻を確認し、変更管理票と突合する必要がある。特に、保守作業時間外の設定配布、普段使わない送信元からの管理アクセス、短時間での複数拠点へのポリシー反映は優先確認対象になる。
+
+封じ込めでは、管理インターフェース遮断だけを急ぐと拠点通信の運用に影響しやすい。まず到達元を管理セグメントや踏み台に限定し、既存セッションと管理者トークンを失効させ、バックアップ設定の正当性を確認してから復旧する流れが現実的になる。制御プレーン系の脆弱性では、「更新したか」より「侵害前提で設定面の改変が残っていないか」が判断の分岐点になる</p>
+</div>
+          </div>
+        </div>
+
+        
+
+        <div class="section">
+          <h2>🕘 生成情報</h2>
+          <div class="ruleReason">
+対象期間：2026-05-14T06:00:00+09:00 〜 2026-05-15T06:00:00+09:00
+生成時刻：2026-05-15T06:48:39.745774+09:00
+免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      notifyhub.site
+    </div>
+  </div>
+</body>
+</html>

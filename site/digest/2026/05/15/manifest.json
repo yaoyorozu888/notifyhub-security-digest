@@ -1,0 +1,374 @@
+{
+  "date": "2026-05-15",
+  "window": {
+    "from": "2026-05-14T06:00:00+09:00",
+    "to": "2026-05-15T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 23
+  },
+  "generated_at_jst": "2026-05-15T06:48:39.745774+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "Google、AI最適化ラップトップ「Googlebook」を発表",
+      "source_name": "Google Blog",
+      "published_at": "2026-05-14T12:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要GoogleがAI専用ラップトップ「Googlebook」を発表した。Magic Pointer機能により画面上の任意の要素を指すだけでGeminiが文脈に応じた提案を表示する。Create Your Widget機能ではGmailやCalendarのデータを統合したカスタムダッシュボードを生成可能である。従来のノートPCとは異なり、AI処理を前提とし…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://blog.google/products-and-platforms/platforms/android/meet-googlebook/",
+      "selection_reason": "IT分野のハードウェアトレンドとして、AI統合デバイスが実務効率に直結する動きを反映",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "Googlebook announcement",
+          "url": "https://blog.google/products-and-platforms/platforms/android/meet-googlebook/",
+          "source_type": "web"
+        },
+        {
+          "title": "AI News Briefs May 2026",
+          "url": "https://radicaldatascience.wordpress.com/2026/05/13/ai-news-briefs-bulletin-board-for-may-2026/",
+          "source_type": "web"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "Recursive Superintelligence、自己改善AIで6.5億ドル調達",
+      "source_name": "SiliconANGLE",
+      "published_at": "2026-05-14T10:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Other",
+      "summary_preview": "概要Recursive Superintelligenceが自己改善AI開発のため6.5億ドルを調達し、評価額40億ドル超となった。主要研究者がDeepMindなどから参加し、人間介入を最小限に抑えたモデル改善を目指す。世界モデルを基盤に、モデルが自ら経験を積んで推論能力を向上させる仕組みを構築中である。AI Phase 2への移行として、従来の訓練依存型…",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://siliconangle.com/2026/05/13/recursive-superintelligence-raises-650m-build-self-improving-ai-models/",
+      "selection_reason": "AI分野の核心である自己改善モデルの資金調達が、研究開発の加速を示す",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "Recursive Superintelligence funding",
+          "url": "https://siliconangle.com/2026/05/13/recursive-superintelligence-raises-650m-build-self-improving-ai-models/",
+          "source_type": "web"
+        },
+        {
+          "title": "DATA & AI TRENDS May 2026",
+          "url": "https://thedatastory.substack.com/p/data-and-ai-trends-may-2026",
+          "source_type": "web"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "Gartner、2026年戦略技術トレンドにPreemptive Cybersecurityを位置付け",
+      "source_name": "Gartner",
+      "published_at": "2026-05-13T21:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Advisory",
+      "summary_preview": "概要Gartnerが2026年の戦略技術トレンドにPreemptive Cybersecurityを挙げ、AIを活用した事前防御を強調した。従来の事後対応型セキュリティから、脅威を予測して封じ込める仕組みへ移行する。AI Security Platformsと組み合わせることで、リアルタイムのリスク評価が可能になる。企業はこれを導入することで、侵害発生前の…",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://www.gartner.com/en/articles/top-technology-trends-2026",
+      "selection_reason": "サイバーセキュリティ分野で予防的アプローチが企業リスク管理の新標準となりつつある",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "Top Strategic Technology Trends for 2026",
+          "url": "https://www.gartner.com/en/articles/top-technology-trends-2026",
+          "source_type": "web"
+        },
+        {
+          "title": "Top Tech Trends 2026",
+          "url": "https://www.comptia.org/en-us/blog/top-tech-trends-to-watch-in-2026/",
+          "source_type": "web"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "75a769b4476947f7",
+      "title": "CVE-2026-20182 Cisco Catalyst SD-WAN Controller Authentication Bypass Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-05-14T00:00:00+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "Cisco / Catalyst SD-WAN",
+      "article_path": "articles/75a769b4476947f7.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "dfbccfe7f6588717",
+      "title": "Cisco Catalyst SD-WAN Controller Auth Bypass Actively Exploited to Gain Admin Access",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-05-14T17:45:20+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Exploit",
+      "summary_preview": "概要Cisco Catalyst SD-WAN ControllerおよびSD-WAN Managerに、ピアリング認証の不備を突く認証バイパスが見つかり、Ciscoは更新を公開し、限定的な悪用を確認したとされる。対象はCVE-2026-20182で、CVSSは10.0と最大値になっており、攻撃者が認証を回避して管理者アクセスを得る経路として扱う必要がある…",
+      "article_path": "articles/dfbccfe7f6588717.html",
+      "original_url": "https://thehackernews.com/2026/05/cisco-catalyst-sd-wan-controller-auth.html"
+    },
+    {
+      "entry_id": "bd4dd8b786dbf1bc",
+      "title": "Stealer Backdoor Found in 3 Node-IPC Versions Targeting Developer Secrets",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-05-14T17:22:43+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "Cybersecurity researchers are sounding the alarm about what has been described as &quot;malicious activity&quot; in newly published versions of node-ipc.\nAccording to Socket and S…",
+      "article_path": "articles/bd4dd8b786dbf1bc.html",
+      "original_url": "https://thehackernews.com/2026/05/stealer-backdoor-found-in-3-node-ipc.html"
+    },
+    {
+      "entry_id": "74b2eb095181fd59",
+      "title": "ThreatsDay Bulletin: PAN-OS RCE, Mythos cURL Bug, AI Tokenizer Attacks, and 10+ Stories",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-05-14T16:07:46+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "Everything is still on fire.\nThis week feels dumb in the worst way — bad links, weak checks, fake help desks, shady forum posts, and people turning supply chain attacks into some …",
+      "article_path": "articles/74b2eb095181fd59.html",
+      "original_url": "https://thehackernews.com/2026/05/threatsday-bulletin-pan-os-rce-mythos.html"
+    },
+    {
+      "entry_id": "f380679ec96932b8",
+      "title": "Ghostwriter Targets Ukrainian Government With Geofenced PDF Phishing, Cobalt Strike",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-05-14T14:00:37+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "The Belarus-aligned threat group known as Ghostwriter has been attributed to a fresh set of attacks targeting governmental organizations in Ukraine.\nActive since at least 2016, Gh…",
+      "article_path": "articles/f380679ec96932b8.html",
+      "original_url": "https://thehackernews.com/2026/05/ghostwriter-targets-ukrainian.html"
+    },
+    {
+      "entry_id": "df359b81a3450d2e",
+      "title": "PraisonAI CVE-2026-44338 Auth Bypass Targeted Within Hours of Disclosure",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-05-14T11:40:14+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "Threat actors have been observed attempting to exploit a recently disclosed security vulnerability in PraisonAI, an open-source multi-agent orchestration framework, within four ho…",
+      "article_path": "articles/df359b81a3450d2e.html",
+      "original_url": "https://thehackernews.com/2026/05/praisonai-cve-2026-44338-auth-bypass.html"
+    },
+    {
+      "entry_id": "4ebb2c7075461fcf",
+      "title": "How AI Hallucinations Are Creating Real Security Risks",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-05-14T11:30:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Other",
+      "summary_preview": "概要The Hacker Newsは、AIの幻覚が重要インフラや企業の意思決定に入り込み、自信ありげな誤答が現実のセキュリティリスクを生む構図を取り上げている。悪用の中心は脆弱性コードの実行ではなく、運用者がAI出力を信頼し、誤った優先度付け、存在しない設定手順、根拠の弱いインシデント判断を採用してしまう点にある。影響は単一端末の侵害よりも、SOCのトリア…",
+      "article_path": "articles/4ebb2c7075461fcf.html",
+      "original_url": "https://thehackernews.com/2026/05/how-ai-hallucinations-are-creating-real.html"
+    },
+    {
+      "entry_id": "436bea2ba16479f1",
+      "title": "Windows Zero-Days Expose BitLocker Bypasses And CTFMON Privilege Escalation",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-05-14T09:25:50+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Zero-day",
+      "summary_preview": "概要The Hacker Newsは、Windowsに関する未修正の可能性がある2件のゼロデイとして、BitLocker回避「YellowKey」とWindows Collaborative Translation FrameworkのCTFMONに関する権限昇格「GreenPlasma」を報じた。BitLocker回避は端末紛失・盗難時のオフライン保護を…",
+      "article_path": "articles/436bea2ba16479f1.html",
+      "original_url": "https://thehackernews.com/2026/05/windows-zero-days-expose-bitlocker.html"
+    },
+    {
+      "entry_id": "524ab74680e1bb3f",
+      "title": "New Fragnesia Linux Kernel LPE Grants Root Access via Page Cache Corruption",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-05-14T07:06:15+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "Details have emerged about a new variant of the recent Dirty Frag Linux local privilege escalation (LPE) vulnerability that allows local attackers to gain root access, making it t…",
+      "article_path": "articles/524ab74680e1bb3f.html",
+      "original_url": "https://thehackernews.com/2026/05/new-fragnesia-linux-kernel-lpe-grants.html"
+    },
+    {
+      "entry_id": "51b13dd9eea316ba",
+      "title": "18-Year-Old NGINX Rewrite Module Flaw Enables Unauthenticated RCE",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-05-14T06:00:09+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "Cybersecurity researchers have disclosed multiple security vulnerabilities impacting NGINX Plus and NGINX Open, including a critical flaw that remained undetected for 18 years.\nTh…",
+      "article_path": "articles/51b13dd9eea316ba.html",
+      "original_url": "https://thehackernews.com/2026/05/18-year-old-nginx-rewrite-module-flaw.html"
+    },
+    {
+      "entry_id": "81c33150d9ad2883",
+      "title": "Simple bypass of the link preview function in Outlook Junk folder, (Thu, May 14th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-05-14T06:08:25+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "Besides serving as a place where Microsoft Outlook places suspected spam, the Outlook Junk folder has one additional function that can be quite helpful when it comes to identifyin…",
+      "article_path": "articles/81c33150d9ad2883.html",
+      "original_url": "https://isc.sans.edu/diary/rss/32990"
+    },
+    {
+      "entry_id": "51d7864168ea35bc",
+      "title": "ISC Stormcast For Thursday, May 14th, 2026 https://isc.sans.edu/podcastdetail/9932, (Thu, May 14th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-05-14T04:20:11+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要SANS ISCが2026年5月14日のStormcastを公開したという告知にとどまり、入力にはタイトルとURL以外の本文情報が含まれていない。番組内で扱われたCVE、製品名、攻撃手法、観測されたスキャンや侵害事例が不明なため、現時点で具体的な悪用経路や自組織への露出条件は判断できない。Stormcastは複数の短い観測や注意点を束ねる形式が多く、内…",
+      "article_path": "articles/51d7864168ea35bc.html",
+      "original_url": "https://isc.sans.edu/diary/rss/32988"
+    },
+    {
+      "entry_id": "ff492addf1ca8cac",
+      "title": "Inside the SOC: AI-powered DNS defense against ransomware",
+      "source_name": "Cisco Security Blog",
+      "category": "reporting",
+      "published_at": "2026-05-14T12:00:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要Cisco Security Blogは、Cisco Secure AccessのAIを用いた予測型DNS防御により、ランサムウェアの通信を早期に妨害し、SOC調査を効率化する考え方を紹介した。攻撃者は侵入後、C2、認証情報窃取、追加ペイロード取得、リークサイト連携などでDNSを利用するため、名前解決段階で止められれば端末隔離やEDR検知より前に被害拡…",
+      "article_path": "articles/ff492addf1ca8cac.html",
+      "original_url": "https://blogs.cisco.com/security/inside-the-soc-ai-powered-dns-defense-against-ransomware/"
+    },
+    {
+      "entry_id": "87470216bc538cb6",
+      "title": "ICT俯瞰報告書 2.0版公開のお知らせ",
+      "source_name": "NICT NOTICE",
+      "category": "reporting",
+      "published_at": "2026-05-14T05:00:00+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/87470216bc538cb6.html",
+      "original_url": "/publicity/topics/2026/05/14-2.html"
+    },
+    {
+      "entry_id": "96bb492baf4f004d",
+      "title": "ワイヤレス・テクノロジー・パーク（WTP）2026",
+      "source_name": "NICT NOTICE",
+      "category": "reporting",
+      "published_at": "2026-05-14T01:00:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要NICT NOTICEのフィードに、2026年5月開催予定のワイヤレス・テクノロジー・パーク（WTP）2026のイベント告知が掲載された。入力情報の範囲では、脆弱性、攻撃観測、マルウェア、設定不備、漏えいに関する記述はなく、直接の悪用シナリオは確認できない。CSIRT観点では、無線通信、IoT、5G/6G、認証基盤、産業用途の電波利用などに関する技術動…",
+      "article_path": "articles/96bb492baf4f004d.html",
+      "original_url": "/publicity/event/2026/05/27-1.html"
+    },
+    {
+      "entry_id": "902f292ac8e0abc2",
+      "title": "教員採用試験に関する行政文書開示請求、交付した電子データの加工に不備があり個人情報の閲覧が可能",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-13T23:05:19+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要教員採用試験に関する行政文書開示請求への対応で、交付した電子データの加工に不備があり、非開示にすべき個人情報を閲覧できる状態になった事案とみられる。典型的には、PDFや表計算ファイルで見た目だけを黒塗り・非表示にした結果、コピー、検索、レイヤー除去、メタデータ参照などで伏せたはずの情報が復元される形で悪用される。影響は外部侵入型の漏えいと異なり、初期配…",
+      "article_path": "articles/902f292ac8e0abc2.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/14/55267.html"
+    },
+    {
+      "entry_id": "8bec0519d7958551",
+      "title": "コープいしかわのギフトカタログオンラインショップ委託先にランサムウェア攻撃",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-13T23:05:17+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/8bec0519d7958551.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/14/55266.html"
+    },
+    {
+      "entry_id": "3335f77d4e4e96cc",
+      "title": "あいおいニッセイ同和損害保険からの出向者がトヨタ自動車の内部情報を不適切に提供",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-13T23:05:13+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要ScanNetSecurityは、あいおいニッセイ同和損害保険からトヨタ自動車へ出向していた人物が、トヨタの内部情報を不適切に提供した事案を報じた。現時点の入力情報では、提供先、情報の種類、件数、個人情報や営業秘密の有無、持ち出し経路、組織的関与の有無が確認できず、技術的侵害よりも内部者による情報流出として扱うのが妥当となる。悪用面では、設計・調達・取…",
+      "article_path": "articles/3335f77d4e4e96cc.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/14/55265.html"
+    },
+    {
+      "entry_id": "5cd2e39555bcc776",
+      "title": "日本テレネットにランサムウェア型サイバー攻撃、大和リースのカーシェアリングサービス「Dシェア」の会員情報が漏えいした可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-13T23:05:10+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要日本テレネットがランサムウェア型攻撃を受け、大和リースのカーシェアリングサービス「Dシェア」の会員情報が漏えいした可能性が報じられた。委託先またはサービス運用基盤に保管された会員データが侵害対象になった構図とみられ、攻撃者は暗号化による業務停止に加え、取得データを使った恐喝・なりすまし・標的型フィッシングに展開し得る。影響はDシェア会員の個人情報にまず…",
+      "article_path": "articles/5cd2e39555bcc776.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/14/55264.html"
+    },
+    {
+      "entry_id": "6c4d7388361761b4",
+      "title": "日経アメリカ社で不正ログイン被害、取引先へのなりすましメール送信で発覚",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-13T23:05:07+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Business Email Compromise",
+      "summary_preview": "概要日経アメリカ社で不正ログインが発生し、取引先に対するなりすましメール送信を契機に発覚した事案とされる。攻撃者が正規アカウントの認証情報を得てメール環境へ入った場合、送信元の信頼や過去のやり取りを利用し、請求書差し替え、振込先変更、添付ファイル誘導、認証情報の再窃取へ展開しやすい。影響は日経アメリカ社内の単一アカウントに閉じるとは限らず、受信した取引先側…",
+      "article_path": "articles/6c4d7388361761b4.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/14/55263.html"
+    },
+    {
+      "entry_id": "8d145a487cc82097",
+      "title": "東京精密の米国グループ会社にランサムウェア攻撃",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-13T23:05:03+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/8d145a487cc82097.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/14/55262.html"
+    },
+    {
+      "entry_id": "57e68491bbdc63c9",
+      "title": "GMOナショナルセキュリティ株式会社を設立",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-13T23:00:08+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要GMOナショナルセキュリティ株式会社の設立を伝える記事で、現時点の入力情報からは脆弱性、侵害、攻撃キャンペーンの発生を示す内容は確認できない。CSIRT観点では、新会社が提供するサービス領域、官公庁・重要インフラ向けの関与、既存GMOグループ内のセキュリティ機能との役割分担が、将来の委託先管理や情報共有経路に影響し得る。悪用シナリオとして直ちに評価すべ…",
+      "article_path": "articles/57e68491bbdc63c9.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/14/55261.html"
+    },
+    {
+      "entry_id": "f81d47582db702d9",
+      "title": "Anthropicの「Mythos」がアイデンティティセキュリティに意味するもの、Okta が解説",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-13T23:00:04+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/f81d47582db702d9.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/14/55260.html"
+    }
+  ]
+}
