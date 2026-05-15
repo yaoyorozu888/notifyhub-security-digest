@@ -1,0 +1,334 @@
+<!-- article.html テンプレート（生成用） (例: /digest/YYYY/MM/DD/articles/<entry_id>.html)
+     サーバ側（Function）で {{...}} を置換して出力してください。
+-->
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/favicon-192.png" />
+  <title>&amp;#x5b;Guest Diary&amp;#x5d;  New Malware Libraries means New Signatures, (Fri, May 15th) | NotifyHub Cybersecurity Daily Report</title>
+  <style>
+    :root{
+      --bg:#0b1020; --panel:#0f1730; --panel2:#121c3a;
+      --text:#e7ecff; --muted:#a9b4df; --line:#22305b;
+      --accent:#7aa2ff; --good:#4ade80; --warn:#fbbf24; --bad:#fb7185;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+      --radius:18px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      background: radial-gradient(1000px 700px at 20% -10%, rgba(122,162,255,.25), transparent 60%),
+                  radial-gradient(900px 600px at 90% 10%, rgba(251,113,133,.12), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+    }
+    a{color:inherit}
+    .wrap{max-width:960px; margin:0 auto; padding:22px 18px 44px}
+    .topbar{
+      display:flex; justify-content:space-between; align-items:center; gap:12px;
+      margin-bottom:12px;
+    }
+    .crumb a{
+      text-decoration:none;
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .crumb a:hover{border-color:rgba(122,162,255,.65)}
+    .chip{
+      display:inline-flex; align-items:center; gap:8px;
+      background:rgba(27,38,80,.75);
+      border:1px solid rgba(34,48,91,.9);
+      padding:7px 10px; border-radius:999px;
+      font-size:12px; color:var(--muted);
+      backdrop-filter: blur(10px);
+      white-space:nowrap;
+    }
+    .chip strong{color:var(--text); font-weight:650}
+    .panel{
+      background: linear-gradient(180deg, rgba(15,23,48,.9), rgba(15,23,48,.75));
+      border:1px solid rgba(34,48,91,.9);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .head{
+      padding:16px 16px 12px;
+      border-bottom:1px solid rgba(34,48,91,.9);
+      background:rgba(18,28,58,.55);
+    }
+    h1{
+      margin:0;
+      font-size:20px;
+      line-height:1.35;
+      letter-spacing:.15px;
+    }
+    .meta{
+      margin-top:10px;
+      display:flex; gap:10px; flex-wrap:wrap;
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.6;
+    }
+    .meta a{color:var(--muted)}
+    .meta a:hover{color:var(--accent)}
+    .tags{
+      margin-top:12px;
+      display:flex; gap:8px; flex-wrap:wrap;
+    }
+    .tag{
+      font-size:11px;
+      padding:6px 9px;
+      border-radius:999px;
+      background:rgba(27,38,80,.65);
+      border:1px solid rgba(34,48,91,.9);
+      color:var(--muted);
+      white-space:nowrap;
+    }
+    .tag.level-Critical{border-color:rgba(251,113,133,.65); color:#ffd0d7}
+    .tag.level-High{border-color:rgba(251,191,36,.65); color:#ffe9b0}
+    .tag.level-Medium{border-color:rgba(122,162,255,.65); color:#dbe6ff}
+    .tag.level-Low{border-color:rgba(74,222,128,.55); color:#d0ffe2}
+    .tag.level-Info{border-color:rgba(169,180,223,.55); color:rgba(169,180,223,.95)}
+    .body{
+      padding:16px;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+    }
+    .section{
+      background:rgba(18,28,58,.35);
+      border:1px solid rgba(34,48,91,.75);
+      border-radius:16px;
+      padding:14px;
+    }
+    .section h2{
+      margin:0 0 10px;
+      font-size:14px;
+      letter-spacing:.1px;
+    }
+    .ruleReason{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.65;
+      white-space:pre-wrap;
+    }
+    .infoSources{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.5;
+    }
+    .infoSourceRow{
+      margin:0;
+      padding:0;
+    }
+    .infoSourceRow + .infoSourceRow{
+      margin-top:2px;
+    }
+
+    /* --- summary_html styles (OpenAI output uses h4/p/ul/li/strong/code/br) --- */
+    .summary h4{
+      margin:14px 0 8px;
+      font-size:13px;
+      letter-spacing:.1px;
+      padding-left:10px;
+      border-left:3px solid rgba(122,162,255,.65);
+      color: rgba(231,236,255,.95);
+    }
+    .summary p{margin:8px 0; color:rgba(231,236,255,.92); line-height:1.75}
+    .summary ul, .summary ol{margin:8px 0 8px 1.2em; padding:0}
+    .summary li{margin:6px 0; color:rgba(231,236,255,.92); line-height:1.7}
+    .summary strong{
+      color:var(--text);
+      font-weight:750;
+      padding:0 .2em;
+      border-radius:8px;
+      background: linear-gradient(transparent 60%, rgba(122,162,255,.22) 60%);
+    }
+    .summary code{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 8px;
+      background: rgba(11,16,32,.6);
+      border: 1px solid rgba(34,48,91,.85);
+      color: rgba(231,236,255,.95);
+      white-space: nowrap;
+    }
+
+    .terms{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:10px;
+    }
+    @media (max-width: 860px){
+      .terms{grid-template-columns: 1fr}
+    }
+    .termCard{
+      background:rgba(11,16,32,.45);
+      border:1px solid rgba(34,48,91,.85);
+      border-radius:14px;
+      padding:12px;
+      min-width:0;
+    }
+    .termCard .term{
+      font-weight:700;
+      font-size:13px;
+      margin:0 0 8px;
+      word-break:break-word;
+    }
+    .termCard .exp{
+      margin:0;
+      color:rgba(231,236,255,.9);
+      line-height:1.7;
+      font-size:12px;
+      white-space:pre-wrap;
+    }
+    .subSectionTitle{
+      margin:16px 0 8px;
+      font-size:12px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:var(--muted);
+    }
+    .deepDive{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:10px;
+      margin-top:8px;
+    }
+    .deepDiveCard{
+      background:rgba(12,20,38,.6);
+    }
+
+    .footer{
+      margin-top:14px;
+      color:rgba(169,180,223,.75);
+      font-size:12px;
+      line-height:1.7;
+      text-align:center;
+    }
+    .btnRow{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px}
+    .linkbtn{
+      text-decoration:none;
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .linkbtn:hover{border-color:rgba(122,162,255,.65)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="crumb">
+        <!-- ../index.html は通常 "../index.html" でOK -->
+        <a href="../index.html">← 日次トップへ戻る</a>
+      </div>
+      <div class="chip">entry_id <strong class="mono">03b67c798d664738</strong></div>
+    </div>
+
+    <div class="panel">
+      <div class="head">
+        <h1>&amp;#x5b;Guest Diary&amp;#x5d;  New Malware Libraries means New Signatures, (Fri, May 15th)</h1>
+
+        <div class="meta">
+          <span>🗞️ SANS ISC</span>
+          <span>🕒 2026-05-15T15:38:33+09:00</span>
+          <span>🔗 <a href="https://isc.sans.edu/diary/rss/32986" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
+        </div>
+
+        <div class="tags">
+          <span class="tag level-Low">Impact: Low</span>
+          <span class="tag">Malware</span>
+        </div>
+
+        <div class="btnRow">
+          <a class="linkbtn" href="https://isc.sans.edu/diary/rss/32986" target="_blank" rel="noopener noreferrer">原文リンク</a>
+          <a class="linkbtn" href="https://www.notifyhub.site/digest/2026/05/16/">日次トップ</a>
+        </div>
+      </div>
+
+      <div class="body">
+        
+        <div class="section">
+          <h2>Impact判定理由</h2>
+          <div class="ruleReason">本文やIOCが入力に含まれず、対象マルウェアや悪用キャンペーンの具体性を確認できないため、技術的深刻度は限定的に評価する。
+ただし検知回避や既存シグネチャの陳腐化に関わる可能性があり、SOC/EDR運用では遡及確認とルール更新の確認が必要となる。
+情報源はSANS ISCのコミュニティ記事であり、メディア/コミュニティ相当としてベース評価を引き上げず据え置きとした。</div>
+        </div>
+        <div class="section summary">
+          <h2>🧾 要約（ChatGPT / gpt-5.5-2026-04-23）</h2>
+          <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
+          <div><h4>概要</h4><p>SANS ISCのGuest Diaryとして「新しいマルウェアライブラリに伴い新しいシグネチャが必要になる」という趣旨の記事が公開されたが、入力には本文やIOC、対象マルウェア名、検体ハッシュ、検知ロジックの詳細が含まれていない。タイトルからは、攻撃者が既存ツールやコード部品を差し替えることで、従来の静的シグネチャや既知IOCによる検知を回避し、EDR・メールゲートウェイ・プロキシ・IDSの検知抜けを狙う文脈が想定される。影響は単体端末の感染に留まらず、同じライブラリを複数のローダーやスティーラー、ボットが再利用する場合、<strong>検知の空白が複数経路へ波及</strong>する可能性がある。CSIRTとしては、記事単体で緊急遮断を判断する材料は薄く、<strong>自組織の検知ルール更新状況</strong>、該当IOCの有無、SOCでのアラート欠落傾向を確認する扱いが現実的となる。未確認事項は、具体的なマルウェア種別、悪用キャンペーンの有無、公開されたシグネチャの形式、既存製品での検知対応状況となる。</p></div>
+        </div>
+
+        <div class="section">
+          <h2>📌 キーワード解説</h2>
+          <div class="terms">
+            <div class="termCard">
+  <div class="term">Malware Library（マルウェアライブラリ）</div>
+  <p class="exp">攻撃機能を部品化したコード群を指す。完成品マルウェア名だけで追うと、再利用部品の横展開を見落とす。</p>
+</div>
+<div class="termCard">
+  <div class="term">Signature（シグネチャ）</div>
+  <p class="exp">既知の特徴で検知するルール。振る舞い検知と違い、少しの改変で抜ける一方、説明性と即効性が高い。</p>
+</div>
+<div class="termCard">
+  <div class="term">IOC（侵害指標）</div>
+  <p class="exp">ハッシュやドメインなど確認可能な痕跡。TTPより寿命が短く、封じ込めより初期確認に向く。</p>
+</div>
+<div class="termCard">
+  <div class="term">False Negative（検知漏れ）</div>
+  <p class="exp">本来検知すべき攻撃を見逃す状態。誤検知削減とは逆方向のリスクで、静かな侵害に直結する。</p>
+</div>
+          </div>
+          <h3 class="subSectionTitle">深掘り解説</h3>
+          <div class="deepDive">
+            <div class="termCard deepDiveCard">
+  <div class="term">シグネチャ更新を運用判断に変換する見方</div>
+  <p class="exp">新しいシグネチャが公開されたという情報は、それだけではインシデントの証拠にならない。一方で、検知側の前提が変わったことを示すため、CSIRTでは「何を検知できるようになったか」だけでなく「これまで何を見逃していた可能性があるか」を確認する価値が高い。
+
+実務では、シグネチャを三つに分けて見ると判断がぶれにくい。第一に、ハッシュ一致のような静的IOC型。これは確認が速いが、検体が少し変わるだけで無効化されやすい。第二に、文字列、パッカー、通信パターンなどを組み合わせた特徴量型。攻撃者の小改変にはある程度耐えるが、誤検知の調整が必要になる。第三に、プロセス生成、資格情報アクセス、異常な外部通信などを条件にした振る舞い型。環境差の影響を受けるため、SOCのチューニングと組み合わせて運用する必要がある。
+
+具体例として、あるローダーが暗号化ライブラリを差し替え、従来のバイナリ文字列シグネチャを回避したケースを考える。この場合、新シグネチャの適用だけで完了とせず、過去30日程度のEDRテレメトリで同じ親子プロセス関係、同じ宛先カテゴリ、同じ一時ディレクトリ実行がなかったかを遡及検索する。プロキシログでは新規登録ドメインや低頻度ASNへの通信、メールログでは添付ファイル到達後の端末挙動を確認する。
+
+重要なのは、シグネチャを「検知製品の更新情報」として閉じず、ハンティング仮説に変換することにある。新しい検知ルールが入った日以降のアラートだけを見ると、更新前の侵入を取り逃がす。逆に、根拠の薄い広範囲ブロックを急ぐと業務影響が先行する。公開元、検知条件、対象製品、過去ログの保持期間をそろえて、遡及確認と今後の監視強化に分けて扱うのが現実的となる。</p>
+</div>
+          </div>
+        </div>
+
+        
+
+        <div class="section">
+          <h2>🕘 生成情報</h2>
+          <div class="ruleReason">
+対象期間：2026-05-15T06:00:00+09:00 〜 2026-05-16T06:00:00+09:00
+生成時刻：2026-05-16T06:42:59.953429+09:00
+免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      notifyhub.site
+    </div>
+  </div>
+</body>
+</html>

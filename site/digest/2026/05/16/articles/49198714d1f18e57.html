@@ -1,0 +1,746 @@
+<!-- article.html テンプレート（生成用） (例: /digest/YYYY/MM/DD/articles/<entry_id>.html)
+     サーバ側（Function）で {{...}} を置換して出力してください。
+-->
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/favicon-192.png" />
+  <title>Welcome to BlackFile: Inside a Vishing Extortion Operation | NotifyHub Cybersecurity Daily Report</title>
+  <style>
+    :root{
+      --bg:#0b1020; --panel:#0f1730; --panel2:#121c3a;
+      --text:#e7ecff; --muted:#a9b4df; --line:#22305b;
+      --accent:#7aa2ff; --good:#4ade80; --warn:#fbbf24; --bad:#fb7185;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+      --radius:18px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      background: radial-gradient(1000px 700px at 20% -10%, rgba(122,162,255,.25), transparent 60%),
+                  radial-gradient(900px 600px at 90% 10%, rgba(251,113,133,.12), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+    }
+    a{color:inherit}
+    .wrap{max-width:960px; margin:0 auto; padding:22px 18px 44px}
+    .topbar{
+      display:flex; justify-content:space-between; align-items:center; gap:12px;
+      margin-bottom:12px;
+    }
+    .crumb a{
+      text-decoration:none;
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .crumb a:hover{border-color:rgba(122,162,255,.65)}
+    .chip{
+      display:inline-flex; align-items:center; gap:8px;
+      background:rgba(27,38,80,.75);
+      border:1px solid rgba(34,48,91,.9);
+      padding:7px 10px; border-radius:999px;
+      font-size:12px; color:var(--muted);
+      backdrop-filter: blur(10px);
+      white-space:nowrap;
+    }
+    .chip strong{color:var(--text); font-weight:650}
+    .panel{
+      background: linear-gradient(180deg, rgba(15,23,48,.9), rgba(15,23,48,.75));
+      border:1px solid rgba(34,48,91,.9);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .head{
+      padding:16px 16px 12px;
+      border-bottom:1px solid rgba(34,48,91,.9);
+      background:rgba(18,28,58,.55);
+    }
+    h1{
+      margin:0;
+      font-size:20px;
+      line-height:1.35;
+      letter-spacing:.15px;
+    }
+    .meta{
+      margin-top:10px;
+      display:flex; gap:10px; flex-wrap:wrap;
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.6;
+    }
+    .meta a{color:var(--muted)}
+    .meta a:hover{color:var(--accent)}
+    .tags{
+      margin-top:12px;
+      display:flex; gap:8px; flex-wrap:wrap;
+    }
+    .tag{
+      font-size:11px;
+      padding:6px 9px;
+      border-radius:999px;
+      background:rgba(27,38,80,.65);
+      border:1px solid rgba(34,48,91,.9);
+      color:var(--muted);
+      white-space:nowrap;
+    }
+    .tag.level-Critical{border-color:rgba(251,113,133,.65); color:#ffd0d7}
+    .tag.level-High{border-color:rgba(251,191,36,.65); color:#ffe9b0}
+    .tag.level-Medium{border-color:rgba(122,162,255,.65); color:#dbe6ff}
+    .tag.level-Low{border-color:rgba(74,222,128,.55); color:#d0ffe2}
+    .tag.level-Info{border-color:rgba(169,180,223,.55); color:rgba(169,180,223,.95)}
+    .body{
+      padding:16px;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+    }
+    .section{
+      background:rgba(18,28,58,.35);
+      border:1px solid rgba(34,48,91,.75);
+      border-radius:16px;
+      padding:14px;
+    }
+    .section h2{
+      margin:0 0 10px;
+      font-size:14px;
+      letter-spacing:.1px;
+    }
+    .ruleReason{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.65;
+      white-space:pre-wrap;
+    }
+    .infoSources{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.5;
+    }
+    .infoSourceRow{
+      margin:0;
+      padding:0;
+    }
+    .infoSourceRow + .infoSourceRow{
+      margin-top:2px;
+    }
+
+    /* --- summary_html styles (OpenAI output uses h4/p/ul/li/strong/code/br) --- */
+    .summary h4{
+      margin:14px 0 8px;
+      font-size:13px;
+      letter-spacing:.1px;
+      padding-left:10px;
+      border-left:3px solid rgba(122,162,255,.65);
+      color: rgba(231,236,255,.95);
+    }
+    .summary p{margin:8px 0; color:rgba(231,236,255,.92); line-height:1.75}
+    .summary ul, .summary ol{margin:8px 0 8px 1.2em; padding:0}
+    .summary li{margin:6px 0; color:rgba(231,236,255,.92); line-height:1.7}
+    .summary strong{
+      color:var(--text);
+      font-weight:750;
+      padding:0 .2em;
+      border-radius:8px;
+      background: linear-gradient(transparent 60%, rgba(122,162,255,.22) 60%);
+    }
+    .summary code{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 8px;
+      background: rgba(11,16,32,.6);
+      border: 1px solid rgba(34,48,91,.85);
+      color: rgba(231,236,255,.95);
+      white-space: nowrap;
+    }
+
+    .terms{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:10px;
+    }
+    @media (max-width: 860px){
+      .terms{grid-template-columns: 1fr}
+    }
+    .termCard{
+      background:rgba(11,16,32,.45);
+      border:1px solid rgba(34,48,91,.85);
+      border-radius:14px;
+      padding:12px;
+      min-width:0;
+    }
+    .termCard .term{
+      font-weight:700;
+      font-size:13px;
+      margin:0 0 8px;
+      word-break:break-word;
+    }
+    .termCard .exp{
+      margin:0;
+      color:rgba(231,236,255,.9);
+      line-height:1.7;
+      font-size:12px;
+      white-space:pre-wrap;
+    }
+    .subSectionTitle{
+      margin:16px 0 8px;
+      font-size:12px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:var(--muted);
+    }
+    .deepDive{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:10px;
+      margin-top:8px;
+    }
+    .deepDiveCard{
+      background:rgba(12,20,38,.6);
+    }
+
+    .footer{
+      margin-top:14px;
+      color:rgba(169,180,223,.75);
+      font-size:12px;
+      line-height:1.7;
+      text-align:center;
+    }
+    .btnRow{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px}
+    .linkbtn{
+      text-decoration:none;
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .linkbtn:hover{border-color:rgba(122,162,255,.65)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="crumb">
+        <!-- ../index.html は通常 "../index.html" でOK -->
+        <a href="../index.html">← 日次トップへ戻る</a>
+      </div>
+      <div class="chip">entry_id <strong class="mono">49198714d1f18e57</strong></div>
+    </div>
+
+    <div class="panel">
+      <div class="head">
+        <h1>Welcome to BlackFile: Inside a Vishing Extortion Operation</h1>
+
+        <div class="meta">
+          <span>🗞️ Mandiant</span>
+          <span>🕒 2026-05-15T23:00:00+09:00</span>
+          <span>🔗 <a href="https://cloud.google.com/blog/topics/threat-intelligence/blackfile-vishing-extortion-operation/" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
+        </div>
+
+        <div class="tags">
+          <span class="tag level-Unknown">Impact: Unknown</span>
+          <span class="tag">Unknown</span>
+        </div>
+
+        <div class="btnRow">
+          <a class="linkbtn" href="https://cloud.google.com/blog/topics/threat-intelligence/blackfile-vishing-extortion-operation/" target="_blank" rel="noopener noreferrer">原文リンク</a>
+          <a class="linkbtn" href="https://www.notifyhub.site/digest/2026/05/16/">日次トップ</a>
+        </div>
+      </div>
+
+      <div class="body">
+        
+        <div class="section">
+          <h2>Impact判定理由</h2>
+          <div class="ruleReason"></div>
+        </div>
+        <div class="section summary">
+          <h2>🧾 要約（ChatGPT / gpt-5.5-2026-04-23）</h2>
+          <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
+          <div><p>Written by: Austin Larsen, Tyler McLellan, Genevieve Stark, Dan Ebreo</p>
+
+</div>
+<div>
+Introduction<strong> </strong>
+<p>Google Threat Intelligence Group (GTIG) has continued to track an expansive extortion campaign by UNC6671, a threat actor operating under the "BlackFile" brand, that targets organizations via sophisticated voice phishing (vishing) and single sign-on (SSO) compromise. By leveraging adversary-in-the-middle (AiTM) techniques to bypass traditional perimeter defenses and multi-factor authentication (MFA), UNC6671 gains deep access to cloud environments. The group primarily targets Microsoft 365 and Okta infrastructure, leveraging Python and PowerShell scripts to programmatically exfiltrate sensitive corporate data for subsequent extortion attempts. This post details UNC6671’s attack lifecycle and provides defenders with actionable guidance to detect and mitigate these identity-centric threats.</p>
+<p>Since emerging in early 2026, UNC6671 has maintained a high operational cadence. GTIG assesses that the group has targeted dozens of organizations across North America, Australia, and the UK.</p>
+<p>GTIG previously highlighted UNC6671 as a distinct cluster in a prior report detailing similar SaaS data-theft techniques utilized by ShinyHunters (UNC6240). While UNC6671 has co-opted the ShinyHunters brand in at least one instance to inject artificial credibility into their threats, GTIG assesses that the operations are independent. This distinction is supported by UNC6671's use of separate TOX communication channels, unique domain registration patterns, and the launch of a dedicated "BlackFile" data leak site (DLS).</p>
+<p>These compromises are not the result of a security vulnerability in vendor products or infrastructure. Instead, this campaign continues to highlight the effectiveness of social engineering and underscores the critical importance of organizations moving toward phishing-resistant MFA to protect their SaaS and identity platforms.</p>
+
+Initial Access
+<p>UNC6671 initial access operations rely on high-volume voice phishing (vishing), often characterized by meticulous social engineering tactics, synchronized with real-time credential harvesting. These vishing calls are typically made by "callers" hired by the threat actor. </p>
+<h4>IT Deployment Pretext</h4>
+<p>The callers often call targeted employees' personal cellular phones to bypass security tooling and move the victim away from standard support channels. They typically masquerade as internal IT or help desk personnel, citing a mandatory migration to passkeys or a required multi-factor authentication (MFA) update. This pretext justifies directing the victim to a credential harvesting site and provides a logical cover for any subsequent security alerts generated during the compromise. UNC6671 has shifted from unique, organization-tailored credential harvesting domains to a subdomain-based model. These domains are typically registered with Tucows.  Recent campaigns have used subdomains explicitly referencing "passkey" or "enrollment" themes to enhance the legitimacy of the help desk pretext.</p>
+<ul>
+<li><code>&lt;organization&gt;.enrollms[.]com</code></li>
+<li><code>&lt;organization&gt;.passkeyms[.]com</code></li>
+<li><code>&lt;organization&gt;.setupsso[.]com</code></li>
+</ul>
+<h4>Real-Time MFA Interception</h4>
+<p>The vishing call functions as a live adversary-in-the-middle (AitM) attack. The process follows a rapid, procedural lifecycle:</p>
+<ul>
+<li>
+<p><strong>Redirection</strong>: The victim is directed to a lookalike subdomain mirroring the organization's single sign-on (SSO) portal.</p>
+</li>
+<li>
+<p><strong>Credential Capture</strong>: As the victim inputs their username and password, the threat actor captures these in real-time and immediately submits them to the legitimate SSO provider.</p>
+</li>
+<li>
+<p><strong>MFA Bypass</strong>: When the legitimate portal issues an MFA challenge (Push, SMS, or TOTP), the victim—believing they are completing a setup step—provides the code or approval to the threat actor.</p>
+</li>
+<li>
+<p><strong>Device Registration</strong>: Upon gaining access, the threat actor immediately navigates to the user's security settings to register a new, attacker-controlled MFA device to ensure persistence.</p>
+</li>
+</ul>
+<p>The speed of this execution ensures the threat actor can establish a permanent foothold before the victim or the organization's Security Operations Center (SOC) can identify the anomaly.</p>
+
+Data Theft
+<p>Following successful authentication, UNC6671 leverages SSO access to move laterally across the victim's SaaS applications to enable data theft operations. The threat actors appear to be focused on targeting Microsoft 365 and Okta environments, using compromised accounts to access SharePoint, OneDrive, and other connected SaaS applications such as Zendesk and Salesforce. In several instances, the actors specifically queried internal search functions for string literals such as "confidential" and "SSN" to prioritize theft of perceived high-value data.</p>
+<h4>Programmatic Data Exfiltration</h4>
+<p>Upon establishing persistence, UNC6671 transitions from interactive browser-based reconnaissance to automated exfiltration. In multiple engagements, we observed the use of scripts to harvest high-value data from SharePoint and OneDrive repositories.</p>
+<p>In addition to relying on methods that triggered standard FileDownloaded events, the threat actor has also used less conspicuous approaches. These include the threat actor’s use of formal APIs, such as Microsoft Graph, as well as  the python-requests library and PowerShell to issue direct HTTP GET requests against document resource URLs. Notably, by repurposing valid session cookies (e.g., FedAuth) captured during the initial vishing phase, the actor has been able to "stream" file content directly to attacker-controlled infrastructure.</p>
+<p>In these cases, the request mimics a standard web client fetch rather than a formal "Download" command. As a result, the activity is frequently recorded as a FileAccessed event rather than FileDownloaded. This 'direct fetch' method naturally blends into routine traffic, which may bypass detection in many Security Operations Centers (SOCs) that prioritize FileDownloaded events and treat FileAccessed as benign.</p>
+<h4>Forensic Artifacts and Scripting</h4>
+<p>Analysis of Microsoft 365 Unified Audit Log (UAL) telemetry revealed several consistent forensic indicators of UNC6671 activity, including clear evidence of scripted exfiltration. Most notably, the threat actor frequently showed User-Agent mismatches; while they spoofed the ClientAppId for "Microsoft Office" to bypass basic conditional access filters, the recorded UserAgent strings identified scripting engines such as python-requests/2.28.1 or WindowsPowerShell/5.1. This discrepancy suggests that access was driven by automated scripts rather than human interaction with the SharePoint user interface. Additionally, these access attempts consistently originated from non-standard infrastructure, such as commercial VPN exit nodes and hosting providers.</p></div>
+<div>
+<code>{
+  "CreationTime": "2026-02-24T14:36:15",
+  "Operation": "FileDownloaded",
+  "Workload": "SharePoint",
+  "ClientIP": "179.43.185.226", 
+  "UserId": "victim.user@organization.com",
+  "UserAgent": "python-requests/2.28.1",
+  "ApplicationDisplayName": "Microsoft Office",
+  "IsManagedDevice": false,
+  "SourceFileName": "2382_REDACTED_MSA_v3.docx",
+  "SourceRelativeUrl": "Shared Documents/Legal/MasterMSA/Archive",
+  "SiteUrl": "https://organization.sharepoint.com/sites/Legal_Archive/",
+  "AppAccessContext": {
+    "ClientAppId": "d3590ed6-52b3-4102-aeff-aad2292ab01c",
+    "ClientAppName": "Microsoft Office",
+    "TokenIssuedAtTime": "1601-01-01T00:00:00"
+  }
+}</code>
+<p>Figure 1: FileDownloaded event observed in early UNC6671 intrusions</p></div>
+<div>
+<code>{
+  "CreationTime": "2026-03-18T20:06:41",
+  "Operation": "FileAccessed",
+  "Workload": "SharePoint",
+  "UserId": "victim.user@company.com",
+  "ClientIP": "179.43.185.226", 
+  "UserAgent": "python-requests/2.28.1",
+  "ApplicationDisplayName": "python-requests",
+  "IsManagedDevice": false,
+  "SourceRelativeUrl": "Shared Documents/Data Analytics/Power BI Version History",
+  "SourceFileName": "Weekly Production Report.pbix",
+  "SiteUrl": "https://company.sharepoint.com/sites/ProductionOps/",
+  "AppAccessContext": {
+    "ClientAppName": "python-requests",
+    "CorrelationId": "b94b01a2-2019-c000-2262-5ff1d0ff6cc8"
+  }
+}</code>
+<p>Figure 2: FileAccessed event from later UNC6671 intrusions</p></div>
+<div><p>The speed and scale of UNC6671’s data exfiltration also reflects the automated nature of these scripts, which allows the threat actors to exfiltrate massive volumes of data at high speeds. In one case, the threat actor used their Python script from a remote IP to access and download over a million individual files from a victim's SharePoint and OneDrive environments. In another case, the threat actor rapidly iterated through tens of thousands of SharePoint file interactions.</p>
+
+Extortion
+<p>UNC6671 conducts highly targeted extortion campaigns, beginning with unbranded ransom notes sent from programmatically generated consumer email accounts. Once a victim engages via the unique, encrypted communication channel (such as Tox or Session) provided by the threat actor in the initial ransom note, the operators identify themselves under the "BlackFile" brand. While the operators typically open negotiations with initial demands in the millions of dollars, they often pivot to low six-figure demands when met with active engagement. Notably, while the initial emails typically do not contain errors, at least some follow up emails have contained mistakes suggesting that those are human generated.</p>
+<p>In cases where the operator is met with silence or resistance, the group aggressively escalates pressure. During a recent incident, after the victim was unresponsive, UNC6671 pivoted to an aggressive spam campaign. Using dozens of Gmail accounts with randomly generated usernames, the threat actor flooded employee mailboxes with messages before automated restrictions kicked in based on their sending behavior and their accounts were restricted. We have also observed these threat actors sending threatening voicemails to C-suite executives and, in severe cases, utilizing swatting tactics against company personnel.</p></div>
+<div><div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+
+
+
+
+<p><strong>Subject:</strong> [COMPANY NAME] DATA BREACH 72 HOURS TO CONTACT US <br><strong>From:</strong> <code>[pseudorandom_alphanumeric_string]@gmail.com</code></p>
+<p>Hello [Company Name] Executives and HR,</p>
+<p>We have managed to export ~[X] TB of data from your network due to your terrible security practices and negligent data storing practices.</p>
+<p>Here is a brief overview of data exported from your network:</p>
+<ol>
+<li>
+<p>[X]+ GB of internal company files (SharePoint &amp; OneDrive) containing confidential business processes, NDAs, project cost estimates, subcontractor contracts, and HR records.</p>
+</li>
+<li>
+<p>Tens of thousands of emails from executive mailboxes, including confidential documents.</p>
+</li>
+<li>
+<p>Complete CRM and support ticket exports (Salesforce &amp; Zendesk) containing hundreds of thousands of customer records, PII, billing details, and communication logs.</p>
+</li>
+<li>
+<p>Complete corporate directory (Entra) dumps including employee names, mobile numbers, job titles, and hierarchy.</p>
+</li>
+<li>
+<p>~[X] ServiceNow IT infrastructure records (computers, servers, cloud resources).</p>
+</li>
+</ol>
+<p>You have exactly 72 hours to contact the [Tox / Session] ID provided below. If you fail to contact the ID provided by us within the timeframe stated, we will be forced to publish your data to the public. We will also be forced to contact each company you work with via the employee team contact phone numbers and email addresses provided and explain how [Company Name] has terrible security protocols and does not care about its customers.</p>
+<p>We are willing to engage in good faith negotiation terms. Upon contacting us, a full list of all data exported from your network will be sent to you for review. You will be able to pick up to 3 files to confirm and verify we have what we are claiming.</p>
+<p><strong>[Tox / Session] ID:</strong> [Unique Alphanumeric String]</p>
+<p>Silence may not always be wise in situations like this. We will not be ignored. Make the right choice and cooperate with us so this can be a learning experience for you.</p>
+
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>Figure 3: Generalized example initial unbranded extortion note from UNC6671</p></div>
+<div><div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+
+
+
+
+<p><strong>Subject:</strong> [COMPANY NAME] DATA BREACH 72 HOURS TO CONTACT US <br><strong>From:</strong> <code>[pseudorandom_alphanumeric_string]@gmail.com</code></p>
+<p>Dearest executive,</p>
+<p>You have picked to ignore the first deadline to contact us. That is not smart do not ignore us it will only make things worse. We are BlackFile. Do not play games with us. We are giving a final deadline of 72 hours to contact us so we can reach an agreement.</p>
+<p>We copied over [X] TB+ of data from your SharePoint &amp; M365 instance (legal documents, operational documents, client documents, sales documents, development documents, etc) over [X]gb of Salesforce data, full ZenDesk support ticket export for [X]+ customers, ALL ticket history including old and new tickets and their contents. Total taken from your network is over [X]TB+</p>
+<p>Do not be alarmed as you can secure the proteciton of your data by choosing to work with us. Nothing taken from your network has been disclosed to the public or shared with third parties as of now.</p>
+<p>Reach out to us on session to receive all details and evidense that we accessed your network. We will use Session to communicate with you. You can get Session by visiting getsession(.)org</p>
+<p>Reach out to the following ID using Session: <strong>[Unique Session ID]</strong></p>
+<p>Do not reply to this email. Instead alert the rest of your HR and SOC/IT Security Team. We give you a final deadline of 72 hours to confirm reciept that you received this email by contacting us on Session.</p>
+<p>If you fail to contact us a second time then a majority of the emails taken from your network will receive a notification from us explaining you failed to come to an agreement with us to protect your customers PII and other sensitive information. Additionally we will message journalists about this breach and your failure to come to a resolution with us before finally uploading all data taken from you to our blog for the public.</p>
+<p>Do not let a data recovery company tell you not to negotate us we are BlackFile and we do not play games. The data we took from you can seriously damage your reputation if released is it really worth having that happen over ignoring us?</p>
+<p>Blackfile</p>
+
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>Figure 4: Generalized example follow up extortion email which included branding not present in initial messages</p></div>
+<div><h4>Evolution of Ransom Notes</h4>
+<p>Throughout their operations in early 2026, UNC6671's ransom notes exhibited an evolution in formatting, branding, and communication methods. Initially, the threat actors used highly aggressive, short-term deadlines, often giving early victims generic 24 or 48 hour windows to respond. This appeared to become more standardized in late January when they gave subsequent targets a strict 72-hour deadline. Their email subject lines also evolved into a formalized, all-caps structure: <code>[COMPANY NAME] DATA BREACH 72 HOURS TO CONTACT US</code>.</p>
+<p>During this same period, the group’s identity and preferred communication channels shifted. Early extortion emails were unbranded, with the actors demanding contact via Tox (a peer-to-peer instant messaging protocol). By February 2026, the group formally adopted the "BlackFile" moniker and transitioned their communication demands exclusively to Session (a decentralized, privacy-focused messenger), providing victims with Session IDs and client download instructions. Additionally, while early extortion notes were sent from external emails that could easily be flagged by spam filters or ignored, since at least March 2026, UNC6671 has leveraged hijacked internal corporate email and Microsoft Teams accounts. </p>
+
+The BlackFile Data Leak Site (DLS)
+<p>The threat actors launched the BlackFile Data Leak Site (DLS) on February 6, 2026, claiming to operate as "security researchers." Despite maintaining a dedicated DLS, the group's approach to data exposure deviates significantly from the maximum-publicity, high-noise model employed by other actors. UNC6671 does not publicly advertise their leak site or attempt to index it for search engines. Furthermore, the group has typically only leaked limited file samples and directory listings rather than full datasets; to date, GTIG has not observed the actor leak victim data in full.</p></div>
+<div>
+
+
+
+
+
+
+  
+    <div>
+      <div>
+  
+
+    
+
+
+      
+      
+        
+        
+        
+        
+      
+        
+<p>Figure 5: BlackFile DLS</p>
+      
+    
+
+  
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+<div>
+
+
+
+
+
+
+  
+    <div>
+      <div>
+  
+
+    
+
+
+      
+      
+        
+        
+        
+        
+      
+        
+<p>Figure 6: BlackFile DLS Deletion Process</p>
+      
+    
+
+  
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+<div><p>Notably, the BlackFile DLS site went offline in late April 2026, but briefly came back online on May 11, 2026 to share the below message before shutting down again. In this message, the threat actor stated "BlackFile is shutting down… under this name." As of the time of publication, the DLS site is inaccessible.</p></div>
+<div>
+
+
+
+
+
+
+  
+    <div>
+      <div>
+  
+
+    
+
+
+      
+      
+        
+        
+        
+        
+      
+        
+<p>Figure 7: BlackFile DLS Shutdown Announcement</p>
+      
+    
+
+  
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+<div>
+Remediation and Hardening
+<p>GTIG recommends the following mitigations and hunting strategies:</p>
+<ul>
+<li>
+<p><strong>Deploy Credential Guarding: </strong>Configure environment-specific protections to catch credential submission at the point of impact. In Google Workspace, enable Password Alert to monitor for corporate password hashes being entered into unauthorized domains. For Microsoft environments, leverage Microsoft Defender's Credential Protection and SmartScreen to intercept submissions on known phishing or low-reputation sites. These automated technical controls act as a final fail-safe, triggering immediate password resets or security alerts when a user inadvertently interacts with a malicious page.</p>
+</li>
+<li>
+<p><strong>Implement Phishing-Resistant MFA: </strong>Transition away from SMS-based or push-notification MFA. Implement FIDO2-compliant security keys or passkeys, which are resistant to the adversary-in-the-middle (AiTM) and vishing tactics employed by UNC6671.</p>
+</li>
+<li>
+<p><strong>Monitor IdP Logs:</strong> Review identity provider logs for <code>system.multifactor.factor.setup</code> events that are immediately preceded by user.authentication.auth_via_mfa failures or "Abandoned" challenges.</p>
+</li>
+<li>
+<p><strong>Correlate Infrastructure:</strong> Alert on authentication attempts originating from known commercial VPNs or hosting providers that are abnormal for the user's typical geographic location.</p>
+</li>
+<li>
+<p><strong>Audit SaaS API Activity:</strong> Monitor Microsoft 365, SharePoint, and Salesforce audit logs for anomalous, high-volume file downloads (FileDownloaded or FileAccessed events) originating from generic scripting user agents (e.g., PowerShell, Python).</p>
+</li>
+<li>
+<p><strong>Monitor User-Agents: </strong>Monitor for specific IdP SDK User-Agents on devices not previously associated with a user's profile.</p>
+</li>
+<li>
+<p><strong>Re-Evaluate "Access" Severity:</strong> Security Operations Centers (SOCs) should treat <code>FileAccessed</code> events with the same criticality as <code>FileDownloaded</code> when the <code>User-Agent</code> identifies it as a programming library (Python, Go, etc.) or a command-line tool.</p>
+</li>
+<li>
+<p><strong>Audit for Direct File Streaming:</strong> Monitor for <code>FileAccessed</code> logs where the <code>AppAccessContext</code> indicates a headless client or where the volume of "Accessed" files in a short window exceeds human browsing capability.</p>
+</li>
+</ul>
+
+Outlook and Implications
+<p>The recent shutdown of the BlackFile data leak site (DLS) accompanied by the actors' own declaration that they are shutting down "under this name" signals a possible transition phase rather than a permanent cessation of their threat activity. Historical precedents across the extortion ecosystem demonstrate that major threat clusters commonly rebrand or disperse their operations following disruption or voluntary shutdowns. These events can serve several strategic functions: evading law enforcement or competitor scrutiny, quietly resolving pending extortion cases, or preparing to pivot to a more viable brand while simultaneously also allowing time for the threat actors to retool and/or set up new infrastructure. Even if the BlackFile brand is permanently retired, the techniques leveraged by UNC6671, specifically their focus on data theft from cloud and SaaS environments, represent a highly successful trend in the cyber crime threat landscape that we also highlighted in the Google Cloud H1 2026 Cloud Threat Horizons Report. Organizations can review our prior blog post with actionable hardening, logging, and detection recommendations to help protect against these threats.</p>
+
+Indicators of Compromise (IOCs)
+<p>To assist the wider community in hunting and identifying activity outlined in this blog post, we have provided indicators of compromise (IOCs) in a free GTI Collection for registered users. At the time of publication, identified phishing domains have been added to Google Safe Browsing.</p>
+<p>While this collection provides a comprehensive list of IOCs, defenders should note that the majority of identified IP addresses are commercial VPN nodes, and actual source IPs tend to vary as the actor continuously cycles through new infrastructure. Furthermore, the domains are often stood up and used within minutes of registration; as such, they are provided primarily as examples of past naming conventions and usage patterns rather than as a primary mechanism for real-time blocking.</p>
+
+Google Security Operations (SecOps)
+<p>Google SecOps customers have access to broad category rules under the Okta and O365 rule packs that detect the behaviors outlined in this report. The activity discussed in the blog post is detected in Google SecOps under the following rule names:</p>
+<ul>
+<li>
+<p>Okta Admin Console Access Failure</p>
+</li>
+<li>
+<p>Okta Suspicious Actions from Anonymized IP</p>
+</li>
+<li>
+<p>O365 SharePoint Bulk File Access or Download via PowerShell</p>
+</li>
+<li>
+<p>O365 SharePoint High Volume File Access Events</p>
+</li>
+<li>
+<p>O365 Sharepoint Query for Proprietary or Privileged Information</p>
+</li>
+</ul></div>
+        </div>
+
+        <div class="section">
+          <h2>📌 キーワード解説</h2>
+          <div class="terms">
+            
+          </div>
+          <h3 class="subSectionTitle">深掘り解説</h3>
+          <div class="deepDive">
+            <div class="termCard deepDiveCard">
+  <div class="term">なし</div>
+
+</div>
+          </div>
+        </div>
+
+        
+
+        <div class="section">
+          <h2>🕘 生成情報</h2>
+          <div class="ruleReason">
+対象期間：2026-05-15T06:00:00+09:00 〜 2026-05-16T06:00:00+09:00
+生成時刻：2026-05-16T06:42:59.953429+09:00
+免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      notifyhub.site
+    </div>
+  </div>
+</body>
+</html>

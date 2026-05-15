@@ -1,0 +1,415 @@
+{
+  "date": "2026-05-16",
+  "window": {
+    "from": "2026-05-15T06:00:00+09:00",
+    "to": "2026-05-16T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 26
+  },
+  "generated_at_jst": "2026-05-16T06:42:59.953429+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "AIネイティブ開発プラットフォームの普及加速",
+      "source_name": "Gartner",
+      "published_at": "2026-05-15T08:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要Gartnerが2026年の戦略的技術トレンド上位に位置づけるAI-Native Development Platformsは、開発プロセス全体にAIを組み込む基盤として注目を集める。従来のコード記述中心からAI支援による自動生成・最適化へ移行し、企業は生産性向上とイノベーション加速を狙う。Deloitteの分析でもAIインフラの再構築が並行して進み、…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://www.gartner.com/en/articles/top-technology-trends-2026",
+      "selection_reason": "2026年のITトレンドとしてAIを基盤とした開発環境の変革が企業実務に直結する動きを反映",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "Top Strategic Technology Trends for 2026",
+          "url": "https://www.gartner.com/en/articles/top-technology-trends-2026",
+          "source_type": "web"
+        },
+        {
+          "title": "Tech Trends 2026",
+          "url": "https://www.deloitte.com/us/en/insights/topics/technology-management/tech-trends.html",
+          "source_type": "web"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "Metaが発表した人間神経活動のデジタルツイン",
+      "source_name": "Educational Technology and Change Journal",
+      "published_at": "2026-05-11T00:00:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Other",
+      "summary_preview": "概要Meta AIが3月に公開したTRIBE v2は、人間の神経活動を模倣する予測基盤モデルとして5月も注目を集める。デジタルツイン技術により脳波パターンを再現し、認知プロセスをシミュレート可能になる。研究者はこれを活用してAIの理解度向上や新アプリケーション開発を進める。企業は医療や教育分野での応用を検討し始めている。実務判断では精度検証と倫理的配慮が不…",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://etcjournal.com/2026/05/11/five-emerging-ai-trends-in-may-2026-a-digital-twin-of-human-neural-activity/",
+      "selection_reason": "5月に入りMetaの新モデルがAI研究の最前線を示し、実務応用への示唆が強い",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "Five Emerging AI Trends in May 2026",
+          "url": "https://etcjournal.com/2026/05/11/five-emerging-ai-trends-in-may-2026-a-digital-twin-of-human-neural-activity/",
+          "source_type": "web"
+        },
+        {
+          "title": "AI News Highlights from 14th of May, 2026",
+          "url": "https://www.linkedin.com/pulse/ai-news-highlights-from-14th-may-2026-grok-ai-ecj2e",
+          "source_type": "web"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "AI対AIのサイバーセキュリティ環境への移行",
+      "source_name": "X post and related reports",
+      "published_at": "2026-05-14T08:12:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Other",
+      "summary_preview": "概要AIシステムが攻撃経路の探索や脆弱性検証を高速化し、防御側も同様のAIを導入する動きが加速する。AI対AI環境では手動対応が追いつかず、自動トリアージやエージェント型脅威ハンティングが標準となる。GartnerはPreemptive Cybersecurityを推奨し、AI駆動SOCの採用を促す。企業はこれに対応するため継続的なエージェント検証とポリシ…",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://x.com/Alacritic_Super/status/2054837116610474112",
+      "selection_reason": "AIを活用した攻撃・防御の自動化が実務の脅威対応を変える動きをX投稿と報告で裏付け",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "AI vs AI cybersecurity shift",
+          "url": "https://x.com/Alacritic_Super/status/2054837116610474112",
+          "source_type": "x"
+        },
+        {
+          "title": "Top Cybersecurity Trends for 2026",
+          "url": "https://www.gartner.com/en/articles/top-cybersecurity-trends-2026",
+          "source_type": "web"
+        },
+        {
+          "title": "2026: The Year of AI-Assisted Attacks",
+          "url": "https://thehackernews.com/2026/05/2026-year-of-ai-assisted-attacks.html",
+          "source_type": "web"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "042baa0709370b32",
+      "title": "CVE-2026-42897 Microsoft Exchange Server Cross-Site Scripting Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-05-15T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要CISA KEVに、Microsoft Exchange Serverのクロスサイトスクリプティング脆弱性 CVE-2026-42897 が掲載された。CVSSスコアは入力情報では未提示だが、KEV掲載は実環境での悪用確認を示すため、単なる公開情報より優先度を上げて扱う必要がある。XSSは単体ではサーバ侵害に直結しない場合も多いが、Exchangeの管…",
+      "article_path": "articles/042baa0709370b32.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "47cc095592cbfdff",
+      "title": "Turla Turns Kazuar Backdoor Into Modular P2P Botnet for Persistent Access",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-05-15T17:10:25+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "The Russian state-sponsored hacking group known as\n  \n    Turla\n  \n  has transformed its custom backdoor Kazuar into a modular peer-to-peer (P2P) botnet that&#x27;s engineered for…",
+      "article_path": "articles/47cc095592cbfdff.html",
+      "original_url": "https://thehackernews.com/2026/05/turla-turns-kazuar-backdoor-into.html"
+    },
+    {
+      "entry_id": "b11151eaa974d281",
+      "title": "Four OpenClaw Flaws Enable Data Theft, Privilege Escalation, and Persistence",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-05-15T13:35:04+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要The Hacker Newsは、Cyeraの研究者がOpenClawに存在する4件の脆弱性群「Claw Chain」を公表し、連鎖悪用によりデータ窃取、権限昇格、永続化につながる可能性を報じた。入力情報だけでは各脆弱性のCVE、CVSS、影響バージョン、認証要否、外部公開が必要か、修正有無が確認できず、現時点では自組織での利用有無と露出状況の確認が判…",
+      "article_path": "articles/b11151eaa974d281.html",
+      "original_url": "https://thehackernews.com/2026/05/four-openclaw-flaws-enable-data-theft.html"
+    },
+    {
+      "entry_id": "63ef95eaf8b30577",
+      "title": "What 45 Days of Watching Your Own Tools Will Tell You About Your Real Attack Surface",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-05-15T11:00:00+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "In Your Biggest Security Risk Isn&#x27;t Malware — It&#x27;s What You Already Trust, we made a simple argument: the most dangerous activity inside most organizations no longer loo…",
+      "article_path": "articles/63ef95eaf8b30577.html",
+      "original_url": "https://thehackernews.com/2026/05/what-45-days-of-watching-your-own-tools.html"
+    },
+    {
+      "entry_id": "8d2c43a8c4caed70",
+      "title": "TanStack Supply Chain Attack Hits Two OpenAI Employee Devices, Forces macOS Updates",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-05-15T10:54:44+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要The Hacker Newsは、TanStackを狙ったMini Shai-Huludサプライチェーン攻撃の影響で、OpenAIの企業環境にある従業員用macOS端末2台が影響を受けたと報じた。公表内容では、利用者データ、production system、知的財産への不正な改変や侵害は確認されていない一方、開発者端末に悪性依存関係が到達した時点で、…",
+      "article_path": "articles/8d2c43a8c4caed70.html",
+      "original_url": "https://thehackernews.com/2026/05/tanstack-supply-chain-attack-hits-two.html"
+    },
+    {
+      "entry_id": "4c616621dcb2efeb",
+      "title": "On-Prem Microsoft Exchange Server CVE-2026-42897 Exploited via Crafted Email",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-05-15T06:19:04+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要The Hacker Newsは、Microsoftがオンプレミス版Exchange ServerのCVE-2026-42897を公表し、実環境での悪用を確認したと報じた。CVE-2026-42897はCVSS 8.1の脆弱性で、説明上はクロスサイトスクリプティングに起因するなりすましとされ、細工されたメールを経由して悪用される点が判断材料になる。Ex…",
+      "article_path": "articles/4c616621dcb2efeb.html",
+      "original_url": "https://thehackernews.com/2026/05/on-prem-microsoft-exchange-server-cve.html"
+    },
+    {
+      "entry_id": "98b54a6da155b0ad",
+      "title": "CISA Adds Cisco SD-WAN CVE-2026-20182 to KEV After Admin Access Exploits",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-05-15T05:28:03+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Exploit",
+      "summary_preview": "概要CISAがCisco Catalyst SD-WAN Controllerの認証バイパス脆弱性CVE-2026-20182をKEVに追加し、米連邦文民機関に2026年5月17日までの是正を求めた。入力情報ではCVSSスコアは確認できないが、悪用により管理者アクセス取得が可能とされ、SD-WANの集中管理面を直接狙う攻撃として扱う必要がある。成立条件は脆…",
+      "article_path": "articles/98b54a6da155b0ad.html",
+      "original_url": "https://thehackernews.com/2026/05/cisa-adds-cisco-sd-wan-cve-2026-20182.html"
+    },
+    {
+      "entry_id": "03b67c798d664738",
+      "title": "&#x5b;Guest Diary&#x5d;  New Malware Libraries means New Signatures, (Fri, May 15th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-05-15T06:38:33+00:00",
+      "impact_level": "Low",
+      "threat_type": "Malware",
+      "summary_preview": "概要SANS ISCのGuest Diaryとして「新しいマルウェアライブラリに伴い新しいシグネチャが必要になる」という趣旨の記事が公開されたが、入力には本文やIOC、対象マルウェア名、検体ハッシュ、検知ロジックの詳細が含まれていない。タイトルからは、攻撃者が既存ツールやコード部品を差し替えることで、従来の静的シグネチャや既知IOCによる検知を回避し、ED…",
+      "article_path": "articles/03b67c798d664738.html",
+      "original_url": "https://isc.sans.edu/diary/rss/32986"
+    },
+    {
+      "entry_id": "61312020936cf5ad",
+      "title": "ISC Stormcast For Friday, May 15th, 2026 https://isc.sans.edu/podcastdetail/9934, (Fri, May 15th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-05-15T04:10:13+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要SANS ISCのStormcastとして2026年5月15日付の項目が配信されたが、入力に含まれる本文・要約・参照URLは空で、現時点で扱える一次情報はタイトルと掲載URLのみとなる。したがって、特定のCVE、製品、マルウェア、侵害キャンペーンが報じられたかは確認できず、どう悪用されるかも評価不能となる。組織内での影響範囲についても、外部公開資産、エ…",
+      "article_path": "articles/61312020936cf5ad.html",
+      "original_url": "https://isc.sans.edu/diary/rss/32992"
+    },
+    {
+      "entry_id": "49198714d1f18e57",
+      "title": "Welcome to BlackFile: Inside a Vishing Extortion Operation",
+      "source_name": "Mandiant",
+      "category": "reporting",
+      "published_at": "2026-05-15T14:00:00+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "Written by: Austin Larsen, Tyler McLellan, Genevieve Stark, Dan Ebreo\n\n\n\nIntroduction \nGoogle Threat Intelligence Group (GTIG) has continued to track an expansive extortion campai…",
+      "article_path": "articles/49198714d1f18e57.html",
+      "original_url": "https://cloud.google.com/blog/topics/threat-intelligence/blackfile-vishing-extortion-operation/"
+    },
+    {
+      "entry_id": "c1c22d988a7079b6",
+      "title": "Gremlin Stealer's Evolved Tactics: Hiding in Plain Sight With Resource Files",
+      "source_name": "Unit 42",
+      "category": "reporting",
+      "published_at": "2026-05-15T10:00:52+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "Unit 42 analyzes the evolution of Gremlin stealer. This variant uses advanced obfuscation, crypto clipping and session hijacking to compromise data.\nThe post Gremlin Stealer&#039;…",
+      "article_path": "articles/c1c22d988a7079b6.html",
+      "original_url": "https://unit42.paloaltonetworks.com/gremlin-stealer-evolution/"
+    },
+    {
+      "entry_id": "4cfac470c2d4836a",
+      "title": "革新的情報通信技術（Beyond 5G（6G））基金事業　要素技術・シーズ創出型プログラムに係る令和8年度新規委託研究の公募について（予告）",
+      "source_name": "NICT NOTICE",
+      "category": "reporting",
+      "published_at": "2026-05-15T05:00:00+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/4cfac470c2d4836a.html",
+      "original_url": "/publicity/topics/2026/05/15-1.html"
+    },
+    {
+      "entry_id": "a6f2e8c20403b01f",
+      "title": "底なしのウサギの穴で発見したもの ～ 農業用トラクターから見えた IoT セキュリティの構造的問題",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-14T23:15:04+00:00",
+      "impact_level": "Low",
+      "threat_type": "Other",
+      "summary_preview": "概要ScanNetSecurityの記事は、農業用トラクターを入口に、ネットワーク接続された機器に共通するIoTセキュリティの構造的問題を扱ったものと読める。入力情報には具体的な脆弱性番号、製品名、攻撃手順、悪用確認が含まれておらず、現時点では個別製品への緊急対処よりも、自組織のIoT/OT資産管理を点検する材料として扱うのが妥当となる。悪用の典型は、遠隔…",
+      "article_path": "articles/a6f2e8c20403b01f.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/15/55281.html"
+    },
+    {
+      "entry_id": "4270a9d18fbd44d2",
+      "title": "5/21・22 開催「第41回いしかわ情報システムフェア e-messe kanazawa 2026 」に HENNGE 出展",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-14T23:10:06+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要ScanNetSecurityの記事は、HENNGEが2026年5月21日・22日に開催される「第41回いしかわ情報システムフェア e-messe kanazawa 2026」へ出展するという告知を扱う内容となる。現時点で入力情報から読み取れる範囲では、脆弱性、侵害、マルウェア、設定不備に関する技術情報は含まれていない。悪用という観点では、イベント名や…",
+      "article_path": "articles/4270a9d18fbd44d2.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/15/55280.html"
+    },
+    {
+      "entry_id": "e96d22f5acf65ee2",
+      "title": "GMOサイバーセキュリティ byイエラエ、オンラインセミナー「増え続けるランサムウェア被害、限られた予算でどこまで守る？脆弱性対策優先順位の付け方」5 / 19 開催",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-14T23:10:04+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/e96d22f5acf65ee2.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/15/55279.html"
+    },
+    {
+      "entry_id": "5fc2039993e3d1fe",
+      "title": "マルタケの一部サーバでのシステム障害、不正アクセス（ランサムウェア）による影響の可能性も含め調査",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-14T23:05:20+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/5fc2039993e3d1fe.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/15/55278.html"
+    },
+    {
+      "entry_id": "b5ed16a911cc42ac",
+      "title": "TEIKOKU のシンガポール販売子会社の Microsoft365 アカウントに不正アクセス、セキュリティシステムに不審メール報告が集中し発覚",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-14T23:05:16+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要TEIKOKUのシンガポール販売子会社で、Microsoft 365アカウントへの不正アクセスが発生し、セキュリティシステムに不審メールの報告が集中したことで発覚した事案となる。攻撃者は侵害済みアカウントを使い、社内外の取引先に対するなりすましメール、返信スレッドへの割り込み、悪性リンク配布、追加認証情報の窃取を狙った可能性がある。影響は当該子会社の単…",
+      "article_path": "articles/b5ed16a911cc42ac.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/15/55277.html"
+    },
+    {
+      "entry_id": "7ced88192a6c6d91",
+      "title": "公益財団法人B&G財団にマルウェア攻撃、サーバでシステム障害が発生",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-14T23:05:11+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Malware",
+      "summary_preview": "概要ScanNetSecurityは、公益財団法人B&amp;G財団がマルウェア攻撃を受け、サーバでシステム障害が発生したと報じた。現時点で記事タイトルから読み取れる範囲では、攻撃者がサーバ上で不正プログラムを実行させ、業務システムや公開サービスの停止、ファイル破壊、認証情報窃取などにつなげた可能性がある。影響範囲は単一サーバの障害にとどまる場合と、共有フ…",
+      "article_path": "articles/7ced88192a6c6d91.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/15/55276.html"
+    },
+    {
+      "entry_id": "dbafdff01acb8fd3",
+      "title": "カーインテリア・アクセサリー取扱「ボンフォームオンラインストア」に不正アクセス、3,268 名のカード情報が漏えい",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-14T23:05:09+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要カーインテリア・アクセサリーを扱う「ボンフォームオンラインストア」で不正アクセスがあり、3,268名分のカード情報漏えいが公表されたという報道となる。詳細な侵入経路は本文情報だけでは確認できないが、ECサイトのカード情報漏えいでは、決済画面の改ざん、外部JavaScriptの差し替え、管理画面認証情報の悪用、脆弱なEC基盤への侵入が典型的な悪用経路とな…",
+      "article_path": "articles/dbafdff01acb8fd3.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/15/55275.html"
+    },
+    {
+      "entry_id": "b238359988af1a9a",
+      "title": "YouTube Live 配信で日本誠真会 党員の個人情報流出「副党首という責任ある立場として猛省」",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-14T23:05:05+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要ScanNetSecurityの記事タイトルから確認できる範囲では、政治団体「日本誠真会」のYouTube Live配信中に、党員の個人情報が外部から閲覧可能な形で映り込んだ事案と読める。悪用経路は、配信画面の視聴、録画、切り抜き、第三者による再投稿を通じた公開範囲の拡大であり、単なる内部誤送信よりも回収が難しい。流出情報の内容次第では、党員本人へのな…",
+      "article_path": "articles/b238359988af1a9a.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/15/55274.html"
+    },
+    {
+      "entry_id": "bc5ffba73774d3c4",
+      "title": "北海道ガスのLNG受発注システムに不正アクセス、取引先や従業員の個人情報が流出した可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-14T23:05:03+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/bc5ffba73774d3c4.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/15/55273.html"
+    },
+    {
+      "entry_id": "19c616978335c21b",
+      "title": "エレコム製無線 LAN ルータおよび無線アクセスポイントに複数の脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-14T23:00:18+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/19c616978335c21b.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/15/55272.html"
+    },
+    {
+      "entry_id": "dd05a537e361cdb6",
+      "title": "AeyeScan が OWASP Top 10:2025 に対応",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-14T23:00:14+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/dd05a537e361cdb6.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/15/55271.html"
+    },
+    {
+      "entry_id": "6a755266fe65f38f",
+      "title": "IPA、PSIRT の体制整備と運用支援を無償で実施",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-14T23:00:11+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要ScanNetSecurityは、IPAがPSIRTの体制整備と運用支援を無償で実施する旨を伝えている。脆弱性そのものの公表や悪用観測ではなく、製品・サービス提供組織が脆弱性受付、影響判定、修正調整、顧客通知を回すための支援施策として読むべき内容となる。直接の悪用手口は示されていないが、PSIRT不在の組織では、報告された脆弱性のトリアージ遅延、修正版…",
+      "article_path": "articles/6a755266fe65f38f.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/15/55270.html"
+    },
+    {
+      "entry_id": "dd127bf3756b6a78",
+      "title": "2026年度の実践的サイバー防御演習「CYDER」の年間開催日程発表、7～9月開催分の受講申込受付開始",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-14T23:00:08+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要ScanNetSecurityが、2026年度の実践的サイバー防御演習「CYDER」の年間開催日程発表と、7〜9月開催分の受講申込受付開始を伝えている。これは脆弱性悪用や侵害発生の情報ではなく、組織のインシデント対応力を高めるための訓練機会の告知として扱う内容となる。攻撃者に直接悪用される情報ではない一方、CSIRT運用では要員の異動、兼務、委託先依存…",
+      "article_path": "articles/dd127bf3756b6a78.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/15/55269.html"
+    },
+    {
+      "entry_id": "3a80f08f37b93fbe",
+      "title": "Bytello Share（Windows版）の EXE 形式インストーラに DLL 読み込みに関する脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-14T23:00:04+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要Bytello ShareのWindows版EXE形式インストーラに、DLL読み込み処理の不備があると報じられた。典型的には、攻撃者がインストーラと同じフォルダや探索順で優先される場所に細工したDLLを置き、利用者がインストーラを実行した時点で任意コード実行につなげる悪用形態が想定される。成立にはローカル配置、共有フォルダ経由の配布、ダウンロードディレ…",
+      "article_path": "articles/3a80f08f37b93fbe.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/15/55268.html"
+    }
+  ]
+}
