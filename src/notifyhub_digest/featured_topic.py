@@ -47,6 +47,7 @@ FEATURED_SYSTEM_PROMPT = (
     "検索をせずに既知知識だけで答えることは禁止です。\n"
     "生成する記事本文・深掘り解説は、日本語の常体で書く。です・ます調の敬体は使わない。「〜だ」「〜である」で終える文を避ける。\n"
     "用語解説は簡潔で中立的な説明文にし、「〜だ」「〜である」で終えない。\n"
+    "article title に相当する title を除き、出力するすべての項目は固有名詞や製品名、CVE、URL を除いて日本語で書く。英語の文や英語だけの箇条書きは禁止する。\n"
     "\n"
     "選定原則:\n"
     "- 読者の実務判断や社会的理解に寄与するトピックを優先する\n"
@@ -329,6 +330,7 @@ def _schema_hint(count: int) -> str:
         "- x_search で有用な X 投稿を参照した場合は、information_sources に source_type=x を少なくとも1件含める\n"
         "概要:\n"
         "- summary_html は許可タグのみ、属性禁止\n"
+        "- article title に相当する title を除き、すべての出力項目は日本語で書く\n"
         "- summary_html・lessons.body は常体で書き、です・ます調は使わない\n"
         "- summary_html・technical_terms.explanation・lessons.body は「〜だ」「〜である」で終えない\n"
         "- 4〜6文で書く\n"
@@ -368,6 +370,7 @@ def _build_user_prompt(*, window_start_utc: datetime, window_end_utc: datetime, 
             "- 出力では各トピックについて参照した情報ソースを 2〜5 件明記すること",
             "- categories は固定候補ではなく自由なテーマ名として解釈し、その語が指す分野に直接属する話題を選ぶこと",
             "- categories が指定されている場合、requested_category には指定されたカテゴリ名をそのまま使うこと",
+            "- article title に相当する title を除き、summary_html・selection_reason・impact_reason・用語解説・深掘り解説を含む全出力を日本語で書き、英語の文を混ぜないこと",
             "- キーワード解説は固有名詞や技術的なワードの解説だけに絞り、今回の記事文脈でなぜ重要かが伝わる説明にすること",
             "- キーワード解説は可能な限り類似概念と対比しつつ、日本語2〜3文・100文字以内で、「〜だ」「〜である」で終えないこと",
             "- 深掘り解説は、記事に関連する別の論点や制度、技術、背景トピックから学習価値が最も高い題材を1つだけ選び、具体例を含めて説明すること",
