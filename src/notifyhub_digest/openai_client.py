@@ -34,6 +34,7 @@ SYSTEM_PROMPT = (
     "『知っている話の再確認』ではなく『判断のブレを減らすための補助線』を提供することが目的です。\n"
     "生成する記事本文・用語解説・深掘り解説は、すべて日本語の常体で書く。です・ます調の敬体は使わない。\n"
     "「〜だ」「〜である」で終える文を避ける。\n"
+    "入力記事の title は原文のままでよいが、それ以外の出力項目は固有名詞や製品名、CVE、URL を除いて日本語で書く。英語の文や英語だけの箇条書きは禁止する。\n"
     "\n"
     "入力情報の前提（情報源）:\n"
     "- 入力は以下の情報源由来の記事・アドバイザリ・観測情報です（主にセキュリティ、時にIT一般）:\n"
@@ -113,6 +114,7 @@ def _analysis_schema_hint() -> str:
         "summary_html 制約:\n"
         "- 使用可能タグ: <div><p><ul><ol><li><strong><h4><code><br>\n"
         "- 属性（class/id/style等）は付けない\n"
+        "- 入力記事の title を除き、すべての出力項目は日本語で書く\n"
         "- summary_html・technical_terms.explanation・lessons.body はすべて常体で書き、です・ます調は使わない\n"
         "- summary_html・technical_terms.explanation・lessons.body は「〜だ」「〜である」で終えない\n"
         "- 以下の構成を厳守:\n"
@@ -152,6 +154,7 @@ def _analysis_schema_hint() -> str:
         "impact_reason:\n"
         "- impact_level の根拠を2〜3行で簡潔に\n"
         "- 技術的深刻度 + 運用影響 + 情報源補正の根拠\n"
+        "- 固有名詞や製品名、CVE、URL を除き日本語で書き、英語の文を混ぜない\n"
         "\n"
         "threat_type:\n"
         "- 複数該当しそうな場合は、CSIRTが最初に意識すべき1種を選択\n"
@@ -215,7 +218,7 @@ def load_openai_config(*, prefix: str = "OPENAI") -> OpenAIConfig | None:
         api_key=api_key,
         model=model,
         base_url=base_url,
-        max_tokens=max(200, min(max_tokens, 2000)),
+        max_tokens=max(200, min(max_tokens, 5000)),
         temperature=max(0.0, min(temperature, 1.0)),
     )
 

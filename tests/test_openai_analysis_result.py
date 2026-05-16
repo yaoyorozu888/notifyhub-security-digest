@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from notifyhub_digest.openai_client import SYSTEM_PROMPT, OpenAIConfig, _analysis_schema_hint, _build_analysis_payload, _coerce_analysis_result
+from notifyhub_digest.openai_client import SYSTEM_PROMPT, OpenAIConfig, _analysis_schema_hint, _build_analysis_payload, _coerce_analysis_result, load_openai_config
 
 
 def test_coerce_analysis_result_accepts_lesson_payload() -> None:
@@ -69,12 +69,26 @@ def test_build_analysis_payload_keeps_temperature_for_non_gpt5_models() -> None:
     assert payload["temperature"] == 0.4
 
 
+def test_load_openai_config_allows_up_to_5000_tokens(monkeypatch) -> None:
+    monkeypatch.setenv("OPENAI_API_KEY", "test")
+    monkeypatch.setenv("OPENAI_MAX_TOKENS", "5001")
+
+    cfg = load_openai_config()
+
+    assert cfg is not None
+    assert cfg.max_tokens == 5000
+
+
 def test_analysis_prompts_require_plain_japanese_style() -> None:
     assert "常体" in SYSTEM_PROMPT
     assert "です・ます調" in SYSTEM_PROMPT
     assert "「〜だ」「〜である」で終える文を避ける" in SYSTEM_PROMPT
+    assert "英語の文や英語だけの箇条書きは禁止" in SYSTEM_PROMPT
+    assert "入力記事の title は原文のままでよいが、それ以外の出力項目は" in SYSTEM_PROMPT
 
     schema_hint = _analysis_schema_hint()
     assert "常体" in schema_hint
     assert "です・ます調" in schema_hint
     assert "「〜だ」「〜である」で終えない" in schema_hint
+    assert "入力記事の title を除き、すべての出力項目は日本語で書く" in schema_hint
+    assert "英語の文を混ぜない" in schema_hint
