@@ -1,0 +1,137 @@
+{
+  "date": "2026-05-18",
+  "window": {
+    "from": "2026-05-17T06:00:00+09:00",
+    "to": "2026-05-18T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 2
+  },
+  "generated_at_jst": "2026-05-18T06:27:30.458137+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "AIインフラ需要が加速する2026年のクラウドトレンド",
+      "source_name": "Data Center Dynamics",
+      "published_at": "2026-05-17T12:06:18+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要2026年に入りAIワークロードの拡大でデータセンターの冷却方式が液冷中心に移行しつつある。既存施設の電力容量不足を背景に新設施設では液冷配管が標準装備される傾向が強まっている。ハイブリッドクラウドを前提とした設計が企業ITの標準となりつつあり、オンプレミスとパブリッククラウドの組み合わせで柔軟性を確保する動きが加速している。規制対応の観点からAIサー…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://www.datacenterdynamics.com/en/opinions/five-trends-in-ai-infrastructure-for-2026/",
+      "selection_reason": "AI対応データセンターの冷却技術やハイブリッド構成が企業IT戦略に直結する動きとして実務判断に寄与する",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "Five trends in AI infrastructure for 2026",
+          "url": "https://www.datacenterdynamics.com/en/opinions/five-trends-in-ai-infrastructure-for-2026/",
+          "source_type": "web"
+        },
+        {
+          "title": "The 10 Cloud Trends Set to Define 2026",
+          "url": "https://www.shapeblue.com/the-10-cloud-trends-set-to-define-2026/",
+          "source_type": "web"
+        },
+        {
+          "title": "Digital Infrastructure Trends to Watch in 2026",
+          "url": "https://www.tierpoint.com/blog/cloud/digital-infrastructure-trends/",
+          "source_type": "web"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "GPT-5.5 Instantなど新モデルが相次ぐ5月のAI進展",
+      "source_name": "LLM Stats",
+      "published_at": "2026-05-17T10:03:17+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要5月に入りOpenAIがGPT-5.5 InstantをChatGPTのデフォルトモデルとして公開した。事実精度の向上と幻覚の低減が主な改善点である。xAIもGrok 4.3を広く展開し始め推論性能を強化している。GoogleはGemini 3.1 Flash Liteを一般提供開始し低遅延タスク向けに最適化した。中国勢もDeepSeek V4やGLM…",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://llm-stats.com/llm-updates",
+      "selection_reason": "5月に入って複数のフロンティアモデルがリリースされAI実務への即時影響が大きい",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "New AI Models May 2026",
+          "url": "https://whatllm.org/blog/new-ai-models-may-2026",
+          "source_type": "web"
+        },
+        {
+          "title": "AI Updates Today (May 2026)",
+          "url": "https://llm-stats.com/llm-updates",
+          "source_type": "web"
+        },
+        {
+          "title": "State of AI: May 2026",
+          "url": "https://press.airstreet.com/p/state-of-ai-may-2026",
+          "source_type": "web"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "Microsoftが5月パッチチューズデーで130超の脆弱性を修正",
+      "source_name": "CrowdStrike",
+      "published_at": "2026-05-17T15:03:58+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Patch",
+      "summary_preview": "概要Microsoftは5月パッチチューズデーで130件以上の脆弱性を修正した。うち30件がクリティカルと分類されている。NetlogonやDNSクライアント関連の深刻な問題が含まれリモートコード実行のリスクが指摘されている。Entra IDの認証バイパス脆弱性も修正対象となりID管理基盤を利用する環境で注意が必要だ。公開されたゼロデイは確認されていないが…",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://www.crowdstrike.com/en-us/blog/patch-tuesday-analysis-may-2026/",
+      "selection_reason": "Windows環境を利用する組織の即時対応が求められるセキュリティ更新として実務影響が大きい",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "May 2026 Patch Tuesday: Updates and Analysis",
+          "url": "https://www.crowdstrike.com/en-us/blog/patch-tuesday-analysis-may-2026/",
+          "source_type": "web"
+        },
+        {
+          "title": "Patch Tuesday, May 2026 Edition",
+          "url": "https://krebsonsecurity.com/2026/05/patch-tuesday-may-2026-edition/",
+          "source_type": "web"
+        },
+        {
+          "title": "Microsoft Patches 138 Vulnerabilities",
+          "url": "https://thehackernews.com/2026/05/microsoft-patches-138-vulnerabilities.html",
+          "source_type": "web"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "ac5eadf76bd5681d",
+      "title": "NGINX CVE-2026-42945 Exploited in the Wild, Causing Worker Crashes and Possible RCE",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-05-17T11:57:53+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要The Hacker Newsは、NGINX PlusおよびNGINX Openに影響するCVE-2026-42945が公開後数日で実環境悪用されていると報じた。脆弱性はngx_http_rewrite_moduleのヒープバッファオーバーフローで、入力処理の破壊によりワーカープロセスのクラッシュを起こし、条件次第でリモートコード実行につながる可能性が…",
+      "article_path": "articles/ac5eadf76bd5681d.html",
+      "original_url": "https://thehackernews.com/2026/05/nginx-cve-2026-42945-exploited-in-wild.html"
+    },
+    {
+      "entry_id": "bce85c122a03a866",
+      "title": "Grafana GitHub Token Breach Led to Codebase Download and Extortion Attempt",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-05-17T07:13:33+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Credential Theft",
+      "summary_preview": "概要The Hacker Newsは、GrafanaのGitHub環境にアクセス可能なトークンを第三者が入手し、同社のコードベースをダウンロードした事案を報じた。Grafanaは顧客データや個人情報へのアクセス、顧客システムや運用への影響を示す証拠はないとしているが、ソースコードの窃取は将来の脆弱性探索、標的型フィッシング、CI/CD設定の悪用検討に使われ…",
+      "article_path": "articles/bce85c122a03a866.html",
+      "original_url": "https://thehackernews.com/2026/05/grafana-github-token-breach-led-to.html"
+    }
+  ]
+}
