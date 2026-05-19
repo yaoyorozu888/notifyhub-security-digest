@@ -1,0 +1,334 @@
+<!-- article.html テンプレート（生成用） (例: /digest/YYYY/MM/DD/articles/<entry_id>.html)
+     サーバ側（Function）で {{...}} を置換して出力してください。
+-->
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/favicon-192.png" />
+  <title>GMOサイバーセキュリティ byイエラエ、オンラインセミナー「AWS WAF、導入したまま放置していませんか？ 楽にセキュリティ対策できる『WAFエイド』」を 5 / 27 開催 | NotifyHub Cybersecurity Daily Report</title>
+  <style>
+    :root{
+      --bg:#0b1020; --panel:#0f1730; --panel2:#121c3a;
+      --text:#e7ecff; --muted:#a9b4df; --line:#22305b;
+      --accent:#7aa2ff; --good:#4ade80; --warn:#fbbf24; --bad:#fb7185;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+      --radius:18px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      background: radial-gradient(1000px 700px at 20% -10%, rgba(122,162,255,.25), transparent 60%),
+                  radial-gradient(900px 600px at 90% 10%, rgba(251,113,133,.12), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+    }
+    a{color:inherit}
+    .wrap{max-width:960px; margin:0 auto; padding:22px 18px 44px}
+    .topbar{
+      display:flex; justify-content:space-between; align-items:center; gap:12px;
+      margin-bottom:12px;
+    }
+    .crumb a{
+      text-decoration:none;
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .crumb a:hover{border-color:rgba(122,162,255,.65)}
+    .chip{
+      display:inline-flex; align-items:center; gap:8px;
+      background:rgba(27,38,80,.75);
+      border:1px solid rgba(34,48,91,.9);
+      padding:7px 10px; border-radius:999px;
+      font-size:12px; color:var(--muted);
+      backdrop-filter: blur(10px);
+      white-space:nowrap;
+    }
+    .chip strong{color:var(--text); font-weight:650}
+    .panel{
+      background: linear-gradient(180deg, rgba(15,23,48,.9), rgba(15,23,48,.75));
+      border:1px solid rgba(34,48,91,.9);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .head{
+      padding:16px 16px 12px;
+      border-bottom:1px solid rgba(34,48,91,.9);
+      background:rgba(18,28,58,.55);
+    }
+    h1{
+      margin:0;
+      font-size:20px;
+      line-height:1.35;
+      letter-spacing:.15px;
+    }
+    .meta{
+      margin-top:10px;
+      display:flex; gap:10px; flex-wrap:wrap;
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.6;
+    }
+    .meta a{color:var(--muted)}
+    .meta a:hover{color:var(--accent)}
+    .tags{
+      margin-top:12px;
+      display:flex; gap:8px; flex-wrap:wrap;
+    }
+    .tag{
+      font-size:11px;
+      padding:6px 9px;
+      border-radius:999px;
+      background:rgba(27,38,80,.65);
+      border:1px solid rgba(34,48,91,.9);
+      color:var(--muted);
+      white-space:nowrap;
+    }
+    .tag.level-Critical{border-color:rgba(251,113,133,.65); color:#ffd0d7}
+    .tag.level-High{border-color:rgba(251,191,36,.65); color:#ffe9b0}
+    .tag.level-Medium{border-color:rgba(122,162,255,.65); color:#dbe6ff}
+    .tag.level-Low{border-color:rgba(74,222,128,.55); color:#d0ffe2}
+    .tag.level-Info{border-color:rgba(169,180,223,.55); color:rgba(169,180,223,.95)}
+    .body{
+      padding:16px;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+    }
+    .section{
+      background:rgba(18,28,58,.35);
+      border:1px solid rgba(34,48,91,.75);
+      border-radius:16px;
+      padding:14px;
+    }
+    .section h2{
+      margin:0 0 10px;
+      font-size:14px;
+      letter-spacing:.1px;
+    }
+    .ruleReason{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.65;
+      white-space:pre-wrap;
+    }
+    .infoSources{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.5;
+    }
+    .infoSourceRow{
+      margin:0;
+      padding:0;
+    }
+    .infoSourceRow + .infoSourceRow{
+      margin-top:2px;
+    }
+
+    /* --- summary_html styles (OpenAI output uses h4/p/ul/li/strong/code/br) --- */
+    .summary h4{
+      margin:14px 0 8px;
+      font-size:13px;
+      letter-spacing:.1px;
+      padding-left:10px;
+      border-left:3px solid rgba(122,162,255,.65);
+      color: rgba(231,236,255,.95);
+    }
+    .summary p{margin:8px 0; color:rgba(231,236,255,.92); line-height:1.75}
+    .summary ul, .summary ol{margin:8px 0 8px 1.2em; padding:0}
+    .summary li{margin:6px 0; color:rgba(231,236,255,.92); line-height:1.7}
+    .summary strong{
+      color:var(--text);
+      font-weight:750;
+      padding:0 .2em;
+      border-radius:8px;
+      background: linear-gradient(transparent 60%, rgba(122,162,255,.22) 60%);
+    }
+    .summary code{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 8px;
+      background: rgba(11,16,32,.6);
+      border: 1px solid rgba(34,48,91,.85);
+      color: rgba(231,236,255,.95);
+      white-space: nowrap;
+    }
+
+    .terms{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:10px;
+    }
+    @media (max-width: 860px){
+      .terms{grid-template-columns: 1fr}
+    }
+    .termCard{
+      background:rgba(11,16,32,.45);
+      border:1px solid rgba(34,48,91,.85);
+      border-radius:14px;
+      padding:12px;
+      min-width:0;
+    }
+    .termCard .term{
+      font-weight:700;
+      font-size:13px;
+      margin:0 0 8px;
+      word-break:break-word;
+    }
+    .termCard .exp{
+      margin:0;
+      color:rgba(231,236,255,.9);
+      line-height:1.7;
+      font-size:12px;
+      white-space:pre-wrap;
+    }
+    .subSectionTitle{
+      margin:16px 0 8px;
+      font-size:12px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:var(--muted);
+    }
+    .deepDive{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:10px;
+      margin-top:8px;
+    }
+    .deepDiveCard{
+      background:rgba(12,20,38,.6);
+    }
+
+    .footer{
+      margin-top:14px;
+      color:rgba(169,180,223,.75);
+      font-size:12px;
+      line-height:1.7;
+      text-align:center;
+    }
+    .btnRow{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px}
+    .linkbtn{
+      text-decoration:none;
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .linkbtn:hover{border-color:rgba(122,162,255,.65)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="crumb">
+        <!-- ../index.html は通常 "../index.html" でOK -->
+        <a href="../index.html">← 日次トップへ戻る</a>
+      </div>
+      <div class="chip">entry_id <strong class="mono">d96146ec082c2bbd</strong></div>
+    </div>
+
+    <div class="panel">
+      <div class="head">
+        <h1>GMOサイバーセキュリティ byイエラエ、オンラインセミナー「AWS WAF、導入したまま放置していませんか？ 楽にセキュリティ対策できる『WAFエイド』」を 5 / 27 開催</h1>
+
+        <div class="meta">
+          <span>🗞️ ScanNetSecurity</span>
+          <span>🕒 2026-05-19T08:10:04+09:00</span>
+          <span>🔗 <a href="https://scan.netsecurity.ne.jp/article/2026/05/19/55300.html" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
+        </div>
+
+        <div class="tags">
+          <span class="tag level-Info">Impact: Info</span>
+          <span class="tag">Other</span>
+        </div>
+
+        <div class="btnRow">
+          <a class="linkbtn" href="https://scan.netsecurity.ne.jp/article/2026/05/19/55300.html" target="_blank" rel="noopener noreferrer">原文リンク</a>
+          <a class="linkbtn" href="https://www.notifyhub.site/digest/2026/05/20/">日次トップ</a>
+        </div>
+      </div>
+
+      <div class="body">
+        
+        <div class="section">
+          <h2>Impact判定理由</h2>
+          <div class="ruleReason">技術的には特定の脆弱性や悪用確認ではなく、AWS WAF運用に関するセミナー告知にとどまる。
+運用面ではWAF放置の問題提起として参考になるが、直ちに封じ込めや緊急パッチを要する情報ではない。
+情報源はメディア掲載の告知であり、二次情報・イベント情報としてベース評価を引き上げない。</div>
+        </div>
+        <div class="section summary">
+          <h2>🧾 要約（ChatGPT / gpt-5.5-2026-04-23）</h2>
+          <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
+          <div><h4>概要</h4><p>ScanNetSecurityの記事は、GMOサイバーセキュリティ byイエラエが5月27日に開催するオンラインセミナー「GMOサイバーセキュリティ byイエラエ、オンラインセミナー「AWS WAF、導入したまま放置していませんか？ 楽にセキュリティ対策できる『WAFエイド』」を 5 / 27 開催」の告知を扱っている。内容の中心は、AWS WAFを導入後に設定やルール更新を十分に見直していない組織に対し、運用支援サービス「WAFエイド」を紹介するものと読める。現時点でこの記事から確認できるのは<strong>セミナー開催情報</strong>であり、特定の脆弱性、攻撃キャンペーン、侵害事例、悪用コードの公開ではない。攻撃者視点では、WAFそのものを直接突破するというより、<strong>古いルール、過剰な除外設定、オリジン直アクセス</strong>など運用上の隙が狙い目になる。影響範囲はWAF配下のWebアプリケーションに限定されやすい一方、認証基盤、管理画面、APIが同じ公開面にある場合は侵害後の被害が業務系システムへ波及しうる。未確認事項として、セミナーで扱う具体的な設定不備、対象となるAWS WAF構成、検知・遮断ロジック、既知攻撃との関係は記事本文だけでは判断できない。</p></div>
+        </div>
+
+        <div class="section">
+          <h2>📌 キーワード解説</h2>
+          <div class="terms">
+            <div class="termCard">
+  <div class="term">WAF（Web Application Firewall）</div>
+  <p class="exp">Webアプリ層の攻撃を検査する防御。ネットワークFWと異なり、URLやパラメータの意味を見て判断する。</p>
+</div>
+<div class="termCard">
+  <div class="term">AWS WAF</div>
+  <p class="exp">AWS上のWAFサービス。導入だけでは十分でなく、ルール、ログ、除外設定の継続調整が効く。</p>
+</div>
+<div class="termCard">
+  <div class="term">マネージドルール</div>
+  <p class="exp">ベンダー提供の検知ルール群。自動更新に近いが万能ではなく、業務固有の許可・例外設計と混同しない。</p>
+</div>
+<div class="termCard">
+  <div class="term">オリジン直アクセス</div>
+  <p class="exp">WAFを経由せず本体サーバへ到達する経路。WAFの検知精度以前に、経路制御の失敗として扱う。</p>
+</div>
+          </div>
+          <h3 class="subSectionTitle">深掘り解説</h3>
+          <div class="deepDive">
+            <div class="termCard deepDiveCard">
+  <div class="term">WAF運用で最初に確認すべき「効いている経路」と「見ているログ」</div>
+  <p class="exp">WAFは導入時点ではなく、運用で効き続けているかを確認する防御機構となる。CSIRTが判断を誤りやすいのは、管理画面上でWAFが有効になっていることと、実際の攻撃経路をWAFが必ず通過していることを同一視する点にある。
+
+実務ではまず経路を確認する。たとえばCloudFrontやALBにAWS WAFを関連付けていても、オリジンのALBやEC2にインターネットから直接到達できるセキュリティグループ、DNS、古い検証用FQDNが残っていれば、攻撃者はWAFを迂回できる。WAFのルールを強化しても、この状態では本丸に届く別経路が残る。CSIRTの確認観点は「WAFがあるか」ではなく、「公開された全FQDNと全IPがWAF配下に収束しているか」になる。
+
+次にログを確認する。WAFログが保存されていない、保存先はあるが検索できない、ブロック件数だけを監視してリクエスト本文やルールIDを見ていない、といった状態では調査に使いにくい。具体例として、管理画面へのSQLインジェクション試行が急増した場合、ルールID、送信元、対象URI、許可・遮断の結果を突合できれば、アプリ側ログや認証ログの確認範囲を絞れる。逆にログがなければ、遮断できていたのか、検知だけで通過していたのか、そもそもWAFを通っていないのかを切り分けられない。
+
+最後に例外設定を棚卸しする。誤検知対応で一時的に入れた除外が恒久化すると、攻撃者にとって最も価値の高い穴になる。特定URIだけ検査を外す、特定ヘッダを信頼する、本文検査を緩めるといった設定は、変更理由、期限、代替統制を記録する必要がある。WAF運用の成熟度は、強いルールを入れているかより、迂回経路、ログ、例外の三点を継続的に説明できるかで見た方がよい。</p>
+</div>
+          </div>
+        </div>
+
+        
+
+        <div class="section">
+          <h2>🕘 生成情報</h2>
+          <div class="ruleReason">
+対象期間：2026-05-19T06:00:00+09:00 〜 2026-05-20T06:00:00+09:00
+生成時刻：2026-05-20T06:51:56.065794+09:00
+免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      notifyhub.site
+    </div>
+  </div>
+</body>
+</html>
