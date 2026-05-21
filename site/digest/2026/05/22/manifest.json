@@ -1,0 +1,475 @@
+{
+  "date": "2026-05-22",
+  "window": {
+    "from": "2026-05-21T06:00:00+09:00",
+    "to": "2026-05-22T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 31
+  },
+  "generated_at_jst": "2026-05-22T07:00:11.579093+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "AI基盤の機密展開が加速",
+      "source_name": "TechCrunch",
+      "published_at": "2026-05-20T17:57:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要米国防総省がNVIDIA、Microsoft、AWSと契約を結び、AIシステムを機密ネットワーク上に展開する動きが明らかになった。セキュリティとガバナンスが新たな制約要因となり、従来のクラウド中心から空気遮断型配備へシフトしている。企業IT担当者はこの変化を踏まえ、データ保護策を再検討する必要がある。AI基盤の運用効率向上と同時に、アクセス制御の厳格化…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://techcrunch.com/2026/05/01/pentagon-inks-deals-with-nvidia-microsoft-and-aws-to-deploy-ai-on-classified-networks/",
+      "selection_reason": "IT分野の基盤技術トレンドとして、AIの機密ネットワーク展開が実務判断に直結する動きを示すため",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "Pentagon inks deals with Nvidia Microsoft and AWS",
+          "url": "https://techcrunch.com/2026/05/01/pentagon-inks-deals-with-nvidia-microsoft-and-aws-to-deploy-ai-on-classified-networks/",
+          "source_type": "web"
+        },
+        {
+          "title": "The biggest AI infrastructure trend is the move to classified air-gapped deployment",
+          "url": "https://x.com/noashavit/status/2057158663501201530",
+          "source_type": "x"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "OpenAIが四半期売上高57億ドルを達成",
+      "source_name": "The Information",
+      "published_at": "2026-05-21T08:58:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要OpenAIは2026年第1四半期に約57億ドルの売上を計上し、前年比で大幅増収を達成した。Codexなどのコーディングエージェントが成長を牽引し、企業向け販売も拡大している。競合Anthropicも同四半期で急成長を続けている状況だ。AI事業者はこの収益基盤を活用し、さらなるモデル開発を加速させる見通しである。",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://www.theinformation.com/",
+      "selection_reason": "AI分野の事業拡大と収益動向が実務判断に直結する最新情報を提供するため",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "OpenAI Generated Nearly $6 Billion in Revenue in First Quarter",
+          "url": "https://www.theinformation.com/",
+          "source_type": "web"
+        },
+        {
+          "title": "Nvidia Projects 95% Sales Growth",
+          "url": "https://www.theinformation.com/",
+          "source_type": "web"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "AIエージェントを活用したメールセキュリティ新興企業が資金調達",
+      "source_name": "SecurityWeek",
+      "published_at": "2026-05-21T21:31:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要新興企業OceanがAIエージェントを活用したメールセキュリティプラットフォームで2800万ドルの資金を調達した。各受信メッセージを専門AIエージェントで検査する仕組みを開発している。AI駆動型攻撃の高速化に対応するため、防御側も同様の技術を導入する動きが活発だ。企業はこうした新ツールの採用を検討し、メール経由の脅威を低減する必要がある。",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://www.securityweek.com/",
+      "selection_reason": "サイバーセキュリティ分野でAIエージェントの実用化が脅威対応に直結する動きを示すため",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "Ocean Emerges From Stealth With $28M for Agentic Email Security Platform",
+          "url": "https://www.securityweek.com/",
+          "source_type": "web"
+        },
+        {
+          "title": "AI is moving fast, and cyber risk is moving with it",
+          "url": "https://x.com/onestepsecureit/status/2057174719518937196",
+          "source_type": "x"
+        },
+        {
+          "title": "Global Cybersecurity Outlook 2026",
+          "url": "https://reports.weforum.org/docs/WEF_Global_Cybersecurity_Outlook_2026.pdf",
+          "source_type": "web"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "c44507278c2edc87",
+      "title": "CVE-2025-34291 Langflow Origin Validation Error Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-05-21T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要CISA KEVに、LangflowのCVE-2025-34291「Origin Validation Error Vulnerability」が追加された。KEV掲載は既に悪用が確認された脆弱性を示すため、CVSSが未確認でも優先度を下げにくい。Origin検証の不備は、Web UIやAPIが想定した要求元だけを受け付ける前提を崩し、管理操作、ワーク…",
+      "article_path": "articles/c44507278c2edc87.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "f18e7f2ef5b180ec",
+      "title": "CVE-2026-34926 Trend Micro Apex One (On-Premise) Directory Traversal Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-05-21T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要CISA KEVに、Trend Micro Apex One (On-Premise) の CVE-2026-34926 が追加された。入力情報で確認できる範囲では脆弱性種別は Directory Traversal で、CVSSスコアや具体的な悪用手順、影響バージョンは示されていない。攻撃者は管理サーバ上のファイルパス処理の不備を突き、想定外のファイ…",
+      "article_path": "articles/f18e7f2ef5b180ec.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "fdc385f9e066c12e",
+      "title": "Showboat Linux Malware Hits Middle East Telecom with SOCKS5 Proxy Backdoor",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-05-21T14:17:09+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Malware",
+      "summary_preview": "概要The Hacker Newsは、Lumenの研究者が中東の通信事業者を少なくとも2022年半ばから狙うLinuxマルウェア「Showboat」を公表したと報じた。Showboatは侵入後に使われるモジュール型フレームワークで、リモートシェル、ファイル転送、SOCKS5プロキシとしての通信中継を備え、攻撃者がLinuxサーバを操作拠点や踏み台として扱え…",
+      "article_path": "articles/fdc385f9e066c12e.html",
+      "original_url": "https://thehackernews.com/2026/05/showboat-linux-malware-hits-middle-east.html"
+    },
+    {
+      "entry_id": "f062707142d6c42d",
+      "title": "ThreatsDay Bulletin: Linux Rootkits, Router 0-Day, AI Intrusions, Scam Kits and 25 New Stories",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-05-21T11:52:14+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要The Hacker Newsの週次まとめとして、Linux rootkit、ルーターの0-day、AI関連侵入、詐欺キット、トークン漏えい、不正パッケージ、ログイン手口など複数の事案が並べられているが、個別事案の詳細や一次情報は入力範囲では確認できない。共通する論点は、攻撃者が境界を正面突破するよりも、更新、アプリ、クラウド操作、サポート窓口、信頼済…",
+      "article_path": "articles/f062707142d6c42d.html",
+      "original_url": "https://thehackernews.com/2026/05/threatsday-bulletin-linux-rootkits.html"
+    },
+    {
+      "entry_id": "5d88ce4568c1b8d0",
+      "title": "Microsoft Warns of Two Actively Exploited Defender Vulnerabilities",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-05-21T10:55:57+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要Microsoft Defender において、権限昇格脆弱性 CVE-2026-41091（CVSS 7.8） とサービス拒否脆弱性が実際の攻撃で悪用されていると Microsoft が公表し、The Hacker News が報じた。CVE-2026-41091 はファイルアクセス前の不適切なリンク解決に起因し、侵入済み端末上でユーザー権限から S…",
+      "article_path": "articles/5d88ce4568c1b8d0.html",
+      "original_url": "https://thehackernews.com/2026/05/microsoft-warns-of-two-actively.html"
+    },
+    {
+      "entry_id": "1bc33a4099b0a895",
+      "title": "When Identity is the Attack Path",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-05-21T10:30:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Credential Theft",
+      "summary_preview": "概要The Hacker Newsの記事は、単一のWindows端末にキャッシュされたAWSアクセスキーが、クラウド環境の大半へ到達する攻撃経路になり得るという問題を扱っている。ユーザーの通常ログインや標準動作で資格情報が端末側に残るため、明確な設定ミスやポリシー違反がなくても、端末侵害後に攻撃者がキーを回収し、IAM権限やロール連鎖をたどってクラウド資産…",
+      "article_path": "articles/1bc33a4099b0a895.html",
+      "original_url": "https://thehackernews.com/2026/05/when-identity-is-attack-path.html"
+    },
+    {
+      "entry_id": "7a515b3c2149fe6b",
+      "title": "9-Year-Old Linux Kernel Flaw Enables Root Command Execution on Major Distros",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-05-21T07:35:53+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "Cybersecurity researchers have disclosed details of a vulnerability in the Linux kernel that remained undetected for nine years.\n\nThe vulnerability, tracked as CVE-2026-46333 (CVS…",
+      "article_path": "articles/7a515b3c2149fe6b.html",
+      "original_url": "https://thehackernews.com/2026/05/9-year-old-linux-kernel-flaw-enables.html"
+    },
+    {
+      "entry_id": "5557b446e5eaf652",
+      "title": "GitHub Internal Repositories Breached via Malicious Nx Console VS Code Extension",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-05-21T04:27:01+00:00",
+      "impact_level": "High",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要GitHubは、社内リポジトリ侵害が従業員端末で実行された汚染版Nx Console VS Code拡張機能に起因したと確認した。Nxチームによれば、拡張機能nrwl.angular-consoleは同チーム開発者の端末侵害を起点に侵害され、開発者向けツールの信頼を利用してGitHub従業員環境へ悪性コードが引き渡された構図となる。VS Code拡張機…",
+      "article_path": "articles/5557b446e5eaf652.html",
+      "original_url": "https://thehackernews.com/2026/05/github-internal-repositories-breached.html"
+    },
+    {
+      "entry_id": "6eef83cbebe8d1c9",
+      "title": "Highly Critical Drupal Core Flaw Exposes PostgreSQL Sites to RCE Attacks",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-05-21T03:44:11+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Drupal Coreのデータベース抽象化APIに起因するCVE-2026-9082について、Drupalが修正更新を公開した。CVE.orgのCVSSは6.5だが、記事ではPostgreSQLを利用するDrupalサイトで悪用された場合にリモートコード実行、権限昇格、情報開示へつながる可能性が示されている。攻撃者視点では、公開CMS上の入力経路やクエ…",
+      "article_path": "articles/6eef83cbebe8d1c9.html",
+      "original_url": "https://thehackernews.com/2026/05/highly-critical-drupal-core-flaw.html"
+    },
+    {
+      "entry_id": "12cf48df26215577",
+      "title": "Selective HTTP Proxying in Linux, (Thu, May 21st)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-05-21T13:34:09+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要この記事は、Windows/macOS/AndroidのProxifierのように、Linux上でも特定プロセスのHTTP通信だけをプロキシへ流す手法に関する実務メモと読める。脆弱性や攻撃観測ではなく、デバッグ、リバースエンジニアリング、マルウェア解析で対象プロセスだけを観察し、全端末通信のノイズを避ける目的が中心となる。悪用という観点では、攻撃者がこ…",
+      "article_path": "articles/12cf48df26215577.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33002"
+    },
+    {
+      "entry_id": "1c9ce7c0c7b488f2",
+      "title": "ISC Stormcast For Thursday, May 21st, 2026 https://isc.sans.edu/podcastdetail/9940, (Thu, May 21st)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-05-21T02:00:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Unknown",
+      "summary_preview": "概要この記事は「ISC Stormcast For Thursday, May 21st, 2026 https://isc.sans.edu/podcastdetail/9940, (Thu, May 21st)」というSANS ISCのStormcast告知だが、入力には本文要約も参照URLも含まれていない。現時点で確認できるのは公開日時とRSS項目の…",
+      "article_path": "articles/1c9ce7c0c7b488f2.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33000"
+    },
+    {
+      "entry_id": "fde3b0b9d53b61ee",
+      "title": "Enhancing Cisco Secure Email Gateway: Safer Clicks and Cleaner Files",
+      "source_name": "Cisco Security Blog",
+      "category": "reporting",
+      "published_at": "2026-05-21T14:30:43+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要Cisco Security Blogの記事は、Cisco Secure Email GatewayにおけるRBIとCDRの強化を取り上げ、メール経由のURLクリックと添付ファイル処理をより安全側に寄せる内容となる。悪用シナリオとしては、利用者がフィッシングメール内のURLを開いて認証情報を入力させられる、または添付ファイル内のマクロ、スクリプト、埋め…",
+      "article_path": "articles/fde3b0b9d53b61ee.html",
+      "original_url": "https://blogs.cisco.com/security/enhancing-cisco-secure-email-gateway-safer-clicks-cleaner-files/"
+    },
+    {
+      "entry_id": "fa66d07fb445943f",
+      "title": "AI-generated reporting: Lessons learned from Cisco Talos Incident Response",
+      "source_name": "Cisco Security Blog",
+      "category": "reporting",
+      "published_at": "2026-05-21T12:00:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要Cisco Talos Incident Responseが、サイバーセキュリティ報告書を生成AIで作成する際のプロンプト設計と品質管理の教訓を、現実的なケーススタディを通じて示した。これは脆弱性や攻撃キャンペーンの告知ではなく、インシデント対応報告の一貫性と正確性をどう担保するかという運用上の話題となる。攻撃者に直接悪用される手口は示されていないが、…",
+      "article_path": "articles/fa66d07fb445943f.html",
+      "original_url": "https://blogs.cisco.com/security/ai-generated-reporting-lessons-learned-from-talos-incident-response/"
+    },
+    {
+      "entry_id": "ccec0dab7431c9cc",
+      "title": "The npm Threat Landscape: Attack Surface and Mitigations (Updated May 21)",
+      "source_name": "Unit 42",
+      "category": "reporting",
+      "published_at": "2026-05-21T15:30:33+00:00",
+      "impact_level": "High",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要Unit 42は、Shai Hulud以後のnpmサプライチェーン攻撃の変化として、自己増殖型マルウェア、CI/CD環境への持続化、多段階のペイロード投入を取り上げている。悪用の中心は脆弱なサーバーを直接侵す形ではなく、開発者アカウント、npmトークン、GitHub Actionsなどの権限を奪い、正規パッケージやビルド工程に混入する流れとなる。影響は…",
+      "article_path": "articles/ccec0dab7431c9cc.html",
+      "original_url": "https://unit42.paloaltonetworks.com/monitoring-npm-supply-chain-attacks/"
+    },
+    {
+      "entry_id": "25f27841eda7016d",
+      "title": "VU#980487: Local privilege escalation in Linux Kernel (Dirty Frag)",
+      "source_name": "CERT/CC",
+      "category": "reporting",
+      "published_at": "2026-05-20T21:23:46+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Linux kernel 4.10以降に影響する「VU#980487: Local privilege escalation in Linux Kernel (Dirty Frag)」として、CERT/CCがカーネル権限昇格につながり得る脆弱性を公表した。CVE-2026-43284とCVE-2026-43500を組み合わせた問題として説明され、IPv…",
+      "article_path": "articles/25f27841eda7016d.html",
+      "original_url": "https://kb.cert.org/vuls/id/980487"
+    },
+    {
+      "entry_id": "238f2610763ebaa3",
+      "title": "注意喚起: TrendAI Apex Oneなどのトレンドマイクロ製品における複数の脆弱性に関する注意喚起  (公開)",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-05-21T06:23:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要JPCERT/CCが「注意喚起: TrendAI Apex Oneなどのトレンドマイクロ製品における複数の脆弱性に関する注意喚起  (公開)」を公開し、該当製品の利用組織に確認と対処を促している。入力情報だけではCVE番号、CVSS、影響バージョン、悪用確認の有無は示されておらず、現時点の判断は公的注意喚起と製品特性を重く見る形になる。Apex One…",
+      "article_path": "articles/238f2610763ebaa3.html",
+      "original_url": "https://www.jpcert.or.jp/at/2026/at260014.html"
+    },
+    {
+      "entry_id": "48b1c5e19e32e728",
+      "title": "ルクセンブルク大学とのMoU及びOdysseus Space社との共同研究契約の締結について",
+      "source_name": "NICT NOTICE",
+      "category": "reporting",
+      "published_at": "2026-05-21T05:00:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要NICT NOTICEは「ルクセンブルク大学とのMoU及びOdysseus Space社との共同研究契約の締結について」を公表し、海外大学および民間企業との研究連携を進める動きとして位置付けられる。本件は脆弱性、侵害、悪用観測の情報ではなく、攻撃者が直ちに利用できる手口や侵入口は示されていない。悪用シナリオを考えるなら、プロジェクト情報、研究データ、認…",
+      "article_path": "articles/48b1c5e19e32e728.html",
+      "original_url": "/publicity/topics/2026/05/21-1.html"
+    },
+    {
+      "entry_id": "cc46f88e3ee86c5b",
+      "title": "Cloudbase Blog 第13回 セキュリティ担当者は勇者である。Cloudbase の Security Days Spring 2026 全力出展レポート",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-20T23:10:04+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要ScanNetSecurityの記事は、CloudbaseがSecurity Days Spring 2026へ出展した内容を紹介するイベントレポートと見られ、現時点で脆弱性、侵害、マルウェア、設定不備の発生を示す情報は入力から確認できない。CSIRT観点では、新たな攻撃手法の警告ではなく、クラウドセキュリティ関連ベンダーの訴求や市場動向を把握するため…",
+      "article_path": "articles/cc46f88e3ee86c5b.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/21/55326.html"
+    },
+    {
+      "entry_id": "1439f0cbf0ff614a",
+      "title": "ユニバーサル ミュージックのECサイトへの不正アクセス、合計 3,105,585件の顧客情報が流出",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-20T23:05:18+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要ScanNetSecurityは、ユニバーサル ミュージックのECサイトへの不正アクセスにより、合計3,105,585件の顧客情報が流出したと報じた。ECサイト侵害では、公開Webアプリの脆弱性、管理画面の認証突破、委託先や運用アカウントの侵害など複数の入口があり、攻撃者は顧客DBの抽出、管理者権限の悪用、通知前のフィッシング準備に進む可能性がある。影…",
+      "article_path": "articles/1439f0cbf0ff614a.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/21/55325.html"
+    },
+    {
+      "entry_id": "6a514a75c4a99f2d",
+      "title": "器物損壊罪等で逮捕された津田塾大学元職員、個人情報記載画像を匿名掲示板に投稿",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-20T23:05:16+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要ScanNetSecurityは、津田塾大学の元職員が器物損壊罪等で逮捕され、個人情報が記載された画像を匿名掲示板に投稿した事案を報じている。記事本文が提示されていないため、対象となった個人情報の種類、件数、投稿経路、学内システムからの取得有無は未確認事項として扱う必要がある。悪用面では、掲示板に公開された画像が第三者に保存・再投稿されると、削除要請後…",
+      "article_path": "articles/6a514a75c4a99f2d.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/21/55324.html"
+    },
+    {
+      "entry_id": "f2f357c61eb93269",
+      "title": "ノストラムにランサムウェア攻撃、学習支援サービスも停止",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-20T23:05:13+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要ScanNetSecurityは、「ノストラムにランサムウェア攻撃、学習支援サービスも停止」として、ノストラムへのランサムウェア攻撃と学習支援サービスの停止を報じた。現時点で入力情報から確認できるのは、ランサムウェアに起因する業務停止が発生した可能性までで、侵入経路、暗号化範囲、情報流出、復旧見通し、利用者影響の規模は未確認となる。攻撃者側は、教育・学…",
+      "article_path": "articles/f2f357c61eb93269.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/21/55323.html"
+    },
+    {
+      "entry_id": "d260598b3fe838ce",
+      "title": "スキャンだけしたつもりがファクシミリ送信も",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-20T23:05:10+00:00",
+      "impact_level": "Low",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要ScanNetSecurityの記事タイトルからは、利用者が文書を「スキャンしただけ」と認識していた一方で、実際にはファクシミリ送信も実行されていた事案として読める。攻撃者による脆弱性悪用というより、複合機の操作導線、既定設定、宛先履歴、ワンタッチ送信などが重なり、意図しない外部送信につながる類型と考えるのが妥当となる。悪用という観点では、第三者が受信…",
+      "article_path": "articles/d260598b3fe838ce.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/21/55322.html"
+    },
+    {
+      "entry_id": "7368e09fd7123e71",
+      "title": "キャネット（鹿児島市）ホームページ内マイページに不正アクセス、複数の二次被害を確認",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-20T23:05:06+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Credential Theft",
+      "summary_preview": "概要ScanNetSecurityの記事によれば、鹿児島市のキャネットのホームページ内マイページで不正アクセスが発生し、複数の二次被害が確認された。詳細本文が未提示のため、原因が脆弱性悪用、認証情報流用、設定不備、運用手続きの弱さのいずれかは未確認となる。攻撃者視点では、顧客向けマイページは個人情報、契約情報、手続き機能に近く、認証突破後に情報閲覧だけでな…",
+      "article_path": "articles/7368e09fd7123e71.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/21/55321.html"
+    },
+    {
+      "entry_id": "17087860747ce48e",
+      "title": "資生堂美容室の業務委託先に不正アクセス、顧客情報が閲覧された可能性は否定できず",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-20T23:05:03+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要ScanNetSecurityは、資生堂美容室の業務委託先が不正アクセスを受け、顧客情報が閲覧された可能性を否定できないと報じている。現時点で、侵入経路、影響件数、閲覧または持ち出しが確認された情報項目、委託先が管理していたシステム範囲は記事から確認できない。攻撃者視点では、顧客情報に氏名、連絡先、予約・来店履歴、担当者情報などが含まれる場合、標的型フ…",
+      "article_path": "articles/17087860747ce48e.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/21/55320.html"
+    },
+    {
+      "entry_id": "8951339a8505d9a4",
+      "title": "2025年度上場企業の内部統制の不備、2012年度以降三番目に多い結果に",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-20T23:00:23+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要ScanNetSecurityは、2025年度の上場企業における内部統制の不備が、2012年度以降で三番目に多い水準になったと伝えている。この記事単体からは特定企業、業種、統制領域、件数の内訳までは確認できず、自組織に直ちに侵害が迫る情報とは読めない。一方で、内部統制の不備は会計・業務プロセスだけでなく、アクセス権管理、変更管理、ログ保全、委託先管理な…",
+      "article_path": "articles/8951339a8505d9a4.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/21/55319.html"
+    },
+    {
+      "entry_id": "17f2964576227875",
+      "title": "SPFとDMARCを有効な設定にした国内大学は14校（4.1%）にとどまる",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-20T23:00:21+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Misconfiguration",
+      "summary_preview": "概要ScanNetSecurityは、国内大学のうちSPFとDMARCを有効な設定にしている学校が14校、4.1%にとどまるとの記事を掲載した。メール送信基盤そのものが侵害された話ではなく、送信ドメイン認証の不備により、攻撃者が大学名義に見えるメールを作りやすくなる点が焦点となる。悪用は、受験生、学生、教職員、共同研究先、取引先に対するなりすましメール、認…",
+      "article_path": "articles/17f2964576227875.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/21/55318.html"
+    },
+    {
+      "entry_id": "88ba886f7eb19c9c",
+      "title": "セコムの八代理紗氏、千葉県警サイバー捜査分析官に任期付警察官として任命",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-20T23:00:18+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要ScanNetSecurityは、セコムの八代理紗氏が千葉県警のサイバー捜査分析官に任期付警察官として任命されたと報じている。これは脆弱性や侵害の発生ではなく、民間の専門人材を捜査機関側に取り込む官民連携の人事に関する話題となる。CSIRT視点では、直接の技術的リスクよりも、今後のインシデント対応で警察との情報共有、証拠保全、被害届・相談の導線がより実…",
+      "article_path": "articles/88ba886f7eb19c9c.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/21/55317.html"
+    },
+    {
+      "entry_id": "ad5b3608e9c1832a",
+      "title": "HENNGEとWithSecure、戦略的パートナーシップを米国HENNGEに拡大",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-20T23:00:13+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要ScanNetSecurityの記事は、HENNGEとWithSecureの戦略的パートナーシップを米国HENNGEへ拡大するという事業面の発表を扱っている。現時点で入力情報から確認できる範囲では、脆弱性、侵害、悪用手法の公表ではないため、CSIRTが直ちに検知や封じ込めへ移る案件ではない。悪用シナリオとしては本件そのものではなく、今後この連携を通じて…",
+      "article_path": "articles/ad5b3608e9c1832a.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/21/55316.html"
+    },
+    {
+      "entry_id": "8af495d879e21c95",
+      "title": "HENNGE、部長職以上限定「Executive Lunch Meeting 2026 in Tokyo」7 / 22 東京で開催",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-20T23:00:11+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要ScanNetSecurityが、HENNGEの部長職以上限定イベント「Executive Lunch Meeting 2026 in Tokyo」を2026年7月22日に東京で開催する旨を伝えている。入力情報上はイベント告知にとどまり、脆弱性、侵害、攻撃観測、パッチ配布に関する記述はなく、CSIRTが直ちに封じ込めや検知強化へ移る材料は見当たらない。…",
+      "article_path": "articles/8af495d879e21c95.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/21/55315.html"
+    },
+    {
+      "entry_id": "b1576418ed376d1f",
+      "title": "総務省「巧妙化・複雑化するサイバー攻撃への対策の在り方に関する検討会」開催、株式会社BLUE 篠田佳奈氏ほか参加",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-20T23:00:08+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要ScanNetSecurityは、総務省が「巧妙化・複雑化するサイバー攻撃への対策の在り方に関する検討会」を開催し、株式会社BLUEの篠田佳奈氏らが参加したと報じている。この記事自体は攻撃発生や脆弱性公開ではなく、政策検討の開始・進行を示す情報であり、直ちに封じ込めやパッチ適用を要する性質ではない。CSIRT視点では、攻撃者がこの会合を直接悪用するとい…",
+      "article_path": "articles/b1576418ed376d1f.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/21/55314.html"
+    },
+    {
+      "entry_id": "1a2716cf3e4ad8f2",
+      "title": "AeyeScan に手動巡回機能で任意のJavaScript を実行できる新機能",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-20T23:00:04+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要ScanNetSecurityの記事は、Webアプリケーション脆弱性診断サービスのAeyeScanに、手動巡回時に任意のJavaScriptを実行できる機能が追加されたことを伝えている。攻撃者による悪用というより、診断担当者が認証後画面、動的UI、SPA、権限別メニューなど、通常のクローリングだけでは到達しにくい画面遷移を補助するための機能として理解す…",
+      "article_path": "articles/1a2716cf3e4ad8f2.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/21/55313.html"
+    }
+  ]
+}
