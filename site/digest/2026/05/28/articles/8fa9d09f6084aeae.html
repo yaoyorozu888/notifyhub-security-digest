@@ -1,0 +1,334 @@
+<!-- article.html テンプレート（生成用） (例: /digest/YYYY/MM/DD/articles/<entry_id>.html)
+     サーバ側（Function）で {{...}} を置換して出力してください。
+-->
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/favicon-192.png" />
+  <title>エナジーウィズの海外グループ会社が管理する情報の一部がダークウェブに掲載 | NotifyHub Cybersecurity Daily Report</title>
+  <style>
+    :root{
+      --bg:#0b1020; --panel:#0f1730; --panel2:#121c3a;
+      --text:#e7ecff; --muted:#a9b4df; --line:#22305b;
+      --accent:#7aa2ff; --good:#4ade80; --warn:#fbbf24; --bad:#fb7185;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+      --radius:18px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      background: radial-gradient(1000px 700px at 20% -10%, rgba(122,162,255,.25), transparent 60%),
+                  radial-gradient(900px 600px at 90% 10%, rgba(251,113,133,.12), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+    }
+    a{color:inherit}
+    .wrap{max-width:960px; margin:0 auto; padding:22px 18px 44px}
+    .topbar{
+      display:flex; justify-content:space-between; align-items:center; gap:12px;
+      margin-bottom:12px;
+    }
+    .crumb a{
+      text-decoration:none;
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .crumb a:hover{border-color:rgba(122,162,255,.65)}
+    .chip{
+      display:inline-flex; align-items:center; gap:8px;
+      background:rgba(27,38,80,.75);
+      border:1px solid rgba(34,48,91,.9);
+      padding:7px 10px; border-radius:999px;
+      font-size:12px; color:var(--muted);
+      backdrop-filter: blur(10px);
+      white-space:nowrap;
+    }
+    .chip strong{color:var(--text); font-weight:650}
+    .panel{
+      background: linear-gradient(180deg, rgba(15,23,48,.9), rgba(15,23,48,.75));
+      border:1px solid rgba(34,48,91,.9);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .head{
+      padding:16px 16px 12px;
+      border-bottom:1px solid rgba(34,48,91,.9);
+      background:rgba(18,28,58,.55);
+    }
+    h1{
+      margin:0;
+      font-size:20px;
+      line-height:1.35;
+      letter-spacing:.15px;
+    }
+    .meta{
+      margin-top:10px;
+      display:flex; gap:10px; flex-wrap:wrap;
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.6;
+    }
+    .meta a{color:var(--muted)}
+    .meta a:hover{color:var(--accent)}
+    .tags{
+      margin-top:12px;
+      display:flex; gap:8px; flex-wrap:wrap;
+    }
+    .tag{
+      font-size:11px;
+      padding:6px 9px;
+      border-radius:999px;
+      background:rgba(27,38,80,.65);
+      border:1px solid rgba(34,48,91,.9);
+      color:var(--muted);
+      white-space:nowrap;
+    }
+    .tag.level-Critical{border-color:rgba(251,113,133,.65); color:#ffd0d7}
+    .tag.level-High{border-color:rgba(251,191,36,.65); color:#ffe9b0}
+    .tag.level-Medium{border-color:rgba(122,162,255,.65); color:#dbe6ff}
+    .tag.level-Low{border-color:rgba(74,222,128,.55); color:#d0ffe2}
+    .tag.level-Info{border-color:rgba(169,180,223,.55); color:rgba(169,180,223,.95)}
+    .body{
+      padding:16px;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+    }
+    .section{
+      background:rgba(18,28,58,.35);
+      border:1px solid rgba(34,48,91,.75);
+      border-radius:16px;
+      padding:14px;
+    }
+    .section h2{
+      margin:0 0 10px;
+      font-size:14px;
+      letter-spacing:.1px;
+    }
+    .ruleReason{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.65;
+      white-space:pre-wrap;
+    }
+    .infoSources{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.5;
+    }
+    .infoSourceRow{
+      margin:0;
+      padding:0;
+    }
+    .infoSourceRow + .infoSourceRow{
+      margin-top:2px;
+    }
+
+    /* --- summary_html styles (OpenAI output uses h4/p/ul/li/strong/code/br) --- */
+    .summary h4{
+      margin:14px 0 8px;
+      font-size:13px;
+      letter-spacing:.1px;
+      padding-left:10px;
+      border-left:3px solid rgba(122,162,255,.65);
+      color: rgba(231,236,255,.95);
+    }
+    .summary p{margin:8px 0; color:rgba(231,236,255,.92); line-height:1.75}
+    .summary ul, .summary ol{margin:8px 0 8px 1.2em; padding:0}
+    .summary li{margin:6px 0; color:rgba(231,236,255,.92); line-height:1.7}
+    .summary strong{
+      color:var(--text);
+      font-weight:750;
+      padding:0 .2em;
+      border-radius:8px;
+      background: linear-gradient(transparent 60%, rgba(122,162,255,.22) 60%);
+    }
+    .summary code{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 8px;
+      background: rgba(11,16,32,.6);
+      border: 1px solid rgba(34,48,91,.85);
+      color: rgba(231,236,255,.95);
+      white-space: nowrap;
+    }
+
+    .terms{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:10px;
+    }
+    @media (max-width: 860px){
+      .terms{grid-template-columns: 1fr}
+    }
+    .termCard{
+      background:rgba(11,16,32,.45);
+      border:1px solid rgba(34,48,91,.85);
+      border-radius:14px;
+      padding:12px;
+      min-width:0;
+    }
+    .termCard .term{
+      font-weight:700;
+      font-size:13px;
+      margin:0 0 8px;
+      word-break:break-word;
+    }
+    .termCard .exp{
+      margin:0;
+      color:rgba(231,236,255,.9);
+      line-height:1.7;
+      font-size:12px;
+      white-space:pre-wrap;
+    }
+    .subSectionTitle{
+      margin:16px 0 8px;
+      font-size:12px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:var(--muted);
+    }
+    .deepDive{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:10px;
+      margin-top:8px;
+    }
+    .deepDiveCard{
+      background:rgba(12,20,38,.6);
+    }
+
+    .footer{
+      margin-top:14px;
+      color:rgba(169,180,223,.75);
+      font-size:12px;
+      line-height:1.7;
+      text-align:center;
+    }
+    .btnRow{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px}
+    .linkbtn{
+      text-decoration:none;
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .linkbtn:hover{border-color:rgba(122,162,255,.65)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="crumb">
+        <!-- ../index.html は通常 "../index.html" でOK -->
+        <a href="../index.html">← 日次トップへ戻る</a>
+      </div>
+      <div class="chip">entry_id <strong class="mono">8fa9d09f6084aeae</strong></div>
+    </div>
+
+    <div class="panel">
+      <div class="head">
+        <h1>エナジーウィズの海外グループ会社が管理する情報の一部がダークウェブに掲載</h1>
+
+        <div class="meta">
+          <span>🗞️ ScanNetSecurity</span>
+          <span>🕒 2026-05-27T08:05:09+09:00</span>
+          <span>🔗 <a href="https://scan.netsecurity.ne.jp/article/2026/05/27/55357.html" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
+        </div>
+
+        <div class="tags">
+          <span class="tag level-Medium">Impact: Medium</span>
+          <span class="tag">Data Breach</span>
+        </div>
+
+        <div class="btnRow">
+          <a class="linkbtn" href="https://scan.netsecurity.ne.jp/article/2026/05/27/55357.html" target="_blank" rel="noopener noreferrer">原文リンク</a>
+          <a class="linkbtn" href="https://www.notifyhub.site/digest/2026/05/28/">日次トップ</a>
+        </div>
+      </div>
+
+      <div class="body">
+        
+        <div class="section">
+          <h2>Impact判定理由</h2>
+          <div class="ruleReason">ダークウェブ掲載が報じられており、機密情報の二次悪用リスクは現実的だが、データ種別・件数・真正性・侵入経路が未確認。
+海外グループ会社起点でも共有システムや取引先連絡網を介した波及確認が必要で、運用負荷は中程度。
+情報源はScanNetSecurityのメディア二次情報であり、一次公表や悪用詳細が不足するため補正で引き上げない。</div>
+        </div>
+        <div class="section summary">
+          <h2>🧾 要約（ChatGPT / gpt-5.5-2026-04-23）</h2>
+          <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
+          <div><h4>概要</h4><p>ScanNetSecurityは、エナジーウィズの海外グループ会社が管理する情報の一部がダークウェブに掲載された件を報じている。本文情報だけでは侵入経路、掲載データの種類、件数、真正性確認の状況は読み取れず、現時点の判断軸は<strong>情報公開型のデータ侵害</strong>として扱うことに置くのが妥当となる。悪用面では、掲載情報が顧客・取引先・従業員・認証情報のいずれを含むかで、標的型フィッシング、なりすまし、追加脅迫、海外拠点から国内側への探索に広がる可能性が変わる。グループ会社管理情報は、親会社の直接管理外に見えても、共通ドメイン、共有システム、取引先連絡網、委託契約を通じて<strong>国内本社のインシデント対応</strong>へ波及しやすい。CSIRTは公表文待ちだけにせず、海外拠点との連絡線、掲載サンプルの真正性、漏えい元が現行環境か過去バックアップか、認証情報の有無を切り分ける必要がある。未確認事項として、攻撃者名、ランサムウェア関与、業務停止の有無、規制当局・本人通知の要否が残る。</p></div>
+        </div>
+
+        <div class="section">
+          <h2>📌 キーワード解説</h2>
+          <div class="terms">
+            <div class="termCard">
+  <div class="term">ダークウェブ掲載</div>
+  <p class="exp">漏えい確定と同義ではない。攻撃者が販売・脅迫に使う段階を示し、真正性確認が要点となる</p>
+</div>
+<div class="termCard">
+  <div class="term">真正性確認</div>
+  <p class="exp">掲載サンプルが本物か、過去流出の再掲かを切り分ける作業。範囲確定と通知要否の前提となる</p>
+</div>
+<div class="termCard">
+  <div class="term">グループ会社管理情報</div>
+  <p class="exp">親会社保有情報と責任境界がずれやすい。委託、共同利用、越境移転の確認が初動を左右する</p>
+</div>
+<div class="termCard">
+  <div class="term">二次悪用</div>
+  <p class="exp">流出自体とは別に、詐欺や侵入へ使われる段階。個人情報だけでなく認証情報や取引文脈も焦点となる</p>
+</div>
+          </div>
+          <h3 class="subSectionTitle">深掘り解説</h3>
+          <div class="deepDive">
+            <div class="termCard deepDiveCard">
+  <div class="term">ダークウェブ掲載を受けた初動の切り分け</div>
+  <p class="exp">ダークウェブ掲載の連絡を受けた初動で重要なのは、掲載の有無だけで重大度を決めず、真正性、鮮度、悪用可能性を分けて見ることにある。攻撃者の投稿には、実侵害の証拠、過去流出データの再販売、別組織データの混入、脅迫目的の誇張が混在する。ここを分けないまま全社通知や取引先説明に進むと、過大対応と過小対応の両方を招きやすい。
+
+具体例として、海外子会社の取引先一覧、担当者メールアドレス、VPN利用者名らしき一覧が掲載された場合を考える。ファイル名や社内用語が一致しても、それだけで現行環境からの漏えいとは限らない。まずサンプルの作成日時、退職者や旧取引先の含有率、現行システムの命名規則、バックアップ媒体のラベル、過去の委託先共有履歴を照合する。認証情報が含まれる場合は、漏えい経路の確定を待たず、対象アカウントのパスワードリセット、セッション失効、多要素認証の強制、条件付きアクセスの厳格化を優先する。
+
+同時に、調査線を三つに分けると判断がぶれにくい。第一に技術調査線として、海外拠点のEDR、VPN、IdP、メール、ファイル共有、特権操作ログを保全する。第二に業務影響線として、掲載情報が顧客、取引先、従業員、知的財産、契約情報のどれに該当するかを分類する。第三に対外対応線として、法務、広報、個人情報保護、海外規制対応の窓口を並走させる。特に海外グループ会社では、現地法人の管理下にある情報でも、国内本社のブランド、契約上の責任、共同利用の説明義務に波及することがある。
+
+封じ込めでは、投稿削除依頼だけでは効果が限定的となる。掲載後は複製や再販売が前提となるため、攻撃者の公開面を追うより、悪用される入口を塞ぐ判断が効く。取引先へのなりすましメール、請求先変更依頼、従業員への認証情報詐取、公開情報を使った電話照会の増加を監視し、問い合わせ窓口にも共有する。ダークウェブ監視は証拠収集の一部であり、実際のリスク低減はアカウント、取引プロセス、連絡経路の防御強化で進めやすい</p>
+</div>
+          </div>
+        </div>
+
+        
+
+        <div class="section">
+          <h2>🕘 生成情報</h2>
+          <div class="ruleReason">
+対象期間：2026-05-27T06:00:00+09:00 〜 2026-05-28T06:00:00+09:00
+生成時刻：2026-05-28T07:03:34.643086+09:00
+免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      notifyhub.site
+    </div>
+  </div>
+</body>
+</html>
