@@ -1,0 +1,362 @@
+{
+  "date": "2026-05-30",
+  "window": {
+    "from": "2026-05-29T06:00:00+09:00",
+    "to": "2026-05-30T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 22
+  },
+  "generated_at_jst": "2026-05-30T06:58:16.201812+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "Gartner 2026年戦略的技術トレンド発表",
+      "source_name": "Gartner",
+      "published_at": "2026-05-29T08:08:54+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要Gartnerが2026年のトップ10戦略的技術トレンドを公表した。AIネイティブ開発プラットフォームやAIスーパーコンピューティングプラットフォームが上位を占め、企業はAIを前提としたインフラ再構築を迫られる。機密コンピューティングやマルチエージェントシステムも注目され、物理AIやドメイン特化型言語モデルの実用化が進む見通しだ。プリエンプティブサイバ…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://www.gartner.com/en/articles/top-technology-trends-2026",
+      "selection_reason": "2026年のIT基盤変革を象徴するAIネイティブ開発やスーパーコンピューティングなど実務判断に直結するトレンドを網羅",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "Gartner Top 10 Strategic Technology Trends for 2026",
+          "url": "https://www.gartner.com/en/articles/top-technology-trends-2026",
+          "source_type": "web"
+        },
+        {
+          "title": "Deloitte Tech Trends 2026",
+          "url": "https://www.deloitte.com/us/en/insights/topics/technology-management/tech-trends.html",
+          "source_type": "web"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "Anthropicが9650億ドル評価額で資金調達",
+      "source_name": "TechCrunch / Bloomberg",
+      "published_at": "2026-05-29T10:25:51+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Other",
+      "summary_preview": "概要Anthropicが650億ドルの資金調達を完了し、評価額9650億ドルに到達した。OpenAIを上回る規模でAI業界の資金集中が顕著になる。AI支出の急増は中国テック企業の収益を圧迫しており、Nvidiaサーバーメーカーもボトルネックを指摘する。企業はAIエージェント導入時の支出上限設定を怠ると数億ドルの損失リスクを抱える事例も報告された。Opus …",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://techcrunch.com/2026/05/28/anthropic-releases-opus-4-8-with-new-dynamic-workflow-tool/",
+      "selection_reason": "AI企業価値の急拡大と資金調達規模がAI市場全体の投資動向を示す最新事例",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "Anthropic valuation surge",
+          "url": "https://www.youtube.com/watch?v=JkLevX7tHBY",
+          "source_type": "web"
+        },
+        {
+          "title": "China Tech Earnings Hit by AI Spending",
+          "url": "https://www.youtube.com/watch?v=Z6BKQvrK3-I",
+          "source_type": "web"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "AI活用サイバー攻撃の新事例報告",
+      "source_name": "The Hacker News",
+      "published_at": "2026-05-29T20:37:25+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要ロシア系グループGREYVIBEがAIを駆使したウクライナ向けサイバー攻撃を展開中と判明した。ChatGPTの要約機能を悪用したフィッシング手法ChatGPhishも新たに確認された。LLMエージェントを悪用した侵入後活動の事例も増加傾向にある。vibe-codedアプリの露出分析から、セキュリティスタックの限界が指摘される。企業はAIツール導入時の入…",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://thehackernews.com/",
+      "selection_reason": "AIを悪用した攻撃手法の進化がセキュリティ実務に即時対応を求める",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "New Russian-Linked GREYVIBE Targets Ukraine with AI-Powered Cyberattacks",
+          "url": "https://thehackernews.com/",
+          "source_type": "web"
+        },
+        {
+          "title": "ChatGPhish Vulnerability Turns ChatGPT Web Summaries Into a Phishing Surface",
+          "url": "https://thehackernews.com/",
+          "source_type": "web"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "3856ebe59446cf1d",
+      "title": "CVE-2026-0257 Palo Alto Networks PAN-OS Authentication Bypass Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-05-29T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Exploit",
+      "summary_preview": "概要CISA KEVに、Palo Alto Networks PAN-OSの認証バイパス脆弱性 CVE-2026-0257 が既知悪用として登録された。PAN-OSはファイアウォールやVPNなど境界制御に使われるため、攻撃者が認証を迂回できる条件に管理インターフェースや利用者向けポータルの露出が重なると、境界で止めるはずの通信制御そのものが侵入口に変わる。…",
+      "article_path": "articles/3856ebe59446cf1d.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "60ec6f6755f82ec5",
+      "title": "ChatGPhish Vulnerability Turns ChatGPT Web Summaries Into a Phishing Surface",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-05-29T18:07:12+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "Cybersecurity researchers have disclosed details of a vulnerability in OpenAI ChatGPT that leverages the artificial intelligence (AI) assistant&#x27;s implicit trust in Markdown l…",
+      "article_path": "articles/60ec6f6755f82ec5.html",
+      "original_url": "https://thehackernews.com/2026/05/chatgphish-vulnerability-turns-chatgpt.html"
+    },
+    {
+      "entry_id": "7c0f435610652ee0",
+      "title": "Attackers Use LLM Agent for Post-Exploitation After Marimo CVE-2026-39987 Exploit",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-05-29T14:39:56+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要The Hacker Newsは、公開到達可能なMarimo notebookがCVE-2026-39987の悪用で侵害され、その後に攻撃者がLLMエージェントを侵害後作業に使った事例を報じた。入力情報ではCVSSスコアは示されていないが、成立条件はインターネットから到達可能なMarimo環境と脆弱なバージョンの組み合わせに寄り、侵入後にクラウド認証情…",
+      "article_path": "articles/7c0f435610652ee0.html",
+      "original_url": "https://thehackernews.com/2026/05/attackers-use-llm-agent-for-post.html"
+    },
+    {
+      "entry_id": "37f4472c02223a94",
+      "title": "New Russian-Linked GREYVIBE Targets Ukraine with AI-Powered Cyberattacks",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-05-29T11:31:59+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要The Hacker Newsは、WithSecureの見立てとして、未公開だった脅威アクターGREYVIBEが少なくとも2025年8月以降、ウクライナおよびウクライナ関連組織を継続的に狙っていると伝えた。ロシア語圏、ロシア時間帯で活動し、クレムリンの国家利益に沿う可能性が示されているが、現時点の入力情報だけでは侵入経路、利用マルウェア、具体的なIoC…",
+      "article_path": "articles/37f4472c02223a94.html",
+      "original_url": "https://thehackernews.com/2026/05/new-russian-linked-greyvibe-targets.html"
+    },
+    {
+      "entry_id": "b4e6fffaa96c2349",
+      "title": "What 2,000 Exposed Vibe-Coded Apps Reveal About the Limits of Most Security Stacks",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-05-29T10:30:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Misconfiguration",
+      "summary_preview": "概要記事は、従業員がAI支援で業務アプリを作り、IT/Securityの承認や監査を経ずに本番系へ接続し、公開インターネット上に置く「Shadow AI」のリスクが拡大していると指摘する。観測では2,000件規模の露出アプリが示唆されるが、入力情報だけでは個別組織、検証方法、実際の悪用有無は未確認。攻撃者は脆弱性を探す前に、認証なし画面、埋め込みAPIキー…",
+      "article_path": "articles/b4e6fffaa96c2349.html",
+      "original_url": "https://thehackernews.com/2026/05/what-2000-exposed-vibe-coded-apps.html"
+    },
+    {
+      "entry_id": "17cd690a52b1c8d6",
+      "title": "Malicious Sicoob NuGet Steals Banking Credentials as npm Packages Target Cloud Secrets",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-05-29T09:11:25+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要The Hacker Newsは、ブラジルの協同組合金融システムSicoob向けC# SDKを装うNuGetパッケージSicoob.Sdkのバージョン2.0.0〜2.0.4に、クライアントIDやPFX証明書を外部送信する機能が含まれていたと報じた。併せてnpm側でもクラウド関連のシークレットを狙う悪性パッケージが観測されており、攻撃者は開発者端末やCI…",
+      "article_path": "articles/17cd690a52b1c8d6.html",
+      "original_url": "https://thehackernews.com/2026/05/malicious-sicoob-nuget-steals-banking.html"
+    },
+    {
+      "entry_id": "df4b1cc2d9309fbc",
+      "title": "Kimsuky Deploys HTTPSpy, Expands Arsenal with HelloDoor and VS Code Tunnels",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-05-29T05:57:41+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "The North Korean state-sponsored threat actor known as Kimsuky (aka Velvet Chollima) has been attributed to a fresh set of cyber attacks targeting South Korean military and corpor…",
+      "article_path": "articles/df4b1cc2d9309fbc.html",
+      "original_url": "https://thehackernews.com/2026/05/kimsuky-deploys-httpspy-expands-arsenal.html"
+    },
+    {
+      "entry_id": "3a8c677577f4cb1d",
+      "title": "ISC Stormcast For Friday, May 29th, 2026 https://isc.sans.edu/podcastdetail/9950, (Fri, May 29th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-05-29T02:00:02+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要SANS ISCが2026年5月29日分のStormcastを公開したという通知だが、入力には要約、参照URL、扱われた個別トピックが含まれていない。現時点で確認できるのは日次ブリーフィングの公開のみで、脆弱性、マルウェア、侵入事案、設定不備のいずれが主題かは判断できない。悪用可能性についても、攻撃手法、対象製品、露出条件、必要権限、PoCや悪用観測の…",
+      "article_path": "articles/3a8c677577f4cb1d.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33030"
+    },
+    {
+      "entry_id": "28f53ba310c65d2e",
+      "title": "Cisco Secure Access and Microsoft Edge for Business Integration",
+      "source_name": "Cisco Security Blog",
+      "category": "reporting",
+      "published_at": "2026-05-29T12:00:46+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要Cisco Security Blogは、Cisco Secure AccessとMicrosoft Edge for Businessの新しい統合を発表した。内容は脆弱性や侵害報告ではなく、企業向けブラウザとセキュアアクセス基盤を連携させ、業務アプリケーションとデータへのアクセス制御を強める製品機能の案内となる。攻撃者がこの統合そのものを悪用する話で…",
+      "article_path": "articles/28f53ba310c65d2e.html",
+      "original_url": "https://blogs.cisco.com/security/secure-access-microsoft-edge-business-integration/"
+    },
+    {
+      "entry_id": "62887564a73b8600",
+      "title": "革新的情報通信技術（Beyond 5G（6G））基金事業 要素技術・シーズ創出型プログラムに係る令和8年度新規委託研究の公募について（予告）（追加情報）",
+      "source_name": "NICT NOTICE",
+      "category": "reporting",
+      "published_at": "2026-05-29T05:00:00+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/62887564a73b8600.html",
+      "original_url": "/publicity/topics/2026/05/29-1.html"
+    },
+    {
+      "entry_id": "d64d1b2663867f6d",
+      "title": "Proofpoint Blog 54回【募集】AI セキュリティ SE モトム！ ～ これから標準になるセキュリティを創る",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-28T23:10:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要ScanNetSecurityに掲載された本件は、Proofpoint Blogの連載枠で公開されたAIセキュリティSEの募集告知と読み取れる。提供情報の範囲では、脆弱性、侵害、悪用中の攻撃キャンペーン、設定不備の注意喚起ではなく、CSIRTが即時対応すべき技術的インシデントは確認できない。悪用の観点では、この記事自体が攻撃手法を示すものではない一方、…",
+      "article_path": "articles/d64d1b2663867f6d.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/29/55386.html"
+    },
+    {
+      "entry_id": "3905fad386e076b2",
+      "title": "NPO法人ポータルサイト掲載の事業報告書、一定の電磁的操作で黒塗り処理部分が読み取れる状態に",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-28T23:05:15+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要ScanNetSecurityは、NPO法人ポータルサイトに掲載された事業報告書について、黒塗り処理された部分が一定の電磁的操作により読み取れる状態だったと報じた。画面上は隠れていても、PDFや文書ファイル内に元の文字列や画像レイヤーが残っていれば、コピー、検索、レイヤー抽出、OCR補正などで内容を復元される可能性がある。攻撃者にとっては侵入を伴わず、…",
+      "article_path": "articles/3905fad386e076b2.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/29/55385.html"
+    },
+    {
+      "entry_id": "be4ee070b6cf3639",
+      "title": "宮崎県が廃止したドメインを第三者が再取得、注意を呼びかけ",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-28T23:05:13+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Misconfiguration",
+      "summary_preview": "概要宮崎県が過去に利用し廃止したドメインを第三者が再取得し、県が注意を呼びかけた事案となる。廃止ドメインは単にWebサイトが消えるだけでなく、検索結果、過去の広報資料、外部サイトのリンク、利用者のブックマークに残り続けるため、再取得者が県関連サイトに見えるページを置けば誘導の成功率が上がりやすい。さらにMXレコードを設定された場合、過去の連絡先に誤送信され…",
+      "article_path": "articles/be4ee070b6cf3639.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/29/55384.html"
+    },
+    {
+      "entry_id": "5ceaa1558375e298",
+      "title": "GENIEE MA に不正アクセス、第三者がクラウド計算資源を不正利用",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-28T23:05:12+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要ScanNetSecurityは「GENIEE MA に不正アクセス、第三者がクラウド計算資源を不正利用」と報じており、マーケティングオートメーション系サービスの管理基盤または関連するクラウド環境で、第三者による不正なリソース消費が発生した事案と読める。攻撃者にとっては、脆弱性そのものよりも認証情報やクラウド権限の奪取が高い投資対効果を持ち、仮想マシン…",
+      "article_path": "articles/5ceaa1558375e298.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/29/55383.html"
+    },
+    {
+      "entry_id": "4ba2c60a247235c6",
+      "title": "添付ファイル分離メールサーバに第三者からサイバー攻撃、メールアドレスと添付ファイルが漏えいした可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-28T23:05:11+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要ScanNetSecurityの記事によれば、添付ファイル分離メールサーバが第三者からサイバー攻撃を受け、メールアドレスと添付ファイルが漏えいした可能性が示されている。添付ファイル分離の仕組みは、メール本文から添付を切り離して保管・配送するため、侵害されると単一メールボックスではなく、一定期間に処理された送受信者情報やファイル保管領域へ影響が広がりうる…",
+      "article_path": "articles/4ba2c60a247235c6.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/29/55382.html"
+    },
+    {
+      "entry_id": "e239dd0d5e3fbf9a",
+      "title": "アクサのペット保険のシステムへの不正アクセス、第 2 報公表の漏えい可能性がある個人情報の内訳を修正",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-28T23:05:08+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要ScanNetSecurityの記事は、アクサのペット保険のシステムに対する不正アクセスについて、第2報で公表された漏えい可能性がある個人情報の内訳が修正された事案を扱っている。現時点の入力情報からは、侵入経路、攻撃者の権限範囲、持ち出しの確証、対象人数、修正前後で増減した情報項目までは確認できない。悪用面では、氏名、連絡先、契約情報、ペット関連情報な…",
+      "article_path": "articles/e239dd0d5e3fbf9a.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/29/55381.html"
+    },
+    {
+      "entry_id": "934ea82fe704245c",
+      "title": "CSアカウンティングに不正アクセス、EDR が不審な動作を検知し隔離",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-28T23:05:07+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要CSアカウンティングで不正アクセスが確認され、EDRが不審な動作を検知して対象端末を隔離したと報じられた。現時点で読み取れる攻撃像は、侵入済み端末上でマルウェア実行、認証情報探索、外部通信、横展開準備などの挙動が発生し、EDRの制御により通信またはプロセスが止められた可能性が高いという範囲にとどまる。会計関連データを扱う業務環境では、単一端末の問題に見…",
+      "article_path": "articles/934ea82fe704245c.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/29/55380.html"
+    },
+    {
+      "entry_id": "53559f99b971454a",
+      "title": "CKCネットワークと学参が運用するシステムにランサムウェア攻撃、漏えいの可能性を否定できず",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-28T23:05:05+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要ScanNetSecurityは、CKCネットワークと学参が運用するシステムでランサムウェア攻撃が発生し、情報漏えいの可能性を否定できない状況と伝えている。ランサムウェア事案では、暗号化による業務停止だけでなく、事前に取得したデータを交渉材料にする二重恐喝が使われるため、復旧可否と漏えい有無を分けて判断する必要がある。影響範囲は、対象システム内の個人情…",
+      "article_path": "articles/53559f99b971454a.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/29/55379.html"
+    },
+    {
+      "entry_id": "32e8c7e2eaaeec37",
+      "title": "青山財産ネットワークス グループ会社にランサムウェア攻撃",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-28T23:05:03+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要ScanNetSecurityが、青山財産ネットワークスのグループ会社に対するランサムウェア攻撃を報じた。現時点の入力情報だけでは、侵入口、暗号化範囲、情報流出の有無、復旧状況、攻撃グループ名は確認できない。ランサムウェアは、VPNやリモートアクセス、認証情報、公開サーバの脆弱性などから侵入した後、ファイルサーバ、業務端末、バックアップ、共有ID基盤へ…",
+      "article_path": "articles/32e8c7e2eaaeec37.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/29/55378.html"
+    },
+    {
+      "entry_id": "b8a51296cf42f86f",
+      "title": "報奨金 1 万 5,000 ドル獲得 ～ GMOサイバーセキュリティ byイエラエ 川根健太郎氏「Pwn2Own Berlin 2026」出場",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-28T23:00:10+00:00",
+      "impact_level": "Info",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要ScanNetSecurityは、GMOサイバーセキュリティ byイエラエの川根健太郎氏が「Pwn2Own Berlin 2026」に出場し、報奨金1万5,000ドルを獲得したと報じている。Pwn2Ownは実製品に対する脆弱性実証を競う場であり、成立した攻撃は通常ベンダーへ通知され、修正や情報公開のプロセスに移るため、CSIRTとしては将来のアドバイザ…",
+      "article_path": "articles/b8a51296cf42f86f.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/29/55377.html"
+    },
+    {
+      "entry_id": "3ec12ca72c34e617",
+      "title": "認証・認可システムにおけるカスタム開発の手間を解消、「Auth0 for AI Agents」に最新機能",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-28T23:00:09+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要ScanNetSecurityは、Auth0 for AI Agentsに認証・認可システムのカスタム開発負担を減らす最新機能が追加されたと報じている。脆弱性や侵害の発生ではなく、AIエージェントが外部APIや社内データへアクセスする際の本人性確認と権限付与を製品側で扱いやすくする文脈の記事とみるべき。悪用面では、機能そのものよりも設計不備が問題になり…",
+      "article_path": "articles/3ec12ca72c34e617.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/29/55376.html"
+    },
+    {
+      "entry_id": "c07b4b6d23bce1bb",
+      "title": "脆弱性検知数 約 1.5 倍 ～ ASMサービス「GMOサイバー攻撃ネットde診断 ASM」が技術スタック解析ツールをフルスクラッチでリプレイス",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-28T23:00:05+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要ScanNetSecurityは、ASMサービス「GMOサイバー攻撃ネットde診断 ASM」で技術スタック解析ツールをフルスクラッチで置き換え、脆弱性検知数が約1.5倍になったという製品更新を報じた。これは特定の新規脆弱性や侵害発生の告知ではなく、外部公開資産の識別精度や検査対象の広がりが変わった可能性を示す話として扱うのが妥当となる。攻撃者に直接悪用…",
+      "article_path": "articles/c07b4b6d23bce1bb.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/05/29/55375.html"
+    }
+  ]
+}
