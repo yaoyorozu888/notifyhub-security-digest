@@ -1,0 +1,391 @@
+{
+  "date": "2026-06-02",
+  "window": {
+    "from": "2026-06-01T06:00:00+09:00",
+    "to": "2026-06-02T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 24
+  },
+  "generated_at_jst": "2026-06-02T07:28:45.428315+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "Anthropic、IPOに向けたSEC秘密提出で急成長",
+      "source_name": "Washington Post",
+      "published_at": "2026-06-01T17:54:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要AnthropicがWall Street上場に向けSECに秘密提出を行った。企業価値は9650億ドル規模に達し、AI分野の資金調達環境が変化する。Claudeモデルを中心とした事業拡大が背景にある。投資家や競合他社の戦略に影響を与える可能性が高い。AI規制や倫理議論とも連動する動きとして注目される。",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://www.washingtonpost.com/business/2026/06/01/anthropic-ai-claude-ipo/ffc2f514-5dd8-11f1-9c46-d6211372eede_story.html",
+      "selection_reason": "AI企業の企業価値が急上昇し、市場上場が実務判断に直結する動きとして重要",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "Anthropic races toward a Wall Street debut",
+          "url": "https://www.washingtonpost.com/business/2026/06/01/anthropic-ai-claude-ipo/ffc2f514-5dd8-11f1-9c46-d6211372eede_story.html",
+          "source_type": "news"
+        },
+        {
+          "title": "Anthropic AI valuation",
+          "url": "https://apnews.com/article/anthropic-ai-claude-openai-valuation-86c432fa375548fd4f111f8164d6ffc1",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "NVIDIA、RTX SparkでPC市場に参入",
+      "source_name": "TrendForce",
+      "published_at": "2026-06-01T09:21:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要NVIDIAがRTX Sparkチップを発表し、Windows PC向けにAIエージェント対応を強化した。MediaTekとの共同設計でTSMC 3nmプロセスを採用する。株価が6.2%上昇し、市場反応が強い。コンシューマー向けAIハードウェアの新潮流を示す。PCメーカーや開発者の製品戦略に影響を及ぼす。",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://www.trendforce.com/news/2026/06/01/news-nvidia-enters-pc-market-with-rtx-spark-featuring-mediatek-co-designed-n1x-cpu-on-tsmc-3nm/",
+      "selection_reason": "半導体とAIハードウェアの融合トレンドがITインフラとデバイス開発に直結する",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "NVIDIA Enters PC Market with RTX Spark",
+          "url": "https://www.trendforce.com/news/2026/06/01/news-nvidia-enters-pc-market-with-rtx-spark-featuring-mediatek-co-designed-n1x-cpu-on-tsmc-3nm/",
+          "source_type": "news"
+        },
+        {
+          "title": "Nvidia Has Best Trading Day",
+          "url": "https://www.forbes.com/sites/siladityaray/2026/06/01/nvidia-has-best-trading-day-in-months-after-revealing-new-microsoft-chip/",
+          "source_type": "news"
+        },
+        {
+          "title": "Stocks Hit Record on AI Rally",
+          "url": "https://www.bloomberg.com/news/videos/2026-06-01/the-china-show-6-01-2026-video",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "CISA、既知悪用脆弱性カタログに新件追加",
+      "source_name": "CISA",
+      "published_at": "2026-06-01T21:55:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CISAが6月1日にKEVカタログへ複数脆弱性を追加した。OracleやPalo Alto関連のCVEが対象で、即時対応が求められる。組織の露出管理とパッチ適用優先度が変わる。サプライチェーンやVPN関連のリスクが顕在化している。防御側の実務計画に影響を与える。",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "selection_reason": "実務的な脆弱性対応の優先順位付けに直結する公式情報として重要",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "Known Exploited Vulnerabilities Catalog",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+          "source_type": "official"
+        },
+        {
+          "title": "Insight Managed Exposure Defense",
+          "url": "https://www.helpnetsecurity.com/2026/06/01/insight-managed-exposure-defense/",
+          "source_type": "news"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "06cb0dcc785d9e05",
+      "title": "CVE-2024-21182 Oracle WebLogic Server Unspecified Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-06-01T00:00:00+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "Oracle / WebLogic Server",
+      "article_path": "articles/06cb0dcc785d9e05.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "3854edec9c7adf03",
+      "title": "Miasma Supply Chain Attack Compromises Red Hat npm Packages with Credential-Stealing Worm",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-01T17:40:28+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "A new Mini Shai-Hulud supply chain attack campaign, codenamed Miasma, has compromised @redhat-cloud-services packages to steal credentials and secrets from developer machines and …",
+      "article_path": "articles/3854edec9c7adf03.html",
+      "original_url": "https://thehackernews.com/2026/06/miasma-supply-chain-attack-compromises.html"
+    },
+    {
+      "entry_id": "8bad492bf0b194c6",
+      "title": "⚡ Weekly Recap: New Linux Flaw, PAN-OS Exploit, AI-Powered Attacks, OAuth Phishing and More",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-01T13:59:54+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要The Hacker Newsの週次まとめとして、Linux関連の新たな欠陥、PAN-OSを狙う悪用、OAuthフィッシング、開発ツール汚染、AI支援型の攻撃が並列に取り上げられている。個別の脆弱性番号、影響バージョン、悪用観測の一次情報は本文断片から確認できず、CSIRTとしては「全件即時対応」ではなく、自組織の露出資産と認証基盤に照らした仕分けが必…",
+      "article_path": "articles/8bad492bf0b194c6.html",
+      "original_url": "https://thehackernews.com/2026/06/weekly-recap-new-linux-flaw-pan-os.html"
+    },
+    {
+      "entry_id": "107499144700cf85",
+      "title": "China-Aligned Groups Ramp Up Attacks: Dragon Weave Hits Czech Republic & Taiwan",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-01T11:54:24+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要The Hacker Newsは、Seqrite Labsの観測として、Operation Dragon Weaveと呼ばれる中国系とされるサイバー諜報キャンペーンが、チェコ共和国と台湾の政府関係者・市民を狙っていると報じた。攻撃は標的型メールにZIP添付を組み合わせ、受信者に展開・実行させた後、AdaptixC2 agentを導入する流れとみられる。…",
+      "article_path": "articles/107499144700cf85.html",
+      "original_url": "https://thehackernews.com/2026/06/china-aligned-groups-ramp-up-attacks.html"
+    },
+    {
+      "entry_id": "822c15a27abcc7be",
+      "title": "The Security Growth Platform: Why MSPs Are Moving Beyond vCISO Tools",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-01T11:30:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要The Hacker Newsの記事は、MSP/MSSPが従来のvCISOツールから、評価、助言、報告、コンプライアンス、営業・顧客管理まで含む「Security Growth Platform」へ移行しつつある、という市場動向を扱っている。脆弱性や侵害の告知ではなく、サービス提供モデルの変化が主題で、直接の悪用手口は示されていない一方、委託先ツールに…",
+      "article_path": "articles/822c15a27abcc7be.html",
+      "original_url": "https://thehackernews.com/2026/06/the-security-growth-platform-why-msps.html"
+    },
+    {
+      "entry_id": "17c83cf7d0bd555a",
+      "title": "OpenAI Codex Authentication Tokens Stolen in codexui-android npm Supply Chain Attack",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-01T09:31:15+00:00",
+      "impact_level": "High",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要The Hacker Newsは、OpenAI Codex利用者を狙う悪性のnpmパッケージcodexui-androidについて報じている。GitHubとnpm上では正規風のリモートWeb UIとして見せ、週次ダウンロード数が約29,000に達しており、開発者が導入するとOpenAI Codexの認証トークンが窃取される構図とされる。攻撃者にとっては…",
+      "article_path": "articles/17c83cf7d0bd555a.html",
+      "original_url": "https://thehackernews.com/2026/06/openai-codex-authentication-tokens.html"
+    },
+    {
+      "entry_id": "e67d922d4a78fc96",
+      "title": "Critical WP Maps Pro Flaw Actively Exploited to Create Admin Accounts",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-01T08:45:29+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要The Hacker Newsは、WordPressプラグインWP Maps Proの重大な脆弱性が悪用され、脆弱なサイト上に不正な管理者アカウントを作成する試みが進んでいると報じた。WP Maps Proは地図表示や地点情報を扱うプラグインで、販売実績があるため、個別サイトだけでなく制作会社や保守事業者が管理する複数サイトへ影響が連鎖する可能性がある…",
+      "article_path": "articles/e67d922d4a78fc96.html",
+      "original_url": "https://thehackernews.com/2026/06/critical-wp-maps-pro-flaw-actively.html"
+    },
+    {
+      "entry_id": "93ba2b68feb156fa",
+      "title": "ISC Stormcast For Monday, June 1st, 2026 https://isc.sans.edu/podcastdetail/9952, (Mon, Jun 1st)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-06-01T02:00:02+00:00",
+      "impact_level": "Info",
+      "threat_type": "Unknown",
+      "summary_preview": "概要SANS ISCのRSSとして、ISC Stormcast For Monday, June 1st, 2026 https://isc.sans.edu/podcastdetail/9952, (Mon, Jun 1st) が配信されたが、入力情報には本文要約、対象製品、CVE、IoC、観測件数が含まれていない。現時点で確認できる事実は、日次の短時間…",
+      "article_path": "articles/93ba2b68feb156fa.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33036"
+    },
+    {
+      "entry_id": "c213fa53821992ed",
+      "title": "Unidentified RAT pushes NetSupport RAT, (Mon, Jun 1st)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-06-01T00:02:30+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Malware",
+      "summary_preview": "概要SANS ISCは、識別されていないRATが追加ペイロードとしてNetSupport RATを展開する事案に触れているが、入力情報上は侵入経路、対象地域、検体ハッシュ、通信先、被害組織の有無が確認できない。NetSupportは正規の遠隔管理ソフトとしても使われるため、攻撃者にとっては導入後の操作が業務管理ツールに紛れやすく、初期侵入後の持続化と遠隔操…",
+      "article_path": "articles/c213fa53821992ed.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33034"
+    },
+    {
+      "entry_id": "cdfe3e6a3248b207",
+      "title": "Cisco Secure Access and Microsoft Purview Integration for Simplified Data Protection",
+      "source_name": "Cisco Security Blog",
+      "category": "reporting",
+      "published_at": "2026-06-01T12:00:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要Cisco Security Blogは、Cisco Secure AccessとMicrosoft Purviewの連携により、Purview側のDLPポリシーをCisco Secure Access上でクラウドおよびローカル適用できる機能を案内している。脆弱性や侵害の報告ではなく、DLPポリシーの適用点を増やす製品連携に関する告知となる。攻撃者がこ…",
+      "article_path": "articles/cdfe3e6a3248b207.html",
+      "original_url": "https://blogs.cisco.com/security/simplifying-cloud-dlp-with-secure-access-microsoft-purview/"
+    },
+    {
+      "entry_id": "78b40f4251cac143",
+      "title": "Cisco Secure Access and Island Browser Enable Zero Trust Everywhere",
+      "source_name": "Cisco Security Blog",
+      "category": "reporting",
+      "published_at": "2026-06-01T12:00:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要Cisco Security Blogは、Cisco Secure AccessとIslandのエンタープライズブラウザ連携により、非管理端末からプライベートアプリケーションへアクセスする場面の利用性とリスク低減を狙う内容を紹介した。脆弱性や侵害事案ではなく、ゼロトラストアクセスとブラウザ側の制御を組み合わせ、端末を完全管理できない場合でも接続先、利用…",
+      "article_path": "articles/78b40f4251cac143.html",
+      "original_url": "https://blogs.cisco.com/security/secure-access-island-integration/"
+    },
+    {
+      "entry_id": "cea94aebf490f88c",
+      "title": "Finding what lives between the alerts: Announcing Cisco Talos Threat Hunting",
+      "source_name": "Cisco Security Blog",
+      "category": "reporting",
+      "published_at": "2026-06-01T12:00:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要Ciscoは、Cisco Talos Threat HuntingをCisco Secure Endpoint、Cisco Secure Firewall、Cisco Duoにまたがって提供し、Security in Cloud Control経由で利用できるようにする拡張を発表した。本件は脆弱性や侵害の通知ではなく、アラート間に残る痕跡を製品横断の観…",
+      "article_path": "articles/cea94aebf490f88c.html",
+      "original_url": "https://blogs.cisco.com/security/announcing-cisco-talos-threat-hunting/"
+    },
+    {
+      "entry_id": "df2a0f28e97f46be",
+      "title": "From Log Flood to Threat Signal: Cisco and Splunk Bring Context to Modern Defense",
+      "source_name": "Cisco Security Blog",
+      "category": "reporting",
+      "published_at": "2026-06-01T12:00:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要Cisco Security Blogの記事は、Cisco FirewallとIsovalentの可視性をSplunk側に取り込み、ハイブリッド環境のログを検知判断に使いやすくする取り組みを紹介している。新たな脆弱性や侵害事例ではなく、ログ過多を文脈付きシグナルへ変換する検知運用の改善が主題となる。攻撃者が直接この発表を悪用する話ではないが、実環境では…",
+      "article_path": "articles/df2a0f28e97f46be.html",
+      "original_url": "https://blogs.cisco.com/security/new-splunk-detections-for-firewall-and-runtime-security/"
+    },
+    {
+      "entry_id": "91f008a37ca85ac8",
+      "title": "VU#158530: PCTCore64.sys Windows kernel driver contains missing access control vulnerability",
+      "source_name": "CERT/CC",
+      "category": "reporting",
+      "published_at": "2026-06-01T16:21:07+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "Overview\nThe PCTCore64.sys Windows kernel driver from PC Tools Internet Security exposes its \\\\.\\PCTCoreDriver device interface with no access control, allowing any user-mode proc…",
+      "article_path": "articles/91f008a37ca85ac8.html",
+      "original_url": "https://kb.cert.org/vuls/id/158530"
+    },
+    {
+      "entry_id": "eafb11e54368bc14",
+      "title": "「周波数資源開発シンポジウム2026」開催のお知らせ",
+      "source_name": "NICT NOTICE",
+      "category": "reporting",
+      "published_at": "2026-06-01T01:00:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要NICT NOTICEが「周波数資源開発シンポジウム2026」の開催を告知したもので、現時点の入力情報からは脆弱性、侵害、攻撃観測、修正対応に関する内容は確認できない。CSIRT観点では、直接の技術的リスクではなく、公開イベント名を使った参加登録を装うフィッシング、登壇者や関係部署を騙る連絡、資料配布を装う不審ファイルへの誘導といった二次的悪用の余地を…",
+      "article_path": "articles/eafb11e54368bc14.html",
+      "original_url": "/publicity/event/2026/07/09-1.html"
+    },
+    {
+      "entry_id": "b34217759386a34b",
+      "title": "エイテックプロに不正アクセス、システム障害が発生",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-31T23:05:03+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要ScanNetSecurityは、エイテックプロで不正アクセスに起因するシステム障害が発生したと報じている。現時点の入力情報では、侵入経路、影響を受けたシステム、停止範囲、情報流出の有無、復旧状況が確認できず、CSIRT側では業務停止を伴う侵入事案として初期評価するのが妥当となる。悪用の形は、公開サービスやリモートアクセス機器の侵害、認証情報の悪用、社…",
+      "article_path": "articles/b34217759386a34b.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/01/55395.html"
+    },
+    {
+      "entry_id": "b84c8c532f75ac77",
+      "title": "CVE停止の危機とNVDの停滞、セキュリティ担当者が直面する脆弱性情報分断の裏側",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-31T23:00:28+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要ScanNetSecurityの記事は、CVE制度の停止危機やNVDの処理停滞により、組織の脆弱性管理が依存してきた情報基盤に分断が生じる問題を扱っている。これは単一製品の脆弱性悪用ではなく、脆弱性の識別、深刻度評価、製品影響判定が遅れ、パッチ優先順位や例外承認の判断が揺らぐ運用リスクとして見る必要がある。攻撃者は制度そのものを攻撃しなくても、NVDの…",
+      "article_path": "articles/b84c8c532f75ac77.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/01/55394.html"
+    },
+    {
+      "entry_id": "c742dc042dd0fb07",
+      "title": "プルーフポイントのプラットフォームが Claude Compliance API と連携",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-31T23:00:25+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要ScanNetSecurityは、ProofpointのプラットフォームがClaude Compliance APIと連携したと伝えている。現時点で入力情報に本文要約や技術詳細がなく、脆弱性、侵害、悪用確認を示す材料はないため、CSIRT観点では新たな攻撃キャンペーンではなく、SaaSと生成AI系APIの連携に伴う運用リスクの確認案件として扱うのが妥当…",
+      "article_path": "articles/c742dc042dd0fb07.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/01/55393.html"
+    },
+    {
+      "entry_id": "48fb7cc69125bf91",
+      "title": "Okta ISPM と Claude Compliance API が統合",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-31T23:00:22+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要ScanNetSecurityの記事は、「Okta ISPM と Claude Compliance API が統合」されたという製品・機能連携の話題を扱っている。入力情報には本文要約がなく、現時点で脆弱性、侵害、悪用確認を示す材料は見当たらないため、CSIRT観点では直ちにインシデント対応へ移す話ではなく、AI利用統制とIDセキュリティ運用の接点とし…",
+      "article_path": "articles/48fb7cc69125bf91.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/01/55392.html"
+    },
+    {
+      "entry_id": "e312ab9aa6755985",
+      "title": "「空 × サイバーセキュリティ」をテーマにパネルディスカッション ～「Japan Drone/次世代エアモビリティEXPO 2026」開催 6 / 3 ～ 5",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-31T23:00:18+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要ScanNetSecurityの記事は、「Japan Drone/次世代エアモビリティEXPO 2026」で「空 × サイバーセキュリティ」をテーマにしたパネルディスカッションが開催されるという告知を扱っている。現時点では脆弱性、侵害、悪用事例の公表ではなく、CSIRT観点では直接の緊急対応よりも、ドローンや次世代エアモビリティがIT、OT、クラウド、…",
+      "article_path": "articles/e312ab9aa6755985.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/01/55391.html"
+    },
+    {
+      "entry_id": "7d10f728f4607085",
+      "title": "東京都「中小企業向けサイバーセキュリティ対策の極意」ポータルサイトの旧ドメインを第三者が取得",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-31T23:00:16+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Misconfiguration",
+      "summary_preview": "概要東京都の中小企業向けサイバーセキュリティ啓発ポータルで使われていた旧ドメインを第三者が取得した、という報道となる。組織侵害そのものではないが、過去の案内、ブックマーク、自治体・商工団体・取引先サイトのリンクから利用者が旧ドメインへ到達し、偽情報、フィッシング、マルウェア配布に誘導される余地が生じる。影響は東京都のシステム内部に直接広がる話ではなく、信頼…",
+      "article_path": "articles/7d10f728f4607085.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/01/55390.html"
+    },
+    {
+      "entry_id": "e7e94e009bb505c1",
+      "title": "商品問い合わせ欄への不審な QRコード等の投稿に注意喚起",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-31T23:00:12+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Phishing",
+      "summary_preview": "概要ScanNetSecurityは、商品問い合わせ欄に不審なQRコードなどが投稿される事象への注意喚起を取り上げている。攻撃者は問い合わせフォームを入口にし、本文中のURLではなく画像化された誘導先を担当者に見せ、業務端末や私物スマートフォンで読み取らせることでフィッシング、認証情報窃取、マルウェア配布へつなげる可能性がある。影響はECサイトやコーポレー…",
+      "article_path": "articles/e7e94e009bb505c1.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/01/55389.html"
+    },
+    {
+      "entry_id": "5ea390e40b56f908",
+      "title": "SGLang に複数の脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-31T23:00:08+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要ScanNetSecurityが「SGLang に複数の脆弱性」として報じたが、入力情報にはCVE番号、影響バージョン、修正有無、悪用状況が含まれていない。SGLangは大規模言語モデルの推論サービングに使われるため、脆弱性の内容によっては推論APIの不正操作、モデル実行基盤上でのコード実行、認証回避、情報漏えいなどに発展する可能性がある。悪用の広がり…",
+      "article_path": "articles/5ea390e40b56f908.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/01/55388.html"
+    },
+    {
+      "entry_id": "675ff0fd93a5f518",
+      "title": "dnsmasq に複数の脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-05-31T23:00:04+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要ScanNetSecurityは、dnsmasqに複数の脆弱性がある旨を伝えている。入力情報にはCVE番号、CVSS、影響バージョン、修正有無、悪用確認の記載がなく、現時点で技術的な成立条件は未確認として扱う必要がある。dnsmasqはDNS、DHCP、TFTPを小規模にまとめて提供するため、脆弱性の性質によっては名前解決の停止、IPアドレス配布の妨害…",
+      "article_path": "articles/675ff0fd93a5f518.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/01/55387.html"
+    }
+  ]
+}
