@@ -1,0 +1,482 @@
+{
+  "date": "2026-06-03",
+  "window": {
+    "from": "2026-06-02T06:00:00+09:00",
+    "to": "2026-06-03T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 32
+  },
+  "generated_at_jst": "2026-06-03T07:28:52.274059+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "Gartnerが2026年の戦略的技術トレンドを発表 AIネイティブ開発プラットフォームが注目",
+      "source_name": "Gartner",
+      "published_at": "2026-06-02T10:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要Gartnerは2026年のトップ戦略技術トレンドとしてAIネイティブ開発プラットフォームを1位に位置づけた。開発者が意図を記述するだけでAIがコード生成と最適化を担う仕組みが広がる。企業はこれによりソフトウェア開発の生産性を大幅に向上させられる。マルチエージェントシステムやAIスーパーコンピューティングプラットフォームも上位に並び、AI基盤の整備が急…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://www.gartner.com/en/articles/top-technology-trends-2026",
+      "selection_reason": "IT分野の基盤技術として企業戦略に直結するトレンドを提示し、実務判断に寄与",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "Top Strategic Technology Trends for 2026",
+          "url": "https://www.gartner.com/en/articles/top-technology-trends-2026",
+          "source_type": "web"
+        },
+        {
+          "title": "Tech Trends 2026",
+          "url": "https://www.deloitte.com/us/en/insights/topics/technology-management/tech-trends.html",
+          "source_type": "web"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "Anthropicが9650億ドル規模の資金調達 AI企業評価額で過去最大",
+      "source_name": "Build Fast with AI",
+      "published_at": "2026-06-01T12:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要Anthropicが650億ドルの資金を調達し、ポストマネー評価額9650億ドルに達した。民間AI企業として過去最大規模のラウンドである。OpenAIを上回る評価額となり、生成AI競争がさらに激化する。投資資金はモデル開発と企業向け展開に充てられる見込みだ。業界全体のAI研究加速と規制議論への影響が予想される。",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://www.buildfastwithai.com/blogs/ai-news-today-june-1-2026",
+      "selection_reason": "AI分野の企業動向として大規模投資が市場と技術開発に波及する",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "AI News Today - June 1, 2026",
+          "url": "https://www.buildfastwithai.com/blogs/ai-news-today-june-1-2026",
+          "source_type": "web"
+        },
+        {
+          "title": "AI News Briefs BULLETIN BOARD for June 2026",
+          "url": "https://radicaldatascience.wordpress.com/2026/06/01/ai-news-briefs-bulletin-board-for-june-2026/",
+          "source_type": "web"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "GartnerがPreemptive Cybersecurityを2026年トレンドに位置づけ",
+      "source_name": "Gartner",
+      "published_at": "2026-06-02T10:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Advisory",
+      "summary_preview": "概要Gartnerは2026年のトレンドにPreemptive Cybersecurityを挙げ、攻撃を未然に防ぐAI駆動型対策を強調した。AI Security Platformsと組み合わせ、脅威の予測と自動対応を可能にする。従来の事後対応から移行する企業が増える見通しだ。機密コンピューティングも併せて推奨され、データ保護の強化が求められる。セキュリテ…",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://www.gartner.com/en/articles/top-technology-trends-2026",
+      "selection_reason": "サイバーセキュリティ分野でAIを活用した予防的対策が実務に直結する",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "Top Strategic Technology Trends for 2026",
+          "url": "https://www.gartner.com/en/articles/top-technology-trends-2026",
+          "source_type": "web"
+        },
+        {
+          "title": "Cybersecurity Forecast 2026",
+          "url": "https://cloud.google.com/security/resources/cybersecurity-forecast",
+          "source_type": "web"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "ff328005e4a0cc74",
+      "title": "CVE-2022-0492 Linux Kernel Improper Authentication Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-06-02T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要CISA KEVに、Linux KernelのCVE-2022-0492が既知悪用脆弱性として掲載された。これはcgroups v1のrelease_agent処理における認可不備で、条件を満たすローカル攻撃者やコンテナ内の攻撃者が、ホスト側でroot権限のコード実行に近い形へ持ち込む余地がある。特に特権コンテナ、CAP_SYS_ADMIN付与、cgr…",
+      "article_path": "articles/ff328005e4a0cc74.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "7e28e257c66991c1",
+      "title": "CVE-2025-48595 Android Framework Integer Overflow Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-06-02T00:00:00+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "Android / Framework",
+      "article_path": "articles/7e28e257c66991c1.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "edf786a515f616e0",
+      "title": "Google June 2026 Android Update Patches 124 Flaws, One Actively Exploited",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-02T18:46:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Zero-day",
+      "summary_preview": "概要Googleが2026年6月のAndroidセキュリティ更新で124件の脆弱性を修正し、その中に既に悪用が確認されたCVE-2025-48595（CVSS 8.4）が含まれると報じられた。問題はAndroidのFrameworkコンポーネントにおける権限昇格で、ユーザー操作を必要としないとされるため、悪意あるアプリ、既存の侵入経路、端末上の別脆弱性と組…",
+      "article_path": "articles/edf786a515f616e0.html",
+      "original_url": "https://thehackernews.com/2026/06/google-june-2026-android-update-patches.html"
+    },
+    {
+      "entry_id": "7c88df6e880a3496",
+      "title": "Gamaredon Exploits WinRAR to Deliver GammaWorm and GammaSteel Against Ukraine",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-02T18:21:49+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要The Hacker Newsは、Sekoiaの分析として、ロシア系とされるGamaredonがWinRARのパストラバーサル脆弱性CVE-2025-8088を継続悪用し、Ukraine向けにGammaWormとGammaSteelを配布していると報じた。悪用は細工された圧縮ファイルの展開処理を利用し、HTML ApplicationのGammaPhi…",
+      "article_path": "articles/7c88df6e880a3496.html",
+      "original_url": "https://thehackernews.com/2026/06/gamaredon-exploits-winrar-to-deliver.html"
+    },
+    {
+      "entry_id": "8fa4c28659cd5489",
+      "title": "Oracle WebLogic CVE-2024-21182 Added to KEV Catalog After Active Exploitation",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-02T18:14:42+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要The Hacker Newsは、Oracle WebLogic Serverの脆弱性CVE-2024-21182が、実際の悪用確認を理由にCISAのKEVカタログへ追加されたと報じた。CVSSは7.5だが、要点は数値よりも認証なしでネットワーク到達可能な攻撃者が影響サーバを制御し得る点にあり、インターネット公開、DMZ配置、社内基幹系の中継点に置かれ…",
+      "article_path": "articles/8fa4c28659cd5489.html",
+      "original_url": "https://thehackernews.com/2026/06/oracle-weblogic-cve-2024-21182-added-to.html"
+    },
+    {
+      "entry_id": "fc4aff4a415715ce",
+      "title": "AI-Driven Exploitation is Destroying Vulnerability Management. Here’s How to Handle It.",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-02T11:58:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要The Hacker Newsは、AIを使った脆弱性の再現・武器化により、公開から無差別悪用までの時間が日単位から時間単位へ縮んでいるという問題提起を示した。攻撃者側は公開アドバイザリ、差分パッチ、PoC断片、製品ドキュメントを機械的に突き合わせ、認証前RCEや外部公開機器などROIの高い入口から先に量産スキャンへ移すため、従来の月次優先度付けでは初動…",
+      "article_path": "articles/fc4aff4a415715ce.html",
+      "original_url": "https://thehackernews.com/2026/06/ai-driven-exploitation-is-destroying.html"
+    },
+    {
+      "entry_id": "be9ba40ba9bb01f3",
+      "title": "How Leading Organizations Are Turning EDR Into Operational Resilience",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-02T10:30:00+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "Most organizations now recognize that endpoint protection alone is no longer sufficient.\n\nThat&#x27;s why adoption of endpoint detection and response (EDR) has accelerated rapidly…",
+      "article_path": "articles/be9ba40ba9bb01f3.html",
+      "original_url": "https://thehackernews.com/2026/06/how-leading-organizations-are-turning.html"
+    },
+    {
+      "entry_id": "2a0a322c98076d05",
+      "title": "Pakistan-Linked SideCopy Targets Afghanistan Finance Ministry with Xeno RAT",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-02T09:05:40+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "Cybersecurity researchers have disclosed details of a spear-phishing campaign likely undertaken by the Pakistan-aligned SideCopy group targeting Afghanistan&#x27;s Ministry of Fin…",
+      "article_path": "articles/2a0a322c98076d05.html",
+      "original_url": "https://thehackernews.com/2026/06/pakistan-linked-sidecopy-targets.html"
+    },
+    {
+      "entry_id": "f414e18502647d92",
+      "title": "Dashlane Discloses Brute-Force Attack, Encrypted Vaults of Fewer Than 20 Users Downloaded",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-02T03:55:25+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Credential Theft",
+      "summary_preview": "概要Dashlaneは、個人向けサブスクリプションの一部利用者に対し、外部の攻撃者がブルートフォース攻撃を行い、「20人未満」の暗号化Vaultがダウンロードされたと公表した。攻撃は特定アカウントの2FA突破を狙ったものとされ、認証に成功した後にVaultを取得する流れが想定されるため、単なるログイン試行ではなく保管済み認証情報への到達が問題となる。Vau…",
+      "article_path": "articles/f414e18502647d92.html",
+      "original_url": "https://thehackernews.com/2026/06/dashlane-discloses-brute-force-attack.html"
+    },
+    {
+      "entry_id": "f9ac0bb6d5dee92b",
+      "title": "New Wave Of Phishing Emails with SVG Files, (Tue, Jun 2nd)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-06-02T07:29:25+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Phishing",
+      "summary_preview": "概要SANS ISCは、本文にURLを置かず、SVGファイルだけを添付するフィッシングメールの増加を観測した。SVGは画像形式に見える一方、XMLベースでリンク、スクリプト、外部参照、HTML風の要素を含められるため、受信者が「画像」と誤認して開くと、認証情報窃取ページへの誘導やブラウザ上での不審処理につながり得る。攻撃者にとっては、本文URL検査や単純な…",
+      "article_path": "articles/f9ac0bb6d5dee92b.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33040"
+    },
+    {
+      "entry_id": "21279d87ef82bb43",
+      "title": "ISC Stormcast For Tuesday, June 2nd, 2026 https://isc.sans.edu/podcastdetail/9954, (Tue, Jun 2nd)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-06-02T02:00:02+00:00",
+      "impact_level": "Info",
+      "threat_type": "Unknown",
+      "summary_preview": "概要入力から確認できるのは、SANS ISC の日次ポッドキャスト「ISC Stormcast For Tuesday, June 2nd, 2026」が公開されたという事実に限られる。本文要約、参照URL、CVE、製品名、IOC、悪用観測の記載がないため、現時点で具体的な脆弱性対応や侵害調査へ直結する情報として扱う根拠は不足している。Stormcast …",
+      "article_path": "articles/21279d87ef82bb43.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33038"
+    },
+    {
+      "entry_id": "6dcf85f125b0dc3c",
+      "title": "Strengthening the Foundation: A Predictable, Customer focused Response to AI-Accelerated Vulnerability Discovery",
+      "source_name": "Cisco Security Blog",
+      "category": "reporting",
+      "published_at": "2026-06-02T13:00:35+00:00",
+      "impact_level": "Low",
+      "threat_type": "Patch",
+      "summary_preview": "概要Ciscoは、AIにより脆弱性の発見・検証が加速する状況を受け、セキュリティ修正の公開を月2回の定期リリースへ移行する方針を示した。これは個別CVEの緊急注意喚起ではなく、公開タイミングを予測可能にして、顧客側の評価、検証、展開を平準化する運用変更となる。攻撃者視点では、定期公開日に修正内容やファームウェア差分を集中的に確認し、未適用環境を狙うパッチ差…",
+      "article_path": "articles/6dcf85f125b0dc3c.html",
+      "original_url": "https://blogs.cisco.com/security/strengthening-the-foundation-a-predictable-customer-focused-response-to-ai-accelerated-vulnerability-discovery/"
+    },
+    {
+      "entry_id": "576e034d380148ff",
+      "title": "Quantum Resilience Needs a Common Language. Here’s Where to Start.",
+      "source_name": "Cisco Security Blog",
+      "category": "reporting",
+      "published_at": "2026-06-02T13:00:05+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "Navigate the transition to quantum-safe security with Cisco’s Quantum Resilience Framework. We provide a clear path to protecting your network and data against future quantum thre…",
+      "article_path": "articles/576e034d380148ff.html",
+      "original_url": "https://blogs.cisco.com/security/quantum-resilience-needs-a-common-language/"
+    },
+    {
+      "entry_id": "518ce9a1d7a2b9d8",
+      "title": "Security at Cisco Live: Going Shields Up for the Agentic Era",
+      "source_name": "Cisco Security Blog",
+      "category": "reporting",
+      "published_at": "2026-06-02T13:00:04+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要Cisco Security Blogの記事は、Cisco Liveに合わせて、AIが攻撃側の探索、脆弱性理解、攻撃手順の自動化を速める「Agentic Era」に備え、ネットワークやインフラへ防御機能を組み込む方向性を示している。具体的なCVE、侵害事例、悪用中のキャンペーンの告知ではなく、AIで攻撃速度が上がる前提に対し、検知・制御・封じ込めを人手…",
+      "article_path": "articles/518ce9a1d7a2b9d8.html",
+      "original_url": "https://blogs.cisco.com/security/security-at-cisco-live-going-shields-up-for-the-agentic-era/"
+    },
+    {
+      "entry_id": "883f66240b32a3cf",
+      "title": "Identity Elevated: A New Unified Identity Experience in Cisco Cloud Control",
+      "source_name": "Cisco Security Blog",
+      "category": "reporting",
+      "published_at": "2026-06-02T12:00:52+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要Cisco Security Blogは、Cisco Cloud Controlに人間、非人間、AIエージェントのアイデンティティを統合的に可視化し、操作につなげる新機能を追加したと紹介している。これは脆弱性や攻撃観測ではなく、クラウド運用で増え続けるサービスアカウント、トークン、AIエージェント権限を一つの管理面で扱うための製品機能の告知となる。攻撃…",
+      "article_path": "articles/883f66240b32a3cf.html",
+      "original_url": "https://blogs.cisco.com/security/a-new-unified-identity-experience-in-cisco-cloud-control/"
+    },
+    {
+      "entry_id": "eba6947d4c78a353",
+      "title": "Security Needs a New Operating Model",
+      "source_name": "Cisco Security Blog",
+      "category": "reporting",
+      "published_at": "2026-06-02T12:00:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要Cisco Security Blogの記事は、Cisco Cloud Control with AI Canvasを軸に、分断されたセキュリティ運用を文脈、ポリシー、AI支援アクションで統合する新しい運用モデルを提案している。脆弱性や侵害の公表ではなく、複数製品・複数クラウド・複数チームに分かれた運用で、アラート判断やポリシー適用が遅れる問題を製品ア…",
+      "article_path": "articles/eba6947d4c78a353.html",
+      "original_url": "https://blogs.cisco.com/security/security-needs-a-new-operating-model/"
+    },
+    {
+      "entry_id": "ccec0dab7431c9cc",
+      "title": "The npm Threat Landscape: Attack Surface and Mitigations (Updated June 2)",
+      "source_name": "Unit 42",
+      "category": "reporting",
+      "published_at": "2026-06-02T17:30:33+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要Unit 42は、Shai Hulud以降に顕在化したnpmサプライチェーンの攻撃面を、ワーム化可能なマルウェア、CI/CD永続化、多段階攻撃という観点で整理している。攻撃者は、悪性パッケージや侵害済みメンテナアカウントを使い、インストール時スクリプト、依存関係、公開トークンを経由して認証情報窃取や後続パッケージの改ざんへつなげる。影響は単一端末に閉じ…",
+      "article_path": "articles/ccec0dab7431c9cc.html",
+      "original_url": "https://unit42.paloaltonetworks.com/monitoring-npm-supply-chain-attacks/"
+    },
+    {
+      "entry_id": "d0fa97c1846ea343",
+      "title": "Operation FlutterBridge: macOS Malvertising Campaign Spreads New FlutterShell Backdoor",
+      "source_name": "Unit 42",
+      "category": "reporting",
+      "published_at": "2026-06-02T10:00:31+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "Operation FlutterBridge is a malvertising campaign targeting macOS users. It distributed the new backdoor FlutterShell, built using the Flutter framework.\nThe post Operation Flutt…",
+      "article_path": "articles/d0fa97c1846ea343.html",
+      "original_url": "https://unit42.paloaltonetworks.com/flutterbridge-new-fluttershell-backdoor/"
+    },
+    {
+      "entry_id": "99a3783a5725618b",
+      "title": "VU#615987: Missing IPsec Integrity Protection for IMS SIP Signaling in Verizon VoLTE Deployments",
+      "source_name": "CERT/CC",
+      "category": "reporting",
+      "published_at": "2026-06-02T14:27:25+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "Overview\nVoLTE deployments on Verizon’s IMS network have operated without negotiated SIP integrity protection. In observed test conditions, SIP signaling—including registration, c…",
+      "article_path": "articles/99a3783a5725618b.html",
+      "original_url": "https://kb.cert.org/vuls/id/615987"
+    },
+    {
+      "entry_id": "d05c45d7d75dcc87",
+      "title": "VU#265691: Appsmiths SQL Query autocomplete renderer contains a cross site scripting vulnerability",
+      "source_name": "CERT/CC",
+      "category": "reporting",
+      "published_at": "2026-06-02T14:06:35+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "Overview\nA stored cross-site scripting (XSS) vulnerability has been discovered in Appsmith, specifically in the CodeMirror based SQL query editor’s autocomplete renderer. CVE-2026…",
+      "article_path": "articles/d05c45d7d75dcc87.html",
+      "original_url": "https://kb.cert.org/vuls/id/265691"
+    },
+    {
+      "entry_id": "dd4435afa5ecd338",
+      "title": "VU#873170: Collibra Agent contains improper authentication and path traversal vulnerabilities",
+      "source_name": "CERT/CC",
+      "category": "reporting",
+      "published_at": "2026-06-02T13:54:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CERT/CC は、Collibra Agent における 未認証で到達可能なREST機能 と ZIP展開時のパストラバーサル を連鎖させ、リモートからコード実行に至る脆弱性を公開した。対象は Collibra Platform と Collibra Platform Self-Hosted の Agent で、/rest/* の認証・認可不備により攻…",
+      "article_path": "articles/dd4435afa5ecd338.html",
+      "original_url": "https://kb.cert.org/vuls/id/873170"
+    },
+    {
+      "entry_id": "9de9dd4fdf6bf6b9",
+      "title": "「Interop Tokyo 2026」に出展 ～サイバーセキュリティ研究所～",
+      "source_name": "NICT NOTICE",
+      "category": "reporting",
+      "published_at": "2026-06-02T05:00:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要NICT NOTICEの告知として、サイバーセキュリティ研究所が「Interop Tokyo 2026」に出展する予定が示された。入力情報には展示テーマ、講演内容、デモ対象、公開資料の詳細が含まれておらず、現時点で脆弱性悪用や侵害発生を示す情報ではない。攻撃者に直接悪用される技術情報というより、研究動向や公開展示を通じた周辺情報の収集に使われる可能性を…",
+      "article_path": "articles/9de9dd4fdf6bf6b9.html",
+      "original_url": "/publicity/event/2026/06/10-1.html"
+    },
+    {
+      "entry_id": "94b31c8b874b03f8",
+      "title": "台風6号の影響による「展示室」臨時休館のお知らせ",
+      "source_name": "NICT NOTICE",
+      "category": "reporting",
+      "published_at": "2026-06-02T04:30:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要NICT NOTICE が、台風6号の影響により「展示室」を臨時休館する旨を告知した。本文から読み取れる範囲では、これは防災・施設運用上の周知であり、脆弱性、侵害、マルウェア、認証情報窃取などの攻撃経路は示されていない。攻撃者が直接悪用する技術的条件も確認できず、CSIRTとしての影響は、関連組織の問い合わせ対応、公開情報監視、災害時の連絡経路確認とい…",
+      "article_path": "articles/94b31c8b874b03f8.html",
+      "original_url": "/publicity/topics/2026/06/02-1.html"
+    },
+    {
+      "entry_id": "1c57b8949a67ad9c",
+      "title": "セキュリティ研究者がカンファレンス講演枠を獲得する完璧な方法：応募システムのハッキング",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-01T23:15:04+00:00",
+      "impact_level": "Low",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要ScanNetSecurityの記事タイトルから読み取れる範囲では、セキュリティ研究者がカンファレンスの講演応募システムを攻撃し、講演枠の獲得に結び付けるという事案または解説記事とみられる。悪用の中心は、応募内容、審査状態、採択結果、審査者権限などを扱うWebアプリケーション上の認可不備や業務フローの欠陥になる可能性が高い。影響は当該イベント運営に限ら…",
+      "article_path": "articles/1c57b8949a67ad9c.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/02/55404.html"
+    },
+    {
+      "entry_id": "41e8dd9d4d128e17",
+      "title": "Booking.comへの不正アクセス、売上金受領口座情報が改ざん 約 900 万円の損失が発生",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-01T23:05:08+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要ScanNetSecurityの記事によれば、Booking.comに関連する管理機能への不正アクセスにより、売上金の受領口座情報が改ざんされ、約900万円の損失が発生したとされる。攻撃者は、脆弱性を突くよりも、窃取した認証情報、フィッシング、セッション奪取、委託先端末の侵害などを使い、正規の管理画面操作として入金先を変更した可能性がある。影響は単一サ…",
+      "article_path": "articles/41e8dd9d4d128e17.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/02/55403.html"
+    },
+    {
+      "entry_id": "4bc3956a0662cf4f",
+      "title": "Booking.com経由でホテルグランバッハ京都セレクトを予約した顧客にフィッシングサイト誘導メッセージ、注意を呼びかけ",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-01T23:05:05+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Phishing",
+      "summary_preview": "概要ScanNetSecurityは、Booking.com経由でホテルグランバッハ京都セレクトを予約した顧客に対し、フィッシングサイトへ誘導するメッセージが届いたとして注意喚起が出ていると報じた。予約者向けメッセージは実在の宿泊予定、宿泊施設名、予約文脈を伴うため、一般的なばらまきメールより信用されやすく、攻撃者は決済情報や認証情報の入力を促す形で悪用す…",
+      "article_path": "articles/4bc3956a0662cf4f.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/02/55402.html"
+    },
+    {
+      "entry_id": "282a486337118da2",
+      "title": "Booking.com 経由でホテルサンルート浅草を予約した顧客に予約確認を装った不審メッセージ、注意を呼びかけ",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-01T23:05:03+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Phishing",
+      "summary_preview": "概要ScanNetSecurityは、Booking.com 経由でホテルサンルート浅草を予約した顧客に対し、予約確認を装った不審メッセージが届いているとして注意喚起が出たことを報じている。典型的には、実在する予約情報や宿泊日程を文面に混ぜ、追加決済、カード再登録、本人確認、予約取消回避などを理由に外部サイトへ誘導し、決済情報や認証情報を入力させる流れが想…",
+      "article_path": "articles/282a486337118da2.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/02/55401.html"
+    },
+    {
+      "entry_id": "9ef86d7b8bbe9072",
+      "title": "NTTセキュリティ・ジャパンの Mythos 解説ほか",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-01T23:00:19+00:00",
+      "impact_level": "Info",
+      "threat_type": "Unknown",
+      "summary_preview": "概要ScanNetSecurityに「NTTセキュリティ・ジャパンの Mythos 解説ほか」という記事が掲載されたことまでは確認できるが、入力には本文要約や参照URLがなく、Mythosが製品、サービス、分析手法、あるいは脅威名のいずれを指すかは未確認となる。現時点で特定の脆弱性、侵害事例、悪用コード、攻撃キャンペーンは示されておらず、攻撃者がどう悪用す…",
+      "article_path": "articles/9ef86d7b8bbe9072.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/02/55400.html"
+    },
+    {
+      "entry_id": "5c845d623fa0eb76",
+      "title": "「 たのめーる」がログイン通知メール送信開始 法人会員対象",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-01T23:00:17+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要ScanNetSecurityの記事は、法人向け通販サービス「たのめーる」が法人会員を対象にログイン通知メールの送信を開始したと伝えている。これは侵害や脆弱性の公表ではなく、認証後の利用を利用者側に知らせる検知寄りの安全対策として見るのが妥当となる。攻撃者が漏えい済みパスワードや使い回し認証情報でログインできた場合、通知は不審なアクセスを利用者や管理者…",
+      "article_path": "articles/5c845d623fa0eb76.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/02/55399.html"
+    },
+    {
+      "entry_id": "af1ff34645ca622a",
+      "title": "AeyeScan が時限式のワンタイムパスワード認証サイトの診断に対応",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-01T23:00:13+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要ScanNetSecurityは、AeyeScanが時限式のワンタイムパスワード認証を使うサイトの診断に対応したと報じている。これは脆弱性悪用や侵害事案ではなく、従来は自動診断が止まりやすかった多要素認証後の画面まで検査対象を広げる製品機能の更新と見るべき内容になる。攻撃者に直接使われる情報というより、CSIRTや開発部門にとっては、認証後機能の権限不…",
+      "article_path": "articles/af1ff34645ca622a.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/02/55398.html"
+    },
+    {
+      "entry_id": "cc01e45d26723423",
+      "title": "講義動画を YouTube 配信 ～ IPA「制御システムのセキュリティリスク分析ガイド オンラインセミナー2026年度（上期）」開催",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-01T23:00:09+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要ScanNetSecurityは、IPAの「制御システムのセキュリティリスク分析ガイド オンラインセミナー2026年度（上期）」開催を伝えている。講義動画をYouTubeで配信する形式と読み取れ、脆弱性や侵害事案の告知ではなく、制御システムのリスク分析手法を学ぶ機会として扱うべき内容となる。直接の悪用経路は示されていないが、制御システムでは資産把握や業…",
+      "article_path": "articles/cc01e45d26723423.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/02/55397.html"
+    },
+    {
+      "entry_id": "0899ded79adfd8bd",
+      "title": "Jupyter Server にオープンリダイレクトの脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-01T23:00:04+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要ScanNetSecurityが、Jupyter Serverにオープンリダイレクトの脆弱性がある旨を報じた。攻撃者は信頼されたJupyter ServerのURLを細工し、利用者を攻撃者管理サイトへ転送させ、ログイン情報、SSO認可コード、APIトークンの入力や送信を誘導する使い方が想定される。脆弱性そのものは通常、認証前RCEのようにサーバを直接奪…",
+      "article_path": "articles/0899ded79adfd8bd.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/02/55396.html"
+    }
+  ]
+}

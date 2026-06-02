@@ -1,0 +1,334 @@
+<!-- article.html テンプレート（生成用） (例: /digest/YYYY/MM/DD/articles/<entry_id>.html)
+     サーバ側（Function）で {{...}} を置換して出力してください。
+-->
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/favicon-192.png" />
+  <title>CVE-2022-0492 Linux Kernel Improper Authentication Vulnerability | NotifyHub Cybersecurity Daily Report</title>
+  <style>
+    :root{
+      --bg:#0b1020; --panel:#0f1730; --panel2:#121c3a;
+      --text:#e7ecff; --muted:#a9b4df; --line:#22305b;
+      --accent:#7aa2ff; --good:#4ade80; --warn:#fbbf24; --bad:#fb7185;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+      --radius:18px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      background: radial-gradient(1000px 700px at 20% -10%, rgba(122,162,255,.25), transparent 60%),
+                  radial-gradient(900px 600px at 90% 10%, rgba(251,113,133,.12), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+    }
+    a{color:inherit}
+    .wrap{max-width:960px; margin:0 auto; padding:22px 18px 44px}
+    .topbar{
+      display:flex; justify-content:space-between; align-items:center; gap:12px;
+      margin-bottom:12px;
+    }
+    .crumb a{
+      text-decoration:none;
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .crumb a:hover{border-color:rgba(122,162,255,.65)}
+    .chip{
+      display:inline-flex; align-items:center; gap:8px;
+      background:rgba(27,38,80,.75);
+      border:1px solid rgba(34,48,91,.9);
+      padding:7px 10px; border-radius:999px;
+      font-size:12px; color:var(--muted);
+      backdrop-filter: blur(10px);
+      white-space:nowrap;
+    }
+    .chip strong{color:var(--text); font-weight:650}
+    .panel{
+      background: linear-gradient(180deg, rgba(15,23,48,.9), rgba(15,23,48,.75));
+      border:1px solid rgba(34,48,91,.9);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .head{
+      padding:16px 16px 12px;
+      border-bottom:1px solid rgba(34,48,91,.9);
+      background:rgba(18,28,58,.55);
+    }
+    h1{
+      margin:0;
+      font-size:20px;
+      line-height:1.35;
+      letter-spacing:.15px;
+    }
+    .meta{
+      margin-top:10px;
+      display:flex; gap:10px; flex-wrap:wrap;
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.6;
+    }
+    .meta a{color:var(--muted)}
+    .meta a:hover{color:var(--accent)}
+    .tags{
+      margin-top:12px;
+      display:flex; gap:8px; flex-wrap:wrap;
+    }
+    .tag{
+      font-size:11px;
+      padding:6px 9px;
+      border-radius:999px;
+      background:rgba(27,38,80,.65);
+      border:1px solid rgba(34,48,91,.9);
+      color:var(--muted);
+      white-space:nowrap;
+    }
+    .tag.level-Critical{border-color:rgba(251,113,133,.65); color:#ffd0d7}
+    .tag.level-High{border-color:rgba(251,191,36,.65); color:#ffe9b0}
+    .tag.level-Medium{border-color:rgba(122,162,255,.65); color:#dbe6ff}
+    .tag.level-Low{border-color:rgba(74,222,128,.55); color:#d0ffe2}
+    .tag.level-Info{border-color:rgba(169,180,223,.55); color:rgba(169,180,223,.95)}
+    .body{
+      padding:16px;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+    }
+    .section{
+      background:rgba(18,28,58,.35);
+      border:1px solid rgba(34,48,91,.75);
+      border-radius:16px;
+      padding:14px;
+    }
+    .section h2{
+      margin:0 0 10px;
+      font-size:14px;
+      letter-spacing:.1px;
+    }
+    .ruleReason{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.65;
+      white-space:pre-wrap;
+    }
+    .infoSources{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.5;
+    }
+    .infoSourceRow{
+      margin:0;
+      padding:0;
+    }
+    .infoSourceRow + .infoSourceRow{
+      margin-top:2px;
+    }
+
+    /* --- summary_html styles (OpenAI output uses h4/p/ul/li/strong/code/br) --- */
+    .summary h4{
+      margin:14px 0 8px;
+      font-size:13px;
+      letter-spacing:.1px;
+      padding-left:10px;
+      border-left:3px solid rgba(122,162,255,.65);
+      color: rgba(231,236,255,.95);
+    }
+    .summary p{margin:8px 0; color:rgba(231,236,255,.92); line-height:1.75}
+    .summary ul, .summary ol{margin:8px 0 8px 1.2em; padding:0}
+    .summary li{margin:6px 0; color:rgba(231,236,255,.92); line-height:1.7}
+    .summary strong{
+      color:var(--text);
+      font-weight:750;
+      padding:0 .2em;
+      border-radius:8px;
+      background: linear-gradient(transparent 60%, rgba(122,162,255,.22) 60%);
+    }
+    .summary code{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 8px;
+      background: rgba(11,16,32,.6);
+      border: 1px solid rgba(34,48,91,.85);
+      color: rgba(231,236,255,.95);
+      white-space: nowrap;
+    }
+
+    .terms{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:10px;
+    }
+    @media (max-width: 860px){
+      .terms{grid-template-columns: 1fr}
+    }
+    .termCard{
+      background:rgba(11,16,32,.45);
+      border:1px solid rgba(34,48,91,.85);
+      border-radius:14px;
+      padding:12px;
+      min-width:0;
+    }
+    .termCard .term{
+      font-weight:700;
+      font-size:13px;
+      margin:0 0 8px;
+      word-break:break-word;
+    }
+    .termCard .exp{
+      margin:0;
+      color:rgba(231,236,255,.9);
+      line-height:1.7;
+      font-size:12px;
+      white-space:pre-wrap;
+    }
+    .subSectionTitle{
+      margin:16px 0 8px;
+      font-size:12px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:var(--muted);
+    }
+    .deepDive{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:10px;
+      margin-top:8px;
+    }
+    .deepDiveCard{
+      background:rgba(12,20,38,.6);
+    }
+
+    .footer{
+      margin-top:14px;
+      color:rgba(169,180,223,.75);
+      font-size:12px;
+      line-height:1.7;
+      text-align:center;
+    }
+    .btnRow{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px}
+    .linkbtn{
+      text-decoration:none;
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .linkbtn:hover{border-color:rgba(122,162,255,.65)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="crumb">
+        <!-- ../index.html は通常 "../index.html" でOK -->
+        <a href="../index.html">← 日次トップへ戻る</a>
+      </div>
+      <div class="chip">entry_id <strong class="mono">ff328005e4a0cc74</strong></div>
+    </div>
+
+    <div class="panel">
+      <div class="head">
+        <h1>CVE-2022-0492 Linux Kernel Improper Authentication Vulnerability</h1>
+
+        <div class="meta">
+          <span>🗞️ CISA KEV</span>
+          <span>🕒 2026-06-02T09:00:00+09:00</span>
+          <span>🔗 <a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
+        </div>
+
+        <div class="tags">
+          <span class="tag level-High">Impact: High</span>
+          <span class="tag">Exploit</span>
+        </div>
+
+        <div class="btnRow">
+          <a class="linkbtn" href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener noreferrer">原文リンク</a>
+          <a class="linkbtn" href="https://www.notifyhub.site/digest/2026/06/03/">日次トップ</a>
+        </div>
+      </div>
+
+      <div class="body">
+        
+        <div class="section">
+          <h2>Impact判定理由</h2>
+          <div class="ruleReason">CVE-2022-0492はCVSS v3.1 7.8のローカル権限昇格で、外部直接RCEではない一方、条件次第でコンテナ侵害からホスト侵害へ広がる。
+特権コンテナやCAP_SYS_ADMINを許す基盤では運用影響が大きく、ノード隔離やカーネル更新の調整が必要になる。
+CISA KEV掲載により悪用現実性が高いシグナルとなるため、ベース評価を一段引き上げてHighと評価する。</div>
+        </div>
+        <div class="section summary">
+          <h2>🧾 要約（ChatGPT / gpt-5.5-2026-04-23）</h2>
+          <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
+          <div><h4>概要</h4><p>CISA KEVに、Linux KernelのCVE-2022-0492が既知悪用脆弱性として掲載された。これはcgroups v1の<code>release_agent</code>処理における認可不備で、条件を満たすローカル攻撃者やコンテナ内の攻撃者が、ホスト側でroot権限のコード実行に近い形へ持ち込む余地がある。特に<strong>特権コンテナ</strong>、<strong>CAP_SYS_ADMIN付与</strong>、cgroup v1の書き込み可能なマウント、LSMやseccompの緩い設定が重なる環境では、単なるコンテナ内侵害から<strong>ホスト侵害</strong>へ影響が広がる。外部から直接到達するRCEではないため、入口は別の脆弱性、認証情報窃取、CI/CDジョブ悪用、侵害済みコンテナなどになる。未確認事項として、今回のKEV掲載時点で悪用対象の業種、攻撃手口、観測規模、特定ディストリビューションへの偏りは示されていない。CSIRTとしてはCVSSだけでなく、<strong>コンテナ実行基盤の権限設計</strong>と未パッチカーネルの残存を優先的に確認する必要がある。</p></div>
+        </div>
+
+        <div class="section">
+          <h2>📌 キーワード解説</h2>
+          <div class="terms">
+            <div class="termCard">
+  <div class="term">cgroups v1 release_agent（リリースエージェント）</div>
+  <p class="exp">cgroupが空になった時に指定プログラムを実行する仕組み。通常の設定変更と異なり、ホストroot実行につながる点が重い。</p>
+</div>
+<div class="termCard">
+  <div class="term">CAP_SYS_ADMIN（管理系ケーパビリティ）</div>
+  <p class="exp">Linuxで広範な管理操作を許す権限。単一機能の権限ではなく、コンテナでは実質的な特権化に近い。</p>
+</div>
+<div class="termCard">
+  <div class="term">Container Escape（コンテナエスケープ）</div>
+  <p class="exp">コンテナ内の制約を越えてホストへ影響する攻撃。単なるコンテナ内root取得とは被害範囲が異なる。</p>
+</div>
+<div class="termCard">
+  <div class="term">CISA KEV（既知悪用脆弱性カタログ）</div>
+  <p class="exp">実際の悪用が確認された脆弱性の公的リスト。CVSSの高さより、悪用現実性の判断材料として重い。</p>
+</div>
+          </div>
+          <h3 class="subSectionTitle">深掘り解説</h3>
+          <div class="deepDive">
+            <div class="termCard deepDiveCard">
+  <div class="term">コンテナのrootとホストのrootを分けて考える</div>
+  <p class="exp">コンテナ運用で判断がぶれやすい点は、「コンテナ内のroot」は必ずしも安全な管理者ではないという前提にある。名前空間、cgroup、seccomp、AppArmorやSELinux、Linux capabilityが組み合わさって初めて隔離が成立するため、どれか一つを緩めるとホスト境界に近づく。
+
+CVE-2022-0492のような脆弱性では、攻撃者が最初からインターネット越しにカーネルへ直接攻撃するとは限らない。例えば、脆弱なWebアプリを経由してコンテナ内でコマンド実行を得た攻撃者が、そのコンテナにCAP_SYS_ADMINが付与され、cgroup v1が書き込み可能に見えている状況を探す。条件が合えば、release_agentにホスト上で実行させたいパスを書き込み、cgroupのイベントを発火させることで、コンテナ境界の外へ処理を出せる可能性が生じる。
+
+実務上は「コンテナだからホストは無関係」と切り離さないことが重要になる。Kubernetesでprivileged: trueを許しているDaemonSet、CIランナー、監視エージェント、ビルド用コンテナは、業務上の必要性から強い権限を持ちがちとなる。これらは侵害時の横展開点になりやすく、通常のアプリケーションPodとは別のリスク階層で扱う必要がある。
+
+確認の具体例として、特権コンテナの一覧、CAP_SYS_ADMIN付与、ホストPathマウント、cgroup v1利用、カーネル更新状況を同じ台帳で突き合わせる。検知では、コンテナ内からのcgroup filesystemへの不審な書き込み、release_agentの変更、通常存在しないホスト側プロセス生成、短時間で終了する補助スクリプトの実行を確認する。封じ込めでは、該当ノードの隔離とワークロード退避を優先しつつ、CIや監視など停止影響の大きい特権ワークロードを事前に識別しておくと初動の迷いが減る。</p>
+</div>
+          </div>
+        </div>
+
+        
+
+        <div class="section">
+          <h2>🕘 生成情報</h2>
+          <div class="ruleReason">
+対象期間：2026-06-02T06:00:00+09:00 〜 2026-06-03T06:00:00+09:00
+生成時刻：2026-06-03T07:28:52.274059+09:00
+免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      notifyhub.site
+    </div>
+  </div>
+</body>
+</html>
