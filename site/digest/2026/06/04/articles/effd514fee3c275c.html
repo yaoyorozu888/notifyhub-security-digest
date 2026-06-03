@@ -1,0 +1,334 @@
+<!-- article.html テンプレート（生成用） (例: /digest/YYYY/MM/DD/articles/<entry_id>.html)
+     サーバ側（Function）で {{...}} を置換して出力してください。
+-->
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/favicon-192.png" />
+  <title>New HTTP/2 Bomb Vulnerability Allows Remote DoS on NGINX, Apache, IIS, Envoy &amp; Cloudflare | NotifyHub Cybersecurity Daily Report</title>
+  <style>
+    :root{
+      --bg:#0b1020; --panel:#0f1730; --panel2:#121c3a;
+      --text:#e7ecff; --muted:#a9b4df; --line:#22305b;
+      --accent:#7aa2ff; --good:#4ade80; --warn:#fbbf24; --bad:#fb7185;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+      --radius:18px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      background: radial-gradient(1000px 700px at 20% -10%, rgba(122,162,255,.25), transparent 60%),
+                  radial-gradient(900px 600px at 90% 10%, rgba(251,113,133,.12), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+    }
+    a{color:inherit}
+    .wrap{max-width:960px; margin:0 auto; padding:22px 18px 44px}
+    .topbar{
+      display:flex; justify-content:space-between; align-items:center; gap:12px;
+      margin-bottom:12px;
+    }
+    .crumb a{
+      text-decoration:none;
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .crumb a:hover{border-color:rgba(122,162,255,.65)}
+    .chip{
+      display:inline-flex; align-items:center; gap:8px;
+      background:rgba(27,38,80,.75);
+      border:1px solid rgba(34,48,91,.9);
+      padding:7px 10px; border-radius:999px;
+      font-size:12px; color:var(--muted);
+      backdrop-filter: blur(10px);
+      white-space:nowrap;
+    }
+    .chip strong{color:var(--text); font-weight:650}
+    .panel{
+      background: linear-gradient(180deg, rgba(15,23,48,.9), rgba(15,23,48,.75));
+      border:1px solid rgba(34,48,91,.9);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .head{
+      padding:16px 16px 12px;
+      border-bottom:1px solid rgba(34,48,91,.9);
+      background:rgba(18,28,58,.55);
+    }
+    h1{
+      margin:0;
+      font-size:20px;
+      line-height:1.35;
+      letter-spacing:.15px;
+    }
+    .meta{
+      margin-top:10px;
+      display:flex; gap:10px; flex-wrap:wrap;
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.6;
+    }
+    .meta a{color:var(--muted)}
+    .meta a:hover{color:var(--accent)}
+    .tags{
+      margin-top:12px;
+      display:flex; gap:8px; flex-wrap:wrap;
+    }
+    .tag{
+      font-size:11px;
+      padding:6px 9px;
+      border-radius:999px;
+      background:rgba(27,38,80,.65);
+      border:1px solid rgba(34,48,91,.9);
+      color:var(--muted);
+      white-space:nowrap;
+    }
+    .tag.level-Critical{border-color:rgba(251,113,133,.65); color:#ffd0d7}
+    .tag.level-High{border-color:rgba(251,191,36,.65); color:#ffe9b0}
+    .tag.level-Medium{border-color:rgba(122,162,255,.65); color:#dbe6ff}
+    .tag.level-Low{border-color:rgba(74,222,128,.55); color:#d0ffe2}
+    .tag.level-Info{border-color:rgba(169,180,223,.55); color:rgba(169,180,223,.95)}
+    .body{
+      padding:16px;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+    }
+    .section{
+      background:rgba(18,28,58,.35);
+      border:1px solid rgba(34,48,91,.75);
+      border-radius:16px;
+      padding:14px;
+    }
+    .section h2{
+      margin:0 0 10px;
+      font-size:14px;
+      letter-spacing:.1px;
+    }
+    .ruleReason{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.65;
+      white-space:pre-wrap;
+    }
+    .infoSources{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.5;
+    }
+    .infoSourceRow{
+      margin:0;
+      padding:0;
+    }
+    .infoSourceRow + .infoSourceRow{
+      margin-top:2px;
+    }
+
+    /* --- summary_html styles (OpenAI output uses h4/p/ul/li/strong/code/br) --- */
+    .summary h4{
+      margin:14px 0 8px;
+      font-size:13px;
+      letter-spacing:.1px;
+      padding-left:10px;
+      border-left:3px solid rgba(122,162,255,.65);
+      color: rgba(231,236,255,.95);
+    }
+    .summary p{margin:8px 0; color:rgba(231,236,255,.92); line-height:1.75}
+    .summary ul, .summary ol{margin:8px 0 8px 1.2em; padding:0}
+    .summary li{margin:6px 0; color:rgba(231,236,255,.92); line-height:1.7}
+    .summary strong{
+      color:var(--text);
+      font-weight:750;
+      padding:0 .2em;
+      border-radius:8px;
+      background: linear-gradient(transparent 60%, rgba(122,162,255,.22) 60%);
+    }
+    .summary code{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 8px;
+      background: rgba(11,16,32,.6);
+      border: 1px solid rgba(34,48,91,.85);
+      color: rgba(231,236,255,.95);
+      white-space: nowrap;
+    }
+
+    .terms{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:10px;
+    }
+    @media (max-width: 860px){
+      .terms{grid-template-columns: 1fr}
+    }
+    .termCard{
+      background:rgba(11,16,32,.45);
+      border:1px solid rgba(34,48,91,.85);
+      border-radius:14px;
+      padding:12px;
+      min-width:0;
+    }
+    .termCard .term{
+      font-weight:700;
+      font-size:13px;
+      margin:0 0 8px;
+      word-break:break-word;
+    }
+    .termCard .exp{
+      margin:0;
+      color:rgba(231,236,255,.9);
+      line-height:1.7;
+      font-size:12px;
+      white-space:pre-wrap;
+    }
+    .subSectionTitle{
+      margin:16px 0 8px;
+      font-size:12px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:var(--muted);
+    }
+    .deepDive{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:10px;
+      margin-top:8px;
+    }
+    .deepDiveCard{
+      background:rgba(12,20,38,.6);
+    }
+
+    .footer{
+      margin-top:14px;
+      color:rgba(169,180,223,.75);
+      font-size:12px;
+      line-height:1.7;
+      text-align:center;
+    }
+    .btnRow{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px}
+    .linkbtn{
+      text-decoration:none;
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .linkbtn:hover{border-color:rgba(122,162,255,.65)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="crumb">
+        <!-- ../index.html は通常 "../index.html" でOK -->
+        <a href="../index.html">← 日次トップへ戻る</a>
+      </div>
+      <div class="chip">entry_id <strong class="mono">effd514fee3c275c</strong></div>
+    </div>
+
+    <div class="panel">
+      <div class="head">
+        <h1>New HTTP/2 Bomb Vulnerability Allows Remote DoS on NGINX, Apache, IIS, Envoy &amp; Cloudflare</h1>
+
+        <div class="meta">
+          <span>🗞️ The Hacker News</span>
+          <span>🕒 2026-06-03T17:33:35+09:00</span>
+          <span>🔗 <a href="https://thehackernews.com/2026/06/new-http2-bomb-vulnerability-allows.html" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
+        </div>
+
+        <div class="tags">
+          <span class="tag level-High">Impact: High</span>
+          <span class="tag">Vulnerability</span>
+        </div>
+
+        <div class="btnRow">
+          <a class="linkbtn" href="https://thehackernews.com/2026/06/new-http2-bomb-vulnerability-allows.html" target="_blank" rel="noopener noreferrer">原文リンク</a>
+          <a class="linkbtn" href="https://www.notifyhub.site/digest/2026/06/04/">日次トップ</a>
+        </div>
+      </div>
+
+      <div class="body">
+        
+        <div class="section">
+          <h2>Impact判定理由</h2>
+          <div class="ruleReason">主要Webサーバとプロキシの既定HTTP/2構成に影響する可能性があり、外部公開サービスの可用性に直結するため技術的影響は高い。
+一方で、現時点の入力情報ではCVE、CVSS、修正版、実悪用観測が未確認で、機密性や完全性への直接影響も示されていない。
+情報源はThe Hacker Newsのメディア二次情報のため、話題性による引き上げは行わず、ベース評価を据え置く。</div>
+        </div>
+        <div class="section summary">
+          <h2>🧾 要約（ChatGPT / gpt-5.5-2026-04-23）</h2>
+          <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
+          <div><h4>概要</h4><p>The Hacker Newsは、HTTP/2 Bombと呼ばれるリモートDoS手法がNGINX、Apache HTTPD、Microsoft IIS、Envoy、Cloudflare Pingoraなど主要なWebサーバやプロキシに影響すると報じた。記事情報では、各製品の<strong>既定のHTTP/2構成</strong>にある挙動を連鎖させ、少ない要求や接続でもCPU、メモリ、ワーカ、接続管理を枯渇させる形で悪用される可能性が示されている。影響範囲は単一サーバに限られず、リバースプロキシ、APIゲートウェイ、CDN手前、gRPC基盤など、<strong>HTTP/2を外部公開している入口</strong>全体に広がり得る。攻撃者視点では認証情報や内部到達性を必要としない可能性が高く、可用性低下を狙うROIが高い一方、現時点の入力情報だけではCVE番号、CVSS、修正版の有無、実環境での再現条件、悪用観測は確認できない。CSIRTは騒動化だけで判断せず、公開面でHTTP/2が有効な資産、前段プロキシの設定差、異常なフレームやストリーム関連ログ、短時間の5xx増加を確認する優先度が高い。</p></div>
+        </div>
+
+        <div class="section">
+          <h2>📌 キーワード解説</h2>
+          <div class="terms">
+            <div class="termCard">
+  <div class="term">HTTP/2（ハイパーテキスト転送プロトコル第2版）</div>
+  <p class="exp">接続を多重化するHTTPの版。HTTP/1.1の単純な要求列と違い、状態管理の実装差がDoS面になる。</p>
+</div>
+<div class="termCard">
+  <div class="term">DoS（サービス拒否）</div>
+  <p class="exp">サービスを使えなくする攻撃。DDoSは多数発信元の量攻め、実装DoSは少数接続でも成立し得る。</p>
+</div>
+<div class="termCard">
+  <div class="term">既定設定</div>
+  <p class="exp">導入直後の設定値。脆弱な任意設定と違い、資産台帳に載らない広範な露出を生む。</p>
+</div>
+<div class="termCard">
+  <div class="term">リバースプロキシ</div>
+  <p class="exp">外部要求を背後のサーバへ中継する層。WAFと混同されるが、防御より経路集約が主目的となる。</p>
+</div>
+          </div>
+          <h3 class="subSectionTitle">深掘り解説</h3>
+          <div class="deepDive">
+            <div class="termCard deepDiveCard">
+  <div class="term">HTTP/2系DoSで見るべき場所は帯域だけではない</div>
+  <p class="exp">HTTP/2のDoSは、単純な大量通信として見えない場合がある。HTTP/2は1本のTCP/TLS接続上で複数のストリームを並行処理し、優先度、ヘッダ圧縮、フロー制御、リセットなどの状態をサーバ側に持たせる。このため、攻撃者が帯域を大きく使わなくても、サーバやプロキシの状態管理コストだけを増やせる余地が生まれる。
+
+具体例として、外部公開のAPIゲートウェイでHTTP/2を有効にし、背後にHTTP/1.1のアプリケーションサーバを置く構成を考える。入口のEnvoyやNGINXがHTTP/2ストリームを受け、内部へ変換して中継する場合、入口側だけが複雑なHTTP/2状態を処理する。攻撃が入口のストリーム生成、リセット、ヘッダ処理に偏ると、背後のアプリケーションログには通常より少ないリクエストしか残らない一方、前段のCPU上昇、接続数の滞留、5xxやタイムアウトの増加として現れる。
+
+運用判断では、まず外部公開面でHTTP/2が有効な場所を分ける必要がある。CDN、ロードバランサ、Ingress、サービスメッシュ、gRPC基盤は同じHTTP/2でも止めた時の業務影響が異なる。一般Webサイトなら一時的にHTTP/1.1へ落とす選択肢があり得るが、gRPCや一部モバイルアプリはHTTP/2前提で通信が壊れる可能性がある。
+
+検知では、総トラフィック量だけでなく、接続あたりのストリーム数、RST_STREAMやGOAWAYの増加、ヘッダサイズ、短命ストリーム、前段プロキシのワーカ使用率を見る。封じ込めでは、HTTP/2無効化、同時ストリーム数の制限、ヘッダ・フレーム関連の上限、送信元単位の接続制限、CDN側のルール適用を候補に置く。ただし制限を強くしすぎると正規のブラウザ、APIクライアント、gRPC通信も巻き込むため、段階適用と例外設計が欠かせない。</p>
+</div>
+          </div>
+        </div>
+
+        
+
+        <div class="section">
+          <h2>🕘 生成情報</h2>
+          <div class="ruleReason">
+対象期間：2026-06-03T06:00:00+09:00 〜 2026-06-04T06:00:00+09:00
+生成時刻：2026-06-04T07:26:03.450096+09:00
+免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      notifyhub.site
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,334 @@
+<!-- article.html テンプレート（生成用） (例: /digest/YYYY/MM/DD/articles/<entry_id>.html)
+     サーバ側（Function）で {{...}} を置換して出力してください。
+-->
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/favicon-192.png" />
+  <title>Weekly Report: Atril、EvinceおよびXreaderに引数インジェクションの脆弱性 | NotifyHub Cybersecurity Daily Report</title>
+  <style>
+    :root{
+      --bg:#0b1020; --panel:#0f1730; --panel2:#121c3a;
+      --text:#e7ecff; --muted:#a9b4df; --line:#22305b;
+      --accent:#7aa2ff; --good:#4ade80; --warn:#fbbf24; --bad:#fb7185;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+      --radius:18px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      background: radial-gradient(1000px 700px at 20% -10%, rgba(122,162,255,.25), transparent 60%),
+                  radial-gradient(900px 600px at 90% 10%, rgba(251,113,133,.12), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+    }
+    a{color:inherit}
+    .wrap{max-width:960px; margin:0 auto; padding:22px 18px 44px}
+    .topbar{
+      display:flex; justify-content:space-between; align-items:center; gap:12px;
+      margin-bottom:12px;
+    }
+    .crumb a{
+      text-decoration:none;
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .crumb a:hover{border-color:rgba(122,162,255,.65)}
+    .chip{
+      display:inline-flex; align-items:center; gap:8px;
+      background:rgba(27,38,80,.75);
+      border:1px solid rgba(34,48,91,.9);
+      padding:7px 10px; border-radius:999px;
+      font-size:12px; color:var(--muted);
+      backdrop-filter: blur(10px);
+      white-space:nowrap;
+    }
+    .chip strong{color:var(--text); font-weight:650}
+    .panel{
+      background: linear-gradient(180deg, rgba(15,23,48,.9), rgba(15,23,48,.75));
+      border:1px solid rgba(34,48,91,.9);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .head{
+      padding:16px 16px 12px;
+      border-bottom:1px solid rgba(34,48,91,.9);
+      background:rgba(18,28,58,.55);
+    }
+    h1{
+      margin:0;
+      font-size:20px;
+      line-height:1.35;
+      letter-spacing:.15px;
+    }
+    .meta{
+      margin-top:10px;
+      display:flex; gap:10px; flex-wrap:wrap;
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.6;
+    }
+    .meta a{color:var(--muted)}
+    .meta a:hover{color:var(--accent)}
+    .tags{
+      margin-top:12px;
+      display:flex; gap:8px; flex-wrap:wrap;
+    }
+    .tag{
+      font-size:11px;
+      padding:6px 9px;
+      border-radius:999px;
+      background:rgba(27,38,80,.65);
+      border:1px solid rgba(34,48,91,.9);
+      color:var(--muted);
+      white-space:nowrap;
+    }
+    .tag.level-Critical{border-color:rgba(251,113,133,.65); color:#ffd0d7}
+    .tag.level-High{border-color:rgba(251,191,36,.65); color:#ffe9b0}
+    .tag.level-Medium{border-color:rgba(122,162,255,.65); color:#dbe6ff}
+    .tag.level-Low{border-color:rgba(74,222,128,.55); color:#d0ffe2}
+    .tag.level-Info{border-color:rgba(169,180,223,.55); color:rgba(169,180,223,.95)}
+    .body{
+      padding:16px;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+    }
+    .section{
+      background:rgba(18,28,58,.35);
+      border:1px solid rgba(34,48,91,.75);
+      border-radius:16px;
+      padding:14px;
+    }
+    .section h2{
+      margin:0 0 10px;
+      font-size:14px;
+      letter-spacing:.1px;
+    }
+    .ruleReason{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.65;
+      white-space:pre-wrap;
+    }
+    .infoSources{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.5;
+    }
+    .infoSourceRow{
+      margin:0;
+      padding:0;
+    }
+    .infoSourceRow + .infoSourceRow{
+      margin-top:2px;
+    }
+
+    /* --- summary_html styles (OpenAI output uses h4/p/ul/li/strong/code/br) --- */
+    .summary h4{
+      margin:14px 0 8px;
+      font-size:13px;
+      letter-spacing:.1px;
+      padding-left:10px;
+      border-left:3px solid rgba(122,162,255,.65);
+      color: rgba(231,236,255,.95);
+    }
+    .summary p{margin:8px 0; color:rgba(231,236,255,.92); line-height:1.75}
+    .summary ul, .summary ol{margin:8px 0 8px 1.2em; padding:0}
+    .summary li{margin:6px 0; color:rgba(231,236,255,.92); line-height:1.7}
+    .summary strong{
+      color:var(--text);
+      font-weight:750;
+      padding:0 .2em;
+      border-radius:8px;
+      background: linear-gradient(transparent 60%, rgba(122,162,255,.22) 60%);
+    }
+    .summary code{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 8px;
+      background: rgba(11,16,32,.6);
+      border: 1px solid rgba(34,48,91,.85);
+      color: rgba(231,236,255,.95);
+      white-space: nowrap;
+    }
+
+    .terms{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:10px;
+    }
+    @media (max-width: 860px){
+      .terms{grid-template-columns: 1fr}
+    }
+    .termCard{
+      background:rgba(11,16,32,.45);
+      border:1px solid rgba(34,48,91,.85);
+      border-radius:14px;
+      padding:12px;
+      min-width:0;
+    }
+    .termCard .term{
+      font-weight:700;
+      font-size:13px;
+      margin:0 0 8px;
+      word-break:break-word;
+    }
+    .termCard .exp{
+      margin:0;
+      color:rgba(231,236,255,.9);
+      line-height:1.7;
+      font-size:12px;
+      white-space:pre-wrap;
+    }
+    .subSectionTitle{
+      margin:16px 0 8px;
+      font-size:12px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:var(--muted);
+    }
+    .deepDive{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:10px;
+      margin-top:8px;
+    }
+    .deepDiveCard{
+      background:rgba(12,20,38,.6);
+    }
+
+    .footer{
+      margin-top:14px;
+      color:rgba(169,180,223,.75);
+      font-size:12px;
+      line-height:1.7;
+      text-align:center;
+    }
+    .btnRow{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px}
+    .linkbtn{
+      text-decoration:none;
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .linkbtn:hover{border-color:rgba(122,162,255,.65)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="crumb">
+        <!-- ../index.html は通常 "../index.html" でOK -->
+        <a href="../index.html">← 日次トップへ戻る</a>
+      </div>
+      <div class="chip">entry_id <strong class="mono">4b2c2667b12c70af</strong></div>
+    </div>
+
+    <div class="panel">
+      <div class="head">
+        <h1>Weekly Report: Atril、EvinceおよびXreaderに引数インジェクションの脆弱性</h1>
+
+        <div class="meta">
+          <span>🗞️ JPCERT/CC</span>
+          <span>🕒 2026-06-03T09:07:00+09:00</span>
+          <span>🔗 <a href="https://www.jpcert.or.jp/wr/2026/wr260603.html#2" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
+        </div>
+
+        <div class="tags">
+          <span class="tag level-Medium">Impact: Medium</span>
+          <span class="tag">Vulnerability</span>
+        </div>
+
+        <div class="btnRow">
+          <a class="linkbtn" href="https://www.jpcert.or.jp/wr/2026/wr260603.html#2" target="_blank" rel="noopener noreferrer">原文リンク</a>
+          <a class="linkbtn" href="https://www.notifyhub.site/digest/2026/06/04/">日次トップ</a>
+        </div>
+      </div>
+
+      <div class="body">
+        
+        <div class="section">
+          <h2>Impact判定理由</h2>
+          <div class="ruleReason">技術的にはクライアント側の引数解釈不備で、ユーザー操作や関連付け起動が前提となる可能性が高く、外部公開サービスの即時侵害とは性質が異なる。
+一方でLinuxデスクトップ、VDI、開発端末で利用される文書ビューアに関係し、認証済みユーザー権限内の情報窃取や後続侵害の入口になりうる。
+情報源はJPCERT/CCの公的週次レポートだが、KEV相当の悪用確認やCVE/CVSSが入力情報から確認できないため、公的情報補正による引き上げは行わない。</div>
+        </div>
+        <div class="section summary">
+          <h2>🧾 要約（ChatGPT / gpt-5.5-2026-04-23）</h2>
+          <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
+          <div><h4>概要</h4><p>JPCERT/CCの週次レポートで、Linux向け文書ビューアのAtril、Evince、Xreaderに<strong>引数インジェクションの脆弱性</strong>が取り上げられた。攻撃者は細工したファイル名、URI、関連付け起動の経路などを使い、アプリケーション起動時の引数解釈をずらして、想定外のオプション指定や処理分岐へ誘導する可能性がある。影響はサーバ侵害型のRCEとは異なり、主に<strong>ユーザー操作を起点にしたクライアント側リスク</strong>として広がり、Linuxデスクトップ、VDI、開発端末、踏み台端末での文書閲覧業務に関係する。攻撃が成立した場合でも被害範囲は当該ユーザー権限に寄るが、端末上の機密文書、認証情報、共有フォルダへのアクセス権を足場に、後続の情報窃取や横展開の入口になりうる。入力情報だけでは<strong>CVE番号、CVSS、影響バージョン、悪用実績、PoCの有無</strong>が確認できず、各ディストリビューションの更新情報と利用実態の突合が必要となる。</p></div>
+        </div>
+
+        <div class="section">
+          <h2>📌 キーワード解説</h2>
+          <div class="terms">
+            <div class="termCard">
+  <div class="term">Argument Injection（引数インジェクション）</div>
+  <p class="exp">コマンド実行そのものとは限らない。入力が引数やオプションとして解釈され、想定外の動作に逸れる点が焦点。</p>
+</div>
+<div class="termCard">
+  <div class="term">クライアントサイド脆弱性</div>
+  <p class="exp">外部公開サーバではなく利用者端末で成立する。境界防御より、関連付け起動や添付ファイル処理の管理が効く。</p>
+</div>
+<div class="termCard">
+  <div class="term">ファイル関連付け</div>
+  <p class="exp">拡張子やMIME種別から起動アプリを決める仕組み。明示実行と違い、利用者が危険な引数経路を意識しにくい。</p>
+</div>
+<div class="termCard">
+  <div class="term">ユーザー権限での影響</div>
+  <p class="exp">管理者権限奪取とは別物。ただし共有フォルダや認証済みセッションに届くため、被害が小さいとは限らない。</p>
+</div>
+          </div>
+          <h3 class="subSectionTitle">深掘り解説</h3>
+          <div class="deepDive">
+            <div class="termCard deepDiveCard">
+  <div class="term">引数インジェクションで見る「起動境界」のリスク</div>
+  <p class="exp">引数インジェクションの本質は、入力値がデータではなく起動時の制御情報として扱われる点にある。多くのCSIRT対応では、ファイル内容の脆弱性やマクロ実行に目が向きやすいが、実際にはファイル名、URI、デスクトップ環境の関連付け、ファイルマネージャからの起動方法も攻撃面となる。
+
+例えば文書ビューアを内部的に&lt;code&gt;viewer ファイル名&lt;/code&gt;の形で起動する処理があり、ファイル名が&lt;code&gt;--some-option&lt;/code&gt;のように見える場合、アプリケーションやラッパーがそれを通常ファイルではなくオプションとして解釈することがある。安全な実装では&lt;code&gt;--&lt;/code&gt;を挟んで以降をファイル名として扱う、引数配列を明示的に分ける、危険な先頭文字を正規化する、といった対策を取る。
+
+運用上の落とし穴は、脆弱性が単体アプリだけで完結しない点にある。メール添付、チャット、ブラウザからのダウンロード、ファイル共有、VDIのクリップボード連携など、どの経路でビューアが呼ばれるかにより成立条件が変わる。調査ではパッケージのバージョン確認だけでなく、既定アプリ、デスクトップ環境、ファイルマネージャ、サンドボックス有無を合わせて見る必要がある。
+
+封じ込めでは、パッチ適用が最優先となる一方、業務端末で直ちに更新できない場合は、該当ビューアの既定関連付け解除、信頼できない共有領域からの直接閲覧禁止、代替ビューアの一時利用、EDRでの異常な子プロセス生成監視が現実的な選択肢となる。特に開発端末や踏み台端末では、閲覧アプリからシェル、ネットワークツール、認証情報ストアへ到達する挙動を重点的に確認したい。</p>
+</div>
+          </div>
+        </div>
+
+        
+
+        <div class="section">
+          <h2>🕘 生成情報</h2>
+          <div class="ruleReason">
+対象期間：2026-06-03T06:00:00+09:00 〜 2026-06-04T06:00:00+09:00
+生成時刻：2026-06-04T07:26:03.450096+09:00
+免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      notifyhub.site
+    </div>
+  </div>
+</body>
+</html>

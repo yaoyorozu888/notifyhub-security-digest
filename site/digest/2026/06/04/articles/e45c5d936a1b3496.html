@@ -1,0 +1,332 @@
+<!-- article.html テンプレート（生成用） (例: /digest/YYYY/MM/DD/articles/<entry_id>.html)
+     サーバ側（Function）で {{...}} を置換して出力してください。
+-->
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/favicon-192.png" />
+  <title>Weekly Report: Apache ForyのPyForyに信頼できないデータのデシリアライゼーションの脆弱性 | NotifyHub Cybersecurity Daily Report</title>
+  <style>
+    :root{
+      --bg:#0b1020; --panel:#0f1730; --panel2:#121c3a;
+      --text:#e7ecff; --muted:#a9b4df; --line:#22305b;
+      --accent:#7aa2ff; --good:#4ade80; --warn:#fbbf24; --bad:#fb7185;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+      --radius:18px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      background: radial-gradient(1000px 700px at 20% -10%, rgba(122,162,255,.25), transparent 60%),
+                  radial-gradient(900px 600px at 90% 10%, rgba(251,113,133,.12), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+    }
+    a{color:inherit}
+    .wrap{max-width:960px; margin:0 auto; padding:22px 18px 44px}
+    .topbar{
+      display:flex; justify-content:space-between; align-items:center; gap:12px;
+      margin-bottom:12px;
+    }
+    .crumb a{
+      text-decoration:none;
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .crumb a:hover{border-color:rgba(122,162,255,.65)}
+    .chip{
+      display:inline-flex; align-items:center; gap:8px;
+      background:rgba(27,38,80,.75);
+      border:1px solid rgba(34,48,91,.9);
+      padding:7px 10px; border-radius:999px;
+      font-size:12px; color:var(--muted);
+      backdrop-filter: blur(10px);
+      white-space:nowrap;
+    }
+    .chip strong{color:var(--text); font-weight:650}
+    .panel{
+      background: linear-gradient(180deg, rgba(15,23,48,.9), rgba(15,23,48,.75));
+      border:1px solid rgba(34,48,91,.9);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .head{
+      padding:16px 16px 12px;
+      border-bottom:1px solid rgba(34,48,91,.9);
+      background:rgba(18,28,58,.55);
+    }
+    h1{
+      margin:0;
+      font-size:20px;
+      line-height:1.35;
+      letter-spacing:.15px;
+    }
+    .meta{
+      margin-top:10px;
+      display:flex; gap:10px; flex-wrap:wrap;
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.6;
+    }
+    .meta a{color:var(--muted)}
+    .meta a:hover{color:var(--accent)}
+    .tags{
+      margin-top:12px;
+      display:flex; gap:8px; flex-wrap:wrap;
+    }
+    .tag{
+      font-size:11px;
+      padding:6px 9px;
+      border-radius:999px;
+      background:rgba(27,38,80,.65);
+      border:1px solid rgba(34,48,91,.9);
+      color:var(--muted);
+      white-space:nowrap;
+    }
+    .tag.level-Critical{border-color:rgba(251,113,133,.65); color:#ffd0d7}
+    .tag.level-High{border-color:rgba(251,191,36,.65); color:#ffe9b0}
+    .tag.level-Medium{border-color:rgba(122,162,255,.65); color:#dbe6ff}
+    .tag.level-Low{border-color:rgba(74,222,128,.55); color:#d0ffe2}
+    .tag.level-Info{border-color:rgba(169,180,223,.55); color:rgba(169,180,223,.95)}
+    .body{
+      padding:16px;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+    }
+    .section{
+      background:rgba(18,28,58,.35);
+      border:1px solid rgba(34,48,91,.75);
+      border-radius:16px;
+      padding:14px;
+    }
+    .section h2{
+      margin:0 0 10px;
+      font-size:14px;
+      letter-spacing:.1px;
+    }
+    .ruleReason{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.65;
+      white-space:pre-wrap;
+    }
+    .infoSources{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.5;
+    }
+    .infoSourceRow{
+      margin:0;
+      padding:0;
+    }
+    .infoSourceRow + .infoSourceRow{
+      margin-top:2px;
+    }
+
+    /* --- summary_html styles (OpenAI output uses h4/p/ul/li/strong/code/br) --- */
+    .summary h4{
+      margin:14px 0 8px;
+      font-size:13px;
+      letter-spacing:.1px;
+      padding-left:10px;
+      border-left:3px solid rgba(122,162,255,.65);
+      color: rgba(231,236,255,.95);
+    }
+    .summary p{margin:8px 0; color:rgba(231,236,255,.92); line-height:1.75}
+    .summary ul, .summary ol{margin:8px 0 8px 1.2em; padding:0}
+    .summary li{margin:6px 0; color:rgba(231,236,255,.92); line-height:1.7}
+    .summary strong{
+      color:var(--text);
+      font-weight:750;
+      padding:0 .2em;
+      border-radius:8px;
+      background: linear-gradient(transparent 60%, rgba(122,162,255,.22) 60%);
+    }
+    .summary code{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 8px;
+      background: rgba(11,16,32,.6);
+      border: 1px solid rgba(34,48,91,.85);
+      color: rgba(231,236,255,.95);
+      white-space: nowrap;
+    }
+
+    .terms{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:10px;
+    }
+    @media (max-width: 860px){
+      .terms{grid-template-columns: 1fr}
+    }
+    .termCard{
+      background:rgba(11,16,32,.45);
+      border:1px solid rgba(34,48,91,.85);
+      border-radius:14px;
+      padding:12px;
+      min-width:0;
+    }
+    .termCard .term{
+      font-weight:700;
+      font-size:13px;
+      margin:0 0 8px;
+      word-break:break-word;
+    }
+    .termCard .exp{
+      margin:0;
+      color:rgba(231,236,255,.9);
+      line-height:1.7;
+      font-size:12px;
+      white-space:pre-wrap;
+    }
+    .subSectionTitle{
+      margin:16px 0 8px;
+      font-size:12px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:var(--muted);
+    }
+    .deepDive{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:10px;
+      margin-top:8px;
+    }
+    .deepDiveCard{
+      background:rgba(12,20,38,.6);
+    }
+
+    .footer{
+      margin-top:14px;
+      color:rgba(169,180,223,.75);
+      font-size:12px;
+      line-height:1.7;
+      text-align:center;
+    }
+    .btnRow{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px}
+    .linkbtn{
+      text-decoration:none;
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .linkbtn:hover{border-color:rgba(122,162,255,.65)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="crumb">
+        <!-- ../index.html は通常 "../index.html" でOK -->
+        <a href="../index.html">← 日次トップへ戻る</a>
+      </div>
+      <div class="chip">entry_id <strong class="mono">e45c5d936a1b3496</strong></div>
+    </div>
+
+    <div class="panel">
+      <div class="head">
+        <h1>Weekly Report: Apache ForyのPyForyに信頼できないデータのデシリアライゼーションの脆弱性</h1>
+
+        <div class="meta">
+          <span>🗞️ JPCERT/CC</span>
+          <span>🕒 2026-06-03T09:07:00+09:00</span>
+          <span>🔗 <a href="https://www.jpcert.or.jp/wr/2026/wr260603.html#8" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
+        </div>
+
+        <div class="tags">
+          <span class="tag level-Medium">Impact: Medium</span>
+          <span class="tag">Vulnerability Disclosure</span>
+        </div>
+
+        <div class="btnRow">
+          <a class="linkbtn" href="https://www.jpcert.or.jp/wr/2026/wr260603.html#8" target="_blank" rel="noopener noreferrer">原文リンク</a>
+          <a class="linkbtn" href="https://www.notifyhub.site/digest/2026/06/04/">日次トップ</a>
+        </div>
+      </div>
+
+      <div class="body">
+        
+        <div class="section">
+          <h2>Impact判定理由</h2>
+          <div class="ruleReason">デシリアライゼーションは到達可能な入力経路があれば任意コード実行級に悪化しうるが、現時点ではCVE、影響バージョン、悪用実績、PoCの有無が入力情報から確認できない。
+ライブラリ利用箇所と信頼境界に依存するため、全組織一律の緊急遮断よりも棚卸しと到達可能性確認が優先となる。
+情報源はJPCERT/CCの公的Weekly Reportだが、KEV相当の悪用確認や緊急注意喚起ではなく、補正は据え置いた。</div>
+        </div>
+        <div class="section summary">
+          <h2>🧾 要約（ChatGPT / gpt-5.5-2026-04-23）</h2>
+          <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
+          <div><h4>概要</h4><p>JPCERT/CCのWeekly Reportで、Apache ForyのPython実装であるPyForyに<strong>信頼できないデータのデシリアライゼーション</strong>に関する脆弱性が取り上げられた。攻撃者がアプリケーションにPyFory形式の細工済みデータを処理させられる場合、復元処理の過程で任意コード実行、データ改ざん、処理停止などにつながる可能性がある。影響範囲はPyFory単体の導入有無だけで決まらず、Web API、メッセージキュー、キャッシュ、機械学習基盤などで<strong>外部または低信頼の入力</strong>を復元しているかが分岐点となる。組織内ではライブラリが直接採用されていなくても、データ処理基盤や実験環境、依存パッケージ経由で使われる場合があり、棚卸しの粒度が粗いと見落としやすい。現時点の入力情報だけではCVE番号、影響バージョン、修正版、悪用実績、PoC公開状況が確認できないため、初動は<strong>利用有無と信頼境界</strong>の確認を優先し、公開サービスでの悪用前提に直ちに引き上げる材料は不足している。</p></div>
+        </div>
+
+        <div class="section">
+          <h2>📌 キーワード解説</h2>
+          <div class="terms">
+            <div class="termCard">
+  <div class="term">デシリアライゼーション（deserialization）</div>
+  <p class="exp">保存・転送されたデータからオブジェクトを復元する処理。通常の入力検証と違い、復元自体が実行経路になりうる。</p>
+</div>
+<div class="termCard">
+  <div class="term">信頼できないデータ</div>
+  <p class="exp">外部入力だけを指さない。認証済み利用者、隣接サービス、キュー経由のデータも信頼境界外になりうる。</p>
+</div>
+<div class="termCard">
+  <div class="term">ガジェットチェーン（gadget chain）</div>
+  <p class="exp">既存クラスの処理を組み合わせて悪用する考え方。新規マルウェア配置とは違い、正規コードが悪用面になる。</p>
+</div>
+<div class="termCard">
+  <div class="term">ライブラリ脆弱性</div>
+  <p class="exp">製品脆弱性と違い、導入先アプリの使い方で危険度が変わる。SBOMだけでは到達可能性を判断しにくい。</p>
+</div>
+          </div>
+          <h3 class="subSectionTitle">深掘り解説</h3>
+          <div class="deepDive">
+            <div class="termCard deepDiveCard">
+  <div class="term">デシリアライゼーション脆弱性を運用影響で見分ける視点</div>
+  <p class="exp">デシリアライゼーション脆弱性で判断がぶれやすい理由は、脆弱なライブラリの有無と、攻撃可能な経路の有無が一致しない点にある。脆弱なPyForyが環境に存在しても、内部で固定データだけを復元しているなら直ちに外部侵害へつながる可能性は相対的に下がる。一方、インターネット公開API、利用者が投入できるジョブ、外部連携先から受けるメッセージキュー、共有ストレージ上のファイルを復元している場合、攻撃者が入力を制御できる余地が生まれる。
+
+実務では「どのバージョンか」だけでなく「誰がそのバイト列を作れるか」を確認する必要がある。例えば、分析基盤で外部顧客からアップロードされた特徴量ファイルをPyForyで復元し、その後にPythonワーカーが処理する構成なら、ワーカー権限でのコード実行や認証情報の窃取が現実的な被害シナリオとなる。反対に、ビルド時に生成した内部キャッシュを同一プロセスで読み戻すだけなら、優先度はパッチ適用計画内に収めやすい。
+
+検知面では、ライブラリ呼び出しそのもののログが残らない場合が多い。アプリケーションログの復元失敗、ワーカーの異常終了、想定外のサブプロセス起動、外向き通信、キューの不正メッセージ増加を組み合わせて見る方が現実的となる。封じ込めでは全停止よりも、外部由来データの受け口、該当ワーカー、対象キューの消費停止を優先すると業務影響を抑えやすい。根本対策としては、信頼できない入力に汎用オブジェクト復元を使わず、スキーマ固定の形式や許可リスト方式へ寄せる設計が必要となる。</p>
+</div>
+          </div>
+        </div>
+
+        
+
+        <div class="section">
+          <h2>🕘 生成情報</h2>
+          <div class="ruleReason">
+対象期間：2026-06-03T06:00:00+09:00 〜 2026-06-04T06:00:00+09:00
+生成時刻：2026-06-04T07:26:03.450096+09:00
+免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      notifyhub.site
+    </div>
+  </div>
+</body>
+</html>
