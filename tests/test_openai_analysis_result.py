@@ -85,6 +85,8 @@ def test_analysis_prompts_require_plain_japanese_style() -> None:
     assert "「〜だ」「〜である」で終える文を避ける" in SYSTEM_PROMPT
     assert "英語の文や英語だけの箇条書きは禁止" in SYSTEM_PROMPT
     assert "入力記事の title は原文のままでよいが、それ以外の出力項目は" in SYSTEM_PROMPT
+    assert "入力記事や引用元が英語でも" in SYSTEM_PROMPT
+    assert "必ず日本語へ翻訳・要約して出力する" in SYSTEM_PROMPT
 
     schema_hint = _analysis_schema_hint()
     assert "常体" in schema_hint
@@ -92,3 +94,6 @@ def test_analysis_prompts_require_plain_japanese_style() -> None:
     assert "「〜だ」「〜である」で終えない" in schema_hint
     assert "入力記事の title を除き、すべての出力項目は日本語で書く" in schema_hint
     assert "英語の文を混ぜない" in schema_hint
+    assert "言語制約（最優先）" in schema_hint
+    assert "summary_html・technical_terms.explanation・lessons.title・lessons.body・impact_reason は必ず日本語で書く" in schema_hint
+    assert "英語でも、日本語へ翻訳・要約してから分析を書く" in schema_hint

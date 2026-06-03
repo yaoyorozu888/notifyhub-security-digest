@@ -249,3 +249,24 @@ def test_featured_topic_prompts_require_plain_japanese_style() -> None:
     assert "4〜6文で書く" in schema_hint
     assert "最大8箇所" in schema_hint
     assert "summary_html 全体で500〜800文字程度" in schema_hint
+
+
+def test_featured_topic_prompts_discourage_repetitive_trend_reports() -> None:
+    assert "同じ発信元、同じ企業・団体、同じ調査レポート、同じ年次予測" in FEATURED_SYSTEM_PROMPT
+    assert "Gartner などの調査会社による IT トレンド予測" in FEATURED_SYSTEM_PROMPT
+    assert "日次ダイジェスト全体の変化" in FEATURED_SYSTEM_PROMPT
+
+    class _Settings:
+        count = 1
+        categories = ["IT trends"]
+
+    prompt = _build_user_prompt(
+        window_start_utc=datetime(2026, 5, 8, 0, 0),
+        window_end_utc=datetime(2026, 5, 9, 0, 0),
+        settings=_Settings(),
+    )
+
+    assert "同種の調査会社レポートや年次予測だけに寄せない" in prompt
+    assert "Gartner の IT トレンド予測" in prompt
+    assert "製品発表、規制変更、研究成果、導入事例" in prompt
+    assert "新規性・具体性・分野の多様性" in prompt
