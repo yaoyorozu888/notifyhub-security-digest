@@ -35,6 +35,8 @@ SYSTEM_PROMPT = (
     "生成する記事本文・用語解説・深掘り解説は、すべて日本語の常体で書く。です・ます調の敬体は使わない。\n"
     "「〜だ」「〜である」で終える文を避ける。\n"
     "入力記事の title は原文のままでよいが、それ以外の出力項目は固有名詞や製品名、CVE、URL を除いて日本語で書く。英語の文や英語だけの箇条書きは禁止する。\n"
+    "入力記事や引用元が英語でも、summary_html・technical_terms.explanation・lessons.body・impact_reason は必ず日本語へ翻訳・要約して出力する。\n"
+    "英語記事の表現をそのまま貼り付けず、必要な固有名詞・製品名・CVE・URL だけ原文表記を残す。\n"
     "\n"
     "入力情報の前提（情報源）:\n"
     "- 入力は以下の情報源由来の記事・アドバイザリ・観測情報です（主にセキュリティ、時にIT一般）:\n"
@@ -110,6 +112,12 @@ def _analysis_schema_hint() -> str:
         '  \"impact_reason\": \"...\",\n'
         '  \"threat_type\": \"Vulnerability|Exploit|Zero-day|Vulnerability Disclosure|Patch|Misconfiguration|Malware|Ransomware|Botnet|Cryptojacking|Phishing|Business Email Compromise|Scam/Fraud|Credential Theft|Intrusion|Data Breach|DDoS|Supply Chain|Advisory|Other|Unknown\"\n'
         "}\n"
+        "\n"
+        "言語制約（最優先）:\n"
+        "- 入力記事の title を除き、summary_html・technical_terms.explanation・lessons.title・lessons.body・impact_reason は必ず日本語で書く\n"
+        "- 入力の title、summary、reference_urls の本文が英語でも、日本語へ翻訳・要約してから分析を書く\n"
+        "- 固有名詞、製品名、CVE、URL、一般的な技術略語を除き、英語の文や英語だけの箇条書きを出力しない\n"
+        "- JSONキーと impact_level/threat_type の列挙値だけは指定スキーマ通り英語表記を使う\n"
         "\n"
         "summary_html 制約:\n"
         "- 使用可能タグ: <div><p><ul><ol><li><strong><h4><code><br>\n"
