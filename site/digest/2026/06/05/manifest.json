@@ -1,0 +1,338 @@
+{
+  "date": "2026-06-05",
+  "window": {
+    "from": "2026-06-04T06:00:00+09:00",
+    "to": "2026-06-05T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 20
+  },
+  "generated_at_jst": "2026-06-05T06:57:45.077156+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "FoxconnとIntel、次世代AIインフラで戦略提携",
+      "source_name": "Reuters",
+      "published_at": "2026-06-04T06:06:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要FoxconnがIntelと提携し、次世代AIインフラの共同開発を発表した。IntelのXeonプロセッサやAIアクセラレータを活用したサーバーラック、高速インターコネクト、冷却設計、エネルギー効率向上に焦点を当てる。データセンター外の工場、スマートシティ、ロボット向けAIシステムも対象とする。両社は製造力とチップ技術を組み合わせ、AI需要の急増に対応…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://www.reuters.com/world/china/foxconn-announces-strategic-collaboration-with-intel-next-gen-ai-infrastructure-2026-06-04/",
+      "selection_reason": "IT分野の具体的な企業提携事例として新規性が高く、AIデータセンター向けサーバーや冷却技術の実務影響が明確。他の汎用予測レポートより優先。",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "Foxconn and Intel team up to build next-gen AI systems",
+          "url": "https://www.reuters.com/world/china/foxconn-announces-strategic-collaboration-with-intel-next-gen-ai-infrastructure-2026-06-04/",
+          "source_type": "news"
+        },
+        {
+          "title": "TSMC working hard to meet chip demand",
+          "url": "https://www.reuters.com/world/china/tsmc-boss-upbeat-outlook-ai-boom-shows-no-sign-easing-2026-06-04/",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "Trump大統領、AIモデル事前審査の執行命令に署名",
+      "source_name": "Layer3 Labs",
+      "published_at": "2026-06-02T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要Trump大統領が6月2日にAI執行命令に署名した。最先端AIモデルの開発者に公開30日前までの政府審査を自主的に要請する内容だ。ライセンス義務はなく、連邦機関向けのAIサイバー防衛ベンチマークと脆弱性共有ハブを新設する。州法は上書きしない。対象はフロンティアモデル開発者に限定され、中小企業への直接影響は少ない。Biden前政権の命令と比べ、自主性とイ…",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://www.layer3labs.io/guides/ai-executive-order-2026-explained",
+      "selection_reason": "AI分野の政策変更として新規性が高く、フロンティアモデル開発者への実務影響が明確。規制動向の多様性を確保。",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "AI Executive Order Explained (June 2026)",
+          "url": "https://www.layer3labs.io/guides/ai-executive-order-2026-explained",
+          "source_type": "news"
+        },
+        {
+          "title": "Global AI regulatory update",
+          "url": "https://www.eversheds-sutherland.com/en/global/insights/gloabl-ai-bulletin-april-2026",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "Google、Android 6月更新で124件の脆弱性を修正",
+      "source_name": "The Hacker News",
+      "published_at": "2026-06-02T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要GoogleがAndroidの6月セキュリティ更新を公開し、124件の脆弱性を修正した。FrameworkコンポーネントのCVE-2025-48595は特権昇格の可能性があり、すでに限定的に悪用されている。影響はAndroid 14以降の複数バージョンに及び、CISAは連邦機関に6月5日までの修正を義務付けた。カーネルやMediaTek、Qualcom…",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://thehackernews.com/2026/06/google-june-2026-android-update-patches.html",
+      "selection_reason": "セキュリティ実務に直結する具体的なパッチ情報として新規性と影響度が高く、モバイル端末管理者の即時対応を促す。",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "Google June 2026 Android Update Patches 124 Flaws",
+          "url": "https://thehackernews.com/2026/06/google-june-2026-android-update-patches.html",
+          "source_type": "news"
+        },
+        {
+          "title": "CISA Adds Known Exploited Vulnerability",
+          "url": "https://www.cisa.gov/news-events/alerts/2026/06/02/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+          "source_type": "official"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "17611b6a0cf4779b",
+      "title": "Cisco Patches CVE-2026-20230 in Unified CM as Exploit Code Goes Public",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-04T16:55:51+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要The Hacker Newsは、CiscoがCisco Unified Communications Managerの脆弱性CVE-2026-20230を修正し、同時に概念実証コードが公開済みになったと報じている。脆弱性はサーバーサイドリクエストフォージェリに分類され、ネットワーク到達可能な未認証攻撃者が装置上へファイルを書き込み、その後root権限…",
+      "article_path": "articles/17611b6a0cf4779b.html",
+      "original_url": "https://thehackernews.com/2026/06/cisco-patches-cve-2026-20230-in-unified.html"
+    },
+    {
+      "entry_id": "0a18cbf90ac1ee1c",
+      "title": "Claude Code GitHub Action Flaw Let One Malicious Issue Hijack Repositories",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-04T15:15:26+00:00",
+      "impact_level": "High",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要The Hacker Newsは、AnthropicのClaude Code GitHub Actionに、攻撃者がGitHub issueを1件作成するだけで脆弱な公開リポジトリを乗っ取れる欠陥が見つかったと報じた。問題の本質は、issue本文のような外部から制御できる入力がAIコード支援ワークフローに渡り、リポジトリ内の権限やGITHUB_TOKE…",
+      "article_path": "articles/0a18cbf90ac1ee1c.html",
+      "original_url": "https://thehackernews.com/2026/06/claude-code-github-action-flaw-let-one.html"
+    },
+    {
+      "entry_id": "f635befbb0df4b26",
+      "title": "Agentic AI Is Transforming Defense, But Only Secure IT Infrastructure Will Maximize It",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-04T15:10:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Other",
+      "summary_preview": "概要The Hacker Newsは、Agentic AIが防御運用を高度化する一方で、基盤となるITインフラの統制が弱いまま導入するとリスクが増幅するという論点を取り上げている。記事では、AnthropicのClaude Mythosが限定組織向けの技術プレビューとして提供された後、未承認グループが短時間でアクセスを得たと主張した事例に触れているが、侵害…",
+      "article_path": "articles/f635befbb0df4b26.html",
+      "original_url": "https://thehackernews.com/2026/06/agentic-ai-is-transforming-defense-but.html"
+    },
+    {
+      "entry_id": "b680e2d74394e8ff",
+      "title": "ThreatsDay Bulletin: AI Agents Gone Wrong, Sketchy C2 Tools, ClickFix Tricks, JS Backdoors & 20+ New Stories",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-04T14:00:49+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要The Hacker NewsのThreatsDay Bulletinは、AIエージェントの誤動作、疑わしいC2ツール、ClickFix型の誘導、JavaScriptバックドアなど、複数の攻撃・悪用トピックをまとめて紹介した。個別の脆弱性やIoCが入力情報から確認できないため、直ちに特定製品へパッチ適用を指示する記事ではなく、攻撃初動の手口が分散してい…",
+      "article_path": "articles/b680e2d74394e8ff.html",
+      "original_url": "https://thehackernews.com/2026/06/threatsday-bulletin-ai-agents-gone.html"
+    },
+    {
+      "entry_id": "84f9e10d090af76e",
+      "title": "China-Linked TA4922 Expands Phishing Attacks to U.K., Germany, Italy, and South Africa",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-04T12:22:25+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Phishing",
+      "summary_preview": "概要The Hacker Newsは、中国関連とされるTA4922がフィッシングの標的を英国、ドイツ、イタリア、南アフリカの組織へ広げたと報じた。侵入経路は利用者をだますメールが中心とみられ、成功後はValleyRAT（Winos 4.0）やAtlas RAT（AtlasCross RAT）などの遠隔操作型マルウェアにより端末操作、情報窃取、追加ペイロード…",
+      "article_path": "articles/84f9e10d090af76e.html",
+      "original_url": "https://thehackernews.com/2026/06/china-linked-ta4922-expands-phishing.html"
+    },
+    {
+      "entry_id": "bc7884099b525dbc",
+      "title": "FlutterShell Backdoor Spreads to macOS via Malicious Google and YouTube Ads",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-04T11:19:53+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Malware",
+      "summary_preview": "概要The Hacker Newsは、Palo Alto Networks Unit 42の調査として、Operation FlutterBridgeと呼ばれるmacOS向けマルバタイジング活動を報じた。GoogleやYouTubeの広告導線を悪用し、新しいバックドアFlutterShellを配布する内容で、2025年8月下旬に報告されたJSCoreRun…",
+      "article_path": "articles/bc7884099b525dbc.html",
+      "original_url": "https://thehackernews.com/2026/06/fluttershell-backdoor-spreads-to-macos.html"
+    },
+    {
+      "entry_id": "c8dad7fc1d427c71",
+      "title": "Fake Sites Mimicking Open-Source Tools Rank High on Google to Deliver Malware via TDS",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-04T09:51:28+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Malware",
+      "summary_preview": "概要The Hacker Newsは、オープンソース／フリーウェアの公式サイトを装う偽サイトがGoogle検索で上位表示され、TDS経由でマルウェアを配布する大規模キャンペーンを報じた。攻撃者は検索流入した利用者を本物に見えるプロジェクトサイトへ誘導し、参照元、地域、端末情報などに応じてRemus Stealer、AnimateClipper、Sessio…",
+      "article_path": "articles/c8dad7fc1d427c71.html",
+      "original_url": "https://thehackernews.com/2026/06/fake-sites-mimicking-open-source-tools.html"
+    },
+    {
+      "entry_id": "93326a21e128654d",
+      "title": "Hackers Spied on a Stock Exchange Executive's Outlook Mailbox for Five Months",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-04T09:33:57+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要The Hacker Newsは、主要な国際的証券取引所の上級幹部のOutlookメールボックスに、未知の攻撃者が少なくとも5か月間アクセスしていた事案を報じた。攻撃者は受信箱を一括で持ち出すのではなく、少量ずつ繰り返しコピーし、DropboxやOneDriveを経由させることで、通常のクラウド利用に紛れ込ませた可能性が高い。金銭目的の即時詐取よりも、…",
+      "article_path": "articles/93326a21e128654d.html",
+      "original_url": "https://thehackernews.com/2026/06/hackers-spied-on-stock-exchange.html"
+    },
+    {
+      "entry_id": "d9122a195c49baff",
+      "title": "DoJ Disrupts Southeast Asia Crypto Fraud Networks, Freezes $3.8 Million in Assets",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-04T06:06:25+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Scam/Fraud",
+      "summary_preview": "概要米国司法省は、東南アジアを拠点とする暗号資産詐欺ネットワークに対する官民合同の妨害作戦を公表し、約380万ドル相当の資産を凍結したと報じられた。作戦では、被害者への接触や誘導に使われたソーシャルメディア、メール、インターネット接続アカウントが大量に停止され、犯罪基盤そのものを削る狙いが示されている。悪用の中心は脆弱性攻撃ではなく、信頼関係の構築、投資名…",
+      "article_path": "articles/d9122a195c49baff.html",
+      "original_url": "https://thehackernews.com/2026/06/doj-disrupts-southeast-asia-crypto.html"
+    },
+    {
+      "entry_id": "58b4e7a59fbadbf0",
+      "title": "Microsoft's Coreutils for Windows, (Thu, Jun 4th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-06-04T06:10:44+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要SANS ISCの記事は、Windows上でUnix系の基本コマンドを使うためのCoreutilsに関する話題で、入力情報から確認できる範囲では脆弱性や攻撃観測ではなく、ツール利用・運用上の注意に近い内容と見られる。CSIRT観点では、導入そのものよりも同名コマンドの衝突、PATH優先順位、既存スクリプトの挙動変化、EDRや監査ログ上のベースライン変化…",
+      "article_path": "articles/58b4e7a59fbadbf0.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33048"
+    },
+    {
+      "entry_id": "21416ca7cdc21246",
+      "title": "ISC Stormcast For Thursday, June 4th, 2026 https://isc.sans.edu/podcastdetail/9958, (Thu, Jun 4th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-06-04T02:00:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要SANS ISCが「ISC Stormcast For Thursday, June 4th, 2026」を公開したが、入力情報には本文要約や参照URLが含まれておらず、個別の脆弱性、マルウェア、侵害事案を特定できない。Stormcastは日次の観測・注意喚起を短く扱う形式が多く、CSIRTでは即時対応命令ではなく、他の一次情報と突き合わせるための早期…",
+      "article_path": "articles/21416ca7cdc21246.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33046"
+    },
+    {
+      "entry_id": "91a256444ad78b24",
+      "title": "横浜DeNAベイスターズ日本一優勝パレード2024 支援者情報が漏えいした可能性 ～ CAMPFIRE への不正アクセス",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-03T23:05:06+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要ScanNetSecurityの記事タイトルによれば、横浜DeNAベイスターズの「日本一優勝パレード2024」に関する支援者情報について、CAMPFIREへの不正アクセスを起点に漏えいした可能性が示されている。現時点で入力情報から確認できるのは、対象がパレード支援者情報であり、原因がCAMPFIRE側への不正アクセスとされている点に限られる。悪用面では…",
+      "article_path": "articles/91a256444ad78b24.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/04/55426.html"
+    },
+    {
+      "entry_id": "ae2e154abfa977eb",
+      "title": "データはパスワードで保護 ～ 関市の学校で図書管理システム用パソコンのバックアップデータを保存していた USBメモリ紛失",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-03T23:05:03+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要関市の学校で、図書管理システム用パソコンのバックアップデータを保存していたUSBメモリを紛失した事案として報じられている。データはパスワードで保護されていたとされるが、暗号化の有無、パスワード強度、保存データの範囲が確認できないため、漏えい可能性を完全には下げ切れない。悪用される場合、児童生徒・教職員の氏名、利用者番号、貸出履歴などが含まれていれば、個…",
+      "article_path": "articles/ae2e154abfa977eb.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/04/55425.html"
+    },
+    {
+      "entry_id": "78237e7ecfe242d7",
+      "title": "DMARCポリシーは reject を推奨 ～「フィッシング対策ガイドライン 2026年度版」公開",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-03T23:00:24+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要ScanNetSecurityは、「フィッシング対策ガイドライン 2026年度版」が公開され、DMARCポリシーとしてp=rejectが推奨されたことを報じている。DMARCが監視段階のp=noneや隔離のp=quarantineに留まると、攻撃者は組織ドメインを装ったメールを使い、利用者や取引先の信頼を足掛かりに認証情報窃取やビジネスメール詐欺へつな…",
+      "article_path": "articles/78237e7ecfe242d7.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/04/55424.html"
+    },
+    {
+      "entry_id": "10ebadd1bbf7405a",
+      "title": "従業員の 52 %は未承認の AI ツールを利用、Okta グローバル調査",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-03T23:00:21+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Other",
+      "summary_preview": "概要Oktaのグローバル調査として、従業員の52%が組織で承認されていないAIツールを利用しているとの結果が報じられた。これは単独の侵害事案ではないが、CSIRTの観点ではShadow AIが業務データ、認証情報、ソースコード、顧客情報の持ち出し経路になり得る点が重要となる。攻撃者が直接AIツールを悪用するというより、利用者が貼り付けた情報、連携されたSa…",
+      "article_path": "articles/10ebadd1bbf7405a.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/04/55423.html"
+    },
+    {
+      "entry_id": "566ddc3651564550",
+      "title": "国内の内部不正対策市場でプルーフポイントが出荷金額シェア 1 位獲得",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-03T23:00:17+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要ScanNetSecurityの記事は、国内の内部不正対策市場でProofpointが出荷金額シェア1位を獲得したという市場動向を伝える内容となる。これは脆弱性、侵害、悪用観測ではなく、CSIRTにとっては製品選定や対策領域の優先度を見直す材料として扱う必要がある。内部不正は外部攻撃と異なり、正規アカウント、業務端末、メール、クラウドストレージを使って…",
+      "article_path": "articles/566ddc3651564550.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/04/55422.html"
+    },
+    {
+      "entry_id": "615c3b7ef25e01f3",
+      "title": "AeyeScan に生成 AI を搭載した「Androidアプリ診断」機能を近日提供",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-03T23:00:15+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要ScanNetSecurityの記事は、AeyeScanに生成AIを組み込んだ「Androidアプリ診断」機能が近日提供される予定と伝えている。現時点の入力情報だけでは、診断対象がAPK単体なのか、実機操作を含むのか、API連携や認証後画面まで扱うのかは確認できない。CSIRT観点では、新たな攻撃発生ではなく、モバイルアプリの脆弱性診断を効率化する製品…",
+      "article_path": "articles/615c3b7ef25e01f3.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/04/55421.html"
+    },
+    {
+      "entry_id": "7d5f7722f72b0b97",
+      "title": "Cloudbase と SB C&S がディストリビューター契約を締結、AIセキュリティサービス「Cloudbase AI」取扱開始",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-03T23:00:12+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要Cloudbase と SB C&amp;S がディストリビューター契約を締結し、AIセキュリティサービス「Cloudbase AI」の取り扱いを開始したという製品・販売面の発表となる。現時点の入力情報だけでは、脆弱性、攻撃キャンペーン、侵害事案、具体的な悪用手法の公表ではなく、CSIRTとしては新規セキュリティサービス導入候補として扱うのが妥当となる…",
+      "article_path": "articles/7d5f7722f72b0b97.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/04/55420.html"
+    },
+    {
+      "entry_id": "aeb8bb2da1579d79",
+      "title": "HENNGE One、セキュリティリスク評価クラウド「2線の匠クラウド」と SSO 連携",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-03T23:00:09+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要HENNGE Oneとセキュリティリスク評価クラウド「2線の匠クラウド」がSSO連携したという製品連携の告知とみられる。現時点で示されている範囲では、脆弱性悪用や侵害発生の話ではなく、利用者認証をHENNGE One側に寄せ、リスク評価業務のログイン管理を一元化する方向の変更として読むのが妥当となる。CSIRT観点では、利便性向上よりも、退職者・異動者…",
+      "article_path": "articles/aeb8bb2da1579d79.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/04/55419.html"
+    },
+    {
+      "entry_id": "4c4b279dd61d9382",
+      "title": "Cloudbase「金融庁フロンティア AI 要請を読み解く」公開",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-03T23:00:05+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要ScanNetSecurityの記事は、Cloudbaseが「金融庁フロンティア AI 要請を読み解く」と題する解説を公開したことを伝える内容とみられるが、入力には本文要約や参照先がなく、具体的な要請文、対象業態、期限、求められる統制水準は確認できない。直接の脆弱性や侵害事案ではなく、CSIRT観点では金融分野での生成AI・高度AI利用に関する統制要請…",
+      "article_path": "articles/4c4b279dd61d9382.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/04/55418.html"
+    }
+  ]
+}
