@@ -1,0 +1,350 @@
+{
+  "date": "2026-06-06",
+  "window": {
+    "from": "2026-06-05T06:00:00+09:00",
+    "to": "2026-06-06T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 21
+  },
+  "generated_at_jst": "2026-06-06T06:53:08.680308+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "カナダが国家AI戦略「AI for All」を発表",
+      "source_name": "Prime Minister of Canada",
+      "published_at": "2026-06-04T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要カナダ首相が2026年6月4日に国家AI戦略「AI for All」を発表した。5年間で新法整備、投資、プログラムを展開し、責任あるAI採用を推進する。重点は信頼構築、機会拡大、主権強化だ。世界的な競争激化の中で人材・インフラ・イノベーション確保を目指す。公共AIスーパーコンピュータ構築や主権的コンピュート・クラウド投資も含む。米国などの動きと並行し、…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://www.pm.gc.ca/en/news/news-releases/2026/06/04/prime-minister-carney-launches-ai-all-canadas-new-national-artificial",
+      "selection_reason": "カナダ政府による具体的な国家戦略発表で、AI分野の政策動向として新規性が高く、他国動向と比較して主権重視の投資・法整備が実務影響大",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "Prime Minister Carney launches AI for All",
+          "url": "https://www.pm.gc.ca/en/news/news-releases/2026/06/04/prime-minister-carney-launches-ai-all-canadas-new-national-artificial",
+          "source_type": "official"
+        },
+        {
+          "title": "House unveils AI draft that would preempt state laws",
+          "url": "https://www.politico.com/news/2026/06/04/obernolte-trahan-ai-bill-lands-on-the-hill-00949920",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "CloudflareがAI Gatewayにリアルタイム支出制限機能を追加",
+      "source_name": "Cloudflare Blog",
+      "published_at": "2026-06-05T00:00:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Other",
+      "summary_preview": "概要Cloudflareが2026年6月5日にAI Gatewayへリアルタイム支出制限機能を追加した。複数AIプロバイダーでのトークン使用量を制御し、予算超過を防ぐ。Cloudflare Accessと連携し、IDベースの予算・ポリシーを適用可能だ。AI利用拡大に伴うコスト管理需要に対応する。開発者ツール分野でもVoidZeroチームの統合が発表され、V…",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://blog.cloudflare.com/ai-gateway-spend-limits/",
+      "selection_reason": "クラウドサービス提供者の具体的な製品アップデートで、AI利用コスト管理というIT実務トレンドを反映し、開発者・企業向け即時影響が高い",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "Your AI bill is out of control",
+          "url": "https://blog.cloudflare.com/ai-gateway-spend-limits/",
+          "source_type": "web"
+        },
+        {
+          "title": "VoidZero is joining Cloudflare",
+          "url": "https://blog.cloudflare.com/",
+          "source_type": "web"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "CISAが既知悪用脆弱性カタログを更新",
+      "source_name": "CISA",
+      "published_at": "2026-06-05T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CISAが2026年6月5日に既知悪用脆弱性カタログを更新した。SolarWinds Serv-Uの無制限リソース消費脆弱性やMirasvit製品のデシリアライズ脆弱性などが追加された。認証不要でサービスクラッシュやリモートコード実行が可能になるケースを含む。Android Frameworkの整数オーバーフローもリスト入りだ。組織は優先的にパッチ適用…",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "selection_reason": "公式機関による最新脆弱性情報更新で、セキュリティ実務に直結する具体的なCVE追加が新規性・影響度で優位",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "Known Exploited Vulnerabilities Catalog",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+          "source_type": "official"
+        },
+        {
+          "title": "SCC Executive Brief - 2026-06-04",
+          "url": "https://techjacksolutions.com/scc-brief/scc-executive-brief-2026-06-04/",
+          "source_type": "web"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "f806dcd5f30637ce",
+      "title": "CVE-2026-28318 SolarWinds Serv-U Uncontrolled Resource Consumption Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-06-05T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要CISA KEVに、SolarWinds Serv-UのCVE-2026-28318が既知悪用脆弱性として追加された。内容は制御されないリソース消費で、攻撃者がServ-Uに過大な処理や接続負荷を与え、ファイル転送サービスの停止や著しい性能劣化を引き起こす悪用が想定される。Serv-Uは外部組織とのファイル授受、業務システム連携、委託先連携に使われやす…",
+      "article_path": "articles/f806dcd5f30637ce.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "08adace3c52b0cc8",
+      "title": "IronWorm and New Miasma Worm Variant Hit npm in Supply Chain Attacks",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-05T18:05:30+00:00",
+      "impact_level": "High",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要The Hacker Newsは、npmエコシステムで50件超の正規パッケージまたは汚染版を使う複数のサプライチェーン攻撃が確認され、Rust製情報窃取型マルウェア「IronWorm」と自己拡散型ワーム「Miasma」の新亜種が配布されたと報じた。悪用は、開発者やCIが依存関係を取得・更新したタイミングで悪性コードを実行させ、端末上のトークン、SSH鍵…",
+      "article_path": "articles/08adace3c52b0cc8.html",
+      "original_url": "https://thehackernews.com/2026/06/ironworm-and-new-miasma-worm-variant.html"
+    },
+    {
+      "entry_id": "5ce3a294fddf059c",
+      "title": "Android Spyware Asin Targets Arabic Users via Fake News, PDF and War Map Apps",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-05T14:53:40+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Malware",
+      "summary_preview": "概要アラビア語利用者を狙うAndroidスパイウェアAsinが、偽のニュース、PDF閲覧、戦況地図、政府系ニュースを装うWebサイト経由で配布されたとESETが観測した。攻撃はGoogle Play内の正規配布ではなく、関心の高い戦争関連情報や実用アプリを餌に端末へインストールさせる流れとみられ、利用者の判断を迂回する社会的誘導が中核となる。業務端末でなく…",
+      "article_path": "articles/5ce3a294fddf059c.html",
+      "original_url": "https://thehackernews.com/2026/06/android-spyware-asin-targets-arabic.html"
+    },
+    {
+      "entry_id": "27ab243fa2b67af7",
+      "title": "New Threat Cluster OP-512 Targets Microsoft IIS Servers with Custom Web Shell Framework",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-05T12:33:38+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要The Hacker Newsは、ReliaQuestが未報告の脅威クラスタOP-512を観測し、Microsoft IISサーバへ独自のWeb shellフレームワークを展開していたと報じている。狙いは諜報寄りと評価され、中国との関連は中〜高程度の確度とされるが、提供情報の範囲では初期侵入経路、悪用されたCVE、認証情報の入手方法、被害組織数は未確認…",
+      "article_path": "articles/27ab243fa2b67af7.html",
+      "original_url": "https://thehackernews.com/2026/06/new-threat-cluster-op-512-targets.html"
+    },
+    {
+      "entry_id": "543bc7d55f9b040c",
+      "title": "Only 10% of SOCs Say They’re Getting Excellent Value From AI. Here’s What the Second Wave Has to Deliver",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-05T11:20:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要The Hacker Newsは、AIを組み込んだSOC基盤やAIコパイロットへの投資が急増する一方、優れた価値を得ていると答えたSOCは10%にとどまる、という調査・市場動向を紹介している。この記事は脆弱性や侵害事案ではなく、AI SOC導入の期待値と実効性のずれを扱う内容となる。攻撃者が本記事を直接悪用する筋は薄いが、AIによるトリアージや自動対応…",
+      "article_path": "articles/543bc7d55f9b040c.html",
+      "original_url": "https://thehackernews.com/2026/06/only-10-of-socs-say-theyre-getting.html"
+    },
+    {
+      "entry_id": "0a7eecd879745e3e",
+      "title": "Hackers Exploit Critical Everest Forms Pro WordPress Plugin Flaw to Take Over Sites",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-05T08:38:59+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要The Hacker Newsは、WordPressプラグインEverest Forms Proの脆弱性CVE-2026-3300が攻撃者に悪用され、サイトの完全侵害につながっていると報じた。対象は1.9.12以前の全バージョンとされ、CVSSは9.8で、外部から任意コード実行に至る点が運用上の焦点となる。WordPressは公開Webとしてインターネ…",
+      "article_path": "articles/0a7eecd879745e3e.html",
+      "original_url": "https://thehackernews.com/2026/06/hackers-exploit-critical-everest-forms.html"
+    },
+    {
+      "entry_id": "e09e1d51360d7853",
+      "title": "FIFA World Cup 2026 Scams Are Already Live: Fake Sites, Banking Malware, and Stolen Logins",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-05T07:01:41+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Scam/Fraud",
+      "summary_preview": "概要The Hacker Newsは、FIFA World Cup 2026に便乗した詐欺が開幕前から観測され、偽サイト、海賊版ストリーミングアプリに仕込まれたバンキングマルウェア、FIFA風ログイン画面を使う認証情報窃取が確認されていると報じた。攻撃者は大会への関心とチケット需要を利用し、検索結果、広告、SNS、非公式配信アプリ経由で利用者を誘導し、決済…",
+      "article_path": "articles/e09e1d51360d7853.html",
+      "original_url": "https://thehackernews.com/2026/06/fifa-world-cup-2026-scams-are-already.html"
+    },
+    {
+      "entry_id": "4715c532fc747165",
+      "title": "PCPJack Hijacks 230 AWS, Google Cloud, and Azure Servers for Covert SMTP Relay Network",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-05T05:34:19+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要The Hacker Newsは、PCPJackと呼ばれる脅威アクターがAWS、Google Cloud、Microsoft Azure上の約230台のクラウドサーバーを乗っ取り、秘匿型SMTPリレーネットワークとして利用していたと報じた。侵害された業務用サーバーはSMTPプロキシとして静かに転用され、メール中継可能性を確認されたうえで、下流の利用者へ…",
+      "article_path": "articles/4715c532fc747165.html",
+      "original_url": "https://thehackernews.com/2026/06/pcpjack-hijacks-230-aws-google-cloud.html"
+    },
+    {
+      "entry_id": "ca3bf12e0d1af7f8",
+      "title": "The Evil MSI Background is Back&#x21;, (Fri, Jun 5th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-06-05T06:47:26+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Malware",
+      "summary_preview": "概要SANS ISCは、JPEG画像にペイロードを埋め込む手法が再び観測され、今回はWeTransferリンクを含むメールから始まった事例として紹介している。画像はMSIブランド風の背景に見えるが、攻撃者にとっては見た目が無害なファイルを配送経路に混ぜ、ゲートウェイや利用者の警戒を下げる狙いがある。悪用の成立には、メール受信者がリンク先から取得したファイル…",
+      "article_path": "articles/ca3bf12e0d1af7f8.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33054"
+    },
+    {
+      "entry_id": "0b588794825b242f",
+      "title": "ISC Stormcast For Friday, June 5th, 2026 https://isc.sans.edu/podcastdetail/9960, (Fri, Jun 5th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-06-05T02:00:02+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要SANS ISCの「ISC Stormcast For Friday, June 5th, 2026」が公開されたというメタ情報のみが入力されており、要約本文や参照URLは含まれていない。現時点で確認できる事実は、日次のセキュリティ観測・解説コンテンツが配信されたことに限られ、対象製品、CVE、攻撃キャンペーン、侵害有無は特定できない。悪用方法や影響範…",
+      "article_path": "articles/0b588794825b242f.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33050"
+    },
+    {
+      "entry_id": "76f11ef98cbedd70",
+      "title": "Seeking Counsel: Ongoing Targeted Campaign Against US Law Firms",
+      "source_name": "Mandiant",
+      "category": "reporting",
+      "published_at": "2026-06-05T14:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要Mandiantは、UNC3753が2026年1月から5月にかけて米国の法律事務所、専門サービス、金融サービスを狙ったデータ窃取型の恐喝キャンペーンを継続していると報告した。攻撃は悪性リンクや添付を含まない請求書風メールで口実を作り、その後にITヘルプデスクを装う電話で被害者を誘導し、Zoom、Teams、Quick Assist、AnyDesk、Bo…",
+      "article_path": "articles/76f11ef98cbedd70.html",
+      "original_url": "https://cloud.google.com/blog/topics/threat-intelligence/targeted-campaign-us-law-firms/"
+    },
+    {
+      "entry_id": "84c6b448b4a10604",
+      "title": "Threat Brief: Active Exploitation of PAN-OS CVE-2026-0257",
+      "source_name": "Unit 42",
+      "category": "reporting",
+      "published_at": "2026-06-05T14:05:42+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要Unit 42が、PAN-OSの脆弱性 CVE-2026-0257 について悪用が進行中として、活動痕跡と緩和策を公開した。入力情報では脆弱性の詳細、CVSSスコア、影響バージョン、認証要否、修正済みバージョンの有無が示されておらず、攻撃経路の断定は避ける必要がある。PAN-OSは境界防御機器で利用されるため、悪用が成立すると単一ホスト侵害にとどまらず…",
+      "article_path": "articles/84c6b448b4a10604.html",
+      "original_url": "https://unit42.paloaltonetworks.com/active-exploitation-of-pan-os-cve-2026-0257/"
+    },
+    {
+      "entry_id": "de4dafbcafd1837b",
+      "title": "ランサムウェア被害の情報漏えいで「全米から告訴」～ 法務部長 五年間の法廷闘争戦略",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-04T23:10:03+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要ScanNetSecurityの記事は、ランサムウェア被害後に漏えい情報をめぐって米国各地で訴訟を受けた組織が、法務部門主導で長期の法廷闘争に臨む文脈を扱うものと読み取れる。技術的には新たな攻撃手法の公表ではなく、暗号化被害そのものよりも、窃取データの公開・通知・説明責任が二次被害を長期化させる点が焦点となる。攻撃者は漏えいサイト掲載や交渉履歴を圧力材…",
+      "article_path": "articles/de4dafbcafd1837b.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/05/55435.html"
+    },
+    {
+      "entry_id": "818d862a6b740ac0",
+      "title": "東京デジタルアカデミーポータルサイトでの設定不備、CSV ファイルのダウンロードを確認",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-04T23:05:05+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Misconfiguration",
+      "summary_preview": "概要ScanNetSecurityの記事タイトルから、東京デジタルアカデミーポータルサイトで設定不備によりCSVファイルをダウンロード可能な状態が確認された事案と読み取れる。CSVは画面表示よりも一括取得に向き、受講者情報、申込情報、管理用一覧などが含まれていた場合、単発の閲覧事故ではなくまとまった情報流出として扱う必要がある。悪用は高度な攻撃技術より、U…",
+      "article_path": "articles/818d862a6b740ac0.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/05/55434.html"
+    },
+    {
+      "entry_id": "1d8c8b60c5d28b89",
+      "title": "現時点で情報漏えいの事実は確認されず ～ 河合楽器製作所の米国子会社に不正アクセスの可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-04T23:05:02+00:00",
+      "impact_level": "Low",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要河合楽器製作所の米国子会社で、不正アクセスの可能性があるとして調査が進められているとの報道となる。現時点では情報漏えいの事実は確認されていないとされるが、侵入経路、影響を受けたシステム、攻撃者の滞在期間、認証情報の悪用有無は記事情報だけでは判断できない。攻撃者視点では、子会社環境が本社や販売、保守、顧客管理の基盤と連携している場合、業務用アカウントや共…",
+      "article_path": "articles/1d8c8b60c5d28b89.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/05/55433.html"
+    },
+    {
+      "entry_id": "b379d0a6c7f51660",
+      "title": "TP-Link製ルータ Archer BE450 および BE7200 にOSコマンドインジェクションの脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-04T23:00:20+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要ScanNetSecurityが、TP-Link製ルータ Archer BE450 および Archer BE7200 に OSコマンドインジェクション の脆弱性があると報じた。詳細なCVE番号、CVSS、認証要否、管理画面の露出条件、修正版の有無は入力情報から確認できないため、現時点では影響範囲を断定しない判断が必要となる。攻撃者が脆弱な入力経路へ到…",
+      "article_path": "articles/b379d0a6c7f51660.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/05/55432.html"
+    },
+    {
+      "entry_id": "374ead8608eab36b",
+      "title": "Windowsカーネルドライバ「PCTCore64.sys」に不適切なアクセス制御",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-04T23:00:17+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要ScanNetSecurityは、Windowsカーネルドライバ「PCTCore64.sys」に不適切なアクセス制御があると報じている。カーネルドライバはOSの高権限領域で動くため、低権限ユーザーや侵害済みプロセスから本来制限されるべき制御要求を送れる場合、権限昇格、保護機能の無効化、任意のカーネル操作につながる可能性がある。影響はまず当該ドライバを導…",
+      "article_path": "articles/374ead8608eab36b.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/05/55431.html"
+    },
+    {
+      "entry_id": "7125e3c7219d9ed6",
+      "title": "自分を守る7つの習慣「利用者向けフィッシング詐欺対策ガイドライン 2026年度版」公開",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-04T23:00:12+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要ScanNetSecurityが、自分を守る7つの習慣「利用者向けフィッシング詐欺対策ガイドライン 2026年度版」の公開を報じた記事とみられる。現時点の入力情報からは、特定の新規キャンペーン、侵害事案、CVE、悪用中の脆弱性を示す情報は確認できず、主眼は利用者向けの予防行動と啓発に置かれている。CSIRT視点では、フィッシングは認証情報窃取、MFA疲…",
+      "article_path": "articles/7125e3c7219d9ed6.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/05/55430.html"
+    },
+    {
+      "entry_id": "43e7fa03e137c8ae",
+      "title": "株式会社SHIFT SECURITY、新会社設立を中止し株式会社SHIFTに吸収合併へ",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-04T23:00:09+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要ScanNetSecurityは、株式会社SHIFT SECURITYについて、新会社設立を中止し、株式会社SHIFTへ吸収合併する方針を報じた。入力情報だけでは、侵害、脆弱性、サービス停止、顧客データ流出を示す記載はなく、CSIRT観点ではセキュリティ事案そのものではないと扱うのが妥当となる。ただし、セキュリティ子会社や関連組織の再編は、委託契約、通…",
+      "article_path": "articles/43e7fa03e137c8ae.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/05/55429.html"
+    },
+    {
+      "entry_id": "3a20a4b87348bf09",
+      "title": "プルーフポイント、脆弱性パッチ適用の優先順位付けを支援する「Active Exploits Protection」を発表",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-04T23:00:06+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要ScanNetSecurityは、Proofpointが脆弱性パッチ適用の優先順位付けを支援する「Active Exploits Protection」を発表したと伝えている。記事本文の詳細や一次情報URLは入力に含まれていないため、対象製品、連携方式、判定ロジック、提供形態、検知対象の範囲は未確認事項として扱う必要がある。CSIRT視点では、新たな攻…",
+      "article_path": "articles/3a20a4b87348bf09.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/05/55428.html"
+    },
+    {
+      "entry_id": "9054fae7bca54227",
+      "title": "FIRST Conference 2026 に GMOサイバーセキュリティ byイエラエの林彦博氏と伊藤公祐氏が登壇",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-04T23:00:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要ScanNetSecurityは、FIRST Conference 2026にGMOサイバーセキュリティ byイエラエの林彦博氏と伊藤公祐氏が登壇する旨を報じた情報。現時点の入力には講演タイトル、技術テーマ、公開資料、発表内容の要旨が含まれておらず、脆弱性、侵害、攻撃キャンペーンを示す情報ではない。悪用という観点では、この記事自体から攻撃手順や悪用可能…",
+      "article_path": "articles/9054fae7bca54227.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/05/55427.html"
+    }
+  ]
+}
