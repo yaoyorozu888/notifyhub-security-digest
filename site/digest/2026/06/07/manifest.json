@@ -1,0 +1,185 @@
+{
+  "date": "2026-06-07",
+  "window": {
+    "from": "2026-06-06T06:00:00+09:00",
+    "to": "2026-06-07T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 6
+  },
+  "generated_at_jst": "2026-06-07T06:35:44.265605+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "OpenAI、ChatGPTの記憶システムを刷新",
+      "source_name": "OpenAI公式",
+      "published_at": "2026-06-04T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要OpenAIがChatGPTの記憶機能を大幅強化するDreaming V3を6月4日からロールアウト開始した。過去会話から自動で文脈を合成し、好みや事実を継続的に更新する。これまで手動保存メモリと限定的バックグラウンド処理に依存していた仕組みを置き換え、時間経過による関連性低下を防ぐ。Plus/Proユーザーから順次拡大し、無料層にも順次提供される。企…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://openai.com/index/chatgpt-memory-dreaming/",
+      "selection_reason": "AI分野で具体的な製品アップデートとして新規性が高く、ユーザー実務への直接影響が大きい。カナダAI戦略などの政策話題より優先",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "Dreaming: Better memory for a more helpful ChatGPT",
+          "url": "https://openai.com/index/chatgpt-memory-dreaming/",
+          "source_type": "official"
+        },
+        {
+          "title": "ChatGPT Memory Dreaming Update",
+          "url": "https://www.techtimes.com/articles/317840/20260605/chatgpt-memory-dreaming-update-openai-rewrites-personalization-engine-limits-audit-trail.htm",
+          "source_type": "news"
+        },
+        {
+          "title": "ChatGPT Dreaming V3 rollout",
+          "url": "https://windowsforum.com/threads/chatgpt-dreaming-v3-new-memory-architecture-for-smarter-persistent-ai.422983/",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "Agentic AIがチップ・クラウド・SaaS企業に波及",
+      "source_name": "Motley Fool",
+      "published_at": "2026-06-04T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要Agentic AIの台頭でAMD、ServiceNow、Amazonなどの企業が恩恵を受けるとの分析が出ている。複雑タスクを自律実行するAIエージェント需要がチップ需要やクラウド利用を押し上げる。一方で構築の難しさから採用が遅れ、ROI重視の動きも見られる。X投稿でもagentic AIの実装ハードルに関する議論が活発だ。企業はインフラ投資と人材確保…",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://finance.yahoo.com/sectors/technology/articles/3-chip-cloud-saas-stocks-144000118.html",
+      "selection_reason": "ITトレンドとしてagentic AIの実務影響を具体的に示す企業動向。汎用予測ではなく株式・採用事例ベースで新規性あり",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "3 Chip, Cloud, and SaaS Stocks to Own for the Agentic AI Revolution",
+          "url": "https://finance.yahoo.com/sectors/technology/articles/3-chip-cloud-saas-stocks-144000118.html",
+          "source_type": "news"
+        },
+        {
+          "title": "X post on agentic AI adoption challenges",
+          "url": "https://x.com/leadlagreport/status/2063368066541461520",
+          "source_type": "x"
+        },
+        {
+          "title": "Enterprise technology 2026 trends",
+          "url": "https://www.constellationr.com/insights/news/enterprise-technology-2026-15-ai-saas-data-business-trends-watch",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "CISA、SolarWinds Serv-Uの脆弱性をKEVに追加",
+      "source_name": "CISA",
+      "published_at": "2026-06-05T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CISAが6月5日、SolarWinds Serv-UのCVE-2026-28318をKnown Exploited Vulnerabilities Catalogに追加した。認証不要でサービスをクラッシュさせるリソース消費の脆弱性で、ランサムウェア関連の悪用が確認されている。適用期限は6月19日と短く、早急なパッチ適用や緩和策が求められる。クラウドサ…",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://www.cisa.gov/news-events/alerts/2026/06/05/cisa-adds-one-known-exploited-vulnerability-catalog",
+      "selection_reason": "Cybersecurity実務に直結する公式KEV更新。Google Androidパッチより最新で、即時対応が必要な事例",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+          "url": "https://www.cisa.gov/news-events/alerts/2026/06/05/cisa-adds-one-known-exploited-vulnerability-catalog",
+          "source_type": "official"
+        },
+        {
+          "title": "Known Exploited Vulnerabilities Catalog",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+          "source_type": "official"
+        },
+        {
+          "title": "X post referencing agentic AI but context on security costs",
+          "url": "https://x.com/Denys8663824141/status/2063369178715685298",
+          "source_type": "x"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "846c0a9e1a616abc",
+      "title": "New ChatGPT Lockdown Mode Limits Tools That Could Enable Data Exfiltration",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-06T13:36:57+00:00",
+      "impact_level": "Low",
+      "threat_type": "Advisory",
+      "summary_preview": "概要The Hacker Newsは、OpenAIがChatGPTの対象個人アカウント向けにLockdown Modeを展開し始めたと報じた。狙いは、プロンプトインジェクションにより、ChatGPTのツール連携や外部出力機能が悪用され、会話内の機密情報やアップロード済みデータが外部へ持ち出される経路を減らす点にある。攻撃は、ユーザーが閲覧・投入する文書やW…",
+      "article_path": "articles/846c0a9e1a616abc.html",
+      "original_url": "https://thehackernews.com/2026/06/new-chatgpt-lockdown-mode-limits-tools.html"
+    },
+    {
+      "entry_id": "e7b78c9c0f101f11",
+      "title": "Free Apps Are Quietly Turning Smart TVs Into Web-Scraping Proxies for AI",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-06T08:29:05+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要研究者が、Bright DataのSDKを組み込んだ消費者向けアプリを解析し、スマートテレビを含む端末が住宅用プロキシの出口ノードとして使われ、ウェブスクレイピング通信を中継する仕組みを示した。脆弱性悪用というより、無料アプリやSDK配布を通じて端末の回線・IPアドレスを利用し、AI向けデータ収集事業の通信を一般利用者のネットワークから出ているように見…",
+      "article_path": "articles/e7b78c9c0f101f11.html",
+      "original_url": "https://thehackernews.com/2026/06/free-apps-are-quietly-turning-smart-tvs.html"
+    },
+    {
+      "entry_id": "c0701988ff81b7b5",
+      "title": "CISA Adds Actively Exploited SolarWinds Serv-U DoS Flaw to KEV Catalog",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-06T08:14:31+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要The Hacker Newsは、米CISAがSolarWinds Serv-Uの脆弱性CVE-2026-28318をKEVカタログへ追加したと報じた。CVSSは7.5で、内容はServ-UサービスをクラッシュさせるDoS脆弱性とされ、攻撃者は外部公開されたファイル転送基盤の可用性を低下させる形で悪用すると見られる。RCEや認証情報窃取とは性質が異なる…",
+      "article_path": "articles/c0701988ff81b7b5.html",
+      "original_url": "https://thehackernews.com/2026/06/cisa-adds-actively-exploited-solarwinds.html"
+    },
+    {
+      "entry_id": "635e08428f6bd9b8",
+      "title": "AI Agent Uncovers 21 Zero-Days in FFmpeg; Chrome Patches Record 429 Bugs",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-06T07:28:30+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "Two things landed within days of each other this week. A security startup reported 21 previously unknown vulnerabilities in FFmpeg, the media library inside almost everything that…",
+      "article_path": "articles/635e08428f6bd9b8.html",
+      "original_url": "https://thehackernews.com/2026/06/ai-agent-uncovers-21-zero-days-in.html"
+    },
+    {
+      "entry_id": "494a76e04bc72412",
+      "title": "Miasma Worm Hits 73 Microsoft GitHub Repositories in Major Supply Chain Attack",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-06T06:58:04+00:00",
+      "impact_level": "High",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要The Hacker Newsは、自己複製型のサプライチェーン攻撃キャンペーン「Miasma」により、Microsoft関連のGitHubリポジトリ73件が影響を受けたと報じた。対象はAzure、Azure-Samples、Microsoft、MicrosoftDocsの4組織にまたがり、GitHubは該当リポジトリへのアクセスを無効化したとされる。攻…",
+      "article_path": "articles/494a76e04bc72412.html",
+      "original_url": "https://thehackernews.com/2026/06/miasma-worm-hits-73-microsoft-github.html"
+    },
+    {
+      "entry_id": "e5dd506dffcab993",
+      "title": "Cisco Catalyst SD-WAN Manager CVE-2026-20245 Flaw Actively Exploited – No Patch Available",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-06T04:19:28+00:00",
+      "impact_level": "High",
+      "threat_type": "Zero-day",
+      "summary_preview": "概要Cisco Catalyst SD-WAN Managerの脆弱性CVE-2026-20245について、Ciscoが実際の悪用を確認したと報じられている。CVSSは7.8で、対象はオンプレミス、Cisco SD-WAN Cloud-Pro、Cisco管理クラウド、政府向けFedRAMP環境まで含むため、単一アプライアンスの問題ではなくSD-WAN管理プ…",
+      "article_path": "articles/e5dd506dffcab993.html",
+      "original_url": "https://thehackernews.com/2026/06/cisco-catalyst-sd-wan-manager-cve-2026.html"
+    }
+  ]
+}
