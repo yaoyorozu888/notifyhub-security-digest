@@ -11,7 +11,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/favicon-192.png" />
-  <title>CISA、SolarWinds Serv-Uの脆弱性をKEVに追加 | NotifyHub Cybersecurity Daily Report</title>
+  <title>CISA KEVカタログ更新 既知悪用脆弱性追加 | NotifyHub Cybersecurity Daily Report</title>
   <style>
     :root{
       --bg:#0b1020; --panel:#0f1730; --panel2:#121c3a;
@@ -245,7 +245,7 @@
 
     <div class="panel">
       <div class="head">
-        <h1>CISA、SolarWinds Serv-Uの脆弱性をKEVに追加</h1>
+        <h1>CISA KEVカタログ更新 既知悪用脆弱性追加</h1>
 
         <div class="meta">
           <span>🗞️ CISA</span>
@@ -266,13 +266,13 @@
       <div class="body">
         <div class="section">
   <h2>AI選定理由</h2>
-  <div class="ruleReason">Cybersecurity実務に直結する公式KEV更新。Google Androidパッチより最新で、即時対応が必要な事例</div>
+  <div class="ruleReason">対象期間内の公式KEV更新で、即時対応が必要な実務影響が大きい。インシデント事例より規制・アドバイザリを優先</div>
 </div>
 
         <div class="section summary">
           <h2>🧾 要約（Grok / grok-4.3）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          <h4>概要</h4><p>CISAが6月5日、SolarWinds Serv-UのCVE-2026-28318をKnown Exploited Vulnerabilities Catalogに追加した。</p><p>認証不要でサービスをクラッシュさせるリソース消費の脆弱性で、ランサムウェア関連の悪用が確認されている。</p><p>適用期限は6月19日と短く、早急なパッチ適用や緩和策が求められる。</p><p>クラウドサービス利用企業も影響を受けやすい。</p><p>定期的なKEV確認がセキュリティ運用で重要だ。</p>
+          <h4>概要</h4><p>CISAは2026年6月5日、Known Exploited Vulnerabilitiesカタログに新たに1件を追加した。SolarWinds Serv-Uの脆弱性CVE-2026-28318が活発に悪用されており、連邦機関は6月19日までに修正を求められる。</p><p>この更新は実際の攻撃証拠に基づき、組織はパッチ適用を最優先すべきだ。類似のエッジデバイスやサーバー製品も影響を受ける可能性がある。</p><p>定期的なKEV監視と自動パッチ管理の導入が不可欠となる。未対応の場合、侵害リスクが急増する。</p>
         </div>
 
         <div class="section">
@@ -280,18 +280,14 @@
           <div class="terms">
             <div class="termCard">
   <div class="term">KEV Catalog</div>
-  <p class="exp">CISAが積極的に悪用されている脆弱性をリスト化。優先対応を促す公式リファレンス</p>
-</div>
-<div class="termCard">
-  <div class="term">uncontrolled resource consumption</div>
-  <p class="exp">入力操作でリソースを過剰消費させサービス拒否を誘発。正常動作と異なり悪用容易</p>
+  <p class="exp">CISAが管理する actively exploited vulnerabilities のリスト。優先順位付けのための公式参照源として機能する</p>
 </div>
           </div>
           <h3 class="subSectionTitle">深掘り解説</h3>
           <div class="deepDive">
             <div class="termCard deepDiveCard">
-  <div class="term">KEV活用の運用ポイント</div>
-  <p class="exp">KEV追加時は即座に影響範囲を調査し、パッチ適用やWAF設定を優先。具体例としてSolarWinds製品利用企業はホットフィックス確認を急ぐ。日常的にCISAサイトを監視し、期限付き対応をスケジュール化すると良い。</p>
+  <div class="term">KEVに基づく優先パッチ適用</div>
+  <p class="exp">CISAのKEV追加は実世界の攻撃を反映する。組織はカタログを週次確認し、該当製品の即時更新を実施する。SolarWinds事例のように期限付き要件がある場合、自動化ツールで対応漏れを防ぐ運用が標準化されつつある</p>
 </div>
           </div>
         </div>
@@ -301,7 +297,6 @@
   <div class="infoSources">
     <div class="infoSourceRow"><strong>official</strong> <a href="https://www.cisa.gov/news-events/alerts/2026/06/05/cisa-adds-one-known-exploited-vulnerability-catalog" target="_blank" rel="noopener noreferrer">CISA Adds One Known Exploited Vulnerability to Catalog</a></div>
     <div class="infoSourceRow"><strong>official</strong> <a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener noreferrer">Known Exploited Vulnerabilities Catalog</a></div>
-    <div class="infoSourceRow"><strong>x</strong> <a href="https://x.com/Denys8663824141/status/2063369178715685298" target="_blank" rel="noopener noreferrer">X post referencing agentic AI but context on security costs</a></div>
   </div>
 </div>
 
@@ -309,7 +304,7 @@
           <h2>🕘 生成情報</h2>
           <div class="ruleReason">
 対象期間：2026-06-06T06:00:00+09:00 〜 2026-06-07T06:00:00+09:00
-生成時刻：2026-06-07T06:35:44.265605+09:00
+生成時刻：2026-06-07T12:47:48.261731+09:00
 免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
           </div>
         </div>
