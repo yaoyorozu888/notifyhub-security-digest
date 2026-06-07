@@ -11,7 +11,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/favicon-192.png" />
-  <title>CISA KEVカタログ更新 既知悪用脆弱性追加 | NotifyHub Cybersecurity Daily Report</title>
+  <title>Miasma WormがMicrosoft GitHubリポジトリ73件を侵害 | NotifyHub Cybersecurity Daily Report</title>
   <style>
     :root{
       --bg:#0b1020; --panel:#0f1730; --panel2:#121c3a;
@@ -245,12 +245,12 @@
 
     <div class="panel">
       <div class="head">
-        <h1>CISA KEVカタログ更新 既知悪用脆弱性追加</h1>
+        <h1>Miasma WormがMicrosoft GitHubリポジトリ73件を侵害</h1>
 
         <div class="meta">
-          <span>🗞️ CISA</span>
-          <span>🕒 2026-06-05T09:00:00+09:00</span>
-          <span>🔗 <a href="https://www.cisa.gov/news-events/alerts/2026/06/05/cisa-adds-one-known-exploited-vulnerability-catalog" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
+          <span>🗞️ The Hacker News</span>
+          <span>🕒 2026-06-06T17:00:00+09:00</span>
+          <span>🔗 <a href="https://thehackernews.com/2026/06/miasma-worm-hits-73-microsoft-github-repositories.html" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
         </div>
 
         <div class="tags">
@@ -258,7 +258,7 @@
         </div>
 
         <div class="btnRow">
-          <a class="linkbtn" href="https://www.cisa.gov/news-events/alerts/2026/06/05/cisa-adds-one-known-exploited-vulnerability-catalog" target="_blank" rel="noopener noreferrer">原文リンク</a>
+          <a class="linkbtn" href="https://thehackernews.com/2026/06/miasma-worm-hits-73-microsoft-github-repositories.html" target="_blank" rel="noopener noreferrer">原文リンク</a>
           <a class="linkbtn" href="https://www.notifyhub.site/digest/2026/06/07/">日次トップ</a>
         </div>
       </div>
@@ -266,28 +266,28 @@
       <div class="body">
         <div class="section">
   <h2>AI選定理由</h2>
-  <div class="ruleReason">対象期間内の公式KEV更新で、即時対応が必要な実務影響が大きい。インシデント事例より規制・アドバイザリを優先</div>
+  <div class="ruleReason">サプライチェーン攻撃の具体的事例としてGitHubリポジトリ侵害が確認され、開発者やオープンソース利用企業に直接影響する。類似インシデントより新規性と実務波及が高い。</div>
 </div>
 
         <div class="section summary">
           <h2>🧾 要約（Grok / grok-4.3）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          <h4>概要</h4><p>CISAは2026年6月5日、Known Exploited Vulnerabilitiesカタログに新たに1件を追加した。SolarWinds Serv-Uの脆弱性CVE-2026-28318が活発に悪用されており、連邦機関は6月19日までに修正を求められる。</p><p>この更新は実際の攻撃証拠に基づき、組織はパッチ適用を最優先すべきだ。類似のエッジデバイスやサーバー製品も影響を受ける可能性がある。</p><p>定期的なKEV監視と自動パッチ管理の導入が不可欠となる。未対応の場合、侵害リスクが急増する。</p>
+          <h4>概要</h4><p>Miasma WormがMicrosoftのGitHubリポジトリ73件を標的にしたサプライチェーン攻撃で確認された。リポジトリ改ざんにより依存プロジェクトにマルウェアが拡散するリスクがある。オープンソース利用企業は依存関係の即時監査が必要だ。GitHub Actionsやパッケージ管理のセキュリティ強化が急務となる。</p>
         </div>
 
         <div class="section">
           <h2>📌 キーワード解説</h2>
           <div class="terms">
             <div class="termCard">
-  <div class="term">KEV Catalog</div>
-  <p class="exp">CISAが管理する actively exploited vulnerabilities のリスト。優先順位付けのための公式参照源として機能する</p>
+  <div class="term">サプライチェーン攻撃</div>
+  <p class="exp">サードパーティ経由で標的を侵害する手法。直接攻撃と異なり、信頼された経路を悪用する点で検知が難しい。</p>
 </div>
           </div>
           <h3 class="subSectionTitle">深掘り解説</h3>
           <div class="deepDive">
             <div class="termCard deepDiveCard">
-  <div class="term">KEVに基づく優先パッチ適用</div>
-  <p class="exp">CISAのKEV追加は実世界の攻撃を反映する。組織はカタログを週次確認し、該当製品の即時更新を実施する。SolarWinds事例のように期限付き要件がある場合、自動化ツールで対応漏れを防ぐ運用が標準化されつつある</p>
+  <div class="term">依存関係管理の重要性</div>
+  <p class="exp">GitHubリポジトリ侵害事例のように、1件の改ざんで多数のプロジェクトが影響を受ける。具体例として過去のnpm攻撃で数百のアプリが被害に遭った。SBOM作成と定期スキャンを徹底せよ。</p>
 </div>
           </div>
         </div>
@@ -295,8 +295,8 @@
         <div class="section">
   <h2>情報ソース</h2>
   <div class="infoSources">
-    <div class="infoSourceRow"><strong>official</strong> <a href="https://www.cisa.gov/news-events/alerts/2026/06/05/cisa-adds-one-known-exploited-vulnerability-catalog" target="_blank" rel="noopener noreferrer">CISA Adds One Known Exploited Vulnerability to Catalog</a></div>
-    <div class="infoSourceRow"><strong>official</strong> <a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener noreferrer">Known Exploited Vulnerabilities Catalog</a></div>
+    <div class="infoSourceRow"><strong>news</strong> <a href="https://thehackernews.com/2026/06/miasma-worm-hits-73-microsoft-github-repositories.html" target="_blank" rel="noopener noreferrer">Miasma Worm Hits 73 Microsoft GitHub Repositories</a></div>
+    <div class="infoSourceRow"><strong>news</strong> <a href="https://thehackernews.com/" target="_blank" rel="noopener noreferrer">CISA Adds Actively Exploited SolarWinds Serv-U DoS Flaw</a></div>
   </div>
 </div>
 
@@ -304,7 +304,7 @@
           <h2>🕘 生成情報</h2>
           <div class="ruleReason">
 対象期間：2026-06-06T06:00:00+09:00 〜 2026-06-07T06:00:00+09:00
-生成時刻：2026-06-07T12:47:48.261731+09:00
+生成時刻：2026-06-07T12:59:59.636260+09:00
 免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
           </div>
         </div>
