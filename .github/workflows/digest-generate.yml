@@ -1,19 +1,19 @@
 name: Generate daily digest
 
-on:
-  workflow_dispatch:
-    inputs:
-      send_email:
-        description: "Send email via ACS"
-        required: false
-        default: "true"
-        type: choice
-        options:
-          - "false"
-          - "true"
-  schedule:
-    # JST 06:05 == UTC 21:05 (previous day)
-    - cron: "5 21 * * *"
+#on:
+#  workflow_dispatch:
+#    inputs:
+#      send_email:
+#        description: "Send email via ACS"
+#        required: false
+#        default: "true"
+#        type: choice
+#        options:
+#          - "false"
+#          - "true"
+#  schedule:
+#    # JST 06:05 == UTC 21:05 (previous day)
+#    - cron: "5 21 * * *"
 
 permissions:
   contents: write
