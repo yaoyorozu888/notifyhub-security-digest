@@ -7,7 +7,7 @@
   "counts": {
     "total": 6
   },
-  "generated_at_jst": "2026-06-07T12:59:59.636260+09:00",
+  "generated_at_jst": "2026-06-07T23:28:35.096850+09:00",
   "featured_topics_config": {
     "count": 3,
     "categories": [
@@ -19,75 +19,90 @@
   "featured_topics": [
     {
       "topic_id": "featured-topic-1",
-      "title": "WWDC 2026でSiri大幅刷新とApple Intelligence更新が注目",
-      "source_name": "TechCrunch",
-      "published_at": "2026-06-06T12:00:00+00:00",
+      "title": "OpenAI、ChatGPTの記憶システムを刷新",
+      "source_name": "OpenAI公式",
+      "published_at": "2026-06-05T00:00:00+00:00",
       "impact_level": "High",
       "threat_type": "Other",
-      "summary_preview": "概要WWDC 2026でSiriの大幅刷新とApple Intelligenceの新機能が発表される見込みだ。Siriはより自然な会話処理とタスク実行能力を強化し、開発者向けAPIも拡大する。Apple Intelligenceはプライバシー重視のオンデバイス処理を推進し、企業導入のハードルを下げる。モバイルOSとAI統合のトレンドが加速し、競合他社も追従…",
+      "summary_preview": "概要OpenAIがChatGPTの記憶機能を大幅に強化するDreaming V3をロールアウトした。過去の会話履歴を背景で自動統合し、嗜好や文脈をカテゴリ別に整理して保持する。手動保存リストに代わり、時間経過による陳腐化を防ぐ仕組みを導入。Plus/Proユーザーから順次展開され、Freeユーザーへの拡大も予定。企業利用では長期的なコンテキスト管理が業務効…",
       "article_path": "articles/featured-topic-1.html",
-      "original_url": "https://techcrunch.com/2026/06/06/what-to-expect-from-wwdc-2026-siris-highly-anticipated-revamp-and-apple-intelligence-updates/",
-      "selection_reason": "WWDC 2026の具体的な製品更新予定が明らかになり、IT開発者や企業向けデバイス戦略に直接影響する新規情報として選定。他の汎用予測より実務的波及が明確。",
-      "requested_category": "the latest trends in IT",
+      "original_url": "https://openai.com/index/chatgpt-memory-dreaming/",
+      "selection_reason": "AI分野で具体的な製品アップデートとして新規性が高く、ユーザー実務への直接影響が大きいため選定。他の予測レポートではなく実際のロールアウト事例。",
+      "requested_category": "AI",
       "information_sources": [
         {
-          "title": "What to expect from WWDC 2026",
-          "url": "https://techcrunch.com/2026/06/06/what-to-expect-from-wwdc-2026-siris-highly-anticipated-revamp-and-apple-intelligence-updates/",
+          "title": "Dreaming: Better memory for a more helpful ChatGPT",
+          "url": "https://openai.com/index/chatgpt-memory-dreaming/",
+          "source_type": "official"
+        },
+        {
+          "title": "AI News Today - June 6, 2026",
+          "url": "https://www.buildfastwithai.com/blogs/ai-news-today-june-6-2026",
           "source_type": "news"
         },
         {
-          "title": "2026 Trends in Tech",
-          "url": "https://www.spglobal.com/market-intelligence/en/news-insights/research/2026-trends-in-tech",
-          "source_type": "research"
+          "title": "ChatGPT Dreaming V3 memory upgrade",
+          "url": "https://www.techtimes.com/articles/317840/20260605/chatgpt-memory-dreaming-update-openai-rewrites-personalization-engine-limits-audit-trail.htm",
+          "source_type": "news"
         }
       ]
     },
     {
       "topic_id": "featured-topic-2",
-      "title": "OpenAIがLockdown Modeを発表しプロンプトインジェクション対策を強化",
-      "source_name": "TechCrunch",
-      "published_at": "2026-06-06T09:00:00+00:00",
+      "title": "OpenAI、Lockdown Modeを個人アカウントへ拡大",
+      "source_name": "OpenAI公式",
+      "published_at": "2026-06-05T00:00:00+00:00",
       "impact_level": "High",
-      "threat_type": "Other",
-      "summary_preview": "概要OpenAIがLockdown Modeを導入し、機密データ保護を強化した。プロンプトインジェクション攻撃を防ぐためツールアクセスを制限する機能だ。企業ユーザーは機密業務でのAI利用リスクを低減できる。AIエージェントの安全運用に向けた動きとして注目される。導入企業は設定確認とポリシー更新を検討すべきだ。",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要OpenAIがChatGPTのLockdown Modeを個人および自社サービスBusinessアカウントへ拡大展開した。プロンプトインジェクションによるデータ流出を防ぐため、外部ネットワーク要求を制限する。Deep ResearchやAgent Modeが無効化されるトレードオフを伴う。機密情報を扱うユーザー向けに設計され、設定から有効化可能。セキュ…",
       "article_path": "articles/featured-topic-2.html",
-      "original_url": "https://techcrunch.com/2026/06/06/openai-unveils-lockdown-mode-to-protect-sensitive-data-from-prompt-injection-attacks/",
-      "selection_reason": "AI製品のセキュリティ機能として具体的な新機能発表があり、AI導入企業の実務に直結する。汎用トレンドより製品レベルの新規性が高い。",
-      "requested_category": "AI",
+      "original_url": "https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt/",
+      "selection_reason": "Cybersecurity分野で具体的なセキュリティ機能のロールアウト事例として新規性があり、実務影響が明確。他の一般論ではなく製品レベルの対策。",
+      "requested_category": "Cybersecurity",
       "information_sources": [
         {
-          "title": "OpenAI unveils Lockdown Mode",
-          "url": "https://techcrunch.com/2026/06/06/openai-unveils-lockdown-mode-to-protect-sensitive-data-from-prompt-injection-attacks/",
+          "title": "Introducing Lockdown Mode",
+          "url": "https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt/",
+          "source_type": "official"
+        },
+        {
+          "title": "OpenAI is now rolling out Lockdown Mode",
+          "url": "https://www.neowin.net/news/openai-is-now-rolling-out-lockdown-mode-to-more-chatgpt-users/",
           "source_type": "news"
         },
         {
-          "title": "The latest AI developments News June 2026",
-          "url": "https://blog.mean.ceo/latest-ai-developments-news-june-2026/",
+          "title": "ChatGPT gets a Lockdown Mode",
+          "url": "https://timesofindia.indiatimes.com/technology/tech-news/chatgpt-gets-a-lockdown-mode-what-it-does-and-who-actually-needs-it/amp_articleshow/131543741.cms",
           "source_type": "news"
         }
       ]
     },
     {
       "topic_id": "featured-topic-3",
-      "title": "Miasma WormがMicrosoft GitHubリポジトリ73件を侵害",
-      "source_name": "The Hacker News",
-      "published_at": "2026-06-06T08:00:00+00:00",
-      "impact_level": "Critical",
-      "threat_type": "Supply Chain",
-      "summary_preview": "概要Miasma WormがMicrosoftのGitHubリポジトリ73件を標的にしたサプライチェーン攻撃で確認された。リポジトリ改ざんにより依存プロジェクトにマルウェアが拡散するリスクがある。オープンソース利用企業は依存関係の即時監査が必要だ。GitHub Actionsやパッケージ管理のセキュリティ強化が急務となる。",
+      "title": "Physical AI分野で大規模資金調達が活発化",
+      "source_name": "Generalist AI",
+      "published_at": "2026-06-05T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要Physical AI分野でGeneralist AIが4億ドルの資金調達を完了した。ロボットや自律システム向けAIモデル開発を加速させる。NVIDIAなどの支援を受け、物理世界との相互作用を重視した技術が進展中。ITインフラとしてAIハードウェア統合が企業戦略に影響を与える。実用化に向けた投資が活発化している。",
       "article_path": "articles/featured-topic-3.html",
-      "original_url": "https://thehackernews.com/2026/06/miasma-worm-hits-73-microsoft-github-repositories.html",
-      "selection_reason": "サプライチェーン攻撃の具体的事例としてGitHubリポジトリ侵害が確認され、開発者やオープンソース利用企業に直接影響する。類似インシデントより新規性と実務波及が高い。",
-      "requested_category": "Cybersecurity",
+      "original_url": "https://generalistai.com/blog/accelerating-the-next-phase-of-physical-ai",
+      "selection_reason": "ITトレンドとしてPhysical AIの具体的な資金調達事例が新規性を持ち、ハードウェア統合の波及効果が大きいため選定。予測レポートではなく実際の動き。",
+      "requested_category": "the latest trends in IT",
       "information_sources": [
         {
-          "title": "Miasma Worm Hits 73 Microsoft GitHub Repositories",
-          "url": "https://thehackernews.com/2026/06/miasma-worm-hits-73-microsoft-github-repositories.html",
+          "title": "Accelerating the next phase of physical AI",
+          "url": "https://generalistai.com/blog/accelerating-the-next-phase-of-physical-ai",
           "source_type": "news"
         },
         {
-          "title": "CISA Adds Actively Exploited SolarWinds Serv-U DoS Flaw",
-          "url": "https://thehackernews.com/",
+          "title": "AI News Highlights from 4th of June, 2026",
+          "url": "https://www.linkedin.com/pulse/ai-news-highlights-from-4th-june-2026-ai-insiders-news-qifve",
+          "source_type": "news"
+        },
+        {
+          "title": "Venture Investment in Physical AI Surges",
+          "url": "https://www.wsj.com/articles/venture-investment-in-physical-ai-surges-b46528f4",
           "source_type": "news"
         }
       ]
@@ -100,9 +115,9 @@
       "source_name": "The Hacker News",
       "category": "reporting",
       "published_at": "2026-06-06T13:36:57+00:00",
-      "impact_level": "Unknown",
-      "threat_type": "Unknown",
-      "summary_preview": "OpenAI has begun rolling out a new Lockdown Mode to ChatGPT for eligible personal accounts to reduce the risk of data exfiltration arising from prompt injection attacks.\n\nThe feat…",
+      "impact_level": "Low",
+      "threat_type": "Advisory",
+      "summary_preview": "概要OpenAIが、ChatGPTの一部個人アカウント向けに、プロンプトインジェクションに起因するデータ持ち出しリスクを下げるLockdown Modeの展開を始めたとの報道。攻撃者は、外部コンテンツや共有文書、Webページ、連携ツール経由でモデルに隠れた指示を読ませ、ユーザーの意図しない操作や機密情報の送信を誘導する可能性がある。影響は単一のチャットに閉…",
       "article_path": "articles/846c0a9e1a616abc.html",
       "original_url": "https://thehackernews.com/2026/06/new-chatgpt-lockdown-mode-limits-tools.html"
     },
@@ -114,7 +129,7 @@
       "published_at": "2026-06-06T08:29:05+00:00",
       "impact_level": "Medium",
       "threat_type": "Supply Chain",
-      "summary_preview": "概要The Hacker Newsは、研究者がBright DataのiOS SDKをリバースエンジニアリングし、無料アプリに組み込まれたSDKがスマートテレビなどの消費者端末をWebスクレイピング用の出口ノードとして使う仕組みを確認したと報じている。攻撃というより、アプリ収益化SDKを通じて端末の通信経路が第三者のデータ収集事業に転用される構図で、常時電…",
+      "summary_preview": "概要The Hacker Newsは、Bright Dataが消費者向けアプリに組み込むSDKを研究者が解析し、スマートテレビを含む端末がウェブスクレイピング用の出口ノードとして使われ得ると報じた。悪用というより、無料アプリや常時稼働端末に含まれる第三者SDKの商用プロキシ機能が、利用者や組織の想定外の通信を発生させる構図となる。企業・官公庁では会議室のス…",
       "article_path": "articles/e7b78c9c0f101f11.html",
       "original_url": "https://thehackernews.com/2026/06/free-apps-are-quietly-turning-smart-tvs.html"
     },
@@ -126,7 +141,7 @@
       "published_at": "2026-06-06T08:14:31+00:00",
       "impact_level": "High",
       "threat_type": "Exploit",
-      "summary_preview": "概要The Hacker Newsは、CISAがSolarWinds Serv-Uの脆弱性CVE-2026-28318をCISA KEVに追加したと伝えている。CVSSは7.5で、脆弱性の性質はリモートコード実行ではなくDoSだが、悪用によりServ-Uサービスがクラッシュし、ファイル転送機能を止める形で悪用確認済みとなっている。攻撃者視点では、侵入後の権…",
+      "summary_preview": "概要CISAがSolarWinds Serv-UのCVE-2026-28318をKEVに追加し、実際の悪用を示す証拠があるとされた。CVSSは7.5で、内容はサービスをクラッシュさせるDoS脆弱性のため、RCEのような即時侵入とは性質が異なるが、外部公開されたファイル転送基盤では可用性停止がそのまま業務停止に直結し得る。攻撃者にとっては侵入後の横展開より低…",
       "article_path": "articles/c0701988ff81b7b5.html",
       "original_url": "https://thehackernews.com/2026/06/cisa-adds-actively-exploited-solarwinds.html"
     },
@@ -138,7 +153,7 @@
       "published_at": "2026-06-06T07:28:30+00:00",
       "impact_level": "Medium",
       "threat_type": "Vulnerability Disclosure",
-      "summary_preview": "概要The Hacker Newsは、FFmpegで21件の未知脆弱性が自律型AIエージェントにより発見されたことと、GoogleがChrome 149で429件のセキュリティ修正を配布したことを伝えている。FFmpegは動画変換、サムネイル生成、監視映像処理、チャットやWebサービスの添付ファイル処理などに組み込まれやすく、攻撃者は細工したメディアファイ…",
+      "summary_preview": "概要The Hacker Newsは、AIエージェントがFFmpegで21件の未知の脆弱性を見つけ、同じ週にGoogleがChrome 149で429件のセキュリティ修正を配布したと報じた。FFmpegは動画変換、サムネイル生成、監視カメラ映像処理、アップロード検査などに組み込まれやすく、攻撃者は細工したメディアファイルを投入して、クラッシュ、情報漏えい、…",
       "article_path": "articles/635e08428f6bd9b8.html",
       "original_url": "https://thehackernews.com/2026/06/ai-agent-uncovers-21-zero-days-in.html"
     },
@@ -148,9 +163,9 @@
       "source_name": "The Hacker News",
       "category": "reporting",
       "published_at": "2026-06-06T06:58:04+00:00",
-      "impact_level": "High",
+      "impact_level": "Medium",
       "threat_type": "Supply Chain",
-      "summary_preview": "概要The Hacker Newsは、Miasmaと呼ばれる自己増殖型のサプライチェーン攻撃がMicrosoftのGitHubリポジトリ73件に及び、Azure、Azure-Samples、Microsoft、MicrosoftDocsの4組織に影響したと報じた。攻撃は、侵害されたリポジトリや権限を足場に別リポジトリへ変更を広げ、利用者がコード、サンプル、…",
+      "summary_preview": "概要The Hacker Newsは、自己増殖型のサプライチェーン攻撃キャンペーンとされるMiasmaにより、Microsoft関連のGitHubリポジトリ73件が影響を受け、GitHubが当該リポジトリへのアクセスを無効化したと報じた。対象はAzure、Azure-Samples、Microsoft、MicrosoftDocsの4つのGitHub組織にま…",
       "article_path": "articles/494a76e04bc72412.html",
       "original_url": "https://thehackernews.com/2026/06/miasma-worm-hits-73-microsoft-github.html"
     },
@@ -162,7 +177,7 @@
       "published_at": "2026-06-06T04:19:28+00:00",
       "impact_level": "High",
       "threat_type": "Zero-day",
-      "summary_preview": "概要The Hacker Newsは、CiscoがCatalyst SD-WAN Managerの脆弱性CVE-2026-20245について、実際の悪用を確認したと報じた。CVSSは7.8で高深刻度に分類され、オンプレミス、Cisco SD-WAN Cloud-Pro、Cisco管理のクラウド、政府向けFedRAMP環境が影響対象に含まれるため、単一製品の…",
+      "summary_preview": "概要Cisco Catalyst SD-WAN Managerの脆弱性CVE-2026-20245について、Ciscoが実際の悪用を確認したと報じられている。CVSSは7.8で、影響範囲にはオンプレミス、Cisco SD-WAN Cloud-Pro、Cisco管理のクラウド、FedRAMP向け環境が含まれ、管理基盤が対象になる点が通常の単体機器の脆弱性より…",
       "article_path": "articles/e5dd506dffcab993.html",
       "original_url": "https://thehackernews.com/2026/06/cisco-catalyst-sd-wan-manager-cve-2026.html"
     }
