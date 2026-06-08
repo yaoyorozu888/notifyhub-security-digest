@@ -146,6 +146,82 @@ def test_build_digest_outputs_ignores_featured_topic_failures(tmp_path: Path, mo
     assert (tmp_path / "out" / "digest" / "2026" / "01" / "12" / "manifest.json").exists()
 
 
+def test_build_digest_outputs_respects_max_items_and_stops_early(tmp_path: Path, monkeypatch) -> None:
+    run_at_iso = "2026-01-12T06:00:00+09:00"
+    window = compute_daily_window(datetime.fromisoformat(run_at_iso))
+
+    first = Source(name="First", feed_url="https://example.com/first", enabled=True)
+    second = Source(name="Second", feed_url="https://example.com/second", enabled=True)
+    monkeypatch.setattr("notifyhub_digest.runner.load_sources", lambda _p: [first, second])
+    monkeypatch.setattr("notifyhub_digest.runner.iter_enabled_sources", lambda sources: list(sources))
+
+    fetch_calls: list[str] = []
+
+    def _fetch(_client, src, user_agent):
+        fetch_calls.append(src.name)
+        return [
+            RawEntry(
+                entry_id=f"{src.name}-1",
+                title=f"{src.name} Title",
+                link=f"https://example.com/{src.name.lower()}",
+                published_at_utc=window.start_utc + timedelta(minutes=1),
+                summary="summary",
+            )
+        ]
+
+    monkeypatch.setattr("notifyhub_digest.runner.fetch_feed_entries", _fetch)
+    monkeypatch.setattr("notifyhub_digest.runner.load_grok_config", lambda: None)
+
+    built = build_digest_outputs(
+        out_dir=tmp_path / "out",
+        sources_path=tmp_path / "sources.json",
+        run_at_iso=run_at_iso,
+        max_items=1,
+    )
+
+    assert len(built.items) == 1
+    assert built.items[0].entry_id == "First-1"
+    assert fetch_calls == ["First"]
+
+
+def test_build_digest_outputs_skips_items_and_featured_topics_when_max_items_zero(tmp_path: Path, monkeypatch) -> None:
+    run_at_iso = "2026-01-12T06:00:00+09:00"
+    src = Source(name="Digest Source", feed_url="https://example.com/feed", enabled=True)
+    monkeypatch.setattr("notifyhub_digest.runner.load_sources", lambda _p: [src])
+    monkeypatch.setattr("notifyhub_digest.runner.iter_enabled_sources", lambda sources: list(sources))
+
+    fetch_calls: list[str] = []
+    featured_calls: list[bool] = []
+
+    monkeypatch.setattr(
+        "notifyhub_digest.runner.fetch_feed_entries",
+        lambda _client, _src, user_agent: fetch_calls.append("called") or [],
+    )
+    monkeypatch.setattr("notifyhub_digest.runner.load_grok_config", lambda: object())
+
+    class _Settings:
+        count = 2
+        categories = ["Advisory", "Ransomware"]
+
+    monkeypatch.setattr("notifyhub_digest.runner.load_featured_topics_settings", lambda: _Settings())
+    monkeypatch.setattr(
+        "notifyhub_digest.runner.build_featured_topics",
+        lambda *args, **kwargs: featured_calls.append(True) or [],
+    )
+
+    built = build_digest_outputs(
+        out_dir=tmp_path / "out",
+        sources_path=tmp_path / "sources.json",
+        run_at_iso=run_at_iso,
+        max_items=0,
+    )
+
+    assert built.items == []
+    assert built.featured_topics == []
+    assert fetch_calls == []
+    assert featured_calls == []
+
+
 def test_build_user_prompt_adds_generic_tech_trend_guidance() -> None:
     class _Settings:
         count = 3

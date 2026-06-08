@@ -20,6 +20,10 @@ on:
           - "auto"
           - "full"
           - "daily"
+      max_items:
+        description: "Optional max digest items to process (0 = skip item processing)"
+        required: false
+        default: ""
   schedule:
     # JST 06:05 == UTC 21:05 (previous day)
     - cron: "5 21 * * *"
@@ -201,9 +205,22 @@ jobs:
             EMAIL_FLAG="--send-email"
           fi
 
+          MAX_ITEMS_FLAG=""
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+            MAX_ITEMS_INPUT="${{ inputs.max_items }}"
+            if [[ -n "$MAX_ITEMS_INPUT" ]]; then
+              if [[ ! "$MAX_ITEMS_INPUT" =~ ^[0-9]+$ ]]; then
+                echo "max_items must be an integer >= 0" >&2
+                exit 1
+              fi
+              MAX_ITEMS_FLAG="--max-items $MAX_ITEMS_INPUT"
+            fi
+          fi
+
           notifyhub-digest run \
             --out-dir site \
             --run-at "$RUN_AT" \
+            $MAX_ITEMS_FLAG \
             $EMAIL_FLAG
 
       - name: Determine backup mode
@@ -292,6 +309,7 @@ jobs:
       - name: Generate Pagefind index
         run: |
           set -euo pipefail
+          rm -rf site/pagefind
           npx --yes pagefind --site site --output-path site/pagefind
 
       - name: Upload artifact (generated digest)
