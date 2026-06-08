@@ -292,6 +292,7 @@ jobs:
       - name: Generate Pagefind index
         run: |
           set -euo pipefail
+          rm -rf site/pagefind
           npx --yes pagefind --site site --output-path site/pagefind
 
       - name: Upload artifact (generated digest)
