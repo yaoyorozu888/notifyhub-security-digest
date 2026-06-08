@@ -94,6 +94,12 @@ def run(
         "--send-email/--no-send-email",
         help="任意: ACS Emailで送信する（要: pip install '.[acs]' と環境変数ACS_EMAIL_*）",
     ),
+    max_items: int | None = typer.Option(
+        None,
+        "--max-items",
+        min=0,
+        help="任意: 処理するダイジェスト件数の上限。0 を指定すると記事処理をスキップ",
+    ),
 ):
     """日次レポートを生成します（ローカル実行版）。"""
 
@@ -105,6 +111,7 @@ def run(
         sources_path=sources_path,
         run_at_iso=run_at_iso,
         send_email=send_email,
+        max_items=max_items,
     )
 
 

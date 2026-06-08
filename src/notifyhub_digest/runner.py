@@ -72,6 +72,7 @@ def build_digest_outputs(
     out_dir: Path,
     sources_path: Path,
     run_at_iso: str | None,
+    max_items: int | None = None,
 ) -> BuiltDigest:
     """Generate digest outputs (index/articles/manifest) and return in-memory context."""
 
@@ -89,56 +90,66 @@ def build_digest_outputs(
     grok_cfg = load_grok_config()
     featured_settings = load_featured_topics_settings()
 
+    if max_items is not None and max_items < 0:
+        raise ValueError("max_items must be >= 0")
+
     items: list[FeedItem] = []
     featured_topics: list[FeaturedTopic] = []
 
     transport = httpx.HTTPTransport(retries=retries)
     with httpx.Client(timeout=timeout, follow_redirects=True, transport=transport) as client:
-        for src in enabled:
-            try:
-                entries = fetch_feed_entries(client, src, user_agent=user_agent)
-            except Exception as e:
-                logger.warning("Fetch failed: %s (%s)", src.name, e)
-                continue
+        if max_items != 0:
+            for src in enabled:
+                if max_items is not None and len(items) >= max_items:
+                    break
 
-            for e in entries:
-                if not (window.start_utc <= e.published_at_utc < window.end_utc):
+                try:
+                    entries = fetch_feed_entries(client, src, user_agent=user_agent)
+                except Exception as e:
+                    logger.warning("Fetch failed: %s (%s)", src.name, e)
                     continue
 
-                analysis = AnalysisResult(summary_html="", technical_terms=[], impact_level="Unknown", threat_type="Unknown")
-                if openai_cfg is not None:
-                    try:
-                        analysis = analyze_item(
-                            client,
-                            openai_cfg,
-                            title=e.title,
-                            source_name=src.name,
-                            published_at_iso=e.published_at_utc.isoformat(),
-                            original_url=e.link,
-                            summary=e.summary,
-                        )
-                    except Exception as ai_e:
-                        logger.warning("OpenAI analysis failed: %s (%s)", e.entry_id, ai_e)
-                        analysis = AnalysisResult(
-                            summary_html="", technical_terms=[], impact_level="Unknown", threat_type="Unknown"
-                        )
+                for e in entries:
+                    if max_items is not None and len(items) >= max_items:
+                        break
 
-                # summary_htmlは必ずサニタイズ（仕様必須）
-                analysis.summary_html = sanitize_summary_html(analysis.summary_html)
+                    if not (window.start_utc <= e.published_at_utc < window.end_utc):
+                        continue
 
-                item = FeedItem(
-                    entry_id=e.entry_id,
-                    title=e.title,
-                    source_name=src.name,
-                    category=src.category,
-                    published_at=e.published_at_utc,
-                    original_url=e.link,
-                    analysis=analysis,
-                )
+                    analysis = AnalysisResult(summary_html="", technical_terms=[], impact_level="Unknown", threat_type="Unknown")
+                    if openai_cfg is not None:
+                        try:
+                            analysis = analyze_item(
+                                client,
+                                openai_cfg,
+                                title=e.title,
+                                source_name=src.name,
+                                published_at_iso=e.published_at_utc.isoformat(),
+                                original_url=e.link,
+                                summary=e.summary,
+                            )
+                        except Exception as ai_e:
+                            logger.warning("OpenAI analysis failed: %s (%s)", e.entry_id, ai_e)
+                            analysis = AnalysisResult(
+                                summary_html="", technical_terms=[], impact_level="Unknown", threat_type="Unknown"
+                            )
 
-                items.append(item)
+                    # summary_htmlは必ずサニタイズ（仕様必須）
+                    analysis.summary_html = sanitize_summary_html(analysis.summary_html)
 
-        if grok_cfg is not None and featured_settings.count > 0:
+                    item = FeedItem(
+                        entry_id=e.entry_id,
+                        title=e.title,
+                        source_name=src.name,
+                        category=src.category,
+                        published_at=e.published_at_utc,
+                        original_url=e.link,
+                        analysis=analysis,
+                    )
+
+                    items.append(item)
+
+        if max_items != 0 and grok_cfg is not None and featured_settings.count > 0:
             try:
                 featured_topics = build_featured_topics(
                     client,
@@ -233,8 +244,14 @@ def run_digest(
     sources_path: Path,
     run_at_iso: str | None,
     send_email: bool = False,
+    max_items: int | None = None,
 ) -> None:
-    built = build_digest_outputs(out_dir=out_dir, sources_path=sources_path, run_at_iso=run_at_iso)
+    built = build_digest_outputs(
+        out_dir=out_dir,
+        sources_path=sources_path,
+        run_at_iso=run_at_iso,
+        max_items=max_items,
+    )
 
     # Email送信（有効時は送信成功時のみ既読更新）
     if should_send_email(send_email):

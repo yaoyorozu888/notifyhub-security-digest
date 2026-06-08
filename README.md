@@ -203,11 +203,19 @@ GitHub Actions のスケジュール実行で日次生成し、`site/` 配下に
 
 Blob Storage への接続は GitHub Secrets の `AZURE_STORAGE_ACCOUNT` と `AZURE_STORAGE_KEY` を使います。
 
-`workflow_dispatch` では `backup_mode` を `auto` / `full` / `daily` から選べます。
+`workflow_dispatch` では `backup_mode` を `auto` / `full` / `daily` から選べます。あわせて `max_items` を指定すると、手動実行の `digest-generate` で処理するダイジェスト件数の上限を絞れます。テスト目的の実行を短くしたいときに使います。
 
 - `auto` : Blob Storage の `full/` 配下に既存バックアップがあるかを見て自動判定します。初回実行などで `full/` が空なら `full` と同じ動きになり、すでに full backup があれば `daily` と同じ動きになります。
 - `full` : その日の digest だけではなく、保持期間内に残っている `site/digest/` 配下の全日分をまとめて `full/` 配下へ保存します。大きめの再取得を明示的に取りたいとき向けです。
 - `daily` : 当日分の `site/digest/YYYY/MM/DD/` と、参照に必要な `site/index.html`、`site/digest/index.html`、`site/digest/latest/index.html` を `daily/YYYY-MM-DD/` 配下へ保存します。通常の日次運用向けです。
+
+`max_items` の挙動:
+
+- 空欄: 従来どおり全件処理します。
+- `0`: 記事処理をスキップします。取得・解析を走らせずに workflow や deploy の疎通確認だけしたいとき向けです。
+- `1` 以上の自然数: その件数に達した時点で、以後の取得と解析を打ち切ります。手動テストで待ち時間を短くしたいとき向けです。
+
+つまり、`max_items` は手動実行時のテスト高速化用の入力です。普段どおり全件を処理したい場合は空欄のまま実行してください。
 
 重要なのは順序です。workflow は先に Blob Storage への通常バックアップを完了させ、そのあとで古い digest を削除します。したがって backup が失敗した場合、cleanup は実行されません。追加の一時退避先や `retention/...` のような別枠は使いません。
 
