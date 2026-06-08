@@ -143,7 +143,12 @@ notifyhub-digest email-preview --out-dir .\out
 
 ## SWA + GitHub Actions（日次生成とデプロイ）
 
-GitHub Actions のスケジュール実行で日次生成し、`site/` 配下に生成物を蓄積して Azure Static Web Apps にデプロイします。
+GitHub Actions のスケジュール実行で日次生成し、`site/` 配下に生成物を更新して Azure Static Web Apps にデプロイします。
+
+- 実行時刻: 毎日 06:05 JST
+- 保持期間: `site/digest/YYYY/MM/DD/` は 90 日を超えたら自動削除
+- バックアップ: 初回は digest 全量、その後は当日分の digest 差分を Azure Blob Storage に保存
+- 除外対象: `site/pagefind/` と `site/calendar/` はバックアップしません
 
 - ワークフロー: [.github/workflows/digest-generate.yml](.github/workflows/digest-generate.yml)
 
@@ -158,6 +163,8 @@ GitHub Actions のスケジュール実行で日次生成し、`site/` 配下に
 必須
 
 - `AZURE_STATIC_WEB_APPS_API_TOKEN` : SWAのデプロイトークン（workflow内で参照しているシークレット名）
+- `AZURE_STORAGE_ACCOUNT` : Blob backup を格納する Storage Account 名
+- `AZURE_STORAGE_KEY` : Blob backup を格納する Storage Account Key
 
 任意（メール送信時）
 
@@ -185,6 +192,40 @@ GitHub Actions のスケジュール実行で日次生成し、`site/` 配下に
 - 生成物は `site/` 配下に出力され、SWA にアップロードされます
 - URL 例: `https://notifyhub.site/digest/YYYY/MM/DD/`
 - カレンダー: `https://notifyhub.site/calendar/`
+
+### 保持期限とバックアップ
+
+- Blob Storage への通常バックアップが成功したあとでだけ、90 日より古い `site/digest/YYYY/MM/DD/` を削除します
+- 削除後の `site/` 全体を基準に `pagefind` を再生成してから commit / deploy します
+- Blob backup は `digest-backups` コンテナを使います
+- 初回実行では `full/` 配下に digest 全量の tar.gz と manifest を保存します
+- 2回目以降は `daily/YYYY-MM-DD/` 配下に当日分の tar.gz と manifest を保存します
+
+Blob Storage への接続は GitHub Secrets の `AZURE_STORAGE_ACCOUNT` と `AZURE_STORAGE_KEY` を使います。
+
+`workflow_dispatch` では `backup_mode` を `auto` / `full` / `daily` から選べます。
+
+- `auto` : Blob Storage の `full/` 配下に既存バックアップがあるかを見て自動判定します。初回実行などで `full/` が空なら `full` と同じ動きになり、すでに full backup があれば `daily` と同じ動きになります。
+- `full` : その日の digest だけではなく、保持期間内に残っている `site/digest/` 配下の全日分をまとめて `full/` 配下へ保存します。大きめの再取得を明示的に取りたいとき向けです。
+- `daily` : 当日分の `site/digest/YYYY/MM/DD/` と、参照に必要な `site/index.html`、`site/digest/index.html`、`site/digest/latest/index.html` を `daily/YYYY-MM-DD/` 配下へ保存します。通常の日次運用向けです。
+
+重要なのは順序です。workflow は先に Blob Storage への通常バックアップを完了させ、そのあとで古い digest を削除します。したがって backup が失敗した場合、cleanup は実行されません。追加の一時退避先や `retention/...` のような別枠は使いません。
+
+### 手動メンテナンス
+
+ローカルで保持期限削除だけ試す場合:
+
+```powershell
+$env:PYTHONPATH = "src"
+python scripts/cleanup_old_digests.py --site-dir site --retain-days 90
+```
+
+ローカルで backup artifact を作る場合:
+
+```powershell
+$env:PYTHONPATH = "src"
+python scripts/create_digest_backup.py --site-dir site --output-dir backup-artifacts --mode daily --run-at 2026-06-08T06:00:00+09:00 --day 2026-06-08
+```
 
 ## セキュリティ
 
