@@ -218,8 +218,7 @@ jobs:
             az storage container create \
               --account-name "${{ secrets.AZURE_STORAGE_ACCOUNT }}" \
               --account-key "${{ secrets.AZURE_STORAGE_KEY }}" \
-              --name "$container" \
-              --fail-on-exist false 1>/dev/null
+              --name "$container" 1>/dev/null
 
             mode="${WORKFLOW_BACKUP_MODE:-auto}"
             if [[ -z "$mode" || "$mode" == "auto" ]]; then
