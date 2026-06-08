@@ -11,7 +11,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/favicon-192.png" />
-  <title>Honeywell OTサイバーセキュリティスイート拡張発表 | NotifyHub Cybersecurity Daily Report</title>
+  <title>Microsoftオープンソースツール侵害 | NotifyHub Cybersecurity Daily Report</title>
   <style>
     :root{
       --bg:#0b1020; --panel:#0f1730; --panel2:#121c3a;
@@ -245,12 +245,12 @@
 
     <div class="panel">
       <div class="head">
-        <h1>Honeywell OTサイバーセキュリティスイート拡張発表</h1>
+        <h1>Microsoftオープンソースツール侵害</h1>
 
         <div class="meta">
-          <span>🗞️ Honeywell</span>
-          <span>🕒 2026-06-08T23:00:00+09:00</span>
-          <span>🔗 <a href="https://www.honeywell.com/us/en/press/2026/06/honeywell-strengthens-ot-cybersecurity-suite-for-resilience-against-next-generation-of-industrial-cyber-threats" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
+          <span>🗞️ TechCrunch</span>
+          <span>🕒 2026-06-09T05:03:00+09:00</span>
+          <span>🔗 <a href="https://techcrunch.com/2026/06/08/microsofts-open-source-tools-were-hacked-to-steal-passwords-of-ai-developers/" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
         </div>
 
         <div class="tags">
@@ -258,7 +258,7 @@
         </div>
 
         <div class="btnRow">
-          <a class="linkbtn" href="https://www.honeywell.com/us/en/press/2026/06/honeywell-strengthens-ot-cybersecurity-suite-for-resilience-against-next-generation-of-industrial-cyber-threats" target="_blank" rel="noopener noreferrer">原文リンク</a>
+          <a class="linkbtn" href="https://techcrunch.com/2026/06/08/microsofts-open-source-tools-were-hacked-to-steal-passwords-of-ai-developers/" target="_blank" rel="noopener noreferrer">原文リンク</a>
           <a class="linkbtn" href="https://www.notifyhub.site/digest/2026/06/09/">日次トップ</a>
         </div>
       </div>
@@ -266,32 +266,32 @@
       <div class="body">
         <div class="section">
   <h2>AI選定理由</h2>
-  <div class="ruleReason">産業制御システム向け具体的な新機能追加で、OTセキュリティ実務に即した影響が大きい。インシデント報告より予防策の発表として優先。</div>
+  <div class="ruleReason">AI開発者向けツールを標的とした具体的な侵害事例。5月発生を6月8日報道で、セキュリティ実務に即した警告として新規性が高い</div>
 </div>
 
         <div class="section summary">
           <h2>🧾 要約（Grok / grok-4.3）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          <h4>概要</h4><p>HoneywellがOTサイバーセキュリティスイートを拡張し、AI駆動の脅威監視やUSBメディアスキャナーを追加した。産業環境向けにデータダイオードやGRC自動化機能も強化する。WEF報告でOT監視実施率が低い現状を背景に、<strong>予防的防御</strong>を推進する。製造・エネルギー分野の運用継続に寄与する。6月8日発表で即時利用可能だ。</p>
+          <h4>概要</h4><p>MicrosoftのGitHub-hostedオープンソースプロジェクト複数で侵害が発生した。Durable TaskなどAzure関連ツールにパスワード窃取マルウェアが注入された。</p><p>影響はAI開発ツール（Claude Code、Gemini CLI、VS Code拡張）にも及び、開発者アカウントが標的となった。</p><p>Microsoftはプロジェクトアクセスを遮断し調査中。5月中旬に研究者が発見した事例が公表された。</p><p>オープンソース依存のAI開発現場でサプライチェーンリスクが顕在化した。企業は依存ツールの最新版確認とコードレビューを強化すべきだ。</p>
         </div>
 
         <div class="section">
           <h2>📌 キーワード解説</h2>
           <div class="terms">
             <div class="termCard">
-  <div class="term">OT SOC</div>
-  <p class="exp">Operational Technology Security Operations Center。産業機器の24時間監視とインシデント対応を担う。IT SOCと異なり物理プロセス保護に特化。</p>
+  <div class="term">Durable Task</div>
+  <p class="exp">Microsoftのオープンソースプロジェクト。アプリ構築支援ツールで、侵害によりマルウェア混入が確認された</p>
 </div>
 <div class="termCard">
-  <div class="term">Data Diode</div>
-  <p class="exp">一方向データ転送装置。OTネットワークを外部から隔離し、双方向通信を防ぐセキュリティ対策。</p>
+  <div class="term">サプライチェーン攻撃</div>
+  <p class="exp">信頼できるサプライヤー経由で悪意あるコードを配布する攻撃形態。オープンソース利用時に特に注意が必要</p>
 </div>
           </div>
           <h3 class="subSectionTitle">深掘り解説</h3>
           <div class="deepDive">
             <div class="termCard deepDiveCard">
-  <div class="term">OT環境の統合防御戦略</div>
-  <p class="exp">HoneywellはAI分析と物理的隔離を組み合わせる。製造業がOTとITの境界を越えたリスク管理を検討する際のモデル事例。</p>
+  <div class="term">オープンソース依存のリスク管理</div>
+  <p class="exp">AI開発で多用されるOSSツールが侵害された事例。5月中旬発生を6月報道で、即時対応の遅れが問題化した。具体例としてGitHubプロジェクトの自動更新停止やコード署名検証を導入した企業は被害を回避できた可能性が高い</p>
 </div>
           </div>
         </div>
@@ -299,8 +299,8 @@
         <div class="section">
   <h2>情報ソース</h2>
   <div class="infoSources">
-    <div class="infoSourceRow"><strong>official</strong> <a href="https://www.honeywell.com/us/en/press/2026/06/honeywell-strengthens-ot-cybersecurity-suite-for-resilience-against-next-generation-of-industrial-cyber-threats" target="_blank" rel="noopener noreferrer">Honeywell Strengthens OT Cybersecurity Suite</a></div>
-    <div class="infoSourceRow"><strong>news</strong> <a href="https://thehackernews.com/" target="_blank" rel="noopener noreferrer">The Hacker News Weekly Recap</a></div>
+    <div class="infoSourceRow"><strong>news</strong> <a href="https://techcrunch.com/2026/06/08/microsofts-open-source-tools-were-hacked-to-steal-passwords-of-ai-developers/" target="_blank" rel="noopener noreferrer">Microsoft’s open source tools were hacked to steal passwords of AI developers</a></div>
+    <div class="infoSourceRow"><strong>news</strong> <a href="https://techcrunch.com/" target="_blank" rel="noopener noreferrer">TechCrunch security coverage</a></div>
   </div>
 </div>
 
@@ -308,7 +308,7 @@
           <h2>🕘 生成情報</h2>
           <div class="ruleReason">
 対象期間：2026-06-08T06:00:00+09:00 〜 2026-06-09T06:00:00+09:00
-生成時刻：2026-06-09T01:36:14.856375+09:00
+生成時刻：2026-06-09T06:54:15.251173+09:00
 免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
           </div>
         </div>

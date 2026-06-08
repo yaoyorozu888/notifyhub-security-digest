@@ -5,9 +5,9 @@
     "to": "2026-06-09T06:00:00+09:00"
   },
   "counts": {
-    "total": 2
+    "total": 22
   },
-  "generated_at_jst": "2026-06-09T01:36:14.856375+09:00",
+  "generated_at_jst": "2026-06-09T06:54:15.251173+09:00",
   "featured_topics_config": {
     "count": 3,
     "categories": [
@@ -19,80 +19,75 @@
   "featured_topics": [
     {
       "topic_id": "featured-topic-1",
-      "title": "NVIDIAとSK hynixのAIメモリチップ多年度提携",
-      "source_name": "NVIDIA Newsroom",
-      "published_at": "2026-06-07T20:00:00+00:00",
+      "title": "欧州技術主権パッケージ発表",
+      "source_name": "欧州委員会",
+      "published_at": "2026-06-02T00:00:00+00:00",
       "impact_level": "High",
       "threat_type": "Other",
-      "summary_preview": "概要NVIDIAとSK hynixがAI工場向け次世代メモリチップの多年度技術提携を発表した。両社はチップ設計と製造で協力し、NVIDIAのAIインフラロードマップに沿ったメモリ供給を強化する。Vera Rubinアクセラレータや物理AI分野への拡大も含む。SK hynixはNVIDIAの最大メモリパートナーとして位置づけられ、供給安定化が期待される。AI…",
+      "summary_preview": "概要欧州委員会が技術主権パッケージを発表した。Chips Act 2.0で先端半導体生産能力を強化し、Cloud and AI Development Actでデータセンター容量を5〜7年で3倍化する。Open Source Strategyによりクラウド・AI分野の欧州製代替を推進する。これにより企業はサプライチェーン依存を低減し、主権クラウド選択肢が増…",
       "article_path": "articles/featured-topic-1.html",
-      "original_url": "https://nvidianews.nvidia.com/news/sk-hynix-ai-factory",
-      "selection_reason": "AIインフラ向け半導体供給の具体的な企業提携として新規性が高く、IT基盤の安定供給に直結する実務影響が大きい。他の汎用予測レポートより具体性で優位。",
+      "original_url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1187",
+      "selection_reason": "IT分野のクラウド・半導体・オープンソース基盤強化という具体的な政策変更で、企業の実務判断に直結する新規発表。Gartner系汎用予測ではなく地域・制度レベルの動きとして多様性を確保",
       "requested_category": "the latest trends in IT",
       "information_sources": [
         {
-          "title": "NVIDIA and SK hynix Announce Multiyear Technology Partnership",
-          "url": "https://nvidianews.nvidia.com/news/sk-hynix-ai-factory",
-          "source_type": "news"
+          "title": "Commission proposes tech sovereignty package",
+          "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1187",
+          "source_type": "official"
         },
         {
-          "title": "Nvidia clinches deals with South Korean giants",
-          "url": "https://www.reuters.com/business/media-telecom/sk-hynix-announces-multi-year-tech-deal-with-nvidia-ai-factories-2026-06-07/",
-          "source_type": "news"
-        },
-        {
-          "title": "Nvidia, SK Hynix Seal Multi-Year Pact",
-          "url": "https://www.bloomberg.com/news/articles/2026-06-07/nvidia-sk-hynix-sign-multi-year-pact-to-develop-next-gen-chips",
+          "title": "TechCrunch latest news",
+          "url": "https://techcrunch.com/",
           "source_type": "news"
         }
       ]
     },
     {
       "topic_id": "featured-topic-2",
-      "title": "Apple WWDC 2026でGemini搭載Siriとマルチモデル対応発表",
-      "source_name": "Build Fast With AI",
-      "published_at": "2026-06-07T12:00:00+00:00",
+      "title": "Apple Siri AI全面刷新",
+      "source_name": "TechCrunch",
+      "published_at": "2026-06-08T17:56:00+00:00",
       "impact_level": "High",
       "threat_type": "Other",
-      "summary_preview": "概要AppleがWWDC 2026でSiriを全面刷新し、Google Gemini 1.2兆パラメータモデルを採用すると報じられた。年額約10億ドルのライセンス契約に基づく。ユーザーはChatGPT、Gemini、ClaudeからAIモデルを選択可能になる拡張システムも導入予定だ。Tim Cook CEO最後の基調講演として注目を集める。Appleの自社…",
+      "summary_preview": "概要AppleがWWDC 2026でSiriのAI全面刷新を発表した。新Siriは会話型AIとして機能し、画面表示内容を理解して回答する。専用アプリも提供され、Dynamic Islandでの操作が標準となる。メールやメッセージ作成支援ではユーザーの過去通信スタイルを反映する。ウェブ知識やデバイス内情報を統合し、複雑タスク実行が可能になった。ベータ版は今年…",
       "article_path": "articles/featured-topic-2.html",
-      "original_url": "https://www.buildfastwithai.com/blogs/ai-news-today-june-7-2026",
-      "selection_reason": "WWDC本番直前の具体的なAIモデル採用とユーザー選択機能の発表で、AI製品実務への影響が直接的。他の政策議論より新規性と具体性で優位。",
+      "original_url": "https://techcrunch.com/2026/06/08/apples-long-awaited-ai-siri-overhaul-is-finally-here/",
+      "selection_reason": "WWDC 2026での具体的なSiri AI製品発表。AIモデル進化ではなく実用アシスタント機能強化という開発者・ユーザー向け実務影響が明確",
       "requested_category": "AI",
       "information_sources": [
         {
-          "title": "AI News Today - June 7, 2026",
-          "url": "https://www.buildfastwithai.com/blogs/ai-news-today-june-7-2026",
+          "title": "Apple’s long-awaited AI Siri overhaul is finally here",
+          "url": "https://techcrunch.com/2026/06/08/apples-long-awaited-ai-siri-overhaul-is-finally-here/",
           "source_type": "news"
         },
         {
-          "title": "Apple WWDC 2026 Preview",
-          "url": "https://www.buildfastwithai.com/blogs/ai-news-today-june-7-2026",
+          "title": "WWDC 2026 announcements",
+          "url": "https://techcrunch.com/2026/06/08/wwdc-2026-everything-announced-on-siri-ai-os-27-apple-intelligence-and-more/",
           "source_type": "news"
         }
       ]
     },
     {
       "topic_id": "featured-topic-3",
-      "title": "Honeywell OTサイバーセキュリティスイート拡張発表",
-      "source_name": "Honeywell",
-      "published_at": "2026-06-08T14:00:00+00:00",
+      "title": "Microsoftオープンソースツール侵害",
+      "source_name": "TechCrunch",
+      "published_at": "2026-06-08T20:03:00+00:00",
       "impact_level": "High",
-      "threat_type": "Advisory",
-      "summary_preview": "概要HoneywellがOTサイバーセキュリティスイートを拡張し、AI駆動の脅威監視やUSBメディアスキャナーを追加した。産業環境向けにデータダイオードやGRC自動化機能も強化する。WEF報告でOT監視実施率が低い現状を背景に、予防的防御を推進する。製造・エネルギー分野の運用継続に寄与する。6月8日発表で即時利用可能だ。",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要MicrosoftのGitHub-hostedオープンソースプロジェクト複数で侵害が発生した。Durable TaskなどAzure関連ツールにパスワード窃取マルウェアが注入された。影響はAI開発ツール（Claude Code、Gemini CLI、VS Code拡張）にも及び、開発者アカウントが標的となった。Microsoftはプロジェクトアクセスを…",
       "article_path": "articles/featured-topic-3.html",
-      "original_url": "https://www.honeywell.com/us/en/press/2026/06/honeywell-strengthens-ot-cybersecurity-suite-for-resilience-against-next-generation-of-industrial-cyber-threats",
-      "selection_reason": "産業制御システム向け具体的な新機能追加で、OTセキュリティ実務に即した影響が大きい。インシデント報告より予防策の発表として優先。",
+      "original_url": "https://techcrunch.com/2026/06/08/microsofts-open-source-tools-were-hacked-to-steal-passwords-of-ai-developers/",
+      "selection_reason": "AI開発者向けツールを標的とした具体的な侵害事例。5月発生を6月8日報道で、セキュリティ実務に即した警告として新規性が高い",
       "requested_category": "Cybersecurity",
       "information_sources": [
         {
-          "title": "Honeywell Strengthens OT Cybersecurity Suite",
-          "url": "https://www.honeywell.com/us/en/press/2026/06/honeywell-strengthens-ot-cybersecurity-suite-for-resilience-against-next-generation-of-industrial-cyber-threats",
-          "source_type": "official"
+          "title": "Microsoft’s open source tools were hacked to steal passwords of AI developers",
+          "url": "https://techcrunch.com/2026/06/08/microsofts-open-source-tools-were-hacked-to-steal-passwords-of-ai-developers/",
+          "source_type": "news"
         },
         {
-          "title": "The Hacker News Weekly Recap",
-          "url": "https://thehackernews.com/",
+          "title": "TechCrunch security coverage",
+          "url": "https://techcrunch.com/",
           "source_type": "news"
         }
       ]
@@ -100,14 +95,62 @@
   ],
   "items": [
     {
+      "entry_id": "b28628bc45561d02",
+      "title": "CVE-2026-42271 BerriAI LiteLLM Command Injection Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-06-08T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Exploit",
+      "summary_preview": "概要BerriAI LiteLLMのCVE-2026-42271は、CISA KEVに掲載されたコマンドインジェクション脆弱性として扱われ、少なくとも実環境での悪用が確認された可能性を示す。攻撃者は脆弱な入力処理や管理系機能を経由してサーバ上で任意のOSコマンドを実行し、LiteLLMが保持するAPIキー、接続先情報、ログ、環境変数を奪取する流れを狙う。L…",
+      "article_path": "articles/b28628bc45561d02.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "52e5cdb55d26bf8f",
+      "title": "CVE-2026-50751 Check Point Security Gateway Improper Authentication Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-06-08T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要CISA KEVに、Check Point Security Gatewayの不適切な認証の脆弱性 CVE-2026-50751 が追加された。KEV掲載は、単に脆弱性が公表された段階ではなく、実際の悪用が確認されたことを示すため、境界機器の資産棚卸しと露出確認を優先する必要がある。悪用の具体的な手順、認証前か認証後か、管理インタフェース・VPN・通信…",
+      "article_path": "articles/52e5cdb55d26bf8f.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "daa661ade7d204e0",
+      "title": "One-Character Linux Kernel Flaw Enables Local Root Access, Exploits Now Public",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-08T20:17:39+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要The Hacker Newsは、Linux kernelのnf_tablesに存在するuse-after-free脆弱性CVE-2026-23111について、未特権ローカルユーザーがroot権限を取得し、条件次第でコンテナ境界を越える実用エクスプロイトが公開されたと報じた。この欠陥は2026年2月5日に上流で修正済みとされるが、各ディストリビューショ…",
+      "article_path": "articles/daa661ade7d204e0.html",
+      "original_url": "https://thehackernews.com/2026/06/one-character-linux-kernel-flaw-enables.html"
+    },
+    {
+      "entry_id": "808dbc99e1e63a6e",
+      "title": "Meta Blocks NSO Group's New WhatsApp Phishing Attack, Files Contempt Order",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-08T17:08:44+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Phishing",
+      "summary_preview": "概要Metaは、イスラエルのスパイウェア企業NSO Groupに関連するとされるWhatsApp上の標的型フィッシングを検知し、ブロックしたと公表した。攻撃は、利用者に悪性リンクをクリックさせ、WhatsApp外のWebサイトへ誘導する形とされ、認証情報窃取だけでなく端末侵害やスパイウェア配布に進む可能性がある。組織影響は、全社員に一斉拡散するタイプよりも…",
+      "article_path": "articles/808dbc99e1e63a6e.html",
+      "original_url": "https://thehackernews.com/2026/06/meta-blocks-nso-groups-new-whatsapp.html"
+    },
+    {
       "entry_id": "9d2fbd0e0d983a9b",
       "title": "Critical Check Point VPN Flaw Exploited to Bypass Passwords in IKEv1 Setups",
       "source_name": "The Hacker News",
       "category": "reporting",
       "published_at": "2026-06-08T14:17:39+00:00",
-      "impact_level": "High",
+      "impact_level": "Critical",
       "threat_type": "Exploit",
-      "summary_preview": "概要The Hacker Newsは、Check PointのRemote Access VPNおよびMobile Accessで、非推奨のIKEv1を使う構成がCVE-2026-50751の悪用を受けていると報じた。脆弱性は証明書検証の論理フロー不備で、認証前の遠隔攻撃者が利用者のパスワード確認を迂回し、VPN境界を越える初期アクセスに使える可能性がある…",
+      "summary_preview": "概要The Hacker Newsは、Check PointのRemote Access VPNおよびMobile Accessで、非推奨のIKEv1鍵交換を使う構成に影響するCVE-2026-50751の悪用が確認されたと報じた。CVSSは9.3で、証明書検証のロジック不備により、認証前の遠隔攻撃者が利用者パスワードの確認を迂回できる可能性が示されている…",
       "article_path": "articles/9d2fbd0e0d983a9b.html",
       "original_url": "https://thehackernews.com/2026/06/critical-check-point-vpn-flaw-exploited.html"
     },
@@ -119,9 +162,201 @@
       "published_at": "2026-06-08T13:19:13+00:00",
       "impact_level": "Medium",
       "threat_type": "Phishing",
-      "summary_preview": "概要The Hacker Newsの記事は、生成AIによってフィッシングメール、偽ログイン画面、標的に合わせた誘導文の作成コストが下がり、SOCの一次対応キューが膨張している状況を取り上げている。攻撃者は文面の不自然さを減らし、部門名、業務文脈、緊急性を組み合わせることで、従来なら見た目で除外できた通報やアラートを手作業確認が必要な案件に変える。影響は単な…",
+      "summary_preview": "概要The Hacker Newsは、生成AIによりフィッシング文面、偽ログイン画面、標的別の誘導文を短時間で量産できるようになり、SOCのTier 1に流入する確認対象が増えていると伝えている。悪用の中心は、粗いばらまきではなく、一見して排除しにくいメールを大量に作り、リンク確認、送信元確認、利用者照会を積み上げさせる点にある。影響は単なるアラート増加に…",
       "article_path": "articles/7e5db036ee20a806.html",
       "original_url": "https://thehackernews.com/2026/06/ai-phishing-is-crushing-socs-with-alert.html"
+    },
+    {
+      "entry_id": "d4d4df705a44b7cd",
+      "title": "⚡ Weekly Recap: Instagram Account Hacks, Android Zero-Day, GitHub Worm and More",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-08T13:18:57+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要The Hacker Newsの週次まとめとして、Instagramアカウント侵害、Androidのゼロデイ、GitHubリポジトリを伝播するワーム、汚染パッケージ、AI支援ツールの悪用など複数の事案が取り上げられた。攻撃の共通点は高度な脆弱性だけでなく、トークン露出、依存関係の信頼、チャットボットの誘導、長期のメール閲覧といった、運用上の弱点を足場に…",
+      "article_path": "articles/d4d4df705a44b7cd.html",
+      "original_url": "https://thehackernews.com/2026/06/weekly-recap-instagram-account-hacks.html"
+    },
+    {
+      "entry_id": "5186d77b94801e8e",
+      "title": "The Hardest Fork",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-08T11:53:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要The Hacker Newsの記事「The Hardest Fork」は、単一の明確なRCEではなく、SASTが大量に検出する小さな問題群を攻撃者が組み合わせ、より深刻な侵害経路へ発展させるリスクを扱っている。悪用の中核は、個々には低優先に見える入力検証不備、認可境界の曖昧さ、設定差分、例外処理の穴などを脆弱性チェーンとして接続する点にある。影響は単…",
+      "article_path": "articles/5186d77b94801e8e.html",
+      "original_url": "https://thehackernews.com/2026/06/the-hardest-fork.html"
+    },
+    {
+      "entry_id": "4c8276efd1fa8eea",
+      "title": "VerdantBamboo Deploys BSD Variant of BRICKSTORM on Linux Appliances",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-08T10:27:32+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要The Hacker Newsは、Volexityの観測として、中国系とされるサイバー諜報クラスターVerdantBambooが、既知バックドアBRICKSTORMのBSD亜種に加え、PLENETまたはGRIMBOLT、AGENTPSDと呼ばれるマルウェアをLinux系システムへ展開していると報じた。対象がLinuxアプライアンスやBSD系環境の場合、…",
+      "article_path": "articles/4c8276efd1fa8eea.html",
+      "original_url": "https://thehackernews.com/2026/06/verdantbamboo-deploys-bsd-variant-of.html"
+    },
+    {
+      "entry_id": "49205ab3d5161c18",
+      "title": "UNC3753 Used Vishing and Physical Intrusions in U.S. Data Theft Extortion Campaign",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-08T07:39:28+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要The Hacker Newsは、Google MandiantおよびGoogle Threat Intelligence Groupの分析として、UNC3753が2026年1月から5月にかけて米国の専門サービス、法律、金融サービス組織を狙い、データ窃取型恐喝を行ったと報じた。攻撃は脆弱性悪用だけに依存せず、ビッシングで従業員やヘルプデスクを誘導し、さ…",
+      "article_path": "articles/49205ab3d5161c18.html",
+      "original_url": "https://thehackernews.com/2026/06/unc3753-used-vishing-and-physical.html"
+    },
+    {
+      "entry_id": "b8c338bc05077448",
+      "title": "VS Code Adds 2-Hour Extension Auto-Update Delay to Limit Supply Chain Attacks",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-08T06:08:44+00:00",
+      "impact_level": "Low",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要Microsoft は VS Code の拡張機能について、自動更新が有効な場合でも公開直後ではなく2時間遅延して更新する仕組みを追加したと報じられた。狙いは、侵害された開発者アカウントや悪性パッケージが Marketplace に投入された場合に、利用者端末へ即時配布される前に検知・削除する余地を作る点にある。拡張機能は開発端末上でコード、環境変数、…",
+      "article_path": "articles/b8c338bc05077448.html",
+      "original_url": "https://thehackernews.com/2026/06/vs-code-adds-2-hour-extension-auto.html"
+    },
+    {
+      "entry_id": "8f6fd47e2f6c1ab5",
+      "title": "TeamPCP Supply Chain Campaign: Activity Through 2026-06-07, (Mon, Jun 8th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-06-08T17:07:37+00:00",
+      "impact_level": "High",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要SANS ISCは、TeamPCPによるサプライチェーン型キャンペーンの継続状況を報告し、以前から追跡されていた「セキュリティスキャナが攻撃手段に転じる」流れが、米国政府の認知と攻撃者層の拡大という二つの局面に進んだと整理している。焦点は、TeamPCPが先月公開したMini Shai-Huludフレームワークを、より広い攻撃者集団が利用し始めた点にあ…",
+      "article_path": "articles/8f6fd47e2f6c1ab5.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33060"
+    },
+    {
+      "entry_id": "62403ffbc2acc2cc",
+      "title": "ISC Stormcast For Monday, June 8th, 2026 https://isc.sans.edu/podcastdetail/9962, (Mon, Jun 8th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-06-08T02:00:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要この項目は「ISC Stormcast For Monday, June 8th, 2026 https://isc.sans.edu/podcastdetail/9962, (Mon, Jun 8th)」というSANS ISCの日次音声ブリーフィング告知で、入力情報には本文要約、対象製品、CVE、IoC、悪用観測の詳細が含まれていない。したがって、現…",
+      "article_path": "articles/62403ffbc2acc2cc.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33058"
+    },
+    {
+      "entry_id": "d4a11a9e782291a1",
+      "title": "shadowserver report provides cybersecurity insights and recommendations for ecowas member states in west africa",
+      "source_name": "Shadowserver",
+      "category": "reporting",
+      "published_at": "2026-06-08T14:46:48+00:00",
+      "impact_level": "Low",
+      "threat_type": "Advisory",
+      "summary_preview": "概要Shadowserverが、西アフリカのECOWAS加盟国向けにサイバーセキュリティ上の洞察と推奨策をまとめた報告を公開したという告知になる。入力情報からは個別の脆弱性、マルウェア名、攻撃キャンペーン、影響資産数は確認できず、現時点では地域単位の観測・助言として扱うのが妥当になる。悪用シナリオとしては、外部公開された管理サービス、古いVPN機器、メール…",
+      "article_path": "articles/d4a11a9e782291a1.html",
+      "original_url": "https://www.shadowserver.org/news/shadowserver-report-provides-cybersecurity-insights-and-recommendations-for-ecowas-member-states-in-west-africa/"
+    },
+    {
+      "entry_id": "4d94037964250b61",
+      "title": "クリック率より報告率 ～ 文化を醸成するメール訓練 HENNGE「Tadrill」の志についての考察",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-07T23:10:02+00:00",
+      "impact_level": "Info",
+      "threat_type": "Phishing",
+      "summary_preview": "概要ScanNetSecurityの記事「クリック率より報告率 ～ 文化を醸成するメール訓練 HENNGE「Tadrill」の志についての考察」は、標的型メール訓練をクリック抑止の成績表としてではなく、不審メールを組織内で早く共有する文化づくりとして捉える内容と読める。攻撃者にとってメールは認証情報窃取、マルウェア配布、BECの入口となり、利用者の早期報告…",
+      "article_path": "articles/4d94037964250b61.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/08/55443.html"
+    },
+    {
+      "entry_id": "8f22e95ea4265b34",
+      "title": "メール配信で名前に誤表示 データ連携処理に不備",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-07T23:05:07+00:00",
+      "impact_level": "Low",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要ScanNetSecurityは「メール配信で名前に誤表示 データ連携処理に不備」として、メール配信時に宛名などの名前表示が誤った可能性のある事案を報じている。原因はデータ連携処理の不備とされ、攻撃者による侵入ではなく、内部処理の結合・反映ミスによって別人の名前が表示された類型と読める。悪用面では、表示された情報が氏名に限定されるなら直接の不正利用リス…",
+      "article_path": "articles/8f22e95ea4265b34.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/08/55442.html"
+    },
+    {
+      "entry_id": "22a446d25c7ca44f",
+      "title": "北九州市立大に不正アクセス、偽警告から遠隔操作され個人情報漏えいか",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-07T23:05:05+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要北九州市立大学で、利用者端末に表示された偽の警告画面を起点に外部者へ遠隔操作を許し、個人情報が漏えいした可能性が報じられた。典型的には、警告画面で電話や操作を誘導し、正規の遠隔操作ツールを入れさせる、または既存機能を悪用して端末内のファイル、ブラウザ保存情報、メール、業務システムへの認証状態を確認される流れになりやすい。影響範囲は侵害端末内の情報に限ら…",
+      "article_path": "articles/22a446d25c7ca44f.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/08/55441.html"
+    },
+    {
+      "entry_id": "f8d21fd520b46ad0",
+      "title": "阿波銀行への不正アクセス、原因はテスト環境の「管理不備」と発表 関係役員らの処分も",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-07T23:05:02+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要ScanNetSecurityは、阿波銀行への不正アクセスについて、原因がテスト環境の管理不備と発表され、関係役員らへの処分も行われたと報じた。本文情報が限られるため、侵入口の技術的詳細、侵害されたシステム範囲、顧客情報や業務データへの到達有無、攻撃者の属性は未確認として扱う必要がある。攻撃者視点では、テスト環境は本番より監視・パッチ・認証・棚卸しが甘…",
+      "article_path": "articles/f8d21fd520b46ad0.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/08/55440.html"
+    },
+    {
+      "entry_id": "cbb80cd1702c7dc6",
+      "title": "富士通、海上自衛隊の全物資情報をリアルタイムで管理する基幹システム構築",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-07T23:00:16+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/cbb80cd1702c7dc6.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/08/55439.html"
+    },
+    {
+      "entry_id": "072bcdca70b6da40",
+      "title": "Securly Chrome Extension に複数の脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-07T23:00:13+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/072bcdca70b6da40.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/08/55438.html"
+    },
+    {
+      "entry_id": "e83a94adf17bebbb",
+      "title": "WordPress 用プラグイン Zoho Mail for WordPress に CSRF の脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-07T23:00:07+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要ScanNetSecurityが、WordPress用プラグイン Zoho Mail for WordPress にCSRF脆弱性がある旨を伝えている。CSRFは、管理画面にログイン済みの担当者を攻撃者が用意したページへ誘導し、本人の操作に見せかけて設定変更リクエストを送らせる形で悪用される可能性がある。対象プラグインがメール送信設定や認証情報を扱う構…",
+      "article_path": "articles/e83a94adf17bebbb.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/08/55437.html"
+    },
+    {
+      "entry_id": "61165b29e29217fb",
+      "title": "8 / 19・20 開催「都道府県CIOフォーラム in 茨城 第24回 年次総会」にHENNGEが協賛、赤瀬礼旺氏による講演も",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-07T23:00:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要ScanNetSecurityの記事は、2026年8月19日・20日に開催予定の「都道府県CIOフォーラム in 茨城 第24回 年次総会」にHENNGEが協賛し、赤瀬礼旺氏による講演も予定されているという告知を伝えている。本文情報からは、脆弱性、攻撃キャンペーン、侵害事案の発生は確認できず、CSIRTが即時封じ込めや監視強化に動く種類の情報ではない。…",
+      "article_path": "articles/61165b29e29217fb.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/08/55436.html"
     }
   ]
 }

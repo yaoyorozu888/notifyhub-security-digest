@@ -254,8 +254,8 @@
         </div>
 
         <div class="tags">
-          <span class="tag level-Medium">Impact: Medium</span>
-          <span class="tag">Vulnerability Disclosure</span>
+          <span class="tag level-Unknown">Impact: Unknown</span>
+          <span class="tag">Unknown</span>
         </div>
 
         <div class="btnRow">
@@ -268,45 +268,24 @@
         
         <div class="section">
           <h2>Impact判定理由</h2>
-          <div class="ruleReason">複数脆弱性という点は警戒対象だが、CVE、影響バージョン、悪用有無、修正状況が入力情報から確認できないため、技術的深刻度は中程度に抑える。
-管理対象Chrome環境で一括配布されている場合は運用影響が広がりやすく、教育・組織端末では棚卸しと更新確認が必要となる。
-情報源はメディア二次情報のため、ベース評価から引き上げず据え置きとした。</div>
+          <div class="ruleReason"></div>
         </div>
         <div class="section summary">
           <h2>🧾 要約（ChatGPT / gpt-5.5-2026-04-23）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          <div><h4>概要</h4><p>ScanNetSecurityが「Securly Chrome Extension に複数の脆弱性」を報じたが、入力情報にはCVE、影響バージョン、脆弱性種別、修正状況、悪用有無が含まれていない。Securly Chrome Extensionは教育機関や管理対象端末で利用される可能性が高く、脆弱性の内容次第では<strong>Web閲覧内容の取得</strong>、フィルタリング回避、拡張機能権限を悪用したページ改ざん、セッション情報への接近につながる余地がある。攻撃成立には通常、対象拡張機能の導入、影響バージョンの利用、悪意あるページ閲覧や設定不備などの前提が絡むため、単に「Chrome拡張の脆弱性」とだけ見て緊急遮断へ進む判断は粗い。影響範囲は単一端末に閉じる場合もあれば、管理ポリシーで一括配布された環境では<strong>学校・組織単位に横へ広がる</strong>。現時点の未確認事項は<strong>修正版の有無</strong>、既知悪用、PoC公開、管理コンソール側の回避策、ログで追える痕跡となる。</p></div>
+          
         </div>
 
         <div class="section">
           <h2>📌 キーワード解説</h2>
           <div class="terms">
-            <div class="termCard">
-  <div class="term">Chrome Extension（Chrome拡張機能）</div>
-  <p class="exp">ブラウザへ機能を追加する仕組み。通常のWebページと違い、付与権限により閲覧データや通信へ深く触れる。</p>
-</div>
-<div class="termCard">
-  <div class="term">Content Script（コンテンツスクリプト）</div>
-  <p class="exp">Webページ内で動く拡張機能のコード。単なるJavaScriptと違い、拡張機能側の権限境界に近い位置へ立つ。</p>
-</div>
-<div class="termCard">
-  <div class="term">Managed Browser Policy（管理対象ブラウザポリシー）</div>
-  <p class="exp">組織が拡張機能や設定を強制する仕組み。任意導入と違い、影響が端末群へ一括で広がりやすい。</p>
-</div>
-<div class="termCard">
-  <div class="term">PoC（概念実証コード）</div>
-  <p class="exp">脆弱性の成立を示すコード。攻撃コードそのものと同一ではないが、悪用までの距離を短くする。</p>
-</div>
+            
           </div>
           <h3 class="subSectionTitle">深掘り解説</h3>
           <div class="deepDive">
             <div class="termCard deepDiveCard">
-  <div class="term">Chrome拡張機能の権限境界を資産として扱う</div>
-  <p class="exp">Chrome拡張機能のリスクは、端末に入った小さな追加機能としてではなく、ブラウザ上の権限を持つ実行主体として見る必要がある。多くの業務アプリはブラウザ内で完結し、認証済みセッション、入力フォーム、クラウドストレージ、社内ポータルが同じ操作面に並ぶ。ここに広い権限を持つ拡張機能が入ると、OS上の管理者権限がなくても、利用者が見ている情報や操作に近い位置へ到達できる。
+  <div class="term">なし</div>
 
-実務上の判断点は、拡張機能がどの権限を持つか、誰に強制配布されているか、自動更新の経路がどう管理されているかに分かれる。たとえば教育機関でフィルタリング用拡張機能を全生徒端末へ強制配布している場合、脆弱性そのものが端末乗っ取りに直結しなくても、閲覧先の改ざんやフィルタ回避、認証済みページからの情報取得が成立すれば、被害は利用者単位ではなく配布単位で広がる。
-
-確認では、Chrome管理コンソールやMDMで対象拡張機能のID、バージョン、強制配布対象、許可権限を棚卸しする。あわせて拡張機能の更新履歴、利用者からの異常なリダイレクト報告、フィルタリングログの急な失敗増加、管理ポリシー変更を確認する。封じ込めでは削除だけを急ぐと授業・業務のWeb制御が失われる場合があるため、修正版への固定、対象OU限定の停止、代替フィルタの有効化を組み合わせる判断が現実的となる。</p>
 </div>
           </div>
         </div>
@@ -317,7 +296,7 @@
           <h2>🕘 生成情報</h2>
           <div class="ruleReason">
 対象期間：2026-06-08T06:00:00+09:00 〜 2026-06-09T06:00:00+09:00
-生成時刻：2026-06-09T01:14:41.026244+09:00
+生成時刻：2026-06-09T06:54:15.251173+09:00
 免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
           </div>
         </div>
