@@ -1,19 +1,28 @@
 name: Generate daily digest
 
-#on:
-#  workflow_dispatch:
-#    inputs:
-#      send_email:
-#        description: "Send email via ACS"
-#        required: false
-#        default: "true"
-#        type: choice
-#        options:
-#          - "false"
-#          - "true"
-#  schedule:
-#    # JST 06:05 == UTC 21:05 (previous day)
-#    - cron: "5 21 * * *"
+on:
+  workflow_dispatch:
+    inputs:
+      send_email:
+        description: "Send email via ACS"
+        required: false
+        default: "true"
+        type: choice
+        options:
+          - "false"
+          - "true"
+      backup_mode:
+        description: "Blob backup mode"
+        required: false
+        default: "auto"
+        type: choice
+        options:
+          - "auto"
+          - "full"
+          - "daily"
+  schedule:
+    # JST 06:05 == UTC 21:05 (previous day)
+    - cron: "5 21 * * *"
 
 permissions:
   contents: write
@@ -197,6 +206,90 @@ jobs:
             --run-at "$RUN_AT" \
             $EMAIL_FLAG
 
+      - name: Determine backup mode
+        id: backupmode
+        uses: azure/cli@v2
+        env:
+          WORKFLOW_BACKUP_MODE: ${{ inputs.backup_mode }}
+        with:
+          inlineScript: |
+            set -euo pipefail
+            container="digest-backups"
+            az storage container create \
+              --account-name "${{ secrets.AZURE_STORAGE_ACCOUNT }}" \
+              --account-key "${{ secrets.AZURE_STORAGE_KEY }}" \
+              --name "$container" \
+              --fail-on-exist false 1>/dev/null
+
+            mode="${WORKFLOW_BACKUP_MODE:-auto}"
+            if [[ -z "$mode" || "$mode" == "auto" ]]; then
+              full_count=$(az storage blob list \
+                --account-name "${{ secrets.AZURE_STORAGE_ACCOUNT }}" \
+                --account-key "${{ secrets.AZURE_STORAGE_KEY }}" \
+                --container-name "$container" \
+                --prefix full/ \
+                --num-results 1 \
+                --query "length(@)" \
+                --output tsv)
+              if [[ "$full_count" == "0" ]]; then
+                mode="full"
+              else
+                mode="daily"
+              fi
+            fi
+
+            echo "container=$container" >> "$GITHUB_OUTPUT"
+            echo "mode=$mode" >> "$GITHUB_OUTPUT"
+
+      - name: Create backup archive
+        id: backupartifact
+        run: |
+          set -euo pipefail
+          source <(cat runat.env)
+          python scripts/create_digest_backup.py \
+            --site-dir site \
+            --output-dir backup-artifacts \
+            --mode "${{ steps.backupmode.outputs.mode }}" \
+            --run-at "$RUN_AT" \
+            --day "$DAY" \
+            --commit-sha "${GITHUB_SHA}" \
+            --github-output "$GITHUB_OUTPUT"
+
+      - name: Upload backup to Blob Storage
+        uses: azure/cli@v2
+        with:
+          inlineScript: |
+            set -euo pipefail
+            archive_name=$(basename "${{ steps.backupartifact.outputs.archive_path }}")
+            manifest_name=$(basename "${{ steps.backupartifact.outputs.manifest_path }}")
+            prefix="${{ steps.backupartifact.outputs.blob_prefix }}"
+            container="${{ steps.backupmode.outputs.container }}"
+
+            az storage blob upload \
+              --account-name "${{ secrets.AZURE_STORAGE_ACCOUNT }}" \
+              --account-key "${{ secrets.AZURE_STORAGE_KEY }}" \
+              --container-name "$container" \
+              --name "$prefix/$archive_name" \
+              --file "${{ steps.backupartifact.outputs.archive_path }}" \
+              --overwrite true
+
+            az storage blob upload \
+              --account-name "${{ secrets.AZURE_STORAGE_ACCOUNT }}" \
+              --account-key "${{ secrets.AZURE_STORAGE_KEY }}" \
+              --container-name "$container" \
+              --name "$prefix/$manifest_name" \
+              --file "${{ steps.backupartifact.outputs.manifest_path }}" \
+              --overwrite true
+
+      - name: Delete digests older than 90 days
+        run: |
+          set -euo pipefail
+          source <(cat runat.env)
+          python scripts/cleanup_old_digests.py \
+            --site-dir site \
+            --retain-days 90 \
+            --run-at "$RUN_AT"
+
       - name: Generate Pagefind index
         run: |
           set -euo pipefail
@@ -217,11 +310,15 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add \
+          git add -A \
             site/index.html \
+            site/calendar/index.html \
+            site/digest \
+            site/pagefind || true
+
+          git add \
             site/digest/index.html \
             site/digest/latest/index.html \
-            site/pagefind \
             site/digest/"$DAY_PATH" || true
 
           if git diff --cached --quiet; then
