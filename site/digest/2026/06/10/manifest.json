@@ -1,0 +1,461 @@
+{
+  "date": "2026-06-10",
+  "window": {
+    "from": "2026-06-09T06:00:00+09:00",
+    "to": "2026-06-10T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 29
+  },
+  "generated_at_jst": "2026-06-10T07:05:08.250727+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "Apple WWDC 2026でSiri AIとiOS 27発表",
+      "source_name": "TechCrunch",
+      "published_at": "2026-06-09T18:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要AppleがWWDC 2026でSiri AIの大幅強化を発表した。専用アプリ化と会話型インターフェースを導入し、画面読み取りや複数アプリ横断タスク実行が可能になる。Google Geminiを基盤に視覚知能対応を追加し、メールや写真からの情報抽出が容易だ。iOS 27では通知音量個別設定など細かな改善も含む。開発者ベータは即日公開され、秋に一般提供予…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://techcrunch.com/2026/06/08/wwdc-2026-everything-announced-on-siri-ai-os-27-apple-intelligence-and-more/",
+      "selection_reason": "Appleの具体的な製品アップデートとしてITトレンドに直結し、開発者ツールやデバイス統合の新機能が実務影響大。他の汎用予測より新規性が高い。",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "WWDC 2026 announcements",
+          "url": "https://techcrunch.com/2026/06/08/wwdc-2026-everything-announced-on-siri-ai-os-27-apple-intelligence-and-more/",
+          "source_type": "news"
+        },
+        {
+          "title": "Siri AI and iOS 27 details",
+          "url": "https://www.pcmag.com/news/apple-wwdc-2026-every-big-ios-27-siri-ai-announcement-you-missed",
+          "source_type": "news"
+        },
+        {
+          "title": "WWDC 2026 keynote",
+          "url": "https://www.youtube.com/watch?v=hF8swzNR1-o",
+          "source_type": "web"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "Anthropic、Claude Fable 5を一般公開",
+      "source_name": "TechCrunch",
+      "published_at": "2026-06-09T17:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要Anthropicが最先端モデルMythosの制限版Claude Fable 5を一般公開した。生物学やサイバーセキュリティの高リスク領域をブロックする安全策を施しつつ、高い推論能力を提供する。APIや主要クラウドプラットフォームで利用可能になり、Mythos 5は限定パートナー向けに残す。公開直後からベンチマークで優位性を示す。開発者は安全性を保ちつ…",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://techcrunch.com/2026/06/09/anthropic-released-claude-fable-5-its-most-powerful-model-publicly-days-after-warning-ai-is-getting-too-dangerous/",
+      "selection_reason": "Anthropicの新モデル公開はAI分野の直接的進展で、能力制限版の一般提供という具体策が新規性高く、実務導入に波及する。",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "Claude Fable 5 release",
+          "url": "https://techcrunch.com/2026/06/09/anthropic-released-claude-fable-5-its-most-powerful-model-publicly-days-after-warning-ai-is-getting-too-dangerous/",
+          "source_type": "news"
+        },
+        {
+          "title": "Anthropic official announcement",
+          "url": "https://platform.claude.com/docs/en/about-claude/models/introducing-claude-fable-5-and-claude-mythos-5",
+          "source_type": "official"
+        },
+        {
+          "title": "X post on Claude Fable 5 impact",
+          "url": "https://x.com/GratomicAi/status/2064468761629909418",
+          "source_type": "x"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "Google、Chromeのゼロデイ脆弱性CVE-2026-11645を修正",
+      "source_name": "The Hacker News",
+      "published_at": "2026-06-09T17:23:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Zero-day",
+      "summary_preview": "概要GoogleがChromeのV8エンジンに存在するゼロデイ脆弱性CVE-2026-11645を修正した。アウトオブバウンズメモリアクセスによりリモートコード実行が可能で、すでに実環境で悪用が確認されている。74件の脆弱性修正を含む安定版アップデートをリリースし、Windows/macOS/Linux向けに即時適用を推奨する。2026年に入り5件目のCh…",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://thehackernews.com/2026/06/chrome-v8-zero-day-cve-2026-11645.html",
+      "selection_reason": "Chromeの積極的悪用ゼロデイ修正はセキュリティ実務に直結し、ブラウザ利用企業への即時影響が大きい具体的事例。",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "Chrome zero-day patch",
+          "url": "https://thehackernews.com/2026/06/chrome-v8-zero-day-cve-2026-11645.html",
+          "source_type": "news"
+        },
+        {
+          "title": "Google Chrome release notes",
+          "url": "https://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop_0153744567.html",
+          "source_type": "official"
+        },
+        {
+          "title": "Help Net Security report",
+          "url": "https://www.helpnetsecurity.com/2026/06/09/google-chrome-zero-day-cve-2026-11645/",
+          "source_type": "news"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "d40487c7c080c397",
+      "title": "CVE-2026-11645 Google Chromium V8 Out-of-Bounds Read and Write Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-06-09T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要CISA KEVがCVE-2026-11645を既知悪用脆弱性として登録し、Google / ChromiumのV8における境界外読み書きが実際の攻撃で使われていることを示している。攻撃者は典型的には細工したWebコンテンツを利用し、ブラウザのJavaScript処理にメモリ破壊を起こして、任意コード実行や後続ペイロード投入の入口にする。影響はChro…",
+      "article_path": "articles/d40487c7c080c397.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "1701ff60b4fcaeee",
+      "title": "CVE-2026-7473 Arista Extensible Operating System Incomplete Comparison with Missing Factors Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-06-09T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要CISA KEVに、Arista Extensible Operating Systemに関する CVE-2026-7473 が追加された。脆弱性名は「Incomplete Comparison with Missing Factors」で、比較処理に必要な要素が欠落することで、本来拒否されるべき条件が通過する類型と読めるが、入力情報だけでは対象機能、…",
+      "article_path": "articles/1701ff60b4fcaeee.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "d2614de48514edc7",
+      "title": "CVE-2026-20245 Cisco Catalyst SD-WAN Manager Improper Encoding or Escaping of Output Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-06-09T00:00:00+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "Cisco / Catalyst SD-WAN Manager",
+      "article_path": "articles/d2614de48514edc7.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "c0293e4c02ed9dc2",
+      "title": "Meta to Use Off-Site Business Data for Feed and AI Personalization",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-09T17:03:58+00:00",
+      "impact_level": "Low",
+      "threat_type": "Other",
+      "summary_preview": "概要Metaが、他社のサイトやアプリから共有される利用者行動情報を、広告だけでなくフィード表示やAIチャットボットの応答の個別最適化にも使う方針を示した。これは脆弱性悪用や侵害事案ではなく、企業がMeta連携、広告計測、SDK、ピクセルなどを通じて渡しているオフサイト行動データの利用範囲が広がる話として捉える必要がある。攻撃者による直接悪用というより、利用…",
+      "article_path": "articles/c0293e4c02ed9dc2.html",
+      "original_url": "https://thehackernews.com/2026/06/meta-to-use-off-site-business-data-for.html"
+    },
+    {
+      "entry_id": "90bfd5e50c5c3cd7",
+      "title": "Veeam Backup & Replication RCE Flaw Lets Domain Users Run Remote Code",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-09T16:39:47+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要The Hacker Newsは、Veeam Backup &amp; ReplicationのBackup Serverでリモートコード実行につながるCVE-2026-44963を取り上げ、Veeamが修正パッチを公開したと報じた。CVSSは9.4で、条件は認証済みドメインユーザーによる悪用とされ、インターネットからの未認証RCEとは前提が異なる。そ…",
+      "article_path": "articles/90bfd5e50c5c3cd7.html",
+      "original_url": "https://thehackernews.com/2026/06/veeam-backup-replication-rce-flaw-lets.html"
+    },
+    {
+      "entry_id": "c7bd8abc16a140ab",
+      "title": "Microsoft Restores Some GitHub Repos, Keeps Others Offline as Miasma Probe Continues",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-09T16:34:52+00:00",
+      "impact_level": "High",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要The Hacker Newsによれば、Microsoftはセキュリティインシデントへの対応として一部のGitHubリポジトリを一時的に削除し、その後一部を復旧した一方、調査継続中のものはオフラインのままとした。報道では、73件のオープンソースプロジェクトが侵害され、コード内に情報窃取マルウェアを注入されたとされ、利用者が取得・ビルド・実行した場合に開…",
+      "article_path": "articles/c7bd8abc16a140ab.html",
+      "original_url": "https://thehackernews.com/2026/06/microsoft-restores-some-github-repos.html"
+    },
+    {
+      "entry_id": "8f45ed2b27f10cfd",
+      "title": "WinRAR Flaw Exploited by Russia-Aligned Groups to Deploy Stealers in Ukraine",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-09T12:26:10+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要The Hacker Newsは、ロシア連携とされるEarth DahuとSHADOW-EARTH-066が、パッチ公開から約1年後もWinRARのCVE-2025-8088を悪用し、ウクライナ組織を狙う攻撃を継続していると報じた。欠陥はパストラバーサルで、細工された圧縮ファイルの展開時に想定外の場所へファイルを書き込ませ、スタートアップ領域や作業ディ…",
+      "article_path": "articles/8f45ed2b27f10cfd.html",
+      "original_url": "https://thehackernews.com/2026/06/winrar-flaw-exploited-by-russia-aligned.html"
+    },
+    {
+      "entry_id": "3bd3fc8f8814360d",
+      "title": "Researchers Build Self-Replicating AI Worm That Operates Entirely on Local, Open-Weight Models",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-09T11:59:03+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Malware",
+      "summary_preview": "概要University of Torontoの研究者が、商用AIサービスに接続せず、ローカルで稼働するオープンウェイトの大規模言語モデルを使って自己複製するAIワームの概念実証を構築・検証したと報じられた。攻撃の要点は、侵入先ごとにLLMが状況を解釈し、認証情報、到達可能なホスト、利用可能なツールに応じて標的別の攻撃手順を生成しながら横展開と複製を進める…",
+      "article_path": "articles/3bd3fc8f8814360d.html",
+      "original_url": "https://thehackernews.com/2026/06/researchers-build-self-replicating-ai.html"
+    },
+    {
+      "entry_id": "b0d67420e2d7a34e",
+      "title": "Chrome V8 Zero-Day CVE-2026-11645 Exploited in the Wild - Patch Now",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-09T11:58:49+00:00",
+      "impact_level": "High",
+      "threat_type": "Zero-day",
+      "summary_preview": "概要Google ChromeのV8に存在するCVE-2026-11645について、Googleが修正を含む更新を公開し、The Hacker Newsが実環境での悪用確認を報じた。脆弱性はV8の境界外読み書きで、細工されたWebコンテンツを処理した際にメモリ破壊を起こし、ブラウザー内でのコード実行に悪用される可能性がある。企業環境ではChromeが標準ブ…",
+      "article_path": "articles/b0d67420e2d7a34e.html",
+      "original_url": "https://thehackernews.com/2026/06/chrome-v8-zero-day-cve-2026-11645.html"
+    },
+    {
+      "entry_id": "b1a199d73a1f85e8",
+      "title": "The Hidden Security Risk in Modern Networks: The Work Between Tools",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-09T11:30:00+00:00",
+      "impact_level": "Low",
+      "threat_type": "Advisory",
+      "summary_preview": "概要The Hacker Newsの記事は、可視化ツール、AI、自動化基盤が増えても、実際の障害対応や脅威対応ではツール間の手作業が残り、そこが見落とされるリスクになると指摘している。悪用という観点では、攻撃者が特定製品の脆弱性を突く話ではなく、検知、優先度付け、承認、変更反映、復旧確認の間にある遅延や責任分界の曖昧さを利用し、封じ込め前に横展開や認証情報…",
+      "article_path": "articles/b1a199d73a1f85e8.html",
+      "original_url": "https://thehackernews.com/2026/06/the-hidden-security-risk-in-modern.html"
+    },
+    {
+      "entry_id": "b1b4c1a6764e60aa",
+      "title": "New FROST Attack Lets Websites Track What Sites and Apps You Open via SSD Timing",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-09T09:50:41+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要The Hacker Newsは、Graz University of Technologyの研究者が示したFROSTというSSDタイミングを使う追跡攻撃を報じた。悪性サイトがJavaScriptだけでSSDの応答遅延を測り、利用者が開いたWebサイトやローカルアプリの利用状況を推測するという内容となる。利用者がタブを開いたままにすると、他サイト閲覧や…",
+      "article_path": "articles/b1b4c1a6764e60aa.html",
+      "original_url": "https://thehackernews.com/2026/06/new-frost-attack-lets-websites-track.html"
+    },
+    {
+      "entry_id": "5f6add5e907d0744",
+      "title": "Hades PyPI Attack: 19 Packages Poisoned to Auto-Run Bun Credential Stealer",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-09T09:13:32+00:00",
+      "impact_level": "High",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要The Hacker Newsは、Miasmaキャンペーンから派生したHadesと呼ばれる攻撃波で、PyPI上の19パッケージに37個の悪性wheel成果物が投入されたと報じている。悪性リリースには*-setup.pthが含まれ、Python環境がパッケージを読み込む過程で自動実行を狙い、Bun関連の認証情報窃取につなげる構成とされる。攻撃者視点では、…",
+      "article_path": "articles/5f6add5e907d0744.html",
+      "original_url": "https://thehackernews.com/2026/06/hades-pypi-attack-19-packages-poisoned.html"
+    },
+    {
+      "entry_id": "366ba6533717f838",
+      "title": "LiteLLM Flaw CVE-2026-42271 Exploited in the Wild, Chains to Unauthenticated RCE",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-09T06:26:14+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Exploit",
+      "summary_preview": "概要The Hacker Newsは、BerriAI LiteLLMの脆弱性CVE-2026-42271が実環境で悪用され、CISAのKEVカタログに追加されたと報じた。CVE-2026-42271はCVSS 8.7のコマンドインジェクションで、記事概要では認証済みユーザーによる任意コマンド実行が可能とされ、タイトル上は別条件との連鎖により認証なしRCEへ…",
+      "article_path": "articles/366ba6533717f838.html",
+      "original_url": "https://thehackernews.com/2026/06/litellm-flaw-cve-2026-42271-exploited.html"
+    },
+    {
+      "entry_id": "629cf280dca4760e",
+      "title": "Microsoft June 2026 Patch Tuesday, (Tue, Jun 9th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-06-09T17:34:29+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Patch",
+      "summary_preview": "概要SANS ISCは、Microsoftの2026年6月Patch Tuesdayで204件の脆弱性修正が公開され、そのうち38件がCriticalと評価されたことを伝えている。3件は公開前に既に情報開示済みとされ、攻撃者は修正差分や公開情報を手掛かりに、認証前到達や権限昇格などROIの高い経路を選別しやすくなる。6件はMicrosoftのクラウド側で対…",
+      "article_path": "articles/629cf280dca4760e.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33064"
+    },
+    {
+      "entry_id": "6489f28522693b25",
+      "title": "ISC Stormcast For Tuesday, June 9th, 2026 https://isc.sans.edu/podcastdetail/9964, (Tue, Jun 9th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-06-09T02:00:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要SANS ISCが2026年6月9日のStormcastを公開したという情報のみが入力されており、個別の脆弱性、マルウェア、侵害事案、設定不備の詳細は提示されていない。現時点で確認できるのは日次の観測・解説コンテンツ公開という事実に限られ、攻撃が成立する前提条件、悪用手順、対象製品、影響範囲をこの記事単体から判断することはできない。CSIRT実務では、…",
+      "article_path": "articles/6489f28522693b25.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33062"
+    },
+    {
+      "entry_id": "ed997a934884b5f3",
+      "title": "Security in the Post-Mythos Era",
+      "source_name": "Cisco Security Blog",
+      "category": "reporting",
+      "published_at": "2026-06-09T15:00:53+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要Cisco Security Blogは、AIを使った脆弱性発見が攻撃側・防御側双方の探索速度を上げ、従来より短い時間でゼロデイ悪用に近い状況が生まれ得る、という論点を提示している。悪用の中心は、未知の欠陥そのものだけでなく、外部公開資産、未適用パッチ、弱い認証、監視されていない管理経路といった既存の弱点の組み合わせになる。影響は単一製品の不具合に限定…",
+      "article_path": "articles/ed997a934884b5f3.html",
+      "original_url": "https://blogs.cisco.com/security/security-in-the-post-mythos-era/"
+    },
+    {
+      "entry_id": "5da4e62b625baa94",
+      "title": "Cisco SASE with Meraki: Get in the Fast Lane to SASE",
+      "source_name": "Cisco Security Blog",
+      "category": "reporting",
+      "published_at": "2026-06-09T12:00:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要Cisco Security Blogの記事は、Cisco SASE with Merakiにより、MerakiのSD-WAN運用とSSE機能を統合し、ハイブリッドネットワークの接続と保護を簡素化するという製品訴求を扱っている。脆弱性や侵害事例の公表ではなく、CSIRT観点では導入アーキテクチャ変更として読むべき内容となる。直接悪用される欠陥は示されて…",
+      "article_path": "articles/5da4e62b625baa94.html",
+      "original_url": "https://blogs.cisco.com/security/cisco-sase-with-meraki-get-in-the-fast-lane-to-sase/"
+    },
+    {
+      "entry_id": "84c6b448b4a10604",
+      "title": "Threat Brief: Active Exploitation of PAN-OS CVE-2026-0257",
+      "source_name": "Unit 42",
+      "category": "reporting",
+      "published_at": "2026-06-09T14:05:42+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要Unit 42は、Palo Alto NetworksのPAN-OSに関するCVE-2026-0257が実際に悪用されているとして、活動指標と緩和策を示した。入力情報だけでは脆弱性の種別、認証要否、影響バージョン、CVSSスコアは確認できず、侵入後に任意コード実行、設定窃取、認証情報取得のどこまで到達するかも未確認。とはいえPAN-OSは境界ファイアウ…",
+      "article_path": "articles/84c6b448b4a10604.html",
+      "original_url": "https://unit42.paloaltonetworks.com/active-exploitation-of-pan-os-cve-2026-0257/"
+    },
+    {
+      "entry_id": "5fb61fe63a9eb58c",
+      "title": "When “Hi, This Is IT” Comes Through Microsoft Teams",
+      "source_name": "Unit 42",
+      "category": "reporting",
+      "published_at": "2026-06-08T23:00:45+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Phishing",
+      "summary_preview": "概要Unit 42は、Microsoft Teamsのようなコラボレーション基盤を使ったフィッシングが増えているとして、組織側の防御強化を促している。攻撃者はメールより警戒が薄いチャット通知を悪用し、IT部門を装う会話や緊急対応を口実に、認証情報の入力、リモート支援ツールの実行、悪性リンクへの誘導を狙うと考えられる。Teamsは社内業務と結び付いているため…",
+      "article_path": "articles/5fb61fe63a9eb58c.html",
+      "original_url": "https://unit42.paloaltonetworks.com/microsoft-teams-phishing/"
+    },
+    {
+      "entry_id": "4cf3142fe18ca7ca",
+      "title": "VU#616257: Microsoft-signed UEFI shim bootloaders vulnerable to Secure Boot bypass",
+      "source_name": "CERT/CC",
+      "category": "reporting",
+      "published_at": "2026-06-09T18:10:32+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CERT/CCは、Microsoft署名済みのオープンソースshim系UEFIブートローダー、主に0.9以前にSecure Boot回避につながる脆弱性が残っていると公表した。攻撃者は管理者権限、または起動プロセスを書き換えられる立場を得た後、脆弱なshimを持ち込むBYOVDに近い手法でOS起動前に任意コードを実行し、未署名カーネル部品の読み込みやE…",
+      "article_path": "articles/4cf3142fe18ca7ca.html",
+      "original_url": "https://kb.cert.org/vuls/id/616257"
+    },
+    {
+      "entry_id": "4e66067c59c8c9b9",
+      "title": "脅威アクターの神格化にはもうウンザリ：サイバー犯罪者の赤っ恥コレクション",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-08T23:10:02+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要ScanNetSecurityの記事タイトルからは、脅威アクターを過度に高度で不可視な存在として扱う風潮を批判し、サイバー犯罪者側の失敗や粗さに注目する読み物とみられる。入力情報には本文や参照URLがないため、特定の脆弱性、マルウェア、侵害事例は確認できず、実害発生を示す情報もない。悪用の観点では、攻撃者が何かを新たに悪用したというより、防御側が攻撃者…",
+      "article_path": "articles/4e66067c59c8c9b9.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/09/55452.html"
+    },
+    {
+      "entry_id": "305d97f82d76a22a",
+      "title": "アクティビティ事業者向け予約管理システム「satsuki」にサイバー攻撃、パートナー情報や予約者情報が流出",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-08T23:05:13+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要アクティビティ事業者向け予約管理システム「satsuki」がサイバー攻撃を受け、パートナー情報と予約者情報が流出したと報じられた。予約管理システムは、氏名、連絡先、予約日時、利用サービス、事業者側の取引情報などを集約しやすく、攻撃者にとっては単一侵入で複数事業者の顧客接点へ到達できる集約型の標的となる。流出情報は、予約者へのなりすまし連絡、キャンセルや…",
+      "article_path": "articles/305d97f82d76a22a.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/09/55451.html"
+    },
+    {
+      "entry_id": "08f215227818b5a1",
+      "title": "「優良さんぱいナビ」に海外から不正アクセス、システム内の情報の一部が外部に漏えいした可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-08T23:05:10+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要ScanNetSecurityは、「優良さんぱいナビ」に対し海外から不正アクセスがあり、システム内情報の一部が外部に漏えいした可能性があると報じた。現時点の入力情報では、侵入口、侵害されたアカウントの有無、漏えいした情報の種類・件数、攻撃継続の有無は確認できない。悪用経路としては、公開管理画面へのログイン試行、脆弱なWebアプリケーション、窃取済み認証…",
+      "article_path": "articles/08f215227818b5a1.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/09/55450.html"
+    },
+    {
+      "entry_id": "8ddb4c41b9099881",
+      "title": "添付ファイル分離メールサーバへの不正アクセス 第二報 ～ 保存されていたメール情報が漏えいした可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-08T23:05:07+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要ScanNetSecurityが報じた第二報によると、添付ファイル分離メールサーバに対する不正アクセスが確認され、同サーバに保存されていたメール情報が漏えいした可能性が示された。添付ファイル分離基盤は、利用者に届くメール本文、送受信者、件名、添付ファイルの保管先や復元操作に関わる情報を一時的または一定期間保持しやすく、侵害されると単なる中継装置ではなく…",
+      "article_path": "articles/8ddb4c41b9099881.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/09/55449.html"
+    },
+    {
+      "entry_id": "72442f176360a370",
+      "title": "メール送受信の障害で発覚 ～ 山田ボデー工業所のメールシステムサーバに不正アクセス",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-08T23:05:03+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要ScanNetSecurityは、山田ボデー工業所のメールシステムサーバで不正アクセスが確認され、メール送受信の障害を契機に発覚した事案を報じている。現時点の入力情報からは、侵入経路、攻撃者の操作内容、メール本文や添付ファイルの閲覧・持ち出し、アカウント悪用の有無は確認できない。メールサーバが侵害された場合、単なる可用性障害にとどまらず、過去メールから…",
+      "article_path": "articles/72442f176360a370.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/09/55448.html"
+    },
+    {
+      "entry_id": "da0e5f4ef7586573",
+      "title": "脱 PPAP の第 2 段階、パスワード付き添付ファイルの「自動削除」開始",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-08T23:00:12+00:00",
+      "impact_level": "Low",
+      "threat_type": "Other",
+      "summary_preview": "概要ScanNetSecurityの記事タイトルからは、PPAP廃止の次段階として、メールで受信したパスワード付き添付ファイルの自動削除を開始する動きが示されている。PPAPは添付ファイルとパスワードを同一経路で送るため、盗聴対策としての効果が薄く、マルウェア検査や情報漏えい対策を阻害しやすい運用となる。攻撃者視点では、暗号化ZIPなどを使うことでゲートウ…",
+      "article_path": "articles/da0e5f4ef7586573.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/09/55447.html"
+    },
+    {
+      "entry_id": "b7d74fa37c8bce94",
+      "title": "彌満和製作所、SCS 評価制度対応や ISMS 取得見据え「HENNGE File DLP」導入",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-08T23:00:10+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要彌満和製作所が、SCS 評価制度への対応や ISMS 取得を見据えて HENNGE File DLP を導入したという導入事例の記事となる。脆弱性や侵害の公表ではなく、主眼はクラウド上のファイル共有に対する 誤送信、過剰共有、外部持ち出し の統制強化に置かれる。攻撃者視点では、DLP自体を直接悪用する話ではなく、統制が弱いファイル共有経路や例外運用を狙…",
+      "article_path": "articles/b7d74fa37c8bce94.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/09/55446.html"
+    },
+    {
+      "entry_id": "005f9657a30d74bc",
+      "title": "クレジットマスター攻撃による不正利用に注意を呼びかけ",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-08T23:00:08+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Scam/Fraud",
+      "summary_preview": "概要ScanNetSecurityは、クレジットマスター攻撃による不正利用への注意喚起を報じているが、入力情報上は対象サービス、発生規模、観測時期、攻撃元、被害額などの詳細は確認できない。クレジットマスター攻撃は、カード番号、有効期限、セキュリティコードなどの組み合わせを機械的に試し、決済や与信照会の応答差から有効な組み合わせを見つける手口として扱う必要が…",
+      "article_path": "articles/005f9657a30d74bc.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/09/55445.html"
+    },
+    {
+      "entry_id": "124d840b8a4c972d",
+      "title": "複数の TP-LINK 製品に重要情報の平文送信の脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-08T23:00:03+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要ScanNetSecurityは、複数のTP-LINK製品に重要情報を平文で送信する脆弱性があると報じた。詳細な対象機種、ファームウェア版、CVE番号、修正状況、悪用観測の有無は入力情報から確認できず、現時点では影響範囲の確定が未確認となる。攻撃者は同一ネットワーク、無線区間、プロキシ、侵害済み端末、または経路上の観測点に位置できる場合、認証情報や設定…",
+      "article_path": "articles/124d840b8a4c972d.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/09/55444.html"
+    }
+  ]
+}

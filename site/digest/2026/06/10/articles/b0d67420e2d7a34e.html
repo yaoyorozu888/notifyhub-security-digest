@@ -1,0 +1,332 @@
+<!-- article.html テンプレート（生成用） (例: /digest/YYYY/MM/DD/articles/<entry_id>.html)
+     サーバ側（Function）で {{...}} を置換して出力してください。
+-->
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/favicon-192.png" />
+  <title>Chrome V8 Zero-Day CVE-2026-11645 Exploited in the Wild - Patch Now | NotifyHub Cybersecurity Daily Report</title>
+  <style>
+    :root{
+      --bg:#0b1020; --panel:#0f1730; --panel2:#121c3a;
+      --text:#e7ecff; --muted:#a9b4df; --line:#22305b;
+      --accent:#7aa2ff; --good:#4ade80; --warn:#fbbf24; --bad:#fb7185;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+      --radius:18px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      background: radial-gradient(1000px 700px at 20% -10%, rgba(122,162,255,.25), transparent 60%),
+                  radial-gradient(900px 600px at 90% 10%, rgba(251,113,133,.12), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+    }
+    a{color:inherit}
+    .wrap{max-width:960px; margin:0 auto; padding:22px 18px 44px}
+    .topbar{
+      display:flex; justify-content:space-between; align-items:center; gap:12px;
+      margin-bottom:12px;
+    }
+    .crumb a{
+      text-decoration:none;
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .crumb a:hover{border-color:rgba(122,162,255,.65)}
+    .chip{
+      display:inline-flex; align-items:center; gap:8px;
+      background:rgba(27,38,80,.75);
+      border:1px solid rgba(34,48,91,.9);
+      padding:7px 10px; border-radius:999px;
+      font-size:12px; color:var(--muted);
+      backdrop-filter: blur(10px);
+      white-space:nowrap;
+    }
+    .chip strong{color:var(--text); font-weight:650}
+    .panel{
+      background: linear-gradient(180deg, rgba(15,23,48,.9), rgba(15,23,48,.75));
+      border:1px solid rgba(34,48,91,.9);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .head{
+      padding:16px 16px 12px;
+      border-bottom:1px solid rgba(34,48,91,.9);
+      background:rgba(18,28,58,.55);
+    }
+    h1{
+      margin:0;
+      font-size:20px;
+      line-height:1.35;
+      letter-spacing:.15px;
+    }
+    .meta{
+      margin-top:10px;
+      display:flex; gap:10px; flex-wrap:wrap;
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.6;
+    }
+    .meta a{color:var(--muted)}
+    .meta a:hover{color:var(--accent)}
+    .tags{
+      margin-top:12px;
+      display:flex; gap:8px; flex-wrap:wrap;
+    }
+    .tag{
+      font-size:11px;
+      padding:6px 9px;
+      border-radius:999px;
+      background:rgba(27,38,80,.65);
+      border:1px solid rgba(34,48,91,.9);
+      color:var(--muted);
+      white-space:nowrap;
+    }
+    .tag.level-Critical{border-color:rgba(251,113,133,.65); color:#ffd0d7}
+    .tag.level-High{border-color:rgba(251,191,36,.65); color:#ffe9b0}
+    .tag.level-Medium{border-color:rgba(122,162,255,.65); color:#dbe6ff}
+    .tag.level-Low{border-color:rgba(74,222,128,.55); color:#d0ffe2}
+    .tag.level-Info{border-color:rgba(169,180,223,.55); color:rgba(169,180,223,.95)}
+    .body{
+      padding:16px;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+    }
+    .section{
+      background:rgba(18,28,58,.35);
+      border:1px solid rgba(34,48,91,.75);
+      border-radius:16px;
+      padding:14px;
+    }
+    .section h2{
+      margin:0 0 10px;
+      font-size:14px;
+      letter-spacing:.1px;
+    }
+    .ruleReason{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.65;
+      white-space:pre-wrap;
+    }
+    .infoSources{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.5;
+    }
+    .infoSourceRow{
+      margin:0;
+      padding:0;
+    }
+    .infoSourceRow + .infoSourceRow{
+      margin-top:2px;
+    }
+
+    /* --- summary_html styles (OpenAI output uses h4/p/ul/li/strong/code/br) --- */
+    .summary h4{
+      margin:14px 0 8px;
+      font-size:13px;
+      letter-spacing:.1px;
+      padding-left:10px;
+      border-left:3px solid rgba(122,162,255,.65);
+      color: rgba(231,236,255,.95);
+    }
+    .summary p{margin:8px 0; color:rgba(231,236,255,.92); line-height:1.75}
+    .summary ul, .summary ol{margin:8px 0 8px 1.2em; padding:0}
+    .summary li{margin:6px 0; color:rgba(231,236,255,.92); line-height:1.7}
+    .summary strong{
+      color:var(--text);
+      font-weight:750;
+      padding:0 .2em;
+      border-radius:8px;
+      background: linear-gradient(transparent 60%, rgba(122,162,255,.22) 60%);
+    }
+    .summary code{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 8px;
+      background: rgba(11,16,32,.6);
+      border: 1px solid rgba(34,48,91,.85);
+      color: rgba(231,236,255,.95);
+      white-space: nowrap;
+    }
+
+    .terms{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:10px;
+    }
+    @media (max-width: 860px){
+      .terms{grid-template-columns: 1fr}
+    }
+    .termCard{
+      background:rgba(11,16,32,.45);
+      border:1px solid rgba(34,48,91,.85);
+      border-radius:14px;
+      padding:12px;
+      min-width:0;
+    }
+    .termCard .term{
+      font-weight:700;
+      font-size:13px;
+      margin:0 0 8px;
+      word-break:break-word;
+    }
+    .termCard .exp{
+      margin:0;
+      color:rgba(231,236,255,.9);
+      line-height:1.7;
+      font-size:12px;
+      white-space:pre-wrap;
+    }
+    .subSectionTitle{
+      margin:16px 0 8px;
+      font-size:12px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:var(--muted);
+    }
+    .deepDive{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:10px;
+      margin-top:8px;
+    }
+    .deepDiveCard{
+      background:rgba(12,20,38,.6);
+    }
+
+    .footer{
+      margin-top:14px;
+      color:rgba(169,180,223,.75);
+      font-size:12px;
+      line-height:1.7;
+      text-align:center;
+    }
+    .btnRow{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px}
+    .linkbtn{
+      text-decoration:none;
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .linkbtn:hover{border-color:rgba(122,162,255,.65)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="crumb">
+        <!-- ../index.html は通常 "../index.html" でOK -->
+        <a href="../index.html">← 日次トップへ戻る</a>
+      </div>
+      <div class="chip">entry_id <strong class="mono">b0d67420e2d7a34e</strong></div>
+    </div>
+
+    <div class="panel">
+      <div class="head">
+        <h1>Chrome V8 Zero-Day CVE-2026-11645 Exploited in the Wild - Patch Now</h1>
+
+        <div class="meta">
+          <span>🗞️ The Hacker News</span>
+          <span>🕒 2026-06-09T20:58:49+09:00</span>
+          <span>🔗 <a href="https://thehackernews.com/2026/06/chrome-v8-zero-day-cve-2026-11645.html" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
+        </div>
+
+        <div class="tags">
+          <span class="tag level-High">Impact: High</span>
+          <span class="tag">Zero-day</span>
+        </div>
+
+        <div class="btnRow">
+          <a class="linkbtn" href="https://thehackernews.com/2026/06/chrome-v8-zero-day-cve-2026-11645.html" target="_blank" rel="noopener noreferrer">原文リンク</a>
+          <a class="linkbtn" href="https://www.notifyhub.site/digest/2026/06/10/">日次トップ</a>
+        </div>
+      </div>
+
+      <div class="body">
+        
+        <div class="section">
+          <h2>Impact判定理由</h2>
+          <div class="ruleReason">CVE-2026-11645はCVSS 8.8のChrome V8境界外読み書きで、実環境での悪用が報じられているため技術的深刻度は高い。
+ブラウザーは全端末に広く存在し、閲覧や広告経由で初期侵入点になり得る一方、サンドボックス突破や標的範囲は未確認。
+The Hacker Newsによるメディア二次情報のため補正で引き上げず、Googleの更新配布済みでも悪用確認があるため引き下げない。</div>
+        </div>
+        <div class="section summary">
+          <h2>🧾 要約（ChatGPT / gpt-5.5-2026-04-23）</h2>
+          <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
+          <div><h4>概要</h4><p>Google ChromeのV8に存在する<strong>CVE-2026-11645</strong>について、Googleが修正を含む更新を公開し、The Hacker Newsが<strong>実環境での悪用確認</strong>を報じた。脆弱性はV8の境界外読み書きで、細工されたWebコンテンツを処理した際にメモリ破壊を起こし、ブラウザー内でのコード実行に悪用される可能性がある。企業環境ではChromeが標準ブラウザーとして広く配布されているため、単一端末の侵害にとどまらず、認証済みセッション、社内SaaS、ブラウザー保存情報を起点に<strong>初期侵入や横展開の足場</strong>になり得る。CVSSは8.8と高いが、実運用上は利用者操作、サイト誘導、ブラウザーサンドボックス、追加の権限昇格脆弱性の有無で被害範囲が変わるため、更新率と未更新端末の露出経路を優先して確認する必要がある。現時点では攻撃コードの詳細、標的業種、サンドボックス突破の併用有無、侵害後の具体的なペイロードは記事内で確認できず、<strong>未確認事項</strong>として扱う必要が残る。</p></div>
+        </div>
+
+        <div class="section">
+          <h2>📌 キーワード解説</h2>
+          <div class="terms">
+            <div class="termCard">
+  <div class="term">V8（JavaScript/WebAssemblyエンジン）</div>
+  <p class="exp">Chrome内でスクリプトを高速実行する中核。DOM脆弱性と異なり、メモリ破壊から任意コード実行へ近づく。</p>
+</div>
+<div class="termCard">
+  <div class="term">Out-of-bounds read/write（境界外読み書き）</div>
+  <p class="exp">許可範囲外のメモリを読む・書く不具合。読み取りだけの情報漏えいより、書き込みを伴うと制御奪取に近づく。</p>
+</div>
+<div class="termCard">
+  <div class="term">Zero-day（ゼロデイ）</div>
+  <p class="exp">修正や回避策が行き渡る前に悪用される状態。未公開脆弱性そのものと、悪用中の状況を混同しない。</p>
+</div>
+<div class="termCard">
+  <div class="term">Browser sandbox（ブラウザーサンドボックス）</div>
+  <p class="exp">描画プロセスの被害をOSへ広げにくくする隔離。突破には別脆弱性や設定不備が絡むことが多い。</p>
+</div>
+          </div>
+          <h3 class="subSectionTitle">深掘り解説</h3>
+          <div class="deepDive">
+            <div class="termCard deepDiveCard">
+  <div class="term">ブラウザーゼロデイの初動は更新率と露出経路で分ける</div>
+  <p class="exp">ブラウザーのゼロデイ対応では、脆弱性の深刻度だけで全端末を同じ優先度に置くと判断がぶれやすい。実務では「どの端末が未更新か」と「その端末が攻撃コンテンツに到達しやすいか」を分けて見る必要がある。V8のようなレンダリング系・スクリプト実行系の脆弱性は、メール添付を開かせる攻撃だけでなく、改ざんサイト、広告配信、業務で日常的に使う外部ポータル経由でも到達し得る。つまり、利用者が管理者権限を持つかどうかより、未更新ブラウザーで外部Webへ出る経路があるかが初動判断の軸となる。
+
+具体例として、全社でChromeを利用していても、インターネット分離端末、VDI、特定SaaS専用端末、開発者端末ではリスクの形が異なる。VDIはマスターイメージ更新で一括是正できる一方、永続プロファイルに残る認証トークンや拡張機能の確認が必要となる。開発者端末は外部ドキュメント、パッケージリポジトリ、検証サイトへのアクセスが多く、侵害後にコード署名鍵やクラウド認証情報へ近づきやすい。役員端末や経理端末は標的化されやすく、未更新期間が短くても優先度を上げる判断が成り立つ。
+
+検知では、単にChromeのバージョンを資産管理で見るだけでは不足しやすい。EDRでブラウザー子プロセスからの不審なシェル起動、通常と異なるDLL読み込み、クラッシュ急増、未知サイトへのアクセス直後の認証イベントを合わせて見るとよい。封じ込めでは、全社Web遮断のような強い措置は業務影響が大きいため、未更新端末の外部閲覧制限、強制再起動を伴う更新適用、危険度の高い端末群のセッション失効を組み合わせる方が現実的となる。ゼロデイの有無より、未更新状態が何時間残るかが被害確率を左右する。</p>
+</div>
+          </div>
+        </div>
+
+        
+
+        <div class="section">
+          <h2>🕘 生成情報</h2>
+          <div class="ruleReason">
+対象期間：2026-06-09T06:00:00+09:00 〜 2026-06-10T06:00:00+09:00
+生成時刻：2026-06-10T07:05:08.250727+09:00
+免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      notifyhub.site
+    </div>
+  </div>
+</body>
+</html>

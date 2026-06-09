@@ -1,0 +1,334 @@
+<!-- article.html テンプレート（生成用） (例: /digest/YYYY/MM/DD/articles/<entry_id>.html)
+     サーバ側（Function）で {{...}} を置換して出力してください。
+-->
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/favicon-192.png" />
+  <title>When “Hi, This Is IT” Comes Through Microsoft Teams | NotifyHub Cybersecurity Daily Report</title>
+  <style>
+    :root{
+      --bg:#0b1020; --panel:#0f1730; --panel2:#121c3a;
+      --text:#e7ecff; --muted:#a9b4df; --line:#22305b;
+      --accent:#7aa2ff; --good:#4ade80; --warn:#fbbf24; --bad:#fb7185;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+      --radius:18px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      background: radial-gradient(1000px 700px at 20% -10%, rgba(122,162,255,.25), transparent 60%),
+                  radial-gradient(900px 600px at 90% 10%, rgba(251,113,133,.12), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+    }
+    a{color:inherit}
+    .wrap{max-width:960px; margin:0 auto; padding:22px 18px 44px}
+    .topbar{
+      display:flex; justify-content:space-between; align-items:center; gap:12px;
+      margin-bottom:12px;
+    }
+    .crumb a{
+      text-decoration:none;
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .crumb a:hover{border-color:rgba(122,162,255,.65)}
+    .chip{
+      display:inline-flex; align-items:center; gap:8px;
+      background:rgba(27,38,80,.75);
+      border:1px solid rgba(34,48,91,.9);
+      padding:7px 10px; border-radius:999px;
+      font-size:12px; color:var(--muted);
+      backdrop-filter: blur(10px);
+      white-space:nowrap;
+    }
+    .chip strong{color:var(--text); font-weight:650}
+    .panel{
+      background: linear-gradient(180deg, rgba(15,23,48,.9), rgba(15,23,48,.75));
+      border:1px solid rgba(34,48,91,.9);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .head{
+      padding:16px 16px 12px;
+      border-bottom:1px solid rgba(34,48,91,.9);
+      background:rgba(18,28,58,.55);
+    }
+    h1{
+      margin:0;
+      font-size:20px;
+      line-height:1.35;
+      letter-spacing:.15px;
+    }
+    .meta{
+      margin-top:10px;
+      display:flex; gap:10px; flex-wrap:wrap;
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.6;
+    }
+    .meta a{color:var(--muted)}
+    .meta a:hover{color:var(--accent)}
+    .tags{
+      margin-top:12px;
+      display:flex; gap:8px; flex-wrap:wrap;
+    }
+    .tag{
+      font-size:11px;
+      padding:6px 9px;
+      border-radius:999px;
+      background:rgba(27,38,80,.65);
+      border:1px solid rgba(34,48,91,.9);
+      color:var(--muted);
+      white-space:nowrap;
+    }
+    .tag.level-Critical{border-color:rgba(251,113,133,.65); color:#ffd0d7}
+    .tag.level-High{border-color:rgba(251,191,36,.65); color:#ffe9b0}
+    .tag.level-Medium{border-color:rgba(122,162,255,.65); color:#dbe6ff}
+    .tag.level-Low{border-color:rgba(74,222,128,.55); color:#d0ffe2}
+    .tag.level-Info{border-color:rgba(169,180,223,.55); color:rgba(169,180,223,.95)}
+    .body{
+      padding:16px;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+    }
+    .section{
+      background:rgba(18,28,58,.35);
+      border:1px solid rgba(34,48,91,.75);
+      border-radius:16px;
+      padding:14px;
+    }
+    .section h2{
+      margin:0 0 10px;
+      font-size:14px;
+      letter-spacing:.1px;
+    }
+    .ruleReason{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.65;
+      white-space:pre-wrap;
+    }
+    .infoSources{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.5;
+    }
+    .infoSourceRow{
+      margin:0;
+      padding:0;
+    }
+    .infoSourceRow + .infoSourceRow{
+      margin-top:2px;
+    }
+
+    /* --- summary_html styles (OpenAI output uses h4/p/ul/li/strong/code/br) --- */
+    .summary h4{
+      margin:14px 0 8px;
+      font-size:13px;
+      letter-spacing:.1px;
+      padding-left:10px;
+      border-left:3px solid rgba(122,162,255,.65);
+      color: rgba(231,236,255,.95);
+    }
+    .summary p{margin:8px 0; color:rgba(231,236,255,.92); line-height:1.75}
+    .summary ul, .summary ol{margin:8px 0 8px 1.2em; padding:0}
+    .summary li{margin:6px 0; color:rgba(231,236,255,.92); line-height:1.7}
+    .summary strong{
+      color:var(--text);
+      font-weight:750;
+      padding:0 .2em;
+      border-radius:8px;
+      background: linear-gradient(transparent 60%, rgba(122,162,255,.22) 60%);
+    }
+    .summary code{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 8px;
+      background: rgba(11,16,32,.6);
+      border: 1px solid rgba(34,48,91,.85);
+      color: rgba(231,236,255,.95);
+      white-space: nowrap;
+    }
+
+    .terms{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:10px;
+    }
+    @media (max-width: 860px){
+      .terms{grid-template-columns: 1fr}
+    }
+    .termCard{
+      background:rgba(11,16,32,.45);
+      border:1px solid rgba(34,48,91,.85);
+      border-radius:14px;
+      padding:12px;
+      min-width:0;
+    }
+    .termCard .term{
+      font-weight:700;
+      font-size:13px;
+      margin:0 0 8px;
+      word-break:break-word;
+    }
+    .termCard .exp{
+      margin:0;
+      color:rgba(231,236,255,.9);
+      line-height:1.7;
+      font-size:12px;
+      white-space:pre-wrap;
+    }
+    .subSectionTitle{
+      margin:16px 0 8px;
+      font-size:12px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:var(--muted);
+    }
+    .deepDive{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:10px;
+      margin-top:8px;
+    }
+    .deepDiveCard{
+      background:rgba(12,20,38,.6);
+    }
+
+    .footer{
+      margin-top:14px;
+      color:rgba(169,180,223,.75);
+      font-size:12px;
+      line-height:1.7;
+      text-align:center;
+    }
+    .btnRow{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px}
+    .linkbtn{
+      text-decoration:none;
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .linkbtn:hover{border-color:rgba(122,162,255,.65)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="crumb">
+        <!-- ../index.html は通常 "../index.html" でOK -->
+        <a href="../index.html">← 日次トップへ戻る</a>
+      </div>
+      <div class="chip">entry_id <strong class="mono">5fb61fe63a9eb58c</strong></div>
+    </div>
+
+    <div class="panel">
+      <div class="head">
+        <h1>When “Hi, This Is IT” Comes Through Microsoft Teams</h1>
+
+        <div class="meta">
+          <span>🗞️ Unit 42</span>
+          <span>🕒 2026-06-09T08:00:45+09:00</span>
+          <span>🔗 <a href="https://unit42.paloaltonetworks.com/microsoft-teams-phishing/" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
+        </div>
+
+        <div class="tags">
+          <span class="tag level-Medium">Impact: Medium</span>
+          <span class="tag">Phishing</span>
+        </div>
+
+        <div class="btnRow">
+          <a class="linkbtn" href="https://unit42.paloaltonetworks.com/microsoft-teams-phishing/" target="_blank" rel="noopener noreferrer">原文リンク</a>
+          <a class="linkbtn" href="https://www.notifyhub.site/digest/2026/06/10/">日次トップ</a>
+        </div>
+      </div>
+
+      <div class="body">
+        
+        <div class="section">
+          <h2>Impact判定理由</h2>
+          <div class="ruleReason">Microsoft Teamsを使う組織では、メール対策を回避した認証情報窃取やリモート操作誘導につながり、侵害後は社内チャネルやクラウド資産へ広がる可能性がある。
+一方で入力情報からは特定の大規模侵害、悪性コード配布、ゼロデイ悪用は確認できず、影響は外部アクセス設定と利用者対応に左右される。
+情報源はUnit 42のベンダー系脅威解説であり、公的注意喚起やKEVではないため、話題性による引き上げは行わずMediumと評価する。</div>
+        </div>
+        <div class="section summary">
+          <h2>🧾 要約（ChatGPT / gpt-5.5-2026-04-23）</h2>
+          <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
+          <div><h4>概要</h4><p>Unit 42は、Microsoft Teamsのようなコラボレーション基盤を使ったフィッシングが増えているとして、組織側の防御強化を促している。攻撃者はメールより警戒が薄いチャット通知を悪用し、<strong>IT部門を装う会話</strong>や緊急対応を口実に、認証情報の入力、リモート支援ツールの実行、悪性リンクへの誘導を狙うと考えられる。Teamsは社内業務と結び付いているため、侵害されたアカウントが正規ユーザーとして振る舞うと、単なる個人被害にとどまらず、<strong>社内チャネルへの拡散</strong>、追加の資格情報窃取、業務システムへの横展開につながる余地がある。判断上の焦点は、外部テナントとの通信許可、ゲスト招待、条件付きアクセス、監査ログの保持状況であり、メール対策だけでは検知が遅れる可能性が高い。入力情報だけでは、特定キャンペーン名、侵害件数、利用されたURL、マルウェア配布の有無は確認できず、組織内ではまず<strong>外部チャット経路の露出</strong>と最近の不審なTeams対話を確認する必要がある。</p></div>
+        </div>
+
+        <div class="section">
+          <h2>📌 キーワード解説</h2>
+          <div class="terms">
+            <div class="termCard">
+  <div class="term">Teams phishing（Teamsフィッシング）</div>
+  <p class="exp">メールではなくTeams上の会話で誘導する手口。正規通知に見える点が通常のメールフィッシングと異なる。</p>
+</div>
+<div class="termCard">
+  <div class="term">External access（外部アクセス）</div>
+  <p class="exp">別テナントのユーザーと直接通信する設定。ゲスト招待と異なり、相手を組織内に参加させず会話できる。</p>
+</div>
+<div class="termCard">
+  <div class="term">Impersonation（なりすまし）</div>
+  <p class="exp">実在部署や担当者を装い信頼を奪う行為。アカウント乗っ取りと違い、表示名だけで成立する場合がある。</p>
+</div>
+<div class="termCard">
+  <div class="term">Conditional Access（条件付きアクセス）</div>
+  <p class="exp">場所、端末、リスクで認証可否を制御する仕組み。MFA単体より、侵害後の利用条件を絞れる。</p>
+</div>
+          </div>
+          <h3 class="subSectionTitle">深掘り解説</h3>
+          <div class="deepDive">
+            <div class="termCard deepDiveCard">
+  <div class="term">Teamsを業務チャネルとして扱うほど、フィッシングの初動判断は難しくなる</div>
+  <p class="exp">Teamsフィッシングの本質は、攻撃経路が「業務で日常的に使う同期的な会話」に移る点にある。メールなら送信元、件名、添付ファイル、URL評価を起点に判定しやすいが、チャットでは短文、即時応答、相手の表示名、組織ロゴのような雰囲気が判断材料になりやすい。攻撃者にとっては、利用者に考える時間を与えず、正規のIT対応に似せた手順を踏ませやすい経路になる。
+
+実務上は、Teamsの設定を「社内だけの安全な空間」と見なさないことが重要になる。たとえば外部アクセスが広く許可されている環境では、攻撃者が別テナントから「ITサポート」や「ヘルプデスク」に似た表示名で利用者へ連絡できる可能性がある。利用者が「端末確認のため、このリンクでサインインしてほしい」「サポートツールを起動してコードを教えてほしい」と言われた場合、メールを介さずに資格情報窃取やリモート操作へ進む流れが作れる。
+
+CSIRTが見るべきログは、メールゲートウェイだけでは不足する。Microsoft 365監査ログ、Teamsの外部ユーザーとの会話履歴、Entra IDのサインインログ、OAuthアプリ同意、端末上のリモート支援ツール実行履歴を組み合わせる必要がある。具体例として、ある利用者が外部テナントの相手と数分会話した直後に未知の国からサインインし、その後SharePoint上のファイルへ大量アクセスしていれば、単なる不審チャットではなくアカウント侵害として扱う根拠になる。
+
+封じ込めでは、Teamsそのものを全面停止するより、外部アクセスの一時制限、該当ユーザーのセッション失効、パスワードリセット、MFA再登録の確認、悪用されたURLやアプリ同意の無効化を優先する方が業務影響を抑えやすい。ただし、正規の委託先やグループ会社との外部連携を止めると業務が止まる場合があるため、許可ドメイン方式や例外承認の運用とセットで進める必要がある。</p>
+</div>
+          </div>
+        </div>
+
+        
+
+        <div class="section">
+          <h2>🕘 生成情報</h2>
+          <div class="ruleReason">
+対象期間：2026-06-09T06:00:00+09:00 〜 2026-06-10T06:00:00+09:00
+生成時刻：2026-06-10T07:05:08.250727+09:00
+免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      notifyhub.site
+    </div>
+  </div>
+</body>
+</html>
