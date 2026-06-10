@@ -1,0 +1,332 @@
+<!-- article.html テンプレート（生成用） (例: /digest/YYYY/MM/DD/articles/<entry_id>.html)
+     サーバ側（Function）で {{...}} を置換して出力してください。
+-->
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/favicon-192.png" />
+  <title>Weekly Report: Androidに複数の脆弱性 | NotifyHub Cybersecurity Daily Report</title>
+  <style>
+    :root{
+      --bg:#0b1020; --panel:#0f1730; --panel2:#121c3a;
+      --text:#e7ecff; --muted:#a9b4df; --line:#22305b;
+      --accent:#7aa2ff; --good:#4ade80; --warn:#fbbf24; --bad:#fb7185;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+      --radius:18px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      background: radial-gradient(1000px 700px at 20% -10%, rgba(122,162,255,.25), transparent 60%),
+                  radial-gradient(900px 600px at 90% 10%, rgba(251,113,133,.12), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+    }
+    a{color:inherit}
+    .wrap{max-width:960px; margin:0 auto; padding:22px 18px 44px}
+    .topbar{
+      display:flex; justify-content:space-between; align-items:center; gap:12px;
+      margin-bottom:12px;
+    }
+    .crumb a{
+      text-decoration:none;
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .crumb a:hover{border-color:rgba(122,162,255,.65)}
+    .chip{
+      display:inline-flex; align-items:center; gap:8px;
+      background:rgba(27,38,80,.75);
+      border:1px solid rgba(34,48,91,.9);
+      padding:7px 10px; border-radius:999px;
+      font-size:12px; color:var(--muted);
+      backdrop-filter: blur(10px);
+      white-space:nowrap;
+    }
+    .chip strong{color:var(--text); font-weight:650}
+    .panel{
+      background: linear-gradient(180deg, rgba(15,23,48,.9), rgba(15,23,48,.75));
+      border:1px solid rgba(34,48,91,.9);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .head{
+      padding:16px 16px 12px;
+      border-bottom:1px solid rgba(34,48,91,.9);
+      background:rgba(18,28,58,.55);
+    }
+    h1{
+      margin:0;
+      font-size:20px;
+      line-height:1.35;
+      letter-spacing:.15px;
+    }
+    .meta{
+      margin-top:10px;
+      display:flex; gap:10px; flex-wrap:wrap;
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.6;
+    }
+    .meta a{color:var(--muted)}
+    .meta a:hover{color:var(--accent)}
+    .tags{
+      margin-top:12px;
+      display:flex; gap:8px; flex-wrap:wrap;
+    }
+    .tag{
+      font-size:11px;
+      padding:6px 9px;
+      border-radius:999px;
+      background:rgba(27,38,80,.65);
+      border:1px solid rgba(34,48,91,.9);
+      color:var(--muted);
+      white-space:nowrap;
+    }
+    .tag.level-Critical{border-color:rgba(251,113,133,.65); color:#ffd0d7}
+    .tag.level-High{border-color:rgba(251,191,36,.65); color:#ffe9b0}
+    .tag.level-Medium{border-color:rgba(122,162,255,.65); color:#dbe6ff}
+    .tag.level-Low{border-color:rgba(74,222,128,.55); color:#d0ffe2}
+    .tag.level-Info{border-color:rgba(169,180,223,.55); color:rgba(169,180,223,.95)}
+    .body{
+      padding:16px;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+    }
+    .section{
+      background:rgba(18,28,58,.35);
+      border:1px solid rgba(34,48,91,.75);
+      border-radius:16px;
+      padding:14px;
+    }
+    .section h2{
+      margin:0 0 10px;
+      font-size:14px;
+      letter-spacing:.1px;
+    }
+    .ruleReason{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.65;
+      white-space:pre-wrap;
+    }
+    .infoSources{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.5;
+    }
+    .infoSourceRow{
+      margin:0;
+      padding:0;
+    }
+    .infoSourceRow + .infoSourceRow{
+      margin-top:2px;
+    }
+
+    /* --- summary_html styles (OpenAI output uses h4/p/ul/li/strong/code/br) --- */
+    .summary h4{
+      margin:14px 0 8px;
+      font-size:13px;
+      letter-spacing:.1px;
+      padding-left:10px;
+      border-left:3px solid rgba(122,162,255,.65);
+      color: rgba(231,236,255,.95);
+    }
+    .summary p{margin:8px 0; color:rgba(231,236,255,.92); line-height:1.75}
+    .summary ul, .summary ol{margin:8px 0 8px 1.2em; padding:0}
+    .summary li{margin:6px 0; color:rgba(231,236,255,.92); line-height:1.7}
+    .summary strong{
+      color:var(--text);
+      font-weight:750;
+      padding:0 .2em;
+      border-radius:8px;
+      background: linear-gradient(transparent 60%, rgba(122,162,255,.22) 60%);
+    }
+    .summary code{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 8px;
+      background: rgba(11,16,32,.6);
+      border: 1px solid rgba(34,48,91,.85);
+      color: rgba(231,236,255,.95);
+      white-space: nowrap;
+    }
+
+    .terms{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:10px;
+    }
+    @media (max-width: 860px){
+      .terms{grid-template-columns: 1fr}
+    }
+    .termCard{
+      background:rgba(11,16,32,.45);
+      border:1px solid rgba(34,48,91,.85);
+      border-radius:14px;
+      padding:12px;
+      min-width:0;
+    }
+    .termCard .term{
+      font-weight:700;
+      font-size:13px;
+      margin:0 0 8px;
+      word-break:break-word;
+    }
+    .termCard .exp{
+      margin:0;
+      color:rgba(231,236,255,.9);
+      line-height:1.7;
+      font-size:12px;
+      white-space:pre-wrap;
+    }
+    .subSectionTitle{
+      margin:16px 0 8px;
+      font-size:12px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:var(--muted);
+    }
+    .deepDive{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:10px;
+      margin-top:8px;
+    }
+    .deepDiveCard{
+      background:rgba(12,20,38,.6);
+    }
+
+    .footer{
+      margin-top:14px;
+      color:rgba(169,180,223,.75);
+      font-size:12px;
+      line-height:1.7;
+      text-align:center;
+    }
+    .btnRow{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px}
+    .linkbtn{
+      text-decoration:none;
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .linkbtn:hover{border-color:rgba(122,162,255,.65)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="crumb">
+        <!-- ../index.html は通常 "../index.html" でOK -->
+        <a href="../index.html">← 日次トップへ戻る</a>
+      </div>
+      <div class="chip">entry_id <strong class="mono">96702aef688a7107</strong></div>
+    </div>
+
+    <div class="panel">
+      <div class="head">
+        <h1>Weekly Report: Androidに複数の脆弱性</h1>
+
+        <div class="meta">
+          <span>🗞️ JPCERT/CC</span>
+          <span>🕒 2026-06-10T09:29:00+09:00</span>
+          <span>🔗 <a href="https://www.jpcert.or.jp/wr/2026/wr260610.html#6" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
+        </div>
+
+        <div class="tags">
+          <span class="tag level-Medium">Impact: Medium</span>
+          <span class="tag">Vulnerability Disclosure</span>
+        </div>
+
+        <div class="btnRow">
+          <a class="linkbtn" href="https://www.jpcert.or.jp/wr/2026/wr260610.html#6" target="_blank" rel="noopener noreferrer">原文リンク</a>
+          <a class="linkbtn" href="https://www.notifyhub.site/digest/2026/06/11/">日次トップ</a>
+        </div>
+      </div>
+
+      <div class="body">
+        
+        <div class="section">
+          <h2>Impact判定理由</h2>
+          <div class="ruleReason">Androidの複数脆弱性は端末侵害や業務アカウントへの波及余地がある一方、個別CVE、CVSS、悪用確認、対象バージョンが入力情報から確認できない。
+JPCERT/CC由来の公的情報だが、KEV掲載や緊急注意喚起ではなくWeekly Reportでの周知に見えるため、情報源補正による引き上げは行わない。
+MDM管理やパッチレベル把握が不十分な組織では運用影響が出るため、Medium相当として扱う。</div>
+        </div>
+        <div class="section summary">
+          <h2>🧾 要約（ChatGPT / gpt-5.5-2026-04-23）</h2>
+          <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
+          <div><h4>概要</h4><p>JPCERT/CCのWeekly Reportで、Androidに複数の脆弱性があることが取り上げられた。入力情報だけでは対象バージョン、個別のCVE、CVSS、悪用有無、修正済みパッチレベルが確認できないため、現時点では<strong>脆弱性情報の周知</strong>として扱うのが妥当となる。Androidの脆弱性は、端末上のアプリ、メディア処理、通信経路、端末メーカー提供コンポーネントなどの条件次第で、権限昇格、情報窃取、端末制御、業務アカウントへの波及につながる可能性がある。企業環境ではBYOD、MDM管理端末、業務専用端末が混在し、OS更新の遅延やメーカー別の配信差により、同じ組織内でも<strong>実効的な露出状況が端末ごとに異なる</strong>点が判断を難しくする。未確認事項は、悪用実績、認証不要で成立する攻撃の有無、攻撃にユーザー操作が必要か、端末管理基盤でパッチ適用状況を把握できるかという点に残る。</p></div>
+        </div>
+
+        <div class="section">
+          <h2>📌 キーワード解説</h2>
+          <div class="terms">
+            <div class="termCard">
+  <div class="term">セキュリティパッチレベル</div>
+  <p class="exp">Android端末の修正適用状態を示す日付。OSバージョンとは別物で、同じAndroid でもリスクが変わる。</p>
+</div>
+<div class="termCard">
+  <div class="term">MDM（モバイル端末管理）</div>
+  <p class="exp">端末設定や準拠状態を集中管理する仕組み。資産台帳だけでは、実際の修正適用までは保証しない。</p>
+</div>
+<div class="termCard">
+  <div class="term">権限昇格</div>
+  <p class="exp">低い権限から高い権限へ移る攻撃経路。初期侵入と混同せず、被害拡大の段階として見る。</p>
+</div>
+<div class="termCard">
+  <div class="term">BYOD（私物端末利用）</div>
+  <p class="exp">私物端末を業務に使う形態。会社所有端末と違い、更新強制や証跡取得に制約が出やすい。</p>
+</div>
+          </div>
+          <h3 class="subSectionTitle">深掘り解説</h3>
+          <div class="deepDive">
+            <div class="termCard deepDiveCard">
+  <div class="term">Android脆弱性対応で見るべき単位はOS名ではなくパッチレベル</div>
+  <p class="exp">Androidの脆弱性対応では、「Android 13だから安全」「Android 14だから安全」といった見方は判断を誤らせやすい。実務で見るべき単位は、端末に適用されているセキュリティパッチレベル、端末メーカー、キャリア配信状況、MDM上の準拠ポリシーとなる。同じOSメジャーバージョンでも、Pixel、Samsung、国内キャリア端末、業務用堅牢端末では修正配信の時期がずれることが珍しくない。
+
+具体例として、社給スマートフォンがMDMに登録され、条件付きアクセスで業務メールを利用している環境を考える。脆弱性情報を受けてCSIRTが確認すべき初動は、全端末のOS名を集計することではなく、対象パッチレベル未満の端末が業務リソースへ接続できるかを確認することとなる。対象端末が少数でも、管理者用メール、VPN、多要素認証アプリ、業務チャットを同じ端末で使っていれば、端末侵害が認証情報や承認操作に波及する余地が残る。
+
+封じ込めでは、いきなり全端末を遮断すると現場業務への影響が大きい。まずは未更新端末の可視化、更新可能端末への強制更新、一定期間後の業務アプリ利用制限、更新不能端末の例外管理という順序が現実的となる。BYODでは私物端末の詳細ログ取得に限界があるため、端末そのものを完全に調べる発想より、業務データへのアクセス条件を絞る発想が効く。脆弱性の深刻度だけでなく、端末がどの業務権限を持ち、どの認証フローに関与しているかを合わせて見ることが、組織内での優先順位を安定させる。</p>
+</div>
+          </div>
+        </div>
+
+        
+
+        <div class="section">
+          <h2>🕘 生成情報</h2>
+          <div class="ruleReason">
+対象期間：2026-06-10T06:00:00+09:00 〜 2026-06-11T06:00:00+09:00
+生成時刻：2026-06-11T07:16:38.216515+09:00
+免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      notifyhub.site
+    </div>
+  </div>
+</body>
+</html>

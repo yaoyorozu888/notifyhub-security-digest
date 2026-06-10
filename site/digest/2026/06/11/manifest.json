@@ -1,0 +1,588 @@
+{
+  "date": "2026-06-11",
+  "window": {
+    "from": "2026-06-10T06:00:00+09:00",
+    "to": "2026-06-11T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 40
+  },
+  "generated_at_jst": "2026-06-11T07:16:38.216515+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "米CISA、AI脅威で重大脆弱性修正期限を3日間に短縮",
+      "source_name": "Reuters",
+      "published_at": "2026-06-10T16:51:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Advisory",
+      "summary_preview": "概要CISAが連邦機関に対し、重大な脆弱性の修正期限を3日間に短縮する指令を発出した。AIモデルによる自動化攻撃の脅威増大が背景にある。深刻度に応じて2週間や2ヶ月などの猶予も残るが、公開露出インフラ向けは即時対応を求める。AnthropicのMythos系モデル研究がハッカー能力向上を示唆した直後の動きだ。政府ネットワークの即時強化が求められる。",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://www.reuters.com/legal/litigation/us-shortens-cyber-fix-window-three-days-ai-threats-rise-2026-06-10/",
+      "selection_reason": "AI活用によるハッカー能力向上を背景に連邦機関の対応期限を大幅短縮する具体的な政策変更で、実務影響が大きい新規発表",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "US shortens cyber fix window to three days as AI threats rise",
+          "url": "https://www.reuters.com/legal/litigation/us-shortens-cyber-fix-window-three-days-ai-threats-rise-2026-06-10/",
+          "source_type": "news"
+        },
+        {
+          "title": "CISA directive BOD 26-04",
+          "url": "https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk",
+          "source_type": "official"
+        },
+        {
+          "title": "Anthropic Mythos research on AI cyber amplification",
+          "url": "https://www.helpnetsecurity.com/2026/06/09/anthropic-mythos-preview-n-day-exploits-firefox-windows/",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "Anthropic、Claude Fable 5を一般公開 サイバー・生物分野に安全策",
+      "source_name": "Help Net Security",
+      "published_at": "2026-06-10T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要AnthropicがMythos級モデルClaude Fable 5を一般公開した。サイバーセキュリティ・生物・化学分野のリクエストを検知する分類器を搭載し、該当時はClaude Opus 4.8へ自動ルーティングする。Stripeの5000万行コードベース移行を1日で完了する性能を示す一方、悪用防止のため公開版では能力制限を維持。Mythos 5は政…",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://www.helpnetsecurity.com/2026/06/10/anthropic-claude-fable-5/",
+      "selection_reason": "Mythos級高性能モデルの一般公開と具体的な安全分類器実装という製品レベルの新事実で、AI開発・導入実務に直結",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "Anthropic’s Claude Fable 5 is out for public use, with safeguards for high-risk requests",
+          "url": "https://www.helpnetsecurity.com/2026/06/10/anthropic-claude-fable-5/",
+          "source_type": "news"
+        },
+        {
+          "title": "Anthropic official announcement on Claude Fable 5",
+          "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+          "source_type": "official"
+        },
+        {
+          "title": "X post on Fable 5 release and Stripe engineering example",
+          "url": "https://x.com/MaaSonder/status/2064497665589784807",
+          "source_type": "x"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "TSMC、5月売上高30%増 AIチップ需要が継続",
+      "source_name": "Bloomberg",
+      "published_at": "2026-06-10T08:27:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Unknown",
+      "summary_preview": "概要TSMCの5月売上高が前年比30%増の4169億台湾ドルに達した。AIサーバー向け先端チップ需要が世界的に継続しているためだ。4-5月累計でも前年比24%増を記録し、第2四半期は35%増を見込む。データセンター建設ラッシュが背景で、2026年通期売上成長率も30%近くを予想する。供給逼迫が続く中、顧客企業は長期契約を強化している。",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://www.bloomberg.com/news/articles/2026-06-10/tsmc-s-monthly-sales-rise-30-thanks-to-sustained-ai-chip-demand",
+      "selection_reason": "世界最大の半導体受託製造企業の実績がAIインフラ投資の持続性を具体的に示す企業動向",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "TSMC Sales Jump 30% in May on Strong AI Chip Demand",
+          "url": "https://www.bloomberg.com/news/articles/2026-06-10/tsmc-s-monthly-sales-rise-30-thanks-to-sustained-ai-chip-demand",
+          "source_type": "news"
+        },
+        {
+          "title": "TSMC monthly revenue report May 2026",
+          "url": "https://www.tsmc.com/english/investorRelations/earnings_release.htm",
+          "source_type": "official"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "90999cc03a48701c",
+      "title": "China-Linked JDY Botnet Expands to 1,500+ Devices for Cyber Reconnaissance",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-10T16:08:42+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Botnet",
+      "summary_preview": "概要The Hacker Newsは、Lumenの研究者による観測として、中国関連の国家支援型攻撃者と結び付けられるJDYボットネットが再拡大し、1,500台超のSOHO機器やIoT機器を使う偵察基盤になっていると報じた。記事上の主眼は破壊や窃取そのものではなく、インターネット公開サービスを高速に探索、識別、継続的に地図化する大規模スキャナーとしての利用に…",
+      "article_path": "articles/90999cc03a48701c.html",
+      "original_url": "https://thehackernews.com/2026/06/china-linked-jdy-botnet-expands-to-1500.html"
+    },
+    {
+      "entry_id": "46438d9e77d499fb",
+      "title": "Ivanti, Fortinet, and SAP Release Patches for Multiple Critical Vulnerabilities",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-10T15:10:59+00:00",
+      "impact_level": "High",
+      "threat_type": "Patch",
+      "summary_preview": "概要The Hacker Newsは、Ivanti、Fortinet、SAPが複数の重大な脆弱性に対する修正を公開したと報じている。入力で具体的に確認できるのは、FortiSandbox、FortiSandbox Cloud、FortiSandbox PaaSのWEB UIにおけるコマンドインジェクションで、CVE-2026-25089、CVSS 9.1と…",
+      "article_path": "articles/46438d9e77d499fb.html",
+      "original_url": "https://thehackernews.com/2026/06/ivanti-fortinet-and-sap-release-patches.html"
+    },
+    {
+      "entry_id": "cdb3b716ef720d16",
+      "title": "Unpatched Langflow Flaw CVE-2026-5027 Exploited for Unauthenticated RCE",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-10T15:00:59+00:00",
+      "impact_level": "High",
+      "threat_type": "Zero-day",
+      "summary_preview": "概要The Hacker Newsは、Langflowの未修正脆弱性 CVE-2026-5027 が実環境で悪用されていると報じた。CVSSは8.8で、内容はパストラバーサルにより任意の場所へファイルを書き込める問題とされ、タイトル上は 認証なしRCE につながる悪用が確認された扱いとなる。攻撃者視点では、インターネット公開されたLangflowがあれば、…",
+      "article_path": "articles/cdb3b716ef720d16.html",
+      "original_url": "https://thehackernews.com/2026/06/unpatched-langflow-flaw-cve-2026-5027.html"
+    },
+    {
+      "entry_id": "241a698b095dbaac",
+      "title": "CISA Adds Cisco, Chrome, and Arista Flaws to KEV Catalog Amid Active Exploitation",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-10T14:44:29+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added three new vulnerabilities to its Known Exploited Vulnerabilities (KEV) catalog, following reports…",
+      "article_path": "articles/241a698b095dbaac.html",
+      "original_url": "https://thehackernews.com/2026/06/cisa-adds-cisco-chrome-and-arista-flaws.html"
+    },
+    {
+      "entry_id": "0e08bf07002bafef",
+      "title": "Your Automated Pentest Looks Clean. See What It Missed in This Expert Webinar",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-10T10:27:49+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要The Hacker Newsの記事は、Picus Securityとのウェビナー告知を通じて、継続的な自動ペネトレーションテストで新規検出が減る状態を安全性の証明と誤読する危険を扱っている。新たなCVEや侵害事案の公表ではなく、攻撃者が自動診断の範囲外にある認証後の操作、設定の組み合わせ、権限の連鎖、監視回避の隙を使う可能性に焦点がある。影響は単一ホ…",
+      "article_path": "articles/0e08bf07002bafef.html",
+      "original_url": "https://thehackernews.com/2026/06/your-automated-pentest-looks-clean-see.html"
+    },
+    {
+      "entry_id": "e81e30573277f32c",
+      "title": "Microsoft Patches Record 206 Flaws, Including Three Zero-Days and Critical RCE Bugs",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-10T09:38:13+00:00",
+      "impact_level": "High",
+      "threat_type": "Patch",
+      "summary_preview": "概要Microsoftが月例更新で206件の脆弱性修正を公開し、そのうち39件がCritical、56件がリモートコード実行、63件が権限昇格に分類されている。公開時点で3件は既に公表済みとされ、攻撃者は修正差分や公開情報から悪用手順を短期間で再構成し、未適用端末やサーバを優先的に狙う可能性がある。影響範囲は単一製品に閉じず、Windows端末、サーバ、認…",
+      "article_path": "articles/e81e30573277f32c.html",
+      "original_url": "https://thehackernews.com/2026/06/microsoft-patches-record-206-flaws.html"
+    },
+    {
+      "entry_id": "ad1580e9b0e087e7",
+      "title": "Anthropic Releases Claude Fable 5, Its Most Powerful AI Yet, With Cyber Safeguards",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-10T07:37:59+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要The Hacker Newsは、AnthropicがClaude Fable 5を一般提供し、同じ基盤モデルからサイバー安全分類器の有無で一般向けと審査済みサイバー利用者向けを分けたと報じた。直接の侵害や脆弱性公開ではないが、攻撃者視点では安全分類器の回避、審査済み利用枠の不正取得、出力結果の二次流通がROIの高い狙い目となる。影響は単一システムの侵…",
+      "article_path": "articles/ad1580e9b0e087e7.html",
+      "original_url": "https://thehackernews.com/2026/06/anthropic-releases-claude-fable-5-its.html"
+    },
+    {
+      "entry_id": "1ceab2a9923dc989",
+      "title": "ServiceNow Flaw Exploited to Gain Unauthorized Access to Customer Instances",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-10T07:02:08+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要The Hacker Newsは、ServiceNowが顧客向けアドバイザリで、未知の攻撃者が脆弱性を悪用し、影響を受ける顧客インスタンスへ認証なしでより深い不正アクセスを得た可能性を警告したと報じた。ServiceNowは2026年6月5日にホスト型顧客インスタンスへセキュリティ更新を適用したとされ、少なくとも同社管理下のSaaS環境では対処が進んで…",
+      "article_path": "articles/1ceab2a9923dc989.html",
+      "original_url": "https://thehackernews.com/2026/06/servicenow-flaw-exploited-to-gain.html"
+    },
+    {
+      "entry_id": "c00a56d41a993bdb",
+      "title": "Microsoft Defender RoguePlanet Zero-Day Grants SYSTEM Access on Updated Windows",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-10T05:22:01+00:00",
+      "impact_level": "High",
+      "threat_type": "Zero-day",
+      "summary_preview": "概要The Hacker Newsは、匿名研究者Chaotic EclipseがMicrosoft Defenderのゼロデイ「RoguePlanet」のPoCをGitHubで公開したと報じている。内容は競合状態を利用して、更新済みWindows上でもSYSTEM権限を得るローカル権限昇格とされ、初期侵入そのものよりも、侵入済み端末でEDR回避、資格情報窃…",
+      "article_path": "articles/c00a56d41a993bdb.html",
+      "original_url": "https://thehackernews.com/2026/06/microsoft-defender-rogueplanet-zero-day.html"
+    },
+    {
+      "entry_id": "acb500fff4935c56",
+      "title": "Six Proto6 Vulnerabilities in protobuf.js Expose Node.js Apps to RCE and DoS",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-10T05:08:35+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要The Hacker Newsは、JavaScript/TypeScript向けProtocol Buffers実装であるprotobuf.jsに、RCEとDoSにつながる6件の脆弱性が指摘されたと報じた。影響は、Node.jsアプリケーションが外部由来のprotobufスキーマ、descriptor、細工されたペイロードを処理する構成で特に大きく、入…",
+      "article_path": "articles/acb500fff4935c56.html",
+      "original_url": "https://thehackernews.com/2026/06/six-proto6-vulnerabilities-in.html"
+    },
+    {
+      "entry_id": "c0313f47814d54f7",
+      "title": "How has use of framing protection security headers changed in the past 3 years&#x3f;, (Wed, Jun 10th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-06-10T08:29:21+00:00",
+      "impact_level": "Low",
+      "threat_type": "Misconfiguration",
+      "summary_preview": "概要SANS ISCの記事は、Trancoの上位100万ドメインを対象に、X-Frame-OptionsとCSPのframe-ancestorsが過去3年でどの程度使われるようになったかを再調査する内容となる。これらのヘッダーが欠ける、または許可範囲が広すぎる場合、攻撃者は正規サイトを透明なフレームや偽UIに埋め込み、利用者に意図しないクリックや操作をさせ…",
+      "article_path": "articles/c0313f47814d54f7.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33068"
+    },
+    {
+      "entry_id": "3a1e22312f899f99",
+      "title": "ISC Stormcast For Wednesday, June 10th, 2026 https://isc.sans.edu/podcastdetail/9966, (Wed, Jun 10th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-06-10T02:00:02+00:00",
+      "impact_level": "Info",
+      "threat_type": "Unknown",
+      "summary_preview": "概要SANS ISC の日次音声配信「ISC Stormcast For Wednesday, June 10th, 2026」へのリンクが提示されているが、入力には本文要約、扱われた脆弱性、攻撃観測、製品名、侵害事例の詳細が含まれていない。したがって、現時点で確認できる出来事は日次セキュリティ概況の公開にとどまり、特定の攻撃手法や悪用条件を判断できない。…",
+      "article_path": "articles/3a1e22312f899f99.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33066"
+    },
+    {
+      "entry_id": "354745f95cfe2535",
+      "title": "Blinding the Watchmen: Abusing Cloud Logging Services for Defense Evasion and Visibility",
+      "source_name": "Unit 42",
+      "category": "reporting",
+      "published_at": "2026-06-09T22:00:21+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要Unit 42は、クラウドのログ基盤そのものを攻撃者が操作し、検知や調査の視界を狭める攻撃シナリオを整理している。悪用の中心は、ログの停止、保存先変更、保持期間短縮、監査対象からの除外、読み取り権限の悪用などで、侵入後の防御回避として機能する。影響は単一ホストのログ欠損にとどまらず、ID基盤、管理プレーン、SIEM連携、インシデント後の証跡保全まで広が…",
+      "article_path": "articles/354745f95cfe2535.html",
+      "original_url": "https://unit42.paloaltonetworks.com/cloud-logging-defense-evasion/"
+    },
+    {
+      "entry_id": "d9939a8c4b5143da",
+      "title": "注意喚起: Adobe AcrobatおよびReaderの脆弱性（APSB26-63）に関する注意喚起  (公開)",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-06-10T04:45:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要JPCERT/CCがAdobe AcrobatおよびReaderの脆弱性に関する注意喚起 APSB26-63 を公開した。入力情報だけでは CVE 番号、CVSS、対象バージョン、既知悪用の有無は確認できず、Adobe 本体のセキュリティ情報で照合する必要が残る。想定される悪用経路は、メール添付、ファイル共有、Web経由で配布された細工されたPDFを利…",
+      "article_path": "articles/d9939a8c4b5143da.html",
+      "original_url": "https://www.jpcert.or.jp/at/2026/at260018.html"
+    },
+    {
+      "entry_id": "98bf4e01023ccd59",
+      "title": "注意喚起: 2026年6月マイクロソフトセキュリティ更新プログラムに関する注意喚起  (公開)",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-06-10T04:45:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Patch",
+      "summary_preview": "概要JPCERT/CCが「注意喚起: 2026年6月マイクロソフトセキュリティ更新プログラムに関する注意喚起  (公開)」を公開し、Microsoft製品の月例セキュリティ更新への対応を促した。入力情報だけでは対象製品、CVE番号、CVSS、既知悪用の有無が示されておらず、MSRCの詳細確認と自組織の利用実態の突合が初動の前提となる。Microsoft製品…",
+      "article_path": "articles/98bf4e01023ccd59.html",
+      "original_url": "https://www.jpcert.or.jp/at/2026/at260017.html"
+    },
+    {
+      "entry_id": "2669afec32704213",
+      "title": "注意喚起: Check Point Software Technologies社製品における認証バイパスの脆弱性（CVE-2026-50751）に関する注意喚起  (公開)",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-06-10T04:45:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要JPCERT/CCは、Check Point Software Technologies製品における認証バイパス脆弱性CVE-2026-50751について注意喚起を公開した。入力情報だけでは影響製品、影響バージョン、CVSSスコア、悪用確認の有無は確認できないが、Check Point製品はVPNやファイアウォールとして外部境界に置かれることが多く、認…",
+      "article_path": "articles/2669afec32704213.html",
+      "original_url": "https://www.jpcert.or.jp/at/2026/at260016.html"
+    },
+    {
+      "entry_id": "e29fb139d7f1d268",
+      "title": "Weekly Report: 複数のTP-LINK製品に重要情報の平文送信の脆弱性",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-06-10T00:29:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要JPCERT/CCのWeekly Reportで、複数のTP-LINK製品に重要情報を平文で送信する脆弱性が取り上げられた。詳細な対象型番、影響バージョン、CVE、CVSS、修正状況は入力情報から確認できず、現時点では自組織の該当資産確認が先行課題となる。攻撃は、管理画面や機器間通信などの経路上で通信を観測できる攻撃者が、認証情報や設定情報を読み取る形…",
+      "article_path": "articles/e29fb139d7f1d268.html",
+      "original_url": "https://www.jpcert.or.jp/wr/2026/wr260610.html#1"
+    },
+    {
+      "entry_id": "bd90f94ca45664b8",
+      "title": "Weekly Report: 複数のProgress Software Corporation製品に脆弱性",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-06-10T00:29:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要JPCERT/CCのWeekly Reportで、複数のProgress Software Corporation製品に脆弱性があることが取り上げられた。現時点の入力情報からは対象製品名、CVE番号、CVSS、修正バージョン、悪用有無が確認できず、自組織の利用有無を起点にした確認が最初の判断材料となる。Progress製品はファイル転送、アプリケーショ…",
+      "article_path": "articles/bd90f94ca45664b8.html",
+      "original_url": "https://www.jpcert.or.jp/wr/2026/wr260610.html#2"
+    },
+    {
+      "entry_id": "4926ab46c00da6e2",
+      "title": "Weekly Report: 複数のCisco製品に脆弱性",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-06-10T00:29:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要JPCERT/CCのWeekly Reportで、複数のCisco製品に脆弱性があることが取り上げられた。入力情報だけでは対象製品、CVE番号、CVSS、悪用有無、修正バージョンが示されておらず、現時点では個別脆弱性の深刻度を断定できない。Cisco機器は境界、VPN、無線、ルーティング、セキュリティ制御に置かれることが多く、悪用条件が管理インターフェ…",
+      "article_path": "articles/4926ab46c00da6e2.html",
+      "original_url": "https://www.jpcert.or.jp/wr/2026/wr260610.html#3"
+    },
+    {
+      "entry_id": "1d8d37eabcea70b3",
+      "title": "Weekly Report: 複数のMozilla製品に脆弱性",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-06-10T00:29:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要JPCERT/CCの週次情報で、複数のMozilla製品に脆弱性があることが取り上げられた。入力情報には個別のCVE番号、対象バージョン、修正済みバージョン、悪用有無が含まれていないため、現時点の判断は「Mozilla製品群の更新確認を促す公的な周知」として扱うのが妥当となる。ブラウザやメールクライアントの脆弱性は、利用者が悪意あるWebコンテンツや細…",
+      "article_path": "articles/1d8d37eabcea70b3.html",
+      "original_url": "https://www.jpcert.or.jp/wr/2026/wr260610.html#4"
+    },
+    {
+      "entry_id": "80571211fe1390df",
+      "title": "Weekly Report: Google Chromeに複数の脆弱性",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-06-10T00:29:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要JPCERT/CCのWeekly Reportで、Google Chromeに複数の脆弱性があることが取り上げられた。入力情報には個別のCVE番号、CVSSスコア、修正バージョン、悪用有無が含まれておらず、現時点で評価できるのはChrome利用組織に対する更新確認案件という範囲に限られる。一般にChromeの脆弱性は、利用者が細工されたWebページを閲…",
+      "article_path": "articles/80571211fe1390df.html",
+      "original_url": "https://www.jpcert.or.jp/wr/2026/wr260610.html#5"
+    },
+    {
+      "entry_id": "96702aef688a7107",
+      "title": "Weekly Report: Androidに複数の脆弱性",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-06-10T00:29:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要JPCERT/CCのWeekly Reportで、Androidに複数の脆弱性があることが取り上げられた。入力情報だけでは対象バージョン、個別のCVE、CVSS、悪用有無、修正済みパッチレベルが確認できないため、現時点では脆弱性情報の周知として扱うのが妥当となる。Androidの脆弱性は、端末上のアプリ、メディア処理、通信経路、端末メーカー提供コンポー…",
+      "article_path": "articles/96702aef688a7107.html",
+      "original_url": "https://www.jpcert.or.jp/wr/2026/wr260610.html#6"
+    },
+    {
+      "entry_id": "62798d144b07dba2",
+      "title": "Weekly Report: IBM WebSphere Application Serverに複数の脆弱性",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-06-10T00:29:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要JPCERT/CCのWeekly Reportで、IBM WebSphere Application Serverに複数の脆弱性が存在することが取り上げられた。入力情報にはCVE番号、CVSS、影響バージョン、悪用有無が含まれていないため、現時点の判断は詳細確認を前提に置く必要がある。WebSphere Application Serverは業務アプリ…",
+      "article_path": "articles/62798d144b07dba2.html",
+      "original_url": "https://www.jpcert.or.jp/wr/2026/wr260610.html#7"
+    },
+    {
+      "entry_id": "8063888f5ebef069",
+      "title": "Weekly Report: エフサステクノロジーズのServerView Agents for Windowsに複数の脆弱性",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-06-10T00:29:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要JPCERT/CCのWeekly Reportで、エフサステクノロジーズのServerView Agents for Windowsに複数の脆弱性が取り上げられた。ServerView Agentsはサーバの監視や管理に使われるため、脆弱性の種類によっては高権限サービスの悪用、情報取得、任意コード実行、権限昇格などに発展する余地がある。攻撃者視点では、…",
+      "article_path": "articles/8063888f5ebef069.html",
+      "original_url": "https://www.jpcert.or.jp/wr/2026/wr260610.html#8"
+    },
+    {
+      "entry_id": "8b54b69bc2a55337",
+      "title": "Weekly Report: Palo Alto Networks製PAN-OSソフトウェアのGlobalProtectに認証回避の脆弱性",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-06-10T00:29:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要JPCERT/CCの週次レポートで、Palo Alto Networks製PAN-OSのGlobalProtectに存在する認証回避の脆弱性が取り上げられた。GlobalProtectはリモートアクセスVPNの入口としてインターネットに公開されやすく、攻撃者が認証処理を迂回できる条件では、正規資格情報を持たずに境界装置の内側へ到達する起点になりうる。悪…",
+      "article_path": "articles/8b54b69bc2a55337.html",
+      "original_url": "https://www.jpcert.or.jp/wr/2026/wr260610.html#9"
+    },
+    {
+      "entry_id": "0a50e018c73c881e",
+      "title": "Weekly Report: JPCERT/CCが「TSUBAMEレポート Overflow（2026年1-3月）」を公開",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-06-10T00:29:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要JPCERT/CCのWeekly Reportで、「TSUBAMEレポート Overflow（2026年1-3月）」の公開が案内された。これは個別組織への侵害情報ではなく、インターネット定点観測から見えるスキャンや攻撃探索の傾向を読むための資料と位置付けられる。攻撃者はこうした広域スキャンと同じ発想で、公開サービス、脆弱な機器、認証設定の弱い入口を機械…",
+      "article_path": "articles/0a50e018c73c881e.html",
+      "original_url": "https://www.jpcert.or.jp/wr/2026/wr260610.html#10"
+    },
+    {
+      "entry_id": "6f0253222c2a4d42",
+      "title": "Weekly Report: フィッシング対策協議会が「フィッシングレポート2026」を公開",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-06-10T00:29:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Phishing",
+      "summary_preview": "概要JPCERT/CCのWeekly Reportで、フィッシング対策協議会による「フィッシングレポート2026」の公開が紹介された。現時点で入力情報から確認できるのは報告書公開の事実に限られ、特定組織への侵害、特定キャンペーン、緊急の遮断対象が示されたわけではない。CSIRT観点では、攻撃者が認証情報窃取、多要素認証の回避、ブランドなりすましを通じて初期…",
+      "article_path": "articles/6f0253222c2a4d42.html",
+      "original_url": "https://www.jpcert.or.jp/wr/2026/wr260610.html#11"
+    },
+    {
+      "entry_id": "96cad3c62fc4472b",
+      "title": "令和8年度「電波の日」総務大臣表彰、「情報通信月間」総務大臣表彰及び情報通信月間協議会会長表彰を受賞",
+      "source_name": "NICT NOTICE",
+      "category": "reporting",
+      "published_at": "2026-06-09T23:00:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要NICT NOTICEが、令和8年度「電波の日」総務大臣表彰、「情報通信月間」総務大臣表彰、情報通信月間協議会会長表彰の受賞を公表したという内容となる。入力情報から読み取れる範囲では、これは表彰・広報に関する告知であり、脆弱性、侵害、攻撃観測、設定不備の注意喚起ではない。攻撃者に直接悪用される情報は示されておらず、CSIRTとしては緊急対応よりも、NO…",
+      "article_path": "articles/96cad3c62fc4472b.html",
+      "original_url": "/publicity/topics/2026/06/10-1.html"
+    },
+    {
+      "entry_id": "db7a60a00dac2631",
+      "title": "Operation Aurora から 15 年、Google が示す「現実的に始めるゼロトラスト」～ Chrome Enterprise Premium",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-09T23:10:03+00:00",
+      "impact_level": "Low",
+      "threat_type": "Other",
+      "summary_preview": "概要ScanNetSecurityの記事は、「Operation Aurora から 15 年」という文脈で、GoogleがChrome Enterprise Premiumを軸にした現実的なゼロトラスト導入を示したものと読める。攻撃者は現在も境界防御そのものより、ブラウザ上のSaaS利用、認証済みセッション、端末状態の甘い判定を悪用し、正規利用に見える経…",
+      "article_path": "articles/db7a60a00dac2631.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/10/55464.html"
+    },
+    {
+      "entry_id": "6f060e30e37d6cb1",
+      "title": "カルチャーメディア「ARBAN」で不審な認証画面が表示される事象",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-09T23:05:18+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Credential Theft",
+      "summary_preview": "概要ScanNetSecurityは、カルチャーメディア「ARBAN」で不審な認証画面が表示される事象を報じた。詳細な原因、表示条件、影響期間、入力された情報の扱いは記事情報だけでは確認できず、現時点ではWebサイト改ざん、外部サービス設定不備、広告・タグ経由の誘導、サーバ側の認証設定変更のいずれも切り分け対象となる。攻撃として成立する場合、訪問者にIDや…",
+      "article_path": "articles/6f060e30e37d6cb1.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/10/55463.html"
+    },
+    {
+      "entry_id": "3693ad37fc1f3708",
+      "title": "ディスクユニオンのウェブサイトで不審な認証画面が表示される事象",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-09T23:05:14+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Credential Theft",
+      "summary_preview": "概要ScanNetSecurityが、ディスクユニオンのウェブサイトで不審な認証画面が表示される事象を報じている。本文詳細や一次情報URLが入力に含まれていないため、原因がサイト改ざん、外部サービスの侵害、設定不備、広告・タグ経由の挿入のいずれかは未確認にとどまる。悪用される場合、利用者は正規サイトを閲覧している安心感のままID、パスワード、メールアドレス…",
+      "article_path": "articles/3693ad37fc1f3708.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/10/55462.html"
+    },
+    {
+      "entry_id": "869d12cbdd378aae",
+      "title": "良品計画サイトで不審な認証画面が表示される事象",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-09T23:05:12+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Credential Theft",
+      "summary_preview": "概要ScanNetSecurityが、良品計画サイトで不審な認証画面が表示される事象を報じた。入力情報だけでは、正規サイトの改ざん、外部スクリプトや広告タグの悪用、認証基盤の設定不備、利用者端末側の問題のいずれかは判別できない。攻撃者がサイト上に偽の認証画面を差し込める場合、利用者のID、パスワード、ワンタイムコードなどを取得し、同一認証情報を使う他サービ…",
+      "article_path": "articles/869d12cbdd378aae.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/10/55461.html"
+    },
+    {
+      "entry_id": "ccf3c8e830ad6504",
+      "title": "東芝ウェブサイトの一部で不審なサインイン画面、6 / 4 対応完了",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-09T23:05:09+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Credential Theft",
+      "summary_preview": "概要東芝のウェブサイトの一部で不審なサインイン画面が確認され、6月4日に対応が完了したと報じられている。公式サイト配下に見える画面で認証情報を入力させる形なら、通常の外部フィッシングより利用者が警戒しにくく、認証情報の窃取や二次的ななりすましにつながる可能性がある。影響範囲は、当該ページを閲覧した利用者、入力された可能性のあるアカウント種別、同一認証情報を…",
+      "article_path": "articles/ccf3c8e830ad6504.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/10/55460.html"
+    },
+    {
+      "entry_id": "4ecf3ddfbd412722",
+      "title": "委託会社の社員が業務用ノートパソコン 83 台盗難 ～ うち 3 台に市民の個人情報",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-09T23:05:06+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要ScanNetSecurityの記事タイトルによれば、委託会社の社員が使用していた業務用ノートパソコン83台が盗難に遭い、そのうち3台に市民の個人情報が含まれていたとされる。攻撃者が端末を入手した後に悪用する経路は、保存データの直接閲覧、認証情報やVPN設定の抽出、業務システムへのなりすまし接続などが中心となる。影響範囲は、3台に保存された個人情報だけ…",
+      "article_path": "articles/4ecf3ddfbd412722.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/10/55459.html"
+    },
+    {
+      "entry_id": "22fb640ca4272b22",
+      "title": "アソビューへのサイバー攻撃、東武動物公園の顧客情報が漏えいした事実は確認されず",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-09T23:05:02+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要ScanNetSecurityの記事は、アソビューへのサイバー攻撃に関連し、東武動物公園の顧客情報について漏えいした事実は確認されていないと伝えている。本文詳細が入力に含まれていないため、侵入経路、攻撃対象システム、影響を受けたデータ項目、調査主体、時系列は未確認事項として扱う必要がある。悪用の観点では、予約・チケット販売などを担う外部サービスが侵害さ…",
+      "article_path": "articles/22fb640ca4272b22.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/10/55458.html"
+    },
+    {
+      "entry_id": "4a485e1c8dbfbcfb",
+      "title": "「ユーザーができること＝ AI ができること」Okta for AI Agents が目指す統制の形",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-09T23:00:20+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要ScanNetSecurityの記事タイトルからは、Okta for AI Agentsが、AIエージェントに対して「利用者が持つ権限の範囲内でだけ行動させる」統制を目指す内容と読み取れる。悪用面では、AIエージェントが業務システム、SaaS、データストアを横断して操作できる場合、侵害済みアカウントや過剰権限が自動化された横展開やデータ取得に転化しやす…",
+      "article_path": "articles/4a485e1c8dbfbcfb.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/10/55457.html"
+    },
+    {
+      "entry_id": "ef8d9395a39a4685",
+      "title": "「AI攻撃ツール」が爆発的に普及 フォーティネット2026年レポート",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-09T23:00:16+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/ef8d9395a39a4685.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/10/55456.html"
+    },
+    {
+      "entry_id": "6481535c997e460b",
+      "title": "AeyeScan、ITreview の脆弱性診断部門で「1年間で最も評価された製品」に選出 ～ 品質と再現性等が評価",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-09T23:00:13+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要ScanNetSecurityの記事は、AeyeScanがITreviewの脆弱性診断部門で「1年間で最も評価された製品」に選出され、品質や再現性が評価されたという製品評価情報を扱っている。脆弱性そのものの公表、悪用観測、侵害報告ではなく、CSIRT観点では調達・運用判断に関する周辺情報として読む位置づけとなる。攻撃者がこの記事を直接悪用する筋は薄いが…",
+      "article_path": "articles/6481535c997e460b.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/10/55455.html"
+    },
+    {
+      "entry_id": "97038d9f4d7438eb",
+      "title": "栃木県、次期セキュリティクラウド候補にソフトバンク 選定委員が最高点評価",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-09T23:00:08+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要ScanNetSecurityの記事は、栃木県の次期セキュリティクラウド候補としてソフトバンクが選ばれ、選定委員から最高点の評価を受けたことを伝えている。入力情報から確認できる範囲では、脆弱性悪用や侵害発生ではなく、自治体向けセキュリティ基盤の調達・選定に関する動きとなる。本件自体が直ちに悪用されるわけではないが、セキュリティクラウドは通信集約、Web…",
+      "article_path": "articles/97038d9f4d7438eb.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/10/55454.html"
+    },
+    {
+      "entry_id": "e5bd8c326d682fb9",
+      "title": "医療法25条の立入検査にも影響 ～ 神奈川県が医療情報システム安全管理の徹底を呼びかけ",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-09T23:00:04+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/e5bd8c326d682fb9.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/10/55453.html"
+    }
+  ]
+}

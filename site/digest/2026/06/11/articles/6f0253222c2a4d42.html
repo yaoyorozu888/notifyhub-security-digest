@@ -1,0 +1,334 @@
+<!-- article.html テンプレート（生成用） (例: /digest/YYYY/MM/DD/articles/<entry_id>.html)
+     サーバ側（Function）で {{...}} を置換して出力してください。
+-->
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/favicon-192.png" />
+  <title>Weekly Report: フィッシング対策協議会が「フィッシングレポート2026」を公開 | NotifyHub Cybersecurity Daily Report</title>
+  <style>
+    :root{
+      --bg:#0b1020; --panel:#0f1730; --panel2:#121c3a;
+      --text:#e7ecff; --muted:#a9b4df; --line:#22305b;
+      --accent:#7aa2ff; --good:#4ade80; --warn:#fbbf24; --bad:#fb7185;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+      --radius:18px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      background: radial-gradient(1000px 700px at 20% -10%, rgba(122,162,255,.25), transparent 60%),
+                  radial-gradient(900px 600px at 90% 10%, rgba(251,113,133,.12), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+    }
+    a{color:inherit}
+    .wrap{max-width:960px; margin:0 auto; padding:22px 18px 44px}
+    .topbar{
+      display:flex; justify-content:space-between; align-items:center; gap:12px;
+      margin-bottom:12px;
+    }
+    .crumb a{
+      text-decoration:none;
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .crumb a:hover{border-color:rgba(122,162,255,.65)}
+    .chip{
+      display:inline-flex; align-items:center; gap:8px;
+      background:rgba(27,38,80,.75);
+      border:1px solid rgba(34,48,91,.9);
+      padding:7px 10px; border-radius:999px;
+      font-size:12px; color:var(--muted);
+      backdrop-filter: blur(10px);
+      white-space:nowrap;
+    }
+    .chip strong{color:var(--text); font-weight:650}
+    .panel{
+      background: linear-gradient(180deg, rgba(15,23,48,.9), rgba(15,23,48,.75));
+      border:1px solid rgba(34,48,91,.9);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .head{
+      padding:16px 16px 12px;
+      border-bottom:1px solid rgba(34,48,91,.9);
+      background:rgba(18,28,58,.55);
+    }
+    h1{
+      margin:0;
+      font-size:20px;
+      line-height:1.35;
+      letter-spacing:.15px;
+    }
+    .meta{
+      margin-top:10px;
+      display:flex; gap:10px; flex-wrap:wrap;
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.6;
+    }
+    .meta a{color:var(--muted)}
+    .meta a:hover{color:var(--accent)}
+    .tags{
+      margin-top:12px;
+      display:flex; gap:8px; flex-wrap:wrap;
+    }
+    .tag{
+      font-size:11px;
+      padding:6px 9px;
+      border-radius:999px;
+      background:rgba(27,38,80,.65);
+      border:1px solid rgba(34,48,91,.9);
+      color:var(--muted);
+      white-space:nowrap;
+    }
+    .tag.level-Critical{border-color:rgba(251,113,133,.65); color:#ffd0d7}
+    .tag.level-High{border-color:rgba(251,191,36,.65); color:#ffe9b0}
+    .tag.level-Medium{border-color:rgba(122,162,255,.65); color:#dbe6ff}
+    .tag.level-Low{border-color:rgba(74,222,128,.55); color:#d0ffe2}
+    .tag.level-Info{border-color:rgba(169,180,223,.55); color:rgba(169,180,223,.95)}
+    .body{
+      padding:16px;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+    }
+    .section{
+      background:rgba(18,28,58,.35);
+      border:1px solid rgba(34,48,91,.75);
+      border-radius:16px;
+      padding:14px;
+    }
+    .section h2{
+      margin:0 0 10px;
+      font-size:14px;
+      letter-spacing:.1px;
+    }
+    .ruleReason{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.65;
+      white-space:pre-wrap;
+    }
+    .infoSources{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.5;
+    }
+    .infoSourceRow{
+      margin:0;
+      padding:0;
+    }
+    .infoSourceRow + .infoSourceRow{
+      margin-top:2px;
+    }
+
+    /* --- summary_html styles (OpenAI output uses h4/p/ul/li/strong/code/br) --- */
+    .summary h4{
+      margin:14px 0 8px;
+      font-size:13px;
+      letter-spacing:.1px;
+      padding-left:10px;
+      border-left:3px solid rgba(122,162,255,.65);
+      color: rgba(231,236,255,.95);
+    }
+    .summary p{margin:8px 0; color:rgba(231,236,255,.92); line-height:1.75}
+    .summary ul, .summary ol{margin:8px 0 8px 1.2em; padding:0}
+    .summary li{margin:6px 0; color:rgba(231,236,255,.92); line-height:1.7}
+    .summary strong{
+      color:var(--text);
+      font-weight:750;
+      padding:0 .2em;
+      border-radius:8px;
+      background: linear-gradient(transparent 60%, rgba(122,162,255,.22) 60%);
+    }
+    .summary code{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 8px;
+      background: rgba(11,16,32,.6);
+      border: 1px solid rgba(34,48,91,.85);
+      color: rgba(231,236,255,.95);
+      white-space: nowrap;
+    }
+
+    .terms{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:10px;
+    }
+    @media (max-width: 860px){
+      .terms{grid-template-columns: 1fr}
+    }
+    .termCard{
+      background:rgba(11,16,32,.45);
+      border:1px solid rgba(34,48,91,.85);
+      border-radius:14px;
+      padding:12px;
+      min-width:0;
+    }
+    .termCard .term{
+      font-weight:700;
+      font-size:13px;
+      margin:0 0 8px;
+      word-break:break-word;
+    }
+    .termCard .exp{
+      margin:0;
+      color:rgba(231,236,255,.9);
+      line-height:1.7;
+      font-size:12px;
+      white-space:pre-wrap;
+    }
+    .subSectionTitle{
+      margin:16px 0 8px;
+      font-size:12px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:var(--muted);
+    }
+    .deepDive{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:10px;
+      margin-top:8px;
+    }
+    .deepDiveCard{
+      background:rgba(12,20,38,.6);
+    }
+
+    .footer{
+      margin-top:14px;
+      color:rgba(169,180,223,.75);
+      font-size:12px;
+      line-height:1.7;
+      text-align:center;
+    }
+    .btnRow{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px}
+    .linkbtn{
+      text-decoration:none;
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .linkbtn:hover{border-color:rgba(122,162,255,.65)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="crumb">
+        <!-- ../index.html は通常 "../index.html" でOK -->
+        <a href="../index.html">← 日次トップへ戻る</a>
+      </div>
+      <div class="chip">entry_id <strong class="mono">6f0253222c2a4d42</strong></div>
+    </div>
+
+    <div class="panel">
+      <div class="head">
+        <h1>Weekly Report: フィッシング対策協議会が「フィッシングレポート2026」を公開</h1>
+
+        <div class="meta">
+          <span>🗞️ JPCERT/CC</span>
+          <span>🕒 2026-06-10T09:29:00+09:00</span>
+          <span>🔗 <a href="https://www.jpcert.or.jp/wr/2026/wr260610.html#11" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
+        </div>
+
+        <div class="tags">
+          <span class="tag level-Info">Impact: Info</span>
+          <span class="tag">Phishing</span>
+        </div>
+
+        <div class="btnRow">
+          <a class="linkbtn" href="https://www.jpcert.or.jp/wr/2026/wr260610.html#11" target="_blank" rel="noopener noreferrer">原文リンク</a>
+          <a class="linkbtn" href="https://www.notifyhub.site/digest/2026/06/11/">日次トップ</a>
+        </div>
+      </div>
+
+      <div class="body">
+        
+        <div class="section">
+          <h2>Impact判定理由</h2>
+          <div class="ruleReason">技術的には特定の脆弱性や進行中の侵害ではなく、報告書公開の周知にとどまるため緊急封じ込め対象は確認できない。
+運用上はフィッシング対策の見直し材料になるが、入力情報だけでは新規手口や悪用規模の詳細が未確認となる。
+情報源はJPCERT/CCの公的週報だが、KEV相当の悪用警告ではなく再掲・周知に近いため上方補正せずInfoと判断した。</div>
+        </div>
+        <div class="section summary">
+          <h2>🧾 要約（ChatGPT / gpt-5.5-2026-04-23）</h2>
+          <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
+          <div><h4>概要</h4><p>JPCERT/CCのWeekly Reportで、フィッシング対策協議会による「フィッシングレポート2026」の公開が紹介された。現時点で入力情報から確認できるのは報告書公開の事実に限られ、特定組織への侵害、特定キャンペーン、緊急の遮断対象が示されたわけではない。CSIRT観点では、攻撃者が<strong>認証情報窃取</strong>、<strong>多要素認証の回避</strong>、<strong>ブランドなりすまし</strong>を通じて初期侵入や不正送金につなげる前提で、自組織の監視・教育・送信ドメイン保護に落とし込む資料として扱うのが妥当となる。影響は単一メールの処理に閉じず、VPN、SaaS、メールボックス、取引先連絡網へ広がり、侵害後の<strong>横展開やBEC</strong>に接続する可能性がある。未確認事項として、レポート本文に含まれる具体的な統計、悪用ブランド、技術手口、推奨対策の更新点は入力情報だけでは判断できない。</p></div>
+        </div>
+
+        <div class="section">
+          <h2>📌 キーワード解説</h2>
+          <div class="terms">
+            <div class="termCard">
+  <div class="term">フィッシング</div>
+  <p class="exp">正規サイト侵害ではなく、偽導線で利用者に入力させる手口。教育だけでなく認証・検知の設計が要る。</p>
+</div>
+<div class="termCard">
+  <div class="term">BEC（ビジネスメール詐欺）</div>
+  <p class="exp">ばらまき詐欺と違い、取引文脈を悪用する。メールボックス侵害後に自然な依頼として現れやすい。</p>
+</div>
+<div class="termCard">
+  <div class="term">DMARC</div>
+  <p class="exp">送信元認証の結果を受信側へ方針として伝える仕組み。SPFやDKIM単体より運用判断に近い。</p>
+</div>
+<div class="termCard">
+  <div class="term">認証情報窃取</div>
+  <p class="exp">マルウェア感染とは異なり、正規ログインとして見える。場所、端末、時間帯の差分確認が重要となる。</p>
+</div>
+          </div>
+          <h3 class="subSectionTitle">深掘り解説</h3>
+          <div class="deepDive">
+            <div class="termCard deepDiveCard">
+  <div class="term">フィッシング対策を「注意喚起」から運用指標へ落とす考え方</div>
+  <p class="exp">フィッシング対策は、利用者へ「怪しいメールに注意」と伝えるだけでは効果を測りにくい。CSIRTが判断のブレを減らすには、報告書や業界統計を自組織の観測点に接続し、確認可能な指標へ分解する必要がある。
+
+まず入口を三つに分けると扱いやすい。第一に、外部から自組織利用者へ届くメールやSMS。第二に、自組織ブランドをかたる偽サイトや偽メール。第三に、侵害済みメールボックスから取引先へ送られる詐欺連絡。この三つは同じフィッシングでも、止める場所と担当が違う。受信メールはメールセキュリティとSOC、ブランド悪用はドメイン監視や法務・広報、侵害済みメールボックスはID管理とインシデント対応が主戦場となる。
+
+具体例として、経理部門の利用者がMicrosoft 365の偽ログイン画面へ認証情報を入力したケースを考える。多要素認証があっても、攻撃者がリバースプロキシ型のフィッシングキットを使えばセッションCookieを奪われることがある。この場合、パスワード変更だけでは不十分となり、セッション失効、条件付きアクセスの確認、メール転送ルールの点検、OAuthアプリ同意の確認まで必要になる。メール本文を削除して終わる対応では、攻撃者が既にメールボックス内で請求書や取引先情報を収集している可能性を見落とす。
+
+報告書を読む際は、話題の手口名よりも、自組織で検知できる痕跡に変換することが重要となる。例えば、短時間に多数の失敗ログインがあるか、普段と異なる国・ASNから成功ログインがあるか、受信箱ルールが新設されたか、外部転送が有効化されたか、送信ドメインのDMARC方針が拒否まで進んでいるか、といった確認項目に落とす。経営向けには「教育実施率」だけでなく、「通報から封じ込めまでの中央値」「偽サイト停止までの時間」「侵害アカウントの再悪用率」を示す方が、投資判断につながりやすい。</p>
+</div>
+          </div>
+        </div>
+
+        
+
+        <div class="section">
+          <h2>🕘 生成情報</h2>
+          <div class="ruleReason">
+対象期間：2026-06-10T06:00:00+09:00 〜 2026-06-11T06:00:00+09:00
+生成時刻：2026-06-11T07:16:38.216515+09:00
+免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      notifyhub.site
+    </div>
+  </div>
+</body>
+</html>
