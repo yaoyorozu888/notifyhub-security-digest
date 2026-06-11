@@ -1,0 +1,410 @@
+{
+  "date": "2026-06-12",
+  "window": {
+    "from": "2026-06-11T06:00:00+09:00",
+    "to": "2026-06-12T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 26
+  },
+  "generated_at_jst": "2026-06-12T07:08:13.687056+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "Opendoorのインド撤退がAIとアウトソーシングの議論を加速",
+      "source_name": "TechCrunch",
+      "published_at": "2026-06-10T12:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要Opendoorがインド拠点から撤退した背景に、AIによる業務自動化の進展がある。従来のアウトソーシング先をAIツールで置き換える動きが加速し、企業はコスト構造の見直しを迫られている。インド市場の役割が縮小する一方で、AIネイティブな組織再編が進む。開発者や運用チームは、AI統合を前提としたプロセス設計を優先する必要がある。",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://techcrunch.com/2026/06/10/opendoors-india-exit-is-fueling-a-bigger-conversation-about-ai-and-outsourcing/",
+      "selection_reason": "AIを活用した業務効率化が企業戦略に直結する具体例として新規性が高く、IT分野の企業動向に直結する",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "Opendoor’s India exit is fueling a bigger conversation about AI and outsourcing",
+          "url": "https://techcrunch.com/2026/06/10/opendoors-india-exit-is-fueling-a-bigger-conversation-about-ai-and-outsourcing/",
+          "source_type": "news"
+        },
+        {
+          "title": "TechCrunch",
+          "url": "https://techcrunch.com/",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "Coinbaseがエージェント向け取引ツールを発表",
+      "source_name": "TechCrunch",
+      "published_at": "2026-06-11T06:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要CoinbaseがAIエージェント向けに新しい取引支援ツールを公開した。エージェントが暗号資産の取引や有料リサーチの決済を自律的に実行可能になる。エージェントの経済活動を支える基盤として位置づけられる。開発者はAPI統合を通じてエージェントの機能を拡張できる。金融分野でのAI実装が一歩進む事例である。",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://techcrunch.com/2026/06/11/coinbase-debuts-mcp-for-agent-trading/",
+      "selection_reason": "AIエージェントの実務活用事例として具体性が高く、AI分野の製品動向に直結する",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "Coinbase’s new tool can help agents trade and pay for premium research",
+          "url": "https://techcrunch.com/2026/06/11/coinbase-debuts-mcp-for-agent-trading/",
+          "source_type": "news"
+        },
+        {
+          "title": "TechCrunch",
+          "url": "https://techcrunch.com/",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "Microsoftが6月パッチで過去最多の脆弱性を修正",
+      "source_name": "Help Net Security",
+      "published_at": "2026-06-10T10:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Patch",
+      "summary_preview": "概要Microsoftが6月のパッチで過去最多となる200件超の脆弱性を修正した。ゼロデイを含む複数の高リスク問題が対象となる。即時適用が推奨される更新が含まれる。企業はパッチ管理プロセスを強化し、未適用のシステムを特定する必要がある。セキュリティ運用チームの負担が増大する状況である。",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://www.helpnetsecurity.com/2026/06/10/microsoft-patch-tuesday-rogueplanet/",
+      "selection_reason": "セキュリティ実務に直結する具体的なパッチ情報として新規性があり、Cybersecurity分野に該当する",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "Record Microsoft Patch Tuesday, fresh zero-day",
+          "url": "https://www.helpnetsecurity.com/2026/06/10/microsoft-patch-tuesday-rogueplanet/",
+          "source_type": "news"
+        },
+        {
+          "title": "Help Net Security",
+          "url": "https://www.helpnetsecurity.com/",
+          "source_type": "news"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "cfa6629cf1d0e279",
+      "title": "CVE-2026-10520 Ivanti Sentry OS Command Injection Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-06-11T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Exploit",
+      "summary_preview": "概要CISA KEVに、Ivanti SentryのCVE-2026-10520が既知悪用脆弱性として追加された。内容はOSコマンドインジェクションで、攻撃者が製品の処理経路に細工した入力を渡し、機器上で任意コマンドを実行する形の悪用が想定される。Ivanti Sentryはモバイル端末や業務アプリの接続制御に関わる境界寄りの製品として配置されることが多く…",
+      "article_path": "articles/cfa6629cf1d0e279.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "d98ac2e91383ba60",
+      "title": "ShinyHunters Exploits Oracle PeopleSoft Zero-Day (CVE-2026-35273) to Breach Universities",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-11T20:29:23+00:00",
+      "impact_level": "High",
+      "threat_type": "Zero-day",
+      "summary_preview": "概要The Hacker Newsは、恐喝グループShinyHuntersがOracle PeopleSoftの未修正脆弱性CVE-2026-35273を悪用し、大学を中心に企業・組織システムへ侵入したと報じている。Mandiantはこの活動をUNC6240として追跡し、活動期間を5月27日から6月9日と位置付けており、Oracleのアドバイザリ公開が6月…",
+      "article_path": "articles/d98ac2e91383ba60.html",
+      "original_url": "https://thehackernews.com/2026/06/shinyhunters-exploits-oracle-peoplesoft.html"
+    },
+    {
+      "entry_id": "51e2682795daec6d",
+      "title": "New Attacks Trick OpenClaw AI Agent Into Running Code and Leaking Secrets",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-11T17:46:32+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要The Hacker Newsは、ImpervaとVaronisの別々の研究として、セルフホスト型AIエージェントOpenClawが通常の入力に見えるデータを通じて攻撃者の指示を実行し、コード実行や機密情報の漏えいに誘導され得ると報じた。Impervaは共有連絡先、vCard、位置情報ピンに命令を埋め込み、利用者が内容を視認しないままエージェント側で処…",
+      "article_path": "articles/51e2682795daec6d.html",
+      "original_url": "https://thehackernews.com/2026/06/new-attacks-trick-openclaw-ai-agent.html"
+    },
+    {
+      "entry_id": "f3fd29ce9e2a9de5",
+      "title": "New GreatXML Exploit Bypasses Windows BitLocker via Recovery Partition XML Files",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-11T17:43:52+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Exploit",
+      "summary_preview": "概要The Hacker Newsは、研究者Chaotic EclipseがWindows BitLocker回避手法「GreatXML」を公開したと報じた。記事から読み取れる範囲では、回復パーティション上のXMLファイル処理を足掛かりに、通常なら暗号化により保護されるWindows環境への到達を狙う手法とされる。リモートから一斉侵入する脆弱性というより、…",
+      "article_path": "articles/f3fd29ce9e2a9de5.html",
+      "original_url": "https://thehackernews.com/2026/06/new-greatxml-exploit-bypasses-windows.html"
+    },
+    {
+      "entry_id": "bb3e4c1fbb541022",
+      "title": "The Gentlemen Ransomware Claims 478 Victims, Can Spread Like a Worm",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-11T16:50:47+00:00",
+      "impact_level": "High",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要The Hacker Newsは、金銭目的の攻撃グループThe Gentlemenについて、478組織の被害を主張し、さらにワーム型の拡散能力を持つ可能性があると報じた。記事の範囲では、同グループは当初、LockBit、Qilin、Medusaなど複数のRaaS基盤を利用するアフィリエイトとして、暗号化と窃取データ公開を組み合わせる二重恐喝を実行してい…",
+      "article_path": "articles/bb3e4c1fbb541022.html",
+      "original_url": "https://thehackernews.com/2026/06/the-gentlemen-ransomware-claims-478.html"
+    },
+    {
+      "entry_id": "60142a21bfea6fff",
+      "title": "Cybersecurity Stars Awards 2026: Winners Announced Across 95 Categories",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-11T13:26:13+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要The Hacker Newsは、Cybersecurity Stars Awards 2026の受賞者が4つの主要部門、95のサブカテゴリで発表されたと伝えている。これは脆弱性、侵害、攻撃キャンペーンの告知ではなく、セキュリティ製品、チーム、企業の取り組みを表彰する内容に位置付けられる。直接悪用される技術要素は示されていないが、CSIRTや調達部門に…",
+      "article_path": "articles/60142a21bfea6fff.html",
+      "original_url": "https://thehackernews.com/2026/06/cybersecurity-stars-awards-2026-winners.html"
+    },
+    {
+      "entry_id": "9373f5b9d720635d",
+      "title": "ThreatsDay Bulletin: Worm Code Leaked, AI Agent Phished, Claude Code Patch + 28 New Stories",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-11T13:20:41+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要The Hacker Newsの週次記事は、公開リポジトリに置かれたサプライチェーン攻撃用コード、ブラウザ情報を複製する高額なRAT、AIエージェントから実認証情報を引き出す研究など、複数の話題をまとめている。単一の脆弱性告知ではなく、攻撃者が既存の業務フローや開発環境を悪用する方向へ寄っている点が判断材料となる。悪用経路は、依存関係や開発者端末への混…",
+      "article_path": "articles/9373f5b9d720635d.html",
+      "original_url": "https://thehackernews.com/2026/06/threatsday-bulletin-worm-code-leaked-ai.html"
+    },
+    {
+      "entry_id": "7b22c53c8b0dbfec",
+      "title": "AI Broke Vulnerability Management. That's Why CISOs Are Moving Budget to BAS.",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-11T11:30:00+00:00",
+      "impact_level": "Low",
+      "threat_type": "Other",
+      "summary_preview": "概要The Hacker Newsの記事は、AIにより脆弱性の公開から悪用手順化までの時間的余裕が縮み、従来のCVSS中心の優先順位付けだけでは対応判断が遅れやすくなった、という問題提起を扱っている。攻撃者側は公開アドバイザリ、PoC、設定情報、探索結果を組み合わせ、悪用可能な経路を短時間で絞り込むため、単に「重大度が高い順」に直す運用では露出資産を先に突…",
+      "article_path": "articles/7b22c53c8b0dbfec.html",
+      "original_url": "https://thehackernews.com/2026/06/ai-broke-vulnerability-management-thats.html"
+    },
+    {
+      "entry_id": "54e0b4a8edca8b22",
+      "title": "OceanLotus Hits Vietnam Investors With SPECTRALVIPER in FireAnt Attack",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-11T09:45:58+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要The Hacker Newsは、ベトナム関連の脅威アクターOceanLotusが、SPECTRALVIPERバックドアを使う複数の攻撃キャンペーンに関与したと報じた。対象はベトナム国内のインフラ・交通建設関連企業と株式投資家で、2024年半ばから2026年2月まで続いた長期の諜報活動に加え、サプライチェーン攻撃も含まれるとされる。攻撃者にとっては、投…",
+      "article_path": "articles/54e0b4a8edca8b22.html",
+      "original_url": "https://thehackernews.com/2026/06/oceanlotus-hits-vietnam-investors-with.html"
+    },
+    {
+      "entry_id": "7c726bf4353b173d",
+      "title": "GitHub to Disable npm Install Scripts by Default to Stop Supply Chain Attacks",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-11T06:23:03+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要GitHubがnpm version 12で、install scriptsを既定で無効化する破壊的変更を予定していると報じられた。狙いは、開発者やCI/CDが実行するnpm installの過程でnpm lifecycle hooksを悪用し、パッケージ取得と同時に認証情報窃取や追加ペイロード実行へ進むソフトウェアサプライチェーン攻撃の抑止にある。攻…",
+      "article_path": "articles/7c726bf4353b173d.html",
+      "original_url": "https://thehackernews.com/2026/06/github-to-disable-npm-install-scripts.html"
+    },
+    {
+      "entry_id": "87745741d9a0dd97",
+      "title": "ISC Stormcast For Thursday, June 11th, 2026 https://isc.sans.edu/podcastdetail/9968, (Thu, Jun 11th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-06-11T02:25:21+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要SANS ISCから「ISC Stormcast For Thursday, June 11th, 2026 https://isc.sans.edu/podcastdetail/9968, (Thu, Jun 11th)」という日次StormcastのRSS項目が配信されたが、入力には本文要約や参照URLが含まれていない。現時点で確認できるのは、SA…",
+      "article_path": "articles/87745741d9a0dd97.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33070"
+    },
+    {
+      "entry_id": "785e9290a3f33d73",
+      "title": "ShinyHunters Targets Education Sector with Oracle PeopleSoft Exploit",
+      "source_name": "Mandiant",
+      "category": "reporting",
+      "published_at": "2026-06-11T14:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Zero-day",
+      "summary_preview": "概要MandiantとGTIGは、UNC6240、通称ShinyHuntersがOracle PeopleSoft基盤を狙い、CVE-2026-35273を悪用した侵害・恐喝キャンペーンを確認した。対象はEnvironment Management Hubの/PSEMHUB/hubなどで、同脆弱性は認証前の遠隔コード実行に至り得るCVSS 9.8の重大脆弱…",
+      "article_path": "articles/785e9290a3f33d73.html",
+      "original_url": "https://cloud.google.com/blog/topics/threat-intelligence/shinyhunters-targets-education-sector-oracle-exploit/"
+    },
+    {
+      "entry_id": "9c6d37fb6929d6a0",
+      "title": "Trust No Skill: Integrity Verification for AI Agent Supply Chains",
+      "source_name": "Unit 42",
+      "category": "reporting",
+      "published_at": "2026-06-11T10:00:24+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要Unit 42は、企業で利用が進むAI agentについて、外部から追加するスキルやプラグインが新しいサプライチェーンリスクになり得ると整理した。問題の中心は、スキルが単なる補助コードではなく、利用者の指示を受けてSaaS、社内データ、業務API、認証トークンに触れる点にある。悪意あるスキルや脆弱なスキルが混入すると、表面上は正常な応答を返しながら、段…",
+      "article_path": "articles/9c6d37fb6929d6a0.html",
+      "original_url": "https://unit42.paloaltonetworks.com/ai-agent-supply-chain-risks/"
+    },
+    {
+      "entry_id": "11ca1e7af45541d4",
+      "title": "VU#862559: crypton-x509-validation Haskell libraries do not enforce X.509 NameConstraints",
+      "source_name": "CERT/CC",
+      "category": "reporting",
+      "published_at": "2026-06-11T14:30:20+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CERT/CCは、Haskell向けTLSスタックで使われるcrypton-x509-validationがX.509のNameConstraintsを強制しない脆弱性、CVE-2026-9648を公表した。CVSSスコアは本文から確認できない。攻撃者が名前制約付きsub-CAの秘密鍵を入手または悪用できる場合、本来許可されていないドメイン名をSANに…",
+      "article_path": "articles/11ca1e7af45541d4.html",
+      "original_url": "https://kb.cert.org/vuls/id/862559"
+    },
+    {
+      "entry_id": "46c8d686ef982104",
+      "title": "[Interop Tokyo 2026 Best of Show Award] セキュリティ部門グランプリは Keysight、シスコの 2 製品",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-10T23:15:02+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要ScanNetSecurityは、Interop Tokyo 2026のBest of Show Awardにおいて、セキュリティ部門のグランプリとしてKeysightおよびシスコ関連の製品が選ばれたことを伝えている。現時点の入力情報には製品名、評価理由、対象機能、審査基準、導入環境の詳細が含まれず、CSIRTとしては脅威情報ではなく製品動向情報として…",
+      "article_path": "articles/46c8d686ef982104.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/11/55476.html"
+    },
+    {
+      "entry_id": "fd2b414b7508da64",
+      "title": "３社の導入事例、Cloudbaseが合うケース／そうでないケースほか ～ NVCとCloudbaseがクラウドセキュリティ運用セミナー開催",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-10T23:10:02+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要ScanNetSecurityの記事は、NVCとCloudbaseがクラウドセキュリティ運用をテーマにしたセミナーを開催し、3社の導入事例やCloudbaseが適するケース／適しにくいケースを扱うものと読める。脆弱性悪用や侵害の発生を報じる内容ではなく、CSIRT視点ではクラウド設定不備の継続管理、権限の棚卸し、運用ツール選定の判断材料として位置づける…",
+      "article_path": "articles/fd2b414b7508da64.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/11/55475.html"
+    },
+    {
+      "entry_id": "11fcd67b3e2fd19b",
+      "title": "広島県が朝刊の広告に誤って管理者用二次元コードを掲載 ～ 申込者の個人情報が閲覧可能に",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-10T23:05:13+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要広島県の朝刊広告に、本来は内部または運用担当者向けとみられる管理者用二次元コードが誤って掲載され、申込者の個人情報を第三者が閲覧できる状態になったと報じられた。二次元コードは単なる案内媒体ではなく、管理画面や権限付きURLを含む場合、紙面配布によって認証情報に近い導線が不特定多数へ渡る。悪用は高度な侵入手口ではなく、広告を見た者がコードを読み取り、表示…",
+      "article_path": "articles/11fcd67b3e2fd19b.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/11/55474.html"
+    },
+    {
+      "entry_id": "9e785be207add945",
+      "title": "CAMPFIRE への不正アクセス、従業員が発行した GitHub 認証情報が個人開発で利用していたサーバ上に意図せずアップロードされ不正利用",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-10T23:05:10+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Credential Theft",
+      "summary_preview": "概要CAMPFIREで、従業員に発行されたGitHub認証情報が、当該従業員の個人開発で使っていたサーバ上に意図せずアップロードされ、第三者に不正利用された事案として報じられた。攻撃者は漏えいした認証情報を使い、パスワード推測や脆弱性悪用を経ずに正規アカウントとしてGitHubへアクセスできた可能性が高い。影響は単なる個人端末の問題にとどまらず、付与権限次…",
+      "article_path": "articles/9e785be207add945.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/11/55473.html"
+    },
+    {
+      "entry_id": "e62f6740c4ed4fd3",
+      "title": "中学校でサポート詐欺被害、口座から 100 円と 999 万 9,999 円の送金",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-10T23:05:06+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Scam/Fraud",
+      "summary_preview": "概要中学校でサポート詐欺被害が発生し、口座から100円と999万9,999円が送金されたと報じられた。サポート詐欺は、偽の警告画面や電話連絡で利用者を不安にさせ、遠隔操作の許可、認証情報の入力、または本人操作による送金へ誘導する手口として扱う必要がある。被害は単なる端末上の不審表示にとどまらず、学校会計・公金管理、委託先支払い、自治体側の監査対応に波及しや…",
+      "article_path": "articles/e62f6740c4ed4fd3.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/11/55472.html"
+    },
+    {
+      "entry_id": "9beac2db20c78559",
+      "title": "「従来の防御システムでは完全に防ぎきることが困難」ミレニアムプランが利用するレンタルサーバにマルウェア攻撃",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-10T23:05:02+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Malware",
+      "summary_preview": "概要ScanNetSecurityの記事題名から確認できる範囲では、ミレニアムプランが利用するレンタルサーバに対してマルウェア攻撃が発生した事案となる。レンタルサーバでは、Webアプリケーションの脆弱性、盗まれた管理者認証情報、古いCMSやプラグイン、FTP/SFTP経由の改ざんなどが侵入口になりやすく、攻撃者は不正ファイル設置、リダイレクト、フィッシング…",
+      "article_path": "articles/9beac2db20c78559.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/11/55471.html"
+    },
+    {
+      "entry_id": "607c827167c6cdc7",
+      "title": "CamView のインストーラに DLL 読み込みに関する脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-10T23:00:19+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要ScanNetSecurityは、CamView のインストーラに DLL 読み込みに関する脆弱性 があることを報じている。典型的には、インストーラが起動時に参照する DLL の検索場所を適切に固定していない場合、攻撃者が同名の悪意ある DLL を同じフォルダなどに置き、利用者や運用担当者にインストーラを実行させることで任意コード実行につながる。影響は…",
+      "article_path": "articles/607c827167c6cdc7.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/11/55470.html"
+    },
+    {
+      "entry_id": "d9ff248b32b334d3",
+      "title": "Apache HTTP Server 2.4 に複数の脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-10T23:00:16+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/d9ff248b32b334d3.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/11/55469.html"
+    },
+    {
+      "entry_id": "117f0fe404a067e0",
+      "title": "「セキュリティは経営基盤」へ意識変化、2025年度サイバーセキュリティ市場規模は1.9兆円に",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-10T23:00:13+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要ScanNetSecurityの記事は、「セキュリティは経営基盤」へ意識が変化し、2025年度のサイバーセキュリティ市場規模が1.9兆円に達するという市場動向を伝えている。入力情報から確認できる範囲では、特定製品の脆弱性、侵害事例、攻撃キャンペーンではなく、企業の投資姿勢や調達環境の変化を扱う記事と位置付けられる。攻撃者がこの記事を直接悪用する筋は薄い…",
+      "article_path": "articles/117f0fe404a067e0.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/11/55468.html"
+    },
+    {
+      "entry_id": "51b47fc17568d708",
+      "title": "Webとメールのドメイン同一化ほか「フィッシング対策ガイドライン（2026年度版）」が求める 5 つの要件",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-10T23:00:10+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要ScanNetSecurity が「フィッシング対策ガイドライン（2026年度版）」で求められる要件として、Webとメールのドメイン同一化などを取り上げた記事となる。これは脆弱性悪用の速報ではなく、利用者が正規メールと偽メールを見分けにくくなる構造を減らすための運用要件として読むべき内容となる。攻撃者は、企業が用途別・部門別・委託先別に分散させたドメイ…",
+      "article_path": "articles/51b47fc17568d708.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/11/55467.html"
+    },
+    {
+      "entry_id": "b8ea8e004e4ed876",
+      "title": "DMARC 通過する独自ドメインフィッシング急増 ～ フィッシング対策協議会「フィッシングレポート2026」",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-10T23:00:06+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Phishing",
+      "summary_preview": "概要ScanNetSecurityは、フィッシング対策協議会の「フィッシングレポート2026」に触れ、DMARCを通過する独自ドメイン型フィッシングの急増を取り上げた。攻撃者は自ら登録したドメインでSPF/DKIM/DMARCを整え、メール認証を通過させたうえで、表示名、本文、ログイン画面、短縮URLやリダイレクトを組み合わせて正規通知に見せかける。DMA…",
+      "article_path": "articles/b8ea8e004e4ed876.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/11/55466.html"
+    },
+    {
+      "entry_id": "2c043ce4ce3decf8",
+      "title": "圧倒的経済合理性がランサムウェアを「持続可能なビジネス」に ～ Halcyonレポート",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-10T23:00:02+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要ScanNetSecurityは、Halcyonのレポートを基に、ランサムウェアが一過性の犯罪ではなく、攻撃者にとって経済合理性の高い継続事業として成立しているとの見方を伝えている。悪用の中心は、脆弱性単体よりも、盗まれた認証情報、初期アクセス販売、恐喝交渉、暗号化ツール提供といった分業構造にあり、攻撃者は成功率と回収額を見ながら標的を選びやすい。影響…",
+      "article_path": "articles/2c043ce4ce3decf8.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/11/55465.html"
+    }
+  ]
+}

@@ -1,0 +1,334 @@
+<!-- article.html テンプレート（生成用） (例: /digest/YYYY/MM/DD/articles/<entry_id>.html)
+     サーバ側（Function）で {{...}} を置換して出力してください。
+-->
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/favicon-192.png" />
+  <title>ShinyHunters Exploits Oracle PeopleSoft Zero-Day (CVE-2026-35273) to Breach Universities | NotifyHub Cybersecurity Daily Report</title>
+  <style>
+    :root{
+      --bg:#0b1020; --panel:#0f1730; --panel2:#121c3a;
+      --text:#e7ecff; --muted:#a9b4df; --line:#22305b;
+      --accent:#7aa2ff; --good:#4ade80; --warn:#fbbf24; --bad:#fb7185;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+      --radius:18px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      background: radial-gradient(1000px 700px at 20% -10%, rgba(122,162,255,.25), transparent 60%),
+                  radial-gradient(900px 600px at 90% 10%, rgba(251,113,133,.12), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+    }
+    a{color:inherit}
+    .wrap{max-width:960px; margin:0 auto; padding:22px 18px 44px}
+    .topbar{
+      display:flex; justify-content:space-between; align-items:center; gap:12px;
+      margin-bottom:12px;
+    }
+    .crumb a{
+      text-decoration:none;
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .crumb a:hover{border-color:rgba(122,162,255,.65)}
+    .chip{
+      display:inline-flex; align-items:center; gap:8px;
+      background:rgba(27,38,80,.75);
+      border:1px solid rgba(34,48,91,.9);
+      padding:7px 10px; border-radius:999px;
+      font-size:12px; color:var(--muted);
+      backdrop-filter: blur(10px);
+      white-space:nowrap;
+    }
+    .chip strong{color:var(--text); font-weight:650}
+    .panel{
+      background: linear-gradient(180deg, rgba(15,23,48,.9), rgba(15,23,48,.75));
+      border:1px solid rgba(34,48,91,.9);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .head{
+      padding:16px 16px 12px;
+      border-bottom:1px solid rgba(34,48,91,.9);
+      background:rgba(18,28,58,.55);
+    }
+    h1{
+      margin:0;
+      font-size:20px;
+      line-height:1.35;
+      letter-spacing:.15px;
+    }
+    .meta{
+      margin-top:10px;
+      display:flex; gap:10px; flex-wrap:wrap;
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.6;
+    }
+    .meta a{color:var(--muted)}
+    .meta a:hover{color:var(--accent)}
+    .tags{
+      margin-top:12px;
+      display:flex; gap:8px; flex-wrap:wrap;
+    }
+    .tag{
+      font-size:11px;
+      padding:6px 9px;
+      border-radius:999px;
+      background:rgba(27,38,80,.65);
+      border:1px solid rgba(34,48,91,.9);
+      color:var(--muted);
+      white-space:nowrap;
+    }
+    .tag.level-Critical{border-color:rgba(251,113,133,.65); color:#ffd0d7}
+    .tag.level-High{border-color:rgba(251,191,36,.65); color:#ffe9b0}
+    .tag.level-Medium{border-color:rgba(122,162,255,.65); color:#dbe6ff}
+    .tag.level-Low{border-color:rgba(74,222,128,.55); color:#d0ffe2}
+    .tag.level-Info{border-color:rgba(169,180,223,.55); color:rgba(169,180,223,.95)}
+    .body{
+      padding:16px;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+    }
+    .section{
+      background:rgba(18,28,58,.35);
+      border:1px solid rgba(34,48,91,.75);
+      border-radius:16px;
+      padding:14px;
+    }
+    .section h2{
+      margin:0 0 10px;
+      font-size:14px;
+      letter-spacing:.1px;
+    }
+    .ruleReason{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.65;
+      white-space:pre-wrap;
+    }
+    .infoSources{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.5;
+    }
+    .infoSourceRow{
+      margin:0;
+      padding:0;
+    }
+    .infoSourceRow + .infoSourceRow{
+      margin-top:2px;
+    }
+
+    /* --- summary_html styles (OpenAI output uses h4/p/ul/li/strong/code/br) --- */
+    .summary h4{
+      margin:14px 0 8px;
+      font-size:13px;
+      letter-spacing:.1px;
+      padding-left:10px;
+      border-left:3px solid rgba(122,162,255,.65);
+      color: rgba(231,236,255,.95);
+    }
+    .summary p{margin:8px 0; color:rgba(231,236,255,.92); line-height:1.75}
+    .summary ul, .summary ol{margin:8px 0 8px 1.2em; padding:0}
+    .summary li{margin:6px 0; color:rgba(231,236,255,.92); line-height:1.7}
+    .summary strong{
+      color:var(--text);
+      font-weight:750;
+      padding:0 .2em;
+      border-radius:8px;
+      background: linear-gradient(transparent 60%, rgba(122,162,255,.22) 60%);
+    }
+    .summary code{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 8px;
+      background: rgba(11,16,32,.6);
+      border: 1px solid rgba(34,48,91,.85);
+      color: rgba(231,236,255,.95);
+      white-space: nowrap;
+    }
+
+    .terms{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:10px;
+    }
+    @media (max-width: 860px){
+      .terms{grid-template-columns: 1fr}
+    }
+    .termCard{
+      background:rgba(11,16,32,.45);
+      border:1px solid rgba(34,48,91,.85);
+      border-radius:14px;
+      padding:12px;
+      min-width:0;
+    }
+    .termCard .term{
+      font-weight:700;
+      font-size:13px;
+      margin:0 0 8px;
+      word-break:break-word;
+    }
+    .termCard .exp{
+      margin:0;
+      color:rgba(231,236,255,.9);
+      line-height:1.7;
+      font-size:12px;
+      white-space:pre-wrap;
+    }
+    .subSectionTitle{
+      margin:16px 0 8px;
+      font-size:12px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:var(--muted);
+    }
+    .deepDive{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:10px;
+      margin-top:8px;
+    }
+    .deepDiveCard{
+      background:rgba(12,20,38,.6);
+    }
+
+    .footer{
+      margin-top:14px;
+      color:rgba(169,180,223,.75);
+      font-size:12px;
+      line-height:1.7;
+      text-align:center;
+    }
+    .btnRow{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px}
+    .linkbtn{
+      text-decoration:none;
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .linkbtn:hover{border-color:rgba(122,162,255,.65)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="crumb">
+        <!-- ../index.html は通常 "../index.html" でOK -->
+        <a href="../index.html">← 日次トップへ戻る</a>
+      </div>
+      <div class="chip">entry_id <strong class="mono">d98ac2e91383ba60</strong></div>
+    </div>
+
+    <div class="panel">
+      <div class="head">
+        <h1>ShinyHunters Exploits Oracle PeopleSoft Zero-Day (CVE-2026-35273) to Breach Universities</h1>
+
+        <div class="meta">
+          <span>🗞️ The Hacker News</span>
+          <span>🕒 2026-06-12T05:29:23+09:00</span>
+          <span>🔗 <a href="https://thehackernews.com/2026/06/shinyhunters-exploits-oracle-peoplesoft.html" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
+        </div>
+
+        <div class="tags">
+          <span class="tag level-High">Impact: High</span>
+          <span class="tag">Zero-day</span>
+        </div>
+
+        <div class="btnRow">
+          <a class="linkbtn" href="https://thehackernews.com/2026/06/shinyhunters-exploits-oracle-peoplesoft.html" target="_blank" rel="noopener noreferrer">原文リンク</a>
+          <a class="linkbtn" href="https://www.notifyhub.site/digest/2026/06/12/">日次トップ</a>
+        </div>
+      </div>
+
+      <div class="body">
+        
+        <div class="section">
+          <h2>Impact判定理由</h2>
+          <div class="ruleReason">CVE-2026-35273はCVSSスコア未確認だが、Oracle PeopleSoftへのゼロデイ悪用、データ窃取、恐喝が報じられており、業務基盤と個人情報への影響が大きい。
+大学を中心に被害が示唆され、認証連携やデータベース連携を通じた波及も考えられるため、実運用上の優先度は高い。
+情報源はメディア二次情報のため、MandiantやOracleへの言及があっても補正で引き上げず、最終評価はHighに据え置く。</div>
+        </div>
+        <div class="section summary">
+          <h2>🧾 要約（ChatGPT / gpt-5.5-2026-04-23）</h2>
+          <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
+          <div><h4>概要</h4><p>The Hacker Newsは、恐喝グループShinyHuntersがOracle PeopleSoftの未修正脆弱性CVE-2026-35273を悪用し、大学を中心に企業・組織システムへ侵入したと報じている。Mandiantはこの活動をUNC6240として追跡し、活動期間を5月27日から6月9日と位置付けており、Oracleのアドバイザリ公開が6月10日だったため、少なくとも一部は<strong>ゼロデイ悪用</strong>として扱う必要がある。悪用の結果は単なるWeb侵害にとどまらず、PeopleSoftが扱う人事、学生、財務、認証連携情報を起点に<strong>データ窃取と恐喝</strong>へ進む構図になる。影響範囲は、インターネット公開されたPeopleSoft環境、未適用の周辺コンポーネント、連携先のID基盤やデータウェアハウスまで広がる可能性がある。一方で、入力情報だけでは攻撃経路の詳細、必要な認証有無、Oracleパッチの適用条件、CVSSスコア、侵害後の具体的な横展開手法は<strong>未確認</strong>となる。</p></div>
+        </div>
+
+        <div class="section">
+          <h2>📌 キーワード解説</h2>
+          <div class="terms">
+            <div class="termCard">
+  <div class="term">Zero-day（ゼロデイ）</div>
+  <p class="exp">修正前に悪用される脆弱性を指す。単なる未修正脆弱性と違い、攻撃観測が先行する点が重い。</p>
+</div>
+<div class="termCard">
+  <div class="term">Oracle PeopleSoft</div>
+  <p class="exp">人事、財務、学生情報などを扱う業務基盤。一般Webアプリより保有データが濃く、恐喝の材料になりやすい。</p>
+</div>
+<div class="termCard">
+  <div class="term">Extortion（恐喝型侵害）</div>
+  <p class="exp">暗号化より窃取データの公開圧力を使う侵害。ランサムウェアと混同しやすいが、停止被害がなくても重大化する。</p>
+</div>
+<div class="termCard">
+  <div class="term">UNC6240</div>
+  <p class="exp">Mandiantが追跡する活動クラスタ名。犯罪組織名そのものではなく、観測された手口の束として扱う必要がある。</p>
+</div>
+          </div>
+          <h3 class="subSectionTitle">深掘り解説</h3>
+          <div class="deepDive">
+            <div class="termCard deepDiveCard">
+  <div class="term">業務基盤のゼロデイで初動判断を誤らないための見方</div>
+  <p class="exp">ERPや人事・学生情報システムのゼロデイ対応では、脆弱性そのものの深刻度だけでなく、システムが組織内でどの位置にいるかを先に見る必要がある。PeopleSoftのような業務基盤は、単一のWebサーバではなく、認証基盤、バッチ連携、帳票、データベース、外部委託先運用と結びつくことが多い。侵入口がWeb層でも、価値のある到達点は個人情報、給与、成績、研究者情報、支払情報などのバックエンドデータになる。
+
+実務では、まず「公開面」と「データ到達性」を分けて確認する。例えば、PeopleSoftのログイン画面がインターネットから到達可能でも、管理機能やアプリケーションサーバが別セグメントに閉じていれば被害範囲は変わる。一方、アプリケーションのサービスアカウントが広いDB権限を持ち、連携用ファイル共有にも書き込み可能なら、侵害後の窃取範囲は一気に広がる。
+
+初動で止める場所も慎重に選ぶ必要がある。全停止は授業、給与、会計締めに直撃しやすいが、放置すれば窃取と恐喝が進む。現実的には、外部公開経路の一時制限、WAFやリバースプロキシでのアクセス制御、管理画面の閉塞、特権アカウントの一時凍結、連携バッチの出力先監視を組み合わせる形になる。具体例として、大学で学生ポータルを停止できない場合でも、VPNまたは学内IP限定へ切り替え、異常な大量照会、添付ファイル一括取得、深夜帯の管理機能アクセスを優先的に検知する運用が考えられる。
+
+ログ確認では、脆弱性名だけを検索条件にしない方がよい。ゼロデイでは攻撃文字列が未確定のことが多く、HTTP 500の増加、通常使われないPeopleSoftコンポーネントへのPOST、同一セッションからの権限外画面遷移、大量CSV出力、DB側の通常外クエリなど、結果側の痕跡を見る必要がある。パッチ適用後も、既に作られたWebシェル、追加アカウント、スケジュールジョブ、APIトークンが残る可能性があるため、「修正済み」と「侵害なし」は分けて判断する必要がある。</p>
+</div>
+          </div>
+        </div>
+
+        
+
+        <div class="section">
+          <h2>🕘 生成情報</h2>
+          <div class="ruleReason">
+対象期間：2026-06-11T06:00:00+09:00 〜 2026-06-12T06:00:00+09:00
+生成時刻：2026-06-12T07:08:13.687056+09:00
+免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      notifyhub.site
+    </div>
+  </div>
+</body>
+</html>
