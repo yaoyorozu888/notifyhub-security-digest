@@ -1,0 +1,355 @@
+{
+  "date": "2026-06-13",
+  "window": {
+    "from": "2026-06-12T06:00:00+09:00",
+    "to": "2026-06-13T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 21
+  },
+  "generated_at_jst": "2026-06-13T07:02:14.307835+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "OpenAI and Oracle Sign Major Cloud Computing Deal",
+      "source_name": "RCR Wireless News",
+      "published_at": "2026-06-11T12:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要OpenAIがOracleとの間で年間30億ドルのクラウド契約を締結したことが確認された。この契約はAIワークロード向けの大規模コンピューティング容量を提供するもので、Stargateプロジェクトの一環として位置づけられる。データセンター容量の拡大が急務となる中、Oracleのクラウド基盤が主要プレイヤーの選択肢として浮上している。企業は既存のOrac…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://www.rcrwireless.com/20250703/ai-infrastructure/30-billion-oracle",
+      "selection_reason": "IT分野のクラウド基盤拡大を具体的に示す企業間契約として新規性が高く、AIインフラ需要の波及を企業実務に直結させる点で他候補より優位",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "That $30 billion a year Oracle deal? It's with OpenAI",
+          "url": "https://www.rcrwireless.com/20250703/ai-infrastructure/30-billion-oracle",
+          "source_type": "news"
+        },
+        {
+          "title": "OpenAI, Oracle Sign $30B Cloud Deal to Fuel AI Project",
+          "url": "https://aibusiness.com/data/openai-oracle-sign-30b-cloud-deal-to-fuel-ai-project",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "Neura Robotics Raises $1.4B for Physical AI Development",
+      "source_name": "AI Business",
+      "published_at": "2026-06-11T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要ドイツのNeura RoboticsがPhysical AI向けに最大14億ドルのシリーズC資金調達を完了した。NVIDIAやAmazon、Qualcommなどが参加し、人型ロボットの量産とNeuraverseプラットフォーム拡大を加速させる。認知ロボットの実用化に向けた投資規模は過去最大級とされる。資金はNEURA Gymsと呼ばれる実世界訓練環境の…",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://aibusiness.com/robotics/neura-robotics-raises-1-4b-physical-ai",
+      "selection_reason": "AI分野のPhysical AI進展を資金調達という具体的事実で示し、研究や製品開発への波及が明確で他候補と差別化",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "NEURA Robotics Announces Record Series C of up to $1.4B",
+          "url": "https://neura-robotics.com/record-series-c/",
+          "source_type": "official"
+        },
+        {
+          "title": "Neura Robotics Raises $1.4B for Physical AI",
+          "url": "https://aibusiness.com/robotics/neura-robotics-raises-1-4b-physical-ai",
+          "source_type": "news"
+        },
+        {
+          "title": "Tether Backs German Robotics Startup Neura in $1.4 Billion Round",
+          "url": "https://www.bloomberg.com/news/articles/2026-06-10/tether-backs-german-robotics-startup-neura-in-1-4-billion-round",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "CISA Adds Oracle PeopleSoft Vulnerability to KEV Catalog",
+      "source_name": "CISA",
+      "published_at": "2026-06-12T20:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CISAがOracle PeopleSoft Enterprise PeopleToolsの脆弱性CVE-2026-35273をKnown Exploited Vulnerabilities Catalogに追加した。認証欠如により未認証攻撃者がシステム乗っ取り可能となる。ランサムウェアでの悪用が確認されており、連邦機関は6月15日までに修正を求められ…",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://www.cisa.gov/news-events/alerts/2026/06/12/cisa-adds-one-known-exploited-vulnerability-catalog",
+      "selection_reason": "Cybersecurity分野の公式脆弱性対応として即時性が高く、企業パッチ適用判断に直結する点で優先",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+          "url": "https://www.cisa.gov/news-events/alerts/2026/06/12/cisa-adds-one-known-exploited-vulnerability-catalog",
+          "source_type": "official"
+        },
+        {
+          "title": "Known Exploited Vulnerabilities Catalog",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+          "source_type": "official"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "8d5088989c17d20c",
+      "title": "CVE-2026-35273 Oracle PeopleSoft Enterprise PeopleTools Missing Authentication for Critical Function Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-06-12T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Exploit",
+      "summary_preview": "概要CISA KEVがOracle PeopleSoft Enterprise PeopleToolsのCVE-2026-35273を既知悪用脆弱性として追加した。脆弱性種別は重要機能の認証欠如で、攻撃者が本来認証後にしか使えない処理を外部から呼び出せる形なら、認証情報を持たずに業務データ参照、変更、後続侵害の足場化へ進む可能性がある。PeopleSoft…",
+      "article_path": "articles/8d5088989c17d20c.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "20f4a8fd0ecf70fb",
+      "title": "Over 400 Arch Linux AUR Packages Hijacked to Deploy Infostealer and eBPF Rootkit",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-12T19:33:25+00:00",
+      "impact_level": "High",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要Arch Linuxの利用者投稿型リポジトリであるAURで、400件超のパッケージが乗っ取られ、ビルドスクリプトが認証情報窃取用のRust製バイナリを導入する内容に書き換えられたと報じられた。AURは公式リポジトリとは別管理で、パッケージ取得時にPKGBUILDなどのスクリプトを利用者環境で実行するため、攻撃者はソース取得やビルド処理に紛れ込ませて開発…",
+      "article_path": "articles/20f4a8fd0ecf70fb.html",
+      "original_url": "https://thehackernews.com/2026/06/over-400-arch-linux-aur-packages.html"
+    },
+    {
+      "entry_id": "d9639d231c74a341",
+      "title": "Google Sues Chinese Smishing Network Accused of Using Gemini AI in Phishing",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-12T18:59:32+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Phishing",
+      "summary_preview": "概要Googleは、中国系とされるサイバー犯罪ネットワークがGeminiを悪用して米国利用者向けのフィッシングSMSを送信したとして、法的措置を進めていると報じられた。問題の集団はOutsiderと呼ばれるPhaaSキットの開発・運用に関与したとされ、AIは侵入そのものよりも文面生成、翻訳、誘導文の量産に使われた可能性が高い。悪用経路はSMSから偽サイトへ…",
+      "article_path": "articles/d9639d231c74a341.html",
+      "original_url": "https://thehackernews.com/2026/06/google-sues-chinese-smishing-network.html"
+    },
+    {
+      "entry_id": "fe449477117ea28f",
+      "title": "China-Linked Hackers Backdoored Linux Login Software to Hide for Nearly a Decade",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-12T18:17:55+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要The Hacker Newsは、SygniaがVelvet Antとして追跡する中国関連グループが、標的環境内のLinuxログイン基盤に近いPAMとOpenSSHコンポーネントをバックドア化し、長期間潜伏していたと報じた。端末上の一般的なマルウェアではなく、認証可否を判断する経路に入り込むため、再起動や表層的なクリーンアップでは除去されにくく、正規ロ…",
+      "article_path": "articles/fe449477117ea28f.html",
+      "original_url": "https://thehackernews.com/2026/06/china-linked-hackers-backdoored-linux.html"
+    },
+    {
+      "entry_id": "2f93a0566e55fa54",
+      "title": "Agentjacking Attack Tricks AI Coding Agents Into Running Malicious Code",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-12T12:04:33+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Exploit",
+      "summary_preview": "概要The Hacker Newsは、Tenet Securityが「Agentjacking」と呼ぶAIコーディングエージェント悪用手法を報じた。攻撃者はSentryの偽エラー報告など、開発者がエージェントに読ませやすい入力を細工し、調査や修正の流れの中で任意コード実行につながる指示を混入する。成立条件は、エージェントが未信頼の障害情報を解釈し、開発端末…",
+      "article_path": "articles/2f93a0566e55fa54.html",
+      "original_url": "https://thehackernews.com/2026/06/agentjacking-attack-tricks-ai-coding.html"
+    },
+    {
+      "entry_id": "66eee179fa38b111",
+      "title": "Rethinking MDR as Attackers and Defenders Embrace AI",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-12T11:00:00+00:00",
+      "impact_level": "Low",
+      "threat_type": "Other",
+      "summary_preview": "概要The Hacker Newsの記事は、AI利用が攻撃側と防御側の双方に広がる中で、従来のMDRを単なる夜間監視やアラート処理の外部委託として扱う前提を見直すよう求める内容となる。攻撃者はAIで偵察、文面生成、スクリプト変種、検知回避の試行を短時間で回し、低品質だが大量のイベントと少数の本命侵入を混在させられるため、従来型のアラート処理委託だけでは初動…",
+      "article_path": "articles/66eee179fa38b111.html",
+      "original_url": "https://thehackernews.com/2026/06/rethinking-mdr-as-attackers-and.html"
+    },
+    {
+      "entry_id": "4e3e9d72a6378288",
+      "title": "LangGraph Flaw Chain Exposes Self-Hosted AI Agents to Remote Code Execution",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-12T09:50:36+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要The Hacker Newsは、LangChainが提供するLangGraphに3件の修正済み脆弱性があり、その組み合わせにより自己運用のAIエージェント基盤でリモートコード実行につながる可能性があると報じた。入力情報ではSQLインジェクションが起点として示されており、攻撃者がアプリケーション経由で不正なクエリや状態操作を成立させ、最終的にサーバ側処…",
+      "article_path": "articles/4e3e9d72a6378288.html",
+      "original_url": "https://thehackernews.com/2026/06/langgraph-flaw-chain-exposes-self.html"
+    },
+    {
+      "entry_id": "df6364e036e0a69c",
+      "title": "INTERPOL Operation Takes Down Sniper Dz Phishing Platform, Arrests Administrator",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-12T08:52:55+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Phishing",
+      "summary_preview": "概要The Hacker Newsは、INTERPOL主導のOperation Ramzにより、フィッシング・アズ・ア・サービス基盤のSniper Dzが妨害され、MENA地域13か国で201人が逮捕され、主要管理者とされるGuedzも含まれたと報じた。Sniper Dzは約10年継続したとされ、攻撃者は既製の偽ログインページや配信基盤を借り、低コストで認…",
+      "article_path": "articles/df6364e036e0a69c.html",
+      "original_url": "https://thehackernews.com/2026/06/interpol-takes-down-sniper-dz-phishing.html"
+    },
+    {
+      "entry_id": "0484bb159fe3bfc1",
+      "title": "Europol Disrupts AudiA6 Crypto Laundering Service Used by Ransomware Gangs",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-12T06:38:41+00:00",
+      "impact_level": "Low",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要欧州当局とEuropolは、ランサムウェア集団やサイバー犯罪ネットワークが使っていたとされる暗号資産ロンダリングサービスAudiA6を摘発し、犯罪収益の資金洗浄経路を遮断したと報じられている。記事では、同サービスがこれまでに3億3600万ユーロ超の不正収益洗浄に使われた可能性に触れており、侵入そのものよりも、恐喝後の換金・秘匿を支える犯罪基盤への打撃と…",
+      "article_path": "articles/0484bb159fe3bfc1.html",
+      "original_url": "https://thehackernews.com/2026/06/europol-disrupts-audia6-crypto.html"
+    },
+    {
+      "entry_id": "b45f57336977dcab",
+      "title": "ISC Stormcast For Friday, June 12th, 2026 https://isc.sans.edu/podcastdetail/9970, (Fri, Jun 12th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-06-12T12:30:10+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要SANS ISCの「ISC Stormcast For Friday, June 12th, 2026」は日次の脅威動向ポッドキャストとして公開されたが、入力情報には個別トピック、対象製品、CVE、侵害事例、観測数などの本文が含まれていない。現時点でCSIRTが判断できるのは、速報系ダイジェストの存在であり、特定の脆弱性悪用やマルウェア活動が自組織に直…",
+      "article_path": "articles/b45f57336977dcab.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33074"
+    },
+    {
+      "entry_id": "1c2d8149fb05980c",
+      "title": "CRYPTRECシンポジウム2026",
+      "source_name": "NICT NOTICE",
+      "category": "reporting",
+      "published_at": "2026-06-12T05:00:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要NICT NOTICEで「CRYPTRECシンポジウム2026」の開催案内が公開された。現時点の入力情報からは、脆弱性、悪用コード、侵害事案の告知ではなく、暗号技術の評価・移行・運用に関する情報共有イベントと見るのが妥当となる。直接悪用される事象ではないため、CSIRTの即応対象ではない一方、暗号方式の選定、証明書更新、耐量子計算機暗号への移行のような…",
+      "article_path": "articles/1c2d8149fb05980c.html",
+      "original_url": "https://www.cryptrec.go.jp/events/cryptrec_symposium2026.html"
+    },
+    {
+      "entry_id": "11b304bb1dfd7722",
+      "title": "Black Hat USA 開催直前に明らかになったハイブリッド ID 連携の設計課題と Microsoft の対応",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-11T23:15:03+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Misconfiguration",
+      "summary_preview": "概要ScanNetSecurityの記事タイトルからは、Black Hat USAの開催直前に、オンプレミスID基盤とMicrosoftクラウドをつなぐハイブリッドID連携の設計上の課題が表面化し、Microsoftが何らかの対応を示した事案と読める。詳細本文や一次情報URLが入力に含まれないため、特定のCVE、悪用手順、修正内容、影響製品範囲は未確認事項…",
+      "article_path": "articles/11b304bb1dfd7722.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/12/55486.html"
+    },
+    {
+      "entry_id": "5a3d905d40f66e32",
+      "title": "GMOサイバーセキュリティ byイエラエ、オンラインセミナー「見積価格の裏側と『安い脆弱性診断』の落とし穴」を 6 / 18 開催",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-11T23:10:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要記事は、GMOサイバーセキュリティ byイエラエがオンラインセミナー「見積価格の裏側と『安い脆弱性診断』の落とし穴」を6月18日に開催する告知を伝える内容となる。直接の脆弱性公表や攻撃観測ではなく、脆弱性診断の調達判断に関する注意喚起に近い位置付けとなる。悪用シナリオとしては、安価な診断を選んだ結果、検査範囲、手法、再現確認、報告品質が不足し、組織が実…",
+      "article_path": "articles/5a3d905d40f66e32.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/12/55485.html"
+    },
+    {
+      "entry_id": "2668054b3cf69490",
+      "title": "日本大学文理学部のウェブサイトが改ざん被害、カジノサイトを模した不正な画面が表示",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-11T23:05:12+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要日本大学文理学部のウェブサイトで改ざん被害が確認され、カジノサイトを模した不正な画面が表示されたと報じられた。攻撃者は脆弱なCMS、盗まれた管理者認証情報、保守用アカウント、公開サーバ上の古いプラグインなどを足掛かりに、正規サイトの一部を書き換えた可能性があるが、侵入経路は記事情報だけでは確認できない。影響は見た目の毀損に限らず、検索結果汚染、不正リダ…",
+      "article_path": "articles/2668054b3cf69490.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/12/55484.html"
+    },
+    {
+      "entry_id": "5d932242a35856c8",
+      "title": "ビジュアルアーツに不正アクセス、発売前ゲームのマスターデータが海外Webサイトにアップロード",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-11T23:05:08+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要ScanNetSecurityの記事によると、ビジュアルアーツが不正アクセスを受け、発売前ゲームのマスターデータが海外Webサイトにアップロードされたとされる。攻撃者にとって発売前コンテンツは換金、話題化、脅迫、海賊版流通に使いやすく、認証情報窃取や開発環境侵入を起点に、ビルド成果物や共有ストレージから持ち出される経路が想定される。影響は利用者環境への…",
+      "article_path": "articles/5d932242a35856c8.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/12/55483.html"
+    },
+    {
+      "entry_id": "109718dfe4e7b385",
+      "title": "院内規程に反して患者の個人情報を個人用パソコンに保存、自宅でウェブサイト閲覧中にサポート詐欺の被害に",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-11T23:05:05+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要医療機関で、院内規程に反して患者の個人情報を個人用パソコンに保存していたところ、自宅でウェブサイト閲覧中にサポート詐欺の被害に遭ったと報じられた。管理対象外端末に医療情報が置かれた時点で、暗号化、EDR、ログ取得、持ち出し制御の前提が崩れ、組織側の事後確認範囲が狭くなる。サポート詐欺では偽警告から電話誘導や遠隔操作ツールの導入、決済情報入力を迫る流れが…",
+      "article_path": "articles/109718dfe4e7b385.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/12/55482.html"
+    },
+    {
+      "entry_id": "83045ad5b0f3e020",
+      "title": "「女の転職 type」にリスト型アカウントハッキング、不正ログイン 38,442 件に",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-11T23:05:02+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Credential Theft",
+      "summary_preview": "概要転職情報サービス「女の転職 type」で、漏えい済みとみられるID・パスワードの組み合わせを使ったリスト型アカウントハッキングにより、38,442件の不正ログインが発生したと報じられた。攻撃者は他サービスから流出した認証情報を自動投入し、パスワード再利用者のアカウントにログインして、登録情報や応募・職務経歴に関する情報へアクセスした可能性がある。求人サ…",
+      "article_path": "articles/83045ad5b0f3e020.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/12/55481.html"
+    },
+    {
+      "entry_id": "47be9ddaee141eb6",
+      "title": "神戸デジタル・ラボ、実務直結の「脆弱性診断トレーニング」提供開始 報告書作成までカバー",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-11T23:00:15+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要神戸デジタル・ラボが、実務直結を掲げた「脆弱性診断トレーニング」の提供開始を発表し、診断作業だけでなく報告書作成まで扱う内容とされる。これは新たな脆弱性や攻撃キャンペーンの情報ではなく、CSIRTやセキュリティ部門の人材育成・委託管理に関わる話題として見るのが妥当となる。本件自体に直接の悪用経路は示されていないが、診断手順や報告品質は、実際の脆弱性対応…",
+      "article_path": "articles/47be9ddaee141eb6.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/12/55480.html"
+    },
+    {
+      "entry_id": "9d555aed9f9b0d39",
+      "title": "AeyeScan が Web-ASM 機能を強化、Webアプリからプラットフォーム層までスキャン領域を拡大",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-11T23:00:12+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要ScanNetSecurityは、AeyeScanのWeb-ASM機能強化により、従来のWebアプリケーション中心のスキャンから、公開基盤やプラットフォーム層まで確認範囲が広がったと伝えている。これは新たな攻撃発生や脆弱性公表ではなく、外部公開資産の把握と露出管理を支援する製品機能の更新として読むべき内容となる。攻撃者はWebアプリの脆弱性だけでなく、…",
+      "article_path": "articles/9d555aed9f9b0d39.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/12/55479.html"
+    },
+    {
+      "entry_id": "99701b7dfe6d748a",
+      "title": "HENNGE Oneと「SS1」クラウドが連携、デバイス証明書の一括配布が可能に",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-11T23:00:10+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要ScanNetSecurityは、HENNGE Oneと「SS1」クラウドの連携により、デバイス証明書を対象端末へ一括配布できるようになったと伝えている。これは攻撃発生や脆弱性公表ではなく、クラウド型ID管理と資産管理・端末管理の接続点を増やし、端末を条件にしたアクセス制御を運用しやすくする変更と位置付けられる。悪用シナリオとしては、連携設定、配布対象…",
+      "article_path": "articles/99701b7dfe6d748a.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/12/55478.html"
+    },
+    {
+      "entry_id": "e6bee0a30a524174",
+      "title": "AI が自律調査する AI-SIEM「LogStare」提供開始、初動対応を自動化",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-11T23:00:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要ScanNetSecurityの記事は、AIが自律的に調査するAI-SIEM「LogStare」の提供開始と、初動対応の自動化を伝える製品発表系の内容となる。脆弱性や侵害の発生ではなく、CSIRT視点では検知後の調査判断と初動封じ込めをどこまで機械に任せるかという運用設計の話として扱うのが適切となる。悪用という観点では、本記事だけで攻撃事例は示されてい…",
+      "article_path": "articles/e6bee0a30a524174.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/12/55477.html"
+    }
+  ]
+}
