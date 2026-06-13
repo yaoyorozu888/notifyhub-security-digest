@@ -1,0 +1,146 @@
+{
+  "date": "2026-06-14",
+  "window": {
+    "from": "2026-06-13T06:00:00+09:00",
+    "to": "2026-06-14T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 4
+  },
+  "generated_at_jst": "2026-06-14T06:39:08.354027+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "Anthropic 最先端モデルオフライン化",
+      "source_name": "Washington Post",
+      "published_at": "2026-06-13T08:14:58+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要AnthropicがFable 5とMythos 5をオフライン化した。Trump政権の輸出規制指令に従うためである。外国人の利用を防ぐ措置で、最先端AIモデルへのアクセス制限が強化された。企業はモデル利用計画の見直しを迫られる。規制対応の迅速さが今後のAI開発に影響を与える。",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://www.washingtonpost.com/business/2026/06/12/anthropic-artificial-intelligence-trump-fable-mythos/da29a1b8-66cf-11f1-bdd4-805ebb99a693_story.html",
+      "selection_reason": "AI分野で具体的な規制対応事例として新規性が高く、企業実務に直接影響する輸出規制の最新動向を他候補より優先",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "Anthropic takes AI models offline to comply with new export controls",
+          "url": "https://www.washingtonpost.com/business/2026/06/12/anthropic-artificial-intelligence-trump-fable-mythos/da29a1b8-66cf-11f1-bdd4-805ebb99a693_story.html",
+          "source_type": "news"
+        },
+        {
+          "title": "Anthropic says it has taken its latest AI models offline to comply with new export controls",
+          "url": "https://www.thv11.com/article/news/nation-world/anthropic-fable-mythos-offline-comply-new-export-controls/507-052e3003-12f3-421f-b57e-4cf446975882",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "Dedale 6月市場アップデート",
+      "source_name": "Dedale Intelligence",
+      "published_at": "2026-06-12T12:04:07+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Other",
+      "summary_preview": "概要Dedale Intelligenceが6月市場アップデートを公開した。ソフトウェアとITサービス分野の最新トレンドを分析している。AIインフラ投資の加速や企業向けSaaSの変化が指摘された。グローバル市場の動向を把握する資料として有用である。実務担当者は投資判断に活用可能だ。",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://www.dedale.com/articles/market-trends-june-2026",
+      "selection_reason": "IT市場全体の最新動向を具体的なレポートでカバーし、AIやクラウド以外の多様なトレンドを含む点で他候補を上回る",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "Tech Market Update | June 2026",
+          "url": "https://www.youtube.com/watch?v=GdPCbWEELVM",
+          "source_type": "news"
+        },
+        {
+          "title": "Tech Market Update | June 2026",
+          "url": "https://www.dedale.com/articles/market-trends-june-2026",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "6月Patch Tuesday記録更新",
+      "source_name": "Ground News",
+      "published_at": "2026-06-10T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Microsoftが6月Patch Tuesdayで206件の脆弱性を修正した。過去最多を更新した内容である。38件が重大で、1件のゼロデイが積極的に悪用された。Google Chromeも429件を同時に修正した。管理者は即時適用を検討すべきだ。",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://ground.news/article/microsoft-breaks-patch-tuesday-record-with-206-vulnerabilities_661076",
+      "selection_reason": "セキュリティ実務に直結する具体的な脆弱性修正件数とゼロデイ事例を挙げ、規制やAI以外で多様性を確保",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "A Record-Breaking Patch Tuesday for June 2026",
+          "url": "https://ground.news/article/microsoft-breaks-patch-tuesday-record-with-206-vulnerabilities_661076",
+          "source_type": "news"
+        },
+        {
+          "title": "2026 June Patch Tuesday",
+          "url": "https://www.youtube.com/watch?v=dQueknssdpU",
+          "source_type": "news"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "581cb2d24379e0d2",
+      "title": "Critical Splunk Enterprise Flaw Lets Attackers Run Code Without Authentication",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-13T13:23:03+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Splunk Enterpriseの複数バージョンに、認証なしの利用者が任意ファイルの作成や切り詰めを行い、条件次第でリモートコード実行につなげられる脆弱性CVE-2026-20253が公表され、Splunkが修正版を提供した。CVSSは9.8で、対象は10.2.4未満および10.0.7未満とされ、管理画面や関連サービスが到達可能な構成では認証前攻撃と…",
+      "article_path": "articles/581cb2d24379e0d2.html",
+      "original_url": "https://thehackernews.com/2026/06/critical-splunk-enterprise-flaw-lets.html"
+    },
+    {
+      "entry_id": "96fdb5e863c5338d",
+      "title": "U.S. Orders Anthropic to Suspend Fable 5 and Mythos 5 Access for Foreign Nationals",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-13T05:42:50+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "Anthropic said on Friday it will &quot;abruptly disable&quot; its most advanced artificial intelligence (AI) models, Claude Fable 5 and Mythos 5, for all users after the U.S. gove…",
+      "article_path": "articles/96fdb5e863c5338d.html",
+      "original_url": "https://thehackernews.com/2026/06/us-orders-anthropic-to-suspend-fable-5.html"
+    },
+    {
+      "entry_id": "63ca833ccb51c90f",
+      "title": "Tracing Digital Intent: New MacOS Tahoe 26 Artifact Discovered",
+      "source_name": "Unit 42",
+      "category": "reporting",
+      "published_at": "2026-06-12T22:00:14+00:00",
+      "impact_level": "Low",
+      "threat_type": "Other",
+      "summary_preview": "概要Unit 42が、macOS Tahoe 26でユーザーのメニュー選択を横断的に記録する新しいフォレンジック痕跡を確認したという研究記事となる。これは脆弱性や侵入手口の公表ではなく、端末上の操作履歴からユーザーの意図や行動文脈を復元できる可能性を示す観測情報に近い。攻撃者が直接これを悪用して侵入する話ではないが、端末窃取、マルウェアによるローカルデータ…",
+      "article_path": "articles/63ca833ccb51c90f.html",
+      "original_url": "https://unit42.paloaltonetworks.com/new-macos-artifact-discovered/"
+    },
+    {
+      "entry_id": "2096da0d2da48dbc",
+      "title": "福井県警とサイバーサクラ、鯖江市で中高生向け「リアルサイバー捜査体験」を開催",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-12T23:00:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要ScanNetSecurityは、福井県警とサイバーサクラが鯖江市で中高生向け「リアルサイバー捜査体験」を開催したと報じた。脆弱性や侵害の告知ではなく、地域の若年層に捜査・防御の仕事を体験させる啓発・人材育成の話題として扱うのが妥当となる。現時点の入力情報だけでは、具体的な教材、使用端末、模擬環境、参加者情報の扱い、協賛企業の範囲は確認できず、CSIR…",
+      "article_path": "articles/2096da0d2da48dbc.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/13/55487.html"
+    }
+  ]
+}
