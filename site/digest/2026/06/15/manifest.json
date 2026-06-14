@@ -1,0 +1,112 @@
+{
+  "date": "2026-06-15",
+  "window": {
+    "from": "2026-06-14T06:00:00+09:00",
+    "to": "2026-06-15T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 0
+  },
+  "generated_at_jst": "2026-06-15T06:37:12.169609+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "Anthropic、米政府指令で先進AIモデルへのアクセス停止",
+      "source_name": "Financial Times",
+      "published_at": "2026-06-13T20:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要Anthropicは米政府の指令を受け、最新モデルMythos 5とFable 5へのアクセスを全ユーザー向けに停止した。指令は外国籍者への提供制限を求め、国家安全保障上の懸念を理由とする。企業は即時対応を余儀なくされ、既存顧客にも影響が及ぶ。類似の輸出規制がAI分野で初めて適用された事例として注目される。開発者や企業は今後、アクセス制限の拡大を想定し…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://www.ft.com/content/2a27300a-b90d-4649-8c09-f7e7cd426dbb",
+      "selection_reason": "AI分野で具体的な規制対応事例として新規性が高く、企業の実務判断に直結する国家安全保障措置を扱う点で他候補より優位",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "Anthropic suspends latest AI models after US blocks foreign use",
+          "url": "https://www.ft.com/content/2a27300a-b90d-4649-8c09-f7e7cd426dbb",
+          "source_type": "news"
+        },
+        {
+          "title": "Anthropic suspends access to latest AI models following US order",
+          "url": "https://www.yahoo.com/news/politics/articles/anthropic-suspends-access-latest-ai-130524914.html",
+          "source_type": "news"
+        },
+        {
+          "title": "EE.UU. restringe por primera vez la exportación de una IA",
+          "url": "https://esrt.site/actualidad/610856-eeuu-restringe-primera-vez-exportacion",
+          "source_type": "x"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "Agentjacking攻撃、AIコーディングエージェントを標的に",
+      "source_name": "The Hacker News",
+      "published_at": "2026-06-12T10:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要Tenet SecurityがSentryのエラートラッキング機能を悪用したAgentjacking攻撃を公表した。偽のエラーレポートを介し、AIコーディングエージェントに悪意あるコードを実行させる。Claude CodeやCursorなどで85%の成功率を確認し、2388組織が影響を受ける可能性がある。Sentryは根本原因の修正を拒否した。開発者は…",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://thehackernews.com/2026/06/agentjacking-attack-tricks-ai-coding.html",
+      "selection_reason": "AIエージェントを悪用する新攻撃手法としてセキュリティ実務に直結し、具体的な脆弱性報告で新規性が高い",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "Agentjacking Attack Tricks AI Coding Agents Into Running Malicious Code",
+          "url": "https://thehackernews.com/2026/06/agentjacking-attack-tricks-ai-coding.html",
+          "source_type": "news"
+        },
+        {
+          "title": "Agentjacking: MCP Injection Hijacks AI Coding Agents",
+          "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-agentjacking-mcp-sentry-injection-20260612/",
+          "source_type": "research"
+        },
+        {
+          "title": "New “Agentjacking” Attacks Could Hijack AI Coding Agents",
+          "url": "https://www.infosecurity-magazine.com/news/agentjacking-attacks-hijack-ai/",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "OpenAI、ChatGPTからGPT-5.2を即時退役",
+      "source_name": "OpenAI Community",
+      "published_at": "2026-06-12T00:00:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Other",
+      "summary_preview": "概要OpenAIはChatGPTのモデルピッカー更新に伴い、GPT-5.2を即時利用不可とした。公式退役予定は2026年8月だったが、事前通知なしで実行された。既存会話はGPT-5.5系へ移行する。利用者は急な変更に備え、代替モデルへの移行テストを進める必要がある。API版は別スケジュールで存続する。",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://community.openai.com/t/gpt-5-2-disappeared-from-chatgpt-without-advance-notice-despite-aug-10-shutdown-date-in-deprecations-docs/1383491",
+      "selection_reason": "IT基盤のモデル更新として開発者向け変更が具体的に発生し、SaaS利用者の実務影響が明確",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "GPT-5.2 disappeared from ChatGPT without advance notice",
+          "url": "https://community.openai.com/t/gpt-5-2-disappeared-from-chatgpt-without-advance-notice-despite-aug-10-shutdown-date-in-deprecations-docs/1383491",
+          "source_type": "news"
+        },
+        {
+          "title": "ChatGPT — Release Notes",
+          "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+          "source_type": "official"
+        },
+        {
+          "title": "OpenAI Retires GPT-5.2",
+          "url": "https://windowsforum.com/threads/425983/new-posts",
+          "source_type": "news"
+        }
+      ]
+    }
+  ],
+  "items": []
+}
