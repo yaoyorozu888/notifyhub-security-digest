@@ -1,0 +1,403 @@
+{
+  "date": "2026-06-17",
+  "window": {
+    "from": "2026-06-16T06:00:00+09:00",
+    "to": "2026-06-17T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 25
+  },
+  "generated_at_jst": "2026-06-17T07:15:34.936950+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "AI基盤最適化の動きが加速",
+      "source_name": "Deloitte Insights",
+      "published_at": "2026-06-16T08:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要企業はAI推論の経済性を踏まえ、コンピュート戦略の見直しを進めている。シリコンベースのワークフォース導入に向けた準備が具体化し、AIネイティブ組織への再構築が加速する。データ生成量の増加に伴い、インフラ投資の最適化が実務判断の鍵となる。物理AIとの融合も視野に入り、運用効率の向上が期待される。",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://www.deloitte.com/us/en/insights/topics/technology-management/tech-trends.html",
+      "selection_reason": "対象期間内にAIインフラ関連の具体的な実務影響が確認され、IT分野の技術トレンドとして新規性と多様性で優位",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "Tech Trends 2026",
+          "url": "https://www.deloitte.com/us/en/insights/topics/technology-management/tech-trends.html",
+          "source_type": "web"
+        },
+        {
+          "title": "AI Update June 15 2026",
+          "url": "https://medium.com/adi-insights-innovations-collective/ai-pulse-everything-that-happened-monday-june-15-2026-e5b896667a3f",
+          "source_type": "web"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "Anthropicの課金体系変更が業界に波及",
+      "source_name": "Medium AI Update",
+      "published_at": "2026-06-15T18:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要Anthropicが新課金体系を15日から適用開始した。政府によるフロンティアAIへの介入が企業戦略を左右する状況が浮上する。Soraの技術的問題も文書化され、クラウド依存の見直しが進む。企業は自社AIインフラの再検討を迫られる。",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://medium.com/adi-insights-innovations-collective/ai-pulse-everything-that-happened-monday-june-15-2026-e5b896667a3f",
+      "selection_reason": "6月15日の具体的な製品・サービス変更としてAI分野の実務影響が明確で、他の一般予測より優先",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "AI News Today June 15 2026",
+          "url": "https://www.buildfastwithai.com/blogs/ai-news-today-june-15-2026",
+          "source_type": "web"
+        },
+        {
+          "title": "AI Update June 15 2026",
+          "url": "https://medium.com/adi-insights-innovations-collective/ai-pulse-everything-that-happened-monday-june-15-2026-e5b896667a3f",
+          "source_type": "web"
+        },
+        {
+          "title": "X post on AI developments",
+          "url": "https://x.com/Cloudconnex2025/status/2067008149597679952",
+          "source_type": "x"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "Check Point VPNにゼロデイ脆弱性",
+      "source_name": "Kroll Emerging Threats",
+      "published_at": "2026-06-15T16:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Check Point Remote Access VPNに認証バイパス脆弱性が発見された。Qilinランサムウェアとの関連が指摘される。IKEv1使用時に影響が大きく、即時パッチ適用が推奨される。企業ネットワークの遠隔アクセス設定の見直しが必要だ。",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://www.youtube.com/watch?v=8Px4eaA3TBg",
+      "selection_reason": "6月15日の新興脅威ブリーフィングで具体的な製品脆弱性が確認され、セキュリティ実務に直結",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "June 15 2026 Emerging Threats Weekly",
+          "url": "https://www.youtube.com/watch?v=8Px4eaA3TBg",
+          "source_type": "web"
+        },
+        {
+          "title": "Check Point VPN Zero-day",
+          "url": "https://thehackernews.com/2026/06/check-point-vpn-zero-day.html",
+          "source_type": "web"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "35d82162ca245252",
+      "title": "CVE-2026-48907 Widget Factory Joomla Content Editor Improper Access Control Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-06-16T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要CISA KEVに、CVE-2026-48907としてWidget Factory / Joomla Content Editorの不適切なアクセス制御の脆弱性が追加された。KEV掲載は、少なくともCISAが実環境での悪用を確認したことを示すため、単なる公開情報より優先して資産確認と是正判断に入れる必要がある。Joomla系CMSや編集拡張機能はインタ…",
+      "article_path": "articles/35d82162ca245252.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "3bc7c862d88e7de0",
+      "title": "Google Vertex AI SDK Flaw Let Attackers Hijack Model Uploads via Bucket Squatting",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-16T19:05:41+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要The Hacker Newsは、Google CloudのVertex AI SDK for Pythonに、被害組織のプロジェクトへアクセス権を持たない攻撃者が機械学習モデルのアップロード経路を奪える欠陥があったと報じた。Palo Alto Networks Unit 42はこの手法を「Pickle in the Middle」と呼び、バケット名の…",
+      "article_path": "articles/3bc7c862d88e7de0.html",
+      "original_url": "https://thehackernews.com/2026/06/google-vertex-ai-sdk-flaw-let-attackers.html"
+    },
+    {
+      "entry_id": "7c9d9f261e98e204",
+      "title": "ClickFix Campaigns Expand Malware Delivery With New Loaders and Fake Update Lures",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-16T17:41:28+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Malware",
+      "summary_preview": "概要The Hacker Newsは、ClickFix型の誘導を使う複数キャンペーンで、BabaDeda Loader、Lorem Ipsum Loader、Potemkinという3種類のマルウェアローダーが配布されていると報じた。ClickFixは脆弱性悪用よりも、偽の更新通知、偽CAPTCHA、修復手順を装った表示で利用者にコマンド実行やファイル起動を…",
+      "article_path": "articles/7c9d9f261e98e204.html",
+      "original_url": "https://thehackernews.com/2026/06/clickfix-campaigns-expand-malware.html"
+    },
+    {
+      "entry_id": "73f54ed2a4ea51b3",
+      "title": "New Rokarolla Android Malware Steals PINs, SMS Codes, and Crypto Wallet Funds",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-16T13:10:17+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Malware",
+      "summary_preview": "概要ZimperiumのzLabsは、Android向けバンキングトロイRokarollaを確認し、217の銀行・暗号資産アプリを標的にし、137種類の遠隔操作コマンドを備えると報告した。感染端末ではロック画面PIN、SMS認証コード、クリップボード内容、送信SMSまで攻撃者に扱われ、端末利用者になりすました送金・認証突破につながる可能性が高い。暗号資産送…",
+      "article_path": "articles/73f54ed2a4ea51b3.html",
+      "original_url": "https://thehackernews.com/2026/06/new-rokarolla-android-malware-steals.html"
+    },
+    {
+      "entry_id": "3fb30592a0891945",
+      "title": "Survey: 94% of Incidents Involve Anonymized Infrastructure. Teams Are Still Reactive",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-16T11:30:00+00:00",
+      "impact_level": "Low",
+      "threat_type": "Other",
+      "summary_preview": "概要The Hacker Newsは、調査結果としてインシデントの94%に匿名化されたインフラが関与し、IP関連データが増えている一方で多くのセキュリティチームが依然として事後対応に寄っている、という論点を紹介している。攻撃者はVPN、プロキシ、ホスティング事業者、使い捨てクラウド資産などを組み合わせ、送信元IPの評判や地理情報だけでは判断しにくい形で認証…",
+      "article_path": "articles/3fb30592a0891945.html",
+      "original_url": "https://thehackernews.com/2026/06/survey-94-of-incidents-involve.html"
+    },
+    {
+      "entry_id": "3370a2f70f46bf0e",
+      "title": "Attackers Exploit Three Fortinet FortiSandbox Flaws, One Patched Last Week",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-16T10:30:41+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要The Hacker Newsは、脅威インテリジェンス企業Defused CyberのX投稿を基に、Fortinet FortiSandboxの3件の脆弱性CVE-2026-39813、CVE-2026-39808、CVE-2026-25089が過去24時間に悪用されたと報じている。判明している範囲では、CVE-2026-39813はFortiSand…",
+      "article_path": "articles/3370a2f70f46bf0e.html",
+      "original_url": "https://thehackernews.com/2026/06/attackers-exploit-three-fortinet.html"
+    },
+    {
+      "entry_id": "b682cf309cb5ed8c",
+      "title": "China-Linked SprySOCKS Backdoor Expands to Windows with Driver-Based Stealth",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-16T09:44:34+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要The Hacker Newsは、ESETの報告として、従来はLinux向けと見られていたバックドアSprySOCKSに、未公開だったWindows版のWIN_DRVとWIN_PLUSが確認されたと伝えた。両亜種はハードコードされたC2設定を持ち、TCPやUDPで外部と通信するため、侵入後に命令実行、追加ペイロード投入、環境情報収集の足場として悪用され…",
+      "article_path": "articles/b682cf309cb5ed8c.html",
+      "original_url": "https://thehackernews.com/2026/06/china-linked-sprysocks-backdoor-expands.html"
+    },
+    {
+      "entry_id": "7365c68ce4dd7b9d",
+      "title": "Fake Microsoft Alerts Used to Deploy North Korean NarwhalRAT Malware",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-16T08:14:55+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Malware",
+      "summary_preview": "概要The Hacker Newsは、北朝鮮関連の攻撃グループScarCruft、別名APT37が、Microsoft Accountのセキュリティ通知を装ったスピアフィッシングでNarwhalRATを配布している観測を報じた。攻撃は「アカウントに異常がある」と受信者に思わせ、添付ファイルやリンクの実行を促してRATを導入する流れとみられ、利用者操作を起点…",
+      "article_path": "articles/7365c68ce4dd7b9d.html",
+      "original_url": "https://thehackernews.com/2026/06/fake-microsoft-alerts-used-to-deploy.html"
+    },
+    {
+      "entry_id": "c2fbaa63936fd3fd",
+      "title": "Cisco Releases Security Updates for Actively Exploited SD-WAN Manager Flaw",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-16T06:05:58+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要Cisco Catalyst SD-WAN Manager（旧SD-WAN vManage）のWeb UIにあるCVE-2026-20262について、Ciscoが修正を公開し、野外での悪用が確認されたと報じられた。CVSSは6.5と中程度だが、攻撃条件は認証済みリモートで、窃取済みアカウントや運用者権限の悪用と組み合わさると、管理画面経由でファイル作成…",
+      "article_path": "articles/c2fbaa63936fd3fd.html",
+      "original_url": "https://thehackernews.com/2026/06/cisco-releases-security-updates-for.html"
+    },
+    {
+      "entry_id": "3b49f1e0baf912ce",
+      "title": "CISA Flags LiteSpeed cPanel Plugin Flaw Exploited for Root Privilege Escalation",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-16T05:41:52+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要米CISAは、LiteSpeed cPanel Pluginの脆弱性 CVE-2026-54420（CVSS 8.5）を既知悪用脆弱性カタログに追加し、米連邦文民機関に2026年6月18日までの修正適用を求めた。内容はroot権限への昇格につながる不備で、攻撃者が何らかの初期アクセスや低権限コンテキストを得た後、ホスティング基盤上で権限境界を越える形で…",
+      "article_path": "articles/3b49f1e0baf912ce.html",
+      "original_url": "https://thehackernews.com/2026/06/cisa-flags-litespeed-cpanel-plugin-flaw.html"
+    },
+    {
+      "entry_id": "5d9144d5556bd973",
+      "title": "From a VHDX File to a Remcos RAT, (Tue, Jun 16th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-06-16T07:09:13+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Malware",
+      "summary_preview": "概要SANS ISCは、読者から報告された悪性ZIPアーカイブの解析として、展開後に含まれるVHDXファイルを起点に悪性JavaScriptが露出し、最終的にRemcos RATへつながる事例を取り上げている。現代のWindowsでは仮想ディスクのマウント操作が利用者にとって自然に見えやすく、攻撃者は添付ファイル検査や利用者の警戒をすり抜けるためにディスク…",
+      "article_path": "articles/5d9144d5556bd973.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33080"
+    },
+    {
+      "entry_id": "8e0a5443b5870a2d",
+      "title": "ISC Stormcast For Tuesday, June 16th, 2026 https://isc.sans.edu/podcastdetail/9974, (Tue, Jun 16th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-06-16T02:00:02+00:00",
+      "impact_level": "Info",
+      "threat_type": "Unknown",
+      "summary_preview": "概要SANS ISCのStormcast配信告知であり、入力にはタイトル、公開日時、URLのみが含まれ、個別の脆弱性、攻撃手法、侵害指標、影響製品の記載はない。したがって、何らかのセキュリティ話題が扱われた可能性はあるものの、具体的に何が起きたか、どう悪用されるか、どの資産へ影響が広がるかはこの情報だけでは判断できない。CSIRT運用上は、日次の脅威概況と…",
+      "article_path": "articles/8e0a5443b5870a2d.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33078"
+    },
+    {
+      "entry_id": "66dae36709e303b6",
+      "title": "Independent Testing Confirms Secure Email Threat Defense’s Email Security Strength",
+      "source_name": "Cisco Security Blog",
+      "category": "reporting",
+      "published_at": "2026-06-16T15:00:48+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要Cisco Security Blogは、Secure Email Threat Defenseが2026年5月のSE Labs Advanced Email Security EvaluationでAAA評価を取得し、全脅威カテゴリ合算で94%のTotal Accuracy Ratingを得たと紹介した。これは製品性能評価の発表であり、脆弱性悪用や侵…",
+      "article_path": "articles/66dae36709e303b6.html",
+      "original_url": "https://blogs.cisco.com/security/independent-testing-confirms-secure-email-threat-defenses-email-security-strength/"
+    },
+    {
+      "entry_id": "beee1bc21258c829",
+      "title": "Pickle in the Middle – Hijacking Vertex AI Model Uploads for Cross-Tenant RCE",
+      "source_name": "Unit 42",
+      "category": "reporting",
+      "published_at": "2026-06-16T10:00:29+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要Unit 42は、Google CloudのVertex AI Python SDKに、モデルアップロード処理とクラウドストレージバケット名の扱いが絡む脆弱性を確認したと報告した。攻撃者が未作成または再利用前提のバケット名を先取りするbucket squattingを使うと、利用者のモデル成果物が攻撃者管理領域へ流れ、pickleなどのPythonシリ…",
+      "article_path": "articles/beee1bc21258c829.html",
+      "original_url": "https://unit42.paloaltonetworks.com/hijacking-vertex-ai-model/"
+    },
+    {
+      "entry_id": "4233e9b1e01d25db",
+      "title": "Inside the Modern SOC: The 72-Minute Race",
+      "source_name": "Unit 42",
+      "category": "reporting",
+      "published_at": "2026-06-15T23:00:19+00:00",
+      "impact_level": "Low",
+      "threat_type": "Advisory",
+      "summary_preview": "概要Unit 42の記事は、攻撃者が初期アクセスからデータ持ち出しまで72分で進む可能性を前提に、現代のSOCが検知・判断・封じ込めの速度差をどう埋めるかを論じている。悪用の流れは、窃取認証情報や侵害端末を起点に、認証基盤、端末、内部共有、クラウドストレージを短時間で探索し、価値の高いデータを外部へ送る形になりやすい。影響は単一端末に閉じず、アイデンティテ…",
+      "article_path": "articles/4233e9b1e01d25db.html",
+      "original_url": "https://unit42.paloaltonetworks.com/soc-72-minute-race/"
+    },
+    {
+      "entry_id": "ee3a36b37c3f88a5",
+      "title": "革新的情報通信技術（Beyond 5G（6G））基金事業 要素技術・シーズ創出型プログラムにおける「日英国際共同研究開発プロジェクト」の公募に向けた提案予定者の意向表明の募集開始",
+      "source_name": "NICT NOTICE",
+      "category": "reporting",
+      "published_at": "2026-06-16T05:00:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要NICT NOTICEは、革新的情報通信技術（Beyond 5G（6G））基金事業の要素技術・シーズ創出型プログラムで、日英国際共同研究開発プロジェクトの公募に向けた提案予定者の意向表明募集を開始した。本文情報だけでは、脆弱性、侵害、悪用手順、緊急パッチの話ではなく、研究開発資金の公募準備に関する行政・研究支援の告知と読める。悪用観点では、告知そのもの…",
+      "article_path": "articles/ee3a36b37c3f88a5.html",
+      "original_url": "/publicity/topics/2026/06/16-1.html"
+    },
+    {
+      "entry_id": "a9fa1c2ed369833f",
+      "title": "筆者に届いたノミネート詐欺連絡 ほか [Scan PREMIUM Monthly Executive Summary 2026年5月度]",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-15T23:15:03+00:00",
+      "impact_level": "Low",
+      "threat_type": "Scam/Fraud",
+      "summary_preview": "概要ScanNetSecurity の「筆者に届いたノミネート詐欺連絡 ほか [Scan PREMIUM Monthly Executive Summary 2026年5月度]」は、少なくとも筆者に届いたノミネート詐欺を含む月次整理記事として公開されたもの。入力情報には本文要旨や具体的な誘導先、送信元、要求内容が含まれていないため、個別キャンペーンの規模や…",
+      "article_path": "articles/a9fa1c2ed369833f.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/16/55505.html"
+    },
+    {
+      "entry_id": "941be571d16c5f8e",
+      "title": "オンラインセミナー「AWS WAF、初期設定から運用まで自社で対応できますか？」6 / 24 開催",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-15T23:10:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要ScanNetSecurityが、2026年6月24日にオンラインセミナー「AWS WAF、初期設定から運用まで自社で対応できますか？」を開催すると告知した記事となる。本文情報からは新たな脆弱性、侵害事案、悪用キャンペーンの発生は確認できず、CSIRT観点では教育・運用見直しの案内として扱うのが妥当となる。一方で、AWS WAFはインターネット公開We…",
+      "article_path": "articles/941be571d16c5f8e.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/16/55504.html"
+    },
+    {
+      "entry_id": "8fc0f72c653cc20b",
+      "title": "アサヒグループホールディングスへのサイバー攻撃、システム障害などの影響で売上収益が想定を 600 億円下回る見込み",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-15T23:05:11+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要ScanNetSecurityの記事タイトルによれば、アサヒグループホールディングスへのサイバー攻撃とそれに伴うシステム障害により、売上収益が想定を600億円下回る見込みとされている。技術的な侵入経路、攻撃種別、停止した業務システム、復旧状況は入力情報だけでは確認できないが、影響額の大きさから、単なる情報漏えい対応ではなく受注・出荷・請求などの業務継続…",
+      "article_path": "articles/8fc0f72c653cc20b.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/16/55503.html"
+    },
+    {
+      "entry_id": "c0a4493ce5e7287c",
+      "title": "「SUBARUオンラインショップ」で不審な認証画面の表示",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-15T23:05:09+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Credential Theft",
+      "summary_preview": "概要ScanNetSecurityは、「SUBARUオンラインショップ」で不審な認証画面が表示された事案を報じているが、入力情報だけでは原因、表示範囲、発生期間、利用者への影響は確認できない。正規サイト上で意図しない認証画面が出る場合、単なる設定不備だけでなく、サイト改ざん、外部スクリプトの差し替え、広告・タグ管理基盤の悪用、リバースプロキシや認証連携の誤…",
+      "article_path": "articles/c0a4493ce5e7287c.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/16/55502.html"
+    },
+    {
+      "entry_id": "9f980b75c240ca7d",
+      "title": "東北新社グループ会社のオムニバス・ジャパンにランサムウェア攻撃、リークサイトで公開されるもファイルが持ち出された形跡は確認されず",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-15T23:05:05+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要ScanNetSecurityは、東北新社グループ会社のオムニバス・ジャパンがランサムウェア攻撃を受け、攻撃者のリークサイトに掲載されたと報じた一方、現時点でファイルが持ち出された形跡は確認されていないとの内容になっている。ランサムウェア事案では、暗号化による業務停止だけでなく、窃取を示唆した公開圧力により支払いを迫る流れが多く、リークサイト掲載は被害…",
+      "article_path": "articles/9f980b75c240ca7d.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/16/55501.html"
+    },
+    {
+      "entry_id": "3aa8161e2bcf214c",
+      "title": "対応費用を計上しても業績に与える影響は限定的 ～ ヘア化粧品のコタにランサムウェア攻撃",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-15T23:05:02+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要ScanNetSecurityの記事は、ヘア化粧品メーカーのコタがランサムウェア攻撃を受け、対応費用を計上しても業績への影響は限定的と見込む内容を伝えている。侵入経路、暗号化範囲、情報流出の有無は本文情報だけでは確認できず、攻撃者がVPN、リモート管理、認証情報、公開サーバの脆弱性のいずれを使ったかは未確認事項として扱う必要がある。ランサムウェアでは、…",
+      "article_path": "articles/3aa8161e2bcf214c.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/16/55500.html"
+    },
+    {
+      "entry_id": "c3d17071b1510407",
+      "title": "東日本銀行が BIMI を導入",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-15T23:00:11+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要ScanNetSecurityの記事タイトルから確認できる範囲では、東日本銀行がメール送信元のブランド表示を支援する BIMI を導入したという内容になる。BIMIは単独の防御策ではなく、DMARCの整合や証明書などを前提に、対応メールクライアントで正規送信者のロゴ表示を可能にする仕組みとなる。攻撃者は銀行名をかたるフィッシングや認証情報窃取で利用者の…",
+      "article_path": "articles/c3d17071b1510407.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/16/55499.html"
+    },
+    {
+      "entry_id": "072909d1c2e1c773",
+      "title": "Windows DNS クライアントに特権の昇格が可能になる脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-15T23:00:08+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要ScanNetSecurityは「Windows DNS クライアントに特権の昇格が可能になる脆弱性」を伝えているが、入力情報にはCVE番号、CVSS、影響バージョン、悪用有無、修正状況が含まれていない。想定される悪用は、攻撃者が既に端末上で低権限コードを実行できる状態から、Windows DNS クライアントの処理を悪用して権限を引き上げる流れとなる…",
+      "article_path": "articles/072909d1c2e1c773.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/16/55498.html"
+    },
+    {
+      "entry_id": "629c996ddaa4c863",
+      "title": "オフィス防災EXPO に「セコム安否確認サービス」出展",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-15T23:00:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要ScanNetSecurityの記事は、「オフィス防災EXPO」に「セコム安否確認サービス」が出展されるという告知系の内容を伝えている。入力情報の範囲では、脆弱性、侵害、悪用、設定不備の報告ではなく、CSIRT観点では防災・BCP領域のサービス情報として扱うのが妥当となる。直接的な攻撃手法は示されていないが、安否確認サービスは従業員の連絡先、所属、応答…",
+      "article_path": "articles/629c996ddaa4c863.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/16/55497.html"
+    }
+  ]
+}

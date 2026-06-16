@@ -1,0 +1,332 @@
+<!-- article.html テンプレート（生成用） (例: /digest/YYYY/MM/DD/articles/<entry_id>.html)
+     サーバ側（Function）で {{...}} を置換して出力してください。
+-->
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/favicon-192.png" />
+  <title>Pickle in the Middle – Hijacking Vertex AI Model Uploads for Cross-Tenant RCE | NotifyHub Cybersecurity Daily Report</title>
+  <style>
+    :root{
+      --bg:#0b1020; --panel:#0f1730; --panel2:#121c3a;
+      --text:#e7ecff; --muted:#a9b4df; --line:#22305b;
+      --accent:#7aa2ff; --good:#4ade80; --warn:#fbbf24; --bad:#fb7185;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+      --radius:18px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      background: radial-gradient(1000px 700px at 20% -10%, rgba(122,162,255,.25), transparent 60%),
+                  radial-gradient(900px 600px at 90% 10%, rgba(251,113,133,.12), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+    }
+    a{color:inherit}
+    .wrap{max-width:960px; margin:0 auto; padding:22px 18px 44px}
+    .topbar{
+      display:flex; justify-content:space-between; align-items:center; gap:12px;
+      margin-bottom:12px;
+    }
+    .crumb a{
+      text-decoration:none;
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .crumb a:hover{border-color:rgba(122,162,255,.65)}
+    .chip{
+      display:inline-flex; align-items:center; gap:8px;
+      background:rgba(27,38,80,.75);
+      border:1px solid rgba(34,48,91,.9);
+      padding:7px 10px; border-radius:999px;
+      font-size:12px; color:var(--muted);
+      backdrop-filter: blur(10px);
+      white-space:nowrap;
+    }
+    .chip strong{color:var(--text); font-weight:650}
+    .panel{
+      background: linear-gradient(180deg, rgba(15,23,48,.9), rgba(15,23,48,.75));
+      border:1px solid rgba(34,48,91,.9);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .head{
+      padding:16px 16px 12px;
+      border-bottom:1px solid rgba(34,48,91,.9);
+      background:rgba(18,28,58,.55);
+    }
+    h1{
+      margin:0;
+      font-size:20px;
+      line-height:1.35;
+      letter-spacing:.15px;
+    }
+    .meta{
+      margin-top:10px;
+      display:flex; gap:10px; flex-wrap:wrap;
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.6;
+    }
+    .meta a{color:var(--muted)}
+    .meta a:hover{color:var(--accent)}
+    .tags{
+      margin-top:12px;
+      display:flex; gap:8px; flex-wrap:wrap;
+    }
+    .tag{
+      font-size:11px;
+      padding:6px 9px;
+      border-radius:999px;
+      background:rgba(27,38,80,.65);
+      border:1px solid rgba(34,48,91,.9);
+      color:var(--muted);
+      white-space:nowrap;
+    }
+    .tag.level-Critical{border-color:rgba(251,113,133,.65); color:#ffd0d7}
+    .tag.level-High{border-color:rgba(251,191,36,.65); color:#ffe9b0}
+    .tag.level-Medium{border-color:rgba(122,162,255,.65); color:#dbe6ff}
+    .tag.level-Low{border-color:rgba(74,222,128,.55); color:#d0ffe2}
+    .tag.level-Info{border-color:rgba(169,180,223,.55); color:rgba(169,180,223,.95)}
+    .body{
+      padding:16px;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+    }
+    .section{
+      background:rgba(18,28,58,.35);
+      border:1px solid rgba(34,48,91,.75);
+      border-radius:16px;
+      padding:14px;
+    }
+    .section h2{
+      margin:0 0 10px;
+      font-size:14px;
+      letter-spacing:.1px;
+    }
+    .ruleReason{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.65;
+      white-space:pre-wrap;
+    }
+    .infoSources{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.5;
+    }
+    .infoSourceRow{
+      margin:0;
+      padding:0;
+    }
+    .infoSourceRow + .infoSourceRow{
+      margin-top:2px;
+    }
+
+    /* --- summary_html styles (OpenAI output uses h4/p/ul/li/strong/code/br) --- */
+    .summary h4{
+      margin:14px 0 8px;
+      font-size:13px;
+      letter-spacing:.1px;
+      padding-left:10px;
+      border-left:3px solid rgba(122,162,255,.65);
+      color: rgba(231,236,255,.95);
+    }
+    .summary p{margin:8px 0; color:rgba(231,236,255,.92); line-height:1.75}
+    .summary ul, .summary ol{margin:8px 0 8px 1.2em; padding:0}
+    .summary li{margin:6px 0; color:rgba(231,236,255,.92); line-height:1.7}
+    .summary strong{
+      color:var(--text);
+      font-weight:750;
+      padding:0 .2em;
+      border-radius:8px;
+      background: linear-gradient(transparent 60%, rgba(122,162,255,.22) 60%);
+    }
+    .summary code{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 8px;
+      background: rgba(11,16,32,.6);
+      border: 1px solid rgba(34,48,91,.85);
+      color: rgba(231,236,255,.95);
+      white-space: nowrap;
+    }
+
+    .terms{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:10px;
+    }
+    @media (max-width: 860px){
+      .terms{grid-template-columns: 1fr}
+    }
+    .termCard{
+      background:rgba(11,16,32,.45);
+      border:1px solid rgba(34,48,91,.85);
+      border-radius:14px;
+      padding:12px;
+      min-width:0;
+    }
+    .termCard .term{
+      font-weight:700;
+      font-size:13px;
+      margin:0 0 8px;
+      word-break:break-word;
+    }
+    .termCard .exp{
+      margin:0;
+      color:rgba(231,236,255,.9);
+      line-height:1.7;
+      font-size:12px;
+      white-space:pre-wrap;
+    }
+    .subSectionTitle{
+      margin:16px 0 8px;
+      font-size:12px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:var(--muted);
+    }
+    .deepDive{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:10px;
+      margin-top:8px;
+    }
+    .deepDiveCard{
+      background:rgba(12,20,38,.6);
+    }
+
+    .footer{
+      margin-top:14px;
+      color:rgba(169,180,223,.75);
+      font-size:12px;
+      line-height:1.7;
+      text-align:center;
+    }
+    .btnRow{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px}
+    .linkbtn{
+      text-decoration:none;
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .linkbtn:hover{border-color:rgba(122,162,255,.65)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="crumb">
+        <!-- ../index.html は通常 "../index.html" でOK -->
+        <a href="../index.html">← 日次トップへ戻る</a>
+      </div>
+      <div class="chip">entry_id <strong class="mono">beee1bc21258c829</strong></div>
+    </div>
+
+    <div class="panel">
+      <div class="head">
+        <h1>Pickle in the Middle – Hijacking Vertex AI Model Uploads for Cross-Tenant RCE</h1>
+
+        <div class="meta">
+          <span>🗞️ Unit 42</span>
+          <span>🕒 2026-06-16T19:00:29+09:00</span>
+          <span>🔗 <a href="https://unit42.paloaltonetworks.com/hijacking-vertex-ai-model/" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
+        </div>
+
+        <div class="tags">
+          <span class="tag level-High">Impact: High</span>
+          <span class="tag">Vulnerability Disclosure</span>
+        </div>
+
+        <div class="btnRow">
+          <a class="linkbtn" href="https://unit42.paloaltonetworks.com/hijacking-vertex-ai-model/" target="_blank" rel="noopener noreferrer">原文リンク</a>
+          <a class="linkbtn" href="https://www.notifyhub.site/digest/2026/06/17/">日次トップ</a>
+        </div>
+      </div>
+
+      <div class="body">
+        
+        <div class="section">
+          <h2>Impact判定理由</h2>
+          <div class="ruleReason">リモートコード実行とテナント境界越えの可能性があり、Vertex AIを業務利用する組織ではMLパイプラインやサービスアカウント権限へ波及し得る。
+一方で、成立には脆弱なVertex AI Python SDK、該当するモデルアップロード経路、占有可能なバケット名などの条件が必要になる。
+情報源はUnit 42の研究公開で一次分析に近いが、公的な悪用確認やKEV掲載ではないため、ベース評価から引き上げずHighとした。</div>
+        </div>
+        <div class="section summary">
+          <h2>🧾 要約（ChatGPT / gpt-5.5-2026-04-23）</h2>
+          <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
+          <div><h4>概要</h4><p>Unit 42は、Google CloudのVertex AI Python SDKに、モデルアップロード処理とクラウドストレージバケット名の扱いが絡む脆弱性を確認したと報告した。攻撃者が未作成または再利用前提のバケット名を先取りする<code>bucket squatting</code>を使うと、利用者のモデル成果物が攻撃者管理領域へ流れ、<code>pickle</code>などのPythonシリアライズ処理を介して<strong>リモートコード実行</strong>につながり得る。成立条件は、<strong>脆弱なSDKや該当ワークフローの利用</strong>、予測可能または占有可能なバケット名、モデルのアップロードまたはロード処理がそろうことにある。影響は単一ジョブの失敗にとどまらず、学習・推論パイプラインのサービスアカウント権限、モデルレジストリ、CI/CD、<strong>テナント境界の信頼</strong>に波及し得る。現時点の入力情報からは、CVE番号、修正版、実悪用、Google Cloud側の恒久緩和策の詳細は確認できない。CSIRTはVertex AI利用部門、SDKバージョン、ステージングバケットの所有者、モデル取得元、最近のアップロード失敗や不審なバケット参照を優先して確認したい。</p></div>
+        </div>
+
+        <div class="section">
+          <h2>📌 キーワード解説</h2>
+          <div class="terms">
+            <div class="termCard">
+  <div class="term">bucket squatting（バケット占有）</div>
+  <p class="exp">未作成名を第三者が先取りする攻撃。DNS占有と似るが、クラウドストレージ名が標的になる。</p>
+</div>
+<div class="termCard">
+  <div class="term">RCE（リモートコード実行）</div>
+  <p class="exp">遠隔から任意コードが動く状態。単なる情報漏えいと違い、権限悪用や横展開の起点になる。</p>
+</div>
+<div class="termCard">
+  <div class="term">pickle（Python直列化）</div>
+  <p class="exp">Pythonのオブジェクト直列化機能。JSONと違い、復元時にコード実行面が生じやすい。</p>
+</div>
+<div class="termCard">
+  <div class="term">cross-tenant（テナント間影響）</div>
+  <p class="exp">複数顧客の境界を越えて影響すること。単一テナント内の設定不備より調査範囲が広い。</p>
+</div>
+          </div>
+          <h3 class="subSectionTitle">深掘り解説</h3>
+          <div class="deepDive">
+            <div class="termCard deepDiveCard">
+  <div class="term">管理サービスの一時バケットを信頼境界として扱う理由</div>
+  <p class="exp">AIや分析基盤では、利用者が明示的に意識しない一時バケットやステージング領域が処理の中継点になる。ここで重要なのは、計算資源そのものではなく、SDKがどの名前のバケットへ何を置き、誰の権限で読み戻すかという制御フローにある。Cloud Storageのようにバケット名が広い名前空間で一意になるサービスでは、未作成の名前、予測可能な名前、削除後に再利用され得る名前が攻撃面になる。
+
+具体例として、あるMLチームがVertex AI向けSDKでモデルをアップロードする際、SDKがプロジェクトIDやリージョンからステージングバケット名を組み立てる運用を考える。そのバケットがまだ作成されておらず、攻撃者が同名を先に取得できる場合、アップロード先や読み戻し先の信頼が崩れる。さらにモデル形式にpickleのような復元時コード実行リスクを持つ形式が含まれると、単なる誤配送ではなく、処理基盤上のコード実行へ変わる。
+
+実務上は、脆弱性名だけを追うより、管理外のバケット名がログに出ていないか、ステージングバケットの所有プロジェクトが想定どおりか、SDKやCI/CDが自動生成する名前に外部から取得可能な余地がないかを確認する方が早い。封じ込めではSDK更新だけでなく、専用バケットの事前作成、所有者検証、組織ポリシーによる外部バケット利用制限、モデル形式の許可リスト化を組み合わせたい。</p>
+</div>
+          </div>
+        </div>
+
+        
+
+        <div class="section">
+          <h2>🕘 生成情報</h2>
+          <div class="ruleReason">
+対象期間：2026-06-16T06:00:00+09:00 〜 2026-06-17T06:00:00+09:00
+生成時刻：2026-06-17T07:15:34.936950+09:00
+免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      notifyhub.site
+    </div>
+  </div>
+</body>
+</html>
