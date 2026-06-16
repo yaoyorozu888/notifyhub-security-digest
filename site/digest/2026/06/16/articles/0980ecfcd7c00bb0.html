@@ -1,0 +1,334 @@
+<!-- article.html テンプレート（生成用） (例: /digest/YYYY/MM/DD/articles/<entry_id>.html)
+     サーバ側（Function）で {{...}} を置換して出力してください。
+-->
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/favicon-192.png" />
+  <title>令和8年度「情報バリアフリー役務提供事業推進助成金」の交付決定 | NotifyHub Cybersecurity Daily Report</title>
+  <style>
+    :root{
+      --bg:#0b1020; --panel:#0f1730; --panel2:#121c3a;
+      --text:#e7ecff; --muted:#a9b4df; --line:#22305b;
+      --accent:#7aa2ff; --good:#4ade80; --warn:#fbbf24; --bad:#fb7185;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+      --radius:18px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      background: radial-gradient(1000px 700px at 20% -10%, rgba(122,162,255,.25), transparent 60%),
+                  radial-gradient(900px 600px at 90% 10%, rgba(251,113,133,.12), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+    }
+    a{color:inherit}
+    .wrap{max-width:960px; margin:0 auto; padding:22px 18px 44px}
+    .topbar{
+      display:flex; justify-content:space-between; align-items:center; gap:12px;
+      margin-bottom:12px;
+    }
+    .crumb a{
+      text-decoration:none;
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .crumb a:hover{border-color:rgba(122,162,255,.65)}
+    .chip{
+      display:inline-flex; align-items:center; gap:8px;
+      background:rgba(27,38,80,.75);
+      border:1px solid rgba(34,48,91,.9);
+      padding:7px 10px; border-radius:999px;
+      font-size:12px; color:var(--muted);
+      backdrop-filter: blur(10px);
+      white-space:nowrap;
+    }
+    .chip strong{color:var(--text); font-weight:650}
+    .panel{
+      background: linear-gradient(180deg, rgba(15,23,48,.9), rgba(15,23,48,.75));
+      border:1px solid rgba(34,48,91,.9);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .head{
+      padding:16px 16px 12px;
+      border-bottom:1px solid rgba(34,48,91,.9);
+      background:rgba(18,28,58,.55);
+    }
+    h1{
+      margin:0;
+      font-size:20px;
+      line-height:1.35;
+      letter-spacing:.15px;
+    }
+    .meta{
+      margin-top:10px;
+      display:flex; gap:10px; flex-wrap:wrap;
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.6;
+    }
+    .meta a{color:var(--muted)}
+    .meta a:hover{color:var(--accent)}
+    .tags{
+      margin-top:12px;
+      display:flex; gap:8px; flex-wrap:wrap;
+    }
+    .tag{
+      font-size:11px;
+      padding:6px 9px;
+      border-radius:999px;
+      background:rgba(27,38,80,.65);
+      border:1px solid rgba(34,48,91,.9);
+      color:var(--muted);
+      white-space:nowrap;
+    }
+    .tag.level-Critical{border-color:rgba(251,113,133,.65); color:#ffd0d7}
+    .tag.level-High{border-color:rgba(251,191,36,.65); color:#ffe9b0}
+    .tag.level-Medium{border-color:rgba(122,162,255,.65); color:#dbe6ff}
+    .tag.level-Low{border-color:rgba(74,222,128,.55); color:#d0ffe2}
+    .tag.level-Info{border-color:rgba(169,180,223,.55); color:rgba(169,180,223,.95)}
+    .body{
+      padding:16px;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+    }
+    .section{
+      background:rgba(18,28,58,.35);
+      border:1px solid rgba(34,48,91,.75);
+      border-radius:16px;
+      padding:14px;
+    }
+    .section h2{
+      margin:0 0 10px;
+      font-size:14px;
+      letter-spacing:.1px;
+    }
+    .ruleReason{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.65;
+      white-space:pre-wrap;
+    }
+    .infoSources{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.5;
+    }
+    .infoSourceRow{
+      margin:0;
+      padding:0;
+    }
+    .infoSourceRow + .infoSourceRow{
+      margin-top:2px;
+    }
+
+    /* --- summary_html styles (OpenAI output uses h4/p/ul/li/strong/code/br) --- */
+    .summary h4{
+      margin:14px 0 8px;
+      font-size:13px;
+      letter-spacing:.1px;
+      padding-left:10px;
+      border-left:3px solid rgba(122,162,255,.65);
+      color: rgba(231,236,255,.95);
+    }
+    .summary p{margin:8px 0; color:rgba(231,236,255,.92); line-height:1.75}
+    .summary ul, .summary ol{margin:8px 0 8px 1.2em; padding:0}
+    .summary li{margin:6px 0; color:rgba(231,236,255,.92); line-height:1.7}
+    .summary strong{
+      color:var(--text);
+      font-weight:750;
+      padding:0 .2em;
+      border-radius:8px;
+      background: linear-gradient(transparent 60%, rgba(122,162,255,.22) 60%);
+    }
+    .summary code{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 8px;
+      background: rgba(11,16,32,.6);
+      border: 1px solid rgba(34,48,91,.85);
+      color: rgba(231,236,255,.95);
+      white-space: nowrap;
+    }
+
+    .terms{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:10px;
+    }
+    @media (max-width: 860px){
+      .terms{grid-template-columns: 1fr}
+    }
+    .termCard{
+      background:rgba(11,16,32,.45);
+      border:1px solid rgba(34,48,91,.85);
+      border-radius:14px;
+      padding:12px;
+      min-width:0;
+    }
+    .termCard .term{
+      font-weight:700;
+      font-size:13px;
+      margin:0 0 8px;
+      word-break:break-word;
+    }
+    .termCard .exp{
+      margin:0;
+      color:rgba(231,236,255,.9);
+      line-height:1.7;
+      font-size:12px;
+      white-space:pre-wrap;
+    }
+    .subSectionTitle{
+      margin:16px 0 8px;
+      font-size:12px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:var(--muted);
+    }
+    .deepDive{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:10px;
+      margin-top:8px;
+    }
+    .deepDiveCard{
+      background:rgba(12,20,38,.6);
+    }
+
+    .footer{
+      margin-top:14px;
+      color:rgba(169,180,223,.75);
+      font-size:12px;
+      line-height:1.7;
+      text-align:center;
+    }
+    .btnRow{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px}
+    .linkbtn{
+      text-decoration:none;
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .linkbtn:hover{border-color:rgba(122,162,255,.65)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="crumb">
+        <!-- ../index.html は通常 "../index.html" でOK -->
+        <a href="../index.html">← 日次トップへ戻る</a>
+      </div>
+      <div class="chip">entry_id <strong class="mono">0980ecfcd7c00bb0</strong></div>
+    </div>
+
+    <div class="panel">
+      <div class="head">
+        <h1>令和8年度「情報バリアフリー役務提供事業推進助成金」の交付決定</h1>
+
+        <div class="meta">
+          <span>🗞️ NICT NOTICE</span>
+          <span>🕒 2026-06-15T14:00:00+09:00</span>
+          <span>🔗 <a href="#" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
+        </div>
+
+        <div class="tags">
+          <span class="tag level-Info">Impact: Info</span>
+          <span class="tag">Other</span>
+        </div>
+
+        <div class="btnRow">
+          <a class="linkbtn" href="#" target="_blank" rel="noopener noreferrer">原文リンク</a>
+          <a class="linkbtn" href="https://www.notifyhub.site/digest/2026/06/16/">日次トップ</a>
+        </div>
+      </div>
+
+      <div class="body">
+        
+        <div class="section">
+          <h2>Impact判定理由</h2>
+          <div class="ruleReason">入力情報はNICT NOTICEによる助成金交付決定の周知であり、脆弱性、攻撃観測、侵害事実は含まれない。
+運用影響は関係部署の調達・委託先管理・個人情報取扱い確認に限定され、CSIRTの即時封じ込め対象ではない。
+公的機関の情報だが、注意喚起やKEV相当の悪用シグナルではないため、情報源補正による引き上げは行わない。</div>
+        </div>
+        <div class="section summary">
+          <h2>🧾 要約（ChatGPT / gpt-5.5-2026-04-23）</h2>
+          <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
+          <h4>概要</h4><p>NICT NOTICEは、令和8年度「情報バリアフリー役務提供事業推進助成金」の交付決定を公表した。入力情報から読み取れる範囲では、脆弱性、攻撃観測、漏えい、悪用手口の告知ではなく、情報通信サービスのアクセシビリティ向上を支援する行政上の採択・交付情報に位置づく。CSIRT観点では直接の緊急対応案件ではないが、採択事業が組織内の利用者支援サービス、外部クラウド、本人確認、問い合わせ窓口、利用ログ管理に接続する場合、<strong>委託先管理</strong>や<strong>個人情報の取扱い</strong>が後続リスクになり得る。攻撃者がこの発表自体を悪用するなら、助成金や採択通知を装う<strong>なりすまし連絡</strong>、申請支援を口実にした認証情報詐取、関係部署への請求・契約詐欺が現実的な経路となる。影響範囲は現時点では制度・事業運営上の周知に限られ、組織ネットワークへ即時に波及する材料は確認できない。未確認事項として、交付先、対象サービス、扱うデータ種別、セキュリティ要件、利用開始時期、外部委託の有無は入力から判断できないため、関係部門が該当する場合のみ調達・契約・個人情報保護の観点で確認する必要がある。</p>
+        </div>
+
+        <div class="section">
+          <h2>📌 キーワード解説</h2>
+          <div class="terms">
+            <div class="termCard">
+  <div class="term">情報バリアフリー</div>
+  <p class="exp">使いやすさ一般ではなく、障害や高齢化による利用障壁の低減を指す。本人情報を扱う支援機能と結び付きやすい。</p>
+</div>
+<div class="termCard">
+  <div class="term">助成金</div>
+  <p class="exp">補助金と混同されやすいが、要件適合後の交付管理が重要となる。偽通知や申請代行詐欺の口実にもなる。</p>
+</div>
+<div class="termCard">
+  <div class="term">役務提供</div>
+  <p class="exp">物品納入ではなく、継続的なサービス提供を指す。運用委託、ログ管理、利用者対応の責任分界が問題になりやすい。</p>
+</div>
+<div class="termCard">
+  <div class="term">アクセシビリティ（accessibility）</div>
+  <p class="exp">セキュリティ例外ではなく、正規利用を可能にする設計原則となる。利便性だけで認証を弱める判断と対立する。</p>
+</div>
+          </div>
+          <h3 class="subSectionTitle">深掘り解説</h3>
+          <div class="deepDive">
+            <div class="termCard deepDiveCard">
+  <div class="term">アクセシビリティ施策をCSIRTが見るときの補助線</div>
+  <p class="exp">アクセシビリティ関連の施策は、脆弱性対応のような即応案件に見えにくい。しかし実務では、利用者支援のために新しい連絡経路、認証代替手段、外部サービス、委託事業者が追加されることが多く、攻撃面の変化として扱う価値がある。
+
+典型例は、障害のある利用者向けに電話や有人チャットで手続きを代行する窓口を設けるケースとなる。画面操作が難しい利用者を支援する目的は正当だが、本人確認を簡略化しすぎると、攻撃者が家族、支援者、委託先担当者を装ってアカウント変更や情報開示を試みる余地が生まれる。ここで必要なのは「支援を止める」判断ではなく、通常のオンライン認証とは別のリスクを前提にした確認手順、記録、承認分離となる。
+
+CSIRTが確認すべき点は三つある。第一に、誰がどの情報へアクセスできるか。支援窓口が氏名、連絡先、障害に関する配慮情報、契約情報、利用ログを扱うなら、個人情報管理の範囲が広がる。第二に、例外手続きのログが残るか。通常の認証ログだけでは、電話代行や手動変更の痕跡を追えない。第三に、委託先のインシデント連絡経路が契約に入っているか。助成事業では複数組織が関与しやすく、初動時に責任分界が曖昧になりやすい。
+
+例えば、利用者から「申請代行業者を名乗る相手に身分証画像を送った」と連絡があった場合、CSIRTはマルウェア感染よりも、なりすまし、個人情報流出、業務委託先の関与有無を先に切り分ける必要がある。アクセシビリティ施策はセキュリティの例外ではなく、通常と異なる正規経路が増える変更管理として扱うと判断のブレを減らせる。</p>
+</div>
+          </div>
+        </div>
+
+        
+
+        <div class="section">
+          <h2>🕘 生成情報</h2>
+          <div class="ruleReason">
+対象期間：2026-06-15T06:00:00+09:00 〜 2026-06-16T06:00:00+09:00
+生成時刻：2026-06-16T09:05:14.669910+09:00
+免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      notifyhub.site
+    </div>
+  </div>
+</body>
+</html>

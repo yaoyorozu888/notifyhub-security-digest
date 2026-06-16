@@ -1,0 +1,470 @@
+{
+  "date": "2026-06-16",
+  "window": {
+    "from": "2026-06-15T06:00:00+09:00",
+    "to": "2026-06-16T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 31
+  },
+  "generated_at_jst": "2026-06-16T09:05:14.669910+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "Anthropic、先進AIモデルへのアクセスを全ユーザー向けに無効化",
+      "source_name": "Reuters",
+      "published_at": "2026-06-15T18:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要米政府の輸出規制により、Anthropicは先進モデルFable 5とMythos 5へのアクセスを全ユーザーで無効化した。外国国民向け制限がきっかけだが、コンプライアンスのためグローバルに適用された。国家安全保障を理由とした措置で、AI企業の実務対応が急務となる。Anthropicは誤解があるとして復旧を模索中だ。他のClaudeモデルは影響を受けて…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://www.reuters.com/technology/us-blocks-foreign-access-anthropics-most-advanced-ai-models-axios-reports-2026-06-13/",
+      "selection_reason": "6月15日の具体的な政府指示に基づくモデル無効化という新規事象で、AI分野の規制影響を直接示す。類似の汎用予測レポートではなく実務対応が必要な事例として優先。",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "Anthropic disables top-tier AI models after US order",
+          "url": "https://www.reuters.com/technology/us-blocks-foreign-access-anthropics-most-advanced-ai-models-axios-reports-2026-06-13/",
+          "source_type": "news"
+        },
+        {
+          "title": "Anthropic disables Fable and Mythos AI models after U.S. government export ban",
+          "url": "https://fortune.com/2026/06/13/anthropic-disables-fable-mythos-export-controls-national-security-threat/",
+          "source_type": "news"
+        },
+        {
+          "title": "US asks Anthropic to block global access to top AI models",
+          "url": "https://www.aljazeera.com/news/2026/6/14/us-asks-anthropic-to-block-global-access-to-top-ai-models-why-it-matters",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "Zapier、AI機能の価格体系をモデル階層制に変更",
+      "source_name": "Zapier",
+      "published_at": "2026-06-15T16:02:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Other",
+      "summary_preview": "概要ZapierはAI by Zapierのステップ価格を6月15日からモデル階層制へ移行した。Standard、Advanced、Premiumの各階層でタスク消費量が異なる。モデル選択がコストに直結するため、利用者はタスク量と性能のバランスを再評価する必要がある。FreeからEnterpriseまで全プランに適用される変更だ。AI統合のコスト管理がIT…",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://help.zapier.com/hc/en-us/articles/46597632373389-AI-by-Zapier-new-model-based-pricing-starting-June-15-2026",
+      "selection_reason": "6月15日開始の具体的な価格変更で、ITツールのAI統合実務に直結する更新。トレンド予測ではなく即時対応が必要な運用変更として選定。",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "AI by Zapier: new model-based pricing starting June 15, 2026",
+          "url": "https://help.zapier.com/hc/en-us/articles/46597632373389-AI-by-Zapier-new-model-based-pricing-starting-June-15-2026",
+          "source_type": "official"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "Anthropic事例が示すAIモデルへの輸出規制拡大",
+      "source_name": "Fortune",
+      "published_at": "2026-06-15T23:29:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要米政府の指示でAnthropicは先進AIモデルをグローバルに無効化した事例は、輸出規制がAIセキュリティに直結することを示す。外国アクセス制限がきっかけだが、企業は自社利用モデルのコンプライアンス確認が求められる。国家安全保障観点からの措置拡大で、AI導入時のリスク評価が変わる。復旧交渉の行方が今後の運用指針に影響する。",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://fortune.com/2026/06/13/anthropic-disables-fable-mythos-export-controls-national-security-threat/",
+      "selection_reason": "AI分野の規制がサイバーセキュリティ実務に波及する具体例。6月15日の対応で、企業セキュリティ担当者の監視対象として新規性が高い。",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "Anthropic disables Fable and Mythos AI models after U.S. government export ban",
+          "url": "https://fortune.com/2026/06/13/anthropic-disables-fable-mythos-export-controls-national-security-threat/",
+          "source_type": "news"
+        },
+        {
+          "title": "Anthropic Disables AI Access for Foreign Nationals",
+          "url": "https://www.youtube.com/watch?v=U98FVsjvEkM",
+          "source_type": "news"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "5bed962f2ad03bd9",
+      "title": "CVE-2026-54420 LiteSpeed cPanel Plugin UNIX Symbolic Link (Symlink) Following Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-06-15T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要CISA KEVに、CVE-2026-54420としてLiteSpeed / cPanel PluginのUNIXシンボリックリンク追跡に関する脆弱性が掲載された。KEV掲載は、少なくとも何らかの形で実環境での悪用が確認されたことを示すため、単なる公開情報より優先度を上げて扱う必要がある。想定される悪用は、プラグイン処理がシンボリックリンクを通常ファイ…",
+      "article_path": "articles/5bed962f2ad03bd9.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "5a2acf0024c73f91",
+      "title": "CVE-2026-20262 Cisco Catalyst SD-WAN Manager Directory or Path Traversal Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-06-15T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要CISA KEVに、CVE-2026-20262として Cisco Catalyst SD-WAN Manager のディレクトリまたはパストラバーサル脆弱性が掲載された。KEV掲載は、少なくとも何らかの形で実際の悪用が確認されたことを示すため、単なる脆弱性公開より優先度を上げて扱う必要がある。悪用が成立すると、本来アクセスできないファイルやパスへ到達…",
+      "article_path": "articles/5a2acf0024c73f91.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "52b3f39edb39c4b7",
+      "title": "Chinese Hackers Abused Google Workspace Rules to Steal Research and Defense Emails",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-15T19:44:06+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要The Hacker Newsは、中国関連のスパイ活動グループが北米の医療、学術、軍事研究ネットワークに1年以上潜伏し、研究・防衛関連のメールを窃取したと報じた。侵入口はREDCap研究サーバーに置かれたバックドアで、そこから認証情報を奪い、被害者のGoogle Workspaceのメール規則を変更してメッセージを複製する流れとされる。攻撃者視点では、…",
+      "article_path": "articles/52b3f39edb39c4b7.html",
+      "original_url": "https://thehackernews.com/2026/06/chinese-hackers-abused-google-workspace.html"
+    },
+    {
+      "entry_id": "4d95e2385efc3e04",
+      "title": "North Korean Hackers Are Turning Developer Tools Into Malware Delivery Channels",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-15T19:32:52+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Phishing",
+      "summary_preview": "概要The Hacker Newsは、Proofpointの報告を基に、北朝鮮関連とされるContagious Interviewに類似した2つの攻撃キャンペーンが、開発者向けの採用・コードレビューを口実にフィッシングを仕掛けていると報じた。攻撃者は開発者が日常的に触れるコード、レビュー依頼、開発支援ツールへの信頼を利用し、リンクやファイル、実行手順を通じ…",
+      "article_path": "articles/4d95e2385efc3e04.html",
+      "original_url": "https://thehackernews.com/2026/06/north-korean-hackers-are-turning.html"
+    },
+    {
+      "entry_id": "cc2dcc9ea2911265",
+      "title": "LiteLLM Vulnerability Chain Lets Low-Privilege Users Take Over AI Gateway Servers",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-15T16:39:01+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要The Hacker Newsは、Obsidian Securityの調査として、LiteLLMプロキシ上の既定の低権限アカウントから3つの脆弱性を連鎖させ、管理者権限取得とサーバ上でのコード実行に至る問題を報じている。LiteLLMは複数のAIモデル事業者への呼び出しをOpenAI互換インターフェースに集約するAIゲートウェイであり、侵害されると各プ…",
+      "article_path": "articles/cc2dcc9ea2911265.html",
+      "original_url": "https://thehackernews.com/2026/06/litellm-vulnerability-chain-lets-low.html"
+    },
+    {
+      "entry_id": "f17bf3e7adbca56b",
+      "title": "One-Click Microsoft 365 Copilot Flaw Could Have Let Attackers Steal Emails, Files, and MFA Codes",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-15T15:09:05+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要The Hacker Newsは、Varonis Threat LabsがMicrosoft 365 Copilot Enterprise Searchに関連する3つの不具合を連鎖させ、SearchLeakと呼ぶワンクリック型の情報流出経路を示したと報じた。攻撃者は正規のmicrosoft.comリンクを入口にできるため、偽ドメインや不審URLを主眼に…",
+      "article_path": "articles/f17bf3e7adbca56b.html",
+      "original_url": "https://thehackernews.com/2026/06/one-click-microsoft-365-copilot-flaw.html"
+    },
+    {
+      "entry_id": "f3ab799219711033",
+      "title": "⚡ Weekly Recap: Chrome 0-Day, UniFi Exploits, macOS Stealers, VPN Flaw and More",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-15T13:49:29+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "Stuff broke again. Not in a movie way. An old tool was left exposed. An abandoned package was abused. A deprecated feature was still running in prod.\n\nThis week is the same lesson…",
+      "article_path": "articles/f3ab799219711033.html",
+      "original_url": "https://thehackernews.com/2026/06/weekly-recap-chrome-0-day-unifi.html"
+    },
+    {
+      "entry_id": "2ab8da0009213786",
+      "title": "The Onboarding Password Mistake That Creates Unnecessary Risk",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-15T11:30:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Credential Theft",
+      "summary_preview": "概要The Hacker Newsの記事は、新入社員オンボーディング時に配布する初回パスワードが、メールやSMSで送られたまま変更されない、複数アカウントで使い回される、といった運用上の弱点を取り上げている。攻撃者から見ると、初回パスワードは本人確認前の境界に近く、盗聴・誤送信・転送メールから認証情報窃取につながる余地がある。影響は単一アカウントの不正ログ…",
+      "article_path": "articles/2ab8da0009213786.html",
+      "original_url": "https://thehackernews.com/2026/06/the-onboarding-password-mistake-that.html"
+    },
+    {
+      "entry_id": "151399d5c77085f4",
+      "title": "152 Chrome Wallpaper Extensions with 105K Installs Linked to Adware and Fake Traffic",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-15T11:07:50+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Malware",
+      "summary_preview": "概要The Hacker Newsは、ライブ壁紙付き新規タブ機能を装う152件のGoogle Chrome拡張機能が、PUPの配布や広告系の偽装トラフィック生成に関与したと報じた。拡張機能は38のChrome Web Store公開者アカウントに分散し、tabplugins[.]com、yowgames[.]com、chromewallpaper[.]co…",
+      "article_path": "articles/151399d5c77085f4.html",
+      "original_url": "https://thehackernews.com/2026/06/152-chrome-wallpaper-extensions-with.html"
+    },
+    {
+      "entry_id": "f71c887472efbd86",
+      "title": "Popular WordPress Plugin Scripts Tampered to Plant Hidden Backdoors on Sites",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-15T09:59:38+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "An attacker tampered with trusted JavaScript files used by WordPress sites running PushEngage, OptinMonster, and TrustPulse, turning those files into a way to break into the sites…",
+      "article_path": "articles/f71c887472efbd86.html",
+      "original_url": "https://thehackernews.com/2026/06/popular-wordpress-plugin-scripts.html"
+    },
+    {
+      "entry_id": "57f5c574824fb534",
+      "title": "Sniper Dz Scams Target MENA Users via Fake Facebook Offers and Browser Alerts",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-15T06:30:22+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Scam/Fraud",
+      "summary_preview": "概要The Hacker Newsは、Group-IBの調査として、Sniper Dzと呼ばれる詐欺活動が中東・北アフリカ地域の利用者を狙い、政治家、公人、信頼組織を装ったFacebookアカウントで偽の無料通信プラン、補償金、政府補助金を宣伝していたと報じた。悪用の中心は脆弱性攻撃ではなく、信頼できる主体のなりすましと、偽オファーから外部ページやブラウザ…",
+      "article_path": "articles/57f5c574824fb534.html",
+      "original_url": "https://thehackernews.com/2026/06/sniper-dz-scams-target-mena-users-via.html"
+    },
+    {
+      "entry_id": "8a8e3b150d168740",
+      "title": "Palo Alto Warns of Active Exploitation of PAN-OS GlobalProtect VPN Flaw",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-15T06:17:32+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要The Hacker Newsは、Palo Alto NetworksがPAN-OSのGlobalProtectポータルに対する能動的な悪用を観測したと報じた。対象はCVE-2026-0257で、CVSSは7.8、PAN-OSのポータルおよびゲートウェイ構成要素に存在する認証バイパスにより、攻撃者が正規認証を迂回して不正アクセスを得る可能性がある。Gl…",
+      "article_path": "articles/8a8e3b150d168740.html",
+      "original_url": "https://thehackernews.com/2026/06/palo-alto-warns-of-active-exploitation.html"
+    },
+    {
+      "entry_id": "0aeb03c761a6c831",
+      "title": "Evil MSI Background: BASE64 Statistical Analysis, (Mon, Jun 15th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-06-15T07:16:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Malware",
+      "summary_preview": "概要SANS ISCの記事は、MSIインストーラの背景画像などに悪意ある内容を隠す手口に関連し、Base64文字列の統計的な偏りを手掛かりにする分析を取り上げている。攻撃者は画像やリソースにペイロード、設定、次段階取得用データを埋め込み、MSI実行時のカスタム処理で復元させることで、拡張子や表層的なファイル種別に依存した検査をすり抜けやすくする。成立条件は…",
+      "article_path": "articles/0aeb03c761a6c831.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33072"
+    },
+    {
+      "entry_id": "c9e77d0ecd4a7abe",
+      "title": "ISC Stormcast For Monday, June 15th, 2026 https://isc.sans.edu/podcastdetail/9972, (Mon, Jun 15th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-06-15T02:00:02+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要SANS ISCの「ISC Stormcast For Monday, June 15th, 2026」は日次の脅威概況を示す項目だが、入力には番組タイトルとURLのみがあり、扱われた脆弱性、攻撃手法、観測量、IOCは確認できない。現時点で判断できるのは、CSIRTが原文確認の起点として扱うべき情報であり、特定製品への緊急対応や封じ込めを開始する根拠に…",
+      "article_path": "articles/c9e77d0ecd4a7abe.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33076"
+    },
+    {
+      "entry_id": "925fcb62e2637c21",
+      "title": "Defenseclaw for On-Prem AI SOC Workflow at Black Hat Asia",
+      "source_name": "Cisco Security Blog",
+      "category": "reporting",
+      "published_at": "2026-06-15T12:00:52+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要Cisco Security Blogは、Black Hat AsiaでOllama、NVIDIA GPU、Open WebUI、OpenClaw、DefenseClaw、Cisco AI Defense、MCP連携、Splunk監査可視性を組み合わせたオンプレミス型AI SOCワークフローを検証した内容を紹介している。脆弱性や侵害の公表ではなく、SO…",
+      "article_path": "articles/925fcb62e2637c21.html",
+      "original_url": "https://blogs.cisco.com/security/bhasia-2026-defenseclaw/"
+    },
+    {
+      "entry_id": "9f9b768b216f60ca",
+      "title": "Cisco Secure Access with MCP Infrastructure at Black Hat Asia 2026",
+      "source_name": "Cisco Security Blog",
+      "category": "reporting",
+      "published_at": "2026-06-15T12:00:40+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要Cisco Security Blogは、Black Hat Asia 2026のネットワーク運用環境でCisco Secure AccessがDNS解決とセキュリティ機能を提供したことを紹介している。入力情報から読み取れる範囲では、脆弱性公表や侵害報告ではなく、大規模イベントネットワークでのセキュアアクセス運用事例に近い内容となる。悪用シナリオとして…",
+      "article_path": "articles/9f9b768b216f60ca.html",
+      "original_url": "https://blogs.cisco.com/security/bhasia-2026-noc-secure-access/"
+    },
+    {
+      "entry_id": "464f0bb5a8150059",
+      "title": "The Essence of Black Hat – Collaboration with Partners",
+      "source_name": "Cisco Security Blog",
+      "category": "reporting",
+      "published_at": "2026-06-15T12:00:34+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要Cisco Security Blogの記事は、Black Hat Asia 2026のネットワーク運用環境で、Palo Alto XSIAMをCisco XDRへ統合し、脅威ハンターへ追加コンテキストを渡す取り組みを紹介している。脆弱性悪用や侵害発生の報告ではなく、複数ベンダー製品のテレメトリを相関させ、調査時の判断材料を増やす運用事例として読む位置…",
+      "article_path": "articles/464f0bb5a8150059.html",
+      "original_url": "https://blogs.cisco.com/security/bhasia-2026-noc-the-essence-of-black-hat/"
+    },
+    {
+      "entry_id": "7f274c4d16c65662",
+      "title": "Black Hat Asia 2026: A Decade in Singapore",
+      "source_name": "Cisco Security Blog",
+      "category": "reporting",
+      "published_at": "2026-06-15T12:00:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要Cisco Security Blogの記事「Black Hat Asia 2026: A Decade in Singapore」は、CiscoがBlack Hat Asia 2026でSecurity Cloud Providerとして関与し、同イベントの保護に10年携わってきたことと、将来のSOCに向けた取り組みを紹介する内容となっている。現時点…",
+      "article_path": "articles/7f274c4d16c65662.html",
+      "original_url": "https://blogs.cisco.com/security/black-hat-asia-2026-a-decade-in-singapore/"
+    },
+    {
+      "entry_id": "b6504e19fbe0b8a3",
+      "title": "Black Hat Asia 2026: Threat Hunters’ Corner",
+      "source_name": "Cisco Security Blog",
+      "category": "reporting",
+      "published_at": "2026-06-15T12:00:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要Cisco Security Blogは、Black Hat Asia 2026のネットワーク運用拠点で脅威ハンターが見つけた興味深い観測結果を紹介した。入力情報からは具体的なIOC、攻撃手法、影響を受けた製品、CVEは読み取れず、現時点では即時パッチ適用や封じ込めを要する注意喚起とは判断しにくい。イベント会場ネットワークでは、多数の研究者、デモ環境、…",
+      "article_path": "articles/b6504e19fbe0b8a3.html",
+      "original_url": "https://blogs.cisco.com/security/bhasia-2026-noc-threat-hunters-corner/"
+    },
+    {
+      "entry_id": "1f3c64e04f7f0815",
+      "title": "Unveiling the Power of Integration: XDR, Splunk, Corelight, Arista and Palo Alto Networks in Action at Black Hat Asia",
+      "source_name": "Cisco Security Blog",
+      "category": "reporting",
+      "published_at": "2026-06-15T12:00:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要Cisco Security Blogの記事は、Black Hat AsiaのNOCで、Cisco XDR、Splunk、Corelight、Arista、Palo Alto Networksなどを連携させ、複数ベンダー環境で可視化と対応を高めた事例を紹介している。脆弱性や侵害の告知ではなく、イベント会場ネットワークの防御運用を題材にしたベンダー発信の…",
+      "article_path": "articles/1f3c64e04f7f0815.html",
+      "original_url": "https://blogs.cisco.com/security/bhasia-2026-noc-unveiling-the-power-of-integration/"
+    },
+    {
+      "entry_id": "2318a3008e1df6df",
+      "title": "Public and Private Medical Community Targeted by China-Nexus Threat Actor Pursuing Artificial Intelligence, Cyber, Medical, and National Defense Research",
+      "source_name": "Mandiant",
+      "category": "reporting",
+      "published_at": "2026-06-15T14:00:00+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "Written by: Patrick Whitsell, John McGuiness\n\n\nGoogle Threat Intelligence Group (GTIG) has identified a sophisticated campaign attributed to UNC6508, a People's Republic of China …",
+      "article_path": "articles/2318a3008e1df6df.html",
+      "original_url": "https://cloud.google.com/blog/topics/threat-intelligence/prc-targets-us-medical-research/"
+    },
+    {
+      "entry_id": "0980ecfcd7c00bb0",
+      "title": "令和8年度「情報バリアフリー役務提供事業推進助成金」の交付決定",
+      "source_name": "NICT NOTICE",
+      "category": "reporting",
+      "published_at": "2026-06-15T05:00:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要NICT NOTICEは、令和8年度「情報バリアフリー役務提供事業推進助成金」の交付決定を公表した。入力情報から読み取れる範囲では、脆弱性、攻撃観測、漏えい、悪用手口の告知ではなく、情報通信サービスのアクセシビリティ向上を支援する行政上の採択・交付情報に位置づく。CSIRT観点では直接の緊急対応案件ではないが、採択事業が組織内の利用者支援サービス、外部…",
+      "article_path": "articles/0980ecfcd7c00bb0.html",
+      "original_url": "/press/2026/06/15-1.html"
+    },
+    {
+      "entry_id": "a7ac6ced10e83673",
+      "title": "ウェビナー「手作業のアカウント管理が限界と感じている担当者へ Okta Lifecycle Managementで叶えるアイデンティティ運用自動化」を 6 / 18 開催",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-14T23:10:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要ScanNetSecurityが、Okta Lifecycle Managementによるアイデンティティ運用自動化をテーマにした6月18日のウェビナー開催を告知した。脆弱性公表や侵害報告ではなく、手作業の入退社・異動アカウント処理が増えた組織に向け、プロビジョニング、権限変更、無効化の自動化を扱う内容と読める。攻撃者に直接悪用される新情報ではないが、…",
+      "article_path": "articles/a7ac6ced10e83673.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/15/55496.html"
+    },
+    {
+      "entry_id": "12840a82be07366e",
+      "title": "BELFORアジアへのサイバー攻撃、犯行グループ「INC Ransom」が盗んだデータを公開",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-14T23:05:11+00:00",
+      "impact_level": "High",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要ScanNetSecurityは、BELFORアジアに対するサイバー攻撃について、犯行グループ「INC Ransom」が盗んだと主張するデータを公開したと報じた。現時点の入力情報から確認できる中心事象は、暗号化被害そのものよりも窃取データの暴露にあり、典型的には侵入後に認証情報、業務文書、顧客・取引先情報を持ち出し、支払い圧力としてリークサイトへ掲載す…",
+      "article_path": "articles/12840a82be07366e.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/15/55495.html"
+    },
+    {
+      "entry_id": "e3d9937801d58fad",
+      "title": "食創にランサムウェア攻撃、サーバが暗号化被害",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-14T23:05:08+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要ScanNetSecurityは、「食創にランサムウェア攻撃、サーバが暗号化被害」と題し、食創がランサムウェア攻撃を受け、サーバ暗号化の被害が発生した事案を報じている。現時点で入力情報から確認できる範囲はサーバ暗号化までで、侵入経路、攻撃グループ名、データ窃取の有無、復旧状況、業務停止範囲、取引先影響は未確認。攻撃者は一般に、VPN、RDP、脆弱な公開…",
+      "article_path": "articles/e3d9937801d58fad.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/15/55494.html"
+    },
+    {
+      "entry_id": "4efadd4a83ac78d4",
+      "title": "全会員のパスワードを一新 ～「ミドルの転職」へのリスト型攻撃で不正ログイン 2,503 件",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-14T23:05:06+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Credential Theft",
+      "summary_preview": "概要転職サービス「ミドルの転職」に対し、外部で入手されたとみられる認証情報を使うリスト型攻撃が行われ、2,503件の不正ログインが確認され、運営側は全会員のパスワードを一新した。攻撃者はサービス自体の脆弱性を突くより、他サービスから流出したIDとパスワードの再利用を狙い、ログイン成功後に会員情報、応募履歴、職務経歴、連絡先などを閲覧・悪用する可能性がある。…",
+      "article_path": "articles/4efadd4a83ac78d4.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/15/55493.html"
+    },
+    {
+      "entry_id": "cc1e1691e07b2ecd",
+      "title": "台湾子会社での情報流出を受け、エナジーウィズがグループ全体のセキュリティ再構築へ",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-14T23:05:02+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要エナジーウィズは、台湾子会社での情報流出を受け、グループ全体のセキュリティ再構築に動くと報じられた。流出した情報の種類、件数、侵入経路、攻撃者の関与有無は記事情報だけでは確認できず、現時点では被害範囲を過大にも過小にも見積もれない。攻撃者視点では、漏えい情報が取引先情報、認証情報、業務文書を含む場合、標的型メール、なりすまし、追加侵入の足場として再利用…",
+      "article_path": "articles/cc1e1691e07b2ecd.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/15/55492.html"
+    },
+    {
+      "entry_id": "b1c70551a7b07fc6",
+      "title": "Adobe Acrobat および Reader に脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-14T23:00:13+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要ScanNetSecurityが「Adobe Acrobat および Reader に脆弱性」として、Adobe Acrobat/Readerに関する脆弱性情報を伝えているが、入力情報だけではCVE番号、影響バージョン、修正版の有無、悪用確認の有無は確認できない。Acrobat/Reader系の脆弱性は、一般に細工されたPDFを開かせることで、アプリケ…",
+      "article_path": "articles/b1c70551a7b07fc6.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/15/55491.html"
+    },
+    {
+      "entry_id": "e2057c09adf4c117",
+      "title": "マイクロソフトが 6 月のセキュリティ情報公開、悪用の事実を確認済みの脆弱性が 1 件",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-14T23:00:11+00:00",
+      "impact_level": "High",
+      "threat_type": "Patch",
+      "summary_preview": "概要ScanNetSecurityは、Microsoftが6月のセキュリティ情報を公開し、その中に悪用の事実を確認済みの脆弱性が1件含まれると報じた。入力情報だけではCVE番号、CVSS、対象製品、攻撃条件、悪用の規模が示されておらず、現時点では自組織の該当性確認が最初の判断点になる。攻撃者は公開後の差分解析や既存侵害経路への組み込みを進めやすく、悪用済み…",
+      "article_path": "articles/e2057c09adf4c117.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/15/55490.html"
+    },
+    {
+      "entry_id": "dfc749658b842f95",
+      "title": "Check Point Software Technologies社のUTM製品に不適切な認証の脆弱性、6月上旬には悪用の試行が増加",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-14T23:00:08+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要Check Point Software Technologies社のUTM製品について、不適切な認証に関する脆弱性が報じられ、6月上旬には悪用試行の増加が観測されたとされる。UTMはVPN、防火壁、IPS、管理機能などを集約する境界装置になりやすく、攻撃者から見るとインターネット越しに到達できる場合の投資対効果が高い。悪用が成立すると、認証を迂回した…",
+      "article_path": "articles/dfc749658b842f95.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/15/55489.html"
+    },
+    {
+      "entry_id": "d044dce7cb5f026b",
+      "title": "陸上自衛隊高等工科学校 全校生徒1,000名に現役ホワイトハッカーが講話",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-14T23:00:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要ScanNetSecurityの記事タイトルから確認できる範囲では、陸上自衛隊高等工科学校の全校生徒約1,000名に対し、現役ホワイトハッカーがサイバーセキュリティに関する講話を行ったという教育・啓発系の話題となる。脆弱性悪用、侵害、情報漏えい、攻撃キャンペーンの観測を示す内容ではなく、CSIRTの即時対応対象というより、人材育成とリスク認識向上に関係…",
+      "article_path": "articles/d044dce7cb5f026b.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/15/55488.html"
+    }
+  ]
+}

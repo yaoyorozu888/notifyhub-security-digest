@@ -1,0 +1,334 @@
+<!-- article.html テンプレート（生成用） (例: /digest/YYYY/MM/DD/articles/<entry_id>.html)
+     サーバ側（Function）で {{...}} を置換して出力してください。
+-->
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/favicon-192.png" />
+  <title>Evil MSI Background: BASE64 Statistical Analysis, (Mon, Jun 15th) | NotifyHub Cybersecurity Daily Report</title>
+  <style>
+    :root{
+      --bg:#0b1020; --panel:#0f1730; --panel2:#121c3a;
+      --text:#e7ecff; --muted:#a9b4df; --line:#22305b;
+      --accent:#7aa2ff; --good:#4ade80; --warn:#fbbf24; --bad:#fb7185;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+      --radius:18px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      background: radial-gradient(1000px 700px at 20% -10%, rgba(122,162,255,.25), transparent 60%),
+                  radial-gradient(900px 600px at 90% 10%, rgba(251,113,133,.12), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+    }
+    a{color:inherit}
+    .wrap{max-width:960px; margin:0 auto; padding:22px 18px 44px}
+    .topbar{
+      display:flex; justify-content:space-between; align-items:center; gap:12px;
+      margin-bottom:12px;
+    }
+    .crumb a{
+      text-decoration:none;
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .crumb a:hover{border-color:rgba(122,162,255,.65)}
+    .chip{
+      display:inline-flex; align-items:center; gap:8px;
+      background:rgba(27,38,80,.75);
+      border:1px solid rgba(34,48,91,.9);
+      padding:7px 10px; border-radius:999px;
+      font-size:12px; color:var(--muted);
+      backdrop-filter: blur(10px);
+      white-space:nowrap;
+    }
+    .chip strong{color:var(--text); font-weight:650}
+    .panel{
+      background: linear-gradient(180deg, rgba(15,23,48,.9), rgba(15,23,48,.75));
+      border:1px solid rgba(34,48,91,.9);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .head{
+      padding:16px 16px 12px;
+      border-bottom:1px solid rgba(34,48,91,.9);
+      background:rgba(18,28,58,.55);
+    }
+    h1{
+      margin:0;
+      font-size:20px;
+      line-height:1.35;
+      letter-spacing:.15px;
+    }
+    .meta{
+      margin-top:10px;
+      display:flex; gap:10px; flex-wrap:wrap;
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.6;
+    }
+    .meta a{color:var(--muted)}
+    .meta a:hover{color:var(--accent)}
+    .tags{
+      margin-top:12px;
+      display:flex; gap:8px; flex-wrap:wrap;
+    }
+    .tag{
+      font-size:11px;
+      padding:6px 9px;
+      border-radius:999px;
+      background:rgba(27,38,80,.65);
+      border:1px solid rgba(34,48,91,.9);
+      color:var(--muted);
+      white-space:nowrap;
+    }
+    .tag.level-Critical{border-color:rgba(251,113,133,.65); color:#ffd0d7}
+    .tag.level-High{border-color:rgba(251,191,36,.65); color:#ffe9b0}
+    .tag.level-Medium{border-color:rgba(122,162,255,.65); color:#dbe6ff}
+    .tag.level-Low{border-color:rgba(74,222,128,.55); color:#d0ffe2}
+    .tag.level-Info{border-color:rgba(169,180,223,.55); color:rgba(169,180,223,.95)}
+    .body{
+      padding:16px;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+    }
+    .section{
+      background:rgba(18,28,58,.35);
+      border:1px solid rgba(34,48,91,.75);
+      border-radius:16px;
+      padding:14px;
+    }
+    .section h2{
+      margin:0 0 10px;
+      font-size:14px;
+      letter-spacing:.1px;
+    }
+    .ruleReason{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.65;
+      white-space:pre-wrap;
+    }
+    .infoSources{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.5;
+    }
+    .infoSourceRow{
+      margin:0;
+      padding:0;
+    }
+    .infoSourceRow + .infoSourceRow{
+      margin-top:2px;
+    }
+
+    /* --- summary_html styles (OpenAI output uses h4/p/ul/li/strong/code/br) --- */
+    .summary h4{
+      margin:14px 0 8px;
+      font-size:13px;
+      letter-spacing:.1px;
+      padding-left:10px;
+      border-left:3px solid rgba(122,162,255,.65);
+      color: rgba(231,236,255,.95);
+    }
+    .summary p{margin:8px 0; color:rgba(231,236,255,.92); line-height:1.75}
+    .summary ul, .summary ol{margin:8px 0 8px 1.2em; padding:0}
+    .summary li{margin:6px 0; color:rgba(231,236,255,.92); line-height:1.7}
+    .summary strong{
+      color:var(--text);
+      font-weight:750;
+      padding:0 .2em;
+      border-radius:8px;
+      background: linear-gradient(transparent 60%, rgba(122,162,255,.22) 60%);
+    }
+    .summary code{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 8px;
+      background: rgba(11,16,32,.6);
+      border: 1px solid rgba(34,48,91,.85);
+      color: rgba(231,236,255,.95);
+      white-space: nowrap;
+    }
+
+    .terms{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:10px;
+    }
+    @media (max-width: 860px){
+      .terms{grid-template-columns: 1fr}
+    }
+    .termCard{
+      background:rgba(11,16,32,.45);
+      border:1px solid rgba(34,48,91,.85);
+      border-radius:14px;
+      padding:12px;
+      min-width:0;
+    }
+    .termCard .term{
+      font-weight:700;
+      font-size:13px;
+      margin:0 0 8px;
+      word-break:break-word;
+    }
+    .termCard .exp{
+      margin:0;
+      color:rgba(231,236,255,.9);
+      line-height:1.7;
+      font-size:12px;
+      white-space:pre-wrap;
+    }
+    .subSectionTitle{
+      margin:16px 0 8px;
+      font-size:12px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:var(--muted);
+    }
+    .deepDive{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:10px;
+      margin-top:8px;
+    }
+    .deepDiveCard{
+      background:rgba(12,20,38,.6);
+    }
+
+    .footer{
+      margin-top:14px;
+      color:rgba(169,180,223,.75);
+      font-size:12px;
+      line-height:1.7;
+      text-align:center;
+    }
+    .btnRow{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px}
+    .linkbtn{
+      text-decoration:none;
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .linkbtn:hover{border-color:rgba(122,162,255,.65)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="crumb">
+        <!-- ../index.html は通常 "../index.html" でOK -->
+        <a href="../index.html">← 日次トップへ戻る</a>
+      </div>
+      <div class="chip">entry_id <strong class="mono">0aeb03c761a6c831</strong></div>
+    </div>
+
+    <div class="panel">
+      <div class="head">
+        <h1>Evil MSI Background: BASE64 Statistical Analysis, (Mon, Jun 15th)</h1>
+
+        <div class="meta">
+          <span>🗞️ SANS ISC</span>
+          <span>🕒 2026-06-15T16:16:00+09:00</span>
+          <span>🔗 <a href="https://isc.sans.edu/diary/rss/33072" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
+        </div>
+
+        <div class="tags">
+          <span class="tag level-Medium">Impact: Medium</span>
+          <span class="tag">Malware</span>
+        </div>
+
+        <div class="btnRow">
+          <a class="linkbtn" href="https://isc.sans.edu/diary/rss/33072" target="_blank" rel="noopener noreferrer">原文リンク</a>
+          <a class="linkbtn" href="https://www.notifyhub.site/digest/2026/06/16/">日次トップ</a>
+        </div>
+      </div>
+
+      <div class="body">
+        
+        <div class="section">
+          <h2>Impact判定理由</h2>
+          <div class="ruleReason">MSI実行や配布経路への混入が前提となるため認証前の広域悪用とは異なるが、実行後は任意コード実行、認証情報窃取、横展開の起点になりうる。
+SANS ISCのコミュニティ分析情報であり、入力上は具体的な悪用規模やIoCが未確認のため、情報源補正による引き上げは行わない。
+パッチ適用案件ではなく、検知ロジックとソフトウェア導入経路の点検を優先する水準と見る。</div>
+        </div>
+        <div class="section summary">
+          <h2>🧾 要約（ChatGPT / gpt-5.5-2026-04-23）</h2>
+          <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
+          <div><h4>概要</h4><p>SANS ISCの記事は、MSIインストーラの背景画像などに悪意ある内容を隠す手口に関連し、<strong>Base64文字列の統計的な偏り</strong>を手掛かりにする分析を取り上げている。攻撃者は画像やリソースにペイロード、設定、次段階取得用データを埋め込み、MSI実行時のカスタム処理で復元させることで、拡張子や表層的なファイル種別に依存した検査をすり抜けやすくする。成立条件は、利用者がMSIを実行する、またはソフトウェア配布経路に混入することで、<strong>管理者権限での配布・実行</strong>と結び付くと端末単位から認証情報窃取、永続化、横展開へ広がる余地がある。現時点の入力情報だけでは、具体的な検体、IoC、配布経路、悪用規模、標的業種は確認できない。CSIRTとしては新規脆弱性対応ではなく、<strong>インストーラ型マルウェアの検知強化</strong>とソフトウェア導入経路の点検に使う分析材料として扱うのが妥当となる。</p></div>
+        </div>
+
+        <div class="section">
+          <h2>📌 キーワード解説</h2>
+          <div class="terms">
+            <div class="termCard">
+  <div class="term">MSI（Windows Installerパッケージ）</div>
+  <p class="exp">Windowsのインストーラ形式。単なる圧縮ファイルと違い、カスタム処理や埋め込みリソースが実行起点になりうる。</p>
+</div>
+<div class="termCard">
+  <div class="term">Base64（ベース64）</div>
+  <p class="exp">バイナリを文字列化する符号化。暗号化と違い秘匿性はないが、画像や設定値に混ぜると単純検知を避けやすい。</p>
+</div>
+<div class="termCard">
+  <div class="term">ステガノグラフィ</div>
+  <p class="exp">データの存在自体を隠す手法。暗号化が中身を読ませないのに対し、こちらは埋め込み場所を目立たなくする。</p>
+</div>
+<div class="termCard">
+  <div class="term">カスタムアクション</div>
+  <p class="exp">MSIがインストール中に実行する任意処理。通常のファイル配置と違い、スクリプトやDLL実行の起点になりやすい。</p>
+</div>
+          </div>
+          <h3 class="subSectionTitle">深掘り解説</h3>
+          <div class="deepDive">
+            <div class="termCard deepDiveCard">
+  <div class="term">MSI内部のリソースを検知対象に入れる考え方</div>
+  <p class="exp">インストーラ型マルウェアの見落としは、MSIを「業務ソフトを入れるための箱」として扱いすぎる運用から生じやすい。MSIはファイル配置だけでなく、レジストリ変更、サービス作成、スクリプト実行、DLL呼び出しなどをインストール手順として持てるため、実行ファイル単体とは異なる観点で分解して見る必要がある。
+
+今回の文脈で重要なのは、背景画像やリソースファイルが必ずしも表示用途だけに使われるとは限らない点となる。例えば、見た目は通常のインストーラ画面でも、同梱された画像の末尾やメタデータに長大なBase64風の文字列があり、カスタムアクションがそれを読み出してPowerShellスクリプトを生成する構成がありうる。この場合、表層のファイル種別判定では「画像を含むMSI」としか見えず、MSI実行後に初めて不審なプロセス生成や外部通信として現れる。
+
+統計的な分析は、この種の隠し込みを発見する補助線になる。Base64は利用文字の範囲が限定され、一定以上の長さになると英語文章や通常の画像メタデータとは異なる分布を示す。一方で、圧縮済みデータや暗号化データは高エントロピーになりやすく、Base64とは別の見え方をする。したがって「高エントロピーなら悪性」と単純化せず、文字集合、連続長、出現位置、MSI内の参照関係を合わせて見る方が誤検知を抑えやすい。
+
+実務では、メールゲートウェイやプロキシでMSIを一律遮断できない組織も多い。その場合は、取得元の評判、署名の有無、MSI内のカスタムアクション、同梱リソース内の長大なBase64列、実行時の子プロセス生成を組み合わせて優先度を付けるとよい。具体例として、社外から取得した未署名MSIが、インストール時にmsiexec.exeからpowershell.exeやcmd.exeを起動し、同時に一時ディレクトリへスクリプトを展開するなら、背景画像の見た目が正常でも封じ込め候補に上げる価値が高い。</p>
+</div>
+          </div>
+        </div>
+
+        
+
+        <div class="section">
+          <h2>🕘 生成情報</h2>
+          <div class="ruleReason">
+対象期間：2026-06-15T06:00:00+09:00 〜 2026-06-16T06:00:00+09:00
+生成時刻：2026-06-16T09:05:14.669910+09:00
+免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      notifyhub.site
+    </div>
+  </div>
+</body>
+</html>
