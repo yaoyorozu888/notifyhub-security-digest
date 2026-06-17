@@ -1,0 +1,334 @@
+<!-- article.html テンプレート（生成用） (例: /digest/YYYY/MM/DD/articles/<entry_id>.html)
+     サーバ側（Function）で {{...}} を置換して出力してください。
+-->
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/favicon-192.png" />
+  <title>セキュリティの教科書(反面教師編)：社員のメールを覗きたいＣＥＯ | NotifyHub Cybersecurity Daily Report</title>
+  <style>
+    :root{
+      --bg:#0b1020; --panel:#0f1730; --panel2:#121c3a;
+      --text:#e7ecff; --muted:#a9b4df; --line:#22305b;
+      --accent:#7aa2ff; --good:#4ade80; --warn:#fbbf24; --bad:#fb7185;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+      --radius:18px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      background: radial-gradient(1000px 700px at 20% -10%, rgba(122,162,255,.25), transparent 60%),
+                  radial-gradient(900px 600px at 90% 10%, rgba(251,113,133,.12), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+    }
+    a{color:inherit}
+    .wrap{max-width:960px; margin:0 auto; padding:22px 18px 44px}
+    .topbar{
+      display:flex; justify-content:space-between; align-items:center; gap:12px;
+      margin-bottom:12px;
+    }
+    .crumb a{
+      text-decoration:none;
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .crumb a:hover{border-color:rgba(122,162,255,.65)}
+    .chip{
+      display:inline-flex; align-items:center; gap:8px;
+      background:rgba(27,38,80,.75);
+      border:1px solid rgba(34,48,91,.9);
+      padding:7px 10px; border-radius:999px;
+      font-size:12px; color:var(--muted);
+      backdrop-filter: blur(10px);
+      white-space:nowrap;
+    }
+    .chip strong{color:var(--text); font-weight:650}
+    .panel{
+      background: linear-gradient(180deg, rgba(15,23,48,.9), rgba(15,23,48,.75));
+      border:1px solid rgba(34,48,91,.9);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .head{
+      padding:16px 16px 12px;
+      border-bottom:1px solid rgba(34,48,91,.9);
+      background:rgba(18,28,58,.55);
+    }
+    h1{
+      margin:0;
+      font-size:20px;
+      line-height:1.35;
+      letter-spacing:.15px;
+    }
+    .meta{
+      margin-top:10px;
+      display:flex; gap:10px; flex-wrap:wrap;
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.6;
+    }
+    .meta a{color:var(--muted)}
+    .meta a:hover{color:var(--accent)}
+    .tags{
+      margin-top:12px;
+      display:flex; gap:8px; flex-wrap:wrap;
+    }
+    .tag{
+      font-size:11px;
+      padding:6px 9px;
+      border-radius:999px;
+      background:rgba(27,38,80,.65);
+      border:1px solid rgba(34,48,91,.9);
+      color:var(--muted);
+      white-space:nowrap;
+    }
+    .tag.level-Critical{border-color:rgba(251,113,133,.65); color:#ffd0d7}
+    .tag.level-High{border-color:rgba(251,191,36,.65); color:#ffe9b0}
+    .tag.level-Medium{border-color:rgba(122,162,255,.65); color:#dbe6ff}
+    .tag.level-Low{border-color:rgba(74,222,128,.55); color:#d0ffe2}
+    .tag.level-Info{border-color:rgba(169,180,223,.55); color:rgba(169,180,223,.95)}
+    .body{
+      padding:16px;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+    }
+    .section{
+      background:rgba(18,28,58,.35);
+      border:1px solid rgba(34,48,91,.75);
+      border-radius:16px;
+      padding:14px;
+    }
+    .section h2{
+      margin:0 0 10px;
+      font-size:14px;
+      letter-spacing:.1px;
+    }
+    .ruleReason{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.65;
+      white-space:pre-wrap;
+    }
+    .infoSources{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.5;
+    }
+    .infoSourceRow{
+      margin:0;
+      padding:0;
+    }
+    .infoSourceRow + .infoSourceRow{
+      margin-top:2px;
+    }
+
+    /* --- summary_html styles (OpenAI output uses h4/p/ul/li/strong/code/br) --- */
+    .summary h4{
+      margin:14px 0 8px;
+      font-size:13px;
+      letter-spacing:.1px;
+      padding-left:10px;
+      border-left:3px solid rgba(122,162,255,.65);
+      color: rgba(231,236,255,.95);
+    }
+    .summary p{margin:8px 0; color:rgba(231,236,255,.92); line-height:1.75}
+    .summary ul, .summary ol{margin:8px 0 8px 1.2em; padding:0}
+    .summary li{margin:6px 0; color:rgba(231,236,255,.92); line-height:1.7}
+    .summary strong{
+      color:var(--text);
+      font-weight:750;
+      padding:0 .2em;
+      border-radius:8px;
+      background: linear-gradient(transparent 60%, rgba(122,162,255,.22) 60%);
+    }
+    .summary code{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 8px;
+      background: rgba(11,16,32,.6);
+      border: 1px solid rgba(34,48,91,.85);
+      color: rgba(231,236,255,.95);
+      white-space: nowrap;
+    }
+
+    .terms{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:10px;
+    }
+    @media (max-width: 860px){
+      .terms{grid-template-columns: 1fr}
+    }
+    .termCard{
+      background:rgba(11,16,32,.45);
+      border:1px solid rgba(34,48,91,.85);
+      border-radius:14px;
+      padding:12px;
+      min-width:0;
+    }
+    .termCard .term{
+      font-weight:700;
+      font-size:13px;
+      margin:0 0 8px;
+      word-break:break-word;
+    }
+    .termCard .exp{
+      margin:0;
+      color:rgba(231,236,255,.9);
+      line-height:1.7;
+      font-size:12px;
+      white-space:pre-wrap;
+    }
+    .subSectionTitle{
+      margin:16px 0 8px;
+      font-size:12px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:var(--muted);
+    }
+    .deepDive{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:10px;
+      margin-top:8px;
+    }
+    .deepDiveCard{
+      background:rgba(12,20,38,.6);
+    }
+
+    .footer{
+      margin-top:14px;
+      color:rgba(169,180,223,.75);
+      font-size:12px;
+      line-height:1.7;
+      text-align:center;
+    }
+    .btnRow{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px}
+    .linkbtn{
+      text-decoration:none;
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .linkbtn:hover{border-color:rgba(122,162,255,.65)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="crumb">
+        <!-- ../index.html は通常 "../index.html" でOK -->
+        <a href="../index.html">← 日次トップへ戻る</a>
+      </div>
+      <div class="chip">entry_id <strong class="mono">878e6de0928216c8</strong></div>
+    </div>
+
+    <div class="panel">
+      <div class="head">
+        <h1>セキュリティの教科書(反面教師編)：社員のメールを覗きたいＣＥＯ</h1>
+
+        <div class="meta">
+          <span>🗞️ ScanNetSecurity</span>
+          <span>🕒 2026-06-17T08:15:03+09:00</span>
+          <span>🔗 <a href="https://scan.netsecurity.ne.jp/article/2026/06/17/55514.html" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
+        </div>
+
+        <div class="tags">
+          <span class="tag level-Low">Impact: Low</span>
+          <span class="tag">Other</span>
+        </div>
+
+        <div class="btnRow">
+          <a class="linkbtn" href="https://scan.netsecurity.ne.jp/article/2026/06/17/55514.html" target="_blank" rel="noopener noreferrer">原文リンク</a>
+          <a class="linkbtn" href="https://www.notifyhub.site/digest/2026/06/18/">日次トップ</a>
+        </div>
+      </div>
+
+      <div class="body">
+        
+        <div class="section">
+          <h2>Impact判定理由</h2>
+          <div class="ruleReason">外部攻撃や脆弱性悪用の情報ではなく、社員メール閲覧要求を題材にしたガバナンス・内部統制上のリスクが中心と見られる。
+実害が出る場合はプライバシー侵害、証拠価値低下、内部通報制度への影響に広がるが、本文未確認のため技術的緊急性は限定的。
+情報源はメディア記事であり、一次的な悪用観測や公的注意喚起ではないため、ベース評価を引き上げずLowとする。</div>
+        </div>
+        <div class="section summary">
+          <h2>🧾 要約（ChatGPT / gpt-5.5-2026-04-23）</h2>
+          <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
+          <div><h4>概要</h4><p>ScanNetSecurityの記事「セキュリティの教科書(反面教師編)：社員のメールを覗きたいＣＥＯ」は、題名から見る限り、経営者による社員メール閲覧要求を題材にした反面教師型の解説記事と考えられる。CSIRT観点では、外部攻撃ではなく、<strong>内部権限の濫用</strong>、労務・プライバシー、監査証跡、証拠保全の線引きが論点となる。悪用される場合、経営層や管理者権限を持つ部門がメールボックスへ直接アクセスし、調査目的を装って個人情報、労組活動、通報者情報、取引情報まで閲覧範囲を広げる形になりやすい。影響は単一社員の秘密侵害にとどまらず、内部通報制度、懲戒手続、訴訟対応、監督官庁への説明責任へ波及し、CSIRTの調査結果そのものの信用も損なう。本文が提供されていないため、実際に紹介された事案、法域、対象システム、閲覧の可否判断、社内規程の有無は<strong>未確認事項</strong>として扱う必要がある。</p></div>
+        </div>
+
+        <div class="section">
+          <h2>📌 キーワード解説</h2>
+          <div class="terms">
+            <div class="termCard">
+  <div class="term">メール監査（電子メールモニタリング）</div>
+  <p class="exp">業務上の必要性と規程が前提となる。個人的関心による閲覧や探索的な覗き見とは別物となる。</p>
+</div>
+<div class="termCard">
+  <div class="term">特権アクセス管理（PAM）</div>
+  <p class="exp">管理者権限の使用を申請、承認、記録で縛る仕組み。単なる管理者アカウント配布とは違う。</p>
+</div>
+<div class="termCard">
+  <div class="term">内部不正</div>
+  <p class="exp">外部侵入ではなく、正規権限や組織内の立場を悪用する行為。ログ上は正常操作に見えやすい。</p>
+</div>
+<div class="termCard">
+  <div class="term">証拠保全</div>
+  <p class="exp">調査対象を改変せず、取得理由と手順を残す考え方。場当たり的な閲覧は証拠価値を落とす。</p>
+</div>
+          </div>
+          <h3 class="subSectionTitle">深掘り解説</h3>
+          <div class="deepDive">
+            <div class="termCard deepDiveCard">
+  <div class="term">社員メール調査でCSIRTが守るべき権限分離</div>
+  <p class="exp">社員メールの調査は、技術的に可能かどうかではなく、誰が、何の目的で、どの範囲を、どの承認で見るかが本質となる。Microsoft 365やGoogle Workspaceでは、管理者権限があればメールボックス検索、監査ログ取得、訴訟ホールド、委任アクセスなど多くの操作が可能になる。しかし、可能な操作をそのまま実行すると、労務問題、個人情報保護、内部通報者保護、営業秘密管理の各領域に衝突しやすい。
+
+実務では、まず調査目的を分ける必要がある。マルウェア感染端末からの不審送信を確認する場合、必要なのは送信時刻、宛先、件名、添付ファイルハッシュ、メールヘッダなどに限られることが多い。一方、ハラスメントや情報持ち出し疑いでは本文確認が必要になる場合もあるが、その場合でも法務、人事、コンプライアンス、情報システムの役割分担と承認記録が不可欠となる。
+
+具体例として、CEOから「Aさんのメールを全部見せてほしい」と依頼された場面を考える。CSIRTが直接エクスポートして渡すのは避けるべき選択となる。代わりに、依頼理由、対象期間、検索語、対象メールボックス、緊急性、関連規程、承認者を確認し、必要なら法務部門を窓口にする。調査は全文閲覧ではなく、監査ログ確認、限定キーワード検索、第三者レビュー、結果サマリの提供といった段階的な方法に落とす。
+
+封じ込めの観点でも同じ考え方が使える。管理者によるメールボックスアクセス、監査ログ無効化、電子情報開示検索の作成、委任権限の付与は、通常運用でも発生するため、単純なアラートだけでは不十分となる。高権限操作にチケット番号や承認IDをひも付け、承認のない操作を後から検出できる状態にすることが、内部不正にもインシデント調査の正当性確保にも効く。</p>
+</div>
+          </div>
+        </div>
+
+        
+
+        <div class="section">
+          <h2>🕘 生成情報</h2>
+          <div class="ruleReason">
+対象期間：2026-06-17T06:00:00+09:00 〜 2026-06-18T06:00:00+09:00
+生成時刻：2026-06-18T07:17:13.751249+09:00
+免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      notifyhub.site
+    </div>
+  </div>
+</body>
+</html>

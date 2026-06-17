@@ -1,0 +1,334 @@
+<!-- article.html テンプレート（生成用） (例: /digest/YYYY/MM/DD/articles/<entry_id>.html)
+     サーバ側（Function）で {{...}} を置換して出力してください。
+-->
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/favicon-192.png" />
+  <title>インシデント発生時には隔離などの一次対応も ～ 丸紅情報システムズ、マネージドMXDRサービス提供 | NotifyHub Cybersecurity Daily Report</title>
+  <style>
+    :root{
+      --bg:#0b1020; --panel:#0f1730; --panel2:#121c3a;
+      --text:#e7ecff; --muted:#a9b4df; --line:#22305b;
+      --accent:#7aa2ff; --good:#4ade80; --warn:#fbbf24; --bad:#fb7185;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+      --radius:18px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      background: radial-gradient(1000px 700px at 20% -10%, rgba(122,162,255,.25), transparent 60%),
+                  radial-gradient(900px 600px at 90% 10%, rgba(251,113,133,.12), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+    }
+    a{color:inherit}
+    .wrap{max-width:960px; margin:0 auto; padding:22px 18px 44px}
+    .topbar{
+      display:flex; justify-content:space-between; align-items:center; gap:12px;
+      margin-bottom:12px;
+    }
+    .crumb a{
+      text-decoration:none;
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .crumb a:hover{border-color:rgba(122,162,255,.65)}
+    .chip{
+      display:inline-flex; align-items:center; gap:8px;
+      background:rgba(27,38,80,.75);
+      border:1px solid rgba(34,48,91,.9);
+      padding:7px 10px; border-radius:999px;
+      font-size:12px; color:var(--muted);
+      backdrop-filter: blur(10px);
+      white-space:nowrap;
+    }
+    .chip strong{color:var(--text); font-weight:650}
+    .panel{
+      background: linear-gradient(180deg, rgba(15,23,48,.9), rgba(15,23,48,.75));
+      border:1px solid rgba(34,48,91,.9);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .head{
+      padding:16px 16px 12px;
+      border-bottom:1px solid rgba(34,48,91,.9);
+      background:rgba(18,28,58,.55);
+    }
+    h1{
+      margin:0;
+      font-size:20px;
+      line-height:1.35;
+      letter-spacing:.15px;
+    }
+    .meta{
+      margin-top:10px;
+      display:flex; gap:10px; flex-wrap:wrap;
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.6;
+    }
+    .meta a{color:var(--muted)}
+    .meta a:hover{color:var(--accent)}
+    .tags{
+      margin-top:12px;
+      display:flex; gap:8px; flex-wrap:wrap;
+    }
+    .tag{
+      font-size:11px;
+      padding:6px 9px;
+      border-radius:999px;
+      background:rgba(27,38,80,.65);
+      border:1px solid rgba(34,48,91,.9);
+      color:var(--muted);
+      white-space:nowrap;
+    }
+    .tag.level-Critical{border-color:rgba(251,113,133,.65); color:#ffd0d7}
+    .tag.level-High{border-color:rgba(251,191,36,.65); color:#ffe9b0}
+    .tag.level-Medium{border-color:rgba(122,162,255,.65); color:#dbe6ff}
+    .tag.level-Low{border-color:rgba(74,222,128,.55); color:#d0ffe2}
+    .tag.level-Info{border-color:rgba(169,180,223,.55); color:rgba(169,180,223,.95)}
+    .body{
+      padding:16px;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+    }
+    .section{
+      background:rgba(18,28,58,.35);
+      border:1px solid rgba(34,48,91,.75);
+      border-radius:16px;
+      padding:14px;
+    }
+    .section h2{
+      margin:0 0 10px;
+      font-size:14px;
+      letter-spacing:.1px;
+    }
+    .ruleReason{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.65;
+      white-space:pre-wrap;
+    }
+    .infoSources{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.5;
+    }
+    .infoSourceRow{
+      margin:0;
+      padding:0;
+    }
+    .infoSourceRow + .infoSourceRow{
+      margin-top:2px;
+    }
+
+    /* --- summary_html styles (OpenAI output uses h4/p/ul/li/strong/code/br) --- */
+    .summary h4{
+      margin:14px 0 8px;
+      font-size:13px;
+      letter-spacing:.1px;
+      padding-left:10px;
+      border-left:3px solid rgba(122,162,255,.65);
+      color: rgba(231,236,255,.95);
+    }
+    .summary p{margin:8px 0; color:rgba(231,236,255,.92); line-height:1.75}
+    .summary ul, .summary ol{margin:8px 0 8px 1.2em; padding:0}
+    .summary li{margin:6px 0; color:rgba(231,236,255,.92); line-height:1.7}
+    .summary strong{
+      color:var(--text);
+      font-weight:750;
+      padding:0 .2em;
+      border-radius:8px;
+      background: linear-gradient(transparent 60%, rgba(122,162,255,.22) 60%);
+    }
+    .summary code{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 8px;
+      background: rgba(11,16,32,.6);
+      border: 1px solid rgba(34,48,91,.85);
+      color: rgba(231,236,255,.95);
+      white-space: nowrap;
+    }
+
+    .terms{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:10px;
+    }
+    @media (max-width: 860px){
+      .terms{grid-template-columns: 1fr}
+    }
+    .termCard{
+      background:rgba(11,16,32,.45);
+      border:1px solid rgba(34,48,91,.85);
+      border-radius:14px;
+      padding:12px;
+      min-width:0;
+    }
+    .termCard .term{
+      font-weight:700;
+      font-size:13px;
+      margin:0 0 8px;
+      word-break:break-word;
+    }
+    .termCard .exp{
+      margin:0;
+      color:rgba(231,236,255,.9);
+      line-height:1.7;
+      font-size:12px;
+      white-space:pre-wrap;
+    }
+    .subSectionTitle{
+      margin:16px 0 8px;
+      font-size:12px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:var(--muted);
+    }
+    .deepDive{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:10px;
+      margin-top:8px;
+    }
+    .deepDiveCard{
+      background:rgba(12,20,38,.6);
+    }
+
+    .footer{
+      margin-top:14px;
+      color:rgba(169,180,223,.75);
+      font-size:12px;
+      line-height:1.7;
+      text-align:center;
+    }
+    .btnRow{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px}
+    .linkbtn{
+      text-decoration:none;
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .linkbtn:hover{border-color:rgba(122,162,255,.65)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="crumb">
+        <!-- ../index.html は通常 "../index.html" でOK -->
+        <a href="../index.html">← 日次トップへ戻る</a>
+      </div>
+      <div class="chip">entry_id <strong class="mono">610b237582bf45aa</strong></div>
+    </div>
+
+    <div class="panel">
+      <div class="head">
+        <h1>インシデント発生時には隔離などの一次対応も ～ 丸紅情報システムズ、マネージドMXDRサービス提供</h1>
+
+        <div class="meta">
+          <span>🗞️ ScanNetSecurity</span>
+          <span>🕒 2026-06-17T08:00:04+09:00</span>
+          <span>🔗 <a href="https://scan.netsecurity.ne.jp/article/2026/06/17/55506.html" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
+        </div>
+
+        <div class="tags">
+          <span class="tag level-Info">Impact: Info</span>
+          <span class="tag">Other</span>
+        </div>
+
+        <div class="btnRow">
+          <a class="linkbtn" href="https://scan.netsecurity.ne.jp/article/2026/06/17/55506.html" target="_blank" rel="noopener noreferrer">原文リンク</a>
+          <a class="linkbtn" href="https://www.notifyhub.site/digest/2026/06/18/">日次トップ</a>
+        </div>
+      </div>
+
+      <div class="body">
+        
+        <div class="section">
+          <h2>Impact判定理由</h2>
+          <div class="ruleReason">サービス提供に関するメディア記事であり、脆弱性悪用、侵害、パッチ適用を促す内容ではないため技術的緊急性は低い。
+CSIRTにはMXDR導入時の責任分界や隔離権限の確認という運用上の示唆があるが、直ちに自組織へ影響する観測情報ではない。
+情報源はメディア二次情報のため重要度の上方補正は行わず、入力から詳細仕様も確認不能。</div>
+        </div>
+        <div class="section summary">
+          <h2>🧾 要約（ChatGPT / gpt-5.5-2026-04-23）</h2>
+          <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
+          <div><h4>概要</h4><p>ScanNetSecurityの記事は、丸紅情報システムズが<strong>マネージドMXDRサービス</strong>を提供し、インシデント発生時に隔離などの一次対応も扱うと伝えている。脆弱性悪用や侵害そのものの公表ではなく、組織側の検知・調査・封じ込めを外部支援するサービス提供の話題に位置付く。CSIRT観点では、悪用手口よりも<strong>誰が隔離判断を下すか</strong>、どの端末・アカウント・通信を止められるか、業務停止リスクをどう承認するかが判断点となる。影響は直ちに自組織へ及ぶものではないが、導入済みまたは検討中の組織では、EDR、SIEM、ID基盤、ネットワーク制御との連携範囲次第で<strong>封じ込めの実効性</strong>が大きく変わる。記事本文の詳細、対象製品、対応時間、隔離権限、責任分界、SLA、ログ保全方式は入力情報から確認できず、実運用評価には追加確認が必要となる。</p></div>
+        </div>
+
+        <div class="section">
+          <h2>📌 キーワード解説</h2>
+          <div class="terms">
+            <div class="termCard">
+  <div class="term">MXDR（Managed Extended Detection and Response）</div>
+  <p class="exp">監視だけでなく調査と初動支援まで外部委託する形。MDRより対象範囲や連携範囲が広くなりやすい。</p>
+</div>
+<div class="termCard">
+  <div class="term">一次対応</div>
+  <p class="exp">根絶ではなく被害拡大を止める初動措置。隔離やアカウント停止を含み、復旧作業とは目的が異なる。</p>
+</div>
+<div class="termCard">
+  <div class="term">隔離</div>
+  <p class="exp">端末や通信を業務環境から切り離す封じ込め策。駆除と混同しやすいが、証拠保全と業務停止の両面を伴う。</p>
+</div>
+<div class="termCard">
+  <div class="term">責任分界</div>
+  <p class="exp">委託先と自組織の判断権限を分ける線引き。契約範囲と緊急時の実権がずれると初動が遅れる。</p>
+</div>
+          </div>
+          <h3 class="subSectionTitle">深掘り解説</h3>
+          <div class="deepDive">
+            <div class="termCard deepDiveCard">
+  <div class="term">MXDRで最初に詰めるべき隔離権限と業務影響</div>
+  <p class="exp">MXDRの価値は、アラートを見つけることだけではなく、攻撃が広がる前に止める動作へ接続できる点にある。ただし、隔離は技術機能よりも運用判断の比重が大きい。EDRコンソールに端末隔離ボタンがあっても、委託先が押せるのか、CSIRT承認が必要なのか、業務部門やシステムオーナーの同意を待つのかで、実際の封じ込め時間は大きく変わる。
+
+具体例として、営業部門の端末で認証情報窃取マルウェアが疑われ、同じ利用者のVPNログに海外からの不審接続が出ている場面を考える。このとき端末隔離だけでは不十分となりやすい。攻撃者が既に認証情報を使っているなら、端末をネットワークから切り離してもクラウドメールや社内ポータルへのアクセスは続く可能性がある。必要な一次対応は、端末隔離、利用者セッション失効、パスワードリセット、多要素認証再登録確認、VPN接続遮断、関連ログ保全を組み合わせる形になる。
+
+一方で、隔離の誤判断は業務停止を招く。工場端末、物流端末、役員端末、決済関連端末では、同じ隔離でも影響が異なる。したがって導入時には、重大度別に「委託先が即時実行できる措置」「電話承認後に実行する措置」「自組織だけが実行する措置」を事前に分ける必要がある。さらに、夜間休日の連絡先、証拠保全の手順、隔離解除の判断者まで決めておかないと、封じ込め後に復旧が詰まる。
+
+CSIRTが確認すべき要点は、サービス名称ではなく実行可能な制御点となる。EDR隔離だけか、ID停止やファイアウォール遮断まで含むのか。検知から何分で連絡が来るのか。委託先が保持するログはフォレンジックに使える粒度か。これらが契約書、運用手順書、演習シナリオに落ちて初めて、MXDRは監視委託から実効的な封じ込め能力へ近づく。</p>
+</div>
+          </div>
+        </div>
+
+        
+
+        <div class="section">
+          <h2>🕘 生成情報</h2>
+          <div class="ruleReason">
+対象期間：2026-06-17T06:00:00+09:00 〜 2026-06-18T06:00:00+09:00
+生成時刻：2026-06-18T07:17:13.751249+09:00
+免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      notifyhub.site
+    </div>
+  </div>
+</body>
+</html>

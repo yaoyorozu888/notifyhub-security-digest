@@ -1,0 +1,334 @@
+<!-- article.html テンプレート（生成用） (例: /digest/YYYY/MM/DD/articles/<entry_id>.html)
+     サーバ側（Function）で {{...}} を置換して出力してください。
+-->
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/favicon-192.png" />
+  <title>OpenSSL Security Advisory [9th June 2026] を公開 | NotifyHub Cybersecurity Daily Report</title>
+  <style>
+    :root{
+      --bg:#0b1020; --panel:#0f1730; --panel2:#121c3a;
+      --text:#e7ecff; --muted:#a9b4df; --line:#22305b;
+      --accent:#7aa2ff; --good:#4ade80; --warn:#fbbf24; --bad:#fb7185;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+      --radius:18px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      background: radial-gradient(1000px 700px at 20% -10%, rgba(122,162,255,.25), transparent 60%),
+                  radial-gradient(900px 600px at 90% 10%, rgba(251,113,133,.12), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+    }
+    a{color:inherit}
+    .wrap{max-width:960px; margin:0 auto; padding:22px 18px 44px}
+    .topbar{
+      display:flex; justify-content:space-between; align-items:center; gap:12px;
+      margin-bottom:12px;
+    }
+    .crumb a{
+      text-decoration:none;
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .crumb a:hover{border-color:rgba(122,162,255,.65)}
+    .chip{
+      display:inline-flex; align-items:center; gap:8px;
+      background:rgba(27,38,80,.75);
+      border:1px solid rgba(34,48,91,.9);
+      padding:7px 10px; border-radius:999px;
+      font-size:12px; color:var(--muted);
+      backdrop-filter: blur(10px);
+      white-space:nowrap;
+    }
+    .chip strong{color:var(--text); font-weight:650}
+    .panel{
+      background: linear-gradient(180deg, rgba(15,23,48,.9), rgba(15,23,48,.75));
+      border:1px solid rgba(34,48,91,.9);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .head{
+      padding:16px 16px 12px;
+      border-bottom:1px solid rgba(34,48,91,.9);
+      background:rgba(18,28,58,.55);
+    }
+    h1{
+      margin:0;
+      font-size:20px;
+      line-height:1.35;
+      letter-spacing:.15px;
+    }
+    .meta{
+      margin-top:10px;
+      display:flex; gap:10px; flex-wrap:wrap;
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.6;
+    }
+    .meta a{color:var(--muted)}
+    .meta a:hover{color:var(--accent)}
+    .tags{
+      margin-top:12px;
+      display:flex; gap:8px; flex-wrap:wrap;
+    }
+    .tag{
+      font-size:11px;
+      padding:6px 9px;
+      border-radius:999px;
+      background:rgba(27,38,80,.65);
+      border:1px solid rgba(34,48,91,.9);
+      color:var(--muted);
+      white-space:nowrap;
+    }
+    .tag.level-Critical{border-color:rgba(251,113,133,.65); color:#ffd0d7}
+    .tag.level-High{border-color:rgba(251,191,36,.65); color:#ffe9b0}
+    .tag.level-Medium{border-color:rgba(122,162,255,.65); color:#dbe6ff}
+    .tag.level-Low{border-color:rgba(74,222,128,.55); color:#d0ffe2}
+    .tag.level-Info{border-color:rgba(169,180,223,.55); color:rgba(169,180,223,.95)}
+    .body{
+      padding:16px;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+    }
+    .section{
+      background:rgba(18,28,58,.35);
+      border:1px solid rgba(34,48,91,.75);
+      border-radius:16px;
+      padding:14px;
+    }
+    .section h2{
+      margin:0 0 10px;
+      font-size:14px;
+      letter-spacing:.1px;
+    }
+    .ruleReason{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.65;
+      white-space:pre-wrap;
+    }
+    .infoSources{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.5;
+    }
+    .infoSourceRow{
+      margin:0;
+      padding:0;
+    }
+    .infoSourceRow + .infoSourceRow{
+      margin-top:2px;
+    }
+
+    /* --- summary_html styles (OpenAI output uses h4/p/ul/li/strong/code/br) --- */
+    .summary h4{
+      margin:14px 0 8px;
+      font-size:13px;
+      letter-spacing:.1px;
+      padding-left:10px;
+      border-left:3px solid rgba(122,162,255,.65);
+      color: rgba(231,236,255,.95);
+    }
+    .summary p{margin:8px 0; color:rgba(231,236,255,.92); line-height:1.75}
+    .summary ul, .summary ol{margin:8px 0 8px 1.2em; padding:0}
+    .summary li{margin:6px 0; color:rgba(231,236,255,.92); line-height:1.7}
+    .summary strong{
+      color:var(--text);
+      font-weight:750;
+      padding:0 .2em;
+      border-radius:8px;
+      background: linear-gradient(transparent 60%, rgba(122,162,255,.22) 60%);
+    }
+    .summary code{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 8px;
+      background: rgba(11,16,32,.6);
+      border: 1px solid rgba(34,48,91,.85);
+      color: rgba(231,236,255,.95);
+      white-space: nowrap;
+    }
+
+    .terms{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:10px;
+    }
+    @media (max-width: 860px){
+      .terms{grid-template-columns: 1fr}
+    }
+    .termCard{
+      background:rgba(11,16,32,.45);
+      border:1px solid rgba(34,48,91,.85);
+      border-radius:14px;
+      padding:12px;
+      min-width:0;
+    }
+    .termCard .term{
+      font-weight:700;
+      font-size:13px;
+      margin:0 0 8px;
+      word-break:break-word;
+    }
+    .termCard .exp{
+      margin:0;
+      color:rgba(231,236,255,.9);
+      line-height:1.7;
+      font-size:12px;
+      white-space:pre-wrap;
+    }
+    .subSectionTitle{
+      margin:16px 0 8px;
+      font-size:12px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:var(--muted);
+    }
+    .deepDive{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:10px;
+      margin-top:8px;
+    }
+    .deepDiveCard{
+      background:rgba(12,20,38,.6);
+    }
+
+    .footer{
+      margin-top:14px;
+      color:rgba(169,180,223,.75);
+      font-size:12px;
+      line-height:1.7;
+      text-align:center;
+    }
+    .btnRow{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px}
+    .linkbtn{
+      text-decoration:none;
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .linkbtn:hover{border-color:rgba(122,162,255,.65)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="crumb">
+        <!-- ../index.html は通常 "../index.html" でOK -->
+        <a href="../index.html">← 日次トップへ戻る</a>
+      </div>
+      <div class="chip">entry_id <strong class="mono">93a681b1d1c9ab99</strong></div>
+    </div>
+
+    <div class="panel">
+      <div class="head">
+        <h1>OpenSSL Security Advisory [9th June 2026] を公開</h1>
+
+        <div class="meta">
+          <span>🗞️ ScanNetSecurity</span>
+          <span>🕒 2026-06-17T08:00:11+09:00</span>
+          <span>🔗 <a href="https://scan.netsecurity.ne.jp/article/2026/06/17/55508.html" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
+        </div>
+
+        <div class="tags">
+          <span class="tag level-Medium">Impact: Medium</span>
+          <span class="tag">Advisory</span>
+        </div>
+
+        <div class="btnRow">
+          <a class="linkbtn" href="https://scan.netsecurity.ne.jp/article/2026/06/17/55508.html" target="_blank" rel="noopener noreferrer">原文リンク</a>
+          <a class="linkbtn" href="https://www.notifyhub.site/digest/2026/06/18/">日次トップ</a>
+        </div>
+      </div>
+
+      <div class="body">
+        
+        <div class="section">
+          <h2>Impact判定理由</h2>
+          <div class="ruleReason">OpenSSLは広範な製品や基盤に組み込まれるため、影響条件次第で公開サービスから内部基盤まで調査範囲が広がる。
+ただし入力情報にはCVE、CVSS、悪用確認、影響バージョンがなく、技術的深刻度は未確定に留まる。
+情報源はメディアの二次情報であり、RSS補正では引き上げず、公式アドバイザリ確認を前提にMediumと評価する。</div>
+        </div>
+        <div class="section summary">
+          <h2>🧾 要約（ChatGPT / gpt-5.5-2026-04-23）</h2>
+          <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
+          <div><h4>概要</h4><p>ScanNetSecurityが「OpenSSL Security Advisory [9th June 2026] を公開」として、OpenSSLのセキュリティアドバイザリ公開を伝えているが、入力情報には<strong>CVE番号、影響バージョン、深刻度、悪用有無</strong>が含まれていない。OpenSSLはOS標準パッケージ、アプリ同梱ライブラリ、ネットワーク機器、業務アプリのTLS終端や暗号処理に入り込むため、脆弱性の種類によっては外部公開サービスだけでなく、内部API、VPN、メール、監視基盤まで確認範囲が広がる。悪用経路は未確認ながら、典型的には細工したTLS通信や証明書処理、暗号ライブラリ呼び出しを通じたサービス停止、情報漏えい、まれにコード実行へつながる可能性がある。現時点での判断材料は二次情報に近く、<strong>公式アドバイザリ本文の確認</strong>と、組織内で使われるOpenSSLの版数・リンク形態・公開面の棚卸しが初動の中心となる。未確認事項は、修正済み版の有無、ディストリビューションごとのバックポート状況、静的リンクされた製品への影響、実際の攻撃観測の有無となる。</p></div>
+        </div>
+
+        <div class="section">
+          <h2>📌 キーワード解説</h2>
+          <div class="terms">
+            <div class="termCard">
+  <div class="term">OpenSSL（暗号ライブラリ）</div>
+  <p class="exp">単体製品より部品として組み込まれる点が重要。OS更新だけでなく、アプリ同梱版との差分確認が要る。</p>
+</div>
+<div class="termCard">
+  <div class="term">Security Advisory（セキュリティアドバイザリ）</div>
+  <p class="exp">脆弱性の公表と対処情報を示す通知。攻撃観測を意味する注意喚起やKEV掲載とは重みが異なる。</p>
+</div>
+<div class="termCard">
+  <div class="term">静的リンク</div>
+  <p class="exp">ライブラリを実行ファイルへ組み込む方式。共有ライブラリ更新だけでは修正が反映されない場合がある。</p>
+</div>
+<div class="termCard">
+  <div class="term">バックポート</div>
+  <p class="exp">古い版番号のまま修正だけ取り込む配布方式。版数比較だけで未修正と誤判定しやすい。</p>
+</div>
+          </div>
+          <h3 class="subSectionTitle">深掘り解説</h3>
+          <div class="deepDive">
+            <div class="termCard deepDiveCard">
+  <div class="term">OpenSSL影響調査で版数だけを見ない理由</div>
+  <p class="exp">OpenSSLの脆弱性対応で判断がぶれやすいのは、「OpenSSLのバージョンが該当するか」だけでは実際のリスクを切り分けられない点にある。企業環境では、同じOpenSSLでも少なくとも三つの存在形態が混在する。第一にOSパッケージとして入る共有ライブラリ、第二にアプリケーションが独自に同梱するライブラリ、第三に実行ファイルへ静的リンクされたものとなる。
+
+具体例として、Linuxサーバで&lt;code&gt;openssl version&lt;/code&gt;を実行して修正版が表示されても、Java以外のミドルウェア、エージェント製品、古いバックアップソフトが自前の&lt;code&gt;libssl&lt;/code&gt;を持っている場合がある。この場合、OS更新の完了は「当該ホスト上の全OpenSSL利用箇所の修正完了」を意味しない。逆に、ディストリビューションがバックポートで修正を入れている場合、上流版の番号だけを見ると脆弱に見えても、実際には修正済みということもある。
+
+CSIRTの初動では、まず公式アドバイザリで影響条件を確認する。TLSサーバ処理が必要なのか、クライアント側の証明書検証で発火するのか、特定の暗号方式や設定が必要なのかで優先順位が変わる。次に、公開サービス、認証基盤、VPN、メール、プロキシなど外部入力を直接受ける箇所を先に見る。内部専用のバッチ処理や管理ツールは後回しにできる場合があるが、横展開後に攻撃者が到達できる管理ネットワーク上のサービスは軽視しない。
+
+検知面では、脆弱性ごとのログ特徴が出るとは限らないため、異常なTLSハンドシェイク失敗、プロセスのクラッシュ、証明書処理エラー、急増する再接続を確認する。封じ込めでは、単純なサービス停止が業務影響を大きくしやすい。ロードバランサでの一時的な遮断、該当機能の無効化、公開面の制限、パッチ適用後のプロセス再起動確認を組み合わせる方が現実的となる。</p>
+</div>
+          </div>
+        </div>
+
+        
+
+        <div class="section">
+          <h2>🕘 生成情報</h2>
+          <div class="ruleReason">
+対象期間：2026-06-17T06:00:00+09:00 〜 2026-06-18T06:00:00+09:00
+生成時刻：2026-06-18T07:17:13.751249+09:00
+免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      notifyhub.site
+    </div>
+  </div>
+</body>
+</html>
