@@ -1,0 +1,379 @@
+{
+  "date": "2026-06-19",
+  "window": {
+    "from": "2026-06-18T06:00:00+09:00",
+    "to": "2026-06-19T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 23
+  },
+  "generated_at_jst": "2026-06-19T07:05:28.252529+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "NVIDIA BlackwellがMLPerf Training 6.0で完全制覇",
+      "source_name": "NVIDIA Blog",
+      "published_at": "2026-06-16T12:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要NVIDIAのBlackwellプラットフォームがMLPerf Training 6.0の全ベンチマークで最速を記録した。8,192GPU規模での大規模訓練で業界をリードし、MoEモデル対応の新ワークロードでも優位性を示す。AI訓練インフラの性能向上が企業導入の判断材料となる。競合他社提出が限定的な中、NVIDIA単独で全項目をカバーした点が目立つ。ク…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://blogs.nvidia.com/blog/blackwell-mlperf-training-6-0/",
+      "selection_reason": "IT基盤のハードウェア進化として具体的なベンチマーク結果が公開され、AI訓練インフラの最新動向を示す新規性が高いため選定。他の汎用予測レポートではなく実測データに基づく",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "NVIDIA Blackwell Sweeps MLPerf Training 6.0",
+          "url": "https://blogs.nvidia.com/blog/blackwell-mlperf-training-6-0/",
+          "source_type": "web"
+        },
+        {
+          "title": "MLCommons MLPerf Training v6.0 Results",
+          "url": "https://mlcommons.org/2026/06/mlperf-training-v6-0-results/",
+          "source_type": "web"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "SnapがARスマートグラスSPECSを発表、コンテキストAIを搭載",
+      "source_name": "Snap Newsroom",
+      "published_at": "2026-06-17T02:00:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Other",
+      "summary_preview": "概要SnapがAWE 2026でARグラスSPECSを公開した。価格は2,195ドルで2026年秋に米英仏で出荷予定。コンテキストAIにより周囲の物体を認識して情報を提示する機能が特徴だ。Snapchatのソーシャル基盤を活かした実用例として注目される。MetaやAppleの競合製品との差別化が市場動向を左右する。",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://newsroom.snap.com/introducing-specs-augmented-reality-glasses",
+      "selection_reason": "AI製品の具体的な新発表としてARグラスにコンテキスト理解AIを統合した事例で、AIの実務応用を示す新規性が高い",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "Introducing SPECS Augmented Reality Glasses",
+          "url": "https://newsroom.snap.com/introducing-specs-augmented-reality-glasses",
+          "source_type": "web"
+        },
+        {
+          "title": "Snap Unveils Specs Smart Glasses at AWE 2026",
+          "url": "https://www.youtube.com/watch?v=fzd-k98ZkLY",
+          "source_type": "web"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "AIコーディングエージェントを狙ったAgentjacking攻撃が報告",
+      "source_name": "Tenet Security",
+      "published_at": "2026-06-18T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要偽のSentryエラー報告を利用してClaude CodeやCursorなどのAIコーディングエージェントに任意コードを実行させる攻撃が確認された。公開API経由で2,388組織が影響を受ける可能性がある。AIエージェントの外部データ信頼検証が不十分な点が悪用された。サニタイズの欠如が根本原因だ。開発チームは即時対策を講じる必要がある。",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://tenetsecurity.ai/blog/agentjacking-coding-agents-with-fake-sentry-errors/",
+      "selection_reason": "AIエージェント特有の新種攻撃として具体的な悪用手法と影響範囲が明らかになり、セキュリティ実務に直結する新規事例のため選定",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "Agentjacking: Coding Agents with Fake Sentry Errors",
+          "url": "https://tenetsecurity.ai/blog/agentjacking-coding-agents-with-fake-sentry-errors/",
+          "source_type": "web"
+        },
+        {
+          "title": "Agentjacking changes the AI security game",
+          "url": "https://pinggy.io/blog/agentjacking_ai_coding_agents_sentry_mcp/",
+          "source_type": "web"
+        },
+        {
+          "title": "X post on Agentjacking",
+          "url": "https://x.com/pinggyio/status/2067710945280074223",
+          "source_type": "x"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "2a457c6d832d3b4e",
+      "title": "CVE-2026-20253 Splunk Enterprise Missing Authentication for Critical Function Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-06-18T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Exploit",
+      "summary_preview": "概要CISA KEVに、Splunk Enterpriseの認証不足に関する脆弱性 CVE-2026-20253 が追加された。入力情報から確認できる範囲では、重要機能に対する認証が欠落し、攻撃者が本来必要な認証を経ずに機能へ到達する経路が悪用されている可能性が高い。Splunkはログ検索基盤にとどまらず、認証ログ、EDR連携、クラウド監査ログ、場合によっ…",
+      "article_path": "articles/2a457c6d832d3b4e.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "bbe7bd5999be2fd1",
+      "title": "F5 Patches Two Critical NGINX Open Source Flaws Enabling Remote Code Execution",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-18T17:32:14+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要F5は、NGINX Open Sourceに存在する二つの重大な脆弱性に対する更新を公開し、入力情報で確認できる識別子はCVE-2026-42530（CVSS v4 9.2）に限られる。この脆弱性はngx_http_v3_moduleのuse-after-freeで、条件を満たす構成では認証前の遠隔攻撃者が細工した通信によりコード実行へ到達し得る。影響…",
+      "article_path": "articles/bbe7bd5999be2fd1.html",
+      "original_url": "https://thehackernews.com/2026/06/f5-patches-two-critical-nginx-open.html"
+    },
+    {
+      "entry_id": "e119144887941dd1",
+      "title": "Orphaned AI Agents: How to Find Hidden Access Risks Inside Your Network",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-18T15:33:49+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Misconfiguration",
+      "summary_preview": "概要The Hacker Newsは、社内AI活用の急拡大に伴い、作成者の退職・異動後も稼働し続ける孤児化AIエージェントと、不要になっても残る常設権限が見落とされやすいリスクになっていると指摘している。攻撃者がエージェントのAPIキー、サービスアカウント、連携トークンを奪うと、人間の端末侵害を経ずに文書リポジトリ、チケット、コード、ナレッジベースへアクセ…",
+      "article_path": "articles/e119144887941dd1.html",
+      "original_url": "https://thehackernews.com/2026/06/orphaned-ai-agents-how-to-find-hidden.html"
+    },
+    {
+      "entry_id": "cf607522457c0bb7",
+      "title": "ThreatsDay Bulletin: Claude Chat Abuse, NastyC2 npm Packages, Device-Code Phishing + 25 More Stories",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-18T15:27:54+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要The Hacker Newsの週次まとめとして、AIチャット共有リンクの悪用、悪性npmパッケージ、Device Codeフィッシング、ブラウザ拡張による検索情報の吸い上げ、macOS向けメモリ内実行、露出したエッジ機器の悪用など複数の事案が整理された。共通点は、脆弱性単体よりも正規機能や正規サービスの信頼を攻撃経路に転用している点にある。攻撃者は利…",
+      "article_path": "articles/cf607522457c0bb7.html",
+      "original_url": "https://thehackernews.com/2026/06/threatsday-bulletin-claude-chat-abuse.html"
+    },
+    {
+      "entry_id": "06634bd2f45486a4",
+      "title": "Microsoft Details Windows Clipper Malware Campaign Using USB LNK Worm and Tor-Based C2",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-18T14:30:42+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Malware",
+      "summary_preview": "概要The Hacker Newsは、Microsoftの分析として、2026年2月以降に観測されたWindows向け暗号資産クリッパーのキャンペーンを報じた。攻撃はUSB経由のLNKワームで利用者の実行操作を誘い、Windows Script HostとActiveXの処理を使って同梱されたTorプロキシを起動し、hidden service上のC2へ接…",
+      "article_path": "articles/06634bd2f45486a4.html",
+      "original_url": "https://thehackernews.com/2026/06/microsoft-details-windows-clipper.html"
+    },
+    {
+      "entry_id": "7113b522cd3efbf9",
+      "title": "INC Ransomware Emerges as Major RaaS Threat in 2026 with 830+ Victims Since 2023",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-18T14:12:48+00:00",
+      "impact_level": "High",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要The Hacker Newsは、INC ransomwareが2023年8月以降に830件超の被害を主張し、2026年時点で主要なRaaS勢力へ拡大したと報じた。LockBit妨害とBlackCat停止により提携者が代替先へ流れ、INCの運用規模と被害公表の頻度が増えた、という研究者の見立てになる。悪用は単一の脆弱性より、窃取認証情報、境界装置の侵害…",
+      "article_path": "articles/7113b522cd3efbf9.html",
+      "original_url": "https://thehackernews.com/2026/06/inc-ransomware-claims-830-victims-since.html"
+    },
+    {
+      "entry_id": "30c123434566323e",
+      "title": "The Scripts on Your Checkout Page Are Now a PCI DSS Problem",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-18T13:58:39+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要The Hacker Newsは、PCI DSSの新しい要求事項により、決済ページで読み込まれる外部スクリプトが監査上の重要論点になったと紹介している。顧客がカード番号を入力する画面では、自社コードだけでなく、分析タグ、タグ管理、サポートウィジェット、決済iframeなどが同時に動き、いずれかが改ざんされるとブラウザ上でカード情報を窃取される可能性があ…",
+      "article_path": "articles/30c123434566323e.html",
+      "original_url": "https://thehackernews.com/2026/06/the-scripts-on-your-checkout-page-are.html"
+    },
+    {
+      "entry_id": "64db3109f77ec369",
+      "title": "DragonForce Hackers Abuse Microsoft Teams Relays to Hide Backdoor.Turn C2 Traffic",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-18T13:30:07+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要The Hacker Newsは、DragonForceランサムウェアに関連する攻撃者が、Go製RATのBackdoor.Turnを使い、Microsoft Teamsのリレー基盤内にC2通信を紛れ込ませた観測を報じた。SymantecとCarbon Blackの調査によれば、米国の大手サービス企業に対する侵入で使われ、攻撃者は許可されやすいクラウド通…",
+      "article_path": "articles/64db3109f77ec369.html",
+      "original_url": "https://thehackernews.com/2026/06/dragonforce-hackers-abuse-microsoft.html"
+    },
+    {
+      "entry_id": "39fc480be3a4fdbb",
+      "title": "ISC Stormcast For Thursday, June 18th, 2026 https://isc.sans.edu/podcastdetail/9978, (Thu, Jun 18th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-06-18T02:00:02+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要SANS ISCが2026年6月18日のStormcastを公開したという通知だが、入力には要約本文、CVE、製品名、参照URL、観測内容が含まれていない。現時点で確認できるのは短報またはポッドキャストの公開事実に限られ、具体的な攻撃情報は未提示という扱いになる。悪用の観点では、この記事自体が攻撃手順や脆弱性を示すものではなく、実際のリスクは番組内で扱…",
+      "article_path": "articles/39fc480be3a4fdbb.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33088"
+    },
+    {
+      "entry_id": "c9740c76a6c890c9",
+      "title": "The Behavior of Coordinated SSH Brute Force Attacks over the last three months &#x5b;Guest Diary&#x5d;, (Wed, Jun 17th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-06-18T01:49:29+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Credential Theft",
+      "summary_preview": "概要SANS ISCのゲスト記事は、直近3か月に観測された協調的なSSHブルートフォース攻撃の振る舞いを扱っている。攻撃は単一ホストからの連続試行ではなく、複数の送信元や時間分散を使って認証試行を薄く広げ、単純なしきい値型検知や送信元IP遮断を回避する形で悪用される可能性がある。影響は、インターネット公開SSH、弱いパスワード、再利用認証情報、MFA未導入…",
+      "article_path": "articles/c9740c76a6c890c9.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33086"
+    },
+    {
+      "entry_id": "b76ed039832637c6",
+      "title": "VU#457458: Vendor-signed UEFI applications found vulnerable to Secure Boot bypass",
+      "source_name": "CERT/CC",
+      "category": "reporting",
+      "published_at": "2026-06-18T19:41:08+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CERT/CCは、複数ベンダーが署名したUEFIアプリケーションに、Secure Bootを迂回できる問題があると公表した。攻撃者は、対象端末のUEFI DBで該当ベンダー証明書が信頼されている場合に、UEFI shellやGRUB2の機能を悪用し、OS起動前に任意コードを実行できる。成立には管理者権限または物理アクセスが必要とされるが、成功すると未署…",
+      "article_path": "articles/b76ed039832637c6.html",
+      "original_url": "https://kb.cert.org/vuls/id/457458"
+    },
+    {
+      "entry_id": "1f02cdf60860d265",
+      "title": "VU#380058: SignalRGB kernel driver contains improper access control and IOCTL vulnerabilities",
+      "source_name": "CERT/CC",
+      "category": "reporting",
+      "published_at": "2026-06-17T21:02:44+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "Overview\nThe SignalRGB kernel driver, SignalIo.sys, contains two vulnerabilities involving improper access control and unsafe memory handling. The device object is created with an…",
+      "article_path": "articles/1f02cdf60860d265.html",
+      "original_url": "https://kb.cert.org/vuls/id/380058"
+    },
+    {
+      "entry_id": "0274369ec6961868",
+      "title": "巨大磁気嵐が地球大気由来の酸素イオンを宇宙へ大量輸送",
+      "source_name": "NICT NOTICE",
+      "category": "reporting",
+      "published_at": "2026-06-18T05:00:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要NICT NOTICEは、「巨大磁気嵐が地球大気由来の酸素イオンを宇宙へ大量輸送」とする観測・研究トピックを示した。これは脆弱性や侵入ではなく、宇宙天気現象が地球周辺環境へ与える影響を扱う情報と読める。サイバー攻撃として悪用される性質の話ではないが、磁気嵐は衛星通信、GNSS測位・時刻同期、短波通信、電力設備監視などに波及し、結果として原因不明の通信劣…",
+      "article_path": "articles/0274369ec6961868.html",
+      "original_url": "/publicity/topics/2026/06/18-1.html"
+    },
+    {
+      "entry_id": "cfd2298ac4a8c20f",
+      "title": "今日もどこかで情報漏えい 第49回「2026年5月の情報漏えい」その地方ならではのケジメのつけ方",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-17T23:10:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要ScanNetSecurityの連載記事として、2026年5月に表面化した情報漏えい事案を振り返る内容とみられるが、入力には本文要約や参照URLがなく、個別事案の原因、件数、対象組織は確認できない。CSIRT観点では、月次の漏えいまとめは単なる事例紹介ではなく、誤送信、公開設定ミス、委託先起点、不正アクセスのどれが増えているかを見て、自組織の統制に引き…",
+      "article_path": "articles/cfd2298ac4a8c20f.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/18/55524.html"
+    },
+    {
+      "entry_id": "df4a178953a98217",
+      "title": "SCSK 公式ホームページで不審な認証表示",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-17T23:05:08+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Credential Theft",
+      "summary_preview": "概要ScanNetSecurityは、「SCSK 公式ホームページで不審な認証表示」が確認された件を報じている。公開Webサイトで想定外の認証ダイアログが出る場合、単なる設定ミスだけでなく、サイト改ざん、リバースプロキシやCDN設定の変更、外部スクリプト経由の誘導など複数の原因が候補となる。悪用面では、訪問者に社内IDや取引先ポータルの認証情報を入力させる…",
+      "article_path": "articles/df4a178953a98217.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/18/55523.html"
+    },
+    {
+      "entry_id": "6359ddcb6e8b78ff",
+      "title": "日中経済協会のメールアカウントに不正アクセス、不審メール 565 件送信",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-17T23:05:06+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要日中経済協会のメールアカウントに第三者が不正アクセスし、不審メール565件が送信されたと報じられた。正規ドメイン・正規アカウントから出るメールは受信側の認証や利用者心理をすり抜けやすく、攻撃者は過去のやり取りや署名を利用して、添付ファイル誘導、認証情報窃取、取引先へのなりすましへつなげる可能性が高い。影響は当該アカウントに閉じるとは限らず、送信先の取引…",
+      "article_path": "articles/6359ddcb6e8b78ff.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/18/55522.html"
+    },
+    {
+      "entry_id": "5c6e80de4cd65c90",
+      "title": "神姫バスのウェブサイトに DDoS 攻撃",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-17T23:05:02+00:00",
+      "impact_level": "Medium",
+      "threat_type": "DDoS",
+      "summary_preview": "概要ScanNetSecurityは、「神姫バスのウェブサイトに DDoS 攻撃」が発生したと報じており、少なくとも外部公開サイトの可用性低下が問題になった事案と読める。DDoSは侵入を伴わず、大量通信やアプリケーション層リクエストで公開サービスを詰まらせるため、攻撃者にとっては短時間で利用者影響を出しやすい手段となる。影響範囲は、単なる企業案内サイトに限…",
+      "article_path": "articles/5c6e80de4cd65c90.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/18/55521.html"
+    },
+    {
+      "entry_id": "acd64450d83747db",
+      "title": "「情報セキュリティサービス基準審査登録制度」2026年度 第2回 登録申請募集開始",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-17T23:00:21+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要ScanNetSecurityは、「情報セキュリティサービス基準審査登録制度」の2026年度第2回登録申請募集が始まったことを伝えている。これは脆弱性や侵害の速報ではなく、セキュリティサービス提供者が一定の基準に基づき審査・登録を受ける制度に関する案内となる。攻撃者が直接悪用する話ではないが、組織側が登録有無だけをもって委託先の安全性を過信すると、調達…",
+      "article_path": "articles/acd64450d83747db.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/18/55520.html"
+    },
+    {
+      "entry_id": "fc417da176eced50",
+      "title": "SCS 評価制度対応支援でリコージャパンと SecureNavi が協業",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-17T23:00:18+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要ScanNetSecurityの記事タイトルからは、リコージャパンとSecureNaviが「SCS 評価制度」への対応支援で協業する発表と読み取れる。これは脆弱性や侵害の公表ではなく、評価制度への準備、証跡整理、運用定着を支援するサービス連携に近い。攻撃者が直接悪用する技術情報は示されていないが、評価対応を形式的なチェックリスト運用に寄せると、委託先管…",
+      "article_path": "articles/fc417da176eced50.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/18/55519.html"
+    },
+    {
+      "entry_id": "8c18f7ad647a8e98",
+      "title": "「ブラウザの偽警告」から「給与改定の社内通知」まで ～  4 つの手口から読み解くサポート詐欺最新傾向",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-17T23:00:14+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Scam/Fraud",
+      "summary_preview": "概要ScanNetSecurityの記事は、「ブラウザの偽警告」や「給与改定の社内通知」を含む4つの手口を題材に、サポート詐欺の誘導経路が単純な警告画面から業務連絡を装う形へ広がっている点を扱ったものとみられる。攻撃者は、利用者の焦りや社内通知への信頼を利用し、電話連絡、遠隔操作ツールの導入、認証情報入力、送金や電子マネー購入へつなげる流れを作る可能性があ…",
+      "article_path": "articles/8c18f7ad647a8e98.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/18/55518.html"
+    },
+    {
+      "entry_id": "0750e58ba6bfcca4",
+      "title": "東京都、都内中小企業向けに「CSIRT構築・IT-BCP策定」を無償支援 限定 60 社",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-17T23:00:11+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要ScanNetSecurityは、東京都が都内中小企業を対象に「CSIRT構築・IT-BCP策定」を無償支援し、対象を60社に限定する取り組みを紹介している。これは個別の侵害や脆弱性の警報ではなく、インシデント対応体制と事業継続計画を整えるための支援施策という位置付けになる。悪用という観点では、支援制度そのものが攻撃面を増やすわけではないが、未整備の企…",
+      "article_path": "articles/0750e58ba6bfcca4.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/18/55517.html"
+    },
+    {
+      "entry_id": "35d86ffcb7e82385",
+      "title": "医療機関のセキュリティの現状を簡単に「見える化」～ HAIP、Webアセスメントサービス開始",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-17T23:00:09+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要ScanNetSecurityの記事は、HAIPが医療機関向けに、セキュリティの現状を簡易に「見える化」するWebアセスメントサービスを開始したという内容を伝えるものと読める。現時点で入力情報から確認できるのはサービス開始の事実に限られ、特定の侵害、脆弱性、悪用手口、対象製品の欠陥が公表されたわけではない。CSIRT観点では、医療機関の公開Web、リモ…",
+      "article_path": "articles/35d86ffcb7e82385.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/18/55516.html"
+    },
+    {
+      "entry_id": "d81ee6729ed072fa",
+      "title": "「パッチ適用実施していない」建設・不動産 29.5 ％、流通 17.0 ％、旅行・レジャー・飲食 10.0 ％、金融 0.0 ％",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-17T23:00:03+00:00",
+      "impact_level": "Low",
+      "threat_type": "Patch",
+      "summary_preview": "概要ScanNetSecurityは、業種別に「パッチ適用を実施していない」と回答した割合として、建設・不動産29.5％、流通17.0％、旅行・レジャー・飲食10.0％、金融0.0％という差を伝えている。これは特定CVEの注意喚起ではなく、組織ごとの修正運用の成熟度差を示す情報として扱うべき内容となる。攻撃者にとって未適用環境は、既知脆弱性のスキャン、認証…",
+      "article_path": "articles/d81ee6729ed072fa.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/18/55515.html"
+    }
+  ]
+}

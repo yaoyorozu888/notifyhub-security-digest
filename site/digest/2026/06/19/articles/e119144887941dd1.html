@@ -1,0 +1,334 @@
+<!-- article.html テンプレート（生成用） (例: /digest/YYYY/MM/DD/articles/<entry_id>.html)
+     サーバ側（Function）で {{...}} を置換して出力してください。
+-->
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/favicon-192.png" />
+  <title>Orphaned AI Agents: How to Find Hidden Access Risks Inside Your Network | NotifyHub Cybersecurity Daily Report</title>
+  <style>
+    :root{
+      --bg:#0b1020; --panel:#0f1730; --panel2:#121c3a;
+      --text:#e7ecff; --muted:#a9b4df; --line:#22305b;
+      --accent:#7aa2ff; --good:#4ade80; --warn:#fbbf24; --bad:#fb7185;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+      --radius:18px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      background: radial-gradient(1000px 700px at 20% -10%, rgba(122,162,255,.25), transparent 60%),
+                  radial-gradient(900px 600px at 90% 10%, rgba(251,113,133,.12), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+    }
+    a{color:inherit}
+    .wrap{max-width:960px; margin:0 auto; padding:22px 18px 44px}
+    .topbar{
+      display:flex; justify-content:space-between; align-items:center; gap:12px;
+      margin-bottom:12px;
+    }
+    .crumb a{
+      text-decoration:none;
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .crumb a:hover{border-color:rgba(122,162,255,.65)}
+    .chip{
+      display:inline-flex; align-items:center; gap:8px;
+      background:rgba(27,38,80,.75);
+      border:1px solid rgba(34,48,91,.9);
+      padding:7px 10px; border-radius:999px;
+      font-size:12px; color:var(--muted);
+      backdrop-filter: blur(10px);
+      white-space:nowrap;
+    }
+    .chip strong{color:var(--text); font-weight:650}
+    .panel{
+      background: linear-gradient(180deg, rgba(15,23,48,.9), rgba(15,23,48,.75));
+      border:1px solid rgba(34,48,91,.9);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .head{
+      padding:16px 16px 12px;
+      border-bottom:1px solid rgba(34,48,91,.9);
+      background:rgba(18,28,58,.55);
+    }
+    h1{
+      margin:0;
+      font-size:20px;
+      line-height:1.35;
+      letter-spacing:.15px;
+    }
+    .meta{
+      margin-top:10px;
+      display:flex; gap:10px; flex-wrap:wrap;
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.6;
+    }
+    .meta a{color:var(--muted)}
+    .meta a:hover{color:var(--accent)}
+    .tags{
+      margin-top:12px;
+      display:flex; gap:8px; flex-wrap:wrap;
+    }
+    .tag{
+      font-size:11px;
+      padding:6px 9px;
+      border-radius:999px;
+      background:rgba(27,38,80,.65);
+      border:1px solid rgba(34,48,91,.9);
+      color:var(--muted);
+      white-space:nowrap;
+    }
+    .tag.level-Critical{border-color:rgba(251,113,133,.65); color:#ffd0d7}
+    .tag.level-High{border-color:rgba(251,191,36,.65); color:#ffe9b0}
+    .tag.level-Medium{border-color:rgba(122,162,255,.65); color:#dbe6ff}
+    .tag.level-Low{border-color:rgba(74,222,128,.55); color:#d0ffe2}
+    .tag.level-Info{border-color:rgba(169,180,223,.55); color:rgba(169,180,223,.95)}
+    .body{
+      padding:16px;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+    }
+    .section{
+      background:rgba(18,28,58,.35);
+      border:1px solid rgba(34,48,91,.75);
+      border-radius:16px;
+      padding:14px;
+    }
+    .section h2{
+      margin:0 0 10px;
+      font-size:14px;
+      letter-spacing:.1px;
+    }
+    .ruleReason{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.65;
+      white-space:pre-wrap;
+    }
+    .infoSources{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.5;
+    }
+    .infoSourceRow{
+      margin:0;
+      padding:0;
+    }
+    .infoSourceRow + .infoSourceRow{
+      margin-top:2px;
+    }
+
+    /* --- summary_html styles (OpenAI output uses h4/p/ul/li/strong/code/br) --- */
+    .summary h4{
+      margin:14px 0 8px;
+      font-size:13px;
+      letter-spacing:.1px;
+      padding-left:10px;
+      border-left:3px solid rgba(122,162,255,.65);
+      color: rgba(231,236,255,.95);
+    }
+    .summary p{margin:8px 0; color:rgba(231,236,255,.92); line-height:1.75}
+    .summary ul, .summary ol{margin:8px 0 8px 1.2em; padding:0}
+    .summary li{margin:6px 0; color:rgba(231,236,255,.92); line-height:1.7}
+    .summary strong{
+      color:var(--text);
+      font-weight:750;
+      padding:0 .2em;
+      border-radius:8px;
+      background: linear-gradient(transparent 60%, rgba(122,162,255,.22) 60%);
+    }
+    .summary code{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 8px;
+      background: rgba(11,16,32,.6);
+      border: 1px solid rgba(34,48,91,.85);
+      color: rgba(231,236,255,.95);
+      white-space: nowrap;
+    }
+
+    .terms{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:10px;
+    }
+    @media (max-width: 860px){
+      .terms{grid-template-columns: 1fr}
+    }
+    .termCard{
+      background:rgba(11,16,32,.45);
+      border:1px solid rgba(34,48,91,.85);
+      border-radius:14px;
+      padding:12px;
+      min-width:0;
+    }
+    .termCard .term{
+      font-weight:700;
+      font-size:13px;
+      margin:0 0 8px;
+      word-break:break-word;
+    }
+    .termCard .exp{
+      margin:0;
+      color:rgba(231,236,255,.9);
+      line-height:1.7;
+      font-size:12px;
+      white-space:pre-wrap;
+    }
+    .subSectionTitle{
+      margin:16px 0 8px;
+      font-size:12px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:var(--muted);
+    }
+    .deepDive{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:10px;
+      margin-top:8px;
+    }
+    .deepDiveCard{
+      background:rgba(12,20,38,.6);
+    }
+
+    .footer{
+      margin-top:14px;
+      color:rgba(169,180,223,.75);
+      font-size:12px;
+      line-height:1.7;
+      text-align:center;
+    }
+    .btnRow{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px}
+    .linkbtn{
+      text-decoration:none;
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .linkbtn:hover{border-color:rgba(122,162,255,.65)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="crumb">
+        <!-- ../index.html は通常 "../index.html" でOK -->
+        <a href="../index.html">← 日次トップへ戻る</a>
+      </div>
+      <div class="chip">entry_id <strong class="mono">e119144887941dd1</strong></div>
+    </div>
+
+    <div class="panel">
+      <div class="head">
+        <h1>Orphaned AI Agents: How to Find Hidden Access Risks Inside Your Network</h1>
+
+        <div class="meta">
+          <span>🗞️ The Hacker News</span>
+          <span>🕒 2026-06-19T00:33:49+09:00</span>
+          <span>🔗 <a href="https://thehackernews.com/2026/06/orphaned-ai-agents-how-to-find-hidden.html" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
+        </div>
+
+        <div class="tags">
+          <span class="tag level-Medium">Impact: Medium</span>
+          <span class="tag">Misconfiguration</span>
+        </div>
+
+        <div class="btnRow">
+          <a class="linkbtn" href="https://thehackernews.com/2026/06/orphaned-ai-agents-how-to-find-hidden.html" target="_blank" rel="noopener noreferrer">原文リンク</a>
+          <a class="linkbtn" href="https://www.notifyhub.site/digest/2026/06/19/">日次トップ</a>
+        </div>
+      </div>
+
+      <div class="body">
+        
+        <div class="section">
+          <h2>Impact判定理由</h2>
+          <div class="ruleReason">特定の脆弱性や悪用確認ではなく、AIエージェントと非人間IDの管理不備による潜在的なアクセスリスクが中心となる。
+知的財産や複数SaaSへ波及し得る一方、成立条件は自組織でのAIエージェント導入状況、権限設計、トークン管理に依存する。
+情報源はメディア記事で二次情報の性格が強く、悪用確認や一次観測が示されていないため、ベース評価を引き上げずMediumと判断した。</div>
+        </div>
+        <div class="section summary">
+          <h2>🧾 要約（ChatGPT / gpt-5.5-2026-04-23）</h2>
+          <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
+          <h4>概要</h4><p>The Hacker Newsは、社内AI活用の急拡大に伴い、作成者の退職・異動後も稼働し続ける<strong>孤児化AIエージェント</strong>と、不要になっても残る<strong>常設権限</strong>が見落とされやすいリスクになっていると指摘している。攻撃者がエージェントのAPIキー、サービスアカウント、連携トークンを奪うと、人間の端末侵害を経ずに文書リポジトリ、チケット、コード、ナレッジベースへアクセスし、機密情報の収集や業務フローの改ざんに使える。影響は単一ツールに閉じず、AIエージェントが複数SaaSや社内APIを横断する構成では、権限継承により<strong>知的財産と業務データ</strong>へ広がりやすい。特に退職者管理、棚卸し、承認者追跡が人間ID中心のままなら、ログ上は正規の自動処理に見え、検知と責任所在の確認が遅れやすい。現時点で特定製品の脆弱性、実被害、攻撃キャンペーン、具体的な侵害手口は記事から確認できず、組織内のAIエージェント台帳と権限実態を照合する必要が残る。</p>
+        </div>
+
+        <div class="section">
+          <h2>📌 キーワード解説</h2>
+          <div class="terms">
+            <div class="termCard">
+  <div class="term">Orphaned AI Agent（孤児化AIエージェント）</div>
+  <p class="exp">作成者や管理者が不在のまま動くAI処理主体。退職者アカウントと違い、サービス連携として残りやすい。</p>
+</div>
+<div class="termCard">
+  <div class="term">Standing Privileges（常設権限）</div>
+  <p class="exp">必要時だけでなく常に付与された権限。Just-in-Time権限と対比し、侵害時の被害範囲が広がる。</p>
+</div>
+<div class="termCard">
+  <div class="term">Non-human Identity（非人間ID）</div>
+  <p class="exp">人ではなくアプリやエージェントが使うID。人事イベントと連動しにくく、棚卸し漏れが起きやすい。</p>
+</div>
+<div class="termCard">
+  <div class="term">Service Account（サービスアカウント）</div>
+  <p class="exp">自動処理や連携に使うアカウント。個人IDの代替ではなく、所有者と用途の管理が必要となる。</p>
+</div>
+          </div>
+          <h3 class="subSectionTitle">深掘り解説</h3>
+          <div class="deepDive">
+            <div class="termCard deepDiveCard">
+  <div class="term">AIエージェント管理の要点はモデルではなく非人間IDのライフサイクル</div>
+  <p class="exp">AIエージェントのリスクを評価する際、モデルの性能や生成内容だけを見ると判断を誤りやすい。実務上の中心は、そのエージェントがどのIDで、どのデータへ、どの頻度で、誰の承認に基づいてアクセスしているかという非人間IDのライフサイクル管理にある。
+
+典型例として、開発部門の担当者が社内検索用エージェントを作り、Gitリポジトリ、設計文書、顧客問い合わせ履歴への読み取り権限を与えたケースを考える。その担当者が異動しても、エージェントのサービスアカウントとAPIトークンが残れば、正規の自動処理としてアクセスが継続する。攻撃者がそのトークンを取得した場合、VPN端末の侵害や管理者権限の奪取なしに、広範な情報収集が可能となる。ログ上は通常のエージェント実行に見えるため、異常検知はアクセス先、時間帯、出力量、呼び出し元の変化を見る必要がある。
+
+CSIRTとID管理部門が確認すべき最小単位は、エージェント名ではなく「所有者」「業務目的」「権限範囲」「認証情報の保管場所」「失効条件」の5点となる。特に所有者は個人名だけでなく、承認責任を持つ部署やロールで持たせる方が退職・異動に強い。権限は最初から広く与えず、検索、要約、チケット作成、コード変更のような処理種別ごとに分けると、封じ込め時に止める範囲を限定しやすい。
+
+初動対応では、未知のAIエージェントを止めるより先に、認証情報の失効と連携先SaaSの監査ログ保全を優先する場面が多い。停止だけでは流出済みトークンの悪用を防げず、逆に業務自動化の停止で証跡が途切れる場合もある。棚卸しでは、AIツールの管理画面だけでなく、IdP、クラウドIAM、SaaSの外部アプリ連携、シークレット管理基盤を突き合わせる必要がある。AIエージェントは新しい攻撃対象に見えるが、実体は長寿命トークンと過剰権限を持つ自動化基盤として扱う方が、運用判断にぶれが少ない。</p>
+</div>
+          </div>
+        </div>
+
+        
+
+        <div class="section">
+          <h2>🕘 生成情報</h2>
+          <div class="ruleReason">
+対象期間：2026-06-18T06:00:00+09:00 〜 2026-06-19T06:00:00+09:00
+生成時刻：2026-06-19T07:05:28.252529+09:00
+免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      notifyhub.site
+    </div>
+  </div>
+</body>
+</html>

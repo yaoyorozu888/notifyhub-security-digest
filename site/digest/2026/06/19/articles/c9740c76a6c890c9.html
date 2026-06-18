@@ -1,0 +1,334 @@
+<!-- article.html テンプレート（生成用） (例: /digest/YYYY/MM/DD/articles/<entry_id>.html)
+     サーバ側（Function）で {{...}} を置換して出力してください。
+-->
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/favicon-192.png" />
+  <title>The Behavior of Coordinated SSH Brute Force Attacks over the last three months &amp;#x5b;Guest Diary&amp;#x5d;, (Wed, Jun 17th) | NotifyHub Cybersecurity Daily Report</title>
+  <style>
+    :root{
+      --bg:#0b1020; --panel:#0f1730; --panel2:#121c3a;
+      --text:#e7ecff; --muted:#a9b4df; --line:#22305b;
+      --accent:#7aa2ff; --good:#4ade80; --warn:#fbbf24; --bad:#fb7185;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+      --radius:18px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      background: radial-gradient(1000px 700px at 20% -10%, rgba(122,162,255,.25), transparent 60%),
+                  radial-gradient(900px 600px at 90% 10%, rgba(251,113,133,.12), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+    }
+    a{color:inherit}
+    .wrap{max-width:960px; margin:0 auto; padding:22px 18px 44px}
+    .topbar{
+      display:flex; justify-content:space-between; align-items:center; gap:12px;
+      margin-bottom:12px;
+    }
+    .crumb a{
+      text-decoration:none;
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .crumb a:hover{border-color:rgba(122,162,255,.65)}
+    .chip{
+      display:inline-flex; align-items:center; gap:8px;
+      background:rgba(27,38,80,.75);
+      border:1px solid rgba(34,48,91,.9);
+      padding:7px 10px; border-radius:999px;
+      font-size:12px; color:var(--muted);
+      backdrop-filter: blur(10px);
+      white-space:nowrap;
+    }
+    .chip strong{color:var(--text); font-weight:650}
+    .panel{
+      background: linear-gradient(180deg, rgba(15,23,48,.9), rgba(15,23,48,.75));
+      border:1px solid rgba(34,48,91,.9);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .head{
+      padding:16px 16px 12px;
+      border-bottom:1px solid rgba(34,48,91,.9);
+      background:rgba(18,28,58,.55);
+    }
+    h1{
+      margin:0;
+      font-size:20px;
+      line-height:1.35;
+      letter-spacing:.15px;
+    }
+    .meta{
+      margin-top:10px;
+      display:flex; gap:10px; flex-wrap:wrap;
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.6;
+    }
+    .meta a{color:var(--muted)}
+    .meta a:hover{color:var(--accent)}
+    .tags{
+      margin-top:12px;
+      display:flex; gap:8px; flex-wrap:wrap;
+    }
+    .tag{
+      font-size:11px;
+      padding:6px 9px;
+      border-radius:999px;
+      background:rgba(27,38,80,.65);
+      border:1px solid rgba(34,48,91,.9);
+      color:var(--muted);
+      white-space:nowrap;
+    }
+    .tag.level-Critical{border-color:rgba(251,113,133,.65); color:#ffd0d7}
+    .tag.level-High{border-color:rgba(251,191,36,.65); color:#ffe9b0}
+    .tag.level-Medium{border-color:rgba(122,162,255,.65); color:#dbe6ff}
+    .tag.level-Low{border-color:rgba(74,222,128,.55); color:#d0ffe2}
+    .tag.level-Info{border-color:rgba(169,180,223,.55); color:rgba(169,180,223,.95)}
+    .body{
+      padding:16px;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+    }
+    .section{
+      background:rgba(18,28,58,.35);
+      border:1px solid rgba(34,48,91,.75);
+      border-radius:16px;
+      padding:14px;
+    }
+    .section h2{
+      margin:0 0 10px;
+      font-size:14px;
+      letter-spacing:.1px;
+    }
+    .ruleReason{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.65;
+      white-space:pre-wrap;
+    }
+    .infoSources{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.5;
+    }
+    .infoSourceRow{
+      margin:0;
+      padding:0;
+    }
+    .infoSourceRow + .infoSourceRow{
+      margin-top:2px;
+    }
+
+    /* --- summary_html styles (OpenAI output uses h4/p/ul/li/strong/code/br) --- */
+    .summary h4{
+      margin:14px 0 8px;
+      font-size:13px;
+      letter-spacing:.1px;
+      padding-left:10px;
+      border-left:3px solid rgba(122,162,255,.65);
+      color: rgba(231,236,255,.95);
+    }
+    .summary p{margin:8px 0; color:rgba(231,236,255,.92); line-height:1.75}
+    .summary ul, .summary ol{margin:8px 0 8px 1.2em; padding:0}
+    .summary li{margin:6px 0; color:rgba(231,236,255,.92); line-height:1.7}
+    .summary strong{
+      color:var(--text);
+      font-weight:750;
+      padding:0 .2em;
+      border-radius:8px;
+      background: linear-gradient(transparent 60%, rgba(122,162,255,.22) 60%);
+    }
+    .summary code{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 8px;
+      background: rgba(11,16,32,.6);
+      border: 1px solid rgba(34,48,91,.85);
+      color: rgba(231,236,255,.95);
+      white-space: nowrap;
+    }
+
+    .terms{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:10px;
+    }
+    @media (max-width: 860px){
+      .terms{grid-template-columns: 1fr}
+    }
+    .termCard{
+      background:rgba(11,16,32,.45);
+      border:1px solid rgba(34,48,91,.85);
+      border-radius:14px;
+      padding:12px;
+      min-width:0;
+    }
+    .termCard .term{
+      font-weight:700;
+      font-size:13px;
+      margin:0 0 8px;
+      word-break:break-word;
+    }
+    .termCard .exp{
+      margin:0;
+      color:rgba(231,236,255,.9);
+      line-height:1.7;
+      font-size:12px;
+      white-space:pre-wrap;
+    }
+    .subSectionTitle{
+      margin:16px 0 8px;
+      font-size:12px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:var(--muted);
+    }
+    .deepDive{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:10px;
+      margin-top:8px;
+    }
+    .deepDiveCard{
+      background:rgba(12,20,38,.6);
+    }
+
+    .footer{
+      margin-top:14px;
+      color:rgba(169,180,223,.75);
+      font-size:12px;
+      line-height:1.7;
+      text-align:center;
+    }
+    .btnRow{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px}
+    .linkbtn{
+      text-decoration:none;
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .linkbtn:hover{border-color:rgba(122,162,255,.65)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="crumb">
+        <!-- ../index.html は通常 "../index.html" でOK -->
+        <a href="../index.html">← 日次トップへ戻る</a>
+      </div>
+      <div class="chip">entry_id <strong class="mono">c9740c76a6c890c9</strong></div>
+    </div>
+
+    <div class="panel">
+      <div class="head">
+        <h1>The Behavior of Coordinated SSH Brute Force Attacks over the last three months &amp;#x5b;Guest Diary&amp;#x5d;, (Wed, Jun 17th)</h1>
+
+        <div class="meta">
+          <span>🗞️ SANS ISC</span>
+          <span>🕒 2026-06-18T10:49:29+09:00</span>
+          <span>🔗 <a href="https://isc.sans.edu/diary/rss/33086" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
+        </div>
+
+        <div class="tags">
+          <span class="tag level-Medium">Impact: Medium</span>
+          <span class="tag">Credential Theft</span>
+        </div>
+
+        <div class="btnRow">
+          <a class="linkbtn" href="https://isc.sans.edu/diary/rss/33086" target="_blank" rel="noopener noreferrer">原文リンク</a>
+          <a class="linkbtn" href="https://www.notifyhub.site/digest/2026/06/19/">日次トップ</a>
+        </div>
+      </div>
+
+      <div class="body">
+        
+        <div class="section">
+          <h2>Impact判定理由</h2>
+          <div class="ruleReason">技術的には新規脆弱性ではなく、公開SSHと弱い認証運用が前提となるため、全組織一律の緊急対応ではない。
+一方で、成功時は管理権限取得、鍵追加、踏み台化、横移動につながり、外部公開資産が多い組織では運用影響が大きい。
+情報源はSANS ISCのコミュニティ観測記事であり、メディア・観測寄りの二次的情報としてベース評価を引き上げず据え置く。</div>
+        </div>
+        <div class="section summary">
+          <h2>🧾 要約（ChatGPT / gpt-5.5-2026-04-23）</h2>
+          <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
+          <div><h4>概要</h4><p>SANS ISCのゲスト記事は、直近3か月に観測された<strong>協調的なSSHブルートフォース攻撃</strong>の振る舞いを扱っている。攻撃は単一ホストからの連続試行ではなく、複数の送信元や時間分散を使って認証試行を薄く広げ、単純なしきい値型検知や送信元IP遮断を回避する形で悪用される可能性がある。影響は、インターネット公開SSH、弱いパスワード、再利用認証情報、MFA未導入、管理ネットワーク分離不足が重なる環境で、<strong>初期侵入から権限昇格や横移動</strong>へ広がりやすい。一方で、入力情報からは対象地域、観測規模、利用されたユーザー名、成功ログインの有無、特定マルウェアやボットネットとの関連は確認できない。CSIRTとしては話題性よりも、自組織のSSH露出、認証失敗の分散パターン、成功ログイン直後の挙動を突き合わせ、<strong>侵入済み前提の確認</strong>まで進める判断が必要となる。</p></div>
+        </div>
+
+        <div class="section">
+          <h2>📌 キーワード解説</h2>
+          <div class="terms">
+            <div class="termCard">
+  <div class="term">SSH brute force（SSH総当たり攻撃）</div>
+  <p class="exp">SSH認証へ多数の候補を試す攻撃。脆弱性悪用と違い、認証運用の弱さが主な入口となる。</p>
+</div>
+<div class="termCard">
+  <div class="term">Coordinated attack（協調攻撃）</div>
+  <p class="exp">複数送信元や時間差で試行を分散する攻撃。単一IPの連打より検知しにくい点が問題となる。</p>
+</div>
+<div class="termCard">
+  <div class="term">Credential stuffing（認証情報リスト攻撃）</div>
+  <p class="exp">漏えい済みIDとパスワードを使う攻撃。純粋な総当たりより成功率が高く、再利用対策が焦点となる。</p>
+</div>
+<div class="termCard">
+  <div class="term">Exposure management（露出管理）</div>
+  <p class="exp">外部公開資産を継続的に把握し減らす活動。脆弱性管理だけでは、不要なSSH公開を見落としやすい。</p>
+</div>
+          </div>
+          <h3 class="subSectionTitle">深掘り解説</h3>
+          <div class="deepDive">
+            <div class="termCard deepDiveCard">
+  <div class="term">分散型SSH攻撃では、失敗回数より「成功後の文脈」を見る</div>
+  <p class="exp">SSHブルートフォース対策は、失敗回数のしきい値で遮断する発想に寄りやすい。しかし協調型の攻撃では、1つの送信元IPあたりの試行回数を抑え、数十から数百の送信元に分散してくるため、単純な「5分間に10回失敗したら遮断」というルールだけでは抜けやすい。ここで必要になるのは、送信元単位ではなく、対象アカウント、対象ホスト、時間帯、国・ASN、成功ログイン後の操作を組み合わせた見方となる。
+
+具体例として、外部公開された踏み台サーバで、ユーザー名「admin」「oracle」「test」への失敗が多数あるだけなら、通常のインターネットノイズとして処理できる場合もある。だが、その後に普段は国内拠点からしかログインしない運用アカウントが、初見の海外ASNから成功ログインし、直後に&lt;code&gt;curl&lt;/code&gt;や&lt;code&gt;wget&lt;/code&gt;で外部からスクリプトを取得し、&lt;code&gt;authorized_keys&lt;/code&gt;を書き換えたなら、認証突破後の侵入として扱う必要がある。失敗ログだけを見て「遮断済み」と判断すると、この段階を見落とす。
+
+運用上は、SSHをインターネットへ直接出さない設計が第一候補となる。VPN、ZTNA、踏み台の送信元制限、鍵認証限定、パスワード認証無効化、MFAの組み合わせで攻撃面を狭める。ただし、研究用サーバ、クラウド検証環境、委託先管理用ホストのように例外公開が残りやすい。CSIRTは脆弱性スキャンだけでなく、クラウドのセキュリティグループ、ファイアウォール、DNS、資産台帳を突き合わせ、意図しない22番公開を継続確認する必要がある。
+
+検知では、認証失敗の総数よりも、アカウントごとの横断試行、短時間に多数ホストへ広がる試行、成功ログイン直後のコマンド実行、鍵ファイル変更、ログ削除、外向き通信開始を優先して見る。封じ込めでは、対象アカウントの無効化や鍵ローテーションだけで終えず、同じ認証情報が使われる他システム、踏み台経由で到達可能な内部セグメント、クラウドAPIキーや秘密鍵の持ち出し有無まで確認する。この粒度まで見て初めて、分散型SSH攻撃を単なるスキャンではなく侵入リスクとして評価できる。</p>
+</div>
+          </div>
+        </div>
+
+        
+
+        <div class="section">
+          <h2>🕘 生成情報</h2>
+          <div class="ruleReason">
+対象期間：2026-06-18T06:00:00+09:00 〜 2026-06-19T06:00:00+09:00
+生成時刻：2026-06-19T07:05:28.252529+09:00
+免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      notifyhub.site
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,330 @@
+<!-- article.html テンプレート（生成用） (例: /digest/YYYY/MM/DD/articles/<entry_id>.html)
+     サーバ側（Function）で {{...}} を置換して出力してください。
+-->
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/favicon-192.png" />
+  <title>東京都、都内中小企業向けに「CSIRT構築・IT-BCP策定」を無償支援 限定 60 社 | NotifyHub Cybersecurity Daily Report</title>
+  <style>
+    :root{
+      --bg:#0b1020; --panel:#0f1730; --panel2:#121c3a;
+      --text:#e7ecff; --muted:#a9b4df; --line:#22305b;
+      --accent:#7aa2ff; --good:#4ade80; --warn:#fbbf24; --bad:#fb7185;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+      --radius:18px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      background: radial-gradient(1000px 700px at 20% -10%, rgba(122,162,255,.25), transparent 60%),
+                  radial-gradient(900px 600px at 90% 10%, rgba(251,113,133,.12), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+    }
+    a{color:inherit}
+    .wrap{max-width:960px; margin:0 auto; padding:22px 18px 44px}
+    .topbar{
+      display:flex; justify-content:space-between; align-items:center; gap:12px;
+      margin-bottom:12px;
+    }
+    .crumb a{
+      text-decoration:none;
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .crumb a:hover{border-color:rgba(122,162,255,.65)}
+    .chip{
+      display:inline-flex; align-items:center; gap:8px;
+      background:rgba(27,38,80,.75);
+      border:1px solid rgba(34,48,91,.9);
+      padding:7px 10px; border-radius:999px;
+      font-size:12px; color:var(--muted);
+      backdrop-filter: blur(10px);
+      white-space:nowrap;
+    }
+    .chip strong{color:var(--text); font-weight:650}
+    .panel{
+      background: linear-gradient(180deg, rgba(15,23,48,.9), rgba(15,23,48,.75));
+      border:1px solid rgba(34,48,91,.9);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .head{
+      padding:16px 16px 12px;
+      border-bottom:1px solid rgba(34,48,91,.9);
+      background:rgba(18,28,58,.55);
+    }
+    h1{
+      margin:0;
+      font-size:20px;
+      line-height:1.35;
+      letter-spacing:.15px;
+    }
+    .meta{
+      margin-top:10px;
+      display:flex; gap:10px; flex-wrap:wrap;
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.6;
+    }
+    .meta a{color:var(--muted)}
+    .meta a:hover{color:var(--accent)}
+    .tags{
+      margin-top:12px;
+      display:flex; gap:8px; flex-wrap:wrap;
+    }
+    .tag{
+      font-size:11px;
+      padding:6px 9px;
+      border-radius:999px;
+      background:rgba(27,38,80,.65);
+      border:1px solid rgba(34,48,91,.9);
+      color:var(--muted);
+      white-space:nowrap;
+    }
+    .tag.level-Critical{border-color:rgba(251,113,133,.65); color:#ffd0d7}
+    .tag.level-High{border-color:rgba(251,191,36,.65); color:#ffe9b0}
+    .tag.level-Medium{border-color:rgba(122,162,255,.65); color:#dbe6ff}
+    .tag.level-Low{border-color:rgba(74,222,128,.55); color:#d0ffe2}
+    .tag.level-Info{border-color:rgba(169,180,223,.55); color:rgba(169,180,223,.95)}
+    .body{
+      padding:16px;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+    }
+    .section{
+      background:rgba(18,28,58,.35);
+      border:1px solid rgba(34,48,91,.75);
+      border-radius:16px;
+      padding:14px;
+    }
+    .section h2{
+      margin:0 0 10px;
+      font-size:14px;
+      letter-spacing:.1px;
+    }
+    .ruleReason{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.65;
+      white-space:pre-wrap;
+    }
+    .infoSources{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.5;
+    }
+    .infoSourceRow{
+      margin:0;
+      padding:0;
+    }
+    .infoSourceRow + .infoSourceRow{
+      margin-top:2px;
+    }
+
+    /* --- summary_html styles (OpenAI output uses h4/p/ul/li/strong/code/br) --- */
+    .summary h4{
+      margin:14px 0 8px;
+      font-size:13px;
+      letter-spacing:.1px;
+      padding-left:10px;
+      border-left:3px solid rgba(122,162,255,.65);
+      color: rgba(231,236,255,.95);
+    }
+    .summary p{margin:8px 0; color:rgba(231,236,255,.92); line-height:1.75}
+    .summary ul, .summary ol{margin:8px 0 8px 1.2em; padding:0}
+    .summary li{margin:6px 0; color:rgba(231,236,255,.92); line-height:1.7}
+    .summary strong{
+      color:var(--text);
+      font-weight:750;
+      padding:0 .2em;
+      border-radius:8px;
+      background: linear-gradient(transparent 60%, rgba(122,162,255,.22) 60%);
+    }
+    .summary code{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 8px;
+      background: rgba(11,16,32,.6);
+      border: 1px solid rgba(34,48,91,.85);
+      color: rgba(231,236,255,.95);
+      white-space: nowrap;
+    }
+
+    .terms{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:10px;
+    }
+    @media (max-width: 860px){
+      .terms{grid-template-columns: 1fr}
+    }
+    .termCard{
+      background:rgba(11,16,32,.45);
+      border:1px solid rgba(34,48,91,.85);
+      border-radius:14px;
+      padding:12px;
+      min-width:0;
+    }
+    .termCard .term{
+      font-weight:700;
+      font-size:13px;
+      margin:0 0 8px;
+      word-break:break-word;
+    }
+    .termCard .exp{
+      margin:0;
+      color:rgba(231,236,255,.9);
+      line-height:1.7;
+      font-size:12px;
+      white-space:pre-wrap;
+    }
+    .subSectionTitle{
+      margin:16px 0 8px;
+      font-size:12px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:var(--muted);
+    }
+    .deepDive{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:10px;
+      margin-top:8px;
+    }
+    .deepDiveCard{
+      background:rgba(12,20,38,.6);
+    }
+
+    .footer{
+      margin-top:14px;
+      color:rgba(169,180,223,.75);
+      font-size:12px;
+      line-height:1.7;
+      text-align:center;
+    }
+    .btnRow{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px}
+    .linkbtn{
+      text-decoration:none;
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .linkbtn:hover{border-color:rgba(122,162,255,.65)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="crumb">
+        <!-- ../index.html は通常 "../index.html" でOK -->
+        <a href="../index.html">← 日次トップへ戻る</a>
+      </div>
+      <div class="chip">entry_id <strong class="mono">0750e58ba6bfcca4</strong></div>
+    </div>
+
+    <div class="panel">
+      <div class="head">
+        <h1>東京都、都内中小企業向けに「CSIRT構築・IT-BCP策定」を無償支援 限定 60 社</h1>
+
+        <div class="meta">
+          <span>🗞️ ScanNetSecurity</span>
+          <span>🕒 2026-06-18T08:00:11+09:00</span>
+          <span>🔗 <a href="https://scan.netsecurity.ne.jp/article/2026/06/18/55517.html" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
+        </div>
+
+        <div class="tags">
+          <span class="tag level-Info">Impact: Info</span>
+          <span class="tag">Advisory</span>
+        </div>
+
+        <div class="btnRow">
+          <a class="linkbtn" href="https://scan.netsecurity.ne.jp/article/2026/06/18/55517.html" target="_blank" rel="noopener noreferrer">原文リンク</a>
+          <a class="linkbtn" href="https://www.notifyhub.site/digest/2026/06/19/">日次トップ</a>
+        </div>
+      </div>
+
+      <div class="body">
+        
+        <div class="section">
+          <h2>Impact判定理由</h2>
+          <div class="ruleReason">個別の攻撃、脆弱性、侵害公表ではなく、体制整備支援の案内に当たるため技術的緊急性は低い。
+中小企業や取引先管理の観点では運用改善の価値があるが、即時封じ込めやパッチ適用を要する情報ではない。
+情報源はメディア記事であり二次情報の性格が強いため、影響度は引き上げずInfoに据え置く。</div>
+        </div>
+        <div class="section summary">
+          <h2>🧾 要約（ChatGPT / gpt-5.5-2026-04-23）</h2>
+          <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
+          <div><h4>概要</h4><p>ScanNetSecurityは、東京都が都内中小企業を対象に「CSIRT構築・IT-BCP策定」を無償支援し、対象を60社に限定する取り組みを紹介している。これは個別の侵害や脆弱性の警報ではなく、インシデント対応体制と事業継続計画を整えるための支援施策という位置付けになる。悪用という観点では、支援制度そのものが攻撃面を増やすわけではないが、未整備の企業ではランサムウェア、認証情報窃取、委託先経由の侵入時に<strong>初動判断の遅れ</strong>や<strong>復旧優先順位の混乱</strong>が被害拡大につながりやすい。影響範囲は参加企業単体に限られず、サプライチェーン上で取引先、自治体、委託業務へ波及する可能性があるため、CSIRT担当者は制度利用の有無よりも<strong>連絡経路、権限委譲、復旧目標</strong>が実装されるかを見る必要がある。現時点では募集条件、支援内容の深さ、成果物の標準様式、演習の有無、参加企業の業種分布が記事情報だけでは未確認となる。</p></div>
+        </div>
+
+        <div class="section">
+          <h2>📌 キーワード解説</h2>
+          <div class="terms">
+            <div class="termCard">
+  <div class="term">CSIRT（Computer Security Incident Response Team）</div>
+  <p class="exp">SOCが監視中心なのに対し、CSIRTは判断と調整を担う。今回重要なのは、社内外の権限委譲まで設計対象になる点。</p>
+</div>
+<div class="termCard">
+  <div class="term">IT-BCP（IT事業継続計画）</div>
+  <p class="exp">通常のBCPが災害全般を扱うのに対し、IT-BCPはシステム復旧順序に焦点を置く。業務影響と復旧手順を結ぶ概念。</p>
+</div>
+<div class="termCard">
+  <div class="term">RTO/RPO（復旧時間目標／復旧時点目標）</div>
+  <p class="exp">RTOは復旧までの時間、RPOは失ってよいデータ量を示す。可用性目標とバックアップ取得頻度を混同しないこと。</p>
+</div>
+<div class="termCard">
+  <div class="term">サプライチェーンリスク（供給網リスク）</div>
+  <p class="exp">自社の被害が取引先の停止や情報漏えいに連鎖するリスク。単なる委託先管理より影響伝播の把握が中心。</p>
+</div>
+          </div>
+          <h3 class="subSectionTitle">深掘り解説</h3>
+          <div class="deepDive">
+            <div class="termCard deepDiveCard">
+  <div class="term">CSIRT構築とIT-BCP策定を分けて考えない</div>
+  <p class="exp">CSIRT構築とIT-BCPは、組織図と文書を別々に作ると形骸化しやすい。インシデント時に必要なのは「誰が判断するか」と「どの業務を先に戻すか」を同じ時系列で決めることにある。たとえば製造業でランサムウェアによりファイルサーバ、受発注システム、端末管理基盤が同時に止まった場合、技術担当は端末隔離と証跡保全を優先したくなる。一方、事業部は当日出荷と請求処理の再開を求める。この衝突を当日に調整すると、隔離解除の例外、バックアップ復元の順序、取引先への説明が場当たり的になり、攻撃者の持続化を残したまま復旧を急ぐ判断につながる。
+実務では、CSIRTの役割表にIT-BCPの復旧優先度を埋め込む形が扱いやすい。例として、重大度「基幹業務停止」の条件を「受注停止4時間超」「個人情報を含む共有領域の暗号化」「外部接続の遮断が必要」のように定義し、それぞれに承認者、代替手段、社外連絡先、復旧許可条件を紐付ける。ここで重要なのは、復旧目標を情報システム部だけで決めないこと。RTOが短い業務ほど、例外的なネットワーク開放や未検証バックアップの投入を誘発しやすい。だからこそ、平時に「業務継続のために許容するリスク」と「侵害拡大を防ぐために止める範囲」を経営、法務、広報、現場責任者で合意しておく必要がある。
+支援制度を利用する場合も、成果物の有無だけで評価しない方がよい。机上演習で、休日夜間、委託先連絡不能、バックアップ破損、警察・監督官庁への相談といった条件を入れ、判断が詰まる箇所を洗い出す。中小企業では担当者兼務が多いため、代理承認者と外部ベンダーへの作業依頼権限まで確認しておくと、実際の初動で迷いが減る。</p>
+</div>
+          </div>
+        </div>
+
+        
+
+        <div class="section">
+          <h2>🕘 生成情報</h2>
+          <div class="ruleReason">
+対象期間：2026-06-18T06:00:00+09:00 〜 2026-06-19T06:00:00+09:00
+生成時刻：2026-06-19T07:05:28.252529+09:00
+免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      notifyhub.site
+    </div>
+  </div>
+</body>
+</html>
