@@ -1,0 +1,334 @@
+<!-- article.html テンプレート（生成用） (例: /digest/YYYY/MM/DD/articles/<entry_id>.html)
+     サーバ側（Function）で {{...}} を置換して出力してください。
+-->
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/favicon-192.png" />
+  <title>Forget Data Leakage: Shadow AI&#x27;s Real Threat Is Access Control | NotifyHub Cybersecurity Daily Report</title>
+  <style>
+    :root{
+      --bg:#0b1020; --panel:#0f1730; --panel2:#121c3a;
+      --text:#e7ecff; --muted:#a9b4df; --line:#22305b;
+      --accent:#7aa2ff; --good:#4ade80; --warn:#fbbf24; --bad:#fb7185;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+      --radius:18px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      background: radial-gradient(1000px 700px at 20% -10%, rgba(122,162,255,.25), transparent 60%),
+                  radial-gradient(900px 600px at 90% 10%, rgba(251,113,133,.12), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+    }
+    a{color:inherit}
+    .wrap{max-width:960px; margin:0 auto; padding:22px 18px 44px}
+    .topbar{
+      display:flex; justify-content:space-between; align-items:center; gap:12px;
+      margin-bottom:12px;
+    }
+    .crumb a{
+      text-decoration:none;
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .crumb a:hover{border-color:rgba(122,162,255,.65)}
+    .chip{
+      display:inline-flex; align-items:center; gap:8px;
+      background:rgba(27,38,80,.75);
+      border:1px solid rgba(34,48,91,.9);
+      padding:7px 10px; border-radius:999px;
+      font-size:12px; color:var(--muted);
+      backdrop-filter: blur(10px);
+      white-space:nowrap;
+    }
+    .chip strong{color:var(--text); font-weight:650}
+    .panel{
+      background: linear-gradient(180deg, rgba(15,23,48,.9), rgba(15,23,48,.75));
+      border:1px solid rgba(34,48,91,.9);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .head{
+      padding:16px 16px 12px;
+      border-bottom:1px solid rgba(34,48,91,.9);
+      background:rgba(18,28,58,.55);
+    }
+    h1{
+      margin:0;
+      font-size:20px;
+      line-height:1.35;
+      letter-spacing:.15px;
+    }
+    .meta{
+      margin-top:10px;
+      display:flex; gap:10px; flex-wrap:wrap;
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.6;
+    }
+    .meta a{color:var(--muted)}
+    .meta a:hover{color:var(--accent)}
+    .tags{
+      margin-top:12px;
+      display:flex; gap:8px; flex-wrap:wrap;
+    }
+    .tag{
+      font-size:11px;
+      padding:6px 9px;
+      border-radius:999px;
+      background:rgba(27,38,80,.65);
+      border:1px solid rgba(34,48,91,.9);
+      color:var(--muted);
+      white-space:nowrap;
+    }
+    .tag.level-Critical{border-color:rgba(251,113,133,.65); color:#ffd0d7}
+    .tag.level-High{border-color:rgba(251,191,36,.65); color:#ffe9b0}
+    .tag.level-Medium{border-color:rgba(122,162,255,.65); color:#dbe6ff}
+    .tag.level-Low{border-color:rgba(74,222,128,.55); color:#d0ffe2}
+    .tag.level-Info{border-color:rgba(169,180,223,.55); color:rgba(169,180,223,.95)}
+    .body{
+      padding:16px;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+    }
+    .section{
+      background:rgba(18,28,58,.35);
+      border:1px solid rgba(34,48,91,.75);
+      border-radius:16px;
+      padding:14px;
+    }
+    .section h2{
+      margin:0 0 10px;
+      font-size:14px;
+      letter-spacing:.1px;
+    }
+    .ruleReason{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.65;
+      white-space:pre-wrap;
+    }
+    .infoSources{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.5;
+    }
+    .infoSourceRow{
+      margin:0;
+      padding:0;
+    }
+    .infoSourceRow + .infoSourceRow{
+      margin-top:2px;
+    }
+
+    /* --- summary_html styles (OpenAI output uses h4/p/ul/li/strong/code/br) --- */
+    .summary h4{
+      margin:14px 0 8px;
+      font-size:13px;
+      letter-spacing:.1px;
+      padding-left:10px;
+      border-left:3px solid rgba(122,162,255,.65);
+      color: rgba(231,236,255,.95);
+    }
+    .summary p{margin:8px 0; color:rgba(231,236,255,.92); line-height:1.75}
+    .summary ul, .summary ol{margin:8px 0 8px 1.2em; padding:0}
+    .summary li{margin:6px 0; color:rgba(231,236,255,.92); line-height:1.7}
+    .summary strong{
+      color:var(--text);
+      font-weight:750;
+      padding:0 .2em;
+      border-radius:8px;
+      background: linear-gradient(transparent 60%, rgba(122,162,255,.22) 60%);
+    }
+    .summary code{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 8px;
+      background: rgba(11,16,32,.6);
+      border: 1px solid rgba(34,48,91,.85);
+      color: rgba(231,236,255,.95);
+      white-space: nowrap;
+    }
+
+    .terms{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:10px;
+    }
+    @media (max-width: 860px){
+      .terms{grid-template-columns: 1fr}
+    }
+    .termCard{
+      background:rgba(11,16,32,.45);
+      border:1px solid rgba(34,48,91,.85);
+      border-radius:14px;
+      padding:12px;
+      min-width:0;
+    }
+    .termCard .term{
+      font-weight:700;
+      font-size:13px;
+      margin:0 0 8px;
+      word-break:break-word;
+    }
+    .termCard .exp{
+      margin:0;
+      color:rgba(231,236,255,.9);
+      line-height:1.7;
+      font-size:12px;
+      white-space:pre-wrap;
+    }
+    .subSectionTitle{
+      margin:16px 0 8px;
+      font-size:12px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:var(--muted);
+    }
+    .deepDive{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:10px;
+      margin-top:8px;
+    }
+    .deepDiveCard{
+      background:rgba(12,20,38,.6);
+    }
+
+    .footer{
+      margin-top:14px;
+      color:rgba(169,180,223,.75);
+      font-size:12px;
+      line-height:1.7;
+      text-align:center;
+    }
+    .btnRow{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px}
+    .linkbtn{
+      text-decoration:none;
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .linkbtn:hover{border-color:rgba(122,162,255,.65)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="crumb">
+        <!-- ../index.html は通常 "../index.html" でOK -->
+        <a href="../index.html">← 日次トップへ戻る</a>
+      </div>
+      <div class="chip">entry_id <strong class="mono">5ea8a68c2077a6e2</strong></div>
+    </div>
+
+    <div class="panel">
+      <div class="head">
+        <h1>Forget Data Leakage: Shadow AI&#x27;s Real Threat Is Access Control</h1>
+
+        <div class="meta">
+          <span>🗞️ The Hacker News</span>
+          <span>🕒 2026-06-19T19:30:00+09:00</span>
+          <span>🔗 <a href="https://thehackernews.com/2026/06/forget-data-leakage-shadow-ais-real.html" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
+        </div>
+
+        <div class="tags">
+          <span class="tag level-Medium">Impact: Medium</span>
+          <span class="tag">Misconfiguration</span>
+        </div>
+
+        <div class="btnRow">
+          <a class="linkbtn" href="https://thehackernews.com/2026/06/forget-data-leakage-shadow-ais-real.html" target="_blank" rel="noopener noreferrer">原文リンク</a>
+          <a class="linkbtn" href="https://www.notifyhub.site/digest/2026/06/20/">日次トップ</a>
+        </div>
+      </div>
+
+      <div class="body">
+        
+        <div class="section">
+          <h2>Impact判定理由</h2>
+          <div class="ruleReason">技術的には特定CVEではなく、未承認AI連携による過剰な権限委譲と監査困難性が主リスクとなる。
+運用面ではDLP中心の統制では不足し、ID基盤とSaaS管理の棚卸しが必要になるため影響は中程度。
+情報源はメディア記事で二次情報の性格が強く、具体的悪用確認や一次アドバイザリがないため上方補正しない。</div>
+        </div>
+        <div class="section summary">
+          <h2>🧾 要約（ChatGPT / gpt-5.5-2026-04-23）</h2>
+          <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
+          <div><h4>概要</h4><p>The Hacker Newsは、企業内の<code>Shadow AI</code>をめぐる主な懸念が、従来の「機密情報を外部AIへ貼り付ける」問題から、<strong>アクセス制御の逸脱</strong>へ移っていると報じた。従業員が未承認のAIツールやブラウザ拡張、業務SaaS連携を使うと、AI側にメール、ファイル、CRM、チケット管理などへの権限が付与され、攻撃者は漏えいデータの取得だけでなく<strong>正規権限を介した操作</strong>を狙える。影響は単一端末に閉じず、OAuth同意、APIトークン、共有ワークスペースを経由して、部門横断のデータ閲覧、なりすまし送信、監査困難な自動処理へ広がる。現時点で特定製品の脆弱性、侵害事例、悪用キャンペーンの詳細は示されておらず、<strong>未確認事項</strong>として自組織の利用実態と付与済み権限の棚卸しが残る。CSIRTはDLPやドメイン遮断だけで完結させず、ID基盤、SaaS管理者、法務・業務部門と連携し、<strong>誰が何に同意し、どの権限が残っているか</strong>を確認する必要がある。</p></div>
+        </div>
+
+        <div class="section">
+          <h2>📌 キーワード解説</h2>
+          <div class="terms">
+            <div class="termCard">
+  <div class="term">Shadow AI（未承認AI利用）</div>
+  <p class="exp">組織が把握しないAIサービスや連携機能を指す。単なる情報持ち出しではなく、権限委譲の盲点になりやすい。</p>
+</div>
+<div class="termCard">
+  <div class="term">Access Control（アクセス制御）</div>
+  <p class="exp">認可は何を許すかの制御。認証と混同されるが、AI連携では認可範囲の過大さが問題になる。</p>
+</div>
+<div class="termCard">
+  <div class="term">OAuth同意</div>
+  <p class="exp">利用者が外部アプリへ権限を渡す仕組み。パスワード共有と違い、取り消すまでトークンが残る場合がある。</p>
+</div>
+<div class="termCard">
+  <div class="term">DLP（情報漏えい対策）</div>
+  <p class="exp">送信データの検査に強い。一方、正規API経由の操作権限までは十分に制御できないことがある。</p>
+</div>
+          </div>
+          <h3 class="subSectionTitle">深掘り解説</h3>
+          <div class="deepDive">
+            <div class="termCard deepDiveCard">
+  <div class="term">Shadow AIをアクセス制御問題として扱う見方</div>
+  <p class="exp">Shadow AIを情報漏えいだけで見ると、対策は入力欄の監視、外部ドメイン遮断、DLPルールに寄りやすい。しかしAIツールがSaaSやメール、ストレージと連携する環境では、問題の中心は「何を入力したか」ではなく「そのAIや関連アプリが何を実行できるか」に移る。
+
+典型例は、従業員が議事録生成AIにカレンダー、メール、クラウドストレージへのOAuth権限を許可するケースとなる。本人は会議要約のために使っているつもりでも、アプリにはメール本文の読み取り、ファイル一覧の参照、共有リンク作成などの権限が残ることがある。もしそのAIサービス、連携アプリ、開発元アカウントが侵害されると、攻撃者は盗んだパスワードを使わずに、既存のトークンで正規APIを呼び出せる。ログ上は利用者本人または承認済みアプリの操作に見え、従来の不審ログイン検知だけでは見落としやすい。
+
+実務では、AI利用ポリシーの有無より先に、ID基盤とSaaS側で外部アプリ同意の棚卸しを行う価値が高い。たとえばMicrosoft Entra IDやGoogle Workspaceで、ユーザー同意済みアプリ、要求スコープ、高権限スコープ、最終利用日時、管理者承認の有無を確認する。不要なアプリは同意を取り消し、広いスコープを要求するアプリは管理者承認制に寄せる。封じ込め時は、アカウントのパスワード変更だけでなく、更新トークンの失効、SaaS側のアプリ連携解除、共有リンクや自動転送ルールの確認まで含めないと再利用される恐れが残る。
+
+CSIRTの判断軸は、AIの利用可否ではなく、AI連携が既存の権限境界を迂回していないかに置くとぶれにくい。業務部門が必要とするAI活用を止めるだけではシャドー化が進むため、承認済みAI、許可スコープ、ログ取得、退職・異動時の権限失効まで運用設計に含める必要がある。</p>
+</div>
+          </div>
+        </div>
+
+        
+
+        <div class="section">
+          <h2>🕘 生成情報</h2>
+          <div class="ruleReason">
+対象期間：2026-06-19T06:00:00+09:00 〜 2026-06-20T06:00:00+09:00
+生成時刻：2026-06-20T06:47:43.087772+09:00
+免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      notifyhub.site
+    </div>
+  </div>
+</body>
+</html>

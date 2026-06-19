@@ -1,0 +1,333 @@
+<!-- article.html テンプレート（生成用） (例: /digest/YYYY/MM/DD/articles/<entry_id>.html)
+     サーバ側（Function）で {{...}} を置換して出力してください。
+-->
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/favicon-192.png" />
+  <title>ThingsBoard にプロトタイプ汚染の脆弱性 | NotifyHub Cybersecurity Daily Report</title>
+  <style>
+    :root{
+      --bg:#0b1020; --panel:#0f1730; --panel2:#121c3a;
+      --text:#e7ecff; --muted:#a9b4df; --line:#22305b;
+      --accent:#7aa2ff; --good:#4ade80; --warn:#fbbf24; --bad:#fb7185;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+      --radius:18px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      background: radial-gradient(1000px 700px at 20% -10%, rgba(122,162,255,.25), transparent 60%),
+                  radial-gradient(900px 600px at 90% 10%, rgba(251,113,133,.12), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+    }
+    a{color:inherit}
+    .wrap{max-width:960px; margin:0 auto; padding:22px 18px 44px}
+    .topbar{
+      display:flex; justify-content:space-between; align-items:center; gap:12px;
+      margin-bottom:12px;
+    }
+    .crumb a{
+      text-decoration:none;
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .crumb a:hover{border-color:rgba(122,162,255,.65)}
+    .chip{
+      display:inline-flex; align-items:center; gap:8px;
+      background:rgba(27,38,80,.75);
+      border:1px solid rgba(34,48,91,.9);
+      padding:7px 10px; border-radius:999px;
+      font-size:12px; color:var(--muted);
+      backdrop-filter: blur(10px);
+      white-space:nowrap;
+    }
+    .chip strong{color:var(--text); font-weight:650}
+    .panel{
+      background: linear-gradient(180deg, rgba(15,23,48,.9), rgba(15,23,48,.75));
+      border:1px solid rgba(34,48,91,.9);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .head{
+      padding:16px 16px 12px;
+      border-bottom:1px solid rgba(34,48,91,.9);
+      background:rgba(18,28,58,.55);
+    }
+    h1{
+      margin:0;
+      font-size:20px;
+      line-height:1.35;
+      letter-spacing:.15px;
+    }
+    .meta{
+      margin-top:10px;
+      display:flex; gap:10px; flex-wrap:wrap;
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.6;
+    }
+    .meta a{color:var(--muted)}
+    .meta a:hover{color:var(--accent)}
+    .tags{
+      margin-top:12px;
+      display:flex; gap:8px; flex-wrap:wrap;
+    }
+    .tag{
+      font-size:11px;
+      padding:6px 9px;
+      border-radius:999px;
+      background:rgba(27,38,80,.65);
+      border:1px solid rgba(34,48,91,.9);
+      color:var(--muted);
+      white-space:nowrap;
+    }
+    .tag.level-Critical{border-color:rgba(251,113,133,.65); color:#ffd0d7}
+    .tag.level-High{border-color:rgba(251,191,36,.65); color:#ffe9b0}
+    .tag.level-Medium{border-color:rgba(122,162,255,.65); color:#dbe6ff}
+    .tag.level-Low{border-color:rgba(74,222,128,.55); color:#d0ffe2}
+    .tag.level-Info{border-color:rgba(169,180,223,.55); color:rgba(169,180,223,.95)}
+    .body{
+      padding:16px;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+    }
+    .section{
+      background:rgba(18,28,58,.35);
+      border:1px solid rgba(34,48,91,.75);
+      border-radius:16px;
+      padding:14px;
+    }
+    .section h2{
+      margin:0 0 10px;
+      font-size:14px;
+      letter-spacing:.1px;
+    }
+    .ruleReason{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.65;
+      white-space:pre-wrap;
+    }
+    .infoSources{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.5;
+    }
+    .infoSourceRow{
+      margin:0;
+      padding:0;
+    }
+    .infoSourceRow + .infoSourceRow{
+      margin-top:2px;
+    }
+
+    /* --- summary_html styles (OpenAI output uses h4/p/ul/li/strong/code/br) --- */
+    .summary h4{
+      margin:14px 0 8px;
+      font-size:13px;
+      letter-spacing:.1px;
+      padding-left:10px;
+      border-left:3px solid rgba(122,162,255,.65);
+      color: rgba(231,236,255,.95);
+    }
+    .summary p{margin:8px 0; color:rgba(231,236,255,.92); line-height:1.75}
+    .summary ul, .summary ol{margin:8px 0 8px 1.2em; padding:0}
+    .summary li{margin:6px 0; color:rgba(231,236,255,.92); line-height:1.7}
+    .summary strong{
+      color:var(--text);
+      font-weight:750;
+      padding:0 .2em;
+      border-radius:8px;
+      background: linear-gradient(transparent 60%, rgba(122,162,255,.22) 60%);
+    }
+    .summary code{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 8px;
+      background: rgba(11,16,32,.6);
+      border: 1px solid rgba(34,48,91,.85);
+      color: rgba(231,236,255,.95);
+      white-space: nowrap;
+    }
+
+    .terms{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:10px;
+    }
+    @media (max-width: 860px){
+      .terms{grid-template-columns: 1fr}
+    }
+    .termCard{
+      background:rgba(11,16,32,.45);
+      border:1px solid rgba(34,48,91,.85);
+      border-radius:14px;
+      padding:12px;
+      min-width:0;
+    }
+    .termCard .term{
+      font-weight:700;
+      font-size:13px;
+      margin:0 0 8px;
+      word-break:break-word;
+    }
+    .termCard .exp{
+      margin:0;
+      color:rgba(231,236,255,.9);
+      line-height:1.7;
+      font-size:12px;
+      white-space:pre-wrap;
+    }
+    .subSectionTitle{
+      margin:16px 0 8px;
+      font-size:12px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:var(--muted);
+    }
+    .deepDive{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:10px;
+      margin-top:8px;
+    }
+    .deepDiveCard{
+      background:rgba(12,20,38,.6);
+    }
+
+    .footer{
+      margin-top:14px;
+      color:rgba(169,180,223,.75);
+      font-size:12px;
+      line-height:1.7;
+      text-align:center;
+    }
+    .btnRow{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px}
+    .linkbtn{
+      text-decoration:none;
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .linkbtn:hover{border-color:rgba(122,162,255,.65)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="crumb">
+        <!-- ../index.html は通常 "../index.html" でOK -->
+        <a href="../index.html">← 日次トップへ戻る</a>
+      </div>
+      <div class="chip">entry_id <strong class="mono">6fa0d4ca667d5e7f</strong></div>
+    </div>
+
+    <div class="panel">
+      <div class="head">
+        <h1>ThingsBoard にプロトタイプ汚染の脆弱性</h1>
+
+        <div class="meta">
+          <span>🗞️ ScanNetSecurity</span>
+          <span>🕒 2026-06-19T08:00:22+09:00</span>
+          <span>🔗 <a href="https://scan.netsecurity.ne.jp/article/2026/06/19/55530.html" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
+        </div>
+
+        <div class="tags">
+          <span class="tag level-Medium">Impact: Medium</span>
+          <span class="tag">Vulnerability Disclosure</span>
+        </div>
+
+        <div class="btnRow">
+          <a class="linkbtn" href="https://scan.netsecurity.ne.jp/article/2026/06/19/55530.html" target="_blank" rel="noopener noreferrer">原文リンク</a>
+          <a class="linkbtn" href="https://www.notifyhub.site/digest/2026/06/20/">日次トップ</a>
+        </div>
+      </div>
+
+      <div class="body">
+        
+        <div class="section">
+          <h2>Impact判定理由</h2>
+          <div class="ruleReason">技術的にはThingsBoardの権限管理やデバイス制御経路へ波及し得る脆弱性だが、CVE番号、CVSSスコア、対象バージョン、認証要否、悪用確認が入力情報から確認できない。
+IoT管理基盤が外部公開されている組織では運用影響が大きくなり得る一方、現時点ではメディア由来の二次情報であり、情報源補正として重要度の引き上げは行わない。</div>
+        </div>
+        <div class="section summary">
+          <h2>🧾 要約（ChatGPT / gpt-5.5-2026-04-23）</h2>
+          <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
+          <div><h4>概要</h4><p>ScanNetSecurityは、IoTデバイス管理基盤のThingsBoardに<strong>プロトタイプ汚染</strong>の脆弱性があることを伝えている。プロトタイプ汚染は、入力値や設定値の取り込み処理を通じてJavaScriptオブジェクトの共通原型を書き換え、権限判定、テンプレート処理、シリアライズ処理などの前提を崩す形で悪用される可能性がある。ThingsBoardはデバイス、テレメトリ、ルールエンジン、利用者権限を扱う基盤になりやすく、攻撃が成立した場合は単一画面の不具合にとどまらず、<strong>デバイス管理権限やデータ処理経路</strong>へ波及する余地を見ておきたい。現時点の入力情報だけでは、CVE番号、CVSSスコア、対象バージョン、認証要否、PoC公開有無、修正版の有無が確認できず、<strong>悪用現実性は未確認</strong>として扱う必要がある。CSIRTとしては、インターネット公開の有無、管理者画面やAPIの露出、外部連携で取り込むJSONや設定値の経路を先に棚卸しし、該当バージョン確認と暫定的なアクセス制御強化を優先したい。</p></div>
+        </div>
+
+        <div class="section">
+          <h2>📌 キーワード解説</h2>
+          <div class="terms">
+            <div class="termCard">
+  <div class="term">プロトタイプ汚染（Prototype Pollution）</div>
+  <p class="exp">通常の入力検証漏れと違い、共通原型の改変が後続処理へ波及する。認可処理や設定生成に影響しやすい。</p>
+</div>
+<div class="termCard">
+  <div class="term">PoC（概念実証コード）</div>
+  <p class="exp">脆弱性の存在確認用コードを指す。攻撃ツールと同一ではないが、悪用準備の敷居を下げる。</p>
+</div>
+<div class="termCard">
+  <div class="term">マルチテナント</div>
+  <p class="exp">単一利用者の障害と異なり、境界不備が複数部門や顧客へ波及する。IoT管理基盤では特に重い。</p>
+</div>
+<div class="termCard">
+  <div class="term">認証前攻撃</div>
+  <p class="exp">認証後の悪用と比べ、公開面がそのまま攻撃面になる。成立条件が未確認なら判断を保留する。</p>
+</div>
+          </div>
+          <h3 class="subSectionTitle">深掘り解説</h3>
+          <div class="deepDive">
+            <div class="termCard deepDiveCard">
+  <div class="term">プロトタイプ汚染で確認すべき「入口」と「到達先」</div>
+  <p class="exp">プロトタイプ汚染は、危険なキーを受け取っただけで常に重大事故になるわけではない。実務上の評価では、攻撃者が汚染値を入れられる入口と、その値が権限判定やコマンド実行、テンプレート展開などの危険な処理へ到達するかを分けて見る必要がある。
+
+典型例として、APIが利用者入力のJSONを受け取り、内部設定オブジェクトへ深いマージを行う処理を考える。攻撃者が &lt;code&gt;{&quot;__proto__&quot;:{&quot;isAdmin&quot;:true}}&lt;/code&gt; のような値を投入でき、後続処理が &lt;code&gt;user.isAdmin&lt;/code&gt; を明示的な初期化なしに参照していれば、個別ユーザーの属性を変更していないのに管理者扱いされる可能性が生じる。一方で、同じ入力を受け取っても、危険キーを除去し、生成したオブジェクトに既定値を明示し、認可処理がデータベース上のロールだけを見る実装なら、影響は限定されやすい。
+
+CSIRTが初動で見るべき点は三つある。第一に、対象機能が認証前に到達可能か、低権限ユーザーで到達可能か。第二に、汚染後の値が管理機能、ルールエンジン、外部通知、スクリプト実行、テンプレート処理へ流れるか。第三に、ログで異常キーを追えるか。具体的には、リバースプロキシやアプリケーションログから &lt;code&gt;__proto__&lt;/code&gt;、&lt;code&gt;constructor&lt;/code&gt;、&lt;code&gt;prototype&lt;/code&gt; を含むリクエストを検索し、同時刻の権限変更、ルール作成、Webhook設定変更、デバイス登録の増加を突き合わせると判断材料になりやすい。
+
+封じ込めでは、即時停止だけが選択肢ではない。IoT基盤は現場設備や監視業務に直結するため、管理APIの外部公開停止、管理者画面への送信元制限、WAFで危険キーを含むJSONを一時遮断、低権限アカウントの一時制限といった段階的な抑止が現実的な場合も多い。修正版適用後も、汚染を起点に作成されたルール、通知先、追加ユーザー、APIトークンが残る可能性を考え、設定差分の確認まで含めて完了条件に入れたい。</p>
+</div>
+          </div>
+        </div>
+
+        
+
+        <div class="section">
+          <h2>🕘 生成情報</h2>
+          <div class="ruleReason">
+対象期間：2026-06-19T06:00:00+09:00 〜 2026-06-20T06:00:00+09:00
+生成時刻：2026-06-20T06:47:43.087772+09:00
+免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      notifyhub.site
+    </div>
+  </div>
+</body>
+</html>
