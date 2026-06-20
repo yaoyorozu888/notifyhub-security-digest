@@ -1,0 +1,134 @@
+{
+  "date": "2026-06-21",
+  "window": {
+    "from": "2026-06-20T06:00:00+09:00",
+    "to": "2026-06-21T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 3
+  },
+  "generated_at_jst": "2026-06-21T06:39:43.299483+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "Qualcomm、Tenstorrent買収交渉を進める",
+      "source_name": "Crescendo.ai",
+      "published_at": "2026-06-19T12:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要QualcommがAIチップ企業Tenstorrentの買収を80億から100億ドル規模で交渉中であることが明らかになった。AIインフラの競争激化を受け、モバイルからデータセンターまで幅広い領域での優位性確保を目指す動きだ。HPEとNVIDIAのAI Factory拡大も同日発表され、agentic AI対応の基盤整備が進む。OECDが学校向けAIリテ…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://www.crescendo.ai/news/latest-ai-news-and-updates",
+      "selection_reason": "6月19日の具体的な企業行動としてAIインフラ競争の新展開を示し、他の一般トレンド予測より新規性と実務影響が高い",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "The Latest AI News and Breakthroughs That Matter Most",
+          "url": "https://www.crescendo.ai/news/latest-ai-news-and-updates",
+          "source_type": "news"
+        },
+        {
+          "title": "AI News Highlights from 2nd of June, 2026",
+          "url": "https://www.linkedin.com/pulse/ai-news-highlights-from-2nd-june-2026-ai-insiders-news-hnuae",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "Gartner、2026年戦略的技術トレンド10を発表",
+      "source_name": "Gartner",
+      "published_at": "2026-06-20T10:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要GartnerがAIネイティブ開発プラットフォームやAIスーパーコンピューティングプラットフォームなど10のトレンドを提示した。Confidential ComputingやMultiagent Systemsが上位に並び、AI基盤の安全かつ分散型運用が重視される。Physical AIやDomain-Specific Language Modelsも…",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://www.gartner.com/en/articles/top-technology-trends-2026",
+      "selection_reason": "対象期間内の最新発表としてIT基盤全体の方向性を示し、AIやセキュリティを横断する実務指針として優先度が高い",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "Gartner Top 10 Strategic Technology Trends for 2026",
+          "url": "https://www.gartner.com/en/articles/top-technology-trends-2026",
+          "source_type": "news"
+        },
+        {
+          "title": "Tech Trends 2026 | Deloitte Insights",
+          "url": "https://www.deloitte.com/us/en/insights/topics/technology-management/tech-trends.html",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "Gartner、Preemptive Cybersecurityをトレンドに位置付け",
+      "source_name": "Gartner",
+      "published_at": "2026-06-20T10:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要GartnerのトレンドにPreemptive CybersecurityとAI Security Platformsが含まれた。攻撃を事前に予測・阻止するアプローチが企業セキュリティの新標準となりつつある。AIを活用した防御と攻撃の双方が進化し、AI Security Platformsの導入が急務だ。World Economic ForumもAI時…",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://www.gartner.com/en/articles/top-technology-trends-2026",
+      "selection_reason": "AIセキュリティプラットフォームと並ぶ具体策として、攻撃予防型セキュリティの企業導入を後押しする最新指針である",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "Gartner Top 10 Strategic Technology Trends for 2026",
+          "url": "https://www.gartner.com/en/articles/top-technology-trends-2026",
+          "source_type": "news"
+        },
+        {
+          "title": "Cyber threats to watch in 2026, and other cybersecurity news",
+          "url": "https://www.weforum.org/stories/2026/02/2026-cyberthreats-to-watch-and-other-cybersecurity-news/",
+          "source_type": "news"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "61a9105064ced2f7",
+      "title": "Hackers Exploit Gravity SMTP WordPress Plugin Bug to Expose API Keys",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-20T09:56:04+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要The Hacker Newsは、WordPress向けGravity SMTPプラグインの脆弱性CVE-2026-4020が攻撃者に悪用されていると報じた。CVE-2026-4020はCVSS 5.3の中程度評価だが、認証なしで設定情報、APIキー、シークレット、OAuthトークンを読み出せる可能性があり、点数よりも運用上の被害が大きくなりやすい。攻…",
+      "article_path": "articles/61a9105064ced2f7.html",
+      "original_url": "https://thehackernews.com/2026/06/hackers-exploit-gravity-smtp-wordpress.html"
+    },
+    {
+      "entry_id": "1f7b84dff133cfd2",
+      "title": "socgholish compromised wordpress sites special report",
+      "source_name": "Shadowserver",
+      "category": "reporting",
+      "published_at": "2026-06-20T11:21:16+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要Shadowserverが、SocGholishに関連する侵害済みWordPressサイトについて特別レポートを公開した。SocGholishは、正規サイトを閲覧した利用者に偽のブラウザ更新や業務アプリ更新を表示し、ダウンロードしたスクリプトや実行ファイルを起点に端末侵害へつなげる手口として知られる。攻撃者にとっては、脆弱なWordPressやプラグイ…",
+      "article_path": "articles/1f7b84dff133cfd2.html",
+      "original_url": "https://www.shadowserver.org/news/socgholish-compromised-wordpress-sites-special-report/"
+    },
+    {
+      "entry_id": "36c9edbbaf0a374d",
+      "title": "Threat Brief: Mitigating Large-Scale Credential Attacks",
+      "source_name": "Unit 42",
+      "category": "reporting",
+      "published_at": "2026-06-20T02:05:33+00:00",
+      "impact_level": "High",
+      "threat_type": "Credential Theft",
+      "summary_preview": "概要Unit 42は、セキュリティベンダーの機器を狙う最近の大規模な認証情報攻撃を踏まえ、準備と緩和策を整理した。焦点は未知の脆弱性そのものではなく、漏えい済みパスワード、再利用された管理者認証情報、弱い認証制御を使って、VPN、ファイアウォール、管理ポータルなどの外部公開された境界機器へログインを試みる攻撃にある。攻撃が成功すると、単一アカウントの侵害に…",
+      "article_path": "articles/36c9edbbaf0a374d.html",
+      "original_url": "https://unit42.paloaltonetworks.com/large-scale-credential-attacks/"
+    }
+  ]
+}
