@@ -1,0 +1,107 @@
+{
+  "date": "2026-06-22",
+  "window": {
+    "from": "2026-06-21T06:00:00+09:00",
+    "to": "2026-06-22T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 0
+  },
+  "generated_at_jst": "2026-06-22T06:38:35.200997+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "Fable 5輸出規制の継続と業界への波及",
+      "source_name": "Build Fast With AI",
+      "published_at": "2026-06-21T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要米国政府によるAnthropicのFable 5およびMythos 5に対する輸出規制が6月12日から9日目に入り、グローバルAPIが依然として利用不能の状態が続く。Anthropicは韓国事務所開設と企業導入を進めつつ、規制当局との交渉を継続中である。White Houseが求めるゼロjailbreak要件は技術的に不可能との専門家意見が大勢を占め、…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://www.buildfastwithai.com/blogs/ai-news-today-june-21-2026",
+      "selection_reason": "AI分野で最も具体的な規制対応と市場変動を伴う新規事象として、Gartner予測のような汎用トレンドではなく実際のモデル停止と交渉進展を優先",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "AI News Today June 21 2026",
+          "url": "https://www.buildfastwithai.com/blogs/ai-news-today-june-21-2026",
+          "source_type": "news"
+        },
+        {
+          "title": "AI News Today June 21 2026 Top 10",
+          "url": "https://unrot.co/blogs/ai-news-today-june-21-2026",
+          "source_type": "news"
+        },
+        {
+          "title": "X posts on Fable 5 ban",
+          "url": "https://x.com",
+          "source_type": "x"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "FortiBleedによるFortinet機器認証情報大量露出",
+      "source_name": "Security Affairs",
+      "published_at": "2026-06-20T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Credential Theft",
+      "summary_preview": "概要6月中旬に明らかになったFortiBleedキャンペーンにより、Fortinet FortiGate機器約7万5000台の管理者認証情報とVPN資格が194カ国で露出した。脅威アクターが設定ファイルを抽出・解析し、有効な資格情報を地下市場で流通させている。CISAは緊急アドバイザリを発出し、セッション終了、資格ローテーション、MFA強制、パブリック露出…",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://securityaffairs.com/",
+      "selection_reason": "サイバーセキュリティ分野で具体的な大規模侵害事例として、脆弱性悪用ではなく認証情報漏えいと即時対策を優先",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "Active FortiBleed Campaign",
+          "url": "https://arcticwolf.com/resources/blog/active-fortibleed-campaign-impacting-fortinet-devices-across-194-countries/",
+          "source_type": "news"
+        },
+        {
+          "title": "FortiBleed Security Alert",
+          "url": "https://www.bitsight.com/blog/security-alert-fortibleed-fortinet-vpn-credentials-firewall-exposed",
+          "source_type": "news"
+        },
+        {
+          "title": "CISA related alerts",
+          "url": "https://www.cisa.gov/",
+          "source_type": "official"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "FERCによるAIデータセンター向け送電網接続命令",
+      "source_name": "Build Fast With AI",
+      "published_at": "2026-06-21T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Unknown",
+      "summary_preview": "概要6月18日、FERCが全米6地域送電網事業者に対し、AIデータセンターの大規模負荷接続を加速する改革案の提出または既存枠組みの正当化を求めるshow cause命令を発出した。AIインフラ需要の急増に対し、通常の rulemaking手続きを省略して迅速対応を図る異例の措置である。MicrosoftやCoreWeaveなどの事業者が4GW超の新容量を追…",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://www.buildfastwithai.com/blogs/ai-news-today-june-21-2026",
+      "selection_reason": "ITインフラ分野でAI需要に伴う送電網規制変更という具体的な政策動向を、汎用予測ではなく6月18日の新命令として優先",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "AI News Today June 21 2026",
+          "url": "https://www.buildfastwithai.com/blogs/ai-news-today-june-21-2026",
+          "source_type": "news"
+        },
+        {
+          "title": "FERC orders",
+          "url": "https://www.ferc.gov/",
+          "source_type": "official"
+        }
+      ]
+    }
+  ],
+  "items": []
+}
