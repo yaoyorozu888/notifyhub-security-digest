@@ -1,0 +1,334 @@
+<!-- article.html テンプレート（生成用） (例: /digest/YYYY/MM/DD/articles/<entry_id>.html)
+     サーバ側（Function）で {{...}} を置換して出力してください。
+-->
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/favicon-192.png" />
+  <title>VU#226679: Microsoft WinRE allows for bypass of UEFI/BIOS password enforcement | NotifyHub Cybersecurity Daily Report</title>
+  <style>
+    :root{
+      --bg:#0b1020; --panel:#0f1730; --panel2:#121c3a;
+      --text:#e7ecff; --muted:#a9b4df; --line:#22305b;
+      --accent:#7aa2ff; --good:#4ade80; --warn:#fbbf24; --bad:#fb7185;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+      --radius:18px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      background: radial-gradient(1000px 700px at 20% -10%, rgba(122,162,255,.25), transparent 60%),
+                  radial-gradient(900px 600px at 90% 10%, rgba(251,113,133,.12), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+    }
+    a{color:inherit}
+    .wrap{max-width:960px; margin:0 auto; padding:22px 18px 44px}
+    .topbar{
+      display:flex; justify-content:space-between; align-items:center; gap:12px;
+      margin-bottom:12px;
+    }
+    .crumb a{
+      text-decoration:none;
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .crumb a:hover{border-color:rgba(122,162,255,.65)}
+    .chip{
+      display:inline-flex; align-items:center; gap:8px;
+      background:rgba(27,38,80,.75);
+      border:1px solid rgba(34,48,91,.9);
+      padding:7px 10px; border-radius:999px;
+      font-size:12px; color:var(--muted);
+      backdrop-filter: blur(10px);
+      white-space:nowrap;
+    }
+    .chip strong{color:var(--text); font-weight:650}
+    .panel{
+      background: linear-gradient(180deg, rgba(15,23,48,.9), rgba(15,23,48,.75));
+      border:1px solid rgba(34,48,91,.9);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .head{
+      padding:16px 16px 12px;
+      border-bottom:1px solid rgba(34,48,91,.9);
+      background:rgba(18,28,58,.55);
+    }
+    h1{
+      margin:0;
+      font-size:20px;
+      line-height:1.35;
+      letter-spacing:.15px;
+    }
+    .meta{
+      margin-top:10px;
+      display:flex; gap:10px; flex-wrap:wrap;
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.6;
+    }
+    .meta a{color:var(--muted)}
+    .meta a:hover{color:var(--accent)}
+    .tags{
+      margin-top:12px;
+      display:flex; gap:8px; flex-wrap:wrap;
+    }
+    .tag{
+      font-size:11px;
+      padding:6px 9px;
+      border-radius:999px;
+      background:rgba(27,38,80,.65);
+      border:1px solid rgba(34,48,91,.9);
+      color:var(--muted);
+      white-space:nowrap;
+    }
+    .tag.level-Critical{border-color:rgba(251,113,133,.65); color:#ffd0d7}
+    .tag.level-High{border-color:rgba(251,191,36,.65); color:#ffe9b0}
+    .tag.level-Medium{border-color:rgba(122,162,255,.65); color:#dbe6ff}
+    .tag.level-Low{border-color:rgba(74,222,128,.55); color:#d0ffe2}
+    .tag.level-Info{border-color:rgba(169,180,223,.55); color:rgba(169,180,223,.95)}
+    .body{
+      padding:16px;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+    }
+    .section{
+      background:rgba(18,28,58,.35);
+      border:1px solid rgba(34,48,91,.75);
+      border-radius:16px;
+      padding:14px;
+    }
+    .section h2{
+      margin:0 0 10px;
+      font-size:14px;
+      letter-spacing:.1px;
+    }
+    .ruleReason{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.65;
+      white-space:pre-wrap;
+    }
+    .infoSources{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.5;
+    }
+    .infoSourceRow{
+      margin:0;
+      padding:0;
+    }
+    .infoSourceRow + .infoSourceRow{
+      margin-top:2px;
+    }
+
+    /* --- summary_html styles (OpenAI output uses h4/p/ul/li/strong/code/br) --- */
+    .summary h4{
+      margin:14px 0 8px;
+      font-size:13px;
+      letter-spacing:.1px;
+      padding-left:10px;
+      border-left:3px solid rgba(122,162,255,.65);
+      color: rgba(231,236,255,.95);
+    }
+    .summary p{margin:8px 0; color:rgba(231,236,255,.92); line-height:1.75}
+    .summary ul, .summary ol{margin:8px 0 8px 1.2em; padding:0}
+    .summary li{margin:6px 0; color:rgba(231,236,255,.92); line-height:1.7}
+    .summary strong{
+      color:var(--text);
+      font-weight:750;
+      padding:0 .2em;
+      border-radius:8px;
+      background: linear-gradient(transparent 60%, rgba(122,162,255,.22) 60%);
+    }
+    .summary code{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 8px;
+      background: rgba(11,16,32,.6);
+      border: 1px solid rgba(34,48,91,.85);
+      color: rgba(231,236,255,.95);
+      white-space: nowrap;
+    }
+
+    .terms{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:10px;
+    }
+    @media (max-width: 860px){
+      .terms{grid-template-columns: 1fr}
+    }
+    .termCard{
+      background:rgba(11,16,32,.45);
+      border:1px solid rgba(34,48,91,.85);
+      border-radius:14px;
+      padding:12px;
+      min-width:0;
+    }
+    .termCard .term{
+      font-weight:700;
+      font-size:13px;
+      margin:0 0 8px;
+      word-break:break-word;
+    }
+    .termCard .exp{
+      margin:0;
+      color:rgba(231,236,255,.9);
+      line-height:1.7;
+      font-size:12px;
+      white-space:pre-wrap;
+    }
+    .subSectionTitle{
+      margin:16px 0 8px;
+      font-size:12px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:var(--muted);
+    }
+    .deepDive{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:10px;
+      margin-top:8px;
+    }
+    .deepDiveCard{
+      background:rgba(12,20,38,.6);
+    }
+
+    .footer{
+      margin-top:14px;
+      color:rgba(169,180,223,.75);
+      font-size:12px;
+      line-height:1.7;
+      text-align:center;
+    }
+    .btnRow{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px}
+    .linkbtn{
+      text-decoration:none;
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .linkbtn:hover{border-color:rgba(122,162,255,.65)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="crumb">
+        <!-- ../index.html は通常 "../index.html" でOK -->
+        <a href="../index.html">← 日次トップへ戻る</a>
+      </div>
+      <div class="chip">entry_id <strong class="mono">d1f3b12dc7a92bdd</strong></div>
+    </div>
+
+    <div class="panel">
+      <div class="head">
+        <h1>VU#226679: Microsoft WinRE allows for bypass of UEFI/BIOS password enforcement</h1>
+
+        <div class="meta">
+          <span>🗞️ CERT/CC</span>
+          <span>🕒 2026-06-23T01:16:08+09:00</span>
+          <span>🔗 <a href="https://kb.cert.org/vuls/id/226679" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
+        </div>
+
+        <div class="tags">
+          <span class="tag level-Medium">Impact: Medium</span>
+          <span class="tag">Vulnerability</span>
+        </div>
+
+        <div class="btnRow">
+          <a class="linkbtn" href="https://kb.cert.org/vuls/id/226679" target="_blank" rel="noopener noreferrer">原文リンク</a>
+          <a class="linkbtn" href="https://www.notifyhub.site/digest/2026/06/23/">日次トップ</a>
+        </div>
+      </div>
+
+      <div class="body">
+        
+        <div class="section">
+          <h2>Impact判定理由</h2>
+          <div class="ruleReason">CVE-2026-45585に関連するWinRE経由のUEFI/BIOSパスワード迂回で、入力情報内ではCVSSスコアは確認できない。
+攻撃には物理アクセスまたは回復環境を起動できる権限が必要なため広域自動侵害には直結しにくいが、高機密端末ではBitLocker保護の弱体化やデータアクセスに発展し得る。
+情報源はCERT/CCの公的アドバイザリで信頼度は高い一方、KEV掲載や悪用確認ではなく、機種依存の未確認範囲も残るためMediumに据え置く。</div>
+        </div>
+        <div class="section summary">
+          <h2>🧾 要約（ChatGPT / gpt-5.5-2026-04-23）</h2>
+          <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
+          <div><h4>概要</h4><p>CERT/CCは、Microsoft Windows Recovery Environment（WinRE）の起動経路により、環境によっては管理者が設定した<strong>UEFI/BIOSパスワードの強制が迂回される</strong>可能性を示した。攻撃には端末への<strong>物理アクセス</strong>、または回復環境を起動できる管理者相当の権限が必要となり、典型的には一時的に端末へ触れる「Evil Maid」型の攻撃や、内部者・保守作業者の権限悪用が前提となる。悪用の焦点は、通常起動とは異なるWinREの起動経路やUEFIの<code>BootNext</code>が、通常の<code>BootOrder</code>や事前起動時の認証制御と同じ扱いにならない実装差にある。影響は単なる設定変更にとどまらず、構成次第では<strong>BitLocker保護の弱体化</strong>や機密データへの不正アクセスに広がる可能性がある。関連アドバイザリとしてCVE-2026-45585が示されているが、入力情報内でCVSSスコアは確認できず、どの機種・ファームウェア実装が具体的に該当するかも未確認事項として扱う必要がある。</p></div>
+        </div>
+
+        <div class="section">
+          <h2>📌 キーワード解説</h2>
+          <div class="terms">
+            <div class="termCard">
+  <div class="term">WinRE（Windows Recovery Environment）</div>
+  <p class="exp">通常OSとは別の回復環境を起動する仕組み。保守機能だが、通常起動時の制御と同一とは限らない。</p>
+</div>
+<div class="termCard">
+  <div class="term">BootNext</div>
+  <p class="exp">次回だけの起動先をUEFI NVRAMに指定する変数。恒久設定のBootOrderより優先される点が異なる。</p>
+</div>
+<div class="termCard">
+  <div class="term">UEFI/BIOSパスワード</div>
+  <p class="exp">ファームウェア設定変更や起動制御を守る認証。OSログオンやBitLocker認証とは守る層が違う。</p>
+</div>
+<div class="termCard">
+  <div class="term">BitLocker TPM + PIN</div>
+  <p class="exp">TPMだけでなく起動前PINも要求する方式。端末だけ盗まれた場合の自動復号リスクを下げる。</p>
+</div>
+          </div>
+          <h3 class="subSectionTitle">深掘り解説</h3>
+          <div class="deepDive">
+            <div class="termCard deepDiveCard">
+  <div class="term">回復環境は「安全な裏口」ではなく別の起動経路として管理する</div>
+  <p class="exp">WinREのような回復環境は、障害対応やリモート支援では有用だが、セキュリティ設計上は通常OSとは別の起動経路として扱う必要がある。通常起動ではUEFI/BIOSパスワード、Secure Boot、BitLocker、EDRが期待どおり連携していても、回復環境に入る際の実装が同じ認証順序を通るとは限らない。
+
+典型例は、UEFIのBootNextを使って次回起動先を一時的に変更する流れとなる。BootOrderは普段の起動順序を示す恒久設定だが、BootNextは次回だけ優先される。ここでファームウェア側が「誰がBootNextを設定したか」「設定時に管理者パスワードを必ず要求したか」「回復環境起動時にBitLockerの追加認証を求めるか」を一貫して扱わない場合、通常起動で想定した防御が抜ける。
+
+実務上の判断ポイントは、WinREを無効化するかどうかだけではない。高機密端末では、回復環境の起動を一時承認制にする、BitLockerをTPM単独ではなくTPM + PINにする、外部媒体のEFI System Partitionからの起動を制限する、NVRAMのBootNextやBootOrder変更を監査対象にする、といった層を重ねる必要がある。たとえば役員端末や研究開発端末では、紛失時にOSログオンだけを無効化しても不十分となる。保管庫、封印シール、貸出記録、修理委託時のチェーン・オブ・カストディまで含めて、物理アクセスを攻撃条件から外す設計が求められる。
+
+検知面では、OS稼働中のEDRだけに依存しにくい。回復環境の起動履歴、BitLocker回復キー要求イベント、UEFI設定変更、測定ブートやリモートアテステーションの差分を組み合わせて見る必要がある。封じ込めでは、疑わしい端末を通常ネットワークへ戻す前に、起動構成、BitLocker状態、回復キー利用履歴、ファームウェア設定を確認する手順が重要となる。</p>
+</div>
+          </div>
+        </div>
+
+        
+
+        <div class="section">
+          <h2>🕘 生成情報</h2>
+          <div class="ruleReason">
+対象期間：2026-06-22T06:00:00+09:00 〜 2026-06-23T06:00:00+09:00
+生成時刻：2026-06-23T07:04:09.118813+09:00
+免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      notifyhub.site
+    </div>
+  </div>
+</body>
+</html>

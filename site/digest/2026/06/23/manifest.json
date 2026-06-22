@@ -1,0 +1,391 @@
+{
+  "date": "2026-06-23",
+  "window": {
+    "from": "2026-06-22T06:00:00+09:00",
+    "to": "2026-06-23T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 24
+  },
+  "generated_at_jst": "2026-06-23T07:04:09.118813+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "AIモデル競争の新展開",
+      "source_name": "Build Fast with AI",
+      "published_at": "2026-06-21T12:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要6月21日時点で複数のAIモデル更新が相次ぐ。Claude Opus 4.8が推論・コーディングで優位を示し、OpenAIのGPT-5.x系列も特定ベンチマークで強みを発揮する。中国系ではGLM 5.2やKimi K2.7 Code、Qwen 3.7 PlusがAPI経由で即利用可能になった。Gemini 3.5 Proは6月末の自社期限に迫る。X投稿…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://www.buildfastwithai.com/blogs/ai-news-today-june-21-2026",
+      "selection_reason": "6月21日のAIニュースでGemini 3.5 Proのリリース接近や中国系新モデル追加が具体的に報じられ、X投稿でもGLM 5.2やKimi K2.7 Codeの実用例が確認できたため、他の汎用予測より新規性と実務影響が高い",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "AI News Today - June 21, 2026",
+          "url": "https://www.buildfastwithai.com/blogs/ai-news-today-june-21-2026",
+          "source_type": "web"
+        },
+        {
+          "title": "X post on new models",
+          "url": "https://x.com/tunde_ayanlade/status/2068714134552641696",
+          "source_type": "x"
+        },
+        {
+          "title": "X thread on model race",
+          "url": "https://x.com/adityakanu_x/status/2068596086265270277",
+          "source_type": "x"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "SpaceXのAI向け債券発行",
+      "source_name": "Bloomberg",
+      "published_at": "2026-06-22T17:33:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要SpaceXがAI開発資金調達のため投資適格債券を初めて発行する。数十億ドルの規模でAIと宇宙事業の両立を目指す。Microsoftとのデータセンター契約も2028年稼働で進行中。X投稿ではNVIDIAやAnthropicとの連携による物理AI基盤投資が加速している点が指摘される。企業は自社AIインフラ計画で債券市場やクラウド提携の動きを参考に資金戦略…",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://www.youtube.com/watch?v=q08SQiNk3gQ",
+      "selection_reason": "6月22日の放送でSpaceXがAI野心向けに投資適格債券を初発行し数十億ドル調達を計画した具体的事実が確認でき、ITインフラ投資の新事例としてGartner予測などの汎用トレンドより実務的波及が大きい",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "SpaceX's Big AI Bond Bet",
+          "url": "https://www.youtube.com/watch?v=q08SQiNk3gQ",
+          "source_type": "web"
+        },
+        {
+          "title": "X discussion on AI funding",
+          "url": "https://x.com/Oszynth/status/2068629897350684911",
+          "source_type": "x"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "AIエージェント向け新セキュリティツール",
+      "source_name": "Help Net Security",
+      "published_at": "2026-06-22T10:00:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Other",
+      "summary_preview": "概要AIエージェントの動作を監視するオープンソースツールAgent Beaconが公開された。テレメトリ層としてエージェントの行動を追跡可能にする。ClawHubプラグインのスコープ乗っ取り問題も同時に指摘され、AIレジストリのセキュリティギャップが浮き彫りになる。企業はAIエージェント導入時にこうした監視ツールの採用を検討する必要がある。",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://www.helpnetsecurity.com/2026/06/22/agent-beacon-open-source-telemetry-layer-ai-agents/",
+      "selection_reason": "6月22日公開のAgent BeaconなどAIエージェント監視ツール発表が新しく、X検索ではAIモデル関連投稿が多い中セキュリティ実務に直結する具体例として選定",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "Agent Beacon announcement",
+          "url": "https://www.helpnetsecurity.com/2026/06/22/agent-beacon-open-source-telemetry-layer-ai-agents/",
+          "source_type": "web"
+        },
+        {
+          "title": "ClawHub plugins security",
+          "url": "https://www.helpnetsecurity.com/2026/06/22/clawhub-code-executing-plugins-video/",
+          "source_type": "web"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "ce2f4afacc4e0170",
+      "title": "ShapedPlugin WordPress Pro Plugins Backdoored in Supply Chain Attack",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-22T18:00:48+00:00",
+      "impact_level": "High",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要The Hacker Newsは、ShapedPluginの複数のWordPress向けProプラグインが、公式のビルドおよび配布経路を侵害され、バックドア入りの更新として配布された事案を報じている。攻撃者は利用者をだます偽サイトではなく、正規のライセンス更新チャネルを悪用したため、管理者が通常の保守作業として更新を適用したサイトほど侵害されやすい構図…",
+      "article_path": "articles/ce2f4afacc4e0170.html",
+      "original_url": "https://thehackernews.com/2026/06/shapedplugin-wordpress-pro-plugins.html"
+    },
+    {
+      "entry_id": "31c9e7eafdb66a4a",
+      "title": "Researchers Detail DifyTap Flaws in Dify That Could Expose AI Chats Across Tenants",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-22T16:13:28+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要Zafran Securityが、オープンソースのエージェント型ワークフロープラットフォームDifyにおける4件の脆弱性群DifyTapを公表し、攻撃者が認証なしで他テナントのAI会話を密かに読み取れる可能性が示された。Difyは複数アプリや顧客を同一基盤で扱う構成になりやすく、悪用が成立すると単一チャットの漏えいにとどまらず、プロンプト、添付データ、…",
+      "article_path": "articles/31c9e7eafdb66a4a.html",
+      "original_url": "https://thehackernews.com/2026/06/researchers-detail-difytap-flaws-in.html"
+    },
+    {
+      "entry_id": "e5d5f42c9e0ef8ca",
+      "title": "29-Year-Old Squid Proxy Bug 'Squidbleed' Can Leak Cleartext HTTP Requests",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-22T14:29:46+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要The Hacker Newsは、Squid web proxyに存在する「Squidbleed」と呼ばれるヒープ過読取の不具合により、同じプロキシを利用できる別ユーザーの平文HTTPリクエストが漏えいし得ると報じた。攻撃者に必要な条件は、外部から任意に到達できることではなく、対象Squidを経由して通信できる権限を持つことにあり、社内利用者、委託先、…",
+      "article_path": "articles/e5d5f42c9e0ef8ca.html",
+      "original_url": "https://thehackernews.com/2026/06/29-year-old-squid-proxy-bug-squidbleed.html"
+    },
+    {
+      "entry_id": "88464724f4c43510",
+      "title": "New OXLOADER Loader Uses Malicious Google Ads to Deliver CastleStealer",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-22T13:20:12+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Credential Theft",
+      "summary_preview": "概要The Hacker Newsは、Elastic Security Labsの調査として、未報告だったローダーOXLOADERが悪性Google広告を起点にCastleStealerを配布するキャンペーンを伝えた。攻撃は検索広告の見た目と利用者の意図を悪用し、正規ソフトの入手や業務上の検索を装った誘導から実行ファイルを取得させ、認証情報やブラウザ内デー…",
+      "article_path": "articles/88464724f4c43510.html",
+      "original_url": "https://thehackernews.com/2026/06/new-oxloader-loader-uses-malicious.html"
+    },
+    {
+      "entry_id": "9795f1e6436a2e67",
+      "title": "Google Sets Sept. 30 Deadline for Android Developer Verification in Four Countries",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-22T12:45:08+00:00",
+      "impact_level": "Low",
+      "threat_type": "Advisory",
+      "summary_preview": "概要Googleは2026年9月30日から、Brazil、Indonesia、Singapore、Thailandの4か国でAndroid developer verificationの適用を始めると報じられた。対象となる認定Android端末では、Googleに開発者の身元を登録していない提供元のアプリについて、通常のインストールがブロックされる見込みで…",
+      "article_path": "articles/9795f1e6436a2e67.html",
+      "original_url": "https://thehackernews.com/2026/06/google-sets-sept-30-deadline-for.html"
+    },
+    {
+      "entry_id": "3aa7f2d44a310682",
+      "title": "Stop Your Legacy Infrastructure from Hijacking Your AI Agents",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-22T11:58:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Misconfiguration",
+      "summary_preview": "概要The Hacker Newsの記事は、AIエージェントの導入が進む一方で、既存の認証基盤、古いAPI、放置された連携システムがAIセキュリティ対策の盲点になり得ると指摘している。攻撃者はAIモデルそのものを破るのではなく、エージェントが参照する業務システム、権限過多のサービスアカウント、未整理のデータ接続を悪用し、エージェントの判断や実行経路を乗っ取…",
+      "article_path": "articles/3aa7f2d44a310682.html",
+      "original_url": "https://thehackernews.com/2026/06/stop-your-legacy-infrastructure-from.html"
+    },
+    {
+      "entry_id": "0ea43e4efb513e97",
+      "title": "⚡ Weekly Recap: Browser Bugs, EDR Killers, TV Botnet, OpenBSD Flaw, Android Trojan, and More",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-22T10:55:10+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要The Hacker Newsの週次まとめとして、ブラウザ脆弱性、EDR停止を狙う攻撃、テレビ機器を巻き込むボットネット、OpenBSDの不具合、Androidトロイの木馬など、複数の脅威動向が列挙された。共通点は、弱い認証情報、過剰な権限を持つブラウザ拡張、偽ツール、侵害済みWebサイト、WordPress悪用など、既存の運用上の隙を攻撃者が再利用す…",
+      "article_path": "articles/0ea43e4efb513e97.html",
+      "original_url": "https://thehackernews.com/2026/06/weekly-recap-browser-bugs-edr-killers.html"
+    },
+    {
+      "entry_id": "497ef92f8c83b71a",
+      "title": "Canada’s Spy Agency Used First-of-Its-Kind Warrant to Clean Botnet-Infected Devices",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-22T09:11:37+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Botnet",
+      "summary_preview": "概要The Hacker Newsは、CanadaのCSISが裁判所の許可を得て、国内に存在する感染サーバ、家庭用ルータ、IoT機器へアクセスし、外国運用とされる2つのボットネットを無害化したと報じた。攻撃者はこうした機器を認証情報の悪用、既知脆弱性、弱い管理設定から取り込み、DDoS、プロキシ、追加侵害の踏み台として使うため、個々の機器の価値は低くても集…",
+      "article_path": "articles/497ef92f8c83b71a.html",
+      "original_url": "https://thehackernews.com/2026/06/canadas-spy-agency-used-first-of-its.html"
+    },
+    {
+      "entry_id": "e99302fae98b3d64",
+      "title": "AryStinger Malware Infects 4,300 Legacy Routers to Build Reconnaissance Proxy Network",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-22T06:57:44+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Botnet",
+      "summary_preview": "概要The Hacker Newsが、QiAnXin XLabの観測として、新しいマルウェアファミリ AryStinger が放置された家庭用・小規模拠点向けの旧式ルーター少なくとも4,300台に感染し、分散型の偵察・プロキシ基盤を形成していると報じた。典型的なDDoS用ボットネットと異なり、感染機器は侵入前の探索、接続元の秘匿、対象組織に近い地域やISP…",
+      "article_path": "articles/e99302fae98b3d64.html",
+      "original_url": "https://thehackernews.com/2026/06/arystinger-malware-infects-4300-legacy.html"
+    },
+    {
+      "entry_id": "5e367c99b0e85fdf",
+      "title": "INTERPOL Warns Phishing, Ransomware, and AI Scams Are Rising Across Asia-Pacific",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-22T06:06:53+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Phishing",
+      "summary_preview": "概要The Hacker Newsは、INTERPOLの2025/2026年版アジア・南太平洋サイバー脅威評価を引用し、同地域でフィッシング、ランサムウェア、AI詐欺が大きく増えていると報じた。背景には急速なデジタル化、インターネット利用拡大、新技術の悪用、組織犯罪ネットワーク、国や業界ごとのセキュリティ成熟度の差がある。攻撃者にとっては、広い利用者層と防…",
+      "article_path": "articles/5e367c99b0e85fdf.html",
+      "original_url": "https://thehackernews.com/2026/06/interpol-warns-phishing-ransomware-and.html"
+    },
+    {
+      "entry_id": "e8cf2ed267a37e35",
+      "title": "Webshells Remain Popular, (Mon, Jun 22nd)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-06-22T14:10:27+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Malware",
+      "summary_preview": "概要SANS ISCは、Webshellが長年使われ続けている侵害後ツールであり、最近もGitHubに2か月前に公開された新しい可能性のある実装を確認したと紹介している。Webshellは脆弱なWebアプリ、認証情報の窃取、設定不備、アップロード機能の悪用などで設置され、攻撃者にHTTP経由の遠隔操作経路を与える。影響は単一サーバの改ざんにとどまらず、アプ…",
+      "article_path": "articles/e8cf2ed267a37e35.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33096"
+    },
+    {
+      "entry_id": "33d4bb1e298eac86",
+      "title": "ISC Stormcast For Monday, June 22nd, 2026 https://isc.sans.edu/podcastdetail/9980, (Mon, Jun 22nd)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-06-22T02:00:02+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要SANS ISCが2026年6月22日付のISC Stormcastを公開したという通知だが、入力には本文要約や参照URLが含まれておらず、個別の脆弱性、攻撃キャンペーン、観測IOCは確認できない。Stormcastは日次の脅威短報として複数トピックを横断的に扱うことが多く、悪用経路は取り上げられた各話題に依存するため、この入力だけで認証前RCE、認証…",
+      "article_path": "articles/33d4bb1e298eac86.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33092"
+    },
+    {
+      "entry_id": "e7021c6eac98d815",
+      "title": "VU#936962: Multiple file parsing vulnerabilities in FastStone Image Viewer 8.3.0.0",
+      "source_name": "CERT/CC",
+      "category": "reporting",
+      "published_at": "2026-06-22T18:41:47+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "Overview\nTwo vulnerabilities have been identified in FastStone Image Viewer 8.3 that may allow remote code execution or control-flow corruption when processing specially crafted i…",
+      "article_path": "articles/e7021c6eac98d815.html",
+      "original_url": "https://kb.cert.org/vuls/id/936962"
+    },
+    {
+      "entry_id": "d1f3b12dc7a92bdd",
+      "title": "VU#226679: Microsoft WinRE allows for bypass of UEFI/BIOS password enforcement",
+      "source_name": "CERT/CC",
+      "category": "reporting",
+      "published_at": "2026-06-22T16:16:08+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CERT/CCは、Microsoft Windows Recovery Environment（WinRE）の起動経路により、環境によっては管理者が設定したUEFI/BIOSパスワードの強制が迂回される可能性を示した。攻撃には端末への物理アクセス、または回復環境を起動できる管理者相当の権限が必要となり、典型的には一時的に端末へ触れる「Evil Maid…",
+      "article_path": "articles/d1f3b12dc7a92bdd.html",
+      "original_url": "https://kb.cert.org/vuls/id/226679"
+    },
+    {
+      "entry_id": "2b4589ddaca3374f",
+      "title": "Preferred Networksが国産生成AI基盤モデル「PLaMo 3.0 Prime」をリリース",
+      "source_name": "NICT NOTICE",
+      "category": "reporting",
+      "published_at": "2026-06-22T02:00:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要Preferred Networksが国産生成AI基盤モデル「PLaMo 3.0 Prime」をリリースしたという告知で、現時点の入力情報からは脆弱性、侵害、悪用観測を示す内容ではない。CSIRT観点では、モデルそのものの公開よりも、社内業務システム、検索基盤、開発支援、顧客対応などに組み込まれた後のデータ流入経路と権限境界が判断材料になる。悪用の形は…",
+      "article_path": "articles/2b4589ddaca3374f.html",
+      "original_url": "/publicity/topics/2026/06/22-1.html"
+    },
+    {
+      "entry_id": "df2574eabf137698",
+      "title": "Okta Blog 第17回 OAuth の限界とセキュリティリスクを克服、Okta「Cross App Access」が実現する安全な AI エージェント活用",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-21T23:10:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要ScanNetSecurityの記事は、Oktaのブログ連載として、従来のOAuthだけではAIエージェントのアプリ横断利用を十分に制御しにくいという課題と、OktaのCross App Accessによる安全な連携の考え方を紹介したものとみられる。AIエージェントがメール、文書管理、CRM、チャットなど複数SaaSを操作する場合、過大なスコープ、長寿…",
+      "article_path": "articles/df2574eabf137698.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/22/55543.html"
+    },
+    {
+      "entry_id": "ba04b9041754c8bf",
+      "title": "和歌山大学「バーチャルツアー」が踏み台に、外部サイトに転送",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-21T23:05:08+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要和歌山大学の「バーチャルツアー」が第三者の誘導経路として使われ、利用者が外部サイトへ転送された事案として報じられている。攻撃の成立条件は未確認だが、典型的には公開Webページの改ざん、外部コンテンツ管理基盤の侵害、または転送先を任意指定できるオープンリダイレクトの悪用が候補となる。利用者側では正規大学ドメインを起点に遷移するため警戒が下がり、フィッシン…",
+      "article_path": "articles/ba04b9041754c8bf.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/22/55542.html"
+    },
+    {
+      "entry_id": "ac489f08a6014b05",
+      "title": "大分大学「バーチャルキャンパスツアー」を装った不正なウェブページ表示、ソフトウェアの脆弱性を悪用",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-21T23:05:06+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Exploit",
+      "summary_preview": "概要大分大学の「バーチャルキャンパスツアー」を装った不正なウェブページが表示され、背景としてソフトウェアの脆弱性悪用が示されている。攻撃者は正規サイトまたは関連システムの弱点を使い、利用者を偽ページや不正コンテンツへ誘導した可能性が高く、単なるなりすましメールよりも利用者の警戒を下げやすい。影響は閲覧者側のフィッシング、マルウェア配布、個人情報入力の誘導に…",
+      "article_path": "articles/ac489f08a6014b05.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/22/55541.html"
+    },
+    {
+      "entry_id": "f090b10e59186348",
+      "title": "サーバ管理ソフトウェアの脆弱性を悪用 ～ CKCネットワークと学参が運用するシステムにランサムウェア攻撃",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-21T23:05:02+00:00",
+      "impact_level": "High",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要ScanNetSecurityは、CKCネットワークと学参が運用するシステムに対し、サーバ管理ソフトウェアの脆弱性悪用を起点としたランサムウェア攻撃があったと報じている。製品名、CVE番号、侵入経路の詳細、暗号化範囲、情報流出の有無は入力情報からは確認できず、同種環境への波及可能性を判断するには追加情報が必要になる。攻撃者視点では、サーバ管理系ソフトウ…",
+      "article_path": "articles/f090b10e59186348.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/22/55540.html"
+    },
+    {
+      "entry_id": "01d63e87a405e3f9",
+      "title": "日本の AI 関連インシデント経験は 47%、セキュリティ対策の遅れ浮き彫り ～ Proofpoint 調査",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-21T23:00:16+00:00",
+      "impact_level": "Low",
+      "threat_type": "Other",
+      "summary_preview": "概要ScanNetSecurityが、Proofpointの調査として、日本におけるAI関連インシデント経験が47%に達し、セキュリティ対策の遅れが見えると報じている。入力本文が提供されていないため、インシデントの定義、調査母集団、対象業種、被害規模、具体的な攻撃手口は未確認事項として扱う必要がある。CSIRT観点では、攻撃者は生成AI利用に伴う機密情報投…",
+      "article_path": "articles/01d63e87a405e3f9.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/22/55539.html"
+    },
+    {
+      "entry_id": "39f27fbfd14cb15c",
+      "title": "AI・SBOM・耐量子暗号 ～ NEDO懸賞金事業の運営体制が決定",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-21T23:00:13+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要ScanNetSecurityは、NEDOの懸賞金事業について、AI、SBOM、耐量子暗号を対象とする運営体制が決定したと報じている。入力情報だけでは、選定された運営主体、募集条件、成果物の公開範囲、CSIRTが直ちに対応すべき技術要件までは確認できない。これは脆弱性悪用や侵害の速報ではなく、政策・研究開発支援に近い情報であり、直接の攻撃経路が新たに示…",
+      "article_path": "articles/39f27fbfd14cb15c.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/22/55538.html"
+    },
+    {
+      "entry_id": "c9f2986d914a21fd",
+      "title": "エーアイセキュリティラボ「”リアル” 脆弱性診断ツール比較セミナー」を 6 / 26 に開催",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-21T23:00:10+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要ScanNetSecurityの記事は、エーアイセキュリティラボが「”リアル” 脆弱性診断ツール比較セミナー」を2026年6月26日に開催するという告知を扱っている。これは脆弱性そのものや侵害観測ではなく、脆弱性診断ツールの選定・比較を題材にしたイベント情報に近く、直ちに悪用される攻撃手口を示す内容ではない。一方で、診断ツールの選定はCSIRTや脆弱性…",
+      "article_path": "articles/c9f2986d914a21fd.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/22/55537.html"
+    },
+    {
+      "entry_id": "37bed6f320b2f126",
+      "title": "シェアレジデンス「nears」の旧サイトに注意を呼びかけ",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-21T23:00:07+00:00",
+      "impact_level": "Low",
+      "threat_type": "Advisory",
+      "summary_preview": "概要ScanNetSecurityは、シェアレジデンス「nears」の旧サイトに注意を呼びかける記事を掲載したが、入力情報には旧サイトの状態、誘導先、被害有無、運営元の一次情報が含まれていない。CSIRT視点では、旧サイトが検索結果、ブックマーク、過去のメール、外部リンクから到達可能なまま残り、利用者が正規サービスと誤認して個人情報を入力する流れが主な懸念…",
+      "article_path": "articles/37bed6f320b2f126.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/22/55536.html"
+    },
+    {
+      "entry_id": "6d556ea83b29ad4a",
+      "title": "Vendor-signed UEFI アプリケーションにセキュアブートバイパスの脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-21T23:00:03+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要ベンダー署名済みのUEFIアプリケーションを悪用し、Secure Bootの検証をすり抜ける脆弱性が報じられた。攻撃者は通常、EFI System Partitionへの書き込み、起動順序の変更、またはファームウェア更新経路への介入が必要となり、認証前にインターネット越しで即時侵入できる類型とは分けて扱う必要がある。一方で成立後はOS起動前のコード実行…",
+      "article_path": "articles/6d556ea83b29ad4a.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/22/55535.html"
+    }
+  ]
+}
