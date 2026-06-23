@@ -1,0 +1,429 @@
+{
+  "date": "2026-06-24",
+  "window": {
+    "from": "2026-06-23T06:00:00+09:00",
+    "to": "2026-06-24T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 28
+  },
+  "generated_at_jst": "2026-06-24T06:43:32.215148+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "グローバルテック株売りの波及と半導体市場への影響",
+      "source_name": "Reuters",
+      "published_at": "2026-06-23T11:21:58+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要6月23日、米国株式先物がグローバルなテック株売りに伴い下落した。韓国KOSPI指数は過去最高値から10%下落し、サムスンやSKハイニックスなどのチップ大手が売りの対象となった。SpaceX株も3日連続で下落し、テックセクター全体の調整が鮮明だ。EUは最先端半導体施設への7600万ユーロのドイツ国家補助を承認した。中国は世界最速スーパーコンピュータで米…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://www.reuters.com/technology/",
+      "selection_reason": "対象期間内の具体的な市場変動として、SpaceX株下落を含むテックセクター全体の売り圧力と半導体企業への波及を報じ、ITインフラ・半導体分野の実務判断に直結する新規事実を含むため選定",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "Tech News | Today's Latest Technology News",
+          "url": "https://www.reuters.com/technology/",
+          "source_type": "news"
+        },
+        {
+          "title": "Stocks Hit by Global Tech Selloff | Bloomberg Brief 6/23/2026",
+          "url": "https://www.youtube.com/watch?v=y6Iy_D_4hpg",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "SpaceXによるCursor買収でAIコーディングツール市場が再編",
+      "source_name": "Build Fast with AI",
+      "published_at": "2026-06-22T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要SpaceXがAIコーディングツールCursorの開発元Anysphereを600億ドルで買収した。6月16日の発表から1週間経過し、規制当局の承認を待つ段階だ。Cursorは年商40億ドル規模でFortune500企業の3分の2が利用する。SpaceXはxAIのGrokとの共同モデル訓練をColossusスーパークラスターで進めている。買収によりプラ…",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://www.buildfastwithai.com/blogs/ai-news-today-june-23-2026",
+      "selection_reason": "対象期間内にSpaceXの600億ドル買収が継続的に注目され、AIコーディングツールの実務導入に直結する具体的事例として、他のAIモデル発表や一般トレンドより新規性が高いため選定",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "AI News Today June 23 2026: 15 Biggest Stories",
+          "url": "https://www.buildfastwithai.com/blogs/ai-news-today-june-23-2026",
+          "source_type": "news"
+        },
+        {
+          "title": "SpaceX to acquire Cursor for $60B in stock",
+          "url": "https://techcrunch.com/2026/06/16/spacex-to-acquire-cursor-for-60b-in-stock-days-after-blockbuster-ipo/",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "偽AIエージェントスキルが26,000件のエージェントに到達",
+      "source_name": "The Hacker News",
+      "published_at": "2026-06-23T21:20:25+00:00",
+      "impact_level": "High",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要セキュリティ企業AIRが作成した偽のAIエージェントスキルが人気マーケットプレイスとInstagram広告を通じて約26,000件のエージェントに到達した。企業アカウントを含む事例も確認された。すべてのセキュリティスキャナーが安全と判定した。スキルはGoogleのStitchツールでランディングページを作成すると偽り、GitHubスターなどの信頼シグナ…",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://thehackernews.com/",
+      "selection_reason": "対象期間内の具体的なサプライチェーン攻撃事例として、セキュリティスキャンをすり抜けたAIスキル配布を報じ、AIエージェント導入企業の実務リスクに直結するため選定",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "Fake AI Agent Skill Passed Security Scans and Reportedly Reached 26,000 Agents",
+          "url": "https://thehackernews.com/",
+          "source_type": "news"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "c56ca2f26a4bec7e",
+      "title": "CVE-2025-67038 Lantronix EDS5000 Code Injection Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-06-23T00:00:00+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/c56ca2f26a4bec7e.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "a23a0c9028e85c59",
+      "title": "CVE-2026-34910 Ubiquiti UniFi OS Improper Input Validation Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-06-23T00:00:00+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/a23a0c9028e85c59.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "96e2c79f92c84f06",
+      "title": "CVE-2026-34909 Ubiquiti UniFi OS Path Traversal Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-06-23T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要CISAの既知悪用脆弱性カタログに、UbiquitiのUniFi OSに関するCVE-2026-34909が追加され、種別はパストラバーサルとして扱われている。KEV掲載は、単に脆弱性が公表された段階ではなく、実環境での悪用が確認されたことを示すため、UniFi OSを管理基盤として使う組織では資産確認と対処優先度を上げる必要がある。悪用の成立条件は入…",
+      "article_path": "articles/96e2c79f92c84f06.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "a8377f65d76b1553",
+      "title": "CVE-2026-34908 Ubiquiti UniFi OS Improper Access Control Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-06-23T00:00:00+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/a8377f65d76b1553.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "a318dccffee16dc7",
+      "title": "FortiBleed Targeted FortiGate Firewalls in 110 Million-Credential Harvesting Operation",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-23T18:20:49+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/a318dccffee16dc7.html",
+      "original_url": "https://thehackernews.com/2026/06/fortibleed-targeted-fortigate-firewalls.html"
+    },
+    {
+      "entry_id": "9a04cac6235d54d4",
+      "title": "Fake AI Agent Skill Passed Security Scans and Reportedly Reached 26,000 Agents",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-23T15:16:43+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/9a04cac6235d54d4.html",
+      "original_url": "https://thehackernews.com/2026/06/fake-ai-agent-skill-passed-security.html"
+    },
+    {
+      "entry_id": "eb321ac983f67bd9",
+      "title": "Trump Order Sets 2030 Deadline for Federal Post-Quantum Crypto Migration",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-23T15:16:40+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/eb321ac983f67bd9.html",
+      "original_url": "https://thehackernews.com/2026/06/trump-order-sets-2030-deadline-for.html"
+    },
+    {
+      "entry_id": "271ba2273da3fe9e",
+      "title": "GitHub Updates actions/checkout to Block Common Pwn Request Attack Patterns",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-23T14:22:03+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/271ba2273da3fe9e.html",
+      "original_url": "https://thehackernews.com/2026/06/github-updates-actionscheckout-to-block.html"
+    },
+    {
+      "entry_id": "42d5453d824e234d",
+      "title": "Agentic AI: The Weapon That No Longer Needs a Warrior",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-23T11:30:00+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/42d5453d824e234d.html",
+      "original_url": "https://thehackernews.com/2026/06/agentic-ai-weapon-that-no-longer-needs.html"
+    },
+    {
+      "entry_id": "7013f650c5697f80",
+      "title": "Malicious npm Packages Pose as PostCSS Tools to Deliver Windows RAT",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-23T08:54:32+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/7013f650c5697f80.html",
+      "original_url": "https://thehackernews.com/2026/06/malicious-npm-packages-pose-as-postcss.html"
+    },
+    {
+      "entry_id": "ecce48e9d11bf1fd",
+      "title": "WhatsApp VBScript Campaign Uses Fake Documents to Install ManageEngine RMM Tool",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-23T05:38:40+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/ecce48e9d11bf1fd.html",
+      "original_url": "https://thehackernews.com/2026/06/whatsapp-vbscript-campaign-uses-fake.html"
+    },
+    {
+      "entry_id": "cdcdb86e53ed1f4a",
+      "title": "OpenAI Expands Daybreak With GPT-5.5-Cyber to Help Defenders Patch Security Flaws",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-23T03:56:58+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/cdcdb86e53ed1f4a.html",
+      "original_url": "https://thehackernews.com/2026/06/openai-expands-daybreak-with-gpt-55.html"
+    },
+    {
+      "entry_id": "aa62262a768e9197",
+      "title": "CVE-2024-40766: The Patch Fixed the Bug. Nobody Fixed the Configuration., (Tue, Jun 23rd)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-06-23T03:02:34+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/aa62262a768e9197.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33094"
+    },
+    {
+      "entry_id": "79c5e39c2dcc7b87",
+      "title": "ISC Stormcast For Tuesday, June 23rd, 2026 https://isc.sans.edu/podcastdetail/9982, (Tue, Jun 23rd)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-06-23T02:00:03+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/79c5e39c2dcc7b87.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33098"
+    },
+    {
+      "entry_id": "89231541203ca8bb",
+      "title": "Uplevelling Black Hat Threat Hunters",
+      "source_name": "Cisco Security Blog",
+      "category": "reporting",
+      "published_at": "2026-06-23T12:00:00+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/89231541203ca8bb.html",
+      "original_url": "https://blogs.cisco.com/security/bhasia-2026-noc-uplevelling-black-hat-threat-hunters/"
+    },
+    {
+      "entry_id": "22d2ad9de269bece",
+      "title": "The Global Namespace Risk: Universal Bucket Hijacking Technique for Cloud Data Exfiltration",
+      "source_name": "Unit 42",
+      "category": "reporting",
+      "published_at": "2026-06-22T22:00:04+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/22d2ad9de269bece.html",
+      "original_url": "https://unit42.paloaltonetworks.com/cloud-bucket-hijacking-risks/"
+    },
+    {
+      "entry_id": "6f3635773e5dfd72",
+      "title": "注意喚起: Fortinet製品に関連する認証情報の漏えいに関する注意喚起  (公開)",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-06-23T07:19:00+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/6f3635773e5dfd72.html",
+      "original_url": "https://www.jpcert.or.jp/at/2026/at260019.html"
+    },
+    {
+      "entry_id": "39bf564a1e4788d9",
+      "title": "WISDOM Xの試験公開終了について",
+      "source_name": "NICT NOTICE",
+      "category": "reporting",
+      "published_at": "2026-06-23T05:00:00+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/39bf564a1e4788d9.html",
+      "original_url": "/publicity/topics/2026/06/23-1.html"
+    },
+    {
+      "entry_id": "523caab69baeb2ad",
+      "title": "ヘルプデスク詐欺師が家庭訪問開始",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-22T23:15:02+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/523caab69baeb2ad.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/23/55553.html"
+    },
+    {
+      "entry_id": "bfc3d72b1f4de088",
+      "title": "Proofpoint Blog 第57回【O365】自動転送やフォルダへの移動 ～ メールボックスのルールを書き換えデータ窃取",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-22T23:10:02+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/bfc3d72b1f4de088.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/23/55552.html"
+    },
+    {
+      "entry_id": "2af86799e6684a8d",
+      "title": "ジェリービーンズグループに役職員を装った不正な送金指示、被害対象額は約4,500万円",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-22T23:05:08+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/2af86799e6684a8d.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/23/55551.html"
+    },
+    {
+      "entry_id": "05d94cd2503a57e3",
+      "title": "Kaizen Tech Agent で元従業員が情報を不正取得し社外に持ち出した可能性、不正取得はしていない旨の誓約書を提出",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-22T23:05:06+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/05d94cd2503a57e3.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/23/55550.html"
+    },
+    {
+      "entry_id": "9290552c61906b06",
+      "title": "九州大学の端末がランサムウェア感染、患者43名の氏名と手術動画データが外部流出した可能性を否定できない状況",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-22T23:05:03+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/9290552c61906b06.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/23/55549.html"
+    },
+    {
+      "entry_id": "08357a57d39b7bed",
+      "title": "スリーシェイク 鈴木勝史氏、3年連続「AWS Community Builders」選出",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-22T23:00:15+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/08357a57d39b7bed.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/23/55548.html"
+    },
+    {
+      "entry_id": "3e5c83756bde1c76",
+      "title": "ネットワークの構築管理・サイバー情報収集分析 ～ 内閣官房 内閣情報調査室で情報処理技術者を若干名採用、応募7月10日必着",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-22T23:00:12+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/3e5c83756bde1c76.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/23/55547.html"
+    },
+    {
+      "entry_id": "f6b2f0d445e63059",
+      "title": "Fortinet のファイアウォール・VPN を狙う世界的な攻撃キャンペーン展開中、英 NCSC が警告",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-22T23:00:09+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/f6b2f0d445e63059.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/23/55546.html"
+    },
+    {
+      "entry_id": "55eafdb0c9394d33",
+      "title": "経産省、安全なセキュリティ業者の「認定制度」創設へ 2027年度運用開始を目指す",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-22T23:00:07+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/55eafdb0c9394d33.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/23/55545.html"
+    },
+    {
+      "entry_id": "1c5a39f118fce8c4",
+      "title": "Okta と Google Cloud が戦略的パートナーシップを拡大、ID 管理・クラウド・生産性向上ソリューションを統合",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-22T23:00:03+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/1c5a39f118fce8c4.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/23/55544.html"
+    }
+  ]
+}
