@@ -1,0 +1,458 @@
+{
+  "date": "2026-06-25",
+  "window": {
+    "from": "2026-06-24T06:00:00+09:00",
+    "to": "2026-06-25T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 30
+  },
+  "generated_at_jst": "2026-06-25T06:38:16.056984+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "Agentic AIの新モデル進展",
+      "source_name": "Berkeley RDI",
+      "published_at": "2026-06-24T17:10:17+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要OpenAIがGPT-5.5-Cyberを公開し、サイバーセキュリティタスクでの性能を向上させた。Frontier AI Cybersecurity Observatoryが評価を継続公開する。Agentic AIは計画立案やツール活用で実務自動化を加速する。企業はこれを活用したセキュリティテストや運用効率化を検討する必要がある。規制や倫理面の議論も並…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://berkeleyrdi.substack.com/p/agentic-ai-weekly-berkeley-rdi-june-e4a",
+      "selection_reason": "対象期間内の具体的なAIモデル発表と評価フレームワーク更新を捉え、AI分野の進展として新規性と実務影響が高いため選定。他の一般トレンドレポートより具体的な製品・研究進展を優先。",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "Agentic AI Weekly | Berkeley RDI | June 24, 2026",
+          "url": "https://berkeleyrdi.substack.com/p/agentic-ai-weekly-berkeley-rdi-june-e4a",
+          "source_type": "web"
+        },
+        {
+          "title": "AI Security Daily Briefing: June 24, 2026",
+          "url": "https://techmaniacs.com/2026/06/24/ai-security-daily-briefing-june-24-2026/",
+          "source_type": "web"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "AIを活用したセキュリティテストの台頭",
+      "source_name": "TECHMANIACS",
+      "published_at": "2026-06-24T21:01:09+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要AI駆動のセキュリティテストが手動や従来自動化を上回る速度で脆弱性を発見する事例が増えた。AnthropicのMythosモデルが米政府システムの脆弱性を特定した報告もある。偽AIエージェントスキルがセキュリティスキャンを通過し拡散したケースも確認された。企業はAIツールの導入検証を強化すべきだ。従来の防御策の見直しが求められる。",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://techmaniacs.com/2026/06/24/ai-security-daily-briefing-june-24-2026/",
+      "selection_reason": "対象期間内のAI駆動セキュリティテストに関する最新ブリーフィングを基に、サイバーセキュリティ分野の具体的な技術動向として選定。インシデント報告より実務ツールの進化を優先。",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "AI Security Daily Briefing: June 24, 2026",
+          "url": "https://techmaniacs.com/2026/06/24/ai-security-daily-briefing-june-24-2026/",
+          "source_type": "web"
+        },
+        {
+          "title": "June 24, 2026 | Tech, AI & Cybersecurity Intelligence Briefing",
+          "url": "https://www.linkedin.com/pulse/june-24-2026-tech-ai-cybersecurity-intelligence-briefing-sanchez-rk0pc",
+          "source_type": "web"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "半導体需要の持続的拡大",
+      "source_name": "X投稿および市場分析",
+      "published_at": "2026-06-24T21:37:58+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要マイクロンの最新決算でAIデータセンター向け需要が供給を上回る状況が確認された。HBMなどのメモリ製品で多年度契約が増加し、価格変動が抑制される構造変化が進む。GPUだけでなくストレージや電力インフラまで波及する。IT投資計画では長期的な部材確保を考慮すべきだ。AIインフラ拡大がIT全体の調達戦略に影響する。",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://x.com/hsminio/status/2069897849270415417",
+      "selection_reason": "対象期間内のマイクロン実績報告を基に、IT基盤である半導体分野の企業動向として具体性が高く選定。AI関連予測レポートより市場実績を優先。",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "X投稿: マイクロン実績分析",
+          "url": "https://x.com/hsminio/status/2069897849270415417",
+          "source_type": "x"
+        },
+        {
+          "title": "AI News Highlights from 2nd of June, 2026",
+          "url": "https://www.linkedin.com/pulse/ai-news-highlights-from-2nd-june-2026-ai-insiders-news-hnuae",
+          "source_type": "web"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "e30a0be1a4f7ffe5",
+      "title": "CISA Warns Critical Lantronix EDS5000 Flaw Is Being Actively Exploited",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-24T17:19:18+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/e30a0be1a4f7ffe5.html",
+      "original_url": "https://thehackernews.com/2026/06/cisa-warns-critical-lantronix-eds5000.html"
+    },
+    {
+      "entry_id": "3c0a30c44860c2cf",
+      "title": "Amadey and StealC Malware Network Disrupted, 27M Stolen Credentials Recovered",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-24T15:59:50+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/3c0a30c44860c2cf.html",
+      "original_url": "https://thehackernews.com/2026/06/amadey-and-stealc-malware-network.html"
+    },
+    {
+      "entry_id": "06520003459144be",
+      "title": "Cordyceps CI/CD Flaws Expose 300+ GitHub Repositories to Supply-Chain Attacks",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-24T12:48:11+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/06520003459144be.html",
+      "original_url": "https://thehackernews.com/2026/06/cordyceps-cicd-flaws-expose-300-github.html"
+    },
+    {
+      "entry_id": "7663d0338f0687af",
+      "title": "Dawn of the Apex Agentic Adversary",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-24T11:30:00+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/7663d0338f0687af.html",
+      "original_url": "https://thehackernews.com/2026/06/dawn-of-apex-agentic-adversary.html"
+    },
+    {
+      "entry_id": "8e0911da93c431b6",
+      "title": "DoJ Seizes Huione Cloud Account Tied to Cyber Scam Money Laundering",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-24T08:55:12+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/8e0911da93c431b6.html",
+      "original_url": "https://thehackernews.com/2026/06/doj-seizes-huione-cloud-account-tied-to.html"
+    },
+    {
+      "entry_id": "a2bd060220dd5164",
+      "title": "Cisco Unified CM Flaw Exploited After PoC Reveals File-Write Path to Root",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-24T06:50:38+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/a2bd060220dd5164.html",
+      "original_url": "https://thehackernews.com/2026/06/cisco-unified-cm-flaw-exploited-after.html"
+    },
+    {
+      "entry_id": "ef0a36047429d4a8",
+      "title": "Linux Process Name Masquerading, (Wed, Jun 24th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-06-24T06:29:03+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/ef0a36047429d4a8.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33102"
+    },
+    {
+      "entry_id": "68f3266a74bcbf05",
+      "title": "ISC Stormcast For Wednesday, June 24th, 2026 https://isc.sans.edu/podcastdetail/9984, (Wed, Jun 24th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-06-24T02:00:03+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/68f3266a74bcbf05.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33100"
+    },
+    {
+      "entry_id": "181898a1a6be44eb",
+      "title": "OpenClaw’s Skill Marketplace and the Emerging AI Supply Chain Threat",
+      "source_name": "Unit 42",
+      "category": "reporting",
+      "published_at": "2026-06-23T22:00:51+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/181898a1a6be44eb.html",
+      "original_url": "https://unit42.paloaltonetworks.com/openclaw-ai-supply-chain-risk/"
+    },
+    {
+      "entry_id": "1d264cb807b98ef4",
+      "title": "Weekly Report: Microsoft Edgeに複数の脆弱性",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-06-24T00:05:00+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/1d264cb807b98ef4.html",
+      "original_url": "https://www.jpcert.or.jp/wr/2026/wr260624.html#1"
+    },
+    {
+      "entry_id": "a824defcdfec754f",
+      "title": "Weekly Report: crypton-x509-validationに不適切な証明書検証の脆弱性",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-06-24T00:05:00+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/a824defcdfec754f.html",
+      "original_url": "https://www.jpcert.or.jp/wr/2026/wr260624.html#2"
+    },
+    {
+      "entry_id": "e0e37d9e220fac6a",
+      "title": "Weekly Report: Node.jsに複数の脆弱性",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-06-24T00:05:00+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/e0e37d9e220fac6a.html",
+      "original_url": "https://www.jpcert.or.jp/wr/2026/wr260624.html#3"
+    },
+    {
+      "entry_id": "e95c3d4ddc8e9744",
+      "title": "Weekly Report: ZyxelのGS1900シリーズスイッチにスタックベースのバッファオーバーフローの脆弱性",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-06-24T00:05:00+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/e95c3d4ddc8e9744.html",
+      "original_url": "https://www.jpcert.or.jp/wr/2026/wr260624.html#4"
+    },
+    {
+      "entry_id": "6f76446b807a1970",
+      "title": "Weekly Report: Drupal coreに複数の脆弱性",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-06-24T00:05:00+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/6f76446b807a1970.html",
+      "original_url": "https://www.jpcert.or.jp/wr/2026/wr260624.html#5"
+    },
+    {
+      "entry_id": "70ad36d52f06052a",
+      "title": "Weekly Report: 複数のCisco製品に脆弱性",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-06-24T00:05:00+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/70ad36d52f06052a.html",
+      "original_url": "https://www.jpcert.or.jp/wr/2026/wr260624.html#6"
+    },
+    {
+      "entry_id": "e59087cd45aab1c3",
+      "title": "Weekly Report: 複数のAtlassian製品に脆弱性",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-06-24T00:05:00+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/e59087cd45aab1c3.html",
+      "original_url": "https://www.jpcert.or.jp/wr/2026/wr260624.html#7"
+    },
+    {
+      "entry_id": "797a8d59e6902450",
+      "title": "Weekly Report: 複数のMozilla製品に脆弱性",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-06-24T00:05:00+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/797a8d59e6902450.html",
+      "original_url": "https://www.jpcert.or.jp/wr/2026/wr260624.html#8"
+    },
+    {
+      "entry_id": "4b0d62b562f82b55",
+      "title": "Weekly Report: Google Chromeに複数の脆弱性",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-06-24T00:05:00+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/4b0d62b562f82b55.html",
+      "original_url": "https://www.jpcert.or.jp/wr/2026/wr260624.html#9"
+    },
+    {
+      "entry_id": "b280b495204938e8",
+      "title": "Weekly Report: 複数のOracle製品に脆弱性",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-06-24T00:05:00+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/b280b495204938e8.html",
+      "original_url": "https://www.jpcert.or.jp/wr/2026/wr260624.html#10"
+    },
+    {
+      "entry_id": "02351a13be8500b1",
+      "title": "Weekly Report: リコーおよびコニカミノルタジャパン製プリンタドライバーに権限昇格の脆弱性",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-06-24T00:05:00+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/02351a13be8500b1.html",
+      "original_url": "https://www.jpcert.or.jp/wr/2026/wr260624.html#11"
+    },
+    {
+      "entry_id": "2e7b495f189fee5b",
+      "title": "Weekly Report: Fortinetが「FortiGateデバイスの認証情報を使った攻撃キャンペーンの分析」を公開",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-06-24T00:05:00+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/2e7b495f189fee5b.html",
+      "original_url": "https://www.jpcert.or.jp/wr/2026/wr260624.html#12"
+    },
+    {
+      "entry_id": "41d17046b0d2689b",
+      "title": "Wazuh における遠隔からの任意のコード実行が可能となるシリアライズデータの検証不備（Scan Tech Report）",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-23T23:15:02+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/41d17046b0d2689b.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/24/55562.html"
+    },
+    {
+      "entry_id": "fbe21eb612db6b91",
+      "title": "ID起点のHENNGE流ゼロトラスト ここに爆誕",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-23T23:10:02+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/fbe21eb612db6b91.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/24/55561.html"
+    },
+    {
+      "entry_id": "1ddb4eb013c70b35",
+      "title": "「様式1 運営委員会名簿」という名の本番データ ～ 124 名分の個人情報が記載されたファイルをメール送信",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-23T23:00:24+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/1ddb4eb013c70b35.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/24/55560.html"
+    },
+    {
+      "entry_id": "e6e7565f86dbd4fd",
+      "title": "「はいチーズ！フォト」への不正アクセス、漏えい対象となった顧客特定し個別連絡",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-23T23:00:20+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/e6e7565f86dbd4fd.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/24/55559.html"
+    },
+    {
+      "entry_id": "83dc9417d338af1c",
+      "title": "「claude.ai」のチャット共有画面から不正コマンドを実行させる ClickFix 型攻撃キャンペーンを分析",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-23T23:00:17+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/83dc9417d338af1c.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/24/55558.html"
+    },
+    {
+      "entry_id": "a70c2d9435963f7a",
+      "title": "リスクモンスターAPIサービスに「反社個人API」を追加",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-23T23:00:12+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/a70c2d9435963f7a.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/24/55557.html"
+    },
+    {
+      "entry_id": "621b72d89ac0a7c5",
+      "title": "セコムトラストシステムズ、Webセミナー「対策済みの落とし穴 ～ 業務停止を防ぐために見直すべきセキュリティとは」を 7 / 29・30 に開催",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-23T23:00:10+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/621b72d89ac0a7c5.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/24/55556.html"
+    },
+    {
+      "entry_id": "d1e32f1d1db5eb35",
+      "title": "明星大学「はじめてのサイバーセキュリティ演習 ～ AI を前提としたサイバーセキュリティ ～」8 / 23 開催",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-23T23:00:06+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/d1e32f1d1db5eb35.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/24/55555.html"
+    },
+    {
+      "entry_id": "4d50a4d100667190",
+      "title": "Anthropic が Okta を選定、Claude への安全な AI エージェント接続を支える",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-23T23:00:02+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/4d50a4d100667190.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/24/55554.html"
+    }
+  ]
+}
