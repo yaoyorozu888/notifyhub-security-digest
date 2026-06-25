@@ -254,8 +254,8 @@
         </div>
 
         <div class="tags">
-          <span class="tag level-Unknown">Impact: Unknown</span>
-          <span class="tag">Unknown</span>
+          <span class="tag level-Medium">Impact: Medium</span>
+          <span class="tag">Vulnerability</span>
         </div>
 
         <div class="btnRow">
@@ -268,24 +268,39 @@
         
         <div class="section">
           <h2>Impact判定理由</h2>
-          <div class="ruleReason"></div>
+          <div class="ruleReason">Chromeの複数脆弱性は、初期侵入や資格情報窃取の起点になりやすく、企業では更新保留端末が残ると実害が広がる。&lt;strong&gt;JPCERT/CCの週次報告&lt;/strong&gt;という公的情報源のため、少なくとも運用上の確認優先度は一定以上あるが、入力だけでは悪用確認やCVE詳細が取れないため、Criticalまでは上げない。</div>
         </div>
         <div class="section summary">
-          <h2>🧾 要約（ChatGPT）</h2>
+          <h2>🧾 要約（ChatGPT / gpt-5.4-mini-2026-03-17）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          
+          <div><h4>概要</h4><p>JPCERT/CCの週次報告で、<strong>Google Chromeに複数の脆弱性</strong>が取り上げられた。公開情報だけでは個々のCVE番号や悪用有無は確認できず、少なくとも今回の入力からは<strong>修正済みか、未修正か</strong>の切り分けが必要になる。Chromeは自動更新される一方、企業環境では更新停止端末や再起動保留端末が残りやすく、攻撃者はそこを狙って侵入や権限取得の起点にしやすい。ブラウザ脆弱性は単体被害で終わらず、<strong>資格情報の窃取</strong>や不正サイト経由の初期侵入、他サービスへの横展開につながることがある。未確認事項として、今回の報告に含まれる脆弱性の深刻度、悪用確認、影響範囲、対処期限があるため、実際の優先度は原文の詳細確認が前提になる。</p></div>
         </div>
 
         <div class="section">
           <h2>📌 キーワード解説</h2>
           <div class="terms">
-            
+            <div class="termCard">
+  <div class="term">自動更新</div>
+  <p class="exp">Chromeの更新は自動でも、再起動されない端末には古い版が残る。手動更新より見落としが減る一方、運用上は保留端末の管理が要点になる。</p>
+</div>
+<div class="termCard">
+  <div class="term">初期侵入</div>
+  <p class="exp">外部から最初に入り込む経路を指す。資格情報の流出や横展開と違い、境界の1点目を取る攻撃に焦点がある。</p>
+</div>
+<div class="termCard">
+  <div class="term">権限取得</div>
+  <p class="exp">単なる閲覧被害ではなく、端末やアカウントの支配に近づく段階を指す。情報窃取だけの脆弱性より、被害の広がりが大きくなる。</p>
+</div>
           </div>
           <h3 class="subSectionTitle">深掘り解説</h3>
           <div class="deepDive">
             <div class="termCard deepDiveCard">
-  <div class="term">なし</div>
+  <div class="term">ブラウザ脆弱性で本当に見るべき運用ポイント</div>
+  <p class="exp">ブラウザの脆弱性対応で見落としやすいのは、修正公開の有無よりも「どの端末がまだ旧版か」という運用面になる。Chromeのような自動更新型でも、再起動待ち、オフライン端末、VDIのイメージ固定、例外設定が重なると、実際には脆弱版が長く残る。
 
+攻撃者から見ると、狙う価値が高いのは個人端末ではなく、社内ネットワークへ戻ってくる管理端末や特権ユーザー端末になる。ここでブラウザの欠陥が悪用されると、単にWebページが壊れるだけで終わらず、セッション情報や保存資格情報、社内SaaSへの入口まで影響が及ぶことがある。例えば、業務用アカウントで社内ポータルにログインしたままの端末が脆弱版だった場合、フィッシングサイトや悪性広告から侵入の起点を作られやすい。
+
+実務では、脆弱性の深刻度だけでなく、更新遅延が起きる構成を先に洗うと判断がぶれにくい。確認対象は、更新ポリシー、再起動保留の台数、プロキシ配下で更新が失敗していないか、VDIや共有端末で版ずれが残っていないかになる。封じ込めでは、まず外部閲覧が多い端末群と特権端末群を優先し、更新後の再起動まで含めて完了条件にするのが重要になる。</p>
 </div>
           </div>
         </div>
@@ -296,7 +311,7 @@
           <h2>🕘 生成情報</h2>
           <div class="ruleReason">
 対象期間：2026-06-24T06:00:00+09:00 〜 2026-06-25T06:00:00+09:00
-生成時刻：2026-06-25T06:38:16.056984+09:00
+生成時刻：2026-06-25T12:04:10.059384+09:00
 免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
           </div>
         </div>

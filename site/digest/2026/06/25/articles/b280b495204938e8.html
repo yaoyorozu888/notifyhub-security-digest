@@ -254,8 +254,8 @@
         </div>
 
         <div class="tags">
-          <span class="tag level-Unknown">Impact: Unknown</span>
-          <span class="tag">Unknown</span>
+          <span class="tag level-Medium">Impact: Medium</span>
+          <span class="tag">Vulnerability</span>
         </div>
 
         <div class="btnRow">
@@ -268,24 +268,41 @@
         
         <div class="section">
           <h2>Impact判定理由</h2>
-          <div class="ruleReason"></div>
+          <div class="ruleReason">JPCERT/CCの週間レポートに含まれる公的情報であり、実運用では見逃し防止の価値が高い。一方、今回の入力だけでは対象製品、CVE、悪用確認、修正状況が不明で、直ちに高リスクとは断定できない。公的ソース補正はあるが、個別の悪用事実が未確認のため、中程度にとどめるのが妥当になる。</div>
         </div>
         <div class="section summary">
-          <h2>🧾 要約（ChatGPT）</h2>
+          <h2>🧾 要約（ChatGPT / gpt-5.4-mini-2026-03-17）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          
+          <div><h4>概要</h4><p>JPCERT/CCの週間レポートで、<strong>複数のOracle製品に脆弱性</strong>が取り上げられている。本文の提示情報だけでは、対象製品、CVE、悪用有無、修正状況までは確認できない。したがって、まずは自組織でOracle製品の利用有無と、公開系・認証基盤・業務基盤への配置状況を照合する必要がある。<strong>外部公開</strong>や<strong>管理機能の到達性</strong>がある場合は、侵入の起点になりやすい。影響は単一製品の障害にとどまらず、権限昇格や横展開、業務停止へ広がる可能性がある。なお、今回の情報は週次レポート内の要約であり、<strong>個別CVEや実際の悪用</strong>は未確認である。</p></div>
         </div>
 
         <div class="section">
           <h2>📌 キーワード解説</h2>
           <div class="terms">
-            
+            <div class="termCard">
+  <div class="term">外部公開</div>
+  <p class="exp">インターネット側から到達できる状態を指す。内部限定と異なり、初動攻撃の起点になりやすい。</p>
+</div>
+<div class="termCard">
+  <div class="term">認証基盤</div>
+  <p class="exp">利用者や端末の身元確認を担う仕組み。業務アプリと違い、突破されると影響が全体に波及しやすい。</p>
+</div>
+<div class="termCard">
+  <div class="term">権限昇格</div>
+  <p class="exp">低権限の侵入から高権限へ進むこと。侵入点よりも被害拡大の起点として重要になる。</p>
+</div>
           </div>
           <h3 class="subSectionTitle">深掘り解説</h3>
           <div class="deepDive">
             <div class="termCard deepDiveCard">
-  <div class="term">なし</div>
+  <div class="term">脆弱性情報を受けたときの最初の見極め方</div>
+  <p class="exp">脆弱性のニュースを見た直後に重要なのは、深刻度の数字よりも「自組織に当たるか」を先に切ることになる。製品名が同じでも、機能の使い方、公開範囲、認証の有無、保守状態で危険度は大きく変わる。
 
+実務では、まず資産台帳と構成管理から対象製品を洗い出し、次に公開面を確認する。たとえば、同じOracle製品でも社内限定の分析サーバと、外部公開された管理画面では優先度が別物になる。前者は計画保守で済むことが多いが、後者は既知脆弱性のスキャン対象になりやすく、悪用の待ち時間が短い。
+
+次に見るべきは、単なるパッチ有無ではなく「回避策が本当に効くか」になる。設定変更で一時回避できる場合でも、代替経路が残っていれば攻撃者はそこを探す。たとえば管理ポートを閉じたつもりでも、VPN経由や踏み台経由で内部から到達できるなら、実質的な露出は残る。
+
+最後に、封じ込め時の業務影響も織り込む必要がある。DBや認証系は停止すると影響が大きいので、いきなり遮断ではなく、まず接続元制限、監視強化、バックアップ確認を先に置く判断が多い。脆弱性対応は「止めるか直すか」ではなく、「どこまで露出を減らしてから直すか」を決める作業になる。</p>
 </div>
           </div>
         </div>
@@ -296,7 +313,7 @@
           <h2>🕘 生成情報</h2>
           <div class="ruleReason">
 対象期間：2026-06-24T06:00:00+09:00 〜 2026-06-25T06:00:00+09:00
-生成時刻：2026-06-25T06:38:16.056984+09:00
+生成時刻：2026-06-25T12:04:10.059384+09:00
 免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
           </div>
         </div>

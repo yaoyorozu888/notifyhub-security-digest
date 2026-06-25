@@ -254,8 +254,8 @@
         </div>
 
         <div class="tags">
-          <span class="tag level-Unknown">Impact: Unknown</span>
-          <span class="tag">Unknown</span>
+          <span class="tag level-Medium">Impact: Medium</span>
+          <span class="tag">Advisory</span>
         </div>
 
         <div class="btnRow">
@@ -268,24 +268,43 @@
         
         <div class="section">
           <h2>Impact判定理由</h2>
-          <div class="ruleReason"></div>
+          <div class="ruleReason">新たな脆弱性や悪用事例の公表ではなく、AI エージェントと ID 基盤の接続設計に関する話題であるため、直ちに広域被害を示すものではない。とはいえ、権限過剰やトークン管理の失敗が起きると、情報流出や業務操作の悪用が横断的に広がる余地がある。媒体記事で一次情報の詳細が限られるため、影響は中程度として扱い、実装済み連携の権限と監査の確認を優先するのが妥当である。</div>
         </div>
         <div class="section summary">
-          <h2>🧾 要約（ChatGPT）</h2>
+          <h2>🧾 要約（ChatGPT / gpt-5.4-mini-2026-03-17）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          
+          <div><h4>概要</h4><p>Anthropic が <strong>Okta</strong> を採用し、Claude へ安全に接続する <strong>AI エージェント</strong> 基盤を整える内容である。主眼は新たな脆弱性の公表ではなく、ID 連携と権限制御を前提に、AI に業務システムへ触らせる際の安全性を高める点にある。攻撃者視点では、ここで失敗すると <strong>トークン窃取</strong> や <strong>権限の過剰付与</strong> を足場に、AI を経由した情報流出や操作の悪用へ広がりやすい。影響範囲は Claude 単体ではなく、連携先の SaaS、社内アプリ、認証基盤まで及ぶ可能性がある一方、今回の記事だけでは具体的な設定、対象テナント、運用統制の詳細は未確認である。CSIRT では、AI 導入そのものよりも、<strong>SSO</strong>、<strong>SCIM</strong>、サービスアカウント、監査ログの扱いを個別に確認する視点が要る。</p></div>
         </div>
 
         <div class="section">
           <h2>📌 キーワード解説</h2>
           <div class="terms">
-            
+            <div class="termCard">
+  <div class="term">AI エージェント</div>
+  <p class="exp">利用者の代わりに外部サービスへ操作する仕組み。単なる対話型 AI と違い、権限設定の甘さがそのまま実害につながる。</p>
+</div>
+<div class="termCard">
+  <div class="term">SSO</div>
+  <p class="exp">一度の認証で複数サービスを使う仕組み。便利だが、認証連携の誤設定があると横断的に影響が広がる。</p>
+</div>
+<div class="termCard">
+  <div class="term">SCIM</div>
+  <p class="exp">アカウントや権限を自動同期する仕組み。手作業管理より楽だが、削除漏れや過剰権限の固定化に注意が要る。</p>
+</div>
+<div class="termCard">
+  <div class="term">トークン</div>
+  <p class="exp">API 利用の鍵に相当する情報。パスワードと違い長く生きることがあり、漏えい時の回収が難しい。</p>
+</div>
           </div>
           <h3 class="subSectionTitle">深掘り解説</h3>
           <div class="deepDive">
             <div class="termCard deepDiveCard">
-  <div class="term">なし</div>
+  <div class="term">AI 連携で本当に見るべき境界は「会話」ではなく「権限」になる</div>
+  <p class="exp">AI エージェント導入で見落としやすいのは、生成結果の正しさよりも、どこまで操作権限を渡したかという点にある。画面上では「質問して答える」だけに見えても、裏側ではメール送信、チケット更新、ファイル参照、承認申請などの実操作が走ることがある。ここで危険になるのは、AI の賢さよりも、連携先が持つ権限が人間向けのまま広く設定されるケースである。
 
+具体例として、営業部門向けの Claude 連携に、共有メールボックス閲覧権限とファイル書き込み権限を与えたとする。すると、ユーザーが「先月の見積書を要約して」と頼んだだけでも、過去の顧客情報や添付ファイルが横断的に参照される可能性がある。さらに、連携トークンが長寿命で、監査ログに誰が何を指示したか残りにくいと、情報流出が起きても経路追跡が難しくなる。
+
+実務上は、AI を新しい利用者として扱うのではなく、既存の特権アカウントの一種として審査するのが近道になる。最低でも、接続先ごとに最小権限、短寿命トークン、操作ログ、失効手順、例外時の業務影響を確認する必要がある。特に、承認不要で外部送信できる設定と、社内限定のデータ参照設定が同じ接続画面に並ぶ場合は、設定ミスが起きやすいので分離して考える必要がある。</p>
 </div>
           </div>
         </div>
@@ -296,7 +315,7 @@
           <h2>🕘 生成情報</h2>
           <div class="ruleReason">
 対象期間：2026-06-24T06:00:00+09:00 〜 2026-06-25T06:00:00+09:00
-生成時刻：2026-06-25T06:38:16.056984+09:00
+生成時刻：2026-06-25T12:04:10.059384+09:00
 免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
           </div>
         </div>

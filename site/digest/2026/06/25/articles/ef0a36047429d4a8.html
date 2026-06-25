@@ -254,8 +254,8 @@
         </div>
 
         <div class="tags">
-          <span class="tag level-Unknown">Impact: Unknown</span>
-          <span class="tag">Unknown</span>
+          <span class="tag level-Medium">Impact: Medium</span>
+          <span class="tag">Malware</span>
         </div>
 
         <div class="btnRow">
@@ -268,24 +268,36 @@
         
         <div class="section">
           <h2>Impact判定理由</h2>
-          <div class="ruleReason"></div>
+          <div class="ruleReason">内容はマルウェアの隠蔽技術に関する解説で、既知の手口の再確認に近い。直接の脆弱性公開や悪用手順ではなく、単体の緊急対処を要する性質は低いが、侵害後の潜伏や調査回避に使われるため運用上の注意は必要になる。
+情報源はSANS ISCの観測・解説系であり、公的な悪用確認やKEV掲載ではないため、補正で大きく引き上げる材料はない。したがって重要度は中程度に留め、実環境では名前よりプロセスツリーや実体確認を優先する観点を持つのが妥当になる。</div>
         </div>
         <div class="section summary">
-          <h2>🧾 要約（ChatGPT）</h2>
+          <h2>🧾 要約（ChatGPT / gpt-5.4-mini-2026-03-17）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          
+          <div><h4>概要</h4><p>この記事は、Linux上での<strong>プロセス名の偽装</strong>が、どのように監視や調査をすり抜けるかを整理している。攻撃者はプロセス自体を隠すだけでなく、<strong>無害に見える名前へ見せかける</strong>ことで、日常的な一覧表示や初期トリアージの注意を外そうとする。これはマルウェアの存在を隠すよりも、検知ルールの網の目を抜けやすい場面があり、横展開や持続化の足場を温存しやすい。影響は単一ホストに限られないが、記事は特定キャンペーンの詳細や実際の侵入経路までは示していない。したがって、現時点では<strong>観測上の注意喚起</strong>として扱い、実環境で同種の命名や親子関係の崩れを点検するのが妥当になる。</p></div>
         </div>
 
         <div class="section">
           <h2>📌 キーワード解説</h2>
           <div class="terms">
-            
+            <div class="termCard">
+  <div class="term">プロセス名の偽装</div>
+  <p class="exp">実体は悪性でも、見た目だけ正規プロセスに寄せて監視を外す手口。単なるプロセス隠蔽と違い、一覧に見えても油断を誘う点が厄介になる。</p>
+</div>
+<div class="termCard">
+  <div class="term">rootkit</div>
+  <p class="exp">表示や取得の経路を改ざんして存在自体を隠す仕組み。名前だけ似せる偽装より深く、検知側の見え方そのものを壊しやすい。</p>
+</div>
+<div class="termCard">
+  <div class="term">MITRE ATT&amp;CK T1036</div>
+  <p class="exp">正規に見せるための偽装技術をまとめた分類。攻撃の意図を読む手掛かりになるが、個別製品の検知名と混同しない必要がある。</p>
+</div>
           </div>
           <h3 class="subSectionTitle">深掘り解説</h3>
           <div class="deepDive">
             <div class="termCard deepDiveCard">
-  <div class="term">なし</div>
-
+  <div class="term">プロセス名より、親子関係と起動経路を見る</div>
+  <p class="exp">Linuxの調査では、表示名だけを信じると判断を誤りやすい。攻撃者は `sshd` や `kworker` 風の名前に寄せて見せることがあるため、名前の妥当性だけでなく、どの親プロセスから起動したか、実体のバイナリがどこにあるか、引数や作業ディレクトリが自然かを合わせて見る必要がある。例えば、`/tmp` 配下の実行ファイルが `systemd` に似た名前で常駐していても、親が想定外で、実行パスも標準配置でなければかなり怪しくなる。逆に、正規サービスでもラッパースクリプトやコンテナ経由で起動すると見かけの名前がずれることがあるため、単独の指標で断定しない方がよい。実務では、`ps` の一覧だけでなく、`/proc/&lt;pid&gt;/exe`、`/proc/&lt;pid&gt;/cmdline`、`/proc/&lt;pid&gt;/status`、監査ログやEDRのプロセスツリーを突き合わせると、偽装と正当な運用差分を切り分けやすくなる。</p>
 </div>
           </div>
         </div>
@@ -296,7 +308,7 @@
           <h2>🕘 生成情報</h2>
           <div class="ruleReason">
 対象期間：2026-06-24T06:00:00+09:00 〜 2026-06-25T06:00:00+09:00
-生成時刻：2026-06-25T06:38:16.056984+09:00
+生成時刻：2026-06-25T12:04:10.059384+09:00
 免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
           </div>
         </div>

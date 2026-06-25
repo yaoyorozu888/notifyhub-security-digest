@@ -254,8 +254,8 @@
         </div>
 
         <div class="tags">
-          <span class="tag level-Unknown">Impact: Unknown</span>
-          <span class="tag">Unknown</span>
+          <span class="tag level-High">Impact: High</span>
+          <span class="tag">Vulnerability Disclosure</span>
         </div>
 
         <div class="btnRow">
@@ -268,24 +268,43 @@
         
         <div class="section">
           <h2>Impact判定理由</h2>
-          <div class="ruleReason"></div>
+          <div class="ruleReason">複数のCisco製品に関する脆弱性であり、ネットワーク機器や境界装置が対象なら、侵入点や踏み台として使われた場合の運用影響が大きい。個別CVEや悪用確認は未確認だが、JPCERT/CCの週次報告に含まれているため、国内運用上は確認優先度を上げる材料になる。現時点では対象製品・到達条件・認証要否が不明で、Criticalへは上げず、ただし露出管理機器に該当すれば実務上の体感リスクは高い。</div>
         </div>
         <div class="section summary">
-          <h2>🧾 要約（ChatGPT）</h2>
+          <h2>🧾 要約（ChatGPT / gpt-5.4-mini-2026-03-17）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          
+          <div><h4>概要</h4><p><strong>Cisco製品群に複数の脆弱性</strong>が公表され、JPCERT/CCの週次報告に載っている。個別のCVEや影響範囲は入力情報だけでは確定できず、<strong>認証前に到達できるか</strong>、<strong>権限昇格や遠隔コード実行につながるか</strong>、<strong>管理面に露出しているか</strong>が判断の分岐点になる。攻撃者は境界装置やネットワーク機器を起点に、初期侵入・設定改ざん・横展開を狙う可能性が高い。被害は単一機器の停止にとどまらず、トラフィック中継、監視回避、踏み台化まで広がる余地がある。現時点では、対象製品やCVE、悪用確認の有無が未確認であり、<strong>緊急度は個別の脆弱性内容で上下する</strong>。</p></div>
         </div>
 
         <div class="section">
           <h2>📌 キーワード解説</h2>
           <div class="terms">
-            
+            <div class="termCard">
+  <div class="term">認証前</div>
+  <p class="exp">ログインなしで到達できる状態を指す。認証後脆弱性より攻撃面が広く、露出していれば優先度が上がる。</p>
+</div>
+<div class="termCard">
+  <div class="term">権限昇格</div>
+  <p class="exp">低い権限から管理権限へ上がること。単独では侵入の起点にならなくても、侵入後の被害拡大に直結する。</p>
+</div>
+<div class="termCard">
+  <div class="term">遠隔コード実行</div>
+  <p class="exp">攻撃者の命令を機器上で動かせる状態。設定変更やDoSより危険が大きく、踏み台化にもつながる。</p>
+</div>
+<div class="termCard">
+  <div class="term">境界装置</div>
+  <p class="exp">外部と内部をつなぐ機器群を指す。内部端末より露出しやすく、1台の侵害が広範囲の通信に影響しやすい。</p>
+</div>
           </div>
           <h3 class="subSectionTitle">深掘り解説</h3>
           <div class="deepDive">
             <div class="termCard deepDiveCard">
-  <div class="term">なし</div>
+  <div class="term">ネットワーク機器の脆弱性は「単体被害」で見誤らない</div>
+  <p class="exp">Ciscoのようなネットワーク機器の脆弱性は、壊れる機能よりも「通り道を握られる」点が本質になる。例えば管理画面に欠陥があれば、攻撃者は設定変更や通信の中継点化を狙えるため、影響はその装置の外側へ広がる。
 
+実務では、まず「外部から到達可能か」「認証が要るか」「管理経路が分離されているか」を切り分けると判断が安定する。認証前で管理面が露出しているなら、単なるパッチ待ちでは済まない。踏み台化や監視回避が起きると、端末EDRだけでは追いにくくなる。
+
+具体例として、VPN装置やファイアウォールの脆弱性を放置した結果、攻撃者が内部ネットワークへの入口を確保し、その後にADやファイルサーバへ横展開する流れがある。したがって、機器単位の深刻度だけでなく、そこが組織のどの通信を束ねているかまで含めて優先度を決める必要がある。</p>
 </div>
           </div>
         </div>
@@ -296,7 +315,7 @@
           <h2>🕘 生成情報</h2>
           <div class="ruleReason">
 対象期間：2026-06-24T06:00:00+09:00 〜 2026-06-25T06:00:00+09:00
-生成時刻：2026-06-25T06:38:16.056984+09:00
+生成時刻：2026-06-25T12:04:10.059384+09:00
 免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
           </div>
         </div>

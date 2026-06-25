@@ -254,8 +254,8 @@
         </div>
 
         <div class="tags">
-          <span class="tag level-Unknown">Impact: Unknown</span>
-          <span class="tag">Unknown</span>
+          <span class="tag level-High">Impact: High</span>
+          <span class="tag">Vulnerability Disclosure</span>
         </div>
 
         <div class="btnRow">
@@ -268,24 +268,35 @@
         
         <div class="section">
           <h2>Impact判定理由</h2>
-          <div class="ruleReason"></div>
+          <div class="ruleReason">JPCERT/CC の週報に載る公的な注意喚起であり、悪用前提で更新確認を進めるべき対象になる。Drupal core は公開サイトに直結しやすく、侵入後の改ざんや資格情報収集へ広がるため、単なる不具合より運用影響が大きい。CVE、悪用確認、対象範囲はこの入力だけでは未確認であるため、現時点では上位寄りの High と評価する。</div>
         </div>
         <div class="section summary">
-          <h2>🧾 要約（ChatGPT）</h2>
+          <h2>🧾 要約（ChatGPT / gpt-5.4-mini-2026-03-17）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          
+          <div><h4>概要</h4><p>JPCERT/CC の週報で、Drupal core に <strong>複数の脆弱性</strong> が整理されている。個別の細部はこの入力だけでは分からないが、core に含まれる欠陥は、サイトの公開状況次第で <strong>認証前の侵入</strong> や権限のない操作につながることがある。攻撃者は、パッチ未適用の管理外公開サイトを広く探して一斉に試すため、単一組織の問題に見えても被害は横並びで広がりやすい。実運用では、脆弱性そのものよりも、運用中の拡張機能、カスタムテーマ、更新遅延が踏み台になる点を警戒する必要がある。現時点の入力では CVE、悪用確認、対象バージョンの範囲が未確認であり、そこは一次情報で詰める前提になる。</p></div>
         </div>
 
         <div class="section">
           <h2>📌 キーワード解説</h2>
           <div class="terms">
-            
+            <div class="termCard">
+  <div class="term">Drupal core</div>
+  <p class="exp">Drupal本体を指す。拡張機能よりも影響範囲が広く、修正遅延の影響が直接出やすい。</p>
+</div>
+<div class="termCard">
+  <div class="term">認証前</div>
+  <p class="exp">ログイン不要で到達できる状態を指す。認証後の欠陥より、外部露出したサイトで悪用されやすい。</p>
+</div>
+<div class="termCard">
+  <div class="term">公開面</div>
+  <p class="exp">インターネットから見える入口を指す。閉域の脆弱性より、実際の攻撃対象になりやすい。</p>
+</div>
           </div>
           <h3 class="subSectionTitle">深掘り解説</h3>
           <div class="deepDive">
             <div class="termCard deepDiveCard">
-  <div class="term">なし</div>
-
+  <div class="term">Drupalの脆弱性評価で先に見るべき運用条件</div>
+  <p class="exp">Drupalの脆弱性は、CVEの番号やCVSSの高さだけで優先度を決めると判断を誤りやすい。先に見るべきは、対象サイトが外部公開か、管理画面への到達経路があるか、更新を止めている理由があるかの3点になる。たとえば、同じ欠陥でも社内検証環境では影響が限定的でも、インターネット公開の本番サイトでは、侵入後にコンテンツ改ざん、フィッシングページ設置、資格情報収集の足場になりやすい。さらに Drupal core の問題は、単なるページ表示の不具合に留まらず、管理者権限の奪取や永続化につながると被害の質が一段変わる。実務では、まず対象インスタンスの棚卸し、次に外部公開の有無、最後に直近更新の適用状況を並べて確認すると、優先順位のブレが小さくなる。例として、同じ組織内に3台の Drupal があっても、外部公開のポータルは即時対応、社内向け検証機は計画停止、廃止予定の古い環境は切り離し判断を先に置く、という切り分けが有効になる。</p>
 </div>
           </div>
         </div>
@@ -296,7 +307,7 @@
           <h2>🕘 生成情報</h2>
           <div class="ruleReason">
 対象期間：2026-06-24T06:00:00+09:00 〜 2026-06-25T06:00:00+09:00
-生成時刻：2026-06-25T06:38:16.056984+09:00
+生成時刻：2026-06-25T12:04:10.059384+09:00
 免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
           </div>
         </div>

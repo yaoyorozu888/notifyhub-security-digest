@@ -254,8 +254,8 @@
         </div>
 
         <div class="tags">
-          <span class="tag level-Unknown">Impact: Unknown</span>
-          <span class="tag">Unknown</span>
+          <span class="tag level-High">Impact: High</span>
+          <span class="tag">Intrusion</span>
         </div>
 
         <div class="btnRow">
@@ -268,24 +268,37 @@
         
         <div class="section">
           <h2>Impact判定理由</h2>
-          <div class="ruleReason"></div>
+          <div class="ruleReason">FortiGateの管理系認証情報が悪用される前提なら、入口は正規ログインに見えやすく、VPNや経路制御まで含めて影響が広がるため、運用上の被害は大きい。脆弱性単体というより認証情報起点の侵害であり、横展開や監視回避にもつながる点を重く見る必要がある。JPCERT/CC経由の周知であり、国内組織の確認優先度を上げる補正をかける一方、今回の公開情報では侵入経路や対象範囲の詳細が未確認なのでCriticalまでは上げていない。</div>
         </div>
         <div class="section summary">
-          <h2>🧾 要約（ChatGPT）</h2>
+          <h2>🧾 要約（ChatGPT / gpt-5.4-mini-2026-03-17）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          
+          <div><h4>概要</h4><p>Fortinetが、<strong>FortiGateデバイスの認証情報を悪用する攻撃キャンペーン</strong>の分析を公開した。攻撃者は機器そのものの脆弱性だけでなく、<strong>取得済みの管理者認証情報</strong>や設定情報を足掛かりに侵入を進める可能性がある。影響は単一拠点の機器設定改ざんにとどまらず、<strong>VPN経由の社内侵入</strong>や横展開、監視回避へ広がる余地がある。公開情報だけでは、侵入経路が漏えい済み資格情報なのか、過去の侵害からの再利用なのか、あるいは別の初期侵入手段なのかは未確認である。JPCERT/CC経由の周知である点から、国内組織でも同種の設定・運用がある場合は確認優先度を上げる価値がある。</p></div>
         </div>
 
         <div class="section">
           <h2>📌 キーワード解説</h2>
           <div class="terms">
-            
+            <div class="termCard">
+  <div class="term">認証情報の再利用</div>
+  <p class="exp">漏えいしたID・パスワードを別環境で使い回す攻撃手法。脆弱性攻撃より静かで、正規ログインに見える点が厄介となる。</p>
+</div>
+<div class="termCard">
+  <div class="term">VPN侵入</div>
+  <p class="exp">遠隔接続の入口を足場に社内へ入る手口。公開サービスの侵害と違い、内部通信として扱われやすい点に注意が要る。</p>
+</div>
+<div class="termCard">
+  <div class="term">横展開</div>
+  <p class="exp">最初に入った端末から別の機器へ広げる動き。単独機器の問題に見えても、権限次第で被害範囲が急に拡大する。</p>
+</div>
           </div>
           <h3 class="subSectionTitle">深掘り解説</h3>
           <div class="deepDive">
             <div class="termCard deepDiveCard">
-  <div class="term">なし</div>
+  <div class="term">管理者認証情報を守る対象はID管理だけでは足りない</div>
+  <p class="exp">ネットワーク機器の侵害では、脆弱性そのものよりも、管理者認証情報の流出や再利用が被害の起点になることが多い。特にFortiGateのような境界機器は、設定画面への到達がそのまま経路制御、VPN、証明書、ログ転送の変更につながるため、1つのIDが組織全体の信頼境界を崩す。したがって、IDを無効化したかどうかだけで終わらせず、直近の管理ログイン履歴、失敗回数の急増、設定変更、VPN接続先の不審な追加を一体で見る必要がある。
 
+具体例として、退職済みの保守委託先アカウントが残っており、そこに多要素認証が付いていなかったとする。この場合、攻撃者は新しい脆弱性を使わなくても正規の管理画面へ入り、特定拠点のトンネル設定を変えて社内セグメントへ回り込める。逆に、パッチ適用だけで安心すると、認証情報の漏えい経路や権限棚卸しの不備を見落としやすい。機器防御は、更新管理と同じ重さで認証の棚卸しを回すことが重要になる。</p>
 </div>
           </div>
         </div>
@@ -296,7 +309,7 @@
           <h2>🕘 生成情報</h2>
           <div class="ruleReason">
 対象期間：2026-06-24T06:00:00+09:00 〜 2026-06-25T06:00:00+09:00
-生成時刻：2026-06-25T06:38:16.056984+09:00
+生成時刻：2026-06-25T12:04:10.059384+09:00
 免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
           </div>
         </div>

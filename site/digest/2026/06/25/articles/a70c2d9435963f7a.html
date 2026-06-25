@@ -254,8 +254,8 @@
         </div>
 
         <div class="tags">
-          <span class="tag level-Unknown">Impact: Unknown</span>
-          <span class="tag">Unknown</span>
+          <span class="tag level-Info">Impact: Info</span>
+          <span class="tag">Other</span>
         </div>
 
         <div class="btnRow">
@@ -268,24 +268,36 @@
         
         <div class="section">
           <h2>Impact判定理由</h2>
-          <div class="ruleReason"></div>
+          <div class="ruleReason">記事は脆弱性や攻撃ではなく、業務向けAPIの機能追加を伝えている。直接の侵害リスクや広範な悪用可能性は本文から読み取れず、主な論点は導入時の権限設計や証跡管理になる。
+媒体記事ではあるが、注意喚起や悪用観測ではないため、情報源による上振れ補正は不要と判断する。</div>
         </div>
         <div class="section summary">
-          <h2>🧾 要約（ChatGPT）</h2>
+          <h2>🧾 要約（ChatGPT / gpt-5.4-mini-2026-03-17）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          
+          <div><h4>概要</h4><p>リスクモンスターAPIサービスに<strong>「反社個人API」</strong>が追加された。反社会的勢力に関する確認を、既存のAPI連携の中で扱えるようにする更新と読める。<strong>セキュリティ脆弱性の話ではなく</strong>、与信・審査・取引先管理の業務に関わる機能追加として捉えるのが妥当だ。<strong>不正利用の即時悪用経路</strong>や侵害拡大の情報は本文からは確認できず、影響は主に導入組織の業務フローに限定される可能性が高い。未確認事項として、APIの具体的な照会対象、応答内容、利用条件、ログ保全の有無が挙がる。</p></div>
         </div>
 
         <div class="section">
           <h2>📌 キーワード解説</h2>
           <div class="terms">
-            
+            <div class="termCard">
+  <div class="term">API</div>
+  <p class="exp">異なるシステムをつなぐ窓口。画面操作より自動化しやすいので、誤設定や権限設計の粗さが運用リスクになりやすい。</p>
+</div>
+<div class="termCard">
+  <div class="term">反社チェック</div>
+  <p class="exp">反社会的勢力との関係確認。本人確認や与信審査と違い、判断根拠の記録と更新管理が重要になる。</p>
+</div>
           </div>
           <h3 class="subSectionTitle">深掘り解説</h3>
           <div class="deepDive">
             <div class="termCard deepDiveCard">
-  <div class="term">なし</div>
+  <div class="term">API追加で最初に確認するべき運用論点</div>
+  <p class="exp">APIの追加は新機能の通知に見えるが、実務では「どの判断を自動化するか」を再点検する契機になる。特に、反社確認のような審査系APIは、結果そのものよりも、誰がいつ照会し、結果をどの業務判断に使ったかが重要になる。
 
+例えば、営業部門のCRMから自動照会する設計にすると、便利さの反面、誤った法人名や担当者名で照会した結果がそのまま審査記録に残ることがある。これを防ぐには、照会前の入力正規化、再照会の手順、失敗時の手動確認、ログの保存期間を先に決めておく必要がある。
+
+CSIRTの観点では、障害対応だけでなく、権限の持ち方と証跡の残し方を確認しておく価値が高い。外部APIは侵入経路そのものではなくても、設定ミスや過剰権限があると、誤照会・情報漏えい・業務停止の引き金になる。新しいAPIが入ったときほど、技術部門だけでなく法務、審査、監査の確認を同時に回すことが有効になる。</p>
 </div>
           </div>
         </div>
@@ -296,7 +308,7 @@
           <h2>🕘 生成情報</h2>
           <div class="ruleReason">
 対象期間：2026-06-24T06:00:00+09:00 〜 2026-06-25T06:00:00+09:00
-生成時刻：2026-06-25T06:38:16.056984+09:00
+生成時刻：2026-06-25T12:04:10.059384+09:00
 免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
           </div>
         </div>

@@ -254,8 +254,8 @@
         </div>
 
         <div class="tags">
-          <span class="tag level-Unknown">Impact: Unknown</span>
-          <span class="tag">Unknown</span>
+          <span class="tag level-Medium">Impact: Medium</span>
+          <span class="tag">Vulnerability Disclosure</span>
         </div>
 
         <div class="btnRow">
@@ -268,24 +268,41 @@
         
         <div class="section">
           <h2>Impact判定理由</h2>
-          <div class="ruleReason"></div>
+          <div class="ruleReason">JPCERT/CCの週次報告で取り上げられており、公的な注意喚起として把握優先度は高い。もっとも、入力情報だけではCVEや悪用確認、対象製品の範囲が確定していないため、即時の実害を示す材料は不足している。製品が外部公開されている環境では影響が上がる一方、現時点では情報周知段階とみて中程度にとどめるのが妥当になる。</div>
         </div>
         <div class="section summary">
-          <h2>🧾 要約（ChatGPT）</h2>
+          <h2>🧾 要約（ChatGPT / gpt-5.4-mini-2026-03-17）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          
+          <div><h4>概要</h4><p>JPCERT/CCの週次報告で、<strong>複数のAtlassian製品</strong>に脆弱性があることが取り上げられている。個別のCVEや悪用実績は入力情報だけでは確認できず、<strong>公開情報の周知</strong>段階にとどまる。攻撃者は、外部公開された管理系画面や連携機能を起点に侵入を狙い、認証回避、権限昇格、情報閲覧へつなげる余地を探ることが多い。影響は単一サーバーで終わらず、ConfluenceやJiraを中核にした運用情報、チケット、認証情報の断片へ広がる可能性がある。現時点では、<strong>悪用の有無</strong>、<strong>対象製品の範囲</strong>、<strong>修正済みバージョン</strong>の確認が未了であり、製品ごとの影響切り分けが必要になる。</p></div>
         </div>
 
         <div class="section">
           <h2>📌 キーワード解説</h2>
           <div class="terms">
-            
+            <div class="termCard">
+  <div class="term">権限昇格</div>
+  <p class="exp">低権限の侵入点から管理権限へ上がることを指す。単なる不正ログインより、被害の広がりが大きい。</p>
+</div>
+<div class="termCard">
+  <div class="term">認証回避</div>
+  <p class="exp">本来必要な認証を通らずに機能へ到達する状態を指す。認証情報の窃取とは別で、設定や実装の穴が焦点になる。</p>
+</div>
+<div class="termCard">
+  <div class="term">外部公開管理画面</div>
+  <p class="exp">社内向けのつもりでも外から見える画面を指す。閉域前提の製品と比べ、初期侵入の起点になりやすい。</p>
+</div>
           </div>
           <h3 class="subSectionTitle">深掘り解説</h3>
           <div class="deepDive">
             <div class="termCard deepDiveCard">
-  <div class="term">なし</div>
+  <div class="term">複数製品にまたがる脆弱性は、製品名より『共通の露出面』で見る</div>
+  <p class="exp">Atlassian製品のように、同じ運用基盤の上で複数のサービスを抱える環境では、個別の脆弱性一覧を順番に追うだけでは判断を誤りやすい。実際に危険なのは、外部公開されている管理画面、SSO連携、プラグイン機構、API のような共通の入口がどこまで重なっているかという点にある。
 
+例えば、Confluence と Jira を同一認証基盤で運用している場合、片方の脆弱性が直接の侵入口にならなくても、共有セッションや連携トークンが攻撃の足場になることがある。逆に、対象製品があっても完全に内部限定で、ネットワーク分離とアクセス制御が効いていれば、机上の危険度より実害は下がる。
+
+CSIRTで重要なのは、「その製品に脆弱性があるか」だけでなく、「その製品がどの入口で外部に触れているか」「侵入後に何へつながるか」を短時間で切り分けることにある。具体的には、公開URLの棚卸し、管理画面の到達性、認証方式、プラグイン有効化状況、更新遅延の有無を同時に確認する。
+
+たとえば、同じ脆弱性情報でも、インターネット公開の Confluence では緊急対応対象になりやすい一方、完全閉域の検証環境なら計画メンテナンス扱いに寄せられる。ここを分けずに全台を同じ優先度で止めると、業務影響だけが先に出る。逆に、外部公開の見落としがあると、パッチ適用済みのつもりで侵入経路を残すことになる。</p>
 </div>
           </div>
         </div>
@@ -296,7 +313,7 @@
           <h2>🕘 生成情報</h2>
           <div class="ruleReason">
 対象期間：2026-06-24T06:00:00+09:00 〜 2026-06-25T06:00:00+09:00
-生成時刻：2026-06-25T06:38:16.056984+09:00
+生成時刻：2026-06-25T12:04:10.059384+09:00
 免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
           </div>
         </div>
