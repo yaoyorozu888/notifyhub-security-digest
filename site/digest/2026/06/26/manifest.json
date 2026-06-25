@@ -1,0 +1,374 @@
+{
+  "date": "2026-06-26",
+  "window": {
+    "from": "2026-06-25T06:00:00+09:00",
+    "to": "2026-06-26T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 23
+  },
+  "generated_at_jst": "2026-06-26T06:43:56.538865+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "クラウドコンピューティングの普及加速",
+      "source_name": "X投稿",
+      "published_at": "2026-06-24T20:00:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Other",
+      "summary_preview": "概要クラウドコンピューティングはサーバーやストレージをインターネット経由で利用する方式として注目を集めている。スケーラビリティとコスト効率が利点で、NetflixやAWSなどの事例が挙げられる。開発者や企業はハードウェア投資を抑えられるため導入が進む。柔軟性により需要変動への対応が容易になる点が実務で評価される。X上の投稿でもこのトレンドが共有され、ITイ…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://x.com/Tech_With_MD/status/2069873194471674231",
+      "selection_reason": "IT分野のクラウドトレンドとして具体的な説明投稿が確認され、新規性と実務影響が高いため選定。他の候補より開発者向け実例が豊富",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "Learn Cloud Computing in 60 Seconds",
+          "url": "https://x.com/Tech_With_MD/status/2069873194471674231",
+          "source_type": "x"
+        },
+        {
+          "title": "クラウド関連X投稿",
+          "url": "https://x.com/seal_kiman/status/2069881195005890766",
+          "source_type": "x"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "AIモデル性能向上の議論",
+      "source_name": "X投稿",
+      "published_at": "2026-06-24T23:59:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要AIモデル間の性能比較が活発で、価格帯に対する効率が議論される。フラッシュモデルが特定のベンチマークで高性能を示し、AI製品選択の参考になる。AIクラウド事業モデルの課題も指摘され、収益化の難しさが浮き彫りになる。X投稿を通じて開発者や投資家の関心が集まる状況だ。実務ではモデル選定時のコストパフォーマンス評価が重要になる。",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://x.com/cvel317/status/2069933583264055705",
+      "selection_reason": "AI分野のモデル比較やビジネスモデル議論がXで活発で、AI製品進展に直結する具体性が高いため選定",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "AI cloud business model",
+          "url": "https://x.com/cvel317/status/2069933583264055705",
+          "source_type": "x"
+        },
+        {
+          "title": "AIモデル関連投稿",
+          "url": "https://x.com/aiseomastery/status/2069933560790966753",
+          "source_type": "x"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "AI活用によるサイバー防御の進化",
+      "source_name": "X投稿",
+      "published_at": "2026-06-24T17:58:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要AI訓練計算量の増加がサイバーセキュリティのルールを書き換えつつある。攻撃者は自律エージェントで攻撃を自動化し、フロンティアモデルが脆弱性を発見する。ゼロトラスト姿勢と機密コンピューティングの採用が推奨される。X上の技術プレゼン共有により、組織の対応が急務となる状況が示される。実務ではAIスケーリングに合わせた防御強化が求められる。",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://x.com/arhemian/status/2069933553261883503",
+      "selection_reason": "Cybersecurity分野でAIと防御の関係を扱った公式寄りの投稿が確認され、規制や実務影響が高いため選定。他のインシデントよりトレンド性が高い",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "AI training compute and cybersecurity",
+          "url": "https://x.com/arhemian/status/2069933553261883503",
+          "source_type": "x"
+        },
+        {
+          "title": "Linux Foundation投稿",
+          "url": "https://x.com/linuxfoundation/status/2069842606578970805",
+          "source_type": "x"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "822d0605c751f93a",
+      "title": "CVE-2026-12569 PTC Windchill and FlexPLM Improper Input Validation Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-06-25T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CVE-2026-12569は、PTC Windchill と FlexPLM に存在する入力検証不備の脆弱性で、CISA KEV に掲載されている点が重要となる。掲載は、理論上の欠陥ではなく、実際に悪用される前提で対応を急ぐべき段階に入ったことを示す。攻撃者は、外部公開された管理画面や連携機能を起点に不正な入力を送り込み、認証回避、情報窃取、操作権限…",
+      "article_path": "articles/822d0605c751f93a.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "2cb57db59585c391",
+      "title": "CVE-2026-20230 Cisco Unified Communications Manager Server-Side Request Forgery (SSRF) Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-06-25T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Cisco Unified Communications Manager に サーバーサイドリクエストフォージェリ があるとして、CVE-2026-20230 が CISA の KEV に載っている。攻撃者は外部から内部向けの通信を代理実行させ、管理系の到達経路 を探ったり、内部ネットワークの情報を抜いたりする起点にしやすい。SSRF 単体では直ちに完…",
+      "article_path": "articles/2cb57db59585c391.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "e2241f54e99c38d6",
+      "title": "Chrome Ad Blocker with 10M+ Installs Found with Dormant Script Injection Capability",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-25T14:12:52+00:00",
+      "impact_level": "High",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要人気のChrome拡張機能「Adblock for YouTube」に、任意のJavaScriptを実行できる能力が見つかった。公開された説明では利用者の広告遮断機能をうたうが、解析では拡張機能内に潜伏したスクリプト注入の仕組みが確認された。配布数は1000万超で、Chrome Web Store上でFeatured扱いでもあるため、単一製品の問題に見…",
+      "article_path": "articles/e2241f54e99c38d6.html",
+      "original_url": "https://thehackernews.com/2026/06/chrome-ad-blocker-with-10m-installs.html"
+    },
+    {
+      "entry_id": "40a35dd1a6c7c198",
+      "title": "ThreatsDay Bulletin: Smart TV Proxyware, 24-Year curl Bug, AI Crime Forums + 13 More Stories",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-25T12:24:43+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要本件は The Hacker News の週次まとめで、Smart TV の proxyware 化、curl の24年越しの不具合、AI犯罪フォーラムなど、複数の話題を束ねた二次情報の記事になる。個別事案の詳細よりも、古い認証情報の残存、正規アプリの悪用、ブラウザ経由の横断的な誘導といった、運用現場で起きやすい攻撃経路を俯瞰する内容に近い。悪用は単発…",
+      "article_path": "articles/40a35dd1a6c7c198.html",
+      "original_url": "https://thehackernews.com/2026/06/threatsday-bulletin-smart-tv-proxyware.html"
+    },
+    {
+      "entry_id": "17b566d4572e54ad",
+      "title": "Surviving the Mythos Era: Richard Bejtlich on the Case for NDR",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-25T11:17:31+00:00",
+      "impact_level": "Low",
+      "threat_type": "Other",
+      "summary_preview": "概要本記事は、アラート中心の運用だけではインシデントの全体像をつかみにくく、NDRのようなネットワーク可視化が補助線になるという主張を扱う。検知そのものよりも、何が起きたか、どの証拠があるか、どこまで見えているかを整理する力が重要だと論じている。悪用手法そのものの解説ではなく、調査の見落としや文脈不足が原因で判断がぶれる問題に焦点がある。組織内の通信、横展…",
+      "article_path": "articles/17b566d4572e54ad.html",
+      "original_url": "https://thehackernews.com/2026/06/surviving-mythos-era-richard-bejtlich.html"
+    },
+    {
+      "entry_id": "ceaa99792765e584",
+      "title": "New Gaslight macOS Malware Uses Prompt Injection to Disrupt AI-Assisted Analysis",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-25T09:23:03+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要macOS向けの新しいマルウェア Gaslight が見つかり、Rustで作られたインプラント兼情報窃取型として振る舞う一方、解析者のAI支援ツールを混乱させるためのプロンプト注入を埋め込んでいる。狙いは、AIに解析を中断させたり拒否させたりして、初動調査の速度と精度を落とす点にある。感染後は認証情報や端末内データの窃取、さらには追加操作につながる可能…",
+      "article_path": "articles/ceaa99792765e584.html",
+      "original_url": "https://thehackernews.com/2026/06/new-gaslight-macos-malware-uses-prompt.html"
+    },
+    {
+      "entry_id": "96babc46cd76f788",
+      "title": "New Mistic Backdoor Linked to KongTuke in ClickFix and ModeloRAT Campaigns",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-25T08:54:37+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要Mistic と呼ばれる新しいバックドアが、ClickFix や ModeloRAT を含むキャンペーンの一部として使われたと報じられた。対象は保険、教育、IT、専門サービスなど複数業種にまたがり、金銭目的の侵入活動とみられている。初期侵入を担う IAB との関連も示唆されており、侵入口の販売と後続侵入の分業が疑われる。悪用の流れは、利用者操作を起点に…",
+      "article_path": "articles/96babc46cd76f788.html",
+      "original_url": "https://thehackernews.com/2026/06/new-mistic-backdoor-linked-to-kongtuke.html"
+    },
+    {
+      "entry_id": "84aaad1123d61bbc",
+      "title": "Cisco Catalyst SD-WAN Zero-Day CVE-2026-20245 Exploited to Gain Root Access",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-25T05:46:54+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Zero-day",
+      "summary_preview": "概要Cisco Catalyst SD-WAN に関する ゼロデイ悪用 が確認され、公開前の少なくとも2か月前から、認証済みのローカル攻撃者が権限昇格に利用していたと Mandiant が報告した。対象の欠陥は CVE-2026-20245 で、CVSS は 7.8 とされる。成立条件は「既に装置へ入れていること」が前提になるため、外部からの単発侵入よりも…",
+      "article_path": "articles/84aaad1123d61bbc.html",
+      "original_url": "https://thehackernews.com/2026/06/cisco-catalyst-sd-wan-zero-day-cve-2026.html"
+    },
+    {
+      "entry_id": "eb723953dec40af4",
+      "title": "What do Ports Hear When Nobody's Listening&#x3f; An Assessment of Automated Cybercrime &#x5b;Guest Diary&#x5d;, (Wed, Jun 24th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-06-25T10:01:19+00:00",
+      "impact_level": "Low",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要SANS ISC の Guest Diary では、公開ポートへの自動化された犯罪活動を観測し、その実態を整理している。内容はインシデント報告というより、露出したサービスに対して機械的に走る探索や試行の傾向を読み解く観測寄りの分析となる。悪用の中心は、広く開放されたポートに対する認証試行、既知の弱い設定の探索、未保護サービスの洗い出しにある。影響は単一…",
+      "article_path": "articles/eb723953dec40af4.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33104"
+    },
+    {
+      "entry_id": "398cc388f675d9e0",
+      "title": "stealc historical bot infection special report",
+      "source_name": "Shadowserver",
+      "category": "reporting",
+      "published_at": "2026-06-25T15:37:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要Shadowserver は、Stealc に感染した端末の過去分をまとめた特別報告を公開した。これは単発の注意喚起というより、情報窃取型マルウェア が組織内にどれだけ残っているかを再確認させる観測情報として読むべき内容になる。感染端末は認証情報、ブラウザ保存値、暗号資産ウォレット情報などの窃取に使われ、そこから メール侵害 や追加侵入へつながるおそれ…",
+      "article_path": "articles/398cc388f675d9e0.html",
+      "original_url": "https://www.shadowserver.org/news/stealc-historical-bot-infection-special-report/"
+    },
+    {
+      "entry_id": "3f552b61b58d30c3",
+      "title": "LOTSを活用して進化を続けるKimJongRAT",
+      "source_name": "IIJ SECT",
+      "category": "reporting",
+      "published_at": "2026-06-25T02:26:58+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要2026年5月に、GitHubなどの正規サービスを中継点に使って KimJongRAT を配布する攻撃キャンペーンが観測された。LOTS を悪用するため、通信や配布物が正規利用に紛れやすく、単純なドメイン遮断では止めにくい。感染後は情報窃取や追加操作につながる可能性があり、利用者端末から認証情報や機密情報が抜かれる 形で被害が広がるおそれがある。影響範…",
+      "article_path": "articles/3f552b61b58d30c3.html",
+      "original_url": "https://sect.iij.ad.jp/blog/2026/06/continuous-evolution-of-kimjongrat-2026/"
+    },
+    {
+      "entry_id": "2e82bc9f162edfa3",
+      "title": "CSIRT支援室 第36回 CVEを年間数十件取得している猛者たちにそのモチベーションを聞いてみた：後編",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-24T23:10:02+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要本記事は、CVEを年間数十件取得する研究者に、その継続動機や取り組み方を聞く後編であり、脆弱性そのものの新規公表を主題にした記事ではない。したがって、直接の緊急対応よりも、脆弱性発見から公開までの現実と、研究活動が防御側にどう効くかを理解する用途が強い。攻撃に悪用されるかどうかは各CVEの内容次第であり、この記事単体では悪用状況や影響範囲は確認できない…",
+      "article_path": "articles/2e82bc9f162edfa3.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/25/55574.html"
+    },
+    {
+      "entry_id": "e363a79f1e4f9055",
+      "title": "KDDIのISP事業者向けメールシステムに不正アクセス、最大1,422万件のメールアドレス・パスワードが漏えいした可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-24T23:05:05+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要KDDIのISP事業者向けメールシステムに不正アクセスが発生し、最大1,422万件のメールアドレスとパスワードが漏えいした可能性がある。記事の時点では、実際に情報が持ち出された範囲や、侵入経路、攻撃者がどこまで操作できたかは明確になっていない。漏えいが事実なら、単純な認証情報流出にとどまらず、同一または再利用されたパスワードを通じた他サービスへのログイ…",
+      "article_path": "articles/e363a79f1e4f9055.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/25/55573.html"
+    },
+    {
+      "entry_id": "7a31f89769e686f6",
+      "title": "「WebARENA 大容量ファイル転送機能」への不正アクセス、提供再開は2026年12月頃を目途",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-24T23:05:02+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要WebARENAの大容量ファイル転送機能で不正アクセスが発生し、提供再開は2026年12月頃を目途とする案内が出ている。記事だけでは、侵入経路、影響範囲、漏えいの有無、復旧条件は確認できない。現時点で読み取れる実務上の論点は、単なる障害ではなく、ファイル受け渡し基盤としての機密情報の扱いと再開までの代替手段をどう確保するかにある。攻撃者が認証情報や転送…",
+      "article_path": "articles/7a31f89769e686f6.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/25/55572.html"
+    },
+    {
+      "entry_id": "0a75d4562b8345a9",
+      "title": "Fortinet製品に関連する認証情報の漏えいに注意を呼びかけ",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-24T23:00:29+00:00",
+      "impact_level": "High",
+      "threat_type": "Credential Theft",
+      "summary_preview": "概要Fortinet製品に関して、認証情報の漏えいにつながる可能性があるとして注意が呼びかけられている。記事単体では、漏えいの起点が製品脆弱性なのか、設定不備なのか、外部からの侵入なのかは確定していないため、情報の出どころと再現条件を切り分けて見る必要がある。認証情報が得られると、攻撃者は装置への再侵入、VPNや管理面への横展開、他システムへの踏み台化を狙…",
+      "article_path": "articles/0a75d4562b8345a9.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/25/55571.html"
+    },
+    {
+      "entry_id": "5e7c0290b9990993",
+      "title": "AeyeScan、SaaS型Webアプリケーション脆弱性診断・管理市場でシェア1位を獲得",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-24T23:00:25+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要AeyeScanがSaaS型Webアプリケーション脆弱性診断・管理市場でシェア1位を獲得したという市場動向の記事であり、脆弱性そのものの発生や悪用を伝える内容ではない。対象は診断・管理サービスの採用状況であり、攻撃者が直接狙う事象ではなく、組織側の診断体制の成熟度を読む材料になる。こうした市場シェアの変化は、Web資産の棚卸しや継続診断を外部SaaSへ…",
+      "article_path": "articles/5e7c0290b9990993.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/25/55570.html"
+    },
+    {
+      "entry_id": "6938bfac5d59e668",
+      "title": "はてな資金流出、11 億 7,900 万円を特別損失として計上",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-24T23:00:21+00:00",
+      "impact_level": "High",
+      "threat_type": "Credential Theft",
+      "summary_preview": "概要はてなが、資金流出に伴う損失として11億7,900万円を特別損失に計上した件を報じている。記事題目からは、単なる不正送金ではなく、会計上も損失認識が必要な規模に達したことが読み取れる。攻撃手口や侵入経路は本文情報だけでは確認できず、フィッシング、認証情報の窃取、承認経路の悪用など複数の可能性を残す。影響は金銭損失にとどまらず、送金承認フローの統制、監査…",
+      "article_path": "articles/6938bfac5d59e668.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/25/55569.html"
+    },
+    {
+      "entry_id": "19be5611db930900",
+      "title": "UPSIDERホールディングスへの不正アクセス、個人情報・法人情報の流出の可能性は極めて低いと判断",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-24T23:00:19+00:00",
+      "impact_level": "Low",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要UPSIDERホールディングスで不正アクセスが確認され、個人情報や法人情報が流出した可能性は極めて低いと整理されている。記事だけでは、侵入経路が外部公開面なのか、認証情報の不正利用なのか、あるいは内部端末起点なのかは読み取れないため、再侵入や横展開の有無は未確認となる。実務上は、情報漏えいの有無だけでなく、アカウント乗っ取りや設定変更、外部連携の悪用が…",
+      "article_path": "articles/19be5611db930900.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/25/55568.html"
+    },
+    {
+      "entry_id": "c373f187395b47ed",
+      "title": "D&Mにランサムウェア攻撃、過去約 2 年分の FAX 受注データが外部流出した可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-24T23:00:16+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要D&amp;Mはランサムウェア攻撃を受け、約2年分のFAX受注データが外部に流出した可能性を公表した。侵入経路や初期侵入の手口、暗号化の有無は入力情報からは確認できず、現時点では被害の全体像に未確定部分が残る。漏えいが事実なら、受注内容や連絡先、取引先情報を足がかりにした二次被害やなりすまし連絡のリスクがある。FAXデータは古い運用のまま蓄積されやすく…",
+      "article_path": "articles/c373f187395b47ed.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/25/55567.html"
+    },
+    {
+      "entry_id": "2725adef65a6672e",
+      "title": "VPN 脆弱性の放置や安易なパスワードで指導 ～ 個人情報保護委員会 令和 7 年度 4Q 監視レポート",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-24T23:00:13+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要個人情報保護委員会の令和7年度4Q監視レポートを受け、VPNの脆弱性放置や安易なパスワードが指導対象になった。論点は単なる設定不備ではなく、外部からの侵入を許し、認証情報の突破後に個人情報への到達を招く点にある。攻撃はVPN機器やその管理面から始まり、内部ネットワークへ横展開して被害が広がる余地がある。記事本文だけでは、対象となった製品名、悪用の有無、…",
+      "article_path": "articles/2725adef65a6672e.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/25/55566.html"
+    },
+    {
+      "entry_id": "e4cc325df1e591e5",
+      "title": "世界から選抜された捜査官160名が挑戦 ～ GMOサイバー犯罪対策センター局長 福森氏が実践演習を監修",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-24T23:00:11+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要本件は、実戦形式の捜査演習を通じて、世界各地の捜査官160名がサイバー犯罪対応の技量を競い、学んだ取り組みを伝える記事である。直接の脆弱性や侵害事案ではなく、捜査・対処側の能力向上に関する話題として読むのが適切である。演習で扱う手口は、侵入後の追跡、証拠保全、関係機関との連携など、実際の犯罪対応に近いとみられるが、具体的な演習シナリオや評価基準は本文か…",
+      "article_path": "articles/e4cc325df1e591e5.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/25/55565.html"
+    },
+    {
+      "entry_id": "f136b21d22e8e519",
+      "title": "ソフトバンクと OpenAI が協業、サイバーセキュリティ対策「Patching as a Service」提供",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-24T23:00:07+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要ソフトバンクとOpenAIが協業し、サイバーセキュリティ対策としてPatching as a Serviceを提供すると報じられた。内容は脆弱性の発見から優先度付け、修正適用の支援までを一連で扱う構想とみられ、個別製品の話というより運用負荷の高いパッチ管理を外部サービス化する動きとして読むべき内容となる。攻撃者は未適用の既知脆弱性を狙うことが多く、可用…",
+      "article_path": "articles/f136b21d22e8e519.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/25/55564.html"
+    },
+    {
+      "entry_id": "c2b2628cf0f8ec55",
+      "title": "7 / 22・23 開催「AI DevEx conference 2026」にエーアイセキュリティラボ 出展・登壇",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-24T23:00:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要AI DevEx conference 2026 に エーアイセキュリティラボ が出展・登壇するという告知記事で、脆弱性や侵害の報告ではない。内容はイベント案内が中心であり、現時点で組織の防御態勢を直ちに変えるような技術的警告は含まれていない。AI開発の運用や安全性に関する話題である可能性は高いが、具体的な講演内容、実演対象、配布資料の範囲は本文から確…",
+      "article_path": "articles/c2b2628cf0f8ec55.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/25/55563.html"
+    }
+  ]
+}
