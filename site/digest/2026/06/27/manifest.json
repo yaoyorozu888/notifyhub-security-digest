@@ -1,0 +1,430 @@
+{
+  "date": "2026-06-27",
+  "window": {
+    "from": "2026-06-26T06:00:00+09:00",
+    "to": "2026-06-27T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 26
+  },
+  "generated_at_jst": "2026-06-27T06:41:19.625978+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "MicronがAI需要で売上予想を大幅上方修正",
+      "source_name": "Bloomberg",
+      "published_at": "2026-06-25T08:58:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要Micron Technologyが2026年6月25日、AI向けメモリ需要の急増を背景に第4四半期売上予想を約500億ドルと市場予想を大幅に上回る水準に引き上げた。利益率も85%程度と高水準を維持する見通しを示し、株価が急騰した。Appleは同日、メモリ部品価格高騰を受けて一部ハードウェア価格を引き上げると発表した。これらの動きはAIインフラ投資の継…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://www.bloomberg.com/news/articles/2026-06-24/micron-sales-forecast-tops-estimates-on-insatiable-memory-demand",
+      "selection_reason": "AI関連メモリ需要の持続を示す具体的な企業業績更新で、ITハードウェア供給チェーン全体に影響する新規事実を含むため優先",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "Micron Shares Soar After AI-Fueled Forecast Shatters Projections",
+          "url": "https://www.bloomberg.com/news/articles/2026-06-24/micron-sales-forecast-tops-estimates-on-insatiable-memory-demand",
+          "source_type": "news"
+        },
+        {
+          "title": "Micron Soars After AI-Fueled Forecast Shatters Estimates",
+          "url": "https://www.youtube.com/watch?v=xlDUn47hT3s",
+          "source_type": "web"
+        },
+        {
+          "title": "Micron shares soar after AI-fueled forecast shatters projections",
+          "url": "https://www.eastbaytimes.com/2026/06/25/micron-shares-soar-after-ai-fueled-forecast-shatters-projections/amp/",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "OpenAIがBroadcomと共同で初の独自AI推論チップJalapeñoを発表",
+      "source_name": "OpenAI",
+      "published_at": "2026-06-24T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要OpenAIは2026年6月24日、Broadcomと共同開発した初の独自AI推論チップJalapeñoを発表した。性能あたりの消費電力が現行最先端を大幅に上回り、LLM推論コストを50%低減する可能性がある。2026年末からの初期展開を予定し、複数世代のコンピュートプラットフォーム構築を目指す。OpenAI自身がAIを活用してチップ設計を支援した点も…",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip/",
+      "selection_reason": "AIモデル運用コスト低減に向けた具体的なハードウェア開発発表で、NVIDIA依存脱却の動きとして新規性が高いため優先",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "OpenAI and Broadcom unveil LLM-optimized inference chip",
+          "url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip/",
+          "source_type": "official"
+        },
+        {
+          "title": "OpenAI unveils its first custom chip, built by Broadcom",
+          "url": "https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/",
+          "source_type": "news"
+        },
+        {
+          "title": "OpenAI unveils first chip as part of Broadcom deal",
+          "url": "https://www.cnbc.com/2026/06/24/openai-and-broadcom-reveal-jalapeno-first-ai-chip-in-partnership.html",
+          "source_type": "news"
+        },
+        {
+          "title": "OpenAI's Jalapeño Chip Could Change LLMS Forever",
+          "url": "https://www.youtube.com/watch?v=SDyRvQlVQ5U",
+          "source_type": "web"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "6月25日時点の脆弱性情報とパッチ適用期限が迫る事例が報告",
+      "source_name": "Threat Modeling",
+      "published_at": "2026-06-25T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要6月25日時点でUbiquiti UniFi OSの複数脆弱性とLantronix EDS5000のコードインジェクション脆弱性が翌26日にKEV期限を迎える。Cisco Unified Communications Managerの脆弱性はすでに野外で悪用が確認された。Google Chrome 149が10件の脆弱性を修正し、FortiBleedキ…",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://threat-modeling.com/vulnerability-intelligence-report-june-25-2026/",
+      "selection_reason": "具体的なKEV期限とアクティブ悪用事例を挙げており、セキュリティ運用担当者の即時対応が必要な実務的情報のため優先",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "Vulnerability Intelligence Report — June 25, 2026",
+          "url": "https://threat-modeling.com/vulnerability-intelligence-report-june-25-2026/",
+          "source_type": "web"
+        },
+        {
+          "title": "June 2026 Patch Tuesday: Updates and Analysis",
+          "url": "https://www.crowdstrike.com/en-us/blog/patch-tuesday-analysis-june-2026/",
+          "source_type": "news"
+        },
+        {
+          "title": "X post summarizing daily security updates",
+          "url": "https://x.com/CodingNoobie/status/2070202590730891691",
+          "source_type": "x"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "e8ce89e82ec0500d",
+      "title": "FBI Warns Russian Intelligence Hackers Target Signal Backup Recovery Keys",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-26T19:38:29+00:00",
+      "impact_level": "High",
+      "threat_type": "Phishing",
+      "summary_preview": "概要FBI と CISA は、ロシア系の諜報活動に関連するとみられる攻撃者が、Signal のアカウントを狙う手口を更新したと警告した。今回の焦点は、Backup Recovery Key を相手から引き出し、バックアップを復元して過去の会話やグループメッセージまで読めるようにする点にある。鍵を一度渡すだけで、攻撃者は継続的にそのバックアップを利用できるた…",
+      "article_path": "articles/e8ce89e82ec0500d.html",
+      "original_url": "https://thehackernews.com/2026/06/fbi-warns-russian-intelligence-hackers.html"
+    },
+    {
+      "entry_id": "b4000a39d3e90e14",
+      "title": "New SharkLoader Malware Deploys Cobalt Strike in StrikeShark Cyberattacks",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-26T18:17:46+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要新たに確認された攻撃キャンペーンで、未確認のローダー型マルウェア SharkLoader が配布され、侵害端末上に Cobalt Strike Beacon を展開する流れが観測された。ローダーは単体で完結せず、後段の実行基盤を呼び込む役割を持つため、初動で見えにくい侵入が継続しやすい。報告では外交機関や政府組織が標的に含まれるが、配布経路や初期侵入の…",
+      "article_path": "articles/b4000a39d3e90e14.html",
+      "original_url": "https://thehackernews.com/2026/06/new-sharkloader-malware-deploys-cobalt.html"
+    },
+    {
+      "entry_id": "35c5e957c66bb6c2",
+      "title": "Chinese-Speaking APT Deploys New TinyRCT Backdoor in Southeast Asia Campaign",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-26T16:21:25+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Malware",
+      "summary_preview": "概要中国語話者系のが、東南アジアの政府機関や重要インフラを狙う攻撃の中で、新しいカスタムバックドアTinyRCTを配備したと報じられた。標的には国営企業のエネルギー分野や行政機関が含まれ、攻撃者はまず侵入足場を作ったうえで、長期潜伏と追加操作に使える遠隔操作機能を持ち込んだ可能性がある。初期侵入の手口や配布経路、実際の侵害範囲はまだ十分に確認されていないた…",
+      "article_path": "articles/35c5e957c66bb6c2.html",
+      "original_url": "https://thehackernews.com/2026/06/chinese-speaking-apt-deploys-new.html"
+    },
+    {
+      "entry_id": "6751ee5fbdf2253c",
+      "title": "New Linux pedit COW Exploit Enables Root Access by Poisoning Cached Binaries",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-26T13:57:55+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Linux kernel の traffic-control サブシステムにある欠陥を突き、一般ユーザー権限から root まで昇格できる問題が報じられた。対象は CVE-2026-46331 で、act_pedit の領域外書き込みが共有ページキャッシュのメモリ破損につながる。報告では、公開済みの実働エクスプロイトが CVE 付与の翌日には出回ってお…",
+      "article_path": "articles/6751ee5fbdf2253c.html",
+      "original_url": "https://thehackernews.com/2026/06/new-linux-pedit-cow-exploit-enables.html"
+    },
+    {
+      "entry_id": "3db09452944318ad",
+      "title": "Amazon Q Developer Flaw Could Let Malicious Repos Run Code via MCP Configs",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-26T13:53:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Amazon Q Developer に、悪意あるリポジトリから コマンド実行 と クラウド資格情報の窃取 につながる欠陥が見つかった。攻撃の前提は、開発者がそのリポジトリを開き、ワークスペースを信頼し、MCP 設定を読み込ませる流れに乗せることにある。記事によれば、この問題は CVE-2026-12957 として管理され、CVSS は 8.5 とされ…",
+      "article_path": "articles/3db09452944318ad.html",
+      "original_url": "https://thehackernews.com/2026/06/amazon-q-developer-flaw-could-let.html"
+    },
+    {
+      "entry_id": "8d983b586251519a",
+      "title": "CISA Adds Exploited PTC Windchill RCE Flaw to KEV as Web Shell Attacks Continue",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-26T12:31:56+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CISAが、PTC Windchill PDMlink と PTC FlexPLM に影響する リモートコード実行 の脆弱性を KEV に追加した。背景には、すでに実環境での悪用が確認され、Webシェル の設置が続いていることがある。攻撃者は、外部公開された管理系や連携系の画面を起点に侵入し、認証回避や権限昇格がなくても実行コードを流し込める可能性を狙…",
+      "article_path": "articles/8d983b586251519a.html",
+      "original_url": "https://thehackernews.com/2026/06/cisa-adds-exploited-ptc-windchill-rce.html"
+    },
+    {
+      "entry_id": "8e318849cf399301",
+      "title": "New DirtyClone Linux Kernel Flaw Lets Local Users Gain Root via Cloned Packets",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-26T11:51:35+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要DirtyClone は Linux カーネルの 権限昇格 脆弱性で、DirtyFrag 系列に属する新しい変種として扱われている。ローカル権限を持つ利用者が、複製されたネットワークパケットを悪用してファイルに紐づくメモリを破壊し、root を得る流れが示されている。JFrog Security Research が 6月25日に実働する悪用手順を公開…",
+      "article_path": "articles/8e318849cf399301.html",
+      "original_url": "https://thehackernews.com/2026/06/new-dirtyclone-linux-kernel-flaw-lets.html"
+    },
+    {
+      "entry_id": "0bf6a144421b93ee",
+      "title": "Guardian Agents: The Next Layer of Identity Governance",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-26T11:30:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Other",
+      "summary_preview": "概要AIエージェントが企業環境で人間の代替として振る舞い、権限を引き継ぎながら複数システムを横断して処理を進める状況が取り上げられている。既存のID管理や権限統制は、人間の操作や申請を前提に整備されており、自律的に動く主体をそのまま扱う設計にはなっていない。結果として、過剰権限の付与、想定外のデータ参照、連鎖的な操作実行が起きやすく、被害は単一アプリではな…",
+      "article_path": "articles/0bf6a144421b93ee.html",
+      "original_url": "https://thehackernews.com/2026/06/guardian-agents-next-layer-of-identity.html"
+    },
+    {
+      "entry_id": "fd9acfdce8143216",
+      "title": "Miasma Malware Targets npm Packages and GitHub Actions in Supply Chain Attack",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-26T11:05:45+00:00",
+      "impact_level": "High",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要npm パッケージと GitHub Actions を狙う供給網攻撃の新しい波が報告された。今回の活動は LeoPlatform と RStreams 関連の悪性リリースを含み、Go のエコシステムへも広がっている。攻撃者は、パッケージの配布経路や CI/CD の自動実行を悪用して、利用組織の開発環境やビルド環境に入り込む狙いとみられる。そこから依存関…",
+      "article_path": "articles/fd9acfdce8143216.html",
+      "original_url": "https://thehackernews.com/2026/06/miasma-malware-targets-npm-packages-and.html"
+    },
+    {
+      "entry_id": "1f5b91436256a36c",
+      "title": "Microsoft Warns of Photo ZIP Phishing Campaign Targeting Hotels with Node.js Implant",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-26T09:27:12+00:00",
+      "impact_level": "High",
+      "threat_type": "Phishing",
+      "summary_preview": "概要Microsoft は、ホテルや宿泊業を狙うフィッシングが2026年4月以降、欧州とアジアで継続していると警告した。写真を装った ZIPファイル を開かせ、内部で Node.js のインプラント を実行させる流れが確認されている。狙いはフロントデスク端末への侵入とみられるが、最終目的は未確認 で、既知の攻撃グループへの帰属も示されていない。業務上は、予…",
+      "article_path": "articles/1f5b91436256a36c.html",
+      "original_url": "https://thehackernews.com/2026/06/microsoft-warns-of-photo-zip-phishing.html"
+    },
+    {
+      "entry_id": "384e8906be1d5291",
+      "title": "Russia Used Cellebrite on Jailed Activist's iPhone Months After Sales Cutoff",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-26T08:49:35+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要Citizen Lab の調査により、ロシア当局が拘束中の活動家 Andrey Pivovarov の iPhone から、Cellebrite UFED を使って端末情報を取得していた痕跡が示された。Cellebrite はロシアとベラルーシへの販売停止を公表していたが、実際の使用はその数か月後に起きていたとされる。これは、販売停止の表明だけでは流通…",
+      "article_path": "articles/384e8906be1d5291.html",
+      "original_url": "https://thehackernews.com/2026/06/russia-used-cellebrite-on-jailed.html"
+    },
+    {
+      "entry_id": "21e0e3957c432104",
+      "title": "Google Details Turla's New STOCKSTAY Backdoor Used in Ukraine Espionage Attacks",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-26T07:15:46+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要Turlaが、STOCKSTAYと呼ばれる未確認の .NET バックドアを使い、ウクライナの政府・軍関係機関やイタリアの外交政策に関心を持つ組織を狙っていたと報じられた。攻撃の主眼は機密情報の取得と長期潜伏にあり、初期侵入後に監視・収集を続ける用途が想定される。こうした後門は単独で大規模破壊を起こすより、認証情報の窃取や内部探索を通じて横展開を支える可…",
+      "article_path": "articles/21e0e3957c432104.html",
+      "original_url": "https://thehackernews.com/2026/06/google-details-turlas-new-stockstay.html"
+    },
+    {
+      "entry_id": "36c9edbbaf0a374d",
+      "title": "Threat Brief: Mitigating Large-Scale Credential Attacks",
+      "source_name": "Unit 42",
+      "category": "reporting",
+      "published_at": "2026-06-26T19:05:33+00:00",
+      "impact_level": "High",
+      "threat_type": "Credential Theft",
+      "summary_preview": "概要Unit 42 は、セキュリティ機器や管理面を狙う大規模な認証情報攻撃への備えと封じ込めを整理している。対象は最近のキャンペーンで、個別端末の侵害というより、大量の資格情報を試すことで外部公開された管理画面や VPN、装置の運用系に入り込む流れが中心となる。成功すれば単一システムの侵害にとどまらず、認証済みアクセスを起点に横展開や設定改変、継続的な侵入…",
+      "article_path": "articles/36c9edbbaf0a374d.html",
+      "original_url": "https://unit42.paloaltonetworks.com/large-scale-credential-attacks/"
+    },
+    {
+      "entry_id": "88115d8b4521acdc",
+      "title": "CL-STA-1062 Targets Southeast Asian Governments and Critical Infrastructure",
+      "source_name": "Unit 42",
+      "category": "reporting",
+      "published_at": "2026-06-25T22:00:52+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要Unit 42 は、CL-STA-1062 と呼ばれる攻撃者が東南アジアの政府機関と重要インフラを狙い、偵察・情報窃取 を目的とした活動を続けていると報告している。攻撃では カスタムの TinyRCT バックドア を含む複数のツールが併用され、単発の侵入ではなく継続的な潜伏と操作を前提にしている点が警戒点になる。被害はまず個別端末や内部セグメントに現れ…",
+      "article_path": "articles/88115d8b4521acdc.html",
+      "original_url": "https://unit42.paloaltonetworks.com/cl-sta-1062-tinyrct-backdoor/"
+    },
+    {
+      "entry_id": "5bd96f69108f006e",
+      "title": "革新的情報通信技術（Beyond 5G（6G））基金事業 要素技術・シーズ創出型プログラムに係る令和8年度新規委託研究の公募（第2回）を開始",
+      "source_name": "NICT NOTICE",
+      "category": "reporting",
+      "published_at": "2026-06-26T05:00:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要NICTが、Beyond 5G（6G）に関する基金事業の一環として、令和8年度の新規委託研究の公募第2回を開始した。内容は脆弱性や侵害の発生を伝えるものではなく、将来の通信基盤に向けた要素技術とシーズ創出を支援する研究公募に当たる。現時点で直接の被害対象や悪用手口は示されておらず、CSIRTの緊急対応優先度は高くない。もっとも、研究成果が将来の暗号、認…",
+      "article_path": "articles/5bd96f69108f006e.html",
+      "original_url": "/press/2026/06/26-1.html"
+    },
+    {
+      "entry_id": "f2947021da4db24d",
+      "title": "狙われたのは忘れられたシステム ～ サイバー攻撃被害企業が語ったインシデント対応の現実",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-25T23:10:03+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要記事は、管理が途切れた古いシステムが侵入の起点になり、対応の現場では資産台帳の不備や連絡経路の断絶が障害になった状況を扱う。攻撃者は放置された機器や更新停止のサービスを足がかりにし、そこから認証情報の窃取や横展開へ進む余地を得る。被害は単一サーバーにとどまらず、業務系ネットワーク全体や委託先との接続面へ広がる可能性がある。記事はインシデント対応の難しさ…",
+      "article_path": "articles/f2947021da4db24d.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/26/55585.html"
+    },
+    {
+      "entry_id": "515bc51b364b3899",
+      "title": "苫小牧民報社記者が個人情報含む文書をSNS投稿、「報道機関としてはあってはならない」",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-25T23:05:17+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要苫小牧民報社の記者が、個人情報を含む文書をSNSへ投稿したと報じられた。記事では社内外から強い問題視が示されており、報道機関としての情報管理不備が焦点になっている。技術的な侵害ではなく、人手による取り扱いミスや運用統制の緩さが主因とみられる点が重要になる。悪用の形としては、公開範囲が広いSNS経由での二次拡散や、文書に含まれる個人情報の流出が考えられる…",
+      "article_path": "articles/515bc51b364b3899.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/26/55584.html"
+    },
+    {
+      "entry_id": "d64d0a4e93344f1d",
+      "title": "山一電機 フィリピン子会社にランサムウェア攻撃、ログの暗号化と削除が行われ初期侵入経路の完全な特定に至らず",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-25T23:05:14+00:00",
+      "impact_level": "High",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要山一電機のフィリピン子会社がランサムウェア攻撃を受け、ログの暗号化と削除が確認された。これにより、初期侵入経路の完全な特定には至っていない。公開情報からは、業務停止の範囲や二次被害の有無、身代金要求の詳細は読み取れない。現時点で重要なのは、侵入そのものよりも、証跡破壊によって調査と復旧の精度が下がっている点にある。製造・拠点間接続・委託先経由の侵入など…",
+      "article_path": "articles/d64d0a4e93344f1d.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/26/55583.html"
+    },
+    {
+      "entry_id": "bc6f90f7cd91dc0c",
+      "title": "ファクトリージャパングループに不正アクセス",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-25T23:05:10+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要ファクトリージャパングループで不正アクセスが確認されたという報道で、現時点では侵入経路、侵害範囲、情報流出の有無は明示されていない。業種特性上、店舗運営や予約・会員情報を扱う系統が関与していれば、個人情報漏えいや業務停止に波及しやすい。攻撃者は認証情報の窃取、公開系システムの侵害、委託先経由の侵入などを起点に、管理画面の乗っ取りや横展開を狙う可能性があ…",
+      "article_path": "articles/bc6f90f7cd91dc0c.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/26/55582.html"
+    },
+    {
+      "entry_id": "47fbf2d7b3044b81",
+      "title": "「佐嘉平川屋オンラインショップ」に不正アクセス、5,783 名のカード情報が漏えいした可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-25T23:05:08+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要佐嘉平川屋オンラインショップへの不正アクセスにより、5,783名分のカード情報が漏えいした可能性が示された。現時点では「漏えいした可能性」が中心で、実際に不正利用されたか、どの侵入経路で改ざんが起きたか、保存・処理されていたカード情報の範囲は未確認となる。ECサイトへの侵入では、決済画面の改ざんや第三者スクリプトの差し込みにより、利用者が入力したカード…",
+      "article_path": "articles/47fbf2d7b3044b81.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/26/55581.html"
+    },
+    {
+      "entry_id": "d472306aba2a2f6e",
+      "title": "セキュリティシステムの誤検知で「お問い合わせ内容の通知メール」が不通に",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-25T23:05:05+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Misconfiguration",
+      "summary_preview": "概要セキュリティシステムの誤検知が原因で、利用者からの「お問い合わせ内容の通知メール」が届かなくなった事案を扱っている。内容からは、攻撃そのものではなく、メールの送信経路か判定処理が過剰に遮断された可能性が高い。結果として、問い合わせ対応の起点が止まり、インシデント報告や顧客連絡の見落としにつながる恐れがある。業務停止の範囲はメール通知に限られることもあれ…",
+      "article_path": "articles/d472306aba2a2f6e.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/26/55580.html"
+    },
+    {
+      "entry_id": "ba9e365fb5aea999",
+      "title": "個人情報部分を非表示処理にとどめた状態を削除済みと誤認 ～ 川越商工会議所で会員データを外部に送信",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-25T23:05:03+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要川越商工会議所で、個人情報を見えなくしただけのデータを「削除済み」と誤認したまま扱い、会員データが外部へ送信された事案が報じられた。削除と非表示は運用上まったく別物であり、前者は復元困難な除去、後者は閲覧制御に近い扱いとなるため、確認手順の甘さがそのまま漏えいにつながる。攻撃者による侵入型の話ではなく、誤操作や管理不備が主因とみられるが、送信先の性質に…",
+      "article_path": "articles/ba9e365fb5aea999.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/26/55579.html"
+    },
+    {
+      "entry_id": "6655e837e901ad6c",
+      "title": "5つのKubernetes認定を全制覇 ～ スリーシェイク川俣裕紀氏が「Kubestronaut」に認定",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-25T23:00:15+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要この記事は、Kubernetes 関連の5つの認定資格をすべて取得した人物が Kubestronaut に認定されたという話題を扱うもので、脆弱性 や侵害事案そのものを報じた内容ではない。したがって、CSIRTの直接的な優先度は高くない。もっとも、Kubernetesの運用人材が増えることは、クラスタ設計、権限分離、監査設定の成熟につながる可能性がある…",
+      "article_path": "articles/6655e837e901ad6c.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/26/55578.html"
+    },
+    {
+      "entry_id": "cb856ae2bd2d6467",
+      "title": "HENNGE、「東京大学 × ベンチャー企業産学連携 AI 研究フォーラム」に参画",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-25T23:00:12+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要HENNGEが「東京大学 × ベンチャー企業産学連携 AI 研究フォーラム」に参画したという話題であり、直接の脆弱性情報や侵害事案ではない。内容は研究連携や人材・知見の接点づくりに近く、現時点で攻撃手口や被害拡大の具体像は示されていない。したがって、CSIRTの優先度は低く、通常の脆弱性対応やインシデント対応の対象として直結する情報ではない。ただし、A…",
+      "article_path": "articles/cb856ae2bd2d6467.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/26/55577.html"
+    },
+    {
+      "entry_id": "96e44dbf92f75284",
+      "title": "HENNGE One、ノーコード業務アプリ作成ツール「サスケWorks」と SSO 連携",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-25T23:00:09+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要HENNGE Oneが、ノーコード業務アプリ作成ツール「サスケWorks」とのSSO連携に対応したという話題であり、脆弱性や侵害事案そのものではない。利用者は、ID/パスワードを個別に増やさずに認証を統合しやすくなる一方、認証基盤の設定誤りや権限設計の甘さがあると、業務アプリ群へ横断的に影響が及ぶ。攻撃者は個別アプリを狙うより、SSOの設定不備やアカウ…",
+      "article_path": "articles/96e44dbf92f75284.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/26/55576.html"
+    },
+    {
+      "entry_id": "4c99b8ea0fc3afbe",
+      "title": "7 / 30・31 開催「Google Cloud Next Tokyo」にHENNGEが出展、豊田龍彦氏 登壇",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-25T23:00:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要これはGoogle Cloud Next TokyoへのHENNGE出展と登壇告知であり、脆弱性や悪用を直接扱う記事ではない。内容自体はイベント案内に近く、直ちにCSIRT対応を要する事案ではないが、クラウド運用やセキュリティ製品の周辺動向を把握する用途はある。こうした場での発表は、認証、アクセス制御、メール防御、ログ連携などの運用論点が整理される契機…",
+      "article_path": "articles/4c99b8ea0fc3afbe.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/26/55575.html"
+    }
+  ]
+}
