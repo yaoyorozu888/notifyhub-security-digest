@@ -1,0 +1,115 @@
+{
+  "date": "2026-06-29",
+  "window": {
+    "from": "2026-06-28T06:00:00+09:00",
+    "to": "2026-06-29T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 1
+  },
+  "generated_at_jst": "2026-06-29T06:31:52.356607+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "OpenAI、GPT-5.6シリーズの限定プレビューを開始",
+      "source_name": "OpenAI公式",
+      "published_at": "2026-06-26T12:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要OpenAIがGPT-5.6シリーズの限定プレビューを開始した。Solは最先端推論・長期的エージェント作業向け、TerraはGPT-5.5並みの性能を半額で提供、Lunaは高速・低コスト向けである。プレビューは約20の信頼できるパートナー組織に限定され、米国政府要請による制限が適用される。安全対策を大幅強化し、高リスク活動やサイバー関連リクエストへの防…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://openai.com/index/previewing-gpt-5-6-sol/",
+      "selection_reason": "AI分野で最も新規性が高く、具体的なモデル発表とアクセス制限という実務影響が明確な話題を選定。他の候補である規制議論や市場予測より開発者・企業向け直接影響が大きい。",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "Previewing GPT-5.6 Sol: a next-generation model",
+          "url": "https://openai.com/index/previewing-gpt-5-6-sol/",
+          "source_type": "official"
+        },
+        {
+          "title": "Introducing GPT-5.6 series: Sol, Terra and Luna",
+          "url": "https://community.openai.com/t/introducing-gpt-5-6-series-sol-terra-and-luna/1384931",
+          "source_type": "web"
+        },
+        {
+          "title": "OpenAI just dropped GPT-5.6 Sol",
+          "url": "https://x.com/hey_madni/status/2070816832467116122",
+          "source_type": "x"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "AI駆動型サイバー脅威へのFive Eyes緊急対応要請",
+      "source_name": "関連報道",
+      "published_at": "2026-06-28T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Advisory",
+      "summary_preview": "概要Five Eyes諸国がAIを活用したサイバー脅威の急増に対し、緊急の対応要請を発した。AIモデル能力の進化が攻撃手法を高度化させる点を指摘する。各国政府・企業に対し、AI対応型防御の即時強化を求める内容である。White HouseのAI Executive Orderとも連動し、連邦機関へのAIサイバー防御導入が加速する見込みだ。",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://www.pearlcohen.com/five-eyes-agencies-issue-urgent-call-to-action-over-ai-driven-cyber-threats/",
+      "selection_reason": "Cybersecurity分野でAI特有の脅威対応という具体的な動きを捉え、規制・政策影響が実務判断に直結する話題を選定。インシデント事例より広範な警鐘として優先。",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "Five Eyes Agencies Issue Urgent Call to Action Over AI-Driven Cyber Threats",
+          "url": "https://www.pearlcohen.com/five-eyes-agencies-issue-urgent-call-to-action-over-ai-driven-cyber-threats/",
+          "source_type": "news"
+        },
+        {
+          "title": "White House Issues Executive Order on Advanced AI Innovation and Security",
+          "url": "https://www.pearlcohen.com/white-house-issues-executive-order-on-advanced-ai-innovation-and-security/",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "中国製AIモデルがコスト優位で市場接近",
+      "source_name": "NYT報道",
+      "published_at": "2026-06-25T00:00:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Other",
+      "summary_preview": "概要中国のZ.aiが開発したAIモデルが、AnthropicやOpenAIの最先端モデルに性能で迫りつつ、利用コストを大幅に抑えている。米国企業が価格競争を意識し始めた背景にある。規制によるアクセス制限が米モデルに課される一方、中国モデルはオープンに利用可能で、企業調達の選択肢が広がる。IT基盤戦略でコスト最適化が再注目される。",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://www.nytimes.com/2026/06/25/technology/zai-china-artificial-intelligence-models.html",
+      "selection_reason": "ITトレンド分野でAI基盤のコスト・性能トレンドという具体的な市場変化を捉え、企業調達判断に影響する話題を選定。モデル発表より実務的な価格競争を優先。",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "Chinese A.I. Models Close the Gap With Anthropic and OpenAI",
+          "url": "https://www.nytimes.com/2026/06/25/technology/zai-china-artificial-intelligence-models.html",
+          "source_type": "news"
+        },
+        {
+          "title": "AI News Today June 27 2026",
+          "url": "https://www.buildfastwithai.com/blogs/ai-news-today-june-27-2026",
+          "source_type": "web"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "62052cbe58a37140",
+      "title": "YARA-X 1.18.0 and 1.19.0 Release, (Sun, Jun 28th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-06-28T07:56:44+00:00",
+      "impact_level": "Info",
+      "threat_type": "Patch",
+      "summary_preview": "概要本件は、マルウェア検知やルール運用で使う YARA-X の 1.18.0 と 1.19.0 のリリース告知であり、脆弱性の公表ではない。現時点で示されているのは機能改善と不具合修正で、悪用手口や侵入経路の話ではないため、直ちにインシデント対応へ結び付く性質は弱い。もっとも、ルールエンジンの挙動変更は、検知結果の取りこぼしや誤検知の増減に直結しやすく、運…",
+      "article_path": "articles/62052cbe58a37140.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33106"
+    }
+  ]
+}
