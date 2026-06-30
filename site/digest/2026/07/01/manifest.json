@@ -1,0 +1,389 @@
+{
+  "date": "2026-07-01",
+  "window": {
+    "from": "2026-06-30T06:00:00+09:00",
+    "to": "2026-07-01T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 23
+  },
+  "generated_at_jst": "2026-07-01T06:43:32.492570+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "韓国、AIチップ投資5760億ドル規模の国家戦略を発表",
+      "source_name": "Reuters",
+      "published_at": "2026-06-29T07:08:18+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要韓国政府がAIチップ生産とデータセンター向けに5760億ドル規模の投資計画を発表した。SamsungとSK Hynixが中心となり、複数拠点の新工場建設を進める。西南地域に新工場を2カ所ずつ建設し、包装クラスターも拡大する。政府は地域経済活性化とグローバル競争力強化を狙う。AIデータセンター投資も並行し、SK Groupなどが3500億ドル規模を追加す…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://www.reuters.com/world/asia-pacific/south-korean-president-unveil-massive-ai-chip-investment-drive-2026-06-29/",
+      "selection_reason": "IT分野の半導体・AI基盤投資として具体的な国家規模の動きで新規性が高く、企業動向や実務影響が大きいため選定。他の汎用予測ではなく具体的な投資発表を優先",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "South Korea unveils $576 billion AI-chip investment",
+          "url": "https://www.reuters.com/world/asia-pacific/south-korean-president-unveil-massive-ai-chip-investment-drive-2026-06-29/",
+          "source_type": "news"
+        },
+        {
+          "title": "South Korea to invest $576 billion in AI chip production",
+          "url": "https://www.cnn.com/2026/06/29/business/south-korea-ai-investment-samsung-skhynix",
+          "source_type": "news"
+        },
+        {
+          "title": "South Korea announces more than $1 trillion AI, chip investment drive",
+          "url": "https://www.aljazeera.com/news/2026/6/29/south-korea-announces-more-than-1-trillion-ai-chip-investment-drive",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "Anthropic、Claude Sonnet 5をエージェント向け低価格モデルとしてリリース",
+      "source_name": "TechCrunch",
+      "published_at": "2026-06-30T04:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要AnthropicがClaude Sonnet 5をリリースした。エージェント運用を低コストで実現する点が特徴だ。従来モデルより価格を抑えつつ、複数ステップのタスク処理能力を向上させた。Microsoft Azure上のNVIDIA基盤で初の商用展開も確認されている。開発者はAPI経由で即座に利用可能となり、業務自動化の選択肢が増える。競合他社の類似製…",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://techcrunch.com/2026/06/30/anthropic-launches-claude-sonnet-5-as-a-cheaper-way-to-run-agents/",
+      "selection_reason": "AIモデル製品の具体的な新リリースで、企業実務への即時影響が明確。他の一般トレンド予測ではなく新製品発表を優先",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "Anthropic launches Claude Sonnet 5 as a cheaper way to run agents",
+          "url": "https://techcrunch.com/2026/06/30/anthropic-launches-claude-sonnet-5-as-a-cheaper-way-to-run-agents/",
+          "source_type": "news"
+        },
+        {
+          "title": "DX Today AI Daily Brief - Tuesday, June 30, 2026",
+          "url": "https://www.youtube.com/watch?v=YO9Gg24o_d4",
+          "source_type": "web"
+        },
+        {
+          "title": "Anthropic's first NVIDIA setup at Microsoft Azure",
+          "url": "https://x.com/sarah1112/status/2071745522373640617",
+          "source_type": "x"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "Langflow RCE脆弱性がAIアプリエンドポイントで悪用され暗号通貨マイナーを展開",
+      "source_name": "The Hacker News",
+      "published_at": "2026-06-30T21:25:17+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要LangflowのRCE脆弱性が悪用され、露出したAIアプリケーションエンドポイントにMoneroマイナーが展開された。攻撃者は公開インスタンスを標的にし、即座に暗号通貨採掘を開始する。MicrosoftはAIエージェント向けツール記述の毒入り攻撃についても警告を発している。開発者は依存ライブラリの更新とエンドポイント公開範囲の再確認が急務だ。AI基盤…",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://thehackernews.com/",
+      "selection_reason": "AI関連アプリケーションの具体的な脆弱性悪用事例で、セキュリティ実務に直結する最新情報。インシデントの詳細と影響範囲が明確",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "Langflow RCE Exploited to Deploy Monero Miner on Exposed AI App Endpoints",
+          "url": "https://thehackernews.com/",
+          "source_type": "news"
+        },
+        {
+          "title": "Microsoft Warns Poisoned MCP Tool Descriptions Can Make AI Agents Leak Data",
+          "url": "https://thehackernews.com/",
+          "source_type": "news"
+        },
+        {
+          "title": "BHIS - Talkin' Bout [infosec] News 2026-06-29",
+          "url": "https://www.youtube.com/watch?v=G-tdJJ5EMAE",
+          "source_type": "web"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "8004e5d95217eae0",
+      "title": "Microsoft Warns Poisoned MCP Tool Descriptions Can Make AI Agents Leak Data",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-30T17:46:07+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Microsoft の研究は、MCP の tool description に細工を入れるだけで、AI エージェントが利用者の代理として社内データを外部へ渡してしまう可能性を示した。攻撃者は正面突破せず、ツール説明文に誘導を埋め込み、エージェントの通常業務に見える処理として実行させる点が特徴となる。明示的なルール違反が見えにくいため、既定設定の監視では…",
+      "article_path": "articles/8004e5d95217eae0.html",
+      "original_url": "https://thehackernews.com/2026/06/microsoft-warns-poisoned-mcp-tool.html"
+    },
+    {
+      "entry_id": "664384178536ed43",
+      "title": "RustDuck Botnet Rebuilds in Rust to Hijack Routers and Servers for DDoS",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-30T17:45:25+00:00",
+      "impact_level": "High",
+      "threat_type": "Botnet",
+      "summary_preview": "概要RustDuckと呼ばれる新しいボットネット系マルウェアが、家庭用ルーター、IPカメラ、Androidボックス、管理不備のサーバーを取り込み、DDoS攻撃用の踏み台網を作っている。感染後は複数段階で機能を切り替え、機器を遠隔操作しながら攻撃参加させる流れが見える。狙いはサイトやオンラインサービスの停止で、個々の端末被害よりも、広域な可用性低下に被害が広…",
+      "article_path": "articles/664384178536ed43.html",
+      "original_url": "https://thehackernews.com/2026/06/rustduck-botnet-rebuilds-in-rust-to.html"
+    },
+    {
+      "entry_id": "7184e81ee4865f6f",
+      "title": "Langflow RCE Exploited to Deploy Monero Miner on Exposed AI App Endpoints",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-30T15:47:20+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要公開された Langflow の脆弱性 CVE-2026-33017 を悪用し、外部公開された AI アプリのエンドポイントに Monero マイナー を投入する攻撃が続いている。認証不要の RCE であるため、設定不備でインターネットに露出した環境は、到達できるだけで侵入起点になりやすい。攻撃者の狙いは暗号資産の採掘による継続収益にあり、侵入後は資源…",
+      "article_path": "articles/7184e81ee4865f6f.html",
+      "original_url": "https://thehackernews.com/2026/06/langflow-rce-exploited-to-deploy-monero.html"
+    },
+    {
+      "entry_id": "e95b25a8e87c278c",
+      "title": "Silent Swap Crypto Clipper Uses Fake Google Notes Extension to Replace Wallet Addresses",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-30T15:40:18+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要暗号資産の送金先を書き換えるブラウザ拡張の悪用キャンペーンが観測された。利用者が送金操作を始めた瞬間に、クリップボードや入力先のアドレスを攻撃者のものへ差し替え、資金を奪う流れが想定される。配布はGoogle Notesを装った不正拡張と、署名されていないインストーラ経由で行われたとされる。影響は個人利用に限らず、暗号資産を扱う部門や業務口座にも及ぶ可…",
+      "article_path": "articles/e95b25a8e87c278c.html",
+      "original_url": "https://thehackernews.com/2026/06/silent-swap-crypto-clipper-uses-fake.html"
+    },
+    {
+      "entry_id": "6e5fe8369da3bced",
+      "title": "GuardFall Exposes Open-Source AI Coding Agents to Decades-Old Shell Injection Risks",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-30T14:26:15+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Adversa AI の研究で、AI コーディングエージェントや computer-use agent にある 危険コマンド抑止の安全確認 が、古くからある シェル注入 の手口で回避できると報告された。対象は検証した 11 製品のうち 10 製品に及び、単一製品の欠陥というより、同種の実装に広く残る設計上の弱点を示している。悪用されると、エージェントが…",
+      "article_path": "articles/6e5fe8369da3bced.html",
+      "original_url": "https://thehackernews.com/2026/06/guardfall-exposes-open-source-ai-coding.html"
+    },
+    {
+      "entry_id": "0d8244d88e8ba94f",
+      "title": "282 iOS AI Apps Leak API Keys and Open AI Proxy Access in Network Traffic Study",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-30T13:49:34+00:00",
+      "impact_level": "High",
+      "threat_type": "Credential Theft",
+      "summary_preview": "概要iPhone向けのAIチャットアプリ444件を調べた結果、282件で課金済みのAIアクセス情報が通信経路上から見えていた。中身は平文のAPIキー、再利用可能なトークン、あるいは鍵なしで受け付けるバックエンドで、通信を観測するだけで悪用の入口が見える状態に近い。攻撃者は取得した認証情報を使って開発者側のアカウントでモデル呼び出しを行え、請求の増大、利用制…",
+      "article_path": "articles/0d8244d88e8ba94f.html",
+      "original_url": "https://thehackernews.com/2026/06/282-ios-apps-found-leaking-llm-api-keys.html"
+    },
+    {
+      "entry_id": "b23b6356a4eb3cd5",
+      "title": "What the Numbers Say About FIFA 2026 Cyber Risk",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-30T11:30:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Scam/Fraud",
+      "summary_preview": "概要FIFA 2026を狙う詐欺基盤が、開幕前から構築・配置され、一部はすでに運用段階に入っていたという観測を扱う記事である。Check Point Researchの報告を基に、複数分野・多言語で事前準備されたキャンペーンとして整理されている。主眼は脆弱性悪用ではなく、チケット、配信、旅行、物販などイベント需要に乗じたなりすまし・誘導・金銭詐取にある。組…",
+      "article_path": "articles/b23b6356a4eb3cd5.html",
+      "original_url": "https://thehackernews.com/2026/06/what-numbers-say-about-fifa-2026-cyber.html"
+    },
+    {
+      "entry_id": "869938d658542e5b",
+      "title": "Attackers Exploit SimpleHelp CVE-2026-48558 to Deploy TaskWeaver and Djinn Stealer",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-30T11:18:47+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要SimpleHelpのCVE-2026-48558を悪用し、未確認の攻撃者がTaskWeaverとDjinn Stealerを配布している。認証前のOpenID Connect経路で認証回避が成立するため、外部公開された管理画面があれば侵入の起点になりやすい。侵入後は情報窃取と追加展開の両方が狙われるため、単発の脆弱性悪用に見えても影響は端末単位にとど…",
+      "article_path": "articles/869938d658542e5b.html",
+      "original_url": "https://thehackernews.com/2026/06/attackers-exploit-simplehelp-cve-2026.html"
+    },
+    {
+      "entry_id": "1049ad67ea0ead0f",
+      "title": "AirDrop and Quick Share Flaws Let Nearby Attackers Trigger Crashes and Bypass Checks",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-30T09:27:58+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要AirDrop と Quick Share に、近距離からサービスを停止させる欠陥と、受信前の確認を回避する欠陥が見つかった。研究者は計6件の不具合を確認しており、共有対象として近くにいる端末を狙える点が特徴となる。攻撃者は同一ネットワークに入る必要はなく、無線範囲内にいるだけで試行できるため、出張先や会議室、施設内の待合エリアでの悪用が想定される。影…",
+      "article_path": "articles/1049ad67ea0ead0f.html",
+      "original_url": "https://thehackernews.com/2026/06/airdrop-and-quick-share-flaws-let.html"
+    },
+    {
+      "entry_id": "13cb831960e087a5",
+      "title": "New BioShocking Attack Tricks AI Browsers Into Leaking User Credentials",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-30T08:37:19+00:00",
+      "impact_level": "High",
+      "threat_type": "Credential Theft",
+      "summary_preview": "概要AIブラウザやブラウザ連携型アシスタントをゲームの手順として誘導し、保存済みのログイン情報をコピーさせて攻撃者へ送信させる手法が報告された。対象には ChatGPT Atlas、Comet、Claude の拡張機能などが含まれ、少なくとも複数の実装で成立したとされる。攻撃の本質は、利用者の明示操作を伴わずに、ブラウザ自体の判断を悪用して認証情報を流出さ…",
+      "article_path": "articles/13cb831960e087a5.html",
+      "original_url": "https://thehackernews.com/2026/06/new-bioshocking-attack-tricks-ai.html"
+    },
+    {
+      "entry_id": "3aa7f997d455019f",
+      "title": "Progress Kemp LoadMaster Flaw Could Let Attackers Run Root Commands Pre-Auth",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-30T07:38:07+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Progress Kemp LoadMaster に、認証前の攻撃者が API へ細工した要求を送るだけで root 権限で任意コマンド実行できる脆弱性が報じられた。脆弱性は CVE-2026-8037 として追跡され、ZDI は CVSS 9.8 を付与している。API が有効な構成が前提になるため、露出している管理面が実際のリスクを左右する。悪用さ…",
+      "article_path": "articles/3aa7f997d455019f.html",
+      "original_url": "https://thehackernews.com/2026/06/progress-kemp-loadmaster-flaw-could-let.html"
+    },
+    {
+      "entry_id": "b8df77d15cb34220",
+      "title": "Oracle E-Business Suite Flaw CVE-2026-46817 Actively Exploited in the Wild",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-06-30T05:04:06+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Oracle E-Business Suite の CVE-2026-46817 が、実際の攻撃に利用されていると報じられている。対象は Oracle Payments の 権限管理と認証の不備で、成立すれば脆弱なインスタンスを乗っ取られるおそれがある。認証前に成立するか、またはどの導線で到達するかは、提示情報だけでは未確認である。影響は単一機能の不具…",
+      "article_path": "articles/b8df77d15cb34220.html",
+      "original_url": "https://thehackernews.com/2026/06/oracle-e-business-suite-flaw-cve-2026.html"
+    },
+    {
+      "entry_id": "34c0d2fda8de618c",
+      "title": "June 2026 Apple Updates, (Tue, Jun 30th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-06-30T09:31:27+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Patch",
+      "summary_preview": "概要Apple が iOS/iPadOS、macOS、Safari 向けの更新を配布した一方、visionOS、watchOS、tvOS には更新が出ていない。通常の同時展開と違うため、単なる定例更新ではなく、対象製品に限定した修正や差し戻しの可能性を見ておく必要がある。現時点の要約だけでは、修正内容が脆弱性対策なのか機能更新なのか、また 悪用確認の有無 …",
+      "article_path": "articles/34c0d2fda8de618c.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33114"
+    },
+    {
+      "entry_id": "d69bf82171abf9a8",
+      "title": "ISC Stormcast For Tuesday, June 30th, 2026 https://isc.sans.edu/podcastdetail/9988, (Tue, Jun 30th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-06-30T02:25:12+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要SANS ISC の Stormcast は、当日公開の個別事象を横断的に整理する音声情報であり、単独の脆弱性告知というより、現場で何を優先確認するかを考える材料になる。今回の入力には記事本文や個別トピックの記載がなく、具体的な脆弱性名、悪用状況、対象製品は確認できない。したがって、実害の有無や影響範囲を断定する材料は足りず、未確認事項が多い状態と扱う…",
+      "article_path": "articles/d69bf82171abf9a8.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33112"
+    },
+    {
+      "entry_id": "6f17c69dd4e49839",
+      "title": "地域発ICTスタートアップ創出に向けた全国アクセラレータ・プログラムの実施",
+      "source_name": "NICT NOTICE",
+      "category": "reporting",
+      "published_at": "2026-06-30T05:00:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要本件は、地域発ICTスタートアップの創出を促すために、全国規模のアクセラレータ・プログラムを実施するという告知であり、脆弱性情報やインシデント報告ではない。したがって、CSIRTの直接対応対象というより、事業連携先や調達先の成熟度を見極める周辺情報として扱うのが妥当となる。悪用経路や侵入手口の記載はなく、現時点でセキュリティ上の脅威を示す材料は見当たら…",
+      "article_path": "articles/6f17c69dd4e49839.html",
+      "original_url": "/press/2026/06/30-1.html"
+    },
+    {
+      "entry_id": "65586b6870f61609",
+      "title": "NICTは、第14回 日経「星新一賞」に協力します",
+      "source_name": "NICT NOTICE",
+      "category": "reporting",
+      "published_at": "2026-06-30T01:00:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要NICTが第14回 日経「星新一賞」に協力するという広報・告知で、脆弱性情報やインシデント報告ではない。現時点で確認できる範囲では、攻撃手法や悪用可能な不備の案内は含まれていない。したがって、CSIRTの優先度は低く、通常の脅威対応ではなく外部発信の把握対象として扱うのが妥当になる。業務影響は直接的には小さいが、組織内での情報分類や自動収集の誤判定を避…",
+      "article_path": "articles/65586b6870f61609.html",
+      "original_url": "/publicity/topics/2026/06/30-1.html"
+    },
+    {
+      "entry_id": "7becebf9a9604d2a",
+      "title": "タイ支社のサイバーリスクにどう備えるか？ 日本企業向け2ヶ国語対応ウェビナーをHENNGEが 7/15 開催",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-29T23:10:02+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要HENNGEが、タイ支社のサイバーリスクをテーマにした日本企業向けの2カ国語ウェビナーを7/15に開催する。記事は脆弱性や侵害の報道ではなく、海外拠点の運用上の注意点を共有する案内に近い。想定される論点は、現地法人での権限管理、委託先や現地ベンダー経由の侵入、国内本社との監視・初動連携の分断などになる。被害は単一拠点にとどまらず、認証情報の共有やVPN…",
+      "article_path": "articles/7becebf9a9604d2a.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/30/55599.html"
+    },
+    {
+      "entry_id": "17169f482caa0455",
+      "title": "アクサ生命の元営業社員（故人）が金銭詐取の可能性、偽造保険証券を顧客に手渡す",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-29T23:05:10+00:00",
+      "impact_level": "Low",
+      "threat_type": "Scam/Fraud",
+      "summary_preview": "概要アクサ生命の元営業社員が、顧客に偽造保険証券を手渡していた可能性が報じられた。記事の焦点はサイバー攻撃ではなく、営業担当者による金銭詐取と顧客接点の統制不備にある。保険料や契約情報を装って金銭をだまし取る形なら、被害は単発の不正に見えても、顧客台帳や訪問履歴を悪用して継続的に広がるおそれがある。現時点で、組織内部の関与範囲、被害人数、社内システムへの不…",
+      "article_path": "articles/17169f482caa0455.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/30/55598.html"
+    },
+    {
+      "entry_id": "82f99554605dc330",
+      "title": "「村瀬鞄行 オンラインショップ」に不正アクセス、個人情報の一部流出を懸念",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-29T23:05:06+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要「村瀬鞄行 オンラインショップ」で不正アクセスが発生し、個人情報の一部流出の懸念が示された。現時点では、漏えいの有無や対象範囲、攻撃手口の詳細は未確認であり、まずは事実関係の切り分けが必要になる。ECサイトへの侵入は、管理画面の乗っ取り、決済導線の改ざん、顧客情報の抽出につながりやすく、被害は単発の障害にとどまらない。特に通販サイトは、会員情報・注文履…",
+      "article_path": "articles/82f99554605dc330.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/30/55597.html"
+    },
+    {
+      "entry_id": "8601984bfad389cf",
+      "title": "廃棄したPC端末が一部データが残存する状態で流通、第三者が取得し発覚",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-29T23:05:02+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要廃棄したPC端末が、一部のデータが残存した状態のまま流通し、第三者の取得を通じて発覚した件である。消去不備が主因なら、マルウェア感染のような派手さはなくても、端末内のファイル、認証情報、業務記録、キャッシュ情報が外部に渡る余地がある。影響は単一端末に見えても、保存されていた情報の性質次第で、再利用可能な資格情報や個人情報の漏えいへ広がる。現時点では、残…",
+      "article_path": "articles/8601984bfad389cf.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/30/55596.html"
+    },
+    {
+      "entry_id": "74d0148ecf086fbb",
+      "title": "悪質 EC サイトへの流入、最多は今も「ネット検索」JC3 報告",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-29T23:00:11+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Scam/Fraud",
+      "summary_preview": "概要JC3の報告では、悪質なECサイトへの流入経路として、今もネット検索が最多だった。攻撃者は検索結果や広告の見え方を利用し、正規サイトに似せた偽サイトへ利用者を誘導するため、利用者側の警戒だけでは回避しにくい。被害は個人の誤購入にとどまらず、決済情報の詐取やアカウント窃取、組織内の私物端末経由の情報流出にもつながり得る。記事要約だけでは、検索結果の改ざん…",
+      "article_path": "articles/74d0148ecf086fbb.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/30/55595.html"
+    },
+    {
+      "entry_id": "fcbf01544fe1fc05",
+      "title": "一律期限の限界 事例から考える脆弱性対応の優先順位",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-29T23:00:08+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要この記事は、脆弱性対応を一律の期限だけで管理する限界を、事例を踏まえて整理したもの。見かけ上は同じ「修正待ち」でも、外部露出、認証要否、既知悪用の有無で実害の出方は大きく変わる。したがって、期限順ではなく、攻撃成立条件と業務影響を軸に優先順位を組み替える必要がある。悪用経路が単純なものは、未修正のまま放置すると侵入や権限奪取に直結しやすい。一方で、記事…",
+      "article_path": "articles/fcbf01544fe1fc05.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/30/55594.html"
+    },
+    {
+      "entry_id": "a2fa4f4cf500b356",
+      "title": "学校教育機関の個人情報漏えい、令和 7 年度は 190件 のべ 31万人超に",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-29T23:00:03+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要学校教育機関における個人情報漏えいが、令和7年度は190件、のべ31万人超に達したという集計記事である。攻撃の入口は標的型メール、委託先経由、設定不備、端末紛失など複数に分かれる可能性が高く、単一の脆弱性よりも運用上のすき間が問題になりやすい。影響は児童生徒・保護者・教職員の情報にとどまらず、連絡網の悪用や追加の詐欺、再送信先の拡大につながるおそれがあ…",
+      "article_path": "articles/a2fa4f4cf500b356.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/06/30/55593.html"
+    }
+  ]
+}
