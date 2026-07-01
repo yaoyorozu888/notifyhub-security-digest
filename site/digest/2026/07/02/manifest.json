@@ -1,0 +1,578 @@
+{
+  "date": "2026-07-02",
+  "window": {
+    "from": "2026-07-01T06:00:00+09:00",
+    "to": "2026-07-02T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 40
+  },
+  "generated_at_jst": "2026-07-02T06:44:50.860399+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "PlayStation、新規ゲームの物理ディスク生産を2028年1月で終了",
+      "source_name": "PlayStation Blog",
+      "published_at": "2026-07-01T21:44:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Other",
+      "summary_preview": "概要ソニー・インタラクティブエンタテインメントは新規PlayStation用ゲームの物理ディスク生産を2028年1月から終了し、デジタル配信のみへ移行すると発表した。消費者嗜好の変化とエンタテインメント業界全体のデジタル化を背景に、物理メディアから完全脱却する。PlayStation Storeと小売店でのデジタル版提供が標準となる。企業は在庫管理や物流コ…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://blog.playstation.com/2026/07/01/physical-disc-production-ending-in-january-2028-for-new-games-releasing-on-playstation-consoles/",
+      "selection_reason": "消費者向けデバイスとデジタル配信の移行というITトレンドの具体的事例として新規性が高く、Gartner系予測レポートではなく実際の企業決定に基づくため選定",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "Physical disc production ending in January 2028 for new games releasing on PlayStation consoles",
+          "url": "https://blog.playstation.com/2026/07/01/physical-disc-production-ending-in-january-2028-for-new-games-releasing-on-playstation-consoles/",
+          "source_type": "official"
+        },
+        {
+          "title": "Top Tech News Today, June 30, 2026",
+          "url": "https://techstartups.com/2026/06/30/top-tech-news-today-june-30-2026/",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "Anthropic、Claude Sonnet 5とClaude Scienceを6月30日にリリース",
+      "source_name": "explainx.ai",
+      "published_at": "2026-07-01T11:02:09+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要Anthropicは6月30日にClaude Sonnet 5をFree/Proプラン向けにデフォルトモデルとして公開した。API価格は入力2ドル/百万トークン、出力10ドル/百万トークンで8月末まで適用。研究者向けにClaude Scienceを同時にリリースし、PubMedやJupyter、R、HPC端末を統合した監査可能な環境を提供する。輸出規制…",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://explainx.ai/catch-up-on-ai/2026-07-01",
+      "selection_reason": "AIモデルと研究ツールの新リリースというAI分野の直接的な製品進展事例で、規制やセキュリティではなくAIそのものの機能向上に焦点",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "Catch up on AI — 2026-07-01 UTC",
+          "url": "https://explainx.ai/catch-up-on-ai/2026-07-01",
+          "source_type": "news"
+        },
+        {
+          "title": "AI Today in 5: July 1, 2026, The Anthropic Released Edition",
+          "url": "https://www.jdsupra.com/legalnews/ai-today-in-5-july-1-2026-the-anthrop-96601/",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "ワシントン大学、agentic AIブラウザのセキュリティリスクを指摘",
+      "source_name": "UW News",
+      "published_at": "2026-06-30T05:50:28+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要ワシントン大学チームは人気のagentic AIブラウザ7種を調査し、4種でsame-origin policyを回避可能な経路を発見した。悪意あるサイト間での情報やり取りを許す設計が確認された。最先端ブラウザほどリスクが高い傾向を示す。same-origin policyはウェブセキュリティの基本原則で、侵害防止に不可欠である。AIエージェントの普及…",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://www.washington.edu/news/2026/06/30/some-agentic-ai-browsers-come-with-major-cybersecurity-risks-uw-study-finds/",
+      "selection_reason": "AIエージェントのセキュリティ実務影響というCybersecurity分野の具体的研究成果で、脆弱性悪用事例ではなくブラウザ設計上の問題に焦点",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "Some agentic AI browsers come with major cybersecurity risks, UW study finds",
+          "url": "https://www.washington.edu/news/2026/06/30/some-agentic-ai-browsers-come-with-major-cybersecurity-risks-uw-study-finds/",
+          "source_type": "research"
+        },
+        {
+          "title": "New CLTC White Paper Introduces Method of Evaluating Privacy and Security of AI Agents",
+          "url": "https://cltc.berkeley.edu/2026/06/30/new-cltc-white-paper-introduces-method-of-evaluating-privacy-and-security-of-ai-agents/",
+          "source_type": "research"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "0e6fefa1b6100f66",
+      "title": "CVE-2026-45659 Microsoft SharePoint Server Deserialization of Untrusted Data Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-07-01T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CVE-2026-45659 は、Microsoft SharePoint Server の 不正なデータのデシリアライズに起因する脆弱性で、入力を悪用されると 任意コード実行 や権限奪取につながる可能性がある。SharePoint は社内ポータルや文書共有の中核になりやすく、ここを取られると単一サーバの障害にとどまらず、認証情報の窃取、他システムへの…",
+      "article_path": "articles/0e6fefa1b6100f66.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "7003f6132ddeb6f9",
+      "title": "Unpatched Argo CD Repo-Server Flaw Could Let Attackers Take Over Kubernetes Clusters",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-01T19:40:06+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Argo CD の repo-server に、認証なしでコード実行につながる欠陥が見つかった。攻撃成立には対象コンポーネントの内部ネットワーク上のポート到達性が前提となるが、成立すると Kubernetes クラスタ全体の制御奪取に発展しうる。悪用の入口は外部公開面そのものではなく、クラスタ内や同一ネットワーク内からの到達経路になりやすく、横展開や踏…",
+      "article_path": "articles/7003f6132ddeb6f9.html",
+      "original_url": "https://thehackernews.com/2026/07/unpatched-argo-cd-repo-server-flaw.html"
+    },
+    {
+      "entry_id": "0c6517773368419e",
+      "title": "19-Year-Old Scattered Spider Suspect Extradited to Face U.S. Hacking Charges",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-01T19:28:07+00:00",
+      "impact_level": "Low",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要Scattered Spider に関与したとされる19歳の被告が、フィンランドから米国へ送還され、ハッキング、共謀、詐欺の容疑で米国で訴追される。報道ベースでは個人の起訴経過が中心で、具体的な侵害手口や新たな侵入経路の公表はまだ限定的。したがって、今回の論点は新しい脆弱性そのものではなく、既知の活動グループに属するとみられる人物の司法手続きが進んだ点…",
+      "article_path": "articles/0c6517773368419e.html",
+      "original_url": "https://thehackernews.com/2026/07/19-year-old-scattered-spider-suspect.html"
+    },
+    {
+      "entry_id": "edc66074a0035544",
+      "title": "SEO-Poisoned Software Sites Abuse ScreenConnect to Deploy AsyncRAT",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-01T17:53:06+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要検索汚染された偽ソフト配布サイトを踏み台にし、ScreenConnectを悪用してAsyncRATを展開する事例が報じられた。配布物はOBS StudioやBandicamなどの人気ソフトを装ったインストーラで、利用者が正規配布と誤認して導入する流れを狙う。感染後は遠隔操作基盤を先に確立し、その上でRATを起動するため、単なるマルウェア配布よりも回収・…",
+      "article_path": "articles/edc66074a0035544.html",
+      "original_url": "https://thehackernews.com/2026/07/seo-poisoned-software-sites-abuse.html"
+    },
+    {
+      "entry_id": "f675f980357cce09",
+      "title": "VEIL#DROP Malware Chain Uses Blogger Platform to Deliver PureLogs Stealer",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-01T17:18:50+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Malware",
+      "summary_preview": "概要VEIL#DROP は、Blogger のページを踏み台にして PureLogs という情報窃取マルウェアへ誘導する多段攻撃の観測結果である。初期侵入は 標的型メール か ドライブバイ感染 が疑われるが、現時点では配布経路の全体像は未確認である。攻撃者は正規に見える投稿やリンクを使って警戒を下げ、閲覧者の端末に段階的に不正な処理を実行させる流れを取る。…",
+      "article_path": "articles/f675f980357cce09.html",
+      "original_url": "https://thehackernews.com/2026/07/veildrop-malware-chain-uses-blogger.html"
+    },
+    {
+      "entry_id": "0c7f76530f39be67",
+      "title": "Ousaban Banking Trojan Targets Iberian Bank Users with Fake PDF Lures",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-01T15:26:55+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Malware",
+      "summary_preview": "概要ブラジル系の銀行型マルウェア Ousaban が、スペインとポルトガルの銀行利用者を狙うキャンペーンとして観測された。入口は壊れたPDFに見せたフィッシング文書で、受信者に不審を抱かせにくい形を取る。実行時には対象国を確認し、スペインかポルトガル以外では本処理を進めないため、地域を絞った配布とみられる。実害は銀行認証情報の窃取と取引乗っ取りが中心で、端…",
+      "article_path": "articles/0c7f76530f39be67.html",
+      "original_url": "https://thehackernews.com/2026/07/ousaban-banking-trojan-targets-iberian.html"
+    },
+    {
+      "entry_id": "da1eb03173f7b741",
+      "title": "Adobe Patches 7 CVSS 10.0 Flaws in ColdFusion and Campaign Classic",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-01T15:25:46+00:00",
+      "impact_level": "High",
+      "threat_type": "Patch",
+      "summary_preview": "概要Adobe が ColdFusion と Campaign Classic に存在する複数の深刻な欠陥へ修正パッチを公開した。報道では CVSS 10.0 の脆弱性が7件あるとされ、任意コード実行、権限昇格、任意ファイル読み取り、セキュリティ機能の回避につながる可能性がある。攻撃者は外部公開された管理画面や処理系を入口にし、認証前または低権限から実行経…",
+      "article_path": "articles/da1eb03173f7b741.html",
+      "original_url": "https://thehackernews.com/2026/07/adobe-patches-7-cvss-100-flaws-in.html"
+    },
+    {
+      "entry_id": "8f61e8ee412ab745",
+      "title": "Critical Cursor Flaws Could Let Prompt Injection Escape Sandbox and Run Commands",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-01T14:42:54+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Cursor の サンドボックス回避 を可能にする2件の欠陥が報告され、通常のプロンプトに見える入力だけで、開発者端末上で任意コマンドを実行できる可能性がある。クリックや確認操作を要しないため、ユーザーの注意だけでは防ぎにくい。攻撃成立後は、端末内のソースコード、認証情報、ビルド環境、接続先リポジトリに影響が広がる余地がある。CVE-2026-5054…",
+      "article_path": "articles/8f61e8ee412ab745.html",
+      "original_url": "https://thehackernews.com/2026/07/critical-cursor-flaws-could-let-prompt.html"
+    },
+    {
+      "entry_id": "a1c3c5ca9945faa7",
+      "title": "Progress Kemp LoadMaster Pre-Auth RCE Flaw Faces Active Exploitation Attempts",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-01T13:56:18+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Progress Kemp LoadMaster における 認証前のOSコマンド注入 が公表され、悪用試行が進行中 と報告されている。対象は CVE-2026-8037 で、外部から到達できる管理面や公開面に配置されている場合、侵入の起点になりやすい。攻撃者は入力値を通じて任意コマンド実行へつなぎ、装置の設定改ざん、認証情報の窃取、内部網への足掛かり確…",
+      "article_path": "articles/a1c3c5ca9945faa7.html",
+      "original_url": "https://thehackernews.com/2026/07/latest-progress-kemp-loadmaster-pre.html"
+    },
+    {
+      "entry_id": "de8e1840c02ab04d",
+      "title": "AI-Generated Browser Ransomware Abuses Chromium API on Windows and Android",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-01T12:59:19+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Malware",
+      "summary_preview": "概要研究者が、DeepSeekで生成された新種のマルウェア断片を確認し、Chromiumのブラウザ機能を悪用して、WindowsとAndroid上でブラウザ内だけで動くランサムウェアへつなげたと報告した。通常の端末侵入型ランサムウェアと異なり、OS全体を掌握せずとも、ブラウザの権限や保存領域を足がかりに被害を広げる発想が含まれる。実際にどこまで自動化され、…",
+      "article_path": "articles/de8e1840c02ab04d.html",
+      "original_url": "https://thehackernews.com/2026/07/ai-generated-browser-ransomware-abuses.html"
+    },
+    {
+      "entry_id": "ba5aaa4f9372af30",
+      "title": "2026 Cybersecurity Assessment: The Gap Between Awareness and Resilience",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-01T11:30:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要The Hacker Newsが紹介しているのは、Bitdefenderの調査を踏まえた2026年のサイバーセキュリティ評価で、組織の認知は高いのに運用上の回復力へ結び付いていないというギャップを示す内容となる。記事断片からは、1,200人のIT・セキュリティ担当者を対象に、意識向上と実際の備えの間に矛盾がある点を浮かび上がらせている。想定される論点は…",
+      "article_path": "articles/ba5aaa4f9372af30.html",
+      "original_url": "https://thehackernews.com/2026/07/2026-cybersecurity-assessment-gap.html"
+    },
+    {
+      "entry_id": "69b9e98833a8fbe5",
+      "title": "Microsoft Accelerates Post-Quantum Cryptography Shift to 2029",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-01T10:41:36+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要Microsoft が、量子計算の進展を踏まえて 耐量子暗号 への移行計画を前倒しし、既存の暗号を 2029年 までに置き換える方向を示した。現時点で直ちに侵害が起きたという話ではなく、将来の解読リスク を前提に、暗号基盤の更新を急ぐという内容になる。実際の悪用は、長期秘匿が必要な通信や保存データを対象に、将来の量子計算機で過去の暗号文が読まれる形で広…",
+      "article_path": "articles/69b9e98833a8fbe5.html",
+      "original_url": "https://thehackernews.com/2026/07/microsoft-accelerates-post-quantum.html"
+    },
+    {
+      "entry_id": "1f268226f16f0d2d",
+      "title": "Phantom Squatting Uses AI-Hallucinated Domains for Phishing and Malware",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-01T07:20:51+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Phishing",
+      "summary_preview": "概要大規模言語モデルが実在しないWebアドレスを生成する性質を悪用し、攻撃者がその幻のドメインを先回りして取得し、フィッシングやマルウェア配布の受け皿にする手口が報告された。phantom squattingと呼ばれ、AIが参照候補として返したURLをそのまま信用する利用者や自動化処理を狙う流れが中心になる。被害は単発の誘導にとどまらず、認証情報の窃取、初…",
+      "article_path": "articles/1f268226f16f0d2d.html",
+      "original_url": "https://thehackernews.com/2026/07/phantom-squatting-uses-ai-hallucinated.html"
+    },
+    {
+      "entry_id": "9141ccf1e51e3952",
+      "title": "Anthropic Restores Claude Fable 5 After U.S. Lifts Jailbreak-Linked Export Controls",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-01T06:46:17+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要AnthropicがClaude Fable 5を世界的に再開し、米商務省が約2週間前に課していた輸出管理を解除した。対象はFable 5と、より厳しく管理されていたMythos 5で、Claude.aiやClaude Codeなど複数の提供経路で利用可能になる。今回の内容は製品提供の再開に関するもので、脆弱性の修正や攻撃手法の公開ではない。記事文面だ…",
+      "article_path": "articles/9141ccf1e51e3952.html",
+      "original_url": "https://thehackernews.com/2026/07/anthropic-restores-claude-fable-5-after.html"
+    },
+    {
+      "entry_id": "b3f2f8bdbf5f5c57",
+      "title": "Azure CLI Password Spray Hits at Least 78 Microsoft Accounts in 81M+ Attempts",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-01T05:46:03+00:00",
+      "impact_level": "High",
+      "threat_type": "Credential Theft",
+      "summary_preview": "概要Microsoft Azure CLI を狙った大規模な自動パスワードスプレー攻撃が観測され、少なくとも78件の Microsoft アカウントが侵害されたとされる。攻撃は IPv6 の広いアドレス帯から継続的に行われ、81M件超の試行が確認されている。手口は、少数の候補パスワードを多数アカウントへばらまき、弱い認証情報や再利用パスワードを足がかりに侵…",
+      "article_path": "articles/b3f2f8bdbf5f5c57.html",
+      "original_url": "https://thehackernews.com/2026/07/azure-cli-password-spray-hits-at-least.html"
+    },
+    {
+      "entry_id": "94f4b7bd6812d4b5",
+      "title": "Researcher Analyzes 3,000 Live ClickFix Payloads, Exposing API-Driven Malware Delivery",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-01T05:32:12+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要ClickFix を悪用した攻撃が、手作業での実行を誘う誘導型手口から、API 駆動の配信基盤を使う形へ進化した。偽の「人間確認」画面の裏で、訪問者ごとに見た目だけを変えた同一系統のマルウェア命令が配られるため、静的なブロックや単純な URL 監視だけでは追跡しにくい。さらに、Windows のスクリプト検査をすり抜ける新しい配信方法も確認されており、…",
+      "article_path": "articles/94f4b7bd6812d4b5.html",
+      "original_url": "https://thehackernews.com/2026/07/researcher-analyzes-3000-live-clickfix.html"
+    },
+    {
+      "entry_id": "a07c2e5c3de3e78d",
+      "title": "Citrix Patches Six NetScaler Flaws Allowing File Read and Denial-of-Service",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-01T03:54:22+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Citrix が NetScaler ADC / Gateway 向けに6件の脆弱性修正を公開し、その中には任意のファイル読取やサービス停止につながるものが含まれる。公開情報の範囲では、少なくとも CVE-2026-8451 に CVSS 8.8 が付いている。ファイル読取が成立すると、設定ファイルや鍵情報の漏えいから認証回避や横展開の足掛かりにつなが…",
+      "article_path": "articles/a07c2e5c3de3e78d.html",
+      "original_url": "https://thehackernews.com/2026/07/citrix-patches-six-netscaler-flaws.html"
+    },
+    {
+      "entry_id": "76a029daa6de3cde",
+      "title": "Why Ask Credentials If There Are Secret Codes&#x3f;, (Wed, Jul 1st)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-07-01T05:10:20+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Phishing",
+      "summary_preview": "概要SANS ISC が、Metamask を狙うフィッシングメールを観測したと報告している。攻撃者は通常の資格情報入力を求めるのではなく、秘密のコードやそれに類する手続きを使って利用者をだます形に寄せている。狙いは、ブラウザ拡張やモバイルアプリに保存された資産や、復旧手順に使う情報を奪うことにある。侵害が成立すると、被害は単一アカウントの乗っ取りにとどま…",
+      "article_path": "articles/76a029daa6de3cde.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33118"
+    },
+    {
+      "entry_id": "80efae915de8ff67",
+      "title": "ISC Stormcast For Wednesday, July 1st, 2026 https://isc.sans.edu/podcastdetail/9990, (Wed, Jul 1st)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-07-01T02:00:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要SANS ISCのStormcastは、日次の観測や注意点をまとめたポッドキャストで、今回も単独の重大事案そのものというより、現場で拾うべき兆候を整理する性格が強い。公開情報だけでは、特定の脆弱性名、攻撃キャンペーン、影響範囲は確認できず、何を対象にした回であるかは未確定となる。CSIRT観点では、本文がない段階では重要度を過大評価せず、関連する新規C…",
+      "article_path": "articles/80efae915de8ff67.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33116"
+    },
+    {
+      "entry_id": "90b331a1f35984c4",
+      "title": "Ten Years in the SOC at RSAC: What We Learned in 2026",
+      "source_name": "Cisco Security Blog",
+      "category": "reporting",
+      "published_at": "2026-07-01T15:00:13+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要本記事は、RSAC 2026会場でCisco SecurityとSplunk Securityが運営したSOCの10年目の観測結果を紹介するもので、個別の脆弱性告知ではない。公開内容だけを見る限り、特定製品への緊急修正や悪用事例の報告ではなく、会場内外で観測された攻撃傾向や運用上の学びをまとめたレポート誘導が中心となる。攻撃者は展示会や大型イベントのよ…",
+      "article_path": "articles/90b331a1f35984c4.html",
+      "original_url": "https://blogs.cisco.com/security/rsac-2026-soc/"
+    },
+    {
+      "entry_id": "42d2273f7f3af240",
+      "title": "Phantom Squatting: AI-Hallucinated Domains as a Software Supply Chain Vector",
+      "source_name": "Unit 42",
+      "category": "reporting",
+      "published_at": "2026-07-01T01:00:11+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要LLMが誤って生成したドメイン名を先回りして取得し、そこを足がかりに供給網へ入り込む手口が整理された。問題の中心は、利用者が検索や参照でもっともらしい未登録ドメインを信じやすい点にある。攻撃者はそのドメインで偽の配布物や案内を置き、依存関係の確認、更新取得、サポート誘導を通じて認証情報や実行環境を奪う余地を作る。影響は単一端末にとどまらず、パッケージ取…",
+      "article_path": "articles/42d2273f7f3af240.html",
+      "original_url": "https://unit42.paloaltonetworks.com/phantom-squatting-hallucinated-web-domains/"
+    },
+    {
+      "entry_id": "790aa9f9c852c00b",
+      "title": "Weekly Report: Red Hat Ansible Automation Platformに権限チェックの欠如の脆弱性",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-07-01T00:04:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Unknown",
+      "summary_preview": "概要Red Hat Ansible Automation Platform に権限チェックの欠如がある脆弱性が報告された。影響を受ける環境では、想定より弱い権限の利用者でも管理系の操作に触れられる余地が生じ、設定変更や自動化ジョブの改変を足がかりに権限の引き上げや横展開へつながるおそれがある。特に、運用用アカウントと管理対象が広く結び付いた環境では、単一の…",
+      "article_path": "articles/790aa9f9c852c00b.html",
+      "original_url": "https://www.jpcert.or.jp/wr/2026/wr260701.html#1"
+    },
+    {
+      "entry_id": "b625ed4a28f527eb",
+      "title": "Weekly Report: Google Chromeに複数の脆弱性",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-07-01T00:04:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要JPCERT/CCの週報で、Google Chromeに複数の脆弱性が取り上げられている。内容からは、単発の不具合ではなく、ブラウザ本体や関連コンポーネントに複数の欠陥が積み上がっている状況と読める。悪用の入口は、細工されたWebページ閲覧や、ブラウザが解釈するコンテンツ経由になる可能性が高い。任意コード実行や権限昇格に直結するかは本文だけでは未確認で…",
+      "article_path": "articles/b625ed4a28f527eb.html",
+      "original_url": "https://www.jpcert.or.jp/wr/2026/wr260701.html#2"
+    },
+    {
+      "entry_id": "a118ebac8f228c38",
+      "title": "Weekly Report: 複数のJenkins用プラグインに脆弱性",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-07-01T00:04:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要JPCERT/CC の Weekly Report では、複数の Jenkins 用プラグインに脆弱性があると整理されている。Jenkins はビルドやデプロイの中枢になりやすく、プラグイン経由の問題は本体よりも見落とされやすい。悪用されれば、ジョブ改ざん、機密情報の窃取、実行基盤への横展開につながる余地がある。特に認証前到達、権限昇格、任意コード実行…",
+      "article_path": "articles/a118ebac8f228c38.html",
+      "original_url": "https://www.jpcert.or.jp/wr/2026/wr260701.html#3"
+    },
+    {
+      "entry_id": "12d3c70fa6d5335d",
+      "title": "Weekly Report: GitLabに複数の脆弱性",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-07-01T00:04:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要JPCERT/CC の Weekly Report で、GitLab に複数の脆弱性がまとめて取り上げられた。現時点で入力からは個別の CVE、影響範囲、悪用確認の有無は読み取れず、再現条件も未確認となる。GitLab はソース管理、課題管理、CI/CD を一体で扱うため、ここに脆弱性があると認証情報、ソースコード、デプロイ経路へ波及しやすい。攻撃者は…",
+      "article_path": "articles/12d3c70fa6d5335d.html",
+      "original_url": "https://www.jpcert.or.jp/wr/2026/wr260701.html#4"
+    },
+    {
+      "entry_id": "95165904d465da43",
+      "title": "Weekly Report: pgAdminに複数の脆弱性",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-07-01T00:04:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要pgAdminに複数の脆弱性が見つかり、更新適用前の管理画面が攻撃の入口になり得る。具体的な個別CVEや悪用可否は入力からは確認できないが、管理用Web画面は一般公開されやすく、侵入後の操作権限も強いため、認証前の欠陥やセッション周りの不備が含まれる場合は被害が一気に広がる。想定される悪用は、管理者機能への不正到達、設定改ざん、保存済み情報の取得、ほか…",
+      "article_path": "articles/95165904d465da43.html",
+      "original_url": "https://www.jpcert.or.jp/wr/2026/wr260701.html#5"
+    },
+    {
+      "entry_id": "9e9df83b840d174b",
+      "title": "Weekly Report: Fortinet製品に関連する認証情報の漏えいに関する注意喚起",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-07-01T00:04:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Credential Theft",
+      "summary_preview": "概要JPCERT/CC は、Fortinet製品に関連する認証情報の漏えいに注意を促している。漏えいした認証情報が管理者権限やVPN接続に結び付く場合、外部からの不正ログインや踏み台化が起こりやすく、境界機器から内部ネットワークへ被害が広がる入口になりやすい。悪用の典型は、正規認証を装った侵入、設定変更、トンネル確立、横展開の起点化である。今回の案内だけで…",
+      "article_path": "articles/9e9df83b840d174b.html",
+      "original_url": "https://www.jpcert.or.jp/wr/2026/wr260701.html#6"
+    },
+    {
+      "entry_id": "1867e05cff6238f5",
+      "title": "「ICT Mentor One on One Match 2026 powered by NICT 」の開催・募集について",
+      "source_name": "NICT NOTICE",
+      "category": "reporting",
+      "published_at": "2026-07-01T05:00:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要これは脆弱性や侵害の告知ではなく、NICTが主催する ICT分野のメンター募集イベント の案内に当たる。組織のCSIRT業務に対して直接の防御対応は発生しないが、採用や育成、外部連携の文脈では参考になる。攻撃に悪用される経路 や 被害の拡大 を示す情報は含まれていないため、緊急度は低い。募集条件、対象者、実施方法などの詳細は記事本文を確認する必要がある…",
+      "article_path": "articles/1867e05cff6238f5.html",
+      "original_url": "/publicity/topics/2026/07/1-1.html"
+    },
+    {
+      "entry_id": "a4e8509f7b04c2c2",
+      "title": "「レガシーで魅力を感じない領域。のはずだった」Tenable 阿部淳平が語るエクスポージャーマネジメント",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-30T23:10:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要本件は、エクスポージャーマネジメントをテーマにした解説記事であり、直近の脆弱性単体ではなく、組織が外部に晒している資産・設定・経路を継続的に把握する重要性を扱う内容と読める。攻撃者は個別の高額な標的よりも、見落とされた公開資産や古い設定を起点に侵入し、そこから認証情報の取得や横展開を狙う。影響は単一システムの問題にとどまらず、クラウド、VPN、メール、…",
+      "article_path": "articles/a4e8509f7b04c2c2.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/01/55611.html"
+    },
+    {
+      "entry_id": "0bdc3e3b9399d233",
+      "title": "アフラック生命保険に不正アクセス、約438万人の顧客情報が漏えい",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-30T23:05:12+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要アフラック生命保険で不正アクセスが確認され、約438万人分の顧客情報が漏えいしたとされている。現時点で公開情報からは、侵入経路、滞留期間、持ち出された情報の内訳が十分に見えず、どこまでのデータが実際に外部流出したかは未確認となる。件数の大きさから、単なる連絡先の流出にとどまらず、保険契約情報を起点にした詐欺やなりすましへ悪用される余地がある。攻撃者視点…",
+      "article_path": "articles/0bdc3e3b9399d233.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/01/55610.html"
+    },
+    {
+      "entry_id": "1bc97888a7db10e6",
+      "title": "2りんかんイエローハットに不正アクセス、310万名分の個人情報が漏えい",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-30T23:05:09+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要2りんかんイエローハットへの不正アクセスにより、310万名分の個人情報が漏えいしたと報じられた。現時点では、侵入経路や初期侵入の手口、持続化や横展開の有無は明らかでなく、被害の全体像も未確認が残る。漏えい情報が氏名・連絡先・会員情報などを含む場合、なりすまし、標的型詐欺、再攻撃の足掛かりに使われるおそれがある。店舗系サービスでは、会員基盤や委託先連携、…",
+      "article_path": "articles/1bc97888a7db10e6.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/01/55609.html"
+    },
+    {
+      "entry_id": "fc094bd9a7081626",
+      "title": "不正アクセス障害対応費3,034万円に対し保険金3,540万円を受給 特別利益計上",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-30T23:05:06+00:00",
+      "impact_level": "Low",
+      "threat_type": "Other",
+      "summary_preview": "概要不正アクセスによる障害対応費として 3,034万円 を支出した事例について、保険金 3,540万円 を受給し、特別利益を計上したという内容である。記事の主眼は攻撃手口そのものではなく、インシデント後の費用回収 と会計処理にある。CSIRTの観点では、保険で一部補填できても、初動対応・調査・復旧・説明責任の負荷が消えるわけではない点が重要になる。保険金の…",
+      "article_path": "articles/fc094bd9a7081626.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/01/55608.html"
+    },
+    {
+      "entry_id": "77a6cd2eadab9911",
+      "title": "大阪有機化学工業ウェブサイトに不正アクセス、アクセスしにくい事象が発生",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-30T23:05:02+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要大阪有機化学工業のウェブサイトで不正アクセスが発生し、アクセスしにくい状態になったという報道である。現時点で分かるのは、外部公開サイトに対して何らかの侵害または負荷要因が生じ、利用者側から到達しづらい状況になった点までにとどまる。改ざん、情報流出、踏み台化の有無は未確認で、障害が一時的な可用性低下なのか、侵入後の操作に伴うものかも判然としない。CSIR…",
+      "article_path": "articles/77a6cd2eadab9911.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/01/55607.html"
+    },
+    {
+      "entry_id": "e20ef2cef699bae8",
+      "title": "権威DNSサーバNSDに複数の脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-30T23:00:25+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要権威DNSサーバの NSD に複数の脆弱性が見つかったという話題で、公開DNS基盤を運用する組織では優先度の高い確認対象になる。権威DNSは外部公開面に常時置かれるため、認証前に到達できる欠陥が含まれると、サービス停止や情報漏えいよりも先に名前解決の信頼性が崩れる。悪用の形は、設定や入力処理の不備を突いた異常終了、メモリ破壊、応答改ざんの足掛かりになり…",
+      "article_path": "articles/e20ef2cef699bae8.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/01/55606.html"
+    },
+    {
+      "entry_id": "ca585b88216a44d2",
+      "title": "Fluentdに複数の脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-30T23:00:23+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Fluentdに複数の脆弱性が見つかり、条件がそろうと認証回避、情報漏えい、任意操作につながるおそれがある。記事情報だけでは、外部公開の有無、対象バージョン、既に悪用されているかは確認できない。Fluentdはログ収集の中継点になりやすく、ここが破られると送信先の切替え、ログ改ざん、認証情報の収集などに波及しやすい。特にコンテナ基盤やサーバ群で常時稼働…",
+      "article_path": "articles/ca585b88216a44d2.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/01/55605.html"
+    },
+    {
+      "entry_id": "3e4044d1f0017368",
+      "title": "Windows 10 サポート終了、コンシューマー向けESUを2027年10月12日まで提供",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-30T23:00:19+00:00",
+      "impact_level": "Low",
+      "threat_type": "Advisory",
+      "summary_preview": "概要Windows 10 のサポート終了後も、個人向けには ESU により 2027年10月12日 まで更新を受けられるという案内を扱った記事となる。ここで重要なのは、ESUは機能追加ではなく、主に既知の脆弱性に対する延命策にとどまり、未適用の端末が残れば攻撃対象になりやすい点にある。企業ネットワークでは、個人所有端末の持ち込みや在宅環境が混ざると、OSの…",
+      "article_path": "articles/3e4044d1f0017368.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/01/55604.html"
+    },
+    {
+      "entry_id": "6c058a871112a07d",
+      "title": "ExpressUpdate Agent for Windows に名前付きパイプに対するアクセス制御不備の脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-30T23:00:15+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要ExpressUpdate Agent for Windows に、名前付きパイプへのアクセス制御不備があると伝えられている。悪用されると、ローカルで動く別プロセスが本来想定されていないやり取りを行い、権限の境界をまたいで操作を誘発する余地が生まれる。影響は単なる設定不正にとどまらず、権限昇格や、エージェントを足場にした後続操作へ広がる可能性がある。公…",
+      "article_path": "articles/6c058a871112a07d.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/01/55603.html"
+    },
+    {
+      "entry_id": "120835133961c54a",
+      "title": "「OCNメール」BIMI 対応",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-30T23:00:11+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要「OCNメール」がBIMIに対応したという案内であり、脆弱性対応や侵害報告ではない。メール受信画面でブランドロゴを表示できるため、利用者が送信元を見分けやすくなり、なりすましメールの見抜きやすさが一定程度上がる。もっとも、BIMIは認証の代替ではなく、DMARCやSPF、DKIMの整備が前提になるため、送信ドメイン管理が甘い組織では効果が出にくい。逆に…",
+      "article_path": "articles/120835133961c54a.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/01/55602.html"
+    },
+    {
+      "entry_id": "62570984dfab56d8",
+      "title": "プルーフポイントが OpenAI Daybreak Cyber Partner Program に参画",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-30T23:00:07+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要本件は、Proofpoint が OpenAI Daybreak Cyber Partner Program に参画したという提携ニュースであり、脆弱性の公表や侵害事案そのものではない。主眼は、生成AIの安全利用や攻撃悪用の抑止に向けた連携強化にあるとみられる。直接的な被害範囲は現時点で示されておらず、既存製品や運用の即時変更が必要とまでは読めない。も…",
+      "article_path": "articles/62570984dfab56d8.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/01/55601.html"
+    },
+    {
+      "entry_id": "0d5ed031720f1080",
+      "title": "HENNGE One、ID統合管理サービス「KDDI Business ID」と SSO 連携",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-06-30T23:00:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要HENNGE Oneが、KDDIのID統合管理サービス「KDDI Business ID」とSSO連携したという記事で、主眼は新たな脆弱性ではなく認証基盤の接続拡大にある。利用組織では、複数SaaSへのログイン経路が一本化されるため、運用負荷の低減と引き換えに、ID基盤の障害や設定不備が横断的な影響を持ちやすくなる。攻撃者の視点では、個別サービスを狙う…",
+      "article_path": "articles/0d5ed031720f1080.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/01/55600.html"
+    }
+  ]
+}
