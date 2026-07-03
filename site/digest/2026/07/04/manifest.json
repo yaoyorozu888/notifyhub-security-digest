@@ -1,0 +1,316 @@
+{
+  "date": "2026-07-04",
+  "window": {
+    "from": "2026-07-03T06:00:00+09:00",
+    "to": "2026-07-04T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 19
+  },
+  "generated_at_jst": "2026-07-04T06:33:59.893178+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "中国の低コストAIモデルがAnthropicやOpenAIに追いつく",
+      "source_name": "Reuters",
+      "published_at": "2026-07-02T12:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要中国の低価格AIモデルがAnthropicやOpenAIのフロンティアモデルに匹敵する性能を示し、米中AI競争の様相を変えつつある。GLM-5.2のようなモデルが消費者・企業向けで実用レベルに到達した点が注目される。開発コストの低さが中国の「ファストフォロワー」戦略を後押しし、知的財産の活用が進む。業界アナリストはこれを米国の優位性に対する具体的な挑戦…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://www.reuters.com/world/china/a-new-inexpensive-chinese-ai-model-is-catching-up-with-anthropic-openai-their-2026-07-02/",
+      "selection_reason": "AI分野で具体的なモデル進展とグローバル競争の新事実として新規性が高く、Gartner予測のような汎用トレンドではなく製品レベルの動きを優先",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "A new, inexpensive Chinese AI model is catching up with Anthropic, OpenAI on their home turf",
+          "url": "https://www.reuters.com/world/china/a-new-inexpensive-chinese-ai-model-is-catching-up-with-anthropic-openai-their-2026-07-02/",
+          "source_type": "news"
+        },
+        {
+          "title": "The Latest AI News and Breakthroughs That Matter Most",
+          "url": "https://www.crescendo.ai/news/latest-ai-news-and-updates",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "ブラウザ戦争再燃、Chrome・Safari代替が台頭",
+      "source_name": "TechCrunch",
+      "published_at": "2026-07-03T19:00:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Other",
+      "summary_preview": "概要2026年に入りブラウザ市場で検索機能以外の差別化が進む。プライバシー強化や生産性ツール統合を売りにした代替ブラウザがChromeやSafariのシェアを脅かす。開発者は拡張性やクロスプラットフォーム対応を重視した選択を再検討する必要がある。企業IT部門はセキュリティポリシーとユーザー体験のバランスを見直すタイミングに来ている。市場の多様化はベンダーロ…",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://techcrunch.com/2026/07/03/as-the-browser-wars-heat-up-here-are-the-hottest-alternatives-to-chrome-and-safari-in-2026/",
+      "selection_reason": "IT分野の開発者ツール・ユーザー体験トレンドとして具体的なブラウザ代替動向を挙げ、検索中心から機能競争への移行を裏付ける新情報",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "The browser wars aren’t about search anymore — here are the best alternatives to Chrome and Safari",
+          "url": "https://techcrunch.com/2026/07/03/as-the-browser-wars-heat-up-here-are-the-hottest-alternatives-to-chrome-and-safari-in-2026/",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "スパイウェア調査議員の携帯がPegasusでハッキング",
+      "source_name": "TechCrunch",
+      "published_at": "2026-07-02T12:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要スパイウェア乱用を調査していた政治家の携帯電話がPegasusで侵害された事例が確認された。国家支援型ツールの標的選定が調査活動そのものを阻害するリスクを示す。セキュリティ担当者は高リスク人物のデバイス監視を強化する必要がある。法執行機関や企業も同様の標的型攻撃への備えを急ぐべきだ。この事件は商用スパイウェアの規制議論を再燃させる可能性がある。",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://techcrunch.com/2026/07/02/politician-who-investigated-spyware-abuses-had-his-phone-hacked-with-pegasus-spyware/",
+      "selection_reason": "サイバーセキュリティ実務に直結する具体的な侵害事例で、調査対象者への標的型攻撃の新事実として影響度が高い",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "Politician who investigated spyware abuses had his phone hacked with Pegasus spyware",
+          "url": "https://techcrunch.com/2026/07/02/politician-who-investigated-spyware-abuses-had-his-phone-hacked-with-pegasus-spyware/",
+          "source_type": "news"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "1ce3a298258b0750",
+      "title": "Unpatched Flaws Disclosed in Filesystem Bundled Into Millions of Embedded Devices",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-03T20:19:31+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要runZeroが、FAT/exFATを扱う組み込み向けライブラリ FatFs に 7件の脆弱性 を公表した。FatFs はUSBメモリやSDカードを読むために多くの機器のファームウェアへ組み込まれており、監視カメラ、ドローン、産業用制御機器、ハードウェア財布などへの波及が想定される。悪用の起点は、外部媒体の挿入やその内容の処理に置かれる可能性が高く、機…",
+      "article_path": "articles/1ce3a298258b0750.html",
+      "original_url": "https://thehackernews.com/2026/07/unpatched-flaws-disclosed-in-filesystem.html"
+    },
+    {
+      "entry_id": "fad87bb7f4eb077d",
+      "title": "New \"Bad Epoll\" Linux Kernel Flaw Lets Unprivileged Users Gain Root, Hits Android",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-03T19:40:01+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CVE-2026-46242 は、Linux カーネルの epoll 周辺にある権限昇格の欠陥で、一般ユーザーが root を取得できる可能性がある。影響範囲は Linux デスクトップ、サーバー、Android に及ぶとされ、修正は公開済みになっている。攻撃成立に特別な権限は不要とみられ、侵入後の足場やローカル利用だけで特権化に直結しやすい点が厄介と…",
+      "article_path": "articles/fad87bb7f4eb077d.html",
+      "original_url": "https://thehackernews.com/2026/07/new-bad-epoll-linux-kernel-flaw-lets.html"
+    },
+    {
+      "entry_id": "c00d16725cdde0c1",
+      "title": "New Avalon Malware Framework Packs CrownX Ransomware Capabilities",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-03T18:55:24+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要研究者が、未公表のモジュール型マルウェア基盤「Avalon」を確認した。配布は多段階のフィッシング経由で、従来型の防御をすり抜ける設計が前提に置かれている。機能は資格情報の収集、横展開、遠隔操作、復旧妨害、ランサムウェア実行まで一体化しており、侵入後の各段階を単一基盤で回せる点が厄介になる。被害は初期感染端末に閉じず、認証情報の奪取を起点に管理系や共有…",
+      "article_path": "articles/c00d16725cdde0c1.html",
+      "original_url": "https://thehackernews.com/2026/07/new-avalon-malware-framework-packs.html"
+    },
+    {
+      "entry_id": "d9336aa24a3aeef0",
+      "title": "North Korea-Linked npm Packages Mimic Rollup Polyfills to Steal Developer Secrets",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-03T16:07:15+00:00",
+      "impact_level": "High",
+      "threat_type": "Unknown",
+      "summary_preview": "概要北朝鮮に関連するとみられる攻撃者が、Rollupのpolyfill系ツールを装うnpmパッケージを公開し、開発者端末から秘密情報を窃取しようとした事例が報告された。見た目は正規の「rollup-plugin-polyfill-node」に近く、説明文やリポジトリ情報まで模倣しているため、依存関係の確認だけでは見抜きにくい。実行されると遠隔操作や情報送出…",
+      "article_path": "articles/d9336aa24a3aeef0.html",
+      "original_url": "https://thehackernews.com/2026/07/north-korea-linked-npm-packages-mimic.html"
+    },
+    {
+      "entry_id": "518c69135d1e2e80",
+      "title": "Armored Likho Targets Government Agencies, Power Sector with BusySnake Stealer",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-03T13:36:33+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Malware",
+      "summary_preview": "概要未確認の脅威 समूह Armored Likho が、政府機関や電力分野を狙い、BusySnake Stealer を用いた攻撃を行っていると報じられた。対象はロシア、ブラジル、カザフスタンに広がっており、個人向けの金銭目的攻撃と、組織向けのサイバー諜報が混在している点が特徴となる。攻撃の実態は Kaspersky の技術分析に基づくが、初期侵入経路…",
+      "article_path": "articles/518c69135d1e2e80.html",
+      "original_url": "https://thehackernews.com/2026/07/armored-likho-targets-government.html"
+    },
+    {
+      "entry_id": "8b5215df35672a31",
+      "title": "European Parliament Member Investigating Spyware Was Hacked With Pegasus",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-03T11:05:43+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要Citizen Lab の調査で、欧州議会の元議員 Stelios Kouloglou の端末が Pegasus によって繰り返し侵害されていたことが示された。しかも当人は、商用スパイウェアの濫用を調べる委員会に関与していたため、標的型監視としての意味合いが強い。攻撃は端末単体の乗っ取りにとどまらず、通話、メッセージ、位置情報、マイク・カメラ周辺の情報…",
+      "article_path": "articles/8b5215df35672a31.html",
+      "original_url": "https://thehackernews.com/2026/07/european-parliament-member.html"
+    },
+    {
+      "entry_id": "357c6f7d93b4fd95",
+      "title": "PamStealer Uses Fake Maccy Sites and PAM Checks to Steal Mac Login Passwords",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-03T08:03:37+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Malware",
+      "summary_preview": "概要PamStealer は macOS 向けの情報窃取型マルウェアで、正規のクリップボード管理ツール Maccy を装った .scpt 形式で配布される。感染後は PAM 検査を悪用して、ログイン時の認証情報を盗み取る流れが示されている。狙いは単一端末の被害にとどまらず、盗んだ macOS のログインパスワードを足がかりに、業務アカウントや他端末への横展…",
+      "article_path": "articles/357c6f7d93b4fd95.html",
+      "original_url": "https://thehackernews.com/2026/07/pamstealer-uses-fake-maccy-sites-and.html"
+    },
+    {
+      "entry_id": "c0f8ffcd1836e8a0",
+      "title": "How We Added WebAuthn to a Browser-Based RDP Client",
+      "source_name": "Unit 42",
+      "category": "reporting",
+      "published_at": "2026-07-02T22:00:39+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要これは脆弱性報告ではなく、ブラウザ型RDPクライアントに WebAuthn リダイレクトを実装した技術解説である。Windows 以外の環境からでも、接続先の Windows セッションで FIDO2 などの認証器を使えるようにする試みを、逆解析を交えて紹介している。悪用手口の話ではないが、リモートアクセスの認証方式をどう持ち込むかという設計論は、ゼロ…",
+      "article_path": "articles/c0f8ffcd1836e8a0.html",
+      "original_url": "https://unit42.paloaltonetworks.com/webauthn-added-to-browser-based-rdp/"
+    },
+    {
+      "entry_id": "fcda901b8ea87ed8",
+      "title": "サイバー犯罪者が犯行現場に残した「セルフィー」1,500 万枚を LLM 分析",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-02T23:10:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要犯罪者が現場に残した画像、いわゆる「セルフィー」1,500万枚を LLM で分析し、人物や背景、行動パターンの整理に使ったという内容である。これは脆弱性やマルウェアの話ではなく、大量画像の自動解析を通じて捜査や脅威分析の効率を上げる取り組みと捉えるのが適切である。悪用の中心は、顔や場所、端末画面、ナンバーなどの断片から人物特定や関係性の推定を進める点に…",
+      "article_path": "articles/fcda901b8ea87ed8.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/03/55632.html"
+    },
+    {
+      "entry_id": "be0b53922f1cb72d",
+      "title": "市の男性職員（40代）が住民記録システムを操作して元親族の個人情報を閲覧し懲戒処分に",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-02T23:05:13+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Misconfiguration",
+      "summary_preview": "概要市の40代男性職員が、住民記録システムを業務外で操作し、元親族の個人情報を閲覧したとして懲戒処分になった。攻撃や外部侵入の話ではなく、正規権限の不正利用による内部不正が中心の事案である。被害は現時点で閲覧にとどまるが、住民情報の性質上、個人のプライバシー侵害や行政への信頼低下に直結しやすい。外部への持ち出しや二次利用の有無は記事からは確認できないため、…",
+      "article_path": "articles/be0b53922f1cb72d.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/03/55631.html"
+    },
+    {
+      "entry_id": "3d02912621e7acb6",
+      "title": "現代仏壇に不正アクセス、親会社である株式会社はせがわが保有する個人情報には影響無し",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-02T23:05:11+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要現代仏壇の社内システムへの不正アクセスが公表されたが、親会社の株式会社はせがわが保有する個人情報への影響は確認されていない。現時点で明らかなのは「侵入があった」点までで、侵入経路、滞在期間、情報持ち出しの有無は未確認となる。こうした事案は、公開範囲が限定されていても、メールアカウントや共有ストレージ、業務端末を足掛かりに被害が横へ広がる可能性がある。個…",
+      "article_path": "articles/3d02912621e7acb6.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/03/55630.html"
+    },
+    {
+      "entry_id": "07429c97132792ab",
+      "title": "保護者連絡アプリ「ミマモルメ」で個人情報を誤配信、教頭 データ誤認",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-02T23:05:09+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Misconfiguration",
+      "summary_preview": "概要保護者連絡アプリ「ミマモルメ」で、個人情報の誤配信が起きた。記事名からは、学校側でのデータ取り違えや確認不足が原因とみられ、意図しない相手に連絡情報が届いた状況が示唆される。外部からの侵入やマルウェアではなく、運用ミスに近い事案として見るのが妥当である。影響は当該学校・学年・配信対象に集中する可能性が高いが、連絡先や児童生徒関連情報が含まれていれば二次…",
+      "article_path": "articles/07429c97132792ab.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/03/55629.html"
+    },
+    {
+      "entry_id": "49c88cf1fb6bf678",
+      "title": "メールサーバへ不正アクセス、佐渡トキファンクラブ会員4,111名のメールアドレスが漏えいした可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-02T23:05:03+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要佐渡トキファンクラブのメールサーバーに不正アクセスがあり、会員4,111名のメールアドレスが漏えいした可能性がある。漏えい対象がメールアドレスに限られるなら直ちに業務停止級ではないが、名簿はそのまま標的型メールやなりすましに転用されやすい。攻撃者は会員向け連絡や関連団体を装って再攻撃を仕掛けやすく、被害は個人情報の流出だけで終わらない可能性が高い。現時…",
+      "article_path": "articles/49c88cf1fb6bf678.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/03/55628.html"
+    },
+    {
+      "entry_id": "32f9c460175b1a94",
+      "title": "Apache Tomcat に複数の脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-02T23:00:20+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Apache Tomcat に関する複数の脆弱性がまとめて扱われている。記事上は個別の悪用条件や修正状況の詳細が与えられておらず、現時点では「どの版が影響を受けるか」「認証前で悪用可能か」「既に実戦利用があるか」は未確認となる。Tomcat は社内システムや業務アプリの基盤に置かれやすく、公開 Web 経由で到達できる構成では侵入点になりやすい。悪用さ…",
+      "article_path": "articles/32f9c460175b1a94.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/03/55627.html"
+    },
+    {
+      "entry_id": "d7db2be4051ae32d",
+      "title": "セイコーソリューションズ製 SkyBridge MB-A100/MB-A110 に OSコマンドインジェクションの脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-02T23:00:17+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要セイコーソリューションズ製 SkyBridge MB-A100/MB-A110 に、OSコマンドインジェクションの脆弱性が公表された。認証前または認証済みの入力点に不備がある場合、外部から渡した値がそのままシステムコマンドとして解釈され、機器上で任意処理に近い挙動へつながるおそれがある。境界装置は社内の複数システムへの入口に置かれやすく、侵害されると設…",
+      "article_path": "articles/d7db2be4051ae32d.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/03/55626.html"
+    },
+    {
+      "entry_id": "ce09146dac9ad33f",
+      "title": "PowerDNS Recursor に複数の脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-02T23:00:15+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要PowerDNS Recursor に複数の脆弱性が見つかり、外部から再帰問い合わせを受けるDNS基盤が影響対象になる。悪用されると、サービス停止、応答改ざん、あるいは再帰処理を起点にした任意コード実行や情報漏えいへつながる余地がある。影響は単一サーバーにとどまらず、社内外の名前解決を担う配置では広範囲に波及しやすい。特に冗長化やキャッシュ共有の設計次…",
+      "article_path": "articles/ce09146dac9ad33f.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/03/55625.html"
+    },
+    {
+      "entry_id": "bfd4f874b0bf2977",
+      "title": "リコー製 Web Image Monitor を実装している複数のレーザープリンタおよび複合機（MFP）に反射型 XSS の脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-02T23:00:11+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要リコー製の Web Image Monitor を実装した複数のレーザープリンタおよび複合機に、反射型 XSS の脆弱性が見つかった。攻撃者は細工した URL を踏ませることで、管理画面上で任意のスクリプトを実行させる入口を作れる。単体では機器の侵害に直結しないこともあるが、管理者のブラウザ経由で セッション窃取 や設定改ざんに発展する余地がある。特に…",
+      "article_path": "articles/bfd4f874b0bf2977.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/03/55624.html"
+    },
+    {
+      "entry_id": "acc8f1e7ee000313",
+      "title": "セキュリティインシデント体験ツール「ZANSIN」の構築方法について解説",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-02T23:00:07+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要この記事は、セキュリティインシデントを体験ベースで学ぶためのツール「ZANSIN」の構築手順を解説している。実際の攻撃事案を再現する演習環境を作ることで、机上の手順確認では拾いにくい判断遅れや連携漏れを洗い出す狙いがある。悪用対象の脆弱性や侵害手口を新たに示す内容ではなく、主眼は訓練基盤の整備にある。したがって直接の緊急対処は小さい一方、運用訓練の質を…",
+      "article_path": "articles/acc8f1e7ee000313.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/03/55623.html"
+    },
+    {
+      "entry_id": "bfa6cd312264766d",
+      "title": "日経225構成企業の217社で情報漏えいを確認",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-02T23:00:03+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要日経225構成企業の217社で情報漏えいが確認されたという報道で、上場大企業群における漏えい事案の広がりを示している。記事タイトルからは漏えい件数の多さが目立つが、原因、侵入経路、漏えい情報の種類はこの入力だけでは確認できない。外部公開の設定不備、認証情報の窃取、委託先経由の侵入など、成立条件が異なる複数の経路があり得るため、同列に扱うと対応を誤る。実…",
+      "article_path": "articles/bfa6cd312264766d.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/03/55622.html"
+    }
+  ]
+}
