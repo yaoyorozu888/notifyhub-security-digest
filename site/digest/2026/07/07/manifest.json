@@ -1,0 +1,396 @@
+{
+  "date": "2026-07-07",
+  "window": {
+    "from": "2026-07-06T06:00:00+09:00",
+    "to": "2026-07-07T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 24
+  },
+  "generated_at_jst": "2026-07-07T06:41:46.148293+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "Microsoft、AIを理由に約4800人規模の人員削減",
+      "source_name": "TechCrunch",
+      "published_at": "2026-07-06T12:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要MicrosoftがXbox部門と商用営業部門を中心に約4800人の人員削減を実施した。AI活用による業務効率化を背景に、ゲームスタジオのスピンオフも計画されている。Vercel CEOの発言ではモデルとエージェントの分離が議論され、ITインフラの再編が進む。Nvidiaの次世代AIラックシステム遅延も報じられ、半導体供給チェーンへの影響が指摘される。…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://techcrunch.com/2026/07/06/microsoft-lays-off-nearly-5000-employees-across-xbox-commercial-sales/",
+      "selection_reason": "IT分野の企業動向として具体的な人員削減とAI関連の再編が確認され、開発者ツールやエンタープライズITへの直接影響が大きいため優先。他の汎用予測レポートではなく当日発表の事例を選定。",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "Microsoft lays off nearly 5,000 employees across Xbox, commercial sales",
+          "url": "https://techcrunch.com/2026/07/06/microsoft-lays-off-nearly-5000-employees-across-xbox-commercial-sales/",
+          "source_type": "news"
+        },
+        {
+          "title": "Microsoft cuts 4,800 jobs, as Xbox unit downsizes",
+          "url": "https://www.cnbc.com/2026/07/06/microsoft-cuts-2point1percent-of-employees-as-xbox-unit-plans-to-spin-studios.html",
+          "source_type": "news"
+        },
+        {
+          "title": "Microsoft joins AI-driven tech layoff wave",
+          "url": "https://www.reuters.com/technology/",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "OpenAI、GPT-5.6 Solの限定プレビューを開始",
+      "source_name": "OpenAI",
+      "published_at": "2026-07-06T18:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要OpenAIが次世代モデルGPT-5.6 Solの限定プレビューを開始した。コーディング、科学、サイバーセキュリティでの性能向上に加え、最先端の安全スタックを搭載する。政府要請により信頼できるパートナー限定で提供し、広範公開は数週間後を予定。Cerebras上での高速推論も実現する。企業は新モデルのセキュリティ要件を確認し、導入計画を調整する必要がある。",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://openai.com/index/previewing-gpt-5-6-sol/",
+      "selection_reason": "AIモデル開発の最新進展として具体的な新モデル発表があり、コーディング・科学・サイバーセキュリティ分野での能力向上と安全対策が明確。政府との調整プロセスも含み、AI規制動向に直結する。",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "Previewing GPT-5.6 Sol: a next-generation model",
+          "url": "https://openai.com/index/previewing-gpt-5-6-sol/",
+          "source_type": "official"
+        },
+        {
+          "title": "AI News Today July 6 2026",
+          "url": "https://www.buildfastwithai.com/blogs/ai-news-today-july-6-2026",
+          "source_type": "news"
+        },
+        {
+          "title": "Episode 213: Weekly AI News Summary",
+          "url": "https://www.youtube.com/watch?v=EcyAY5-Np6A",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "Linuxのbad_epoll脆弱性にPoC公開",
+      "source_name": "SecurityWeek",
+      "published_at": "2026-07-06T15:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Linuxカーネルのbad_epoll脆弱性に対し、PoCエクスプロイトが公開された。root権限取得が可能で、即時パッチ適用が推奨される。影響を受けるディストリビューションは複数あり、サーバー運用者は早急に確認が必要だ。類似のepoll関連脆弱性との混同を避け、バージョン特定を徹底する。運用環境の監視強化が求められる。",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://www.securityweek.com/proof-of-concept-exploit-released-for-linux-bad-epoll-root-access-vulnerability/",
+      "selection_reason": "具体的な脆弱性悪用PoCの公開が確認され、Linux環境のセキュリティ対策に直結する実務影響が大きい。AI関連インシデントではなく純粋なOS脆弱性として選定。",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "Proof-of-Concept Exploit Released for Linux 'bad_epoll' Root Access Vulnerability",
+          "url": "https://www.securityweek.com/proof-of-concept-exploit-released-for-linux-bad-epoll-root-access-vulnerability/",
+          "source_type": "news"
+        },
+        {
+          "title": "Critical Cursor AI IDE flaws",
+          "url": "https://www.securityweek.com/critical-cursor-ai-ide-flaws-could-lead-to-os-level-remote-code-execution/",
+          "source_type": "news"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "b42bb53a6580bc37",
+      "title": "Iran-Linked Hackers Use New Cavern C2 Framework to Target Israeli Organizations",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-06T18:34:26+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要Iran系とみられる攻撃グループが、未確認のモジュラー型C2基盤「Cavern（Cav3rn）」を使い、イスラエルの組織を狙っていると報じられている。標的は主にIT事業者と政府部門で、侵入後の通信や機能追加を柔軟に切り替えられる構成とみられる。こうしたC2は単発の不正通信よりも、持続化、横展開、追加ペイロード配布に向き、被害が1台で終わりにくい。現時点…",
+      "article_path": "articles/b42bb53a6580bc37.html",
+      "original_url": "https://thehackernews.com/2026/07/iran-linked-hackers-use-new-cavern-c2.html"
+    },
+    {
+      "entry_id": "fde26e9a7ab6ef80",
+      "title": "16-Year-Old Linux KVM Flaw Lets Guest VMs Escape to Host on Intel and AMD x86 Systems",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-06T17:37:01+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Linux の KVM にある use-after-free の欠陥を、ゲスト仮想マシン側から突くことで、ホスト側のカーネル状態を壊し、ゲスト脱出につなげられる可能性が示された。対象は Intel と AMD の x86 系で共通する shadow MMU 系の処理にあり、CVE-2026-53359 として追跡されている。公開された概念実証はまずホス…",
+      "article_path": "articles/fde26e9a7ab6ef80.html",
+      "original_url": "https://thehackernews.com/2026/07/16-year-old-linux-kvm-flaw-lets-guest.html"
+    },
+    {
+      "entry_id": "fde1939e326b3ed2",
+      "title": "Threat Actors Probe Gitea Docker Flaw CVE-2026-20896 13 Days After Disclosure",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-06T16:28:59+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Gitea の Docker イメージに存在した CVE-2026-20896 について、公開から13日後の時点で 悪用の試み が観測された。問題は、任意の送信元から来た X-WEBAUTH-USER ヘッダーを信頼してしまい、認証されていない通信 でも権限付き利用者として扱われうる点にある。侵入に成功すると、リポジトリの閲覧・改ざん、機密情報の持ち出…",
+      "article_path": "articles/fde1939e326b3ed2.html",
+      "original_url": "https://thehackernews.com/2026/07/threat-actors-probe-gitea-docker-flaw.html"
+    },
+    {
+      "entry_id": "4b13b2e82fad0046",
+      "title": "⚡ Weekly Recap: Proxy Botnets, Browser Ransomware, AI Agent Tricks, Fake PoC Malware and More",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-06T13:01:14+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Other",
+      "summary_preview": "概要今週の総覧は、普段の業務部品や利用者操作の前提が攻撃面に変わる事例をまとめている。具体的には、家庭向け機器がプロキシ型ボットネットの中継に使われ、デモ用リポジトリや依存関係から不正なコードが入り込む流れ、認証やリセット手順の甘さ、ブラウザの権限確認、AIエージェントへの誤誘導が並ぶ。いずれも単独の脆弱性というより、信頼してよいとみなしていた境界が崩れる…",
+      "article_path": "articles/4b13b2e82fad0046.html",
+      "original_url": "https://thehackernews.com/2026/07/monday-recap-proxy-botnets-browser.html"
+    },
+    {
+      "entry_id": "e2466d954bf725b7",
+      "title": "How to Evaluate an AI SOC Platform in 2026: 6 Capabilities That Separate Leaders from Bolt-On AI solutions",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-06T11:30:02+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要本稿は、AI SOCプラットフォームを2026年にどう見極めるかを整理し、見た目の機能差ではなく、運用成果を左右する条件に焦点を当てている。対象は、既存SIEMに後付けされたチャット機能から、検知・トリアージ・調査・対応を自律的に回すエージェント型基盤まで幅広い。悪用記事ではないため直接の侵害話ではないが、導入判断を誤ると、検知精度の過信や対応自動化の…",
+      "article_path": "articles/e2466d954bf725b7.html",
+      "original_url": "https://thehackernews.com/2026/07/how-to-evaluate-ai-soc-platform-in-2026.html"
+    },
+    {
+      "entry_id": "fe99a648328cf8eb",
+      "title": "Suspected China-Nexus Hackers Use Fake Indian Tax Filing Utility to Deploy DcRAT",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-06T10:58:16+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要インドの納税者、税務関係者、企業の経理部門を狙い、インド税務当局を装ったフィッシングで遠隔操作型トロイの木馬 DcRAT を配布した疑いが報じられた。攻撃は複数段階で進み、偽の税務申告用ユーティリティを使って利用者に実行させる流れが中心となる。目的は端末上の機微情報の窃取と、感染端末の遠隔操作にあるとみられる。中国関連と疑われる活動 समूहとの関連が…",
+      "article_path": "articles/fe99a648328cf8eb.html",
+      "original_url": "https://thehackernews.com/2026/07/suspected-china-nexus-hackers-use-fake.html"
+    },
+    {
+      "entry_id": "3d180fdd25cfd4c2",
+      "title": "New TrojPix Attack Leaks Data From Air-Gapped Systems via Video Cable Emissions",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-06T08:50:54+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Shandong University の研究で、ネットワークから隔離された端末から情報を持ち出す新しい手法 TrojPix が示された。画面のピクセルを人間には見えない形で変調し、その映像信号が ビデオケーブル由来の電磁放射 として漏れる点を受信して復号する仕組みになる。端末側にマルウェアが既に存在することが前提で、隔離だけで流出を防げないことを示す…",
+      "article_path": "articles/3d180fdd25cfd4c2.html",
+      "original_url": "https://thehackernews.com/2026/07/new-trojpix-attack-leaks-data-from-air.html"
+    },
+    {
+      "entry_id": "772b9500d5ab359a",
+      "title": "New Java-Based QuimaRAT MaaS Built to Run on Windows, Linux, and macOS",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-06T08:13:33+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要LevelBlue が、Javaベースで Windows、Linux、macOS をまたいで動作する新しい RAT QuimaRAT を確認した。配布は MaaS 形態とされ、月額から買い切りまでの料金設定が示されているため、攻撃者の参入障壁を下げる設計がうかがえる。悪用の中心は遠隔操作、情報窃取、初期侵入後の持続化とみられ、単体被害よりも組織内の横展…",
+      "article_path": "articles/772b9500d5ab359a.html",
+      "original_url": "https://thehackernews.com/2026/07/new-java-based-quimarat-maas-built-to.html"
+    },
+    {
+      "entry_id": "b9146814ca76e521",
+      "title": "Opera GX Flaw Let Malicious Sites Auto-Install Mods to Steal Data From Visited Pages",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-06T07:27:50+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Opera GX に、悪意あるサイトが拡張機能を自動導入させる不具合が見つかり、閲覧中のページから特定データを抜き取れる状態になっていた。研究者は、クリック不要の単一訪問で、ログイン済みの Gmail から氏名や完全なメールアドレス相当の情報を再構成できることを示した。影響はブラウザ内で見えている内容に限られる可能性が高いが、メール、社内ポータル、Sa…",
+      "article_path": "articles/b9146814ca76e521.html",
+      "original_url": "https://thehackernews.com/2026/07/opera-gx-flaw-let-malicious-sites-auto.html"
+    },
+    {
+      "entry_id": "63cf06e0aba39c55",
+      "title": "SkillCloak Lets Malicious AI Agent Skills Evade Static Scanners with Self-Extracting Packing",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-06T06:33:56+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要AI コーディングエージェント向けの追加機能である skills を、静的スキャナが見逃しやすい形に変えて検査回避する手法が報告された。研究チームは、機能を保ったまま見た目だけを変えることで、試験した検査を9割超の頻度で回避できたとしている。悪用の入口は、エージェントに読み込ませる skills 配布物や更新経路にあり、組織内で許可した拡張を装って侵入…",
+      "article_path": "articles/63cf06e0aba39c55.html",
+      "original_url": "https://thehackernews.com/2026/07/new-skillcloak-technique-lets-malicious.html"
+    },
+    {
+      "entry_id": "a5acfe91115ecc3b",
+      "title": "RCS and DNS: The NAPTR Record, (Mon, Jul 6th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-07-06T13:35:58+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要本記事は、RCS が DNS の NAPTR レコード を使って相手先や経路を見つける仕組みに触れ、SMS とは異なる前提で動く点を整理している。RCS は iOS と Android の更新を背景に利用が広がり、暗号化や署名は任意機能として提供される一方、接続確立や配送には SIP などの仕組みが関わる。攻撃者の視点では、端末そのものよりも、キャリア…",
+      "article_path": "articles/a5acfe91115ecc3b.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33124"
+    },
+    {
+      "entry_id": "11c75f51a4756d11",
+      "title": "ISC Stormcast For Monday, July 6th, 2026 https://isc.sans.edu/podcastdetail/9994, (Mon, Jul 6th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-07-06T11:36:06+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要SANS ISC の Stormcast は、直近の観測や公開情報を短く整理する定例配信で、今回は特定の単一障害ではなく複数の話題を扱う形式とみられる。入力元の要約が空のため、詳細な個別事象は確認できず、何が報じられたか と どの製品・脆弱性が対象か は未確認となる。こうした配信は、既知の脆弱性や攻撃動向を早期に拾う手がかりになり、露出機器や運用中の設…",
+      "article_path": "articles/11c75f51a4756d11.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33122"
+    },
+    {
+      "entry_id": "edc89d0f58ebcf94",
+      "title": "VU#213560: Tenda firmware (multiple versions) contains hidden authentication backdoor",
+      "source_name": "CERT/CC",
+      "category": "reporting",
+      "published_at": "2026-07-06T19:22:18+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Tendaの複数のファームウェアに、未公開の認証バックドアが含まれていることが報告された。CVE-2026-11405として追跡され、Web管理画面のパスワード検証を回避して管理者権限を取得できる。攻撃者は有効な資格情報を持たなくても設定変更、セキュリティ機能停止、ネットワーク経路の改変を行えるため、家庭用機器の問題に見えても組織内LANの足場になりや…",
+      "article_path": "articles/edc89d0f58ebcf94.html",
+      "original_url": "https://kb.cert.org/vuls/id/213560"
+    },
+    {
+      "entry_id": "c04002b4e4721416",
+      "title": "VU#828543: HP Deskjet 2800 Printer Series Webservers contain Missing Authorization Vulnerability",
+      "source_name": "CERT/CC",
+      "category": "reporting",
+      "published_at": "2026-07-06T17:59:25+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要HP Deskjet 2800 系列の一部ファームウェアに、認可欠如の脆弱性が見つかった。ブラウザ画面では管理者認証が必要でも、バックエンドの API を直接呼ぶと認証なしで情報を取得できる点が問題となる。Wi‑Fi Direct のSSIDと平文パスフレーズ、管理設定、SNMP 構成、機器識別情報などが漏えいする。攻撃者は機器の近傍ネットワークに到達…",
+      "article_path": "articles/c04002b4e4721416.html",
+      "original_url": "https://kb.cert.org/vuls/id/828543"
+    },
+    {
+      "entry_id": "732190547a3136cf",
+      "title": "Tenable Blog 第2回「Tenable が Anthropic の Project Glasswing に参加し、AI 時代におけるサイバー防御の強化を推進」",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-05T23:15:02+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要Project Glasswing への Tenable の参加を伝える内容で、AI 時代のサイバー防御を強化する取り組みが主題となっている。この記事自体は脆弱性公表や侵害報告ではなく、製品・研究連携に関する話題に近い。現時点の入力情報だけでは、具体的に何の検知能力や防御機能が追加されるのか、既存製品へいつ反映されるのかは未確認となる。攻撃者による直接…",
+      "article_path": "articles/732190547a3136cf.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/06/55642.html"
+    },
+    {
+      "entry_id": "67c28ea8af10e7e4",
+      "title": "エーアイセキュリティラボ共催でオンラインセミナー「組織・人・システムの死角をなくす セキュリティリスクの可視化」を 7 / 8 開催",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-05T23:10:02+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要この記事は、オンラインセミナーの開催案内であり、脆弱性や侵害事案そのものを伝える内容ではない。取り上げるテーマは、組織・人・システムにまたがる死角の可視化で、資産把握、設定差分、権限の偏り、運用上の見落としを減らす狙いがある。攻撃者はまず、管理が届いていない領域や例外運用を足場にするため、可視化の弱さはそのまま侵入口の増加につながる。影響は単一システム…",
+      "article_path": "articles/67c28ea8af10e7e4.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/06/55641.html"
+    },
+    {
+      "entry_id": "66cf513bc98b5007",
+      "title": "常石グループへのフィッシングメールで認証情報が漏えい、再発防止策を発表",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-05T23:05:08+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Credential Theft",
+      "summary_preview": "概要常石グループは、フィッシングメールを起点として認証情報が漏えいした事案を公表し、再発防止策を示した。攻撃者は偽の受信者認証画面や業務連絡を装い、利用者に資格情報を入力させる形で侵入の足場を得た可能性が高い。漏えいした情報が単独のアカウントにとどまるのか、メール転送・社内システム・SaaS連携へ波及したのかは、本文からは未確認である。現時点では、被害の中…",
+      "article_path": "articles/66cf513bc98b5007.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/06/55640.html"
+    },
+    {
+      "entry_id": "c972a249d7011bea",
+      "title": "日本資産総研へランサムウェア攻撃、専門家調査で安全性を確認",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-05T23:05:05+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要日本資産総研がランサムウェア攻撃を受けたが、専門家による調査の結果、現時点で安全性が確認されたという内容である。記事からは、暗号化や情報漏えいの有無、侵入経路、初動の隔離範囲がどこまで及んだかは読み取れない。攻撃者は一般に、侵入後に権限を広げ、重要サーバーや共有領域を暗号化して業務停止を狙うため、単発の感染か横展開を伴う侵害かで影響の大きさが変わる。今…",
+      "article_path": "articles/c972a249d7011bea.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/06/55639.html"
+    },
+    {
+      "entry_id": "4785d54dcd92f97e",
+      "title": "北九州市が PDF 黒塗り処理の自主点検実施 ～ 再発防止策として AI 活用のチェック機能導入も",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-05T23:05:01+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要北九州市が、PDFの黒塗り処理に関する自主点検を実施し、再発防止策としてAI活用のチェック機能を導入すると報じられた。公開資料の編集やマスキングは、見た目上は隠せていても、メタデータや元データの残存、レイヤーの分離によって情報が復元されることがある。悪用の中心は外部攻撃というより、公開後に機微情報を拾い直す情報漏えいで、住民情報、担当者名、内部手順など…",
+      "article_path": "articles/4785d54dcd92f97e.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/06/55638.html"
+    },
+    {
+      "entry_id": "c4bbc04cd3aafb01",
+      "title": "スリーシェイクのエンジニア 2 名が「2026 Japan AWSアワード」に選出",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-05T23:00:18+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要この記事は、スリーシェイクのエンジニア2名が「2026 Japan AWSアワード」に選出されたという人事・表彰系の内容で、脆弱性や侵害の報告ではない。セキュリティ事案そのものではなく、AWS利用やクラウド運用に関する技術力・実績が評価されたニュースとして読むのが妥当である。攻撃に直結する情報は含まれておらず、CSIRTの即応優先度は低い。顧客環境への…",
+      "article_path": "articles/c4bbc04cd3aafb01.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/06/55637.html"
+    },
+    {
+      "entry_id": "0e601bc9762bf9e5",
+      "title": "ファイル転送時に個人情報を自動検知、ソリトン「FileZen S」の新機能で誤送信防止",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-05T23:00:14+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要FileZen Sに、ファイル転送時の個人情報の自動検知を補助する新機能が追加された。狙いは、送信前の確認漏れや宛先誤りによる誤送信を減らし、運用者と利用者の双方で最終確認をしやすくする点にある。想定される悪用は攻撃者による直接侵入というより、日常運用の隙を突いた情報持ち出しや、正規業務を装った送信ミスの誘発に近い。影響は個人情報を含む文書の外部送信、…",
+      "article_path": "articles/0e601bc9762bf9e5.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/06/55636.html"
+    },
+    {
+      "entry_id": "574a8d6f7b97d04f",
+      "title": "国内 ISP の認証情報を不正利用して送信されたフィッシングメールに注意呼びかけ",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-05T23:00:11+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Phishing",
+      "summary_preview": "概要国内の ISP に関連する認証情報の不正利用を起点に、フィッシングメールが送信されたとして注意喚起が出ている。攻撃者は正規アカウントを使うことで送信元の信頼性を装い、受信者の警戒を下げる狙いがある。影響は単なる迷惑メールにとどまらず、社内の受信者が偽サイトへ誘導されると資格情報の窃取や二次侵害につながる可能性がある。現時点では、侵害された認証情報の入手…",
+      "article_path": "articles/574a8d6f7b97d04f.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/06/55635.html"
+    },
+    {
+      "entry_id": "15e75bdf3f4984ee",
+      "title": "Little Orbit 製 GamersFirst Anti-Cheat に複数のローカル特権昇格の脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-05T23:00:07+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Little Orbit 製 GamersFirst Anti-Cheat に、複数のローカル特権昇格の脆弱性が報告された。悪用には端末上でのローカル実行が前提となるが、ゲーム端末や運用端末に入り込んだ攻撃者が権限を上げ、SYSTEM 権限相当で処理を実行できる余地がある。単体では外部から即座に侵入される種類ではない一方、初期侵害後の定着や防御回避の足…",
+      "article_path": "articles/15e75bdf3f4984ee.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/06/55634.html"
+    },
+    {
+      "entry_id": "21c267fb61e66656",
+      "title": "ブロードコム 独占禁止法違反と認定するに足る事実認められず ～ 公正取引委員会",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-05T23:00:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要公正取引委員会は、ブロードコムに関して独占禁止法違反と認定するに足る事実は確認できなかったとしている。この記事はセキュリティ脆弱性や侵害事案ではなく、調達やライセンス条件をめぐる競争政策上の話題に当たる。CSIRTの直接対応対象ではないが、製品更新や保守契約の条件変更が運用部門の判断を左右するため、間接的な影響はあり得る。たとえば仮想化基盤やネットワー…",
+      "article_path": "articles/21c267fb61e66656.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/06/55633.html"
+    }
+  ]
+}
