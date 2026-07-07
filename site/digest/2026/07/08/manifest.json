@@ -1,0 +1,518 @@
+{
+  "date": "2026-07-08",
+  "window": {
+    "from": "2026-07-07T06:00:00+09:00",
+    "to": "2026-07-08T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 35
+  },
+  "generated_at_jst": "2026-07-08T06:41:46.866622+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "CloudflareがAIエージェント向けコンテンツ課金ゲートウェイを発表",
+      "source_name": "X投稿および関連報道",
+      "published_at": "2026-07-07T21:41:18+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要CloudflareがAIエージェント向けのMonetization Gatewayを発表した。ウェブページやAPI、データフィードに価格タグを設定し、エージェントがstablecoinで即時決済してコンテンツを取得可能になる。従来の仲介者を排除したピアツーピア方式で、サブ秒レベルの取引を実現する。開発者や企業は自社コンテンツをスキーマ完備・機械可読に…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://x.com/PixendaAi/status/2074609729943543870",
+      "selection_reason": "IT分野の最新動向として、AIエージェントがコンテンツを直接購入する新インフラが登場し、開発者や企業の実務に直結する具体的な製品発表であるため他の候補より新規性が高い",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "PiXENDA X投稿",
+          "url": "https://x.com/PixendaAi/status/2074609729943543870",
+          "source_type": "x"
+        },
+        {
+          "title": "Cloudflare Monetization Gateway関連情報",
+          "url": "https://www.buildfastwithai.com/blogs/ai-news-today-july-7-2026",
+          "source_type": "web"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "イリノイ州知事がAI規制法案に署名",
+      "source_name": "US News",
+      "published_at": "2026-07-07T13:30:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要JB Pritzkerイリノイ州知事がAIリスク軽減を目的とした画期的な規制法案に署名した。カリフォルニア州やニューヨーク州の類似法をモデルに、州主導の全国枠組み形成を後押しする。企業はAIシステムの透明性やリスク評価が義務化される可能性が高まる。連邦レベルでの規制不在を補う動きとして注目され、AI導入時のコンプライアンス対応が急務となる。州ごとの規制…",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://www.usnews.com/news/best-states/new-york/articles/2026-07-07/pritzker-signs-landmark-ai-regulation-bill-that-aims-to-mitigate-risks",
+      "selection_reason": "AI分野の規制動向として、州レベルで具体的な法案署名が行われ、連邦規制不在下での実務影響が大きいため優先",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "Pritzker Signs Landmark AI Regulation Bill",
+          "url": "https://www.usnews.com/news/best-states/new-york/articles/2026-07-07/pritzker-signs-landmark-ai-regulation-bill-that-aims-to-mitigate-risks",
+          "source_type": "news"
+        },
+        {
+          "title": "AI News Today July 7 2026",
+          "url": "https://www.buildfastwithai.com/blogs/ai-news-today-july-7-2026",
+          "source_type": "web"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "初の完全自律型AIランサムウェアJADEPUFFERの分析公開",
+      "source_name": "Build Fast with AI",
+      "published_at": "2026-07-07T04:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要Sysdigが初の完全自律型AIランサムウェアJADEPUFFERの分析を公開した。人間の操作なしで600以上のペイロードを生成・展開する。AnthropicがOpenAIを収益で上回ったニュースと並び、AIの二面性が浮き彫りになる。セキュリティ担当者はAI駆動攻撃への対策を急ぐ必要がある。従来の検知手法では対応しきれない速度と規模が特徴で、防御戦略の…",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://www.buildfastwithai.com/blogs/ai-news-today-july-7-2026",
+      "selection_reason": "Cybersecurity分野でAIを悪用した新種攻撃の詳細分析が公開され、防御実務への影響が大きいため選定",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "AI News Today July 7 2026",
+          "url": "https://www.buildfastwithai.com/blogs/ai-news-today-july-7-2026",
+          "source_type": "web"
+        },
+        {
+          "title": "Sysdig分析報告",
+          "url": "https://www.buildfastwithai.com/blogs/ai-news-today-july-7-2026",
+          "source_type": "web"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "31760c2c839a51d5",
+      "title": "CVE-2026-48908 JoomShaper SP Page Builder Unrestricted Upload of File with Dangerous Type Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-07-07T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CVE-2026-48908は、JoomShaperのSP Page Builderにおける危険な種類のファイルを制限なくアップロードできる脆弱性で、任意コード実行やWebシェル配置につながる可能性が高い。CISA KEVに載っているため、単なる理論上の欠陥ではなく、実際に悪用が想定される段階に入っている。攻撃者は管理画面やアップロード機能を足掛かりに…",
+      "article_path": "articles/31760c2c839a51d5.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "4fedcafe2da1be64",
+      "title": "CVE-2026-55255 Langflow Authorization Bypass Through User-Controlled Key Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-07-07T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CVE-2026-55255 は Langflow における認可回避で、利用者が制御できるキーを悪用して本来は見えない機能や操作に到達できる可能性がある。認証そのものよりも、認可の境界が崩れる点が問題で、設定やワークフロー、内部データへのアクセスに波及しやすい。攻撃者は低い権限や一部の公開機能から入り、権限のない操作を連鎖させて情報閲覧や改ざんへ進む余…",
+      "article_path": "articles/4fedcafe2da1be64.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "23377024345be7d5",
+      "title": "CVE-2026-56290 Joomlack Page Builder Improper Access Control Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-07-07T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CVE-2026-56290 は、Joomlack の Page Builder にあるアクセス制御不備を突く脆弱性で、CISA KEV に掲載されている点が重要になる。認証が不十分なまま本来触れない操作やデータに到達できる構成があると、攻撃者は権限の低い入口から管理系の機能や設定情報へ近づける可能性がある。影響は単発の表示改ざんにとどまらず、権限昇格…",
+      "article_path": "articles/23377024345be7d5.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "717579e67146e484",
+      "title": "CVE-2026-48282 Adobe ColdFusion Path Traversal Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-07-07T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Adobe ColdFusion に CVE-2026-48282 の パストラバーサル 脆弱性があり、CISA KEV に掲載されている。掲載済みという事実から、単なる理論上の欠陥ではなく、実際の悪用可能性を前提に対応を急ぐべき段階に入っている。攻撃者は制御されていないパス解釈を利用して、本来アクセスできないファイルを読み取る、または配置済みの設定や…",
+      "article_path": "articles/717579e67146e484.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "8d2c79c046604021",
+      "title": "RedWing MaaS Packages Android Bank Fraud as a Telegram Rental Service",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-07T17:10:15+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要RedWing と呼ばれる Android向けマルウェア運用 が、Telegram上で レンタル型の銀行詐欺サービス として提供されている。低い技術力の実行役でも、被害端末を乗っ取り、銀行の認証情報と ワンタイムコード を奪う流れを組み立てやすい点が特徴となる。端末内の画面操作や通知の取得を悪用できれば、口座侵入から送金まで一気通貫で悪用される余地があ…",
+      "article_path": "articles/8d2c79c046604021.html",
+      "original_url": "https://thehackernews.com/2026/07/redwing-maas-packages-android-bank.html"
+    },
+    {
+      "entry_id": "889f17011b8ac4a1",
+      "title": "Rogue Agent Flaw Could Have Let Attackers Hijack Google Dialogflow CX Chatbots",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-07T16:37:33+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Google Dialogflow CX の Code Block 機能に、同一 Google Cloud プロジェクト内の他の有効エージェントへ影響が波及しうる欠陥が見つかった。攻撃者は、少なくとも1つの対象エージェントに対する編集権限を持っている前提で、別のチャットボットへ操作を広げられる可能性があった。悪用されると、ライブ会話の閲覧、利用者入力の…",
+      "article_path": "articles/889f17011b8ac4a1.html",
+      "original_url": "https://thehackernews.com/2026/07/rogue-agent-flaw-could-have-let.html"
+    },
+    {
+      "entry_id": "e7a7df1f608c24ec",
+      "title": "DEBULL Tooling Abuses Microsoft Device-Code Flow to Target M365 Accounts",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-07T15:14:14+00:00",
+      "impact_level": "High",
+      "threat_type": "Phishing",
+      "summary_preview": "概要ZeroBECの観測によると、Microsoft 365のデバイスコードフローを悪用したフィッシングが、6月下旬から7月上旬にかけて確認された。攻撃者は偽のパスワード入力画面ではなく、共同作業を装う誘導で利用者を正規のMicrosoftログイン手順へ進ませ、そこで表示されるコード入力を踏ませる形を取る。これにより、利用者が正規の認証を完了すると、攻撃者…",
+      "article_path": "articles/e7a7df1f608c24ec.html",
+      "original_url": "https://thehackernews.com/2026/07/debull-tooling-abuses-microsoft-device.html"
+    },
+    {
+      "entry_id": "128a453bffb6564c",
+      "title": "Public GitHub Issue Could Trick GitHub Agentic Workflows Into Leaking Private Repo Data",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-07T14:04:50+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要公開 GitHub Issue を起点に、GitHub のエージェント型ワークフローを誘導して組織の非公開リポジトリ内容を外部へ漏えいさせる手口が示された。攻撃者は資格情報を奪う必要がなく、公開リポジトリに通常の Issue を投げるだけでよい点が厄介になる。成立条件は、対象組織がエージェントに複数リポジトリの読み取り権限を与えていることにあり、権限設…",
+      "article_path": "articles/128a453bffb6564c.html",
+      "original_url": "https://thehackernews.com/2026/07/public-github-issue-could-trick-github.html"
+    },
+    {
+      "entry_id": "d3b1640ab0c13737",
+      "title": "Court Filing Reveals Windows Device ID Helped FBI Trace Alleged Scattered Spider Hacker",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-07T13:27:20+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要米国の連邦訴追資料が、Windows の永続的な端末識別子を手掛かりに、Scattered Spider とされる人物を高級宝飾小売店への侵入事件へ結び付けた。記事の焦点は新たな脆弱性ではなく、端末由来の追跡情報が捜査と帰属認定に使われた点にある。攻撃者は侵入後も同じ識別子が残る端末や仮想環境を使うことで、複数のアカウントや活動をつなげられる可能性があ…",
+      "article_path": "articles/d3b1640ab0c13737.html",
+      "original_url": "https://thehackernews.com/2026/07/court-filing-reveals-windows-device-id.html"
+    },
+    {
+      "entry_id": "71db44c9f9dbd26c",
+      "title": "Writer AI Flaw Could Let Agent Previews Leak Session Tokens Across Tenants",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-07T13:27:09+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Writer の企業向け生成AI基盤に、セッション分離の不備が見つかり、別テナントのセッション・トークン流出につながる脆弱性が修正済みと報じられた。攻撃は 1回の操作で成立しうるとされ、外部の無権限者が利用開始点を得ると、他組織の AI 利用環境へ横取りできる余地が生まれる。想定される影響は、会話履歴やエージェント設定の閲覧、連携先への不正操作、組織内…",
+      "article_path": "articles/71db44c9f9dbd26c.html",
+      "original_url": "https://thehackernews.com/2026/07/writer-ai-flaw-could-let-agent-previews.html"
+    },
+    {
+      "entry_id": "f0e07270fa439741",
+      "title": "What Changes When Your Software Supply Chain Includes AI Writing Your Code?",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-07T11:30:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要本記事は、AIがコード生成やビルド補助に入ったことで、従来のソフトウェア供給網の見方が変わる点を扱う。従来は依存関係や第三者ライブラリの確認が中心だったが、今後はAIが出力したコードそのものや、その学習・推論の前提まで考慮する必要がある。悪用の入口は、生成コードに紛れた不正なロジック、危険な依存追加、レビュー漏れの誘発などに広がる可能性がある。影響は単…",
+      "article_path": "articles/f0e07270fa439741.html",
+      "original_url": "https://thehackernews.com/2026/07/what-changes-when-your-software-supply.html"
+    },
+    {
+      "entry_id": "f3fe6cc789cb4078",
+      "title": "Suspected China-Aligned Hackers Exploit Roundcube Flaws Against Universities",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-07T09:10:51+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要米国とカナダの大学の物理・工学系部門が使う Roundcube Webmail に対し、中国関与が疑われる脅威活動群 が新たな攻撃を仕掛けたとされる。攻撃では、すでに修正済みの 重大脆弱性 を悪用し、認証情報の窃取を狙っている。Webメールは学内外の連絡や共有基盤に直結するため、奪取された資格情報はメール閲覧にとどまらず、他サービスへの横展開やなりすま…",
+      "article_path": "articles/f3fe6cc789cb4078.html",
+      "original_url": "https://thehackernews.com/2026/07/suspected-china-aligned-hackers-exploit.html"
+    },
+    {
+      "entry_id": "3159575686f118ab",
+      "title": "CERT/CC Warns of Hidden Admin Backdoor in Tenda Router Firmware",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-07T06:40:47+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要複数のTenda製ルーターのファームウェアに、文書化されていない認証回避用のバックドアが埋め込まれているとCERT/CCが警告した。攻撃者は CVE-2026-11405 を使ってWeb管理画面のパスワード検証を迂回し、管理者権限を得られる可能性がある。対象が境界機器であるため、侵害されると設定改変、通信経路の監視、社内への足場化に広がりやすい。特に外…",
+      "article_path": "articles/3159575686f118ab.html",
+      "original_url": "https://thehackernews.com/2026/07/certcc-warns-of-hidden-admin-backdoor.html"
+    },
+    {
+      "entry_id": "d297d1330aaf3cce",
+      "title": "BeyondTrust Patches Critical Auth Bypass Flaws in Remote Support and PRA",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-07T05:16:51+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要BeyondTrust の Remote Support と Privileged Remote Access に対して、認証前の欠陥を含む 重要度の高い修正が公開された。成功すると、外部から認証なしで対象装置を制御できる可能性があるため、単なる設定不備ではなく、遠隔保守基盤そのものの乗っ取りにつながりやすい。攻撃者はここを起点に、接続先の端末や管理操…",
+      "article_path": "articles/d297d1330aaf3cce.html",
+      "original_url": "https://thehackernews.com/2026/07/beyondtrust-patches-critical-auth.html"
+    },
+    {
+      "entry_id": "6614adad38fa7b7d",
+      "title": "More Odd DNS Records: NIMLOC, (Tue, Jul 7th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-07-07T18:09:04+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要この記事は、DNSログに現れる珍しいレコード種別のひとつであるNIMLOCを取り上げ、通常の名前解決とは異なる見え方を整理している。直接的な脆弱性報告ではなく、DNSの観測・解析で目にする特殊な問い合わせの意味を確認する内容になっている。攻撃者がこれを使って即座に侵入する、という話ではないが、ログ上で異常な名前解決や調査活動を見分けるうえでは役に立つ。…",
+      "article_path": "articles/6614adad38fa7b7d.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33128"
+    },
+    {
+      "entry_id": "638cecd0a6c286ec",
+      "title": "ISC Stormcast For Tuesday, July 7th, 2026 https://isc.sans.edu/podcastdetail/9996, (Tue, Jul 7th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-07-07T02:00:02+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要SANS ISC の Stormcast で、7月7日時点の観測や注意喚起を短く整理した配信とみなせる。本文が付与されていないため、個別の脆弱性名や悪用手口は確認できず、何が焦点かは未確認のまま残る。一般にこの種の配信は、広く出回る露出、スキャン増加、既知手口の再活性化を手掛かりに、攻撃者が狙いやすい面を先回りして示す役割を持つ。実務上は、該当製品や公…",
+      "article_path": "articles/638cecd0a6c286ec.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33126"
+    },
+    {
+      "entry_id": "e796e8e721fd24ba",
+      "title": "SharpHound Recon Attack – How AI enhanced the threat hunt",
+      "source_name": "Cisco Security Blog",
+      "category": "reporting",
+      "published_at": "2026-07-07T17:59:20+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要Cisco Security Blog は、Cisco Live Americas 2026 の Agentic SOC において、LDAP の不審な活動を人手と AI の両方で調査した事例を紹介している。内容の主眼は侵害そのものの報告ではなく、SharpHound による AD 側の探索を疑う挙動をどう見つけ、どう絞り込むかにある。攻撃者は認証情報の…",
+      "article_path": "articles/e796e8e721fd24ba.html",
+      "original_url": "https://blogs.cisco.com/security/clamer-soc-2026-sharphound/"
+    },
+    {
+      "entry_id": "b2e8e12a99386c0e",
+      "title": "Machine Speed, Human Judgement: How AI Changed the SOC in 2026",
+      "source_name": "Cisco Security Blog",
+      "category": "reporting",
+      "published_at": "2026-07-07T17:59:16+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要Cisco Security Blog が、Cisco Live 2026 の SOC での運用を題材に、AI、自動化、エージェント型ワークフローが監視・分析・対応の流れをどう変えたかを紹介している。記事の主眼は脆弱性の告知ではなく、アラート処理やトリアージを機械速度に寄せつつ、人の判断をどこに残すかという運用設計にある。攻撃者がAIを使うかどうかにか…",
+      "article_path": "articles/b2e8e12a99386c0e.html",
+      "original_url": "https://blogs.cisco.com/security/machine-speed-human-judgement/"
+    },
+    {
+      "entry_id": "f700ebd4f44db807",
+      "title": "Elevating Expertise in the SOC",
+      "source_name": "Cisco Security Blog",
+      "category": "reporting",
+      "published_at": "2026-07-07T17:59:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要Cisco Security Blog の記事は、Cisco Live AMER 2026 において SOC の Tier One 分析官が Splunk Security と Endace を使い、一次対応だけで終えずに追加調査へ進む運用を紹介している。扱っているのは脆弱性情報ではなく、検知後の深掘りと判断精度の向上に関する話題になる。攻撃の成立条件…",
+      "article_path": "articles/f700ebd4f44db807.html",
+      "original_url": "https://blogs.cisco.com/security/elevating-expertise-with-lessons-learned/"
+    },
+    {
+      "entry_id": "53aa8d8b44b62e5a",
+      "title": "Educate at Event Speed: Cisco Live Security Operations Center",
+      "source_name": "Cisco Security Blog",
+      "category": "reporting",
+      "published_at": "2026-07-07T17:58:48+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要Cisco Live AMER 2026 で、Cisco の Event SOC を実運用の場として見せ、見学ツアー、登壇、展示会場での対話を通じて教育に転用した記事になる。扱っているのは脆弱性対応や侵害報告ではなく、SOC 運営の考え方と現場共有に近い内容になる。直接の攻撃手口は示されていないが、イベント規模の組織では、監視設計、ログの見せ方、初動判…",
+      "article_path": "articles/53aa8d8b44b62e5a.html",
+      "original_url": "https://blogs.cisco.com/security/educate-event-speed-cisco-live-soc/"
+    },
+    {
+      "entry_id": "38f6e75222ad87df",
+      "title": "What Working the Cisco Live SOC Taught Me About AI, Detection, and Response",
+      "source_name": "Cisco Security Blog",
+      "category": "reporting",
+      "published_at": "2026-07-07T17:58:43+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要Cisco Live の SOC での運用経験をもとに、AI、Splunk ES、XDR を使った調査高速化と検知・対応の改善点を整理した記事である。脅威そのものの新規性を示す内容ではなく、実運用の現場で分析の初動をどう短縮し、誤検知や見落としをどう減らすかに焦点がある。攻撃者がこの種の環境を直接狙うというより、検知ルールの整備不足や調査手順のばらつき…",
+      "article_path": "articles/38f6e75222ad87df.html",
+      "original_url": "https://blogs.cisco.com/security/clamer-soc-2026-pm-experience/"
+    },
+    {
+      "entry_id": "7ad3ddacedad2095",
+      "title": "Cable to Cloud – A Product Engineer’s Journey Through the Cisco Live AMER 2026 SOC",
+      "source_name": "Cisco Security Blog",
+      "category": "reporting",
+      "published_at": "2026-07-07T17:58:37+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要Cisco Security Blog が、Cisco Live AMER 2026 での SOC in a Box の組み立てから撤収までを、製品エンジニアの視点で紹介している。内容はイベント運営の記録に近く、脆弱性の公表や侵害事案そのものを扱う記事ではない。攻撃に直結する手口や被害範囲の拡大条件は示されておらず、実害の評価材料は限定的である。とはい…",
+      "article_path": "articles/7ad3ddacedad2095.html",
+      "original_url": "https://blogs.cisco.com/security/clamer-soc-2026-engineer-journey/"
+    },
+    {
+      "entry_id": "196b8e2f84745524",
+      "title": "The Experience Dividend: How Better Digital Experience Protects Revenue, Trust, and Growth",
+      "source_name": "Cisco Security Blog",
+      "category": "reporting",
+      "published_at": "2026-07-07T17:54:54+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要本記事は、Cisco Security Blog が Agentic SOC の文脈で、デジタル体験の改善が売上・信頼・成長の保護につながると論じた内容を紹介している。扱っているのは脆弱性の速報ではなく、証拠に基づくAIワークフロー、人手での妥当性確認、統合されたテレメトリを組み合わせて防御判断の質を上げる考え方に近い。攻撃の成立条件や具体的な悪用手口…",
+      "article_path": "articles/196b8e2f84745524.html",
+      "original_url": "https://blogs.cisco.com/security/clamer-soc-2026-dividend/"
+    },
+    {
+      "entry_id": "0dcddbe3ddd7f6f4",
+      "title": "AIM: Building an Agentic Tier-2 SOC Analyst at Cisco Live AMER 2026",
+      "source_name": "Cisco Security Blog",
+      "category": "reporting",
+      "published_at": "2026-07-07T17:54:52+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要Cisco Security Blog は、Agentic Incident Mate と呼ぶ仕組みで、Cisco XDR、EndaceProbe、Splunk Enterprise Security をまたいだインシデント初動の切り分けを自動化する構想を示した。内容は脆弱性告知ではなく、Tier-2 相当の調査報告を数分で返す運用支援の紹介に近い。攻…",
+      "article_path": "articles/0dcddbe3ddd7f6f4.html",
+      "original_url": "https://blogs.cisco.com/security/clamer-soc-2026-agentic-tier-2/"
+    },
+    {
+      "entry_id": "52a81fc09f23e276",
+      "title": "Building the Agentic SOC at Cisco Live Americas 2026",
+      "source_name": "Cisco Security Blog",
+      "category": "reporting",
+      "published_at": "2026-07-07T17:54:43+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要Cisco Security Blogは、Cisco Live Americas 2026で示したAgentic SOCの構想を紹介している。要点は、証拠に基づくAIワークフローと人による検証、さらに統合されたテレメトリを組み合わせ、SOCの判断と対応を支える設計にある。内容は脆弱性や侵入事案の告知ではなく、検知・トリアージ・教育・運用改善の枠組みを示…",
+      "article_path": "articles/52a81fc09f23e276.html",
+      "original_url": "https://blogs.cisco.com/security/clamer-soc-2026/"
+    },
+    {
+      "entry_id": "885259354252b8bc",
+      "title": "38th Annual FIRST Conference 登壇発表レポート",
+      "source_name": "IIJ SECT",
+      "category": "reporting",
+      "published_at": "2026-07-07T02:05:42+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要本記事は、IIJ SECTが38th Annual FIRST Conferenceで行った登壇内容の報告であり、新たな脆弱性や攻撃の告知ではない。扱っている主眼は、セキュリティ運用の知見共有や研究開発の取り組みで、直ちに対処すべき個別インシデントを示す性質は薄い。攻撃に悪用される具体的な手口や影響範囲の詳細が本文要約からは確認できず、未確認事項が多い…",
+      "article_path": "articles/885259354252b8bc.html",
+      "original_url": "https://sect.iij.ad.jp/blog/2026/07/38th-annual-first-conference/"
+    },
+    {
+      "entry_id": "9e1ef382d1d32758",
+      "title": "セキュリティ企業の脅威ハンターがランサムウェア犯に FBI の捜査情報を漏洩",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-06T23:15:02+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要脅威ハンティングを担うセキュリティ企業の関係者が、ランサムウェア犯罪者に対してFBIの捜査情報を漏らしたと報じられている。記事の中心は侵害手法そのものではなく、内部に持ち込まれた捜査関連情報が犯罪側に流れたことによる対抗策の無力化にある。攻撃者は警察や企業の監視を避けながら活動でき、暗号化や恐喝の事前準備、証拠隠滅、交渉材料の確保に利用する可能性がある…",
+      "article_path": "articles/9e1ef382d1d32758.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/07/55651.html"
+    },
+    {
+      "entry_id": "23570f0ac0bbca01",
+      "title": "GMOサイバーセキュリティ byイエラエ、オンラインセミナー「年 1 回の脆弱性診断だけで大丈夫？ ランサムウェア対策で見直すべきASMと継続的な脆弱性診断」を 7 / 24 開催",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-06T23:10:02+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要本件は、GMOサイバーセキュリティ byイエラエがオンラインセミナーの開催告知を出した記事であり、脆弱性そのものの公表や悪用事案ではない。テーマは、年1回の脆弱性診断だけでは足りないという問題提起と、ランサムウェア対策の文脈でASMと継続的な診断をどう組み合わせるかにある。攻撃者は、診断の直後に公開された穴よりも、放置された外部公開資産や構成変更で再び…",
+      "article_path": "articles/23570f0ac0bbca01.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/07/55650.html"
+    },
+    {
+      "entry_id": "38bd1224484b89aa",
+      "title": "ハンズホールディングスの社内システムでウイルス感染の疑い",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-06T23:05:14+00:00",
+      "impact_level": "Low",
+      "threat_type": "Malware",
+      "summary_preview": "概要ハンズホールディングスの社内システムでウイルス感染の疑いが公表された。記事情報だけでは、感染経路が添付ファイル、認証情報の漏えい、脆弱性悪用のどれに当たるかは未確認であり、現時点では断定できない。もし端末単体のマルウェア感染にとどまらず、管理者権限の奪取や認証情報の窃取を伴っていれば、社内共有基盤や基幹システムへ横展開する余地がある。逆に、隔離済みの単…",
+      "article_path": "articles/38bd1224484b89aa.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/07/55649.html"
+    },
+    {
+      "entry_id": "b6783a45e4aca292",
+      "title": "フェースでシステム障害、不正アクセスに起因するランサムウェア被害の可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-06T23:05:10+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要フェースでシステム障害が発生し、背景として不正アクセスに起因するランサムウェア被害の可能性が示されている。現時点では、侵入経路、暗号化の有無、情報流出の有無は未確認で、断定には至らない。とはいえ、事業継続に直結する障害が出ている以上、単なる可用性問題ではなく、侵害前提での初動が必要になる。攻撃者が認証情報や公開サービスを起点に侵入していれば、端末暗号化…",
+      "article_path": "articles/b6783a45e4aca292.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/07/55648.html"
+    },
+    {
+      "entry_id": "50caa7fb8efb93e9",
+      "title": "マネーフォワードが利用する「GitHub」への不正アクセス、流出した可能性が判明した個人データの詳細公表",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-06T23:05:08+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要マネーフォワードが利用するGitHubの環境に不正アクセスがあり、流出した可能性がある個人データの詳細が公表された。今回の論点は、公開リポジトリの閲覧漏えいだけではなく、認証情報や内部設定の取り扱い次第で被害が開発基盤から周辺システムへ広がり得る点にある。攻撃者はコード改ざん、秘密情報の探索、CI/CD経由の横展開を狙う可能性が高く、影響は開発部門に閉…",
+      "article_path": "articles/50caa7fb8efb93e9.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/07/55647.html"
+    },
+    {
+      "entry_id": "31e6f63384c29061",
+      "title": "バックアップで復旧・運営に支障無し・データ流出確認されず・金銭支払も無し ～ 武蔵野大学がランサムウェア感染",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-06T23:05:05+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要武蔵野大学がランサムウェア感染を公表し、現時点ではバックアップから復旧できており、運営への支障は確認されていない。あわせて、データ流出の確認なし、金銭支払なしと説明している。外部公開情報だけでは、侵入経路、初期侵入後の横展開の有無、暗号化対象の範囲、身代金要求の有無は未確認となる。大学のように利用者・委託先・学内端末が広い組織では、単一端末の感染でも共…",
+      "article_path": "articles/31e6f63384c29061.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/07/55646.html"
+    },
+    {
+      "entry_id": "454f04aecb01ff66",
+      "title": "公益財団法人国際文化会館、「地経学研究所」研究員を騙るメールに注意を呼びかけ",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-06T23:05:03+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Phishing",
+      "summary_preview": "概要公益財団法人国際文化会館が、「地経学研究所」研究員を騙るメールへの注意を呼びかけた。本文からは、特定の人物名や所属を装って信頼を得る型のなりすましメールが主題と読める。狙いは、受信者に返信させる、別メールへ誘導する、添付やリンクの確認を促して別手口へつなぐ、などの初動接触にある可能性が高い。現時点で、実際の送信元、件名、添付有無、リンク先、被害発生の有…",
+      "article_path": "articles/454f04aecb01ff66.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/07/55645.html"
+    },
+    {
+      "entry_id": "6c4223f8a4f3228c",
+      "title": "セキュリティの新指標「日本度」公開発表会を開催",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-06T23:00:08+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要セキュリティの新指標「日本度」の公開発表会を開催したという案内記事で、脆弱性や侵害事案そのものを報じる内容ではない。したがって、直ちに封じ込めや緊急パッチ適用を要する種類の情報とは見なしにくい。記事からは、指標の定義、評価方法、対象範囲、既存指標との違いがまだ十分に見えず、実務への適用可否は未確認となる。攻撃者がこの指標を悪用する局面も読み取りにくく、…",
+      "article_path": "articles/6c4223f8a4f3228c.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/07/55644.html"
+    },
+    {
+      "entry_id": "7f6aae591d957409",
+      "title": "生成 AI で巧妙化する脅威に対抗、東京都がチェック・ポイントやマイクロソフトら登壇のセミナー開催",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-06T23:00:03+00:00",
+      "impact_level": "Low",
+      "threat_type": "Advisory",
+      "summary_preview": "概要東京都が、生成AIで巧妙化する脅威への対抗を主題に、Check PointやMicrosoftなどが登壇するセミナーを開催した。記事は脅威そのものの新規発生を報じるものではなく、防御側の知見共有と啓発イベントの案内に近い。想定される論点は、生成AIで作成されたフィッシング文面、詐欺、偽装コンテンツへの対応であり、攻撃の入口が広がる点にある。影響は組織の…",
+      "article_path": "articles/7f6aae591d957409.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/07/55643.html"
+    }
+  ]
+}
