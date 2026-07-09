@@ -1,0 +1,410 @@
+{
+  "date": "2026-07-10",
+  "window": {
+    "from": "2026-07-09T06:00:00+09:00",
+    "to": "2026-07-10T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 26
+  },
+  "generated_at_jst": "2026-07-10T06:40:47.501977+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "Meta、アルバータ州に初のカナダAIデータセンター建設を発表",
+      "source_name": "Reuters",
+      "published_at": "2026-07-08T19:31:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要Metaがカナダ初となる1ギガワット規模のAIデータセンターをアルバータ州に建設すると発表した。総投資額は130億カナダドルに上り、天然ガスと低温気候を活用した冷却効率を重視する。同社はAI需要急増に対応するため世界33カ所目の施設として位置づけ、電力インフラを自社負担で整備する方針だ。環境団体からは排出量への懸念が指摘される一方、州政府は雇用創出と産…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://www.reuters.com/world/americas/meta-build-c13-billion-alberta-data-center-its-first-canada-2026-07-08/",
+      "selection_reason": "AIインフラ拡大の具体的事例としてIT分野の設備投資動向を直接示し、電力・冷却技術の選択肢や地域経済への影響を伴う新規発表であるため選定。他の汎用予測ではなく即時的な企業行動に焦点を当てた。",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "Meta to build C$13 billion Alberta data center",
+          "url": "https://www.reuters.com/world/americas/meta-build-c13-billion-alberta-data-center-its-first-canada-2026-07-08/",
+          "source_type": "news"
+        },
+        {
+          "title": "Meta’s new AI chips will begin production in September",
+          "url": "https://techcrunch.com/2026/07/09/metas-new-ai-chips-will-begin-production-in-september/",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "Meta、新世代AIチップの量産を9月開始へ",
+      "source_name": "TechCrunch",
+      "published_at": "2026-07-09T17:17:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要Metaが自社開発のAI専用チップ新世代版の量産を9月から開始する。Broadcom設計、TSMC製造で、テスト期間を6週間程度に短縮した。MTIAプログラムの一環として推論・訓練両対応のモジュール型設計を採用し、GPU調達コスト削減を目指す。2026年中に7ギガワットのコンピュート容量を展開する計画で、NvidiaやAMDへの依存を一部緩和する。RA…",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://techcrunch.com/2026/07/09/metas-new-ai-chips-will-begin-production-in-september/",
+      "selection_reason": "自社AIチップ開発の進捗というAI分野の技術的動きを具体的に示し、Nvidia依存低減という実務的影響を持つ最新発表であるため選定。調査会社予測ではなく企業内部メモに基づく事実を優先。",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "Meta’s new AI chips will begin production in September",
+          "url": "https://techcrunch.com/2026/07/09/metas-new-ai-chips-will-begin-production-in-september/",
+          "source_type": "news"
+        },
+        {
+          "title": "Meta to build C$13 billion Alberta data center",
+          "url": "https://www.reuters.com/world/americas/meta-build-c13-billion-alberta-data-center-its-first-canada-2026-07-08/",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "Microsoft、TeamsにAIプライバシー制御機能を追加",
+      "source_name": "X投稿",
+      "published_at": "2026-07-08T18:07:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Other",
+      "summary_preview": "概要MicrosoftがTeamsに「Meeting AI」ボタンを導入し、CopilotやAI要約機能のオンオフを参加者が即時に切り替えられるようにした。会議中の会話がAIに分析されるリスクを懸念する声を受け、透明性と制御権を強化する措置である。職場でのAIツール利用拡大に伴い、データ処理の可視化が求められるようになった。この機能により組織はAI活用ポリ…",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://x.com/inNovaeight/status/2074918185799991600",
+      "selection_reason": "AI利用時のプライバシー管理というセキュリティ実務に直結する製品更新をX投稿とニュース文脈で確認でき、ユーザー制御強化という具体的な変更点を持つため選定。純粋な侵害事例ではなく防御側ツールの進化を優先。",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "IT/Tech Highlights – July 7, 2026",
+          "url": "https://x.com/inNovaeight/status/2074918185799991600",
+          "source_type": "x"
+        },
+        {
+          "title": "Microsoft adds AI privacy controls to Teams",
+          "url": "https://x.com/TraffAlex/status/2074859829533794443",
+          "source_type": "x"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "3023906930293257",
+      "title": "Dormant GitHub Accounts Help Attackers Blend In While Mapping Corporate Orgs",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-09T18:38:49+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要Datadog Security Labs は、GitHub API を使って企業の組織名、リポジトリ、利用者アカウントを系統的に列挙する、複数の重なった活動を警告している。攻撃者は自動化した収集処理に、正規に見えるユーザーエージェントや、長期間放置された 休眠アカウント、侵害済みの OAuth トークン を組み合わせ、目立たない形で調査を進める。狙い…",
+      "article_path": "articles/3023906930293257.html",
+      "original_url": "https://thehackernews.com/2026/07/dormant-github-accounts-help-attackers.html"
+    },
+    {
+      "entry_id": "30193223333638bf",
+      "title": "New GigaWiper Windows Backdoor Bundles Disk Wiping, Fake Ransomware, and Spyware",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-09T18:08:07+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要Microsoft が GigaWiper と呼ぶ破壊型の Windows バックドアを解析した。特徴は、単体の侵入ツールではなく、ディスク消去、Windows ドライブの上書き、偽装ランサムウェアを一つにまとめ、操作者が命令で使い分けられる構成にある。侵入後にどの機能が選ばれるかで被害の現れ方が変わり、単なる暗号化被害に見えても実際は復旧不能な破壊へ…",
+      "article_path": "articles/30193223333638bf.html",
+      "original_url": "https://thehackernews.com/2026/07/new-gigawiper-windows-backdoor-bundles.html"
+    },
+    {
+      "entry_id": "3043e1427ca49f8f",
+      "title": "npm 12 Disables Install Scripts by Default to Reduce Supply Chain Risk",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-09T16:49:02+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Patch",
+      "summary_preview": "概要GitHub は npm 12 を公開し、インストール時に自動実行されていた install scripts を既定で無効化した。あわせて、2FA を回避しやすい granular access tokens の扱いも見直しており、パッケージ供給網からの侵入や不正な更新の入り口を狭める狙いがある。悪用の典型は、依存パッケージに仕込まれたスクリプトで C…",
+      "article_path": "articles/3043e1427ca49f8f.html",
+      "original_url": "https://thehackernews.com/2026/07/npm-12-disables-install-scripts-by.html"
+    },
+    {
+      "entry_id": "ee80e02f7ec7b218",
+      "title": "ThreatsDay: Cloud Bucket Hijacking, Windows LPE Chain, Global Fraud Bust + 17 More Stories",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-09T15:09:28+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Other",
+      "summary_preview": "概要ThreatsDay 形式のまとめ記事で、クラウドのバケット乗っ取り、Windows の権限昇格チェーン、世界規模の不正摘発など、複数の話題を並べている。個々の話題は互いに性質が異なり、記事単体では影響範囲や実害の有無を確定しにくい。クラウド側では命名や設定の再利用、公開設定の緩みがあればコンテンツ改ざんや誘導に悪用される余地があり、Windows 側…",
+      "article_path": "articles/ee80e02f7ec7b218.html",
+      "original_url": "https://thehackernews.com/2026/07/threatsday-cloud-bucket-hijacking.html"
+    },
+    {
+      "entry_id": "1c7028a2d8dcfb5a",
+      "title": "AI Attacks Move in Minutes. Join This Webinar on Building a Defense That Keeps Up",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-09T12:26:58+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要この記事は、AIを使った攻撃の進行速度が人手前提の防御より速くなり、初動対応の設計そのものが追いつきにくくなっている点を扱う。攻撃者はモデルを使って誘導文や標的選定を素早く作り、反応が良い手口だけを残して次の侵入先へ移るため、単発の検知では追従が難しい。影響は個別端末の侵害にとどまらず、認証情報の窃取、権限の取り直し、横展開の加速へ広がりやすい。一方で…",
+      "article_path": "articles/1c7028a2d8dcfb5a.html",
+      "original_url": "https://thehackernews.com/2026/07/ai-attacks-move-in-minutes-join-this.html"
+    },
+    {
+      "entry_id": "bfc8d35459341ac0",
+      "title": "Summer of Clearinghouses",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-09T11:00:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要この記事は、最近立て続けに公表されたclearinghouse構想をめぐる業界動向を扱っている。掲載元は、既存の取り組みがすでに稼働していたことを強調し、発見情報を受けて修正を進める運用を先行させていたと述べている。攻撃や脆弱性の新規発生を伝える内容ではなく、セキュリティ情報の集約と是正の運用モデルに関する話題に近い。したがって、直接の侵害対応よりも、…",
+      "article_path": "articles/bfc8d35459341ac0.html",
+      "original_url": "https://thehackernews.com/2026/07/summer-of-clearinghouses.html"
+    },
+    {
+      "entry_id": "f7fa27763fc85624",
+      "title": "GodDamn Ransomware Uses PoisonX Driver to Disable Endpoint Defenses",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-09T10:43:09+00:00",
+      "impact_level": "High",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要新たに確認されたGodDamn ransomwareは、PoisonX kernel driverを使ってEDRやAVなどの防御機構を無効化し、暗号化処理を通しやすくする手口が中心となる。攻撃の狙いは、検知を先に崩してから本命のランサムウェア処理へ進む点にあり、単なる暗号化よりも初動封じが重要になる。公開情報では、Beast ransomwareの再ブ…",
+      "article_path": "articles/f7fa27763fc85624.html",
+      "original_url": "https://thehackernews.com/2026/07/goddamn-ransomware-uses-poisonx-driver.html"
+    },
+    {
+      "entry_id": "63ddd45756c53f00",
+      "title": "Microsoft Patches RoguePlanet Defender Flaw That Can Grant SYSTEM Privileges",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-09T08:48:48+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Microsoft が CVE-2026-50656 に対する修正を公開した。対象は Defender の Microsoft Malware Protection Engine（mpengine.dll）にある権限昇格の欠陥で、条件を満たすと SYSTEM 権限まで到達する可能性がある。攻撃成立には通常、何らかの初期侵入や低権限コード実行が前提になる…",
+      "article_path": "articles/63ddd45756c53f00.html",
+      "original_url": "https://thehackernews.com/2026/07/microsoft-patches-rogueplanet-defender.html"
+    },
+    {
+      "entry_id": "579b3d60d6ab92e2",
+      "title": "Meta's New AI Image Tool Lets Others Use Your Public Instagram Photos in AI Images",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-09T07:21:06+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Other",
+      "summary_preview": "概要Metaが新しい画像生成機能Muse Imageを公開し、公開設定のInstagram投稿やリールを材料にAI画像を生成できるようにした。さらに、Meta AIアプリ内でInstagramアカウントを@指定し、特定プロフィールの要素を画像に取り込めるとしている。公開情報だけを使う設計でも、元投稿者の意図を超えて再文脈化やなりすまし風の表現に使われる余地…",
+      "article_path": "articles/579b3d60d6ab92e2.html",
+      "original_url": "https://thehackernews.com/2026/07/metas-new-ai-image-tool-lets-others-use.html"
+    },
+    {
+      "entry_id": "14858b25670a4ea8",
+      "title": "Top AI Agents Built to Catch Malicious Code Can Be Tricked Into Running It",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-09T05:15:02+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要AI にコード監査を任せたつもりでも、攻撃用コードを自端末で実行させられる可能性が示された。記事は、AI Now Institute が公開した Friendly Fire の概念実証を取り上げ、Anthropic の Claude Code と OpenAI の Codex が 自律実行モード で動く場合に成立すると伝えている。想定される悪用は、監査…",
+      "article_path": "articles/14858b25670a4ea8.html",
+      "original_url": "https://thehackernews.com/2026/07/friendly-fire-ai-agents-built-to-catch.html"
+    },
+    {
+      "entry_id": "2d30604b553420b3",
+      "title": "GhostApproval Symlink Flaws Could Let Malicious Repos Run Code in AI Coding Agents",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-09T04:27:18+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Wizの調査により、AIコード補助ツールの一部に、シンボリックリンクを悪用して許可対象と別のファイルへ書き込みを誘導できる不備が見つかった。見た目は無害なプロジェクトでも、開発者が編集許可を与えると、意図しない機密ファイルや設定ファイルが上書きされる可能性がある。悪用に成功すると、コード改変だけでなく、認証情報の窃取、ビルド設定の改ざん、後続の実行時侵…",
+      "article_path": "articles/2d30604b553420b3.html",
+      "original_url": "https://thehackernews.com/2026/07/ghostapproval-symlink-flaws-could-let.html"
+    },
+    {
+      "entry_id": "cfc7656fbaf3701f",
+      "title": "Fake 7-Zip Installers Turn Devices Into Residential Proxy Nodes",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-09T04:01:49+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要偽の7-Zipインストーラーを配布して端末を住宅回線のプロキシノードに変える活動が報告された。攻撃者は230件超の類似ドメインを使い、正規配布を装って導入を進めるため、利用者が気づきにくい。侵入後は端末の通信を中継に使い、匿名性の高い送信元として不正アクセスやスパム、各種回避行為に悪用される可能性がある。被害は単なるマルウェア感染にとどまらず、帯域消費…",
+      "article_path": "articles/cfc7656fbaf3701f.html",
+      "original_url": "https://thehackernews.com/2026/07/fake-7-zip-installers-turn-devices-into.html"
+    },
+    {
+      "entry_id": "bec2d711d1c29213",
+      "title": "ISC Stormcast For Thursday, July 9th, 2026 https://isc.sans.edu/podcastdetail/10000, (Thu, Jul 9th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-07-09T02:00:02+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要SANS ISC のStormcast配信記事だが、入力された要約や参照先がなく、個別の脆弱性名、CVE、悪用事例、対策更新は確認できない。したがって、今回の入力だけでは何が起きたかを特定できず、詳細な技術評価は保留となる。通常、Stormcastは直近の侵害事例、脆弱性、運用上の注意点を短く整理するため、実務上は元記事で対象製品やCVE、観測された悪…",
+      "article_path": "articles/bec2d711d1c29213.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33140"
+    },
+    {
+      "entry_id": "0f3ec6f6d7cc78bf",
+      "title": "&#x5f;HELP&#x5f;ME&#x5f;ESCAPE&#x5f;FROM&#x5f;BELARUS&#x5f;PLEASE&#x5f; &#x5b;Guest Diary&#x5d;, (Tue, Jul 7th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-07-09T01:20:02+00:00",
+      "impact_level": "Low",
+      "threat_type": "Scam/Fraud",
+      "summary_preview": "概要SANS ISC の Guest Diary で、ベラルーシからの脱出を求める助けを装う題材が扱われている。記事の主眼は、緊急性の高い感情訴求がどのように相手の警戒を下げ、詐欺・誘導へつながるかを考える点にある。CSIRTの観点では、本文だけでは実際の手口、標的、被害範囲、関連マルウェアの有無は確認できず、現時点では脅威の具体像を断定しないほうがよい。…",
+      "article_path": "articles/0f3ec6f6d7cc78bf.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33130"
+    },
+    {
+      "entry_id": "75d638c39b174452",
+      "title": "VU#152953: PayRange Android app version 7.0.7 contains multiple vulnerabilities",
+      "source_name": "CERT/CC",
+      "category": "reporting",
+      "published_at": "2026-07-09T17:03:26+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要PayRange Androidアプリ 7.0.7 に、証明書検証の不備とWebViewへのJavaScript注入の2件の脆弱性が見つかった。前者は本来拒否すべき無効なSSL証明書を受け入れるため、通信経路上で攻撃者が正規サーバーを装って中間者攻撃を成立させやすくする。後者はWebViewの境界を崩して、端末上で危険な操作や情報取得につながる可能性が…",
+      "article_path": "articles/75d638c39b174452.html",
+      "original_url": "https://kb.cert.org/vuls/id/152953"
+    },
+    {
+      "entry_id": "9eed72ee8a316f31",
+      "title": "VU#734812: Xerte Online Toolkit contains an authentication bypass that allows for RCE",
+      "source_name": "CERT/CC",
+      "category": "reporting",
+      "published_at": "2026-07-09T12:37:51+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Xerte Online Toolkits に 認証回避と リモートコード実行 につながる2件の脆弱性が見つかった。/setup/ がインストール後も残るため、未認証の攻撃者が再設定を通じて管理権限を奪える可能性がある。さらに、管理画面で変更できるアンチウイルス実行パスを PHP インタプリタへ向けると、アップロード処理を経由して任意コード実行に至る。…",
+      "article_path": "articles/9eed72ee8a316f31.html",
+      "original_url": "https://kb.cert.org/vuls/id/734812"
+    },
+    {
+      "entry_id": "09e712fbc36a9ea5",
+      "title": "6 つあるのにまだ不充分？ DLP 導入が失敗する 4 つのパターン",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-08T23:15:03+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要記事は、DLP を「6つそろえれば十分」と考えると失敗しやすいという問題提起を扱う。実際には、製品の点数ではなく、どの経路を止めるか、誤検知を誰がどう扱うか、例外運用をどう固定化するかが成否を分ける。悪用の中心は外部侵入そのものではなく、内部からの持ち出し、誤送信、クラウド共有、業務委託先経由の流出に広がる可能性が高い。未確認事項として、記事要約だけで…",
+      "article_path": "articles/09e712fbc36a9ea5.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/09/55672.html"
+    },
+    {
+      "entry_id": "c443fd2a8b11f593",
+      "title": "Proofpoint Blog 第58回 次世代DMARCとは？ 変更点とその重要性を解説",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-08T23:10:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要Proofpointの解説を紹介する記事で、次世代DMARCの位置づけと、従来のDMARC運用から見た変更点を整理している。焦点は、送信ドメイン認証を単なる設定項目として扱うのではなく、なりすまし対策と運用監視を一体で考える必要がある点にある。攻撃者は正規ドメインに見せかけたメールで受信者をだますため、認証失敗の扱い、可視化、例外運用が不十分だと被害は…",
+      "article_path": "articles/c443fd2a8b11f593.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/09/55671.html"
+    },
+    {
+      "entry_id": "76e6193a961e654a",
+      "title": "【復旧済】ギガファイル便に障害、早期復旧のため暫定的にドメイン変更",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-08T23:05:15+00:00",
+      "impact_level": "Low",
+      "threat_type": "Other",
+      "summary_preview": "概要ギガファイル便で障害が発生し、早期復旧を優先するために一時的なドメイン変更が実施された。記事の主眼は脆弱性や侵害の報告ではなく、サービス継続のための運用対応にある。利用者側の直接被害は限定的に見えるが、共有リンクや受け渡し先の到達先が変わるため、誤案内や受領失敗が起こりやすい。悪用の話ではないため緊急の封じ込め案件ではないが、組織内で同サービスを業務利…",
+      "article_path": "articles/76e6193a961e654a.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/09/55670.html"
+    },
+    {
+      "entry_id": "372d0a8bdd0c1ad0",
+      "title": "複数アカウント一掃のはずが ～ GiGOアプリ、配慮不足を認め停止を一時解除へ（著しく悪質な規約違反を除く）",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-08T23:05:12+00:00",
+      "impact_level": "Low",
+      "threat_type": "Other",
+      "summary_preview": "概要GiGOアプリで、複数アカウントを一掃する運用が「配慮不足」とされ、停止措置の一時解除が案内された。記事の主眼は脆弱性の悪用ではなく、規約違反対応の設計と告知の不備にあるため、CSIRTの観点では本人確認やアカウント停止の判定基準が業務影響を左右する。悪用経路としては、利用者の再登録やアカウント作成を繰り返す行為への対処が想定されるが、技術的な侵害や情…",
+      "article_path": "articles/372d0a8bdd0c1ad0.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/09/55669.html"
+    },
+    {
+      "entry_id": "4404e15e4cd2249d",
+      "title": "ソフツーの検証用サーバに不正アクセス、索引データが削除",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-08T23:05:09+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要ソフツーの検証用サーバに不正アクセスがあり、索引データの削除が確認された。公開情報だけでは侵入経路、初期侵入後の滞在時間、認証情報の窃取有無は明らかでなく、現時点では被害の全体像を断定できない。索引データが検索基盤や業務参照系の中核に近い場合、単なるファイル削除に見えても、復旧遅延や参照不能による業務影響に広がる可能性がある。検証用サーバであっても、本…",
+      "article_path": "articles/4404e15e4cd2249d.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/09/55668.html"
+    },
+    {
+      "entry_id": "54ffafb6586274db",
+      "title": "サーバ管理ソフト「cPanel/WHM」の認証回避バグを突く攻撃 ～ アイコムソフトが最終報告",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-08T23:05:05+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要cPanel/WHM に関する認証回避の不具合を突く攻撃について、アイコムソフトが最終報告を公表した。管理画面に正規の認証を通さず到達できる余地があるなら、攻撃者は最初の足場を得た時点で設定変更やアカウント操作へ進めるため、被害は単発の画面閲覧にとどまりにくい。特に共有ホスティングや委託運用の環境では、1台の管理系サーバー侵害が複数サイトや複数顧客へ波…",
+      "article_path": "articles/54ffafb6586274db.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/09/55667.html"
+    },
+    {
+      "entry_id": "ed5c93c46e4f09be",
+      "title": "「意図的な流通ではない」廃棄OA機器のハードディスク未破壊でオークション出品、受託業者が謝罪と再発防止を発表",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-08T23:05:02+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要廃棄予定のOA機器について、ハードディスクの未破壊が原因で、意図しない形のままオークションに出品された事案が報じられた。受託業者は謝罪し、再発防止策を公表している。直接のサイバー侵害というより、情報消去と廃棄管理の不備が表面化した事例として見るべきである。漏えいし得る内容は機器内の残存データ次第で変わり、機密文書、認証情報、利用者情報、業務記録まで広が…",
+      "article_path": "articles/ed5c93c46e4f09be.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/09/55666.html"
+    },
+    {
+      "entry_id": "968cfff99ce91e56",
+      "title": "AeyeScan が「2026年上半期 BOXIL資料請求数ランキング」の ASMツール 大企業部門 1 位・脆弱性診断 総合 1 位に選出",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-08T23:00:14+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要AeyeScan が BOXIL資料請求数ランキングで ASMツール大企業部門1位、脆弱性診断総合1位に選出されたという話題で、脆弱性そのものの発生や攻撃事例を扱う記事ではない。したがって、CSIRT観点では直ちにインシデント対応を要する情報ではなく、製品選定や更新投資の参考情報として位置づけるのが妥当になる。記事からは、どの機能が評価されたか、実導入…",
+      "article_path": "articles/968cfff99ce91e56.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/09/55665.html"
+    },
+    {
+      "entry_id": "c94fd24c3eb2413e",
+      "title": "JNSA「OTセキュリティに関する国内外の主要ガイドラインの調査報告書」公表",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-08T23:00:10+00:00",
+      "impact_level": "Low",
+      "threat_type": "Advisory",
+      "summary_preview": "概要JNSAが、OTセキュリティに関する国内外の主要ガイドラインを整理した調査報告書を公表した。これは脆弱性の単発通知ではなく、製造業や社会インフラでの対策方針を決める際の参照点をまとめた情報に当たる。現場では、IT側の統制をそのままOTへ持ち込むと停止リスクが増えるため、可用性優先での読み替えが必要になる。報告書の具体的な比較対象や推奨差分の詳細は本文情…",
+      "article_path": "articles/c94fd24c3eb2413e.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/09/55664.html"
+    },
+    {
+      "entry_id": "b998dc4413d033b9",
+      "title": "GMOサイバーセキュリティ byイエラエ エンジニアの井上大誠氏が「Meta Bug Bounty Researcher Conference 2026」で世界 3 位獲得",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-08T23:00:04+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要本件は、GMOサイバーセキュリティ byイエラエの研究者がMeta Bug Bounty Researcher Conference 2026で世界3位になったという話題で、直接の脆弱性報告や障害発生の通知ではない。企業のCSIRTにとっての意味は、Meta製品群に対する研究活動が活発で、未公表の欠陥や悪用可能性が継続して掘り起こされている点にある。攻…",
+      "article_path": "articles/b998dc4413d033b9.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/09/55663.html"
+    }
+  ]
+}
