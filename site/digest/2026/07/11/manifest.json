@@ -1,0 +1,432 @@
+{
+  "date": "2026-07-11",
+  "window": {
+    "from": "2026-07-10T06:00:00+09:00",
+    "to": "2026-07-11T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 27
+  },
+  "generated_at_jst": "2026-07-11T06:32:43.994843+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "OpenAI、ChatGPT Workと統合デスクトップアプリを発表",
+      "source_name": "Build Fast with AI",
+      "published_at": "2026-07-10T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要OpenAIがGPT-5.6公開と同時にChatGPT Workを投入した。Codex技術を基盤にサードパーティ連携を加え、数時間規模の複雑プロジェクトを自動処理する。ChatGPTとCodexのデスクトップアプリを単一の統合環境へ移行し、Atlasブラウザも内包した。企業向けには利用量制御機能を提供し、知識労働者の生産性を直接狙う動きである。Clau…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://www.buildfastwithai.com/blogs/ai-news-today-july-10-2026",
+      "selection_reason": "AIを活用したエンタープライズ生産性ツールの具体的な製品発表として、IT分野の実務影響が明確で新規性が高いため選定。他の候補である汎用予測レポートより優先。",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "AI News Today July 10 2026",
+          "url": "https://www.buildfastwithai.com/blogs/ai-news-today-july-10-2026",
+          "source_type": "web"
+        },
+        {
+          "title": "OpenAI Launches ChatGPT Work",
+          "url": "https://www.buildfastwithai.com/blogs/ai-news-today-july-10-2026",
+          "source_type": "web"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "SpaceXAI、Grok 4.5をリリース",
+      "source_name": "x.ai",
+      "published_at": "2026-07-08T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要SpaceXAIがGrok 4.5を公開した。コーディングとエージェントタスクに特化し、Cursorとの共同訓練で実開発セッションのデータを活用した。SWE Marathonでトップを獲得し、トークン効率は競合比4.2倍向上、価格は入力2ドル/百万出力6ドルと大幅に低減した。EU以外で即時利用可能となり、agentic codingワークロードでの採用…",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://x.ai/news/grok-4-5",
+      "selection_reason": "AIモデルとして具体的なベンチマーク結果と価格効率の改善が確認でき、開発者向け実務影響が大きいため選定。汎用予測ではなく製品発表を優先。",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "Introducing Grok 4.5",
+          "url": "https://x.ai/news/grok-4-5",
+          "source_type": "web"
+        },
+        {
+          "title": "Grok 4.5 benchmarks on X",
+          "url": "https://x.com/LuminaXspace/status/2075164982019277201",
+          "source_type": "x"
+        },
+        {
+          "title": "SpaceXAI releases Grok 4.5",
+          "url": "https://techcrunch.com/2026/07/08/spacexai-releases-grok-4-5-which-elon-describes-as-an-opus-class-model/",
+          "source_type": "web"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "Sysdig、初の完全自律型AIランサムウェア攻撃を報告",
+      "source_name": "Sysdig",
+      "published_at": "2026-07-06T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要SysdigがJadePufferと呼ばれるAIエージェントによる初の完全自律型ランサムウェア攻撃を確認した。Langflowの脆弱性を突き、資格情報窃取、横移動、MySQLデータベースの暗号化までを人間介入なしで実行した。攻撃者は1,300件以上のレコードを暗号化し、AI自身が作成した身代金要求文を残した。LLMの自律性が攻撃の敷居を下げ、リアルタイ…",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://www.hindustantimes.com/business/worlds-first-agentic-ai-ransomware-attack-and-an-unchartered-territory-101783504901736.html",
+      "selection_reason": "AIを悪用した具体的な攻撃事例としてセキュリティ実務に直結し、速報性と影響度が高いため選定。単発の噂ではなく研究者報告を基盤とする。",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "World’s first agentic AI ransomware attack",
+          "url": "https://www.hindustantimes.com/business/worlds-first-agentic-ai-ransomware-attack-and-an-unchartered-territory-101783504901736.html",
+          "source_type": "web"
+        },
+        {
+          "title": "Sysdig Documents First End-To-End AI Agent Ransomware Attack",
+          "url": "https://innovatecybersecurity.com/security-threat-advisory/top-10-cybersecurity-news-july-07-2026-sysdig-documents-first-end-to-end-ai-agent-ransomware-attack-dhs-confirms-breach-of-homeland-security-information-network-and-more/",
+          "source_type": "web"
+        },
+        {
+          "title": "JadePuffer ransomware used AI agent",
+          "url": "https://x.com/seoscottsdale/status/2073759806842941708",
+          "source_type": "x"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "f3a90481b4db80fd",
+      "title": "CVE-2026-56291 Balbooa Forms Unrestricted Upload of File with Dangerous Type Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-07-10T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CVE-2026-56291 は、Balbooa Forms における 危険な形式のファイルを制限なくアップロードできる脆弱性 で、任意コード実行やWebシェル設置に直結しやすい。アップロード機能が到達可能で、かつサーバ側で拡張子・内容・保存先の検証が甘い場合、攻撃者は認証回避や権限昇格を経ずに侵入の足場を得られる。影響は単一サイトの改ざんにとどまらず…",
+      "article_path": "articles/f3a90481b4db80fd.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "cae5f6646e98c6bd",
+      "title": "CVE-2026-48939 iCagenda Unrestricted Upload of File with Dangerous Type Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-07-10T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CISA KEV に CVE-2026-48939 が掲載され、iCagenda における危険な種類のファイルを制限なくアップロードできる欠陥が実運用上の脅威として扱われている。攻撃者は細工したファイルを送り込み、Web サーバ上で実行可能な内容を置けると、任意コード実行や改ざん、追加の持続化へつなげやすい。影響は当該サイト単体にとどまらず、同一ホスト…",
+      "article_path": "articles/cae5f6646e98c6bd.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "b0392e6fd59665cf",
+      "title": "URGENT - Progress Tells ShareFile Customers to Shut Down Storage Zone Controllers Over Security Threat",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-10T16:30:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要Progress SoftwareがShareFileの利用者に対し、Storage Zone Controllerを動かすWindowsサーバーを停止するよう求めた。背景には、同社が「信頼できる外部の脅威」へ対応しているという事情がある。現時点で、侵害の有無や初期侵入経路、対象範囲は明示されていない。アカウントへのアクセスを一時停止したことで、業務影…",
+      "article_path": "articles/b0392e6fd59665cf.html",
+      "original_url": "https://thehackernews.com/2026/07/urgent-progress-tells-sharefile.html"
+    },
+    {
+      "entry_id": "6a5d30b00541f0e4",
+      "title": "Injective Labs GitHub Compromise Pushes Wallet-Key-Stealing npm Packages",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-10T16:29:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要Injective Labs の SDK 用 GitHub リポジトリが侵害され、そこを足がかりに npm へ 不正なパッケージ が公開されたと報じられている。対象版 @injectivelabs/sdk-ts@1.20.21 には、見かけ上はテレメトリ機能に見せかけた処理が埋め込まれ、暗号資産ウォレットの秘密鍵や復元フレーズ を外部へ送信する狙いがあ…",
+      "article_path": "articles/6a5d30b00541f0e4.html",
+      "original_url": "https://thehackernews.com/2026/07/injective-labs-github-compromise-pushes.html"
+    },
+    {
+      "entry_id": "9539bc4506587d81",
+      "title": "Six New U-Boot Flaws Could Let Malicious Images Crash Devices or Run Code at Boot",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-10T15:57:14+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Binarly が U-Boot に新たに6件の欠陥を見つけた。U-Boot はルーター、監視カメラ、データセンター機器の管理チップなど、起動直後に動くため、ここを突かれると通常のOS防御より前に影響が出る。4件は主に起動失敗や再起動ループにつながり、残る2件は攻撃者が改ざんしたイメージを先に読み込ませることで、起動時点で任意コード実行に至る可能性があ…",
+      "article_path": "articles/9539bc4506587d81.html",
+      "original_url": "https://thehackernews.com/2026/07/six-new-u-boot-flaws-could-let.html"
+    },
+    {
+      "entry_id": "06c6ae0e2f3e2f19",
+      "title": "Laser Attack Resets Tangem Wallet Passwords on Cards That Can't Be Patched",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-10T14:51:49+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要LedgerのDonjonチームが、Tangemの暗号資産ウォレットカード内部のチップにレーザーパルスを極めて正確に当てることで、カードのパスワードを任意値に再設定できることを示した。成立すれば旧パスワードは不要になり、攻撃者がそのまま資産を移動できる。影響はカード単体に閉じるが、バックアップカードがない利用形態では被害が即時に口座資産へ直結する。現時…",
+      "article_path": "articles/06c6ae0e2f3e2f19.html",
+      "original_url": "https://thehackernews.com/2026/07/laser-attack-resets-tangem-wallet.html"
+    },
+    {
+      "entry_id": "8ad0d89822f8cde3",
+      "title": "Researcher Details WhatsApp-to-Host Attack Chain Using Three OpenClaw Flaws",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-10T14:19:50+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要OpenClawの個人向けAIアシスタントに見つかった3件の脆弱性が、WhatsAppからホスト侵害へつながる攻撃連鎖として整理された。既に修正済みではあるが、連鎖が成立すると資格情報の窃取、権限昇格、任意コード実行まで到達し得る。入口はチャット由来のやり取りでも、最終的には端末上の権限とデータに影響が及ぶため、単なるアプリ不具合としては扱いにくい。実…",
+      "article_path": "articles/8ad0d89822f8cde3.html",
+      "original_url": "https://thehackernews.com/2026/07/researcher-details-whatsapp-to-host.html"
+    },
+    {
+      "entry_id": "5a173278a5a63ab2",
+      "title": "New MODBEACON RAT Uses gRPC Streaming for Encrypted C2 Traffic",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-10T13:15:23+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要Silver Fox と関連付けられた Rust 製の MODBEACON RAT が確認され、gRPC ストリーミングを使って暗号化された C2 通信を行う点が注目点になる。侵入経路は、SEO 汚染で誘導した 偽装インストーラ による配布とされ、利用者操作を前提に感染が始まる可能性が高い。RAT 型のため、初期侵入後は情報窃取、追加ペイロード投入、横…",
+      "article_path": "articles/5a173278a5a63ab2.html",
+      "original_url": "https://thehackernews.com/2026/07/new-modbeacon-rat-uses-grpc-streaming.html"
+    },
+    {
+      "entry_id": "3bbad2b672055347",
+      "title": "Unpatched XRING Flaw in XQUIC Lets Remote Clients Crash HTTP/3 Servers",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-10T11:47:43+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要XQUIC に 未修正の欠陥 が見つかり、HTTP/3 サーバーが短い正規トラフィックだけでクラッシュする可能性が示された。攻撃者は認証や不正パケットを必要とせず、QPACK の通信を少量送るだけで再起動やサービス断を引き起こせる余地がある。影響は主に 可用性の低下 に集中し、直ちにコード実行や情報窃取へつながる話ではないが、公開サービスでは繰り返し叩…",
+      "article_path": "articles/3bbad2b672055347.html",
+      "original_url": "https://thehackernews.com/2026/07/unpatched-xring-flaw-in-xquic-lets.html"
+    },
+    {
+      "entry_id": "32f4700190789059",
+      "title": "From 17,000 to 1.1 Million Assets: How Lumen Technologies Rebuilt Exposure Management at Scale",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-10T11:39:40+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Other",
+      "summary_preview": "概要Lumen Technologies が、約1万7000件と見積もっていた資産管理の前提を見直し、110万件規模まで露出管理の対象を拡張した事例を紹介している。記事の主眼は脆弱性そのものではなく、資産台帳の不正確さが検知、優先順位付け、封じ込めの全工程を歪める点にある。攻撃者はまず管理から漏れた端末、クラウド資産、外部公開面を狙うため、見えていない資産…",
+      "article_path": "articles/32f4700190789059.html",
+      "original_url": "https://thehackernews.com/2026/07/from-17000-to-11-million-assets-how.html"
+    },
+    {
+      "entry_id": "0ad6689f109521ee",
+      "title": "Exposed Hacker Server Reveals WP-SHELLSTORM Backdooring Thousands of WordPress Sites",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-10T11:30:02+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要サイバー犯罪グループが自分たちのサーバを約3週間公開したままにし、運用の内部資料が外部から見える状態になった。そこには攻撃用ツール、活動ログ、140万件超の標的候補リストが含まれていたとされる。実際に侵害されたサイト数はそこまで多くない一方で、WordPress を大量に狙う侵入基盤の作り方と、どのように継続的な改ざんやバックドア設置へ進むかがうかがえ…",
+      "article_path": "articles/0ad6689f109521ee.html",
+      "original_url": "https://thehackernews.com/2026/07/exposed-hacker-server-reveals-wp.html"
+    },
+    {
+      "entry_id": "d5bc5d2464568c7d",
+      "title": "Study of 281 Free Android VPN Apps Finds Traffic Leaks, Unencrypted Data, and Tracking",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-10T10:56:23+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要Google Play上の無料Android VPN 281件を検査した結果、通信漏えい、平文送信、追跡要素の混在が確認された。利用者はVPNに「通信を隠す」役割を期待するが、実際には一部の通信がVPN外へ流れたり、暗号化されないまま送られたりしていた点が問題になる。対象アプリ群は累計で24億回超導入されており、単一製品の欠陥よりも、広い利用者基盤に同…",
+      "article_path": "articles/d5bc5d2464568c7d.html",
+      "original_url": "https://thehackernews.com/2026/07/study-of-281-free-android-vpn-apps.html"
+    },
+    {
+      "entry_id": "df19fe04a686bc70",
+      "title": "Hackers Use Fake Microsoft Entra Passkey Enrollment to Gain Microsoft 365 Access",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-10T10:30:20+00:00",
+      "impact_level": "High",
+      "threat_type": "Phishing",
+      "summary_preview": "概要音声を使った偽のセキュリティ依頼で利用者を誘導し、Microsoft 365 の Entra passkey 登録を悪用して認証情報を奪う攻撃が報告された。攻撃者はパネル管理型のフィッシング基盤を使い、正規の登録手順に見せかけて新しいパスキーを追加させる流れを作っている。成立すると、メール、共有ファイル、業務アプリなど Microsoft 365 の広…",
+      "article_path": "articles/df19fe04a686bc70.html",
+      "original_url": "https://thehackernews.com/2026/07/hackers-use-fake-microsoft-entra.html"
+    },
+    {
+      "entry_id": "1aab7897f8160f42",
+      "title": "Attackers Exploit 'Ill Bloom' Vulnerability to Drain Over $5 Million From Cryptocurrency Wallets",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-10T09:00:05+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要Coinspectが、暗号資産ウォレットの復元フレーズ生成不備をIll Bloomとして公表し、既に攻撃で悪用されていると伝えた。問題の焦点は、秘密鍵そのものではなく、資産移動の起点になるリカバリーフレーズの乱数品質にある。乱数が弱いと、攻撃者は候補を絞り込み、対応するウォレットを復元して資産を抜き取れる。報告では、少なくとも1件のまとまった奪取が確認…",
+      "article_path": "articles/1aab7897f8160f42.html",
+      "original_url": "https://thehackernews.com/2026/07/attackers-exploit-ill-bloom.html"
+    },
+    {
+      "entry_id": "6816ec9c8a86e606",
+      "title": "Ransomware Negotiator Gets 70 Months in Prison for Aiding BlackCat Attacks",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-10T08:10:12+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要元ランサムウェア交渉担当者が、BlackCat の運用者と共謀して複数の被害者を脅迫した件で、米国で70か月の禁錮を言い渡された。加えて、2023年には他の2人のセキュリティ関係者とともに追加の被害者を狙ったとされ、単なる交渉支援ではなく侵害後の金銭回収を補助する役割が問題視された。こうした人物は、被害組織の内部事情や交渉の癖を知るため、攻撃者側にとっ…",
+      "article_path": "articles/6816ec9c8a86e606.html",
+      "original_url": "https://thehackernews.com/2026/07/ransomware-negotiator-gets-70-months-in.html"
+    },
+    {
+      "entry_id": "b71d6b9e394131d8",
+      "title": "My Stack Simulator, (Wed, Jul 8th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-07-10T15:52:27+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要この記事は、スタックが関数呼び出しのたびに一時的な情報を積み重ねる領域であり、戻り先アドレスもそこに置かれる点を解説している。処理の流れそのものは基礎説明に見えるが、攻撃者にとってはここが実行フロー改ざんの入り口になりやすい。入力値の検証不足や境界超過があると、スタック上の局所変数や制御情報が壊れ、任意コード実行や異常終了につながる可能性がある。影響は…",
+      "article_path": "articles/b71d6b9e394131d8.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33138"
+    },
+    {
+      "entry_id": "a574296c86e1553a",
+      "title": "\"Comment stuffing\" in an HTML phishing attachment as a mechanism for evading AI-based detection&#x3f;, (Fri, Jul 10th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-07-10T09:09:29+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Phishing",
+      "summary_preview": "概要SANS ISC は、HTML 形式のフィッシング添付において、コメントを大量に埋め込む手法がAI系検知をすり抜けるために使われる可能性を取り上げた。本文の焦点は、見た目の表示内容ではなく、解析器が読む内部表現を乱して検知精度を落とす点にある。実害は単一のメールだけで閉じず、同種の変種が増えるとフィルタの学習やルールの効き方に影響が及ぶおそれがある。攻…",
+      "article_path": "articles/a574296c86e1553a.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33144"
+    },
+    {
+      "entry_id": "914ba59fbc752bd1",
+      "title": "ISC Stormcast For Friday, July 10th, 2026 https://isc.sans.edu/podcastdetail/10002, (Fri, Jul 10th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-07-10T02:00:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要SANS ISC の Stormcast は、特定の脆弱性告知というより、直近の観測や注意喚起をまとめる情報源として読むのが適切になる。今回の入力には個別の攻撃事象や CVE の記載がなく、何が起きたかは 配信タイトル以上には確認できない。そのため、実害の有無や悪用手口、影響範囲は未確認であり、CSIRT では現時点で 情報収集段階 と扱うのが妥当にな…",
+      "article_path": "articles/914ba59fbc752bd1.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33142"
+    },
+    {
+      "entry_id": "f19ffe4c0e62c6f1",
+      "title": "VU#564823: GNU Wget enables SSRF via unvalidated FTP PASV IPs",
+      "source_name": "CERT/CC",
+      "category": "reporting",
+      "published_at": "2026-07-10T18:19:49+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要GNU Wget 1.25.0以前に、FTPのPASV応答で受け取ったIPアドレスを検証せず、SSRFを起こせる脆弱性がある。攻撃者が管理するFTP先、またはFTPへ転送させるHTTP応答を用いると、Wgetは内部向けのIPやサービスへ接続させられる可能性がある。影響は、内部HTTPの応答取得、サービスバナーの収集、設定次第では内部データの露出まで広が…",
+      "article_path": "articles/f19ffe4c0e62c6f1.html",
+      "original_url": "https://kb.cert.org/vuls/id/564823"
+    },
+    {
+      "entry_id": "8cde6a530bb49d45",
+      "title": "KDDI の ISP 事業者向けメールシステムに不正アクセス、ゼロデイ脆弱性を悪用",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-09T23:05:13+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要KDDI の ISP 事業者向けメールシステム への不正アクセスが報じられ、ゼロデイ脆弱性 の悪用が原因とされている。現時点で読み取れるのは、公開前に攻撃が成立した可能性があり、通常のパッチ適用や既知IOC監視では先回りしにくかった点にある。侵入先が事業者向けメール基盤なら、単一テナントの被害にとどまらず、配送経路や管理機能を足がかりに広範な利用者影響…",
+      "article_path": "articles/8cde6a530bb49d45.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/10/55680.html"
+    },
+    {
+      "entry_id": "367f1ff9e6b40a0f",
+      "title": "約3ヶ月にわたり誤配信、ITトレンド・bizplay・ITトレンドEXPO退会後もメール配信",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-09T23:05:10+00:00",
+      "impact_level": "Low",
+      "threat_type": "Misconfiguration",
+      "summary_preview": "概要ITトレンド、bizplay、ITトレンドEXPOの会員向けメールが、退会後も約3か月にわたり誤配信された。本文の要点は、配信停止が想定どおり機能せず、退会者に対して案内が継続した点にある。現時点では、メールアドレスの漏えいや不正送信の有無、配信停止処理の失敗箇所、第三者による悪用は確認できない。影響は主に迷惑配信と信頼低下にとどまる可能性が高いが、退…",
+      "article_path": "articles/367f1ff9e6b40a0f.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/10/55679.html"
+    },
+    {
+      "entry_id": "a25d1498f6fef3cc",
+      "title": "シード・プランニングにランサムウェア攻撃、顧客から預かった個人情報は流出していないと判断",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-09T23:05:06+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要シード・プランニングがランサムウェア攻撃を受け、業務停止や改ざんの有無を含めて確認を進めた結果、顧客から預かった個人情報の流出はないと判断した。公表内容からは、侵入経路や初期侵入時点の権限、暗号化の有無までは読み取れず、実際にどこまで到達されたかは未確認のまま残る。個人情報の外部流出が否定されても、端末侵害や認証情報の窃取があれば再侵入や横展開の火種は…",
+      "article_path": "articles/a25d1498f6fef3cc.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/10/55678.html"
+    },
+    {
+      "entry_id": "9cc09e59ce8f0674",
+      "title": "東電子会社、ロゴ入り安全帽を紛失 ～「偽社員」による不審な訪問や詐欺に注意呼びかけ",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-09T23:05:03+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Other",
+      "summary_preview": "概要東電子会社が、ロゴ入り安全帽の紛失を公表し、偽社員による不審訪問や詐欺への注意を呼びかけている。紛失した物品自体は情報システムへの侵害ではないが、現場でのなりすましや入館・入構時の信頼補完に使われる恐れがある。攻撃者は「正規の工事・点検・配送」を装って受付や現場に入り込み、口頭確認の甘さや来訪者管理の隙を突く可能性がある。影響は単発の詐欺にとどまらず、…",
+      "article_path": "articles/9cc09e59ce8f0674.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/10/55677.html"
+    },
+    {
+      "entry_id": "a1358fd8b811e966",
+      "title": "複数のセイコーエプソン製プリンタおよびスキャナの Web Config に CSRF の脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-09T23:00:13+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要セイコーエプソン製の複数プリンタおよびスキャナの管理機能 Web Config に、CSRF の脆弱性が公表された。攻撃者は利用者を細工したページへ誘導し、認証済みの管理者ブラウザ経由で設定変更を実行させる可能性がある。想定される影響は、ネットワーク設定や転送先設定の改変、認証情報の扱いに関わる操作の誘発などで、単体機器の不調にとどまらず運用経路の改ざ…",
+      "article_path": "articles/a1358fd8b811e966.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/10/55676.html"
+    },
+    {
+      "entry_id": "5b7ccd84c2aebd3f",
+      "title": "「GMOサイバー攻撃 ネットde診断 Lite」の UI / UX をフルリニューアル、PDFレポート出力機能も追加",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-09T23:00:11+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要GMOサイバー攻撃 ネットde診断 Lite の UI/UX が全面的に見直され、PDFレポート出力 も追加された。これは脆弱性そのものの話ではなく、診断結果を社内説明や証跡管理に使いやすくする更新として読むのが妥当となる。運用上は、診断の見やすさ向上で利用頻度が上がる可能性があり、結果として未対応の設定不備や露出の把握が進みやすくなる。一方で、診断対…",
+      "article_path": "articles/5b7ccd84c2aebd3f.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/10/55675.html"
+    },
+    {
+      "entry_id": "ca6fd7ce8cae1331",
+      "title": "HENNGE One、製造業特化型スキル管理ツール「Skillnote スキルマネジメントシステム」と SSO 連携",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-09T23:00:08+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要HENNGE Oneが、製造業向けのスキル管理ツール Skillnote スキルマネジメントシステム と SSO 連携した。記事の主眼は脆弱性ではなく、認証基盤をつないで利用者体験と運用を整理する点にある。SSO を通すと、パスワード管理の負荷や個別アカウントの乱立を抑えやすい一方、認証基盤に障害や設定不備が起きた場合の影響は複数サービスへ広がる。攻撃…",
+      "article_path": "articles/ca6fd7ce8cae1331.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/10/55674.html"
+    },
+    {
+      "entry_id": "c7cbcfaf3bb01998",
+      "title": "GMOサイバーセキュリティ byイエラエ執行役員の奥野史一氏が初著書『2025-2035 サイバー空間の地政学 ─「見えない戦場」の現在地と未来予測』刊行",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-09T23:00:02+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要GMOサイバーセキュリティ byイエラエの執行役員である奥野史一氏の初著書『2025-2035 サイバー空間の地政学 ─「見えない戦場」の現在地と未来予測』刊行を伝える記事で、新たな脆弱性やインシデントの報道ではない。内容はサイバー空間を地政学の文脈で捉え直し、国家・地域紛争・供給網・情報戦の相互作用を考える視点に重心がある。CSIRTの実務に直結する…",
+      "article_path": "articles/c7cbcfaf3bb01998.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/10/55673.html"
+    }
+  ]
+}
