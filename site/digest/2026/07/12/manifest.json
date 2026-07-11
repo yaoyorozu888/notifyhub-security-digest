@@ -1,0 +1,158 @@
+{
+  "date": "2026-07-12",
+  "window": {
+    "from": "2026-07-11T06:00:00+09:00",
+    "to": "2026-07-12T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 5
+  },
+  "generated_at_jst": "2026-07-12T06:24:04.843121+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "SKハイニックス米国上場でAI需要が株価を押し上げる",
+      "source_name": "Reuters",
+      "published_at": "2026-07-10T12:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要SKハイニックスが米国市場に上場し、株価が急騰した。背景にはAI向けメモリ需要の継続的な拡大がある。AlteraもAIとロボティクス需要で成長に転じたとCEOが述べている。AIインフラ投資が半導体企業の実績に直結する動きが鮮明だ。企業は供給能力拡大を急ぐ一方、市場はAI関連支出の持続性を注視している。",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://www.reuters.com/technology/",
+      "selection_reason": "半導体分野の具体的な企業行動と市場反応を捉えた最新事例で、ITトレンドのAI基盤需要を直接示す新規性が高い。他の汎用予測レポートより実務影響が明確。",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "Tech News | Today's Latest Technology News",
+          "url": "https://www.reuters.com/technology/",
+          "source_type": "news"
+        },
+        {
+          "title": "SK Hynix shares jump in marquee US debut as AI euphoria persists",
+          "url": "https://www.reuters.com/world/asia-pacific/sk-hynix-set-marquee-us-debut-test-ai-appetite-2026-07-10/",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "OpenAIがGPT-5.6モデルを広範に展開",
+      "source_name": "Reuters",
+      "published_at": "2026-07-10T15:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要OpenAIがGPT-5.6のSol、Terra、Lunaモデルを追加テスト後に広く展開開始した。米商務省との協議を経て段階的リリースから移行した。国家安全保障配慮が非公式な事前相談慣行を生んでいる。企業は新モデル活用の準備を進めつつ、規制動向を監視する必要がある。",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://www.reuters.com/technology/artificial-intelligence/",
+      "selection_reason": "具体的なモデルリリースと政府協議という実務的進展を捉え、AI分野の製品展開として新規性と影響度が高い。他の一般トレンド解説より優先。",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "Apple sues OpenAI, two former employees for trade secrets theft",
+          "url": "https://www.reuters.com/legal/litigation/apple-sues-openai-alleging-misappropriation-trade-secrets-court-records-show-2026-07-10/",
+          "source_type": "news"
+        },
+        {
+          "title": "AI Update, July 10, 2026",
+          "url": "https://www.marketingprofs.com/opinions/2026/55247/ai-update-july-10-2026-ai-news-and-views-from-the-past-week",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "初の完全自律型AIランサムウェアエージェントが確認される",
+      "source_name": "Sysdig",
+      "published_at": "2026-07-10T10:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要Sysdigが世界初とされる完全自律型AIランサムウェアエージェントJADEPUFFERを確認した。攻撃の全工程をAIが自律実行する。インシデント対応手順の見直しが急務となる。従来の人的判断に依存した防御が通用しにくくなる可能性が高い。",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://innovatecybersecurity.com/2026/07/",
+      "selection_reason": "AIとサイバーセキュリティの交差点で具体的な攻撃事例を捉えた最新報告。実務的なインシデント対応変更を促す点で優先度が高い。",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "Top 10 Cybersecurity News (July 07, 2026)",
+          "url": "https://innovatecybersecurity.com/security-threat-advisory/top-10-cybersecurity-news-july-07-2026-sysdig-documents-first-end-to-end-ai-agent-ransomware-attack-dhs-confirms-breach-of-homeland-security-information-network-and-more/",
+          "source_type": "news"
+        },
+        {
+          "title": "Top 5 Cybersecurity News Stories July 10, 2026",
+          "url": "https://diesec.com/2026/07/top-5-cybersecurity-news-stories-july-10-2026/",
+          "source_type": "news"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "3cd678c689118f0f",
+      "title": "Compromised jscrambler 8.14.0 npm Release Drops Rust Infostealer During Install",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-11T17:59:26+00:00",
+      "impact_level": "High",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要npm パッケージ jscrambler 8.14.0 が侵害され、通常のインストールだけで 情報窃取型マルウェア が動く状態になった。悪意ある版には preinstall フックが仕込まれており、Windows・macOS・Linux 向けのネイティブ実行ファイルを展開して実行する流れになっている。被害は開発者端末にとどまらず、CI/CD や自動ビル…",
+      "article_path": "articles/3cd678c689118f0f.html",
+      "original_url": "https://thehackernews.com/2026/07/compromised-jscrambler-8140-npm-release.html"
+    },
+    {
+      "entry_id": "52a7d921981cad55",
+      "title": "Hackers Weaponize Balochistan Police Portal in Multi-Group Espionage Campaigns",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-11T17:49:31+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要パキスタンの法執行機関を狙った長期の諜報活動が報告された。対象は複数機関にまたがり、Balochistan Police のポータルや、その上で動く住民・犯罪情報管理用のWebアプリが侵害されたとされる。攻撃は単発の侵入ではなく、2024年2月から2026年4月まで継続していた点が重要になる。侵入後は情報窃取や監視基盤化が主眼とみられるが、どの初期侵入…",
+      "article_path": "articles/52a7d921981cad55.html",
+      "original_url": "https://thehackernews.com/2026/07/hackers-weaponize-balochistan-police.html"
+    },
+    {
+      "entry_id": "257f045a6e640dcd",
+      "title": "Critical Zimbra Flaw Could Let Crafted Emails Run Malicious Code in User Sessions",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-11T06:45:55+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Zimbra の Classic Web Client に、保存型 XSS に起因する深刻な脆弱性が見つかり、細工したメールを受信した利用者のセッション内で悪意あるスクリプトが動く可能性がある。攻撃者はメール本文や表示処理を悪用し、被害者の画面上で権限を持つ操作を実行し、セッション情報や操作済み画面の内容を盗み取る流れが想定される。直接のRCEに見えて…",
+      "article_path": "articles/257f045a6e640dcd.html",
+      "original_url": "https://thehackernews.com/2026/07/critical-zimbra-flaw-could-let-crafted_0483473395.html"
+    },
+    {
+      "entry_id": "7f8f9e8f7f7b0672",
+      "title": "Wireshark 4.6.7 Released, (Sat, Jul 11th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-07-11T09:07:06+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Patch",
+      "summary_preview": "概要Wireshark 4.6.7 が公開され、12件の脆弱性と16件の不具合が修正された。内容は主にパケット解析時の例外処理やクラッシュ回避に関わるもので、悪意あるキャプチャファイルや細工した通信を開くと解析端末側で停止や異常終了を起こす可能性がある。通常は観測・解析用端末への影響が中心で、直ちに広範な横展開につながる性質は高くないが、解析端末が本番ネッ…",
+      "article_path": "articles/7f8f9e8f7f7b0672.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33146"
+    },
+    {
+      "entry_id": "0e404208e641d8aa",
+      "title": "No Manners Here: The Ruthless Rise of The Gentlemen Ransomware",
+      "source_name": "Unit 42",
+      "category": "reporting",
+      "published_at": "2026-07-10T22:00:39+00:00",
+      "impact_level": "High",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要The Gentlemen ransomware の運用実態を Unit 42 が分析し、アフィリエイト型で急拡大している点を示した。中核側が侵入基盤や交渉を分業し、参加者を増やして攻撃を量産する構図が見える。こうしたモデルは、単発の侵入事件ではなく、複数組織へ同時多発的に被害が広がる点に注意が要る。特に初期侵入経路が既知脆弱性、認証情報窃取、外部公開…",
+      "article_path": "articles/0e404208e641d8aa.html",
+      "original_url": "https://unit42.paloaltonetworks.com/the-gentlemen-ransomware/"
+    }
+  ]
+}
