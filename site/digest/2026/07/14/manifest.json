@@ -1,0 +1,298 @@
+{
+  "date": "2026-07-14",
+  "window": {
+    "from": "2026-07-13T06:00:00+09:00",
+    "to": "2026-07-14T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 23
+  },
+  "generated_at_jst": "2026-07-14T06:28:18.330702+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [],
+  "items": [
+    {
+      "entry_id": "bab910b067da47fd",
+      "title": "CVE-2008-4128 Cisco IOS Cross-Site Request Forgery Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-07-13T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CISA KEVにCVE-2008-4128が追加されたことで、古いCisco IOS環境が今なお実際に悪用されうる対象として扱う必要が出た。内容はCSRF系の問題で、攻撃者が管理者のブラウザ操作や既存セッションを起点に、意図しない設定変更を誘発する筋道が考えられる。影響は単一機器の設定改変にとどまらず、経路変更、アクセス制御の緩和、永続化の足がかりに…",
+      "article_path": "articles/bab910b067da47fd.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "54b70a70706cfe1e",
+      "title": "CrashStealer macOS Malware Uses Notarized Dropper to Pass Gatekeeper Checks",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-13T17:36:12+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要macOS向けの新しい情報窃取マルウェア CrashStealer が観測され、感染端末から機微情報を集める挙動が報告された。特徴は、公証済みのドロッパー を使って Gatekeeper の確認をすり抜ける点にあり、初期侵入後の実行ハードルを下げる構図が見える。実装は native C++ とされ、従来の AppleScript や Objective…",
+      "article_path": "articles/54b70a70706cfe1e.html",
+      "original_url": "https://thehackernews.com/2026/07/crashstealer-macos-malware-uses.html"
+    },
+    {
+      "entry_id": "f53cbab2ab5986c3",
+      "title": "Google and Microsoft Pull ModHeader With 1.6 Million Installs After Dormant Collector Found",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-13T17:17:24+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要Chrome と Edge で計約160万件の導入がある拡張機能 ModHeader が、公式ストア版に閲覧履歴収集コードを含んでいたとして、Google と Microsoft により削除された。研究者の指摘では収集処理は休眠状態で、空の許可リストのため実際には動作していなかったとされる。現時点で、実際にドメイン情報を送信した証拠は確認されていない。…",
+      "article_path": "articles/f53cbab2ab5986c3.html",
+      "original_url": "https://thehackernews.com/2026/07/google-and-microsoft-pull-modheader.html"
+    },
+    {
+      "entry_id": "3ac21f71bfe34fa1",
+      "title": "⚡ Weekly Recap: ShareFile Threat, Citrix Bleed 2 Ransomware, AI Coding Attacks, and More",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-13T15:05:57+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要The Hacker News の週次まとめで、ShareFile 関連の脅威、Citrix Bleed 2 を使うランサムウェア、AI を用いたコーディング攻撃などが並んでいる。個別の一次情報を束ねた二次情報であり、記事そのものは新たな脆弱性公表ではなく、既知の弱点が実運用でどう悪用されるかを示す整理に近い。攻撃者は更新待ちの管理面や外部公開面を狙い…",
+      "article_path": "articles/3ac21f71bfe34fa1.html",
+      "original_url": "https://thehackernews.com/2026/07/weekly-recap-sharefile-threat-citrix.html"
+    },
+    {
+      "entry_id": "dab1e46d19c0b42f",
+      "title": "New MemGhost Attack Plants Persistent False Memories in AI Agents Through One Email",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-13T13:49:48+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要記事は、AIエージェントの永続メモリを悪用し、1通のメールだけで誤った事実を保存させる攻撃を扱う。攻撃が成立すると、以後の応答が静かに誘導され、利用者は通常の会話に見えても内部の判断材料が書き換わった状態になる。影響は単発の誤回答にとどまらず、メール内容の解釈、要約、意思決定支援、他システム連携の前提まで広がる可能性がある。実際にどの製品や実装がどこま…",
+      "article_path": "articles/dab1e46d19c0b42f.html",
+      "original_url": "https://thehackernews.com/2026/07/new-memghost-attack-plants-persistent.html"
+    },
+    {
+      "entry_id": "2339fd36074a0da4",
+      "title": "Forg365 PhaaS Targets Microsoft 365 with Device Code and AitM Session Theft",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-13T13:03:33+00:00",
+      "impact_level": "High",
+      "threat_type": "Phishing",
+      "summary_preview": "概要Forg365 と呼ばれる Phishing-as-a-Service が、Microsoft 365 を狙って device code phishing と AitM を組み合わせている。被害者にコード入力や認証を促し、取得したセッションやトークンを使って 認証後の突破 を狙う点が厄介になる。加えて、bot対策回避やAIで作った誘導文を使い、検知や教…",
+      "article_path": "articles/2339fd36074a0da4.html",
+      "original_url": "https://thehackernews.com/2026/07/forg365-phaas-targets-microsoft-365.html"
+    },
+    {
+      "entry_id": "c8143e617fdbc96d",
+      "title": "Meta Files Patent for AI That Can Listen All Day and Track How You're Feeling",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-13T11:54:46+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要Metaが、一日中音声を聞き取り、声の変化から感情を推定し、時刻つきで記録するAIの特許を出願したと報じられている。記録対象には時刻、位置、行動、端末の使い方まで含まれる構想がある。実装済み機能かは未確認で、現時点では特許出願の段階にとどまる。とはいえ、もし製品化されれば、利用者の会話内容そのものよりも、継続的な行動プロファイルが価値を持つ設計になりや…",
+      "article_path": "articles/c8143e617fdbc96d.html",
+      "original_url": "https://thehackernews.com/2026/07/meta-files-patent-for-ai-that-can.html"
+    },
+    {
+      "entry_id": "4af77a660ced5712",
+      "title": "Thinking Fast and Slow in the SOC: The Case for Combining Autonomous AI with Analyst Copilots",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-13T11:37:05+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要この記事は、SOCでのAI活用を自律型エージェントとアナリスト用コパイロットに分けて考えるべきだと論じる内容となっている。Fortune 50企業のCISOとの対話を題材に、検知ツールとClaudeを接続して個別調査では成果が出ている一方、全体設計では判断の置き場所が曖昧になりやすい点を示している。悪用そのものを扱う記事ではなく、運用設計を誤ると誤検知…",
+      "article_path": "articles/4af77a660ced5712.html",
+      "original_url": "https://thehackernews.com/2026/07/thinking-fast-and-slow-in-soc-case-for.html"
+    },
+    {
+      "entry_id": "dc9504e963b3acb3",
+      "title": "Attacker Uses Suspected AI-Generated PowerShell Script to Map Active Directory",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-13T11:02:33+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要攻撃者がAI生成の可能性がある PowerShell を使い、Active Directory の列挙と情報収集を進めた痕跡が報告された。スクリプトは Domain Controller を探し、ユーザー、端末、ドメインを列挙したうえで、結果をファイルとして書き出し、AD_Report.html を作成して実行成否を確認していた。これは単発の偵察に見え…",
+      "article_path": "articles/dc9504e963b3acb3.html",
+      "original_url": "https://thehackernews.com/2026/07/attacker-uses-suspected-ai-generated.html"
+    },
+    {
+      "entry_id": "29dbf848b522224c",
+      "title": "Misconfigured Server Reveals Three Evilginx Phishing Operations Targeting Microsoft 365",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-13T07:30:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Phishing",
+      "summary_preview": "概要公開ポートで動いていた Python の簡易Webサーバー に ディレクトリ一覧表示 が残っており、そこから攻撃者の作業履歴と運用資材が露出した。履歴ファイル .bash_history には起動コマンドが残っており、調査側はそこを手掛かりに Evilginx を使う Microsoft 365 向けフィッシング運用を追跡した。単なる設定ミスに見えるが…",
+      "article_path": "articles/29dbf848b522224c.html",
+      "original_url": "https://thehackernews.com/2026/07/misconfigured-server-reveals-three.html"
+    },
+    {
+      "entry_id": "747a59360dcd8662",
+      "title": "iCagenda and Balbooa Forms Joomla Flaws Reportedly Exploited as Zero-Days",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-13T05:36:02+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Zero-day",
+      "summary_preview": "概要Joomla向け拡張機能のiCagendaとBalbooa Formsに関する脆弱性が、実際に悪用されたゼロデイとして報告され、CISAのKEVにも追加された。記事の範囲では、どの機能経路から侵害が成立するかの詳細は途中までしか示されておらず、初期侵入の再現条件は未確認のまま残る。両件ともCVSS 10.0とされるが、運用上の重要点はスコアそのものより…",
+      "article_path": "articles/747a59360dcd8662.html",
+      "original_url": "https://thehackernews.com/2026/07/icagenda-and-balbooa-forms-joomla-flaws.html"
+    },
+    {
+      "entry_id": "846b9ca91b59244e",
+      "title": "Someone Is Scanning for Your MCP Servers and AI Assistant Credentials, (Mon, Jul 13th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-07-13T04:22:02+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要MCP サーバーや AI アシスタントの認証情報 を狙うスキャンが観測されたという観測記事で、初期侵入そのものよりも、公開配置や設定不備を探す段階に重心がある。MCP は AI エージェントが外部機能へ接続するための窓口になりやすく、ここに認証情報やトークンが残っていると、単なる情報漏えいでは終わらず、横展開 や 権限のなりすまし に繋がる余地がある。…",
+      "article_path": "articles/846b9ca91b59244e.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33150"
+    },
+    {
+      "entry_id": "0cd48e967bc4d428",
+      "title": "ISC Stormcast For Monday, July 13th, 2026 https://isc.sans.edu/podcastdetail/10004, (Mon, Jul 13th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-07-13T02:00:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要SANS ISC の Stormcast は、脆弱性の悪用動向や防御側が押さえるべき観測点を短時間で整理する定期配信で、今回も特定製品の新規問題というより、現場で何を確認すべきかに重心がある。記事本文が与えられていないため個別の対象や手口は確認できないが、こうした配信は既知脆弱性の再悪用、露出資産のスキャン増加、設定不備の見落としを早く拾う材料になりや…",
+      "article_path": "articles/0cd48e967bc4d428.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33148"
+    },
+    {
+      "entry_id": "15d5dcb5281294a3",
+      "title": "革新的情報通信技術（Beyond 5G（6G））基金事業 要素技術・シーズ創出型プログラムのうち「日英国際共同研究プロジェクト」に係る公募を開始",
+      "source_name": "NICT NOTICE",
+      "category": "reporting",
+      "published_at": "2026-07-13T05:00:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要NICTが、Beyond 5G（6G）基金事業の一環として、日英国際共同研究プロジェクトの公募を開始した。狙いは、将来の通信基盤を支える要素技術とシーズを早期に育てる点にあり、直ちに脆弱性や侵害を示す発表ではない。想定される影響は、研究開発の成果が将来のネットワーク機器、制御方式、運用基盤に反映されることによる長期的な安全性向上にとどまる。攻撃者が今す…",
+      "article_path": "articles/15d5dcb5281294a3.html",
+      "original_url": "/press/2026/07/13-1.html"
+    },
+    {
+      "entry_id": "5c296fb0b12beb20",
+      "title": "10,757個中47個からマルウェア検出、三重県がUSBメモリの庁内調査結果公表 感染被害は無し",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-12T23:05:18+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Malware",
+      "summary_preview": "概要三重県が庁内で回収したUSBメモリ10,757個を調査し、47個からマルウェアを検出したと公表した。現時点で感染被害は確認されていないが、外部媒体を介した持ち込み経路が実在したことを示すため、単なる保管物の点検として見過ごしにくい。悪用の起点は、持ち出しや回収後の再利用を前提にしたUSB経由の感染、あるいは不審ファイルの開封に置かれる可能性が高い。影響…",
+      "article_path": "articles/5c296fb0b12beb20.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/13/55689.html"
+    },
+    {
+      "entry_id": "bb87c8ebbf0e748f",
+      "title": "テレビ朝日メディアプレックスに不正アクセス",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-12T23:05:15+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要テレビ朝日メディアプレックスで不正アクセスが確認されたという報道であり、社内システムや保有情報への到達経路が問題になる局面となる。現時点の入力では、侵入経路、侵害された資産、外部流出の有無は未確認で、事実関係の確定を急ぐ必要がある。攻撃者は認証情報の窃取、公開サービスの脆弱性悪用、委託先経由の侵入などを起点に、メール、ファイル共有、業務端末へ横展開する…",
+      "article_path": "articles/bb87c8ebbf0e748f.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/13/55688.html"
+    },
+    {
+      "entry_id": "8d223696f5a01da6",
+      "title": "朝日放送テレビグループ会社に不正アクセス",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-12T23:05:11+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要朝日放送テレビのグループ会社で不正アクセスが確認され、社内システムや業務情報への影響有無を調べる局面と読める。現時点では、侵入経路、侵入後に何へ到達したか、情報流出や暗号化被害が起きたかは未確認のまま残る。報道段階のため、攻撃者が認証情報の窃取から踏み込んだのか、公開機器の脆弱性を突いたのかは切り分けが必要になる。放送関連企業は委託先や共有基盤を抱えや…",
+      "article_path": "articles/8d223696f5a01da6.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/13/55687.html"
+    },
+    {
+      "entry_id": "fa5cebea6ea677c7",
+      "title": "城西国際大学が大学推奨PCの購入先として紹介している加賀ソルネット運営のECサイトに不正アクセス",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-12T23:05:08+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要城西国際大学が大学推奨PCの購入先として案内していた、加賀ソルネット運営のECサイトに不正アクセスが発生した。現時点で確認できるのは、大学の案内先に含まれる外部サイト側での事案という点であり、大学本体の基幹環境が侵害されたかどうかは読み取れない。悪用の焦点は、購入手続きに伴う個人情報や決済関連情報の取得、あるいは改ざんされたページを踏み台にしたさらなる…",
+      "article_path": "articles/fa5cebea6ea677c7.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/13/55686.html"
+    },
+    {
+      "entry_id": "a663df964cb33759",
+      "title": "加賀ソルネット運営の「アカデミコナビ」に不正アクセス、最大約 17 万件の個人情報が漏えいした可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-12T23:05:06+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要加賀ソルネットが運営する「アカデミコナビ」で不正アクセスが発生し、最大約17万件の個人情報が漏えいした可能性が示された。公開情報からは、侵入の起点、滞在期間、持ち出し経路の詳細はまだ読み切れず、実際の流出有無も未確認のまま残る。攻撃者は会員情報や管理画面の権限を足がかりに、閲覧・抽出・再利用まで進めた可能性があり、単なる画面改ざんよりも情報窃取型の被害…",
+      "article_path": "articles/a663df964cb33759.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/13/55685.html"
+    },
+    {
+      "entry_id": "a167166c800569cf",
+      "title": "京都芸術大学がパソコン・ソフトウェアの斡旋販売で利用している加賀ソルネット運営の「アカデミコナビ」に不正アクセス",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-12T23:05:03+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要京都芸術大学のパソコン・ソフトウェア斡旋販売に使われる加賀ソルネット運営の「アカデミコナビ」に不正アクセスが確認された。記事情報だけでは、侵入の経路、影響範囲、個人情報や決済情報の有無は確定していない。こうした申込・受発注系の基盤は、閲覧だけでなく学生・教職員の属性情報や購入履歴を扱うことが多く、横に広がると連絡先詐取や追加侵入の足掛かりになりやすい。…",
+      "article_path": "articles/a167166c800569cf.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/13/55684.html"
+    },
+    {
+      "entry_id": "30ac628e1b5874c6",
+      "title": "7 / 22 ～ 24 開催「DX 総合EXPO 2026 夏 東京」にエーアイセキュリティラボ出展・登壇",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-12T23:00:10+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要本件は、DX 総合EXPO 2026 夏 東京への出展・登壇告知であり、脆弱性や侵害事案そのものを扱う記事ではない。したがって、CSIRT観点では直ちに封じ込めや緊急対応を要する性質は薄い。エーアイセキュリティラボがどの領域を訴求するかは記事本文だけでは確認できず、製品名や具体的な技術内容、対象業務の範囲は未確認となる。とはいえ、展示会由来の情報は、攻…",
+      "article_path": "articles/30ac628e1b5874c6.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/13/55683.html"
+    },
+    {
+      "entry_id": "5f70de6eda6a1dc0",
+      "title": "水道料金請求や給水停止をSMSやメールで案内することはない ～「水道料金を支払わなければ給水を停止する」メールに神奈川県が注意呼びかけ",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-12T23:00:08+00:00",
+      "impact_level": "Low",
+      "threat_type": "Scam/Fraud",
+      "summary_preview": "概要神奈川県が、水道料金の請求や給水停止の案内をSMSやメールで行うことはないとして注意を呼びかけた。県や水道局を装って「未払いなら給水を止める」などと迫り、受信者に不安を与えて連絡先確認や支払い、偽サイト誘導を狙う手口が想定される。直接の被害は金銭詐取や情報入力にとどまりやすいが、業務端末や私物端末からのアクセスが絡むと、認証情報の窃取や二次被害に広がる…",
+      "article_path": "articles/5f70de6eda6a1dc0.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/13/55682.html"
+    },
+    {
+      "entry_id": "8aa8fe3fa3fa766f",
+      "title": "富士電機製 Pupsman のインストーラに複数の脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-12T23:00:03+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要富士電機製 Pupsman のインストーラに、複数の脆弱性があると伝えられている。記事は脆弱性の存在を知らせる性格が強く、どの機能がどの条件で悪用可能か、また認証前に成立するのか、既に悪用事例があるのかは本文からは読み取れない。インストーラ由来の問題は、配布物の改ざん、任意コード実行、権限昇格の起点になりやすく、現場では展開作業や保守端末が最初の影響点…",
+      "article_path": "articles/8aa8fe3fa3fa766f.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/13/55681.html"
+    }
+  ]
+}
