@@ -1,0 +1,34 @@
+{
+  "date": "2026-07-19",
+  "window": {
+    "from": "2026-07-18T06:00:00+09:00",
+    "to": "2026-07-19T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 1
+  },
+  "generated_at_jst": "2026-07-19T06:23:04.540360+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [],
+  "items": [
+    {
+      "entry_id": "e2806825050dcd5d",
+      "title": "New wp2shell WordPress Core Flaw Lets Unauthenticated Attackers Run Code",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-17T21:20:10+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要WordPress本体の欠陥により、認証なしのHTTP要求からコード実行に至る可能性が示された。対象はプラグインなしの素の導入環境も含み、攻撃成立条件が比較的軽い点が厄介になる。記事では、影響範囲として WordPress 6.9 と 7.0 系が挙がっているが、どの版に修正が入ったか、どの条件で再現するかはこの抜粋だけでは確定しない。更新情報では、C…",
+      "article_path": "articles/e2806825050dcd5d.html",
+      "original_url": "https://thehackernews.com/2026/07/new-wp2shell-wordpress-core-flaw-lets.html"
+    }
+  ]
+}
