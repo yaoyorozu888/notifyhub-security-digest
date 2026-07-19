@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-20",
+  "window": {
+    "from": "2026-07-19T06:00:00+09:00",
+    "to": "2026-07-20T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 4
+  },
+  "generated_at_jst": "2026-07-20T06:23:43.195985+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [],
+  "items": [
+    {
+      "entry_id": "cd9555425e6f6bfc",
+      "title": "Critical NGINX Vulnerability Can Crash Workers and May Allow Remote Code Execution",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-19T20:42:49+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要F5のnginx系製品に、リモートの未認証で悪用できるヒープバッファオーバーフローが見つかり、ワーカープロセスの停止や再起動を起こせる。影響を受けるのは CVE-2026-42533 で、修正済み版は nginx 1.30.4、1.31.3、NGINX Plus 37.0.3.1 となる。攻撃は細工した HTTP リクエストだけで成立するため、外部公開…",
+      "article_path": "articles/cd9555425e6f6bfc.html",
+      "original_url": "https://thehackernews.com/2026/07/critical-nginx-vulnerability-can-crash.html"
+    },
+    {
+      "entry_id": "aaba3fe87634472d",
+      "title": "UAC-0145 Uses ClickFix CAPTCHAs to Infect Ukrainian Devices wih Malware",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-19T13:30:55+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要UAC-0145 が ClickFix 型の誘導を使い、ウクライナの対象に自分で操作させて マルウェア感染 を成立させたと報じられている。見かけ上は CAPTCHA や確認手順に見せかけ、利用者にコマンド実行やファイル導入を促す流れが中心とみられる。狙いは認証情報や端末内データの窃取で、単発の端末侵害にとどまらず、メール・VPN・共有領域の資格情報を足…",
+      "article_path": "articles/aaba3fe87634472d.html",
+      "original_url": "https://thehackernews.com/2026/07/uac-0145-uses-clickfix-captchas-to.html"
+    },
+    {
+      "entry_id": "39da7859a5301114",
+      "title": "SonicWall SMA Zero-Days Exploited Before Disclosure to Gain Root Access",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-19T13:18:56+00:00",
+      "impact_level": "High",
+      "threat_type": "Zero-day",
+      "summary_preview": "概要SonicWall SMA 1000 系列のVPN機器に対し、公開前からゼロデイとして悪用され、root権限の取得に至った事案が報じられた。調査主体のVolexityは、この活動をUTA0533として追跡している。攻撃の成立には、対象機器が外部公開されていること、かつ未修正の脆弱性が残っていることが前提になる。侵害されると認証境界を越えて侵入されやすく…",
+      "article_path": "articles/39da7859a5301114.html",
+      "original_url": "https://thehackernews.com/2026/07/sonicwall-sma-zero-days-exploited.html"
+    },
+    {
+      "entry_id": "79eda61147c4711f",
+      "title": "Scans for Hikvision Intelligent Security API, (Sun, Jul 19th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-07-19T15:00:38+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要SANS ISC は、Hikvision の監視カメラ群に対して Intelligent Security API を狙う インターネット規模のスキャン を観測した。本文の焦点は新しい脆弱性の公表ではなく、こうした機器が過去から継続して探査対象になっている点にある。悪用の入口は、外部公開された管理面や API 応答の差分を起点にした認証回避、情報収集、…",
+      "article_path": "articles/79eda61147c4711f.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33164"
+    }
+  ]
+}
