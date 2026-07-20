@@ -1,0 +1,166 @@
+{
+  "date": "2026-07-21",
+  "window": {
+    "from": "2026-07-20T06:00:00+09:00",
+    "to": "2026-07-21T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 12
+  },
+  "generated_at_jst": "2026-07-21T06:33:08.613284+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [],
+  "items": [
+    {
+      "entry_id": "67e839ab94cef4ca",
+      "title": "FakeGit Campaign Uses 7,600 GitHub Repositories to Spread SmartLoader Malware",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-20T18:23:03+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要この件は、約7,600件の悪性GitHubリポジトリを使い、開発者が信頼しやすい見た目でSmartLoaderを配布するキャンペーンの報告である。AIスキルやMCPサーバーを装うものが800件超含まれ、コピーされたプロジェクト、似せた開発者プロフィール、説得力のあるREADME、悪性ZIPが組み合わされている。狙いは利用者に実行させ、端末内にローダーを…",
+      "article_path": "articles/67e839ab94cef4ca.html",
+      "original_url": "https://thehackernews.com/2026/07/fakegit-campaign-uses-7600-github.html"
+    },
+    {
+      "entry_id": "0f26564dba2cd2d3",
+      "title": "Exposed Server Reveals AI-Assisted Phishing Toolkit Behind WebDAV Malware Campaign",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-20T17:29:50+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Malware",
+      "summary_preview": "概要攻撃者の配布用サーバーが公開状態のまま残され、Rapid7がそこから 1,048件のファイルを回収した。中には、誘導文面、ファイル名の偽装検証、実行試験、ドロッパー、ビルド手順、そして 2系統のキャンペーンが含まれていた。少なくとも1系統は、WebDAV を使って偽の政府ID照会サイトからWindows利用者へ情報窃取型マルウェアを配布していた。攻撃は…",
+      "article_path": "articles/0f26564dba2cd2d3.html",
+      "original_url": "https://thehackernews.com/2026/07/exposed-server-reveals-ai-assisted.html"
+    },
+    {
+      "entry_id": "63cb41d36ca1dc0e",
+      "title": "HollowGraph Malware Hides C2 and Stolen Files in Microsoft 365 Events Dated 2050",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-20T14:33:43+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要HollowGraph は、Microsoft 365 の予定表イベントを使って C2 指令と窃取データをやり取りする新しいスパイウェア系インプラントとして報告された。攻撃者は予定を2050年の日付で作成し、通常の業務通信に紛れた Microsoft Graph API 由来の通信として見せかける。これにより、監視側からは正規利用に近く見え、単純なドメ…",
+      "article_path": "articles/63cb41d36ca1dc0e.html",
+      "original_url": "https://thehackernews.com/2026/07/hollowgraph-malware-hides-c2-and-stolen.html"
+    },
+    {
+      "entry_id": "bbc57f26e9f53311",
+      "title": "⚡ Weekly Recap: WordPress RCE, SonicWall 0-Days, AI Service Attacks, SharePoint 0-Day and More",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-20T13:32:26+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要今週のまとめ記事は、WordPressのRCE、SonicWallの0-day、SharePointの0-day、AI系サービスへの攻撃など、複数の経路で小さな入力から大きな侵害へつながる事例を横断して扱っている。共通するのは、公開面がある、入力検証が甘い、古いドライバや公開コードが悪用されるといった、運用上の隙を突く点にある。攻撃が成立すると、単発の…",
+      "article_path": "articles/bbc57f26e9f53311.html",
+      "original_url": "https://thehackernews.com/2026/07/weekly-recap-wordpress-rce-sonicwall-0.html"
+    },
+    {
+      "entry_id": "1d24ee2669ce3047",
+      "title": "Russian Intelligence Hacks IP Cameras to Spy on Military Logistics Across NATO States and Ukraine",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-20T12:13:39+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要ロシア情報機関が、インターネット接続型の監視カメラを系統的に乗っ取り、欧州各国とウクライナで軍事輸送や兵站の動きを観察していると報じられた。対象は、キエフ向けの武器輸送、軍車両の通行経路、部隊の配置把握など、現場の動線を補完する映像情報になっている。侵入手口の詳細は限定的だが、外部公開された管理画面、初期設定のままの認証、再利用された資格情報など、露出…",
+      "article_path": "articles/1d24ee2669ce3047.html",
+      "original_url": "https://thehackernews.com/2026/07/russian-intelligence-hacks-ip-cameras.html"
+    },
+    {
+      "entry_id": "1f974f3d01cf234d",
+      "title": "Mythos Didn't Break Your Security Program. Your Exposure Window Could.",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-20T11:30:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要この記事は、Anthropicの公開後に注目された「脆弱性の件数増加」よりも、実際には露出期間の長さが防御側の失点を左右するという視点を示している。AI支援の発見が進むほど、攻撃者は未修正の穴を早く見つけるより、修正される前の時間帯を狙って収益化しやすくなる。つまり、問題の本質は新規CVEの総数ではなく、公開・悪用・修正の間にどれだけの資産が外部に晒さ…",
+      "article_path": "articles/1f974f3d01cf234d.html",
+      "original_url": "https://thehackernews.com/2026/07/mythos-didnt-break-your-security.html"
+    },
+    {
+      "entry_id": "31d006ecaa0d3046",
+      "title": "New 7-Zip Vulnerability Could Let Crafted XZ Archives Run Code During Extraction",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-20T09:10:56+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要7-Zip の CVE-2026-14266 について、細工された XZ アーカイブを展開した際に、現在のプロセス権限でコード実行につながる可能性が報じられた。問題箇所は XZ のチャンク処理における ヒープベースのバッファオーバーフローで、細工ファイルを開くだけで発火しうる点が重要になる。影響は、展開操作を行う端末や自動処理の実行基盤に及び、権限の高…",
+      "article_path": "articles/31d006ecaa0d3046.html",
+      "original_url": "https://thehackernews.com/2026/07/new-7-zip-vulnerability-could-let.html"
+    },
+    {
+      "entry_id": "63e1d734dd2ed872",
+      "title": "Russian-Speaking Hacker Uses Google Gemini CLI to Control Botnet of Eight Dental Clinic PCs",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-20T09:07:11+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要ロシア語圏の攻撃者が、GoogleのGemini CLIを使って既存のボットネット運用を補助し、歯科医院8台のPCを遠隔操作していたと報じられた。記事によれば、流出したとみられるセッション記録200件の分析から、攻撃者はAIにパスワード解析や住宅回線の整備、実行手順の補助をさせていた。こうした使い方は、攻撃そのものをAIが自律実行したというより、低コス…",
+      "article_path": "articles/63e1d734dd2ed872.html",
+      "original_url": "https://thehackernews.com/2026/07/russian-speaking-hacker-uses-google.html"
+    },
+    {
+      "entry_id": "3b4bda0195e1b4dd",
+      "title": "World's Largest AI Model Repository Hugging Face Breached by Autonomous AI Agent",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-20T05:27:26+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要Hugging Face が、自律型AIエージェントを用いた侵害を受け、本番基盤への不正アクセスを検知して対応したと公表した。侵害者は限られた内部データセットと、いくつかの認証情報に到達したとされるが、影響範囲の全容や外部流出の有無は本文だけでは確定できない。攻撃の本質は、AIを“補助”ではなく操作主体として使い、探索・認証情報収集・横断的な操作を機械…",
+      "article_path": "articles/3b4bda0195e1b4dd.html",
+      "original_url": "https://thehackernews.com/2026/07/worlds-largest-ai-model-repository.html"
+    },
+    {
+      "entry_id": "d7fce2c7639bc15f",
+      "title": "SleeperGem Uses Three Malicious RubyGems Packages to Target Developer Machines",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-20T05:15:39+00:00",
+      "impact_level": "High",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要RubyGems に 悪意ある 3 つのパッケージ が公開され、開発者端末を起点に追加ペイロードを送り込む サプライチェーン攻撃 が確認された。公開されたのは既存名に似せた gem で、依存解決や手作業インストールの隙を突き、開発環境に入り込む狙いがある。実害は単独の端末侵害にとどまらず、ソースコード、認証情報、CI/CD、配布物へ波及する可能性がある…",
+      "article_path": "articles/d7fce2c7639bc15f.html",
+      "original_url": "https://thehackernews.com/2026/07/sleepergem-uses-three-malicious.html"
+    },
+    {
+      "entry_id": "b355ae6388dd8481",
+      "title": "WordPress Exploitation Underway (CVE-2026-63030), (Mon, Jul 20th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-07-20T18:41:24+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Searchlight Cyber が公表した wp2shell は、WordPress 本体に存在する SQLインジェクション で、最終的に 認証不要のRCE へつながる点が重要となる。のちに CVE-2026-63030 が割り当てられ、公開直後から 実際の悪用 が始まったとされる。プラグイン脆弱性ではなく WordPress Core そのものに…",
+      "article_path": "articles/b355ae6388dd8481.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33168"
+    },
+    {
+      "entry_id": "bacba262211dc4c0",
+      "title": "ISC Stormcast For Monday, July 20th, 2026 https://isc.sans.edu/podcastdetail/10014, (Mon, Jul 20th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-07-20T02:00:02+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要SANS ISC の Stormcast は、7月20日時点の観測や話題を短く整理するポッドキャスト連動情報であり、個別の脆弱性通知や公式アドバイザリそのものではない。今回の入力だけでは、具体的な製品名、CVE、悪用事実、被害範囲を特定できず、未確認事項が多い。したがって、直ちに脅威評価を引き上げるよりも、関連トピックの一次情報が出ているかを確認する段…",
+      "article_path": "articles/bacba262211dc4c0.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33166"
+    }
+  ]
+}
