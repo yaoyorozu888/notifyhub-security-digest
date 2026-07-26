@@ -1,0 +1,85 @@
+{
+  "date": "2026-07-27",
+  "window": {
+    "from": "2026-07-26T06:00:00+09:00",
+    "to": "2026-07-27T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 1
+  },
+  "generated_at_jst": "2026-07-27T06:25:01.457229+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-2",
+      "title": "Hugging Face CEOがOpenAIハック後の透明性強化を提言",
+      "source_name": "TechCrunch",
+      "published_at": "2026-07-26T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要OpenAIの大規模ハックを受け、Hugging Face CEOが根本的な透明性の必要性を強調した。モデル開発過程の公開がセキュリティ向上に寄与すると指摘する。中国製オープンソースモデルを巡る議論も活発化し、AIエコシステムの分断が懸念される。企業は自社AIの信頼性確保策を急ぐべきだ。",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://techcrunch.com/2026/07/26/hugging-face-ceo-calls-for-radical-transparency-after-unprecedented-openai-hack",
+      "selection_reason": "AIモデル開発のセキュリティと透明性に関する具体的な発言で、AI分野の進展に直結。他の一般論より実務的示唆が強い。",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "Hugging Face CEO calls for ‘radical transparency’ after ‘unprecedented’ OpenAI hack",
+          "url": "https://techcrunch.com/2026/07/26/hugging-face-ceo-calls-for-radical-transparency-after-unprecedented-openai-hack",
+          "source_type": "news"
+        },
+        {
+          "title": "Silicon Valley Splits Over Closing the Borders to Chinese A.I.",
+          "url": "https://www.nytimes.com/2026/07/25/technology/open-source-silicon-valley-china.html",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "CISAがZimbra向けフィッシング攻撃を警告",
+      "source_name": "CISA",
+      "published_at": "2026-07-23T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Phishing",
+      "summary_preview": "概要CISAがZimbraコラボレーションスイート利用者を狙ったロシア支援型フィッシングを警告した。国家支援アクターの関与が確認され、メール基盤の防御強化が急務となる。既知脆弱性の悪用も継続しており、組織はパッチ適用と監視を徹底せよ。",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-204a",
+      "selection_reason": "ロシア支援の国家支援型攻撃の具体例で、セキュリティ実務に直結する最新警告。汎用予測より即時対応価値が高い。",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "Russian State-Supported Cyber Actors Conduct Phishing Campaign Targeting Users of Zimbra Collaboration Suite",
+          "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-204a",
+          "source_type": "official"
+        },
+        {
+          "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+          "url": "https://www.cisa.gov/news-events/alerts/2026/07/22/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+          "source_type": "official"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "f0be9ad125a380b0",
+      "title": "Scans for ESAFENET CDG 3 Document Management System Weak Logins, (Sun, Jul 26th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-07-26T15:26:14+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Exploit",
+      "summary_preview": "概要ESAFENET CDG の弱いログイン情報を狙う スキャン が観測された。対象製品は文書管理と情報漏えい対策を担うため、侵入できると機密文書や認証情報に近い位置まで到達しやすい。今回の観測は攻撃の実行そのものではなく、露出機器の棚卸しを狙う前段階の活動と読むのが妥当になる。製品側には既知の SQL Injection、XSS、初期パスワード問題がある…",
+      "article_path": "articles/f0be9ad125a380b0.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33184"
+    }
+  ]
+}
