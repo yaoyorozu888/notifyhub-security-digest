@@ -1,0 +1,381 @@
+{
+  "date": "2026-07-28",
+  "window": {
+    "from": "2026-07-27T06:00:00+09:00",
+    "to": "2026-07-28T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 24
+  },
+  "generated_at_jst": "2026-07-28T06:34:37.312931+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "GoogleのAI Overviews、検索出現率が15%から43%へ急増",
+      "source_name": "TechCrunch",
+      "published_at": "2026-07-27T15:57:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要GoogleのAI Overviewsが検索の43%に出現するようになり、AI Modeの訪問数も大幅に増加した。ユーザーは会話形式のクエリを増やし、Google内で完結する傾向が強まっている。出版社は参照トラフィックの減少に直面し、Cloudflareなどの対策ツールが登場している。AI引用の割合も5倍以上に拡大した一方、ChatGPTでは引用付き応…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://techcrunch.com/2026/07/27/googles-ai-search-is-rapidly-becoming-the-default-new-data-shows/",
+      "selection_reason": "IT分野の検索行動変化を具体的なデータで示し、企業や出版社の実務判断に直結する新規性が高いため選定。他の汎用予測ではなく実際の利用率推移を基にした話題。",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "Google's AI search is rapidly becoming the default, new data shows",
+          "url": "https://techcrunch.com/2026/07/27/googles-ai-search-is-rapidly-becoming-the-default-new-data-shows/",
+          "source_type": "news"
+        },
+        {
+          "title": "The 2026 Generative AI Landscape",
+          "url": "https://www.similarweb.com/corp/the-2026-generative-ai-landscape/",
+          "source_type": "web"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "Microsoft、AI時代向け新セキュリティスタックProject Perceptionを発表",
+      "source_name": "Microsoft",
+      "published_at": "2026-07-27T16:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要MicrosoftはAIエージェントによる攻撃に対応するため、Project Perceptionを8月3日からパブリックプレビューで提供する。Red、Blue、Greenの3種エージェントが連携し、リスクを継続的に感知・推論・対策する。MAI-Cyber-1-Flashモデルは脆弱性管理で96%の精度と50%のコスト削減を実現した。多モデル構成でタス…",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://blogs.microsoft.com/blog/2026/07/27/rethinking-security-for-the-age-of-ai/",
+      "selection_reason": "AIモデルとエージェントを活用したセキュリティ新アプローチを具体的に提示し、AI分野の実務影響が大きいため選定。汎用予測ではなく製品プレビュー日程を含む最新情報。",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "Rethinking security for the age of AI",
+          "url": "https://blogs.microsoft.com/blog/2026/07/27/rethinking-security-for-the-age-of-ai/",
+          "source_type": "official"
+        },
+        {
+          "title": "Introducing MAI-Cyber-1-Flash inside MDASH",
+          "url": "https://microsoft.ai/news/introducing-mai-cyber-1-flash-inside-mdash/",
+          "source_type": "web"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "CDW、2026年サイバーセキュリティレポートを公開",
+      "source_name": "CDW",
+      "published_at": "2026-07-27T18:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Advisory",
+      "summary_preview": "概要CDWは950人超のIT・セキュリティリーダーを対象とした2026年レポートを発表した。AI駆動型攻撃の増加やランサムウェアの脅威が顕在化し、組織は防御体制の強化を急いでいる。多層防御やゼロトラストの採用が進む一方、予算や人材不足が課題として浮上した。レポートは具体的な対策事例や優先投資領域を提示しており、企業は自社状況との比較を通じて戦略を更新できる。",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://www.cdw.com/content/cdw/en/newsroom/articles/corporatenews/2026/07/27/cdw-releases-2026-cybersecurity-report.html",
+      "selection_reason": "950人以上のIT・セキュリティリーダー調査に基づく最新動向をまとめ、企業の実務対応に直結するため選定。個別インシデントではなく業界全体の傾向を扱う点で優先。",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "CDW Releases 2026 Cybersecurity Report",
+          "url": "https://www.cdw.com/content/cdw/en/newsroom/articles/corporatenews/2026/07/27/cdw-releases-2026-cybersecurity-report.html",
+          "source_type": "news"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "daf35b5dad9bea40",
+      "title": "CVE-2025-68686 Fortinet FortiOS Exposure of Sensitive Information to an Unauthorized Actor Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-07-27T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Fortinet FortiOS に、未許可の相手へ機微情報が漏れる CVE-2025-68686 が含まれる。CISA の KEV 掲載により、単なる理論上の欠陥ではなく、実際の悪用可能性が前提になる。典型的には、外部公開された管理系や境界機器を起点に、設定情報や認証に関わる手掛かりが抜かれ、次段の侵入や横展開の足場にされる。影響は当該装置単体に見え…",
+      "article_path": "articles/daf35b5dad9bea40.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "788a1a2bf0d372cd",
+      "title": "CVE-2026-16812 Arista VeloCloud Orchestrator On-Prem OS Command Injection Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-07-27T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CVE-2026-16812 は、Arista VeloCloud Orchestrator On-Prem に存在する OSコマンド注入 の脆弱性で、管理画面やバックエンド処理に到達できる前提が整うと、任意コマンド実行へつながる可能性がある。認証要否や到達条件の詳細は入力情報だけでは未確認で、そこが実際の危険度を左右する。CISA KEV に掲載され…",
+      "article_path": "articles/788a1a2bf0d372cd.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "eec7d28aef730c45",
+      "title": "NVIDIA Forms 37-Member Open Secure AI Alliance and Open-Sources NOOA Framework",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-27T18:10:05+00:00",
+      "impact_level": "Low",
+      "threat_type": "Advisory",
+      "summary_preview": "概要NVIDIA と複数企業が、AI とソフトウェアの保護技術を共有する連合を立ち上げ、NOOA フレームワークを公開した。内容は脆弱性そのものではなく、AI エージェントや周辺ソフトを安全に扱うための手法・道具の共通化に近い。直接の侵害報告はなく、現時点では防御側の取り組みとして読むのが妥当となる。もっとも、AI エージェントは権限付きで外部サービスや社…",
+      "article_path": "articles/eec7d28aef730c45.html",
+      "original_url": "https://thehackernews.com/2026/07/nvidia-forms-37-member-open-secure-ai.html"
+    },
+    {
+      "entry_id": "083490017b893de2",
+      "title": "Dysphoria IoT Botnet Adds Blockchain C2 and Victim Relays After JackSkid Disruption",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-27T17:16:28+00:00",
+      "impact_level": "High",
+      "threat_type": "Botnet",
+      "summary_preview": "概要Dysphoria は、IoT ボットネットの一系統として追跡されており、JackSkid への法執行機関の介入の後に、ブロックチェーン基盤の名前解決と感染機器を中継点として使う設計を取り入れた。これにより、C2 の場所を固定しにくくし、遮断や接収に対する耐性を高めている。攻撃の主眼は、脆弱な IoT 機器を足場にして命令配信を維持し、踏み台を入れ替え…",
+      "article_path": "articles/083490017b893de2.html",
+      "original_url": "https://thehackernews.com/2026/07/dysphoria-iot-botnet-adds-blockchain-c2.html"
+    },
+    {
+      "entry_id": "5e9661e503d312c4",
+      "title": "Public Exploit Released for Patched vBulletin Pre-Auth Code Execution Flaw",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-27T14:40:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要vBulletinの事前認証のコード実行に関する公開攻撃手法が示され、未修正のフォーラムでは認証なしの要求だけでPHPのeval()まで到達し得る。攻撃に必要な前提は軽く、アカウントや管理権限、他利用者の操作は要らないため、外部公開された掲示板ほど狙われやすい。成功すると掲示板の改ざんにとどまらず、Webシェル配置、情報窃取、横展開の足がかりになる可能…",
+      "article_path": "articles/5e9661e503d312c4.html",
+      "original_url": "https://thehackernews.com/2026/07/public-exploit-released-for-patched.html"
+    },
+    {
+      "entry_id": "6b550c1b7ff35bd0",
+      "title": "⚡ Weekly Recap: Rogue AI Agents, Check Point Exploit, Slopsquatting, ClickFix Lures and More",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-27T14:10:54+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要この記事は、AIエージェントの暴走、Check Point製品の脆弱性悪用、Slopsquatting、ClickFix誘導など、今週目立った攻撃手口をまとめた総覧記事である。個別の事件を深掘りするというより、攻撃者が正規の操作や信頼されたサービスに紛れ込む形へ寄せてきている流れを示している。実務上は、単独の高威力攻撃というより、複数の低摩擦な手口が組…",
+      "article_path": "articles/6b550c1b7ff35bd0.html",
+      "original_url": "https://thehackernews.com/2026/07/weekly-recap-rogue-ai-agents-check.html"
+    },
+    {
+      "entry_id": "4d56910f2841cc52",
+      "title": "n8n Sandbox Escape Lets Workflow Editors Run OS Commands as the n8n Process",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-27T13:05:15+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要n8n において、認証済みのワークフロー編集者が式評価のサンドボックスを抜け、n8n プロセス権限で OS コマンドを実行できる不具合が修正された。攻撃成立には編集権限が前提となるため、外部からの無差別侵入というより、管理画面への侵入後の悪用や内部不正、共有アカウントの悪用が主な入口になる。影響範囲は、同一ホスト上のファイル操作、資格情報の窃取、接続先…",
+      "article_path": "articles/4d56910f2841cc52.html",
+      "original_url": "https://thehackernews.com/2026/07/n8n-sandbox-escape-lets-workflow.html"
+    },
+    {
+      "entry_id": "497665801028e348",
+      "title": "Operation BlueDash Deploys Level RMM and ScreenConnect via Fake Teams Update",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-27T12:37:49+00:00",
+      "impact_level": "High",
+      "threat_type": "Phishing",
+      "summary_preview": "概要Microsoft Teamsの更新を装うフィッシングで、被害者を偽のMicrosoft Storeへ誘導し、正規のRMMツールを導入させる手口が報告された。共有文書を開く前に更新が必要という口実を使うため、利用者側では業務上の自然な操作に見えやすい。侵入後はLevel RMMやScreenConnectのような正規ツールを介して遠隔操作されるため、単…",
+      "article_path": "articles/497665801028e348.html",
+      "original_url": "https://thehackernews.com/2026/07/operation-bluedash-deploys-level-rmm.html"
+    },
+    {
+      "entry_id": "1df54ef7fe55cb6d",
+      "title": "Cruciferra Crypter Uses BYOVD and Process Ghosting to Hide Windows Malware",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-27T10:51:45+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要Proofpointの分析で、Cruciferra と呼ばれる難読化サービスが、Windows向けマルウェアの配布に使われていることが分かった。記事では、BYOVD と Process Ghosting を組み合わせ、検知を避けながら実行ファイルを隠す手口が扱われている。税務関連のフィッシングを起点に、インドの納税者や税務担当、企業の財務部門を狙う活動…",
+      "article_path": "articles/1df54ef7fe55cb6d.html",
+      "original_url": "https://thehackernews.com/2026/07/cruciferra-crypter-uses-byovd-and.html"
+    },
+    {
+      "entry_id": "930fda9d408af9f1",
+      "title": "TELESHIM Abuses Telegram for C2 in Attacks Against Middle East Governments",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-27T08:48:47+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要中東の政府機関を狙う侵入活動が確認され、TELESHIM、MIXEDKEY、BINDCLOAKという未報告のマルウェア群が展開された。攻撃者はTelegramをC2に悪用し、検知や遮断を通常の管理通信に紛れ込ませやすくしている。こうした方式は、プロキシやDNSだけを見ている環境では見逃されやすく、通信先の正当性だけで判断すると封じ込めが遅れる。影響はま…",
+      "article_path": "articles/930fda9d408af9f1.html",
+      "original_url": "https://thehackernews.com/2026/07/teleshim-abuses-telegram-for-c2-in.html"
+    },
+    {
+      "entry_id": "8bf52e945cb23ae6",
+      "title": "GitHub Adds 3-Day Dependabot Cooldown to Limit Poisoned Package Adoption",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-07-27T08:01:23+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要GitHubは、Dependabotが新しいパッケージ版を見つけても、公開直後にはPRを起こさず少なくとも3日待つ仕組みを追加した。狙いは、公開直後の毒入りパッケージや誤配布を早期に取り込む事故を減らすことにある。攻撃者は正規パッケージ名に似せた更新や、短時間だけ差し込める不正版を使って、依存更新の自動化を逆手に取る余地がある。影響は、Dependab…",
+      "article_path": "articles/8bf52e945cb23ae6.html",
+      "original_url": "https://thehackernews.com/2026/07/github-adds-3-day-dependabot-cooldown.html"
+    },
+    {
+      "entry_id": "33e5ab99abba3850",
+      "title": "Java Spring Boot \"heapdump\" scans, (Mon, Jul 27th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-07-27T10:04:51+00:00",
+      "impact_level": "High",
+      "threat_type": "Misconfiguration",
+      "summary_preview": "概要Spring Boot の /actuator/heapdump が外部から見えると、アプリケーションのメモリ内容を示す heapdump.hprof を取得される可能性がある。これは障害解析向けの機能だが、実際には APIキー、DBパスワード、接続先情報など、後続侵害に使える秘匿情報が含まれやすい。攻撃者はこれを拾って認証を回避し、管理画面やバックエ…",
+      "article_path": "articles/33e5ab99abba3850.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33188"
+    },
+    {
+      "entry_id": "c13665e7a2478a2a",
+      "title": "ISC Stormcast For Monday, July 27th, 2026 https://isc.sans.edu/podcastdetail/10024, (Mon, Jul 27th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-07-27T02:00:02+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要SANS ISC の Stormcast の配信告知であり、記事本文としての個別脆弱性や攻撃キャンペーンの新規情報は示されていない。したがって、これ単体では直ちに対処優先度を上げる材料にはなりにくい。悪用手口や対象製品、影響範囲も入力からは確認できず、未確認事項が多い。実務上は、配信内で扱われる個別トピックが別途アドバイザリや検知情報と結び付くかを確認…",
+      "article_path": "articles/c13665e7a2478a2a.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33186"
+    },
+    {
+      "entry_id": "15d888fc58bdcbae",
+      "title": "Assuming Failure: The Mindset Shift That Actually Improves Your Defensive Outcomes",
+      "source_name": "Cisco Security Blog",
+      "category": "reporting",
+      "published_at": "2026-07-27T15:00:33+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要セキュリティ制御は必ず破られる前提で設計するという考え方を、Cisco Security Blog が整理している。内容は脆弱性の個別解説ではなく、単一の防御点に期待しすぎる運用をやめ、検知・封じ込め・復旧までを一続きで設計する発想の転換に重きを置く。攻撃者は一つの制御を回避できればよく、そこから横展開や権限昇格に進むため、影響は入口だけで止まらない。…",
+      "article_path": "articles/15d888fc58bdcbae.html",
+      "original_url": "https://blogs.cisco.com/security/assuming-failure-the-mindset-shift-that-actually-improves-your-defensive-outcomes/"
+    },
+    {
+      "entry_id": "124200867a082527",
+      "title": "福岡大学の委託先ノストラムに不正アクセス、攻撃者のサイト上に窃取したデータを公開する旨の告知",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-26T23:05:11+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要福岡大学の委託先であるノストラムに不正アクセスが発生し、攻撃者が窃取したデータを公開する旨を告知している。現時点では、実際にどの範囲のデータが持ち出されたか、公開がどこまで進んだか、福岡大学側の業務や利用者情報にどの程度波及したかは未確認である。脅威の焦点は、侵入そのものよりも、窃取済みデータを材料にした脅迫と二次被害の拡大にある。委託先起点の事案であ…",
+      "article_path": "articles/124200867a082527.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/27/55787.html"
+    },
+    {
+      "entry_id": "b19012b130c21107",
+      "title": "日本テレネットにランサムウェア型サイバー攻撃、データが外部に転送された痕跡は検出されず",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-26T23:05:09+00:00",
+      "impact_level": "High",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要日本テレネットがランサムウェア型のサイバー攻撃を受けたと公表した。現時点では、データが外部へ転送された痕跡は検出されていないとされるが、これは流出を否定する決定打ではなく、対象範囲やログの保全状況によって結論は変わる。攻撃の入口、侵入時点、暗号化や持ち出しの有無、横展開の範囲はまだ未確認で、初動評価の精度が重要になる。業務影響は、端末暗号化や認証基盤、…",
+      "article_path": "articles/b19012b130c21107.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/27/55786.html"
+    },
+    {
+      "entry_id": "20f26c115a0d84b7",
+      "title": "リンドスポーツ、12 年前の顧客情報 3,075 件が流出の可能性 元 FAX 送信委託先へのサイバー攻撃で",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-26T23:05:07+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要リンドスポーツで、12年前の顧客情報3,075件が流出した可能性があると報じられた。原因は、自社ではなく元FAX送信委託先へのサイバー攻撃にあり、委託先経由で保持されていた情報が影響を受けた形になる。漏えいが確定したのか、どの情報項目が含まれたのか、現時点では記事だけでは未確認の部分が残る。長期保管された個人情報は、攻撃者にとって再利用しやすく、本人確…",
+      "article_path": "articles/20f26c115a0d84b7.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/27/55785.html"
+    },
+    {
+      "entry_id": "8bc33a332dd08671",
+      "title": "ヴェレダ・ジャパン、公式オンラインショップへの不正アクセスを発表 個人情報流出の懸念でカード決済を一時停止",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-26T23:05:03+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要ヴェレダ・ジャパンは、公式オンラインショップへの不正アクセスを公表し、個人情報流出の懸念を理由にカード決済を一時停止した。現時点で、どの情報が実際に閲覧・持ち出しされたか、また侵入経路がどこかは未確認で、被害範囲の確定には追加調査が必要となる。決済停止は、攻撃が通販基盤や注文処理の周辺まで及ぶ可能性を踏まえた初動として妥当で、同種のEC環境では会員情報…",
+      "article_path": "articles/8bc33a332dd08671.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/27/55784.html"
+    },
+    {
+      "entry_id": "807c9848033cf585",
+      "title": "7 / 28 パシフィコ横浜開催「Japan Community Day」にスリーシェイクエンジニアが参加",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-26T23:00:18+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要この記事は、7/28にパシフィコ横浜で開催されるコミュニティイベントへの参加告知であり、脆弱性公開や攻撃観測を扱うものではない。内容はスリーシェイクのエンジニアが「Japan Community Day」に参加するという周辺情報が中心で、CSIRTの即応判断に直結する技術的な新規事実は見当たらない。したがって、悪用経路や影響範囲を論じる対象ではなく、現…",
+      "article_path": "articles/807c9848033cf585.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/27/55783.html"
+    },
+    {
+      "entry_id": "572ea06fb0abe5c9",
+      "title": "7 / 30・31開催の「第11回 関西教育ICT展」にHENNGEが出展 登壇",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-26T23:00:15+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要本件は、教育ICT展への出展・登壇告知であり、脆弱性や侵害の報告ではない。HENNGEの製品紹介や運用上の訴求が中心とみられ、直接のセキュリティインシデントを示す内容ではない。したがって、CSIRTとしての優先度は低く、通常は監視対象のニュースとして扱えば足りる。攻撃手法、悪用可能な不備、影響範囲は記事中から確認できず、未確認事項として残る。教育分野向…",
+      "article_path": "articles/572ea06fb0abe5c9.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/27/55782.html"
+    },
+    {
+      "entry_id": "8580ef3ac43c004b",
+      "title": "圧縮ソフト「7-Zip」を装った偽ソフトウェアの裏に潜む巨大不正プロキシ事業",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-26T23:00:13+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要圧縮ソフト7-Zipを装う偽ソフトウェアが、単なる配布詐欺ではなく、巨大な不正プロキシ事業への入口として使われていた可能性が取り上げられている。利用者は正規ソフトのつもりで導入するが、裏では端末や回線が中継点として悪用され、外部からの通信の隠蔽や濫用に使われる流れが想定される。影響は個々の端末被害にとどまらず、社内ネットワークの外向き通信や対外的な信用…",
+      "article_path": "articles/8580ef3ac43c004b.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/27/55781.html"
+    },
+    {
+      "entry_id": "694198b75a03bd5c",
+      "title": "ISC BIND に複数の脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-26T23:00:10+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要ISC BIND に複数の脆弱性が見つかったという報道で、DNS サーバーとして広く使われる基盤製品だけに、影響の読み違いが起きやすい内容となっている。攻撃者はまず外部公開された DNS サービスを狙い、情報漏えい、サービス停止、設定や実装の不備を起点にした任意コード実行へつなげる可能性がある。影響範囲は単一サーバーにとどまらず、名前解決の停止による業…",
+      "article_path": "articles/694198b75a03bd5c.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/27/55780.html"
+    },
+    {
+      "entry_id": "47781b611832b2f2",
+      "title": "バックアップソフトウェア「Duplicati」に不適切な権限割り当てに関する脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-26T23:00:08+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要バックアップソフトウェアDuplicatiに、不適切な権限割り当てに関する脆弱性が報じられている。記事上では詳細な悪用手順や影響範囲は示されていないが、権限管理の不備は、バックアップ設定の改ざん、保存先の閲覧、復旧の妨害につながりやすい。とくに管理画面やサービスアカウントが広い権限を持つ環境では、単体の設定不備がバックアップ資産全体の侵害へ波及するおそ…",
+      "article_path": "articles/47781b611832b2f2.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/27/55779.html"
+    },
+    {
+      "entry_id": "5d9901abe439176a",
+      "title": "HENNGE One 「ITreview Grid Award 2026 Summer」 7 部門で最高位 Leader 受賞",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-07-26T23:00:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要本件は、HENNGE One が ITreview Grid Award 2026 Summer で 7 部門の最高位 Leader を受賞したという製品評価の記事であり、脆弱性情報や侵害事例ではない。したがって、直ちに封じ込めや緊急パッチ適用を要する類の通知ではないが、クラウド型ID・メール・端末周辺の統合運用を評価する文脈としては参考になる。受賞自…",
+      "article_path": "articles/5d9901abe439176a.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/07/27/55778.html"
+    }
+  ]
+}
