@@ -1,0 +1,110 @@
+{
+  "date": "2026-08-03",
+  "window": {
+    "from": "2026-08-02T06:00:00+09:00",
+    "to": "2026-08-03T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 1
+  },
+  "generated_at_jst": "2026-08-03T06:24:30.277789+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "エッジデバイス向け小型AI実装の進展",
+      "source_name": "X投稿",
+      "published_at": "2026-08-01T23:59:57+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Other",
+      "summary_preview": "概要ESP32マイコン上での微小AIモデルの動作確認が進み、トレーニング完了後の実用段階に入った。エッジデバイスでのAI実行はクラウド依存を減らし、リアルタイム処理を可能にする。開発者ツールの進化により、低消費電力環境でのAI適用が加速する見込みだ。量子コンピューティングとの統合研究も並行して進み、ハイブリッドアーキテクチャの基盤形成が注目される。企業はエ…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://x.com/whiskeyhacker/status/2083704319162134990",
+      "selection_reason": "過去24時間以内のX投稿で確認されたESP32上での微小AI動作実装事例が、IT分野のエッジコンピューティングとAI統合トレンドとして新規性が高く、具体的なハードウェア適用例を示すため選定。他の汎用予測より実務的影響が明確",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "X投稿 ESP32 AI実装",
+          "url": "https://x.com/whiskeyhacker/status/2083704319162134990",
+          "source_type": "x"
+        },
+        {
+          "title": "IBM AI and quantum integration",
+          "url": "https://www.ibm.com/think/news/ai-tech-trends-predictions-2026",
+          "source_type": "web"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "1人企業におけるAI活用の拡大",
+      "source_name": "X投稿",
+      "published_at": "2026-08-01T23:59:51+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要AIツールの進化により、1人企業が年商100万ドル超を達成するケースが増加している。コンテンツ作成から公開までのプロセス自動化が鍵だ。AIエージェントの活用で人的リソースを最小限に抑えつつ事業拡大が可能になる。起業家はAIをパートナーとして位置づけ、業務効率を劇的に向上させている。市場ではこうした動きがAIの実用化フェーズを示す指標として注目される。",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://x.com/TheMobileBroker/status/2083704292330922110",
+      "selection_reason": "AI分野の最新動向として、1人企業がAIで高収益を実現する事例がXで共有され、実務的なAI導入トレンドとして具体性が高い。予測レポートより個別事例の波及効果を優先",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "X投稿 1人企業AI活用",
+          "url": "https://x.com/TheMobileBroker/status/2083704292330922110",
+          "source_type": "x"
+        },
+        {
+          "title": "Microsoft AI trends 2026",
+          "url": "https://news.microsoft.com/source/features/ai/whats-next-in-ai-7-trends-to-watch-in-2026/",
+          "source_type": "web"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "MicrosoftのAIサイバーセキュリティモデル発表",
+      "source_name": "X投稿",
+      "published_at": "2026-08-01T13:07:18+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要MicrosoftがMAI-Cyber-1-FlashとProject Perceptionを発表した。新モデルはGeminiやGPTを上回る脆弱性検知ベンチマーク性能を示し、運用コストを約50%削減する。AIを活用した防御が攻撃者側のAI活用に対抗する手段として位置づけられる。セキュリティチームはこうしたツールで検知速度を向上させ、対応を効率化できる…",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://x.com/StarSnap_1/status/2083545868838269302",
+      "selection_reason": "Cybersecurity分野でMicrosoftの新AIモデルMAI-Cyber-1-Flash発表がXで共有され、脆弱性検知性能向上とコスト削減の具体例として実務影響が高い。AIとセキュリティの交差点で新規性がある",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "X投稿 Microsoft AIモデル",
+          "url": "https://x.com/StarSnap_1/status/2083545868838269302",
+          "source_type": "x"
+        },
+        {
+          "title": "Cybersecurity forecast Google Cloud",
+          "url": "https://cloud.google.com/security/resources/cybersecurity-forecast",
+          "source_type": "web"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "c064f036fe808bf8",
+      "title": "Atomic MacOS (AMOS) stealer infection, (Sun, Aug 2nd)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-08-02T04:05:08+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Malware",
+      "summary_preview": "概要今回の内容は、Atomic MacOS (AMOS) と呼ばれる情報窃取型マルウェアの感染事例を扱っている。主眼は、macOS 上での初期侵入後に、認証情報やブラウザ関連データを抜き取り、後続のアカウント乗っ取りや別環境への侵入に使われる点にある。被害は単一端末の情報流出にとどまらず、SSO やメール、VPN の再利用可能な資格情報に波及する可能性があ…",
+      "article_path": "articles/c064f036fe808bf8.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33208"
+    }
+  ]
+}
