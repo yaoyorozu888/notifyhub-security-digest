@@ -1,0 +1,451 @@
+{
+  "date": "2026-08-04",
+  "window": {
+    "from": "2026-08-03T06:00:00+09:00",
+    "to": "2026-08-04T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 29
+  },
+  "generated_at_jst": "2026-08-04T06:34:25.585303+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "オープンウェイトAIへの主要企業支持が開発トレンドを加速",
+      "source_name": "Artificial Intelligence News",
+      "published_at": "2026-08-03T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要Meta、Microsoft、Nvidia、IBMなどがオープンウェイトAIモデルへの支持を表明した。開発者はこれによりカスタムモデルを柔軟に構築可能になる。クラウドやエンタープライズITでの採用が加速する見込みだ。透明性と共有が促進され、AI基盤の多様化が進む。企業は自社データとの統合を容易に進められる。",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://www.artificialintelligence-news.com/news/meta-microsoft-nvidia-ibm-others-back-open-weight-ai/",
+      "selection_reason": "AI基盤技術のオープン化という具体的な企業行動を捉え、IT開発プラットフォームの最新動向として新規性が高く、Gartnerなどの汎用予測とは異なる実務影響を持つため選定",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "Meta Microsoft Nvidia IBM others back open-weight AI",
+          "url": "https://www.artificialintelligence-news.com/news/meta-microsoft-nvidia-ibm-others-back-open-weight-ai/",
+          "source_type": "news"
+        },
+        {
+          "title": "TechCrunch AI news roundup",
+          "url": "https://techcrunch.com/2026/08/03/",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "EU AI Act透明性規則が8月3日から適用開始",
+      "source_name": "European Commission",
+      "published_at": "2026-08-03T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Other",
+      "summary_preview": "概要EU AI ActのArticle 50透明性規則が8月3日から適用された。チャットボットはAIであることを明示する必要がある。ディープフェイクにはラベル表示が義務付けられる。生成コンテンツには機械可読マークを付与する。事業者はこれらを遵守し、利用者への説明責任を果たす。",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+      "selection_reason": "AI規制の具体的な施行という新規事実で、AI製品・サービス提供者に即時対応を求める実務影響が大きいため選定",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "EU AI Act transparency rules enter force",
+          "url": "https://www.artificialintelligence-news.com/news/eu-ai-act-article-50-transparency-rules-enter-force/",
+          "source_type": "news"
+        },
+        {
+          "title": "Commission starts enforcing AI Act rules",
+          "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1714",
+          "source_type": "official"
+        },
+        {
+          "title": "X post on AI Act enforcement",
+          "url": "https://x.com/matiere/status/2084059773134356759",
+          "source_type": "x"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "N-able N-centralの脆弱性が悪用されパッチバイパス確認",
+      "source_name": "SecurityWeek",
+      "published_at": "2026-08-03T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要N-able N-centralにCVE-2026-18577が存在し、野外で悪用された。攻撃者はパッチを回避する手法を用いた。サーバーへの不正アクセスが発生した事例が報告されている。管理事業者は早急に更新を適用する必要がある。類似のRMMツールでも注意が求められる。",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://www.securityweek.com/n-able-patches-vulnerability-exploited-to-hack-n-central-servers/",
+      "selection_reason": "具体的な製品脆弱性と実世界悪用の報告で、MSPやIT運用担当者の即時対応が必要な実務影響を持つため選定",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "N-able patches vulnerability exploited to hack N-central servers",
+          "url": "https://www.securityweek.com/n-able-patches-vulnerability-exploited-to-hack-n-central-servers/",
+          "source_type": "news"
+        },
+        {
+          "title": "The Hacker News weekly recap",
+          "url": "https://thehackernews.com/",
+          "source_type": "news"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "4f5937264f31be19",
+      "title": "CVE-2026-18577 N-able N-central Authentication Bypass Using an Alternate Path or Channel Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-08-03T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CVE-2026-18577 は N-able の N-central に存在する認証回避の脆弱性で、代替の経路やチャネルを使って本来必要な認証をすり抜ける懸念がある。CISA の KEV に掲載されているため、単なる未修正の欠陥ではなく、少なくとも一部環境で 実際の悪用可能性 が前提になっている。RMM/運用管理製品は管理権限を集約しやすく、侵害され…",
+      "article_path": "articles/4f5937264f31be19.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "21ce570a0555b7dd",
+      "title": "18 Malicious npm Packages Deliver Cross-Platform RAT to Alibaba Tool Users",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-03T18:43:53+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要今回の件は、npm上に置かれた18個の悪性パッケージが、Alibaba系の開発ツール利用者を狙ってクロスプラットフォームRATを配布したという話になる。表向きは既存の社内・私設パッケージと同名のものを使い、利用者が誤って取り込む状況を作る点が要点となる。攻撃が成立すると、端末の遠隔操作、情報窃取、追加ペイロードの取得に進み、開発端末から認証情報やソース…",
+      "article_path": "articles/21ce570a0555b7dd.html",
+      "original_url": "https://thehackernews.com/2026/08/18-malicious-npm-packages-deliver-cross.html"
+    },
+    {
+      "entry_id": "95a7177d531c9bf1",
+      "title": "Google Password Manager Attacks Could Let Malware Hijack Passkey-Protected Accounts",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-03T16:24:47+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要Windows上で通常権限のマルウェアが動作しているだけで、Passkey保護されたアカウントに本人の操作なしでログインできる可能性が示された。Unit 42は、ChromeのGoogle Password Managerが使うクラウド認証器を狙う3種の手口を整理し、最も強いものはマスターキーに近い扱いになる。攻撃が成立すると、画面上の承認や生体認証が…",
+      "article_path": "articles/95a7177d531c9bf1.html",
+      "original_url": "https://thehackernews.com/2026/08/google-password-manager-attacks-could.html"
+    },
+    {
+      "entry_id": "407a86f881354137",
+      "title": "INC Ransomware Emerges as Dominant Actor Exploiting SonicWall SMA 1000 Flaws",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-03T16:15:13+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要INC Ransomwareが、SonicWall SMA 1000 系VPN機器の新たに公表された脆弱性を足掛かりに、主要な攻撃主体として動いていると報じられた。記事によれば、8月初旬から活動が加速し、複数の被害組織をリークサイトへ掲載している。VPN装置は外部公開されやすく、認証前の侵入や境界装置の奪取につながると、内部網への展開余地が一気に広がる…",
+      "article_path": "articles/407a86f881354137.html",
+      "original_url": "https://thehackernews.com/2026/08/inc-ransomware-emerges-as-dominant.html"
+    },
+    {
+      "entry_id": "dd7fc5ef917a9e41",
+      "title": "⚡ Weekly Recap: Rogue AI Models, $88M Bitcoin Theft, Water-System Attacks and Dangling DNS Hijacks",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-03T14:03:11+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要今週の総括は、権限管理の甘さが異なる領域で同時に問題化した流れをまとめたものとなる。AIモデルの不正利用、Bitcoin窃取、水道系システムへの攻撃、dangling DNSの乗っ取りなど、表面上は別件でも、実際には「使われる前提のアクセス」が崩れた事例が並ぶ構図になる。攻撃者は高度な初期侵入だけでなく、古い脆弱性、公開された機器、汚染された依存関係、…",
+      "article_path": "articles/dd7fc5ef917a9e41.html",
+      "original_url": "https://thehackernews.com/2026/08/weekly-recap-rogue-ai-models-88m.html"
+    },
+    {
+      "entry_id": "00403febf720fd3e",
+      "title": "FOMO in the SOC: Where AI Platforms like Claude Actually Fit",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-03T11:30:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要この記事は、SOCにおけるAI活用を「導入するか否か」ではなく、どの作業にどこまで使うかへ論点を移している。Claude、Codex、CursorのようなAIプラットフォームは、検知ルール作成、アラート調査、インシデント要約、定型作業の自動化で価値を出しやすいと整理している。攻撃そのものの話ではなく運用改善の記事だが、実務上は誤要約や誤検知の見落としが…",
+      "article_path": "articles/00403febf720fd3e.html",
+      "original_url": "https://thehackernews.com/2026/08/fomo-in-soc-where-ai-platforms-like.html"
+    },
+    {
+      "entry_id": "29841db1fbb69eac",
+      "title": "Chinese Threat Actor Uses Leaked DarkSword Kit to Deploy GHOSTBLADE on iOS",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-03T10:49:06+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要中国語圏の脅威アクターが、公開漏えいしたDarkSword exploit kitを流用し、Apple iOS端末を狙うGHOSTBLADE配布 अभियानを回していると報じられた。Censysの観測では、100件超のWeb資産が使われ、その多くは偽のAWSサインインページとして振る舞っていた。入口がクラウド認証ページ風でも、実際の狙いは別の段階で端…",
+      "article_path": "articles/29841db1fbb69eac.html",
+      "original_url": "https://thehackernews.com/2026/08/chinese-threat-actor-uses-leaked.html"
+    },
+    {
+      "entry_id": "c6ef1d99300aba49",
+      "title": "PNLD Breach Exposes U.K. Police and Government Contact Details on Dark Web",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-03T09:13:56+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要英国のPolice National Legal Database（PNLD）が、警察・政府関係者の連絡先情報を含む情報が侵害され、ダークウェブ上に公開されたと確認した。流出したのは氏名、所属組織、業務用メールアドレスなどで、警察職員、刑事司法関係者、政府の協力先、顧客が含まれる。個人情報の露出にとどまらず、標的型攻撃やなりすましの起点になりやすい点が…",
+      "article_path": "articles/c6ef1d99300aba49.html",
+      "original_url": "https://thehackernews.com/2026/08/pnld-breach-exposes-uk-police-and.html"
+    },
+    {
+      "entry_id": "617bf8b454df484f",
+      "title": "Thermo Fisher Patches Flaw That Could Make DNA File Tampering Nearly Undetectable",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-03T08:05:30+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Thermo Fisher Scientific が、Applied Biosystems の一部人間識別ソフトウェアに存在した不具合を修正した。.fsa と .hid の出力ファイルが、解析ソフトが読み込む前に改ざんされると、変更がほぼ検知困難なまま結果に影響しうる。攻撃が成立する前提として、検体管理やファイル受け渡しの運用統制をすり抜ける必要があり…",
+      "article_path": "articles/617bf8b454df484f.html",
+      "original_url": "https://thehackernews.com/2026/08/thermo-fisher-patches-flaw-that-could.html"
+    },
+    {
+      "entry_id": "675b95f2ecaa67dc",
+      "title": "N-able Says Attackers Take Over N-central Servers After Initial Fix Proves Incomplete",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-03T06:41:46+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要N-able の N-central で、認証バイパス を悪用した攻撃者が初期対応後もサーバーを乗っ取ったと報じられた。管理基盤そのものを取られるため、そこから配下の顧客環境へ 遠隔管理権限 を使って侵入が広がる構図になる。影響範囲は単一サーバーにとどまらず、管理対象の端末やサーバー、場合によっては複数顧客へ連鎖しうる。今回の件は最初の修正が不十分だっ…",
+      "article_path": "articles/675b95f2ecaa67dc.html",
+      "original_url": "https://thehackernews.com/2026/08/n-able-says-attackers-take-over-n.html"
+    },
+    {
+      "entry_id": "fc17843a33054bb7",
+      "title": "Hugging Face Diffusers Flaws Could Let Model Repositories Execute Arbitrary Code",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-03T06:40:31+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Hugging FaceのDiffusersに、モデルリポジトリを読み込ませるだけで任意コード実行につながる可能性のある脆弱性が3件報告された。想定された防御はtrust_remote_codeの回避で、未レビューのコードを動かさない仕組みが崩れる点が問題となる。悪用されると、モデル取得時に研究端末や検証環境へ仕込まれた処理が走り、認証情報の窃取や横展…",
+      "article_path": "articles/fc17843a33054bb7.html",
+      "original_url": "https://thehackernews.com/2026/08/hugging-face-diffusers-flaws-could-let.html"
+    },
+    {
+      "entry_id": "e8e4657fc64d0253",
+      "title": "ISC Stormcast For Monday, August 3rd, 2026 https://isc.sans.edu/podcastdetail/10034, (Mon, Aug 3rd)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-08-03T02:00:02+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要この投稿は、SANS ISC の Stormcast に関する定期案内であり、個別の脆弱性や侵害事例そのものを示すものではない。したがって、この記事単体からは新たな悪用手口や被害拡大の実態は読み取れず、CSIRT向けの即時対応案件とは見なしにくい。内容の中心がポッドキャスト案内である以上、攻撃成立条件、対象製品、影響範囲の詳細は未確認のまま残る。運用上…",
+      "article_path": "articles/e8e4657fc64d0253.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33210"
+    },
+    {
+      "entry_id": "546208a0e61acd09",
+      "title": "Is your SD-WAN ready for AI-powered operations?",
+      "source_name": "Cisco Security Blog",
+      "category": "reporting",
+      "published_at": "2026-08-03T15:00:20+00:00",
+      "impact_level": "Low",
+      "threat_type": "Advisory",
+      "summary_preview": "概要この記事は、AI主導の運用によって企業ネットワークの通信が人手起点から機械起点へ移りつつあり、従来のSD-WAN設計では足りない場面が増えると指摘している。主眼は脆弱性ではなく、AIワークロードに対して可視性、ポリシー制御、性能保証をどこまで担保できるかという運用課題にある。悪用の中心は外部侵入ではなく、帯域逼迫、経路選択の不整合、遅延やジッタの悪化を…",
+      "article_path": "articles/546208a0e61acd09.html",
+      "original_url": "https://blogs.cisco.com/security/ai-sdwan-readiness/"
+    },
+    {
+      "entry_id": "bb406a3ab12d3794",
+      "title": "Pass the Passkey: A Novel Attack Surface in Passwordless Authentication",
+      "source_name": "Unit 42",
+      "category": "reporting",
+      "published_at": "2026-08-03T10:00:35+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要この投稿は、パスキー認証の実装不備により、認証側が User Verified フラグを確認しないと、見かけ上は多要素でも実態は単一要素化し得る点を指摘している。攻撃者は、取得済みの認証情報や不正な認証フローを組み合わせ、本人確認を伴わないまま認証を通す余地を狙う。影響は個別アプリのログイン突破にとどまらず、共通 IdP や SSO を介して複数システ…",
+      "article_path": "articles/bb406a3ab12d3794.html",
+      "original_url": "https://unit42.paloaltonetworks.com/passwordless-authentication-security-risks/"
+    },
+    {
+      "entry_id": "67a5ecef2a3e5dad",
+      "title": "注意喚起: Ruby on RailsのActive Storageにおけるリモートコード実行につながる脆弱性（CVE-2026-66066）に関する注意喚起  (更新)",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-08-03T06:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要JPCERT/CC は、Ruby on Rails の Active Storage に関わる リモートコード実行 の脆弱性 CVE-2026-66066 について注意喚起を更新している。攻撃成立には、対象機能を利用する Rails アプリの構成や公開状況が前提になる可能性が高く、単純なバージョン差だけでは判断しにくい。悪用されれば、アプリケーション実…",
+      "article_path": "articles/67a5ecef2a3e5dad.html",
+      "original_url": "https://www.jpcert.or.jp/at/2026/at260021.html"
+    },
+    {
+      "entry_id": "b1e8631b8e41efc7",
+      "title": "Weekly Report: 複数のOracle製品に脆弱性",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-08-03T05:50:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要JPCERT/CCの週報で、複数のOracle製品に脆弱性が取り上げられている。現時点の入力だけでは、どの製品にどの種別の欠陥があるか、悪用確認の有無、CVE番号、修正版の有無は判別できない。Oracle製品は基幹業務や認証基盤、データベース、管理用ミドルウェアにまたがるため、影響は単一製品の不具合にとどまらず、情報漏えいや権限奪取、運用停止へ広がる余…",
+      "article_path": "articles/b1e8631b8e41efc7.html",
+      "original_url": "https://www.jpcert.or.jp/wr/2026/wr260729.html#9"
+    },
+    {
+      "entry_id": "5f8322f4b8229fb4",
+      "title": "ハッキングカンファレンス DEF CON、Meta式「変態メガネ」全面禁止(度付きもNG)広がるスマートグラス締め出し",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-02T23:15:03+00:00",
+      "impact_level": "Low",
+      "threat_type": "Other",
+      "summary_preview": "概要DEF CON は、参加者が装着するMeta系スマートグラスを全面禁止し、度付きレンズを入れた個体も対象に含めた。背景には、外見上の区別がつきにくい撮影機器が会場内の無断記録や後追いの情報流出につながる懸念がある。攻撃というより運営統制の話に見えるが、実際にはイベント会場での秘匿情報の持ち出しや、名札・画面・会話の収集を助ける前提条件を潰す措置として重…",
+      "article_path": "articles/5f8322f4b8229fb4.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/03/55849.html"
+    },
+    {
+      "entry_id": "a415f4b6621403ac",
+      "title": "セコムトラストシステムズ、SASE・EDR選定の「失敗しない判断軸」解説セミナーを 8 / 24・25・26 開催",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-02T23:10:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要この記事は、SASE と EDR の選定をテーマにしたセミナー案内であり、脆弱性や侵害事案そのものを伝える内容ではない。したがって、直ちに封じ込めや緊急パッチを要する類型ではなく、製品選定と運用設計の判断材料を整理する情報として扱うのが適切になる。失敗しない判断軸という切り口から、機能の多寡ではなく、既存運用との接続性や監視・対応の実効性をどう見るかが…",
+      "article_path": "articles/a415f4b6621403ac.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/03/55848.html"
+    },
+    {
+      "entry_id": "9eb21b28c25634a2",
+      "title": "日産化学への不正アクセス、システムで不審な活動を検知し発覚",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-02T23:05:11+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要日産化学が不正アクセスを受け、社内システムで不審な活動を検知したことで発覚した。現時点では、どの経路から侵入したか、どのシステムまで到達したか、情報漏えいや業務停止が生じたかは確認できない。こうした事案は、侵入そのものよりも、初期足場を得た攻撃者が認証情報の窃取や権限昇格を進め、横展開する段階で被害が広がることが多い。検知が内部の挙動監視によるものなら…",
+      "article_path": "articles/9eb21b28c25634a2.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/03/55847.html"
+    },
+    {
+      "entry_id": "1c96afb3ad2a49b0",
+      "title": "海外貨物検査と契約する有機JAS認証審査員がサポート詐欺被害",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-02T23:05:09+00:00",
+      "impact_level": "Low",
+      "threat_type": "Scam/Fraud",
+      "summary_preview": "概要海外貨物検査や契約業務に関わる有機JAS認証審査員が、サポート詐欺の被害に遭ったという報道である。内容からは、偽の警告画面や電話誘導を起点に、利用者を遠隔操作や金銭要求へ導く典型的な手口が想定される。直接の侵害対象は個人端末や業務端末であっても、認証や検査に関する連絡先・業務情報が抜き取られると、組織外の取引先へ被害が波及する余地がある。現時点で侵入範…",
+      "article_path": "articles/1c96afb3ad2a49b0.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/03/55846.html"
+    },
+    {
+      "entry_id": "3bb6e7e621cf796e",
+      "title": "金子農機にランサムウェア攻撃、サーバに保存していた各種業務データへの不正アクセスを確認",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-02T23:05:06+00:00",
+      "impact_level": "High",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要金子農機がランサムウェア攻撃を受け、サーバに保存していた各種業務データへの不正アクセスを確認したと報じられている。暗号化だけでなく、侵入後にデータを閲覧・持ち出しされる構図が想定され、単純な復旧作業だけでは収束しにくい。被害の広がりは、サーバ内の共有領域、認証情報、バックアップ接続先に及ぶ可能性があり、横展開の有無で実害の大きさが変わる。現時点では、侵…",
+      "article_path": "articles/3bb6e7e621cf796e.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/03/55845.html"
+    },
+    {
+      "entry_id": "3898588a3a921d63",
+      "title": "停職処分 ～ 消防士長31歳が不正アクセスし人事関連内部情報閲覧",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-02T23:05:02+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要消防士長が不正アクセスを行い、人事関連の内部情報を閲覧していたことが報じられ、停職処分につながった。外部からの攻撃ではなく、内部者による権限逸脱の事案として見る必要がある。手口の詳細、侵入経路、閲覧範囲、持ち出し有無は記事本文だけでは確認できない。とはいえ、認証情報の共有や過剰権限、監査不足がある環境では、同種の事案が他部署でも起きやすい。被害は一件の…",
+      "article_path": "articles/3898588a3a921d63.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/03/55844.html"
+    },
+    {
+      "entry_id": "b46a73da79c29d66",
+      "title": "Ruby on Rails の Active Storage にリモートコード実行につながる脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-02T23:00:21+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Ruby on Rails の Active Storage に、条件がそろうと リモートコード実行 へつながる脆弱性が報じられた。公開情報だけでは悪用の具体的な流れや影響範囲の詳細は不足しており、認証前に成立するか、あるいは特定の機能設定やファイル処理を伴うかは未確認のまま残る。もし外部入力でファイルを扱う構成に直結するなら、アプリケーションの権限で…",
+      "article_path": "articles/b46a73da79c29d66.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/03/55843.html"
+    },
+    {
+      "entry_id": "15cb589c7d56ee14",
+      "title": "7月のマイクロソフトセキュリティ更新プログラム、SharePoint におけるリモートコード実行の脆弱性の悪用を確認",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-02T23:00:19+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要7月の Microsoft セキュリティ更新に関する話題として、SharePoint のリモートコード実行脆弱性が実際に悪用されたことが報じられている。攻撃が成立すると、SharePoint サーバ上で任意コードを動かされ、文書資産の窃取や内部侵入の起点にされるおそれがある。特に対外公開された SharePoint は、認証情報の奪取や既存の信頼関係を…",
+      "article_path": "articles/15cb589c7d56ee14.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/03/55842.html"
+    },
+    {
+      "entry_id": "f5f61edc1c60ec19",
+      "title": "てがろぐ -Fumy Otegaru Memo Logger- に制限が不十分な正規表現を使用している脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-02T23:00:15+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要てがろぐ -Fumy Otegaru Memo Logger- に、制限が不十分な正規表現を起点とする脆弱性が報告された。記事題目からは、入力や判定処理に使う正規表現が想定外に広く一致し、拒否されるべき文字列を通したり、処理負荷を増やしたりする余地があると読める。認証前で外部入力に触れる位置なら、投稿・検索・判定のいずれかを通じて悪用される可能性がある…",
+      "article_path": "articles/f5f61edc1c60ec19.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/03/55841.html"
+    },
+    {
+      "entry_id": "18b2f44606f1f765",
+      "title": "Linuxカーネルに存在する脆弱性「CVE-2026-43456」をGMOイエラエが発見",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-02T23:00:12+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CVE-2026-43456は、Linuxカーネルに存在する脆弱性としてGMOイエラエが発見したものと伝えられている。現時点の入力情報では、攻撃手法、必要な権限、影響範囲、修正状況が十分に示されておらず、実害の大きさは確定できない。とはいえ、カーネル脆弱性は権限昇格や情報漏えい、サービス停止に直結しやすく、仮に悪用条件が広い場合は単一ホストの問題にとど…",
+      "article_path": "articles/18b2f44606f1f765.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/03/55840.html"
+    },
+    {
+      "entry_id": "33cecb463701f751",
+      "title": "エレコム製無線LANルータおよび無線アクセスポイントに複数の脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-02T23:00:10+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要エレコム製の無線LANルータと無線アクセスポイントに、複数の脆弱性が見つかったという告知記事である。記事本文からは個別の脆弱性内容、CVE、修正済みかどうかが読み取れず、現時点では悪用方法の具体性は未確認となる。こうした機器は社内LANの入口に置かれやすく、認証設定や管理画面の露出次第で、侵入後の中継点や内部偵察の足場になりやすい。影響は単一拠点に限ら…",
+      "article_path": "articles/33cecb463701f751.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/03/55839.html"
+    },
+    {
+      "entry_id": "d685b977f37a519a",
+      "title": "Knot Resolver にリモートコード実行が可能になる問題を含む複数の脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-02T23:00:07+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Knot Resolver に複数の脆弱性が見つかり、その中にリモートコード実行へつながるものが含まれる。DNS リゾルバは外部からの問い合わせを広く受けるため、公開運用されている環境では攻撃面が大きくなりやすい。悪用されると、名前解決の改ざんや中継点としての踏み台化に加え、同居する権限次第ではホスト侵害へ広がる可能性がある。公開記事の範囲では、影響を…",
+      "article_path": "articles/d685b977f37a519a.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/03/55838.html"
+    },
+    {
+      "entry_id": "2fda6ed71d64b795",
+      "title": "セコム安否確認サービス、「ITreview Grid Award 2026 Summer」安否確認システム部門で26期連続「Leader」を受賞",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-02T23:00:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要本件は、セコム安否確認サービスが「ITreview Grid Award 2026 Summer」で安否確認システム部門の26期連続Leaderを受賞したというニュースであり、脆弱性や侵害事案の報告ではない。したがって、CSIRTの直接対応対象というより、有事の連絡基盤としての信頼性や運用実績を確認する文脈で読むのが適切になる。災害・障害・セキュリティ…",
+      "article_path": "articles/2fda6ed71d64b795.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/03/55837.html"
+    }
+  ]
+}
