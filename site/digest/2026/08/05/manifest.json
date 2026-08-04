@@ -1,0 +1,415 @@
+{
+  "date": "2026-08-05",
+  "window": {
+    "from": "2026-08-04T06:00:00+09:00",
+    "to": "2026-08-05T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 26
+  },
+  "generated_at_jst": "2026-08-05T06:36:51.102006+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "AIモデル最新リリース動向",
+      "source_name": "LLM Stats",
+      "published_at": "2026-08-04T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要8月に入りAlibaba CloudのQwen3.8 Maxがリリースされた。DeepSeekやAnthropic、Googleのモデル更新も相次ぐ。エージェント向け機能強化が目立つ。企業はこれらを業務ワークフローへ組み込む動きを加速させている。AIエージェントの実用化が鍵となる。",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://llm-stats.com/llm-updates",
+      "selection_reason": "8月1日のQwen3.8 Maxなど具体的なモデルリリースが確認でき、AI分野の製品進展として新規性が高い",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "AI Updates Today (August 2026)",
+          "url": "https://llm-stats.com/llm-updates",
+          "source_type": "web"
+        },
+        {
+          "title": "AI agent trends 2026 report",
+          "url": "https://cloud.google.com/resources/content/ai-agent-trends-2026",
+          "source_type": "web"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "半導体研究施設への巨額助成",
+      "source_name": "Virginia Tech News",
+      "published_at": "2026-08-04T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要バージニア工科大学がNSFから2000万ドルの助成を受けた。AI対応のクラウド型半導体研究施設を構築する。データセンター向けチップ開発を加速させる狙いだ。AI需要拡大に伴いインフラ投資が活発化している。",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://news.vt.edu/articles/2026/08/NSF-grant-semiconductor-lab.html",
+      "selection_reason": "クラウドベースAI半導体ラボへの2000万ドル助成が具体的事例としてIT基盤分野の動きを示す",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "University receives $20 million grant",
+          "url": "https://news.vt.edu/articles/2026/08/NSF-grant-semiconductor-lab.html",
+          "source_type": "web"
+        },
+        {
+          "title": "4 Networking Semiconductor Stocks to Watch",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/4-networking-semiconductor-stocks-watch-135400804.html",
+          "source_type": "web"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "AIエージェントのセキュリティリスク",
+      "source_name": "X posts and reports",
+      "published_at": "2026-08-03T17:05:47+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Other",
+      "summary_preview": "概要大企業セキュリティチームの92%がAIアイデンティティの可視性を欠く。非人間IDが人間IDを上回る状況だ。AIエージェントへのアクセス制御が不十分で、OWASP Agentic Top 10のリスクが現実化している。エージェントガバナンスの整備が急務となる。",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://x.com/johniosifov/status/2084324866929344698",
+      "selection_reason": "X投稿でAIエージェントの非人間ID管理不足が具体的に指摘され、サイバーセキュリティ実務に直結",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "John Iosifov X post",
+          "url": "https://x.com/johniosifov/status/2084324866929344698",
+          "source_type": "x"
+        },
+        {
+          "title": "Okta 2026 State of AI Agent Security report",
+          "url": "https://www.okta.com",
+          "source_type": "web"
+        },
+        {
+          "title": "CrowdStrike 2026 Threat Hunting Report",
+          "url": "https://www.crowdstrike.com",
+          "source_type": "web"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "3434a59605853e6d",
+      "title": "CVE-2026-18556 N-able N-central Authentication Bypass Using an Alternate Path or Channel Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-08-04T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CVE-2026-18556 は、N-able N-central における認証回避の脆弱性で、別経路や別チャネルを使って本来の認証を迂回できる可能性がある。攻撃者は管理機能へ到達できる前提があれば、正規資格情報なしで操作権限を得て、端末管理や配布機能を悪用する流れが想定される。N-central は複数端末をまとめて管理するため、単一拠点の侵害でも横…",
+      "article_path": "articles/3434a59605853e6d.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "037c144441dcb1a4",
+      "title": "CVE-2026-34486 Apache Tomcat Missing Encryption of Sensitive Data Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-08-04T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CVE-2026-34486 は Apache Tomcat における 機微データの暗号化不足 に関する脆弱性で、通信や保存の経路に残る情報が第三者に読まれる余地を生む。攻撃者はネットワーク盗聴、同一基盤上の不正アクセス、設定不備の突いた横取りで、認証情報や業務データを抜き取る可能性がある。単独では即時の任意コード実行よりも情報漏えい寄りだが、漏えいし…",
+      "article_path": "articles/037c144441dcb1a4.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "c035d098e97a363d",
+      "title": "CVE-2026-9198 IBM Langflow Code Injection Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-08-04T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CVE-2026-9198 は、IBM Langflow におけるコード注入の脆弱性として CISA KEV に掲載された。掲載時点で重要なのは、単なる理論上の欠陥ではなく、悪用が現実に確認された前提で対応順を組む必要がある点にある。コード注入は、入力の制御が不十分な経路から任意コード実行へつながりやすく、Langflow を業務内の自動化や連携基盤と…",
+      "article_path": "articles/c035d098e97a363d.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "6755307d502f1ddc",
+      "title": "Greatness PhaaS Adds Device Code Phishing to Bypass MFA and Steal Tokens",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-04T17:27:39+00:00",
+      "impact_level": "High",
+      "threat_type": "Phishing",
+      "summary_preview": "概要商用のフィッシング基盤であるGreatnessが、デバイスコード認証を悪用する手口を追加した。正規のOAuth 2.0 Device Authorization Grantを使うため、利用者には通常のログイン画面に見えても、実際には入力した認証情報や承認操作が攻撃者側に渡る可能性がある。狙いはMFAを迂回してトークンを奪い、アカウントを乗っ取ることにあ…",
+      "article_path": "articles/6755307d502f1ddc.html",
+      "original_url": "https://thehackernews.com/2026/08/greatness-phaas-adds-device-code.html"
+    },
+    {
+      "entry_id": "6f007a7ac78b0a77",
+      "title": "Keyv-Linked npm Worm Poisons Hundreds of Packages, Plants Claude Code and VS Code Hooks",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-04T13:30:23+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要Keyv に連なる npm ワームが、複数組織のパッケージへと広がり、数百件規模の改ざん済み版を植え付けたと報告されている。初期侵入は keyv@6.0.0 で確認され、その後は Keyv や Cacheable の名前空間を越えて拡散した。攻撃の狙いは 認証情報の窃取と、Claude Code や VS Code のフックを介した持続化・再実行にある…",
+      "article_path": "articles/6f007a7ac78b0a77.html",
+      "original_url": "https://thehackernews.com/2026/08/keyv-linked-npm-worm-poisons-hundreds.html"
+    },
+    {
+      "entry_id": "ecd3bea8e77666f9",
+      "title": "Fake Adobe and Zoom Updates Install ScreenConnect for Persistent Remote Access",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-04T13:11:22+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要Adobe や Zoom の更新通知、文書確認、保守ツールを装った誘導で、ConnectWise ScreenConnect などの RMM を密かに入れ込むキャンペーンが観測された。目的は単発の侵入ではなく、正規管理ツールを悪用して持続的な遠隔操作の足場を作る点にある。初期侵入後は、認証情報の窃取、追加ペイロードの投入、横展開に進む可能性が高く、被害…",
+      "article_path": "articles/ecd3bea8e77666f9.html",
+      "original_url": "https://thehackernews.com/2026/08/fake-adobe-and-zoom-updates-install.html"
+    },
+    {
+      "entry_id": "ad9a79251af608ba",
+      "title": "When Vibe Hacking Turns AI into the Junior Hacker Every Adversary Always Wanted",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-04T11:30:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Other",
+      "summary_preview": "概要AIを使って攻撃手順を自動化する動きが進み、従来のように「高度な技術者だけが深刻な脅威になる」とは限らなくなっている。記事は、vibe hacking と呼ばれる、AIに曖昧な指示を与えつつ攻撃の下準備や試行錯誤を任せる手口を扱っている。これにより、経験の浅い攻撃者でも、フィッシング文面作成、情報収集、設定差分の整理、侵入後の横展開候補の洗い出しを短時…",
+      "article_path": "articles/ad9a79251af608ba.html",
+      "original_url": "https://thehackernews.com/2026/08/when-vibe-hacking-turns-ai-into-junior.html"
+    },
+    {
+      "entry_id": "f4ae3212446c9e26",
+      "title": "Google Deletes 3 ADK AI Workflows After Malicious GitHub Issue Could Trigger Privileged Agent",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-04T11:16:23+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Google は Agent Development Kit (ADK) の Python リポジトリから、3つのAIワークフローを削除した。Pillar Security の報告では、公開 GitHub issue を起点にトリアージ用エージェントが操作され、権限の高いコード修正用エージェントを起動させられる可能性が示された。悪用の核は、AI が受け…",
+      "article_path": "articles/f4ae3212446c9e26.html",
+      "original_url": "https://thehackernews.com/2026/08/google-deletes-3-adk-ai-workflows-after.html"
+    },
+    {
+      "entry_id": "c30eaf34bb82b554",
+      "title": "New cPanel Critical Flaw Could Let Hosting Customers Run SQL as Database Root",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-04T10:36:27+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要cPanel に、認証済みのホスティング利用者がデータベースの root 文脈で SQL を実行できる脆弱性が修正された。利用者単独の権限とサーバー側の管理用権限の境界をまたげる点が問題で、共有ホスティング環境では影響の大きさが変わる。あわせて、アカウント境界を越える別経路も 2 件ふさがれているため、同系統の権限分離不備がまとまって是正された形になる…",
+      "article_path": "articles/c30eaf34bb82b554.html",
+      "original_url": "https://thehackernews.com/2026/08/new-cpanel-critical-flaw-could-let.html"
+    },
+    {
+      "entry_id": "0cb9cbf8c8e1ed27",
+      "title": "DOUBLECUP Uses ClickFix and Cached PNGs to Deliver CountLoader and DeviceManager RAT",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-04T09:03:23+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要新たに確認されたロシア系のLoader as a Service「DOUBLECUP」は、ClickFix型の誘導を使って被害者のブラウザキャッシュに細工済みのPNGを置き、そこから隠し情報を取り出して次段を実行する流れを取る。最終的にはCountLoaderと、未公開のRAT「DeviceManager」を配布する構図が示されている。ブラウザキャッシ…",
+      "article_path": "articles/0cb9cbf8c8e1ed27.html",
+      "original_url": "https://thehackernews.com/2026/08/doublecup-uses-clickfix-and-cached-pngs.html"
+    },
+    {
+      "entry_id": "e702398fbbb361b5",
+      "title": "CISA Adds Exploited N-able N-central Flaw to KEV After Customer Compromises",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-04T07:00:13+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CISA が N-able N-central の脆弱性を KEV に追加し、実際に侵害が起きた後追いの注意喚起となった。対象は CVE-2026-18577 で、CVE-2026-18556 に対する不完全な修正に起因し、見かけ上は更新済みでも攻撃成立の余地が残る点が問題となる。攻撃者は管理サーバーを起点に認証情報や管理機能を奪い、配下端末への展開や…",
+      "article_path": "articles/e702398fbbb361b5.html",
+      "original_url": "https://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html"
+    },
+    {
+      "entry_id": "790c5a4b4ccf6a4f",
+      "title": "Botnet Hunting for Vulnerabilities in Diagnostic Tools, (Tue, Aug 4th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-08-04T12:46:19+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Exploit",
+      "summary_preview": "概要診断系ツールを狙うスキャン活動が観測されたという報告で、特定の送信元が未見のURL群に対して脆弱性探索を行っている。対象は運用や保守で使われがちなツール群とみられ、外部公開されたままの管理画面や診断機能が入口になる可能性が高い。攻撃成立後は、単発の侵入にとどまらず、踏み台化や認証情報の窃取、他システムへの横展開に進みやすい。現時点では、実際に悪用された…",
+      "article_path": "articles/790c5a4b4ccf6a4f.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33214"
+    },
+    {
+      "entry_id": "ad04a63c1454e042",
+      "title": "ISC Stormcast For Tuesday, August 4th, 2026 https://isc.sans.edu/podcastdetail/10036, (Tue, Aug 4th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-08-04T02:00:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要SANS ISC の Stormcast は、当日の観測や注意喚起を短く整理する定期情報であり、新たな脆弱性の公表や露出したサービスへの攻撃増加を見つける起点として使える。今回の入力は番組案内に近く、本文要約がないため、個別の脆弱性名や悪用手口は確認できない。したがって、これ単体で直ちに封じ込め判断へ進む材料は乏しいが、関連回で扱われる対象製品や設定に…",
+      "article_path": "articles/ad04a63c1454e042.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33212"
+    },
+    {
+      "entry_id": "638e5b83076a80aa",
+      "title": "The Frontier AI Vulnerability Burst: Industrializing Autonomous Zero-Day Discovery in Open-Source Software",
+      "source_name": "Unit 42",
+      "category": "reporting",
+      "published_at": "2026-08-04T13:00:11+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要Unit 42は、フロンティアAIを使った脆弱性探索の自動化により、NOVAがオープンソースソフトウェアの供給網全体で14,000件超の未知脆弱性候補を見つけたと説明している。ここで重要なのは、単発の研究成果ではなく、脆弱性発見の大量生産に近い段階へ移りつつある点にある。悪用の成立には、対象ソフトの採用状況や露出範囲、実際に再現可能な欠陥かどうかの確認…",
+      "article_path": "articles/638e5b83076a80aa.html",
+      "original_url": "https://unit42.paloaltonetworks.com/frontier-ai-vulnerability-burst/"
+    },
+    {
+      "entry_id": "a2c504d56f305379",
+      "title": "Almost Half of Malware Samples Communicate Direct to IP",
+      "source_name": "Unit 42",
+      "category": "reporting",
+      "published_at": "2026-08-04T12:50:53+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要Unit 42 は、マルウェアの約半数が DNS を経由せず IP へ直接通信していると指摘した。これは名前解決の監視や遮断だけでは C2 通信を取りこぼしやすく、送信先 IP の制御や通信可視化を前提にしないと防御が抜けることを意味する。攻撃者にとっては、DNS フィルタやドメインブロックを回避できるため、比較的低コストで通信基盤を維持しやすい。影響…",
+      "article_path": "articles/a2c504d56f305379.html",
+      "original_url": "https://unit42.paloaltonetworks.com/malware-bypass-dns-direct-to-ip/"
+    },
+    {
+      "entry_id": "b237d6935d9ba905",
+      "title": "役員人事に関するお知らせ",
+      "source_name": "NICT NOTICE",
+      "category": "reporting",
+      "published_at": "2026-08-04T05:00:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要本件はNICT NOTICEによる役員人事の告知であり、情報セキュリティ上の脆弱性や侵害事案を直接示すものではない。公開情報だけを見る限り、悪用手口や影響範囲の拡大はなく、CSIRTが即応すべき技術的事象ではない。未確認事項として、この人事が組織方針、対外窓口、担当変更にどう影響するかは本文からは読み取れない。したがって、運用上は監視対象のアドバイザリ…",
+      "article_path": "articles/b237d6935d9ba905.html",
+      "original_url": "/publicity/topics/2026/08/04-1.html"
+    },
+    {
+      "entry_id": "3e6a754030a8548e",
+      "title": "シフトレフトや内製化も解説 ～ エーアイセキュリティラボが脆弱性対策動画を 8 月限定週替わり公開",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-03T23:10:02+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要脆弱性対策の解説動画を8月限定で週替わり公開するという案内で、個別の脆弱性報告ではない。内容はシフトレフトや内製化を含む対策の考え方を整理するもので、直ちに障害や侵害を示す情報ではない。CSIRTの観点では、攻撃兆候を知らせる記事ではなく、開発・運用・セキュリティの分担を見直す材料として読むのが適切になる。実際にどの脆弱性や製品を扱うか、動画内で具体的…",
+      "article_path": "articles/3e6a754030a8548e.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/04/55859.html"
+    },
+    {
+      "entry_id": "cd5a9ec98878c0cd",
+      "title": "アイダエンジニアリングに不正アクセス、アジア拠点における決算手続に遅延",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-03T23:05:08+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要アイダエンジニアリングが不正アクセスを受け、アジア拠点における決算手続に遅延が生じたと伝えられている。現時点の情報では、侵入経路、初期侵害の手口、情報流出の有無は確認できない。業務への直接影響としては、会計締めや関連承認の停滞が先に表面化しており、単なる速報ではなく業務継続に波及した事案として見る必要がある。攻撃者がメール、ID・パスワード、VPN、公…",
+      "article_path": "articles/cd5a9ec98878c0cd.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/04/55858.html"
+    },
+    {
+      "entry_id": "b2749d61e07106a8",
+      "title": "ファイブフォックスのサーバがランサムウェア感染の可能性、通常のセキュリティ調査過程で発覚",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-03T23:05:05+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要ファイブフォックスのサーバにランサムウェア感染の可能性があり、通常のセキュリティ調査の過程で見つかったと報じられている。現時点では、侵入経路、暗号化の有無、情報流出の有無、業務停止の範囲は未確認であり、断定はできない。こうした事案は、単一サーバの障害に見えても、認証情報の奪取やバックアップ破壊を伴うと復旧難度が急上昇する。感染端末だけでなく、AD、ファ…",
+      "article_path": "articles/b2749d61e07106a8.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/04/55857.html"
+    },
+    {
+      "entry_id": "a49faedfc620cc19",
+      "title": "支払対象は計 16.3 億円 ～ プルデンシャル・グループ、社員の不適切金銭行為に関する補償進捗を発表",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-03T23:05:03+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要プルデンシャル・グループが、社員による不適切な金銭行為に関する補償の進捗を公表した。支払対象は計16.3億円に上り、技術的な侵入事案というより、内部不正や統制不備が焦点になる案件と読める。被害は顧客資金や信頼毀損、監督当局対応に広がりやすく、初動で止める対象はシステムではなく権限、承認、送金、監査の各統制になる。具体的な不正手口、発生期間、対象範囲、再…",
+      "article_path": "articles/a49faedfc620cc19.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/04/55856.html"
+    },
+    {
+      "entry_id": "fc9514884d9dba84",
+      "title": "Oktaグローバル調査レポート「Global CISO Insights 2026」公開、日本はガバナンスツール導入で深刻な遅れ",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-03T23:00:19+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要Oktaのグローバル調査「Global CISO Insights 2026」は、CISO層の優先課題と対策状況を地域別に比較し、日本ではガバナンスツールの導入遅れが目立つと示した。ここでいうガバナンスツールは、ID管理や特権管理、ポリシー統制、監査証跡の可視化を支える基盤を指し、単なる認証製品の有無とは別に、運用統制の成熟度を映す。攻撃者はこの差を突…",
+      "article_path": "articles/fc9514884d9dba84.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/04/55855.html"
+    },
+    {
+      "entry_id": "f05c3bd9c7eab3f6",
+      "title": "BaserCMS に CSVファイルインジェクションの脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-03T23:00:15+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要BaserCMS に CSVファイルインジェクション の脆弱性があると報じられた。CSV出力を業務で使う環境では、外部入力がそのままセル先頭に入り、= や + などから始まる値がスプレッドシート上で数式として解釈される恐れがある。攻撃が成立すると、閲覧時に外部通信や情報流出、場合によっては端末上での操作誘導につながる。影響は、脆弱なCSVを生成するサイ…",
+      "article_path": "articles/f05c3bd9c7eab3f6.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/04/55854.html"
+    },
+    {
+      "entry_id": "58e5d06d3015d77e",
+      "title": "ロボット掃除機 DEEBOT PRO M1、DEEBOT PRO K1VAC およびスマートフォンアプリ ECOVACS PRO に複数の脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-03T23:00:12+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要ECOVACS のロボット掃除機 DEEBOT PRO M1、DEEBOT PRO K1VAC、およびスマートフォンアプリ ECOVACS PRO に複数の脆弱性が見つかった。記事タイトルからは、機器本体と管理用アプリの両方に弱点がある構図が読み取れ、単一製品の局所不備ではなく、認証や通信、設定管理のどこかが連鎖的に崩れる可能性がある。悪用されれば、近…",
+      "article_path": "articles/58e5d06d3015d77e.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/04/55853.html"
+    },
+    {
+      "entry_id": "7a20c604e9d1197b",
+      "title": "SGLang に複数の脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-03T23:00:10+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要SGLang に複数の脆弱性が見つかったという報道で、AI推論・エージェント基盤として利用している環境では、入力の扱い次第で認証回避や任意操作につながる可能性を意識する必要がある。公開情報だけでは、悪用成立に必要な前提条件や、既に実戦投入されているかは確認できない。特に社内PoCや開発検証で外部公開している場合、単一サーバーの問題に見えても、モデル管理…",
+      "article_path": "articles/7a20c604e9d1197b.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/04/55852.html"
+    },
+    {
+      "entry_id": "2c762e28a722084b",
+      "title": "トレンドマイクロ製 TrendAI Vision One に脆弱性、セキュリティアップデート公開",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-03T23:00:07+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Trend Micro の TrendAI Vision One に脆弱性が見つかり、セキュリティアップデート が公開された。現時点の入力には CVE番号 や悪用確認の有無、影響を受ける版の範囲が含まれていないため、攻撃成立条件の細部は未確認となる。一般にこの種の製品は、監視・分析・運用連携の中枢に置かれることが多く、単体の欠陥でも管理者権限の奪取や情…",
+      "article_path": "articles/2c762e28a722084b.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/04/55851.html"
+    },
+    {
+      "entry_id": "64085a208880edf9",
+      "title": "Apache Tomcat の WebSocket chat サンプルにサービス運用妨害（DoS）の脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-03T23:00:03+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Apache Tomcat の WebSocket chat サンプルに、特定条件でサービス運用妨害を引き起こす脆弱性が見つかった。公開サンプル機能が対象のため、通常の業務アプリそのものより影響範囲は狭いが、サンプルを削除せず公開している環境では攻撃面として残りやすい。悪用されると、少ない操作でスレッドや接続資源を消費させ、同一Tomcat上の別アプリ…",
+      "article_path": "articles/64085a208880edf9.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/04/55850.html"
+    }
+  ]
+}
