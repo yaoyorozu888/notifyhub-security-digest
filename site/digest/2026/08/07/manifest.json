@@ -1,0 +1,446 @@
+{
+  "date": "2026-08-07",
+  "window": {
+    "from": "2026-08-06T06:00:00+09:00",
+    "to": "2026-08-07T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 29
+  },
+  "generated_at_jst": "2026-08-07T08:24:48.008144+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "OpenAI Codexの企業向け機能拡張",
+      "source_name": "MarketingProfs",
+      "published_at": "2026-08-05T20:43:30+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要OpenAIがCodexに企業向けプラグインを追加し、営業やデータ分析などの業務を支援する機能を提供開始した。ChatGPTへの直接統合も予定され、注釈機能で文書修正が容易になる。広告プラットフォームの最適化も進み、企業がAIを業務に組み込みやすくなる。こうした動きはAIエージェントの普及を後押しする。",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://www.marketingprofs.com/opinions/2026/54909/ai-update-june-5-2026-ai-news-and-views-from-the-past-week",
+      "selection_reason": "AI分野の具体的な製品拡張として新規性が高く、企業実務への直接影響が大きいため選定。他の汎用予測ではなく具体的な機能追加を優先。",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "AI Update June 5 2026",
+          "url": "https://www.marketingprofs.com/opinions/2026/54909/ai-update-june-5-2026-ai-news-and-views-from-the-past-week",
+          "source_type": "news"
+        },
+        {
+          "title": "OpenAI Codex expansion details",
+          "url": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/",
+          "source_type": "official"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "Microsoft Scoutの常時稼働エージェント導入",
+      "source_name": "Microsoft",
+      "published_at": "2026-08-06T05:23:38+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要MicrosoftがScoutを発表し、M365アプリ群で自律的に動作する常時稼働エージェントを提供する。TeamsやOutlookと連携し、予定調整やワークフロー自動化を背景で実行可能だ。独自IDで動作し、ガバナンス機能も備える。企業は生産性向上と管理負担のバランスを検討する必要がある。",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/02/introducing-microsoft-scout-your-always-on-personal-agent/",
+      "selection_reason": "IT分野のエンタープライズツール進化として具体性が高く、M365統合で実務影響が大きいため選定。調査レポートではなく製品発表を優先。",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "Introducing Microsoft Scout",
+          "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/02/introducing-microsoft-scout-your-always-on-personal-agent/",
+          "source_type": "official"
+        },
+        {
+          "title": "Microsoft Scout overview",
+          "url": "https://learn.microsoft.com/en-us/microsoft-scout/overview",
+          "source_type": "official"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "Black Hat USA 2026でのAIエージェントセキュリティ製品発表",
+      "source_name": "CSO Online",
+      "published_at": "2026-08-06T13:03:49+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要Black Hat USA 2026でAIエージェント向けセキュリティ製品が多数発表された。ネットワークレベル制御や意図ベースアクセス制御が注目される。AcalvioやVaronisなどがガードレール機能を提供し、プロンプトインジェクション対策を強化する。企業はAI導入時のセキュリティ設計を再検討すべきだ。",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://www.csoonline.com/article/4204921/the-top-new-cybersecurity-products-at-black-hat-usa-2026.html",
+      "selection_reason": "Cybersecurity分野の最新製品動向として具体性が高く、AIエージェント特化のセキュリティ対策が実務に直結するため選定。インシデントではなく製品・技術トレンドを優先。",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "Top new cybersecurity products at Black Hat USA 2026",
+          "url": "https://www.csoonline.com/article/4204921/the-top-new-cybersecurity-products-at-black-hat-usa-2026.html",
+          "source_type": "news"
+        },
+        {
+          "title": "Black Hat USA 2026 AI Summit",
+          "url": "https://blackhat.com/us-26/ai-summit.html",
+          "source_type": "official"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "860078190a6287ce",
+      "title": "New Zapscape KVM Flaw Could Let Privileged L1 Guest Code Escape to Linux Hosts",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-06T17:58:30+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要LinuxカーネルのKVM/x86にあるshadow MMU関連の不具合が報じられ、L1ゲスト内でカーネル権限を得た攻撃者がホスト上でコード実行に至る可能性が示された。対象はnested virtualizationを外部から見える形で使っている環境で、単なるVM侵害ではなく仮想化境界の突破につながる点が重い。悪用成立にはゲスト内での高権限確保が前提と…",
+      "article_path": "articles/860078190a6287ce.html",
+      "original_url": "https://thehackernews.com/2026/08/new-zapscape-kvm-flaw-could-let.html"
+    },
+    {
+      "entry_id": "015701da6b7682b6",
+      "title": "Cisco Patches 12 SD-WAN and IOS XE Flaws, Including Three 9.8 CVSS Score Bugs",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-06T17:13:15+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CiscoがCatalyst SD-WANとIOS XE向けに、複数の深刻な脆弱性へ対処する更新を公開した。記事上は12件の不具合が対象で、その中にCVSS 9.8のものが3件含まれる。影響範囲はCatalyst SD-WANで設定に依存せず、IOS XEはautonomousまたはcontroller modeで動作している場合に問題となる。悪用方法…",
+      "article_path": "articles/015701da6b7682b6.html",
+      "original_url": "https://thehackernews.com/2026/08/cisco-patches-12-sd-wan-and-ios-xe.html"
+    },
+    {
+      "entry_id": "39397f0b5cd926ff",
+      "title": "New Interrupt Injection Attack Can Bypass Spectre v2 Defenses on Intel and AMD CPUs",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-06T16:17:13+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Linux上の権限の低いプログラムが、CPUの割り込み発生の隙を突いて分岐予測器を再汚染し、Spectre v2対策の一部をすり抜ける手法が報告された。研究者はこれを INTERRUPT INJECTION と名付けている。攻撃は、防御側が予測器を浄化した直後からカーネルが再利用するまでの短い窓を狙うため、前提条件は低権限でも成立しうる。悪用できれば、…",
+      "article_path": "articles/39397f0b5cd926ff.html",
+      "original_url": "https://thehackernews.com/2026/08/new-interrupt-injection-attack-can.html"
+    },
+    {
+      "entry_id": "b99a110e4b6f69ba",
+      "title": "ThreatsDay: Odysseus RCE, Samsung One-Click Takeover, iCloud Backdoor Fight + 27 More Stories",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-06T15:24:31+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要The Hacker News の週次まとめで、Odysseus の RCE、Samsung のワンクリック乗っ取り、iCloud のバックドア対策など、計28件の話題を短く束ねている。記事は個別の詳細よりも、露出したサーバー、再利用された脆弱性、不正な指示の混入、遠隔操作ツールの偽装といった攻撃者の低コスト手段に焦点を当てる。悪用の起点は多様だが、共…",
+      "article_path": "articles/b99a110e4b6f69ba.html",
+      "original_url": "https://thehackernews.com/2026/08/threatsday-odysseus-rce-samsung-one.html"
+    },
+    {
+      "entry_id": "b4df9a003525b380",
+      "title": "Over 4,400 Rockwell PLCs Exposed Online, 22 Found in Water Attack Cities",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-06T12:16:58+00:00",
+      "impact_level": "High",
+      "threat_type": "Misconfiguration",
+      "summary_preview": "概要Forescout の観測で、Rockwell Automation の PLC が世界で 4,407 台インターネット上に露出しており、そのうち 22 台は最近の米国水道関連のサイバー攻撃が起きた都市に存在するとされた。公開経路の多くは単純な公開設定ではなく、モバイル回線網にぶら下がる形で外部から到達可能になっていた点が気に掛かる。今回の情報だけでは…",
+      "article_path": "articles/b4df9a003525b380.html",
+      "original_url": "https://thehackernews.com/2026/08/over-4400-rockwell-plcs-exposed-online.html"
+    },
+    {
+      "entry_id": "d4dd53c164da5c1c",
+      "title": "CryptoJS Weak RNG Behind $5.7 Million in Drains Affects Five Crypto Wallet Apps",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-06T11:49:48+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CryptoJS の WordArray.random() に起因する弱い乱数生成が、復元フレーズ生成に使われたウォレットアプリへ波及し、5つの暗号資産ウォレットアプリで資産流出が起きたと報じられた。攻撃の要点は、秘密鍵そのものを直接奪うのではなく、初期生成時の乱数品質の弱さを突いて、攻撃者が復元フレーズを推測・再構成しやすくする点にある。影響は個々の…",
+      "article_path": "articles/d4dd53c164da5c1c.html",
+      "original_url": "https://thehackernews.com/2026/08/cryptojs-weak-rng-behind-57-million-in.html"
+    },
+    {
+      "entry_id": "c2eb102d0c40d742",
+      "title": "Apple iCloud Private Relay Can Expose Real IPs Through WebKit Proxy Bypasses",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-06T11:33:08+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要Appleのに関し、WebKitのプロキシ回避を通じて利用者の実IPアドレスが露出し得る問題が報じられた。対象は主にSafari系の通信経路で、プライバシー保護の前提としていた二段階中継が迂回されると、閲覧元の秘匿が崩れる。悪用者はサイト側の識別や追跡、地域判定の回避、利用者の所属組織の推定に使える可能性がある。直接の侵入や権限奪取につながる話ではない…",
+      "article_path": "articles/c2eb102d0c40d742.html",
+      "original_url": "https://thehackernews.com/2026/08/webkit-proxy-bypasses-can-expose-real.html"
+    },
+    {
+      "entry_id": "4bd5390bf982383d",
+      "title": "AI Recommendation Poisoning: How \"Ask AI\" Buttons Silently Alter LLM Memory",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-06T11:30:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要商用サイトに埋め込まれた「Ask AI」ボタンや事前入力済みの深いリンクを悪用し、閲覧者が押した瞬間に隠しプロンプトがAI支援側へ渡る手口が報告された。マルウェアも認証情報の窃取も不要で、既存のWeb導線をそのまま使ってLLMの応答傾向や記憶を誘導する点が厄介となる。主な狙いは、製品比較ページや営業導線での回答を歪め、誤情報の拡散や意思決定の混乱につな…",
+      "article_path": "articles/4bd5390bf982383d.html",
+      "original_url": "https://thehackernews.com/2026/08/ai-recommendation-poisoning-how-ask-ai.html"
+    },
+    {
+      "entry_id": "d2936a71ae976410",
+      "title": "Attackers Compile khunt Inside Oracle to Turn SQL Injection Into Windows SYSTEM Access",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-06T09:19:23+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要公開されたWebアプリのSQLインジェクションを起点に、攻撃者がOracleデータベースへ侵入し、実行ファイルを残さず後続操作用の仕組みを埋め込んだ事例が伝えられている。JavaのソースをDBに流し込み、Oracle側にコンパイルさせ、データベースエンジンの内部からコマンドを実行した点が特徴となる。これにより、単なるデータ参照の被害に留まらず、SYST…",
+      "article_path": "articles/d2936a71ae976410.html",
+      "original_url": "https://thehackernews.com/2026/08/attackers-compile-khunt-inside-oracle.html"
+    },
+    {
+      "entry_id": "1407affd641c9ce3",
+      "title": "AWS, Google, and Vercel Agent Flaws Let Attackers Trigger Tools Without Running the Model",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-06T08:57:30+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要AWS、Google、Vercel のエージェント基盤に、モデルの実行や承認を経ずにツールが呼ばれてしまう不備が見つかった。攻撃者は不正に作った指示や、外部から混入させた指示を使い、AIエージェントの検索・送信・操作系の機能へつなげられる可能性がある。システムプロンプトや内容フィルタ、モデル側のガードレールが働く前に処理が進む経路がある点が重要となる。…",
+      "article_path": "articles/1407affd641c9ce3.html",
+      "original_url": "https://thehackernews.com/2026/08/aws-google-and-vercel-patch-agent-flaws.html"
+    },
+    {
+      "entry_id": "addcbb69ff7e9f38",
+      "title": "Chinese-Made Zbtlink Routers Ship With Backdoor That Opens Unauthenticated Root Shells",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-06T08:05:22+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要Zbtlink製ルーター少なくとも20機種に、工場出荷時のバックドアが仕込まれていたと報じられた。公開されている21件のファームウェアイメージの全てから同種の実装が見つかっており、認証なしでrootシェルを開ける設計とされる。これは設定ミスや管理画面の脆弱性とは異なり、出荷時点で攻撃者の足場が組み込まれている点が重い。悪用できる範囲は、機器の初期導入環…",
+      "article_path": "articles/addcbb69ff7e9f38.html",
+      "original_url": "https://thehackernews.com/2026/08/chinese-made-zbtlink-routers-ship-with.html"
+    },
+    {
+      "entry_id": "79202b2d496da879",
+      "title": "Ransom Cartel Creator Gets 16 Years in Prison for Operating Ransomware-as-a-Service",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-06T07:19:54+00:00",
+      "impact_level": "Low",
+      "threat_type": "Other",
+      "summary_preview": "概要米司法当局は、Ransom Cartel の運営者とされる Maksim Silnikau に対し、16年の実刑を言い渡した。記事は、2021年に立ち上がったランサムウェア・アズ・ア・サービスの中核人物を処罰した点を伝えている。被害は少なくとも18社に及び、米国内の複数州と海外企業が含まれるが、個別侵入経路や初期侵入手段は本文からは確認できない。重要な…",
+      "article_path": "articles/79202b2d496da879.html",
+      "original_url": "https://thehackernews.com/2026/08/ransom-cartel-creator-gets-16-years-in.html"
+    },
+    {
+      "entry_id": "5db0f08b971166c3",
+      "title": "CISA Flags TeamCity CVE-2026-63077 RCE Flaw Under Active Exploitation in the Wild",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-06T06:51:43+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要JetBrains TeamCity のオンプレミス版にある CVE-2026-63077 について、CISA が 実際の悪用を確認したと報じられている。内容は 信頼できないデータの逆シリアライズ に起因する RCE で、TeamCity サーバーに到達できる攻撃者が認証なしで任意コード実行に進める可能性がある。影響は単一サーバーの侵害にとどまらず、ビ…",
+      "article_path": "articles/5db0f08b971166c3.html",
+      "original_url": "https://thehackernews.com/2026/08/cisa-flags-teamcity-cve-2026-63077-rce.html"
+    },
+    {
+      "entry_id": "72da542dc867dc60",
+      "title": "Snowflake Hacker Pleads Guilty Over Breaches Affecting at Least 100 Million People",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-06T06:04:30+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要Snowflakeの顧客アカウント侵害をめぐり、Connor Riley Mouckaが米連邦裁判所で有罪を認めたという報道で、少なくとも165組織に侵入し、1億人以上の記録が影響を受けたとされる。侵害の入口はSnowflakeそのものというより、顧客アカウントの認証情報や設定不備に乗った可能性が高く、そこから大量取得や二次利用に広がったとみるのが自然…",
+      "article_path": "articles/72da542dc867dc60.html",
+      "original_url": "https://thehackernews.com/2026/08/snowflake-hacker-pleads-guilty-over.html"
+    },
+    {
+      "entry_id": "d6749fecb0d03cfe",
+      "title": "ISC Stormcast For Thursday, August 6th, 2026 https://isc.sans.edu/podcastdetail/10040, (Thu, Aug 6th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-08-06T02:00:02+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要SANS ISCのStormcastは、個別の脆弱性速報ではなく、その週に現場で意識すべき観測事項を短く整理する配信に当たる。今回の入力には本文がなく、何の脆弱性や攻撃手口を扱ったかは確認できないため、具体的な悪用手順や影響範囲は未確認となる。こうした配信は、単体では緊急度を断定しにくい一方で、広く出回り始めた探索や攻撃の兆候を拾う入口になりやすい。C…",
+      "article_path": "articles/d6749fecb0d03cfe.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33222"
+    },
+    {
+      "entry_id": "b6492cd16ebb236a",
+      "title": "22 Seconds to Compromise: How Automated SSH Actors Move From Login to Persistence Before You Can Blink &#x5b;Guest Diary&#x5d;, (Thu, Aug 6th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-08-06T00:15:40+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要この記事は、SSH に対する自動化された侵入者が、ログイン成功から数十秒のうちに 持続化 と 探索 まで進める実態を扱う。攻撃者は、公開された SSH 口や弱い認証を足がかりに、手作業の調査を待たずに鍵の配置、ユーザー作成、設定改変を連続実行する。影響は単一ホストの乗っ取りにとどまらず、再接続経路の確保、他ホストへの横展開、監視回避へ広がる可能性が高い…",
+      "article_path": "articles/b6492cd16ebb236a.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33220"
+    },
+    {
+      "entry_id": "efacf7672dc9d14e",
+      "title": "Token Jacking: Cybercriminals Could Be Stealing Your AI Resources",
+      "source_name": "Unit 42",
+      "category": "reporting",
+      "published_at": "2026-08-06T10:00:49+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Credential Theft",
+      "summary_preview": "概要Unit 42 は、開発者や組織が利用する AI向けトークン や APIキー が奪われ、攻撃者に AI資源の不正利用 を許す状況を解説している。主眼は、盗んだ認証情報を使って外部のAIサービスを大量利用し、費用を第三者へ転嫁する行為にある。影響は請求額の増大にとどまらず、正規アカウントの信頼低下、利用制限、監査混乱へ広がる可能性がある。どのサービスがど…",
+      "article_path": "articles/efacf7672dc9d14e.html",
+      "original_url": "https://unit42.paloaltonetworks.com/ai-token-jacking/"
+    },
+    {
+      "entry_id": "98ec60e6bd07e5c6",
+      "title": "VU#487613: Alinto SOGo v5.12.7 vulnerable to cross-site scripting via malformed ICS calendar invitations",
+      "source_name": "CERT/CC",
+      "category": "reporting",
+      "published_at": "2026-08-06T18:36:37+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Alinto SOGo v5.12.7 に、不正な ICS 招待を起点とする クロスサイトスクリプティングの脆弱性が公表された。悪意ある SVG やスクリプトを含むカレンダー招待をメール経由で送り、利用者が予定表を開くかプレビューしただけで、SOGo の画面文脈で任意コードが走る流れが想定される。結果として、メール本文やフォルダ内容、連絡先、予定表情報…",
+      "article_path": "articles/98ec60e6bd07e5c6.html",
+      "original_url": "https://kb.cert.org/vuls/id/487613"
+    },
+    {
+      "entry_id": "52fc042737776b57",
+      "title": "NQC公開セミナーのご案内",
+      "source_name": "NICT NOTICE",
+      "category": "reporting",
+      "published_at": "2026-08-06T03:00:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要本件はNQC公開セミナーの案内であり、脆弱性や侵害事案の告知ではない。公開情報からは、セミナーの開催趣旨や対象者は読み取れるが、具体的な攻撃手法、悪用条件、緊急対応の要否は示されていない。したがって、CSIRTが直ちに封じ込めや復旧判断を行う対象ではなく、教育・周知の参考情報として扱うのが妥当となる。なお、セミナーで取り上げる個別テーマや資料の詳細は本…",
+      "article_path": "articles/52fc042737776b57.html",
+      "original_url": "/publicity/event/2026/08/06-1.html"
+    },
+    {
+      "entry_id": "87472e772f793e81",
+      "title": "官民連携の米 AI × 脆弱性対策の国家戦略「GOLD EAGLE」ほか [Scan PREMIUM Monthly Executive Summary 2026年7月度]",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-05T23:15:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要本記事は、官民連携による脆弱性対策の国家戦略として米国が進める「GOLD EAGLE」を中心に、月次の重要トピックをまとめたものに見える。実際に新たな脆弱性や侵害が列挙されているわけではなく、政策・運用の方向性を整理する性格が強い。したがって、直ちに封じ込め対象を増やす類の記事ではない一方、脆弱性の優先順位付けや、組織横断での対策分担を見直す材料にはな…",
+      "article_path": "articles/87472e772f793e81.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/06/55881.html"
+    },
+    {
+      "entry_id": "786bc4da8a91e6ca",
+      "title": "Okta Japan「さわってみようAuth0！」を9月11日に大阪で開催 ～ 初心者向けハンズオン＆解説セッション",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-05T23:10:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要Okta Japanが、Auth0の入門向けイベントを大阪で開催するという案内記事で、脆弱性や侵害の報告ではない。内容はハンズオンと解説セッションが中心で、認証基盤の理解や導入検討に役立つ一方、CSIRT観点の直接的な緊急対応事項はない。ただし、認証基盤は業務システム全体の入口になるため、実装や設定を誤ると不正ログインや権限逸脱の起点になりやすい。現時…",
+      "article_path": "articles/786bc4da8a91e6ca.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/06/55880.html"
+    },
+    {
+      "entry_id": "e57cf10c10039f63",
+      "title": "新エフエイコムにランサムウェア攻撃、取引先の従業員に関する個人情報が漏えいした可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-05T23:05:07+00:00",
+      "impact_level": "High",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要新エフエイコムがランサムウェア攻撃を受け、取引先従業員に関する個人情報が漏えいした可能性があると公表した。暗号化による業務停止だけでなく、近年のランサムウェアでは窃取後の公開脅迫が前提になりやすく、外部共有された名簿や連絡先が二次被害の起点になりやすい。影響は自社内に閉じず、取引先、委託先、従業員本人への連絡やなりすまし被害へ広がる恐れがある。現時点で…",
+      "article_path": "articles/e57cf10c10039f63.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/06/55879.html"
+    },
+    {
+      "entry_id": "2b8427ff8320ba0f",
+      "title": "停職1ヶ月 ～ 市職員が飲食店関係者に関する市税等の情報を口外",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-05T23:05:03+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要市職員が、飲食店関係者に関する市税等の情報を口外し、停職1か月の処分となった事案である。技術的な侵入やマルウェア感染の話ではなく、内部者による情報持ち出し・漏えいとして見るべき内容となる。悪用の典型は、個人や事業者の納税状況、行政対応の有無、付随する属性情報を外部に渡し、営業妨害、脅迫、差別的な扱い、なりすましの材料にする流れになる。影響は当該事業者や…",
+      "article_path": "articles/2b8427ff8320ba0f.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/06/55878.html"
+    },
+    {
+      "entry_id": "ce5c5257e437241c",
+      "title": "AeyeScan がアップデート、Ruby on Rails や WordPress の最新脆弱性に対応",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-05T23:00:23+00:00",
+      "impact_level": "Low",
+      "threat_type": "Patch",
+      "summary_preview": "概要AeyeScan の更新により、Ruby on Rails と WordPress の最新脆弱性に対する診断対応が追加された。これは新たな攻撃手法の公開というより、既知脆弱性を抱えた資産を継続的に洗い出しやすくする更新と捉えるのが適切である。実務上は、外部公開資産や検証環境で放置された古いバージョンが残っていると、広く同型の露出が一気に見つかる可能性が…",
+      "article_path": "articles/ce5c5257e437241c.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/06/55877.html"
+    },
+    {
+      "entry_id": "eeab8cc44b3a045c",
+      "title": "市民プールやエネルギー企業が標的に ～ IPA が制御システムの最新サイバーインシデント事例を追加",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-05T23:00:19+00:00",
+      "impact_level": "High",
+      "threat_type": "Advisory",
+      "summary_preview": "概要IPA が制御システムに関する最新のサイバーインシデント事例を追加し、市民プールやエネルギー企業が標的に含まれた点が示された。記事の主眼は個別の脆弱性告知ではなく、現場で起きやすい制御系への侵入・妨害の実例を更新したことにある。攻撃はインターネット公開機器、遠隔保守、認証情報の流出、旧式装置の放置などを足がかりに広がる可能性があり、侵入後は運用停止や監…",
+      "article_path": "articles/eeab8cc44b3a045c.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/06/55876.html"
+    },
+    {
+      "entry_id": "52444319c604430f",
+      "title": "脆弱性の是正期限12時間の政府も ～ AI 自律型攻撃の台頭と企業の最新リスク",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-05T23:00:16+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要この記事は、AIによる自律型攻撃の台頭を背景に、政府機関や企業が脆弱性の是正期限をこれまで以上に短縮している流れを整理している。攻撃側は公開直後の脆弱性情報や露出設定を機械的に拾い、初動の遅れがそのまま侵害につながる状況が広がっている。影響は単一サーバーの停止にとどまらず、認証情報の窃取、横展開、クラウドや業務基盤への波及まで及ぶ可能性がある。もっとも…",
+      "article_path": "articles/52444319c604430f.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/06/55875.html"
+    },
+    {
+      "entry_id": "3c2910bcef91bc7e",
+      "title": "ディセプション技術で敵対者に能動的に関与 ～ NEC と CDI が民間初となる米 MITRE のトレーニングプログラム提供開始",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-05T23:00:13+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要NEC と CDI が、ディセプション技術を用いて敵対者に能動的に関与するための、米 MITRE のトレーニングプログラム提供開始を発表した。攻撃者の行動を誘導し、調査や横展開の途中で痕跡を取り、封じ込めや分析につなげる狙いがある。攻撃そのものの脆弱性を示す記事ではなく、検知・対処力を高めるための教育・訓練の話題が中心となる。実運用では、誤検知や業務端…",
+      "article_path": "articles/3c2910bcef91bc7e.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/06/55874.html"
+    },
+    {
+      "entry_id": "0c664f47fed1912a",
+      "title": "銀行が法人顧客のセキュリティを心配する時代到来 ～  ～ GMOあおぞらネット銀行とGMOサイバーセキュリティ byイエラエが提携",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-05T23:00:09+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要本件は、GMOあおぞらネット銀行とGMOサイバーセキュリティ byイエラエが提携し、銀行側が法人顧客のセキュリティを支援するという取り組みを紹介した記事である。直接の脆弱性情報や侵害事案ではなく、金融機関が取引先の防御力をサービスとして補う流れを示している。法人顧客にとっては、自社の対策不足が取引継続や信用評価に波及する可能性を示唆する。攻撃者視点では…",
+      "article_path": "articles/0c664f47fed1912a.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/06/55873.html"
+    },
+    {
+      "entry_id": "5c64e566966daf61",
+      "title": "オープンソースへの恩返し ～ HENNGEが「PyCon JP 2026」おやつスポンサーに",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-05T23:00:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要HENNGEが「PyCon JP 2026」のおやつスポンサーに名を連ねたという内容で、技術的な脆弱性や侵害事案を扱う記事ではない。オープンソースへの支援姿勢を示す広報的な話題であり、直接のセキュリティインシデント対応や脆弱性管理の対象にはなりにくい。もっとも、Pythonを業務基盤に使う組織では、コミュニティ支援の動向が人材獲得や技術選定の文脈で間接…",
+      "article_path": "articles/5c64e566966daf61.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/06/55872.html"
+    }
+  ]
+}
