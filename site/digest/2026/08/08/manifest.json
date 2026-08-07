@@ -1,0 +1,434 @@
+{
+  "date": "2026-08-08",
+  "window": {
+    "from": "2026-08-07T06:00:00+09:00",
+    "to": "2026-08-08T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 28
+  },
+  "generated_at_jst": "2026-08-08T06:24:19.054844+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "Anthropic、自社AIチップ設計チームを構築",
+      "source_name": "TechCrunch",
+      "published_at": "2026-08-05T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要Anthropicが自社AIチップ設計チームの構築を開始した。Nvidiaなど外部依存を減らし、Claudeモデル向けに最適化されたプロセッサを開発する狙いだ。求人ではチップ設計経験者を募集し、ハードウェアとソフトウェアの共同設計を進める。この動きはAIインフラの自給自足化を加速させる。需要急増に伴うチップ不足やコスト圧力への対応として位置づけられる。…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://techcrunch.com/2026/08/05/anthropic-is-hiring-an-ai-chip-design-team/",
+      "selection_reason": "AI分野で具体的な企業行動として自社シリコン開発を発表した新規事例。Gartner予測のような汎用トレンドではなく、Anthropicの実際の採用活動で多様性を確保",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "Anthropic is hiring an AI chip design team",
+          "url": "https://techcrunch.com/2026/08/05/anthropic-is-hiring-an-ai-chip-design-team/",
+          "source_type": "news"
+        },
+        {
+          "title": "Anthropic to develop custom AI chips for Claude",
+          "url": "https://americanbazaaronline.com/2026/08/05/anthropic-to-develop-custom-ai-chips-for-claude-485831/",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "OpenAI、GPT-5.6 Lunaを無料ユーザー向けデフォルトに",
+      "source_name": "LinkedIn / OpenAI関連報道",
+      "published_at": "2026-08-06T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要OpenAIがGPT-5.6 Lunaを無料およびGoユーザー向けのデフォルトモデルに設定した。来週から無制限テキストチャットが可能になり、Thinkボタンで複雑な質問対応も追加される。価格はLunaで入力トークンあたり0.20ドルと大幅低減。Terraも20%引き下げられ、高ボリューム業務のコスト障壁が低下する。これにより企業や開発者のAI活用範囲が…",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://www.linkedin.com/posts/victorpan_its-august-6th-2026-and-another-model-activity-7491212464022319104-WFAI",
+      "selection_reason": "IT分野で具体的な製品アクセシビリティ変更。価格改定と無制限利用の組み合わせが開発者・企業の実務に直結する新規事実",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "It's August 6th, 2026, and another model update",
+          "url": "https://www.linkedin.com/posts/victorpan_its-august-6th-2026-and-another-model-activity-7491212464022319104-WFAI",
+          "source_type": "web"
+        },
+        {
+          "title": "Advancing the price-performance frontier with GPT-5.6",
+          "url": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/",
+          "source_type": "official"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "Perplexity AIエージェント、Amazon訴訟でCFAA適用除外判決",
+      "source_name": "Cooley / Reuters",
+      "published_at": "2026-08-04T00:00:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Other",
+      "summary_preview": "概要米第九巡回区控訴裁判所がPerplexityのAIエージェントによるAmazonサイトアクセスをCFAA違反と認めない判断を下した。ユーザーの指示に基づく行為はユーザー自身がアクセスしたとみなされる。下級審の差し止め命令が覆され、AIエージェント開発者への法的保護が示された。ウェブサイト運営者側は利用規約違反などで別途対応を迫られる。エージェント型AI…",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://www.cooley.com/news/insight/2026/2026-08-06-ninth-circuit-rules-on-ai-agent-access-to-third-party-websites-under-cfaa",
+      "selection_reason": "Cybersecurity分野でAIエージェントの法的アクセス権限に関する具体的な裁判結果。CFAA適用範囲の明確化が実務影響大",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "Ninth Circuit Rules on AI Agent 'Access' to Third-Party Websites",
+          "url": "https://www.cooley.com/news/insight/2026/2026-08-06-ninth-circuit-rules-on-ai-agent-access-to-third-party-websites-under-cfaa",
+          "source_type": "news"
+        },
+        {
+          "title": "Amazon loses US court ban on Perplexity's AI shopping tools",
+          "url": "https://www.reuters.com/business/retail-consumer/amazon-loses-us-court-ban-perplexitys-ai-shopping-tools-2026-08-04/",
+          "source_type": "news"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "2e48818f3b7e91d8",
+      "title": "CVE-2026-8037 Progress LoadMaster Command Injection Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-08-07T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CVE-2026-8037は、Progress LoadMaster に存在するコマンド注入の脆弱性で、入力値の処理不備を突かれると任意コマンド実行につながる可能性がある。CISA KEV に掲載されているため、理論上の欠陥ではなく、少なくとも悪用可能性が現実に確認された前提で扱う必要がある。公開系の管理画面や到達可能なエッジ装置に残っていれば、認証前…",
+      "article_path": "articles/2e48818f3b7e91d8.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "e798f32e903625f9",
+      "title": "Nearly 800 Malicious npm Packages Deliver Cross-Platform RAT and Infostealer",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-07T18:48:17+00:00",
+      "impact_level": "High",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要npm に 約800件の悪性パッケージが公開され、Windows・Mac・Linux を狙う RAT と 情報窃取型マルウェア が配布される事案が報じられている。名前は無作為生成や typo-squatting に近く、開発者が依存関係を追加した瞬間に侵入経路になりやすい。実害は個々の端末感染にとどまらず、認証情報やトークンの窃取を起点に、CI/CD、…",
+      "article_path": "articles/e798f32e903625f9.html",
+      "original_url": "https://thehackernews.com/2026/08/nearly-800-malicious-npm-packages.html"
+    },
+    {
+      "entry_id": "ec7c5eda2ae739d5",
+      "title": "ClickFix Attacks Deliver macOS Stealer That Can Drain Crypto Wallets",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-07T18:29:08+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要ClickFix型の誘導手口を使い、macOS向けのstealerが配布されている。攻撃は利用者に何らかの操作をさせて開始し、Go製のマルウェアを実行させたうえで、暗号資産のウォレット情報、ブラウザ保存のパスワード、Apple iCloud Keychain、キャッシュ済み認証情報を盗み取る流れになっている。感染の起点はmacOS上のシェルスクリプトで…",
+      "article_path": "articles/ec7c5eda2ae739d5.html",
+      "original_url": "https://thehackernews.com/2026/08/clickfix-attacks-deliver-macos-stealer.html"
+    },
+    {
+      "entry_id": "f935f15028ba73e2",
+      "title": "UNC6671 Vishing Attacks Target Personal Phones to Steal SaaS Data",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-07T18:16:13+00:00",
+      "impact_level": "High",
+      "threat_type": "Credential Theft",
+      "summary_preview": "概要UNC6671 とされる攻撃者が、個人の携帯電話に対する vishing を使い、企業の従業員から SaaS データを盗み出す手口が報じられた。電話口では IT ヘルプデスクを装い、緊急のセキュリティ移行や認証更新を口実にして、被害者に操作を急がせる。狙いは単なる初回侵入ではなく、本人が正規手順を踏んだように見える形で認証情報や承認を得て、クラウド上の…",
+      "article_path": "articles/f935f15028ba73e2.html",
+      "original_url": "https://thehackernews.com/2026/08/unc6671-vishing-attacks-target-personal.html"
+    },
+    {
+      "entry_id": "b5e03c767f3369de",
+      "title": "New WordPress Pre-Auth XSS Could Lead to PHP Code Execution - Patch ASAP",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-07T12:56:23+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要WordPress のログイン画面にある認証前の反射型 XSSが修正された。影響は全バージョンに及び、見た目はブラウザ側の問題でも、管理者が細工済みページを開くとサーバー側の処理へつながる余地がある。報告では、PHP コード実行へ連鎖し得ることが示されており、単純な画面崩しよりずっと重い。攻撃成立には管理者の操作が要るため全面的な自動侵害ではないが、管…",
+      "article_path": "articles/b5e03c767f3369de.html",
+      "original_url": "https://thehackernews.com/2026/08/new-wordpress-pre-auth-xss-could-lead.html"
+    },
+    {
+      "entry_id": "95ff2b5235e47de5",
+      "title": "Growing Up The Hard Way",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-07T11:55:26+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要記事は、オープンソースが長く続いた「無償提供と相互信頼」の時代から、供給網の現実に合わせて防御と運用を強める段階へ移ったことを比喩的に述べている。個別の脆弱性や事件を報じる内容ではなく、開発・配布・利用の前提が変わったという問題提起に近い。悪用の形は、依存関係の改ざん、保守放棄されたパッケージの乗っ取り、保守者になりすました投入などが中心になる。影響は…",
+      "article_path": "articles/95ff2b5235e47de5.html",
+      "original_url": "https://thehackernews.com/2026/08/growing-up-hard-way.html"
+    },
+    {
+      "entry_id": "a8f8147ee1bde018",
+      "title": "18-Year-Old Linux SCTP Flaw Could Let Local Users Gain Root and Escape Containers",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-07T11:10:33+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要LinuxのSCTP処理にあるuse-after-freeの不具合が、ローカル権限昇格からroot奪取、さらにコンテナ脱出までつながる可能性がある。Tencentの研究者は、コンテナ内からこの欠陥を悪用して下層ホストへ到達できたと報告している。脆弱性は2008年から存在していたとされ、既に修正版は配布済みで、対象の安定版カーネルでは8月3日に修正が入っ…",
+      "article_path": "articles/a8f8147ee1bde018.html",
+      "original_url": "https://thehackernews.com/2026/08/18-year-old-linux-sctp-flaw-could-let.html"
+    },
+    {
+      "entry_id": "12c3e00663c6790e",
+      "title": "New NatJack Attacks Hijack TCP Sessions and Spoof DNS by Manipulating NAT Tables",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-07T10:58:38+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要この記事は、NATテーブルの接続状態を操作して、進行中のTCPセッションを奪取したり、DNS応答を偽装したりできる新しい攻撃手法NatJackを扱っている。攻撃者はNATの状態管理の弱点を突き、正規通信の途中に割り込みや置き換えを行うことで、利用者に気づかれにくい形で通信内容を操作できる。影響は単一端末にとどまらず、ポート露出、DNSの改ざん、NATテ…",
+      "article_path": "articles/12c3e00663c6790e.html",
+      "original_url": "https://thehackernews.com/2026/08/new-natjack-attacks-hijack-tcp-sessions.html"
+    },
+    {
+      "entry_id": "8a918c56a43c6c7d",
+      "title": "Microsoft 365 AitM Phishing Hijacks Accounts to Collect Payroll and Finance Emails",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-07T10:38:27+00:00",
+      "impact_level": "High",
+      "threat_type": "Phishing",
+      "summary_preview": "概要Microsoft 365 を狙うメール起点の広域フィッシングが観測され、Adversary-in-the-Middle の手口で認証情報やセッションを奪い、アカウント乗っ取りへつなげている。攻撃者の狙いは単純なログイン突破ではなく、給与・財務に関与する人物を特定し、そのメールを継続的に収集する点にある。住居系プロキシを使って一般利用者の通信に見せかけ…",
+      "article_path": "articles/8a918c56a43c6c7d.html",
+      "original_url": "https://thehackernews.com/2026/08/microsoft-365-aitm-phishing-hijacks.html"
+    },
+    {
+      "entry_id": "bd123b7532104f78",
+      "title": "AI-Assisted HTTP Terminator Finds Novel HTTP Desync Techniques and Apache Zero-Day",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-07T10:09:54+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要PortSwiggerの研究システムHTTP Terminatorが、約3万件の候補を探索して新しいHTTP desynchronization手法を実証した。さらに、人手を交えた別の探索の流れからApache Traffic Serverのzero-dayも見つかったとされる。攻撃の本質は、フロントエンドとバックエンドの解釈差を突いてリクエスト境界を…",
+      "article_path": "articles/bd123b7532104f78.html",
+      "original_url": "https://thehackernews.com/2026/08/ai-assisted-http-terminator-finds-novel.html"
+    },
+    {
+      "entry_id": "16b4cbe658d7b82b",
+      "title": "Malware Can Abuse Windows Hello for Business Keys for Persistent Entra ID Access",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-07T08:52:11+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要この話題は、すでにサインイン済みの Windows セッション上で動くマルウェアが、利用者の Windows Hello for Business 鍵を悪用し、Microsoft Entra ID へ静かに認証できる点を示している。攻撃者は対話的なパスワード窃取に頼らず、長期滞在型のクラウド侵入へつなげられる。具体的には、攻撃者が管理するデバイス登録、…",
+      "article_path": "articles/16b4cbe658d7b82b.html",
+      "original_url": "https://thehackernews.com/2026/08/malware-can-abuse-windows-hello-for.html"
+    },
+    {
+      "entry_id": "9a990e4d8fcb8aef",
+      "title": "Claude Code and Gemini CLI Flaws Let a GitHub Issue Reach CI Workflow Secrets",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-07T08:18:35+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要この件は、GitHub issueを起点に、CIワークフローの秘密情報や次回のエージェント実行を奪える可能性があると報告したものだ。権限を持たないアカウントからの投稿でも成立した点が重要で、通常のコード改変より前段の入口が広い。攻撃が通れば、CI上で走る自動処理やエージェントの実行文脈に乗って、認証情報の窃取や不正操作へつながる恐れがある。影響は単一リ…",
+      "article_path": "articles/9a990e4d8fcb8aef.html",
+      "original_url": "https://thehackernews.com/2026/08/claude-code-and-gemini-cli-flaws-let.html"
+    },
+    {
+      "entry_id": "0f761c65c99a435f",
+      "title": "TeamPCP Linked To Redis Attacks Dating Back To 2020 And Later Supply Chain Campaign",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-07T06:50:05+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要TeamPCPと呼ばれる攻撃グループが、2020年以降に公開Redis環境への侵入を続け、その後にg&gt;ソフトウェア供給網へ攻撃対象を広げていた可能性が示された。記事は、重複するドメインやマルウェア配布経路、初期侵入後の足場確保の手口から、同一主体の継続的な活動を結び付けている。公開Redisは認証なしや弱設定のまま露出していると、改ざんや永続化の…",
+      "article_path": "articles/0f761c65c99a435f.html",
+      "original_url": "https://thehackernews.com/2026/08/teampcp-linked-to-redis-attacks-dating.html"
+    },
+    {
+      "entry_id": "c65f9c6157a9fbe4",
+      "title": "Linux Shell Forensic: Let&#x3f;s Dive Into Atuin&#x21;, (Fri, Aug 7th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-08-07T07:22:28+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要この記事は、Linux/UNIX の シェル履歴 を中心に、Atuin のような履歴管理ツールをどう見るかを扱っている。従来の .bash_history のような平坦な履歴は、複数端末での利用や改ざん耐性、追跡性の面で限界がある。攻撃者は履歴消去やコマンドの分割投入を通じて痕跡を薄めやすく、逆に防御側は履歴同期や保存先の特定で操作実態を補える可能性が…",
+      "article_path": "articles/c65f9c6157a9fbe4.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33226"
+    },
+    {
+      "entry_id": "3fe1680ce5f4dc78",
+      "title": "ISC Stormcast For Friday, August 7th, 2026 https://isc.sans.edu/podcastdetail/10042, (Fri, Aug 7th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-08-07T02:00:02+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要SANS ISC の Stormcast は、特定製品の脆弱性報告ではなく、当日の脅威動向を短く整理する配信とみなせる。今回の入力には個別の事案名や悪用対象が含まれておらず、何が新たに起きたかは本文から確認できない。したがって、現時点で読み取れるのは、一般的な脅威観測や運用上の注意喚起が中心である点に限られる。悪用の具体像、影響範囲、自組織への該当性は…",
+      "article_path": "articles/3fe1680ce5f4dc78.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33224"
+    },
+    {
+      "entry_id": "6cbe0cb9703503da",
+      "title": "ChainDrop: Inside a Self-Propagating npm Worm",
+      "source_name": "Unit 42",
+      "category": "reporting",
+      "published_at": "2026-08-06T22:26:39+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要Unit 42は、npmのサプライチェーンを自己増殖しながら広がるワーム「ChainDrop」を分析した。攻撃は主に GitHub Actions の runner secret を抜き取り、それを足掛かりに次の侵入や配布先の拡大を狙う構図になっている。さらに、Ethereum のスマートコントラクトを使って C2 の経路を切り替えるため、単純なドメイ…",
+      "article_path": "articles/6cbe0cb9703503da.html",
+      "original_url": "https://unit42.paloaltonetworks.com/chaindrop-npm-worm-analysis/"
+    },
+    {
+      "entry_id": "6c101e7d49d9dc28",
+      "title": "VU#987105: The nothings stb TrueType library, up to version 1.26, contains a heap buffer overflow vulnerability",
+      "source_name": "CERT/CC",
+      "category": "reporting",
+      "published_at": "2026-08-07T14:15:19+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要stb TrueType library の 1.26 以前に、悪意ある TrueType Font データを処理した際の ヒープバッファオーバーフローが見つかった。対象関数 stbtt_GetGlyphShape() は輪郭点の境界確認が不足しており、細工したフォントを読み込むだけで範囲外参照が発生しうる。主な影響は DoS と 隣接ヒープ領域の情報…",
+      "article_path": "articles/6c101e7d49d9dc28.html",
+      "original_url": "https://kb.cert.org/vuls/id/987105"
+    },
+    {
+      "entry_id": "1897aa2f439fa142",
+      "title": "今日もどこかで情報漏えい 第51回「2026年7月の情報漏えい」三重県、陸自インシデントを他山の石として USB メモリ 1 万個チェック",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-06T23:15:03+00:00",
+      "impact_level": "Low",
+      "threat_type": "Other",
+      "summary_preview": "概要本件は、2026年7月に起きた情報漏えい事案の振り返りを軸に、三重県が陸自インシデントを教訓としてUSBメモリ約1万個を点検した話題を取り上げている。直接の新規侵害を伝える記事ではなく、既発事案を受けた運用面の再点検が主題に近い。悪用の起点は、紛失・持ち出し・未管理媒体の残存といった、境界防御では拾いにくい経路に置かれる。影響は単一端末にとどまらず、媒…",
+      "article_path": "articles/1897aa2f439fa142.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/07/55892.html"
+    },
+    {
+      "entry_id": "543e8134aa203b41",
+      "title": "人事異動から退職処理までの実務を体験 ～「Okta」ハンズオンワークショップ 9月11日 大阪で開催",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-06T23:10:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要本記事は、Oktaを使った人事異動から退職処理までの運用を体験するハンズオンワークショップの案内であり、脆弱性や侵害事案の報告ではない。主眼は、入社・異動・退職に伴うアカウント棚卸し、権限変更、セッション失効、退職者無効化の流れを実務で確認する点にある。こうした手順が崩れると、退職後アカウントの残存や過剰権限の放置を通じて、正規認証を悪用した侵入や情報…",
+      "article_path": "articles/543e8134aa203b41.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/07/55891.html"
+    },
+    {
+      "entry_id": "b605a2aa2f3a488f",
+      "title": "宇都宮病院職員の患者情報利用による別医療機関のダイレクトメール郵送、調査の結果 直接的金銭的利益の受領が無いことを確認",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-06T23:05:14+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要宇都宮病院の職員が、患者情報を別の医療機関のダイレクトメール送付に利用した件について、調査の結果、直接的な金銭的利益の受領は確認されなかった。一方で、個人情報を診療目的以外に流用した疑いがあるため、金銭授受の有無だけでリスクは下がらない。被害は情報の第三者提供にとどまらず、患者の信頼失墜、苦情対応、監査対応、再発防止策の実装まで広がる可能性がある。現時…",
+      "article_path": "articles/b605a2aa2f3a488f.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/07/55890.html"
+    },
+    {
+      "entry_id": "dcaea9beace2fc7c",
+      "title": "「東京アプリ」の運営に係るコールセンター業務で1名の個人情報漏えい",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-06T23:05:11+00:00",
+      "impact_level": "Low",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要「東京アプリ」の運営に関わるコールセンター業務で、1名分の個人情報漏えいが発生したとされる。現時点で把握できるのは、漏えい人数が少数であることと、業務委託を含む運用経路の中で情報が外部に出た可能性がある点までに限られる。漏えい経路が誤送信、誤閲覧、端末紛失、委託先の管理不備などのどれかは未確認であり、被害範囲の確定には追加調査が必要となる。件数が少なく…",
+      "article_path": "articles/dcaea9beace2fc7c.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/07/55889.html"
+    },
+    {
+      "entry_id": "4c63794b34bf7957",
+      "title": "Axcelead Drug Discovery Partners社員のメールアカウントに不正アクセス、約7,000通のメールで痕跡を確認",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-06T23:05:08+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要Axcelead Drug Discovery Partnersの社員メールアカウントが不正アクセスを受け、約7,000通のメールで痕跡が確認されたと報じられた。現時点では、侵入の起点が認証情報の窃取なのか、端末侵害なのか、設定不備なのかは確認されていない。メールは業務連絡、契約、研究関連の調整に広く使われるため、単なる一アカウントの問題に見えても、機…",
+      "article_path": "articles/4c63794b34bf7957.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/07/55888.html"
+    },
+    {
+      "entry_id": "af8f0970fc9c6045",
+      "title": "LINE GAMEでユーザー内部識別子を外部の広告ツールに送信、総務省から行政指導",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-06T23:05:05+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Misconfiguration",
+      "summary_preview": "概要LINE GAMEに関する運用で、ユーザーの内部識別子が外部の広告ツールへ送信されていたとして、総務省が行政指導を行った件である。問題の焦点は、識別子そのものが直ちに認証情報となるかではなく、外部サービス側で他データと結び付くことで、利用実態の追跡や属性推定に使われうる点にある。個人情報保護や利用目的の整理、外部送信の管理が不十分だと、技術事故というよ…",
+      "article_path": "articles/af8f0970fc9c6045.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/07/55887.html"
+    },
+    {
+      "entry_id": "3558d9e14351aab8",
+      "title": "ADサーバ上のデータが外部へ転送されたと判断 ～ 精電舎電子工業にランサムウェア攻撃",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-06T23:05:02+00:00",
+      "impact_level": "High",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要精電舎電子工業がランサムウェア攻撃を受け、ADサーバ上のデータが外部へ転送されたと判断した件が報じられた。侵害が事業停止だけでなく、認証基盤や端末管理の起点にまで及んだ可能性がある点が重い。ADサーバは権限情報や端末関係の中枢になりやすく、そこを足掛かりにすると情報窃取、横展開、暗号化の順で被害が広がりやすい。外部転送の対象範囲、初期侵入経路、持ち出し…",
+      "article_path": "articles/3558d9e14351aab8.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/07/55886.html"
+    },
+    {
+      "entry_id": "7ae1766e2b37c6c8",
+      "title": "スリーシェイクのエンジニア 4 名が翻訳『実践 プラットフォームエンジニアリング』8 / 24 発売",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-06T23:00:16+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要本件はセキュリティ脅威の速報ではなく、プラットフォームエンジニアリングに関する書籍の翻訳・発売告知に当たる。内容自体は攻撃や脆弱性の発生を示すものではなく、CSIRTが直ちに対応判断を要する類型ではない。組織内の標準化や開発者支援の設計を考えるうえで、運用の分散を抑える観点は示唆になる。悪用経路や被害範囲の拡大はこの記事からは読み取れず、対象製品や脆弱…",
+      "article_path": "articles/7ae1766e2b37c6c8.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/07/55885.html"
+    },
+    {
+      "entry_id": "0c9ad92a13ece870",
+      "title": "Okta が Permiso Security を買収、Identity Security Fabric の脅威検出・対応を強化",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-06T23:00:12+00:00",
+      "impact_level": "Low",
+      "threat_type": "Other",
+      "summary_preview": "概要Okta が Permiso Security を買収し、Identity Security Fabric における脅威検出と対応を強化する流れになった。狙いは、ID基盤を起点にした不審な操作や権限の悪用を、認証後の挙動まで含めて捉えやすくする点にある。攻撃者は、正規のIDやトークンを奪えば境界防御を迂回しやすく、横展開や権限昇格に進みやすい。今回の件…",
+      "article_path": "articles/0c9ad92a13ece870.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/07/55884.html"
+    },
+    {
+      "entry_id": "0b9bc1f7245abb2c",
+      "title": "令和8(2026)年上半期の特殊詐欺、被害総額1,816億円 ～ 投資詐欺（797.9億）やニセ警察詐欺（507.9億）など手口別被害額",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-06T23:00:08+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Scam/Fraud",
+      "summary_preview": "概要令和8(2026)年上半期の特殊詐欺被害総額は1,816億円に達し、投資詐欺が797.9億円、ニセ警察詐欺が507.9億円と、被害の中心を占めた。記事の焦点は個人被害の統計だが、組織にとっても、従業員の私用端末や個人口座を起点にした二次被害、問い合わせ窓口へのなりすまし連絡、送金先口座の悪用などに波及しやすい点が重要になる。攻撃成立に専門的な侵入技術は…",
+      "article_path": "articles/0b9bc1f7245abb2c.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/07/55883.html"
+    },
+    {
+      "entry_id": "e2d47e570ad9fafa",
+      "title": "AI で網羅検知 × 人で深掘り ～ GMOイエラエが「AIホワイトハッカー ペネトレーションテスト」提供開始",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-06T23:00:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要GMOイエラエが、AIで広く検知しつつ人が深掘りする「AIホワイトハッカー ペネトレーションテスト」の提供を始めた。従来の手作業中心の診断より、候補の洗い出しをAIで効率化し、重要度の高い箇所を人が検証する運用を狙う。攻撃成立の可否を机上で広く拾い、実際に悪用可能な導線へ絞り込む使い方が想定される。影響は脆弱性そのものではなく、診断の進め方と検出範囲の…",
+      "article_path": "articles/e2d47e570ad9fafa.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/07/55882.html"
+    }
+  ]
+}
