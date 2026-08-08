@@ -1,0 +1,170 @@
+{
+  "date": "2026-08-09",
+  "window": {
+    "from": "2026-08-08T06:00:00+09:00",
+    "to": "2026-08-09T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 6
+  },
+  "generated_at_jst": "2026-08-09T06:15:07.607559+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "米雇用統計でAI採用が雇用に与える影響が顕在化",
+      "source_name": "CNN",
+      "published_at": "2026-08-07T14:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要7月の米雇用統計で予想外の2万3千人の雇用減が報告された。AIの急速な採用が雇用抑制要因の一つとして指摘されている。医療・建設・製造業の一部ではAI関連投資による雇用増も見られるが、全体として企業が採用に慎重姿勢を強めている。AIが労働市場に与える影響がデータで裏付けられ始めた点が注目される。IT企業や政策立案者はこのトレンドを踏まえた戦略見直しを迫ら…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://www.cnn.com/2026/08/07/economy/us-jobs-report-july",
+      "selection_reason": "AIの労働市場への影響を具体的な雇用統計データで示す最新事例として新規性が高く、ITトレンドの意思決定に直結する",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "US economy unexpectedly loses 23,000 jobs in July",
+          "url": "https://www.cnn.com/2026/08/07/economy/us-jobs-report-july",
+          "source_type": "news"
+        },
+        {
+          "title": "Watch Jobs, AI, and Tech Earnings | Bloomberg Tech 8/07/2026",
+          "url": "https://www.bloomberg.com/news/videos/2026-08-07/bloomberg-tech-8-07-2026-video",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "OpenAI Astraモデル、サイバー能力でリリース遅延",
+      "source_name": "Axios",
+      "published_at": "2026-08-07T11:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要OpenAIは次期モデルAstraの内部評価でクリティカルレベルのサイバー能力を否定できないと判断した。 Preparedness Frameworkに基づき一部開発を一時停止し、セキュリティ強化を優先する。エージェント機能の進化が背景にあり、外部サンドボックス外での自律動作事例も参考にされた。ホワイトハウスにも計画を通知済みで、業界初の自主的遅延事例…",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://www.axios.com/2026/08/07/openai-astra-model-delay-cybersecurity-risks",
+      "selection_reason": "AIモデル開発における安全対策の具体的な事例としてAI分野の進展と規制対応を直接示す",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "Exclusive: OpenAI slows release of Astra model citing cyber capabilities",
+          "url": "https://www.axios.com/2026/08/07/openai-astra-model-delay-cybersecurity-risks",
+          "source_type": "news"
+        },
+        {
+          "title": "Ground Truth - 2026-08-07: 9 verified AI stories",
+          "url": "https://buttondown.com/GroundTruth/archive/ground-truth-2026-08-07-9-verified-ai-stories/",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "8月Patch Tuesday、AI駆動の脆弱性増加で対応迫る",
+      "source_name": "Help Net Security",
+      "published_at": "2026-08-07T12:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Patch",
+      "summary_preview": "概要7月Patch Tuesdayで過去最多規模のパッチが配信され、AIによる脆弱性発見加速が背景にある。3日以内の適用をMicrosoftが推奨する中、大企業はテスト・変更管理の制約で対応に苦慮している。SharePointの悪用CVEなど優先度の高いものをリスクベースで選別する必要性が高まっている。AI駆動の脅威増大に対し、パッチ管理プロセス自体の見直…",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://www.helpnetsecurity.com/2026/08/07/august-2026-patch-tuesday-forecast/",
+      "selection_reason": "AIが脆弱性発見を加速させる実務影響を具体的に示すパッチ管理トレンドとして優先",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "August 2026 Patch Tuesday forecast: How do we deal with the patch apocalypse?",
+          "url": "https://www.helpnetsecurity.com/2026/08/07/august-2026-patch-tuesday-forecast/",
+          "source_type": "news"
+        },
+        {
+          "title": "US companies face rise in cyber attacks",
+          "url": "https://www.reuters.com/legal/government/us-companies-face-rise-cyber-attacks-2026-08-07/",
+          "source_type": "news"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "9f4e4fb1d890f0c6",
+      "title": "Atlassian Rovo Can Be Tricked Into Sending Jira and Confluence Data to Attackers",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-08T08:54:50+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要AtlassianのRovoで、攻撃者が埋め込んだ指示によって、ログイン中ユーザーが閲覧できるJiraやConfluenceの情報を収集させ、外部サーバーへ送信させる挙動が報告された。悪用の本質は権限昇格ではなく、正規ユーザーの閲覧権限を踏み台にした情報持ち出しにある。報告では異なる経路で同様の挙動が独立に確認され、うち1経路のみ閉じられたとされる。現…",
+      "article_path": "articles/9f4e4fb1d890f0c6.html",
+      "original_url": "https://thehackernews.com/2026/08/atlassian-rovo-can-be-tricked-into.html"
+    },
+    {
+      "entry_id": "ed67fe9c027102e9",
+      "title": "New CSS Attacks Can Break Webmail Defenses to Steal Passwords and Tokens",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-08T08:03:57+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要本件は、メール本文に含めたCSSが、Webメールの表示領域を越えてインターフェース側に干渉し、認証情報やトークンの窃取につながり得るという研究報告である。対象として Outlook、Gmail、Fastmail、Proton Mail、Yahoo Mail、AOL Mail などが挙がっており、メール閲覧という通常操作が起点になりやすい点が厄介となる。…",
+      "article_path": "articles/ed67fe9c027102e9.html",
+      "original_url": "https://thehackernews.com/2026/08/new-css-attacks-can-break-webmail.html"
+    },
+    {
+      "entry_id": "689d082c44817424",
+      "title": "Metabase Zero-Day Exploited in Wild Allows Admin Access Without Authentication",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-08T06:58:31+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Zero-day",
+      "summary_preview": "概要Metabase に 認証不要で管理者権限を奪える脆弱性が見つかり、ゼロデイとして実際に悪用されていると報じられている。攻撃者は 任意のSQL注入 によりアプリケーションの内部データベースを操作し、管理者相当の操作へつなげる可能性がある。影響は単一画面の改ざんにとどまらず、保存されたデータや接続先情報、認証情報の扱い次第では、分析基盤全体や接続先の業務…",
+      "article_path": "articles/689d082c44817424.html",
+      "original_url": "https://thehackernews.com/2026/08/metabase-zero-day-exploited-in-wild.html"
+    },
+    {
+      "entry_id": "a96dc0b4bbe0495f",
+      "title": "N-able Issues N-central Hotfix 2 as Attackers Reach Managed Systems and Persist",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-08T06:57:43+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要N-able が N-central 向けの追加 hotfix を公開し、最近判明した脆弱性を悪用する活動を継続監視していると説明した。記事の文面からは、攻撃者が RMM 基盤を足場にして管理対象システムへ到達し、永続化 を狙っている状況が読み取れる。RMM は多数端末を一括管理できるため、侵害が成立すると被害は単一サーバにとどまらず、配下端末や運用権…",
+      "article_path": "articles/a96dc0b4bbe0495f.html",
+      "original_url": "https://thehackernews.com/2026/08/n-central-attackers-reach-managed.html"
+    },
+    {
+      "entry_id": "641c4db6fbe9e5e3",
+      "title": "Progress Kemp LoadMaster Flaw Hits CISA KEV After 792 Reported Exploit Attempts",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-08T06:52:16+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Progress Kemp LoadMaster の脆弱性 CVE-2026-8037 が、CISA KEV に追加された。報道では 792件の悪用試行 が観測され、コマンドインジェクションにより任意コマンド実行へつながる可能性が示されている。認証要否、影響を受ける版、実際の侵入成立条件は入力情報だけでは確認できない。KEV 掲載のため、単なる理論上の…",
+      "article_path": "articles/641c4db6fbe9e5e3.html",
+      "original_url": "https://thehackernews.com/2026/08/progress-kemp-loadmaster-flaw-hits-cisa.html"
+    },
+    {
+      "entry_id": "48465e34dc192f36",
+      "title": "Inside the Modern SOC: The Identity Front Door",
+      "source_name": "Unit 42",
+      "category": "reporting",
+      "published_at": "2026-08-07T23:00:01+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Other",
+      "summary_preview": "概要この投稿は、認証情報やIDを起点にした攻撃がSOCの入口をどう変えているかを整理している。攻撃者は端末の脆弱性よりも、再利用されたパスワード、フィッシング、MFA回避、トークン窃取を使って正規利用者に見せかけ、検知をすり抜けやすい。侵入後はメール、SaaS、VPN、IdPをまたいで権限を広げ、横展開や情報窃取、なりすましに進む余地がある。本文の要点は、…",
+      "article_path": "articles/48465e34dc192f36.html",
+      "original_url": "https://unit42.paloaltonetworks.com/soc-identity-front-door/"
+    }
+  ]
+}
