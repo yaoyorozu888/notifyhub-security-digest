@@ -1,0 +1,92 @@
+{
+  "date": "2026-08-10",
+  "window": {
+    "from": "2026-08-09T06:00:00+09:00",
+    "to": "2026-08-10T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 0
+  },
+  "generated_at_jst": "2026-08-10T06:14:45.524795+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "NvidiaがStargateデータセンターに最大30億ドル投資",
+      "source_name": "Reuters",
+      "published_at": "2026-08-09T10:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要NvidiaがStargateデータセンター計画に最大30億ドルの投資を表明した。AI向けコンピューティング需要の急増に対応する動きである。クラウド事業者との競争激化も背景にある。Starlinkのインターネット普及予測と合わせて、ネットワークインフラの変革が加速している。企業はAIワークロードの拡大を見据えた設備投資を再検討する必要がある。データセン…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://www.reuters.com/technology/",
+      "selection_reason": "データセンター投資という具体的な企業行動がITインフラトレンドとして新規性が高く、AI基盤需要の拡大を示す点で他の候補より実務影響が明確",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "Tech News | Today's Latest Technology News",
+          "url": "https://www.reuters.com/technology/",
+          "source_type": "news"
+        },
+        {
+          "title": "Nvidia to invest up to $3 billion in Stargate data center",
+          "url": "https://www.reuters.com/technology/",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "AnthropicがClaude Codeの自動モードをデフォルト化",
+      "source_name": "TechCrunch",
+      "published_at": "2026-08-09T15:00:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Other",
+      "summary_preview": "概要AnthropicがClaude Codeの自動モードをデフォルトで有効化した。開発者の作業効率を高める狙いである。コード生成の自動化が進む一方で、出力の正確性確認が重要になる。AIエージェントの自律性向上を示す事例として注目される。開発チームはワークフローの見直しを検討すべきだ。生産性向上と品質管理のバランスが鍵となる。",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://techcrunch.com/2026/08/09/anthropic-is-turning-claude-codes-auto-mode-on-by-default/",
+      "selection_reason": "AIコーディングツールの具体的な機能変更が開発者実務に直結し、AI製品の進化として新規性と影響度が高い",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "Anthropic is turning Claude Code’s auto mode on by default",
+          "url": "https://techcrunch.com/2026/08/09/anthropic-is-turning-claude-codes-auto-mode-on-by-default/",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "OpenAIが次期モデルAstraの開発を一時停止",
+      "source_name": "Reuters",
+      "published_at": "2026-08-09T14:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要OpenAIが次期モデルAstraの開発を一時停止した。モデルが自律的に脆弱性を発見・悪用する可能性を排除できないためである。AIの攻撃能力が安全基準を超える初の事例として注目される。安全プロトコルの強化が即時対応として取られた。AI開発企業は同様のリスク評価を自社モデルに適用する必要がある。規制当局の監視も強まる見込みだ。",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://www.reuters.com/technology/cybersecurity/",
+      "selection_reason": "AIモデル開発におけるセキュリティ懸念という具体的な判断がAIとサイバーセキュリティの交差点として新規性が高く、実務的な警鐘となる",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "OpenAI flags possible critical cybersecurity risk in upcoming model",
+          "url": "https://www.reuters.com/technology/cybersecurity/",
+          "source_type": "news"
+        },
+        {
+          "title": "Cyber / Brief — 9 Aug 2026",
+          "url": "https://www.cyberverso.net/brief/cyber-brief-9-aug-2026/",
+          "source_type": "news"
+        }
+      ]
+    }
+  ],
+  "items": []
+}
