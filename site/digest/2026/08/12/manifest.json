@@ -1,0 +1,396 @@
+{
+  "date": "2026-08-12",
+  "window": {
+    "from": "2026-08-11T06:00:00+09:00",
+    "to": "2026-08-12T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 24
+  },
+  "generated_at_jst": "2026-08-12T06:26:15.497094+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "Nvidia、Wall Street企業と5000億ドル規模のAIインフラ融資プラットフォームを設立",
+      "source_name": "Axios",
+      "published_at": "2026-08-10T12:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要NvidiaがApollo、BlackRock、Blackstone、Brookfield、Goldman Sachs、KKRと提携し、AIコンピュートインフラ向けに5000億ドル超の第三者資本を動員する融資プラットフォームを設立した。AIデータセンター構築のための資金調達を不動産や道路のような資産クラスとして扱う動きである。顧客企業や政府、クラウド事…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://www.axios.com/2026/08/10/nvidia-financing-ai-goldman-sachs-blackrock",
+      "selection_reason": "AIインフラ構築のための大規模融資という具体的な企業行動と市場影響が、汎用予測ではなく実務的なITトレンドとして新規性と波及性が高いため選定。他の半導体投資や一般トレンドレポートより具体性で優位",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "Nvidia, Wall Street partner on $500B AI financing",
+          "url": "https://www.axios.com/2026/08/10/nvidia-financing-ai-goldman-sachs-blackrock",
+          "source_type": "news"
+        },
+        {
+          "title": "Nvidia partners with Wall Street giants to raise $500 billion for AI buildout",
+          "url": "https://www.reuters.com/technology/wall-street-giants-partner-with-nvidia-500-billion-ai-financing-deal-ft-reports-2026-08-10/",
+          "source_type": "news"
+        },
+        {
+          "title": "Nvidia partners with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-partners-with-apollo-blackrock-blackstone-brookfield-goldman-sachs-and-kkr-to-establish-ai-compute-infrastructure-financing-platforms-to-mobilize-over-500-billion-of-third-party-capital",
+          "source_type": "official"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "OpenAI、GPT-5.6モデルファミリーを一般提供開始",
+      "source_name": "OpenAI",
+      "published_at": "2026-08-11T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要OpenAIがGPT-5.6ファミリーのSol、Terra、LunaをChatGPT、Codex、APIで一般提供開始した。Solは最先端性能、Terraは日常業務向け、Lunaは低コスト高速版として位置づけられる。政府要請による限定プレビューを経て安全対策を強化した上で公開された。コーディング、科学、サイバーセキュリティ分野での能力向上と事実正確性の…",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://openai.com/index/gpt-5-6/",
+      "selection_reason": "具体的なモデルリリースと安全対策の更新というAI製品の進展を扱い、規制対応や企業導入に直結する新規事実として優先。他の一般AIトレンド予測より実務影響が明確",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "GPT-5.6: Frontier intelligence that scales with your ambition",
+          "url": "https://openai.com/index/gpt-5-6/",
+          "source_type": "official"
+        },
+        {
+          "title": "Previewing GPT-5.6 Sol: a next-generation model",
+          "url": "https://openai.com/index/previewing-gpt-5-6-sol/",
+          "source_type": "official"
+        },
+        {
+          "title": "OpenAI to publicly release GPT-5.6",
+          "url": "https://www.reuters.com/technology/openai-gets-us-approval-broad-gpt-56-rollout-axios-reports-2026-07-08/",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "AIツールが5Gコアソフトウェアで84件の脆弱性を発見、23件が未修正",
+      "source_name": "Help Net Security",
+      "published_at": "2026-08-11T10:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要AIエージェントが4G・5Gコアネットワークソフトウェアから84件の脆弱性を検出した。うち58件は修正済みだが、23件は依然として修正パッチが存在しない。5Gネットワークの基盤ソフトウェアに残る未修正脆弱性は通信事業者や企業ネットワークのセキュリティ評価を迫る。AIツールの活用により従来より高速・大規模に脆弱性が明らかになる一方、修正追従が追いつかない…",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://www.helpnetsecurity.com/2026/08/11/5g-core-network-vulnerabilities-research/",
+      "selection_reason": "AIによる脆弱性発見というセキュリティ実務に直結する具体的事例で、5Gネットワークのリスク管理に影響する。他の一般脅威予測より技術的詳細と未修正件数が明確",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "An AI tool found 84 flaws in 5G network software and 23 of them still have no fix",
+          "url": "https://www.helpnetsecurity.com/2026/08/11/5g-core-network-vulnerabilities-research/",
+          "source_type": "news"
+        },
+        {
+          "title": "84 flaws found by AI in 5G core software, 23 still unpatched",
+          "url": "https://www.pk-sharma.com/briefing/ai-found-84-flaws-nobody-can-patch-them-fast-enough",
+          "source_type": "news"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "0511f20178fa5a4f",
+      "title": "CVE-2026-20349 Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) Heap Inspection Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-08-11T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CISAの既知悪用脆弱性カタログに、CVE-2026-20349 が追加された。対象は Cisco Secure Firewall ASA と Secure Firewall Threat Defense (FTD) で、Heap Inspection Vulnerability とされている。名称からは、メモリ破壊系の欠陥として攻撃者が入力制御を崩し…",
+      "article_path": "articles/0511f20178fa5a4f.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "debcc3a6b3c3ab92",
+      "title": "CVE-2026-68820 Microsoft Windows Ancillary Function Driver for WinSock Use-After-Free Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-08-11T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CVE-2026-68820 は、Microsoft Windows の Ancillary Function Driver for WinSock に存在する Use-After-Free 脆弱性で、CISA KEV に掲載されている点が重要となる。Use-After-Free は解放済みメモリを再利用させる不具合で、攻撃者が条件を満たせば任意コード…",
+      "article_path": "articles/debcc3a6b3c3ab92.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "3a8026ff23defdf8",
+      "title": "CVE-2026-72898 Metabase SQL Injection Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-08-11T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CVE-2026-72898 は Metabase における SQLインジェクション の脆弱性で、CISA の KEV に掲載されている。掲載済みという事実は、少なくとも一部環境で実際の悪用が成立していることを示し、単なる理論上の欠陥より優先度が高い。攻撃者は入力値を介して想定外のSQLを実行し、データ閲覧、情報抽出、権限境界の突破につなげる可能性があ…",
+      "article_path": "articles/3a8026ff23defdf8.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "457e3db85efc0efd",
+      "title": "Microsoft Patches 398 Flaws Including a Windows Driver Zero-Day Under Active Attack",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-11T20:10:55+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Microsoftが月例更新で398件の脆弱性を修正し、その中に既に攻撃で使われているWindowsドライバのゼロデイが含まれる。対象はネットワークソケット処理を担うカーネル内の中核ドライバで、端末上で既に任意コードを動かせる攻撃者がSYSTEM権限へ昇格する起点になる。これにより、単独の端末侵害が管理者権限の取得、資格情報の窃取、横展開、持続化へつな…",
+      "article_path": "articles/457e3db85efc0efd.html",
+      "original_url": "https://thehackernews.com/2026/08/microsoft-patches-398-flaws-including.html"
+    },
+    {
+      "entry_id": "69ebd8e7722a8298",
+      "title": "Kimwolf v7 Android Botnet Makes HTTP/2 DDoS Traffic Look Like Legitimate Browsing",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-11T19:36:37+00:00",
+      "impact_level": "High",
+      "threat_type": "Botnet",
+      "summary_preview": "概要Unit 42 が Kimwolf v7 と呼ぶ新しい Android / IoT ボットネット を確認した。従来系よりも耐障害性とDDoS 実行能力が強化され、特に HTTP/2 を使って通常の閲覧通信に見えやすい形で攻撃トラフィックを流す点が焦点になる。攻撃者は大量端末を遠隔操作して標的へ負荷を集中させ、サービス停止や帯域枯渇を狙う構図になる。組織…",
+      "article_path": "articles/69ebd8e7722a8298.html",
+      "original_url": "https://thehackernews.com/2026/08/kimwolf-v7-android-botnet-makes-http2.html"
+    },
+    {
+      "entry_id": "61c01cbd6b0683bd",
+      "title": "Zoom Annotation Flaws Could Let a Meeting Participant Hijack Another Attendee's Client",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-11T19:08:47+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Zoom の共有画面に付随する注釈機能に欠陥があり、会議参加者が他人のクライアント操作を乗っ取れる可能性が報じられた。被害成立に追加のクリックやダウンロードは不要で、同一会議に参加しているだけで成立しうる点が重い。悪用できる範囲は、発表者と閲覧者の双方に及び、会議内の端末操作や意図しない操作誘導につながる。想定される影響は会議単位にとどまらず、端末上の…",
+      "article_path": "articles/61c01cbd6b0683bd.html",
+      "original_url": "https://thehackernews.com/2026/08/zoom-annotation-flaws-could-let-meeting.html"
+    },
+    {
+      "entry_id": "d97944b438eadd03",
+      "title": "Sandworm-Linked UAC-0145 Uses Fake Job Interviews to Push VPN That Can Run Commands",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-11T18:36:47+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要CERT-UAが、偽の採用面接を使ってIT担当者に接触し、VPNに見せかけた不正プログラムを入れさせるキャンペーンを公表した。背後には、Sandworm系とされるUAC-0145が関与するとされる。狙いは単純な感染拡大よりも、端末上でコマンド実行を可能にし、以後の侵入や横展開の足場を得ることにある。被害が広がれば、個人端末の侵害にとどまらず、業務用認証…",
+      "article_path": "articles/d97944b438eadd03.html",
+      "original_url": "https://thehackernews.com/2026/08/sandworm-linked-uac-0145-uses-fake-job.html"
+    },
+    {
+      "entry_id": "bea223b185afe672",
+      "title": "Researchers Disclose AI-Assisted SharePoint Exploit Chain Reaching Unauthenticated RCE",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-11T16:47:44+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要研究者が、認証なしで SharePoint Server に侵入し、管理者権限まで到達できる連鎖を公表した。発見作業の一部はAIエージェントで進められており、既存の検査や手作業では見落としやすい攻撃経路が示唆される。対象は SharePoint Server Subscription Edition、SharePoint Server 2019、Sha…",
+      "article_path": "articles/bea223b185afe672.html",
+      "original_url": "https://thehackernews.com/2026/08/researchers-disclose-ai-assisted.html"
+    },
+    {
+      "entry_id": "aa24cca3819c21a9",
+      "title": "DeadLock Ransomware Uses Polygon Smart Contracts to Make Extortion Infra Harder to Disrupt",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-11T16:35:27+00:00",
+      "impact_level": "High",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要DeadLock ランサムウェアが、被害者との連絡や漏えい用の公開基盤に Polygon のスマートコントラクトを使い始めたと報じられている。狙いは、配信先や案内ページを単一のサーバーに依存させず、遮断や差し止めを受けにくい extortion 基盤へ寄せることにある。あわせて Session 系の通信も組み合わせ、交渉窓口と資材配布を分散させている。…",
+      "article_path": "articles/aa24cca3819c21a9.html",
+      "original_url": "https://thehackernews.com/2026/08/deadlock-ransomware-uses-polygon-smart.html"
+    },
+    {
+      "entry_id": "b43b5bb74c3d0fb1",
+      "title": "OpenAI Launches GPT-5.6-Cyber with Reduced Safeguards for Exploit Development",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-11T13:11:23+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要この記事は、OpenAIがGPT-5.6-Cyberというセキュリティ用途のモデルを公開したという話題を扱う。焦点は、脆弱性調査や侵入試験、インシデント対応を支援する一方で、エクスプロイト開発に関する拒否を下げた点にある。攻撃者側にとっては、下準備の自動化や連鎖攻撃の設計補助に使える余地が広がるため、発見から悪用までの時間短縮が起きやすい。影響は特定製…",
+      "article_path": "articles/b43b5bb74c3d0fb1.html",
+      "original_url": "https://thehackernews.com/2026/08/openai-launches-gpt-56-cyber-with.html"
+    },
+    {
+      "entry_id": "6f3dd5273d076122",
+      "title": "A Malicious SIM Card Can Run Attacker Code Inside the Modems Behind Cellular IoT Devices",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-11T12:05:03+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要研究者が、悪意あるSIMカードが端末内のセルラーモデムに命令を送り、モデム内で攻撃者コードを実行できる可能性を示した。対象はEV充電器、産業用ルータ、車載テレマティクスなど、携帯回線を前提にした組み込み機器が中心となる。SIMは単なる認証媒体ではなく、場合によっては端末制御の起点になり、機器全体の乗っ取りや横展開の足場になる。記事の要点からは、26台の…",
+      "article_path": "articles/6f3dd5273d076122.html",
+      "original_url": "https://thehackernews.com/2026/08/a-malicious-sim-card-can-run-attacker.html"
+    },
+    {
+      "entry_id": "7352d9ae334840c0",
+      "title": "Mozilla Revokes Firefox and Thunderbird Linux Signing Key After Key Lands in Private Repo",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-11T12:04:51+00:00",
+      "impact_level": "High",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要Mozilla が Firefox と Thunderbird の Linux 向け配布物に使う署名鍵を失効した。背景には、鍵のコピーが誤って暗号化されないまま私的なコード保管庫へ入った事実があり、署名の真正性を支える前提が崩れた。悪用の本筋は、攻撃者がその鍵を使って改ざん済みの tarball や配布物を正規品に見せかけることで、利用者や配布元の検証…",
+      "article_path": "articles/7352d9ae334840c0.html",
+      "original_url": "https://thehackernews.com/2026/08/mozilla-revokes-firefox-and-thunderbird.html"
+    },
+    {
+      "entry_id": "07730bd30b62b32f",
+      "title": "Researchers Built a Fake Crypto Startup and Hired Three Suspected North Korean IT Workers",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-11T11:35:03+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要Security研究者が仮想の暗号資産スタートアップを作り、開発者採用を装って北朝鮮系とみられる人物3人を雇い入れたという観測記事である。配布した仮想マシンはすべて録画されており、侵入や不正作業の挙動を可視化するためのおとり環境として使われた。記事が示す焦点は、採用段階と入社直後のやり取りから身元不整合や迂回工作を見抜けるかにある。実際には、採用詐称・…",
+      "article_path": "articles/07730bd30b62b32f.html",
+      "original_url": "https://thehackernews.com/2026/08/researchers-built-fake-crypto-startup.html"
+    },
+    {
+      "entry_id": "98f802b4567611d0",
+      "title": "Researchers Turn USB Auto-Install Into a Full SYSTEM Takeover on Windows 11",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-11T10:48:26+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Windows 11 の Plug and Play 経路を悪用し、USB 機器を装って署名済みベンダーソフトを取得させ、そこから権限付きのインストール処理を連鎖させて SYSTEM 権限まで到達した研究結果が報じられた。物理的な USB を挿す必要がない点が厄介で、対応する Remote Desktop 機能や低レベルの USB リダイレクトが有効な…",
+      "article_path": "articles/98f802b4567611d0.html",
+      "original_url": "https://thehackernews.com/2026/08/researchers-turn-usb-auto-install-into.html"
+    },
+    {
+      "entry_id": "3390e15caa17c644",
+      "title": "Malicious MCP Servers Can Split Instructions to Make AI Coding Agents Exfiltrate Secrets",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-11T10:24:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要AIコーディング支援に接続された悪意あるMCPサーバーが、1回では危険に見える指示を断片化して渡し、SSH鍵や環境変数、ソースコード、顧客データを外へ流出させる手口が紹介されている。各断片は通常の作業に見えるため、拒否判定を回避しやすい点が要点になる。攻撃が成立すると、被害は単一ファイルの持ち出しにとどまらず、リポジトリ、認証情報、開発基盤、接続先シス…",
+      "article_path": "articles/3390e15caa17c644.html",
+      "original_url": "https://thehackernews.com/2026/08/malicious-mcp-servers-can-split.html"
+    },
+    {
+      "entry_id": "c0b316037e04894b",
+      "title": "Gunra Ransomware Exploits Fortinet and Schneider Electric Flaws to Breach Networks",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-11T09:16:24+00:00",
+      "impact_level": "High",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要Gunraランサムウェアが、FortinetとSchneider Electricの脆弱性を起点にネットワークへ侵入する事例が報告された。韓国と米国の当局が注意喚起しており、標的は医療、金融、政府、非営利など広い。侵入後は暗号化と脅迫を通じて業務停止を狙うため、単一端末の障害ではなく、認証基盤や共有資源まで巻き込む想定が必要になる。攻撃の初期侵入口が製…",
+      "article_path": "articles/c0b316037e04894b.html",
+      "original_url": "https://thehackernews.com/2026/08/gunra-ransomware-exploits-fortinet-and.html"
+    },
+    {
+      "entry_id": "b2ea29ae95208103",
+      "title": "Hackers Breach Polish Power Plant Controls via Private Cellular Network and Shut Turbine",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-11T06:55:45+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要ポーランドの熱電併給プラントで、攻撃者が私設セルラー網を経由して遠隔設備に侵入し、蒸気タービンとプロセス用水処理系を停止させたと報じられている。約5万人の住民に熱を供給する施設であり、業務停止の影響は単なるIT障害では済まない。攻撃者がどの認証情報を得たのか、通信事業者側の経路がどう破られたのか、現地の制御系にどこまで到達したのかは未確認のまま残る。今…",
+      "article_path": "articles/b2ea29ae95208103.html",
+      "original_url": "https://thehackernews.com/2026/08/hackers-breach-polish-power-plant.html"
+    },
+    {
+      "entry_id": "117f9f0ce6fc7bcf",
+      "title": "BdThemes Supply Chain Attack Poisons JSON to Create Rogue WordPress Admins",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-11T05:48:44+00:00",
+      "impact_level": "High",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要WordPress向けプラグインを提供するBdThemesが供給網攻撃を受け、WordPress.org側のプラグイン配布が一時停止された。攻撃者は公式リポジトリ内のソースコードを書き換えずに、JSONを汚染して不正な管理者を作成する流れを仕込んだとされる。通常の改ざん検知が前提に置く「コード差分」だけでは見逃しやすく、配布物や外部参照の整合性確認が重…",
+      "article_path": "articles/117f9f0ce6fc7bcf.html",
+      "original_url": "https://thehackernews.com/2026/08/bdthemes-supply-chain-attack-poisons.html"
+    },
+    {
+      "entry_id": "d71e814c61486f66",
+      "title": "Microsoft Patch Tuesday August 2026, (Tue, Aug 11th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-08-11T17:54:49+00:00",
+      "impact_level": "High",
+      "threat_type": "Patch",
+      "summary_preview": "概要今月のMicrosoftの修正は418件に及び、重大が62件、実際の悪用が確認された脆弱性が1件、公開済みゼロデイが2件含まれる。対象はWindowsの権限昇格、コンテナ改ざん、QUICやDNS Serverのリモートコード実行などで、単一製品の小修正ではなく広い面での更新が必要になる。攻撃者の視点では、初期侵入よりも既存侵害後の権限拡大や横展開に使い…",
+      "article_path": "articles/d71e814c61486f66.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33236"
+    },
+    {
+      "entry_id": "61d99996b2f61490",
+      "title": "ISC Stormcast For Tuesday, August 11th, 2026 https://isc.sans.edu/podcastdetail/10046, (Tue, Aug 11th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-08-11T02:00:03+00:00",
+      "impact_level": "Low",
+      "threat_type": "Other",
+      "summary_preview": "概要SANS ISCのStormcastは、特定の脆弱性対応というより運用者向けの観測・注意喚起をまとめた音声系の情報であり、今回も緊急修正や単一のCVE告知が主題とは限らない。公開情報だけでは、具体的にどの製品・攻撃キャンペーンを扱った回かが読み取れず、悪用の有無や対象範囲は未確認となる。CSIRTとしては、個別の技術詳細よりも、露出資産への新規スキャン…",
+      "article_path": "articles/61d99996b2f61490.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33232"
+    },
+    {
+      "entry_id": "1fe4c3df11679f79",
+      "title": "Elevating Federal Cybersecurity: Cisco’s Path from FedRAMP Certified Class C (Moderate) to Certified Class D (High)",
+      "source_name": "Cisco Security Blog",
+      "category": "reporting",
+      "published_at": "2026-08-11T12:00:36+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要Ciscoが、連邦政府向けの FedRAMP Certified Class D（High） に対応したことを案内している。記事の主眼は脆弱性の告知ではなく、政府機関が Zero Trust を前提にクラウドやネットワーク基盤を選ぶ際の適合性向上にある。直接の侵害報告や悪用事例は示されておらず、現時点では攻撃者が使える新たな手口を示す内容ではない。影響…",
+      "article_path": "articles/1fe4c3df11679f79.html",
+      "original_url": "https://blogs.cisco.com/security/elevating-federal-cybersecurity-ciscos-unified-path-to-fedramp-class-d-and-zero-trust/"
+    },
+    {
+      "entry_id": "fb3dd07e10954687",
+      "title": "Kimwolf v7: An Evolution of the Kimwolf Botnet",
+      "source_name": "Unit 42",
+      "category": "reporting",
+      "published_at": "2026-08-11T10:00:16+00:00",
+      "impact_level": "High",
+      "threat_type": "Botnet",
+      "summary_preview": "概要Unit 42 は、Kimwolf v7 が Android ベースの IoT 機器を狙うボットネット系マルウェアとして進化した点を伝えている。主眼は感染端末の増殖そのものより、DDoS 攻撃の実行基盤としての運用にある。攻撃者は HTTP/2 を使った指紋確認で標的環境を見分け、Ethereum ENS による C2 解決と Tor の予備経路で指令…",
+      "article_path": "articles/fb3dd07e10954687.html",
+      "original_url": "https://unit42.paloaltonetworks.com/kimwolf-v7-botnet-malware/"
+    },
+    {
+      "entry_id": "cd88a4c206ba37ac",
+      "title": "The Permanent Threat: Analyzing Aeternum’s Blockchain-Based C2 Operations and Communications",
+      "source_name": "Unit 42",
+      "category": "reporting",
+      "published_at": "2026-08-10T22:00:02+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要Aeternum のボットネットローダーが、Polygon のスマートコントラクトを 分散型C2基盤 として使い、命令配信とペイロード実行を行う分析記事である。従来のC2と違い、通信先を単純に遮断しにくく、ブロックチェーン上の記録 を手掛かりに命令の更新や誘導が続く点が厄介となる。影響は感染端末の単発制御にとどまらず、ローダーを起点に追加マルウェアの展…",
+      "article_path": "articles/cd88a4c206ba37ac.html",
+      "original_url": "https://unit42.paloaltonetworks.com/aeternum-blockchain-c2-analysis/"
+    },
+    {
+      "entry_id": "380906f8160be8ed",
+      "title": "VU#431093: TCG TPM 2.0 reference code found vulnerable to information leakage and timing side-channel attacks",
+      "source_name": "CERT/CC",
+      "category": "reporting",
+      "published_at": "2026-08-11T15:12:29+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要TCG の TPM 2.0 reference implementation に、情報漏えい と タイミング型サイドチャネル の2件の脆弱性が見つかった。攻撃者は TPM command interface に優先権のあるローカルアクセスを持つ前提で、細工した TPM コマンドを送り、RSA OAEP 復号の差分や鍵関連情報を引き出す。悪用に成功すると…",
+      "article_path": "articles/380906f8160be8ed.html",
+      "original_url": "https://kb.cert.org/vuls/id/431093"
+    }
+  ]
+}
