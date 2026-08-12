@@ -1,0 +1,360 @@
+{
+  "date": "2026-08-13",
+  "window": {
+    "from": "2026-08-12T06:00:00+09:00",
+    "to": "2026-08-13T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 21
+  },
+  "generated_at_jst": "2026-08-13T06:24:54.502118+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "Meta Muse Glimmer",
+      "source_name": "Meta Research",
+      "published_at": "2026-08-10T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要Metaが30Bパラメータのエージェント向けモデルMuse GlimmerをApache 2.0ライセンスでオープンソース公開した。単一GPUで動作しローカル実行を前提に最適化されている。クラウド不要の常時稼働エージェントを実現し、プライバシー重視の用途に適する。Hugging Faceやllama.cpp経由で即時利用可能だ。開発者は自社ツールとの統…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model",
+      "selection_reason": "AI分野でオープンソースのローカルエージェントモデルとして新規性が高く、クラウド依存を減らす実務影響が大きいため他候補より優先",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "Meta Research Blog",
+          "url": "https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model",
+          "source_type": "web"
+        },
+        {
+          "title": "VentureBeat",
+          "url": "https://venturebeat.com/technology/meta-returns-to-open-source-with-muse-glimmer-an-apache-2-0-licensed-30b-parameter-ai-model-optimized-for-agents-available-now",
+          "source_type": "web"
+        },
+        {
+          "title": "Hugging Face Blog",
+          "url": "https://huggingface.co/blog/muse-glimmer",
+          "source_type": "web"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "OpenAI GPT-5.6-Cyber",
+      "source_name": "OpenAI",
+      "published_at": "2026-08-10T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要OpenAIがサイバーセキュリティ特化のGPT-5.6-Cyberを公開した。拒否率を下げて高度なタスクを95%完了可能とし、ChromeのV8エンジンで2件の未知脆弱性を発見した。協調開示によりGoogleが修正済みでCVE-2026-15903が割り当てられた。防御側ツールとしてのAI活用が進む一方、悪用リスク管理も重要となる。",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows/",
+      "selection_reason": "サイバーセキュリティ分野でAIモデルが実際にゼロデイを発見した事例として具体性が高く、実務影響が明確なため優先",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "OpenAI Blog",
+          "url": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows/",
+          "source_type": "web"
+        },
+        {
+          "title": "The Hacker News",
+          "url": "https://thehackernews.com/2026/08/openai-launches-gpt-56-cyber-with.html",
+          "source_type": "web"
+        },
+        {
+          "title": "VentureBeat",
+          "url": "https://venturebeat.com/technology/openai-launches-gpt-5-6-cyber-with-reduced-refusals-95-completion-on-advanced-cybersecurity-tasks",
+          "source_type": "web"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "Foxconn AI需要",
+      "source_name": "Reuters",
+      "published_at": "2026-08-05T00:00:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Other",
+      "summary_preview": "概要Foxconnの7月売上高がAI製品需要で過去最高を更新した。対前年比54%増の約9465億台湾ドルを記録し、AIサーバー事業が成長を牽引する。第3四半期もAIサーバー売上170%超増の見通しだ。NvidiaやApple向け供給が背景にあり、ITハードウェア市場のAIシフトが明確化している。",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://www.reuters.com/business/retail-consumer/foxconns-monthly-revenue-hits-record-july-ai-demand-2026-08-05/",
+      "selection_reason": "ITインフラ供給チェーンでAIサーバー需要が具体的な収益増をもたらした事例として新規性と影響度が高いため優先",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "Reuters",
+          "url": "https://www.reuters.com/business/retail-consumer/foxconns-monthly-revenue-hits-record-july-ai-demand-2026-08-05/",
+          "source_type": "web"
+        },
+        {
+          "title": "Barrons",
+          "url": "https://www.barrons.com/news/foxconn-posts-quarterly-profit-surge-on-ai-server-demand-66489edb",
+          "source_type": "web"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "3ad86bf97b3d4051",
+      "title": "Lazarus Exploits Windows Zero-Day to Gain SYSTEM Access and Deploy Backdoor",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-12T17:39:27+00:00",
+      "impact_level": "High",
+      "threat_type": "Zero-day",
+      "summary_preview": "概要Lazarus Group が、Microsoft Windows の新たに修正されたゼロデイ脆弱性を悪用し、SYSTEM 権限でバックドアを展開したと報告されている。標的はフランス、ドイツ、ブラジル、インドの防衛・航空宇宙関連企業で、長期的な諜報活動である Operation Dream Job の一部とみられる。攻撃成立後は端末の完全制御につながり…",
+      "article_path": "articles/3ad86bf97b3d4051.html",
+      "original_url": "https://thehackernews.com/2026/08/lazarus-exploits-windows-zero-day-to.html"
+    },
+    {
+      "entry_id": "bf4fc5442ad0aa95",
+      "title": "737 Chrome VPN Extensions Caught Routing Traffic Through Proxies. Check If You Have One",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-12T14:09:50+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要Chrome ウェブストア上で配布されていた 737件 の無料VPN・プロキシ系拡張機能が、実際にはブラウザ通信を 別のプロキシ基盤へ転送 する用途で使われていたと報じられた。対象は主にアクセス制限のあるサービスを利用したい利用者で、ロシア語圏 を狙った拡張が多いとされる。少なくとも 40件の開発者アカウント に分散して公開され、合計 75,486件 …",
+      "article_path": "articles/bf4fc5442ad0aa95.html",
+      "original_url": "https://thehackernews.com/2026/08/737-chrome-vpn-extensions-caught.html"
+    },
+    {
+      "entry_id": "3d00532ec5874a49",
+      "title": "OpenAI, Anthropic, Google API Flaw Let Weaker AI Models Decode Stronger Models' Reasoning",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-12T11:47:38+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要OpenAI、Anthropic、Googleの推論系APIで扱う隠し推論オブジェクトの設計に不備があり、別セッションへ再利用できる状態になっていたと報じられている。研究者はその性質を使い、モデル内部の推論内容やセッションログに含まれたAPIキーやパスワードを回収できたという。悪用の起点は利用者端末ではなく、APIの呼び出し方とセッション管理に寄るため…",
+      "article_path": "articles/3d00532ec5874a49.html",
+      "original_url": "https://thehackernews.com/2026/08/openai-anthropic-google-api-flaw-let.html"
+    },
+    {
+      "entry_id": "293b6224559b50d0",
+      "title": "Enterprise Defenses Recovered at the Edge and Collapsed Inside",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-12T11:41:34+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Other",
+      "summary_preview": "概要この記事は、境界防御は改善したが内部で崩れるという傾向を、Picus Labsのシミュレーション結果から伝えている。外向きの攻撃や騒がしい挙動は以前より止めやすくなった一方で、侵入後の権限昇格、横移動、資格情報の悪用のような静かな手口は見逃されやすい。攻撃者は検知されやすい入口より、既存アカウントや正規機能を使って目立たず進む方が成功率を高めやすい。し…",
+      "article_path": "articles/293b6224559b50d0.html",
+      "original_url": "https://thehackernews.com/2026/08/enterprise-defenses-recovered-at-edge.html"
+    },
+    {
+      "entry_id": "b2df786b442f46d3",
+      "title": "Adobe Patches Three CVSS 10.0 ColdFusion and Campaign Classic Flaws",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-12T11:13:03+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Adobe が ColdFusion、Commerce、Campaign Classic 向けに、複数の深刻な脆弱性を修正した。中でも CVSS 10.0 の欠陥が複数含まれ、成功すると 任意コード実行 や 権限昇格 に至る可能性がある。攻撃成立には、対象製品が外部から到達可能であることや、該当機能を利用していることが前提になりやすい一方、公開後は自動…",
+      "article_path": "articles/b2df786b442f46d3.html",
+      "original_url": "https://thehackernews.com/2026/08/adobe-patches-three-cvss-100-coldfusion.html"
+    },
+    {
+      "entry_id": "090b5f253230f12a",
+      "title": "Attackers Exploit VMware vCenter Vulnerability to Gain Persistent Remote Access",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-12T09:01:54+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Broadcom VMware vCenter の CVE-2026-59310 が、すでに実地悪用されているという観測が出ている。脆弱性はディレクトリトラバーサルを起点に、ネットワーク到達性がある攻撃者に任意コード実行の足場を与える。vCenter は仮想基盤の中枢に置かれやすく、侵害されると単一サーバーの問題に収まらず、管理対象の仮想マシン群や運用…",
+      "article_path": "articles/090b5f253230f12a.html",
+      "original_url": "https://thehackernews.com/2026/08/attackers-exploit-vmware-vcenter.html"
+    },
+    {
+      "entry_id": "cdf1611b84f732cd",
+      "title": "Malicious LiteLLM Releases Tied to Trivy Hack May Have Exposed 2,100+ Organizations",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-12T08:04:52+00:00",
+      "impact_level": "High",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要PyPI上に公開されたLiteLLMの悪性リリースが、認証情報窃取コードを含んだまま約40分間流通したと報じられた。対象はクラウド鍵、SSH鍵、Kubernetesトークン、DBパスワードなどで、インストール端末やビルド環境から広く収集された可能性がある。攻撃の起点は依存関係の導入であり、開発者端末だけでなく、CI/CDや内部ビルド基盤まで波及し得る。…",
+      "article_path": "articles/cdf1611b84f732cd.html",
+      "original_url": "https://thehackernews.com/2026/08/malicious-litellm-releases-tied-to.html"
+    },
+    {
+      "entry_id": "2e4595813ce9e240",
+      "title": "SAP Commerce Cloud Flaw Could Let Unauthenticated Attackers Execute Arbitrary Code",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-12T07:31:40+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要SAP Commerce Cloud の Data Hub Adapter に、認証なしで 任意コード実行 に至る脆弱性が見つかり、SAP が修正を公開した。対象は CVE-2026-58231 で、CVSS は 10.0 とされている。攻撃成立には当該機能が外部から到達可能であることが前提になりやすく、成立すればアプリケーション権限での侵害、設定情報…",
+      "article_path": "articles/2e4595813ce9e240.html",
+      "original_url": "https://thehackernews.com/2026/08/sap-commerce-cloud-flaw-could-let.html"
+    },
+    {
+      "entry_id": "4482ccba76ad966d",
+      "title": "ShieldBreak Zero-Day PoC Claims Microsoft Defender Patch Bypass With SYSTEM Access",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-12T06:41:38+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Zero-day",
+      "summary_preview": "概要研究者が、Microsoft Defender for Windows に関わる新たなゼロデイ ShieldBreak の PoC を公開した。既知の CVE-2026-50656（RoguePlanet）に対するパッチ回避を示す内容で、修正済みのはずの端末でも保護が崩れる可能性を示唆する。悪用が成立すると、SYSTEM 権限まで到達する前提が置かれて…",
+      "article_path": "articles/4482ccba76ad966d.html",
+      "original_url": "https://thehackernews.com/2026/08/shieldbreak-zero-day-poc-claims.html"
+    },
+    {
+      "entry_id": "52e7846a1af5d08a",
+      "title": "Cisco ASA and FTD Flaw Exploited in the Wild Can Trigger Remote DoS",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-12T06:15:58+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CiscoのSecure Firewall ASAとFTDに、HTTP要求の処理時に誤り検査が不十分な脆弱性が見つかり、認証不要の遠隔攻撃で影響を与えられる状態が公表された。記事では、実際の悪用が確認されており、結果として機器の遠隔サービス拒否を引き起こせるとされる。公開情報からは、単なる再起動で済むのか、状態保持機能や接続処理にどこまで波及するのかは…",
+      "article_path": "articles/52e7846a1af5d08a.html",
+      "original_url": "https://thehackernews.com/2026/08/cisco-asa-and-ftd-flaw-exploited-in.html"
+    },
+    {
+      "entry_id": "6c9816ea1a170d5e",
+      "title": "Linux Kernel Process Accounting, (Wed, Aug 12th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-08-12T14:21:10+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要この記事は、Linux の process accounting を使ってコマンド実行の痕跡を後から追えることを紹介している。Atuin のような履歴整理ツールと似た目的を、カーネル機能で実現する視点が中心である。攻撃利用というより、侵害後の調査や利用実態の把握に役立つが、記録対象は実行したプロセスに限られ、入力した引数や内容の一部は別途取れない場合が…",
+      "article_path": "articles/6c9816ea1a170d5e.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33240"
+    },
+    {
+      "entry_id": "5579f99a12abd66b",
+      "title": "ISC Stormcast For Wednesday, August 12th, 2026 https://isc.sans.edu/podcastdetail/10048, (Wed, Aug 12th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-08-12T02:00:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要SANS ISC の Stormcast は、当日確認された複数のセキュリティ動向を短くまとめた音声配信で、個別の脆弱性速報というより 運用者向けの観測共有 に近い。入力情報だけでは、取り上げられた対象や新規悪用の有無は特定できず、何が本丸の論点かは未確認 となる。こうした配信は、単体では緊急パッチ判断の根拠になりにくい一方、露出拡大や攻撃手口の変化を…",
+      "article_path": "articles/5579f99a12abd66b.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33238"
+    },
+    {
+      "entry_id": "964964b8fa17939d",
+      "title": "注意喚起: 2026年8月マイクロソフトセキュリティ更新プログラムに関する注意喚起  (公開)",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-08-12T02:26:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Patch",
+      "summary_preview": "概要JPCERT/CC が 2026年8月の Microsoft セキュリティ更新プログラムに関する注意喚起を公表した。内容は個別脆弱性の詳細というより、更新の適用を前提にした運用上の注意を整理したものと読める。攻撃者は未更新端末や遅延したサーバーを起点に、初期侵入、権限昇格、横展開へつなげる可能性が高い。影響は単一端末にとどまらず、Active Dire…",
+      "article_path": "articles/964964b8fa17939d.html",
+      "original_url": "https://www.jpcert.or.jp/at/2026/at260022.html"
+    },
+    {
+      "entry_id": "f2a8c89b01fad780",
+      "title": "放置された公開資産が攻撃の的に ～ GMOイエラエ、外部公開 IT 資産対策と ASM 活用を解説するセミナーを 8 / 25 開催",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-11T23:10:03+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Misconfiguration",
+      "summary_preview": "概要この記事は、外部公開されたまま放置された資産が攻撃の入口になりやすい点を背景に、GMOイエラエが ASM を活用した対策セミナーを案内した内容を伝える。直接の侵害報告や脆弱性公開ではなく、公開資産の棚卸しと継続監視がなぜ必要かを整理する趣旨に近い。攻撃者は、未把握のVPN、検証用サイト、古い管理画面、クラウド公開設定の誤りを足がかりに侵入し、認証突破や…",
+      "article_path": "articles/f2a8c89b01fad780.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/12/55911.html"
+    },
+    {
+      "entry_id": "2ed7e09454dcd4f6",
+      "title": "「スマイルサーバ」で不正アクセスの痕跡、復旧までに長期間を要する見込み",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-11T23:05:09+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要スマイルサーバで不正アクセスの痕跡が確認され、復旧まで長期間を要する見込みと報じられている。現時点で公表情報は限られ、侵入経路、初期侵入後の操作、漏えいの有無は未確認のまま残る。共通基盤型のホスティングであれば、単一顧客の障害にとどまらず、管理系の停止や周辺サービスへの影響が広がる可能性がある。攻撃者視点では、認証情報の奪取、設定変更、Web改ざん、メ…",
+      "article_path": "articles/2ed7e09454dcd4f6.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/12/55910.html"
+    },
+    {
+      "entry_id": "3083014e9b75e84a",
+      "title": "扶桑電通が社外関係者との情報共有に利用していた共有フォルダに不正アクセス",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-11T23:05:05+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要社外関係者との情報共有に使っていた共有フォルダが不正アクセスを受け、外部から内容を閲覧・持ち出しできる状態になっていた可能性がある。共有フォルダは便利な一方で、権限設定の過不足や認証情報の漏えいがあると、想定外の相手に一気に到達されやすい。今回の焦点は、単なる一時的な閲覧事故にとどまるか、社外秘情報や個人情報の流出、さらに他システムへの足がかりになった…",
+      "article_path": "articles/3083014e9b75e84a.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/12/55909.html"
+    },
+    {
+      "entry_id": "98f3400dfa3cc957",
+      "title": "ニデックWebサイトに不正アクセス",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-11T23:05:02+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要ニデックのWebサイトに不正アクセスがあったという報道で、少なくともサイト改ざんや情報閲覧の可能性をまず疑う局面になる。現時点の入力では、侵入経路、改ざんの有無、個人情報や取引情報への影響は確認できず、被害範囲は未確定となる。外部公開サイトが対象なら、攻撃者は認証情報の窃取や脆弱な管理画面の悪用を起点に、広報妨害やフィッシング誘導へ転用しやすい。実害は…",
+      "article_path": "articles/98f3400dfa3cc957.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/12/55908.html"
+    },
+    {
+      "entry_id": "372de5a2c4b5ef2e",
+      "title": "日米韓など同盟国、北朝鮮IT労働者の手口や特徴まとめた注意喚起を公表",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-11T23:00:18+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要日米韓を含む同盟国が、北朝鮮IT労働者による潜入・資金獲得の手口と特徴をまとめ、注意喚起を公表した。典型的には、身元を偽って企業に入り込み、リモート雇用や業務委託を足がかりに報酬を得ながら、別目的の情報収集や資金流出を進める。被害は採用・人事だけでなく、開発端末、ソース管理、認証基盤、決済や給与支払いの経路まで広がる可能性がある。実際にどの程度の侵入や…",
+      "article_path": "articles/372de5a2c4b5ef2e.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/12/55907.html"
+    },
+    {
+      "entry_id": "ba221226889689f5",
+      "title": "フィッシングやBECの最新事例も ～ IPAが企業向け「メール攻撃の手口と対策」マニュアルを公開",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-11T23:00:14+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要IPAが、企業向けにメール攻撃の手口と対策を整理したマニュアルを公開した。対象はフィッシング、Business Email Compromise、添付ファイルやリンクを起点にした侵入などで、実際の事例を踏まえて初動対応まで見直せる構成になっている。攻撃者は正規メールの体裁や業務の流れを悪用し、認証情報の窃取、送金先変更、端末侵害へとつなげるため、被害は…",
+      "article_path": "articles/ba221226889689f5.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/12/55906.html"
+    },
+    {
+      "entry_id": "7e9b2917d1f654f5",
+      "title": "DNSセキュリティがNIST CSF 2.0で正式な評価対象に、「SP 800-81r3」のマッピングが完了",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-11T23:00:09+00:00",
+      "impact_level": "Low",
+      "threat_type": "Advisory",
+      "summary_preview": "概要NISTは、DNSをNIST CSF 2.0の正式な評価対象として位置づけ、SP 800-81r3とのマッピングを完了した。DNSは名前解決の基盤であり、侵害時の影響は通信断に限らず、フィッシング誘導、マルウェア通信の秘匿、C2への到達性確保まで広がりやすい。今回の話は脆弱性修正の告知ではなく、組織がDNS管理をどの統制領域で点検すべきかを明確にしたも…",
+      "article_path": "articles/7e9b2917d1f654f5.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/12/55905.html"
+    },
+    {
+      "entry_id": "8a5bfa5b5ad79565",
+      "title": "SBOMの「最小要素」国際ガイダンス発表、追加・更新・削除されたデータ項目とは",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-11T23:00:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要SBOMに含めるべき最小要素について、国際的なガイダンスが示された。焦点は、製品名や版数だけでなく、識別・連絡・更新に使える項目をどう持たせるかにある。悪用や侵害そのものを述べる記事ではないが、部材の特定精度が上がるほど、脆弱性通知や影響範囲の判定が速くなる。逆に、項目が不足していると、同じ製品でも資産照合がぶれ、対応漏れが起きやすい。なお、今回の記事…",
+      "article_path": "articles/8a5bfa5b5ad79565.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/12/55904.html"
+    }
+  ]
+}
