@@ -1,0 +1,401 @@
+{
+  "date": "2026-08-18",
+  "window": {
+    "from": "2026-08-17T06:00:00+09:00",
+    "to": "2026-08-18T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 24
+  },
+  "generated_at_jst": "2026-08-18T06:16:37.594359+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "NvidiaとOpenAIがオハイオ州データセンター計画で合意接近",
+      "source_name": "Reuters",
+      "published_at": "2026-08-17T10:30:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要NvidiaがOpenAI向けオハイオ州大型データセンター計画で当初2500億ドル規模の保証を下方修正し1200億ドル未満に調整した。SoftBank子会社SB Energyが開発する10ギガワット級施設で、Nvidiaは最大30億ドルの投資も検討中である。AIインフラ需要の拡大を背景に金融支援の構造が見直され、投資家懸念が反映された形だ。プロジェクト…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://www.reuters.com/business/nvidia-scales-back-250-billion-openai-data-center-guarantee-wsj-reports-2026-08-14/",
+      "selection_reason": "AI分野の具体的な大規模インフラ投資として新規性が高く、企業の実務判断に直結する資金保証規模の変更が確認されたため他候補より優先",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "Nvidia scales back funding guarantee for Ohio OpenAI data center",
+          "url": "https://www.reuters.com/business/nvidia-scales-back-250-billion-openai-data-center-guarantee-wsj-reports-2026-08-14/",
+          "source_type": "news"
+        },
+        {
+          "title": "Nvidia, OpenAI and SoftBank Finalize Deal For Massive Ohio Data Center Project",
+          "url": "https://www.theinformation.com/",
+          "source_type": "news"
+        },
+        {
+          "title": "Nvidia in Talks to Invest $3 Billion in SB Energy",
+          "url": "https://www.cnbc.com/2026/08/15/nvidia-mulls-3b-investment-in-sb-energy-in-openai-data-center-deal-report.html",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "StripeがAIモデルルーティング企業OpenRouterを70億ドル超で買収",
+      "source_name": "Fortune",
+      "published_at": "2026-08-17T00:02:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要StripeがAIモデルを切り替えて最適なものを選択するOpenRouterを70億ドル超で買収した。OpenRouterは直近の資金調達時評価額13億ドルから急成長した企業である。企業がAI利用コストを抑える需要が高まる中、支払い処理企業がAIルーティング層を自社に取り込む動きが鮮明になった。買収によりStripeはAIツールの利用企業向けサービスを…",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://fortune.com/2026/08/16/stripe-7-billion-deal-ai-firm-openrouter-acquisition/",
+      "selection_reason": "IT分野の企業買収としてAIコスト最適化ツールの統合が進む具体例で、支払い企業からAI基盤企業への事業拡大を示す新規性が高い",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "Stripe clinches over $7 billion deal to buy AI firm OpenRouter",
+          "url": "https://fortune.com/2026/08/16/stripe-7-billion-deal-ai-firm-openrouter-acquisition/",
+          "source_type": "news"
+        },
+        {
+          "title": "Stripe Finalizes Deal to Acquire AI Startup OpenRouter for Over $7 Billion",
+          "url": "https://www.bloomberg.com/news/articles/2026-08-16/stripe-nears-deal-to-buy-ai-firm-openrouter-for-over-7-billion",
+          "source_type": "news"
+        },
+        {
+          "title": "Stripe is said to agree to buy OpenRouter for more than $7B",
+          "url": "https://seekingalpha.com/news/4633616-stripe-is-said-to-agree-to-buy-openrouter-for-more-than-7b",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "Windows 11の主要セキュリティ機能が物理的改変なしで回避可能",
+      "source_name": "Help Net Security",
+      "published_at": "2026-08-17T10:05:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要研究者がWindows 11の主要セキュリティ防御をドライバー不要で回避する方法を実証した。TPMやSecure Bootなどの機能が標的となり、攻撃者が物理的アクセスなしに制御を奪う可能性を示した。AIエージェントの封じ込めツールHazmatも同時に公開され、AI関連のセキュリティ対策が進む。企業はOS設定の定期検証と多層防御の強化が求められる。",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://www.helpnetsecurity.com/2026/08/17/windows-11-security-bypass-research/",
+      "selection_reason": "Cybersecurity分野のOS防御機構に関する具体的な研究成果で、実務的なパッチ適用や設定見直しに直結する新規情報である",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "Windows 11’s strongest security defenses can be bypassed without a screwdriver",
+          "url": "https://www.helpnetsecurity.com/2026/08/17/windows-11-security-bypass-research/",
+          "source_type": "news"
+        },
+        {
+          "title": "SecurityWeek Cybersecurity News",
+          "url": "https://www.securityweek.com/",
+          "source_type": "news"
+        },
+        {
+          "title": "Hazmat: Open-source containment for AI agents",
+          "url": "https://www.helpnetsecurity.com/2026/08/17/hazmat-open-source-ai-coding-agent-containment/",
+          "source_type": "news"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "412461c945ade834",
+      "title": "CVE-2025-62593 Ray-Project Ray Code Injection Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-08-17T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Exploit",
+      "summary_preview": "概要Ray-Project / Ray に CVE-2025-62593 のコード注入脆弱性があり、CISA KEV に掲載されている。掲載自体は、少なくとも一部環境で実際の悪用が確認済みであることを示すため、単なる理論上の欠陥として扱うべきではない。Ray は分散処理や機械学習基盤で使われやすく、外部公開の管理画面やジョブ投入口があると、侵入後の実行足場…",
+      "article_path": "articles/412461c945ade834.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "eb0f24f7f2c22b19",
+      "title": "Snowflake GitHub Actions Flaw Lets Crafted Issues Trigger Command Injection",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-17T18:44:17+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Snowflakeの公開GitHubリポジトリsnowflakedb/snowflake-connector-netに、GitHub Actionsのワークフロー注入が見つかった。細工したGitHub Issueを投げると、Jira連携用の内部認証情報を含むワークフロー内でコマンド実行につながる構成だった。公開リポジトリ上の入力が自動処理に渡るため、攻…",
+      "article_path": "articles/eb0f24f7f2c22b19.html",
+      "original_url": "https://thehackernews.com/2026/08/snowflake-github-actions-flaw-lets_0330881554.html"
+    },
+    {
+      "entry_id": "44420747f4891896",
+      "title": "Forminator WordPress Flaw Can Enable Unauthenticated RCE via Malicious PHP Uploads",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-17T18:22:09+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要WordPressプラグインForminator Formsに、認証なしで任意コード実行へつながる脆弱性が公表された。悪用条件がそろうと、攻撃者は悪意あるPHPファイルのアップロードを通じてサイト上で任意の処理を走らせられる可能性がある。対象は60万件超の有効導入を持つため、単一サイトの侵害にとどまらず、同一運用基盤や管理委託先をまたぐ被害拡大が起きや…",
+      "article_path": "articles/44420747f4891896.html",
+      "original_url": "https://thehackernews.com/2026/08/forminator-wordpress-flaw-can-enable.html"
+    },
+    {
+      "entry_id": "6c1030044f11adde",
+      "title": "Cavern C2 Uses DNS and Google Apps Script to Blend Into Legitimate Traffic",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-17T17:41:06+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要Cavern（Cav3rn）C2フレームワークの継続的な改良が観測され、DNSとGoogle Apps Scriptを使って正規通信に紛れ込ませる構成が確認された。主にイラン系の攻撃者による、イスラエル関連組織を狙う活動の一部として追跡されている。通信経路を分散し、見た目を一般的なクラウド利用に寄せることで、検知とブロックの難度を上げる狙いがある。被害…",
+      "article_path": "articles/6c1030044f11adde.html",
+      "original_url": "https://thehackernews.com/2026/08/cavern-c2-uses-dns-and-google-apps.html"
+    },
+    {
+      "entry_id": "6b72e39cebfc22af",
+      "title": "⚡ Weekly Recap: VMware Exploits, Windows 0-Day, MCP Attacks, Browser Hijacks and More",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-17T13:23:51+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Exploit",
+      "summary_preview": "概要本件は The Hacker News の週次まとめで、VMware の悪用、Windows の 0-day、MCP への攻撃、ブラウザ乗っ取り、供給網の波及など、複数の事象を横断している。個別の技術詳細は本文からは十分に取れないが、既に外部公開されている資産や古い脆弱性の再悪用が侵入口になっている点は共通している。攻撃の成立には、露出した管理面、脆弱…",
+      "article_path": "articles/6b72e39cebfc22af.html",
+      "original_url": "https://thehackernews.com/2026/08/weekly-recap-vmware-exploits-windows-0.html"
+    },
+    {
+      "entry_id": "27eadb633100a73b",
+      "title": "How MCP Servers Can Expose Enterprise Secrets",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-17T11:58:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Misconfiguration",
+      "summary_preview": "概要MCP サーバーが、平文の設定ファイル、過剰な権限設定、prompt injection を通じて企業の秘密情報を露出させうる、という注意喚起の記事である。AI エージェントが業務システムに接続されるほど、認証情報や内部データへの到達点が増え、従来の境界防御だけでは見えにくい露出が起きる。特に、サーバーの稼働が セキュリティ部門に把握されないまま 進む…",
+      "article_path": "articles/27eadb633100a73b.html",
+      "original_url": "https://thehackernews.com/2026/08/how-mcp-servers-can-expose-enterprise.html"
+    },
+    {
+      "entry_id": "6bc919e961182975",
+      "title": "Unisoc VoLTE Video Call Exploit Chain Can Give Attackers Full Android Kernel Access",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-17T10:52:34+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要SSD Secure Disclosure が、VoLTE のビデオ通話を起点にして Android カーネル権限まで到達する二段階の攻撃連鎖を公開した。対象は Unisoc のモデムファームウェアを搭載する端末で、記事時点では芯片ベンダー側の修正が示されていない。攻撃成立の前提は、端末が該当ファームウェアを使い、かつ攻撃者が通話を成立させられることに…",
+      "article_path": "articles/6bc919e961182975.html",
+      "original_url": "https://thehackernews.com/2026/08/unisoc-volte-video-call-exploit-chain.html"
+    },
+    {
+      "entry_id": "2047a750ed5d2609",
+      "title": "Evooo1Bot Linux Botnet Exploits Known Flaws to Turn Edge Devices Into SOCKS5 Proxies",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-17T09:29:55+00:00",
+      "impact_level": "High",
+      "threat_type": "Botnet",
+      "summary_preview": "概要Linux向けの新たなボットネット Evooo1Bot が報告され、公開された Mirai 系コードを土台にしながら、外部公開された端末を SOCKS5 プロキシとして悪用する機能を備えている。感染後はDDoSに使うだけでなく、通信の中継点としても利用されるため、攻撃者は発信元の秘匿と踏み台化を同時に得やすい。影響は単一端末にとどまらず、境界機器やIo…",
+      "article_path": "articles/2047a750ed5d2609.html",
+      "original_url": "https://thehackernews.com/2026/08/evooo1bot-linux-botnet-exploits-known.html"
+    },
+    {
+      "entry_id": "7f798f5880f4ab44",
+      "title": "Suspected China-Nexus Actor Exploits VMware vCenter Flaw, Deploys Babuk-Derived Ransomware",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-17T07:36:19+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Broadcom VMware vCenter の新規修正済み欠陥 CVE-2026-59310 が、中国関連とみられるAPT に悪用されたと報じられている。欠陥はディレクトリトラバーサルを起点に任意コード実行へつながる性質で、成功すれば管理面の境界を越えてvCenter自体を奪われる。vCenterは仮想基盤の中枢に置かれることが多く、侵害されると単…",
+      "article_path": "articles/7f798f5880f4ab44.html",
+      "original_url": "https://thehackernews.com/2026/08/suspected-china-nexus-actor-exploits.html"
+    },
+    {
+      "entry_id": "873ee497d344ec4d",
+      "title": "Apple Patches iOS and macOS, (Mon, Aug 17th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-08-17T20:26:39+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Patch",
+      "summary_preview": "概要AppleがiOS/iPadOS 26・18とmacOS 26向けの更新を公開し、合計108件の脆弱性を修正した。前回の小規模なmacOS修正から間を置かず、広い面積の更新が出ている点が特徴となる。現時点の要約では、個別の深刻な悪用確認やゼロデイの有無は示されておらず、どの脆弱性が実際に攻撃に使われていたかは未確認となる。組織運用では、端末台数が多いほ…",
+      "article_path": "articles/873ee497d344ec4d.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33254"
+    },
+    {
+      "entry_id": "7260c8293206d3bd",
+      "title": "Apple Screen Sharing Security, (Mon, Aug 17th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-08-17T14:33:58+00:00",
+      "impact_level": "Low",
+      "threat_type": "Advisory",
+      "summary_preview": "概要AppleのScreen Sharingは、macOS 10.5以降で導入された機能で、既存のを土台にしている。記事は新たな脆弱性の報告ではなく、古い設計を前提にした機能の性質を再確認させる内容になっている。VNCは基本的にTCP 5900を使い、暗号化や認証の設計が弱い構成が残りやすいため、露出していると盗聴や不正接続の起点になりやすい。攻撃者は正面…",
+      "article_path": "articles/7260c8293206d3bd.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33252"
+    },
+    {
+      "entry_id": "a62d73049d96821b",
+      "title": "ISC Stormcast For Monday, August 17th, 2026 https://isc.sans.edu/podcastdetail/10054, (Mon, Aug 17th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-08-17T02:00:02+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要SANS ISC のポッドキャスト告知であり、新たな脆弱性や侵害事案を直接伝える記事ではない。内容は配信案内に近く、攻撃手法の詳細、悪用の有無、影響範囲の拡大要因は本文からは読み取れない。したがって、CSIRT観点では即時対応対象というより、後続の解説回で何が扱われるかを確認するための入口として捉えるのが妥当になる。現時点では、組織内で追うべき具体的C…",
+      "article_path": "articles/a62d73049d96821b.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33250"
+    },
+    {
+      "entry_id": "e83f1eb529b1f03b",
+      "title": "Wireshark 4.6.8 Released, (Sun, Aug 16th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-08-16T21:31:48+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Patch",
+      "summary_preview": "概要Wireshark 4.6.8 の公開により、28件の脆弱性と25件の不具合が修正された。多くは解析用ライブラリやパケット処理経路に関わるため、攻撃者は細工したキャプチャファイルや通信データを用いて、クラッシュや任意コード実行の足がかりを狙える。実際の被害は、単なる閲覧端末の停止にとどまらず、解析担当端末での特権環境や保存済みファイルへの波及が問題にな…",
+      "article_path": "articles/e83f1eb529b1f03b.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33248"
+    },
+    {
+      "entry_id": "db84a6f97f744717",
+      "title": "Meet Instant Attack Verification: Agentic AI for Tier-1 and Tier-2 SOC investigation",
+      "source_name": "Cisco Security Blog",
+      "category": "reporting",
+      "published_at": "2026-08-17T15:00:22+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要Cisco Security Blogは、Tier-1/Tier-2 SOC向けに、トリアージ、調査、攻撃の検証を機械速度で回すAI分析機能を紹介している。狙いは、アラートの一次切り分けを自動化し、担当者が本当に深掘りすべき事象に集中できる状態を作ることにある。想定される悪用というより、運用上の価値は「誤検知の圧縮」と「確認済みインシデントへの到達時間…",
+      "article_path": "articles/db84a6f97f744717.html",
+      "original_url": "https://blogs.cisco.com/security/meet-instant-attack-verification-agentic-ai-for-tier-1-and-tier-2-soc-investigation/"
+    },
+    {
+      "entry_id": "75f4a9854732b2fe",
+      "title": "HENNGE、「第2回 IT・情シス DXPO」で HENNGE One を出展 ～ ウルトラヒーロー限定ノベルティも配布",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-16T23:10:05+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要これは HENNGE One の展示告知であり、脆弱性情報や侵害事案の報道ではない。記事は「第2回 IT・情シス DXPO」での出展と、来場者向けノベルティ配布を案内している。攻撃手法や被害拡大の説明はなく、組織の防御判断に直結する新規リスクは読み取れない。未確認事項としては、展示内容に含まれる新機能や運用支援の詳細があるが、本文だけではセキュリティ上…",
+      "article_path": "articles/75f4a9854732b2fe.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/17/55943.html"
+    },
+    {
+      "entry_id": "5511175c2f115ea7",
+      "title": "8 / 20・21開催「IT・情シス DXPO 東京 2026 夏」にエーアイセキュリティラボが出展 登壇",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-16T23:10:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要この記事は、「IT・情シス DXPO 東京 2026 夏」への出展と登壇告知であり、脆弱性や侵害事案そのものを伝える内容ではない。案内対象は主に情シス・IT部門向けで、セキュリティ製品や運用支援の訴求が中心と読める。直接の被害拡大要因は示されておらず、CSIRTが直ちに対応判断を迫られる類ではない。実際の展示内容、登壇テーマ、持ち帰り資料の有無は本文か…",
+      "article_path": "articles/5511175c2f115ea7.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/17/55942.html"
+    },
+    {
+      "entry_id": "30b0873131550529",
+      "title": "兵庫県「さわやか提案箱」の提案者92人の個人情報が閲覧可能に ～ 公文書公開のPDF作成手順に誤り",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-16T23:05:11+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要兵庫県の「さわやか提案箱」に関する公文書公開で、PDF作成手順の誤りにより、提案者92人の個人情報が閲覧可能な状態になった。攻撃者による侵入や高度な脆弱性悪用ではなく、公開物の作り方に起因する情報露出であり、外部からは通常の閲覧操作で参照できた可能性がある。影響は個人情報の漏えいに限定される見込みだが、公開範囲が公文書公開全体へ広がっていた場合は、同種…",
+      "article_path": "articles/30b0873131550529.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/17/55941.html"
+    },
+    {
+      "entry_id": "e71bed3b2c270e80",
+      "title": "連絡先情報が窃取されフィッシングメール大量送信 ～ 取引先を偽装したフィッシングメールのリンクを講談社社員がクリック",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-16T23:05:09+00:00",
+      "impact_level": "High",
+      "threat_type": "Phishing",
+      "summary_preview": "概要講談社の社員が取引先を偽装したフィッシングメールのリンクを開き、連絡先情報が窃取されたうえで、その情報を使った大量送信が発生したと報じられている。攻撃者は個人の受信環境だけでなく、業務上のやり取りに使われる宛先や文面の癖を利用して、信頼されやすいメールを作り込んだ可能性が高い。被害は単発の不審メール送信にとどまらず、取引先や社内外の連絡網へなりすましの…",
+      "article_path": "articles/e71bed3b2c270e80.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/17/55940.html"
+    },
+    {
+      "entry_id": "837f5e6f5e15836a",
+      "title": "テレビ朝日メディアプレックスに不正アクセス、マイナンバー含む従業員情報が漏えいした可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-16T23:05:07+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要テレビ朝日メディアプレックスが不正アクセスを受け、マイナンバーを含む従業員情報が漏えいした可能性があると報じられている。侵入経路や初期侵入の手口、実際に外部へ持ち出された範囲は、この入力だけでは確認できない。従業員情報にマイナンバーが含まれる場合、単なる個人情報漏えいよりも、本人確認悪用や二次被害の起点になりやすい。攻撃者にとっては、社内システムへの足…",
+      "article_path": "articles/837f5e6f5e15836a.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/17/55939.html"
+    },
+    {
+      "entry_id": "41ef358d9b325f09",
+      "title": "アスクルへのランサムウェア攻撃、外部への漏えいの可能性を否定できない個人情報を追加で特定",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-16T23:05:03+00:00",
+      "impact_level": "High",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要アスクルが受けたランサムウェア攻撃について、同社は追加調査の結果、外部への漏えいの可能性を否定できない個人情報を新たに特定した。現時点で確定的な漏えい断定はされていないが、調査が進むほど影響範囲が広がる典型的な局面に入っている。攻撃者が暗号化だけでなく窃取も伴っていた場合、被害は業務停止に加えて、個人情報の流出、二次被害、対外説明対応へと拡大する。公開…",
+      "article_path": "articles/41ef358d9b325f09.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/17/55938.html"
+    },
+    {
+      "entry_id": "15d4ad053edd76c0",
+      "title": "イエラエと Flatt のエンジニアが参加するチーム Blue Water が DEF CON 34 CTF Finals でついに世界 1 位獲得",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-16T23:00:15+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要本記事は、DEF CON 34 CTF Finalsで、イエラエとFlattのエンジニアが参加するチーム Blue Water が世界1位を獲得した話題を伝えている。競技そのものはセキュリティ研究・技能の成果であり、直ちに組織への攻撃を示す内容ではない。脆弱性の悪用手法や防御策の成熟度を測る材料にはなるが、記事内で個別の脆弱性や攻撃キャンペーンは示され…",
+      "article_path": "articles/15d4ad053edd76c0.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/17/55937.html"
+    },
+    {
+      "entry_id": "a886af438caf5d50",
+      "title": "GMOサイバーセキュリティ byイエラエ「地方公共団体向けペネトレーションテスト・パッケージ」の提供",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-16T23:00:12+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要GMOサイバーセキュリティ byイエラエが、地方公共団体向けのペネトレーションテスト・パッケージの提供を開始した。攻撃そのものの報道ではなく、自治体向けに事前の侵入試験を標準化して、脆弱な公開面や認証まわり、内部侵入後の横展開余地を洗い出す取り組みと読める。実務上の焦点は、住民情報や業務ネットワークに近い資産がどこまで露出しているか、委託先やクラウド接…",
+      "article_path": "articles/a886af438caf5d50.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/17/55936.html"
+    },
+    {
+      "entry_id": "b2c4143eb4600382",
+      "title": "ECプラットフォーム「Opencart」にディレクトリトラバーサルの脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-16T23:00:08+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要ECプラットフォーム「Opencart」にディレクトリトラバーサルの脆弱性が報じられた。任意のファイル参照や想定外の場所へのアクセスに使われる典型的な不備で、設定や権限の置き方によっては、機密情報の閲覧や管理領域の手掛かり取得につながる。公開された記事情報だけでは、実際の悪用有無、影響を受けるバージョン範囲、認証要否や到達経路が十分に確認できない。EC…",
+      "article_path": "articles/b2c4143eb4600382.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/17/55935.html"
+    },
+    {
+      "entry_id": "41b3c01f337281f1",
+      "title": "Tenable、セキュリティ担当者向けの無料AIコミュニティ「CyberAgents Exchange」公開",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-16T23:00:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要Tenableが、セキュリティ担当者向けの無料AIコミュニティ「CyberAgents Exchange」を公開した。狙いは、AIを使った運用支援や知見共有を進め、脆弱性管理や調査の効率を高める点にある。これは新たな脆弱性や侵害の報道ではなく、セキュリティ運用の補助基盤を広げる話題に近い。実務上は、AIが生成する回答の正確性、機密情報の投入可否、コミュ…",
+      "article_path": "articles/41b3c01f337281f1.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/17/55934.html"
+    }
+  ]
+}
