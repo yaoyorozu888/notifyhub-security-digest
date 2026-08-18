@@ -1,0 +1,432 @@
+{
+  "date": "2026-08-19",
+  "window": {
+    "from": "2026-08-18T06:00:00+09:00",
+    "to": "2026-08-19T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 27
+  },
+  "generated_at_jst": "2026-08-19T06:15:13.699021+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "Macソフトウェアベータ版でAirPodsカメラ搭載が判明",
+      "source_name": "The Information",
+      "published_at": "2026-08-18T10:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要Macソフトウェアの最新ベータ版でAirPodsにカメラが搭載される可能性が明らかになった。カメラは周囲の環境を分析する用途が想定される。開発者向けAPIの更新によりAR機能の統合が進む見込みだ。半導体やOSの進化と連動し、エンタープライズITでの活用範囲が拡大する。SaaSやデバイス管理ツールの対応が求められる状況である。",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://www.theinformation.com/",
+      "selection_reason": "IT分野の新製品トレンドとして具体的なデバイス発表があり、クラウドやデバイス連携の開発者影響が大きいため他候補より優先",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "The Information",
+          "url": "https://www.theinformation.com/",
+          "source_type": "news"
+        },
+        {
+          "title": "Mac Software Beta Reveals AirPods With Camera",
+          "url": "https://www.theinformation.com/",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "Nvidia OpenAI SoftBankがオハイオ大規模データセンターで合意",
+      "source_name": "The Information",
+      "published_at": "2026-08-18T09:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Other",
+      "summary_preview": "概要Nvidia OpenAI SoftBankがオハイオ州で大規模データセンター建設で最終合意した。AIトレーニング向け計算資源の大幅増強が目的である。AIモデル開発の加速が見込まれ、関連企業への投資判断に影響する。数百億ドルの収益機会が生まれる可能性がある。AI基盤整備の動きとして注目される。",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://www.theinformation.com/",
+      "selection_reason": "AI基盤の具体的な投資事例として新規性が高く、半導体とAIモデル開発の連動が明確",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "The Information",
+          "url": "https://www.theinformation.com/",
+          "source_type": "news"
+        },
+        {
+          "title": "Nvidia, OpenAI and SoftBank Finalize Deal For Massive Ohio Data Center Project",
+          "url": "https://www.theinformation.com/",
+          "source_type": "news"
+        },
+        {
+          "title": "Reuters AI News",
+          "url": "https://www.reuters.com/technology/artificial-intelligence/",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "AI速度攻撃へのサイバー防御再考",
+      "source_name": "SecurityWeek",
+      "published_at": "2026-08-18T12:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要AIを活用した高速攻撃への対応として検知優先から予防重視へのシフトが議論されている。ウェビナーで専門家が最新動向を共有した。AIエージェントの悪用事例が増加傾向にある。セキュリティ運用チームは新戦略の検討を迫られる。予防策の強化が実務上の優先事項となる。",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://www.securityweek.com/",
+      "selection_reason": "AIとサイバーセキュリティの交差点で具体的な防御トレンド議論があり、実務影響が大きい",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "SecurityWeek",
+          "url": "https://www.securityweek.com/",
+          "source_type": "news"
+        },
+        {
+          "title": "Rethinking Cyber Defense for AI-Speed Attacks",
+          "url": "https://www.securityweek.com/",
+          "source_type": "news"
+        },
+        {
+          "title": "The Hacker News",
+          "url": "https://thehackernews.com/",
+          "source_type": "news"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "38054dfe13bcfb35",
+      "title": "CVE-2026-33824 Microsoft Internet Key Exchange (IKE) Service Extensions Double Free Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-08-18T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CVE-2026-33824 は、Microsoft の Internet Key Exchange (IKE) Service Extensions に存在する double free 脆弱性で、CISA の KEV に掲載されている。KEV 掲載は、机上の欠陥ではなく、少なくとも一部環境で実際に悪用が成立しうることを示す強いシグナルになる。IKE …",
+      "article_path": "articles/38054dfe13bcfb35.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "fb1f8d428ecfed4a",
+      "title": "CVE-2026-59310 Broadcom VMware vCenter Path Traversal Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-08-18T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CVE-2026-59310 は Broadcom / VMware vCenter における パストラバーサル 脆弱性として扱われている。攻撃者は細工した要求で本来到達できないファイルや処理に近づき、設定情報や機密データの取得、場合によっては後続の侵入準備につなげる余地がある。vCenter は仮想基盤の中核に置かれやすく、侵害されると単一サーバーの…",
+      "article_path": "articles/fb1f8d428ecfed4a.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "7adc9b07fedb42a0",
+      "title": "CVE-2026-55040 Microsoft SharePoint Weak Authentication Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-08-18T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CVE-2026-55040 は Microsoft SharePoint に存在する弱い認証に関する脆弱性で、CISA の KEV に掲載されているため、理論上の欠陥ではなく実際の悪用可能性を前提に扱う必要がある。認証の境界が崩れると、攻撃者は正規利用者に見せかけて SharePoint の機能や保存データへ近づき、権限の取り方次第では情報窃取や内部…",
+      "article_path": "articles/7adc9b07fedb42a0.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "69a61e534a984a09",
+      "title": "CVE-2026-65400 Apple macOS Improper Authentication Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-08-18T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CISA の KEV に CVE-2026-65400 が掲載され、Apple macOS の 認証不備 が実際に悪用可能な脆弱性として扱われている。認証前に成立するか、特定の機能や既定設定が必要かなどの詳細はこの入力だけでは確認できないが、少なくとも攻撃者が正規利用者になりすます入口になり得る。悪用の形は、権限取得、セッション乗っ取り、端末侵害からの…",
+      "article_path": "articles/69a61e534a984a09.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "600111a6324841bf",
+      "title": "Microsoft Copilot Personal Flaws Could Let One Click Exfiltrate Data From Connected Apps",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-18T17:47:22+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Varonis Threat Labs が Microsoft Copilot Personal の3件の脆弱性を公表し、1回のクリックで、連携済みアプリや Copilot セッション内の情報を静かに引き出せる可能性を示した。攻撃は、被害者が踏むように作られたリンクを起点に進み、Copilot が露出した未公開の URL パラメータ を悪用する筋が含ま…",
+      "article_path": "articles/600111a6324841bf.html",
+      "original_url": "https://thehackernews.com/2026/08/microsoft-copilot-personal-flaws-could.html"
+    },
+    {
+      "entry_id": "74b26476c47bf855",
+      "title": "Attackers Exploit MLflow SSRF Flaw to Steal Cloud Credentials and Secrets",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-18T17:44:05+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要MLflow と FUXA にある重大脆弱性について、悪用を狙ったスキャンと実攻撃が観測されている。記事では、MLflow 側では SSRF を起点に外部の内部情報へ到達し、クラウド認証情報や秘密情報を抜き取られる流れが問題になる。FUXA 側は OT/SCADA の可視化・操作系に関わるため、侵害されると業務停止や設備側への波及が現実的になる。被害は…",
+      "article_path": "articles/74b26476c47bf855.html",
+      "original_url": "https://thehackernews.com/2026/08/attackers-exploit-mlflow-ssrf-flaw-to.html"
+    },
+    {
+      "entry_id": "4d7cb4b3e3bebe2d",
+      "title": "Ransom Busters Claims It Hacked Ransomware Servers, Asks Victims for Up to $60,000",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-18T16:58:16+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要Ransom Bustersと名乗る第三者が、ランサムウェア被害組織へ直接連絡し、犯行グループのサーバーから盗んだデータを削除すると称して、2万〜6万ドルの支払いを求めている。表向きは被害回復の支援を装うが、実態は被害者の切迫感を利用した二次的な恐喝とみるのが自然になる。どのランサムウェア集団のサーバーに実際にアクセスしたのか、データ削除の真偽、被害者…",
+      "article_path": "articles/4d7cb4b3e3bebe2d.html",
+      "original_url": "https://thehackernews.com/2026/08/ransom-busters-claims-it-hacked.html"
+    },
+    {
+      "entry_id": "2f3938927be86952",
+      "title": "AI \"Mind Viruses\" Can Spread Between Agents Through Persistent Prompt Files",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-18T12:38:36+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Other",
+      "summary_preview": "概要AnthropicとEPFLの研究者が、永続化されたプロンプトファイルを介して、あるAIエージェントの状態や指示が次のエージェントへ移る過程を利用し、自己増殖するペイロードが連鎖的に広がることを示した。対象は自律型エージェントのハーネスがセッション間の状態保持に使う、編集可能なシステムプロンプト群で、実験は六つのエージェントによる模擬環境で行われた。悪…",
+      "article_path": "articles/2f3938927be86952.html",
+      "original_url": "https://thehackernews.com/2026/08/ai-mind-viruses-can-spread-between.html"
+    },
+    {
+      "entry_id": "282c56b28908bc15",
+      "title": "TWINLOOT Abuses SharePoint and Teams to Steal Credentials and Move Across Networks",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-18T12:38:20+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要TWINLOOTは、Python製のモジュール型インプラントとして報告され、SharePoint OnlineとMicrosoft Teamsのような信頼された業務サービスの内部で指令・制御を回す点が特徴になる。攻撃者は外部の露骨なC2基盤を使わず、正規サービス上のファイルや会話を経由して命令や成果物をやり取りし、通常の通信に紛れ込みやすくする狙いを持…",
+      "article_path": "articles/282c56b28908bc15.html",
+      "original_url": "https://thehackernews.com/2026/08/twinloot-abuses-sharepoint-and-teams-to.html"
+    },
+    {
+      "entry_id": "5a0aed70198dafda",
+      "title": "One Attacker Has Scraped Both Salesforce and ServiceNow Portals Since 2025",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-18T11:30:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要単一の攻撃基盤が、2025年以降にSalesforceとServiceNowの顧客ポータルから記録を継続的に収集していた可能性が示された。記事では、この活動をRecoがCity Forumと名付け、攻撃者のIPに結び付くドメインを手掛かりに追跡している。悪用の中心は、外部公開されたSaaSポータルに対する認証情報の奪取、セッション悪用、または正規アクセ…",
+      "article_path": "articles/5a0aed70198dafda.html",
+      "original_url": "https://thehackernews.com/2026/08/one-attacker-has-scraped-both.html"
+    },
+    {
+      "entry_id": "27824aa0425dc425",
+      "title": "16 Typosquatted RubyGems Packages Steal Browser Credentials and Crypto Wallets",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-18T11:20:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Malware",
+      "summary_preview": "概要RubyGems利用者を狙うタイポスクワッティングの一群が確認され、見た目が似た16個のパッケージ経由でWindows向け情報窃取型マルウェアが配布されていた。開発端末で誤って導入されると、ブラウザの認証情報や暗号資産ウォレットの情報が抜き取られる恐れがある。被害は個人の資格情報流出にとどまらず、社内の開発用アカウントやCI/CD、パッケージ管理権限へ…",
+      "article_path": "articles/27824aa0425dc425.html",
+      "original_url": "https://thehackernews.com/2026/08/16-typosquatted-rubygems-packages-steal.html"
+    },
+    {
+      "entry_id": "68b2ecea7017bea1",
+      "title": "SafePal Hardware Wallet Maker Says Flaw Exposed Data of Nearly 40,000 Customers",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-18T09:10:45+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要SafePal は、注文追跡用プラグインにあった認可不備により、約39,798人分の顧客情報が閲覧可能になっていたと公表した。漏えいした可能性があるのは、氏名、メールアドレス、配送先住所、電話番号、購入情報で、注文追跡機能が入口になった点が重要になる。攻撃者から見れば、暗号資産保有者を狙った標的型フィッシングやなりすましに転用しやすく、被害は単なる個人…",
+      "article_path": "articles/68b2ecea7017bea1.html",
+      "original_url": "https://thehackernews.com/2026/08/safepal-hardware-wallet-maker-says-flaw.html"
+    },
+    {
+      "entry_id": "b151c7d39b68c200",
+      "title": "CISA Flags Actively Exploited Ray Flaw That Can Trigger Browser-Based RCE",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-18T06:34:20+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要米CISAが、分散計算基盤 Ray の脆弱性を KEV に追加し、実際の悪用 が確認された流れを示した。記事断片からは、ブラウザ経由で RCE に至る可能性があり、AI/機械学習基盤やジョブ実行基盤として使われる環境が狙われやすいことが読み取れる。攻撃成立には、Rayの管理系が到達可能で、かつ脆弱な版が稼働している前提が必要になる。侵入後は、学習データ…",
+      "article_path": "articles/b151c7d39b68c200.html",
+      "original_url": "https://thehackernews.com/2026/08/cisa-flags-actively-exploited-ray-flaw.html"
+    },
+    {
+      "entry_id": "3e5b89abd8e5d6b7",
+      "title": "Critical GitLab GraphQL Flaw Could Let Unauthenticated Attackers Delete Public Projects",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-17T21:03:04+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要GitLab CE/EE に、未認証の攻撃者が 公開プロジェクト やユーザーデータを改変・削除できる深刻な不具合が見つかり、修正版が公開された。公開されている範囲に対して管理権限に近い操作が起きるため、単なる閲覧被害ではなく、ソースコード消失や設定破壊、開発業務の停止に直結しやすい。悪用には対象の GitLab が外部から到達可能で、かつ脆弱な条件を満…",
+      "article_path": "articles/3e5b89abd8e5d6b7.html",
+      "original_url": "https://thehackernews.com/2026/08/critical-gitlab-graphql-flaw-could-let.html"
+    },
+    {
+      "entry_id": "10433595d334d7a9",
+      "title": "ISC Stormcast For Tuesday, August 18th, 2026 https://isc.sans.edu/podcastdetail/10056, (Tue, Aug 18th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-08-18T02:00:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要SANS ISC の Stormcast は、当日観測された脅威動向を短くまとめた音声配信で、個別の脆弱性発表というより運用上の注目点を拾う性格が強い。今回の入力だけでは、扱われた具体的な事件名や製品名、CVE は確認できない。したがって、何が新規に起きたのか、既に悪用が始まっているのか、あるいは単なる注意喚起かは未確認となる。CSIRTとしては、配信…",
+      "article_path": "articles/10433595d334d7a9.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33256"
+    },
+    {
+      "entry_id": "36c9edbbaf0a374d",
+      "title": "Threat Brief: Mitigating Large-Scale Credential Attacks (Updated August 18)",
+      "source_name": "Unit 42",
+      "category": "reporting",
+      "published_at": "2026-08-18T19:05:33+00:00",
+      "impact_level": "High",
+      "threat_type": "Credential Theft",
+      "summary_preview": "概要Unit 42は、大規模な認証情報攻撃への備え方と緩和策を整理し、近時はセキュリティ製品の機器を狙う動きがあると示した。攻撃の中心は脆弱性の単発悪用というより、漏えい済み認証情報の再利用、総当たり、資格情報の使い回しを突く侵入に置かれている。成功すると、対象機器の管理権限や中継点を足掛かりに、社内ネットワークへの横展開や監視回避につながるおそれがある。…",
+      "article_path": "articles/36c9edbbaf0a374d.html",
+      "original_url": "https://unit42.paloaltonetworks.com/large-scale-credential-attacks/"
+    },
+    {
+      "entry_id": "7e9364f0a37280cf",
+      "title": "革新的情報通信技術（Beyond 5G（6G））基金事業 要素技術・シーズ創出型プログラムのうち「日独国際共同研究プロジェクト」に係る公募を開始",
+      "source_name": "NICT NOTICE",
+      "category": "reporting",
+      "published_at": "2026-08-18T05:00:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要NICTは、Beyond 5G（6G）基金事業の一環として、日独国際共同研究プロジェクトの公募を開始した。内容は脆弱性対応の公表ではなく、次世代通信に向けた研究開発資金の募集であり、CSIRTが直ちに対処する類の事案ではない。もっとも、通信の暗号化、耐量子性、ゼロトラスト前提の接続制御、重要インフラの監視・制御のあり方に将来影響しうるため、長期の技術動…",
+      "article_path": "articles/7e9364f0a37280cf.html",
+      "original_url": "/press/2026/08/18-1.html"
+    },
+    {
+      "entry_id": "40b452e1722ef892",
+      "title": "Langflow の files API における任意のファイルが作成可能となるパストラバーサルの脆弱性（Scan Tech Report）",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-17T23:10:03+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Langflow の files API に、パストラバーサルを起点として任意の場所にファイルを作成できる脆弱性が報告された。攻撃者が書き込み先を制御できる場合、設定ファイルや起動時に読み込まれる成果物を置かれ、コード実行や認証回避、持続化に発展する余地がある。影響は単発のファイル破壊にとどまらず、ワークフロー基盤や連携先の権限を巻き込んで広がる可能性…",
+      "article_path": "articles/40b452e1722ef892.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/18/55953.html"
+    },
+    {
+      "entry_id": "b6c8c246460b6f32",
+      "title": "REXTにランサムウェア攻撃、WonderGOOや新星堂などの一部店舗に影響",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-17T23:05:16+00:00",
+      "impact_level": "High",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要REXTがランサムウェア攻撃を受け、WonderGOOや新星堂などの一部店舗に影響が出たと報じられている。現時点で見えているのは、店舗運営や業務システムのどこかで障害が起きた可能性が高いという点までで、侵入経路、暗号化の有無、持ち出し被害の有無は未確認である。小売・店舗網への攻撃では、販売停止だけでなく、在庫管理、受発注、会員情報、決済周辺まで影響が広…",
+      "article_path": "articles/b6c8c246460b6f32.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/18/55952.html"
+    },
+    {
+      "entry_id": "185d9abacc23964a",
+      "title": "RIZAP「APORITOオンラインストア」に不正アクセス、カード情報が外部流出した可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-17T23:05:14+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要RIZAPが運営する「APORITOオンラインストア」で不正アクセスが発生し、カード情報が外部に流出した可能性が示された。現時点で、侵入経路や漏えいの有無、影響を受けた件数は明らかになっておらず、どの期間の決済情報が対象かも未確認である。ECサイトの不正アクセス事案では、単なる閲覧情報の流出に見えても、決済処理や管理画面への侵入が絡むと被害は購入者情報…",
+      "article_path": "articles/185d9abacc23964a.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/18/55951.html"
+    },
+    {
+      "entry_id": "0e6075bfe52d9028",
+      "title": "丸高興業にランサムウェア攻撃、少なくとも1.5GBのデータが漏えいした可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-17T23:05:11+00:00",
+      "impact_level": "High",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要丸高興業がランサムウェア攻撃を受け、少なくとも1.5GBのデータが漏えいした可能性があると報じられた。暗号化被害だけでなく、持ち出しを伴う二重脅迫型の流れが疑われ、単なる復旧案件にとどまらない。攻撃の入口、侵害範囲、実際に外部公開されたかは現時点で未確認であり、漏えい規模も「可能性」の段階にある。業務停止、取引先への波及、身代金要求の有無が焦点になり、…",
+      "article_path": "articles/0e6075bfe52d9028.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/18/55950.html"
+    },
+    {
+      "entry_id": "4c8f2085250c082b",
+      "title": "「インク革命」に不正アクセス、24,166名のカード情報が漏えいした可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-17T23:05:07+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要印刷用品通販の「インク革命」に不正アクセスがあり、24,166名分のカード情報漏えいの可能性が公表された。攻撃の中心は決済周辺の情報取得とみられ、もし入力時点の情報が抜かれていれば、後続の不正利用やなりすましにつながる余地がある。組織側の実害は、漏えい確認だけでなく、カード再発行対応、問い合わせ増、委託先確認、ログ精査まで波及しやすい。この記事だけでは…",
+      "article_path": "articles/4c8f2085250c082b.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/18/55949.html"
+    },
+    {
+      "entry_id": "c48b1cdeda904cae",
+      "title": "名鉄協商へのランサムウェア攻撃、中電不動産の顧客情報 約4,000件が漏えいした可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-17T23:05:05+00:00",
+      "impact_level": "High",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要名鉄協商へのランサムウェア攻撃に起因して、中電不動産が保有する顧客情報約4,000件が漏えいした可能性があると報じられている。攻撃の起点や侵入経路、暗号化の有無、実際の流出範囲は未確認で、現時点では「漏えいの可能性」を含む段階に留まる。ランサムウェア事案は、暗号化による業務停止だけでなく、窃取データの公開や脅迫へ進むことが多く、情報漏えいが後から確定す…",
+      "article_path": "articles/c48b1cdeda904cae.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/18/55948.html"
+    },
+    {
+      "entry_id": "5b9140386eae8ff6",
+      "title": "ユーザー認証機能の設計・実装に脆弱性 ～「デュエル・マスターズ サポートアプリ」で個人情報を閲覧される可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-17T23:05:02+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要「デュエル・マスターズ サポートアプリ」のユーザー認証機能に設計・実装上の脆弱性があり、個人情報を閲覧される可能性があると報じられている。想定される悪用は、認証の境界を崩して他人の情報に到達する形で、典型的にはIDの推測、セッションや権限確認の不備、APIのアクセス制御不足が足場になる。影響は単発の画面閲覧で終わらず、取得可能な項目次第ではアカウント情…",
+      "article_path": "articles/5b9140386eae8ff6.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/18/55947.html"
+    },
+    {
+      "entry_id": "8bd9c3d2fec8c570",
+      "title": "愛媛県庁がSASE全面採用で「β’モデル」へ移行 ～ ネットワンとSCSKセキュリティが受注",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-17T23:00:14+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要愛媛県庁が、SASEを全面採用する形でネットワーク更改を進め、いわゆるβ’モデルへ移行したという記事である。これは県庁内の通信経路やアクセス制御を、従来の境界防御中心からクラウド連携型へ寄せる取り組みとして読める。悪用対象の脆弱性を直接報じる内容ではないため、直ちに攻撃情報として扱う性格は薄い。一方で、認証、端末状態、通信可視化、例外設定の扱い次第では…",
+      "article_path": "articles/8bd9c3d2fec8c570.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/18/55946.html"
+    },
+    {
+      "entry_id": "bf881a4f3c854839",
+      "title": "世界40ヶ国・4,000名が参加するサイバー防衛演習「Locked Shields 2026」にGMOイエラエが参戦",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-17T23:00:11+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要世界規模のサイバー防衛演習「Locked Shields 2026」にが参加するというニュースで、脆弱性の公表や攻撃の発生を直接伝える内容ではない。演習は、複数組織が連携して侵害対応、復旧、意思決定を限られた時間で回す訓練であり、実運用では平時の手順書だけでは埋まらない穴を見つける機会になる。攻撃者の視点そのものを模擬するため、被害は単一点にとどまらず…",
+      "article_path": "articles/bf881a4f3c854839.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/18/55945.html"
+    },
+    {
+      "entry_id": "6754fbb6c1acb51f",
+      "title": "VPN依存からの脱却 ～ HENNGE One が新製品「Mesh Network」含む新プラン発表",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-17T23:00:04+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要HENNGE One が、VPN依存からの脱却を掲げる新プランと、新製品 「Mesh Network」 を発表した。記事の主眼は脆弱性や侵害事案ではなく、遠隔接続の前提を見直し、ネットワーク境界型の運用から より細かな接続制御 へ移行する流れにある。攻撃者の視点では、VPNのような広い到達点を狙うより、認証後の端末・利用者・権限ごとの接続面を突く構成へ…",
+      "article_path": "articles/6754fbb6c1acb51f.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/18/55944.html"
+    }
+  ]
+}
