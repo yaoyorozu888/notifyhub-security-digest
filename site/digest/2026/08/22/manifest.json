@@ -1,0 +1,357 @@
+{
+  "date": "2026-08-22",
+  "window": {
+    "from": "2026-08-21T06:00:00+09:00",
+    "to": "2026-08-22T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 22
+  },
+  "generated_at_jst": "2026-08-22T06:14:06.652698+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "Ramp、AIモデルルーターRouterを公開",
+      "source_name": "TechCrunch",
+      "published_at": "2026-08-20T16:46:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要RampがAIモデルルーターRouterを公開した。企業が複数の大規模言語モデルをAPI経由で切り替えて利用可能になる。過去3年間自社で運用した経験を基に開発された。2026年末まで無料で利用でき、26ドルのクレジット提供もある。Stripeの類似動きと並び、AI推論アクセスのインフラ整備が進む。開発者や企業はモデル選択の柔軟性を高め、コスト最適化や性…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://techcrunch.com/2026/08/20/ramp-launches-its-own-ai-model-router-called-router/",
+      "selection_reason": "StripeのOpenRouter買収報道に続き、Rampが自社AIルーターを公開した具体的な製品発表で、AI推論アクセスの実務的変化を示す新規性が高い",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "Ramp launches its own AI model router, called Router",
+          "url": "https://techcrunch.com/2026/08/20/ramp-launches-its-own-ai-model-router-called-router/",
+          "source_type": "news"
+        },
+        {
+          "title": "Meet The Newest Under 30 AI Billionaire",
+          "url": "https://www.forbes.com/sites/alexyork/2026/08/21/meet-the-newest-under-30-ai-billionaire/",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "CISA、TrueConf Serverの2脆弱性をKEVカタログに追加",
+      "source_name": "CISA",
+      "published_at": "2026-08-20T17:02:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CISAがTrueConf Server関連の2脆弱性をKEVカタログに追加した。CVE-2026-72529は認証欠如、CVE-2026-72530はコードインジェクションである。すでに実環境での悪用が確認されている。TrueConf利用組織は早急なパッチ適用や緩和策を検討する必要がある。ビデオ会議ツールの脆弱性はリモート攻撃のリスクを高める。KEV…",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://www.cisa.gov/news-events/alerts/2026/08/20/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+      "selection_reason": "公式機関が積極的悪用を確認した具体的な脆弱性追加で、即時対応が必要なセキュリティ実務影響が明確",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+          "url": "https://www.cisa.gov/news-events/alerts/2026/08/20/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+          "source_type": "official"
+        },
+        {
+          "title": "Newest CVEs",
+          "url": "https://www.tenable.com/cve/newest",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "オープンソースがテック企業のGTM優位性に",
+      "source_name": "Forbes",
+      "published_at": "2026-08-20T11:15:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Other",
+      "summary_preview": "概要大手テック企業がオープンソースを積極活用し、開発者コミュニティを通じた市場開拓を進めている。メンテナンスをコミュニティに委ねることで自社リソースをコア機能に集中できる。AI時代でも基盤技術としてオープンソースの役割が拡大中だ。企業はコミュニティ参加により信頼性と採用率を高め、商用製品との連携を強化する。オープンソース戦略は単なるコスト削減ではなく、競争…",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://www.forbes.com/councils/forbescommunicationscouncil/2026/08/20/why-open-source-could-be-techs-biggest-go-to-market-advantage/",
+      "selection_reason": "AI文脈を超えたオープンソースのビジネス戦略としての位置づけを具体的に論じた記事で、ITトレンドの多様性を確保",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "Why Open Source Could Be Tech's Biggest Go-To-Market Advantage",
+          "url": "https://www.forbes.com/councils/forbescommunicationscouncil/2026/08/20/why-open-source-could-be-techs-biggest-go-to-market-advantage/",
+          "source_type": "news"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "03b35523115071a8",
+      "title": "CVE-2026-73570 Zimbra Collaboration Suite (ZCS) OS Command Injection Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-08-21T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CVE-2026-73570 は、Zimbra Collaboration Suite (ZCS) に存在する OSコマンドインジェクション の脆弱性で、サーバー上で任意コマンドを実行されるおそれがある。入力値の処理不備を突かれる型であり、認証前後のどちらで成立するか、管理画面やAPI経由かは現時点の情報だけでは確定できない。成功するとメール基盤の改ざ…",
+      "article_path": "articles/03b35523115071a8.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "5b14868e47ea31e6",
+      "title": "14 Trojanized npm Packages Drop RedC2 4.0 Linux Backdoor With AI-Assisted C2",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-21T18:53:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要npm に公開された14件のトロイ化パッケージが、見かけ上はカレンダー管理や習慣管理の機能を提供しながら、実際には RedC2 4.0 と呼ばれる Linux 用バックドアを静かに展開していた。モジュール読み込み時に同梱バイナリを実行するため、依存関係として組み込まれた段階で侵入が成立しやすく、開発端末やビルド環境が起点になる可能性がある。攻撃の狙いは…",
+      "article_path": "articles/5b14868e47ea31e6.html",
+      "original_url": "https://thehackernews.com/2026/08/14-trojanized-npm-packages-drop-redc2.html"
+    },
+    {
+      "entry_id": "9a53d1c645fbd0af",
+      "title": "Microsoft Defender's Own Driver Can Be Weaponized to Delete Security Software at Boot",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-21T15:52:10+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要Check Point Researchが、Microsoft Defender に含まれる BTR.sys を悪用して、起動前後の段階でセキュリティ製品のファイルやレジストリを削除できる手法を公表した。外部から脆弱なドライバを持ち込むのではなく、正規署名済みの既存ドライバを使う点が厄介で、検知は「未知のドライバ検出」だけでは足りない。対象は Wind…",
+      "article_path": "articles/9a53d1c645fbd0af.html",
+      "original_url": "https://thehackernews.com/2026/08/microsoft-defenders-own-driver-can-be.html"
+    },
+    {
+      "entry_id": "144dfc7b6213812e",
+      "title": "Android Car Malware Spreads Through Built-In Updaters for Ad Fraud, Proxy Botnet",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-21T15:41:44+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要Androidベースの車載ヘッドユニット向けファームウェアに、DoFun系の内蔵更新機構を経由して広がる新種マルウェアが確認された。目的は感染端末を踏み台にした広告不正と、外部通信を中継するプロキシボットネットの構築にある。単発の迷惑広告にとどまらず、車載機が継続的な通信中継点として使われると、ネットワーク側の監視をすり抜けて悪用が長期化しやすい。現時…",
+      "article_path": "articles/144dfc7b6213812e.html",
+      "original_url": "https://thehackernews.com/2026/08/android-car-malware-spreads-through.html"
+    },
+    {
+      "entry_id": "d70896ae36911316",
+      "title": "Wazuh and AI For Enhanced SOC Workflows",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-21T11:21:39+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要この記事は、Wazuh と AI を組み合わせて SOC の運用効率を高めるという話題を扱う。内容の中心は、アラートの整理や相関分析、優先度付け、定型対応の自動化を通じて、分析官の負荷を下げる点にある。攻撃そのものを直接伝える記事ではなく、検知・トリアージ・対応フローの改善に関する運用記事として読むのが適切となる。具体的な検知精度、誤検知削減率、対応時…",
+      "article_path": "articles/d70896ae36911316.html",
+      "original_url": "https://thehackernews.com/2026/08/wazuh-and-ai-for-enhanced-soc-workflows.html"
+    },
+    {
+      "entry_id": "69efb7b5f9d89dfd",
+      "title": "Cisco Patches Nine Crosswork and Secure Workload Flaws, Five Scoring CVSS 10.0",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-21T10:03:11+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CiscoがCrosswork系プラットフォームとSecure Workload Softwareに対する9件の脆弱性修正を公表した。うち5件はCVSS 10.0とされ、製品の内部レビューの過程で見つかった修正群として扱われている。Crosswork Data Gateway、Crosswork Network Controller、Crosswork…",
+      "article_path": "articles/69efb7b5f9d89dfd.html",
+      "original_url": "https://thehackernews.com/2026/08/cisco-patches-nine-crosswork-and-secure.html"
+    },
+    {
+      "entry_id": "644f66e24eb54697",
+      "title": "GitLab CVE-2026-19478 Comes Under Active Exploitation Within Days of Disclosure",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-21T07:04:25+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要GitLab の新規脆弱性 CVE-2026-19478 が公開から数日で実際の悪用に入ったと報じられている。報告内容では、認証不要のコード注入により、特定条件下で公開 GitLab プロジェクトの改変や削除、データの書き換えが可能になる。影響は単一リポジトリの破壊にとどまらず、ソース改ざんや CI/CD の汚染、配布物への混入へ広がるおそれがある。公…",
+      "article_path": "articles/644f66e24eb54697.html",
+      "original_url": "https://thehackernews.com/2026/08/gitlab-cve-2026-19478-comes-under.html"
+    },
+    {
+      "entry_id": "26dd0bea40a05aa0",
+      "title": "Microsoft Patches Severe Entra ID Flaw (CVSS 10.0) Allowing Remote Code Execution",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-21T06:06:11+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Microsoft が Entra ID に関する重大な脆弱性を修正したという報道で、当初は CVSS 10.0 とされ、リモートコード実行につながる可能性が示された。記事本文では、Microsoft の文面にあった 「悪用済み」表示が誤りであり、後に未悪用へ訂正された点が重要になる。攻撃成立の前提や影響範囲の詳細は未確認だが、認証基盤に近い領域の不備…",
+      "article_path": "articles/26dd0bea40a05aa0.html",
+      "original_url": "https://thehackernews.com/2026/08/microsoft-entra-id-flaw-cvss-100.html"
+    },
+    {
+      "entry_id": "39d92a532dafe0d8",
+      "title": "Who Got Missed in the MFA Rollout&#x3f; More Powershell &#x2b; Graph &#x2b; Entra scripting&#x21;, (Fri, Aug 21st)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-08-21T02:47:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要この記事は、MFA導入が進んだ後に未適用のアカウントを洗い出すための自動化を扱う。対象は、PowerShell、Microsoft Graph、Entra を組み合わせて、管理者が残存対象を高速に一覧化する運用上の工夫にある。攻撃そのものの解説ではないが、認証強化の抜け漏れを早く見つけられない組織では、残ったアカウントが侵入起点になりやすい。想定される…",
+      "article_path": "articles/39d92a532dafe0d8.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33272"
+    },
+    {
+      "entry_id": "9d08872a656e79f0",
+      "title": "ISC Stormcast For Friday, August 21st, 2026 https://isc.sans.edu/podcastdetail/10062, (Fri, Aug 21st)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-08-21T02:00:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要SANS ISC の Stormcast は、個別の脆弱性通知というより、直近の観測や運用上の着眼点を短く整理した配信に近い。今回の入力では本文要約がなく、何の事象を扱った回かは確認できないため、悪用手口や対象製品、被害範囲は特定できない。とはいえ、ISC 系の配信は実際の攻撃観測や初動で見るべき点に寄ることが多く、CSIRT では自組織の露出面と照合…",
+      "article_path": "articles/9d08872a656e79f0.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33270"
+    },
+    {
+      "entry_id": "0cf9f683a873b8d9",
+      "title": "Even MOAR Powershell, looking at Entra logins - the good, the bad and the password sprays, (Fri, Aug 21st)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-08-21T01:49:18+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要この投稿は、Entra のログを見直す重要性と、PowerShellを使った確認作業の実践面を扱っている。クラウド移行後にログ監視が疎かになると、通常は気づけるはずの異常なサインを取り逃がしやすい。記事の文脈では、パスワードスプレーのような低速・低ノイズの認証攻撃をログから拾う視点が中心と読める。影響は単一アカウント侵害にとどまらず、条件がそろえば権限…",
+      "article_path": "articles/0cf9f683a873b8d9.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33268"
+    },
+    {
+      "entry_id": "a436c1b819babd9e",
+      "title": "VU#756733: Calix GS7 XGS GS5239XG residential router contains missing authentication vulnerability",
+      "source_name": "CERT/CC",
+      "category": "reporting",
+      "published_at": "2026-08-21T14:44:16+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Calix GS7 XGS GS5239XG の家庭向けルータに、認証欠如の脆弱性が見つかった。対象はファームウェア EXOS/6.6.47 で、公開 WAN 側に露出した UPnP の WANIPConnection サービスへ、外部から認証なしで SOAP 要求を送れる状態になっている。攻撃者は NAT のポート転送設定を追加・削除・列挙でき、外部…",
+      "article_path": "articles/a436c1b819babd9e.html",
+      "original_url": "https://kb.cert.org/vuls/id/756733"
+    },
+    {
+      "entry_id": "bfdd3cbbfa932c2b",
+      "title": "CREST 安全性と有用性の保証あるヘルスケア匿名コホート基盤公開ワークショップ",
+      "source_name": "NICT NOTICE",
+      "category": "reporting",
+      "published_at": "2026-08-21T05:00:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要本件は、ヘルスケア匿名コホート基盤の公開ワークショップ案内であり、脆弱性や侵害事象そのものを扱う情報ではない。医療データの匿名化・集約基盤をどう設計すれば、研究利用の有用性と個人識別リスク低減の安全性を両立できるかが主題と読める。攻撃者による直接悪用の話ではないため、通常のCSIRT優先度は高くなりにくい。もっとも、医療・研究データの基盤設計は、再識別…",
+      "article_path": "articles/bfdd3cbbfa932c2b.html",
+      "original_url": "https://www.kikn.fms.meiji.ac.jp/Crest-AHC2022/WS2026/"
+    },
+    {
+      "entry_id": "b14981eafdf80ffa",
+      "title": "サプライチェーン対策評価制度「SCS」令和8年度末に運用開始へ ～ 経産省、★3・★4 取得を後押しする新サービス整備",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-20T23:15:03+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要経産省が、サプライチェーン対策評価制度「SCS」を令和8年度末に運用開始する方向で、新たなサービス整備を進めると報じられた。評価の取得を通じて、取引先や委託先に求めるセキュリティ水準を見える化し、★3・★4の取得を後押しする狙いがある。直接の脆弱性対応ではないが、調達条件や契約要件に組み込まれると、組織の実務負荷は短期間で増えやすい。攻撃者視点では、評…",
+      "article_path": "articles/b14981eafdf80ffa.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/21/55992.html"
+    },
+    {
+      "entry_id": "2b3e4dbffd5c307a",
+      "title": "エーアイセキュリティラボ、ビール片手に語るWebセキュリティ交流会「納涼ビアセキュ」を 8 / 26 開催",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-20T23:10:02+00:00",
+      "impact_level": "Low",
+      "threat_type": "Other",
+      "summary_preview": "概要この記事は、Webセキュリティをテーマにした交流会「納涼ビアセキュ」の開催告知であり、脆弱性情報や攻撃手口そのものを扱う内容ではない。開催目的は、実務者同士の知見共有や課題意識のすり合わせにあり、CSIRTの直接的な警戒対象には当たらない。もっとも、Webアプリケーションの防御や運用改善に関する議論が行われる可能性は高く、社内の開発・運用・CSIRTの…",
+      "article_path": "articles/2b3e4dbffd5c307a.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/21/55991.html"
+    },
+    {
+      "entry_id": "6a408e966b4e8bf3",
+      "title": "価格転嫁・賃上げ支援事業の公式サイトに不正アクセス",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-20T23:05:16+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要価格転嫁・賃上げ支援事業の公式サイトに不正アクセスが発生した。記事本文からは、改ざんの有無、情報流出の有無、侵入経路、侵害された範囲は確認できず、現時点では被害像が固まっていない。とはいえ、行政・支援事業の公開サイトは、問い合わせ導線や関連ページを通じて利用者を別サイトへ誘導しやすく、フィッシングや偽通知への転用余地がある。公開サイトの侵害は、単一ペー…",
+      "article_path": "articles/6a408e966b4e8bf3.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/21/55990.html"
+    },
+    {
+      "entry_id": "c6877c808ec853a0",
+      "title": "EPARKリラク&エステの予約管理・顧客管理プラットフォーム「PeakManager」に不正アクセス、個人情報が漏えいした可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-20T23:05:13+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要EPARKリラク&amp;エステ向けの予約管理・顧客管理基盤「PeakManager」に対し、不正アクセスが発生し、個人情報が漏えいした可能性があると報じられている。現時点で確認できるのは、漏えいの可能性が生じたという点までで、侵入経路、実際の漏えい件数、窃取された情報の範囲は未確認となる。予約管理や顧客管理の基盤は、単なる1システムの事故に見えても、…",
+      "article_path": "articles/c6877c808ec853a0.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/21/55989.html"
+    },
+    {
+      "entry_id": "a47bcbd60f379144",
+      "title": "青山財産ネットワークス グループ会社にランサムウェア攻撃、日本資産総研と日東不動産以外での影響は確認されず",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-20T23:05:10+00:00",
+      "impact_level": "High",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要青山財産ネットワークスのグループ会社でランサムウェア攻撃が確認され、現時点で公表されている影響は日本資産総研と日東不動産に限られる。記事上は、他のグループ会社や本体への波及は確認されていないが、初動時点の見え方にとどまる可能性がある。侵入経路、持ち出しの有無、暗号化の範囲、業務停止の有無は未確認であり、被害の実態は今後変わる余地がある。グループ会社間で…",
+      "article_path": "articles/a47bcbd60f379144.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/21/55988.html"
+    },
+    {
+      "entry_id": "440db88c17c4f05e",
+      "title": "藤倉コンポジットのメールアカウントに不正アクセス、すべての受信メールを社外の不明なメールアドレスに転送",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-20T23:05:08+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要藤倉コンポジットのメールアカウントが不正アクセスを受け、受信メールが社外の不明な転送先へ回される状態になった。外部から見れば単なる転送設定の改変でも、実際には取引先とのやり取り、認証情報の再送、請求書などの機微情報が攻撃者側に集まる導線になりやすい。攻撃者は受信箱を読むだけでなく、返信の差し替えや追加のなりすましに進むことがあり、業務連絡全体の信頼を崩…",
+      "article_path": "articles/440db88c17c4f05e.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/21/55987.html"
+    },
+    {
+      "entry_id": "40561ac9223132cc",
+      "title": "国立国際医療センターで心機能の検査機器付属のハードディスク紛失",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-20T23:05:05+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Other",
+      "summary_preview": "概要国立国際医療センターで、心機能の検査機器に付属していたハードディスクの紛失が報じられた。記事題目からは、攻撃による侵害というより、媒体の物理的な所在不明が主題と読める。もし機器内に患者情報や検査データ、設定情報が入っていた場合、情報漏えいと機器運用への影響が論点になる。現時点では、保存内容、暗号化の有無、持ち出し経路、外部流出の確認状況が未確認であり、…",
+      "article_path": "articles/40561ac9223132cc.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/21/55986.html"
+    },
+    {
+      "entry_id": "ffd5edf4ff360a54",
+      "title": "セントラルコンサルタント コーポレートサイトに不正アクセス、お問い合わせフォームの情報が漏えいした可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-20T23:05:02+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要セントラルコンサルタントのコーポレートサイトが不正アクセスを受け、お問い合わせフォーム経由で送信された情報が漏えいした可能性があると公表された。現時点では、漏えいしたと断定できる範囲や件数、取得された情報の具体的な項目は確認できていない。攻撃の入口がWebフォームであれば、公開サイトの改ざんや脆弱性悪用、管理画面の侵害など複数の経路があり、実際の侵害点…",
+      "article_path": "articles/ffd5edf4ff360a54.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/21/55985.html"
+    },
+    {
+      "entry_id": "72a30c5d876402a6",
+      "title": "Cloudbase が DEF CON Cloud Village CTF 挑戦二年目で準優勝 日本チーム首位",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-20T23:00:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要この記事は、DEF CON Cloud Village CTFにおけるCloudbaseの参加結果を伝えるもので、二年目の挑戦で準優勝、日本チームとしては首位となった。内容は大会報告であり、脆弱性の公表や新たな攻撃手法の開示を直接扱うものではない。したがって、CSIRTの即応対象というより、クラウド防御人材の育成や演習設計の参考情報として見る位置づけに…",
+      "article_path": "articles/72a30c5d876402a6.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/21/55984.html"
+    }
+  ]
+}
