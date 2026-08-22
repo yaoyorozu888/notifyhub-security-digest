@@ -1,0 +1,122 @@
+{
+  "date": "2026-08-23",
+  "window": {
+    "from": "2026-08-22T06:00:00+09:00",
+    "to": "2026-08-23T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 2
+  },
+  "generated_at_jst": "2026-08-23T06:10:45.749868+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "州・地方自治体ITの近代化とAI活用の統合",
+      "source_name": "Government Technology",
+      "published_at": "2026-08-21T23:59:59+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要州・地方自治体のITリーダーはレガシーシステムの近代化を進めているが、AIの活用がこれを加速させている。AI導入は単なる追加ではなく、システム全体の再設計を促す動きだ。クラウドやデータ基盤との統合が進み、運用効率が向上する事例が増えている。開発者ツールやSaaSの進化により、自治体レベルの実装が現実的になった。この変化は予算配分や人材育成に直結し、意思…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://www.govtech.com/computing/it-teams-always-need-to-modernize-ai-is-changing-the-game",
+      "selection_reason": "州・地方自治体のレガシーシステム近代化とAI導入の具体的な実務影響を扱い、Gartner予測のような汎用トレンドではなく現場レベルの動きとして新規性が高いため選定",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "IT Teams Always Need to Modernize. AI Is Changing the Game",
+          "url": "https://www.govtech.com/computing/it-teams-always-need-to-modernize-ai-is-changing-the-game",
+          "source_type": "web"
+        },
+        {
+          "title": "govtechnews X post",
+          "url": "https://x.com/govtechnews/status/2090952085499940921",
+          "source_type": "x"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "AI週次アップデート モデルルーティングとエージェント進化",
+      "source_name": "YouTube Lev Selector",
+      "published_at": "2026-08-21T18:56:53+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要8月21日のAI週次更新では、Claudeがコーディングリーダーボードで優位を示した。コスト効率指数の改善とモデルルーティングのトレンドが注目される。StripeのOpenRouter買収により、複数のモデルを動的に選択する仕組みが実用化に向かう。エージェント型AIの進展も続き、業務自動化の可能性が拡大している。企業はこれらの変化を踏まえ、AIインフラ…",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://www.youtube.com/watch?v=Kd27bA-yeqk",
+      "selection_reason": "8月21日の具体的なAI更新としてClaudeのコーディング優位性やStripeによるOpenRouter買収などの実務的動きを扱い、汎用予測ではなく直近の製品・企業動向として選定",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "Exciting AI Updates Weekly - August 21, 2026",
+          "url": "https://www.youtube.com/watch?v=Kd27bA-yeqk",
+          "source_type": "web"
+        },
+        {
+          "title": "AI News Aug 21",
+          "url": "https://www.buildfastwithai.com/blogs/ai-news-today-august-21-2026",
+          "source_type": "web"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "npmパッケージへのトロイの木馬混入とAI支援C2",
+      "source_name": "The Hacker News",
+      "published_at": "2026-08-21T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要14個のnpmパッケージにトロイの木馬が混入し、RedC2 4.0バックドアがLinux環境に展開された。AI支援のコマンド&amp;コントロール機能が特徴で、検知を回避しやすくなっている。オープンソースエコシステムのサプライチェーンリスクが顕在化した事例だ。開発者は依存パッケージの検証を強化し、AI検知ツールの導入を検討する必要がある。",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://thehackernews.com/2026/08/14-trojanized-npm-packages-drop-redc2.html",
+      "selection_reason": "8月21日発表の具体的なnpmパッケージ侵害事例を扱い、AI活用の脅威というセキュリティ実務に直結する内容として選定",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "14 Trojanized npm Packages Drop RedC2 4.0 Linux Backdoor With AI-Assisted C2",
+          "url": "https://thehackernews.com/2026/08/14-trojanized-npm-packages-drop-redc2.html",
+          "source_type": "web"
+        },
+        {
+          "title": "SecurityWeek latest news",
+          "url": "https://www.securityweek.com/",
+          "source_type": "web"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "71e7be18db5ab7c6",
+      "title": "TikTok Agrees to $400 Million Settlement in U.S. Child Privacy Lawsuit",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-22T14:32:41+00:00",
+      "impact_level": "Low",
+      "threat_type": "Other",
+      "summary_preview": "概要TikTokをめぐる米国の児童プライバシー訴訟で、ByteDance系の運営会社が4億ドルの和解に合意した。記事の主眼は脆弱性や侵入ではなく、児童向けデータの取り扱いに関する法令違反リスクと、その清算に伴う金銭負担にある。想定される悪用は、技術的侵害というより、年齢確認や同意管理の不備を突いた情報収集・保存・共有の逸脱に近い。直接の影響は利用者と事業者…",
+      "article_path": "articles/71e7be18db5ab7c6.html",
+      "original_url": "https://thehackernews.com/2026/08/tiktok-agrees-to-400-million-settlement.html"
+    },
+    {
+      "entry_id": "4c35d43b7fa82314",
+      "title": "Connecting the Dots: Securing the Overlooked Corners of the Software Development Lifecycle (SDLC) Supply Chain",
+      "source_name": "Unit 42",
+      "category": "reporting",
+      "published_at": "2026-08-21T23:00:21+00:00",
+      "impact_level": "High",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要この記事は、攻撃者がアプリ本体の脆弱性ではなく、CI/CDパイプラインや開発者向けツールを狙う流れを整理している。狙いは、ビルドや配布の途中で成果物を差し替え、正規の更新に見せかけて侵入経路を広げる点にある。影響は単一アプリに閉じず、署名済み成果物、リリース用資格情報、開発基盤そのものへ連鎖しやすい。特に、権限分離が弱い組織では、開発環境の侵害が本番配…",
+      "article_path": "articles/4c35d43b7fa82314.html",
+      "original_url": "https://unit42.paloaltonetworks.com/sdlc-supply-chain/"
+    }
+  ]
+}
