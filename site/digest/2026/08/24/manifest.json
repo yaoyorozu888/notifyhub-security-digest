@@ -1,0 +1,112 @@
+{
+  "date": "2026-08-24",
+  "window": {
+    "from": "2026-08-23T06:00:00+09:00",
+    "to": "2026-08-24T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 0
+  },
+  "generated_at_jst": "2026-08-24T06:10:33.100220+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "Cato Networks、AI支援攻撃対策のAgentic Threat Preventionを発表",
+      "source_name": "Cato Networks",
+      "published_at": "2026-08-03T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要Cato NetworksがAIを活用した攻撃者「agentic attacker」に対応するAgentic Threat Preventionを発表した。攻撃経路を予測し、環境に合わせた防御を自動生成・適用する仕組みである。従来の検知・対応モデルではAI攻撃の速度に追いつかないため、ネットワークとセキュリティの統合テレメトリを基にエージェントが継続的…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://www.catonetworks.com/news/cato-launches-agentic-threat-prevention-to-predict-mitigate-ai-assisted-attacks/",
+      "selection_reason": "AIを活用した攻撃の自動化が進む中、具体的な防御製品発表として実務影響が大きく、ニュースと研究の裏付けがあるため選定。他の一般論や古いインシデントより新規性が高い。",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "Cato Networks公式発表",
+          "url": "https://www.catonetworks.com/news/cato-launches-agentic-threat-prevention-to-predict-mitigate-ai-assisted-attacks/",
+          "source_type": "official"
+        },
+        {
+          "title": "Cato Networksブログ",
+          "url": "https://www.catonetworks.com/blog/the-agentic-attacker-one-objective-one-prompt-forty-minutes-domain-admin-game-over/",
+          "source_type": "web"
+        },
+        {
+          "title": "SiliconANGLE報道",
+          "url": "https://siliconangle.com/2026/08/03/cato-networks-launches-agentic-threat-prevention-counter-ai-assisted-attacks/",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "Alibaba Qwen 3.8-Max、世界トップクラスのオープンAIモデルに",
+      "source_name": "Qwen",
+      "published_at": "2026-08-03T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Unknown",
+      "summary_preview": "概要AlibabaのQwenチームがQwen 3.8-Maxをリリースした。2.4兆パラメータ規模でコーディングや長時間タスクで高性能を発揮し、初のMaxクラスオープンウェイトモデルとなる。API価格は競争力があり、1Mトークンコンテキストをサポート。中国勢のオープンソース攻勢が米モデルメーカーに影響を与え、AI競争の激化を示す。開発者はコストパフォーマン…",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://qwen.ai/blog?id=qwen3.8",
+      "selection_reason": "オープンウェイトの最先端モデルリリースとしてAI分野の技術進展を直接示し、開発者・企業への影響が大きい。他の一般トレンドより具体的な製品発表。",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "Qwen公式ブログ",
+          "url": "https://qwen.ai/blog?id=qwen3.8",
+          "source_type": "official"
+        },
+        {
+          "title": "The Register報道",
+          "url": "https://www.theregister.com/ai-and-ml/2026/08/03/china-turns-up-the-heat-with-open-model-blitz-as-us-model-makers-panic/5282526",
+          "source_type": "news"
+        },
+        {
+          "title": "X投稿（Qwen利用例）",
+          "url": "https://x.com/jkyamog/status/2091634140315840975",
+          "source_type": "x"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "中国YMTC親会社、AI需要で49億ドル規模上海IPOへ",
+      "source_name": "Reuters",
+      "published_at": "2026-08-21T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Unknown",
+      "summary_preview": "概要中国YMTCの親会社CCSHが上海STAR市場で33億元（約49億ドル）調達のIPO申請を進めた。AIデータセンター向けNAND需要急増で業績回復し、世界3位のNANDメーカーへ成長。メモリチップ不足がAIインフラ拡大のボトルネックとなる中、中国勢の供給力強化がグローバルサプライチェーンに影響する。企業は調達戦略の見直しを検討すべきだ。",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://www.reuters.com/world/asia-pacific/chinese-flash-memory-chipmaker-ymtc-plans-raise-49-billion-shanghai-ipo-2026-08-21/",
+      "selection_reason": "半導体メモリ分野の具体的な企業行動としてIT基盤トレンドを反映。AIデータセンター需要の波及を示す新規事例。",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "Reuters報道",
+          "url": "https://www.reuters.com/world/asia-pacific/chinese-flash-memory-chipmaker-ymtc-plans-raise-49-billion-shanghai-ipo-2026-08-21/",
+          "source_type": "news"
+        },
+        {
+          "title": "Nikkei Asia報道",
+          "url": "https://asia.nikkei.com/business/markets/ipo/ymtc-parent-seeks-4.9bn-shanghai-ipo-on-ai-memory-boom",
+          "source_type": "news"
+        },
+        {
+          "title": "Caixin Global報道",
+          "url": "https://www.caixinglobal.com/2026-08-20/ymtc-moves-closer-to-shanghai-ipo-102476082.html",
+          "source_type": "news"
+        }
+      ]
+    }
+  ],
+  "items": []
+}
