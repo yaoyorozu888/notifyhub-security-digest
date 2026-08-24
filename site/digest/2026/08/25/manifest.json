@@ -1,0 +1,386 @@
+{
+  "date": "2026-08-25",
+  "window": {
+    "from": "2026-08-24T06:00:00+09:00",
+    "to": "2026-08-25T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 24
+  },
+  "generated_at_jst": "2026-08-25T06:17:13.705978+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "AIネイティブ開発プラットフォームの普及加速",
+      "source_name": "nasscom",
+      "published_at": "2026-08-24T10:27:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要AIが企業システム設計の基盤となる動きが加速している。AIネイティブ開発プラットフォームにより、小規模チームでも生成AIを活用した高速なソフトウェア構築が可能になる。クラウド戦略では規制遵守と主権管理を重視したCloud 3.0への移行が進む。エージェント型AIの台頭で自律的な業務処理が現実化し、運用効率が向上する見込みだ。企業はこれらのトレンドを基盤…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://community.nasscom.in/communities/emerging-tech/digital-innovation-and-key-technology-trends-2026",
+      "selection_reason": "2026年8月24日発表のnasscomレポートが、AIを企業アーキテクチャの中心に据える具体的な動きを指摘し、クラウドや自動化との連携を強調。他の汎用予測と異なり、開発者向け実務影響が明確で新規性が高い。",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "Digital Innovation and Key Technology Trends for 2026",
+          "url": "https://community.nasscom.in/communities/emerging-tech/digital-innovation-and-key-technology-trends-2026",
+          "source_type": "web"
+        },
+        {
+          "title": "TMT Predictions 2026",
+          "url": "https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions.html",
+          "source_type": "web"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "OpenAI GPT-5.6がAWS Kiroで利用可能に",
+      "source_name": "Unite.AI",
+      "published_at": "2026-08-24T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要OpenAIのGPT-5.6モデルファミリーがAWSのKiro環境で提供開始された。spec駆動の開発ツール内で直接利用可能になり、AI統合開発が容易になる。エージェントリソース発見のオープン標準をAWSが支援し、AIエージェントの相互運用性が向上する見通しだ。企業はこれによりAIワークフローの迅速な構築を検討できる。",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://www.unite.ai/series/artificial-intelligence/",
+      "selection_reason": "2026年8月24日の具体的な製品統合発表で、AIモデル展開の実務影響が明確。他の資金調達ニュースと異なり、開発者向け即時利用可能性が高い。",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "OpenAI Brings GPT-5.6 Model Family to AWS’s Kiro",
+          "url": "https://www.unite.ai/series/artificial-intelligence/",
+          "source_type": "web"
+        },
+        {
+          "title": "AWS Backs Agentic Resource Discovery as Federation Layer for Agent Registry",
+          "url": "https://www.unite.ai/series/artificial-intelligence/",
+          "source_type": "web"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "NISTがマルチクラウド環境のセキュリティ課題を指摘",
+      "source_name": "Infosecurity Magazine",
+      "published_at": "2026-08-24T16:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Advisory",
+      "summary_preview": "概要NISTがマルチクラウド環境で生じる23の特有セキュリティ課題を明らかにした。データ可視性やアクセス制御の複雑化が主な問題として挙げられる。量子耐性ハードウェアの検証ガイダンスも同時に公開され、長期的な暗号対策が求められる。企業はこれらを踏まえクラウド戦略の見直しを検討すべきだ。",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://www.infosecurity-magazine.com/news/",
+      "selection_reason": "2026年8月24日発表のNISTガイダンスが、マルチクラウド特有の23の新課題を具体的に挙げ、実務対応を促す。他のインシデント報道と異なり、予防的な制度・技術指針として影響度が高い。",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "NIST Warns of Unique Security Risks in Multi-Cloud Environments",
+          "url": "https://www.infosecurity-magazine.com/news/",
+          "source_type": "web"
+        },
+        {
+          "title": "New Guidance Helps Businesses Verify Quantum-Safe Hardware Claims",
+          "url": "https://www.infosecurity-magazine.com/news/",
+          "source_type": "web"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "69e8f073ea8ff75f",
+      "title": "CVE-2026-21962 Oracle HTTP Server and Oracle Weblogic Server Proxy Plug-in Improper Access Control Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-08-24T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Oracle HTTP Server と Oracle Weblogic Server Proxy Plug-in における CVE-2026-21962 は、不適切なアクセス制御により本来許可されない処理へ到達される懸念がある脆弱性として扱う必要がある。CISA KEV に掲載されているため、単なる理論上の欠陥ではなく、実際の悪用可能性が高い前提で見…",
+      "article_path": "articles/69e8f073ea8ff75f.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "71f0f5630dd26ca6",
+      "title": "⚡ Weekly Recap: AI-Powered PLC Attacks, GitLab Attacks, Stripe Key Leaks and More",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-24T14:32:10+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要本記事は、AI支援のPLC攻撃、GitLabへの攻撃、Stripeの鍵漏えいなど、今週の複数の攻撃・漏えい話題をまとめた週次要約である。個別事案の一次情報ではなく、二次情報の集約として読むのが適切になる。共通する焦点は、正規ツールや認証情報を起点に侵入し、管理面や開発面から被害を広げる流れにある。AIの利用で攻撃の準備コストが下がる一方、実際にどこまで…",
+      "article_path": "articles/71f0f5630dd26ca6.html",
+      "original_url": "https://thehackernews.com/2026/08/weekly-recap-ai-powered-plc-attacks.html"
+    },
+    {
+      "entry_id": "a6e67e4d220b608c",
+      "title": "WordlistLoader Delivers Amatera via ClickFix, SynkLoader Phishes Windows Passwords",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-24T12:35:36+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要本件は、WordlistLoader と SynkLoader という新しいローダ系マルウェアが確認されたという報告で、次段階のペイロード配信やアクセス販売に使われる可能性が高い。WordlistLoader は ClearFake や ClickFix を介して Amatera Stealer を配布しており、見せかけの確認操作で利用者自身に実行させ…",
+      "article_path": "articles/a6e67e4d220b608c.html",
+      "original_url": "https://thehackernews.com/2026/08/wordlistloader-delivers-amatera-via.html"
+    },
+    {
+      "entry_id": "d3841ba406264ed5",
+      "title": "Shipping More AI Code Than You Can Secure? Watch How to Control Remediation Debt",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-24T11:58:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要この記事は、AI支援の開発でコード量が増える一方、依存関係の増加によって脆弱性対応の負債が積み上がる点を扱う。問題はAIが直接攻撃されることより、生成されたコードや提案されたライブラリがレビューし切れない速度で組み込まれることにある。結果として、修正待ちの欠陥が増え、公開アプリや社内システムの攻撃面が広がる。悪用の成否は、実際にどの開発環境でAI支援を…",
+      "article_path": "articles/d3841ba406264ed5.html",
+      "original_url": "https://thehackernews.com/2026/08/shipping-more-ai-code-than-you-can.html"
+    },
+    {
+      "entry_id": "b381e240db349315",
+      "title": "Critical Keycloak Password Reset Flaw Could Let Unauthenticated Attackers Take Over Any Account",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-24T11:56:34+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Keycloak に認証不要のアカウント乗っ取りにつながる重大な欠陥が見つかり、Red Hat とプロジェクト側が修正版を公開した。攻撃者はパスワード再設定の流れを悪用し、対象ユーザーに対して意図しない再設定を成立させることで、任意のアカウント支配へ進める可能性がある。影響は単一利用者にとどまらず、Keycloak が前段の認証基盤として複数システムに…",
+      "article_path": "articles/b381e240db349315.html",
+      "original_url": "https://thehackernews.com/2026/08/critical-keycloak-password-reset-flaw.html"
+    },
+    {
+      "entry_id": "9ad5065c5eef5712",
+      "title": "Operation QUICSILVER Targets Myanmar Government and IT with QUICAgent Backdoor",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-24T11:51:36+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要Myanmarの政府機関と情報技術部門を狙うサイバー諜報活動が観測され、卒業式の招待状を装った誘導からGo製バックドアQUICAgentを展開する流れが報告された。攻撃はOperation QUICSILVERと呼ばれ、中国系の脅威アクターによる活動と評価されている。入口は主にフィッシング型の誘導とみられ、受信者の操作次第で初期侵入が成立する。侵入後は…",
+      "article_path": "articles/9ad5065c5eef5712.html",
+      "original_url": "https://thehackernews.com/2026/08/operation-quicsilver-targets-myanmar.html"
+    },
+    {
+      "entry_id": "2eac1e69a8213acb",
+      "title": "The Outsized Shadow: Why 5% of AI Users Are Your Biggest Security Risk",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-24T11:30:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Misconfiguration",
+      "summary_preview": "概要この記事は、企業内でAIを使う従業員全体を広く監視するよりも、少数のヘビーユーザーが業務の中核にAIを組み込み、未検証の外部ツールや自動化を持ち込む点の方が大きなリスクになり得ると指摘している。問題は単発の文章作成ではなく、承認されていないAI処理が重要業務のデータ経路に入り込むことにある。そこでは、入力データの漏えい、誤処理、権限の過大付与、後追いで…",
+      "article_path": "articles/2eac1e69a8213acb.html",
+      "original_url": "https://thehackernews.com/2026/08/the-outsized-shadow-why-5-of-ai-users.html"
+    },
+    {
+      "entry_id": "4bbbba24cd7e1fab",
+      "title": "UAT-10147 Uses AI to Scale Server Attacks, Deploys SPECTRE With EDR Bypass and Linux Rootkit",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-24T08:08:31+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要中国語話者の脅威グループUAT-10147が、教育、メディア、技術、ゲーム分野のWindows・Linuxサーバーを広く狙い、AIを使って攻撃を拡大していると報告された。主な対象はブラジル、ボリビア、中国、カナダ、ベトナムに集中しているが、記事断片からは初期侵入経路の全貌はまだ見えていない。侵入後はSPECTREを展開し、EDR回避とLinuxルートキ…",
+      "article_path": "articles/4bbbba24cd7e1fab.html",
+      "original_url": "https://thehackernews.com/2026/08/uat-10147-uses-ai-to-scale-server.html"
+    },
+    {
+      "entry_id": "085e65357bb4ec1b",
+      "title": "DOUBLECUP's PNG Payload, (Mon, Aug 24th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-08-24T07:23:16+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Malware",
+      "summary_preview": "概要この記事は、DOUBLECUP と呼ばれる新しいマルウェアの解析を扱うが、見出しに反して画像内に情報を隠す本格的な ステガノグラフィ ではない点が重要になる。実態は PNG を使ってデータを運ぶ仕組みで、見た目の「画像ファイル」に油断すると、受信・保存・展開の各段階で見逃しやすい。悪用される場合は、添付ファイルやダウンロードした画像を入口にしてペイロー…",
+      "article_path": "articles/085e65357bb4ec1b.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33274"
+    },
+    {
+      "entry_id": "fa425ea6b0a4416f",
+      "title": "ISC Stormcast For Monday, August 24th, 2026 https://isc.sans.edu/podcastdetail/10064, (Mon, Aug 24th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-08-24T02:00:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要SANS ISC の Stormcast は、直近の攻撃動向や防御上の着眼点を短く整理する定期配信であり、今回の入力はその配信告知に近い。本文中に個別の脆弱性名、CVE、悪用事例、検知指標が含まれていないため、具体的な新規リスクの有無はこの情報だけでは判断しにくい。攻撃者視点では、公開情報の断片をつなげて広く試行できる話題になりやすい一方、今回の内容自…",
+      "article_path": "articles/fa425ea6b0a4416f.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33276"
+    },
+    {
+      "entry_id": "f7e3b4f30b5b944f",
+      "title": "VU#728712: Konami's Metal Gear Online 3 contains a heap-based buffer overflow",
+      "source_name": "CERT/CC",
+      "category": "reporting",
+      "published_at": "2026-08-24T14:57:41+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Konami の Metal Gear Online 3 に、ロビー情報の解析処理を起点とする ヒープベースのバッファオーバーフロー が見つかった。CVE-2026-19874 として整理されており、細工したロビー用データを受け取るだけで、参加したクライアント上で 任意コード実行 に至るおそれがある。攻撃者はロビーを支配する立場を取れば、接続した参加者…",
+      "article_path": "articles/f7e3b4f30b5b944f.html",
+      "original_url": "https://kb.cert.org/vuls/id/728712"
+    },
+    {
+      "entry_id": "199e050008554635",
+      "title": "証券 カード会社の最新被害事例と対策を解説 ～ TwoFive、Webセミナーを 8 / 25・9/15 開催",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-23T23:10:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要本件は、証券会社やカード会社で起きた最新の被害事例と、その対策を扱うWebセミナー告知記事である。新たな脆弱性や侵害そのものを報じる内容ではなく、事例を材料にした注意喚起に近い位置づけになる。攻撃の入口は、認証情報の窃取、フィッシング、Webアプリの不備、委託先経由の侵入などが想定されるが、記事本文からは個別事例の詳細は確認できない。したがって、どの攻…",
+      "article_path": "articles/199e050008554635.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/24/56005.html"
+    },
+    {
+      "entry_id": "2c4d3e0c9de18996",
+      "title": "オンデマンド学習サイト「KYO育tv.」で個人情報が閲覧可能に",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-23T23:05:25+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要オンデマンド学習サイト「KYO育tv.」で、個人情報が閲覧可能な状態になっていた事案が報じられた。公開範囲や原因の詳細は本文からは読み取れないが、学習サービスのように利用者属性や受講履歴を扱う環境では、設定不備や権限管理のずれがそのまま情報流出につながりやすい。攻撃者視点では、認証なしで見える画面や一覧、共有リンク、API応答を起点に情報収集される可能…",
+      "article_path": "articles/2c4d3e0c9de18996.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/24/56004.html"
+    },
+    {
+      "entry_id": "07f79044e902f0d7",
+      "title": "「いじめ問題調査委員会による調査報告書」の個人情報処理に不備、和泊町が削除・再掲載",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-23T23:05:22+00:00",
+      "impact_level": "Low",
+      "threat_type": "Misconfiguration",
+      "summary_preview": "概要和泊町が公表した「いじめ問題調査委員会による調査報告書」で、個人情報の処理に不備が見つかり、いったん削除したうえで再掲載した。記事からは、どの範囲の情報が誤って残っていたか、閲覧可能な期間がどれだけあったか、外部流出に相当する事象だったかは読み取れない。悪用の観点では、公開文書に残った氏名や属性情報を手掛かりに、当事者への特定、二次拡散、嫌がらせにつな…",
+      "article_path": "articles/07f79044e902f0d7.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/24/56003.html"
+    },
+    {
+      "entry_id": "1472db2213b02621",
+      "title": "共同通信社の職員アカウントが第三者に不正利用された可能性、外部から情報提供があり発覚",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-23T23:05:19+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Credential Theft",
+      "summary_preview": "概要共同通信社で職員アカウントの第三者による不正利用の可能性が確認され、外部からの情報提供を契機に発覚した。現時点では、侵入経路、対象アカウントの種類、認証情報の漏えい有無、実際に閲覧・送信・改ざんされた情報の範囲は未確認となる。こうした事案は、単独のアカウント侵害に見えても、社内システムや外部配信基盤への横展開につながる余地がある。特に報道機関では、権限…",
+      "article_path": "articles/1472db2213b02621.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/24/56002.html"
+    },
+    {
+      "entry_id": "9151072c6ee7ea0d",
+      "title": "加賀ソルネット運営の「アカデミコナビ」に不正アクセス、合計165,587名分の個人情報漏えいを確認",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-23T23:05:16+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要加賀ソルネットが運営する「アカデミコナビ」で不正アクセスが発生し、165,587名分の個人情報漏えいが確認された。記事からは、侵入経路や初期侵入の手口、取得された情報の詳細、継続的な潜伏の有無までは読み取れない。想定される悪用は、漏えい情報を使ったなりすまし、二次被害のための標的化、関連組織への再攻撃につながる流れになる。漏えい件数が大きいため、影響は…",
+      "article_path": "articles/9151072c6ee7ea0d.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/24/56001.html"
+    },
+    {
+      "entry_id": "545f6da789789b13",
+      "title": "KDDI の ISP 事業者向けメールシステムに不正アクセス、個人情報保護委員会が行政指導",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-23T23:05:12+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要KDDI の ISP 事業者向けメールシステムに不正アクセスが発生し、個人情報保護委員会が行政指導を行った。本文からは、侵入経路や初期侵入後の操作、情報流出の有無と範囲は十分に確認できないため、現時点では事案の全体像は限定的にしか読めない。メールシステムは問い合わせ対応や契約管理、通知送信の基盤になりやすく、侵害されると個人情報の閲覧だけでなく、なりす…",
+      "article_path": "articles/545f6da789789b13.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/24/56000.html"
+    },
+    {
+      "entry_id": "729d4fb16ff03c87",
+      "title": "学研メディカルサポート管理の Web サイトに WordPress の脆弱性を狙った不正アクセス",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-23T23:05:10+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要学研メディカルサポートが管理するWebサイトで、WordPressの脆弱性を狙った不正アクセスが確認されたという内容である。記事名からは、公開Webの管理画面や周辺機能が狙われた可能性が高く、攻撃者は既知の欠陥を足掛かりに認証回避、権限奪取、改ざんへ進める余地を狙っているとみられる。影響は単一サイトの侵害にとどまらず、同一基盤の他ページ改ざん、情報流出…",
+      "article_path": "articles/729d4fb16ff03c87.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/24/55999.html"
+    },
+    {
+      "entry_id": "52d84d5d49dd2cc7",
+      "title": "手順書に管理者権限を有するアカウント情報を誤記載 ～ 東芝テックの「ShopCraft」で他のユーザーの情報が閲覧可能に",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-23T23:05:07+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Misconfiguration",
+      "summary_preview": "概要東芝テックの店舗向けシステム「ShopCraft」で、手順書に管理者権限を持つアカウント情報が誤って記載されていた件が報じられている。これにより、利用者が本来見えない他ユーザーの情報へアクセスできる状態が生じた可能性がある。悪用の形としては、誤記載された認証情報を起点に他テナントの閲覧や設定変更、権限の広い操作への到達が考えられる。影響は単一アカウント…",
+      "article_path": "articles/52d84d5d49dd2cc7.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/24/55998.html"
+    },
+    {
+      "entry_id": "4ae8c000d60b31a1",
+      "title": "ソディックのサーバへの不正アクセス最終報 ～ ネットワーク機器の脆弱性を悪用、情報流出の痕跡は確認されず",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-23T23:05:05+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要ソディックのサーバ群に対する不正アクセスについて、最終報としてネットワーク機器の脆弱性を起点に侵入された可能性が示されている。攻撃者は境界装置やVPN装置など、外部公開された機器を足掛かりに内部へ入る手口が想定されるため、影響は単一サーバの障害にとどまらず、認証情報の奪取や横展開に広がる余地がある。現時点では情報流出の痕跡は確認されていないが、これは「…",
+      "article_path": "articles/4ae8c000d60b31a1.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/24/55997.html"
+    },
+    {
+      "entry_id": "35cc02bcf0e30d99",
+      "title": "青山財産ネットワークスの日本資産総研へランサムウェア攻撃、1 ％未満のデータ量が外部に送信された可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-23T23:05:02+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要青山財産ネットワークスの関連会社である日本資産総研が、ランサムウェア攻撃を受けたと公表した。現時点では、外部へ送信された可能性があるデータ量は全体の1％未満とされ、情報流出の規模は限定的とみられる一方、侵入経路や初期侵害の手口は未確認のまま残る。攻撃者は暗号化だけでなく、窃取したデータを突きつけて身代金を迫るため、被害は業務停止だけでなく、顧客情報や契…",
+      "article_path": "articles/35cc02bcf0e30d99.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/24/55996.html"
+    },
+    {
+      "entry_id": "fa43e057776b9dcf",
+      "title": "ヤマハ製 VOCALOID6 Editor に複数の脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-23T23:00:12+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要ヤマハ製 VOCALOID6 Editor に複数の脆弱性が公表された。現時点の入力では、脆弱性の詳細、影響範囲、悪用条件、修正有無は示されておらず、まずは一次情報の確認が必要になる。一般に音声制作系ソフトは業務端末に常駐しやすく、任意コード実行や権限昇格が含まれる場合は、制作端末を起点に内部情報へ波及する余地がある。外部公開サービスではないため即座の…",
+      "article_path": "articles/fa43e057776b9dcf.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/24/55995.html"
+    },
+    {
+      "entry_id": "8754611812779e17",
+      "title": "スマートフォンアプリ「日本科学未来館アシストアプリ」に XSS の脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-23T23:00:09+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要スマートフォンアプリ「日本科学未来館アシストアプリ」に XSS の脆弱性があると公表された。入力値の扱いが不適切な場合、攻撃者は細工した文字列を介してアプリ内表示や遷移先に任意のスクリプトを混入させる余地が生じる。被害は利用者の画面上の情報改ざんにとどまらず、認証情報の窃取や意図しない操作誘導へ広がる可能性がある。アプリの配布形態、影響範囲、再現条件、…",
+      "article_path": "articles/8754611812779e17.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/24/55994.html"
+    },
+    {
+      "entry_id": "711318ae00770c02",
+      "title": "Zabbix 7.4 にセッションキーのハードコーディング",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-23T23:00:04+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Zabbix 7.4 のソースコードに、セッションキーのハードコーディングが含まれていたという指摘が出ている。ここで問題になるのは、鍵が固定化されていると、認証やセッションの保護が本来の想定より弱くなり、条件がそろえばセッションの偽装や保護機構の迂回につながる点にある。影響は単一の管理画面操作にとどまらず、監視基盤を足場にした権限の取りこぼしや、運用者…",
+      "article_path": "articles/711318ae00770c02.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/24/55993.html"
+    }
+  ]
+}
