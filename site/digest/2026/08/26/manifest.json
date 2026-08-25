@@ -1,0 +1,458 @@
+{
+  "date": "2026-08-26",
+  "window": {
+    "from": "2026-08-25T06:00:00+09:00",
+    "to": "2026-08-26T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 30
+  },
+  "generated_at_jst": "2026-08-26T06:17:58.633591+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "VercelがSandbox脱出に100万ドル懸賞",
+      "source_name": "Vercel Community",
+      "published_at": "2026-08-24T22:06:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要VercelがSandboxの脱出に成功したハッカーへ100万ドルの懸賞を発表した。SandboxはAI生成コードを安全に実行するためのmicroVM隔離システムで、各ワークロードに専用ゲストカーネルを提供する。この取り組みは未信頼コードの実行リスクを低減し、開発者がAIツールを活用する際のセキュリティを高める狙いがある。Slack連携のVercel …",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://community.vercel.com/t/vercel-weekly-2026-08-24/48152",
+      "selection_reason": "開発者向けプラットフォームのセキュリティ強化策として具体的な新施策を発表し、AI生成コードの安全実行というITトレンドに直結する新規性が高いため選定",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "Vercel Weekly (2026-08-24)",
+          "url": "https://community.vercel.com/t/vercel-weekly-2026-08-24/48152",
+          "source_type": "web"
+        },
+        {
+          "title": "Vercel $1 million hacker challenge",
+          "url": "https://vercel.com/blog/one-million-dollar-hacker-challenge-for-vercel-sandbox",
+          "source_type": "web"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "FDAが生成AI医療機器規制のロードマップ草案を公表",
+      "source_name": "Genetic Literacy Project",
+      "published_at": "2026-08-25T05:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要FDAが生成AIを搭載した医療機器向けの初の政策ロードマップ草案を公表した。医師の資格認定に似た「competency-based approach」を検討し、ベンチマークと市販後監視を組み合わせる。対象はAI医療チャットボット、診断支援ツール、治療推奨ソフトウェアなど。従来の医薬品やペースメーカーとは異なる規制が必要と指摘されている。草案は意見募集段…",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://geneticliteracyproject.org/2026/08/25/fda-drafts-roadmap-for-regulating-generative-ai-medical-devices/",
+      "selection_reason": "AI分野の規制動向として、医療機器向け生成AIの初の政策指針が具体的に発表され、実務影響が大きいため選定",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "FDA drafts roadmap for regulating generative AI medical devices",
+          "url": "https://geneticliteracyproject.org/2026/08/25/fda-drafts-roadmap-for-regulating-generative-ai-medical-devices/",
+          "source_type": "web"
+        },
+        {
+          "title": "STAT News original report",
+          "url": "https://www.statnews.com/2026/08/24/fda-rick-abramson-generative-ai-guidances-are-coming/",
+          "source_type": "web"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "CISAがOracle WebLogicの悪用脆弱性をKEVカタログに追加",
+      "source_name": "SecurityWeek",
+      "published_at": "2026-08-25T14:02:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CISAがOracle WebLogic Serverの脆弱性CVE-2026-21962をKnown Exploited Vulnerabilitiesカタログに追加した。脅威アクターによる広範な悪用が確認されている。WebLogicサーバーは企業システムで広く利用されており、即時パッチ適用が推奨される。追加日は2026年8月25日で、対応期限は8月…",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://www.securityweek.com/",
+      "selection_reason": "セキュリティ実務に直結する既知悪用脆弱性の公式警告として、即時対応が必要な具体的事例のため選定",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "CISA Warns of Exploited Oracle WebLogic Vulnerability",
+          "url": "https://www.securityweek.com/",
+          "source_type": "web"
+        },
+        {
+          "title": "CISA Known Exploited Vulnerabilities Catalog",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+          "source_type": "web"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "420b0381b4980635",
+      "title": "CVE-2026-60004 Gitea Code Injection Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-08-25T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CVE-2026-60004は、Gitea におけるコード注入の脆弱性であり、CISA KEV に掲載されたことで、理論上の欠陥ではなく実際の悪用が前提に置かれている。攻撃者は、Git 由来の開発資産や設定情報を起点に、意図しないコード実行や処理の乗っ取りへつなげる可能性がある。Gitea は開発基盤の中核に置かれやすく、侵入後の横展開や認証情報の収集…",
+      "article_path": "articles/420b0381b4980635.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "dad4070e7191f008",
+      "title": "U.S. Sanctions Iran-Linked Hackers Behind Critical Infrastructure Breaches",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-25T18:17:17+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Other",
+      "summary_preview": "概要米財務省が、イランに関連するサイバー攻撃者に対する新たな制裁を発表した。対象は、重要インフラ侵害に関与したとされる人物・関係先で、攻撃活動そのものの技術詳細よりも、資金流通や支援基盤を断つ狙いが前面に出ている。制裁は攻撃停止を直接保証しないため、実務上は脅威の即時低下よりも、活動継続コストの上昇や関与者の可視化を重視する局面になる。どの侵害案件にどの程…",
+      "article_path": "articles/dad4070e7191f008.html",
+      "original_url": "https://thehackernews.com/2026/08/us-sanctions-iran-linked-hackers-behind.html"
+    },
+    {
+      "entry_id": "90f8d1e067579930",
+      "title": "A Malicious Webpage Could Poison Your Local AI Model Behind NVIDIA NemoClaw",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-25T14:07:37+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要NVIDIA NemoClaw に関する弱点として、攻撃者が用意したWebページから、ローカルで動く Ollama のインスタンスを 認証なしで操作 できる可能性が示された。そこで モデル自体に隠し指示を埋め込む 形の汚染が起きると、利用者が別の場面で同じモデルを使った際に、意図しない挙動へ誘導されるおそれがある。直接の被害はまずローカル実行環境に現れ…",
+      "article_path": "articles/90f8d1e067579930.html",
+      "original_url": "https://thehackernews.com/2026/08/a-malicious-webpage-could-poison-your.html"
+    },
+    {
+      "entry_id": "57dd81523f469155",
+      "title": "WhatsApp Adds Multiple Passkeys for Phishing-Resistant Sign-Ins Across iOS and Android",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-25T13:19:41+00:00",
+      "impact_level": "Low",
+      "threat_type": "Patch",
+      "summary_preview": "概要MetaはWhatsAppに複数のパスキーを登録できる機能を追加し、iOSとAndroidの両方からフィッシング耐性のあるログインを使いやすくした。従来は端末移行や複数端末利用の場面で、パスキーの扱いが運用上の障害になりやすかったが、その制約を緩める狙いがある。攻撃者は依然として偽サイトや認証情報の窃取を狙うが、パスキーは秘密情報を入力させる方式より成…",
+      "article_path": "articles/57dd81523f469155.html",
+      "original_url": "https://thehackernews.com/2026/08/whatsapp-adds-multiple-passkeys-for.html"
+    },
+    {
+      "entry_id": "e7f5f5a60c9fa7bf",
+      "title": "Marimo Notebook Flaw Could Run MCP Commands Before Cells Execute in Edit Mode",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-25T12:43:51+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Marimo Notebook に、編集モードでノートブックを開いた際に、セル実行前に攻撃者指定の MCP コマンドが走る恐れのある脆弱性が見つかった。特別に細工したノートブックを受け取るだけで、利用者端末上でローカル子プロセスとして命令が実行される余地があるため、単なる表示崩れよりも実害は重い。想定される悪用は、共有ノートブックの閲覧・編集、配布ファ…",
+      "article_path": "articles/e7f5f5a60c9fa7bf.html",
+      "original_url": "https://thehackernews.com/2026/08/marimo-notebook-flaw-could-run-mcp.html"
+    },
+    {
+      "entry_id": "3fca1226984c60ba",
+      "title": "Mirage2FA Surge Hits 4,500 US and EU Companies, Abusing Microsoft 365 Login Flows",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-25T11:56:15+00:00",
+      "impact_level": "High",
+      "threat_type": "Phishing",
+      "summary_preview": "概要Mirage2FA と呼ばれるフィッシング基盤が、Microsoft 365 の正規ログイン手順を悪用して 多要素認証をすり抜ける 手口で拡大している。2024年から2026年にかけて、米国と欧州の 4,500社 が影響を受けたとされるが、これは一次侵入の規模を示す数字であり、実際の被害範囲は未確認のまま残る。攻撃は商用の phishing-as-a-…",
+      "article_path": "articles/3fca1226984c60ba.html",
+      "original_url": "https://thehackernews.com/2026/08/mirage2fa-surge-hits-4500-us-and-eu.html"
+    },
+    {
+      "entry_id": "a6e956a32feb5796",
+      "title": "24 npm Packages Abuse unpkg Mirrors to Host Fake Cloudflare CAPTCHA Pages",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-25T11:52:43+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Phishing",
+      "summary_preview": "概要24個のnpmパッケージが、無料の誘導基盤として悪用され、Cloudflare風の偽CAPTCHAやClickFix型のページへ転送するために使われた。配布物そのものは単一のHTMLページに過ぎず、開発者が通常の意味でマルウェアに感染する話ではないが、信頼されやすい配布面を使って利用者をだます点が本質になる。攻撃の狙いは、閲覧者に認証や検証を装った操作…",
+      "article_path": "articles/a6e956a32feb5796.html",
+      "original_url": "https://thehackernews.com/2026/08/24-npm-packages-abuse-unpkg-mirrors-to.html"
+    },
+    {
+      "entry_id": "5fff43a6f0c8a991",
+      "title": "E4del and PINHOLE RATs Turn FTP Banners Into Dead Drops for Malware Commands",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-25T11:33:44+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Malware",
+      "summary_preview": "概要本件は、FTPバナーを死体受け渡し解析器として使い、追加の命令先を隠して 2種の未報告RAT、E4del と PINHOLE を配布する新しい攻撃活動を扱う。攻撃者は正規の通信に見える見せ方を利用し、初期侵入後の制御チャネルを通常のネットワーク観測から見えにくくする狙いがある。影響は、単一端末の不正操作にとどまらず、認証情報の窃取、横展開、持続化へつな…",
+      "article_path": "articles/5fff43a6f0c8a991.html",
+      "original_url": "https://thehackernews.com/2026/08/e4del-and-pinhole-rats-turn-ftp-banners.html"
+    },
+    {
+      "entry_id": "b3cbf2e91982aca6",
+      "title": "Frontier AI: Vulnerability Management's Systemic Revolution",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-25T11:14:07+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要この記事は、脆弱性管理の運用に frontier AI を組み込むことで、優先順位付け、調査、修復支援のやり方が根本的に変わるという論点を扱う。内容としては新たな脆弱性そのものの公表ではなく、既存の脆弱性管理が抱える大量件数・誤判定・対応遅延をAIで圧縮する発想に近い。攻撃者が直接悪用する話ではない一方、どの資産から先に潰すかの判断精度が上がれば、実際…",
+      "article_path": "articles/b3cbf2e91982aca6.html",
+      "original_url": "https://thehackernews.com/2026/08/frontier-ai-vulnerability-managements.html"
+    },
+    {
+      "entry_id": "d8cc0999556c05ad",
+      "title": "Attackers Target miniOrange SAML Flaws That Can Grant WordPress Admin Access",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-25T08:34:07+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要WordPress向けの miniOrange SAML 2.0 Single Sign On プラグインに、認証不要で任意の利用者としてログインできる深刻な欠陥が見つかった。攻撃者はこの欠陥を使い、管理者を含む任意のアカウントとしてセッションを得て、サイト設定の改変や新規管理者の追加に進める可能性がある。被害は単一サイトの改ざんにとどまらず、同一プラ…",
+      "article_path": "articles/d8cc0999556c05ad.html",
+      "original_url": "https://thehackernews.com/2026/08/attackers-target-miniorange-saml-flaws.html"
+    },
+    {
+      "entry_id": "219323d244b4ec7b",
+      "title": "Actively Exploited Oracle WebLogic Flaw Lets Unauthenticated Attackers Access Critical Data",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-25T06:12:35+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CISAのKEV掲載により、Oracle WebLogic Server系の欠陥が実際に悪用されている前提で扱う必要が出た。記事では CVE-2026-21962 が CVSS 10.0 とされ、認証不要かつHTTP経由で到達できる条件が示されている。成立すれば、公開面に置かれたWebLogicや関連するOracle HTTP Serverから、重要デ…",
+      "article_path": "articles/219323d244b4ec7b.html",
+      "original_url": "https://thehackernews.com/2026/08/actively-exploited-oracle-weblogic-flaw.html"
+    },
+    {
+      "entry_id": "5662d7c830ab6d6f",
+      "title": "Obfuscating IP Addresses as Hostnames, (Tue, Aug 25th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-08-25T15:03:33+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要この記事は、IPアドレスをホスト名に見せかけることで、単純な文字列一致の防御を回避できる点を扱っている。対象はクラウドのメタデータサービス 169.254.169.254 へのアクセスで、SSRFの足場として悪用されやすい。アプリ側が入力をホスト名として解決する設計なら、見た目は別名でも最終的に同じ宛先へ到達しうるため、ブラックリスト方式だけでは止まり…",
+      "article_path": "articles/5662d7c830ab6d6f.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33280"
+    },
+    {
+      "entry_id": "b77dd0f21517b35b",
+      "title": "ISC Stormcast For Tuesday, August 25th, 2026 https://isc.sans.edu/podcastdetail/10066, (Tue, Aug 25th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-08-25T02:00:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要SANS ISC の配信回を案内する記事で、新たな脆弱性や侵害事案そのものを示す内容ではない。したがって、直ちに封じ込めや緊急パッチ判断が必要な情報ではなく、脅威動向の把握や定例監視の文脈で扱うのが妥当となる。記事本文が提示されていないため、具体的にどの攻撃手法、製品、CVE を扱った回かは未確認のままとなる。現時点では、自組織の露出や影響範囲を評価で…",
+      "article_path": "articles/b77dd0f21517b35b.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33278"
+    },
+    {
+      "entry_id": "66e2527325f098c5",
+      "title": "Identity Everywhere: Bringing Infrastructure Identity to Agentic IT",
+      "source_name": "Cisco Security Blog",
+      "category": "reporting",
+      "published_at": "2026-08-25T13:00:15+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要この記事は、Cisco Security Blog が Agentic IT の前提として、ネットワーク機器や基盤装置にも人や端末と同じように 一意のアイデンティティ を持たせる考え方を示している。狙いは、セグメンテーションと Zero Trust を組み合わせ、攻撃者が一度侵入したあとに横展開しにくい構成へ寄せる点にある。悪用の対象は脆弱性そのものと…",
+      "article_path": "articles/66e2527325f098c5.html",
+      "original_url": "https://blogs.cisco.com/security/identity-everywhere-bringing-infrastructure-identity-to-agentic-it/"
+    },
+    {
+      "entry_id": "af4371e79179e631",
+      "title": "The State of AI-Enabled Malware August 2026: From Brand Abuse to Agentic Execution",
+      "source_name": "Unit 42",
+      "category": "reporting",
+      "published_at": "2026-08-25T10:00:57+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Malware",
+      "summary_preview": "概要Unit 42 は、AI を使って作成・改変されたマルウェアの現状を整理し、従来のシグネチャ依存だけでは追従しにくい点を指摘している。記事の焦点は、AI そのものが新しい脆弱性を生むというより、ブランドの悪用や 実行前の検査回避を通じて攻撃の準備コストを下げる点にある。実害は、端末上での振る舞い、権限取得、外部通信、持続化へとつながる場合に広がりやすく…",
+      "article_path": "articles/af4371e79179e631.html",
+      "original_url": "https://unit42.paloaltonetworks.com/ai-enabled-malware-analysis/"
+    },
+    {
+      "entry_id": "a91c01872a210acf",
+      "title": "VU#308749: Remote Code Execution and Arbitrary File Read Vulnerabilities in Kaltura Servers",
+      "source_name": "CERT/CC",
+      "category": "reporting",
+      "published_at": "2026-08-25T16:11:49+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Kaltura Servers の mwEmbedLoader.php に、同じ不安全な逆シリアル化を起点とする2件の脆弱性が見つかった。CVE-2026-19913 は任意のローカルファイル読み取りにつながり、CVE-2026-19912 は不適切なパス結合を使ってファイル書き込み先をずらし、条件がそろうと RCE に発展する。攻撃成立に認証や Ka…",
+      "article_path": "articles/a91c01872a210acf.html",
+      "original_url": "https://kb.cert.org/vuls/id/308749"
+    },
+    {
+      "entry_id": "40116635e0b0c7bd",
+      "title": "メール訓練の文面が無神経と批判を浴びてＣＥＯが謝罪 ～ セキュリティ教育には分別と敬意を",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-24T23:15:03+00:00",
+      "impact_level": "Low",
+      "threat_type": "Advisory",
+      "summary_preview": "概要本件は、メール訓練の文面が無神経だと受け取られ、組織のCEOが謝罪に追い込まれた事案を扱う。技術的な侵害ではなく、セキュリティ教育の設計と運用が組織の信頼や受講者の反発を左右する点が焦点になる。訓練メールは、受信者の心理的負荷や実際の職場事情を踏まえずに作ると、学習効果よりも不信感や形骸化を招きやすい。悪用という観点では攻撃そのものではないが、訓練の失…",
+      "article_path": "articles/40116635e0b0c7bd.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/25/56019.html"
+    },
+    {
+      "entry_id": "cbfb1bff68b58237",
+      "title": "弁護士が法的観点で解説！ AIが武器化される時代のサイバーセキュリティと企業対応 9 / 11 開催",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-24T23:10:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要本記事は、AIが攻撃者側に利用される前提で、企業のサイバーセキュリティ対応を法的観点も含めて整理する催しの案内である。技術的な新規脆弱性を報じるものではなく、生成AIの悪用により攻撃の作成、標的選定、詐欺文面の生成、調査の自動化が容易になる状況を扱う。影響は単発の迷惑メールにとどまらず、なりすまし、権限奪取、情報窃取、業務停止対応の長期化へ広がる可能性…",
+      "article_path": "articles/cbfb1bff68b58237.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/25/56018.html"
+    },
+    {
+      "entry_id": "8fdf8303588f66f8",
+      "title": "NTTスマートコネクト「スマイルサーバ」に不正アクセス、9 月中旬頃の復旧環境の提供開始を目標に準備",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-24T23:05:23+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要NTTスマートコネクトは、スマイルサーバに対する不正アクセスを受け、復旧環境の提供開始を9月中旬頃に目標設定して準備を進めている。現時点で把握できるのは、攻撃の事実と復旧準備の予定までで、侵入経路や影響範囲、情報漏えいの有無は未確認となる。復旧対象が「提供開始」の形で案内されているため、単なる設定変更ではなく、環境の再構築や検証を伴う可能性が高い。利用…",
+      "article_path": "articles/8fdf8303588f66f8.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/25/56017.html"
+    },
+    {
+      "entry_id": "1d57d1e46d99bc13",
+      "title": "OEM向けホームページ作成サービスに不正アクセス、最大7,425名の顧客情報が漏えいした可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-24T23:05:21+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要OEM向けのホームページ作成サービスが不正アクセスを受け、最大7,425名分の顧客情報が漏えいした可能性がある。公開情報からは、侵入の起点、保持されていた情報の範囲、実際に外部へ持ち出されたかはまだ確定していない。こうした案件は、サイト改ざんよりも先に管理画面やCMS、バックアップ領域への侵入を起点に、顧客情報の取得へ進むことが多い。影響は単一事業者内…",
+      "article_path": "articles/1d57d1e46d99bc13.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/25/56016.html"
+    },
+    {
+      "entry_id": "789bc2ae8f086e07",
+      "title": "楽天ブックスネットワークのPC端末に不正アクセス、「楽天ブックス」利用者33,333件の個人情報等を保存",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-24T23:05:17+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要楽天ブックスのネットワークに接続されたPC端末への不正アクセスが発生し、利用者33,333件の個人情報等が保存されていたことが公表された。侵入点は端末側と読めるが、どの経路で侵入したか、保存情報の具体的な範囲、外部送信や二次被害の有無は記事だけでは確定しない。端末内に保存された情報が持ち出されていれば、個人情報の漏えいだけでなく、問い合わせ対応やなりす…",
+      "article_path": "articles/789bc2ae8f086e07.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/25/56015.html"
+    },
+    {
+      "entry_id": "666555b33926ca20",
+      "title": "ブルートフォース攻撃による可能性が高いと判断 ～ コミュニケーションツール「BAND」に不正アクセス",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-24T23:05:12+00:00",
+      "impact_level": "High",
+      "threat_type": "Credential Theft",
+      "summary_preview": "概要コミュニケーションツール「BAND」で不正アクセスが発生し、運営側はブルートフォース攻撃による可能性が高いと見ている。推測される経路は、弱いパスワードや再利用された認証情報を狙った大量試行で、突破後はグループ内の会話、ファイル、招待情報への到達が起点になりやすい。被害の広がり方としては、単一アカウントの侵害に見えても、共有リンクや管理者権限の奪取を介し…",
+      "article_path": "articles/666555b33926ca20.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/25/56014.html"
+    },
+    {
+      "entry_id": "55da2ad4c4b9b0d9",
+      "title": "ナイスのメールアドレスに不正アクセス、約2,400件の個人情報が漏えいした可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-24T23:05:08+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要ナイスのメールアドレスに不正アクセスがあり、約2,400件の個人情報が漏えいした可能性があると報じられた。現時点では、漏えいの確定範囲や侵入経路、第三者による実害の有無は明らかになっていない。メールアドレス単体でも、標的型攻撃やなりすまし、関連アカウントへの再利用攻撃の足掛かりになりやすい。組織側では、対象メールボックスの侵入痕跡だけでなく、転送設定の…",
+      "article_path": "articles/55da2ad4c4b9b0d9.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/25/56013.html"
+    },
+    {
+      "entry_id": "ab3e8fb043114a3e",
+      "title": "作業手順書の曖昧な記載による作業誤りが原因 ～ デジタル庁から他省庁に送付したファイルに関係者以外の個人情報",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-24T23:05:05+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要デジタル庁が他省庁へ送付したファイルに、関係者以外の個人情報が含まれていたと公表された。原因は作業手順書の曖昧な記載に起因する作業誤りで、外部からの侵入や脆弱性悪用ではなく、運用上の確認不足が中心となる。影響は現時点で送付先の限られた範囲に見えるが、誤送付したファイルの再配布や保管状況によっては二次拡散の懸念が残る。個人情報の具体的な種類、件数、送付先…",
+      "article_path": "articles/ab3e8fb043114a3e.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/25/56012.html"
+    },
+    {
+      "entry_id": "f8fa079ebfc8e217",
+      "title": "駅放送設備から意図しない音声が送出 ～ 西鉄福岡（天神）駅と薬院駅",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-24T23:05:02+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Other",
+      "summary_preview": "概要西鉄福岡（天神）駅と薬院駅の駅放送設備から、意図しない音声が送出された事案が報じられた。現時点では、外部からの侵入か、内部機器の誤設定か、保守経路の問題かは未確認である。乗客への直接被害は限定的でも、放送は避難誘導や運行案内に使われるため、内容次第では業務継続と安全誘導に影響が及ぶ。攻撃者視点では、設備の実害よりも、現場の混乱を起点に誤情報を拡散させる…",
+      "article_path": "articles/f8fa079ebfc8e217.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/25/56011.html"
+    },
+    {
+      "entry_id": "765c09d55f746011",
+      "title": "NTTドコモ、店頭での本人確認にICチップ読み取りを導入 不正契約の防止を強化",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-24T23:00:18+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要NTTドコモが、店頭での本人確認にICチップ読み取りを導入し、不正契約の抑止を強化した。狙いは、顔写真や券面の見た目だけに依存する確認を減らし、偽造・なりすまし・名義盗用を見抜きやすくする点にある。通信契約は回線の取得、SMS受信、二要素認証の突破補助などに直結するため、不正契約の前段遮断としての意味が大きい。直接の攻撃手口や被害件数、運用条件の詳細は…",
+      "article_path": "articles/765c09d55f746011.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/25/56010.html"
+    },
+    {
+      "entry_id": "6f393f1dcee8e684",
+      "title": "テレコムサービス協会が「なりすましメール対策」関連説明会 Vol.3 を 9 / 3 にオンライン開催",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-24T23:00:15+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要テレコムサービス協会が、なりすましメール対策をテーマにした説明会 Vol.3 を 9/3 にオンライン開催する。内容は対策の考え方や運用上の論点を整理する性格が強く、直接の脆弱性告知や緊急インシデント情報ではない。ただし、なりすましメールは認証情報窃取、請求詐欺、マルウェア配布の入口になりやすく、組織の初動設計に影響する。実際の有効性は、送信ドメイン認…",
+      "article_path": "articles/6f393f1dcee8e684.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/25/56009.html"
+    },
+    {
+      "entry_id": "759082c05cbcaf2b",
+      "title": "UNIVERGE IX-R/IX-V シリーズルータに重要な機能に対する認証の欠如の脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-24T23:00:12+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要NECのUNIVERGE IX-R/IX-Vシリーズルータに、重要機能へ認証なしで到達できる脆弱性が公表された。管理系や設定系の機能に外部から触れうるなら、設定変更、情報取得、通信経路の改変につながるため、単なる可用性低下に留まらない。ルータは拠点集約やリモート接続の入口になりやすく、侵害されると拠点単位の横展開や監視回避の起点になりやすい。公開情報だ…",
+      "article_path": "articles/759082c05cbcaf2b.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/25/56008.html"
+    },
+    {
+      "entry_id": "f895394ba20c19a7",
+      "title": "複数のセイコーエプソン製プリンタおよびスキャナに失効したルート証明書が残存している問題",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-24T23:00:07+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要複数のセイコーエプソン製プリンタおよびスキャナで、失効したルート証明書が残存している問題が報じられている。証明書の失効は、端末側が信頼すべき相手を誤認しないための重要な仕組みであり、古いルートが残ると偽装した更新配信や通信の受け入れにつながる余地が生まれる。実際にどの機能が影響を受けるか、攻撃に悪用できるか、遠隔から到達できるかは記事本文だけでは未確認…",
+      "article_path": "articles/f895394ba20c19a7.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/25/56007.html"
+    },
+    {
+      "entry_id": "31c5b6844174573b",
+      "title": "acmailer に複数の脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-24T23:00:03+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要acmailer に複数の脆弱性が見つかったという報告であり、メール送信系の機能を持つ古い運用資産が対象になりやすい。認証前で到達できる箇所や管理画面の取り扱いに欠陥があれば、設定改ざん、任意操作、情報漏えいに連結する余地がある。悪用の起点が外部公開面にあれば、単一サーバの問題にとどまらず、送信元の信用失墜や踏み台化につながる可能性がある。現時点では、…",
+      "article_path": "articles/31c5b6844174573b.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/25/56006.html"
+    }
+  ]
+}
