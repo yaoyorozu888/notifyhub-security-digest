@@ -1,0 +1,497 @@
+{
+  "date": "2026-08-29",
+  "window": {
+    "from": "2026-08-28T06:00:00+09:00",
+    "to": "2026-08-29T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 32
+  },
+  "generated_at_jst": "2026-08-29T07:14:58.874495+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "Nvidiaデータセンター収益急増とAIインフラ拡大",
+      "source_name": "AI Business",
+      "published_at": "2026-08-28T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要Nvidiaが発表した最新四半期決算でデータセンター収益が前年比117%増の89億ドルに達し、AIインフラ需要の持続が確認された。AWSとの提携拡大により200万基規模のGPU追加導入に加え、CPUやネットワーキング分野への波及も明らかになった。エッジ向けJetson Orin Nano 2の投入により、ロボットやドローン分野への展開も加速している。 …",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://aibusiness.com/generative-ai/prompt-ai-infrastructure-boom-getting-bigger-than-gpus",
+      "selection_reason": "Nvidia四半期決算でデータセンター収益が前年比117%増を記録し、GPU以外へのCPU・ネットワーキング・エッジ拡大が具体的に示された最新事例として、ITインフラ投資の方向性を判断する上で最も新規性と実務影響が高いため選定。他の半導体予測レポートとは異なり、AWSとの大規模提携やロボット分野進出という具体的事実を含む。",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "Prompt: The AI Infrastructure Boom Is Getting Bigger Than GPUs",
+          "url": "https://aibusiness.com/generative-ai/prompt-ai-infrastructure-boom-getting-bigger-than-gpus",
+          "source_type": "news"
+        },
+        {
+          "title": "AI Tailwinds Bode Well For 2026 IT Spending",
+          "url": "https://www.spglobal.com/ratings/en/regulatory/article/ai-tailwinds-bode-well-for-2026-it-spending-s101664922",
+          "source_type": "news"
+        },
+        {
+          "title": "AI Infrastructure News",
+          "url": "https://mlq.ai/news/ai-infrastructure/",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "主要AI企業がAI駆動攻撃対策の社会全体防衛を呼びかけ",
+      "source_name": "Reuters",
+      "published_at": "2026-08-27T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要OpenAIやAnthropic、Microsoft、Alphabet、Amazonを含む100社以上が、AIエージェントによる攻撃が既存防御を上回る可能性を指摘し、社会全体での防衛強化を求める声明を発表した。病院、水道、電力システムが特に脆弱と名指しされ、モデル開発企業自身が攻撃手法の進化を警告する異例の動きとなった。AIエージェントの自律行動がサン…",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://www.reuters.com/technology/artificial-intelligence/",
+      "selection_reason": "OpenAI、Anthropic、Googleなど100社超が連名でAIエージェントによる攻撃急増を警告し、病院・電力など重要インフラ防衛を具体的に提言した事例。AIモデル開発企業による実務的セキュリティ提言として新規性が高く、規制や導入判断に直結するため選定。サイバーインシデント自体ではなくAI分野の動きに限定。",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "Major tech companies call for defensive surge to defeat AI-driven hacks",
+          "url": "https://www.reuters.com/technology/artificial-intelligence/",
+          "source_type": "news"
+        },
+        {
+          "title": "OpenAI, Anthropic, Google Lead Call to Prioritize Cybersecurity",
+          "url": "https://aibusiness.com/latest-news",
+          "source_type": "news"
+        },
+        {
+          "title": "OpenAI, Google and 100 Firms Sign AI Cyber Defense Call",
+          "url": "https://www.bitsminds.com/news",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "PaperCut印刷管理ソフトでゼロデイ攻撃が活発化し緊急パッチ公開",
+      "source_name": "BleepingComputer",
+      "published_at": "2026-08-28T15:08:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要PaperCut NGおよびMFの全バージョンで認証バイパスとリモートコード実行の脆弱性がゼロデイ攻撃に悪用され、研究者によるバイパス確認後に2回目の緊急パッチが公開された。攻撃者はWebインターフェース経由でコードを実行し、サーバー侵害後の痕跡隠蔽も確認されている。CISAは連邦機関に対し即時対応を指示し、ファイアウォール制限とログ監視が推奨される。…",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://www.bleepingcomputer.com/news/security/papercut-releases-second-emergency-patch-for-exploited-flaws/",
+      "selection_reason": "PaperCut NG/MFの複数脆弱性が実際に悪用され、2回目の緊急パッチが公開された具体的事例。CISA KEV登録や複数メディア報道で裏付けられ、印刷管理という企業インフラ直結の脅威として実務影響が大きいため選定。AIやITトレンドとは異なるセキュリティ実務分野に限定。",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "PaperCut releases second emergency patch for exploited flaws",
+          "url": "https://www.bleepingcomputer.com/news/security/papercut-releases-second-emergency-patch-for-exploited-flaws/",
+          "source_type": "news"
+        },
+        {
+          "title": "Exploited RCE Flaws and Infrastructure Attacks Define this Cybersecurity Week in August 2026",
+          "url": "https://www.esecurityplanet.com/weekly-roundup/exploited-rce-flaws-and-infrastructure-attacks-define-this-cybersecurity-week-in-august-2026/",
+          "source_type": "news"
+        },
+        {
+          "title": "PaperCut Zero-Day Exploited in Attacks, Affecting All NG and MF Versions",
+          "url": "https://thehackernews.com/search/label/Vulnerability",
+          "source_type": "news"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "7b484bfef4c322d8",
+      "title": "Cosmos EVM Flaw Exploited After Cosmos Labs Knew Every Blockchain Running It Was Vulnerable",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-28T20:38:47+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要Cosmos Labs は、Cosmos EVM の共有モジュールにある残高処理の不備が悪用され、8月20日から25日にかけて6つのブロックチェーンから資金流出が起きたと警告した。攻撃は個別チェーンの実装差ではなく、共通モジュールの欠陥を突く形で成立したため、同系統のチェーンへ横断的に波及しやすい。悪用方法は資金の残高計算や更新順序のずれを突く可能性が…",
+      "article_path": "articles/7b484bfef4c322d8.html",
+      "original_url": "https://thehackernews.com/2026/08/cosmos-evm-flaw-exploited-after-cosmos.html"
+    },
+    {
+      "entry_id": "d032e43ffe9de597",
+      "title": "Attackers Chain Two PaperCut Flaws to Execute Code Without Authentication",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-28T17:12:15+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要PaperCut NG/MF の 新たに修正された脆弱性 が悪用され、認証なしで任意コード実行 に至る事例が報じられている。今回のポイントは単独の不具合というより、2件の欠陥を連鎖させて信頼された設定領域へ介入し、アプリケーション内部で Java コードを動かせる可能性にある。影響は当該サーバー上にとどまらず、印刷基盤を起点に 資格情報の奪取 や横展開…",
+      "article_path": "articles/d032e43ffe9de597.html",
+      "original_url": "https://thehackernews.com/2026/08/attackers-chain-two-papercut-flaws-to.html"
+    },
+    {
+      "entry_id": "bc7c3fc02caf2806",
+      "title": "Android 17 Adds OS-Wide ECH to Hide Website Visits From Network Providers",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-28T16:20:46+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要Google が Android 17 で、OS 全体での ECH を導入し、通信経路の観測者から閲覧先サイトを隠せるようにすると発表した。加えて、携帯回線由来の脆弱性対策や家庭内ネットワークのプライバシー保護も強化対象に含まれる。悪用の中心は端末侵害そのものではなく、ネットワーク上の可視性低下による追跡・プロファイリングの抑制にある。組織側では、通信…",
+      "article_path": "articles/bc7c3fc02caf2806.html",
+      "original_url": "https://thehackernews.com/2026/08/android-17-adds-os-wide-ech-to-hide.html"
+    },
+    {
+      "entry_id": "3554c969f2cb2379",
+      "title": "ownCloud Flaw Exploited to Steal Nuclear Records From Philippine Research Body",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-28T15:56:55+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要米CISAが、ownCloud の脆弱性 CVE-2023-49105 を KEV に追加した。報道によれば、中国語話者の脅威アクター がこれを悪用し、フィリピンの研究機関にある核関連記録の窃取を狙ったとされる。認証前に到達できる条件 で成立するなら、外部公開面からの侵入起点になりやすく、初期侵入後は文書窃取や横展開へつながる余地がある。CVSS 9.…",
+      "article_path": "articles/3554c969f2cb2379.html",
+      "original_url": "https://thehackernews.com/2026/08/snowflake-github-actions-flaw-lets.html"
+    },
+    {
+      "entry_id": "08822b671a486ee2",
+      "title": "19 Chrome and Edge Extensions Found With Wallet-Stealing and Crypto-Draining Code",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-28T15:27:26+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要Chrome と Microsoft Edge の拡張機能 19件 に、ウォレットの秘密情報を盗み、暗号資産を抜き取る処理が含まれていたと報じられた。対象は過去6か月に公開された拡張機能群で、コードや手口に共通点があるという。拡張機能はブラウザに深く入り込むため、利用者が権限を許可すると、閲覧中の取引画面やウォレット操作に直接介入できる。被害は単一端末…",
+      "article_path": "articles/08822b671a486ee2.html",
+      "original_url": "https://thehackernews.com/2026/08/19-chrome-and-edge-extensions-found.html"
+    },
+    {
+      "entry_id": "e33234f9f81de622",
+      "title": "Two Unitree G1 EDU Humanoid Robot Flaws Enable Root RCE, One Starts Over Bluetooth",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-28T12:07:24+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要Unitree G1 EDU に、root 権限での RCE に至る独立した欠陥が2件見つかった。うち1件は Bluetooth Low Energy 経由で到達でき、ロボットの Locomotion PC 上で高権限の実行につながる。もう1件はネットワーク近接の経路とされ、chat_go と bashrunner を含む処理連鎖が関与する。公開情報で…",
+      "article_path": "articles/e33234f9f81de622.html",
+      "original_url": "https://thehackernews.com/2026/08/two-unitree-g1-edu-humanoid-robot-flaws.html"
+    },
+    {
+      "entry_id": "d322aaed559cc764",
+      "title": "Key Reasons Why Identity Fabric Matters in 2026",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-28T11:30:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要この記事は、分断されたID管理を束ねるIdentity Fabricが、2026年の企業環境で重要になる理由を整理している。人だけでなく、APIや自動化ワークロード、サービスアカウントまで含めて、実行時の振る舞いを横断的に観測し、静的な設定だけでは見えないリスクを補う考え方が中心になる。悪用の入口は、放置されたID、過剰権限、休眠アカウント、連携先の認…",
+      "article_path": "articles/d322aaed559cc764.html",
+      "original_url": "https://thehackernews.com/2026/08/key-reasons-why-identity-fabric-matters.html"
+    },
+    {
+      "entry_id": "918fd113a86bfe17",
+      "title": "Three CVSS 10.0 ServiceNow Flaws Could Let Unauthenticated Attackers Execute Code and SQL",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-28T11:20:32+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要ServiceNow の AI Platform に対して、4件の脆弱性への修正が公開された。うち3件は CVSS 10.0 とされ、条件がそろうと 認証前の攻撃者 から コード実行 や SQL 実行 に至る可能性がある。公開型のSaaS基盤と自己管理型の双方に影響し得るため、単一サービスの不具合に見えても、業務ワークフロー全体へ波及しやすい。特にIT…",
+      "article_path": "articles/918fd113a86bfe17.html",
+      "original_url": "https://thehackernews.com/2026/08/three-cvss-100-servicenow-flaws-could.html"
+    },
+    {
+      "entry_id": "ceac9d07dd18162f",
+      "title": "China-Made ZBT Routers Ship With Two Implants Giving Unauthenticated Attackers Root Access",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-28T10:58:29+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要VulnCheckが、Shenzhen Zhibotong Electronics（ZBT）製ルーターのファームウェアに含まれる工場出荷時のインプラントを2件公表した。どちらも認証なしで遠隔から操作され、root権限でコマンド実行につながる。対象はSPEAKINGSTONEとDARKLANTERNで、CVE-2026-74232とCVE-2026-74…",
+      "article_path": "articles/ceac9d07dd18162f.html",
+      "original_url": "https://thehackernews.com/2026/08/china-made-zbt-routers-ship-with-two.html"
+    },
+    {
+      "entry_id": "37c2bcd9398c4fe8",
+      "title": "Critical cPanel Flaw Could Let One Hosting Customer Take Root Control of a Whole Server",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-28T09:45:15+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要cPanel と WHM の domain parking と addon domain の機能に、root 権限でのコード実行につながる脆弱性が見つかり、修正パッチが公開された。記事内容からは、単一のホスティング利用者の操作が 同一サーバ上の管理権限 に波及し得る点が核心になる。攻撃成立の前提は、該当機能に触れられるホスティング構成や管理面の露出があ…",
+      "article_path": "articles/37c2bcd9398c4fe8.html",
+      "original_url": "https://thehackernews.com/2026/08/critical-cpanel-flaw-could-let-one.html"
+    },
+    {
+      "entry_id": "c7788febc36db65b",
+      "title": "PaperCut Zero-Day Exploited in Attacks, Affecting All NG and MF Versions",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-28T08:25:36+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Zero-day",
+      "summary_preview": "概要PaperCut NG / MF の全版に影響する脆弱性が、ゼロデイ攻撃として実際に悪用されていると報じられた。攻撃者は印刷管理基盤を起点に侵入し、認証情報の窃取、内部展開、さらに他システムへの横移動へつなげる余地を狙う可能性が高い。ベンダーは v25 と v26 向けの緊急修正を公開し、顧客環境での侵害事例を確認していると述べている。現時点では、悪用…",
+      "article_path": "articles/c7788febc36db65b.html",
+      "original_url": "https://thehackernews.com/2026/08/papercut-zero-day-exploited-in-attacks.html"
+    },
+    {
+      "entry_id": "58d54d72a4b90219",
+      "title": "APT28-Linked HOOKEDGE Backdoor Targets European Government and Diplomatic Organizations",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-28T08:20:59+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要Recorded Future Insikt Group は、ルーマニア、スペイン、トルコの政府・外交機関を狙う複数のキャンペーンを確認し、HOOKEDGE と呼ぶ未把握のバックドア配布につながったと指摘した。活動時期は2025年9月下旬から2026年4月上旬にまたがり、APT28 関連の可能性が示されている。現時点で見えているのは、軽量な Windo…",
+      "article_path": "articles/58d54d72a4b90219.html",
+      "original_url": "https://thehackernews.com/2026/08/apt28-linked-hookedge-backdoor-targets.html"
+    },
+    {
+      "entry_id": "35884a0956bba020",
+      "title": "From Isolated Agents to Collective Intelligence: Why A2A Is the Protocol the Agentic SOC Has Been Waiting For",
+      "source_name": "Cisco Security Blog",
+      "category": "reporting",
+      "published_at": "2026-08-28T15:00:11+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要この記事は、SOCで複数のAIエージェントを連携させる前提として、MCPとA2Aを役割分担で捉えるべきだと整理している。MCPは個々のエージェントがツールやデータに接続する縦方向の経路で、A2Aは別のエージェント同士が状態や判断を引き継ぐ横方向の経路として位置づけられる。攻撃そのものを扱う記事ではないが、実運用では誤設定された権限委任、過剰な自動化、エ…",
+      "article_path": "articles/35884a0956bba020.html",
+      "original_url": "https://blogs.cisco.com/security/a2a-mcp-open-protocol-stack-multi-agent-soc/"
+    },
+    {
+      "entry_id": "949f4ede1dcf7bd8",
+      "title": "「日経SDGsフェス」ジェンダーギャップ会議",
+      "source_name": "NICT NOTICE",
+      "category": "reporting",
+      "published_at": "2026-08-28T07:00:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要この記事はセキュリティ脆弱性や攻撃手口ではなく、「日経SDGsフェス」内で開催されるジェンダーギャップ会議の案内に関するもの。内容自体はIT障害や侵害報告ではなく、CSIRTの直接対応対象ではない。業務影響は低いが、組織としては広報・登壇・外部連携の文脈で扱う余地がある。イベント案内のため、悪用経路や被害拡大の議論は基本的に当てはまらない。なお、本文だ…",
+      "article_path": "articles/949f4ede1dcf7bd8.html",
+      "original_url": "/publicity/event/2026/09/10-1.html"
+    },
+    {
+      "entry_id": "210c35822c571fc0",
+      "title": "企業のソフトウェア開発内製化戦略 直面する 3 つの壁 ～ ガートナーサミットレポート",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-27T23:15:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要本記事は、企業がソフトウェア開発を内製化しようとする際に直面しやすい3つの壁を、ガートナーサミットの報告として整理したものとなっている。内容の主眼は脆弱性そのものではなく、内製化が進むほど開発・運用・統制の責任境界が社内へ移る点にある。悪用シナリオとしては、開発基盤やCI/CD、依存ライブラリ管理の弱さが入口になり、サプライチェーン経由で本番へ波及する…",
+      "article_path": "articles/210c35822c571fc0.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/28/56069.html"
+    },
+    {
+      "entry_id": "81c86c951ef1746a",
+      "title": "9 / 1 ～ 4 オンライン開催「ITトレンドEXPO2026 Summer」にエーアイセキュリティラボ登壇",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-27T23:10:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要製品脆弱性や侵害事案の告知ではなく、ITイベントへの登壇案内を扱う記事であり、直接のセキュリティインシデントは含まれない。ITトレンドEXPO2026 Summerへのオンライン登壇予定が告知されており、内容は主にイベント参加の周知にとどまる。組織のCSIRT運用に直結する緊急性は低く、資産の露出や攻撃成立条件に関する新規情報も確認できない。したがって…",
+      "article_path": "articles/81c86c951ef1746a.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/28/56068.html"
+    },
+    {
+      "entry_id": "47153701f0eb31bc",
+      "title": "3,177件の不審メールを送信 ～ 日本大学法学部教職員への巧妙に偽装されたフィッシングメールによる「アカウント乗っ取り」",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-27T23:05:24+00:00",
+      "impact_level": "High",
+      "threat_type": "Phishing",
+      "summary_preview": "概要日本大学法学部の教職員を狙い、巧妙に偽装されたフィッシングメールが大量に送信され、結果として3,177件の不審メールが発生したと報じられている。狙いは単純な誘導ではなく、認証情報をだまし取ってアカウント乗っ取りへつなげる点にある。学内のメール基盤が起点になれば、同一組織内への再送信、信頼関係を利用した二次被害、問い合わせ対応の集中が起こりやすい。被害範…",
+      "article_path": "articles/47153701f0eb31bc.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/28/56067.html"
+    },
+    {
+      "entry_id": "ef05e8d1882de527",
+      "title": "ハンズホールディングスにランサムウェア攻撃、従業員等のマイナンバー閲覧のおそれ",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-27T23:05:21+00:00",
+      "impact_level": "High",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要ハンズホールディングスがランサムウェア攻撃を受け、従業員等のマイナンバー閲覧のおそれが生じたと公表した。暗号化による業務停止だけでなく、内部情報への到達が伴っている点が重要で、単なる復旧案件として扱うと判断を誤りやすい。攻撃経路は本文からは確認できず、侵入の起点や持ち出し有無、実際に閲覧された範囲は未確認である。マイナンバーを含む個人情報が対象なら、再…",
+      "article_path": "articles/ef05e8d1882de527.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/28/56066.html"
+    },
+    {
+      "entry_id": "6c665943095127ba",
+      "title": "札幌市豊平区土木部で庁内使用に限定している住宅地図データを誤って公開、個人宅の氏名及び名字が漏えい",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-27T23:05:18+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要札幌市豊平区土木部で、庁内限定の住宅地図データを誤って公開し、個人宅の氏名及び名字が漏えいした。内容はランサムウェアや侵入のような直接被害ではないが、住宅地図は住所情報と結びつきやすく、個人特定や迷惑行為の起点になりやすい。公開範囲の誤りが原因とみられるため、攻撃者が高度な技術を要しなくても、検索・再配布・二次利用で被害が広がる余地がある。現時点で、公…",
+      "article_path": "articles/6c665943095127ba.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/28/56065.html"
+    },
+    {
+      "entry_id": "41b7d1242d226cb1",
+      "title": "ミネラルウォーター「北海道大雪山ゆきのみず」の販売管理システム関連業務の委託先 扶桑電通のクラウドストレージに不正アクセス",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-27T23:05:15+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要ミネラルウォーター「北海道大雪山ゆきのみず」の販売管理システム関連業務を委託していた扶桑電通のクラウドストレージに、不正アクセスが発生したと報じられた。流出対象や侵入経路の詳細はまだ明らかでなく、現時点ではどの業務データが閲覧・取得されたか未確認となる。委託先のストレージが狙われる場合、直接の本体システムよりも、取引情報、運用資料、連絡先、認証情報の断…",
+      "article_path": "articles/41b7d1242d226cb1.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/28/56064.html"
+    },
+    {
+      "entry_id": "b784414314b52450",
+      "title": "宇都宮市で令和8年度介護保険料の算定誤り、121名の市民が対象に",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-27T23:05:13+00:00",
+      "impact_level": "Info",
+      "threat_type": "Misconfiguration",
+      "summary_preview": "概要宇都宮市で、令和8年度の介護保険料の算定に誤りがあり、121名の市民に影響した。記事上はセキュリティ侵害ではなく、行政手続き上の計算ミスとして読むのが妥当で、CSIRTの主戦場である情報漏えい事案とは性質が異なる。悪用が成立する類型でもなく、被害は現時点で対象者の課金・通知の誤りに限られる可能性が高い。組織対応としては、誤算定の範囲、再計算の有無、住民…",
+      "article_path": "articles/b784414314b52450.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/28/56063.html"
+    },
+    {
+      "entry_id": "580868d96d323e63",
+      "title": "「宮本むなしお持ち帰り注文サイト」に不正アクセス、最大1,895件の注文情報が漏えいした可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-27T23:05:10+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要「宮本むなし」のお持ち帰り注文サイトが不正アクセスを受け、最大1,895件の注文情報が漏えいした可能性が示された。漏えい対象は注文履歴や連絡先など、再利用されるとなりすましや追加詐取の足がかりになりやすい情報群とみるのが自然である。現時点で、どの経路で侵入されたか、改ざんや追加侵害が起きたか、実際に情報が持ち出されたかは未確認である。飲食店の注文サイト…",
+      "article_path": "articles/580868d96d323e63.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/28/56062.html"
+    },
+    {
+      "entry_id": "6a9c7fc364a1a62d",
+      "title": "フラウ・インターナショナル業務委託先に不正アクセス、クレジットカード情報1件含む 問い合わせ情報3,560件が漏えいした可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-27T23:05:06+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要フラウ・インターナショナルの業務委託先が不正アクセスを受け、問い合わせ情報3,560件が漏えいした可能性がある。漏えい対象にはクレジットカード情報1件が含まれるとされ、個人情報の取り扱い経路が委託先まで広がっていた点が焦点になる。攻撃の入り口や侵入経路は本文からは読み取れず、どのシステムが侵害されたか、抽出された情報が実際に外部へ持ち出されたかは未確認…",
+      "article_path": "articles/6a9c7fc364a1a62d.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/28/56061.html"
+    },
+    {
+      "entry_id": "30277f6356685533",
+      "title": "「ショップサーブ」に不正アクセス、不正なプログラムを実行し購入者情報を外部に送信",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-27T23:05:02+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要EC向けサービス「ショップサーブ」で不正アクセスが発生し、不正なプログラムの実行を通じて購入者情報を外部送信したと報じられている。攻撃の成立点は、管理画面や連携基盤、サーバ上の実行権限など、どこかの侵入口を起点にコードを動かせた可能性があるところにある。被害は単なる閲覧ではなく、注文者情報や連絡先、決済周辺情報などの流出に広がる余地があるため、二次被害…",
+      "article_path": "articles/30277f6356685533.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/28/56060.html"
+    },
+    {
+      "entry_id": "9ec08686ba97f66d",
+      "title": "9 / 8 開催「生成AIカンファレンス 2026」にスリーシェイク協賛、事前イベントに吉田拓真氏が登壇",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-27T23:00:26+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要この記事は、生成AIカンファレンス 2026の開催告知と、スリーシェイクの協賛、事前イベントでの登壇者紹介を扱っている。脆弱性情報や侵害事案の報告ではないため、直接のインシデント対応案件ではない。もっとも、生成AIの社内利用が進む組織では、こうしたイベント情報が導入判断や統制設計の参考材料になる。現時点で、イベントで扱う具体的な技術テーマ、参加者向けの…",
+      "article_path": "articles/9ec08686ba97f66d.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/28/56059.html"
+    },
+    {
+      "entry_id": "49e7bcd75290f1ec",
+      "title": "Android アプリ「マイナポイント」にアクセス制限不備の脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-27T23:00:23+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Android アプリ「マイナポイント」にアクセス制限不備がある脆弱性が報じられた。アプリ内の本来は制限されるべき機能や情報に、想定外の方法で到達できる余地があると、利用者の操作や端末内の状態によっては不正な表示・変更・情報取得につながる。認証回避や権限外操作に直結するなら、個人利用だけでなく、端末を業務利用している組織でも影響を見逃せない。現時点の入…",
+      "article_path": "articles/49e7bcd75290f1ec.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/28/56058.html"
+    },
+    {
+      "entry_id": "874dec8d548ad498",
+      "title": "CorvusSKK に複数の脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-27T23:00:19+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CorvusSKK に複数の脆弱性が見つかったという報道で、内容次第では認証回避や任意操作につながる余地がある。記事情報だけでは、攻撃成立条件、影響を受ける版、修正の有無が確認できず、現時点では被害範囲を断定できない。もし外部公開や広域展開の製品なら、スキャンや既知の不正試行の対象になりやすく、単一端末の問題にとどまらず管理経路や保存情報へ波及する可能…",
+      "article_path": "articles/874dec8d548ad498.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/28/56057.html"
+    },
+    {
+      "entry_id": "9f766adc013162b0",
+      "title": "Apache Tomcat に10件の脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-27T23:00:17+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Apache Tomcat に関して10件の脆弱性が整理された記事で、複数の不具合が同時に扱われている点が重要となる。個々の欠陥が単独で直ちに侵害へ直結しない場合でも、組み合わせ次第で情報漏えい、サービス停止、権限の不正利用へつながる可能性がある。特にWebアプリ基盤として広く使われるため、外部公開の有無や認証前到達の可否、既存の設定差分で実害が大きく…",
+      "article_path": "articles/9f766adc013162b0.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/28/56056.html"
+    },
+    {
+      "entry_id": "efc9dc6d0abd270c",
+      "title": "OpenSSL に脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-27T23:00:14+00:00",
+      "impact_level": "Info",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要ScanNetSecurity が OpenSSL の脆弱性を報じているが、入力情報だけでは CVE 番号、影響範囲、悪用の有無が確認できない。OpenSSL は多くのサーバー、VPN、メール基盤、組み込み機器に入り込むため、実際には単一製品の問題でも 広い横断面へ波及しやすい。攻撃者は暗号処理の破綻、認証回避、DoS、情報漏えいなどを起点にするが、ど…",
+      "article_path": "articles/efc9dc6d0abd270c.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/28/56055.html"
+    },
+    {
+      "entry_id": "b5bcd872e0cddacf",
+      "title": "9 / 3開催の「情報システムCAMP 2026 秋」に HENNGE が協賛 河合柚樹氏が登壇",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-27T23:00:10+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要これは脆弱性や侵害事案の報告ではなく、イベント協賛と登壇予定を伝える記事に近い。内容としては、9月3日に開催される「情報システムCAMP 2026 秋」に HENNGE が協賛し、河合柚樹氏が登壇するという案内が中心で、直接の攻撃手法や被害情報は示されていない。したがって、CSIRTの即時対応対象というより、情報収集や人的ネットワークの接点として見る位…",
+      "article_path": "articles/b5bcd872e0cddacf.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/28/56054.html"
+    },
+    {
+      "entry_id": "cc88fa10809c3811",
+      "title": "ホテルニューオータニで「IPAフォーラム2026」を 9 / 14 開催 ～ 応募受付9月2日まで",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-27T23:00:08+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要本件は、ホテルニューオータニで開催される「IPAフォーラム2026」の告知であり、脆弱性情報や攻撃観測そのものを扱う記事ではない。内容は9月14日の開催案内と応募受付期限の周知が中心で、CSIRTにとっては直接のインシデント対応情報ではない位置づけになる。悪用手法や影響範囲は本文からは読み取れず、対象脅威や参加者向け資料の詳細も未確認である。実務上は、…",
+      "article_path": "articles/cc88fa10809c3811.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/28/56053.html"
+    },
+    {
+      "entry_id": "f5bd8607dabd7cdc",
+      "title": "Android の「高度な保護機能モード（AAPM）」とは？ JSSEC がセキュリティガイド第16回を公開",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-27T23:00:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要JSSEC が、Android の高度な保護機能モード（AAPM）を解説するセキュリティガイド第16回を公開した。内容は新たな脆弱性の発見ではなく、端末側の防御機能をどう使うかを整理した解説に近い。AAPM は攻撃の成立条件を狭める方向に働くが、既存の端末設定や運用方針を置き換えるものではない。そのため、組織としては「誰に有効化するか」「業務アプリとの…",
+      "article_path": "articles/f5bd8607dabd7cdc.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/28/56052.html"
+    }
+  ]
+}
