@@ -1,0 +1,134 @@
+{
+  "date": "2026-08-30",
+  "window": {
+    "from": "2026-08-29T06:00:00+09:00",
+    "to": "2026-08-30T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 3
+  },
+  "generated_at_jst": "2026-08-30T06:18:07.492687+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "Nasscomが2026年ITトレンド報告を公開",
+      "source_name": "nasscom",
+      "published_at": "2026-08-29T12:03:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要インドIT業界団体nasscomが2026年8月29日に公開した報告書で、AIが企業アーキテクチャの中心になると指摘した。AIネイティブ開発プラットフォームの普及により小規模チームでも高速開発が可能になる。Agentic AIの台頭で自律システムが実用化し、業務自動化が進む見込みだ。Cloud 3.0では規制遵守と主権管理が重視され、ハイブリッド戦略が…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://community.nasscom.in/communities/emerging-tech/digital-innovation-and-key-technology-trends-2026",
+      "selection_reason": "対象期間内に公開された最新の業界団体報告で、AIネイティブ開発やCloud 3.0など具体的な企業アーキテクチャ変化を指摘し、他の汎用予測と異なり実務影響が明確",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "Digital Innovation and Key Technology Trends for 2026",
+          "url": "https://community.nasscom.in/communities/emerging-tech/digital-innovation-and-key-technology-trends-2026",
+          "source_type": "web"
+        },
+        {
+          "title": "The CIO agenda for 2026",
+          "url": "https://www.ciodive.com/news/business-technology-outlook-trends-2026/811003/",
+          "source_type": "web"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "NVIDIAがHugging Faceを買収へ",
+      "source_name": "AI Briefing",
+      "published_at": "2026-08-29T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要NVIDIAがHugging Faceを約129億ドルで買収する合意に達した。オープンソースモデルのホスティング基盤をチップ大手が取り込むことで、AI開発のエコシステムが変わる可能性がある。買収により中立性への懸念も指摘されているが、NVIDIAのハードウェアと組み合わせたAI展開が加速する見通しだ。企業は自社AI戦略でオープンソース依存度を再評価する…",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://aibriefing.dev/",
+      "selection_reason": "対象期間内の具体的な企業買収発表で、AIインフラとオープンソースの統合という新規性が高く、他のモデルリリースと差別化される",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "AI News Today",
+          "url": "https://aibriefing.dev/",
+          "source_type": "web"
+        },
+        {
+          "title": "AI Daily",
+          "url": "https://ai.zachp.com/",
+          "source_type": "web"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "AI企業らがAIサイバー攻撃対策で共同声明",
+      "source_name": "SecurityWeek",
+      "published_at": "2026-08-29T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要OpenAIやAnthropic、Googleなど100社以上がAIを活用したサイバー攻撃対策で共同声明を出した。AIエージェントによる攻撃の高度化が懸念され、インフラ保護のための協調が求められている。声明は政府やセキュリティベンダーとの連携を呼びかけ、具体的な防御策の共有を促す内容だ。企業はAI導入時にセキュリティ対策を同時に強化する必要がある。",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://www.securityweek.com/news/",
+      "selection_reason": "対象期間内のAI関連セキュリティ共同行動で、具体的な企業連合と脅威認識の更新を示し、単発脆弱性報道より実務波及が広い",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "News - SecurityWeek",
+          "url": "https://www.securityweek.com/news/",
+          "source_type": "web"
+        },
+        {
+          "title": "AI News of the Day",
+          "url": "https://www.aidapted.ro/en/articles/ai-news-of-the-day-august-29-2026/",
+          "source_type": "web"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "b4350e1ba12710d5",
+      "title": "Five Critical WordPress Plugin and Theme Flaws Enable Site Takeover or RCE",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-29T16:25:03+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要WordPressの複数のプラグインとテーマに、認証回避、アカウント乗っ取り、任意コード実行へつながる重大な脆弱性が公表された。対象には WPMU DEV Dashboard、Avada、TranslatePress、Pods、GiveWP が含まれる。攻撃成立の条件は製品の導入有無と公開状況に依存し、管理画面に届く前提や特定機能の有効化が必要なものも…",
+      "article_path": "articles/b4350e1ba12710d5.html",
+      "original_url": "https://thehackernews.com/2026/08/five-critical-wordpress-plugin-and.html"
+    },
+    {
+      "entry_id": "68b92929baea49d0",
+      "title": "Berlin Refuses to Pay Hackers Who Stole Data From the City's State Network",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-28T21:30:52+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要ベルリン州政府は、8月に侵害された州の行政ネットワークをめぐり、データ窃取を伴う恐喝を受けていることを認め、支払いには応じない方針を示した。フォレンジック調査では、交通・気候保護・環境関連部門の保有情報から、さらに外部への流出が確認された。攻撃の入り口や侵入経路はこの時点で明示されておらず、初期侵入の手口、滞在期間、持ち出されたデータの種類と量は未確認…",
+      "article_path": "articles/68b92929baea49d0.html",
+      "original_url": "https://thehackernews.com/2026/08/berlin-refuses-to-pay-hackers-who-stole.html"
+    },
+    {
+      "entry_id": "9fcdfa80dac00955",
+      "title": "Perturbation Probing: A New Diagnostic for the Fragility of LLM Safety",
+      "source_name": "Unit 42",
+      "category": "reporting",
+      "published_at": "2026-08-28T22:00:07+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要Unit 42 の研究は、LLM の安全拒否が薄いニューラル層に偏って現れ、少しの入力変化で崩れやすい可能性を示した。攻撃者はプロンプトを微調整して拒否応答を回避し、禁止された出力や誘導を通しやすくなる。影響は単発の応答逸脱にとどまらず、外部公開のチャットボットや業務支援AIが誤誘導されると、情報流出や不適切な手順実行に波及し得る。もっとも、これは研究…",
+      "article_path": "articles/9fcdfa80dac00955.html",
+      "original_url": "https://unit42.paloaltonetworks.com/perturbation-probing-llm-safety/"
+    }
+  ]
+}
