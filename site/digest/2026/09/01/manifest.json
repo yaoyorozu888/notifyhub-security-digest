@@ -1,0 +1,437 @@
+{
+  "date": "2026-09-01",
+  "window": {
+    "from": "2026-08-31T06:00:00+09:00",
+    "to": "2026-09-01T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 27
+  },
+  "generated_at_jst": "2026-09-01T06:22:00.853452+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "Anthropic、AIエージェントが機器を操作するための新インターフェースを公開",
+      "source_name": "AI Business",
+      "published_at": "2026-08-31T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要AnthropicがAIエージェント向けのModel Hardware Standardを発表した。物理的な機器操作を可能にするインターフェースを提供し、physical AI分野での実用化を加速させる。この動きはAIモデル単体からエージェントが実世界のデバイスを制御する段階への移行を示す。企業は製造やロボット工学での導入を検討しやすくなる。競合他社も…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://aibusiness.com/latest-news",
+      "selection_reason": "AI分野で物理世界との連携を進める具体的な製品発表として新規性が高く、企業の実務判断に直結する。データセンターやモデル開発の汎用予測とは異なり、agentic AIのハードウェア統合という実装レベルの動きを捉えた。",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "Anthropic Releases Interface to Help AI Agents Operate Machines",
+          "url": "https://aibusiness.com/latest-news",
+          "source_type": "news"
+        },
+        {
+          "title": "Artificial Intelligence - The New York Times",
+          "url": "https://www.nytimes.com/spotlight/artificial-intelligence",
+          "source_type": "news"
+        },
+        {
+          "title": "AInformed — Daily AI News",
+          "url": "https://www.ainformed.dev/",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "Broadcom、VMware Cloud FoundationでプライベートAI基盤を強化",
+      "source_name": "SDxCentral",
+      "published_at": "2026-08-31T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要BroadcomがVMware Cloud FoundationのAI機能拡張を発表した。AIファクトリスタックやagentic securityを追加し、プライベートAI環境の構築を支援する。これにより企業はオンプレミスでAIワークロードを効率的に運用可能になる。KubeflowのCNCF卒業も相まって、Kubernetes基盤の成熟が加速する。コス…",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://www.sdxcentral.com/news/?term=kubernetes",
+      "selection_reason": "ITインフラ分野でプライベートクラウドAIの実装動向を具体的に示す発表。汎用予測ではなく、VMwareユーザー向けの新機能追加として実務影響が明確。",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "News - Kubernetes - SDxCentral",
+          "url": "https://www.sdxcentral.com/news/?term=kubernetes",
+          "source_type": "news"
+        },
+        {
+          "title": "News - AI & Machine Learning - SDxCentral",
+          "url": "https://www.sdxcentral.com/news/?term=ai-machine-learning",
+          "source_type": "news"
+        },
+        {
+          "title": "Latest Cloud Computing News | CIO Dive",
+          "url": "https://www.ciodive.com/topic/cloud/",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "FBI、中国系スパイプロキシ網を遮断",
+      "source_name": "The Hacker News",
+      "published_at": "2026-08-31T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要FBIが中国系サイバーespionageを支援するプロキシインフラを遮断した。QTYFグループが運用するQScanやQTRouterフレームワークが標的となった。この措置により米国内の重要インフラへの偵察活動が阻害される。企業はネットワーク監視を強化し、未知のプロキシ経由アクセスに注意を払う必要がある。類似の国家支援型脅威が増加傾向にあり、ゼロトラスト…",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://thehackernews.com/2026/08/weekly-recap-chinese-spy-proxy-ai.html",
+      "selection_reason": "サイバーセキュリティ分野で国家レベルのインフラ遮断という具体的事例を捉えた。脆弱性報告中心ではなく、 espionage対策の実務対応に寄与する最新動向。",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "⚡ Weekly Recap: Chinese Spy Proxy, AI Agents Go Off-Task, Router Backdoors and More",
+          "url": "https://thehackernews.com/2026/08/weekly-recap-chinese-spy-proxy-ai.html",
+          "source_type": "news"
+        },
+        {
+          "title": "Vulnerability — Latest News, Reports & Analysis | The Hacker News",
+          "url": "https://thehackernews.com/search/label/Vulnerability",
+          "source_type": "news"
+        },
+        {
+          "title": "AInformed — Daily AI News",
+          "url": "https://www.ainformed.dev/",
+          "source_type": "news"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "73021d8dc2a07235",
+      "title": "CVE-2026-82078 PaperCut NG/MF Unsafe Reflection Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-08-31T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CISA KEV に CVE-2026-82078 が載ったことで、PaperCut NG/MF にある Unsafe Reflection の脆弱性が、理論上の欠陥ではなく実際に悪用対象として扱われている状況になった。反射処理の不備は、入力の扱い次第で 認証前の任意操作 や情報漏えいの起点になりやすく、Web 到達可能な管理系機能を持つ製品では優先度…",
+      "article_path": "articles/73021d8dc2a07235.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "198dcfdc4ba5bdd3",
+      "title": "CVE-2026-81578 PaperCut NG/MF Missing Authentication for Critical Function Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-08-31T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CVE-2026-81578 は、PaperCut NG/MF における 重要機能の認証欠落 に関する脆弱性で、CISA KEV に掲載されている。攻撃者は有効な認証情報を持たなくても、該当機能へ到達できる構成であれば不正操作を試みられる余地がある。印刷基盤は社内ネットワークの中核に置かれやすく、侵入点になるとジョブ情報、設定、場合によっては接続先の内…",
+      "article_path": "articles/198dcfdc4ba5bdd3.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "7da42d0b4d8f7ff4",
+      "title": "North Korean Job Fraud Expands Beyond IT Into Healthcare and Sales",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-31T17:24:28+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要北朝鮮系とみられる脅威活動が、IT業界だけでなく医療や営業にも職を求める形へ広がっている。狙いは通常の採用を装って入り込み、給与や業務端末、社内権限を通じて収益化や情報収集につなげる点にある。内通者型の侵入として進むため、マルウェア単体よりも発見が遅れやすく、業務委託やリモート雇用を多用する組織ほど表面化しにくい。影響は個人の不正就労にとどまらず、顧客…",
+      "article_path": "articles/7da42d0b4d8f7ff4.html",
+      "original_url": "https://thehackernews.com/2026/08/north-korean-job-fraud-expands-beyond.html"
+    },
+    {
+      "entry_id": "6f621004f133929f",
+      "title": "⚡ Weekly Recap: Chinese Spy Proxy, AI Agents Go Off-Task, Router Backdoors and More",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-31T13:50:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要本件は、The Hacker News の週間まとめであり、単一の脆弱性報告ではなく複数の攻撃手口を横断して扱っている。ルータのバックドア、偽の確認操作で利用者をインストーラ化する誘導、正規システムを使った通信収集とログ消去、古い欠陥をつないだ攻撃連鎖、AIエージェントの想定外の行動などが並ぶ。悪用の核は、単体の穴よりも既定設定、信頼関係、運用上の甘さ…",
+      "article_path": "articles/6f621004f133929f.html",
+      "original_url": "https://thehackernews.com/2026/08/weekly-recap-chinese-spy-proxy-ai.html"
+    },
+    {
+      "entry_id": "26807a6b51a15911",
+      "title": "ValleyRAT Backdoor Hides in Signed Adware That Users Add to Antivirus Exclusions",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-31T12:14:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要Silver Fox とされる攻撃者が、署名付きの中国製アドウェアを装って ValleyRAT を配布している。正規の壁紙ツールに見せかけることで、利用者が「広告系ソフト」と誤認し、さらに アンチウイルスの除外設定に追加してしまう状況を狙う。悪意ある本体は信頼されたプロセスの配下で動作し、監視や検知をすり抜けやすくなる。影響は端末単体にとどまらず、資格…",
+      "article_path": "articles/26807a6b51a15911.html",
+      "original_url": "https://thehackernews.com/2026/08/valleyrat-backdoor-hides-in-signed.html"
+    },
+    {
+      "entry_id": "a279647ae35b26c9",
+      "title": "Aurora Ransomware Operators Use Cursor AI in Attacks Against 10 Targets",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-31T11:47:24+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要Aurora ransomware 関連の攻撃者が、Cursor AI を侵入支援に使っていたことが観測された。報告では、CloudSEK と Gambit Security が、露出した攻撃基盤の分析を通じて、少なくとも 10 件の対象に対する活動を示している。AI は新しい脆弱性そのものではなく、侵入手順の作成・自動化やフィッシング文面、スクリプト…",
+      "article_path": "articles/a279647ae35b26c9.html",
+      "original_url": "https://thehackernews.com/2026/08/aurora-ransomware-operators-use-cursor.html"
+    },
+    {
+      "entry_id": "eda871bcc329070a",
+      "title": "Securing Claude Code: The New Compliance API, Local Visibility, and Identity Governance",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-31T11:31:47+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要この記事は、Claude Code のような開発支援エージェントが、ローカル端末上の権限を使ってファイル閲覧、シェル実行、MCP ツール呼び出しを行う点に注目している。Anthropic は Compliance API を追加し、セキュリティ担当者がその活動を追跡しやすくしたが、ログが見えることと 正当な利用かを判定できることは別問題として残る。攻撃…",
+      "article_path": "articles/eda871bcc329070a.html",
+      "original_url": "https://thehackernews.com/2026/08/securing-claude-code-new-compliance-api.html"
+    },
+    {
+      "entry_id": "3092f0e847a0adf8",
+      "title": "China-Linked Fire Ant Hijacks Cisco Routers to Steal Credentials and Blind Security Logs",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-31T09:04:55+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要中国系の諜報活動グループとされるFire Antが、VMwareのハイパーバイザー中心の活動から範囲を広げ、Cisco IOS XRルーター、TACACSサーバー、Linux管理ホストを侵害したと報じられた。狙いは通信経路の支配と認証基盤の掌握にあり、資格情報の窃取とセキュリティログの無力化を通じて、侵入の発見を遅らせる点にある。ネットワーク機器と認証…",
+      "article_path": "articles/3092f0e847a0adf8.html",
+      "original_url": "https://thehackernews.com/2026/08/china-linked-fire-ant-hijacks-cisco.html"
+    },
+    {
+      "entry_id": "47357f77a0fc3162",
+      "title": "DoJ Corrects China Hacking Claim, Says U.S. Agencies Were Targets, Not Victims",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-08-31T07:56:53+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要米司法省が、当初の発表で示した「被害を受けた」という表現を訂正し、実際には複数の連邦機関が標的にされた段階だったと説明した。記事の核は侵害の新規発生ではなく、政府機関向けの公表内容が後から修正された点にある。悪用の具体的手口、侵入の成否、影響範囲の実態は本文からは確認できず、現時点では観測事実の訂正として扱うのが妥当になる。CSIRTの観点では、同種の…",
+      "article_path": "articles/47357f77a0fc3162.html",
+      "original_url": "https://thehackernews.com/2026/08/doj-corrects-china-hacking-claim-says.html"
+    },
+    {
+      "entry_id": "3babbc883f99c3a1",
+      "title": "The Coding-Agent Trap: When a \"Free\" LLM Endpoint Is the Adversary, (Mon, Aug 31st)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-08-31T20:00:34+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要インターネット公開の推論用ハニーポットが見つかり、人気モデル名に付け替えられたうえで、「無料」LLM基盤の一部として組み込まれた痕跡が確認された。そこへ実際のコーディングエージェントのセッションが流れ込み、会話履歴、ファイルシステム出力、作業パス、ローカルのツール一覧が露出した。記事は任意コード実行やツール実行を起こした事例ではなく、攻撃者がその位置に…",
+      "article_path": "articles/3babbc883f99c3a1.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33298"
+    },
+    {
+      "entry_id": "e038bbb1dcf8bb61",
+      "title": "ISC Stormcast For Monday, August 31st, 2026 https://isc.sans.edu/podcastdetail/10074, (Mon, Aug 31st)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-08-31T02:00:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要SANS ISC の Stormcast は、特定の脆弱性告知ではなく、直近の観測や話題を短く整理する配信とみるのが自然である。今回の入力には個別の技術内容がなく、何が取り上げられたかは未確認である。したがって、現時点で悪用手口や影響範囲を断定する材料はなく、自組織への直接影響も判断不能となる。実務上は、配信内で言及された製品名、CVE、露出サービス、…",
+      "article_path": "articles/e038bbb1dcf8bb61.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33296"
+    },
+    {
+      "entry_id": "bec24fa7f7e61d9f",
+      "title": "Spring Ring: An Inside Look at Voice Phishing Campaigns in Microsoft Teams",
+      "source_name": "Unit 42",
+      "category": "reporting",
+      "published_at": "2026-08-31T10:00:36+00:00",
+      "impact_level": "High",
+      "threat_type": "Phishing",
+      "summary_preview": "概要Microsoft Teamsを悪用した音声誘導型のフィッシング活動が取り上げられている。攻撃者は会話の流れを使って警戒心を下げ、マルウェア配布や資格情報の取得へつなげる構図が想定される。狙いがドメインコントローラーに及ぶなら、単一端末の被害にとどまらず、認証基盤や広域の横展開へ波及しやすい。企業内の正規コラボレーション基盤を踏み台にするため、メール単…",
+      "article_path": "articles/bec24fa7f7e61d9f.html",
+      "original_url": "https://unit42.paloaltonetworks.com/spring-ring-voice-phishing-campaigns/"
+    },
+    {
+      "entry_id": "4b707ad4af5cead6",
+      "title": "革新的情報通信技術（Beyond 5G（6G））基金事業　電波有効利用研究開発プログラムに係る令和８年度新規委託研究の公募（第2回）について（予告）",
+      "source_name": "NICT NOTICE",
+      "category": "reporting",
+      "published_at": "2026-08-31T05:00:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要本件は、NICT が Beyond 5G（6G） 関連の研究開発委託について、令和8年度の新規公募を事前告知した案内にあたる。内容はセキュリティ上の事故や脆弱性ではなく、研究開発案件の募集予告であるため、直ちに対処すべき障害は見当たらない。電波有効利用 を主題とするため、成果物は将来的に通信基盤や無線運用の前提条件に影響しうるが、現時点では具体的な攻撃…",
+      "article_path": "articles/4b707ad4af5cead6.html",
+      "original_url": "/publicity/topics/2026/08/31-1.html"
+    },
+    {
+      "entry_id": "81805bd6d943775c",
+      "title": "Googleが経営破綻した航空会社のデータをAIのために購入 ～ メール1億件 Teamsレコード5億件 OneDriveファイル1,700万件 SharePointデータ2,050万件 カスタマーサービス通話録音3,000万件 カスタマーサービスチャット記録1,500万件：支払額15億円",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-30T23:15:02+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要破綻した航空会社に残っていた大量の顧客・業務データを、GoogleがAI用途のために取得したという報道である。対象にはメール1億件、Teams記録5億件、OneDriveファイル1,700万件、SharePointデータ2,050万件、通話録音やチャット記録も含まれる。直接の侵害報告ではなく、破綻処理や資産売却の文脈でデータが移転した点が論点になる。攻…",
+      "article_path": "articles/81805bd6d943775c.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/31/56083.html"
+    },
+    {
+      "entry_id": "32f09899d009fbee",
+      "title": "GMOサイバーセキュリティ byイエラエ、9 / 10 オンラインセミナー開催 ～ VPN・シャドーITのリスク可視化と継続診断を解説",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-30T23:10:02+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要この記事は、GMOサイバーセキュリティ byイエラエがVPNとシャドーITのリスクを可視化し、継続診断の考え方を説明するオンラインセミナーを案内したものに近い。新たな脆弱性の公表や侵害事例の報道ではなく、運用上のリスク管理と診断の進め方が主題となる。攻撃者は、管理外の接続経路や把握されていない外部サービスを足がかりに、認証突破や横展開を狙いやすくなる。…",
+      "article_path": "articles/32f09899d009fbee.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/31/56082.html"
+    },
+    {
+      "entry_id": "92f7a0aec17ac1ab",
+      "title": "一正蒲鉾社員のメールアカウントに不正アクセス、取引先と社員の個人情報が閲覧された可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-30T23:05:20+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要一正蒲鉾の社員用メールアカウントが不正アクセスを受け、取引先と社員の個人情報が閲覧された可能性が公表された。現時点では、閲覧の有無や漏えい範囲、送受信メールの内容改ざんや横展開の有無は未確認となる。入口がメールである場合、攻撃者は受信箱から契約情報や関係者の連絡先を拾い、なりすまし、詐欺、追加侵入の足がかりに転用しやすい。単一アカウントの侵害でも、そこ…",
+      "article_path": "articles/92f7a0aec17ac1ab.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/31/56081.html"
+    },
+    {
+      "entry_id": "5a71be77a169f961",
+      "title": "国立研究開発法人科学技術振興機構（JST）に不正アクセス、外部機関からの情報提供で発覚",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-30T23:05:17+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要国立研究開発法人科学技術振興機構（JST）が不正アクセスを受け、外部機関からの情報提供で発覚した。記事上では侵入経路、侵害範囲、持ち出しの有無は明示されておらず、現時点では被害の全体像を断定できない。外部通報で判明した点は、内部監視だけでは検知し切れなかった可能性を示す。公的機関や研究支援組織は、委託先や連携先を含む広い接続面を持つため、初期侵入後に権…",
+      "article_path": "articles/5a71be77a169f961.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/31/56080.html"
+    },
+    {
+      "entry_id": "2ad471fc497fc537",
+      "title": "アンビションDXホールディングスに不正アクセス、ログの消失を確認",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-30T23:05:13+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要アンビションDXホールディングスで不正アクセスが発生し、調査の過程でログの消失が確認された。侵入経路や初期侵入の手口は未確認であり、現時点では断定できない。ログ消失は、単なる障害復旧の問題にとどまらず、侵入範囲の把握や証跡保全を難しくする。攻撃者が権限を得てログを削除した可能性もあれば、運用上の保管不備や障害で失われた可能性も残る。影響は当該システム内…",
+      "article_path": "articles/2ad471fc497fc537.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/31/56079.html"
+    },
+    {
+      "entry_id": "3fc54866c11f4450",
+      "title": "ギグワークスのサーバに不正アクセス、攻撃者に目視で個人情報が閲覧された可能性を否定できず",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-30T23:05:09+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要ギグワークスのサーバに不正アクセスが発生し、攻撃者が画面を直接見ながら操作した結果、個人情報が目視で閲覧された可能性を否定できないと報じられている。現時点で、どの経路で侵入したか、どの権限まで奪われたか、閲覧された情報の範囲がどこまで広がったかは未確認である。目視閲覧型の侵害は、ファイル一括窃取だけでなく、検索・抽出・コピーを通じて被害の把握を遅らせや…",
+      "article_path": "articles/3fc54866c11f4450.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/31/56078.html"
+    },
+    {
+      "entry_id": "3c0a70eb4468f1c3",
+      "title": "大仙のシステムに不正アクセス、社内全システム遮断し受注出荷業務に影響",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-30T23:05:06+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要大仙の社内システムに不正アクセスが発生し、被害拡大を抑えるために全システムを遮断した結果、受注・出荷業務に影響が出た。記事上は侵入経路や初期侵入の手口、データ流出の有無は示されておらず、現時点では封じ込めを優先した対応と読める。実務上は、業務停止を伴う遮断が必要になる時点で、認証情報の悪用や横展開、基幹系への到達を疑う必要がある。特に受注出荷に直結する…",
+      "article_path": "articles/3c0a70eb4468f1c3.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/31/56077.html"
+    },
+    {
+      "entry_id": "9d0092d1d00840e1",
+      "title": "KDDI の ISP 事業者向けメールシステムへの不正アクセス、レンタルサーバCPIへの影響が明らかに",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-30T23:05:02+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要KDDI の ISP 事業者向けメールシステムに不正アクセスが発生し、その影響がレンタルサーバCPIにも及んだことが明らかになった。記事からは、侵入の入口や初期侵害の手口、データ持ち出しの有無は読み取れず、未確認事項が多い。とはいえ、事業者向けメール基盤は通知、認証、障害連絡の起点になりやすく、ここが侵害されると顧客対応の信頼性やなりすまし送信のリスク…",
+      "article_path": "articles/9d0092d1d00840e1.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/31/56076.html"
+    },
+    {
+      "entry_id": "362028a852b45cf2",
+      "title": "フィッシングのクリック率 ～ 従来型は 12 %、AI 生成は 54 %",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-30T23:00:21+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Phishing",
+      "summary_preview": "概要この記事は、従来型のフィッシングとAI生成フィッシングのクリック率を比較し、後者が大きく上回ったと伝えている。AI生成文面は、文法の不自然さや定型句の少なさが減り、受信者が警戒を下げやすい点が悪用される。実際の被害は、クリック自体よりも、その先の認証情報入力やセッション奪取、業務アカウントの乗っ取りへ広がる可能性が高い。もっとも、本文からは調査条件、対…",
+      "article_path": "articles/362028a852b45cf2.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/31/56075.html"
+    },
+    {
+      "entry_id": "9683f3d7d183f34d",
+      "title": "「クラウドネイティブ教科書PDF版・EPUB版：Ver. 1.0.0」にスリーシェイクの羽山公平氏がレビュアーとして参加",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-30T23:00:17+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要この記事は、「クラウドネイティブ教科書PDF版・EPUB版：Ver. 1.0.0」の刊行にあたり、スリーシェイクの羽山公平氏がレビュアーとして参加したことを伝えるものだ。内容自体は脆弱性や侵害の報告ではなく、技術書の品質向上に関する話題にとどまる。CSIRTの観点では、クラウドネイティブ環境の理解を支える参考資料としては有用だが、直ちに対応判断を要する…",
+      "article_path": "articles/9683f3d7d183f34d.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/31/56074.html"
+    },
+    {
+      "entry_id": "f049097d7fe651b4",
+      "title": "インシデント対応やフォレンジックの実践力を強化 ～ NRIセキュアが新研修「セキュアWings」提供",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-30T23:00:13+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要NRIセキュアが、インシデント対応とフォレンジックの実践力を強化する新研修「セキュアWings」を提供すると伝えている。記事の主眼は脆弱性や攻撃事案そのものではなく、CSIRTや関係部署の初動対応力と調査品質を底上げする教育施策にある。実際の現場では、手順の理解不足よりも、ログ保全の遅れや判断のばらつきが被害拡大につながりやすい。研修内容の詳細、対象者…",
+      "article_path": "articles/f049097d7fe651b4.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/31/56073.html"
+    },
+    {
+      "entry_id": "0443bbe2105feb2b",
+      "title": "SmartHRのグループ会社がSCS評価制度支援サービス開始",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-30T23:00:11+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要本件は、SmartHRのグループ会社がSCS評価制度支援サービスを開始したという事業ニュースで、脆弱性や侵害の報告ではない。公開情報の範囲では、何らかのセキュリティ事案が起きた形跡はなく、主眼は制度対応や評価運用の支援にある。攻撃者が悪用する対象ではないため、直接の封じ込めや緊急パッチ判断は生じにくい。もっとも、評価制度支援がクラウド上で個人情報や社内…",
+      "article_path": "articles/0443bbe2105feb2b.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/31/56072.html"
+    },
+    {
+      "entry_id": "a7c46487eaf07777",
+      "title": "11 / 25・26 開催「東北サイバーセキュリティシンポジウム2026」聴講参加者募集開始",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-30T23:00:08+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要これは脆弱性や攻撃手口の告知ではなく、東北サイバーセキュリティシンポジウム2026の聴講参加者募集開始を伝える案内記事となる。内容の中心は、11月25日・26日に開催されるイベントの周知であり、直ちに対処すべき侵害情報や悪用中の脅威は示されていない。CSIRT観点では、個別インシデント対応よりも、最新動向の把握、地域連携先の確認、訓練や広報の補強材料と…",
+      "article_path": "articles/a7c46487eaf07777.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/31/56071.html"
+    },
+    {
+      "entry_id": "4212d66eb45ff2bb",
+      "title": "楽天Koboデスクトップアプリ（Windows版）のインストーラに DLL 読み込みに関する脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-30T23:00:04+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要楽天KoboデスクトップアプリのWindows版インストーラに、DLL読み込みの不備があると報じられた。想定外のDLLを同じ場所に置かれると、インストーラ実行時に任意コードへつながる余地が生じる。影響は主に端末上のローカル実行権限に寄りやすいが、配布経路や権限の持ち方によっては管理者権限での実行に波及する可能性がある。現時点では、悪用の有無、対象バージ…",
+      "article_path": "articles/4212d66eb45ff2bb.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/08/31/56070.html"
+    }
+  ]
+}
