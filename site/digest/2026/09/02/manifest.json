@@ -1,0 +1,417 @@
+{
+  "date": "2026-09-02",
+  "window": {
+    "from": "2026-09-01T06:00:00+09:00",
+    "to": "2026-09-02T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 27
+  },
+  "generated_at_jst": "2026-09-02T06:23:03.557845+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "AIネイティブ開発プラットフォームの普及",
+      "source_name": "CIO Dive",
+      "published_at": "2026-09-01T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要Gartnerは2026年の戦略的技術トレンドとして、AIネイティブ開発プラットフォームを上位に位置づけた。生成AIを活用したツールにより、開発者がコード生成やワークフロー自動化を進め、小規模チームでも従来の大規模チーム並みの成果を出せるようになる。2030年までに組織の5社中4社がAIツール導入で開発チームを縮小すると予測される。CIOはこれを基に予…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://www.ciodive.com/news/gartner-strategic-technology-trends-2026/803413/",
+      "selection_reason": "Gartnerの2026年トレンド発表の中で、AIネイティブ開発プラットフォームが具体的なCIO向け影響として新規に強調され、開発チーム規模の縮小という実務的波及が明確なため、他の汎用予測より優先",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "5 CIO trends to watch in 2026: Gartner",
+          "url": "https://www.ciodive.com/news/gartner-strategic-technology-trends-2026/803413/",
+          "source_type": "news"
+        },
+        {
+          "title": "Top Strategic Technology Trends for 2026 | Gartner",
+          "url": "https://www.gartner.com/en/articles/top-technology-trends-2026",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "AnthropicがClaude 5.1をリリース",
+      "source_name": "AI Weekly",
+      "published_at": "2026-09-01T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要AnthropicはClaude Fable 5.1とMythos 5.1をリリースした。キャッシュ読み取りコストを75%削減し、全体ワークロードを約25%安価に利用可能にする。企業向けにはデータ保存を顧客管理クラウドに限定し、ゼロリテンションの安全策を追加した。科学エージェントベンチマークで大幅スコア向上を記録している。開発者や企業はこれにより大規模…",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://aiweekly.co/",
+      "selection_reason": "具体的なモデル更新と価格改善、企業向け新機能が同日発表され、AI実務への即時影響が大きいため選定",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "AI News for September 1, 2026",
+          "url": "https://aiweekly.co/ai-news-today/edition/2026-09-01",
+          "source_type": "news"
+        },
+        {
+          "title": "Anthropic ships Claude 5.1 line",
+          "url": "https://aiweekly.co/",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "CISAが脆弱性クラス排除を提言",
+      "source_name": "Help Net Security",
+      "published_at": "2026-09-01T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CISAは脆弱性を個別対応する従来手法の限界を指摘し、脆弱性クラス全体の排除を推奨するレビューを公開した。攻撃者が常に新しい脆弱性を狙う現状に対し、根本原因の除去が有効と位置づける。これにより組織はパッチ適用だけでなく、設計段階での脆弱性防止策を強化する必要がある。レビューはセキュリティ予算配分やツール選定の見直しを促す内容だ。実務担当者はこの提言を基…",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://helpnetsecurity.com/view/news",
+      "selection_reason": "CISAの公式レビューとして脆弱性管理の根本的アプローチ変更を訴え、セキュリティ実務に長期影響を与えるため選定",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "CISA review makes the case for eliminating vulnerability classes",
+          "url": "https://helpnetsecurity.com/view/news",
+          "source_type": "news"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "710d03992a9f078a",
+      "title": "Attackers Exploit Critical JFrog Artifactory Flaw to Mint Admin Tokens Days After Disclosure",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-01T17:53:11+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要JFrog Artifactory の修正済み重大欠陥 CVE-2026-82329 が、公開から数日で悪用されているとされる。認証回避により管理者権限まで到達しうるため、単なる設定不備ではなく、リポジトリ管理基盤の制御奪取に直結しやすい。Artifactory はソフトウェア供給網の中核に置かれやすく、侵害されると成果物改ざん、内部資格情報の取得、後…",
+      "article_path": "articles/710d03992a9f078a.html",
+      "original_url": "https://thehackernews.com/2026/09/attackers-exploit-critical-jfrog.html"
+    },
+    {
+      "entry_id": "12b62a36d8165f42",
+      "title": "Breeze Comet Executes Hundreds of Fraudulent Transactions via Brazilian Payment Systems",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-01T17:19:24+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要Breeze Comet（旧称 UNC5669）が、ブラジルの決済基盤や銀行向けソフトウェアを悪用し、詐欺的な送金を多数実行してきたと報告された。対象は金融サービス、小売、ECにまたがり、単一組織の不正利用にとどまらず、決済処理の信頼境界そのものを突く攻撃とみられる。攻撃者は正規の業務フローや管理機能に入り込み、取引の正当性を装って資金移動を進めるため…",
+      "article_path": "articles/12b62a36d8165f42.html",
+      "original_url": "https://thehackernews.com/2026/09/breeze-comet-executes-hundreds-of.html"
+    },
+    {
+      "entry_id": "e69544a85b7276e9",
+      "title": "13 Malicious Packagist Packages Target Unpatched iPhones to Steal Crypto Wallet Seeds",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-01T14:07:20+00:00",
+      "impact_level": "High",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要Packagist上で配布された13件の悪性Composerパッケージが見つかり、映画・漫画の配信サイトに組み込まれた際にJavaScriptを注入し、訪問者へ不正な挙動を仕掛ける構図が示された。コードはサイト訪問者に対して広告詐欺とギャンブル誘導のリダイレクトを行い、その一部として未修正のiPhoneを狙うスパイウェア配布へつなげる。直接の標的はサイ…",
+      "article_path": "articles/e69544a85b7276e9.html",
+      "original_url": "https://thehackernews.com/2026/09/13-malicious-packagist-packages-target.html"
+    },
+    {
+      "entry_id": "20e1864bf284c6cc",
+      "title": "Iranian Hackers Pose as Recruiters to Deliver Cross-Platform RATs Through Coding Tests",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-01T13:08:58+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要この記事は、採用担当者を装う攻撃で応募者にコード試験を実行させ、Node.js/JavaScript製のRATを配布する手口を扱う。攻撃主体は Iranian Nimbus Manticore とされ、Linux と macOS まで狙える交差実行型の不正コードを使っている点が重要になる。見かけ上は職務経歴や課題提出のやり取りに見えるため、通常のメール…",
+      "article_path": "articles/20e1864bf284c6cc.html",
+      "original_url": "https://thehackernews.com/2026/09/iranian-hackers-pose-as-recruiters-to.html"
+    },
+    {
+      "entry_id": "954f2777f653820e",
+      "title": "Threat Actors Don’t Want Better Attacks. They Want Repeatable Ones",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-01T11:30:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Phishing",
+      "summary_preview": "概要記事は、攻撃者が高度な新手法よりも、繰り返し成功する侵入手順を好むという点を扱う。例として、Webページ上で「人間確認」を装い、利用者に端末へ貼り付けさせることで、クリップボード経由でコマンド実行に誘導する ClickFix が挙げられている。こうした手口は、脆弱性の悪用よりも人的操作に依存するため、メール・Web・認証画面のどこからでも入り口になりや…",
+      "article_path": "articles/954f2777f653820e.html",
+      "original_url": "https://thehackernews.com/2026/09/threat-actors-dont-want-better-attacks.html"
+    },
+    {
+      "entry_id": "7762e06d55e00d01",
+      "title": "Attackers Steal METR API Key and Consume AI Credits Worth About $600,000",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-01T09:05:30+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Credential Theft",
+      "summary_preview": "概要METRがAPIキーの窃取を起点とする事案を公表し、攻撃者がAIクレジットを消費して約60万ドル相当の利用を発生させたと伝えている。研究用の認証情報が奪われると、まずは不正な計算資源の消費や設定変更が起きやすく、続いて関連する管理機能や周辺クラウド資産への横展開も起こりうる。現時点では、機密情報の流出有無や侵入経路の詳細は十分に確認できていない。ニュー…",
+      "article_path": "articles/7762e06d55e00d01.html",
+      "original_url": "https://thehackernews.com/2026/09/attackers-steal-metr-api-key-and.html"
+    },
+    {
+      "entry_id": "14a8e2c1a3b1a247",
+      "title": "Russia-Aligned UAC-0099 Plants Nuclear Weapon Prompt in Malware to Disrupt AI Analysis",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-01T08:26:24+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Malware",
+      "summary_preview": "概要本件は、Russia-aligned の脅威アクター UAC-0099 が、GuardBreaker と呼ばれる手法を用いて、マルウェア解析に使われる AI支援の解析環境 を妨害した事案を伝える。狙いは、LLM の安全機構を意図的に誘発し、解析や分類を止めさせることにある。通常の感染被害そのものより、検知・解析・トリアージの遅延 を作る点に価値がある。…",
+      "article_path": "articles/14a8e2c1a3b1a247.html",
+      "original_url": "https://thehackernews.com/2026/09/russia-aligned-uac-0099-plants-nuclear.html"
+    },
+    {
+      "entry_id": "e8a932ed70eae81e",
+      "title": "Attackers Exploit Critical Langflow and Rails Flaws in Credential-Probing and C2 Activity",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-01T07:22:30+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要VulnCheck の観測によると、攻撃者は Langflow と Ruby on Rails の重大な欠陥を悪用し、認証情報の探索や C2 活動 を進めている。Langflow 側は ユーザー入力の検証不備 により、root 権限の文脈で任意の Python コード実行に至るとされる。Rails 側の詳細は入力断片からは読み取れず、どの条件で実害化す…",
+      "article_path": "articles/e8a932ed70eae81e.html",
+      "original_url": "https://thehackernews.com/2026/09/attackers-exploit-critical-langflow-and.html"
+    },
+    {
+      "entry_id": "2c76f2448a0073a6",
+      "title": "ISC Stormcast For Tuesday, September 1st, 2026 https://isc.sans.edu/podcastdetail/10076, (Tue, Sep 1st)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-09-01T02:00:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要SANS ISC の Stormcast は、特定の製品脆弱性告知ではなく、直近の観測や注意喚起をまとめるポッドキャストである。個別の攻撃キャンペーンや検知事例を俯瞰する用途が強く、自組織で再現性のある露出を探す際の補助線になる。悪用の成立条件は、公開面の設定不備、古い機器の放置、認証情報の使い回しなど、運用側の継続的な弱点に寄ることが多い。影響は単発…",
+      "article_path": "articles/2c76f2448a0073a6.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33302"
+    },
+    {
+      "entry_id": "e138ef8a8cde7d51",
+      "title": "Guildma (Astaroth) malware infection from Brazilian Portuguese email, (Tue, Sep 1st)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-09-01T00:33:21+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Malware",
+      "summary_preview": "概要ブラジル系ポルトガル語のメールを起点に、Guildma (Astaroth) の感染が観測されたという内容で、主な入口は添付や本文中リンクを使った初期侵入とみられる。感染後は認証情報の窃取や追加ペイロードの取得につながりやすく、端末単体の問題に見えても業務アカウント全体へ波及する余地がある。特にメールクライアント、Webアクセス、資格情報管理が同一端末…",
+      "article_path": "articles/e138ef8a8cde7d51.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33300"
+    },
+    {
+      "entry_id": "2c91b352393461ff",
+      "title": "VU#456290: Hugging Face Transformers library writes remote code to disk prior to consent check",
+      "source_name": "CERT/CC",
+      "category": "reporting",
+      "published_at": "2026-09-01T13:35:43+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Hugging Face Transformers の load_custom_generate() に、同意確認より先にリモートの Python ファイルを書き込んでしまう不備が見つかった。対象は 4.49.0 から 5.8.1 までで、custom_generate/generate.py を含むモデルを読み込むだけで、ユーザーが拒否しても ~/.…",
+      "article_path": "articles/2c91b352393461ff.html",
+      "original_url": "https://kb.cert.org/vuls/id/456290"
+    },
+    {
+      "entry_id": "7a108c9bf62192fd",
+      "title": "「 H.C.R.2026第53回国際福祉機器展＆フォーラム」に出展",
+      "source_name": "NICT NOTICE",
+      "category": "reporting",
+      "published_at": "2026-09-01T05:00:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要これはセキュリティ脆弱性や攻撃手口の通知ではなく、NICTのイベント出展告知であり、直接のインシデント対応優先度は低い。内容としては「H.C.R.2026第53回国際福祉機器展＆フォーラム」への出展案内で、主眼は広報や対外発信にある。悪用経路や被害拡大の筋は示されておらず、CSIRTが緊急に対処すべき技術情報は含まれない。もっとも、福祉・医療・公共分野…",
+      "article_path": "articles/7a108c9bf62192fd.html",
+      "original_url": "/publicity/event/2026/09/01-1.html"
+    },
+    {
+      "entry_id": "2c2b409f8af1d8ef",
+      "title": "大規模中性原子量子コンピュータ向けの多重量子光インターフェースを実現",
+      "source_name": "NICT NOTICE",
+      "category": "reporting",
+      "published_at": "2026-09-01T05:00:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要NICTが、大規模な中性原子量子コンピュータに向けて、多重量子光インターフェースを実現したと公表した。量子ビットを光で結び付ける基盤技術が前進した形で、将来的には遠距離接続や分散型の量子処理に関わる。悪用型の脆弱性告知ではなく、現時点での直接的なセキュリティ被害は限定的とみるのが妥当である。一方で、量子計算の実用化が進むほど、公開鍵暗号への影響や、長期…",
+      "article_path": "articles/2c2b409f8af1d8ef.html",
+      "original_url": "/press/2026/09/01-1.html"
+    },
+    {
+      "entry_id": "9cfcaf3feed66c00",
+      "title": "AeyeScan blog 第15回 なぜ米国サイバーセキュリティ株は V 字回復したのか？",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-31T23:15:02+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要この記事は、米国のサイバーセキュリティ関連株が急落後にV字回復した背景を、投資市場の反応として整理した内容であり、脆弱性や侵害事案そのものを扱うものではない。直接の悪用手口や被害拡大の話ではなく、需要の再評価、防御投資の継続、景気や金利の見通しが株価にどう影響したかを読む性格が強い。CSIRT観点では、製品導入や予算判断の外部環境として参考になる一方、…",
+      "article_path": "articles/9cfcaf3feed66c00.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/01/56097.html"
+    },
+    {
+      "entry_id": "6bb5049bdef1e7f9",
+      "title": "データセンター閉鎖時代を乗り切る選定＆移行ポイント解説 ～ セコムトラストシステムズ、9 / 24・25 Web セミナー開催",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-31T23:10:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要本件は、データセンター閉鎖が進む環境で、移行先の選定と切り替え時の注意点を整理するWebセミナーの案内に近い内容であり、直接の脆弱性告知ではない。攻撃そのものより、老朽化した基盤の継続利用や移行遅延が、結果として保守断絶・設定不整合・監視空白を生みやすい点が論点になる。悪用されるとすれば、閉鎖予定施設や移転中のシステムに対して、アクセス制御やバックアッ…",
+      "article_path": "articles/6bb5049bdef1e7f9.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/01/56096.html"
+    },
+    {
+      "entry_id": "f0ed7a3c3e7fa167",
+      "title": "サンコーテクノのベトナム子会社にランサムウェア攻撃、サーバ及びパソコン内の各種ファイルの暗号化を確認",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-31T23:05:14+00:00",
+      "impact_level": "High",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要サンコーテクノのベトナム子会社でランサムウェア攻撃が発生し、サーバとパソコン内の各種ファイルが暗号化された。公開情報からは、侵入経路や初期侵害の手口、持ち出しの有無は確認できず、暗号化のみか二重恐喝まで進んだかも未確定となる。被害が子会社に限定されていても、共有認証情報や共通管理基盤があれば本社側へ波及する余地がある。復旧ではバックアップの健全性、業務…",
+      "article_path": "articles/f0ed7a3c3e7fa167.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/01/56095.html"
+    },
+    {
+      "entry_id": "d10f9651c63f3fc1",
+      "title": "チューリッヒ保険に不正アクセス、ドライブレコーダーのデータをアップロードした最大1,668名の顧客の個人情報が漏えいした可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-31T23:05:12+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要チューリッヒ保険で不正アクセスが発生し、ドライブレコーダーのデータをアップロードした顧客のうち最大1,668名分の個人情報が漏えいした可能性がある。攻撃手口の詳細は未公表で、現時点では漏えいの確定範囲、侵入経路、内部システムへの到達有無が未確認となっている。顧客側の影響は、契約情報や連絡先を起点にした二次被害、すなわちなりすましやフィッシング、問い合わ…",
+      "article_path": "articles/d10f9651c63f3fc1.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/01/56094.html"
+    },
+    {
+      "entry_id": "2eb26b4854c289bf",
+      "title": "ホワイトエッセンスの予約サイトおよび基幹システムに不正アクセス、Webサイト・アプリ等からの予約等を一時停止",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-31T23:05:11+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要ホワイトエッセンスの予約サイトと基幹システムに不正アクセスが発生し、Webサイトやアプリ経由の予約機能などを一時停止した。公開情報からは、侵入経路、初期侵入後の操作範囲、データ持ち出しの有無はまだ確認できない。予約停止が出ている点から、単なるサイト改ざんではなく、業務処理系まで影響が及んだ可能性を見ておく必要がある。攻撃者にとっては、個人情報や予約情報…",
+      "article_path": "articles/2eb26b4854c289bf.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/01/56093.html"
+    },
+    {
+      "entry_id": "d317b8a912e030f2",
+      "title": "エスケーアイマネージメントへのサポート詐欺、Lanscope によるログ解析を実施し約4,000ファイルの削除を確認",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-31T23:05:09+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要エスケーアイマネージメントで、サポート詐欺を起点とする被害が発生し、Lanscopeによるログ解析の結果、約4,000ファイルの削除が確認された。記事の焦点は被害報告と調査手順にあり、侵入経路や削除の実行主体、持ち出しの有無は本文だけでは確定しない。サポート詐欺は、利用者を誘導して遠隔操作や認証情報の入力を行わせることで、正規操作に見せかけて端末やアカ…",
+      "article_path": "articles/d317b8a912e030f2.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/01/56092.html"
+    },
+    {
+      "entry_id": "f381feeb72d4fde5",
+      "title": "「ヨネックス公式オンラインショップ」にリスト型攻撃、3 件の不正ログイン確認",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-31T23:05:08+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Credential Theft",
+      "summary_preview": "概要ヨネックス公式オンラインショップで、リスト型攻撃による不正ログインが3件確認された。流出済みのID・パスワードを使い回した利用者のアカウントが狙われた可能性が高く、攻撃者は突破できた口座では購入履歴や配送先情報、登録情報の確認を進める余地がある。現時点で被害範囲が会員情報の閲覧にとどまるのか、注文・決済の不正利用まで及んだのかは未確認で、公開情報だけで…",
+      "article_path": "articles/f381feeb72d4fde5.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/01/56091.html"
+    },
+    {
+      "entry_id": "4f4433e154ddaf1d",
+      "title": "公益財団法人日産財団Webサイトに不正アクセス、情報が外部から閲覧され得る状態にあったことが判明",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-31T23:05:06+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要公益財団法人日産財団のWebサイトで不正アクセスが発生し、外部から情報を閲覧できる状態になっていたことが判明した。公開文面からは、改ざん、情報窃取、管理画面侵入の有無は読み取れず、どの情報が対象になったかも未確認となる。こうした事案は、単なるWebページの改ざんにとどまらず、会員情報、問い合わせ情報、内部文書の露出へつながる場合がある。攻撃者は公開We…",
+      "article_path": "articles/4f4433e154ddaf1d.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/01/56090.html"
+    },
+    {
+      "entry_id": "7d772ad3160e0d2d",
+      "title": "いさぼうネットに不正アクセス、個人情報が外部から閲覧 取得された可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-31T23:05:04+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要いさぼうネットで不正アクセスが発生し、個人情報が外部から閲覧された可能性があると報じられている。現時点では、実際にどの範囲の情報が取得されたか、また侵入経路がどこかは未確認であり、まずは事実関係の切り分けが必要になる。こうした事案は、単なる閲覧に見えても、画面上で参照できた情報がそのまま持ち出し可能だったり、認証情報や問い合わせ履歴を足がかりに二次被害…",
+      "article_path": "articles/7d772ad3160e0d2d.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/01/56089.html"
+    },
+    {
+      "entry_id": "81dacce86bae0ade",
+      "title": "独立行政法人医薬品医療機器総合機構で使用していたUSBメモリが紛失、今後は使用禁止に",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-31T23:05:02+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要独立行政法人医薬品医療機器総合機構で、業務に使用していたUSBメモリの紛失が判明し、今後は使用禁止とする対応が取られた。現時点では、保存情報の種類、暗号化の有無、持ち出し経路、第三者による閲覧の有無は明らかではない。USB媒体の紛失は、単なる物品管理の問題に見えて、機微情報の漏えいとマルウェア持ち込みの両方に接続しうるため、組織内の統制不備として扱う必…",
+      "article_path": "articles/81dacce86bae0ade.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/01/56088.html"
+    },
+    {
+      "entry_id": "78e7aa907acf3938",
+      "title": "産総研と経産省が登壇、AIとサイバーセキュリティ対策のセミナーを9月30日に高松＆オンライン開催",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-31T23:00:11+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要産総研と経産省が登壇する、AIとサイバーセキュリティ対策を扱うセミナーの告知記事であり、9月30日に高松会場とオンラインの併催となる。攻撃や脆弱性の報道ではなく、組織の対策検討や人材教育、政策動向の把握に資する啓発・情報提供の位置づけが強い。現場に直結する論点としては、生成AIの利用統制、情報持ち出し、誤回答の業務混入、監視や検知へのAI適用が挙がりや…",
+      "article_path": "articles/78e7aa907acf3938.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/01/56087.html"
+    },
+    {
+      "entry_id": "0aa0e81731a7837a",
+      "title": "Zabbix agent に DLL 読み込みに関する脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-31T23:00:09+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Zabbix agent において DLL 読み込みの不備に関する脆弱性が報じられた。攻撃者が端末上の配置や検索順序を悪用できる環境では、意図しない DLL を読み込ませて 任意コード実行 に近い結果へつながる余地がある。影響はエージェントが稼働する個別端末にとどまらず、管理下の多数ホストへ 横展開 の足場を与える点が問題となる。公開情報だけでは、認証…",
+      "article_path": "articles/0aa0e81731a7837a.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/01/56086.html"
+    },
+    {
+      "entry_id": "15ce11d9e1b49778",
+      "title": "SOYシリーズに複数の脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-31T23:00:07+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要SOYシリーズに複数の脆弱性が見つかり、利用環境によっては認証回避や権限のある操作の悪用につながる可能性がある。公開記事は二次情報であり、具体的なCVE、影響範囲、悪用確認の有無は入力からは確認できない。攻撃者は管理画面や公開機能を起点に、設定変更、情報閲覧、後続侵入の足場確保を狙う余地がある。影響は単一サイトの改ざんにとどまらず、同一製品を複数運用し…",
+      "article_path": "articles/15ce11d9e1b49778.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/01/56085.html"
+    },
+    {
+      "entry_id": "8a14b1e8c71e0269",
+      "title": "GROWI に複数の脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-08-31T23:00:04+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要GROWI に 複数の脆弱性 が公表された。記事タイトルのみからは個別の CVE や悪用可否は読み取れず、認証前で到達できるか、管理者操作が必要か、修正版の有無も未確認となる。GROWI は組織内の情報共有基盤として使われやすく、侵入点になれば文書改ざん、機微情報の窃取、内部ネットワークへの足場化につながりやすい。影響範囲は単一の Web アプリにとど…",
+      "article_path": "articles/8a14b1e8c71e0269.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/01/56084.html"
+    }
+  ]
+}
