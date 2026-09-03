@@ -1,0 +1,437 @@
+{
+  "date": "2026-09-04",
+  "window": {
+    "from": "2026-09-03T06:00:00+09:00",
+    "to": "2026-09-04T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 27
+  },
+  "generated_at_jst": "2026-09-04T06:22:33.624809+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "2026年技術トレンド報告で注目されるマルチエージェントシステムとAIネイティブ開発",
+      "source_name": "Info-Tech Research Group",
+      "published_at": "2026-09-02T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要2026年の技術トレンド調査で、AIネイティブ開発プラットフォームとマルチエージェントシステムの台頭が強調されている。Info-Techの報告では738社のITリーダー調査に基づき、個別AIエージェントから協調型エコシステムへの移行を指摘。nasscomもAIを企業アーキテクチャの中心に位置づけ、小規模チームでの高速開発を可能にするとする。Deloit…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://ict.moscow/analytics/tech-trends-2026/",
+      "selection_reason": "対象期間内に発表された複数の独立した調査報告で共通して指摘される具体的な技術シフトを、Gartner予測ではなく企業投資動向に基づく実務影響の観点で選定。他の候補であるクラウド自動化やロボット動向より、開発者ツールとエンタープライズアーキテクチャへの直接波及が明確。",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "Tech Trends 2026",
+          "url": "https://ict.moscow/analytics/tech-trends-2026/",
+          "source_type": "research"
+        },
+        {
+          "title": "Digital Innovation and Key Technology Trends for 2026",
+          "url": "https://community.nasscom.in/communities/emerging-tech/digital-innovation-and-key-technology-trends-2026",
+          "source_type": "news"
+        },
+        {
+          "title": "TMT Predictions 2026",
+          "url": "https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions.html",
+          "source_type": "research"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "AnthropicとGoogleが新モデルを相次ぎ発表、効率化と安全対策が進む",
+      "source_name": "AIdapted",
+      "published_at": "2026-09-03T02:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要AnthropicがClaude Fable 5.1とMythos 5.1をリリースし、用途別最適化を図る。GoogleはGemini 3.8 Flashを公開し、複雑タスクでの推論強化を強調した。AlibabaもQwen3.8-Flash-Nextを投入し、Mixture of Experts構造で効率を追求する。一方HiddenLayerはAIセキ…",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://www.aidapted.ro/en/articles/ai-news-september-3-2026-anthropic-openai-alibaba/",
+      "selection_reason": "対象期間内の具体的なモデルリリースと資金調達を、抽象的トレンドではなく製品レベルの進展として選定。セキュリティ企業への投資も含め、AIそのものの機能向上と実用化に直結する多角的動きを反映。",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "AI News, September 3, 2026: Anthropic, OpenAI and Alibaba",
+          "url": "https://www.aidapted.ro/en/articles/ai-news-september-3-2026-anthropic-openai-alibaba/",
+          "source_type": "news"
+        },
+        {
+          "title": "Everything That Happened in AI Today Wednesday, September 2",
+          "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-wednesday-september-2-2026/",
+          "source_type": "news"
+        },
+        {
+          "title": "AI News | Latest Headlines and Developments | Reuters",
+          "url": "https://www.reuters.com/technology/artificial-intelligence/",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "SonicWall SMA1000でゼロデイ脆弱性連鎖、即時パッチ適用が必須に",
+      "source_name": "SecurityWeek",
+      "published_at": "2026-09-02T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要SonicWall SMA1000シリーズで2件のゼロデイ脆弱性が連鎖悪用され、リモートコード実行が可能になる事例が報告された。攻撃者は認証不要で完全制御を達成し、複数組織に影響が及ぶ。SonicWallはホットフィックスを緊急公開し、アップグレードを強く推奨する。並行して他のRMMプラットフォームやWordPressプラグインでも類似の脆弱性悪用が確…",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://www.securityweek.com/news/",
+      "selection_reason": "対象期間内に確認された具体的なゼロデイ脆弱性と攻撃連鎖事例を、汎用トレンドではなく実務対応が必要な製品レベルの脅威として選定。AI関連セキュリティ資金調達より、即時影響度の高いネットワーク機器脆弱性を優先。",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "News - SecurityWeek",
+          "url": "https://www.securityweek.com/news/",
+          "source_type": "news"
+        },
+        {
+          "title": "Latest Security News | Cybernews",
+          "url": "https://cybernews.com/security/",
+          "source_type": "news"
+        },
+        {
+          "title": "Cyber Security News - Computer Security | Hacking News | Cyber Attack News",
+          "url": "https://cybersecuritynews.com/",
+          "source_type": "news"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "725bb45425ad34dd",
+      "title": "ThreatsDay: CEO Phishing Kits, 5K Dropbox Account Hacks, OAuth Traps + 17 More Stories",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-03T18:02:47+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Credential Theft",
+      "summary_preview": "概要本件は、The Hacker News がまとめた複数事例のニュース集約で、CEOを装うフィッシング、Dropboxアカウント侵害、OAuthの許可操作を悪用する罠など、正規業務に見える誘導が中心となる。攻撃は派手な侵入よりも、共有ファイル、偽ログイン画面、古いアカウント連携、誤った配布案内を通じて、利用者自身に認可や認証情報の提供をさせる形が目立つ。…",
+      "article_path": "articles/725bb45425ad34dd.html",
+      "original_url": "https://thehackernews.com/2026/09/threatsday-ceo-phishing-kits-5k-dropbox.html"
+    },
+    {
+      "entry_id": "5d45be9798a612a7",
+      "title": "Critical Cisco Nexus 9000 Flaw Lets Unauthenticated Remote Attackers Run Code as Root",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-03T15:52:07+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Cisco が Nexus 9000 向けに修正を公開し、認証なしの遠隔攻撃者が root 権限でコード実行できる欠陥への対処を案内した。対象は Silicon One ベースの 10 機種に限られ、記事中では CVE-2026-20212 と CVSS 9.8 が示されている。併せて IOS XR でも 7 件の包括的修正が出ており、そのうち 2 件…",
+      "article_path": "articles/5d45be9798a612a7.html",
+      "original_url": "https://thehackernews.com/2026/09/critical-cisco-nexus-9000-flaw-lets.html"
+    },
+    {
+      "entry_id": "e81dbf326a9367ea",
+      "title": "BraZetsu Malware Turns Compromised Windows Hosts Into Criminal Marketplace Inventory",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-03T15:26:47+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要BraZetsu は、侵入済みの Windows ホストを売買用の在庫として扱うための Python ベースのマルウェア枠組みとされる。一般的な情報窃取型と異なり、感染端末から得た権限や到達性を 初期侵入ブローカー向けの商材へ変換する点が特徴とされる。攻撃の狙いは単発の窃取ではなく、後続侵入に使える足場の確保と再販にあるため、被害は端末1台にとどまらず…",
+      "article_path": "articles/e81dbf326a9367ea.html",
+      "original_url": "https://thehackernews.com/2026/09/brazetsu-malware-turns-compromised.html"
+    },
+    {
+      "entry_id": "c8bd9fa6fd6e0fe6",
+      "title": "Thomson Reuters Court Software Breach May Have Exposed SSNs and Sealed Data",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-03T14:39:05+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要Thomson Reuters は、子会社 West Publishing が提供する裁判案件管理基盤 C-Track から、2026年3月に不正なファイル取得が起きたと公表した。影響範囲は米国11州、米領ヴァージン諸島、カナダ・オンタリオ州の裁判所に及び、裁判記録の一部には氏名、社会保障番号、封印済み資料が含まれ得る。侵害の把握は 6月30日 であり…",
+      "article_path": "articles/c8bd9fa6fd6e0fe6.html",
+      "original_url": "https://thehackernews.com/2026/09/thomson-reuters-court-software-breach.html"
+    },
+    {
+      "entry_id": "d6969cbe4f3298e9",
+      "title": "US Becomes Top Target in RMM Phishing Campaign Spanning 46 Countries",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-03T11:58:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Phishing",
+      "summary_preview": "概要RMMを誘導役に使うフィッシングが、当初想定されたカナダ中心の活動を超え、46か国にまたがる広域キャンペーンとして把握された。観測された活動の約45%が米国向けで、地域偏在はあるが、特定国だけの問題として切り捨てにくい。ANY.RUNの分析では601件が同一オペレーションに結び付けられ、正規のRMMツール導入を起点に侵入後の遠隔操作へつなぐ構図が示唆さ…",
+      "article_path": "articles/d6969cbe4f3298e9.html",
+      "original_url": "https://thehackernews.com/2026/09/us-becomes-top-target-in-rmm-phishing.html"
+    },
+    {
+      "entry_id": "96129c8fe13f337b",
+      "title": "Attackers Turn Trusted Node.js Runtime Into Malware Delivery Tool in Targeted Attacks",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-03T10:43:01+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Malware",
+      "summary_preview": "概要Node.js の実行基盤として広く信頼される node.exe を、攻撃者がマルウェア配布の起点として悪用している。Symantec の観測によれば、2026年2月以降、政府機関、技術系企業、ホテルを狙う攻撃で使われてきた。攻撃者は正規の実行ファイルに見えやすい点を利用し、警戒を下げた状態で悪性ペイロードを起動させる可能性が高い。影響は単発感染にとど…",
+      "article_path": "articles/96129c8fe13f337b.html",
+      "original_url": "https://thehackernews.com/2026/09/attackers-turn-trusted-nodejs-runtime.html"
+    },
+    {
+      "entry_id": "a761fb15017c60a8",
+      "title": "Shai-Hulud's Reach Just Grew to 469 Credential Locations. Here's What That Means",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-03T10:36:39+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要Shai-Hulud の情報窃取型ワームが、開発者環境や CI/CD、クラウド設定、AIツール設定を含む 469か所の認証情報探索先に広がったと報じられた。以前は189か所程度だったため、探索範囲が大きく拡張されたことになる。狙いは、ソース管理やビルド基盤に散らばるトークン、鍵、API資格情報を見つけて再利用し、さらに別環境へ広げることにある。被害は単…",
+      "article_path": "articles/a761fb15017c60a8.html",
+      "original_url": "https://thehackernews.com/2026/09/shai-huluds-reach-just-grew-to-469.html"
+    },
+    {
+      "entry_id": "c71acbf5b8233daf",
+      "title": "Pegasus Zero-Click Spyware Exploit Infects Serbian Student Movement Member's iPhone",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-03T08:43:17+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要セルビアの学生運動に関わる人物のiPhoneが、NSO GroupのPegasusに感染していたとCitizen LabとSHARE Foundationが報告した。iMessageのゼロクリック攻撃が使われたとされ、利用者の操作を待たずに侵害が成立した点が重い。標的は政治活動に近い個人で、監視・情報窃取が主目的だった可能性が高い。感染経路や初期侵入後…",
+      "article_path": "articles/c71acbf5b8233daf.html",
+      "original_url": "https://thehackernews.com/2026/09/pegasus-zero-click-spyware-exploit.html"
+    },
+    {
+      "entry_id": "979c416dfd4f0ded",
+      "title": "Researcher Releases FalconFlank PoC Showing Privilege Escalation in CrowdStrike Falcon",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-03T06:26:59+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要研究者が、CrowdStrike Falcon の 権限昇格 を示す PoC「FalconFlank」を公開した。記事上では、Falcon Sensor の マクロ悪用対策機能 を悪用して、通常より高い権限を得る流れが示唆されている。もし成立条件が広ければ、端末内での操作権限を足がかりに、保護の回避や後続の実行につながるおそれがある。逆に、実際の影響範…",
+      "article_path": "articles/979c416dfd4f0ded.html",
+      "original_url": "https://thehackernews.com/2026/09/researcher-releases-falconflank-poc.html"
+    },
+    {
+      "entry_id": "826f7d4998d18451",
+      "title": "CISA Adds Seven Exploited Flaws as Attackers Deploy Reverse Shells and Crypto Miners",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-03T05:19:04+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CISA が Known Exploited Vulnerabilities に七つの脆弱性を追加した。記事では、攻撃者がこれらの欠陥を足がかりに reverse shell や crypto miner を展開していると伝えている。少なくとも一部は 認証前 で到達できる可能性があり、外部公開機器や管理系アプライアンスが狙われやすい構図になる。攻撃の起…",
+      "article_path": "articles/826f7d4998d18451.html",
+      "original_url": "https://thehackernews.com/2026/09/cisa-adds-seven-exploited-flaws-as.html"
+    },
+    {
+      "entry_id": "b671163b441603ef",
+      "title": "Honeypot-Omaha and batch.py &#x5b;Guest Diary&#x5d;, (Wed, Sep 2nd)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-09-03T02:02:56+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要SANS ISC のゲストダイアリーで、Honeypot-Omaha と batch.py に関する観測が共有された。公開された内容は、攻撃者の活動や不審な処理の痕跡を手掛かりに、どのような段階の侵入や自動化が行われているかを読み解く性質が強い。実際の侵害がどこまで広がったか、対象環境で本当に到達したかは、この入力だけでは確認できない。単発のノイズでは…",
+      "article_path": "articles/b671163b441603ef.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33306"
+    },
+    {
+      "entry_id": "2414dd753e8016d4",
+      "title": "ISC Stormcast For Thursday, September 3rd, 2026 https://isc.sans.edu/podcastdetail/10080, (Thu, Sep 3rd)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-09-03T02:00:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要SANS ISC の Stormcast は、特定の脆弱性告知ではなく、直近の攻撃観測や運用上の注意点をまとめたポッドキャスト回とみられる。入力情報だけでは、対象製品、CVE、悪用の有無、対策の優先順位は確認できない。したがって、これは個別インシデントの警報というより、脅威状況の把握に使う情報として扱うのが妥当になる。実務上は、既知の脆弱性や露出資産の…",
+      "article_path": "articles/2414dd753e8016d4.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33308"
+    },
+    {
+      "entry_id": "5a96bf0c68502dca",
+      "title": "Crypto Agility: Why PQC Is Not a One-Time Upgrade",
+      "source_name": "Cisco Security Blog",
+      "category": "reporting",
+      "published_at": "2026-09-03T15:00:56+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要本記事は、PQC対応を「一度の更改」で終わる作業ではなく、将来の脅威変化に合わせて暗号方式を入れ替え続けられる設計、つまりcrypto agilityが必要だと整理している。量子計算機の実用化を見越した対策は、単に新しいアルゴリズムへ置き換えるだけでは足りず、証明書、鍵管理、通信プロトコル、機器の更新手順まで連動して見直す必要がある。悪用の中心は「今す…",
+      "article_path": "articles/5a96bf0c68502dca.html",
+      "original_url": "https://blogs.cisco.com/security/crypto-agility-why-pqc-is-not-a-one-time-upgrade/"
+    },
+    {
+      "entry_id": "7982f8ee39de3ee1",
+      "title": "Attackers Expose Ongoing AI Tool Use Targeting Organizations in Latin America",
+      "source_name": "Unit 42",
+      "category": "reporting",
+      "published_at": "2026-09-03T10:00:58+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要Unit 42は、ラテンアメリカの組織を狙う攻撃者が、AIツールを使って情報の収集や持ち出しを進めている状況を示した。焦点は新種の脆弱性ではなく、攻撃側の運用ミスや露出した手がかりから、活動を追跡しやすい点にある。攻撃は単独の端末侵害にとどまらず、認証情報の奪取、データ流出、継続的な再侵入へ広がる余地がある。記事要約だけでは対象業種、侵入経路、使用され…",
+      "article_path": "articles/7982f8ee39de3ee1.html",
+      "original_url": "https://unit42.paloaltonetworks.com/ai-tool-use-targeting-latam-orgs/"
+    },
+    {
+      "entry_id": "b8623193570137fc",
+      "title": "VU#889462: Casdoor authentication server is vulnerable to authorization bypass",
+      "source_name": "CERT/CC",
+      "category": "reporting",
+      "published_at": "2026-09-03T17:03:30+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要Casdoor の 認可バイパス が公開され、3.115.0 以前に影響がある。認可層は URL の ?id= を見て許可判定する一方、下流のコントローラは JSON 本文の所有者情報だけで処理するため、別の組織を対象にした操作が通ってしまう。多重テナント環境では、単一組織の管理者権限を取った攻撃者が、他組織のユーザー管理や権限変更、SSO/SAML …",
+      "article_path": "articles/b8623193570137fc.html",
+      "original_url": "https://kb.cert.org/vuls/id/889462"
+    },
+    {
+      "entry_id": "b8188dbd86b5f59f",
+      "title": "Pi-SAR X3のプロダクト検索・配信システムのサービス開始について",
+      "source_name": "NICT NOTICE",
+      "category": "reporting",
+      "published_at": "2026-09-03T05:00:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要NICTが、Pi-SAR X3に関するプロダクト検索・配信システムの提供開始を案内している。内容はセキュリティ脆弱性や攻撃観測ではなく、情報公開・配信基盤のサービス開始に関する告知とみられる。現時点の入力情報だけでは、対象となる利用者範囲、公開データの内容、認証要否、外部公開範囲は読み取れない。したがって、CSIRTとしての直接的な緊急対応対象というよ…",
+      "article_path": "articles/b8188dbd86b5f59f.html",
+      "original_url": "/publicity/topics/2026/09/03-1.html"
+    },
+    {
+      "entry_id": "7677de19925d51ca",
+      "title": "Linux カーネルの algif_aead での暗号化データ処理における権限昇格につながるメモリ操作不備（Scan Tech Report）",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-02T23:20:03+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Linux カーネルの algif_aead に、暗号化データの処理経路でメモリ操作の不備があり、権限昇格につながる可能性が示されている。攻撃者は、対象ホストでカーネル機能に到達できる条件を満たすことで、通常権限から高権限へ近づく足掛かりを得る余地がある。単独で即座に広域侵害へつながるとは限らないが、端末やサーバーの侵害後に横展開や持続化を後押しする性…",
+      "article_path": "articles/7677de19925d51ca.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/03/56120.html"
+    },
+    {
+      "entry_id": "5ce160facd0775b0",
+      "title": "Proofpoint Blog 第59回 ロシア系攻撃グループTA488、ハーフクリックエクスプロイトでZimbraを侵害",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-02T23:15:02+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要Proofpoint の観測として、ロシア系攻撃グループ TA488 が Zimbra を狙い、ハーフクリックの流れで侵害を成立させたと報じられている。半分だけの操作で成立するというより、受信者の確認・表示・読み込みといった通常動作を悪用し、ユーザーの自覚が薄いまま初期侵入を通す点が厄介となる。侵害後に何を実行したか、どの権限まで到達したか、他システム…",
+      "article_path": "articles/5ce160facd0775b0.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/03/56119.html"
+    },
+    {
+      "entry_id": "73abf31e908265af",
+      "title": "エーアイセキュリティラボ、情シスと開発者向けに脆弱性診断「内製化・ハイブリッド化」のポイント解説ウェビナー 9 / 8 開催",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-02T23:10:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要エーアイセキュリティラボが、情シスと開発者を対象に、脆弱性診断の内製化・ハイブリッド化を扱うウェビナーを9月8日に開く。記事は診断の実施体制や役割分担の考え方を案内する内容で、新たな脆弱性や侵害の発生を告知するものではない。実務上は、外部委託だけで足りない部分をどこまで内製で補うか、あるいはどの工程を外部に残すかの整理に役立つ。攻撃悪用の具体的な事例や…",
+      "article_path": "articles/73abf31e908265af.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/03/56118.html"
+    },
+    {
+      "entry_id": "7ad6dac0eb16fbd3",
+      "title": "株式会社SHIFT SECURITY、9月1日付の吸収合併とウェブサイト統合を発表",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-02T23:00:26+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要株式会社SHIFT SECURITYが、9月1日付の吸収合併とそれに伴うウェブサイト統合を発表した記事である。内容はセキュリティ脆弱性や攻撃観測ではなく、組織再編と情報発信基盤の変更に関する案内に当たる。CSIRTの観点では、合併後に問い合わせ先、公開情報、提供サービス、連絡責任分界が変わる可能性に注意が要る。旧サイトや旧窓口の継続利用がどこまで許容さ…",
+      "article_path": "articles/7ad6dac0eb16fbd3.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/03/56117.html"
+    },
+    {
+      "entry_id": "29048046772bfd1b",
+      "title": "IPA「10大脅威」から厳選したセキュリティ用語集を ISS が公開",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-02T23:00:24+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要IPAの「10大脅威」を軸に、ISSが実務向けの用語集を公開した話題であり、直接の脆弱性告知ではない。狙いは、脅威名や対策用語を同じ意味で扱えるようにし、組織内の説明差を減らす点にある。攻撃手法の新規性が高い記事ではないが、認識のずれが残ると、優先順位付けや初動判断に影響が出やすい。悪用される具体的な製品やCVEは示されておらず、公開資料の範囲や収録語…",
+      "article_path": "articles/29048046772bfd1b.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/03/56116.html"
+    },
+    {
+      "entry_id": "d73b7536ace0880f",
+      "title": "Windows Server 2016 サポート終了対策 ～ クラウド化できない DHCP・DNS・Syslog のスマートな移行法",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-02T23:00:21+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要Windows Server 2016 のサポート終了が近づく中で、DHCP・DNS・Syslog のようにクラウドへ単純移行しにくい基盤機能をどう扱うかが論点になっている。記事は、業務停止を避けつつ置き換えを進めるための移行方針を扱っており、単なる更改ではなく、運用要件と障害時の切り戻しを含めて考える必要がある。攻撃者の視点では、古い OS に残った…",
+      "article_path": "articles/d73b7536ace0880f.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/03/56115.html"
+    },
+    {
+      "entry_id": "7ea04d7b779dac4b",
+      "title": "中核メンバーわずか 9 人、AI とアフィリエイト活用で数カ月でトップクラスのランサムウェア犯罪組織に",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-02T23:00:18+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要少人数の中核メンバーが、AI と アフィリエイト運用 を組み合わせ、短期間で上位のランサムウェア組織に伸長したという報道である。人員を増やす代わりに、侵入後の文章作成、交渉、偵察、運用の一部を自動化し、外部協力者にばらした役割を回すことで拡張性を確保した構図が読み取れる。攻撃の入口がフィッシング、脆弱性悪用、認証情報窃取のいずれであっても、最終的には暗…",
+      "article_path": "articles/7ea04d7b779dac4b.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/03/56114.html"
+    },
+    {
+      "entry_id": "80e287b7ba948e68",
+      "title": "導入負荷を軽減 中小組織向け「eシール」パッケージ「NRA Trustシール」提供",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-02T23:00:13+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要中小組織向けに、電子的な真正性確認を支援するeシールの導入負荷を下げるパッケージが提供されるという話題で、セキュリティ脆弱性そのものの報告ではない。文書やデータの発信元を組織として証明しやすくすることで、受信側の改ざん検知やなりすまし対策を補強する狙いがある。悪用されるとすれば、逆に導入の不備や運用設計の甘さを突かれて、正規文書を装った偽装送付の見逃し…",
+      "article_path": "articles/80e287b7ba948e68.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/03/56113.html"
+    },
+    {
+      "entry_id": "f2090b69b1024030",
+      "title": "HENNGE One、法人向け AI プラットフォーム「GMO天秤AI Biz」と SSO 連携",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-02T23:00:10+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要HENNGE One が、法人向け AI プラットフォーム「GMO天秤AI Biz」と SSO 連携したという案内である。単独では脆弱性や侵害の報告ではなく、認証基盤を介して業務 SaaS と AI 利用を結び付ける 利便性向上 の話題に近い。攻撃者の観点では、もし ID 基盤や端末が奪われれば、AI 利用経路を足がかりに業務データへ触れる導線が増える…",
+      "article_path": "articles/f2090b69b1024030.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/03/56112.html"
+    },
+    {
+      "entry_id": "f79e31ae252bf01c",
+      "title": "スリーシェイク、10 / 21東京・10 / 9名古屋で開催される「UpdataNOW26」に Reckoner をブース出展",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-02T23:00:07+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要本件は、スリーシェイクがイベント「UpdataNOW26」に Reckoner をブース出展するという告知であり、脆弱性や侵害事案そのものを伝える記事ではない。したがって、CSIRT観点の直接的な緊急対応は基本的に発生しない。悪用方法や被害拡大の経路が示された内容でもなく、現時点で確認すべきは製品機能や導入対象が自組織に関係するかどうかに限られる。イベ…",
+      "article_path": "articles/f79e31ae252bf01c.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/03/56111.html"
+    },
+    {
+      "entry_id": "b4557dd2326b9a82",
+      "title": "広島県内の地域企業とスタートアップを結ぶ「TSUNAGU広島」に HENNGE が出展",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-02T23:00:02+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要本記事は、広島県内の地域企業とスタートアップを結ぶイベント「TSUNAGU広島」にHENNGEが出展するという告知であり、脆弱性や侵害の報道ではない。内容は展示会参加の周知が中心で、攻撃手口や被害事象は示されていない。したがって、CSIRTが直ちに対応すべき技術的インシデント情報は含まれない。開催目的や出展内容の詳細、参加企業の導入範囲は本文からは確認…",
+      "article_path": "articles/b4557dd2326b9a82.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/03/56110.html"
+    }
+  ]
+}
