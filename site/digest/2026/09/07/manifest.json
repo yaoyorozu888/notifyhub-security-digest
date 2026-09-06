@@ -1,0 +1,122 @@
+{
+  "date": "2026-09-07",
+  "window": {
+    "from": "2026-09-06T06:00:00+09:00",
+    "to": "2026-09-07T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 2
+  },
+  "generated_at_jst": "2026-09-07T06:16:59.601821+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "Deloitteが2026年TMT予測を発表、AI推論とエージェント実用化に焦点",
+      "source_name": "Deloitte Insights",
+      "published_at": "2026-09-06T17:35:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要Deloitteは2026年のTMT予測で、生成AIの日常利用が検索エンジン内蔵型で急増し、単独ツールの3倍になると指摘する。推論処理がAIコンピューティングの3分の2を占め、新設データセンターとオンプレミスサーバーへの巨額投資が続く見通しだ。エージェント市場は2026年に85億ドル規模へ拡大すると予測され、オーケストレーションの重要性が増す。企業はス…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions.html",
+      "selection_reason": "他候補の汎用予測と異なり、具体的なAIインフラ投資とエージェント市場規模の数値予測を伴う新規発表で、IT意思決定者に直接影響する実務的トレンドを示すため優先",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "TMT Predictions 2026",
+          "url": "https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions.html",
+          "source_type": "web"
+        },
+        {
+          "title": "TechTarget IT Infrastructure News",
+          "url": "https://www.techtarget.com/it-infrastructure/info/news",
+          "source_type": "web"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "OpenAIがGPT-6 Astraをリリース、モデル更新ラッシュで疲労感も",
+      "source_name": "CNBC",
+      "published_at": "2026-09-06T12:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要今週Anthropic、Meta、Google、OpenAIが相次ぎモデル更新を発表した。OpenAIはGPT-6 Astraを公開し、コーディングやエージェントタスクで競合を上回ると主張する。更新ペースの速さから「モデル疲労」が指摘され、差別化が難しくなっている。企業は新モデル評価に時間を割きつつ、既存システムとの互換性を慎重に検証する必要がある。",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://www.cnbc.com/2026/09/06/meta-google-openai-anthropic-ai-model-fatigue.html",
+      "selection_reason": "他候補の一般トレンドと異なり、具体的な新モデル発表と複数社同時更新という新規事実に基づき、AI開発・調達担当者の即時判断材料となるため優先",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "Model fatigue sets in as AI labs race to roll out new versions",
+          "url": "https://www.cnbc.com/2026/09/06/meta-google-openai-anthropic-ai-model-fatigue.html",
+          "source_type": "web"
+        },
+        {
+          "title": "AInformed Daily AI News",
+          "url": "https://www.ainformed.dev/",
+          "source_type": "web"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "MikroTikルーターのSSH認証なし脆弱性が悪用、即時更新を",
+      "source_name": "The Hacker News",
+      "published_at": "2026-09-06T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CERT PolskaはMikroTikルーターのインターネット公開SSHに対し、認証なしで管理者権限を取得する攻撃を確認した。攻撃は9月2日以降に確認され、RouterOSの特定バージョンが影響を受ける。攻撃者は設定変更や永続化を図る可能性が高く、早急なファームウェア更新と設定確認が求められる。ネットワーク管理者は公開SSHの無効化やアクセス制限を徹…",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://thehackernews.com/",
+      "selection_reason": "他候補のAI関連セキュリティと異なり、ネットワーク機器の具体的なゼロデイ悪用事例で、IT運用担当者の即時対応を促す実務的影響が大きいため優先",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "Attackers Hijack MikroTik Routers Through Internet-Exposed SSH",
+          "url": "https://thehackernews.com/",
+          "source_type": "web"
+        },
+        {
+          "title": "CERT Polska warning",
+          "url": "https://cert.pl/",
+          "source_type": "web"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "622c7bd66ae24388",
+      "title": "Attackers Hijack MikroTik Routers Through Internet-Exposed SSH Without Authentication",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-06T09:32:38+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要MikroTik RouterOS の SSH がインターネット公開された機器に対し、認証なしで管理権限を奪取する攻撃が観測されている。CERT Polska の警告によれば、少なくとも 9 月 2 日以降に被害が出ており、外部から到達できる管理口がそのまま侵入口になっている。攻撃手口の詳細、侵害後の永続化方法、被害規模は現時点で未確認であり、記事本文…",
+      "article_path": "articles/622c7bd66ae24388.html",
+      "original_url": "https://thehackernews.com/2026/09/attackers-hijack-mikrotik-routers.html"
+    },
+    {
+      "entry_id": "c737fb366758ee47",
+      "title": "Four REVSTEALER-Linked Modules Disable Windows Update and Defender to Run a Crypto Miner",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-06T08:34:20+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Malware",
+      "summary_preview": "概要Elastic Security Labs は、REVSTEALER に関連するとみられる未報告のモジュール4種を確認した。情報窃取本体が自己削除した後も端末に残り、後段の処理を継続する構成になっている点が要点となる。中でも一部のモジュールは Windows Update と Microsoft Defender を無効化してから、暗号資産マイナー を…",
+      "article_path": "articles/c737fb366758ee47.html",
+      "original_url": "https://thehackernews.com/2026/09/four-revstealer-linked-modules-disable.html"
+    }
+  ]
+}
