@@ -1,0 +1,439 @@
+{
+  "date": "2026-09-08",
+  "window": {
+    "from": "2026-09-07T06:00:00+09:00",
+    "to": "2026-09-08T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 28
+  },
+  "generated_at_jst": "2026-09-08T06:21:58.384238+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "Nvidia Hugging Face買収でオープンソースAI基盤が加速",
+      "source_name": "Nvidia",
+      "published_at": "2026-09-04T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要NvidiaがHugging Faceを約130億ドルで買収した。オープンソースAIモデルのプラットフォームを自社に取り込み、開発者向けのAI基盤を強化する動きだ。推論コストの低減や小規模モデル普及を後押しする可能性がある。企業は自社データでモデルをカスタマイズしやすくなり、クラウド依存からの脱却が進む。半導体企業がAIソフトウェアレイヤーを支配する構…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://www.nytimes.com/spotlight/artificial-intelligence",
+      "selection_reason": "AIインフラ企業買収という具体的な企業行動で、IT基盤のオープンソース化という実務影響が明確。他の予測レポートより新規性と多様性が高い",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "Nvidia Extends A.I. Spending Spree With $12.9 Billion Deal for Hugging Face",
+          "url": "https://www.nytimes.com/spotlight/artificial-intelligence",
+          "source_type": "news"
+        },
+        {
+          "title": "Nvidia Is Buying AI Platform Hugging Face for $13 Billion",
+          "url": "https://www.securityweek.com/news/",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "OpenAI GPT-6 Astra公開と安全性警告",
+      "source_name": "OpenAI",
+      "published_at": "2026-09-07T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要OpenAIがGPT-6 Astraを公開した。コーディングやコンピュータ操作で大幅に性能が向上したという。最高科学責任者はAIが人間の価値と乖離した「エイリアンマインド」になるリスクを指摘し、国際協調を求めた。企業は新モデル導入時に安全評価を強化する必要がある。研究加速効果が200%に達した内部事例も報告されている。",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://www.cnbc.com/2026/09/06/meta-google-openai-anthropic-ai-model-fatigue.html",
+      "selection_reason": "新モデル公開と同時に最高科学責任者から具体的なリスク警告が出され、AI実務への影響が即時的。他のモデル更新ニュースより深みがある",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "‘Model fatigue’ sets in AI labs roll out new versions at dizzying pace",
+          "url": "https://www.cnbc.com/2026/09/06/meta-google-openai-anthropic-ai-model-fatigue.html",
+          "source_type": "news"
+        },
+        {
+          "title": "OpenAI's Jakub Pachocki Warns of 'Alien Mind' Risks as AI Advances",
+          "url": "https://www.ainformed.dev/",
+          "source_type": "news"
+        },
+        {
+          "title": "Nvidia's Jensen Huang declares 'AGI has arrived' as OpenAI unveils GPT-6 Astra",
+          "url": "https://www.businesstoday.in/technology/artificial-intelligence",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "PEEPツールキットによるブラウザ乗っ取り",
+      "source_name": "The Hacker News",
+      "published_at": "2026-09-07T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要PEEPと呼ばれる攻撃ツールキットがChromeとEdgeを標的にした。ブックマーク拡張を装い、ホストコマンド実行やセッション乗っ取りを行う。ポスト侵害段階で有効に機能し、検知を回避しやすい。企業はブラウザ拡張の厳格審査とエンドポイント監視を強化すべきだ。類似ツールの出現で防御戦略の見直しが求められる。",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://thehackernews.com/",
+      "selection_reason": "具体的な攻撃ツール公開と実務影響が明確で、セキュリティ運用判断に直結。他の脆弱性パッチ情報より多様性がある",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "PEEP Turns Chrome and Edge Into Post-Compromise Backdoors for Host Command Execution",
+          "url": "https://thehackernews.com/",
+          "source_type": "news"
+        },
+        {
+          "title": "News - SecurityWeek",
+          "url": "https://www.securityweek.com/news/",
+          "source_type": "news"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "2c8dc2fc4129fed4",
+      "title": "PEEP Turns Chrome and Edge Into Post-Compromise Backdoors for Host Command Execution",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-07T18:12:09+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要PEEPは、Chrome と Edge に対して後侵入段階で使われるツールで、ブックマーク拡張機能を装いながら ホスト上で任意コマンドを実行 する用途に転用される。導入には事前の管理者権限かコード実行権限が必要で、インストーラは Chromium の Secure Preferences を改ざんして拡張機能を直接プロファイルへ差し込むため、通常の W…",
+      "article_path": "articles/2c8dc2fc4129fed4.html",
+      "original_url": "https://thehackernews.com/2026/09/peep-turns-chrome-and-edge-into-post.html"
+    },
+    {
+      "entry_id": "813edbf9c7a39571",
+      "title": "Fake IT Calls Target Executives in Microsoft 365 Data Theft and Extortion Attacks",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-07T15:51:56+00:00",
+      "impact_level": "High",
+      "threat_type": "Credential Theft",
+      "summary_preview": "概要Microsoft 365 を狙う音声フィッシングと AitM によるトークン窃取、さらに住宅系プロキシを使った不審なサインインを組み合わせた、データ窃取と恐喝の活動群が報告された。標的は主に役員層や管理職で、ヘルプデスクを装って認証情報や再認証操作を引き出す流れが想定される。取得したセッションやトークンを使えば、多要素認証を回避して SaaS 環境へ…",
+      "article_path": "articles/813edbf9c7a39571.html",
+      "original_url": "https://thehackernews.com/2026/09/microsoft-365-attackers-use-help-desk.html"
+    },
+    {
+      "entry_id": "0f2ce39afb425193",
+      "title": "⚡ Weekly Recap: Chrome 0-Day, Router Hijacks, Coder Supply Chain Attack and More",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-07T14:36:07+00:00",
+      "impact_level": "High",
+      "threat_type": "Advisory",
+      "summary_preview": "概要今週のまとめは、Chromeのゼロデイ、ルーターの乗っ取り、Coderのサプライチェーン攻撃など、複数の系統の脅威を並べた内容になっている。攻撃の筋としては、初期侵入の足場を得たうえで、認証情報の窃取、管理機器の掌握、配布元の悪用へと広がる流れを示している。メール画像を止めても文字で作ったQRコードが表示されるという話は、単独では致命傷ではないが、利用…",
+      "article_path": "articles/0f2ce39afb425193.html",
+      "original_url": "https://thehackernews.com/2026/09/weekly-recap-chrome-0-day-router.html"
+    },
+    {
+      "entry_id": "60314b1f90464335",
+      "title": "Your Cloud Security Checklist Doesn't Work the Way You Think It Does",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-07T11:45:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Misconfiguration",
+      "summary_preview": "概要本記事は、複数クラウドの設定不備リスクは共通テンプレートでは管理しにくいという点を、Intruderの分析結果をもとに示している。AWS、Azure、Google Cloudの3,000組織分の設定不備データを比較した結果、プロバイダごとに目立つ失敗パターンが異なり、同じ点検表を回しても取りこぼしが残る構図が見えている。悪用の入口は、公開範囲の誤設定、…",
+      "article_path": "articles/60314b1f90464335.html",
+      "original_url": "https://thehackernews.com/2026/09/your-cloud-security-checklist-doesnt.html"
+    },
+    {
+      "entry_id": "d5506848cb704fee",
+      "title": "Rogue ScreenConnect Clients Spread Four-Stage VBScript Chain to Newly Connected Hosts",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-07T11:36:39+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要ConnectWise ScreenConnect を悪用して、接続してきた新規端末へ 悪性VBScript を配布し、さらに 四段階の実行連鎖 で後続処理へつなぐ事例が報告された。初期侵入は Quick Assist を使う技術サポート詐欺、フィッシングで配布された MSI、偽装されたインストーラなど複数で、入口自体は統一されていない。重要なのは、端…",
+      "article_path": "articles/d5506848cb704fee.html",
+      "original_url": "https://thehackernews.com/2026/09/rogue-screenconnect-clients-spread-four.html"
+    },
+    {
+      "entry_id": "d2fffb9438892eea",
+      "title": "Telerik UI Padding-Oracle Bug Chained to Unauthenticated RCE — Public Exploit Released",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-07T11:20:14+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要Telerik UI for ASP.NET AJAX の AES-CBC の padding oracle を起点に、認証なしのRCE へつなげる公開実証コードが出た。対象は 特定の非既定設定 に限られ、Progress は 7月に修正済み とされる。現時点で 実運用環境での悪用確認はない が、公開コードの存在は攻撃の再現性を大きく下げる。影響は T…",
+      "article_path": "articles/d2fffb9438892eea.html",
+      "original_url": "https://thehackernews.com/2026/09/telerik-ui-padding-oracle-bug-chained.html"
+    },
+    {
+      "entry_id": "86e930709eee2466",
+      "title": "N-able Issues Fourth N-central Hotfix in Five Weeks for Unauthenticated RCE Flaw",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-07T08:31:12+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要N-able のオンプレミス向け N-central に対して、認証不要の RCE を修正するための Hotfix 4 が出された。対象は 2026.3.1.14 未満の全ビルドで、前日に Hotfix 3 を適用した環境も含まれるため、更新済みかどうかの確認だけでは足りない。攻撃成立条件が緩く、RMM 基盤の性質上、侵害されると監視対象への横展開や運…",
+      "article_path": "articles/86e930709eee2466.html",
+      "original_url": "https://thehackernews.com/2026/09/n-able-issues-fourth-n-central-hotfix.html"
+    },
+    {
+      "entry_id": "442d723600734490",
+      "title": "JSCeal Malware Can Bypass Google Authentication Using Stolen Session Cookies",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-07T07:53:04+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要JSCeal と呼ばれる V8 JavaScript 由来の実行形式マルウェア が解析され、認証情報の窃取、監視、通信の横取りを狙う構成が確認された。攻撃の要点は、単にパスワードを奪うのではなく、盗んだセッション Cookie を使って Google 認証をすり抜ける点にある。これにより、多要素認証を導入していても、既存セッションが生きている限り不正ア…",
+      "article_path": "articles/442d723600734490.html",
+      "original_url": "https://thehackernews.com/2026/09/jsceal-malware-can-bypass-google.html"
+    },
+    {
+      "entry_id": "136cb4f18bbc0d72",
+      "title": "Critical MikroTik Vulnerability - Patch Now, (Sun, Sep 6th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-09-06T21:43:17+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要MikroTikが既に悪用された脆弱性に対する修正を公開した。内容はSSH認証回避で、外部からの正規認証を通さずに装置へ入れるため、境界機器として置かれたルータほど初動被害が早く広がる。攻撃者は侵入後に新しいアカウントを追加しており、単純なパッチ適用だけでは追い出し切れない。影響は対象機器単体に留まらず、そこを踏み台にした内部探索や通信迂回へつながる可…",
+      "article_path": "articles/136cb4f18bbc0d72.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33314"
+    },
+    {
+      "entry_id": "68faf625b37a6e0b",
+      "title": "Black Hat USA 2026: Building the Agentic SOC, One Live Event at a Time",
+      "source_name": "Cisco Security Blog",
+      "category": "reporting",
+      "published_at": "2026-09-07T15:00:58+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要Black Hat USA 2026に合わせて、CiscoがAgentic SOCの最新構想を紹介した記事であり、実際の侵害事案や脆弱性報告ではない。焦点は、検知・調査・初動対応の一部をAI主体の運用へ寄せ、アラート処理や相関分析を自動化してSOCの処理能力を上げる点にある。攻撃の新手口を直接示す内容ではないが、運用面では誤検知の扱い、自動アクションの…",
+      "article_path": "articles/68faf625b37a6e0b.html",
+      "original_url": "https://blogs.cisco.com/security/bhusa-2026-soc/"
+    },
+    {
+      "entry_id": "5b66e7f1d3e4717b",
+      "title": "Troubleshooting Wi-Fi at Black Hat USA 2026 with ThousandEyes",
+      "source_name": "Cisco Security Blog",
+      "category": "reporting",
+      "published_at": "2026-09-07T15:00:39+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要Black Hat USA 2026 のネットワーク運用現場で、Wi-Fi の障害切り分けに ThousandEyes を使った事例を紹介する記事である。内容は脆弱性や侵害の報告ではなく、会場ネットワークの可視化とトラブルシュートの実務に寄っている。攻撃悪用の話ではなく、無線品質低下、経路異常、外部依存先の遅延などをどう見分けるかが主眼になる。影響が広…",
+      "article_path": "articles/5b66e7f1d3e4717b.html",
+      "original_url": "https://blogs.cisco.com/security/bhusa-2026-noc-thousandeyes/"
+    },
+    {
+      "entry_id": "382849017b3f3469",
+      "title": "Distributed Latency Monitoring at Black Hat",
+      "source_name": "Cisco Security Blog",
+      "category": "reporting",
+      "published_at": "2026-09-07T15:00:37+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要本件は、Black Hat の運営現場で、ThousandEyes、Linux のコマンドライン試験、パケット証跡を組み合わせて分散遅延を監視し、DNS の問題切り分けとネットワーク性能の確認を行った事例を紹介している。攻撃や脆弱性そのものではなく、ライブイベント中の障害対応と可観測性の実践例に近い。悪用経路としては、遅延や名前解決失敗を隠れみのにした…",
+      "article_path": "articles/382849017b3f3469.html",
+      "original_url": "https://blogs.cisco.com/security/bhusa-2026-te-latency/"
+    },
+    {
+      "entry_id": "b2f78f59efbde74e",
+      "title": "Black Hat USA 2026: Safeguarding DNS with Secure Access",
+      "source_name": "Cisco Security Blog",
+      "category": "reporting",
+      "published_at": "2026-09-07T15:00:32+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要CiscoのSecurity Blogは、Black Hat USA 2026向けの案内として、Secure Accessを使ったDNS保護を紹介している。内容は新たな脆弱性の公表ではなく、イベント文脈での製品訴求と運用上の注意喚起が中心に見える。DNSは初期侵入後のC2通信や情報持ち出しで悪用されやすく、名前解決の制御点を押さえると横展開や外部通信の…",
+      "article_path": "articles/b2f78f59efbde74e.html",
+      "original_url": "https://blogs.cisco.com/security/bhusa-2026-soc-dns/"
+    },
+    {
+      "entry_id": "10de098c9af9eede",
+      "title": "Building a Risk-Based Secure Network Analytics Detection with Splunk Detection Editor (Alpha)",
+      "source_name": "Cisco Security Blog",
+      "category": "reporting",
+      "published_at": "2026-09-07T15:00:32+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要Cisco Security Blog は、Black Hat USA の文脈で Splunk Detection Editor Alpha を使い、Cisco SNA のアラートを リスクイベント として扱う運用例を示した。ポイントは、単発の警告をそのまま追うのではなく、文脈付きのイベントに変換して調査の起点を整える点にある。これにより、アナリストは…",
+      "article_path": "articles/10de098c9af9eede.html",
+      "original_url": "https://blogs.cisco.com/security/bhusa-2026-soc-sna/"
+    },
+    {
+      "entry_id": "953d2d0321485212",
+      "title": "「ネット de 診断 Lite」が作る新しい市場 ～ 契約十数件から始まる GMO サイバーセキュリティ byイエラエの挑戦",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-06T23:15:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要GMO サイバーセキュリティ byイエラエが、「ネット de 診断 Lite」を軸に、少額から始められる診断市場を広げようとしている。記事は脆弱性そのものの告知ではなく、契約十数件という立ち上がり段階の取り組みを通じて、従来は予算や手続きで後回しになりがちだった診断需要を掘り起こす流れを伝えている。悪用の話ではないため直接の侵害リスクは低いが、こうした…",
+      "article_path": "articles/953d2d0321485212.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/07/56147.html"
+    },
+    {
+      "entry_id": "38532affc089e72f",
+      "title": "HENNGE Oneが10月に刷新、新製品・新プランの全貌を明かす全9回のウェビナー開催",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-06T23:10:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要HENNGE Oneの10月刷新に合わせ、新製品と新プランの全体像を説明する全9回のウェビナー開催が案内されている。記事の主眼は脆弱性や侵害事案ではなく、既存利用者や導入検討者に向けた製品変更の周知にある。変更点の詳細、価格や提供条件、移行手順がどこまで含まれるかは本文からは読み取れず、運用影響の範囲は未確認のまま残る。CSIRT観点では、情報漏えい対…",
+      "article_path": "articles/38532affc089e72f.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/07/56146.html"
+    },
+    {
+      "entry_id": "df185ba0988d22f6",
+      "title": "ダークウェブへの 17,559 名の情報流出を確認 ～ ロジックベインの不正アクセス被害",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-06T23:05:20+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要ロジックベインで17,559名分の個人情報流出が確認され、ダークウェブ上への流出が報じられた。記事上は被害の事実が中心で、侵入経路や滞留期間、流出した項目の粒度は明確ではない。個人情報の漏えいは、フィッシングやなりすまし、追加の標的型攻撃に転用されやすく、社内外の問い合わせ増加や再送信対応も発生しやすい。組織側では、漏えい範囲の確定、影響を受ける本人へ…",
+      "article_path": "articles/df185ba0988d22f6.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/07/56145.html"
+    },
+    {
+      "entry_id": "6471f6332d8b7166",
+      "title": "VOISING が利用する BI ツールに不正アクセス、保管されていたデータの不正取得を確認",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-06T23:05:16+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要VOISING が利用する BI ツールに不正アクセスが発生し、保管されていたデータの不正取得が確認された。公開情報だけでは、侵入経路が認証情報の漏えい、設定不備、脆弱性悪用のどれに当たるかはまだ見えない。BI ツールは集計用に見えて実際には業務横断の情報が集まるため、閲覧権限の奪取だけでも被害が広がりやすい。取得されたデータの種類、件数、外部流出の有…",
+      "article_path": "articles/6471f6332d8b7166.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/07/56144.html"
+    },
+    {
+      "entry_id": "76db315e8538f785",
+      "title": "名前の漢字が一文字異なる別人を同一人物と思い込む ～ 大阪府、個人情報が記載された書類を誤送付",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-06T23:05:11+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要大阪府で、漢字が一文字異なる別人を同一人物と取り違え、個人情報が記載された書類を誤送付した事案が報じられた。攻撃による侵入ではなく、確認不足と事務処理の誤りが起点となる情報漏えい系の事故に当たる。想定される悪用は、受領した第三者による内容の閲覧や二次利用であり、被害は本人の属性情報、連絡先、制度利用状況などの漏えいへ広がる可能性がある。単発の誤送付に見…",
+      "article_path": "articles/76db315e8538f785.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/07/56143.html"
+    },
+    {
+      "entry_id": "fbd891e074553a45",
+      "title": "01銀行のシステムに不正アクセス、最大100社の情報が漏えい",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-06T23:05:09+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要01銀行のシステムに対する不正アクセスが公表され、最大で100社の情報漏えいが生じた可能性が示された。現時点では、侵入経路、初期侵入後にどこまで操作されたか、実際に持ち出されたデータの範囲は未確認のまま残る。銀行本体への侵入は、単なる情報漏えいにとどまらず、取引先管理、委託先連携、口座関連業務などの周辺業務へ影響が波及しやすい。攻撃者は漏えい情報を使っ…",
+      "article_path": "articles/fbd891e074553a45.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/07/56142.html"
+    },
+    {
+      "entry_id": "6b57935634f353b0",
+      "title": "T&K TOKAにランサムウェア攻撃、一部の業務を停止",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-06T23:05:05+00:00",
+      "impact_level": "High",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要T&amp;K TOKAでランサムウェア攻撃が発生し、一部業務の停止に至っている。記事からは、侵入経路や暗号化の範囲、情報漏えいの有無はまだ確認できず、まずは事業継続への影響を優先して見ている段階と読める。製造業では生産、受発注、出荷、品質管理のいずれかが止まると、単なる端末障害より広く取引先へ波及しやすい。攻撃者側は、共有基盤や認証情報を起点に業務停…",
+      "article_path": "articles/6b57935634f353b0.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/07/56141.html"
+    },
+    {
+      "entry_id": "c6c8eb3b3127d524",
+      "title": "資格情報の不正利用でシステム閲覧被害 ～ 三井不動産、最大5.5万件の情報漏えいの可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-06T23:05:03+00:00",
+      "impact_level": "High",
+      "threat_type": "Credential Theft",
+      "summary_preview": "概要三井不動産で、資格情報の不正利用によるシステム閲覧被害が公表された。現時点では侵入経路の細部や、どの認証要素が突破されたかは未確認であり、外部からは閲覧権限の範囲と実際の持ち出し有無を分けて見る必要がある。被害は最大5.5万件の情報漏えい可能性に及ぶとされ、単一システムの問題に見えても、共有アカウントや連携基盤を通じて影響が広がる恐れがある。攻撃者視点…",
+      "article_path": "articles/c6c8eb3b3127d524.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/07/56140.html"
+    },
+    {
+      "entry_id": "5b18f245fdb8ed6f",
+      "title": "警察庁「パスワードだけの認証はもう限界です」パスキー導入検討を呼びかけ",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-06T23:00:18+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要警察庁が、パスワードのみの認証は限界に近いとして、パスキーの導入検討を呼びかけた。狙いは、漏えい済み認証情報の再利用やフィッシングを前提にした侵入を減らし、利用者側の認証強度を底上げすることにある。攻撃者は、盗んだパスワードを別サービスへ流用する手口や、偽サイトでの入力誘導を主な足場にしており、単独のパスワード防御は突破されやすい。パスキーはその弱点を…",
+      "article_path": "articles/5b18f245fdb8ed6f.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/07/56139.html"
+    },
+    {
+      "entry_id": "78c5956f806df05b",
+      "title": "38.3％が可能なサービスには全て二段階認証を設定",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-06T23:00:16+00:00",
+      "impact_level": "Low",
+      "threat_type": "Advisory",
+      "summary_preview": "概要本記事は、利用可能なサービスに二段階認証を広く適用すべきという、組織向けの対策意識を扱っている。個人設定の啓発に見えやすいが、実務上は認証情報の漏えい後に侵入を止める最後の門として効く。悪用は、漏えいしたパスワードの使い回しやフィッシングで得た認証情報を起点に進み、メール、クラウド、SaaS、VPNへ横に広がる。特に例外設定や未対応サービスが残ると、そ…",
+      "article_path": "articles/78c5956f806df05b.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/07/56138.html"
+    },
+    {
+      "entry_id": "6ecc02f28ad6b870",
+      "title": "Okta「Auth0」が新機能を発表、AI エージェント活用や B2C / B2B アイデンティティを強化",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-06T23:00:13+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要OktaのAuth0が、AIエージェントの活用やB2C/B2B向けのアイデンティティ機能を強化する新機能を発表した。内容は脆弱性の公表ではなく、認証基盤の機能拡張に関する話題で、攻撃手法そのものが増えたというより、自動化された対話や代理実行を前提にした利用が広がる局面に近い。実運用では、権限委任、トークン管理、同意画面、テナント分離の設計次第で、影響が…",
+      "article_path": "articles/6ecc02f28ad6b870.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/07/56137.html"
+    },
+    {
+      "entry_id": "3c556f8e038b4a36",
+      "title": "事故報告10,633件の4割近くが要対応レベル（PMK500該当）～ Pマーク付与事業者に求められる運用再点検",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-06T23:00:10+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要本記事は、Pマーク付与事業者から集まった事故報告10,633件のうち、約4割が要対応レベルに分類された点を伝える。個別の脆弱性を指摘する内容ではなく、運用の不備や初動遅れが組織被害を拡大させる構図を再確認させるものとなる。攻撃者視点では、技術的に高度な侵入よりも、誤送信、設定ミス、権限管理の甘さ、連絡経路の混乱といった実務上のほころびが狙い目になる。被…",
+      "article_path": "articles/3c556f8e038b4a36.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/07/56136.html"
+    },
+    {
+      "entry_id": "d8fcf4aa171d7642",
+      "title": "エクシングCPTrans-ME-X に複数の脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-06T23:00:08+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要エクシングのCPTrans-ME-Xに複数の脆弱性が公表された。記事断片だけでは、影響を受ける具体的な版数や各脆弱性の種類は確認できず、認証前で悪用可能か、または管理画面到達後に成立する問題かも未確認となる。機器やゲートウェイ製品の脆弱性は、外部公開設定やVPN経由の到達性があると、侵入の足がかりや設定改変、通信の迂回に使われやすい。仮に管理機能や転送…",
+      "article_path": "articles/d8fcf4aa171d7642.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/07/56135.html"
+    },
+    {
+      "entry_id": "11218661cce440d3",
+      "title": "PALLET CONTROL 製品にアクセス制御不備の脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-06T23:00:03+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要PALLET CONTROL製品にアクセス制御不備があり、権限のない利用者が本来触れない画面や操作に到達するおそれがある。記事題名からは脆弱性の存在までは読めるが、悪用条件、対象機能、認証要否、修正版の有無は本文がなく未確認となる。アクセス制御の崩れは、設定変更や情報参照にとどまらず、業務データの改変や停止操作へつながる場合があり、倉庫・物流・製造の現…",
+      "article_path": "articles/11218661cce440d3.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/07/56134.html"
+    }
+  ]
+}
