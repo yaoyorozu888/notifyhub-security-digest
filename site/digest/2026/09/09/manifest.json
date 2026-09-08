@@ -1,0 +1,492 @@
+{
+  "date": "2026-09-09",
+  "window": {
+    "from": "2026-09-08T06:00:00+09:00",
+    "to": "2026-09-09T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 32
+  },
+  "generated_at_jst": "2026-09-09T06:21:58.249215+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "OpenAI、ChatGPT Images 2.5をリリース",
+      "source_name": "Unite.AI",
+      "published_at": "2026-09-08T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要OpenAIがChatGPT Images 2.5を公開した。新モデルはスケッチ機能に対応し、生成速度を従来比で最大50%向上させる。API向けに2つの新モデルも追加され、開発者向け活用範囲が拡大する。画像生成タスクの効率化が期待され、クリエイティブ業務やコンテンツ制作に影響を及ぼす可能性がある。競合他社の類似機能との差別化が今後の焦点となる。",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://www.unite.ai/series/artificial-intelligence/",
+      "selection_reason": "AI分野で本日発表された具体的な製品更新として新規性が高く、画像生成性能向上とAPI拡張が実務利用に直結する点で他候補より優先。Mistralの資金調達やMetaのエージェント発表と比較し、即時的なモデル改善に焦点を当て多様性を確保。",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "OpenAI Releases ChatGPT Images 2.5 With Sketch and Two New API Models",
+          "url": "https://www.unite.ai/series/artificial-intelligence/",
+          "source_type": "web"
+        },
+        {
+          "title": "AI News Today, September 8: Top Stories",
+          "url": "https://aiweekly.co/ai-news-today",
+          "source_type": "web"
+        },
+        {
+          "title": "Top 9 Global AI News — September 8, 2026",
+          "url": "https://digibites.me/news/2026-09-08.html",
+          "source_type": "web"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "ASML、次世代AIチップ向け大型High-NA EUVマスク開発へ",
+      "source_name": "Tech Startups",
+      "published_at": "2026-09-08T13:41:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要ASMLが主要半導体メーカーと連携し、High-NA EUVリソグラフィ装置向けに大型マスクの開発を進める。6インチから12インチへの移行により、AI向け大規模チップの製造コスト低減を目指す。次世代AIインフラの基盤強化につながる動きとして注目される。TSMCやIntelなどとの共同取り組みが進行中だ。",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://techstartups.com/2026/09/08/top-tech-news-today-september-8-2026-asml-google-intel-mistral-openai-xiaomi-more/",
+      "selection_reason": "半導体製造装置分野の具体的な技術進展として、AIチップ生産コスト低減に直結。Armの新GPUや中国のコンピュート計画と比較し、製造プロセス革新に焦点を当てITトレンドの多様性を確保。",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "Top Tech News Today, September 8, 2026",
+          "url": "https://techstartups.com/2026/09/08/top-tech-news-today-september-8-2026-asml-google-intel-mistral-openai-xiaomi-more/",
+          "source_type": "web"
+        },
+        {
+          "title": "ASML Plans Bigger High-NA EUV Masks to Enable Next-Generation AI Chips",
+          "url": "https://techstartups.com/2026/09/08/top-tech-news-today-september-8-2026-asml-google-intel-mistral-openai-xiaomi-more/",
+          "source_type": "web"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "Microsoft、Patch Tuesdayで過去最多974件の脆弱性を修正",
+      "source_name": "SecurityWeek",
+      "published_at": "2026-09-08T19:20:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Patch",
+      "summary_preview": "概要Microsoftが9月のPatch Tuesdayで974件の脆弱性を修正した。2件のゼロデイを含む過去最多規模で、Windows関連が大半を占める。即時パッチ適用が推奨され、特権昇格リスクが高い。CISAも関連KEVを追加し、連邦機関への対応を促している。企業は優先順位付けした更新計画を急ぐ必要がある。",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://www.securityweek.com/microsoft-patches-record-974-vulnerabilities-including-two-exploited-zero-days/",
+      "selection_reason": "セキュリティ実務に直結する大規模パッチリリースとして影響度が高く、2件のゼロデイ含む具体的事実が明確。他のAI関連ニュースと重複せず、規制対応や運用判断に寄与する点で優先。",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "Microsoft Patches Record 974 Vulnerabilities, Including Two Exploited Zero-Days",
+          "url": "https://www.securityweek.com/microsoft-patches-record-974-vulnerabilities-including-two-exploited-zero-days/",
+          "source_type": "web"
+        },
+        {
+          "title": "Microsoft September 2026 Patch Tuesday fixes 966 flaws, 2 zero-days",
+          "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-september-2026-patch-tuesday-fixes-966-flaws-2-zero-days/",
+          "source_type": "web"
+        },
+        {
+          "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
+          "url": "https://www.cisa.gov/news-events/alerts/2026/09/08/cisa-adds-four-known-exploited-vulnerabilities-catalog",
+          "source_type": "web"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "923dafd987d07a9d",
+      "title": "CVE-2026-75650 Adobe Commerce and Magento Improper Neutralization of Special Elements Used in a Template Engine Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-09-08T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CVE-2026-75650 は、Adobe Commerce と Magento にあるテンプレートエンジン周りの不備で、特殊要素の無害化が不十分なために コード注入 や任意処理につながるおそれがある。CISA KEV に載っているため、単なる理論上の欠陥ではなく、実際の悪用が前提になっている点が重要になる。攻撃が成立すると、公開 Web 経由で管理…",
+      "article_path": "articles/923dafd987d07a9d.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "e444342a237f601b",
+      "title": "CVE-2026-81963 Microsoft Windows Link Following Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-09-08T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CISAのKnown Exploited Vulnerabilities Catalogに、CVE-2026-81963の Microsoft Windows Link Following Vulnerability が追加された。リンク追従の欠陥は、見た目は通常のファイルやショートカットでも、想定外の場所や権限で別の対象を開かせる足場になりやすい。攻…",
+      "article_path": "articles/e444342a237f601b.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "50011a4f7a5c00cd",
+      "title": "CVE-2026-86218 N-able N-central Static Code Injection Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-09-08T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CVE-2026-86218は、N-able N-centralにおける静的コード注入の脆弱性として扱うべき案件で、CISAのKEV掲載により実際の悪用可能性が高いと見なせる。攻撃者は管理系機能や入力処理の境界を突いて任意コード実行へつなげ、監視・配布・保守の中枢を押さえることで、配下端末への横展開や持続化を狙える余地がある。影響は単一の管理サーバーに…",
+      "article_path": "articles/50011a4f7a5c00cd.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "5d8053e0f109a2df",
+      "title": "CVE-2026-85880 Microsoft Windows Heap-Based Buffer Overflow Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-09-08T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要この件は、CVE-2026-85880 に関する Windows のヒープベースのバッファオーバーフロー脆弱性が、CISA KEV に載った点が重要になる。KEV掲載は、単なる理論上の欠陥ではなく、実際の悪用が確認済み、または少なくともそれに近い実運用上の危険があることを示す。攻撃者は脆弱な端末やサーバーに対して細工した入力を与え、任意コード実行や権限…",
+      "article_path": "articles/5d8053e0f109a2df.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "6daa2ba37e71811c",
+      "title": "Slim Spider Steals Crypto Custody Secrets From Brazilian Financial Institution",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-08T16:20:23+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要ブラジルの金融機関を狙う、これまで未把握だった金銭目的の攻撃者群が、Slim Spiderとして追跡されている。少なくとも2026年3月以降、暗号資産のカストディに関する情報や、ブラジルの即時決済基盤を理解した動きが確認されたとされる。攻撃の狙いは単なる窃取ではなく、金融業務の裏側にある権限情報や運用知識を抜き取る点にある可能性が高い。これにより、侵害…",
+      "article_path": "articles/6daa2ba37e71811c.html",
+      "original_url": "https://thehackernews.com/2026/09/slim-spider-steals-crypto-custody.html"
+    },
+    {
+      "entry_id": "8e020ab3da720b36",
+      "title": "Liquid Hackers Return 3,400 Bitcoin Taken via Elements Bug, Still Holding $47M in BTC",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-08T14:54:30+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要Liquid Network で Elements の不具合を起点に約 4,000 BTC が流出し、そのうち 3,400 BTC が翌日に返還されたと報じられた。残る約 598.5 BTC は未回収で、約4,700万ドル相当が依然として攻撃者側に残っている。Liquid は BTC を裏付けとするサイドチェーンであり、ネットワーク停止中は L-BTC…",
+      "article_path": "articles/8e020ab3da720b36.html",
+      "original_url": "https://thehackernews.com/2026/09/liquid-hackers-return-3400-bitcoin.html"
+    },
+    {
+      "entry_id": "03ea44298b4bf68f",
+      "title": "ChatGPT Flaw Let a Planted Prompt Send a Victim's Gmail Data to Another Account",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-08T14:19:17+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要Check Point Research は、ChatGPT の会話内に仕込まれた単一の指示が、利用者の見た目上の応答を保ったまま裏側で攻撃者向けの処理を実行しうると報告した。実証例では、接続済みの Gmail からデータを読み取り、隠し経路で別の ChatGPT アカウントへ渡せたという。攻撃の成立には、対象が外部アカウント連携を有効化していることや…",
+      "article_path": "articles/03ea44298b4bf68f.html",
+      "original_url": "https://thehackernews.com/2026/09/chatgpt-flaw-let-planted-prompt-send.html"
+    },
+    {
+      "entry_id": "47f2f2a0fe7b459f",
+      "title": "Autonomous AI Agents Compromise Thousands of Credentials in Under Six Hours",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-08T13:48:16+00:00",
+      "impact_level": "High",
+      "threat_type": "Credential Theft",
+      "summary_preview": "概要本件は、自律型の複数AIエージェントを使って短時間に認証情報を大量収集したとする観測情報であり、6時間未満で数千件の資格情報を奪った点が焦点になる。攻撃の主眼は、個別の侵入よりも、収集・試行・仕分けを自動化して取得効率を最大化するところにある。利用手口としては、フィッシング、既知漏えい情報の再利用、認証試行の高速化、収集した資格情報の精査などが想定され…",
+      "article_path": "articles/47f2f2a0fe7b459f.html",
+      "original_url": "https://thehackernews.com/2026/09/autonomous-ai-agents-compromise.html"
+    },
+    {
+      "entry_id": "5b4d7ec7a7e09734",
+      "title": "WeChat Zero-Click Worm Took Over Accounts on iPhone and Android via Incoming Calls",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-08T11:54:29+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要この記事は、WeChatの着信通話を起点にアカウントを乗っ取るワームが研究者により実証された件を扱う。被害者は通話に応答したり端末を操作したりしなくても成立し、既存のWeChat連絡先からの発信であることが前提となる。実証では3台の端末間で拡散しており、単発の認証突破ではなく、連絡先を足場にした横展開が起きる点が厄介になる。影響はWeChatアカウント…",
+      "article_path": "articles/5b4d7ec7a7e09734.html",
+      "original_url": "https://thehackernews.com/2026/09/wechat-zero-click-worm-took-over.html"
+    },
+    {
+      "entry_id": "28930ba0ed101a8e",
+      "title": "What It Took to Reach 1 Billion Build Manifests",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-08T11:49:02+00:00",
+      "impact_level": "Info",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要The Hacker News掲載の記事は、Chainguardが直近6か月でコンテナのbuild manifestを5億件から10億件超へ増やしたと紹介している。あわせて、3,000超のコンテナイメージと67万5,000件のイメージ版を扱う規模に達したとしている。焦点は件数そのものではなく、その量を支えるbuild基盤と運用設計の再構築にある。攻撃者…",
+      "article_path": "articles/28930ba0ed101a8e.html",
+      "original_url": "https://thehackernews.com/2026/09/what-it-took-to-reach-1-billion-build.html"
+    },
+    {
+      "entry_id": "93b9f1d3968cda37",
+      "title": "FreeIPA Flaw Chain Lets Anonymous Clients Create Reusable Administrator Credentials",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-08T11:22:07+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要FreeIPAにおいて、未認証のクライアントが自分で選んだKerberos IDをディレクトリに作成し、最終的にadministratorsグループへ到達しうる欠陥連鎖が報告された。認証基盤を直接崩されるため、単なる個別ホスト侵害ではなく、Linuxドメイン全体のログイン制御が揺らぐ点が重い。悪用にはFreeIPA側の欠陥に加えて、389 Direct…",
+      "article_path": "articles/93b9f1d3968cda37.html",
+      "original_url": "https://thehackernews.com/2026/09/freeipa-flaw-chain-lets-anonymous.html"
+    },
+    {
+      "entry_id": "ab64c36f40e5f971",
+      "title": "Adobe Patches Magento Zero-Day Exploited to Deploy Rust Backdoor and PHP Web Shell",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-08T09:13:47+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要AdobeはAdobe CommerceおよびMagento Open Sourceに存在する最大深刻度の脆弱性を修正した。対象はで、CVSS 10.0とされ、既に実環境で悪用されている。報告では、攻撃は9月4日ごろから始まり、Rust製のバックドアやPHPのWebシェルの設置につながっている。侵入後は管理画面やサーバ上の恒久的な支配を狙う流れが想定さ…",
+      "article_path": "articles/ab64c36f40e5f971.html",
+      "original_url": "https://thehackernews.com/2026/09/adobe-patches-magento-zero-day.html"
+    },
+    {
+      "entry_id": "90a1e614c0d02b27",
+      "title": "BengalSEO Poisons Bing Search Results to Deliver MayaBot and Tech Support Scams",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-08T08:43:51+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要検索順位を悪用して偽サイトへ誘導するSEOポイズニングの大規模な活動が明らかになった。Bingの検索結果が汚染され、利用者はMayaBotの配布先やテクニカルサポート詐欺へ誘導される流れが確認されている。攻撃者は正規の検索導線を踏み台にするため、メールや添付ファイルを直接ばらまく手口よりも、利用者の警戒を崩しやすい。現時点で記事要約からは、実際の感染範…",
+      "article_path": "articles/90a1e614c0d02b27.html",
+      "original_url": "https://thehackernews.com/2026/09/bengalseo-poisons-bing-search-results.html"
+    },
+    {
+      "entry_id": "c2d272c3bbbbd4a3",
+      "title": "Grindr to Pay £26 Million to Settle U.K. Claims Over HIV Status Data Sharing",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-08T07:00:43+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要オンライン出会い系アプリのGrindrが、利用者の個人情報、とくにHIV statusを第三者へ共有した疑いをめぐる英国内の訴訟で、£26 millionの支払いによる和解に応じた。争点は、本人の期待を超える形で機微な健康情報が商業目的、主に広告用途へ回された可能性にある。直接の侵害手口が述べられているわけではなく、現時点では共有の範囲、第三者の属性、…",
+      "article_path": "articles/c2d272c3bbbbd4a3.html",
+      "original_url": "https://thehackernews.com/2026/09/grindr-to-pay-26-million-to-settle-uk.html"
+    },
+    {
+      "entry_id": "32cbb15b1a9234fc",
+      "title": "September 2026 Microsoft Patch Tuesday, (Tue, Sep 8th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-09-08T19:20:30+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Patch",
+      "summary_preview": "概要Microsoft が 973件の脆弱性修正を公開し、過去最大規模の Patch Tuesday となった。113件が重要に分類され、実際に悪用済みとされた項目も2件含まれるため、単なる件数の多さよりも初動の優先順位付けが重要になる。影響範囲は Windows の権限昇格、Skype for Business、MSMQ、RRAS などの RCE を含み…",
+      "article_path": "articles/32cbb15b1a9234fc.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33320"
+    },
+    {
+      "entry_id": "e19e5805e2ed53a7",
+      "title": "ISC Stormcast For Tuesday, September 8th, 2026 https://isc.sans.edu/podcastdetail/10084, (Tue, Sep 8th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-09-08T02:00:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要SANS ISC の Stormcast は、複数の脅威動向を短時間で把握するためのポッドキャスト配信であり、今回の入力はその配信告知に近い。個別の脆弱性名、CVE、悪用事例、対策対象は示されていないため、実害のある新規インシデント情報としては扱えない。したがって、現時点で読み取れるのは、脅威研究コミュニティ向けの情報共有であり、特定製品への緊急封じ込…",
+      "article_path": "articles/e19e5805e2ed53a7.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33316"
+    },
+    {
+      "entry_id": "bbea622fc2176629",
+      "title": "VU#718077: UEFI Shell module embedded in SPI Flash can be used to bypass Secure Boot",
+      "source_name": "CERT/CC",
+      "category": "reporting",
+      "published_at": "2026-09-08T15:05:58+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要UEFI Shell が SPI Flash に組み込まれている構成で、UEFI ブート設定の改変権限を持つ攻撃者が Secure Boot の制御をすり抜けられる可能性が示された。攻撃は、追加のブートエントリを作成して本来起動させないはずの Shell を参照し、dmem や mm などの機能でプレブート環境を操作する流れになる。成立すると OS 起…",
+      "article_path": "articles/bbea622fc2176629.html",
+      "original_url": "https://kb.cert.org/vuls/id/718077"
+    },
+    {
+      "entry_id": "992bd8e9bf44b7c3",
+      "title": "VU#859658: Skullcandy Dime 3 wireless earbuds contain an unauthenticated Bluetooth pairing vulnerability",
+      "source_name": "CERT/CC",
+      "category": "reporting",
+      "published_at": "2026-09-08T14:42:31+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Skullcandy Dime 3 の一部ファームウェアに、未認証のBluetoothペアリングを許す脆弱性がある。攻撃者は所有者の操作なしに、Bluetooth通信圏内から新しい接続を作成できる。成立すると攻撃者端末は信頼済み機器として残り、次回以降も自動再接続できるため、音声セッションの乗っ取りが起きやすい。さらに、機器の実装次第ではマイク音声への…",
+      "article_path": "articles/992bd8e9bf44b7c3.html",
+      "original_url": "https://kb.cert.org/vuls/id/859658"
+    },
+    {
+      "entry_id": "e11c9a8b636ea7c6",
+      "title": "VU#943094: ONLYOFFICE ownCloud integration plugin contains a Server-Side Request Forgery (SSRF) vulnerability",
+      "source_name": "CERT/CC",
+      "category": "reporting",
+      "published_at": "2026-09-08T14:23:49+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要ONLYOFFICE ownCloud integration plugin の SSRF 脆弱性が公表された。対象は version 9.12 で、認証済み管理者が設定用の文脈を悪用し、ownCloud サーバーから任意の宛先へ接続させられる。内部ネットワークや localhost に向けた通信も試せるため、単なる外向き通信の誘発にとどまらず、内部探…",
+      "article_path": "articles/e11c9a8b636ea7c6.html",
+      "original_url": "https://kb.cert.org/vuls/id/943094"
+    },
+    {
+      "entry_id": "2f8ebb068ca47f32",
+      "title": "AI がランサムウェア攻撃全工程を実行、被害企業に 80 ページにわたる“セキュリティ監査報告書”まで提出",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-07T23:20:03+00:00",
+      "impact_level": "High",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要本記事は、AIを用いたランサムウェア攻撃が、侵入から情報窃取、暗号化、脅迫文作成までの全工程を自動化し、被害企業に対しては80ページ規模の“監査報告書”まで生成したと伝える。攻撃者は人手を減らしつつ、交渉や脅迫の文面を対象組織に合わせて作り込み、心理的圧力を高める狙いがある。影響は単一端末の暗号化にとどまらず、認証情報の窃取、バックアップ破壊、社内横展…",
+      "article_path": "articles/2f8ebb068ca47f32.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/08/56160.html"
+    },
+    {
+      "entry_id": "79073fcd716fa404",
+      "title": "Okta Blog 第19回 経産省「SCS評価制度」におけるサプライチェーンセキュリティとアイデンティティ管理の重要性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-07T23:15:03+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要本記事は、Okta Blogの連載を紹介しつつ、経産省の「SCS評価制度」でサプライチェーンセキュリティを考える際に、アイデンティティ管理が中核になる点を扱う。委託先や再委託先まで含めた連携では、境界防御よりも誰が何にアクセスできるかの制御が事故の広がりを左右する。攻撃者は弱い委託先の認証基盤や権限設定を起点に、正規アクセスとして横展開する狙いを持つ。…",
+      "article_path": "articles/79073fcd716fa404.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/08/56159.html"
+    },
+    {
+      "entry_id": "6b693fdb1cbc9387",
+      "title": "教育ソフトウェアの休眠中のレンタルサーバにランサムウェア攻撃、暗号化被害と不正アクセスの痕跡を確認",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-07T23:05:11+00:00",
+      "impact_level": "High",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要教育ソフトウェア事業者の休眠中のレンタルサーバがランサムウェアに侵害され、暗号化被害と不正アクセスの痕跡が確認された。稼働中の主業務基盤ではなく停止中資産が狙われた点から、攻撃者は外向きに露出した古い管理面や放置されたアカウントを起点に、低コストで侵入できる場所を探していた可能性が高い。被害は単一サーバ内にとどまるとは限らず、同一認証情報の使い回しやバ…",
+      "article_path": "articles/6b693fdb1cbc9387.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/08/56158.html"
+    },
+    {
+      "entry_id": "ca98d0aad553f85a",
+      "title": "宛名と住所が 1 行ズレた状態で発送データ作成 ～ 学校法人でダイレクトメール誤送付",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-07T23:05:09+00:00",
+      "impact_level": "Low",
+      "threat_type": "Misconfiguration",
+      "summary_preview": "概要学校法人で、宛名と住所の行が1行ずれた状態のまま発送データが作成され、ダイレクトメールが誤送付された。原因は、データ加工や差し込み処理の段階での整合性不備とみられ、外部攻撃よりも業務処理ミスに近い。影響は漏えい先が個人情報を含む宛先一覧に広がる可能性があり、再送、回収、謝罪対応が必要になる。現時点では、誤送付の件数、含まれた情報の範囲、第三者による閲覧…",
+      "article_path": "articles/ca98d0aad553f85a.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/08/56157.html"
+    },
+    {
+      "entry_id": "fa001b7d3f31aec0",
+      "title": "さくらインターネットへの不正アクセス、案内ページを公開",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-07T23:05:07+00:00",
+      "impact_level": "Low",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要さくらインターネットへの不正アクセスについて、同社が案内ページを公開したという報道である。現時点で確認できるのは、被害や影響の有無を整理するための告知が出た点までで、侵入経路や影響範囲は本文情報だけでは確定しない。外部から見ると、認証情報の悪用、公開サービス経由の侵入、管理画面周辺の不備など複数の筋が残るが、いずれも未確認である。利用者側は、契約情報や…",
+      "article_path": "articles/fa001b7d3f31aec0.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/08/56156.html"
+    },
+    {
+      "entry_id": "086c1a910d579f93",
+      "title": "サカタのタネへの不正アクセス、調査結果を公表",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-07T23:05:05+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要サカタのタネが、不正アクセスに関する調査結果を公表した。記事題名と配信元からは、外部からの侵入後に情報の閲覧、改ざん、持ち出しの有無を確認する局面にあると読めるが、本文要約がないため、侵入経路や影響範囲、漏えいの有無は未確認のまま残る。こうした公表記事は、攻撃者が既知の脆弱性、認証情報の窃取、公開系システムの設定不備を足掛かりにする典型例として扱う必要…",
+      "article_path": "articles/086c1a910d579f93.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/08/56155.html"
+    },
+    {
+      "entry_id": "05af610226285d8e",
+      "title": "パスキー設定を要請 ～ 浜銀TT証券でフィッシングによる不正アクセス・取引被害発生",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-07T23:05:03+00:00",
+      "impact_level": "High",
+      "threat_type": "Phishing",
+      "summary_preview": "概要浜銀TT証券でフィッシングを起点とする不正アクセスと取引被害が発生し、利用者に対してパスキー設定が要請された。攻撃者は偽サイトや偽通知で認証情報を奪い、取得した口座でログイン後に取引を実行する流れが想定される。被害は単なる閲覧権限にとどまらず、本人になりすました売買や登録情報の改変へ広がるおそれがある。現時点で、侵入経路の詳細、被害口座数、追加の内部不…",
+      "article_path": "articles/05af610226285d8e.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/08/56154.html"
+    },
+    {
+      "entry_id": "f5550a3c52707da5",
+      "title": "警察庁が DMARC を郵便局に例えて紹介「Quarantine」「Reject」への移行促す",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-07T23:00:20+00:00",
+      "impact_level": "Low",
+      "threat_type": "Advisory",
+      "summary_preview": "概要警察庁が DMARC の考え方を郵便局にたとえて紹介し、受信側での扱いを Quarantine や Reject へ進めるよう促した。背景には、差出人を詐称したメールが依然として フィッシング や業務メール詐称に使われている事情がある。DMARC は送信元の正当性を受信側で判断する仕組みで、なりすましメールをそのまま受け取らせない運用に効く。影響は特定…",
+      "article_path": "articles/f5550a3c52707da5.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/08/56153.html"
+    },
+    {
+      "entry_id": "347fae59e283ee23",
+      "title": "従来のバックアップやBCPは意図的侵害を想定せず ～ NTTデータグループ、サイバーセキュリティ グローバル動向四半期レポート（2025年度第3四半期）",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-07T23:00:18+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要NTTデータグループが、従来のバックアップやBCPだけでは意図的侵害に十分対応できないという観点を含む、サイバーセキュリティの四半期動向を公表した。焦点は、障害や災害の復旧を前提にした備えと、攻撃者が内部で権限を広げ、バックアップまで破壊・暗号化・無効化する状況との違いにある。実務上は、侵入の初期封じ込めだけでなく、横展開や特権奪取、復旧系資産への到達…",
+      "article_path": "articles/347fae59e283ee23.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/08/56152.html"
+    },
+    {
+      "entry_id": "913302ba8c9f6b97",
+      "title": "サイバー攻撃の「被害経験なし」企業は約 6 割へ減少 ～ 東商2026年アンケート調査",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-07T23:00:14+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要東商の2026年アンケートでは、サイバー攻撃の被害経験がない企業が約6割まで減り、被害がより一般化している状況が示された。直接の脆弱性報告ではないが、取引先や委託先を含む企業環境で、侵入・詐欺・情報漏えいが日常的なリスクとして定着しつつある点が重要になる。攻撃者は防御の薄い中小企業や運用の隙を足場にし、認証情報の窃取やメール経由の侵入から横展開を狙う可…",
+      "article_path": "articles/913302ba8c9f6b97.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/08/56151.html"
+    },
+    {
+      "entry_id": "5810836f19eaaaff",
+      "title": "守るべきはデータではなく事業 ～ CTC、企業のサイバーセキュリティ・ガバナンス体系を解説",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-07T23:00:11+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要この記事は、企業のサイバーセキュリティを個別対策の寄せ集めではなく、事業継続と説明責任を支える統治の仕組みとして捉え直す内容となっている。CTCが解説するのは、守る対象をデータ単体ではなく、業務・顧客接点・供給網を含む事業全体に置く考え方に近い。攻撃は技術だけで完結せず、委託先や運用の隙、権限管理のゆるみを足場に広がるため、統制の不備がそのまま被害拡大…",
+      "article_path": "articles/5810836f19eaaaff.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/08/56150.html"
+    },
+    {
+      "entry_id": "71cd357005d1907f",
+      "title": "ダークネット観測パケット数が過去最高を更新、10年前から10倍に増大 ～ 総務省「令和8年版情報通信白書」",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-07T23:00:07+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要総務省の「令和8年版情報通信白書」は、ダークネット観測パケット数が過去最高を更新し、10年前の約10倍に増えたと示した。これは攻撃そのものの増加を直接示すというより、未使用アドレス帯への走査や誤送信を含む外部からの到達試行が恒常的に高い水準にあることを示す。攻撃者は脆弱な公開機器、放置されたVPN、古いIoT、閉じ忘れの管理ポートを広く探すため、露出が…",
+      "article_path": "articles/71cd357005d1907f.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/08/56149.html"
+    },
+    {
+      "entry_id": "111ed8ae76f8d4c9",
+      "title": "45社が先行導入、HENNGEがDMARC運用支援の新サービス「Domain Protection」を開始",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-07T23:00:03+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要HENNGEが、DMARCの運用支援を行う新サービス「Domain Protection」を開始した。メールなりすまし対策は設定して終わりではなく、送信元の棚卸し、失敗した配信の分析、例外対応の継続が必要になりやすい。記事では先行導入が45社に及ぶとされ、実運用の負荷軽減を狙ったサービスと読める。攻撃者はブランドを騙るフィッシングやBECにDMARC未…",
+      "article_path": "articles/111ed8ae76f8d4c9.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/08/56148.html"
+    }
+  ]
+}
