@@ -1,0 +1,698 @@
+{
+  "date": "2026-09-10",
+  "window": {
+    "from": "2026-09-09T06:00:00+09:00",
+    "to": "2026-09-10T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 50
+  },
+  "generated_at_jst": "2026-09-10T06:23:59.207813+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "AIエージェント主流化がIT自動化を変革",
+      "source_name": "TechTarget",
+      "published_at": "2026-09-09T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要2026年に入り企業はAIエージェントを多段階ワークフローへ本格導入し始めている。調査では57%の組織がエージェントを活用し、16%が部門横断プロセスまで拡大した。クラウド自動化投資も64%のIT担当者が進め、推論計算需要がデータセンター拡大を後押しする。エージェントオーケストレーションが鍵となり、既存プロセス再設計なしの自動化は失敗リスクを高める。実…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://www.techtarget.com/it-infrastructure/feature/6-trends-shaping-IT-automation-in-2026-and-beyond",
+      "selection_reason": "IT分野の具体的な自動化トレンドとしてエージェント活用の進展を挙げ、他の予測レポートより実務影響が明確で新規性が高いため選定",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "6 trends shaping IT automation in 2026 and beyond",
+          "url": "https://www.techtarget.com/it-infrastructure/feature/6-trends-shaping-IT-automation-in-2026-and-beyond",
+          "source_type": "web"
+        },
+        {
+          "title": "TMT Predictions 2026",
+          "url": "https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions.html",
+          "source_type": "web"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "Metaが個人向けAIエージェントMuseを発売",
+      "source_name": "Digi Bites",
+      "published_at": "2026-09-09T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要Metaは米国向けに個人AIエージェントMuseを正式発売した。メールやカレンダー、決済アプリと連携し旅行予約やフォーム入力、購入を自動処理する。安全・プライバシー機能を強調し仮想マシン内で動作する。児童安全和解後わずか2週間での投入は市場競争激化を示す。企業は類似エージェントの業務適用を検討するタイミングだ。",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://digibites.me/news/2026-09-09.html",
+      "selection_reason": "AI製品の具体的な新発売事例として実務影響が大きく、資金調達や研究発表より即時性が高いため選定",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "Top 10 Global AI News — September 9, 2026",
+          "url": "https://digibites.me/news/2026-09-09.html",
+          "source_type": "web"
+        },
+        {
+          "title": "Meta launches personal AI agent, Muse",
+          "url": "https://www.nytimes.com/spotlight/ai-future-in-motion",
+          "source_type": "web"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "AIエージェント向けリアルタイム権限制御が登場",
+      "source_name": "Help Net Security",
+      "published_at": "2026-09-09T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要AkeylessはAIエージェント向けリアルタイム権限制御機能の一般提供を開始した。エージェント行動を監視し不正を即時ブロックする。アイデンティティドリフト検知とキルスイッチもOrchid Securityから発表された。エージェントが許可範囲を超えるリスクを低減する。企業は本番環境でのエージェント展開前にこれら制御層の導入を検討すべきだ。",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://www.helpnetsecurity.com/2026/09/09",
+      "selection_reason": "AI分野とセキュリティの交差点で具体的な製品発表があり、純粋インシデントより実務対応に直結するため選定",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "September 9, 2026",
+          "url": "https://www.helpnetsecurity.com/2026/09/09",
+          "source_type": "web"
+        },
+        {
+          "title": "Akeyless adds real-time enforcement for AI agents in production",
+          "url": "https://www.helpnetsecurity.com/2026/09/09",
+          "source_type": "web"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "59aff4a62233457f",
+      "title": "CVE-2026-19490 Citrix NetScaler Authentication Bypass Using an Alternate Path or Channel Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-09-09T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CVE-2026-19490 は Citrix NetScaler における認証回避の脆弱性で、別経路や別チャネルを使って認証をすり抜ける点が問題となる。CISA KEV に掲載されており、単なる未修正の理論上の欠陥ではなく、実際の悪用が前提に置かれている。攻撃者は認証前に管理系や公開系の機能へ到達できれば、設定改ざん、情報取得、踏み台化、横展開の起点…",
+      "article_path": "articles/59aff4a62233457f.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "76d34d76643416e1",
+      "title": "CVE-2025-25249 Fortinet Multiple Products Heap-based Buffer Overflow Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-09-09T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Fortinet の複数製品における ヒープベースのバッファオーバーフローが CVE-2025-25249 として扱われ、CISA KEV に載っている。これにより、攻撃者は細工した入力を通じてメモリ破壊を起こし、認証前の リモートコード実行 や装置の制御奪取へつなげる可能性がある。境界装置や管理系に入る製品が対象なら、単一機器の問題に見えても、踏み台…",
+      "article_path": "articles/76d34d76643416e1.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "7ece271c510ebceb",
+      "title": "CVE-2026-87491 Google Chromium V8 Out of Bounds Write Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-09-09T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CISA KEV に CVE-2026-87491 が掲載され、Google Chromium の V8 にある 境界外書き込み の問題が実際に悪用され得る段階にあることが示された。V8 はブラウザ上で JavaScript を処理する中核であり、攻撃は不正な Web コンテンツを開かせるだけで成立する可能性がある。成功すると、ブラウザのクラッシュにと…",
+      "article_path": "articles/7ece271c510ebceb.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "7455e25949a37ff9",
+      "title": "CVE-2026-20079 Cisco Firewall Management Center Authentication Bypass Using an Alternate Path or Channel Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-09-09T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CiscoのSecure Firewall Management CenterとSecurity Cloud Controlに関する認証回避の脆弱性が、CISAのKEVに載っている。別経路や別チャネルを使って認可をすり抜ける型の問題なら、管理画面への到達さえ許せば、設定変更や配下装置への波及につながる可能性が高い。攻撃者にとっては、外部公開された管理系…",
+      "article_path": "articles/7455e25949a37ff9.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "a7606c99f4bd2330",
+      "title": "U.S. Disrupts Xinbi Guarantee Scam Marketplace, Freezes $52.8 Million in Crypto",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-09T18:26:05+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Scam/Fraud",
+      "summary_preview": "概要米司法省が、詐欺支援を売り物にしたオンライン市場 Xinbi Guarantee に対して、Telegramチャンネルの差し押さえ、暗号資産ウォレット2件の没収、5,280万ドル相当の凍結を含む対抗措置を公表した。市場そのものを閉じるだけでなく、詐欺基盤の運用経路を断つ狙いが見える。記事では、同時にマダガスカルで13か所の詐欺拠点への妨害も進めたとされ…",
+      "article_path": "articles/a7606c99f4bd2330.html",
+      "original_url": "https://thehackernews.com/2026/09/us-disrupts-xinbi-guarantee-scam.html"
+    },
+    {
+      "entry_id": "154667488562451b",
+      "title": "Four Spy Groups Used the Same Chrome and Windows Exploit Kit Within a Week",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-09T16:34:05+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要複数の諜報目的の活動 समूहが、BlueMoon と呼ばれる未把握のエクスプロイトキットを使い、Microsoft Windows と Google Chrome の複数脆弱性を連鎖させたと報じられている。最初の実地使用は APT31 に帰属付けられているが、記事本文からは対象脆弱性名や侵入経路の全体像がまだ見えない。共通のキットが短期間に複数グルー…",
+      "article_path": "articles/154667488562451b.html",
+      "original_url": "https://thehackernews.com/2026/09/four-spy-groups-used-same-chrome-and.html"
+    },
+    {
+      "entry_id": "caabf38cb9244089",
+      "title": "Infostealer Logs Expose Replayable AI Tokens That Can Bypass MFA",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-09T14:23:55+00:00",
+      "impact_level": "High",
+      "threat_type": "Credential Theft",
+      "summary_preview": "概要情報窃取型マルウェアのログから、AIサービスの再利用可能なトークンや認証情報が流出し、攻撃者が正規利用者を装って各種AI基盤へ侵入する事例が報じられた。対象は Google や Anthropic などのモデル提供基盤を含み、MFAを回避したように見える不正利用につながる点が厄介になる。攻撃者は盗んだトークンをそのまま再生して、会話履歴、保存済み設定、…",
+      "article_path": "articles/caabf38cb9244089.html",
+      "original_url": "https://thehackernews.com/2026/09/infostealer-logs-expose-replayable-ai.html"
+    },
+    {
+      "entry_id": "48ab545ff7b7eac5",
+      "title": "Webinar: Learn How to Answer “Are We Exposed?” Faster After a New CVE",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-09T11:57:36+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要新しいが公表された直後に、自組織が実際に影響を受けるかを素早く判断する難しさを扱う内容である。記事は、脆弱性スキャナ、EDR、クラウド台帳、SBOM、リポジトリ、アプリ情報を行き来しながら確認する現実を前提にしている。問題の本質は、脆弱性の存在確認ではなく、露出条件、利用中バージョン、到達経路、例外構成までそろえて初めて封じ込め判断ができる点にある。攻…",
+      "article_path": "articles/48ab545ff7b7eac5.html",
+      "original_url": "https://thehackernews.com/2026/09/webinar-learn-how-to-answer-are-we.html"
+    },
+    {
+      "entry_id": "515a75d40a43a432",
+      "title": "DeepSeek Harness Flaw Let AI Agents Disable Their Own File Sandbox Without Approval",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-09T11:17:07+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要DeepSeek Harness に、サンドボックスで動くはずの AI エージェントが、承認なしに自分の隔離を解除できる不備が見つかった。対象は開発者端末で AI コーディングエージェントを動かすためのオープンソース基盤で、通常は不審なファイルを扱っても作業領域の外へ書き込めない設計になっている。ところが、エージェントがツールの呼び出しを通じてこの制限…",
+      "article_path": "articles/515a75d40a43a432.html",
+      "original_url": "https://thehackernews.com/2026/09/deepseek-harness-flaw-let-ai-agents.html"
+    },
+    {
+      "entry_id": "5a1bec0937504c2c",
+      "title": "Alby Hub Critical Flaw Could Let Attackers Take Over Internet-Exposed Bitcoin Wallets",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-09T10:43:04+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Bitcoin wallet の Alby Hub に、Critical とされる不具合が見つかった。インターネットから到達可能な状態で運用していた場合、攻撃者がウォレットを乗っ取り、保有資産を送金できた可能性がある。対象は self-hosted の Lightning wallet で、利用者が自前の端末やサーバーで鍵と残高を管理する構成になるため…",
+      "article_path": "articles/5a1bec0937504c2c.html",
+      "original_url": "https://thehackernews.com/2026/09/alby-hub-critical-flaw-could-let.html"
+    },
+    {
+      "entry_id": "655a6f74d16f89a9",
+      "title": "U.S. Agencies Accuse China AI Firms of Distilling Claude, GPT, Gemini, and Grok",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-09T09:32:26+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Other",
+      "summary_preview": "概要米国のサイバー・情報当局は、中国系AI企業がClaude、GPT、Gemini、Grokのような先端モデルから、蒸留攻撃で機能や振る舞いを体系的に抜き出していると非難した。記事の主眼は、単発の模倣ではなく、産業規模で継続的に能力を吸い上げる開発手法にある。悪用の中心は、モデルの出力を大量に集めて模倣モデルを育てる点にあり、APIの利用規約違反や知財侵害…",
+      "article_path": "articles/655a6f74d16f89a9.html",
+      "original_url": "https://thehackernews.com/2026/09/us-agencies-accuse-china-ai-firms-of.html"
+    },
+    {
+      "entry_id": "f383acc03b6b9d44",
+      "title": "Chrome V8 Zero-Day Exploited in the Wild Enables Code Execution Inside Sandbox",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-09T09:11:03+00:00",
+      "impact_level": "High",
+      "threat_type": "Zero-day",
+      "summary_preview": "概要Google が Chrome の更新を公開し、V8 にある 0-day を含む計230件の脆弱性を修正した。問題の CVE-2026-87491 は、JavaScript と WebAssembly の実行基盤である V8 の 境界外書き込み に起因し、実環境で悪用が確認されている。攻撃が成立すると、ブラウザの サンドボックス内でコード実行 に至る可…",
+      "article_path": "articles/f383acc03b6b9d44.html",
+      "original_url": "https://thehackernews.com/2026/09/chrome-v8-zero-day-exploited-in-wild.html"
+    },
+    {
+      "entry_id": "5b8b511bac8cdd7c",
+      "title": "New cPanel Flaw Lets a Hosting Account With Mail Privileges Run Code as Root",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-09T08:19:32+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要cPanel と WHM に、メール関連権限を持つ認証済みアカウントから root 権限で任意コード実行につながる欠陥が修正された。攻撃者は EmailTrack を経由してサーバ上に任意のファイルを作成し、その流れで全体の制御を奪えるとされる。単一のホスティングアカウントから サーバ全体へ被害が広がる点が重要となる。影響はサポート対象の全バージョンに…",
+      "article_path": "articles/5b8b511bac8cdd7c.html",
+      "original_url": "https://thehackernews.com/2026/09/new-cpanel-flaw-lets-hosting-account.html"
+    },
+    {
+      "entry_id": "17d6fdbcab8a52fc",
+      "title": "F5 BIG-IP APM Malware Injects a PHP Web Shell Into Memory, Evading Disk Scans",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-09T07:36:49+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要F5 BIG-IP APM に関連する侵害で使われたマルウェアが、PHP Web Shell をディスクではなくメモリ上に注入し、ファイルスキャンをすり抜ける手口が報告された。Apache が対象の PHP スクリプトを読み込むと、そのコピーがメモリ上で改変され、ディスク上の実体を確認しても痕跡が見えにくくなる。これにより、通常のマルウェア検査や改ざん…",
+      "article_path": "articles/17d6fdbcab8a52fc.html",
+      "original_url": "https://thehackernews.com/2026/09/f5-big-ip-apm-malware-injects-php-web.html"
+    },
+    {
+      "entry_id": "15b7499e1c3c8e28",
+      "title": "Researcher Drops New Microsoft Defender PoC Showing ShieldBreak Patch Can Be Bypassed",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-09T06:47:27+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Microsoft Defenderに関する新たなPoCが公開され、既知の脆弱性に対するパッチ回避が可能とされている。記事によれば、今回の問題はShieldCrashと呼ばれ、先月報告されたShieldBreakの修正が十分ではなかったという位置づけになる。攻撃成立の前提はまだ不明点が多いが、Defenderの防御機構を迂回できるなら、検知回避や次段階…",
+      "article_path": "articles/15b7499e1c3c8e28.html",
+      "original_url": "https://thehackernews.com/2026/09/researcher-drops-new-microsoft-defender.html"
+    },
+    {
+      "entry_id": "d7bd6b630449aac8",
+      "title": "SAP Patches CVSS 10.0 Kernel Flaw Enabling Unauthenticated Remote Code Execution",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-09T06:25:45+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要SAP が 複数の脆弱性を修正し、その中に SAP Extended Passport (EPP) Processing の CVSS 10.0 の不具合が含まれる。CVE-2026-44756 は メモリ破損として扱われ、条件がそろうと 認証なしのリモートコード実行につながる可能性がある。影響は単一機能の不調にとどまらず、アプリケーションの機密性・完…",
+      "article_path": "articles/d7bd6b630449aac8.html",
+      "original_url": "https://thehackernews.com/2026/09/sap-patches-cvss-100-kernel-flaw.html"
+    },
+    {
+      "entry_id": "c0ea8e36d1a6a38d",
+      "title": "Microsoft Patches Record 974 Flaws, Including Two Exploited Windows Zero-Days",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-09T04:41:29+00:00",
+      "impact_level": "High",
+      "threat_type": "Patch",
+      "summary_preview": "概要Microsoftが月例更新で974件という過去最大級の脆弱性修正を公開し、その中に実際に悪用済みのWindows系ゼロデイが2件含まれる。攻撃者は未修正環境を狙って侵入を始め、そこから権限昇格、横展開、持続化へつなげやすい構図になる。影響範囲はWindows、Office、SQL、開発ツールにまたがり、端末だけでなくサーバや業務アプリ基盤まで波及しう…",
+      "article_path": "articles/c0ea8e36d1a6a38d.html",
+      "original_url": "https://thehackernews.com/2026/09/microsoft-patches-record-974-flaws.html"
+    },
+    {
+      "entry_id": "22268597522aa73b",
+      "title": "N-able N-central Pre-Auth RCE Flaw Exploited in the Wild",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-09T04:27:51+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CISA が N-able N-central の CVE-2026-86218 を KEV に追加し、実悪用が確認された扱いとして FCEB に短期対応を求めている。報道では 認証前の RCE とされ、外部から到達可能な管理基盤であれば、攻撃者は初期侵入の足場を得やすい。N-central は複数端末の管理に使われるため、単一サーバーの侵害が運用基盤…",
+      "article_path": "articles/22268597522aa73b.html",
+      "original_url": "https://thehackernews.com/2026/09/n-able-n-central-pre-auth-rce-flaw.html"
+    },
+    {
+      "entry_id": "6f136d319f0b76f3",
+      "title": "Scans for Proxmox Servers, (Wed, Sep 9th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-09-09T17:46:24+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要本件は、Proxmox VE に対する走査が観測されたという話題で、背景には古い version 7 に存在する脆弱性の注意喚起がある。悪用の成立には、当該旧版がインターネットから到達可能で、かつ更新されずに残っていることが前提になる。仮に攻撃が成立すると、仮想基盤の管理面に近い位置から影響が広がり、複数の仮想マシンや運用データへ波及するおそれがある。…",
+      "article_path": "articles/6f136d319f0b76f3.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33324"
+    },
+    {
+      "entry_id": "84d114f018dc2ae0",
+      "title": "ISC Stormcast For Wednesday, September 9th, 2026 https://isc.sans.edu/podcastdetail/10086, (Wed, Sep 9th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-09-09T02:00:02+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要SANS ISC の Stormcast は、9月9日時点の脅威動向を短く整理した音声・解説系の配信であり、個別の脆弱性告知というより、運用者が押さえるべき観測情報の集約に近い。今回の入力だけでは、対象製品、脆弱性番号、悪用確認の有無は判別できない。したがって、直ちに広範な緊急対応を要する材料かどうかは未確認となる。実務上は、配信内で取り上げられた事項…",
+      "article_path": "articles/84d114f018dc2ae0.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33322"
+    },
+    {
+      "entry_id": "b9b362a83f8e19b4",
+      "title": "Untracked Nightmares: The Threats Hiding Behind Commodity Infrastructure",
+      "source_name": "Unit 42",
+      "category": "reporting",
+      "published_at": "2026-09-09T10:00:55+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要この分析は、YouTubeのゲーム誘導や検索エンジン汚染を使って、企業ネットワークに複数のマルウェアを送り込む手口を扱っている。攻撃者は、利用者が正規サイトや人気動画に見える導線をたどる前提を利用し、警戒を下げた状態でダウンロードや実行を誘発する。侵入の入口は一見ありふれているが、成立すると情報窃取、追加展開、踏み台化などに広がる余地がある。どの段階ま…",
+      "article_path": "articles/b9b362a83f8e19b4.html",
+      "original_url": "https://unit42.paloaltonetworks.com/ppi-network-malware-campaign-analysis/"
+    },
+    {
+      "entry_id": "91ac977f39c29a1d",
+      "title": "注意喚起: Adobe AcrobatおよびReaderの脆弱性（APSB26-141）に関する注意喚起  (公開)",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-09-09T02:20:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Advisory",
+      "summary_preview": "概要Adobe Acrobat と Reader に関する注意喚起で、APSB26-141 に基づく脆弱性情報が出ている。記事自体は詳細な悪用手口を示していないが、PDF閲覧環境は外部入力の受け口になりやすく、閲覧だけで侵害に至る経路が成立するかが最初の確認点になる。影響は単一端末に閉じず、文書配布や承認フローで広く使う環境では、初動の遅れが複数端末への波…",
+      "article_path": "articles/91ac977f39c29a1d.html",
+      "original_url": "https://www.jpcert.or.jp/at/2026/at260026.html"
+    },
+    {
+      "entry_id": "c52d02ba95d856be",
+      "title": "注意喚起: 2026年9月マイクロソフトセキュリティ更新プログラムに関する注意喚起  (公開)",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-09-09T02:20:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要JPCERT/CCが、2026年9月のMicrosoft製品向けセキュリティ更新に関する注意喚起を公表した。更新の背景には、既知の脆弱性修正や緊急度の高い対処が含まれる可能性があり、運用現場では「どの製品を優先して当てるか」の判断が重要になる。悪用の成立には、対象製品の利用状況や公開範囲、権限条件が関わるため、すべての環境に同じ優先度を付けるべきではな…",
+      "article_path": "articles/c52d02ba95d856be.html",
+      "original_url": "https://www.jpcert.or.jp/at/2026/at260025.html"
+    },
+    {
+      "entry_id": "c24ee2e281a90bbc",
+      "title": "Weekly Report: n8nに複数の脆弱性",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-09-09T00:06:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要n8nに複数の脆弱性が見つかったという週次報告で、ワークフロー自動化基盤を運用している組織ほど確認優先度が高い。公開情報からは個別のCVEや悪用有無、影響範囲の詳細が読み取れず、まずは対象製品の導入有無と公開範囲を切り分ける必要がある。自動化基盤は認証情報、API連携、外部通知の起点になりやすく、侵害されると単一機能の停止にとどまらず、連携先への横展開…",
+      "article_path": "articles/c24ee2e281a90bbc.html",
+      "original_url": "https://www.jpcert.or.jp/wr/2026/wr260909.html#1"
+    },
+    {
+      "entry_id": "470b020f671170a1",
+      "title": "Weekly Report: 複数のElastic製品に脆弱性",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-09-09T00:06:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Unknown",
+      "summary_preview": "概要Elastic製品群に複数の脆弱性が見つかり、JPCERT/CCが週次報告で注意を促している。個別の製品名やCVE、悪用確認の有無は入力情報だけでは確認できず、まずは対象製品の利用有無とバージョンの棚卸しが必要になる。もし管理画面や検索基盤が外部公開されていれば、認証回避や権限奪取、情報漏えいに直結する可能性がある。逆に、社内限定であっても、侵害済み端…",
+      "article_path": "articles/470b020f671170a1.html",
+      "original_url": "https://www.jpcert.or.jp/wr/2026/wr260909.html#2"
+    },
+    {
+      "entry_id": "9fde8d73f7a57d4e",
+      "title": "Weekly Report: WordPress用プラグインReally Simple Securityに代替パスまたはチャネルを使用した認証回避の脆弱性",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-09-09T00:06:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要WordPress用プラグインReally Simple Securityに、代替パスまたはチャネルを使って認証を回避できる脆弱性が公表された。認証前に本来の保護をすり抜けられるなら、管理画面への不正アクセスや権限のある操作の実行につながる可能性がある。WordPressは外部公開されやすく、プラグインの更新遅延や個別サイト運用のばらつきがそのまま露出…",
+      "article_path": "articles/9fde8d73f7a57d4e.html",
+      "original_url": "https://www.jpcert.or.jp/wr/2026/wr260909.html#3"
+    },
+    {
+      "entry_id": "c92e2d141ae01275",
+      "title": "Weekly Report: Google Chromeに複数の脆弱性",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-09-09T00:06:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要JPCERT/CCの週報は、Google Chromeに複数の脆弱性が見つかったことを伝えている。公開情報だけでは個々の脆弱性の深刻度や悪用有無は読み取れず、どの版で修正済みかを確認したうえで更新可否を判断する必要がある。Chromeは端末利用率が高く、閲覧だけで攻撃が成立する可能性があるため、単一端末の問題に見えても業務端末全体へ広がりやすい。特にブ…",
+      "article_path": "articles/c92e2d141ae01275.html",
+      "original_url": "https://www.jpcert.or.jp/wr/2026/wr260909.html#4"
+    },
+    {
+      "entry_id": "d96382938189799e",
+      "title": "Weekly Report: 複数のVMware製品に脆弱性",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-09-09T00:06:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要JPCERT/CC の週次報告で、複数のVMware製品に脆弱性があると整理されている。対象製品名や個別のCVE、悪用有無は入力情報だけでは確認できず、ここでは詳細未確定の注意喚起として扱う必要がある。VMware 系は仮想基盤や管理面に置かれることが多く、侵害されると単一ホストの問題にとどまらず、複数システムへ波及しやすい。特に管理インターフェースが…",
+      "article_path": "articles/d96382938189799e.html",
+      "original_url": "https://www.jpcert.or.jp/wr/2026/wr260909.html#5"
+    },
+    {
+      "entry_id": "922a99a4f0eeae36",
+      "title": "Weekly Report: 複数のF5製品に脆弱性",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-09-09T00:06:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要JPCERT/CC の Weekly Report で、複数のF5製品に脆弱性があると案内された。対象はF5のネットワーク境界や制御点として使われやすい製品群で、認証前到達や権限昇格、設定情報の漏えいにつながる類型であれば、単一機器の問題に見えても横展開の起点になりやすい。実際の悪用可否、影響範囲、修正済みバージョン、回避策の有無はこの入力だけでは確認…",
+      "article_path": "articles/922a99a4f0eeae36.html",
+      "original_url": "https://www.jpcert.or.jp/wr/2026/wr260909.html#6"
+    },
+    {
+      "entry_id": "5772924f803c7b97",
+      "title": "Weekly Report: Jenkinsおよび複数のJenkins用プラグインに脆弱性",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-09-09T00:06:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Jenkins本体と複数のプラグインに脆弱性があるとして、JPCERT/CCが週次報告で注意喚起している。JenkinsはCI/CD基盤として内部ネットワークの自動化に深く入り込みやすく、侵入後の横展開やビルド改ざんの足場になりやすい。悪用の中心は、公開された管理画面や認証済み操作を起点に、権限昇格、設定変更、ジョブの改変、機密情報の取得へ進む流れが想…",
+      "article_path": "articles/5772924f803c7b97.html",
+      "original_url": "https://www.jpcert.or.jp/wr/2026/wr260909.html#7"
+    },
+    {
+      "entry_id": "df7e8e2b8166c10d",
+      "title": "Weekly Report: 複数のCisco製品に脆弱性",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-09-09T00:06:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要JPCERT/CCの週次報告で、Cisco製品群の複数脆弱性が取り上げられている。現時点の入力には個別のCVE、影響範囲、悪用有無が含まれていないため、優先度の判断は製品別の利用状況と公開済み修正の有無に依存する。攻撃者は、境界装置や管理系機器の脆弱性を起点に初期侵入や認証回避を狙い、そこから内部探索や横展開へ進める可能性がある。影響は単一機器の停止に…",
+      "article_path": "articles/df7e8e2b8166c10d.html",
+      "original_url": "https://www.jpcert.or.jp/wr/2026/wr260909.html#8"
+    },
+    {
+      "entry_id": "2907e243836de433",
+      "title": "Weekly Report: 複数のSonicWall製品に脆弱性",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-09-09T00:06:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要JPCERT/CC の週次報告で、複数のSonicWall製品に脆弱性が取り上げられている。入力情報だけでは、対象製品名、CVE、悪用の有無、修正状況までは確認できない。とはいえ、SonicWall は境界防御やリモート接続の入口に置かれることが多く、認証前の侵入や設定破壊につながるタイプなら影響は一気に広がる。攻撃者は外部公開機器を起点に、VPN 侵…",
+      "article_path": "articles/2907e243836de433.html",
+      "original_url": "https://www.jpcert.or.jp/wr/2026/wr260909.html#9"
+    },
+    {
+      "entry_id": "ceb05baa6fd64119",
+      "title": "Weekly Report: 複数のMozilla製品に脆弱性",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-09-09T00:06:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Mozilla系製品に複数の脆弱性がまとまって報告されている。内容は個別の脆弱性一覧そのものより、更新適用の遅れがそのまま攻撃面の残存につながる点に注意が要る。攻撃者は、ブラウザや関連コンポーネントを起点に、任意コード実行や情報窃取、認証情報の悪用へつなげる可能性がある。影響は端末単体に見えても、端末内のセッション、保存済み認証情報、社内Webシステム…",
+      "article_path": "articles/ceb05baa6fd64119.html",
+      "original_url": "https://www.jpcert.or.jp/wr/2026/wr260909.html#10"
+    },
+    {
+      "entry_id": "d3556a5441dfd95a",
+      "title": "Weekly Report: IBM WebSphere Application Serverに複数の脆弱性",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-09-09T00:06:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要JPCERT/CCの週次報告で、IBM WebSphere Application Serverに複数の脆弱性が取り上げられた。公開情報だけでは個別のや悪用有無は読み取れず、どの構成が影響を受けるかは原文確認が必要となる。WebSphereは業務システムの中核に置かれやすく、脆弱性の種類によっては認証前の侵入や権限昇格、設定情報の取得につながる可能性が…",
+      "article_path": "articles/d3556a5441dfd95a.html",
+      "original_url": "https://www.jpcert.or.jp/wr/2026/wr260909.html#11"
+    },
+    {
+      "entry_id": "879842c9de476094",
+      "title": "Weekly Report: WordPress用プラグインGiveWPに信頼できないデータのデシリアライゼーションの脆弱性",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-09-09T00:06:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要WordPress用プラグインGiveWPに、信頼できないデータのデシリアライゼーションの脆弱性が見つかった。攻撃者が細工したデータを処理させると、想定外のオブジェクト生成や処理分岐を誘発し、任意コード実行や権限悪用につながる余地がある。影響は脆弱なサイト単体にとどまらず、同一基盤上の他サイト、管理用資格情報、寄付処理などの業務機能へ波及する可能性があ…",
+      "article_path": "articles/879842c9de476094.html",
+      "original_url": "https://www.jpcert.or.jp/wr/2026/wr260909.html#12"
+    },
+    {
+      "entry_id": "11d83943ff281e9d",
+      "title": "Weekly Report: 「NCA Annual Conference 2026」開催のお知らせ",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-09-09T00:06:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要本件は、「NCA Annual Conference 2026」開催案内であり、脆弱性や侵害の発生を伝えるものではない。内容は主にイベント告知で、CSIRTが直ちに封じ込めや緊急パッチを検討する類型ではない。直接の技術的影響は確認できないが、業界動向、対策事例、他組織の運用課題を把握する入口にはなる。現時点で、講演内容、対象分野、参加条件、そこで新たに…",
+      "article_path": "articles/11d83943ff281e9d.html",
+      "original_url": "https://www.jpcert.or.jp/wr/2026/wr260909.html#13"
+    },
+    {
+      "entry_id": "27ecef706195a77a",
+      "title": "Weekly Report: フィッシング対策セミナー2026のご案内",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-09-09T00:06:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要フィッシング対策セミナー2026の案内であり、攻撃手口そのものの新規性を伝える記事ではない。組織側の実務では、迷惑メール対策だけでなく、認証情報の窃取、多要素認証の迂回、業務委託先を含む連鎖被害を前提に備える必要がある。申込者向けの周知記事であって、具体的な新手法や特定キャンペーンの悪用確認は本文からは読み取れない。したがって、直ちに封じ込め判断を要す…",
+      "article_path": "articles/27ecef706195a77a.html",
+      "original_url": "https://www.jpcert.or.jp/wr/2026/wr260909.html#14"
+    },
+    {
+      "entry_id": "a7bf8ce69730dc98",
+      "title": "東邦通信システムズが利用する外部ホスティングサーバに不正アクセス、一部メールアカウントで設定情報の書き換え",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-08T23:05:11+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要東邦通信システムズが利用する外部ホスティングサーバで不正アクセスが起き、一部のメールアカウントに関連する設定情報が書き換えられた。現時点で把握できるのは、メール環境の一部に対する改変が発生した点までで、侵入経路、対象アカウントの範囲、送受信メールの窃取有無は未確認にとどまる。設定変更が意図しない転送や送信元偽装につながると、単なる個別アカウント障害に見…",
+      "article_path": "articles/a7bf8ce69730dc98.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/09/56173.html"
+    },
+    {
+      "entry_id": "496d1a6798baeead",
+      "title": "エヌ・イー ケムキャットの社内システムに不正アクセス、端末でマルウェアが実行されたことが原因",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-08T23:05:08+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要エヌ・イー ケムキャットの社内システムで不正アクセスが発生し、端末上でマルウェア実行が確認された。単なる通知ではなく、少なくとも一台の端末が侵害され、社内環境へ踏み込まれた可能性を示すため、初動では感染端末の隔離と認証情報の点検が優先になる。現時点の公開情報だけでは、侵入経路、横展開の有無、データ流出の有無、業務停止の範囲は確認できない。攻撃者が端末を…",
+      "article_path": "articles/496d1a6798baeead.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/09/56172.html"
+    },
+    {
+      "entry_id": "a35be70c09fa1f22",
+      "title": "ジェックスにランサムウェア攻撃、個人情報が一時的に侵入者に閲覧可能な状態に",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-08T23:05:06+00:00",
+      "impact_level": "High",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要ジェックスに対してランサムウェア攻撃が発生し、個人情報が一時的に侵入者に閲覧可能な状態になったと報じられている。現時点で記事から読み取れる範囲では、暗号化や業務停止の有無、侵入経路、流出件数は不明であり、事実関係の確定には追加情報が必要となる。閲覧可能化は、単なる停止事故よりも情報漏えいへ直結しやすく、持ち出しや二次利用の可能性を前提に初動を組む必要が…",
+      "article_path": "articles/a35be70c09fa1f22.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/09/56171.html"
+    },
+    {
+      "entry_id": "7ceef88fceaf5e69",
+      "title": "DAIKO NEXT LINK のメールアカウントに不正アクセス、二次被害と不正送信の拡大防止のためメールシステムを一時的に停止",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-08T23:05:04+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要DAIKO NEXT LINKのメールアカウントに不正アクセスが発生し、二次被害と不正送信の拡大を防ぐため、メールシステムを一時停止した件を伝えている。現時点で分かるのは、少なくとも一部アカウントが侵害され、送信基盤として悪用されるおそれがあった点までである。典型的には、盗まれた認証情報を使った送信、社内外へのなりすまし、請求詐欺やマルウェア添付の配布…",
+      "article_path": "articles/7ceef88fceaf5e69.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/09/56170.html"
+    },
+    {
+      "entry_id": "87fadf3ce5a4ffda",
+      "title": "89%の日本企業がオンプレミス型セキュリティ特化型AIを開発した場合「関心がある」",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-08T23:05:02+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要本記事は、日本企業の89%がオンプレミス型のセキュリティ特化AIに関心を示したという調査結果を伝えている。内容は脆弱性や攻撃の速報ではなく、企業側の運用意識や導入意向を扱う情報に近い。機密データを外部に出しにくい環境でAIを使いたい需要は自然だが、実際の導入では学習データの管理、ログ保全、モデル更新、権限分離が前提になる。攻撃への直接的な影響は限定的だ…",
+      "article_path": "articles/87fadf3ce5a4ffda.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/09/56169.html"
+    },
+    {
+      "entry_id": "371070042c18b9f3",
+      "title": "外務省が9月1日付で「サイバー安全保障政策室」を設置",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-08T23:00:24+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要外務省が9月1日付で「サイバー安全保障政策室」を設置した。この記事は、サイバー脅威への対応を外交・安全保障の文脈で扱う体制強化を伝えており、単なる省内改編ではなく、国際連携や対外調整を見据えた動きとして読む必要がある。直接の攻撃事案や脆弱性の報告ではないため、即時の技術対応よりも、政策連携や情報共有の枠組みがどう変わるかが焦点になる。現時点では、この室…",
+      "article_path": "articles/371070042c18b9f3.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/09/56168.html"
+    },
+    {
+      "entry_id": "2b1710231aac070a",
+      "title": "IPA「ひろげよう情報セキュリティコンクール」2026 年度募集要項発表、10 / 5 から 11 / 4 まで受付",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-08T23:00:21+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要IPAが「ひろげよう情報セキュリティコンクール」2026年度の募集要項を公表し、10月5日から11月4日まで作品を受け付ける。対象は学校単位や個人の参加を想定した啓発・教育系の取り組みで、直接の脆弱性や攻撃手口を扱う記事ではない。CSIRT観点では、脅威の新規発生ではなく、組織内の教育・啓発をどう進めるかを考える材料になる。応募要項の詳細や選考基準、対…",
+      "article_path": "articles/2b1710231aac070a.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/09/56167.html"
+    },
+    {
+      "entry_id": "40bf8d0dfb5da108",
+      "title": "「フィッシング対策セミナー2026」11 / 19 開催",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-08T23:00:19+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要本件は、「フィッシング対策セミナー2026」の開催告知であり、脆弱性や侵害事案そのものではない。内容は、最新のなりすまし手口、偽サイト誘導、認証情報の窃取、二要素認証の迂回など、実務で遭遇しやすい論点の整理に資する可能性がある。攻撃の成立条件はメールやSMS、チャット経由で利用者を偽サイトへ誘導できることにあり、被害は個人端末にとどまらず、業務アカウン…",
+      "article_path": "articles/40bf8d0dfb5da108.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/09/56166.html"
+    },
+    {
+      "entry_id": "71d65796cb557099",
+      "title": "9 / 9 開催「企業防衛最前線2026」に HENNGE がシルバー協賛 崔真帆氏による講演も",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-08T23:00:16+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要本件は、9/9開催のイベント告知であり、脆弱性や侵害の報告ではない。ScanNetSecurityの記事では、HENNGEのシルバー協賛と登壇情報が案内されている。攻撃に悪用される技術情報は含まれておらず、直ちに封じ込めや緊急対応を要する内容ではない。企業防衛を扱うイベントのため、ゼロトラスト、認証、メール防御、運用設計などの論点を整理する場としては有…",
+      "article_path": "articles/71d65796cb557099.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/09/56165.html"
+    },
+    {
+      "entry_id": "2237ccb28d51fa14",
+      "title": "旧 cabic株式会社を装ったウェブサイト「cabic.jp」に注意呼びかけ、警察に相談の上 対応進める",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-08T23:00:12+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Scam/Fraud",
+      "summary_preview": "概要cabic.jp が旧 cabic株式会社を装うサイトとして注意喚起されている。記事上は、正規事業者に見せかけたサイトが利用者や取引先を誤誘導するリスクを示しており、送金先の偽装、問い合わせ窓口の乗っ取り、採用・業務委託を装う情報収集につながる可能性がある。フィッシング単体にとどまらず、メールやSNS、検索結果から誘導されると、組織内の担当者が正規サイ…",
+      "article_path": "articles/2237ccb28d51fa14.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/09/56164.html"
+    },
+    {
+      "entry_id": "85ef6b51e94881cb",
+      "title": "「yamory」がWindowsスキャン機能を拡張、Windows Update対象外ソフトの脆弱性検知に対応",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-08T23:00:11+00:00",
+      "impact_level": "Low",
+      "threat_type": "Other",
+      "summary_preview": "概要脆弱性管理サービス「yamory」が、Windows のスキャン対象を拡張し、Windows Updateの対象外ソフトに対する脆弱性検知へ対応した。従来の更新管理では拾い切れない製品や配布経路の違いをまたいで、端末上のリスクを見える化する狙いがある。攻撃者はこうした未管理ソフトを足がかりに初期侵入や権限昇格を狙うため、検知できる範囲が広がるほど、封じ…",
+      "article_path": "articles/85ef6b51e94881cb.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/09/56163.html"
+    },
+    {
+      "entry_id": "dd84705f35a4d6b0",
+      "title": "日本の官公庁ドメイン、DMARC「Reject」導入はわずか18% ～ 日本プルーフポイント調査",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-08T23:00:08+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Phishing",
+      "summary_preview": "概要日本の官公庁ドメインに関する調査で、DMARCのReject設定を導入している割合が18%にとどまると報じられた。Rejectは、なりすましメールを受信側で強く拒否する最終段階の制御であり、単にSPFやDKIMを設定しただけでは防ぎ切れない送信元偽装の余地が残る。攻撃者はこの差分を突き、官公庁を装った連絡や請求、認証誘導を通じて、職員や関係機関から情報…",
+      "article_path": "articles/dd84705f35a4d6b0.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/09/56162.html"
+    },
+    {
+      "entry_id": "f4d6b27c58b47ba7",
+      "title": "IDaaSとSSEを統合する「Z-FILTER」技術、NEC Cyber Secure Packageの基盤に採用",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-08T23:00:04+00:00",
+      "impact_level": "Low",
+      "threat_type": "Other",
+      "summary_preview": "概要NECが、IDaaSとSSEを統合する「Z-FILTER」をNEC Cyber Secure Packageの基盤として採用したという話題で、脆弱性報告ではなく製品・サービスの構成変更に関する記事となる。狙いは、認証基盤と通信制御を一体で扱い、ゼロトラスト前提のアクセス制御や保護範囲の統一を進める点にある。攻撃者視点では、単体の端末防御ではなく認証後の…",
+      "article_path": "articles/f4d6b27c58b47ba7.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/09/56161.html"
+    }
+  ]
+}
