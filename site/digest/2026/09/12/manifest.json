@@ -1,0 +1,533 @@
+{
+  "date": "2026-09-12",
+  "window": {
+    "from": "2026-09-11T06:00:00+09:00",
+    "to": "2026-09-12T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 35
+  },
+  "generated_at_jst": "2026-09-12T06:22:20.264708+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "AI需要がクラウド支出を押し上げる S&P Global予測",
+      "source_name": "CIO Dive",
+      "published_at": "2026-09-10T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要S&amp;P Globalの最新予測によると、ハイパースケーラーの設備投資が2026年に約40%増の6000億ドル近くに達する見込みだ。AI関連支出がIT全体の4分の1を占め、クラウド収益も20%超の成長を維持する。企業側はAI投資の回収を待つ一方で予算拡大を計画しており、データセンター需要が半導体や先進パッケージング技術の進化を加速させる。地政学リ…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://www.ciodive.com/news/ai-boost-cloud-spending/810399/",
+      "selection_reason": "対象期間内に発表されたS&P Global報告で、ハイパースケーラーの設備投資が40%近く増加しAIインフラ構築がIT支出全体を牽引する具体的事実を示す。半導体やクラウドの技術トレンドに直結し、企業予算判断に波及する新規性が高い。",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "AI set to boost cloud spending — again: S&P Global",
+          "url": "https://www.ciodive.com/news/ai-boost-cloud-spending/810399/",
+          "source_type": "news"
+        },
+        {
+          "title": "2026 Semiconductor Outlook Report",
+          "url": "https://www.techinsights.com/outlook-reports-2026/semiconductor-outlook-report",
+          "source_type": "web"
+        },
+        {
+          "title": "2026 Compute Outlook Report",
+          "url": "https://www.techinsights.com/outlook-reports-2026/compute-outlook-report",
+          "source_type": "web"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "OpenAIがAI安全規制を支持へ方針転換",
+      "source_name": "CNBC TV18",
+      "published_at": "2026-09-10T05:41:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要OpenAIは9月9日のブログで、米国におけるフロンティアAI向けの強制的国家安全規制を支持すると表明した。従来は規制が中国へのリーダーシップ喪失を招くと警告していたが、共通テスト・独立評価・サイバー保護・インシデント報告を柱とする枠組みを提案する。カリフォルニア州の関連法案も後押しし、能力ベースの規制が現実味を帯びてきた。開発企業は今後、事前審査や監…",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://www.cnbctv18.com/technology/openai-changes-its-mind-on-regulations-it-opposed-earlier-19988211.htm",
+      "selection_reason": "対象期間の9月10日にOpenAIが従来反対していた強制的な国家AI安全規制を支持する声明を発表。モデル開発企業の実務対応に直結する具体的な政策シフトで、AI分野の規制動向として新規性が高い。",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "OpenAI changes its mind on regulations it opposed earlier",
+          "url": "https://www.cnbctv18.com/technology/openai-changes-its-mind-on-regulations-it-opposed-earlier-19988211.htm",
+          "source_type": "news"
+        },
+        {
+          "title": "White House framework for testing AI models remains hidden",
+          "url": "https://www.cbsnews.com/news/ai-model-framework-white-house/",
+          "source_type": "news"
+        },
+        {
+          "title": "Global AGI Regulations in 2026 (September 2026 Update)",
+          "url": "https://www.insidedeeptech.com/global-agi-regulations-2026-september-update/",
+          "source_type": "web"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "Microsoftが記録的974件の脆弱性を修正",
+      "source_name": "The Next Web",
+      "published_at": "2026-09-10T17:29:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Microsoftは9月Patch Tuesdayで自社製品の974件の脆弱性を修正した。うち2件はすでに悪用されており、Windows Update StackとALPC関連の権限昇格が該当する。AIを活用したバグ検出で修正件数が急増しており、クリティカル級が110件超を占める。企業は速やかな適用を優先し、特権昇格経路の封じ込めを徹底する必要がある。",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://thenextweb.com/news/microsoft-september-patch-tuesday-974-flaws-two-zero-days",
+      "selection_reason": "9月10日のPatch Tuesdayで過去最多の974件修正と2件のゼロデイ悪用が確認された具体的事例。セキュリティ実務に直結する即時対応が必要な情報として優先度が高い。",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "Microsoft patches a record 974 flaws, and two are already under attack",
+          "url": "https://thenextweb.com/news/microsoft-september-patch-tuesday-974-flaws-two-zero-days",
+          "source_type": "news"
+        },
+        {
+          "title": "Exploited Auth Bypasses Hit Cisco, Citrix",
+          "url": "https://secureresearch.com/briefings/2026-09-11.html",
+          "source_type": "web"
+        },
+        {
+          "title": "Microsoft Shatters Another Record, Patching 973 Vulnerabilities in September",
+          "url": "https://www.privacyguides.org/news/2026/09/10/microsoft-shatters-another-record-patching-973-vulnerabilities-in-september/",
+          "source_type": "news"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "8b84748c4ddce2dd",
+      "title": "CVE-2026-84869 ConnectWise ScreenConnect Improper Privilege Management and Missing Authorization Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-09-11T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CISA KEV に CVE-2026-84869 が掲載され、ConnectWise ScreenConnect における権限管理不備と認可不備が現実に悪用される段階へ入ったことを示している。攻撃者は本来触れない操作や管理機能に到達し、セッションの乗っ取り、端末操作、設定改変、横展開の足場確保へつなげやすい。認証前に成立するのか、既存の管理者権限が必…",
+      "article_path": "articles/8b84748c4ddce2dd.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "32b89d0f9eb4fa51",
+      "title": "CVE-2026-42016 JFrog Artifactory Incorrect Authorization Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-09-11T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CISA の KEV に CVE-2026-42016 が追加された。JFrog Artifactory の 認可不備 により、本来許可されない操作や情報参照が成立するおそれがある。攻撃者は公開された Artifactory を起点に、保存済みの成果物や設定情報、場合によっては認証情報の手掛かりへ到達し、さらにビルド基盤や配布経路へ広げる狙いを取りやす…",
+      "article_path": "articles/32b89d0f9eb4fa51.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "cb950f44112eddf6",
+      "title": "CVE-2026-42018 JFrog Artifactory Improper Authentication Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-09-11T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CISA の KEV に JFrog Artifactory の 認証不備 が載っており、実際に悪用可能性が確認された前提で扱う必要がある。認証回避や不正アクセスが成立すると、成果物保管庫やビルド用資材に触れられ、ソフトウェア供給網側へ被害が広がるおそれがある。影響は単一の管理画面侵害にとどまらず、配布物の改ざん、機密情報の窃取、下流環境への持続的侵入…",
+      "article_path": "articles/cb950f44112eddf6.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "91c05488770aa194",
+      "title": "CVE-2026-85706 GitLab Community Edition and Enterprise Edition Path Traversal Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-09-11T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CVE-2026-85706 は、GitLab Community Edition と Enterprise Edition に存在する パストラバーサル 脆弱性として扱うべき情報であり、CISA KEV に掲載されている点が重要となる。パストラバーサルは、想定外のパス指定を通じて本来アクセスできないファイルへ到達する手口につながるため、設定ファイル、…",
+      "article_path": "articles/91c05488770aa194.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "b6b1597d67449c39",
+      "title": "GitLab CVSS 10 File-Read Flaw Draws In-the-Wild Probes After Disclosure",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-11T16:30:18+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要GitLabに対して、公開直後から実地の探索試行が観測された重大な脆弱性が報告された。対象は CVE-2026-85706 で、CVSS 10.0 のパストラバーサルにより、認証なし利用者がGitLabサーバ上の任意ファイルを読める可能性がある。攻撃が成立すると、設定情報、トークン、鍵ファイル、バックアップ断片などの漏えいにつながり、後続の侵入や横展開…",
+      "article_path": "articles/b6b1597d67449c39.html",
+      "original_url": "https://thehackernews.com/2026/09/gitlab-cvss-10-file-read-flaw-draws-in.html"
+    },
+    {
+      "entry_id": "e2e5733be68fa7f1",
+      "title": "Anthropic Says Seven China-Based AI Labs Ran Industrial-Scale Claude Distillation Attacks",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-11T16:15:29+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要Anthropic は、Claude を対象にした大規模な不正蒸留を検知し、中国拠点の7つの研究機関による活動を遮断したと公表した。蒸留自体は正当な学習手法だが、ここで問題になるのは、他社モデルの応答特性や知識を大量取得して、競合モデルの再現や機能模倣に転用する点にある。直接の侵害やデータ流出がどこまで起きたかは本文だけでは未確認であり、公開情報からは…",
+      "article_path": "articles/e2e5733be68fa7f1.html",
+      "original_url": "https://thehackernews.com/2026/09/anthropic-says-seven-china-based-ai.html"
+    },
+    {
+      "entry_id": "793c2bfbad7e405b",
+      "title": "Claude Used to Automate Exploitation and Data Theft Across Multiple Victims",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-11T14:29:47+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要Anthropic は、Claude が複数の攻撃活動に悪用されていると警告した。対象は、侵入の自動化、情報窃取、武器設計、宣伝工作、大規模監視まで広がっている。攻撃者は生成AIを手順化と文章生成に使い、調査、初期侵入、認証情報の収集、持ち出しの各工程を分業ではなく一連の流れとして回している可能性が高い。被害は単一組織に閉じず、同種の手口を再利用した複…",
+      "article_path": "articles/793c2bfbad7e405b.html",
+      "original_url": "https://thehackernews.com/2026/09/claude-used-to-automate-exploitation.html"
+    },
+    {
+      "entry_id": "e1a03b1497c396c4",
+      "title": "Russian State-Sponsored Hackers Use Claude to Rebuild Malware After Detection",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-11T14:10:20+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要Anthropic が、ロシア系の国家支援型攻撃者が Claude を使って、検知後にマルウェアを作り直す運用を進めていた活動を妨害したと明らかにした。攻撃者はAIを補助輪にして解析、改変、再試行の速度を上げ、検知の先回りを狙っていたとみられる。目的は単発の侵入よりも、侵入後の持続化や再侵入を効率化することに近い。どの程度の被害範囲が実際に出たか、また…",
+      "article_path": "articles/e1a03b1497c396c4.html",
+      "original_url": "https://thehackernews.com/2026/09/russian-state-sponsored-hackers-use.html"
+    },
+    {
+      "entry_id": "f2ab0dbdc9fbaf5a",
+      "title": "Your Critical Vulnerabilities Might Not Be Your Biggest Risk",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-11T11:30:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要本記事は、重大な脆弱性の有無だけを追う運用から、実際に侵害へつながる経路を見極める運用へ軸足を移すべきだと述べている。スキャナ上で危険に見える項目でも、強い分離、認証制御、到達制限があれば、攻撃者の成功確率は大きく下がる。逆に、個々の脆弱性が単独では軽く見えても、公開面、資格情報、横展開経路がつながると侵害の入口になる。つまり重要なのは、脆弱性の深刻度…",
+      "article_path": "articles/f2ab0dbdc9fbaf5a.html",
+      "original_url": "https://thehackernews.com/2026/09/your-critical-vulnerabilities-might-not.html"
+    },
+    {
+      "entry_id": "a5e8e92ce3ded649",
+      "title": "Attackers Chain JFrog Artifactory Flaws to Gain Admin Control and Plant Backdoors",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-11T07:31:05+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要JFrog Artifactory の 2つの脆弱性を連鎖させ、自己運用環境のサーバーで管理者権限を奪い、バックドアを植え付ける攻撃が観測された。Artifactory はビルドパイプラインが依存物や成果物を取得する基盤であり、侵害されると開発・配布の起点が崩れる。攻撃は8月15日から9月8日にかけて確認され、未更新のサーバーのみが影響を受け得た。既に…",
+      "article_path": "articles/a5e8e92ce3ded649.html",
+      "original_url": "https://thehackernews.com/2026/09/attackers-chain-jfrog-artifactory-flaws.html"
+    },
+    {
+      "entry_id": "551dbd5ce65f5e27",
+      "title": "China-Linked UNC3569 Exploited Sogou Input Method Flaw to Deploy GRAYRABBIT Backdoor",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-11T07:14:09+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要UNC3569 と呼ばれる中国関連の攻撃 समूहが、Windows向けの Sogou Input Method の不具合を悪用し、GRAYRABBIT バックドアを配布したと報告された。攻撃の起点は 細工されたリンク で、利用者が開くと被害端末上で任意操作が可能な状態まで持ち込まれた。入力支援ソフトは日常利用のため信頼されやすく、警戒が薄い環境ほど初…",
+      "article_path": "articles/551dbd5ce65f5e27.html",
+      "original_url": "https://thehackernews.com/2026/09/china-linked-unc3569-exploited-sogou.html"
+    },
+    {
+      "entry_id": "2469783d4c3d3b26",
+      "title": "PaperCut Replaces Emergency Patches With Fixes for Two Actively Exploited Flaws",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-11T06:46:18+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要PaperCutは、実際に悪用が確認された2件の脆弱性に対する既存の緊急パッチを置き換える形で、新しい保守リリースを公開した。対象はPaperCut NG/MFで、26.0.5、25.0.13、24.1.10が配布対象となっている。攻撃者は、脆弱な版が露出したままの環境を狙って、認証前侵入や権限昇格、印刷基盤を足場にした横展開を試みる可能性がある。影響…",
+      "article_path": "articles/2469783d4c3d3b26.html",
+      "original_url": "https://thehackernews.com/2026/09/papercut-replaces-emergency-patches.html"
+    },
+    {
+      "entry_id": "d421009864255ff8",
+      "title": "Cisco FMC Flaws Exploited to Steal Credentials and Deploy Qilin Ransomware",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-11T06:19:59+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Ciscoは、Secure Firewall Management Center（FMC）の2件の修正済み脆弱性が、ランサムウェア系と国家関与型の複数攻撃 समूहに悪用されていたと公表した。中心となるのはCVE-2026-20079で、Web管理画面の認証回避により、未認証の遠隔攻撃者が管理機能へ入り込める可能性がある。もう1件も認証回避系とみられ、…",
+      "article_path": "articles/d421009864255ff8.html",
+      "original_url": "https://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html"
+    },
+    {
+      "entry_id": "c4ec47bc92d9a3e6",
+      "title": "The Self-Expanding Stolen Inference Supply Chain: An AI Agent Harvesting and Re-Serving LLM Access, (Fri, Sep 11th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-09-11T14:40:32+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要半自律のコーディング系AIエージェントを使い、LLMの再販ゲートウェイを探してAPIアクセスを収集し、取得した推論資源を自分のゲートウェイに集約する手口が示された。攻撃の入口は派手な脆弱性ではなく、一般的なWebの不備やアカウント収集で、認証情報や利用権限を少しずつ積み上げる点に特徴がある。悪用の本質は、盗んだアクセスをそのまま使うだけでなく、容量や品…",
+      "article_path": "articles/c4ec47bc92d9a3e6.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33332"
+    },
+    {
+      "entry_id": "07647bc168f51c2a",
+      "title": "ISC Stormcast For Friday, September 11th, 2026 https://isc.sans.edu/podcastdetail/10090, (Fri, Sep 11th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-09-11T02:00:02+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要SANS ISC のポッドキャスト案内であり、個別の脆弱性告知や攻撃キャンペーンの詳細を示す記事ではない。内容は Stormcast の当日配信を知らせる性格が強く、実務上は新たな対処対象を即断する材料にはなりにくい。悪用手法や影響範囲は本文からは読み取れず、対象製品・CVE・検知指標も未確認のまま残る。したがって、直接の封じ込め判断よりも、関連エピソ…",
+      "article_path": "articles/07647bc168f51c2a.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33330"
+    },
+    {
+      "entry_id": "72966b8109829534",
+      "title": "VU#369611: ExLlamaV3 contains Denial of Service vulnerability via insufficient bounds checking on kernel dispatch index",
+      "source_name": "CERT/CC",
+      "category": "reporting",
+      "published_at": "2026-09-11T20:11:37+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要ExLlamaV3 の exllamav3_ext CUDA 拡張に、入力値の検証不足による 範囲外メモリアクセス が見つかった。特定の入力で K が 0 になると負の添字が生じ、CUDA の illegal memory access へつながるため、主な影響は プロセス停止 と アプリケーション不安定化 にとどまる。攻撃成立には、このライブラリを利…",
+      "article_path": "articles/72966b8109829534.html",
+      "original_url": "https://kb.cert.org/vuls/id/369611"
+    },
+    {
+      "entry_id": "9006d81e5c5233c1",
+      "title": "日本標準時の供給サービスにおける異常の発生について",
+      "source_name": "NICT NOTICE",
+      "category": "reporting",
+      "published_at": "2026-09-11T09:30:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Other",
+      "summary_preview": "概要日本標準時の供給サービスで異常が発生したという通知であり、時刻同期に依存する業務へ影響が及ぶ可能性がある。攻撃事象の記載はなく、現時点では障害か局所的な供給不具合かの切り分けが先になる。影響はNTP参照先の利用状況によって、認証基盤、ログの整合性、監査証跡、バッチ処理の順序制御まで広がり得る。実害の有無は、時刻ずれの幅と継続時間、代替同期先への切替状況…",
+      "article_path": "articles/9006d81e5c5233c1.html",
+      "original_url": "/publicity/topics/2026/09/11-1.html"
+    },
+    {
+      "entry_id": "4ff5f76b1ccd86a9",
+      "title": "バグバウンティの破綻を防ぐ「カナリア」と自動検証メカニズム",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-10T23:10:03+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要この記事は、バグバウンティ運用で起きがちな「正当な研究」と「実害のある検証」の境目を、カナリアと自動検証で明確にしようとする話題を扱う。報酬を出す側が検証用の目印や判定機構を用意すると、攻撃者や過剰な検証者の動きを早期に切り分けやすくなる。逆に、仕組みが弱いと、脆弱性報告の名目で本番影響を伴う操作が拡大し、調査と侵害の区別がつきにくくなる。影響範囲は、…",
+      "article_path": "articles/4ff5f76b1ccd86a9.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/11/56210.html"
+    },
+    {
+      "entry_id": "721231bc0df2f9bd",
+      "title": "日本スウェージロックFST にランサムウェア攻撃",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-10T23:05:12+00:00",
+      "impact_level": "High",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要日本スウェージロックFSTがランサムウェア攻撃の被害を受けたという報道で、業務停止や情報流出の有無は現時点で限定的にしか分からない。攻撃の実態が暗号化中心か、窃取と恐喝を伴う二重脅迫型かで、初動の優先順位は大きく変わる。製造・物流・受発注のどこまで影響が及ぶかは、基幹系と周辺系の接続状況次第になりやすい。外部公開サービス、VPN、リモート保守、共有アカ…",
+      "article_path": "articles/721231bc0df2f9bd.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/11/56209.html"
+    },
+    {
+      "entry_id": "0d0daf6d5f71022b",
+      "title": "「hololive OFFICIAL CARD GAME」公式サイトに不正アクセス、CMSで脆弱性が公表されたことを受け調査し発覚",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-10T23:05:11+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要hololive OFFICIAL CARD GAMEの公式サイトで不正アクセスが確認され、運営側の調査の過程で、利用中のCMS脆弱性の公表を契機に侵害が発覚した。記事からは、攻撃者がどの機能や権限を起点に入り込んだかまでは読み取れず、改ざん、情報窃取、管理画面への侵入の有無は未確認となる。CMS系の侵害は、単一ページの書き換えにとどまらず、管理者権限…",
+      "article_path": "articles/0d0daf6d5f71022b.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/11/56208.html"
+    },
+    {
+      "entry_id": "5de3459ec0cc62b1",
+      "title": "日本ビジネスデータープロセシングセンターに不正アクセス",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-10T23:05:09+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要日本ビジネスデータープロセシングセンターで不正アクセスが発生したと報じられている。現時点では、侵入経路、侵入後に何へ到達したか、情報漏えいの有無は未確認であり、被害の範囲は確定していない。外部公開された機器や認証基盤、委託先向けの接続点が起点になっている場合、攻撃者は内部への足場を得て、横展開や権限の奪取を狙う余地がある。組織名から、単一システムの障害…",
+      "article_path": "articles/5de3459ec0cc62b1.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/11/56207.html"
+    },
+    {
+      "entry_id": "dd1ae8d81426e373",
+      "title": "いまでやが管理する注文情報が外部流出した可能性、フィッシングサイト上でカード情報を入力する被害も",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-10T23:05:07+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要いまでやが管理する注文情報が外部に流出した可能性があるとされ、あわせてフィッシングサイト上でカード情報を入力させる被害も確認された。記事からは、漏えい元の確定や流出範囲、侵入経路はまだ読み取れず、未確認事項が多い。攻撃者は流出した注文情報を足がかりに、本人確認を装った連絡や再注文誘導を行い、追加の個人情報や決済情報を取りに来る可能性が高い。被害は単なる…",
+      "article_path": "articles/dd1ae8d81426e373.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/11/56206.html"
+    },
+    {
+      "entry_id": "9686d3bc71cea652",
+      "title": "詐欺被害も発生 ～ 長野県多文化共生相談センターの WhatsApp のアカウントが不正利用",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-10T23:05:05+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Credential Theft",
+      "summary_preview": "概要長野県多文化共生相談センターのWhatsAppアカウントが不正利用され、詐欺被害が発生したと伝えている。公開情報からは、侵入経路が乗っ取りなのか、端末側の奪取なのか、あるいは認証情報の流出なのかは未確認であり、そこを切り分けないと再発防止策が定まらない。攻撃者は既存アカウントの信頼性を悪用し、利用者や関係者に連絡して金銭要求や偽案内を行った可能性が高い…",
+      "article_path": "articles/9686d3bc71cea652.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/11/56205.html"
+    },
+    {
+      "entry_id": "36f73e99daf99875",
+      "title": "通常とは異なるセキュリティ認証を求める画面が表示される事象を確認 ～ 日本ブラインドサッカー協会ウェブサイトが改ざん被害",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-10T23:05:03+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要日本ブラインドサッカー協会のウェブサイトで、通常とは異なる認証画面が表示される改ざん被害が確認された。閲覧者に不審な操作や認証を促す表示が出る場合、サイト内容の改ざんにとどまらず、誘導型の攻撃や不正スクリプトの埋め込みが起きている可能性がある。被害は公開ページの見た目だけで終わらず、訪問者への誤誘導、信用失墜、場合によっては情報窃取や追加感染へ広がる余…",
+      "article_path": "articles/36f73e99daf99875.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/11/56204.html"
+    },
+    {
+      "entry_id": "818c3098655cc7c1",
+      "title": "立教大学利用のGoogeアカウントに不正アクセス、合計17,668件の迷惑メールを送信",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-10T23:00:25+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要立教大学が利用するGoogleアカウントに不正アクセスが発生し、そこから合計17,668件の迷惑メールが送信された。侵入経路は本文からは確認できず、フィッシング、認証情報の窃取、端末侵害などのいずれかは未判明のまま残る。第三者に送信された時点で、単なるアカウント侵害にとどまらず、送信元の正当性を悪用した拡散や、学内外への二次被害に波及する可能性がある。…",
+      "article_path": "articles/818c3098655cc7c1.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/11/56203.html"
+    },
+    {
+      "entry_id": "dd1a6f387ac8ff1c",
+      "title": "baserCMS用プラグイン「BurgerEditor」に複数の脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-10T23:00:23+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要baserCMS向けプラグイン「BurgerEditor」に複数の脆弱性が公表された。記事の情報だけでは、影響を受ける具体的なバージョンや、認証前での悪用可否、すでに実攻撃が観測されているかは確認できない。CMS系プラグインの問題は、管理画面に入れる攻撃者だけでなく、公開ページ改ざんやWeb Shell設置を起点に被害が広がることがある。特に、更新が滞…",
+      "article_path": "articles/dd1a6f387ac8ff1c.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/11/56202.html"
+    },
+    {
+      "entry_id": "de7bb3ba824a2087",
+      "title": "Adobe Acrobat および Reader に脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-10T23:00:21+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Adobe Acrobat と Reader に脆弱性が公表され、細工された文書の開封を起点に不正動作へつながる可能性がある。配布物としては一般的な PDF が使われやすく、受信者の警戒を下げやすい点が実務上の焦点になる。悪用されれば、端末上で任意コード実行や情報窃取、追加マルウェアの導入へ波及する余地がある。特に 文書閲覧ソフトが業務端末に広く常駐し…",
+      "article_path": "articles/de7bb3ba824a2087.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/11/56201.html"
+    },
+    {
+      "entry_id": "5a91203ffd703bb0",
+      "title": "マイクロソフトが 9 月のセキュリティ情報公開、悪用の事実を確認済みの脆弱性が 2 件",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-10T23:00:19+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Microsoft が 9 月のセキュリティ情報を公開し、既に悪用が確認された脆弱性が 2 件含まれていると報じられている。記事の焦点は、単なる修正公開ではなく、攻撃者が実際に使っている可能性が高い点にある。悪用形態は、初期侵入や権限昇格、あるいは後続の持続化に結び付く経路として扱う必要がある。影響は対象製品の露出範囲次第で広がり、外部公開面や認証済み…",
+      "article_path": "articles/5a91203ffd703bb0.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/11/56200.html"
+    },
+    {
+      "entry_id": "f9c7a8733420c1a2",
+      "title": "被害防止とプライバシー担保の狭間で ～ 警察庁がトクリュウ対策の新手法「遠隔解析」導入を提言",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-10T23:00:17+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要警察庁が、いわゆるトクリュウ対策として新手法「遠隔解析」の導入を提言した。記事の主眼は、被害防止のために通信や端末の解析範囲を広げたい一方で、プライバシー保護との境界をどう引くかという制度設計にある。技術記事というより、捜査・解析の許容範囲をどこまで認めるかを扱う政策動向に近い。直接の脆弱性や悪用手口を扱う内容ではなく、CSIRTの即応対象は限定的にな…",
+      "article_path": "articles/f9c7a8733420c1a2.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/11/56199.html"
+    },
+    {
+      "entry_id": "27e1c81699cd4d33",
+      "title": "悪性パッケージ「ゼロ」の日はなし ～ GMO Flatt Security「ソフトウェアサプライチェーン 脅威レポート 2026」公開",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-10T23:00:15+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要GMO Flatt Securityが、ソフトウェアサプライチェーンを狙う脅威の動向をまとめた「ソフトウェアサプライチェーン 脅威レポート 2026」を公開した。この記事は新たな脆弱性の個別告知ではなく、悪性パッケージや依存関係の汚染、開発工程への侵入が継続的なリスクになっている点を再確認させる内容に近い。攻撃者は配布面やビルド面を押さえることで、単一…",
+      "article_path": "articles/27e1c81699cd4d33.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/11/56198.html"
+    },
+    {
+      "entry_id": "19a8d484b89bd94b",
+      "title": "フロンティア AI 時代の脆弱性対処を支援するセキュリティ向け AI 技術「cotomi Security for Industry」を NEC が開発",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-10T23:00:12+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要NEC が、フロンティア AI 時代の脆弱性対処を支援する用途で「cotomi Security for Industry」を開発したと報じている。記事の主眼は新たな脆弱性そのものではなく、多数の脆弱性情報を整理し、対処優先度の判断を支援する AI 技術の紹介にある。想定される使い方は、公開情報や自組織の資産情報を突き合わせ、影響を受けやすい製品や対応…",
+      "article_path": "articles/19a8d484b89bd94b.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/11/56197.html"
+    },
+    {
+      "entry_id": "3e1898e608e9f98b",
+      "title": "HENNGE One、クラウド人事システム「OneHCM」と SSO 連携",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-10T23:00:10+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要HENNGE One がクラウド人事システム OneHCM と SSO 連携したという、機能連携の告知記事である。脆弱性情報や侵害事案ではなく、認証経路を統合して利用者のログイン体験を簡素化する話題に近い。悪用の中心は新しい攻撃手口ではなく、SSO設定の誤り、IdP 側の権限設計不備、アカウント停止の反映漏れなど運用面に寄る。影響が広がるとすれば、従業…",
+      "article_path": "articles/3e1898e608e9f98b.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/11/56196.html"
+    },
+    {
+      "entry_id": "8dd6842e8248c742",
+      "title": "「ネット de 診断 AIホワイトハッカー侵入テスト」提供開始、サイバーセキュリティ特化AI基盤「AIホワイトハッカー byGMO」を活用",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-10T23:00:08+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Other",
+      "summary_preview": "概要GMOグローバルサイン・ホールディングスは、「ネット de 診断 AIホワイトハッカー侵入テスト」の提供を開始した。サイバーセキュリティ特化AI基盤「AIホワイトハッカー byGMO」を用い、外部公開資産に対する診断を自動化・効率化する狙いがある。攻撃者が実際に悪用する観点を取り込むことで、設定不備や露出した面を短時間で洗い出す用途が想定される。影響は…",
+      "article_path": "articles/8dd6842e8248c742.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/11/56195.html"
+    },
+    {
+      "entry_id": "1733dfc44ba8c31e",
+      "title": "S&J「My SOC 365 サービス」に Microsoft Azure と Microsoft Purview を監視対象に追加",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-10T23:00:06+00:00",
+      "impact_level": "Low",
+      "threat_type": "Advisory",
+      "summary_preview": "概要S&amp;Jは、My SOC 365の監視対象に Microsoft Azure と Microsoft Purview を追加した。狙いは、クラウド基盤の設定不備や不審操作、情報保護まわりの兆候をSOCで拾いやすくする点にある。直接の脆弱性告知ではなく、監視範囲を広げて検知と初動を強化するサービス更新として読むのが自然となる。攻撃者視点では、オンプ…",
+      "article_path": "articles/1733dfc44ba8c31e.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/11/56194.html"
+    },
+    {
+      "entry_id": "bd26cff48bb99d23",
+      "title": "OTセキュリティ責任は経営陣へ ～ フォーティネット最新レポートが明かす現状と課題",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-10T23:00:03+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要フォーティネットの最新レポートを取り上げ、OTセキュリティの責任が現場任せでは回らず経営陣の課題になっている現状を整理している。製造、エネルギー、物流などでは、稼働停止の損失が大きいため、ITと同じ発想で止める対策を入れにくい。攻撃者は、保守接続、境界機器、古い制御機器の露出を起点に入り、監視停止や生産停止を狙う可能性が高い。影響は単一拠点にとどまらず…",
+      "article_path": "articles/bd26cff48bb99d23.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/11/56193.html"
+    }
+  ]
+}
