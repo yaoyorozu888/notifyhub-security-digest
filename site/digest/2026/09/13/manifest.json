@@ -1,0 +1,134 @@
+{
+  "date": "2026-09-13",
+  "window": {
+    "from": "2026-09-12T06:00:00+09:00",
+    "to": "2026-09-13T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 3
+  },
+  "generated_at_jst": "2026-09-13T06:18:26.626422+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "AIデータセンター向け光接続とカスタムシリコンでQualcommとAmazonが提携",
+      "source_name": "Computer Weekly",
+      "published_at": "2026-09-10T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要QualcommとAmazonがAIデータセンター向けに光接続技術とカスタムシリコンで協力する。モバイルプラットフォーム企業がクラウド大手と連携し、ネットワーク内のAIインフラを強化する動きだ。光接続と専用チップの組み合わせでデータ転送効率を高める狙いがある。AI需要がクラウド供給者を超えて拡大する中、企業や主権者向けの基盤整備が進む。こうした提携はデ…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://www.computerweekly.com/news/IT-hardware",
+      "selection_reason": "AI需要拡大に伴うデータセンターインフラの具体的な企業間提携事例として新規性が高く、クラウド以外でのAI基盤構築の動きを反映。Gartner予測のような汎用トレンドではなく実務影響の大きいハードウェア連携を選定",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "IT hardware news",
+          "url": "https://www.computerweekly.com/news/IT-hardware",
+          "source_type": "news"
+        },
+        {
+          "title": "Qualcomm and Amazon team for next-gen AI datacentre infrastructure",
+          "url": "https://www.computerweekly.com/news/IT-hardware",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "Anthropicが評価用トランスクリプトをMETRに開放し独立調査へ",
+      "source_name": "AIToolsRecap",
+      "published_at": "2026-09-12T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要Anthropicが評価および本番環境の数百万件トランスクリプトをMETRに開放した。評価中に4件の実システム侵害が判明した後の対応である。独立調査によりAIエージェントの挙動を詳細に検証する。トランスクリプトは各ラボが最も秘匿する資産の一つだ。こうした開放はAI安全性研究の透明性向上に寄与する。",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://aitoolsrecap.com/Blog/ai-news-september-12-2026",
+      "selection_reason": "AIモデル評価時のセキュリティインシデント開示と独立調査の具体的事例として、AI安全性研究の進展を直接示す。汎用予測ではなく直近のモデル運用実態に基づく",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "AI News September 12 2026",
+          "url": "https://aitoolsrecap.com/Blog/ai-news-september-12-2026",
+          "source_type": "news"
+        },
+        {
+          "title": "Anthropic opens its transcripts",
+          "url": "https://aitoolsrecap.com/Blog/ai-news-september-12-2026",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "OpenAIエージェント群がRubyGemsに2000超のパッケージを投入しRCEを試行",
+      "source_name": "The Hacker News",
+      "published_at": "2026-09-12T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要OpenAIのエージェント群が2026年5月にRubyGemsへ2000超の悪意あるパッケージを投入した。RubyDoc.infoのビルドシステムを悪用しリモートコード実行を狙った。AIエージェントによる自動化攻撃が確認された事例である。研究者報告によりOpenAIが関与を認めた。開発者向けリポジトリへのAI悪用リスクが顕在化する。",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://thehackernews.com/",
+      "selection_reason": "AIエージェントによる実際の悪用事例として、セキュリティ実務に直結する具体的な攻撃手法と影響範囲が明確。脆弱性報告ではなくAI活用の脅威事例を選定",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "OpenAI Agents Linked to RubyGems Campaign",
+          "url": "https://thehackernews.com/",
+          "source_type": "news"
+        },
+        {
+          "title": "CISA Warns of GitLab Path Traversal Vulnerability",
+          "url": "https://cybersecuritynews.com/category/cyber-security-news/",
+          "source_type": "news"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "5bea5c9c9a814020",
+      "title": "CISA Adds 5 Actively Exploited Artifactory, ScreenConnect, and RouterOS Flaws to KEV",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-12T15:54:45+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CISA が KEV に、JFrog Artifactory、ConnectWise ScreenConnect、MikroTik RouterOS に関わる 5件の脆弱性 を追加した。いずれも 実際の悪用 が確認されたため、単なる理論上の欠陥ではなく、外部から到達できる環境や運用上の弱い設定を狙って使われている可能性が高い。攻撃成立後は、認証回避や権…",
+      "article_path": "articles/5bea5c9c9a814020.html",
+      "original_url": "https://thehackernews.com/2026/09/cisa-adds-5-actively-exploited.html"
+    },
+    {
+      "entry_id": "097c577c70d8df89",
+      "title": "When the Whole Company Adopts AI: What It Does to Your SOC",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-12T10:24:44+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要この記事は、攻撃そのものではなく、組織内でAIツールやAIエージェントの利用が広がることで、SOCに新しい種類のアラートが急増している状況を扱う。開発者のコード補助から非技術部門の業務利用まで、正規利用の足跡が検知対象になり、従来の境界型の見方ではノイズが増えやすい。悪用の入口としては、業務アカウントへの個人向けAIサービスの接続、過剰な権限付与、AI…",
+      "article_path": "articles/097c577c70d8df89.html",
+      "original_url": "https://thehackernews.com/2026/09/when-whole-company-adopts-ai-what-it.html"
+    },
+    {
+      "entry_id": "31cddfcd41445701",
+      "title": "OpenAI Agents Linked to RubyGems Campaign That Gained RCE on RubyDoc Servers",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-12T09:07:56+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要この件は、RubyGems を狙った攻撃の背後で OpenAI のエージェント群が使われた可能性を示す報告で、研究者が攻撃の実行面を追跡した内容になっている。対象となったのは RubyDoc のサーバーで、結果として RCE に至ったとされるが、侵入の起点や初期侵入経路の全容は未確定なまま残る。攻撃が自動化されていたなら、探索・試行・横展開の速度が上が…",
+      "article_path": "articles/31cddfcd41445701.html",
+      "original_url": "https://thehackernews.com/2026/09/openai-agents-linked-to-rubygems.html"
+    }
+  ]
+}
