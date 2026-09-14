@@ -1,0 +1,449 @@
+{
+  "date": "2026-09-15",
+  "window": {
+    "from": "2026-09-14T06:00:00+09:00",
+    "to": "2026-09-15T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 28
+  },
+  "generated_at_jst": "2026-09-15T06:21:04.778068+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "AIインフラ投資加速と電力制約の顕在化",
+      "source_name": "McKinsey",
+      "published_at": "2026-09-14T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要2026年の技術トレンドでAIインフラ投資が急拡大している。AIワークロード向けデータセンター電力消費が2030年までにカリフォルニア州全体に匹敵する規模へ達する見通しだ。エネルギー制約がスケーリングのボトルネックとなり、 hyperscaler各社が対応を迫られる。agenticソフトウェア開発やAIモデルアーキテクチャへの投資が前年比2倍超の分野と…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/the-top-trends-in-tech",
+      "selection_reason": "AIインフラ構築の具体的な投資動向と電力制約という実務影響の大きい事実をMcKinsey報告で確認。他候補の汎用予測より新規性が高く、クラウド・半導体領域の企業判断に直結する。",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "McKinsey technology trends outlook 2026",
+          "url": "https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/the-top-trends-in-tech",
+          "source_type": "web"
+        },
+        {
+          "title": "Cornelis Moves into Scale-Up with Active Compute Fabric",
+          "url": "https://convergedigest.com/category/ai-infra/",
+          "source_type": "web"
+        },
+        {
+          "title": "Microsoft Updates on Massive Infrastructure Buildout",
+          "url": "https://convergedigest.com/category/ai-infra/",
+          "source_type": "web"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "複数プロバイダーによる新AIモデル一斉リリース",
+      "source_name": "BenchLM",
+      "published_at": "2026-09-14T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要9月13日から14日にかけてAnthropic、DeepSeek、OpenAI、Googleなど14プロバイダーが18件のモデル更新を発表した。Claude Fable 5.1はコーディング性能を強化し、DeepSeek V4.1 Flashは推論速度を向上させた。価格競争と性能向上が同時に進み、企業は自社ユースケースに最適なモデルを選定し直す必要があ…",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://benchlm.ai/model-updates/releases/september-2026",
+      "selection_reason": "9月13-14日にClaude Fable 5.1やDeepSeek V4.1 Flashなど具体的なモデル更新が確認され、開発者向け実務影響が明確。他の研究論文中心候補より即時性が高い。",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "AI Model Releases in September 2026",
+          "url": "https://benchlm.ai/model-updates/releases/september-2026",
+          "source_type": "web"
+        },
+        {
+          "title": "Anthropic Claude Fable 5.1 release",
+          "url": "https://www.anthropic.com",
+          "source_type": "web"
+        },
+        {
+          "title": "DeepSeek V4.1 Flash announcement",
+          "url": "https://huggingface.co",
+          "source_type": "web"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "量子耐性暗号移行の国際的加速",
+      "source_name": "World Economic Forum",
+      "published_at": "2026-09-11T07:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Advisory",
+      "summary_preview": "概要米国が2030年までに連邦資産をpost-quantum cryptographyへ移行する大統領令を発令した。欧州委員会は2026年末までにPQC移行を開始するよう加盟国に求め、フランスANSSIは2027年から量子耐性なし製品の認証を停止する。金融機関は第三者リスク評価を即時開始する必要がある。規制遵守を先送りするとサプライチェーン全体の認証リスク…",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://www.weforum.org/stories/cybersecurity/global-race-quantum-safe-cybersecurity/",
+      "selection_reason": "米国財務省タスクフォースやEUロードマップなど規制動向が具体化し、金融・重要インフラの実務対応を迫る。他のインシデント報告より政策影響が広い。",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "Why organizations need to act on quantum-safe cybersecurity",
+          "url": "https://www.weforum.org/stories/cybersecurity/global-race-quantum-safe-cybersecurity/",
+          "source_type": "web"
+        },
+        {
+          "title": "US Treasury Quantum-Readiness Task Force",
+          "url": "https://home.treasury.gov",
+          "source_type": "web"
+        },
+        {
+          "title": "EU PQC transition roadmap",
+          "url": "https://ec.europa.eu",
+          "source_type": "web"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "770256ed8b9086f7",
+      "title": "CVE-2026-76461 Cisco Secure Email Gateway SQL Injection Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-09-14T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CVE-2026-76461 は Cisco Secure Email Gateway に存在するSQLインジェクション脆弱性で、入力値の処理不備を突かれると、認証の有無や周辺設定によってはメール基盤側の情報漏えい、設定改ざん、場合によっては侵害の起点になり得る。メールゲートウェイは外部公開されやすく、攻撃者にとって到達性と業務上の価値が高い標的になり…",
+      "article_path": "articles/770256ed8b9086f7.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "40572377c332c6a2",
+      "title": "New DDRop Attack Breaks Intel TDX and AMD SEV-SNP Confidential Computing",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-14T18:02:13+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Exploit",
+      "summary_preview": "概要DDRop は、サーバーのメモリへの書き込みを静かに落とすことで、CPU に 古い暗号化データ を新しい内容として読ませる攻撃が公開された件を指す。対象は Intel TDX と AMD SEV-SNP を含む Confidential Computing の保護前提で、機密領域の整合性を揺さぶる点が本質となる。成立条件は、すでにサーバーのソフトウェア…",
+      "article_path": "articles/40572377c332c6a2.html",
+      "original_url": "https://thehackernews.com/2026/09/new-ddrop-attack-breaks-intel-tdx-and.html"
+    },
+    {
+      "entry_id": "d573a2a3b7abc75d",
+      "title": "3BB Attacker Used MeshCentral Backdoor for Root Access, Targeted Subscriber Credentials",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-14T18:01:49+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要タイの大手ブロードバンド事業者3BBの社内ネットワークで、攻撃者がMeshCentralを悪用して端末の遠隔操作を継続していたと報じられた。表向きは正規の管理ツールだが、侵入後にバックドアとして使われると、監視をすり抜けながら端末制御を続けやすい。記事では、攻撃者が自ら公開したサーバの調査から侵入が判明し、利用者認証情報の収集も狙っていた可能性が示され…",
+      "article_path": "articles/d573a2a3b7abc75d.html",
+      "original_url": "https://thehackernews.com/2026/09/3bb-attacker-used-meshcentral-backdoor.html"
+    },
+    {
+      "entry_id": "17d71004cab97565",
+      "title": "Telegram Desktop Flaw Lets Hidden JavaScript Exfiltrate Messages From HTML Exports",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-14T17:58:16+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Telegram Desktop のエクスポート機能に関する不具合が報告され、HTML 形式で保存したチャットに、見えない JavaScript を混入できたとされる。ユーザーがそのエクスポートファイルを Web ブラウザで開いた時点でスクリプトが動き、ファイル内のメッセージを外部へ送信できる可能性がある。悪用の起点は ボット経由の通常メッセージに見せ…",
+      "article_path": "articles/17d71004cab97565.html",
+      "original_url": "https://thehackernews.com/2026/09/telegram-desktop-flaw-lets-hidden.html"
+    },
+    {
+      "entry_id": "951c7078bcca6133",
+      "title": "Red Heron Exploits Gitea RCE to Compromise 13 Organizations Across Six Countries",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-14T16:56:30+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要脅威グループ Red Heron が、Gitea の最近公表された脆弱性を素早く悪用し、6か国の13組織に侵入したと報じられている。対象は インターネット公開された Gitea で、初期侵入の入口として使われた可能性が高い。攻撃は単発の試行ではなく、1,386件の公開インスタンスを走査したうえで、台湾拠点の477件を別枠で追跡していたとされ、継続的な対…",
+      "article_path": "articles/951c7078bcca6133.html",
+      "original_url": "https://thehackernews.com/2026/09/red-heron-exploits-gitea-rce-to.html"
+    },
+    {
+      "entry_id": "0eb2f865d91e65ac",
+      "title": "WordPress Adds Automated Plugin Reviews to Block High-Risk Updates Before Distribution",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-14T16:00:04+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要WordPress は、WordPress.org の更新配布経路に流れるプラグインの各リリースに対して、自動セキュリティレビューを入れる方針を公表した。狙いは、公開済みプラグインの更新に紛れた脆弱性や不審な変更を、配布前に機械的にふるい落とす点にある。攻撃者は既存プラグインの更新経路を悪用して、正規配布に見せた改ざんやバックドア混入を狙うため、ここを…",
+      "article_path": "articles/0eb2f865d91e65ac.html",
+      "original_url": "https://thehackernews.com/2026/09/wordpress-adds-automated-plugin-reviews.html"
+    },
+    {
+      "entry_id": "f7e93b8423df2e3c",
+      "title": "⚡ Weekly Recap: Rogue AI Agents, WeChat Worm, PaperCut Attacks, AI Espionage, and Rootkits",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-14T14:40:34+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要本件は The Hacker News の週次まとめで、Rogue AI Agents、WeChat Worm、PaperCut 攻撃、AI によるスパイ活動、rootkit など複数の話題を束ねている。個別の新事実を一本化した告知ではなく、攻撃者がAIを使って探索・試行・自動化を進める一方で、古い脆弱性や既知の露出経路が今も有効という状況を示すまとめ…",
+      "article_path": "articles/f7e93b8423df2e3c.html",
+      "original_url": "https://thehackernews.com/2026/09/weekly-recap-rogue-ai-agents-wechat.html"
+    },
+    {
+      "entry_id": "f7f82aff97b667b2",
+      "title": "AI Changed the Exposure Problem. Validation Needs to Change With It.",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-14T11:58:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要この記事は、AIの進展で脆弱性の発見と列挙が高速化・大量化した一方、守る側は「どれを先に直すか」の確認作業を従来以上に厳密にしないといけない、という問題を扱う。2026年上半期だけでCVE公開数が大きく増えたとされ、件数増加そのものよりも、実害につながる露出を見分ける難しさが焦点になる。攻撃者はAIで探索と再現を広げやすくなり、公開直後の弱点や設定不備…",
+      "article_path": "articles/f7f82aff97b667b2.html",
+      "original_url": "https://thehackernews.com/2026/09/ai-changed-exposure-problem-validation.html"
+    },
+    {
+      "entry_id": "e35c0e6bd7e30a10",
+      "title": "Malicious Twitch Browser Extension Leaks OAuth Tokens From Nearly 31,000 Users",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-14T07:24:39+00:00",
+      "impact_level": "High",
+      "threat_type": "Credential Theft",
+      "summary_preview": "概要Chrome と Firefox の両方に載った 悪性の Twitch 拡張機能が、約3万1000人分の OAuth トークンを外部のプロキシへ送信したと報じられている。拡張機能名や配布面が正規に見えても、実際には認可情報を抜き取り、Twitch アカウントの操作権限を乗っ取る足場になりうる。想定される悪用は、配信者アカウントの不正操作、チャットや視聴…",
+      "article_path": "articles/e35c0e6bd7e30a10.html",
+      "original_url": "https://thehackernews.com/2026/09/malicious-twitch-browser-extension.html"
+    },
+    {
+      "entry_id": "d604c11a0e8716ba",
+      "title": "Apple Updates Everything, (Mon, Sep 14th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-09-14T18:33:44+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Patch",
+      "summary_preview": "概要Apple が 全OS向けの年次アップデートを公開し、機能追加と同時に 261件の脆弱性修正を含めた。件数は過去最大級だが、これだけで直ちに広範な実被害が示されたわけではなく、現時点で各脆弱性の悪用有無は記事本文からは読み取れない。CSIRTとしては、単なる大型更新ではなく、未適用端末の残存リスクと、対象OS・機種の組み合わせによる適用可否を先に確認す…",
+      "article_path": "articles/d604c11a0e8716ba.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33336"
+    },
+    {
+      "entry_id": "ac9bc15ed3b9623d",
+      "title": "ISC Stormcast For Monday, September 14th, 2026 https://isc.sans.edu/podcastdetail/10092, (Mon, Sep 14th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-09-14T02:00:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要SANS ISC の Stormcast は、2026年9月14日時点のセキュリティ動向を短く整理するポッドキャスト更新であり、個別の脆弱性告知ではない。現時点で与えられている情報だけでは、具体的な攻撃対象、悪用手口、被害範囲を特定できない。したがって、組織側で直ちに優先対応すべき脆弱性や侵害事案を示すものかは未確認となる。実務上は、同番組内で取り上げ…",
+      "article_path": "articles/ac9bc15ed3b9623d.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33334"
+    },
+    {
+      "entry_id": "933b189402af8638",
+      "title": "Unmasking Cloud Identities: From Behavioral Clustering to Automated Detection",
+      "source_name": "Unit 42",
+      "category": "reporting",
+      "published_at": "2026-09-14T10:00:01+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Other",
+      "summary_preview": "概要Unit 42は、監査ログの行動パターンを使ってクラウド上のアイデンティティ役割を推定し、標準的なSQLだけで継続検知に結び付ける手法を紹介している。これは脆弱性の修正記事ではなく、クラウド利用環境で「誰が何をしたか」を別視点で整理し、見えにくい権限の使われ方を炙り出す話題になる。悪用の主眼は、侵害後に権限を持つ正規IDへ紛れ込む攻撃や、役割の使い回し…",
+      "article_path": "articles/933b189402af8638.html",
+      "original_url": "https://unit42.paloaltonetworks.com/behavioral-clustering-map-to-cloud-identities/"
+    },
+    {
+      "entry_id": "833538a755ba3d4f",
+      "title": "第16回CiNetシンポジウム『脳情報通信2030に向けて- CiNetが描く次の5年 - 』",
+      "source_name": "NICT NOTICE",
+      "category": "reporting",
+      "published_at": "2026-09-14T03:00:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要第16回CiNetシンポジウム「脳情報通信2030に向けて- CiNetが描く次の5年 -」の案内であり、脆弱性や攻撃事案の通知ではない。脳情報通信の研究計画や将来像を共有する内容とみられ、直接のCSIRT対応対象ではない。ただし、研究機関や共同利用環境では、発表資料の公開範囲、個人情報や研究データの取り扱い、外部接続端末の管理が論点になる場合がある。…",
+      "article_path": "articles/833538a755ba3d4f.html",
+      "original_url": "https://cinet.jp/16th-cinetsymposium/index.html"
+    },
+    {
+      "entry_id": "78973fcc84c0f7bb",
+      "title": "Cloudbase は、もう「クラウド」のためだけのセキュリティ製品ではない ～ Lead Product Engineer 佐藤琢斗",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-13T23:15:02+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要この記事は、Cloudbase が クラウド専用の製品から、より広い運用現場で使う セキュリティ基盤へ役割を広げつつある、という製品紹介記事である。具体的な脆弱性や侵害事例を扱う内容ではなく、製品の方向性や考え方を伝える色合いが強い。CSIRTの観点では、導入済み環境で何を監視し、どこまでの設定変更や権限連携を許すかを考える材料になる。悪用手口や被害拡…",
+      "article_path": "articles/78973fcc84c0f7bb.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/14/56225.html"
+    },
+    {
+      "entry_id": "f92a1cfded7a5b69",
+      "title": "SCS評価制度対応第一歩、IDアカウント管理をどう見直す？ 10 / 7 HENNGEとサイバートラストが共同ウェビナー開催",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-13T23:10:02+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要この記事は、SCS評価制度への対応を切り口に、IDアカウント管理の見直しを促す共同ウェビナーの案内を伝えている。直接の脆弱性報告ではなく、アカウント統制と運用整備が主題となる。攻撃者は侵入後に特権アカウントや休眠アカウントを足場にしやすく、認証基盤の甘さは横展開や権限昇格に直結しやすい。影響は単一システムに閉じず、クラウド、SaaS、端末管理まで波及す…",
+      "article_path": "articles/f92a1cfded7a5b69.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/14/56224.html"
+    },
+    {
+      "entry_id": "84a516ebcfb9cd06",
+      "title": "VPNの脆弱性を利用 ～ デジタル庁が運用するガバメントソリューションサービス（GSS）に不正アクセス、約24.6万件の個人情報が漏えいした可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-13T23:05:13+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要デジタル庁が運用するガバメントソリューションサービス（GSS）に対し、VPNの脆弱性を起点とする不正アクセスが発生し、約24.6万件の個人情報が漏えいした可能性が示された。攻撃者は境界装置の欠陥や設定不備を足がかりに内部へ入り、認証情報の取得や横展開へ進んだ可能性がある。影響は単一システムにとどまらず、共有基盤を利用する複数業務や関係機関へ広がるおそれ…",
+      "article_path": "articles/84a516ebcfb9cd06.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/14/56223.html"
+    },
+    {
+      "entry_id": "096c01c7f87bc3e2",
+      "title": "「ファンくる」にリスト型攻撃、2 アカウントで不正なポイント交換を確認",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-13T23:05:11+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Credential Theft",
+      "summary_preview": "概要外部の大量認証情報を使うリスト型攻撃により、「ファンくる」で2アカウントの不正なポイント交換が確認された。現時点で確認されている被害は少数だが、同種の攻撃はアカウント保有者が再利用したID・パスワードを起点に成立し、成功すると本人になりすました操作がそのまま通る。攻撃者の狙いは、ポイントや特典の換金性を踏まえた短時間の回収にあり、検知が遅れると交換・送…",
+      "article_path": "articles/096c01c7f87bc3e2.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/14/56222.html"
+    },
+    {
+      "entry_id": "ad68097373dca548",
+      "title": "税務事務システムへの入力権限を悪用し不正に還付金 ～ 市税事務所職員 懲戒免職",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-13T23:05:09+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Misconfiguration",
+      "summary_preview": "概要税務事務システムへの入力権限を持つ職員が、その権限を悪用して不正な還付金処理を行い、懲戒免職となった事案を扱う記事である。外部からの侵入ではなく、正規アカウントと業務権限を前提にした内部不正であり、アクセス制御だけでは防ぎ切れない性質を持つ。悪用の起点は入力内容の改ざんや帳票・申請データの不正登録にあり、金銭被害は直接発生する一方、監査や住民対応、再照…",
+      "article_path": "articles/ad68097373dca548.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/14/56221.html"
+    },
+    {
+      "entry_id": "b70b904a6a4202a0",
+      "title": "サンメッセが利用する購買発注システム「WEB 発注システム」へサイバー攻撃",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-13T23:05:07+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要サンメッセが利用する購買発注システム「WEB 発注システム」へのサイバー攻撃が報じられた。現時点の入力情報だけでは、侵入経路、情報漏えいの有無、業務停止の範囲は確認できない。こうした受発注系システムは、社内外の取引先接続や権限管理の甘さを突かれると、注文情報や取引先情報を起点に影響が広がりやすい。攻撃が改ざん、認証情報窃取、ランサムウェアのいずれに近い…",
+      "article_path": "articles/b70b904a6a4202a0.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/14/56220.html"
+    },
+    {
+      "entry_id": "e6c7502050c4f843",
+      "title": "Weverseサービスにセキュリティ脆弱性、韓国インターネット振興院から連絡",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-13T23:05:05+00:00",
+      "impact_level": "Info",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要Weverseサービスにセキュリティ脆弱性が見つかり、韓国インターネット振興院から連絡が行われた件を伝える記事である。現時点の入力では、脆弱性の種類、影響を受ける機能、悪用可否、修正済みかどうかが確認できず、未確認事項が多い。とはいえ、外部機関からの連絡がある場合は、公開前の調整中情報か、利用者影響が無視できない欠陥である可能性がある。攻撃者視点では、…",
+      "article_path": "articles/e6c7502050c4f843.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/14/56219.html"
+    },
+    {
+      "entry_id": "018bc4fa8caf1b89",
+      "title": "TRUNK 従業員のメールアカウントに不正アクセス、不審メール送信も確認",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-13T23:05:03+00:00",
+      "impact_level": "High",
+      "threat_type": "Credential Theft",
+      "summary_preview": "概要TRUNK の従業員メールアカウントに不正アクセスが発生し、そこから不審メール送信も確認された。侵入経路は明示されていないため、認証情報の窃取、パスワード使い回し、フィッシングなど複数の可能性を残したまま読む必要がある。業務メールの乗っ取りは単発の迷惑送信に見えても、取引先への二次被害、請求先変更、追加の認証情報収集へ広がりやすい。現時点では、横展開や…",
+      "article_path": "articles/018bc4fa8caf1b89.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/14/56218.html"
+    },
+    {
+      "entry_id": "01012ca70a2a612c",
+      "title": "「jpo.go.jp」以外の差出人に注意 特許庁を装った不審メールの連絡が相次ぐ",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-13T23:00:21+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Phishing",
+      "summary_preview": "概要特許庁を装い、「jpo.go.jp」以外の差出人から届く不審メールについて注意喚起が出ている。本文や表示名だけでは真正性を見分けにくく、受信者が申請、更新、通知確認を装った誘導に乗ると、偽サイトへの遷移や添付ファイル実行につながる。攻撃の狙いは、認証情報の窃取、端末侵害、組織内への二次侵入に広がる点にある。現時点では、送信元の詳細、実際のフィッシング手…",
+      "article_path": "articles/01012ca70a2a612c.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/14/56217.html"
+    },
+    {
+      "entry_id": "b19bd0ed7af0c5c6",
+      "title": "自然言語でセキュリティ調査を加速 プルーフポイントが「SOC Analyst Agent」発表",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-13T23:00:19+00:00",
+      "impact_level": "Low",
+      "threat_type": "Other",
+      "summary_preview": "概要Proofpointが、自然言語で調査を支援する「SOC Analyst Agent」を発表した。記事の主眼は攻撃そのものではなく、SOCでの問い合わせ、相関確認、初動判断を短時間で回すための支援にある。想定される悪用は、アラートやログの解釈を自然文で引き出し、調査の着手点を早める使い方になる。誤検知の切り分けや一次調査の標準化には効く一方、最終判断を…",
+      "article_path": "articles/b19bd0ed7af0c5c6.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/14/56216.html"
+    },
+    {
+      "entry_id": "3809dabacd735394",
+      "title": "SHIRASAGI に複数の脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-13T23:00:17+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要SHIRASAGI に関する複数の脆弱性が報じられており、内容次第では認証回避、権限昇格、情報漏えい、任意操作につながる余地がある。公開記事の段階では、どの機能に問題があるか、既に悪用が確認済みか、修正版の有無が読み取れず、運用影響の確定には追加確認が必要となる。CMS系製品では、外部公開面に近い欠陥ほど攻撃者の試行回数が多くなり、管理画面侵入後にコン…",
+      "article_path": "articles/3809dabacd735394.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/14/56215.html"
+    },
+    {
+      "entry_id": "a9868495ef10c786",
+      "title": "DEF CON CTF世界一への20年辿るコラム2本公開 ～ 福森大喜・小池悠生ほか当事者インタビュー",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-13T23:00:13+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要この記事は、DEF CON CTFで世界一を目指してきた日本勢の歩みを、当事者インタビューで振り返るコラム紹介である。脆弱性や侵害事案の告知ではなく、競技CTFの経験や組織づくりの変遷を扱う内容になる。直接のインシデント対応対象ではないが、攻撃技術の理解、採用・育成、演習設計の観点では示唆がある。実際に業務へ転用できるのは、攻撃成立の前提条件を分解して…",
+      "article_path": "articles/a9868495ef10c786.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/14/56214.html"
+    },
+    {
+      "entry_id": "6fa9d213d5f9493f",
+      "title": "Cloudbase：2,489点、Cloudbase AI：2,473点 ～ Cloudbase が自社製品の日本度スコア公開",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-13T23:00:09+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要Cloudbaseが自社製品の日本度スコアを公開し、Cloudbaseは2,489点、Cloudbase AIは2,473点となった。記事の主眼は脆弱性対応そのものではなく、製品や機能が日本の業務要件にどこまで適合するかを可視化する点にある。こうしたスコアは、導入可否や置き換え判断の材料にはなるが、実際の安全性や運用品質を直接示すものではない。したがっ…",
+      "article_path": "articles/6fa9d213d5f9493f.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/14/56213.html"
+    },
+    {
+      "entry_id": "9ba3c4f6d976981c",
+      "title": "福山市立大学 情報工学部情報工学科 2027年4月開設、サイバーセキュリティコースも",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-13T23:00:07+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要福山市立大学が、2027年4月に情報工学部情報工学科を開設し、サイバーセキュリティコースを設けるという教育面の話題である。直接の脆弱性情報や攻撃情報ではなく、CSIRTの即応対象というよりは、将来の人材供給や産学連携の土台づくりに関わる内容となる。攻撃者が悪用する仕組みを示した記事ではないため、現時点での実害評価は低い。一方で、地域の大学がサイバー分野…",
+      "article_path": "articles/9ba3c4f6d976981c.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/14/56212.html"
+    },
+    {
+      "entry_id": "63291c6512dfa87c",
+      "title": "不正アクセスや報告遅れを中心に民間 98 件へ指導 ～ 個人情報保護委員会が第367回会合を開催",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-13T23:00:03+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要個人情報保護委員会の第367回会合で、不正アクセスや報告遅れを含む事案を中心に、民間事業者98件への指導状況が示された。記事は個別事故の技術詳細を深掘りするものではなく、法令順守と初動運用の観点から、組織がどの段階でつまずきやすいかを示す材料になる。攻撃者視点では、侵入そのものよりも、検知の遅れや報告体制の不備が被害拡大の余地を作る点が重要になる。影響…",
+      "article_path": "articles/63291c6512dfa87c.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/14/56211.html"
+    }
+  ]
+}
