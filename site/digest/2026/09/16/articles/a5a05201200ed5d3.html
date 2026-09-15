@@ -1,0 +1,332 @@
+<!-- article.html テンプレート（生成用） (例: /digest/YYYY/MM/DD/articles/<entry_id>.html)
+     サーバ側（Function）で {{...}} を置換して出力してください。
+-->
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/favicon-192.png" />
+  <title>China-Linked Hackers Exploit Chrome-Windows Zero-Day Chain to Deploy GRIMWEDGE | NotifyHub Cybersecurity Daily Report</title>
+  <style>
+    :root{
+      --bg:#0b1020; --panel:#0f1730; --panel2:#121c3a;
+      --text:#e7ecff; --muted:#a9b4df; --line:#22305b;
+      --accent:#7aa2ff; --good:#4ade80; --warn:#fbbf24; --bad:#fb7185;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+      --radius:18px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      background: radial-gradient(1000px 700px at 20% -10%, rgba(122,162,255,.25), transparent 60%),
+                  radial-gradient(900px 600px at 90% 10%, rgba(251,113,133,.12), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+    }
+    a{color:inherit}
+    .wrap{max-width:960px; margin:0 auto; padding:22px 18px 44px}
+    .topbar{
+      display:flex; justify-content:space-between; align-items:center; gap:12px;
+      margin-bottom:12px;
+    }
+    .crumb a{
+      text-decoration:none;
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .crumb a:hover{border-color:rgba(122,162,255,.65)}
+    .chip{
+      display:inline-flex; align-items:center; gap:8px;
+      background:rgba(27,38,80,.75);
+      border:1px solid rgba(34,48,91,.9);
+      padding:7px 10px; border-radius:999px;
+      font-size:12px; color:var(--muted);
+      backdrop-filter: blur(10px);
+      white-space:nowrap;
+    }
+    .chip strong{color:var(--text); font-weight:650}
+    .panel{
+      background: linear-gradient(180deg, rgba(15,23,48,.9), rgba(15,23,48,.75));
+      border:1px solid rgba(34,48,91,.9);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .head{
+      padding:16px 16px 12px;
+      border-bottom:1px solid rgba(34,48,91,.9);
+      background:rgba(18,28,58,.55);
+    }
+    h1{
+      margin:0;
+      font-size:20px;
+      line-height:1.35;
+      letter-spacing:.15px;
+    }
+    .meta{
+      margin-top:10px;
+      display:flex; gap:10px; flex-wrap:wrap;
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.6;
+    }
+    .meta a{color:var(--muted)}
+    .meta a:hover{color:var(--accent)}
+    .tags{
+      margin-top:12px;
+      display:flex; gap:8px; flex-wrap:wrap;
+    }
+    .tag{
+      font-size:11px;
+      padding:6px 9px;
+      border-radius:999px;
+      background:rgba(27,38,80,.65);
+      border:1px solid rgba(34,48,91,.9);
+      color:var(--muted);
+      white-space:nowrap;
+    }
+    .tag.level-Critical{border-color:rgba(251,113,133,.65); color:#ffd0d7}
+    .tag.level-High{border-color:rgba(251,191,36,.65); color:#ffe9b0}
+    .tag.level-Medium{border-color:rgba(122,162,255,.65); color:#dbe6ff}
+    .tag.level-Low{border-color:rgba(74,222,128,.55); color:#d0ffe2}
+    .tag.level-Info{border-color:rgba(169,180,223,.55); color:rgba(169,180,223,.95)}
+    .body{
+      padding:16px;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+    }
+    .section{
+      background:rgba(18,28,58,.35);
+      border:1px solid rgba(34,48,91,.75);
+      border-radius:16px;
+      padding:14px;
+    }
+    .section h2{
+      margin:0 0 10px;
+      font-size:14px;
+      letter-spacing:.1px;
+    }
+    .ruleReason{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.65;
+      white-space:pre-wrap;
+    }
+    .infoSources{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.5;
+    }
+    .infoSourceRow{
+      margin:0;
+      padding:0;
+    }
+    .infoSourceRow + .infoSourceRow{
+      margin-top:2px;
+    }
+
+    /* --- summary_html styles (OpenAI output uses h4/p/ul/li/strong/code/br) --- */
+    .summary h4{
+      margin:14px 0 8px;
+      font-size:13px;
+      letter-spacing:.1px;
+      padding-left:10px;
+      border-left:3px solid rgba(122,162,255,.65);
+      color: rgba(231,236,255,.95);
+    }
+    .summary p{margin:8px 0; color:rgba(231,236,255,.92); line-height:1.75}
+    .summary ul, .summary ol{margin:8px 0 8px 1.2em; padding:0}
+    .summary li{margin:6px 0; color:rgba(231,236,255,.92); line-height:1.7}
+    .summary strong{
+      color:var(--text);
+      font-weight:750;
+      padding:0 .2em;
+      border-radius:8px;
+      background: linear-gradient(transparent 60%, rgba(122,162,255,.22) 60%);
+    }
+    .summary code{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 8px;
+      background: rgba(11,16,32,.6);
+      border: 1px solid rgba(34,48,91,.85);
+      color: rgba(231,236,255,.95);
+      white-space: nowrap;
+    }
+
+    .terms{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:10px;
+    }
+    @media (max-width: 860px){
+      .terms{grid-template-columns: 1fr}
+    }
+    .termCard{
+      background:rgba(11,16,32,.45);
+      border:1px solid rgba(34,48,91,.85);
+      border-radius:14px;
+      padding:12px;
+      min-width:0;
+    }
+    .termCard .term{
+      font-weight:700;
+      font-size:13px;
+      margin:0 0 8px;
+      word-break:break-word;
+    }
+    .termCard .exp{
+      margin:0;
+      color:rgba(231,236,255,.9);
+      line-height:1.7;
+      font-size:12px;
+      white-space:pre-wrap;
+    }
+    .subSectionTitle{
+      margin:16px 0 8px;
+      font-size:12px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:var(--muted);
+    }
+    .deepDive{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:10px;
+      margin-top:8px;
+    }
+    .deepDiveCard{
+      background:rgba(12,20,38,.6);
+    }
+
+    .footer{
+      margin-top:14px;
+      color:rgba(169,180,223,.75);
+      font-size:12px;
+      line-height:1.7;
+      text-align:center;
+    }
+    .btnRow{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px}
+    .linkbtn{
+      text-decoration:none;
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .linkbtn:hover{border-color:rgba(122,162,255,.65)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="crumb">
+        <!-- ../index.html は通常 "../index.html" でOK -->
+        <a href="../index.html">← 日次トップへ戻る</a>
+      </div>
+      <div class="chip">entry_id <strong class="mono">a5a05201200ed5d3</strong></div>
+    </div>
+
+    <div class="panel">
+      <div class="head">
+        <h1>China-Linked Hackers Exploit Chrome-Windows Zero-Day Chain to Deploy GRIMWEDGE</h1>
+
+        <div class="meta">
+          <span>🗞️ The Hacker News</span>
+          <span>🕒 2026-09-15T14:31:05+09:00</span>
+          <span>🔗 <a href="https://thehackernews.com/2026/09/china-linked-hackers-exploit-chrome.html" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
+        </div>
+
+        <div class="tags">
+          <span class="tag level-High">Impact: High</span>
+          <span class="tag">Exploit</span>
+        </div>
+
+        <div class="btnRow">
+          <a class="linkbtn" href="https://thehackernews.com/2026/09/china-linked-hackers-exploit-chrome.html" target="_blank" rel="noopener noreferrer">原文リンク</a>
+          <a class="linkbtn" href="https://www.notifyhub.site/digest/2026/09/16/">日次トップ</a>
+        </div>
+      </div>
+
+      <div class="body">
+        
+        <div class="section">
+          <h2>Impact判定理由</h2>
+          <div class="ruleReason">最近修正された Chrome と Windows の欠陥を組み合わせた標的型侵入で、初期侵入だけでなく認証情報の窃取や永続化、横展開まで見えるため、実運用上の影響は重い。特に NGO を狙った点から、攻撃者が高い成功率を見込んで選別している可能性が高い。情報源がニュース媒体のため二次情報ではあるが、一次情報に言及された悪用事案として扱う価値は高く、補正は据え置きとした。</div>
+        </div>
+        <div class="section summary">
+          <h2>🧾 要約（ChatGPT / gpt-5.4-mini-2026-03-17）</h2>
+          <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
+          <div><h4>概要</h4><p>中国系とみられる攻撃者が、<strong>Google Chrome</strong> と <strong>Microsoft Windows</strong> の最近修正された脆弱性連鎖を起点に、<strong>GRIMWEDGE</strong> と呼ばれる JavaScript バックドアを配布したとされる。攻撃は <strong>標的型フィッシング</strong> で NGO を狙っており、単なる改ざんではなく、初期侵入後に継続的な制御を取る構成が示唆される。悪用の中心は、閲覧端末上でのコード実行と Windows 側の権限・永続化の獲得にあり、成功すれば認証情報の窃取や横展開に発展する余地がある。影響範囲は、メール受信者の一台に閉じるとは限らず、ブラウザと OS の両方が古い端末群へ波及しやすい。現時点で、対象となった脆弱性の <strong>CVE 番号</strong>、実際の到達経路、権限昇格の有無、持続化の具体手法は未確認とみるのが妥当である。</p></div>
+        </div>
+
+        <div class="section">
+          <h2>📌 キーワード解説</h2>
+          <div class="terms">
+            <div class="termCard">
+  <div class="term">ゼロデイ連鎖</div>
+  <p class="exp">複数の未修正欠陥をつないで侵入する手口。単発の脆弱性より防ぎにくく、途中の一箇所だけ塞いでも残りが生きる場合がある。</p>
+</div>
+<div class="termCard">
+  <div class="term">標的型フィッシング</div>
+  <p class="exp">不特定多数へのばらまきと異なり、組織や担当者を絞って送る。公開情報を使うため、受信者が警戒しにくい。</p>
+</div>
+<div class="termCard">
+  <div class="term">バックドア</div>
+  <p class="exp">一度入った後に再侵入しやすくする遠隔操作用の仕組み。ランサムウェアのような破壊型と違い、静かに残る点が厄介となる。</p>
+</div>
+<div class="termCard">
+  <div class="term">永続化</div>
+  <p class="exp">再起動や再ログイン後も侵入状態を保つ工夫。単なる一時的な実行と違い、検知が遅れるほど回収が難しくなる。</p>
+</div>
+          </div>
+          <h3 class="subSectionTitle">深掘り解説</h3>
+          <div class="deepDive">
+            <div class="termCard deepDiveCard">
+  <div class="term">ブラウザ侵入は「端末1台の話」で終わらない</div>
+  <p class="exp">ブラウザの脆弱性を起点にした侵入は、見た目は閲覧端末への感染に見えても、実際には認証情報と業務セッションの奪取に直結しやすい。ここを軽く見ると、利用者端末の再イメージだけで済ませてしまい、メール、クラウド、VPN、SaaS に残ったセッションを取り逃がす。
+
+実務で意識したいのは、侵入の成否よりも「侵入後に何へ触れたか」になる。たとえば Chrome が悪用されたなら、ブラウザ内の保存パスワード、Cookie、SSO セッション、ダウンロード済みファイル、拡張機能の不審な追加を確認対象に入れる。Windows 側の欠陥が組み合わさると、攻撃者は権限を上げて永続化しやすくなるため、端末単位の隔離だけでは足りず、アカウント単位の失効や再認証が必要になることがある。
+
+具体例として、NGO 職員が会議資料を装ったリンクを開き、ブラウザ経由で初期コードが動いたとする。この場合、端末の隔離だけでなく、同じ端末から使ったメール、クラウドストレージ、社内ポータルのセッションを無効化しないと、攻撃者が別端末から業務データへ戻ってくる余地が残る。
+
+初動では、端末ログだけを見て判断を閉じないことが重要になる。メール配送経路、ブラウザ更新状況、OS パッチ適用状況、IdP のサインイン履歴、直近の権限変更をひとまとめで見ると、侵入の広がり方を切り分けやすい。ブラウザ起点の事件は、感染端末の数よりも「どの認証資産が失われたか」で被害の重さが決まる場面が多い。</p>
+</div>
+          </div>
+        </div>
+
+        
+
+        <div class="section">
+          <h2>🕘 生成情報</h2>
+          <div class="ruleReason">
+対象期間：2026-09-15T06:00:00+09:00 〜 2026-09-16T06:00:00+09:00
+生成時刻：2026-09-16T06:22:13.949995+09:00
+免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      notifyhub.site
+    </div>
+  </div>
+</body>
+</html>

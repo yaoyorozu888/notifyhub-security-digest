@@ -1,0 +1,410 @@
+{
+  "date": "2026-09-16",
+  "window": {
+    "from": "2026-09-15T06:00:00+09:00",
+    "to": "2026-09-16T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 26
+  },
+  "generated_at_jst": "2026-09-16T06:22:13.949995+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "マッキンゼー 2026年技術トレンド展望 物理世界へのAI移行を強調",
+      "source_name": "McKinsey",
+      "published_at": "2026-09-15T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要マッキンゼーは2026年技術トレンド展望を公表し、AIが画面から物理世界へ移行する動きを強調した。agentic software developmentとAIによる科学発見・工学の2分野を新たに追加し、データセンター用電力・チップ、ロボット、衛星打ち上げへの投資が前年比2倍超になると予測する。企業はこれらトレンドを基盤に事業変革を加速する必要がある。…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/the-top-trends-in-tech",
+      "selection_reason": "本日発表の報告書でagentic software developmentとAI for scientific discoveryを新たに追加し、データセンター電力・ロボット・衛星分野への投資倍増を具体的に示した点が新規性・実務影響で優位",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "McKinsey technology trends outlook 2026",
+          "url": "https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/the-top-trends-in-tech",
+          "source_type": "web"
+        },
+        {
+          "title": "Deloitte Tech Trends 2026",
+          "url": "https://www.deloitte.com/us/en/insights/topics/technology-management/tech-trends.html",
+          "source_type": "web"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "Anthropic 2兆ドル評価額でNasdaq上場計画を発表",
+      "source_name": "Business Insider",
+      "published_at": "2026-09-15T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要Anthropicが10月Nasdaq上場を計画し、評価額2兆ドルを目指すと報じられた。第2四半期売上高は前年比14倍の115億ドルに達し、調整後営業利益も黒字化の見込みだ。OpenAIやGoogleとの安全基準自主規制団体設立協議も並行して進む。市場はAI企業の価値評価と安全対策の両立を注視している。",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://digibites.me/news/2026-09-15.html",
+      "selection_reason": "具体的な上場時期・評価額・収益倍増実績を伴う企業行動として、AI業界の資金調達・規制議論に直接波及する点で優先",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "Top 10 Global AI News — September 15, 2026",
+          "url": "https://digibites.me/news/2026-09-15.html",
+          "source_type": "web"
+        },
+        {
+          "title": "Anthropic Targets October Nasdaq IPO",
+          "url": "https://digibites.me/news/2026-09-15.html",
+          "source_type": "web"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "CISAとNIST アイデンティティトークン保護の技術チェックリストを公開",
+      "source_name": "Cybersecuritynews.com",
+      "published_at": "2026-09-15T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Credential Theft",
+      "summary_preview": "概要CISAとNISTがアイデンティティトークンの盗難・悪用防止に向けた技術チェックリストを最終版として公開した。Active Directory環境を狙う17の攻撃手法も国際機関と共同で公表された。組織はトークン保護と継続的監視の強化が求められる。実務担当者は即座にチェックリストを適用し、リスク低減を図る必要がある。",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://cybersecuritynews.com/",
+      "selection_reason": "政府機関による即時適用可能な技術ガイダンスとして、ID管理実務に直結する具体性で選定",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "CISA and NIST Release Technical Checklist",
+          "url": "https://cybersecuritynews.com/",
+          "source_type": "web"
+        },
+        {
+          "title": "CISA Shares 17 Techniques",
+          "url": "https://cybersecuritynews.com/",
+          "source_type": "web"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "6cd5eefd3d13a51c",
+      "title": "KREMLIN Banking Malware Hijacks Chrome and Edge to Steal Credentials and Session Tokens",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-15T18:54:14+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要ブラジルの金融機関をかたる誘導から、KREMLIN と呼ばれるバンキングマルウェア群を配布し、Chrome と Edge の挙動を乗っ取って認証情報とセッション情報を盗む活動が報告された。悪用の狙いはパスワードの窃取だけでなく、すでに成立したログインを横取りして二要素認証後のセッションまで奪う点にある。影響は個人端末に閉じず、端末上で業務ブラウザを使う…",
+      "article_path": "articles/6cd5eefd3d13a51c.html",
+      "original_url": "https://thehackernews.com/2026/09/kremlin-banking-malware-hijacks-chrome.html"
+    },
+    {
+      "entry_id": "7bfff68e2295a4cb",
+      "title": "Iranian Hackers Use Telegram-Controlled Malware to Spy on Dissidents and Journalists",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-15T16:29:51+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要米英蘭の当局が、Telegramで遠隔操作されるWindows向けマルウェアについて注意を促した。対象は反体制派、記者、活動家とされ、メール、チャット、画面、音声を盗み取る機能を持つ。攻撃の目的は金銭ではなく、監視と長期潜伏に置かれている可能性が高い。侵入経路や初期感染手段は本文だけでは確認できず、配布方法の特定は未確認となる。被害は単一端末の情報流出…",
+      "article_path": "articles/7bfff68e2295a4cb.html",
+      "original_url": "https://thehackernews.com/2026/09/iranian-hackers-use-telegram-controlled.html"
+    },
+    {
+      "entry_id": "ce9cdf57af5b04d2",
+      "title": "BambooToken Malware Uses MQTT to Control Windows and Linux Systems",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-15T15:23:19+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要BambooToken と呼ばれるマルチプラットフォーム型のマルウェアが、MQTT を通信経路に使って Windows と Linux の端末を遠隔操作していると報告された。攻撃は少なくとも 2023 年 2 月から継続しているとみられ、対象はアジアと南米の組織に広がっている。MQTT は本来 IoT やメッセージ配信で使われるため、通常の業務通信に紛…",
+      "article_path": "articles/ce9cdf57af5b04d2.html",
+      "original_url": "https://thehackernews.com/2026/09/bambootoken-malware-uses-mqtt-to.html"
+    },
+    {
+      "entry_id": "e6326c638a810535",
+      "title": "Human Attacker Exploits Marimo RCE, Reaches SSH Bastion in Eight Seconds",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-15T11:52:28+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要本件は、Marimo の RCE 脆弱性を足掛かりに、攻撃者が初期侵入後わずか数秒で SSH バスティオンへ到達した事例を伝えている。攻撃の速さそのものより、初期侵入後の手動操作が極めて短時間で連鎖し、観測や封じ込めの余地が小さくなる点が重要になる。想定される悪用は、ノートブック実行環境でのコード実行から認証情報の探索、内部踏み台、特権経路への移動へ進…",
+      "article_path": "articles/e6326c638a810535.html",
+      "original_url": "https://thehackernews.com/2026/09/human-attacker-exploits-marimo-rce.html"
+    },
+    {
+      "entry_id": "e723798a7983a264",
+      "title": "Attack Chains, Not Just Attack Surfaces: Why Testing Individual Techniques Misses the Point",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-15T11:26:36+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要この記事は、単体の攻撃手法だけを検証しても、防御の実効性は十分に見えないと指摘している。個々の検知やブロックは通っても、初期侵入から権限昇格、横展開、持続化までの連鎖で見ると、別の弱点がつながって被害が成立しやすい。攻撃者は一発で通る手口よりも、失敗しにくい手順の組合せを選ぶため、単機能のテスト結果だけでは組織の実際の耐性を読み違えやすい。影響は侵入可…",
+      "article_path": "articles/e723798a7983a264.html",
+      "original_url": "https://thehackernews.com/2026/09/attack-chains-not-just-attack-surfaces.html"
+    },
+    {
+      "entry_id": "793d0b4cfe1e1604",
+      "title": "Mass-Scanning Campaign Exploits Vite Flaw to Extract Cloud Credentials From Exposed Dev Servers",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-15T11:12:32+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要公開されているViteの開発用サーバーを狙い、自動スキャンでクラウド認証情報や設定情報を抜き取る活動が報告された。狙いはAWSやMicrosoft Azureの資格情報、構成情報、インフラ状態ファイルで、取得できればそのままクラウド管理面へ踏み込める。攻撃は本番アプリへの侵入というより、誤って外部公開された開発環境を起点に、秘密情報を回収する形で進む。…",
+      "article_path": "articles/793d0b4cfe1e1604.html",
+      "original_url": "https://thehackernews.com/2026/09/mass-scanning-campaign-exploits-vite.html"
+    },
+    {
+      "entry_id": "794fc29b091303b4",
+      "title": "LiteSpeed Enterprise Flaw Could Let One Hosting Account Gain Root Access on a Shared Server",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-15T06:52:16+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要LiteSpeed Web Server Enterpriseに、共有ホスティング環境で低権限の利用者がroot権限を得られる可能性がある脆弱性が報告された。cPanelが9月14日に注意喚起しており、1つのホスティングアカウントを起点にサーバー全体へ到達する筋が示されている。悪用できれば、同一サーバー上の他サイト改ざん、設定変更、認証情報やデータへの…",
+      "article_path": "articles/794fc29b091303b4.html",
+      "original_url": "https://thehackernews.com/2026/09/litespeed-enterprise-flaw-could-let-one.html"
+    },
+    {
+      "entry_id": "602f9596dd24c854",
+      "title": "Cisco Secure Email Gateway Flaw Exploited in the Wild, Enables Root Command Execution",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-15T06:11:11+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Cisco Secure Email Gateway の AsyncOS に、認証不要で遠隔から悪用できる重大な脆弱性が見つかり、実際の攻撃も確認された。メール解析ロジックの検証不足が原因とされ、細工したメールを処理させることで root 権限のコマンド実行 に至る可能性がある。影響範囲は単一装置の侵害にとどまらず、メールの中継点として信頼されやすい機…",
+      "article_path": "articles/602f9596dd24c854.html",
+      "original_url": "https://thehackernews.com/2026/09/cisco-secure-email-gateway-flaw.html"
+    },
+    {
+      "entry_id": "a5a05201200ed5d3",
+      "title": "China-Linked Hackers Exploit Chrome-Windows Zero-Day Chain to Deploy GRIMWEDGE",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-15T05:31:05+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要中国系とみられる攻撃者が、Google Chrome と Microsoft Windows の最近修正された脆弱性連鎖を起点に、GRIMWEDGE と呼ばれる JavaScript バックドアを配布したとされる。攻撃は 標的型フィッシング で NGO を狙っており、単なる改ざんではなく、初期侵入後に継続的な制御を取る構成が示唆される。悪用の中心は、閲…",
+      "article_path": "articles/a5a05201200ed5d3.html",
+      "original_url": "https://thehackernews.com/2026/09/china-linked-hackers-exploit-chrome.html"
+    },
+    {
+      "entry_id": "eb9d7fc861e1cc83",
+      "title": "MacOS 27 - First Boot, (Tue, Sep 15th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-09-15T15:23:45+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要この記事は、macOS 27 の初回起動直後にユーザがログインする前でも発生する通信を観測し、平常時に見えるはずの挙動を整理したものだ。内容は脆弱性報告ではなく、起動直後の端末がどこへ、どの程度の通信を出すかを確認するための観測メモに近い。CSIRTの観点では、初回起動時の通信を異常判定に使えるか、または管理外端末の露出把握に役立つかを判断する材料にな…",
+      "article_path": "articles/eb9d7fc861e1cc83.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33340"
+    },
+    {
+      "entry_id": "da4d3858c47b84d2",
+      "title": "ISC Stormcast For Tuesday, September 15th, 2026 https://isc.sans.edu/podcastdetail/10094, (Tue, Sep 15th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-09-15T02:25:12+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要SANS ISC の配信で、特定の脆弱性や攻撃キャンペーンの個別告知ではなく、その日の複数トピックをまとめたポッドキャスト回に見える。したがって、今回の入力だけでは、どの製品やCVEを対象にした話題かは特定できない。攻撃の成立条件、悪用手口、影響範囲も本文未取得のため確認できない。CSIRTとしては、まず元記事や各参照先を開いて、対象製品名・CVE・悪…",
+      "article_path": "articles/da4d3858c47b84d2.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33338"
+    },
+    {
+      "entry_id": "fd6ee00f871445ac",
+      "title": "注意喚起: Cisco Secure Email GatewayにおけるSQLインジェクションの脆弱性（CVE-2026-76461）に関する注意喚起  (公開)",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-09-15T06:42:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Cisco Secure Email Gateway に SQLインジェクションの脆弱性が見つかり、JPCERT/CC が注意喚起を出している。認証や入力検証の境目が甘い箇所を突かれると、攻撃者はメール処理系の内部データへ不正にアクセスしたり、設定改ざんや認証情報の取得につなげたりする余地が生じる。メールゲートウェイは外部と直結しやすく、侵入口として狙…",
+      "article_path": "articles/fd6ee00f871445ac.html",
+      "original_url": "https://www.jpcert.or.jp/at/2026/at260027.html"
+    },
+    {
+      "entry_id": "916013b366911330",
+      "title": "国立研究開発法人協議会の会長・副会長の改選について",
+      "source_name": "NICT NOTICE",
+      "category": "reporting",
+      "published_at": "2026-09-15T05:00:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要国立研究開発法人協議会における会長・副会長の改選を知らせる案内であり、脆弱性や侵害事案そのものを扱う記事ではない。CSIRT観点では、直ちに封じ込めや調査を要する種類の情報ではなく、運用上の優先度は低い。ただし、こうした組織改選は対外的な連絡窓口や意思決定の流れに影響するため、官民連携や問い合わせ先の参照情報を使う場面では確認が必要になる。現時点で、セ…",
+      "article_path": "articles/916013b366911330.html",
+      "original_url": "/publicity/topics/2026/09/15-1.html"
+    },
+    {
+      "entry_id": "2fcf5479eb2ec15a",
+      "title": "第11回 CiNet International Conference",
+      "source_name": "NICT NOTICE",
+      "category": "reporting",
+      "published_at": "2026-09-15T01:00:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要第11回 CiNet International Conference の案内であり、脆弱性情報や攻撃キャンペーンの告知ではない。内容は研究会議の開催通知に近く、CSIRTが直ちに対応計画を切る類の記事ではない。もっとも、量子暗号、通信観測、計算基盤、計測技術のようなテーマが含まれる場合は、将来の防御設計や研究動向の把握にはつながる。現時点では、会議で…",
+      "article_path": "articles/2fcf5479eb2ec15a.html",
+      "original_url": "https://cinet.jp/english/event/11th_cic/"
+    },
+    {
+      "entry_id": "0d43cbb2255336e3",
+      "title": "PIVOTPIPE: 新たな.NET製の非公式Beaconペイロード",
+      "source_name": "IIJ SECT",
+      "category": "reporting",
+      "published_at": "2026-09-15T02:56:15+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Malware",
+      "summary_preview": "概要IIJが、公開ディレクトリ上で配布されていた.NET製マルウェア「PIVOTPIPE」を観測し、Beacon系ペイロードの非公式実装として分析した。攻撃者は既存のC2基盤や関連ツール群に接続させる形で、侵入後の遠隔操作や追加展開に使う可能性が高い。単体で派手な機能を持つより、横展開や持続化の土台として使われる局面が想定される。公開ディレクトリで入手でき…",
+      "article_path": "articles/0d43cbb2255336e3.html",
+      "original_url": "https://sect.iij.ad.jp/blog/2026/09/pivotpipe/"
+    },
+    {
+      "entry_id": "fca0a3f28a9fb72d",
+      "title": "イギリス政府「パスワード廃止」本格開始",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-14T23:15:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要イギリス政府が、行政手続きでのパスワード依存を減らす方針を本格化させたという内容である。狙いは、使い回しや漏えいに弱い認証を避け、より強い認証方式へ段階的に移行する点にある。攻撃者の視点では、フィッシングや認証情報の再利用を起点にした侵入余地を小さくする効果が期待される一方、移行途中は例外運用や併存環境が残りやすい。影響は政府内だけでなく、委託先や住民…",
+      "article_path": "articles/fca0a3f28a9fb72d.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/15/56236.html"
+    },
+    {
+      "entry_id": "46579bf0c1537b86",
+      "title": "セコムトラスト、10 / 14・15 にWebセミナー開催 ～ 検査成績書や校正証明書などの「電子化と偽造・改ざん対策」解説",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-14T23:10:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要この記事は、セコムトラストが検査成績書や校正証明書などの電子化と、偽造・改ざん対策をテーマにWebセミナーを案内したものに留まる。新たな脆弱性や侵害事案の報告ではなく、文書の真正性をどう担保するかという運用課題の周知に近い。攻撃者視点では、電子化された証憑は改ざんや成りすましの対象になりやすく、承認フローや保管方法に穴があると業務上の信用失墜につながる…",
+      "article_path": "articles/46579bf0c1537b86.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/15/56235.html"
+    },
+    {
+      "entry_id": "5432c846b64ed05e",
+      "title": "日本大学理工学部教職員のアカウントに対し巧妙に偽装されたフィッシングメール、多数の不審メールを送信",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-14T23:05:11+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Phishing",
+      "summary_preview": "概要日本大学理工学部の教職員アカウントを巧妙に偽装したフィッシングメールが起点となり、多数の不審メール送信につながったと報じられている。攻撃者は正規アカウントやそれに近い見た目を悪用し、受信者に警戒されにくい文面で認証情報の窃取や追加の誘導を狙う可能性が高い。もしアカウント乗っ取りが成立していれば、単発の迷惑メール送信にとどまらず、学内外への二次拡散、なり…",
+      "article_path": "articles/5432c846b64ed05e.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/15/56234.html"
+    },
+    {
+      "entry_id": "deb55c720b990f3e",
+      "title": "公益財団法人 九州先端科学技術研究所でメール誤送信、見積書を自治体 ML 宛に送信",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-14T23:05:08+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要公益財団法人 九州先端科学技術研究所で、見積書のメール誤送信が発生し、自治体のメーリングリスト宛に送られた。現時点で見えているのは、外部への情報漏えいリスクを伴う運用事故であり、攻撃による侵害とは限らない点に注意が要る。影響は送付先の構成次第で広がり方が変わり、自治体内の複数担当者に同報されていれば、二次拡散や再転送が起こりやすい。公開情報だけでは、送…",
+      "article_path": "articles/deb55c720b990f3e.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/15/56233.html"
+    },
+    {
+      "entry_id": "50c045f6d908494f",
+      "title": "MAMAMOO JAPAN OFFICIAL FANCLUB「MOOMOO JAPAN」に不正アクセス",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-14T23:05:07+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要MAMAMOO JAPAN OFFICIAL FANCLUB「MOOMOO JAPAN」で不正アクセスが発生し、会員向けサービスに関する情報流出や改ざんの有無が問題になる事案として読む必要がある。現時点の入力だけでは、侵入経路、流出した可能性のある情報、影響範囲は確認できないため、断定は避けるべき局面となる。ファンクラブ系サイトは会員ID、メールアドレ…",
+      "article_path": "articles/50c045f6d908494f.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/15/56232.html"
+    },
+    {
+      "entry_id": "e5e9daff6c29e958",
+      "title": "SCATが利用するクラウドが不正利用、警察に届け 発生した利用料金を巡り事業者と協議",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-14T23:05:05+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Other",
+      "summary_preview": "概要SCATが利用するクラウド環境が不正利用され、警察に届け出たうえで、発生した利用料金の扱いについて事業者と協議している。現時点では、侵入経路、乗っ取られた範囲、外部流出や業務停止の有無は確認できない。こうした事案は、認証情報の漏えい、設定不備、APIキーの露出などからクラウド資源を消費される形で起きやすく、攻撃者は短時間で高額課金や踏み台化を狙う。被害…",
+      "article_path": "articles/e5e9daff6c29e958.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/15/56231.html"
+    },
+    {
+      "entry_id": "a591781947760724",
+      "title": "町職員（57歳・女性）が廃棄対象の公文書等を持ち帰り保管、裏面に大量の小説のコピー",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-14T23:05:03+00:00",
+      "impact_level": "Low",
+      "threat_type": "Other",
+      "summary_preview": "概要町職員が、廃棄対象の公文書等を持ち帰って保管し、その裏面に大量の小説のコピーがあったことが報じられている。直接のサイバー攻撃ではないが、文書の持ち出しと廃棄管理の不備は、情報漏えいと内部統制の破綻を示す。悪用の典型は、機密や個人情報が残る紙文書の不正閲覧、複写、第三者への持ち出しで、電子化前後の境目で起きやすい。影響は単一部署に限られず、住民情報、契約…",
+      "article_path": "articles/a591781947760724.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/15/56230.html"
+    },
+    {
+      "entry_id": "7c49f53c843cd407",
+      "title": "IPA「経営者のためのランサムウェア対策ハンドブック」公開 ～ 脅威に立ち向かうには経営者の関与が不可欠",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-14T23:00:10+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要IPAが経営者向けのランサムウェア対策ハンドブックを公開し、平時からの意思決定と有事の指揮に経営層の関与が必要だと整理した。新たな脆弱性の公表ではなく、組織としての備え方と初動体制を整えるための指針に近い。攻撃者は暗号化だけでなく、情報窃取と公表による脅迫を組み合わせるため、被害は業務停止と信用失墜の両方に広がりやすい。実際の有効性は、バックアップの分…",
+      "article_path": "articles/7c49f53c843cd407.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/15/56229.html"
+    },
+    {
+      "entry_id": "cae5967675cab920",
+      "title": "日本企業はセキュリティの「意思決定」を外部委託 ～ MM総研調査",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-14T23:00:08+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要MM総研の調査として、日本企業ではセキュリティ対策のうち意思決定を社外に委ねる傾向があると報じられた。自社で判断軸を持たず、ベンダー提案や委託先の助言に依存すると、導入の速さは上がっても、優先順位や例外承認の根拠が曖昧になりやすい。結果として、脅威の切り分けや投資配分が属人的になり、事故時に「誰が何を基準に止めるか」が不明瞭になりやすい。攻撃者はこの空…",
+      "article_path": "articles/cae5967675cab920.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/15/56228.html"
+    },
+    {
+      "entry_id": "f624ca9a805e4255",
+      "title": "HENNGE One、AI搭載型営業支援システム「DRIVE SFA」と SSO 連携",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-14T23:00:05+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要HENNGE OneがAI搭載の営業支援システム「DRIVE SFA」とSSO連携したという連携発表で、脆弱性や侵害報告を扱う記事ではない。主眼は、利用者の認証を一元化し、営業系SaaSへの入口管理を整理する点にある。SSOが効いている環境では、認証基盤の設定不備やアカウント乗っ取りが起きた際に、営業情報や顧客情報へ横断的に到達しやすくなる。逆に、連携…",
+      "article_path": "articles/f624ca9a805e4255.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/15/56227.html"
+    },
+    {
+      "entry_id": "c061a182475206db",
+      "title": "臼杵市特設サイト旧ドメインを第三者が取得、当時配布したチラシのQRコードからアクセスしないよう注意呼びかけ",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-14T23:00:03+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Misconfiguration",
+      "summary_preview": "概要臼杵市が過去に使っていた旧ドメインを第三者が取得し、当時配布したチラシに印刷されたQRコードから誘導される先が、現在は市の管理外になっている。行政情報として配布された紙面が残っている場合、利用者は当時の案内を信じてアクセスしてしまうため、なりすましや広告表示、偽の問い合わせ窓口への誘導に悪用される余地がある。直接の侵入やマルウェア配布が確認されたわけで…",
+      "article_path": "articles/c061a182475206db.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/15/56226.html"
+    }
+  ]
+}
