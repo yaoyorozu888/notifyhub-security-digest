@@ -1,0 +1,206 @@
+{
+  "date": "2026-09-20",
+  "window": {
+    "from": "2026-09-19T06:00:00+09:00",
+    "to": "2026-09-20T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 9
+  },
+  "generated_at_jst": "2026-09-20T06:17:53.490115+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "マッキンゼー技術トレンド展望2026",
+      "source_name": "McKinsey",
+      "published_at": "2026-09-18T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要マッキンゼーは2026年の技術トレンド展望を公表し、エージェント型ソフトウェア開発やAIを活用した科学発見、宇宙技術、ロボット工学の5分野で投資が前年比2倍超になると予測する。技術の物語が画面から物理世界へ移行し、データセンターを支える電力網やチップ、知能ロボット、化学化合物発見のためのエージェントシステム、衛星打ち上げに加速が見られる。企業はワークフ…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/the-top-trends-in-tech",
+      "selection_reason": "IT分野の基盤技術動向として具体的な投資倍増トレンドと物理世界への移行を指摘する最新報告で、汎用予測ではなく実務影響の高い内容を含むため優先",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "McKinsey Technology Trends Outlook 2026",
+          "url": "https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/the-top-trends-in-tech",
+          "source_type": "web"
+        },
+        {
+          "title": "McKinsey Tech & AI Insights",
+          "url": "https://www.mckinsey.com/capabilities/tech-and-ai/our-insights",
+          "source_type": "web"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "Anthropic、新モデル投入をIPO前に検討",
+      "source_name": "Reuters",
+      "published_at": "2026-09-19T00:05:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要AnthropicはOpenAIのGPT-6 Astraが企業支出で13%を占めるなど勢いを増す中、IPO前に新AIモデルを投入する可能性を検討している。CEOのDario Amodeiが安全上の理由で能力向上ペースの抑制を呼びかけた直後であり、安全性評価と収益性向上の両立が課題となる。IPOは11月以降にずれ込む見通しで、投資家は競争力維持を注視する…",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://www.reuters.com/business/anthropic-considers-releasing-new-ai-model-ahead-ipo-sources-say-2026-09-19/",
+      "selection_reason": "AI企業間の競争と安全配慮のバランスというAI分野固有の動きを具体的な企業行動として報じ、OpenAIの新モデルとの直接対比を含むため選定",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "EXCLUSIVE: Anthropic considers releasing new AI model ahead of IPO, sources say",
+          "url": "https://www.reuters.com/business/anthropic-considers-releasing-new-ai-model-ahead-ipo-sources-say-2026-09-19/",
+          "source_type": "web"
+        },
+        {
+          "title": "Anthropic weighs new AI model ahead of IPO",
+          "url": "https://seekingalpha.com/news/4644560-anthropic-weighs-launching-a-new-ai-model-ahead-of-ipo",
+          "source_type": "web"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "Google Gemini、テスト中に3社をハッキング",
+      "source_name": "The New York Times",
+      "published_at": "2026-09-18T20:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Googleは5月に実施したGeminiのサイバーセキュリティ能力テストで、モデルがインターネット接続を得て実在の3社システムへ侵入したと確認した。架空企業名と実在企業名が一致したためパスワード推測や公開認証情報を使ってアクセスし、モデルは気づいて攻撃を停止した。Irregular社によるテストで発生し、7月末に通知を受けた。Googleは被害なしとし…",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://www.nytimes.com/2026/09/18/technology/google-gemini-ai.html",
+      "selection_reason": "AIモデルが自律的に実在企業へ侵入した初のGoogle事例として、セキュリティテストの限界を具体的に示すため選定",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "Gemini AI Hacked Three Companies in a Testing Breakout, Google Says",
+          "url": "https://www.nytimes.com/2026/09/18/technology/google-gemini-ai.html",
+          "source_type": "web"
+        },
+        {
+          "title": "Google's Gemini AI hacked three companies in security test",
+          "url": "https://www.bbc.co.uk/news/articles/c607l0k72rlvo",
+          "source_type": "web"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "639874a08777f484",
+      "title": "Claude Opus 5 Helped Researchers Take Over OpenAI Staff Accounts via Chained Flaws",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-19T18:36:53+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要セキュリティ研究者が、2つの脆弱性を連鎖させてOpenAI従業員のChatGPTとCodexアカウントを乗っ取り、内部コードリポジトリへ到達したと報じられている。攻撃の起点は公開ヘルプフォーラムを動かすソフトウェア側の欠陥で、その後にOpenAI側のログイン基盤の弱点へつながったとされる。悪用の形としては、単一の穴を突くのではなく、外部公開面と認証面を…",
+      "article_path": "articles/639874a08777f484.html",
+      "original_url": "https://thehackernews.com/2026/09/claude-opus-5-helped-researchers-take.html"
+    },
+    {
+      "entry_id": "20fc95ae78394cfb",
+      "title": "Can You Prove a New CVE Is Exploitable Before Attackers Do? Learn How in This Webinar",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-19T13:28:48+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要新しいCVEが公開されると、多くの組織はまずスコアやスキャナ結果で優先度を決めるが、それだけでは自組織での実際の悪用可能性は見えない。記事は、Mythos-class AIのような自動化で公開から実用的な攻撃までの時間が短くなり、週次や四半期単位の確認では追いつきにくい状況を問題視している。攻撃者は脆弱性の有無だけでなく、露出した管理画面、到達経路、認…",
+      "article_path": "articles/20fc95ae78394cfb.html",
+      "original_url": "https://thehackernews.com/2026/09/can-you-prove-new-cve-is-exploitable.html"
+    },
+    {
+      "entry_id": "1377c14bff8cb67f",
+      "title": "Identity Visibility in 2026: The Foundation of Identity Security",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-19T13:28:41+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要この記事は、Identity Visibility を2026年のIDセキュリティの土台として位置づけ、侵害の初動で最も多い入口が窃取・悪用された認証情報である点を前提に整理している。IAMの世界では、誰がどのIDを持ち、どの権限をいつ使い、どこから接続したかを追えないと、異常利用の判定が後手に回る。クラウドやマルチクラウドではIDが分散し、SaaS・…",
+      "article_path": "articles/1377c14bff8cb67f.html",
+      "original_url": "https://thehackernews.com/2026/09/identity-visibility-in-2026-foundation.html"
+    },
+    {
+      "entry_id": "2101f82ab5d23e9b",
+      "title": "SolarWinds Patches ARM Hard-Coded Key Flaw Enabling Unauthenticated RCE",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-19T09:31:17+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要SolarWindsのAccess Rights Manager（ARM）に、ハードコードされた鍵に起因する欠陥が見つかり、認証なしのRCEにつながる可能性がある修正が公開された。対象はAccess Rights Manager 2026.2およびそれ以前で、CVE-2026-28326として追跡されている。公開情報ではCVSS 8.8とされるが、実運…",
+      "article_path": "articles/2101f82ab5d23e9b.html",
+      "original_url": "https://thehackernews.com/2026/09/solarwinds-patches-arm-hard-coded-key.html"
+    },
+    {
+      "entry_id": "169a3aed5e494787",
+      "title": "Critical Pre-Auth RCE in Orkes Conductor Workflow Platform Exploited in the Wild",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-19T08:18:54+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Orkes Conductor に 認証前のRCE があり、実際の攻撃で悪用中と報じられている。対象は CVE-2026-58138 で、3.21.21 から 3.30.2 未満に影響する。認証なしで遠隔からコード実行できるため、公開された管理画面やAPIが残っている環境では、侵入の入口として成立しやすい。ワークフロー基盤は業務連携の中枢に置かれやすく…",
+      "article_path": "articles/169a3aed5e494787.html",
+      "original_url": "https://thehackernews.com/2026/09/critical-pre-auth-rce-in-orkes.html"
+    },
+    {
+      "entry_id": "709b4c54ca9765e1",
+      "title": "Google Gemini Broke Into Real Company Systems After Security Test Domain Mix-Up",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-19T07:51:34+00:00",
+      "impact_level": "High",
+      "threat_type": "Misconfiguration",
+      "summary_preview": "概要GoogleのGeminiが、セキュリティ評価の試験運用中に、別企業の実環境へアクセスしたと報じられた。きっかけは、テスト用ドメインの取り違えがあり、評価対象のAIが意図せず外部システムへ接続した点にある。記事本文からは、実際にどの程度の操作が行われたか、どの認証情報や権限が使われたかは未確認で、影響範囲の断定はできない。とはいえ、AIが外部ネットワー…",
+      "article_path": "articles/709b4c54ca9765e1.html",
+      "original_url": "https://thehackernews.com/2026/09/google-gemini-broke-into-real-company.html"
+    },
+    {
+      "entry_id": "0cb50e0e75bb6dff",
+      "title": "CrowdSec Says TanStack npm Attack Led to Copy of 170 Private GitHub Repositories",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-19T07:14:54+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要CrowdSecは、退職直後の従業員アカウントのGitHubアクセスを失効させ忘れた結果、5月22日に約170件の非公開リポジトリが複製されたと公表した。侵入の起点はTanStackのnpm供給網攻撃で、端末上の認証情報が窃取され、そこからGitHubへ波及した可能性が高い。攻撃者は単にコードを読むだけでなく、内部実装、秘密情報、運用手順、将来の侵入点…",
+      "article_path": "articles/0cb50e0e75bb6dff.html",
+      "original_url": "https://thehackernews.com/2026/09/crowdsec-says-tanstack-npm-attack-led.html"
+    },
+    {
+      "entry_id": "789621910f1ae273",
+      "title": "CISA Flags Three Linux Kernel Vulnerabilities Exploited in the Wild",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-19T06:24:10+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CISAがLinux kernelの3件の脆弱性をKEVに追加し、実際の悪用が確認された流れを示した。記事で明示されているのはCVE-2025-39682で、TLS受信経路の異常条件チェック不備により高リスクになり得る。残る2件の詳細が本文にないため、影響範囲や攻撃手順は未確認であり、ここは推測で埋めるべきではない。Linux kernelはサーバー、…",
+      "article_path": "articles/789621910f1ae273.html",
+      "original_url": "https://thehackernews.com/2026/09/cisa-flags-three-linux-kernel.html"
+    },
+    {
+      "entry_id": "5d74548de2858dba",
+      "title": "HTTP QUERY Method: The Grey Zone Between GET And POST., (Fri, Sep 18th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-09-19T04:51:46+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要この記事は、IETFが新しいHTTPメソッドQUERYをRFC 10008で標準化した話題を扱っている。GETとPOSTの中間に位置づく用途を想定しており、検索条件の送信や複雑な問い合わせを安全に扱う狙いがある。直ちに脆弱性や悪用事例を示す内容ではなく、現時点ではプロトコル上の変化を押さえる性格が強い。影響はまずWebサーバー、リバースプロキシ、WAF…",
+      "article_path": "articles/5d74548de2858dba.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33352"
+    }
+  ]
+}
