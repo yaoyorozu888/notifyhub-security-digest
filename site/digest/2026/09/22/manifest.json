@@ -1,0 +1,242 @@
+{
+  "date": "2026-09-22",
+  "window": {
+    "from": "2026-09-21T06:00:00+09:00",
+    "to": "2026-09-22T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 12
+  },
+  "generated_at_jst": "2026-09-22T06:21:15.148906+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "TableauがAI分析ツールを強化",
+      "source_name": "TechTarget",
+      "published_at": "2026-09-21T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要TableauがAIを活用した分析機能を強化し、自然言語対応のアプリ開発ツールを追加した。Salesforceとの統合により差別化を図る。AIツールの信頼性は基盤データの質に依存するため、データガバナンスの重要性が増す。企業はこれらの更新を活用し、分析ワークフローを効率化できる。",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://www.techtarget.com/data-technologies/info/news",
+      "selection_reason": "IT分野の具体的な製品更新として、AI分析プラットフォームの進化を報じ、企業の実務判断に直結する新規情報を提供。他の一般トレンド予測と異なり、即時適用可能な機能追加を強調。",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "Evolving Tableau touts tools to fuel AI-powered analytics",
+          "url": "https://www.techtarget.com/data-technologies/info/news",
+          "source_type": "news"
+        },
+        {
+          "title": "Successful AI deployment rests on strong data foundation",
+          "url": "https://www.techtarget.com/data-technologies/info/news",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "AlibabaがQwen Image 2.1を公開",
+      "source_name": "Get Insanely Good at AI",
+      "published_at": "2026-09-21T15:50:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要Alibabaが7BパラメータのQwen Image 2.1をオープンウェイトで公開した。画像生成と編集を統合し、ネイティブRGBA透明度出力や10枚の参照画像対応を実現する。消費者GPUで動作し、編集精度が向上する。開発者はこれを基にカスタムアプリケーションを構築可能だ。",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://getaibook.com/news/",
+      "selection_reason": "AI分野の具体的なモデルリリースとして、画像生成・編集機能の進化を報じ、開発者向け実務影響が明確。他の安全議論や一般予測と異なり、即時利用可能なオープンウェイトモデルを優先。",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "Qwen Image 2.1 Ships Native Transparency and 10-Reference Editing in a 7B Open-Weights Model",
+          "url": "https://getaibook.com/news/",
+          "source_type": "news"
+        },
+        {
+          "title": "AI model release OR new AI paper OR open source AI launch last 24 hours",
+          "url": "https://www.google.com/search?as_qdr=d&q=AI+model+release+OR+new+AI+paper+OR+open+source+AI+launch+last+24+hours",
+          "source_type": "web"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "CISAがLinuxカーネル脆弱性を警告",
+      "source_name": "BleepingComputer",
+      "published_at": "2026-09-21T16:12:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CISAが3件のLinuxカーネル脆弱性をKEVカタログに追加し、活発な悪用を確認した。DoSやメモリ改ざんを引き起こす可能性がある。Red Hatも高リスクと警告する。管理者はパッチ適用を優先し、影響範囲を調査する必要がある。",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://www.bleepingcomputer.com/",
+      "selection_reason": "Cybersecurity分野の公式警告として、活発に悪用されるLinuxカーネル脆弱性を報じ、システム管理者の即時対応を促す具体的事例。他の一般インシデントと異なり、KEVカタログ追加という公式裏付けを優先。",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "CISA alerts of active exploitation of three Linux kernel flaws",
+          "url": "https://www.bleepingcomputer.com/",
+          "source_type": "news"
+        },
+        {
+          "title": "CISA adds three Linux kernel vulnerabilities to the KEV catalog",
+          "url": "https://cybersecurefox.com/en/cybersecurity-news/",
+          "source_type": "news"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "a50e0bd5643fde21",
+      "title": "CVE-2026-7273 Zyxel GS1900 Series Switches Stack-Based Buffer Overflow Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-09-21T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CISA KEV に CVE-2026-7273 が載ったことで、Zyxel GS1900 Series Switches のスタックベースのバッファオーバーフローが、単なる脆弱性ではなく実際に悪用され得る事案として扱う必要が出た。詳細な攻撃条件は入力情報だけでは確認できないが、スイッチ管理面への到達や認証前到達が成立するなら、機器侵害から設定改変、通…",
+      "article_path": "articles/a50e0bd5643fde21.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "f060149c4f45b508",
+      "title": "Fake LastPass Authenticator Installer Abuses Microsoft-Signed Driver to Kill Antivirus and EDR",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-21T17:31:01+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要GitHub上で配布された 偽のLastPass Authenticatorインストーラ に、Microsoftの署名付きドライバを悪用して AV/EDRを停止 する仕掛けが含まれていた。利用者が実行すると、先に防御機能を落としたうえで後続の パスワード窃取 を通しやすくする流れになっている。攻撃の入口はマルウェア配布というより、正規ソフトを装った ソ…",
+      "article_path": "articles/f060149c4f45b508.html",
+      "original_url": "https://thehackernews.com/2026/09/fake-lastpass-authenticator-installer.html"
+    },
+    {
+      "entry_id": "55691cb2af22761e",
+      "title": "Contagious Interview Campaign Compromises 30,000 Devices, Steals $10.71M in Crypto",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-21T17:19:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要この件は、Contagious Interview と呼ばれる採用偽装型の攻撃活動により、少なくとも30,000台の端末が侵害され、7,000件超の暗号資産ウォレットから資金または認証情報が奪われたという報告である。攻撃者は求職者や専門職を装って接触し、面接や評価を口実に悪性コードの実行や情報入力を誘導する流れを取る。影響は個人端末や業務端末にとどまら…",
+      "article_path": "articles/55691cb2af22761e.html",
+      "original_url": "https://thehackernews.com/2026/09/contagious-interview-campaign.html"
+    },
+    {
+      "entry_id": "f685a4d713133daf",
+      "title": "Google Fined €403 Million Over GDPR Violations Tied to Location Data",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-21T16:57:31+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要Googleが、位置情報データの取り扱いをめぐるGDPR違反で€403 millionの制裁を受けた。対象は2018年5月から2020年2月までの三つの機能における処理で、IrelandのData Protection Commissionが是正も命じている。問題の本質は侵入ではなく、取得目的・同意・保存/利用の設計不備にある。攻撃者が直接悪用する類の…",
+      "article_path": "articles/f685a4d713133daf.html",
+      "original_url": "https://thehackernews.com/2026/09/google-fined-403-million-over-gdpr.html"
+    },
+    {
+      "entry_id": "dcd53e667183fb5e",
+      "title": "⚡ Weekly Recap: Cisco 0-Day, AI Agent RCE, ClickFix Attacks, ClickFix Surge, and Browser Hijacks",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-21T14:24:13+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要今週は、Ciscoのゼロデイ、AIエージェントのRCE、ClickFix攻撃、ブラウザ乗っ取りといった複数の話題が、実運用では一つの警戒線に集約される状況になった。共通点は、利用者が日常的に信頼しているブラウザ、プラグイン、パッケージ、ログイン画面が攻撃の入口になっている点にある。悪用の流れは、偽の修正や誘導から始まり、端末上で任意コード実行や認証情報…",
+      "article_path": "articles/dcd53e667183fb5e.html",
+      "original_url": "https://thehackernews.com/2026/09/weekly-recap-cisco-0-day-ai-agent-rce.html"
+    },
+    {
+      "entry_id": "a297fa315d1fd01c",
+      "title": "TASK#STOMP PowerShell Backdoor Steals Documents, Wi-Fi Passwords, and Clipboard Data",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-21T14:15:40+00:00",
+      "impact_level": "High",
+      "threat_type": "Unknown",
+      "summary_preview": "概要TASK#STOMP と呼ばれるキャンペーンで、PowerShell ベースのバックドアが配布され、侵害端末から文書、Wi-Fi パスワード、クリップボード内容、画面情報を継続的に吸い上げると報告された。ファイルシステムを常時監視し、新規作成されたファイルも自動で回収するため、端末内の業務情報が短時間で外部流出する恐れがある。さらに、任意の追加操作を受…",
+      "article_path": "articles/a297fa315d1fd01c.html",
+      "original_url": "https://thehackernews.com/2026/09/taskstomp-powershell-backdoor-steals.html"
+    },
+    {
+      "entry_id": "fffe2c0b80658614",
+      "title": "ClickFix Lures Deploy ChainScript RAT Using Polygon to Rotate C2 Infrastructure",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-21T08:39:38+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要本件は、ClickFix型の誘導を使って未確認のRAT「ChainScript」を配布する活動を扱う。見かけ上はSpotify、Zoom Workplace、Microsoft Teamsなどの正規ソフトを装うが、実体は端末へ侵入し遠隔操作を可能にするための導線になる。複数のビルド名を使い分け、Polygonを用いてC2基盤を切り替えるため、単一の遮断…",
+      "article_path": "articles/fffe2c0b80658614.html",
+      "original_url": "https://thehackernews.com/2026/09/clickfix-lures-deploy-chainscript-rat.html"
+    },
+    {
+      "entry_id": "3205b2be0939d23d",
+      "title": "Jade Sleet Linked to Indian IT Provider Breach With FLATROOF and ROOFDECK Backdoors",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-21T06:06:44+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要北朝鮮系とされるJade Sleetが、インドのITサービス事業者への侵害に関与したと報じられた。攻撃では、開発者やサービス提供者を足場にして標的組織へ入り込む手口が続いており、今回も同じ発想でFLATROOFとROOFDECKのバックドアが使われた可能性がある。狙いは単一組織の情報窃取にとどまらず、委託先や開発環境を踏み台にした横展開と持続的な潜伏に…",
+      "article_path": "articles/3205b2be0939d23d.html",
+      "original_url": "https://thehackernews.com/2026/09/jade-sleet-linked-to-indian-it-provider.html"
+    },
+    {
+      "entry_id": "e700b8f5cc31b74e",
+      "title": "TerminalFix: PNG Steganography, (Mon, Sep 21st)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-09-21T10:33:53+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Malware",
+      "summary_preview": "概要この記事は、PNG画像にステガノグラフィを使って不正なデータを隠し、多段階の侵入の中で逆向きトンネルへつなぐ手口を取り上げている。見た目は画像でも、実際には追加の設定やペイロードが埋め込まれているため、単純な拡張子判定や添付ファイルの可視確認だけでは見落としやすい。攻撃が成立すると、外部から内部への逆接続を維持され、初期侵入後の制御や横展開の足場になり…",
+      "article_path": "articles/e700b8f5cc31b74e.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33318"
+    },
+    {
+      "entry_id": "283d3efc58c9336b",
+      "title": "ISC Stormcast For Monday, September 21st, 2026 https://isc.sans.edu/podcastdetail/10102, (Mon, Sep 21st)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-09-21T05:15:12+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要SANS ISC の Stormcast 配信であり、個別の脆弱性告知や障害報告を直接示す記事ではなく、当日の観測や注意点を音声で整理した回として扱うのが妥当である。元情報だけでは、何の脆弱性や攻撃手法を扱ったかは確認できず、悪用の成立条件も不明である。したがって、現時点で自組織への影響を断定するより、該当回で言及された製品名、CVE、露出サービス、観…",
+      "article_path": "articles/283d3efc58c9336b.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33354"
+    },
+    {
+      "entry_id": "8d280edbd5b11170",
+      "title": "From Love Letters to AI Agents: Cybersecurity’s Evolution",
+      "source_name": "Cisco Security Blog",
+      "category": "reporting",
+      "published_at": "2026-09-21T15:00:07+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要本稿は、自律的に行動するAIエージェントが業務に入り込むことで、攻撃対象が人だけでなくAIの判断経路や連携先まで広がる点を扱う。Ciscoのセキュリティ機能と「4本柱」の考え方を通じて、AI利用時の統制、可視化、検知、保護をどう組み合わせるかを整理している。悪用の中心は、エージェントに与えた権限や接続先を踏み台にした情報持ち出し、誤操作、なりすましの連…",
+      "article_path": "articles/8d280edbd5b11170.html",
+      "original_url": "https://blogs.cisco.com/security/from-love-letters-to-ai-agents-cybersecuritys-evolution/"
+    },
+    {
+      "entry_id": "ea280ba8a79d6173",
+      "title": "From Exposure to Lockdown: How AWS Neutralizes Compromised IAM Credentials through Managed Policies",
+      "source_name": "Unit 42",
+      "category": "reporting",
+      "published_at": "2026-09-21T10:00:13+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Credential Theft",
+      "summary_preview": "概要AWSの漏えいしたIAM認証情報に対し、管理ポリシーで権限を絞り込んで封じ込める考え方を解説した記事である。焦点は、GitHubのシークレットスキャンで露出を早期に見つけ、CloudTrailで実際の利用を追跡し、権限停止や限定化に結びつける運用にある。攻撃者は流出したアクセスキーを使って即座にAPIを叩き、権限の高い操作や横展開を狙うため、発見の遅れ…",
+      "article_path": "articles/ea280ba8a79d6173.html",
+      "original_url": "https://unit42.paloaltonetworks.com/detecting-exposed-aws-iam-credentials/"
+    }
+  ]
+}
