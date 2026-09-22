@@ -1,0 +1,391 @@
+{
+  "date": "2026-09-23",
+  "window": {
+    "from": "2026-09-22T06:00:00+09:00",
+    "to": "2026-09-23T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 24
+  },
+  "generated_at_jst": "2026-09-23T06:21:29.167177+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "Gartner CIO向け2026年技術トレンド、AIネイティブ開発プラットフォームが中小チームを強化",
+      "source_name": "CIO Dive",
+      "published_at": "2026-09-22T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要Gartnerは2026年向けCIOトレンドとして、AIネイティブ開発プラットフォームの普及を挙げ、生成AIツールにより開発チームが小型化しつつ生産性を維持または向上すると予測する。AIスーパーコンピューティングプラットフォームの構築競争も加速し、専用計算資源の需要がCIOのインフラ戦略に直結する。多エージェントシステムや目的別コンピューティングの展開…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://www.ciodive.com/news/gartner-strategic-technology-trends-2026/803413/",
+      "selection_reason": "9月22日発表のGartner CIOトレンド記事が新規性高く、AIネイティブ開発やAIスーパーコンピューティングなどIT実務に直結する具体的な波及を指摘。他の年次予測と異なり、開発チーム規模縮小予測など意思決定影響が明確。",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "5 CIO trends to watch in 2026: Gartner",
+          "url": "https://www.ciodive.com/news/gartner-strategic-technology-trends-2026/803413/",
+          "source_type": "news"
+        },
+        {
+          "title": "Top Strategic Technology Trends for 2026 | Gartner",
+          "url": "https://www.gartner.com/en/articles/top-technology-trends-2026",
+          "source_type": "official"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "Anthropic・OpenAI・xAIが新モデルを相次ぎリリース、コスト低減と性能向上を競う",
+      "source_name": "Digi Bites / AI Weekly",
+      "published_at": "2026-09-22T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要AnthropicはClaude Opus 5.5を発表、前世代比40%低コストで同等性能を実現した。OpenAIはGPT-6 SolとLunaを投入し、API価格を50%引き下げた。xAIはGrok 4.7をリリースし、コーディング特化で大規模コンテキストを活かした。企業はこれら新モデルを評価し、コスト効率の高い選択肢をAPI戦略に組み込む動きが加速…",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://digibites.me/news/2026-09-22.html",
+      "selection_reason": "9月22日のモデルリリースが集中し、Claude Opus 5.5、GPT-6 Sol/Luna、Grok 4.7の具体的な価格・性能比較が実務判断に寄与。政策や研究動向と異なり、即時利用可能な製品情報として新規性が高い。",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "Top 8 Global AI News — September 22, 2026",
+          "url": "https://digibites.me/news/2026-09-22.html",
+          "source_type": "news"
+        },
+        {
+          "title": "AI News for September 22, 2026",
+          "url": "https://aiweekly.co/ai-news-today/edition/2026-09-22",
+          "source_type": "news"
+        },
+        {
+          "title": "Anthropic unveils Claude Opus 5.5",
+          "url": "https://www.bnnbloomberg.ca/business/artificial-intelligence/",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "CISAがZyxelスイッチ脆弱性の即時パッチを連邦機関に指示、積極悪用を確認",
+      "source_name": "CISO Brief / BleepingComputer",
+      "published_at": "2026-09-22T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CISAはZyxel GS1900シリーズスイッチの深刻な脆弱性が野外で悪用されていると警告し、連邦機関に即時パッチ適用を命じた。中国系脅威アクターによるデータ窃取事例も報告されている。ネットワーク機器の管理者は脆弱性スキャンとアップデートを優先し、OT/ICS環境への波及を防ぐ対策が求められる。",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://cisobrief.com/",
+      "selection_reason": "9月22日のCISA指令が最新で、具体的な脆弱性悪用事例とパッチ適用指示を含む。AIトレンドやIT予測とは異なり、セキュリティ実務に直結する規制対応として優先度が高い。",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "CISO Brief - Daily cyber & Tech News",
+          "url": "https://cisobrief.com/",
+          "source_type": "news"
+        },
+        {
+          "title": "BleepingComputer Latest News",
+          "url": "https://www.bleepingcomputer.com/",
+          "source_type": "news"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "6e1342348d4accdc",
+      "title": "CVE-2026-93952 Arista VeloCloud Orchestrator Improper Input Validation Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-09-22T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CVE-2026-93952 は、Arista VeloCloud Orchestrator の入力検証不備に関する脆弱性で、CISA KEV に掲載されている点が重要になる。KEV 掲載は、単なる理論上の欠陥ではなく、実際の悪用可能性が高いことを示すため、運用上は「パッチ待ち」より先に露出確認と封じ込めを考えるべき局面になる。攻撃成立の前提は製品の公…",
+      "article_path": "articles/6e1342348d4accdc.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "421e9129b2aed79a",
+      "title": "CVE-2026-94127 F5 BIG-IP APM Heap-based Buffer Overflow Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-09-22T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CVE-2026-94127 は、F5 BIG-IP APM に存在する ヒープベースのバッファオーバーフロー で、CISA KEV に載っている点が重要になる。認証前に到達できる条件があるなら、外部公開された装置を起点に RCE やサービス停止へつながる余地が生じる。APM はリモートアクセスの入口として使われやすく、侵入の足場になれば認証情報の窃取…",
+      "article_path": "articles/421e9129b2aed79a.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "440baa50dfc2a34a",
+      "title": "CVE-2026-93616 Check Point Multiple Products Path Traversal Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-09-22T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CISA KEV に CVE-2026-93616 が掲載され、Check Point の複数製品にある パストラバーサル の悪用可能性が公に示された。認証や操作の前提がどこまで必要かは入力情報だけでは未確認だが、ファイル参照の制御不備で設定情報や機密データに触れられるなら、単発の情報漏えいにとどまらず、認証情報の取得や後続侵害の起点になる。製品が境界…",
+      "article_path": "articles/440baa50dfc2a34a.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "988e4df10488a6f8",
+      "title": "CVE-2026-85102 Check Point Multiple Products Improper Certificate Validation Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-09-22T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CVE-2026-85102 は、Check Point の複数製品にある証明書検証不備が CISA KEV に載った事例で、少なくとも悪用が現実に起きている可能性が高い。証明書の検証が甘いと、正規の通信先を装う中間者や偽装サーバーを受け入れ、認証や更新、管理通信の信頼境界が崩れる恐れがある。攻撃が成立すると、単一端末の問題にとどまらず、管理系経路や広…",
+      "article_path": "articles/988e4df10488a6f8.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "c575448830e4d6b3",
+      "title": "Check Point Warns of Management Server Zero-Day Exploited in Targeted Attacks",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-22T18:29:39+00:00",
+      "impact_level": "High",
+      "threat_type": "Zero-day",
+      "summary_preview": "概要Check Point の Security Management Server に、認証前でスクリプト実行が可能なゼロデイ脆弱性 CVE-2026-93616 が見つかり、少数の標的型攻撃ですでに悪用されたとされる。管理サーバーはファイアウォール設定やポリシー配布の中枢に当たるため、侵入されると単一装置の被害で終わらず、配下の境界防御全体に影響が及ぶ…",
+      "article_path": "articles/c575448830e4d6b3.html",
+      "original_url": "https://thehackernews.com/2026/09/check-point-warns-of-management-server.html"
+    },
+    {
+      "entry_id": "a52c46935bb599f4",
+      "title": "WordPress Issues Patch for Critical Flaw That Can Enable Code Execution on Some Servers",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-22T18:03:10+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要WordPress のコアにある 重大な欠陥が修正された。認証なしの攻撃者が、テーマ外の PHP ファイルを読み込ませられるため、環境によっては 任意コード実行 まで到達する可能性がある。影響は WordPress 7.1.2 で修正され、現行サポートの各系統と 4.7 までさかのぼる。全てのサーバで即 RCE になるわけではない一方、サーバ設定やプラ…",
+      "article_path": "articles/a52c46935bb599f4.html",
+      "original_url": "https://thehackernews.com/2026/09/wordpress-issues-patch-for-critical.html"
+    },
+    {
+      "entry_id": "41147a5269a9fe93",
+      "title": "Malicious npm Package Poses as Twilio Bug-Bounty Probe, Can Exfiltrate Credentials",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-22T17:58:15+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要npm上で、Twilio連携を調べるセキュリティ検証用ツールを装った tw-pkgprobe-7731 という不正パッケージが見つかった。開発者向けの依存関係として入り込みやすく、実行されると機密情報の収集を試みる。配布経路がnpmであるため、社内のビルド環境やCI/CDに取り込まれると、ソース管理外から侵入する形になりやすい。被害はTwilio利用者…",
+      "article_path": "articles/41147a5269a9fe93.html",
+      "original_url": "https://thehackernews.com/2026/09/malicious-npm-package-poses-as-twilio.html"
+    },
+    {
+      "entry_id": "49fa6b1a8e74dd00",
+      "title": "Microsoft Takes Down EvilTokens Device-Code Phishing Service Tied to 12,000 Inbox Compromises",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-22T17:03:31+00:00",
+      "impact_level": "High",
+      "threat_type": "Phishing",
+      "summary_preview": "概要Microsoft が、EvilTokens と呼ばれる device code phishing サービスを差し止めた。報道によれば、このサービスは攻撃の各段階で AI を使い、12,000 件の受信箱侵害に結び付いたとされる。利用者は正規のデバイス認証画面に見せかけた誘導で認証情報やトークンを奪われ、メールやクラウド資産への継続的なアクセスを得られ…",
+      "article_path": "articles/49fa6b1a8e74dd00.html",
+      "original_url": "https://thehackernews.com/2026/09/microsoft-takes-down-eviltokens-device.html"
+    },
+    {
+      "entry_id": "515ae90d11b18c1c",
+      "title": "Critical Bifrost AI Gateway Flaw Lets Attackers Run Commands Without Credentials",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-22T16:41:12+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Bifrost の HTTP transport に、認証なしの単一 HTTP リクエストだけで 任意コマンド実行 に至る重大欠陥が見つかった。対象は 2.1.0 未満の全版で、AI プロバイダへの中継点として置かれる性質上、侵入されるとゲートウェイ経由の通信制御や設定情報に波及しやすい。攻撃者は外部公開されている管理面や到達可能なゲートウェイを起点に…",
+      "article_path": "articles/515ae90d11b18c1c.html",
+      "original_url": "https://thehackernews.com/2026/09/critical-bifrost-ai-gateway-flaw-lets.html"
+    },
+    {
+      "entry_id": "da9d64d539c09d22",
+      "title": "Researcher Drops BigDiskBuster Zero-Day PoC That Blocks Microsoft Defender Updates",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-22T16:14:04+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Exploit",
+      "summary_preview": "概要Microsoft Defender の 更新処理を妨害する PoC が公開され、ディスク領域を意図的に枯渇させることで、プラットフォーム更新やシグネチャ更新を止める手口が示された。攻撃自体は認証前の遠隔侵入とは限らず、まずは対象端末で容量を圧迫できる立場が前提になる可能性が高いが、更新停止が続けば検知力の低下につながる。単体の障害に見えても、Defe…",
+      "article_path": "articles/da9d64d539c09d22.html",
+      "original_url": "https://thehackernews.com/2026/09/researcher-drops-bigdiskbuster-zero-day.html"
+    },
+    {
+      "entry_id": "ca347187998a1fa2",
+      "title": "AI Agents Are Rewriting the Rules of Lateral Movement",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-22T12:30:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Other",
+      "summary_preview": "概要この記事は、AIエージェントが既存の権限を前提に、想定外の手順や経路を自律的に試すことで、横展開の見え方が変わる点を論じている。従来の「このIDに権限が多すぎるか」という確認だけでは足りず、エージェントがどの経路を発見し得るかを評価対象に含める必要がある。悪用の形としては、正規の認証情報や接続先を与えられたエージェントが、業務達成のために別のシステムや…",
+      "article_path": "articles/ca347187998a1fa2.html",
+      "original_url": "https://thehackernews.com/2026/09/ai-agents-are-rewriting-rules-of.html"
+    },
+    {
+      "entry_id": "0646a4d176503f8b",
+      "title": "New CVSS 10.0 VeloCloud Orchestrator Flaw Actively Exploited in Certificate-Based Setups",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-22T12:29:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Aristaは、オンプレミスの VeloCloud Orchestrator (VCO) に存在する新たな脆弱性 CVE-2026-93952 が、実際に悪用されていると公表した。記事の範囲では、影響を受けるのは Edge を証明書で認証する構成 のオーケストレータに限られる。攻撃者はログイン権限を持たずに内部機能へ到達し、VCO ホスト側へ影響を与え…",
+      "article_path": "articles/0646a4d176503f8b.html",
+      "original_url": "https://thehackernews.com/2026/09/new-cvss-100-velocloud-orchestrator.html"
+    },
+    {
+      "entry_id": "d5b024df2a19bcc8",
+      "title": "DORA Year Two: Can Your SOC Actually See the Attack?",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-22T11:45:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要この記事は、EUのDORA施行から2年目に入り、金融機関のSOCが実際に攻撃を見抜けるかという運用面の難しさを扱う。初年度はガバナンス整備や委託先管理、契約条項の見直し、インシデント報告手順の文書化が中心だったが、次の段階では検知と対応が機能するかが問われる。攻撃者は文書上の整備を避けて、監視の薄い時間帯や委託先経由の経路を狙うため、見逃しが続くと横展…",
+      "article_path": "articles/d5b024df2a19bcc8.html",
+      "original_url": "https://thehackernews.com/2026/09/dora-year-two-can-your-soc-actually-see.html"
+    },
+    {
+      "entry_id": "df773248c9bd3d28",
+      "title": "New Linux Kernel Flaw Gives ARM64 KVM Guests Read-Write Access to Host Memory",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-22T11:38:40+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要LinuxカーネルのKVM仮想化処理に、ARM64環境で発生する欠陥が見つかった。入れ子仮想化が有効なホストでは、解放済みのホストメモリがゲストVMから参照可能になり、ゲストからホストへ脱出できる余地が生じる。悪用できれば、ゲスト内の侵害を起点にホストカーネル領域へread/writeアクセスが可能となり、同一ホスト上の他VMや管理基盤にも影響が及ぶ。…",
+      "article_path": "articles/df773248c9bd3d28.html",
+      "original_url": "https://thehackernews.com/2026/09/new-linux-kernel-flaw-gives-arm64-kvm.html"
+    },
+    {
+      "entry_id": "b18f63377695dd2d",
+      "title": "SharePoint Flaw Initially Listed as Spoofing by Microsoft Enables Authenticated RCE",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-22T11:17:41+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Microsoft が当初はなりすましとして扱った SharePoint Server の欠陥が、実際には認証済みのリモートコード実行につながると報じられた。対象は SharePoint Server 2016、2019、Subscription Edition で、CVE-2026-65660 として整理されている。攻撃が成立すると、既存の有効アカウ…",
+      "article_path": "articles/b18f63377695dd2d.html",
+      "original_url": "https://thehackernews.com/2026/09/sharepoint-flaw-initially-listed-as.html"
+    },
+    {
+      "entry_id": "34ce2f2a32e29917",
+      "title": "Malicious npm Package indexed-btree Hid Its Loader in Runtime Code Before Removal",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-22T09:38:18+00:00",
+      "impact_level": "High",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要npm上で配布された indexed-btree が、正規の sorted-btree に似せた名称で利用者を誘導しつつ、ライフサイクルスクリプトを使わずにアプリケーションコード内部へローダーを隠していたことが報告された。これにより、従来のインストール時監視やスクリプト実行制御をすり抜ける狙いが見える。悪用の実体はパッケージ利用時にコードが読み込まれる…",
+      "article_path": "articles/34ce2f2a32e29917.html",
+      "original_url": "https://thehackernews.com/2026/09/malicious-npm-package-indexed-btree-hid.html"
+    },
+    {
+      "entry_id": "1189db7cb5daa115",
+      "title": "SideCopy Broadens India Targeting to Academia With ReverseRAT Spear-Phishing",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-22T07:52:03+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要SideCopy が インドの学術機関を狙う 標的型メール攻撃 を用い、従来の政府系中心の狙いから対象を広げたと報じられている。初期侵入では mshta.exe の悪用が使われ、悪意あるスクリプトを実行して通常の防御や監視をすり抜ける流れが想定される。侵害が成立すると、ReverseRAT のような遠隔操作系マルウェアにより端末の制御や情報窃取へつなが…",
+      "article_path": "articles/1189db7cb5daa115.html",
+      "original_url": "https://thehackernews.com/2026/09/sidecopy-broadens-india-targeting-to.html"
+    },
+    {
+      "entry_id": "aa30be1bfa2dc121",
+      "title": "One Hidden Meta Muse Setting Could Let Attackers Turn the AI Assistant Into a Backdoor",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-22T06:33:57+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Malware",
+      "summary_preview": "概要この記事は、Mac上で既に動作しているマルウェアが、MetaのAIアシスタント「Muse」の隠し設定を改変し、利用者が与えた広い権限を悪用できるという指摘を扱う。攻撃はアシスタント自体の脆弱性を突くというより、音声入力の転送先をすり替えて、ユーザーの発話を攻撃者側へ送る形で成立する。結果として、アシスタント経由で扱える情報や操作が、利用者の認識しないま…",
+      "article_path": "articles/aa30be1bfa2dc121.html",
+      "original_url": "https://thehackernews.com/2026/09/one-hidden-meta-muse-setting-could-let.html"
+    },
+    {
+      "entry_id": "9f5ec8e03e051bbd",
+      "title": "WordPress Comment2Shell Flaw Can Turn Anonymous Comment XSS Into RCE via Admin Session",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-22T06:03:14+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要WordPress本体の不具合により、匿名コメントだけでページへ隠しスクリプトを埋め込み、後で管理者が同じページを開くとサーバー上でコード実行につながる可能性が示された。これが成立すると、入口は閲覧系のXSSに見えても、実際には管理者セッション経由のRCEへ化ける点が厄介である。影響は単一サイトの改ざんにとどまらず、同一管理者が複数サイトを扱う運用では…",
+      "article_path": "articles/9f5ec8e03e051bbd.html",
+      "original_url": "https://thehackernews.com/2026/09/wordpress-comment2shell-flaw-can-turn.html"
+    },
+    {
+      "entry_id": "a0957d2589098dff",
+      "title": "Zyxel and Veeam Flaws Under Active Exploitation With Command and SYSTEM Access",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-22T05:31:59+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CISA が KEV に追加したことで、Zyxel GS1900 系スイッチの欠陥が、理論上の脆弱性ではなく実際に悪用された事例として扱われる段階に入った。記事断片からは、CVE-2026-7273 は スタックベースのバッファオーバーフローで、任意コード実行に進み得る流れが読み取れる。Command と SYSTEM アクセスが示されているなら、単な…",
+      "article_path": "articles/a0957d2589098dff.html",
+      "original_url": "https://thehackernews.com/2026/09/zyxel-and-veeam-flaws-under-active.html"
+    },
+    {
+      "entry_id": "09bfa2d4978ab677",
+      "title": "The Truth about GET and HTTP Standards, (Tue, Sep 22nd)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-09-22T19:06:15+00:00",
+      "impact_level": "Low",
+      "threat_type": "Advisory",
+      "summary_preview": "概要この記事は、HTTPのGETと新たに話題になったQuery系の扱いを整理し、「GETにボディを載せる」発想が標準の期待と食い違う点を指摘している。GETは本来、取得対象をURL側で表現する前提が強く、途中のプロキシ、キャッシュ、WAF、アプリ実装でボディが無視されたり解釈が分かれたりする。攻撃者から見ると、この曖昧さは検知回避や解釈差の悪用に使える余地…",
+      "article_path": "articles/09bfa2d4978ab677.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33358"
+    },
+    {
+      "entry_id": "0f07fdb94e69c6e1",
+      "title": "LausivLoader analysis, or how to pass data between malware stages, (Thu, Sep 17th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-09-22T13:10:20+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Malware",
+      "summary_preview": "概要8月末に、ある組織のメールゲートウェイでマルスパムが隔離された。表面上は見積依頼を装う平凡な内容だったが、添付や後続処理を通じてマルウェアの段階間でデータを受け渡す仕組みが分析対象となっている。ここで焦点になるのは、単発の添付ファイルそのものよりも、感染後に次段のペイロードへどう情報を渡すかという設計である。これが成立すると、初期侵入と本体実行を分離で…",
+      "article_path": "articles/0f07fdb94e69c6e1.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33348"
+    },
+    {
+      "entry_id": "78f39b4d54bbe942",
+      "title": "ISC Stormcast For Tuesday, September 22nd, 2026 https://isc.sans.edu/podcastdetail/10104, (Tue, Sep 22nd)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-09-22T03:50:10+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要SANS ISC の Stormcast 配信案内であり、新たな脆弱性の警告や実害のある侵入事例を直接示す記事ではない。現時点で入力からは、個別製品への悪用や攻撃キャンペーンの詳細は確認できず、技術的な新規性も特定できない。したがって、CSIRTとしては内容そのものよりも、同配信で取り上げられる話題が自組織の資産や露出条件に当たるかを確認する姿勢が重要…",
+      "article_path": "articles/78f39b4d54bbe942.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33356"
+    },
+    {
+      "entry_id": "52ec4cddea2d1d2b",
+      "title": "VU#738147: Vendor-signed UEFI Shell applications allow Secure Boot bypass",
+      "source_name": "CERT/CC",
+      "category": "reporting",
+      "published_at": "2026-09-22T18:13:12+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要署名済みのUEFI Shellアプリケーションを悪用し、Secure Bootの検証を迂回できる問題が報告された。対象は、ベンダー証明書をDBで信頼している、または該当バイナリのハッシュを許可している端末となる。攻撃者はmmやdmpstoreのようなメモリ操作機能を足がかりに、起動前の状態を書き換えて未署名のUEFIコードを動かせる。成立には物理アクセ…",
+      "article_path": "articles/52ec4cddea2d1d2b.html",
+      "original_url": "https://kb.cert.org/vuls/id/738147"
+    }
+  ]
+}
