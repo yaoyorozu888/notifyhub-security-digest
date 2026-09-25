@@ -1,0 +1,410 @@
+{
+  "date": "2026-09-26",
+  "window": {
+    "from": "2026-09-25T06:00:00+09:00",
+    "to": "2026-09-26T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 26
+  },
+  "generated_at_jst": "2026-09-26T06:22:12.926377+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "Google、Private AI Compute向けサーバー側プライベートメモリを計画",
+      "source_name": "SiliconReport",
+      "published_at": "2026-09-25T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要GoogleはPrivate AI Computeプラットフォームにサーバー側プライベートメモリ機能を追加する計画を発表した。暗号鍵を個人デバイスに保持し、クラウド上のセッション履歴へのアクセスを制限する仕組みである。この更新により、企業やユーザーはAI処理時のデータ漏洩リスクを低減できる。Google DeepMindブログで技術概要と監査結果が公開…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://www.siliconreport.com/ai",
+      "selection_reason": "AI分野で具体的な製品機能更新として新規性が高く、プライバシー保護の技術進展を直接示す事例で、他の一般予測レポートより実務影響が明確",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "Google plans private server-side memory for Private AI Compute",
+          "url": "https://www.siliconreport.com/ai",
+          "source_type": "news"
+        },
+        {
+          "title": "Everything That Happened in AI Today",
+          "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-thursday-september-24-2026/",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "暗号資産取引所Bitgetで3.5億ドル規模の不正送金",
+      "source_name": "The Hacker News",
+      "published_at": "2026-09-25T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要暗号資産取引所Bitgetで約3億5200万ドルの不正送金が発生した。ホットウォレットとウォームウォレットが標的となり、北朝鮮関連の脅威アクターが関与した疑いがある。コールドウォレットは影響を受けず、大半の資産は保護された。事件は2026年9月24日夜に検知された。取引所は即時対応を公表し、セキュリティ強化を表明した。暗号資産業界全体でウォレット管理と…",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://thehackernews.com/",
+      "selection_reason": "サイバーセキュリティ分野で具体的な大規模インシデントとして速報性が高く、北朝鮮関連の脅威という実務的警戒情報を提供する点で他の一般論より優先",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "Bitget hit by $352 million hack with North Korea suspected",
+          "url": "https://cybernews.com/security/",
+          "source_type": "news"
+        },
+        {
+          "title": "The Hacker News",
+          "url": "https://thehackernews.com/",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "Deloitte、2026年TMT予測でAI推論需要の拡大を指摘",
+      "source_name": "Deloitte Insights",
+      "published_at": "2026-09-25T18:44:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要Deloitteは2026年のTMT予測を更新し、AI推論が全AIコンピューティングの3分の2を占めると予測した。新規データセンター投資が約5000億ドル規模に達する見込みである。オンプレミスサーバーでの高性能AIチップ需要も2000億ドルを超えるとされる。エッジデバイスへの移行は限定的で、大規模インフラ投資が継続する。企業はAI運用コストの最適化とイ…",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions.html",
+      "selection_reason": "IT分野の最新トレンドとしてAIインフラ需要の具体的な数値予測と企業影響を提示し、他の抽象的レポートより実務判断に寄与する点で選定",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "TMT Predictions 2026",
+          "url": "https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions.html",
+          "source_type": "news"
+        },
+        {
+          "title": "Tech Trends 2026",
+          "url": "https://www.deloitte.com/us/en/insights/topics/technology-management/tech-trends.html",
+          "source_type": "news"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "fbaf4233a25e5ccb",
+      "title": "CVE-2026-67279 Mikrotik RouterOS Improper Enforcement of Behavioral Workflow Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-09-25T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CVE-2026-67279 は、MikroTik RouterOS における 行動ワークフローの強制不備 を扱う脆弱性で、CISA KEV に掲載されている点が重要になる。掲載自体が、単なる理論上の欠陥ではなく、実際の悪用が確認済み であることを示す。攻撃成立の細部は入力情報だけでは未確認だが、ルーター製品が対象である以上、外部公開面からの侵入 や設…",
+      "article_path": "articles/fbaf4233a25e5ccb.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "650ae3bca605ccce",
+      "title": "CVE-2026-65660 Microsoft SharePoint Code Injection Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-09-25T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CVE-2026-65660 は Microsoft SharePoint に存在する コード注入 の脆弱性で、CISA KEV に掲載されているため、机上の欠陥ではなく実際の悪用対象として扱う必要がある。SharePoint は社内文書や権限管理の中核になりやすく、攻撃者はここを足場に認証情報の窃取、設定改ざん、横展開を狙う可能性が高い。悪用成立には…",
+      "article_path": "articles/650ae3bca605ccce.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "f15a88cd1bc476b9",
+      "title": "CVE-2026-87902 WordPress Core Remote File Inclusion Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-09-25T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CVE-2026-87902 は WordPress Core に存在する リモートファイル読み込み の脆弱性として扱うべき項目で、任意の外部ファイルを取り込ませる流れを足がかりにコード実行へつながる可能性がある。WordPress は公開面が広く、管理画面に入れなくても攻撃成立の余地が残る構成があるため、認証前の悪用 であれば被害の立ち上がりが速い。…",
+      "article_path": "articles/f15a88cd1bc476b9.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "91325c4d51bcc61f",
+      "title": "Compromised GitHub Actions Came Back Online and Resumed Executing Mini Shai-Hulud Malware",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-25T14:44:41+00:00",
+      "impact_level": "High",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要GitHub Actionsのactions-cool/issues-helperとactions-cool/maintain-one-commentが、いったん無効化された後にリポジトリへ再びアクセス可能になり、Mini Shai-Hulud系の不正動作が再開したと報じられた。今回の焦点は個別の脆弱性ではなく、侵害済みの自動化部品が再公開されることで…",
+      "article_path": "articles/91325c4d51bcc61f.html",
+      "original_url": "https://thehackernews.com/2026/09/compromised-github-actions-came-back.html"
+    },
+    {
+      "entry_id": "7891ddf546696b89",
+      "title": "PamStealer macOS Malware Adds Live C2 Payload Decryption and Multi-Layer Persistence",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-25T13:18:06+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要Jamf Threat Labs が、PamStealer の新しい亜種を確認した。今回は本体ペイロードを端末側だけでは復元しにくくし、サーバ側の復号連鎖を通さないと取り出せない作りに変えている。従来と同じ JXA を起点にする一方、誘導文面と配布手口を変えて検出や再現を難しくしている点が特徴になる。悪用の中心は認証情報や端末内データの窃取とみられるが…",
+      "article_path": "articles/7891ddf546696b89.html",
+      "original_url": "https://thehackernews.com/2026/09/pamstealer-macos-malware-adds-live-c2.html"
+    },
+    {
+      "entry_id": "7e580dce715d6002",
+      "title": "The SOC Doesn't Need to Start Over with Every Alert",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-25T11:30:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要この記事は、AIにより失敗した攻撃を低コストで繰り返せるようになり、SOCが毎回ゼロから調査を始める必要はないという論点を扱う。攻撃者は低権限のクラウドアカウントを起点に権限昇格を試み、最初の手口が失敗しても、別の経路をすぐに試し直せる。結果として、単発の侵入よりも、試行回数の増加と攻撃の収束速度が防御側の負荷を押し上げる。影響は初期侵入だけでなく、認…",
+      "article_path": "articles/7e580dce715d6002.html",
+      "original_url": "https://thehackernews.com/2026/09/the-soc-doesnt-need-to-start-over-with.html"
+    },
+    {
+      "entry_id": "e7fe370a8f955d75",
+      "title": "Bitget Says Suspected North Korean Hackers Stole $351.6M After Backend Compromise",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-25T10:35:55+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要暗号資産取引所Bitgetが、バックエンド侵害を起点に、ホットウォレットとウォームウォレットから計3億5160万ドル相当の資産が盗まれたと公表した。資金移動は限られたホットウォレットに対して発生し、冷蔵保管のコールドウォレットと大半の資産は無事とされるが、残高保全の実態は未確認のまま残る。攻撃者視点では、公開面からの侵入よりも、運用系バックエンドや署名…",
+      "article_path": "articles/e7fe370a8f955d75.html",
+      "original_url": "https://thehackernews.com/2026/09/bitget-says-suspected-north-korean.html"
+    },
+    {
+      "entry_id": "5e74cf2de822c4bd",
+      "title": "Roundcube Pre-Auth SQL Injection Flaw Actively Exploited in the Wild",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-25T10:14:02+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Roundcube Webmail の 認証前SQLインジェクション に関する注意喚起が出ており、すでに実環境で悪用されている。対象は virtuser_query プラグインを含む特定系統の版で、CVE-2026-48842 として管理されている。攻撃者はログイン前に脆弱性を突けるため、公開Webメールとして露出している導入先ほど狙われやすい。想定さ…",
+      "article_path": "articles/5e74cf2de822c4bd.html",
+      "original_url": "https://thehackernews.com/2026/09/roundcube-pre-auth-sql-injection-flaw.html"
+    },
+    {
+      "entry_id": "cf73c2c364102cea",
+      "title": "Cloudflare Fixes Flaw That Let One Container Read Another Customer's Leftover Disk Data",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-25T04:49:22+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Cloudflare Containers で、ある顧客のコンテナが同一サーバ上に残っていた別顧客のディスク残存データを読める不具合が見つかった。現時点の説明では、対象は実行中のワークロードではなく、利用済み領域に残った断片に限られる。攻撃者は読み出し対象の顧客を指定できず、任意の相手を狙った窃取とは限らない。ただし、残存データには設定情報、トークン断…",
+      "article_path": "articles/cf73c2c364102cea.html",
+      "original_url": "https://thehackernews.com/2026/09/cloudflare-fixes-flaw-that-let-one.html"
+    },
+    {
+      "entry_id": "f14680d87b4857d9",
+      "title": "WSO2 and Adobe Commerce Flaws Exploited in Attacks, Added to CISA KEV",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-09-25T04:46:34+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CISA が WSO2 と Adobe Commerce / Magento に関する既知の脆弱性を KEV に追加した。根拠は 実際の悪用確認 であり、単なる理論上の問題ではない点が重要になる。少なくとも CVE-2026-5430 は 経路外参照 により、想定外のファイルや情報へ到達されるおそれがある。認証前で届く構成や管理系機能が露出している場合…",
+      "article_path": "articles/f14680d87b4857d9.html",
+      "original_url": "https://thehackernews.com/2026/09/wso2-and-adobe-commerce-flaws-exploited.html"
+    },
+    {
+      "entry_id": "a2ab8421637a2d95",
+      "title": "A Closer Look at Malware From the Macfinger ClickFix Campaign, (Fri, Sep 25th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-09-25T12:45:19+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Malware",
+      "summary_preview": "概要Mac向けマルウェアを扱う観測記事で、ClickFix型の誘導により利用者自身に不正操作を実行させる流れが焦点になる。典型的には、偽の更新通知や確認画面を装ってコマンド実行や設定変更へ誘導し、初期侵入よりもユーザーの操作を起点に感染を成立させる。被害は単一端末の侵害に見えても、認証情報の窃取や追加ペイロードの取得に進むと、メール、SaaS、端末管理基盤…",
+      "article_path": "articles/a2ab8421637a2d95.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33368"
+    },
+    {
+      "entry_id": "7f467131f583ae6d",
+      "title": "ISC Stormcast For Friday, September 25th, 2026 https://isc.sans.edu/podcastdetail/10110, (Fri, Sep 25th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-09-25T03:45:12+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要SANS ISC の Stormcast は、直近の観測や注意点を短くまとめた定例配信であり、個別の脆弱性公表というより 運用上の警戒点 を拾う性格が強い。今回の入力では本文要約がなく、何を扱った回かは特定できないが、こうした配信は既知の脆弱性の悪用拡大、露出サービスへのスキャン増加、誤設定を突く初動侵入の兆候を早く把握する手がかりになる。攻撃者は公開…",
+      "article_path": "articles/7f467131f583ae6d.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33370"
+    },
+    {
+      "entry_id": "54110b6d17ec9a87",
+      "title": "VU#699627: Readwise Reader for Android, version 8.7.2, contains multiple XSS vulnerabilities",
+      "source_name": "CERT/CC",
+      "category": "reporting",
+      "published_at": "2026-09-25T16:25:10+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要Readwise Reader for Android 8.7.2 に 3件のXSS脆弱性 が公表された。悪意ある文書やメタデータを取り込ませると、検証不足のまま WebView 内でJavaScriptが実行され、保存済み文書や認証情報、セッショントークンが見られるおそれがある。影響は端末単体にとどまらず、同期機能を介して他端末へ広がる可能性がある。…",
+      "article_path": "articles/54110b6d17ec9a87.html",
+      "original_url": "https://kb.cert.org/vuls/id/699627"
+    },
+    {
+      "entry_id": "a89b454b6df6e995",
+      "title": "今日もどこかで情報漏えい 第52回「2026年8月の情報漏えい」約一割で逮捕・懲戒・行政指導",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-24T23:10:03+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要ScanNetSecurityの定期集計で、2026年8月に公表された情報漏えい事案を整理し、そのうち約一割で逮捕・懲戒・行政指導が伴ったと伝えている。個別の技術的脆弱性というより、漏えい後に組織としてどの段階まで外部対応が進んだかを俯瞰する記事に近い。攻撃や事故の入口は不明だが、侵害後に被害が個人情報流出、業務停止、規制対応へ広がる流れを把握するうえ…",
+      "article_path": "articles/a89b454b6df6e995.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/25/56306.html"
+    },
+    {
+      "entry_id": "ff9473f3bc5ac7d2",
+      "title": "カルビーのプロ野球チップス関連サービス「PhotoGoods」で個人情報漏えいの可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-24T23:05:15+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要カルビーのプロ野球チップス関連サービス「PhotoGoods」で、個人情報漏えいの可能性が公表された。現時点では、実際にどの情報が外部へ出たか、どの経路で漏えいが起きたかは明示されていないため、影響範囲は未確定となる。こうした事案は、外部公開中のサービス設定不備、認証回避、問い合わせフォームや保管領域の誤設定など、比較的単純な経路から発生することが多い…",
+      "article_path": "articles/ff9473f3bc5ac7d2.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/25/56305.html"
+    },
+    {
+      "entry_id": "7f81786acaa19154",
+      "title": "ApplyNow 提供の採用管理プラットフォームに不正アクセス、マイナンバー含む個人データが漏えいした可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-24T23:05:12+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要採用管理プラットフォーム ApplyNow に不正アクセスがあり、利用企業の応募者情報の一部が外部に漏えいした可能性が報じられた。対象には マイナンバー を含む個人データが含まれるとされ、採用業務で集めた高感度情報が狙われた点に注意が要る。攻撃は一社の被害に見えても、SaaS側の侵害であれば複数顧客へ同時に波及しやすく、被害範囲の見積もりが後追いになり…",
+      "article_path": "articles/7f81786acaa19154.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/25/56304.html"
+    },
+    {
+      "entry_id": "9a6962aa64d5d6de",
+      "title": "極東開発工業子会社の日本トレクス、不正アクセスによるシステム障害を発表",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-24T23:05:10+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要極東開発工業の子会社である日本トレクスが、不正アクセスを受けてシステム障害が発生したと公表した。現時点で、侵入経路、侵入後に何へ到達したか、データ流出や暗号化の有無は明らかになっていない。業務システムが止まった、または一部機能が制限された可能性が高く、生産・受注・出荷のいずれかに影響が及ぶ場面を想定する必要がある。攻撃者が認証情報を起点に入り込んだ場合…",
+      "article_path": "articles/9a6962aa64d5d6de.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/25/56303.html"
+    },
+    {
+      "entry_id": "8af69a5871a87ff8",
+      "title": "社内調査で発覚 ～ ライツフォル、外部 Q&A サイトにおける過去の「広告明示なし投稿」を公表",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-24T23:05:08+00:00",
+      "impact_level": "Low",
+      "threat_type": "Other",
+      "summary_preview": "概要ライツフォルは、外部のQ&amp;Aサイトにおいて、広告であることを明示しない投稿が過去に行われていた事実を社内調査で確認し、公表した。記事の主眼は脆弱性や侵害ではなく、情報発信の透明性と対外説明の問題にある。悪用の中心は技術的侵入ではなく、読者が中立情報と誤認する形での誘導や信用毀損に置かれる。組織横断で広がる影響は、当該投稿そのものよりも、類似の未…",
+      "article_path": "articles/8af69a5871a87ff8.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/25/56302.html"
+    },
+    {
+      "entry_id": "10948da7113f37f3",
+      "title": "京都パープルサンガでメール誤送信、ファンクラブ会員情報15,612件が漏えい",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-24T23:05:07+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要京都パープルサンガでメール誤送信が発生し、ファンクラブ会員情報15,612件が外部に漏えいした。原因は技術的侵害ではなく、運用上の送信ミスとみられ、権限侵害を伴わない情報流出として扱うのが妥当になる。想定される悪用は、漏えい先アドレスを起点にしたなりすまし、フィッシング、会員向け連絡の信用低下で広がる可能性がある。会員属性や連絡先の内容次第では、他の会…",
+      "article_path": "articles/10948da7113f37f3.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/25/56301.html"
+    },
+    {
+      "entry_id": "c31977da23badf15",
+      "title": "VIP・GOLDランク顧客の情報流出の可能性 ～ ファイブフォックスへのランサムウェア攻撃",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-24T23:05:05+00:00",
+      "impact_level": "High",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要ファイブフォックスへのランサムウェア攻撃が報じられ、VIP・GOLDランク顧客の情報流出の可能性が焦点になっている。記事上では被害の全容は未確定で、実際にどのデータが持ち出されたか、漏えい範囲が顧客属性情報に限られるのか、決済情報や認証情報まで及ぶのかはまだ確認できない。攻撃者は暗号化だけでなく、事前にデータを窃取して公開をちらつかせる手口を取りやすく…",
+      "article_path": "articles/c31977da23badf15.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/25/56300.html"
+    },
+    {
+      "entry_id": "2c968291d228c825",
+      "title": "実行犯が示唆したダークウェブでの情報公開は確認されず ～ ワシントンホテルにランサムウェア攻撃",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-24T23:05:02+00:00",
+      "impact_level": "High",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要ワシントンホテルがランサムウェア攻撃を受けた件を扱う記事で、攻撃者が示唆したダークウェブでの情報公開は現時点で確認されていない。この記事から読み取れる中心点は、暗号化や業務停止に加え、情報流出の有無が被害評価を左右することにある。実行犯の主張が事実でも、実際の公開や売買に至っていない場合は、漏えいの確定ではなく脅迫段階にとどまる可能性がある。いっぽうで…",
+      "article_path": "articles/2c968291d228c825.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/25/56299.html"
+    },
+    {
+      "entry_id": "386d4de1008738cc",
+      "title": "早稲田大学比較法研究所、10月4日に公開講演会「医療DXとサイバーセキュリティ」をハイブリッド開催",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-24T23:00:12+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要早稲田大学比較法研究所が、医療DXとサイバーセキュリティをテーマにした公開講演会をハイブリッド形式で開催する記事であり、脆弱性公開やインシデント報告そのものではない。医療分野では電子カルテ、予約、画像共有、遠隔診療、院内端末が相互接続され、1点の設定不備や認証情報漏えいが診療停止や情報漏えいに連鎖しやすい。講演内容は制度・運用・法務の論点整理に資する一…",
+      "article_path": "articles/386d4de1008738cc.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/25/56298.html"
+    },
+    {
+      "entry_id": "a955b57094a6262b",
+      "title": "サイバーセキュリティ企業の「信頼と組織」を強化 ～ プルーフポイントが最高法務責任者と最高人事責任者を新任へ",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-24T23:00:10+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要プルーフポイントが、最高法務責任者と最高人事責任者を新たに任命したという人事記事であり、直接の脆弱性や侵害の報道ではない。背景としては、事業拡大や統治体制の強化を進める局面がうかがえるが、記事内からは製品変更、インシデント、顧客影響の有無は確認できない。攻撃者視点で見ると、この種の情報は通常は標的選定の材料にはなりにくく、悪用シナリオは限定的である。な…",
+      "article_path": "articles/a955b57094a6262b.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/25/56297.html"
+    },
+    {
+      "entry_id": "578720d9a83f6579",
+      "title": "ランサムウェアの被害報告件数が過去最多に ～ 警察庁 サイバー警察局便り",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-24T23:00:08+00:00",
+      "impact_level": "High",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要警察庁の被害報告をもとに、ランサムウェア被害件数が過去最多になったと伝える記事である。単発の感染事件というより、侵入後に暗号化と情報窃取を組み合わせる二重の脅迫が継続して組織を圧迫している状況を示す。初期侵入はVPN、RDP、公開資産、メール起点など複数経路があり、被害は1台の停止にとどまらず、認証情報の奪取や横展開を通じて事業全体へ広がりやすい。記事…",
+      "article_path": "articles/578720d9a83f6579.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/25/56296.html"
+    },
+    {
+      "entry_id": "eee18cb1f94c0868",
+      "title": "HENNGE One、個人情報・情報資産管理プラットフォーム「Flows」と SSO 連携",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-24T23:00:06+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要HENNGE One が、個人情報・情報資産管理プラットフォーム「Flows」とSSO連携したという内容で、認証の入口を既存のID基盤に寄せる動きとなる。これにより、利用者は別管理のID・パスワードを持たずに済む一方、認証基盤の障害や設定不備が業務停止に直結しやすくなる。攻撃者視点では、SSO連携先のアカウントやIDプロバイダを起点に、複数サービスへ連…",
+      "article_path": "articles/eee18cb1f94c0868.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/25/56295.html"
+    },
+    {
+      "entry_id": "bf2c1eea44948f94",
+      "title": "シャドー AI からエージェントまで一括保護 ～ クラウドストライクが AIDR「Falcon Guardian」発表",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-24T23:00:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要クラウドストライクが、シャドー AI から AI エージェントまでを対象にした新機能「Falcon Guardian」を発表した。AI 利用の広がりに伴い、未承認の生成 AI 利用や自律型エージェントの暴走、過剰権限、機密情報の投入といったリスクを一括で見える化し、制御する狙いがある。攻撃というよりは 防御機能の発表 であり、既存の EDR/XDR の…",
+      "article_path": "articles/bf2c1eea44948f94.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/09/25/56294.html"
+    }
+  ]
+}
