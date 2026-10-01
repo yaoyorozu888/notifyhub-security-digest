@@ -1,0 +1,470 @@
+{
+  "date": "2026-10-02",
+  "window": {
+    "from": "2026-10-01T06:00:00+09:00",
+    "to": "2026-10-02T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 31
+  },
+  "generated_at_jst": "2026-10-02T06:24:36.901353+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "CIOアジェンダ2026：エージェントスプロールとAIネイティブ開発が焦点",
+      "source_name": "CIO Dive",
+      "published_at": "2026-10-01T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要CIOは2026年も取締役会で重要な役割を果たす。AIとクラウドサービスの拡大により、エージェントスプロールの監視とAI規制対応が急務となる。ベンダー選定ではIBMやAWSのソブリンクラウドが注目され、AIネイティブ開発プラットフォームの導入で開発チームの小型化が進む見込みだ。技術人材の再教育戦略も再編され、企業は実務影響を踏まえた投資判断を迫られる。",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://www.ciodive.com/news/business-technology-outlook-trends-2026/811003/",
+      "selection_reason": "IT分野の企業実務に直結するCIOトレンドとして、具体的な2026年展望を複数ソースで裏付けられる新規発表を選定。他の汎用予測よりベンダー拡大や人材戦略の具体性を優先。",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "The CIO agenda for 2026",
+          "url": "https://www.ciodive.com/news/business-technology-outlook-trends-2026/811003/",
+          "source_type": "web"
+        },
+        {
+          "title": "5 CIO trends to watch in 2026: Gartner",
+          "url": "https://www.ciodive.com/news/gartner-strategic-technology-trends-2026/803413/",
+          "source_type": "web"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "Google、Gemini 4 Argonをサイバー防御者向けに先行公開",
+      "source_name": "TechCrunch",
+      "published_at": "2026-09-30T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要Googleは最先端モデルGemini 4 Argonを発表した。コーディングやサイバーセキュリティ業務向けに最適化され、自律的な脆弱性発見・修正機能を備える。安全上の懸念から当初は信頼できる防御者向けFairwind Programと米政府に限定公開する。OpenAIの類似モデル取消事例を背景に、企業はAI導入時の評価プロセスを強化する必要がある。",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://techcrunch.com/2026/09/30/google-gemini-4-argon/",
+      "selection_reason": "AIモデル発表として具体的なロールアウトと安全対策の新事実を含み、AI分野の進展を直接示す。他の一般トレンド予測より製品レベルの詳細を優先。",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "Google Releases New Gemini Model With Guardrails Amid A.I. Safety Debate",
+          "url": "https://www.nytimes.com/2026/09/30/technology/google-gemini-4-argon.html",
+          "source_type": "web"
+        },
+        {
+          "title": "AI News for October 1, 2026",
+          "url": "https://aiweekly.co/ai-news-today/edition/2026-10-01",
+          "source_type": "web"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "AIを活用したサイバー防御の新展開、Gemini Argonが先駆け",
+      "source_name": "The Hacker News",
+      "published_at": "2026-10-01T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要GoogleのGemini 4 Argonはサイバー防御特化で先行提供される。脆弱性自動検知で68%のベンチマークを達成し、AI駆動の防御を加速させる。攻撃側もAIを活用する中、防御者向け限定公開は業界の安全優先姿勢を示す。企業はAIセキュリティツールの評価と導入を急ぐ必要がある。",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://thehackernews.com/2026/10/google-gemini-4-argon.html",
+      "selection_reason": "Cybersecurity分野でAI防御ツールの具体的な製品展開を扱い、実務影響が明確。他のインシデント報道よりトレンドとしての防御強化を優先。",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "Google Rolls Out Gemini 4 Argon to Trusted Cyber Defenders",
+          "url": "https://thehackernews.com/2026/10/google-gemini-4-argon.html",
+          "source_type": "web"
+        },
+        {
+          "title": "Latest Security News",
+          "url": "https://cybernews.com/security/",
+          "source_type": "web"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "333ba947414710a9",
+      "title": "CVE-2026-104286 Fortinet FortiMail Path Traversal Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-10-01T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CVE-2026-104286 は、Fortinet FortiMail に関する パストラバーサル 脆弱性として CISA KEV に掲載された事案である。パストラバーサルは、想定外のパスを通して本来触れないファイルや設定へ到達する入口になり、認証回避や情報露出、場合によっては処理連鎖の起点になりうる。メール基盤に近い製品で起きるため、単体の不具合に…",
+      "article_path": "articles/333ba947414710a9.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "a0bd9bffd6a92b1f",
+      "title": "Police Arrest 16-Year-Old Suspected of Running KillSec, Seize Ransomware Leak Site and Servers",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-01T16:55:57+00:00",
+      "impact_level": "Unknown",
+      "threat_type": "Unknown",
+      "summary_preview": "",
+      "article_path": "articles/a0bd9bffd6a92b1f.html",
+      "original_url": "https://thehackernews.com/2026/10/police-arrest-16-year-old-suspected-of.html"
+    },
+    {
+      "entry_id": "fdb39c02e46c88de",
+      "title": "ThreatsDay: AI-Powered Zero-Day Chain, 543K Live Secrets, Model Inspection RCE and 13 More Stories",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-01T16:45:38+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要The Hacker News による週次まとめで、AI関連のゼロデイ連鎖、543K件の公開シークレット、モデル検査経由のRCEなど、複数の話題を横断している。個別の製品脆弱性一覧というより、検査・キャッシュ・コンパイル・保存・信頼といった一見無害な処理が攻撃経路に変わる点をまとめた構成になっている。悪用の中心は、利用者が想定しない場所でコード実行、デ…",
+      "article_path": "articles/fdb39c02e46c88de.html",
+      "original_url": "https://thehackernews.com/2026/10/threatsday-ai-powered-zero-day-chain.html"
+    },
+    {
+      "entry_id": "3b872c3158cc268d",
+      "title": "WordPress Backdoor Rebuilds Itself After Cleanup Using Files, Database, and Shared Memory",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-01T14:37:35+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要WordPressサイトへの侵害で、攻撃者がファイル、データベース、共有メモリを組み合わせた永続化を仕込み、初期対応で一部を消しても最終的なバックドアが再構築される事例が報じられた。検知回避というより、復旧作業の途中で再感染のように見せて、削除の抜け漏れを突く構造に近い。影響は単一の管理画面侵害にとどまらず、サイト改ざん、資格情報窃取、追加ペイロード配…",
+      "article_path": "articles/3b872c3158cc268d.html",
+      "original_url": "https://thehackernews.com/2026/10/wordpress-backdoor-rebuilds-itself.html"
+    },
+    {
+      "entry_id": "eb55594ce3d565ec",
+      "title": "How Financial Services Companies Can Modernize Their Software Supply Chain",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-01T11:45:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要この記事は、銀行・保険・資産運用会社などで起きがちな、脆弱性を減らしたい安全側と、基盤更新の影響を避けたい開発・運用側の摩擦を扱っている。直接の事故報道ではなく、金融業界のソフトウェア供給網を近代化する際に、例外運用と代替統制へ流れやすい構造を示している。悪用の入口は、古い依存関係や更新遅延が残ったまま本番に置かれることにあり、攻撃者はその隙を狙って侵…",
+      "article_path": "articles/eb55594ce3d565ec.html",
+      "original_url": "https://thehackernews.com/2026/10/how-financial-services-companies-can.html"
+    },
+    {
+      "entry_id": "71ce39c16e2e63e0",
+      "title": "OpenAI Disrupts Reasoning Extraction Campaign Linked to Moonshot AI Associates",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-01T10:42:36+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要OpenAI が、AIモデルから保護された推論過程を不正に抜き出そうとする協調的な蒸留キャンペーンを検知し、遮断したと公表した。活動の中核は7月上旬まで遡り、Moonshot AI 関連者によるものとされたが、記事時点では詳細な証拠や対象モデルの範囲は十分に示されていない。悪用の狙いは、モデルの出力だけでなく内部の推論特性を再利用可能な形で収集し、別モ…",
+      "article_path": "articles/71ce39c16e2e63e0.html",
+      "original_url": "https://thehackernews.com/2026/10/openai-disrupts-reasoning-extraction.html"
+    },
+    {
+      "entry_id": "c65ed886510a9c5d",
+      "title": "CISA Adds Exploited Cisco Catalyst SD-WAN Manager Auth Bypass to KEV",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-01T10:33:16+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CISA が KEV に Cisco Catalyst SD-WAN Manager の認証回避脆弱性を追加し、実際の悪用が確認済み である点を示した。対象の CVE-2026-76504 は CVSS 9.8 とされ、未認証の遠隔攻撃者が影響機器へ入り込める可能性がある。入口を取られると、SD-WAN 管理基盤を起点に設定改変や配下装置への波及が起こ…",
+      "article_path": "articles/c65ed886510a9c5d.html",
+      "original_url": "https://thehackernews.com/2026/10/cisa-adds-exploited-cisco-catalyst-sd.html"
+    },
+    {
+      "entry_id": "45c3cb771ecb3647",
+      "title": "Google Rolls Out Gemini 4 Argon to Trusted Cyber Defenders, Plans Guardrail-Free Version",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-01T07:49:36+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要Google が Gemini 4 Argon を信頼済みのサイバー防御者向けに展開し、将来的に ガードレールを外した版 も計画していると報じられた。記事上では防御用途での高性能をうたっているが、実際にどの範囲の利用者に解放されるか、どこまで操作制約が緩むかは未確認である。攻撃者視点では、AI による調査・文書作成・コード補助の効率向上だけでなく、運用…",
+      "article_path": "articles/45c3cb771ecb3647.html",
+      "original_url": "https://thehackernews.com/2026/10/google-rolls-out-gemini-4-argon-to.html"
+    },
+    {
+      "entry_id": "83854a42908ff599",
+      "title": "Apple CoreGraphics PoC Emerges as WhatsApp PDF Checks Hint at Possible Delivery Path",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-01T05:54:41+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要AppleのCoreGraphicsに関するCVE-2026-86950で、公開PoCが登場したと報じられている。Appleはこの欠陥が特定の標的に対する攻撃で使われた可能性を示しており、悪用の現実性は高い。想定される入口は、細工した埋め込みフォントを含む悪意あるPDFで、未修正のiPhoneやMacでクラッシュを起こすという。現時点の説明ではクラッシ…",
+      "article_path": "articles/83854a42908ff599.html",
+      "original_url": "https://thehackernews.com/2026/10/apple-coregraphics-poc-emerges-as.html"
+    },
+    {
+      "entry_id": "3d19c76a337fa464",
+      "title": "Bitget Confirms Third-Party Zero-Day Behind $387.5 Million Cryptocurrency Theft",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-01T05:21:10+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要暗号資産取引所のBitgetが、第三者製セキュリティ製品のゼロデイを悪用した攻撃により、約3億8750万ドル相当の資産流出が起きたと確認した。攻撃側は単一のアプリ脆弱性ではなく、周辺の保護製品を踏み台にして侵入や操作を進めた可能性が高く、防御側の想定外の経路が突破口になった点が重要になる。被害は取引所の資産管理や鍵管理、出金制御に波及したとみるのが自然…",
+      "article_path": "articles/3d19c76a337fa464.html",
+      "original_url": "https://thehackernews.com/2026/10/bitget-confirms-third-party-zero-day.html"
+    },
+    {
+      "entry_id": "1d9ee7d7ac608e2b",
+      "title": "MetaMask Security Incident Prompts Exit of Affected Ethereum Validators",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-01T05:10:09+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要MetaMask が自社インフラで発生した継続中のセキュリティ事案に対応していると公表した。現時点でMetaMask ウォレットへの直接的な脅威は確認されていないとされる一方、影響を受けた Ethereum バリデータには退出対応が発生している。攻撃の手口、侵入経路、どの基盤が侵害されたのかはまだ明らかでなく、利用者資産の流出有無も未確認である。CSI…",
+      "article_path": "articles/1d9ee7d7ac608e2b.html",
+      "original_url": "https://thehackernews.com/2026/10/metamask-security-incident-prompts-exit.html"
+    },
+    {
+      "entry_id": "4b3c355300dd9c4f",
+      "title": "Citrix NetScaler Post-Exploitation Payload Creates Superuser, Maps Web Shell to CSS-Like URLs",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-01T04:35:34+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要Citrix NetScaler ADC / Gateway の認証前コマンド注入を悪用した侵害事例が観測され、攻撃者はWebシェルの設置に加えて、設定情報の窃取と権限固定化を進めている。特に、侵害後の処理としてsuperuser 作成や、CSS風URLに紛れたWebシェルへのマッピングが確認されており、通常の監視や単純なファイル一覧では見逃しやすい。…",
+      "article_path": "articles/4b3c355300dd9c4f.html",
+      "original_url": "https://thehackernews.com/2026/10/citrix-netscaler-post-exploitation.html"
+    },
+    {
+      "entry_id": "ac38d0dd7bbce4e6",
+      "title": "ScreenConnect Client (Ab)used by Attackers, (Thu, Oct 1st)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-10-01T05:32:13+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要ScreenConnect のクライアント機能が攻撃に悪用されているという観測情報で、派手な新規マルウェアよりも、既存の正規ツールを踏み台にする手口が中心となる。攻撃者は管理用の遠隔操作基盤を使って侵入後の操作を隠し、認証情報の窃取、横展開、追加ペイロードの投入を進めやすくなる。影響は単一端末に限られず、管理権限を持つ端末や保守用端末が巻き込まれると、…",
+      "article_path": "articles/ac38d0dd7bbce4e6.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33388"
+    },
+    {
+      "entry_id": "0fe5e9d29a9b8117",
+      "title": "ISC Stormcast For Thursday, October 1st, 2026 https://isc.sans.edu/podcastdetail/10118, (Thu, Oct 1st)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-10-01T02:00:02+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要SANS ISC の Stormcast は、単独の脆弱性通知ではなく複数の観測トピックを短時間で把握するための音声要約として読むのが適切だ。提示情報だけでは個別の脆弱性名、CVE、悪用手口、対策対象は確認できず、直接の緊急対応対象とは断定できない。ただし ISC 系の配信は、攻撃の流行やスキャン増加、運用上の注意点を早く拾う目的では有用であり、関連ロ…",
+      "article_path": "articles/0fe5e9d29a9b8117.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33386"
+    },
+    {
+      "entry_id": "4172bd303ce821bd",
+      "title": "VU#553437: InsydeH2O IHISI SMM is vulnerable to unsafe memory write operations",
+      "source_name": "CERT/CC",
+      "category": "reporting",
+      "published_at": "2026-10-01T14:33:19+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CVE-2026-12855 は、HP PC BIOS に含まれる InsydeH2O IHISI の SMM ハンドラにある 不適切な境界検査 に起因する問題で、OS カーネル権限を持つ攻撃者が任意の物理メモリ書き込みを起こせる可能性がある。対象コードは SMM で動作するため、通常の OS から触れない SMRAM にも到達し得る。成功すると、SM…",
+      "article_path": "articles/4172bd303ce821bd.html",
+      "original_url": "https://kb.cert.org/vuls/id/553437"
+    },
+    {
+      "entry_id": "c4e83687bfe5a8c4",
+      "title": "Microsoft Malware Protection Engine における任意の特権ファイルの書き込みが可能となるファイル操作での検証不備（Scan Tech Report）",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-30T23:20:02+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Microsoft Malware Protection Engine に、ファイル操作の検証不備によって任意の特権ファイルを書き込める問題が報告された。悪用に成功すると、通常より高い権限で保護対象のファイルを改変でき、設定破壊、永続化、あるいは後続の侵害準備につながる。防御製品そのものを足場にされる点が厄介で、単なるファイル改ざんにとどまらず、端末防…",
+      "article_path": "articles/c4e83687bfe5a8c4.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/01/56364.html"
+    },
+    {
+      "entry_id": "7ff1f4dfc0363e0e",
+      "title": "人材不足に打ち勝つセキュリティ運用とは ～ DNP との対談で明かされる効果、テクマトリックスが Palo Alto Networks の Cortex XSIAM で提案する次世代 SOC",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-30T23:15:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要本記事は、人材不足下のSOC運用をテーマに、DNPとの対談を通じてテクマトリックスが Palo Alto Networks の Cortex XSIAM を使った次世代SOCの考え方を紹介する内容となる。攻撃そのものの新規性を伝える記事ではなく、アラート過多や運用負荷をどう抑え、限られた要員で検知・分析・対応を回すかに焦点がある。悪用手口や脆弱性の詳細…",
+      "article_path": "articles/7ff1f4dfc0363e0e.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/01/56363.html"
+    },
+    {
+      "entry_id": "e1fe0b510c83f807",
+      "title": "AWS WAF の保守運用にお悩みの方向け ～ 継続的ルール調整・誤検知対応を実現するオンラインセミナーを GMOイエラエが 10 / 7 開催",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-30T23:10:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要AWS WAF の保守運用をテーマにしたオンラインセミナーの告知であり、脆弱性や侵害の報道ではない。主眼は、ルール調整の継続運用、誤検知への対処、保護対象の業務を止めずに例外を管理する実務に置かれている。攻撃の成立条件や悪用手口を直接示す内容ではないため、直ちに防御を要する脅威情報ではない。一方で、WAF の運用が属人化している組織では、誤検知放置や緩…",
+      "article_path": "articles/e1fe0b510c83f807.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/01/56362.html"
+    },
+    {
+      "entry_id": "4c8d268ba4a43d70",
+      "title": "「クロネコ代金後払いサービス」に不正アクセス",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-30T23:05:22+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要クロネコ代金後払いサービスに対して不正アクセスが起きたと伝えている。記事情報だけでは侵入経路や影響範囲は確定せず、個人情報の閲覧・漏えい、あるいは業務システムへの不正操作があったかは未確認となる。後払い系のサービスは、注文情報や請求情報が集約されやすく、攻撃者にとっては大量の個人・取引データを一度に狙える点が高い。被害が外部公開に限られるのか、委託先や…",
+      "article_path": "articles/4c8d268ba4a43d70.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/01/56361.html"
+    },
+    {
+      "entry_id": "5d4f2c8e0df453ea",
+      "title": "「タイムズカー」に不正アクセス、運転免許証画像含む会員情報が第三者に取得されたことを確認",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-30T23:05:19+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要タイムズカーが不正アクセスを受け、会員情報の一部が第三者に取得されたことを確認した。取得対象には運転免許証画像が含まれており、単なる連絡先流出よりも身元悪用の余地が大きい。攻撃手口や侵入経路、漏えい件数の詳細は本文情報だけでは未確認で、公開範囲の確定はまだ判断保留となる。影響は会員本人にとどまらず、本人確認情報を使ったなりすましや二次被害の起点になり得…",
+      "article_path": "articles/5d4f2c8e0df453ea.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/01/56360.html"
+    },
+    {
+      "entry_id": "c0f9a24a5c122fc8",
+      "title": "スターツ出版「オズモール」に不正アクセス、会員のメールアドレス 最大447,610名分が漏えいした可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-30T23:05:14+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要スターツ出版のオズモールで不正アクセスが発生し、会員のメールアドレスが最大447,610名分漏えいした可能性が公表された。現時点で、漏えいした情報が実際に外部へ流通したか、他の個人情報や認証情報まで影響したかは確認されていない。メールアドレス単体でも、標的型フィッシングやアカウント乗っ取りの入口になりやすく、会員向け通知の内容次第では二次被害の起点にな…",
+      "article_path": "articles/c0f9a24a5c122fc8.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/01/56359.html"
+    },
+    {
+      "entry_id": "e72723b1134ffbd5",
+      "title": "「ニッポンレンタカーアプリ」への不正アクセス、運転免許証情報が閲覧されたおそれも",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-30T23:05:12+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要ニッポンレンタカーアプリへの不正アクセスが公表され、利用者の運転免許証情報が閲覧された可能性がある。本人確認書類は、名前や住所だけでなく、なりすましや追加認証の突破に使われやすく、単なる個人情報流出よりも後続被害の材料になりやすい。攻撃手口や侵入経路は記事要約だけでは不明で、公開範囲やどのデータ項目まで見えたのかも未確認となる。現時点では、漏えい有無の…",
+      "article_path": "articles/e72723b1134ffbd5.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/01/56358.html"
+    },
+    {
+      "entry_id": "e358ee92159db9bc",
+      "title": "CMSプラグインの脆弱性公表を受け更新作業中に不正アクセスを発見",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-30T23:05:09+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要CMSのプラグイン脆弱性が公表されたことを受け、更新作業を進めていたところ、対象環境で不正アクセスが見つかったという内容である。脆弱性そのものよりも、更新確認の過程で侵害が顕在化した点が重要で、既に侵入済みだった可能性を示す。攻撃は管理画面やプラグイン機能を起点に、権限奪取やWebシェル設置へ進み、サイト改ざんや認証情報窃取へ広がりやすい。影響範囲は単…",
+      "article_path": "articles/e358ee92159db9bc.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/01/56357.html"
+    },
+    {
+      "entry_id": "412704a7084b1c58",
+      "title": "当選が落選に「ULTRA MART」チケット抽選システムに不正アクセス",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-30T23:05:06+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要「ULTRA MART」のチケット抽選システムで不正アクセスが発生し、当選・落選の判定が本来の結果と食い違う事象が報じられている。攻撃の手口や侵入経路は本文からは読み取れず、抽選ロジックの改ざんなのか、管理権限の不正取得なのかも未確認のまま残る。業務上は、単なる表示不具合よりも、応募データや当選結果の整合性が崩れた場合に再抽選・告知・返金まで波及しやす…",
+      "article_path": "articles/412704a7084b1c58.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/01/56356.html"
+    },
+    {
+      "entry_id": "922ee250708fb4bf",
+      "title": "「RESPECTion!シンポジウム」参加申込フォームに設定不備、他の申込者の回答内容が閲覧可能に",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-30T23:05:02+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Misconfiguration",
+      "summary_preview": "概要「RESPECTion!シンポジウム」の参加申込フォームに設定不備があり、他の申込者が入力した回答内容を閲覧できる状態になっていた。対象は攻撃コードや脆弱性悪用ではなく、フォーム公開設定の誤りによる情報漏えいの可能性であり、取得できた情報は申込内容に含まれる氏名、所属、連絡先、自由記述などの範囲が想定される。悪用されると、参加者へのなりすまし、営業・迷…",
+      "article_path": "articles/922ee250708fb4bf.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/01/56355.html"
+    },
+    {
+      "entry_id": "af22922f594bedcc",
+      "title": "NetScaler ADC および NetScaler Gateway に脆弱性、世界中で脅威アクターが積極的に悪用との情報",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-30T23:00:22+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要NetScaler ADC と NetScaler Gateway に関する脆弱性が報じられ、世界中で積極的な悪用が進んでいるという内容である。記事題名からは、認証前に到達できる経路や既存の公開面を起点に、外部からの侵入やセッション奪取につながる懸念が強い。影響は単一装置の停止にとどまらず、VPNや公開アプリの入口を足場にして社内侵入へ広がる可能性があ…",
+      "article_path": "articles/af22922f594bedcc.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/01/56354.html"
+    },
+    {
+      "entry_id": "2dbfc7df6c853448",
+      "title": "Apache Tomcat に複数の脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-30T23:00:18+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Apache Tomcat に複数の脆弱性が見つかったという記事であり、影響範囲はTomcat を外部公開している組織に集中する。内容からは、認証回避や情報漏えい、場合によってはコード実行へつながる可能性を想定して点検する局面になる。悪用の成立には、対象のバージョンや設定、公開経路が揃う必要があり、単に Tomcat を入れているだけでは直ちに被害が広…",
+      "article_path": "articles/2dbfc7df6c853448.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/01/56353.html"
+    },
+    {
+      "entry_id": "7b76294db3907eaf",
+      "title": "IPA、情報セキュリティ早期警戒パートナーシップガイドライン改訂案を公開",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-30T23:00:15+00:00",
+      "impact_level": "Low",
+      "threat_type": "Advisory",
+      "summary_preview": "概要IPAが情報セキュリティ早期警戒パートナーシップガイドラインの改訂案を公開し、関係者からの意見募集に入った。内容は新たな脆弱性や攻撃の発生そのものではなく、脆弱性情報の受け渡しや公表、調整の流れを見直す性格が強い。直接の被害は限定的だが、運用面では通報・共有・公表の判断が変わるため、CSIRTの連携手順に影響が及ぶ可能性がある。攻撃者がこの改訂案を悪用…",
+      "article_path": "articles/7b76294db3907eaf.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/01/56352.html"
+    },
+    {
+      "entry_id": "f5533c1070410595",
+      "title": "C&Cサーバ検知共有スキームを実践フェーズへ、通信事業者らによる注意喚起・フィルタリング試行",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-30T23:00:12+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要通信事業者らが、C&amp;Cサーバの検知情報を共有し、注意喚起とフィルタリングの試行を実運用に近い形へ進める動きが報じられた。狙いは、感染端末が外部の指令基盤へ接続する段階で、通信を早期に把握し被害の拡大を抑える点にある。攻撃者は初期侵入後にC&amp;C通信を通じて追加命令の配布、情報窃取、横展開、持続化を進めるため、ここを止められると活動継続の余…",
+      "article_path": "articles/f5533c1070410595.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/01/56351.html"
+    },
+    {
+      "entry_id": "6a7e06105c9df117",
+      "title": "GMOサイバーセキュリティ byイエラエ、国際宇宙会議（IAC 2026）で衛星セキュリティ研究やデモを出展",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-30T23:00:07+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要本件は、衛星セキュリティに関する研究やデモを、GMOサイバーセキュリティ byイエラエが国際宇宙会議（IAC 2026）で展示するという告知記事であり、脆弱性の公表や実害発生を伝えるものではない。扱っているテーマは、衛星や地上局、運用系ネットワークがつながることで生じる攻撃面の拡大で、将来的には認証不備、設定不備、更新経路の侵害、監視経路の改ざんなどが…",
+      "article_path": "articles/6a7e06105c9df117.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/01/56350.html"
+    },
+    {
+      "entry_id": "414c732974817a98",
+      "title": "HENNGE がラグビーチーム「リコーブラックラムズ東京」とのオフィシャルパートナー契約を締結、公式戦ウェア背面にロゴ掲出",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-09-30T23:00:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要HENNGEがラグビーチーム「リコーブラックラムズ東京」とオフィシャルパートナー契約を結び、公式戦ウェア背面にロゴを掲出するという話題で、セキュリティ脆弱性や侵害事案を扱う記事ではない。したがって、CSIRTの観点では直ちに対応判断が必要なインシデント情報ではなく、事業連携や広報上のニュースとして扱うのが妥当になる。悪用経路、影響範囲、封じ込め対象は記…",
+      "article_path": "articles/414c732974817a98.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/01/56349.html"
+    }
+  ]
+}
