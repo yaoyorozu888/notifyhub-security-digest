@@ -23,6 +23,23 @@ logger = logging.getLogger(__name__)
 GROK_BASE_URL = "https://api.x.ai/v1"
 
 
+def _featured_topic_http_retries() -> int:
+    raw = (
+        os.getenv("FEATURED_TOPIC_HTTP_RETRIES")
+        or os.getenv("GROK_HTTP_RETRIES")
+        or os.getenv("NOTIFYHUB_HTTP_RETRIES")
+        or "2"
+    ).strip()
+    try:
+        return max(0, int(raw))
+    except Exception:
+        return 2
+
+
+def _is_retryable_featured_topic_error(exc: Exception) -> bool:
+    return isinstance(exc, (httpx.TimeoutException, httpx.TransportError))
+
+
 @dataclass(frozen=True)
 class GrokConfig:
     api_key: str
@@ -47,7 +64,7 @@ class CategoryPolicy:
 
 FEATURED_SYSTEM_PROMPT = (
     "あなたは日次ダイジェストの編集者です。\n"
-    "必ず x_search と web_search の両方を使い、過去一日の X 投稿とニュースサイトを横断して調査してください。\n"
+    "必要に応じて x_search または web_search を使い、根拠が薄い場合は両方を使って過去一日の X 投稿とニュースサイトを横断して調査してください。\n"
     "検索をせずに既知知識だけで答えることは禁止です。\n"
     "生成する記事本文・深掘り解説は、日本語の常体で書く。です・ます調の敬体は使わない。「〜だ」「〜である」で終える文を避ける。\n"
     "用語解説は簡潔で中立的な説明文にし、「〜だ」「〜である」で終えない。\n"
@@ -356,21 +373,21 @@ def _schema_hint(count: int) -> str:
         f"- topics は原則 {count} 件返す。categories がある場合はまず各カテゴリから最大1件ずつ選び、不足分は関連性の高い追加トピックで埋める\n"
         "- requested_category は categories に指定された文字列をそのまま使う。categories が未指定の場合のみ自由記述可\n"
         "- 各 topic は requested_category が指す分野やテーマに直接対応させ、周辺話題や比喩的な一致で埋めない\n"
-        "- information_sources には実際に参照した情報ソースを 2〜5 件入れる\n"
+        "- information_sources には実際に参照した情報ソースを 2〜3 件入れる\n"
         "- x_search で有用な X 投稿を参照した場合は、information_sources に source_type=x を少なくとも1件含める\n"
         "概要:\n"
         "- summary_html は許可タグのみ、属性禁止\n"
         "- article title に相当する title を除き、すべての出力項目は日本語で書く\n"
         "- summary_html・lessons.body は常体で書き、です・ます調は使わない\n"
         "- summary_html・technical_terms.explanation・lessons.body は「〜だ」「〜である」で終えない\n"
-        "- 4〜6文で書く\n"
+        "- 3〜4文で書く\n"
         "強調ルール:\n"
         "- 意思決定に影響する語句のみ <strong>…</strong> で強調\n"
-        "- 最大8箇所、短いフレーズ単位\n"
+        "- 最大6箇所、短いフレーズ単位\n"
         "文字量:\n"
-        "- summary_html 全体で500〜800文字程度\n"
+        "- summary_html 全体で350〜550文字程度\n"
         "technical_terms（用語解説）ルール:\n"
-        "- technical_terms は最大 3 件で、固有名詞または技術用語のみを選ぶ。一般語や抽象語は避ける\n"
+        "- technical_terms は最大 2 件で、固有名詞または技術用語のみを選ぶ。一般語や抽象語は避ける\n"
         "- 同じ用語が過去にも使われていることを前提とし、毎回同じ説明を繰り返さない\n"
         "- 今回の記事文脈で「なぜ重要か」に焦点を当てる\n"
         "- 可能な限り対立概念・混同されやすい概念と対比して説明する\n"
@@ -394,10 +411,10 @@ def _build_user_prompt(*, window_start_utc: datetime, window_end_utc: datetime, 
             f"- 対象期間: {window_start_utc.isoformat()} 以上 {window_end_utc.isoformat()} 未満",
             f"- 抽出件数: 最大 {settings.count} 件",
             f"- 優先カテゴリ: {category_text}",
-            "- 必ず x_search と web_search を両方使うこと",
+            "- x_search または web_search を使って根拠を集めること。片方で十分な根拠が得られる場合は両方使わなくてよい",
             "- X 投稿を含めるが、ニュース/公式情報でも裏づけること",
             "- X 投稿が実際に有用な根拠になった場合は、その投稿も情報ソースに含めること",
-            "- 出力では各トピックについて参照した情報ソースを 2〜5 件明記すること",
+            "- 出力では各トピックについて参照した情報ソースを 2〜3 件明記すること",
             "- categories は固定候補ではなく自由なテーマ名として解釈し、その語が指す分野に直接属する話題を選ぶこと",
             "- categories が指定されている場合、requested_category には指定されたカテゴリ名をそのまま使うこと",
             "- トピック候補を選ぶ前に、少なくとも異なる発信元・業界・技術領域から複数候補を比較し、同種の調査会社レポートや年次予測だけに寄せないこと",
@@ -409,7 +426,7 @@ def _build_user_prompt(*, window_start_utc: datetime, window_end_utc: datetime, 
             "- キーワード解説は可能な限り類似概念と対比しつつ、日本語2〜3文・100文字以内で、「〜だ」「〜である」で終えないこと",
             "- 深掘り解説は、記事に関連する別の論点や制度、技術、背景トピックから学習価値が最も高い題材を1つだけ選び、具体例を含めて説明すること",
             "- 深掘り解説に適切な題材がない場合は、lessons に title=なし, body=なし の1件だけを入れること",
-            "- 概要は4〜6文、500〜800文字程度で、意思決定に影響する短い語句だけを <strong>…</strong> で強調すること",
+            "- 概要は3〜4文、350〜550文字程度で、意思決定に影響する短い語句だけを <strong>…</strong> で強調すること",
             "- 全体として5分程度で読める量と密度にすること",
             "- 各 topic_id は featured-topic-1, featured-topic-2 のように連番にすること",
             "- categories が指定されている場合は、まず各カテゴリに対応する topic を優先して返すこと",
@@ -454,12 +471,30 @@ def build_featured_topics(
     if cfg.temperature is not None:
         payload["temperature"] = cfg.temperature
 
-    res = client.post(
-        f"{GROK_BASE_URL}/responses",
-        headers={"Authorization": f"Bearer {cfg.api_key}"},
-        json=payload,
-        timeout=request_timeout,
-    )
+    retries = _featured_topic_http_retries()
+    last_exc: Exception | None = None
+    for attempt in range(retries + 1):
+        try:
+            res = client.post(
+                f"{GROK_BASE_URL}/responses",
+                headers={"Authorization": f"Bearer {cfg.api_key}"},
+                json=payload,
+                timeout=request_timeout,
+            )
+            break
+        except Exception as exc:
+            if not _is_retryable_featured_topic_error(exc) or attempt >= retries:
+                raise
+            last_exc = exc
+            logger.warning(
+                "Retrying Grok featured topic request after transient error: attempt=%s/%s error=%s",
+                attempt + 2,
+                retries + 1,
+                exc,
+            )
+    else:
+        raise last_exc or RuntimeError("featured topic request failed without exception")
+
     res.raise_for_status()
 
     data = res.json()

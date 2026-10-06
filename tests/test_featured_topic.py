@@ -4,6 +4,7 @@ import json
 from datetime import datetime, timedelta
 from pathlib import Path
 
+import httpx
 import pytest
 
 from notifyhub_digest.models import AnalysisResult, FeaturedTopic, InformationSource, Source
@@ -313,6 +314,45 @@ def test_build_featured_topics_logs_response_excerpt_when_json_parse_fails(caplo
     assert "grok-4.7" in caplog.text
 
 
+def test_build_featured_topics_retries_transient_transport_error(monkeypatch) -> None:
+    attempts = 0
+
+    class _Response:
+        def raise_for_status(self) -> None:
+            return None
+
+        def json(self) -> dict[str, object]:
+            return {
+                "model": "grok-4.7",
+                "output_text": '{"topics": []}',
+            }
+
+    class _Client:
+        def post(self, _url: str, *, headers: dict[str, str], json: dict[str, object], timeout=None):
+            nonlocal attempts
+            attempts += 1
+            if attempts == 1:
+                raise httpx.RemoteProtocolError("Server disconnected without sending a response.")
+            return _Response()
+
+    class _Settings:
+        count = 1
+        categories = ["AI"]
+
+    monkeypatch.setenv("FEATURED_TOPIC_HTTP_RETRIES", "1")
+
+    topics = build_featured_topics(
+        _Client(),
+        cfg=GrokConfig(api_key="test", model="grok-4.7", temperature=None),
+        window_start_utc=datetime(2026, 5, 8, 0, 0),
+        window_end_utc=datetime(2026, 5, 9, 0, 0),
+        settings=_Settings(),
+    )
+
+    assert topics == []
+    assert attempts == 2
+
+
 def test_featured_topic_timeout_uses_longer_fallback() -> None:
     timeout = _featured_topic_timeout(120.0)
 
@@ -404,6 +444,7 @@ def test_featured_topic_prompts_require_plain_japanese_style() -> None:
     assert "速報性、影響度、話題性" in FEATURED_SYSTEM_PROMPT
     assert "英語の文や英語だけの箇条書きは禁止" in FEATURED_SYSTEM_PROMPT
     assert "article title に相当する title を除き" in FEATURED_SYSTEM_PROMPT
+    assert "必要に応じて x_search または web_search を使い" in FEATURED_SYSTEM_PROMPT
 
     schema_hint = _schema_hint(1)
     assert "summary_html・lessons.body は常体" in schema_hint
@@ -415,9 +456,11 @@ def test_featured_topic_prompts_require_plain_japanese_style() -> None:
     assert "同じ用語が過去にも使われていることを前提" in schema_hint
     assert "lessons（深掘り解説）ルール" in schema_hint
     assert "title=なし, body=なし" in schema_hint
-    assert "4〜6文で書く" in schema_hint
-    assert "最大8箇所" in schema_hint
-    assert "summary_html 全体で500〜800文字程度" in schema_hint
+    assert "3〜4文で書く" in schema_hint
+    assert "最大6箇所" in schema_hint
+    assert "summary_html 全体で350〜550文字程度" in schema_hint
+    assert "information_sources には実際に参照した情報ソースを 2〜3 件入れる" in schema_hint
+    assert "technical_terms は最大 2 件" in schema_hint
 
 
 def test_featured_topic_prompts_discourage_repetitive_trend_reports() -> None:
@@ -439,3 +482,6 @@ def test_featured_topic_prompts_discourage_repetitive_trend_reports() -> None:
     assert "Gartner の IT トレンド予測" in prompt
     assert "製品発表、規制変更、研究成果、導入事例" in prompt
     assert "新規性・具体性・分野の多様性" in prompt
+    assert "片方で十分な根拠が得られる場合は両方使わなくてよい" in prompt
+    assert "2〜3 件明記すること" in prompt
+    assert "3〜4文、350〜550文字程度" in prompt
