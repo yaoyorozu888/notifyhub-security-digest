@@ -4,6 +4,8 @@ import json
 from datetime import datetime, timedelta
 from pathlib import Path
 
+import pytest
+
 from notifyhub_digest.models import AnalysisResult, FeaturedTopic, InformationSource, Source
 from notifyhub_digest.rss import RawEntry
 from notifyhub_digest.featured_topic import FEATURED_SYSTEM_PROMPT, GrokConfig, _build_user_prompt, _infer_category_policy, _looks_mismatched_for_category, _resolve_requested_category, _schema_hint, build_featured_topics, load_featured_topics_settings
@@ -271,6 +273,40 @@ def test_build_featured_topics_omits_blank_temperature_from_request() -> None:
     assert topics == []
     assert captured_payload["model"] == "grok-4.7"
     assert "temperature" not in captured_payload
+
+
+def test_build_featured_topics_logs_response_excerpt_when_json_parse_fails(caplog) -> None:
+    class _Response:
+        def raise_for_status(self) -> None:
+            return None
+
+        def json(self) -> dict[str, object]:
+            return {
+                "model": "grok-4.7",
+                "output_text": "not json at all\nwith extra explanation",
+            }
+
+    class _Client:
+        def post(self, _url: str, *, headers: dict[str, str], json: dict[str, object]):
+            return _Response()
+
+    class _Settings:
+        count = 1
+        categories = ["AI"]
+
+    with caplog.at_level("ERROR"):
+        with pytest.raises(ValueError, match="could not parse JSON object"):
+            build_featured_topics(
+                _Client(),
+                cfg=GrokConfig(api_key="test", model="grok-4.7", temperature=None),
+                window_start_utc=datetime(2026, 5, 8, 0, 0),
+                window_end_utc=datetime(2026, 5, 9, 0, 0),
+                settings=_Settings(),
+            )
+
+    assert "Failed to parse Grok featured topic response as JSON" in caplog.text
+    assert "not json at all" in caplog.text
+    assert "grok-4.7" in caplog.text
 
 
 def test_build_user_prompt_adds_generic_guidance_for_arbitrary_categories() -> None:

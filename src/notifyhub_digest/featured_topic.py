@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import logging
 import os
 from dataclasses import dataclass
 from datetime import datetime
@@ -14,6 +15,9 @@ from notifyhub_digest.openai_client import (
     _extract_response_model,
     _extract_response_text,
 )
+
+
+logger = logging.getLogger(__name__)
 
 
 GROK_BASE_URL = "https://api.x.ai/v1"
@@ -272,6 +276,15 @@ def _extract_plain_text(summary_html: str) -> str:
     return " ".join(part.strip() for part in summary_html.replace("<", " ").replace(">", " ").split())
 
 
+def _response_debug_excerpt(text: str, *, limit: int = 2000) -> str:
+    normalized = (text or "").strip()
+    if not normalized:
+        return "<empty>"
+    if len(normalized) <= limit:
+        return normalized
+    return f"{normalized[:limit]}... [truncated {len(normalized) - limit} chars]"
+
+
 def _parse_temperature_env(var_name: str, default: float | None) -> float | None:
     raw = os.getenv(var_name)
     if raw is None:
@@ -450,7 +463,15 @@ def build_featured_topics(
     data = res.json()
     content = _extract_response_text(data)
     model_version = _extract_response_model(data) or cfg.model
-    parsed: dict[str, Any] = _extract_json_object(content)
+    try:
+        parsed: dict[str, Any] = _extract_json_object(content)
+    except Exception:
+        logger.exception(
+            "Failed to parse Grok featured topic response as JSON: model=%s output_excerpt=%r",
+            model_version,
+            _response_debug_excerpt(content),
+        )
+        raise
     raw_topics = parsed.get("topics")
     if not isinstance(raw_topics, list):
         return []
