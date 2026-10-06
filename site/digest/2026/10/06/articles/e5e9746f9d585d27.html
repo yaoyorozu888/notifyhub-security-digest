@@ -254,8 +254,8 @@
         </div>
 
         <div class="tags">
-          <span class="tag level-Unknown">Impact: Unknown</span>
-          <span class="tag">Unknown</span>
+          <span class="tag level-Medium">Impact: Medium</span>
+          <span class="tag">Other</span>
         </div>
 
         <div class="btnRow">
@@ -268,24 +268,43 @@
         
         <div class="section">
           <h2>Impact判定理由</h2>
-          <div class="ruleReason"></div>
+          <div class="ruleReason">認証情報の露出は侵入の起点になりやすく、横展開や権限悪用へつながるため、運用上の重要度は高い。もっとも、提示された内容は製品・枠組みの紹介に近く、具体的な脆弱性、悪用事例、広範囲な実害は確認できない。メディア由来の二次情報であり、一次情報の詳細が不足しているため、深刻度は据え置き寄りで評価する。</div>
         </div>
         <div class="section summary">
-          <h2>🧾 要約（ChatGPT）</h2>
+          <h2>🧾 要約（ChatGPT / gpt-5.4-mini-2026-03-17）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          
+          <div><h4>概要</h4><p>この記事は、企業内の認証情報が人間・システム・AIの接続点として急速に増え、<strong>把握と統制が追いつかない</strong>状況を指摘している。公開断片では、GitGuardianが「Detect」「Remediate」「Prevent」の3段階でこの層を守ると説明しており、漏えいした秘密情報の検知、修復、再発防止を一連で扱う構図が見える。攻撃者側からは、認証情報は侵入の初期足場だけでなく、<strong>横展開や権限昇格</strong>の起点にもなるため、1件の漏えいが複数システムへ波及しやすい。特にAIや自動化基盤が認証情報を広く参照する環境では、露出範囲が従来より広がる可能性がある。一方で、記事断片だけでは実際の検知精度、対応対象、AI固有のリスク範囲までは確認できない。</p></div>
         </div>
 
         <div class="section">
           <h2>📌 キーワード解説</h2>
           <div class="terms">
-            
+            <div class="termCard">
+  <div class="term">credential layer（認証情報層）</div>
+  <p class="exp">人・機械・AIが使う秘密情報の集合を指す。単体のID管理より、漏えい面の広さが重要になる。</p>
+</div>
+<div class="termCard">
+  <div class="term">Detect（検知）</div>
+  <p class="exp">漏えいを見つける段階。防止より前に、どこに何があるかを可視化する点が要になる。</p>
+</div>
+<div class="termCard">
+  <div class="term">Remediate（修復）</div>
+  <p class="exp">漏えい後に無効化やローテーションを行う段階。削除だけでなく、利用停止の確認まで含む。</p>
+</div>
+<div class="termCard">
+  <div class="term">Prevent（防止）</div>
+  <p class="exp">再発を防ぐ仕組みを作る段階。監視だけでなく、開発や運用の流れに組み込む点が異なる。</p>
+</div>
           </div>
           <h3 class="subSectionTitle">深掘り解説</h3>
           <div class="deepDive">
             <div class="termCard deepDiveCard">
-  <div class="term">なし</div>
+  <div class="term">認証情報対策は「発見」だけでは足りない</div>
+  <p class="exp">認証情報の管理で見落とされやすいのは、漏えいを見つけた瞬間に終わると考えてしまう点にある。実務では、発見よりも後の「無効化」「置き換え」「再発防止」まで一続きで設計しないと被害が残る。
 
+具体例を挙げると、GitHubの設定ファイルからAPIキーを見つけた場合、対応はそのファイルを消すだけでは不十分になる。キーがすでにCI/CDや外部SaaSから参照されていれば、まず利用停止し、影響範囲を確認し、代替キーへ切り替え、最後に同じ種類の露出が起きないようレビュー手順や自動検査を入れる必要がある。
+
+ここで重要なのは、認証情報の漏えいが「単発インシデント」に見えても、実際には後続の侵入や権限悪用の前段になりやすい点にある。CSIRTは、検知件数ではなく、無効化完了率、再利用有無、同種の露出件数の推移で管理すると判断がぶれにくくなる。</p>
 </div>
           </div>
         </div>
@@ -296,7 +315,7 @@
           <h2>🕘 生成情報</h2>
           <div class="ruleReason">
 対象期間：2026-10-05T06:00:00+09:00 〜 2026-10-06T06:00:00+09:00
-生成時刻：2026-10-06T08:23:06.533714+09:00
+生成時刻：2026-10-06T09:03:12.743476+09:00
 免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
           </div>
         </div>

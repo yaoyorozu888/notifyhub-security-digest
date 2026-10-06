@@ -254,8 +254,8 @@
         </div>
 
         <div class="tags">
-          <span class="tag level-Unknown">Impact: Unknown</span>
-          <span class="tag">Unknown</span>
+          <span class="tag level-High">Impact: High</span>
+          <span class="tag">Intrusion</span>
         </div>
 
         <div class="btnRow">
@@ -268,24 +268,39 @@
         
         <div class="section">
           <h2>Impact判定理由</h2>
-          <div class="ruleReason"></div>
+          <div class="ruleReason">公開サイトでの不正アクセスは、単なる表示障害よりも改ざん・悪性配布・再侵入の起点になりやすく、運用上の影響が大きい。wp2shell の悪用は侵入後のシェル実行や後続侵害を示唆し、被害が当該サイト内に閉じない可能性がある。一次情報ではなくメディア報道ベースのため詳細は未確認だが、外部公開面の侵害として初動優先度は高い。</div>
         </div>
         <div class="section summary">
-          <h2>🧾 要約（ChatGPT）</h2>
+          <h2>🧾 要約（ChatGPT / gpt-5.4-mini-2026-03-17）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          
+          <div><h4>概要</h4><p>東産業の公式サイトで、<strong>wp2shell</strong> を悪用した <strong>不正アクセス</strong> が報じられている。wp2shell は WordPress 環境を足がかりに <strong>シェル実行</strong> や後続侵害へつなげる用途で使われることが多く、初期侵入後に改ざん、追加マルウェア配置、踏み台化へ広がるおそれがある。公開情報だけでは、侵入経路が管理画面の窃取なのか、脆弱なプラグインやテーマ経由なのか、既にどこまで内部へ到達したのかは確認できない。外部公開サイトが起点の場合、被害は当該サイトの改ざんにとどまらず、来訪者への悪性配布や社内ネットワークへの横展開の起点になるため、<strong>Web 改ざん</strong>としては軽く扱えない。現時点では、侵入後の永続化有無、資格情報の漏えい、他システムへの波及は未確認であり、復旧より先に痕跡保全と再侵入経路の特定が要る。</p></div>
         </div>
 
         <div class="section">
           <h2>📌 キーワード解説</h2>
           <div class="terms">
-            
+            <div class="termCard">
+  <div class="term">wp2shell</div>
+  <p class="exp">WordPress を起点にシェルへつなぐ攻撃手口。単なる改ざんより、後続侵害の足場として危険。</p>
+</div>
+<div class="termCard">
+  <div class="term">シェル実行</div>
+  <p class="exp">OS コマンドを直接実行する状態。管理画面の奪取より深く、横展開や永続化へつながりやすい。</p>
+</div>
+<div class="termCard">
+  <div class="term">Web 改ざん</div>
+  <p class="exp">見た目の変更だけでなく、悪性コード埋め込みが本体。情報改ざんと配布拠点化を分けて見る必要がある。</p>
+</div>
           </div>
           <h3 class="subSectionTitle">深掘り解説</h3>
           <div class="deepDive">
             <div class="termCard deepDiveCard">
-  <div class="term">なし</div>
+  <div class="term">WordPress 攻撃で最初に見るべきは「入口」より「再侵入経路」</div>
+  <p class="exp">WordPress の被害では、見つかった改ざん内容よりも、攻撃者が何を使って入ったかを先に固める必要がある。管理画面の漏えい、脆弱なプラグイン、テーマ改ざん、ファイル書き込み権限の過剰付与では、封じ込めの打ち手が変わるためである。
 
+例えば、管理画面のパスワードが漏れていた場合、単にファイルを戻しても再侵入される。逆に、古いプラグインの脆弱性が入口なら、同系統サイトへも同じ攻撃が続く可能性が高い。したがって、まずは Web サーバのアクセスログ、WordPress の管理ログ、改ざん時刻前後のファイル更新、プラグイン有効化履歴を突き合わせ、入口候補を絞るのが先になる。
+
+実務では、復旧を急ぐほど証拠が失われやすい。公開停止、バックアップ復元、パスワード変更の順番を誤ると、攻撃者の痕跡が消えて原因不明の再発に陥りやすい。小規模サイトでも、侵入経路の特定と再発防止策の確認を終えてから再公開する流れが重要になる。</p>
 </div>
           </div>
         </div>
@@ -296,7 +311,7 @@
           <h2>🕘 生成情報</h2>
           <div class="ruleReason">
 対象期間：2026-10-05T06:00:00+09:00 〜 2026-10-06T06:00:00+09:00
-生成時刻：2026-10-06T08:23:06.533714+09:00
+生成時刻：2026-10-06T09:03:12.743476+09:00
 免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
           </div>
         </div>

@@ -254,8 +254,8 @@
         </div>
 
         <div class="tags">
-          <span class="tag level-Unknown">Impact: Unknown</span>
-          <span class="tag">Unknown</span>
+          <span class="tag level-High">Impact: High</span>
+          <span class="tag">Botnet</span>
         </div>
 
         <div class="btnRow">
@@ -268,24 +268,44 @@
         
         <div class="section">
           <h2>Impact判定理由</h2>
-          <div class="ruleReason"></div>
+          <div class="ruleReason">修正済みの重大脆弱性を起点に、露出機器へ自動化された侵害が広がる可能性が高い。STUN を悪用した C2 は平常通信に紛れやすく、検知よりも封じ込めが遅れやすい点が実運用上の痛点になる。
+情報源はニュース系の二次情報なので過大評価は避けるが、本文は実際の悪用試行を示しており、重要度は据え置き以上が妥当になる。製品群が広く、未適用機器が残りやすいことを踏まえると、対応優先度は高い。</div>
         </div>
         <div class="section summary">
-          <h2>🧾 要約（ChatGPT）</h2>
+          <h2>🧾 要約（ChatGPT / gpt-5.4-mini-2026-03-17）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          
+          <div><h4>概要</h4><p>Realtek Jungle SDK の<strong>修正済みの重大脆弱性</strong>を悪用し、<strong>Cling</strong> と呼ばれる botnet を配布しようとする試みが観測された。攻撃の焦点は新しい感染手法そのものではなく、<strong>STUN</strong> の通常通信を使って <strong>C2</strong> を隠す点にある。これにより、境界装置や IoT 系機器が外向き通信を許しているだけでも、指令受信と持続化が成立しやすくなる。影響は単一機器の乗っ取りに留まらず、露出した製品群へ横断的に広がる可能性があるが、対象となる製品範囲や実際の侵害規模は本文からは未確認となる。</p><p>The Hacker News 由来の二次情報であるため、悪用の有無や波及範囲は一次情報での裏取りが必要になる。とはいえ、<strong>パッチ未適用機器の探索と自動侵害</strong>が進みやすい題材であり、公開管理面のスキャン、外向き STUN 通信、未知の永続化設定を優先して確認する価値がある。</p></div>
         </div>
 
         <div class="section">
           <h2>📌 キーワード解説</h2>
           <div class="terms">
-            
+            <div class="termCard">
+  <div class="term">STUN</div>
+  <p class="exp">NAT越しの通信確立に使う仕組み。VPNや正規C2と違い、平常時の外向き通信に紛れやすい点が厄介になる。</p>
+</div>
+<div class="termCard">
+  <div class="term">C2</div>
+  <p class="exp">攻撃者が侵害端末を遠隔操作する指令系統。単純な通信先ではなく、暗号化や正規プロトコル偽装で見えにくくなる。</p>
+</div>
+<div class="termCard">
+  <div class="term">botnet</div>
+  <p class="exp">多数の侵害端末を束ねた操作基盤。単体被害より、スキャン・DDoS・再侵入の足場として価値が高い。</p>
+</div>
+<div class="termCard">
+  <div class="term">SDK</div>
+  <p class="exp">製品組み込み用の開発部品群。アプリ本体より広く流通し、同じ欠陥が複数製品へ波及しやすい。</p>
+</div>
           </div>
           <h3 class="subSectionTitle">深掘り解説</h3>
           <div class="deepDive">
             <div class="termCard deepDiveCard">
-  <div class="term">なし</div>
+  <div class="term">SDK脆弱性は「一製品の不具合」より「供給面の共通故障」と見る</div>
+  <p class="exp">組み込み向けのSDKで脆弱性が見つかると、被害は一つの機器に閉じない。SDKを採用した複数ベンダーの製品へ同じ欠陥が波及し、しかも各製品の更新手順や保守窓口が別になるため、対処の難しさが一気に上がる。
 
+具体例として、ルータや監視機器で同系統のSDKが使われている場合、製品Aはすぐ修正されても、製品Bはファーム更新待ち、製品Cは保守終了ということが起こる。すると攻撃者は、最も遅い製品を狙って侵入を広げる。
+
+CSIRTとして重要なのは、脆弱性名だけで在庫確認を終えないことにある。部材表、ファーム版、製品型番、公開管理面の有無をひも付け、影響製品を横並びで特定する必要がある。さらに、修正済みであっても既に侵害されていないかは別問題になるため、再起動、設定差分、外向き通信の痕跡まで確認して初めて封じ込めが完了する。</p>
 </div>
           </div>
         </div>
@@ -296,7 +316,7 @@
           <h2>🕘 生成情報</h2>
           <div class="ruleReason">
 対象期間：2026-10-05T06:00:00+09:00 〜 2026-10-06T06:00:00+09:00
-生成時刻：2026-10-06T08:23:06.533714+09:00
+生成時刻：2026-10-06T09:03:12.743476+09:00
 免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
           </div>
         </div>

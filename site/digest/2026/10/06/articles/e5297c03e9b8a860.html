@@ -254,8 +254,8 @@
         </div>
 
         <div class="tags">
-          <span class="tag level-Unknown">Impact: Unknown</span>
-          <span class="tag">Unknown</span>
+          <span class="tag level-High">Impact: High</span>
+          <span class="tag">Vulnerability</span>
         </div>
 
         <div class="btnRow">
@@ -268,24 +268,39 @@
         
         <div class="section">
           <h2>Impact判定理由</h2>
-          <div class="ruleReason"></div>
+          <div class="ruleReason">認証済み攻撃者による権限昇格と他者メールボックス閲覧が主眼で、機密情報流出や社内横展開の起点になりやすい。CVSS 8.8 でも、未認証侵入ではない分だけ入口条件は狭いが、メール基盤は業務中枢のため実害は重くなりやすい。The Hacker News 経由の二次情報のため、悪用確認や影響範囲の詳細は未確認で、緊急性は一次情報で再確認が必要になる。</div>
         </div>
         <div class="section summary">
-          <h2>🧾 要約（ChatGPT）</h2>
+          <h2>🧾 要約（ChatGPT / gpt-5.4-mini-2026-03-17）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          
+          <div><h4>概要</h4><p>Microsoft Exchange Server に、<strong>認証済み攻撃者</strong>が権限を引き上げ、他ユーザーのメールボックスを読める可能性がある脆弱性が見つかった。Microsoft は通常の定例更新とは別に、<strong>緊急の追加パッチ</strong>を公開している。公表時点の情報では <strong>CVE-2026-96940</strong>、<strong>CVSS 8.8</strong> とされるが、実運用上の危険度は「社内で Exchange をどれだけ広く露出させているか」「認証情報をどこまで奪われ得るか」で大きく変わる。攻撃成立には少なくとも有効な認証と対象環境への到達性が必要とみられ、外部からの完全な未認証侵入とは切り分けて考える必要がある。未確認事項として、悪用事例の有無、影響を受ける Exchange の具体的な版や構成、既存の緩和策の有効性が残る。</p></div>
         </div>
 
         <div class="section">
           <h2>📌 キーワード解説</h2>
           <div class="terms">
-            
+            <div class="termCard">
+  <div class="term">認証済み攻撃者</div>
+  <p class="exp">ログイン済みの権限を前提に悪用する脅威。未認証RCEと違い入口は狭いが、内部被害は深くなりやすい。</p>
+</div>
+<div class="termCard">
+  <div class="term">権限昇格</div>
+  <p class="exp">低い権限から管理寄りの権限へ上がること。情報窃取型の不備でも、メール横断閲覧や操作権取得につながる。</p>
+</div>
+<div class="termCard">
+  <div class="term">弱い認可</div>
+  <p class="exp">認証後のアクセス可否判定が甘い状態。認証そのものより、誰の資源に触れてよいかの境界が壊れる点が本質。</p>
+</div>
           </div>
           <h3 class="subSectionTitle">深掘り解説</h3>
           <div class="deepDive">
             <div class="termCard deepDiveCard">
-  <div class="term">なし</div>
+  <div class="term">Exchange の脆弱性は「侵入」より「横の覗き見」が事故の起点になる</div>
+  <p class="exp">Exchange の問題は、外部からの単発侵入だけで評価すると見誤りやすい。今回のように認証済み前提の不備では、攻撃者は最初から社内の誰かとして振る舞えるため、狙いはサーバー破壊よりも、メールボックス閲覧、転送ルール改変、監査回避、会話の収集に寄りやすい。
 
+実務で厄介なのは、被害が「1アカウントの閲覧」に見えても、そこから証跡、業務情報、再利用可能な認証材料、役職者とのやり取りへ連鎖しやすい点にある。たとえば一般社員のアカウントで入り、経理や人事のやり取りから社内手続きの癖を把握し、次にメールの偽装送信や承認フローの乗っ取りへ進む流れは珍しくない。
+
+CSIRT が見るべきは、パッチ未適用の有無だけではない。Exchange への到達経路、VPN や SSO の認証ログ、特権アカウントの異常なメールボックスアクセス、ルール追加、委任設定の変更を合わせて追う必要がある。未認証の外部スキャンと違い、認証済み悪用は通常の業務操作に紛れやすいため、検知の軸を「侵入」ではなく「通常と違う社内利用」に置くと判断がぶれにくい。</p>
 </div>
           </div>
         </div>
@@ -296,7 +311,7 @@
           <h2>🕘 生成情報</h2>
           <div class="ruleReason">
 対象期間：2026-10-05T06:00:00+09:00 〜 2026-10-06T06:00:00+09:00
-生成時刻：2026-10-06T08:23:06.533714+09:00
+生成時刻：2026-10-06T09:03:12.743476+09:00
 免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
           </div>
         </div>

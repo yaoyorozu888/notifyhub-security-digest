@@ -254,8 +254,8 @@
         </div>
 
         <div class="tags">
-          <span class="tag level-Unknown">Impact: Unknown</span>
-          <span class="tag">Unknown</span>
+          <span class="tag level-Medium">Impact: Medium</span>
+          <span class="tag">Misconfiguration</span>
         </div>
 
         <div class="btnRow">
@@ -268,24 +268,31 @@
         
         <div class="section">
           <h2>Impact判定理由</h2>
-          <div class="ruleReason"></div>
+          <div class="ruleReason">脆弱性悪用の話ではなく、macOS の強権限設定を AI エージェントが扱うことによる情報漏えいリスクが中心となる。直接的な侵害手段は示されておらず、現時点では設定強化の方針段階なので、緊急封じ込めよりも権限棚卸しと許可条件の見直しが主眼となる。メディア由来の二次情報であり、影響範囲や実装変更の詳細は未確認のため、重要度は中程度にとどめる。</div>
         </div>
         <div class="section summary">
-          <h2>🧾 要約（ChatGPT）</h2>
+          <h2>🧾 要約（ChatGPT / gpt-5.4-mini-2026-03-17）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          
+          <div><h4>概要</h4><p>Apple が macOS の <strong>Full Disk Access</strong> に関する制御を強化する方針を示した。背景には、AI エージェントがこの権限を使って、<strong>ファイル、メール、メッセージ、閲覧履歴</strong>まで広く参照しうる点への懸念がある。攻撃の起点は脆弱性ではなく、利用者や管理者が権限付与を誤ることにあるため、<strong>設定由来の情報漏えい</strong>として見る必要がある。影響は単一アプリの内部にとどまらず、端末内の機微情報を横断的に吸い上げられる点に広がる。現時点で、Apple がどの粒度で制限を入れるか、既存環境の挙動がどう変わるかは未確認となる。</p></div>
         </div>
 
         <div class="section">
           <h2>📌 キーワード解説</h2>
           <div class="terms">
-            
+            <div class="termCard">
+  <div class="term">Full Disk Access</div>
+  <p class="exp">macOSで端末内の広範なデータを読める権限。通常のアプリ権限より強く、誤付与が情報流出に直結しやすい。</p>
+</div>
+<div class="termCard">
+  <div class="term">AIエージェント</div>
+  <p class="exp">利用者の代わりに操作する自律型機能。単なるチャットと違い、既存権限を使って実データへ触れる点が危険となる。</p>
+</div>
           </div>
           <h3 class="subSectionTitle">深掘り解説</h3>
           <div class="deepDive">
             <div class="termCard deepDiveCard">
-  <div class="term">なし</div>
-
+  <div class="term">権限設計は機能要件ではなく漏えい境界として扱う</div>
+  <p class="exp">端末管理では、便利な機能を有効にする前に「その権限で何が見えるか」を先に決める必要がある。Full Disk Access のような強権限は、アプリが賢くなるほど価値が上がる一方で、漏えい面積も一気に広がる。特に AI エージェントは、利用者が気付かないうちにメール本文やブラウザ履歴をまとめて参照しやすく、通常のアプリより監査対象として重くなる。具体例として、文書要約ツールに端末全体の閲覧権限を与えると、会議資料だけでなく、下書きメールや認証情報の断片まで同じ境界内に入る。したがって、CSIRT は脆弱性の有無だけでなく、強権限を持つ機能がどの業務データに触れるかを棚卸しし、例外許可の根拠を残す運用へ寄せる必要がある。</p>
 </div>
           </div>
         </div>
@@ -296,7 +303,7 @@
           <h2>🕘 生成情報</h2>
           <div class="ruleReason">
 対象期間：2026-10-05T06:00:00+09:00 〜 2026-10-06T06:00:00+09:00
-生成時刻：2026-10-06T08:23:06.533714+09:00
+生成時刻：2026-10-06T09:03:12.743476+09:00
 免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
           </div>
         </div>

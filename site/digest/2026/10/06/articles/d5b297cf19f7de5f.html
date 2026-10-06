@@ -254,8 +254,8 @@
         </div>
 
         <div class="tags">
-          <span class="tag level-Unknown">Impact: Unknown</span>
-          <span class="tag">Unknown</span>
+          <span class="tag level-High">Impact: High</span>
+          <span class="tag">Zero-day</span>
         </div>
 
         <div class="btnRow">
@@ -268,24 +268,39 @@
         
         <div class="section">
           <h2>Impact判定理由</h2>
-          <div class="ruleReason"></div>
+          <div class="ruleReason">ゼロデイとして標的型攻撃に悪用され、しかも修正対象が外部公開されやすい NetScaler ADC / Gateway である点が重い。SAML 連携を止められると単一装置の障害では済まず、認証経路全体の業務停止に広がるため運用影響が大きい。情報源は二次メディアだが、ベンダー修正済みかつ悪用確認の報道があるため、重要度は据え置き以上で扱うのが妥当になる。</div>
         </div>
         <div class="section summary">
-          <h2>🧾 要約（ChatGPT）</h2>
+          <h2>🧾 要約（ChatGPT / gpt-5.4-mini-2026-03-17）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          
+          <div><h4>概要</h4><p>Citrix は NetScaler ADC / NetScaler Gateway の脆弱性 <strong>CVE-2026-88779</strong> に対する修正を公開し、この記事ではこれが<strong>標的型のゼロデイ攻撃</strong>に悪用されていたと伝えている。影響はメモリオーバーフローに起因し、<strong>SAML 認証基盤を停止させる</strong>可能性があるため、単なる装置停止ではなく認証連携の断絶として業務に波及しやすい。攻撃成立には外部公開された NetScaler の存在が前提になりやすく、インターネット接続面が広い組織ほど優先度が上がる。現時点の入力では、攻撃範囲、侵入後の横展開有無、認証情報窃取の有無は未確認であり、まずは対象版の特定と露出確認が必要になる。ニュース由来の情報ではあるが、<strong>ベンダー修正済み</strong>かつ悪用確認が示されているため、対応の遅れが許容しにくい事案に入る。</p></div>
         </div>
 
         <div class="section">
           <h2>📌 キーワード解説</h2>
           <div class="terms">
-            
+            <div class="termCard">
+  <div class="term">ゼロデイ</div>
+  <p class="exp">修正公開前に悪用される脆弱性を指す。既知脆弱性との違いは、対策が出る前に攻撃が進む点にある。</p>
+</div>
+<div class="termCard">
+  <div class="term">SAML</div>
+  <p class="exp">認証連携の仕組みで、落ちると単一システムではなく複数業務のログインが止まりやすい。単なるWeb障害より影響が広い。</p>
+</div>
+<div class="termCard">
+  <div class="term">メモリオーバーフロー</div>
+  <p class="exp">確保領域を超えて書き込む欠陥で、異常終了から任意コード実行まで幅がある。入力値検証不備より深刻化しやすい。</p>
+</div>
           </div>
           <h3 class="subSectionTitle">深掘り解説</h3>
           <div class="deepDive">
             <div class="termCard deepDiveCard">
-  <div class="term">なし</div>
+  <div class="term">SAML 障害は「認証の停止」ではなく「業務の同時停止」として見る</div>
+  <p class="exp">SAML はログイン画面の仕組みとして見られがちだが、実際には多くの SaaS、VPN、社内ポータルの入口を束ねている。ここが落ちると、個別システムが生きていても利用者は入れなくなるため、障害の見え方が広がる。
 
+今回のように NetScaler 側の脆弱性で SAML 連携が止まるケースでは、まず「どのサービスが NetScaler を経由しているか」を洗い出す必要がある。たとえば、VPN は復旧しても SSO 先の人事システムやファイル共有が開けない、というズレが起きやすい。
+
+実務上は、認証基盤の復旧順よりも、業務影響の大きい入口を先に守る発想が重要になる。具体例として、社内向け VPN が NetScaler 経由で、そこから SAML で Office 系 SaaS に入る構成では、NetScaler の停止がそのままリモートワーク不能につながる。したがって、パッチ適用だけでなく、一時的な迂回経路、証明書や IdP との依存関係、障害時の連絡手順まで含めて確認しておく必要がある。</p>
 </div>
           </div>
         </div>
@@ -296,7 +311,7 @@
           <h2>🕘 生成情報</h2>
           <div class="ruleReason">
 対象期間：2026-10-05T06:00:00+09:00 〜 2026-10-06T06:00:00+09:00
-生成時刻：2026-10-06T08:23:06.533714+09:00
+生成時刻：2026-10-06T09:03:12.743476+09:00
 免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
           </div>
         </div>
