@@ -7,7 +7,7 @@
   "counts": {
     "total": 1
   },
-  "generated_at_jst": "2026-10-06T23:43:34.174507+09:00",
+  "generated_at_jst": "2026-10-06T23:55:59.666017+09:00",
   "featured_topics_config": {
     "count": 3,
     "categories": [
@@ -16,7 +16,98 @@
       "Cybersecurity"
     ]
   },
-  "featured_topics": [],
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "シュナイダーがPTCを226億ドルで買収し産業ソフトとAI基盤を統合",
+      "source_name": "PTC",
+      "published_at": "2026-10-05T05:18:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要シュナイダーエレクトリックは10月5日、産業向け設計・エンジニアリングソフトのPTCを1株205ドル、株式価値約226億ドルの全額現金で買収する最終契約を結んだ。企業価値は約237億ドル、終値比42.3%のプレミアムで、完了は2027年第3四半期を見込むが、PTC株主の承認と規制当局の許認可が残る。買収後のソフト・サービス売上はグループの約24%へ上が…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://investor.ptc.com/resources/news/news-details/2026/Schneider-Electric-to-acquire-PTC-creating-the-next-level-of-Energy-and-Industrial-Intelligence/default.aspx",
+      "selection_reason": "同日にはFoxconnのAIサーバー増収やOracle経由のチップ賃貸もあったが、契約条件が薄く需要の反復になりやすい。本件は最終契約、対価、完了条件、ソフト売上比率まで開示された企業行動で、産業ソフトとエネルギー基盤の交差として具体性と分野の幅で上回る",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "シュナイダーによるPTC買収の公式発表",
+          "url": "https://investor.ptc.com/resources/news/news-details/2026/Schneider-Electric-to-acquire-PTC-creating-the-next-level-of-Energy-and-Industrial-Intelligence/default.aspx",
+          "source_type": "official"
+        },
+        {
+          "title": "ロイターによる買収条件の報道",
+          "url": "https://www.reuters.com/legal/transactional/schneider-electric-buy-ptc-226-billion-all-cash-deal-2026-10-05/",
+          "source_type": "news"
+        },
+        {
+          "title": "買収の採算時期を論じた投稿",
+          "url": "https://x.com/payasixi/status/2107213640017580263",
+          "source_type": "x"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "OpenAIがChatGPT画像生成中の視覚広告を米国で試験",
+      "source_name": "OpenAI",
+      "published_at": "2026-10-05T13:09:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Other",
+      "summary_preview": "概要OpenAIは10月5日、これまで名称やロゴ中心だったChatGPT広告に加え、画像生成の最中に出す視覚広告の試験を今月後半から米国の初期広告主グループに限って始めると発表した。広告は明示のラベルを付けて生成画像とは分離し回答には影響させないと明記する一方、週次12億人の利用を購読だけでは届かない層へ広げる財源と位置付け、初期試験は米国に限る。Plus…",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://openai.com/index/new-chatgpt-ads-format-and-measurement/",
+      "selection_reason": "同日の候補にはオープンウェイトモデルの準備や規制の総覧もあったが、新事実より解説に寄る。本件は掲載位置、対象国、回答への非介入、測定パートナーまで同日の製品変更として具体的で、セキュリティ事故の要約とも重ならない",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "OpenAIによる視覚広告と測定拡充の発表",
+          "url": "https://openai.com/index/new-chatgpt-ads-format-and-measurement/",
+          "source_type": "official"
+        },
+        {
+          "title": "The Vergeによる掲載条件の報道",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1004655/openai-chatgpt-visual-ads",
+          "source_type": "news"
+        },
+        {
+          "title": "画像生成中の広告試験を伝えた投稿",
+          "url": "https://x.com/ValesyaAI/status/2107213607725301813",
+          "source_type": "x"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "NetScalerの新ゼロデイCVE-2026-88779、修正済み機器も再起動",
+      "source_name": "SecurityWeek",
+      "published_at": "2026-10-05T05:14:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Zero-day",
+      "summary_preview": "概要CitrixのNetScaler ADCとGatewayのうち、SAMLのサービスプロバイダまたはアイデンティティプロバイダとして動く構成で、メモリオーバーフローCVE-2026-88779の悪用が確認された。深刻度はCVSS 4.0で8.7、修正版は14.1-73.41と13.1-64.28以降となり、直前のCVE-2026-88771とCVE-20…",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://www.securityweek.com/exploitation-of-citrix-netscaler-zero-day-hits-appliances-patched-days-earlier/",
+      "selection_reason": "住民登録の大規模流出も同日の重要事案だが、個人の警戒が中心で運用手順は限られる。本件は修正版、対象構成、連邦期限、先行欠陥との関係が公式情報と報道で揃い、更新済み機器の再起動という新しい事実があるため優先した",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "修正済み機器への悪用を報じたSecurityWeek",
+          "url": "https://www.securityweek.com/exploitation-of-citrix-netscaler-zero-day-hits-appliances-patched-days-earlier/",
+          "source_type": "news"
+        },
+        {
+          "title": "先行欠陥との組合せを伝えたCybersecurity Dive",
+          "url": "https://www.cybersecuritydive.com/news/citrix-patch-third-exploited-flaw-netscaler/832128/",
+          "source_type": "news"
+        },
+        {
+          "title": "悪用継続を共有した投稿",
+          "url": "https://x.com/chris_uk2026/status/2107204322798837808",
+          "source_type": "x"
+        }
+      ]
+    }
+  ],
   "items": [
     {
       "entry_id": "e5297c03e9b8a860",
@@ -26,7 +117,7 @@
       "published_at": "2026-10-05T16:21:52+00:00",
       "impact_level": "High",
       "threat_type": "Vulnerability",
-      "summary_preview": "概要Microsoft Exchange Serverで、認証済みの攻撃者が特定条件下で権限を引き上げ、他の利用者のメールボックスを閲覧できる脆弱性が報告された。該当する脆弱性はCVE-2026-96940で、CVSSは8.8とされ、Microsoftは通常の更新時期を待たない帯域外セキュリティ更新を公開したと記事は伝えている。攻撃には有効な認証が必要とさ…",
+      "summary_preview": "概要Microsoft Exchange Serverの認可不備としてCVE-2026-96940が公表され、Microsoftは通常の更新時期を待たない帯域外セキュリティ更新を提供した。攻撃には認証済みの利用者であることが必要だが、記事の説明では、特定条件下で権限を昇格し、他の利用者のメールボックスを読み取れる可能性がある。CVSSは8.8と高い一方、実…",
       "article_path": "articles/e5297c03e9b8a860.html",
       "original_url": "https://thehackernews.com/2026/10/microsoft-exchange-flaw-lets.html"
     }
