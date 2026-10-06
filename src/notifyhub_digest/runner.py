@@ -43,6 +43,19 @@ from notifyhub_digest.timeutils import JST, compute_daily_window
 logger = logging.getLogger(__name__)
 
 
+def _featured_topic_timeout(default_timeout: float) -> httpx.Timeout:
+    raw = (os.getenv("FEATURED_TOPIC_HTTP_TIMEOUT") or os.getenv("GROK_HTTP_TIMEOUT") or "").strip()
+    fallback = max(default_timeout, 240.0)
+    try:
+        total = float(raw) if raw else fallback
+    except Exception:
+        total = fallback
+
+    total = max(30.0, total)
+    connect_timeout = min(total, 30.0)
+    return httpx.Timeout(total, connect=connect_timeout, read=total, write=total, pool=total)
+
+
 def _parse_run_at(run_at_iso: str | None) -> datetime:
     if not run_at_iso:
         return datetime.now(tz=JST)
@@ -85,6 +98,7 @@ def build_digest_outputs(
     user_agent = os.getenv("NOTIFYHUB_USER_AGENT", "notifyhub-security-digest/0.1")
     timeout = float(os.getenv("NOTIFYHUB_HTTP_TIMEOUT", "20"))
     retries = int(os.getenv("NOTIFYHUB_HTTP_RETRIES", "2"))
+    featured_topic_timeout = _featured_topic_timeout(timeout)
 
     openai_cfg = load_openai_config()
     grok_cfg = load_grok_config()
@@ -157,6 +171,7 @@ def build_digest_outputs(
                     window_start_utc=window.start_utc,
                     window_end_utc=window.end_utc,
                     settings=featured_settings,
+                    request_timeout=featured_topic_timeout,
                 )
                 for topic in featured_topics:
                     topic.analysis.summary_html = sanitize_summary_html(topic.analysis.summary_html)

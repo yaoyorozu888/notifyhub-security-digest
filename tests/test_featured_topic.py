@@ -9,7 +9,7 @@ import pytest
 from notifyhub_digest.models import AnalysisResult, FeaturedTopic, InformationSource, Source
 from notifyhub_digest.rss import RawEntry
 from notifyhub_digest.featured_topic import FEATURED_SYSTEM_PROMPT, GrokConfig, _build_user_prompt, _infer_category_policy, _looks_mismatched_for_category, _resolve_requested_category, _schema_hint, build_featured_topics, load_featured_topics_settings
-from notifyhub_digest.runner import build_digest_outputs
+from notifyhub_digest.runner import _featured_topic_timeout, build_digest_outputs
 from notifyhub_digest.timeutils import JST, compute_daily_window
 
 
@@ -242,6 +242,7 @@ def test_build_user_prompt_adds_generic_tech_trend_guidance() -> None:
 
 def test_build_featured_topics_omits_blank_temperature_from_request() -> None:
     captured_payload: dict[str, object] = {}
+    captured_timeout = None
 
     class _Response:
         def raise_for_status(self) -> None:
@@ -254,8 +255,10 @@ def test_build_featured_topics_omits_blank_temperature_from_request() -> None:
             }
 
     class _Client:
-        def post(self, _url: str, *, headers: dict[str, str], json: dict[str, object]):
+        def post(self, _url: str, *, headers: dict[str, str], json: dict[str, object], timeout=None):
+            nonlocal captured_timeout
             captured_payload.update(json)
+            captured_timeout = timeout
             return _Response()
 
     class _Settings:
@@ -273,6 +276,7 @@ def test_build_featured_topics_omits_blank_temperature_from_request() -> None:
     assert topics == []
     assert captured_payload["model"] == "grok-4.7"
     assert "temperature" not in captured_payload
+    assert captured_timeout is None
 
 
 def test_build_featured_topics_logs_response_excerpt_when_json_parse_fails(caplog) -> None:
@@ -287,7 +291,7 @@ def test_build_featured_topics_logs_response_excerpt_when_json_parse_fails(caplo
             }
 
     class _Client:
-        def post(self, _url: str, *, headers: dict[str, str], json: dict[str, object]):
+        def post(self, _url: str, *, headers: dict[str, str], json: dict[str, object], timeout=None):
             return _Response()
 
     class _Settings:
@@ -307,6 +311,24 @@ def test_build_featured_topics_logs_response_excerpt_when_json_parse_fails(caplo
     assert "Failed to parse Grok featured topic response as JSON" in caplog.text
     assert "not json at all" in caplog.text
     assert "grok-4.7" in caplog.text
+
+
+def test_featured_topic_timeout_uses_longer_fallback() -> None:
+    timeout = _featured_topic_timeout(120.0)
+
+    assert timeout.read == 240.0
+    assert timeout.write == 240.0
+    assert timeout.connect == 30.0
+
+
+def test_featured_topic_timeout_honors_override(monkeypatch) -> None:
+    monkeypatch.setenv("FEATURED_TOPIC_HTTP_TIMEOUT", "360")
+
+    timeout = _featured_topic_timeout(120.0)
+
+    assert timeout.read == 360.0
+    assert timeout.write == 360.0
+    assert timeout.connect == 30.0
 
 
 def test_build_user_prompt_adds_generic_guidance_for_arbitrary_categories() -> None:

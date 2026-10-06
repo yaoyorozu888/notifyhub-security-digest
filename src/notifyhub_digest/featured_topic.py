@@ -426,6 +426,7 @@ def build_featured_topics(
     window_start_utc: datetime,
     window_end_utc: datetime,
     settings: FeaturedTopicsSettings,
+    request_timeout: httpx.Timeout | float | None = None,
 ) -> list[FeaturedTopic]:
     if settings.count <= 0:
         return []
@@ -457,6 +458,7 @@ def build_featured_topics(
         f"{GROK_BASE_URL}/responses",
         headers={"Authorization": f"Bearer {cfg.api_key}"},
         json=payload,
+        timeout=request_timeout,
     )
     res.raise_for_status()
 
