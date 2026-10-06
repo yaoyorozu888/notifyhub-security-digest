@@ -5,9 +5,9 @@
     "to": "2026-10-06T06:00:00+09:00"
   },
   "counts": {
-    "total": 17
+    "total": 19
   },
-  "generated_at_jst": "2026-10-06T09:03:12.743476+09:00",
+  "generated_at_jst": "2026-10-06T22:42:56.620831+09:00",
   "featured_topics_config": {
     "count": 3,
     "categories": [
@@ -16,88 +16,7 @@
       "Cybersecurity"
     ]
   },
-  "featured_topics": [
-    {
-      "topic_id": "featured-topic-1",
-      "title": "AIネイティブ開発プラットフォームの企業アーキテクチャへの統合",
-      "source_name": "nasscom",
-      "published_at": "2026-10-05T09:29:00+00:00",
-      "impact_level": "High",
-      "threat_type": "Other",
-      "summary_preview": "概要2026年に入りAIが企業システム設計の中心に据えられる動きが加速している。AIネイティブ開発プラットフォームにより小規模チームでも生成AIを活用したコード自動生成やワークフロー最適化が可能となり、開発サイクルが大幅に短縮される。これにより開発者はコード記述から意図定義とアーキテクチャ設計へ役割をシフトし、自己管理型のスマートシステム構築が進む。クラウ…",
-      "article_path": "articles/featured-topic-1.html",
-      "original_url": "https://community.nasscom.in/communities/emerging-tech/digital-innovation-and-key-technology-trends-2026",
-      "selection_reason": "2026年のITトレンドとしてAIネイティブ開発の具体的な企業導入事例と影響を扱う最新レポートで、他の汎用予測より新規性と実務波及性が高い",
-      "requested_category": "the latest trends in IT",
-      "information_sources": [
-        {
-          "title": "Digital Innovation and Key Technology Trends for 2026",
-          "url": "https://community.nasscom.in/communities/emerging-tech/digital-innovation-and-key-technology-trends-2026",
-          "source_type": "web"
-        },
-        {
-          "title": "McKinsey Technology Trends Outlook 2026",
-          "url": "https://www.mckinsey.com/~/media/mckinsey/business%20functions/mckinsey%20digital/our%20insights/the%20top%20trends%20in%20tech%202026/mckinsey%20technology%20trends%20outlook%202026_vf.pdf",
-          "source_type": "web"
-        }
-      ]
-    },
-    {
-      "topic_id": "featured-topic-2",
-      "title": "OpenAIがChatGPT画像生成に視覚広告テストを開始",
-      "source_name": "AI Weekly",
-      "published_at": "2026-10-05T12:00:00+00:00",
-      "impact_level": "Medium",
-      "threat_type": "Other",
-      "summary_preview": "概要OpenAIはChatGPTの画像生成機能内で視覚広告のテストを米国で開始すると発表した。広告は明確にラベル付けされ生成画像と分離され、週次ユーザー数が12億人に達した状況下で収益化を進める。この動きは生成AIサービスのビジネスモデル転換を示し、企業利用者にとっては広告表示の有無やデータ扱いに関する選択肢の確認が必要となる。競合他社も類似機能の展開を検…",
-      "article_path": "articles/featured-topic-2.html",
-      "original_url": "https://aiweekly.co/ai-news-today/edition/2026-10-05",
-      "selection_reason": "AI製品の収益化とユーザー体験への具体的な変更を扱う最新発表で、AI分野の実務影響が明確",
-      "requested_category": "AI",
-      "information_sources": [
-        {
-          "title": "AI News for October 5, 2026",
-          "url": "https://aiweekly.co/ai-news-today/edition/2026-10-05",
-          "source_type": "web"
-        },
-        {
-          "title": "OpenAI tests visual ads in ChatGPT image generation",
-          "url": "https://aiweekly.co/alerts/openai-to-test-visual-ads-during-chatgpt-image-generation",
-          "source_type": "web"
-        }
-      ]
-    },
-    {
-      "topic_id": "featured-topic-3",
-      "title": "Citrix NetScalerの新ゼロデイ脆弱性CVE-2026-88779が悪用される",
-      "source_name": "SecurityWeek",
-      "published_at": "2026-10-05T05:14:00+00:00",
-      "impact_level": "Critical",
-      "threat_type": "Zero-day",
-      "summary_preview": "概要Citrix NetScaler ADCおよびGatewayに影響するメモリオーバーフロー脆弱性CVE-2026-88779が標的型攻撃で悪用されている。SAML SPまたはIdPとして構成された機器でサービス拒否を引き起こし、VPNやSSOアクセスに影響する。直前にパッチ適用済みの機器でもクラッシュが発生し、CISAは連邦機関に10月7日までの対応を…",
-      "article_path": "articles/featured-topic-3.html",
-      "original_url": "https://www.securityweek.com/exploitation-of-citrix-netscaler-zero-day-hits-appliances-patched-days-earlier/",
-      "selection_reason": "SAML関連の具体的なゼロデイ悪用事例で、即時対応が必要なセキュリティ実務影響が大きい",
-      "requested_category": "Cybersecurity",
-      "information_sources": [
-        {
-          "title": "Exploitation of Citrix NetScaler Zero-Day Hits Appliances Patched Days Earlier",
-          "url": "https://www.securityweek.com/exploitation-of-citrix-netscaler-zero-day-hits-appliances-patched-days-earlier/",
-          "source_type": "web"
-        },
-        {
-          "title": "CISA flags new exploited NetScaler flaw",
-          "url": "https://www.helpnetsecurity.com/2026/10/05/cisa-flags-new-exploited-netscaler-flaw-as-attackers-crash-appliances-cve-2026-88779/",
-          "source_type": "web"
-        },
-        {
-          "title": "Citrix NetScaler CVE-2026-88779",
-          "url": "https://windowsforum.com/news/citrix-netscaler-cve-2026-88779-patch-exploited-saml-memory-overflow-and-investigate-crashes.447207/",
-          "source_type": "web"
-        }
-      ]
-    }
-  ],
+  "featured_topics": [],
   "items": [
     {
       "entry_id": "e5297c03e9b8a860",
@@ -107,7 +26,7 @@
       "published_at": "2026-10-05T16:21:52+00:00",
       "impact_level": "High",
       "threat_type": "Vulnerability",
-      "summary_preview": "概要Microsoft Exchange Server に、認証済み攻撃者が権限を引き上げ、他ユーザーのメールボックスを読める可能性がある脆弱性が見つかった。Microsoft は通常の定例更新とは別に、緊急の追加パッチを公開している。公表時点の情報では CVE-2026-96940、CVSS 8.8 とされるが、実運用上の危険度は「社内で Exchang…",
+      "summary_preview": "概要Microsoft Exchange Serverに、認証済みの攻撃者が条件次第で権限を引き上げ、他の利用者のメールボックスを読み取れる脆弱性が公表され、Microsoftは通常の配布時期を待たないセキュリティ更新を公開した。対象のCVE-2026-96940はCVSS 8.8と評価されているが、攻撃には何らかのアカウントでの認証が必要であり、インター…",
       "article_path": "articles/e5297c03e9b8a860.html",
       "original_url": "https://thehackernews.com/2026/10/microsoft-exchange-flaw-lets.html"
     },
@@ -118,8 +37,8 @@
       "category": "reporting",
       "published_at": "2026-10-05T14:20:43+00:00",
       "impact_level": "High",
-      "threat_type": "Vulnerability",
-      "summary_preview": "概要The Hacker News の週次まとめで、NetScaler と FortiMail の 0-day、AI コーディング環境からの情報漏えい、Spectre v2、ランサムウェア関連の逮捕が並んでいる。個々の話題は別件に見えるが、共通する論点は「小さな露出」や「見落としやすい設定」が侵入口になる点にある。悪用中の脆弱性が含まれるなら、単なる周知で…",
+      "threat_type": "Zero-day",
+      "summary_preview": "概要週次の脅威動向として、NetScalerとFortiMailのゼロデイ、AIを使ったコーディングに伴う情報漏えい、Spectre v2、ランサムウェア関連の逮捕など、性質の異なる話題がまとめられている。記事の導入部は、攻撃が未入力欄や公開リポジトリ、メールへの返信、外部から見える機器といった見落としやすい要素を足掛かりにし、悪用確認済みの脆弱性や自動化…",
       "article_path": "articles/c62cfa715917871d.html",
       "original_url": "https://thehackernews.com/2026/10/weekly-recap-netscaler-and-fortimail-0.html"
     },
@@ -129,9 +48,9 @@
       "source_name": "The Hacker News",
       "category": "reporting",
       "published_at": "2026-10-05T11:55:00+00:00",
-      "impact_level": "Medium",
+      "impact_level": "Info",
       "threat_type": "Other",
-      "summary_preview": "概要この記事は、企業内の認証情報が人間・システム・AIの接続点として急速に増え、把握と統制が追いつかない状況を指摘している。公開断片では、GitGuardianが「Detect」「Remediate」「Prevent」の3段階でこの層を守ると説明しており、漏えいした秘密情報の検知、修復、再発防止を一連で扱う構図が見える。攻撃者側からは、認証情報は侵入の初期…",
+      "summary_preview": "概要記事は、人の利用者だけでなく、システム間連携やAIの利用にも認証情報が必要となり、組織が管理すべき認証情報の範囲が広がっていると指摘する。GitGuardianの取り組みとして、認証情報を見つける「検知」、漏えい後の「修復」、新たな露出を抑える「予防」の三つの機能を紹介しているが、提供された記事要約は途中で切れており、機能の具体的な仕組みや効果を裏付け…",
       "article_path": "articles/e5e9746f9d585d27.html",
       "original_url": "https://thehackernews.com/2026/10/the-credential-layer-is-expanding.html"
     },
@@ -143,7 +62,7 @@
       "published_at": "2026-10-05T11:46:25+00:00",
       "impact_level": "High",
       "threat_type": "Botnet",
-      "summary_preview": "概要Realtek Jungle SDK の修正済みの重大脆弱性を悪用し、Cling と呼ばれる botnet を配布しようとする試みが観測された。攻撃の焦点は新しい感染手法そのものではなく、STUN の通常通信を使って C2 を隠す点にある。これにより、境界装置や IoT 系機器が外向き通信を許しているだけでも、指令受信と持続化が成立しやすくなる。影響は…",
+      "summary_preview": "概要Realtek Jungle SDKの修正済み重大脆弱性を狙う攻撃試行が観測され、侵入後にClingボットネットを展開する動きが報告された。攻撃者は脆弱なSDKを含む機器を足掛かりにマルウェアを導入し、通常は通信相手の接続確立に使われるSTUNの挙動を、指令通信の経路として転用する。これは新しい感染拡大手法というより、正規用途の通信に紛れた制御経路を作…",
       "article_path": "articles/5c8e18c1ed9af558.html",
       "original_url": "https://thehackernews.com/2026/10/realtek-jungle-sdk-exploit-attempts.html"
     },
@@ -153,9 +72,9 @@
       "source_name": "The Hacker News",
       "category": "reporting",
       "published_at": "2026-10-05T10:38:50+00:00",
-      "impact_level": "Medium",
-      "threat_type": "Misconfiguration",
-      "summary_preview": "概要Apple が macOS の Full Disk Access に関する制御を強化する方針を示した。背景には、AI エージェントがこの権限を使って、ファイル、メール、メッセージ、閲覧履歴まで広く参照しうる点への懸念がある。攻撃の起点は脆弱性ではなく、利用者や管理者が権限付与を誤ることにあるため、設定由来の情報漏えいとして見る必要がある。影響は単一アプ…",
+      "impact_level": "Low",
+      "threat_type": "Advisory",
+      "summary_preview": "概要Appleは、macOSの「フルディスクアクセス（FDA）」に対する制御を強化する方針を示した。背景には、一部の開発者がアプリに広範なアクセス権を与え、利用者が十分に認識しないままファイル、メール、メッセージ、閲覧履歴などを参照できる状態にする懸念がある。AIエージェントにFDAが付与されると、エージェントが処理する範囲を超えて端末内の情報に触れ得るた…",
       "article_path": "articles/bc1ffabbe41dbf73.html",
       "original_url": "https://thehackernews.com/2026/10/apple-plans-tighter-macos-full-disk.html"
     },
@@ -166,8 +85,8 @@
       "category": "reporting",
       "published_at": "2026-10-05T08:09:23+00:00",
       "impact_level": "High",
-      "threat_type": "Vulnerability",
-      "summary_preview": "概要Rejetto HTTP File Server（HFS）の脆弱性CVE-2026-61500が、管理者セッションの偽造とRCEにつながるものとして、実際の悪用 प्रयासが観測されている。弱い疑似乱数生成器によりキーが予測可能になり、攻撃者は正規の認証なしに管理者権限のセッションを再現できる可能性がある。そこから設定変更、ファイル操作、さらには任意…",
+      "threat_type": "Exploit",
+      "summary_preview": "概要VulnCheckの観測として、Rejetto HTTP File Server（HFS）の脆弱性 CVE-2026-61500 を狙う攻撃試行が確認されたと報じられている。弱い疑似乱数生成器により予測可能な鍵が生じ、攻撃者が管理者セッションを偽造できるとされ、権限を得た後にリモートコード実行へ至る可能性がある。CVE-2026-61500のCVSSは…",
       "article_path": "articles/8267b7035c8bc8c0.html",
       "original_url": "https://thehackernews.com/2026/10/attackers-target-rejetto-hfs-flaw-that.html"
     },
@@ -179,9 +98,33 @@
       "published_at": "2026-10-05T06:40:19+00:00",
       "impact_level": "High",
       "threat_type": "Zero-day",
-      "summary_preview": "概要Citrix は NetScaler ADC / NetScaler Gateway の脆弱性 CVE-2026-88779 に対する修正を公開し、この記事ではこれが標的型のゼロデイ攻撃に悪用されていたと伝えている。影響はメモリオーバーフローに起因し、SAML 認証基盤を停止させる可能性があるため、単なる装置停止ではなく認証連携の断絶として業務に波及し…",
+      "summary_preview": "概要Citrixは、NetScaler ADCおよびNetScaler Gatewayに存在するメモリオーバーフローの脆弱性CVE-2026-88779について、セキュリティ更新を公開した。記事によれば、この脆弱性は標的型のゼロデイ攻撃で悪用中で、CVSSは8.7とされ、SAMLを利用する環境を停止させる可能性も報じられている。NetScalerは外部接続…",
       "article_path": "articles/d5b297cf19f7de5f.html",
       "original_url": "https://thehackernews.com/2026/10/new-netscaler-zero-day-exploited-in.html"
+    },
+    {
+      "entry_id": "49a4a6a760019567",
+      "title": "ISC Stormcast For Monday, October 5th, 2026 https://isc.sans.edu/podcastdetail/10122, (Mon, Oct 5th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-10-05T02:00:02+00:00",
+      "impact_level": "Info",
+      "threat_type": "Unknown",
+      "summary_preview": "概要SANS ISCが2026年10月5日付のStormcastエピソードを公開したことを示す記事情報だが、入力には番組の要約、音声内容、文字起こし、参照先が含まれていないため、扱われた脆弱性や攻撃事例は特定できない。したがって、攻撃者が何をどの条件で悪用できるのか、対象製品や必要な権限、侵入後の横展開の有無は判断できず、記事タイトルだけから具体的な脅威を…",
+      "article_path": "articles/49a4a6a760019567.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33398"
+    },
+    {
+      "entry_id": "43c1a8e9382c7979",
+      "title": "TTY Logs and the Data it Captures, (Sun, Oct 4th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-10-05T00:15:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要記事は、DShieldの観測用センサーにログインした攻撃者またはボットが実行するコマンドのTTYログをスクリプトで解析し、日次でDShield SIEMへ送信して他の観測データと相関させる実験を紹介する。ここでの成功ログインは観測センサー上での出来事であり、一般組織の認証突破や侵害を示すものではないため、自組織への直接的な侵害指標として扱わない判断が要…",
+      "article_path": "articles/43c1a8e9382c7979.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33396"
     },
     {
       "entry_id": "fb16ed0304bca8ef",
@@ -191,7 +134,7 @@
       "published_at": "2026-10-04T23:15:03+00:00",
       "impact_level": "Info",
       "threat_type": "Other",
-      "summary_preview": "概要本記事は、「気づけない脅威」への対応をテーマに、KISIAの後援のもと韓国の3社が行う合同セッションの見どころを紹介している。内容は個別製品の脆弱性告知ではなく、攻撃の兆候を取り逃がす状況をどう減らすかという、運用寄りの問題設定に重心がある。検知の抜け、可視化の不足、対応の遅れがどこで生じるかを共有する場として読むのが筋になる。現時点で、具体的に扱う脅…",
+      "summary_preview": "概要ScanNetSecurityの記事タイトルからは、KISIA後援のもと韓国企業3社が、組織内で見落とされやすい脅威を題材に合同セッションを行うことが読み取れる。ただし、提供された情報には記事本文や参照先がなく、開催日時・対象者・各社の役割、紹介される技術や攻撃事例は確認できないため、具体的な脅威や対策が提示されたものとして扱うべきではない。CSIRT…",
       "article_path": "articles/fb16ed0304bca8ef.html",
       "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/05/56387.html"
     },
@@ -202,8 +145,8 @@
       "category": "reporting",
       "published_at": "2026-10-04T23:05:22+00:00",
       "impact_level": "Medium",
-      "threat_type": "Credential Theft",
-      "summary_preview": "概要「ドズル社ストア」の利用者が、不正なページへ誘導される事案が報じられた。入力したカード情報が第三者に渡った可能性があるため、記事ではカード会社への連絡を呼びかけている。攻撃の本質は、通販サイトの利用者を偽画面へ誘導し、決済情報を盗み取る流れにある。被害は個人の不正利用にとどまらず、同一カードの継続被害や、ほかの会員向けなりすまし購入へ広がるおそれがある…",
+      "threat_type": "Phishing",
+      "summary_preview": "概要「ドズル社ストア」で利用者が不正なページへ誘導され、カード情報を入力した場合にカード会社へ連絡するよう呼びかけられている。記事タイトルから確認できるのは、不正ページへの誘導と入力者向けの注意喚起までであり、誘導経路、ページの設置場所、情報の送信先、発生期間は確認できない。カード情報を入力した利用者は、不正利用の有無にかかわらず、カード会社への連絡や利用…",
       "article_path": "articles/f428e1e2a1208e8b.html",
       "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/05/56386.html"
     },
@@ -213,9 +156,9 @@
       "source_name": "ScanNetSecurity",
       "category": "reporting",
       "published_at": "2026-10-04T23:05:19+00:00",
-      "impact_level": "Medium",
-      "threat_type": "Intrusion",
-      "summary_preview": "概要池上通信機に対してサイバー攻撃の可能性が示され、外部からの情報提供を起点に調査が進んでいる。現時点では、侵害の有無や範囲、情報流出の有無は確認段階にあり、断定できない。こうした初期報道では、外部からの通報がきっかけでも、実際には単なるスキャンや誤検知、限定的な侵入のいずれもあり得る。攻撃として成立している場合は、メール、認証情報、公開サーバ、リモート接…",
+      "impact_level": "Info",
+      "threat_type": "Unknown",
+      "summary_preview": "概要入力情報から確認できるのは、池上通信機が外部からサイバー攻撃の可能性について情報提供を受け、事実関係を調査しているという点に限られる。侵入や情報窃取が確認されたとの記載はなく、攻撃者、発生時期、侵入経路、対象システム、業務停止の有無も示されていないため、現時点で被害発生を前提に判断するのは適切でない。仮に不正侵入が確認された場合、影響は情報の閲覧・持ち…",
       "article_path": "articles/a968db548106663c.html",
       "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/05/56385.html"
     },
@@ -225,9 +168,9 @@
       "source_name": "ScanNetSecurity",
       "category": "reporting",
       "published_at": "2026-10-04T23:05:16+00:00",
-      "impact_level": "High",
-      "threat_type": "Ransomware",
-      "summary_preview": "概要池上通信機でサイバー攻撃が発生し、サーバ内の一部ファイルが暗号化されたと報じられている。現時点で分かるのは被害の痕跡がファイル暗号化として現れている点までで、侵入経路、初期侵入の手口、横展開の有無、外部流出の有無は未確認となる。こうした事案は単なる端末障害ではなく、共有ファイルサーバや認証基盤に波及すると、復旧対象が業務システム全体へ広がりやすい。報道…",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要池上通信機でサイバー攻撃が発生し、サーバ内の一部ファイルが暗号化されたと報じられた。見出しから確認できるのは暗号化被害までで、侵入経路、攻撃者、対象サーバの役割、業務停止の有無、復旧状況は明らかでない。暗号化はランサムウェア攻撃で見られる手口だが、身代金要求や情報窃取を伴ったかは確認できず、暗号化だけを根拠に二重恐喝や情報漏えいを断定できない。影響範囲…",
       "article_path": "articles/b3a6b81ebcf7dd34.html",
       "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/05/56384.html"
     },
@@ -239,7 +182,7 @@
       "published_at": "2026-10-04T23:05:13+00:00",
       "impact_level": "Medium",
       "threat_type": "Intrusion",
-      "summary_preview": "概要あいの風とやま鉄道の観光列車の座席管理システムに不正アクセスがあったと伝えている。座席情報や運用情報を扱う業務系システムが侵害された場合、予約の改ざん、空席状況の攪乱、現場対応の増加につながるおそれがある。攻撃の入り口は未公表で、認証情報の窃取、公開面の脆弱性、委託先経由など複数の経路が考えられるが、現時点では確認できない。現時点で被害範囲、個人情報の…",
+      "summary_preview": "概要ScanNetSecurityの記事題名によると、あいの風とやま鉄道の観光列車で使う座席管理システムへの不正アクセスが発生した。現時点で与えられた情報には記事本文や参照先がなく、侵入経路、攻撃者の権限、アクセスされた情報、発生時期や継続期間は確認できないため、認証情報の窃取や脆弱性悪用などの手口を特定できない。座席管理システムには予約者情報や利用予定が…",
       "article_path": "articles/ec9928ac04467004.html",
       "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/05/56383.html"
     },
@@ -249,9 +192,9 @@
       "source_name": "ScanNetSecurity",
       "category": "reporting",
       "published_at": "2026-10-04T23:05:10+00:00",
-      "impact_level": "High",
-      "threat_type": "Vulnerability",
-      "summary_preview": "概要LEAN BODY が利用する分析ツール「Metabase」に関する脆弱性悪用による不正アクセスが報じられた。公開情報からは、攻撃者が分析基盤を足がかりに内部情報へ触れた可能性が読み取れるが、侵入経路や影響範囲の詳細は未確認のまま残る。Metabase は業務データの可視化を担うため、認証情報や接続先設定が奪われると、単一システムの問題にとどまらず、D…",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要記事タイトルによると、LEAN BODYが分析ツールとして利用するMetabaseの脆弱性が悪用され、不正アクセスが発生した。提供された入力には記事本文や参照先がなく、攻撃の時期、成立条件、脆弱なバージョン、CVE番号、攻撃者が得た権限は確認できない。分析基盤には利用状況などのデータが集約される場合があり、閲覧範囲や接続先によっては顧客情報への到達、認…",
       "article_path": "articles/c1c1bacfe0f3698e.html",
       "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/05/56382.html"
     },
@@ -261,9 +204,9 @@
       "source_name": "ScanNetSecurity",
       "category": "reporting",
       "published_at": "2026-10-04T23:05:07+00:00",
-      "impact_level": "High",
+      "impact_level": "Medium",
       "threat_type": "Intrusion",
-      "summary_preview": "概要東産業の公式サイトで、wp2shell を悪用した 不正アクセス が報じられている。wp2shell は WordPress 環境を足がかりに シェル実行 や後続侵害へつなげる用途で使われることが多く、初期侵入後に改ざん、追加マルウェア配置、踏み台化へ広がるおそれがある。公開情報だけでは、侵入経路が管理画面の窃取なのか、脆弱なプラグインやテーマ経由なの…",
+      "summary_preview": "概要記事タイトルから確認できるのは、東産業の公式サイトで、wp2shellを悪用したとされる不正アクセスが発生したという点に限られる。wp2shellが特定の脆弱性、攻撃ツール、侵入後の操作のいずれを指すのか、対象となったソフトウェアや版、侵入経路、成立に必要な権限は提示情報から確認できず、名称だけを根拠にWordPressの既知脆弱性や特定の攻撃連鎖へ結…",
       "article_path": "articles/db4e18b3dd7d9ca1.html",
       "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/05/56381.html"
     },
@@ -273,9 +216,9 @@
       "source_name": "ScanNetSecurity",
       "category": "reporting",
       "published_at": "2026-10-04T23:05:05+00:00",
-      "impact_level": "High",
-      "threat_type": "Credential Theft",
-      "summary_preview": "概要日本大学の教員アカウント計5件が不正アクセスを受け、スパムメール送信の踏み台として悪用された。侵入の起点は本文だけでは確認できず、認証情報の窃取、使い回し、フィッシング、端末侵害など複数の可能性が残る。被害は単なる送信代行に見えても、学内外への信頼失墜、同一資格情報の横展開、追加侵害の足場化へつながるおそれがある。現時点では送信されたメールの内容、侵入…",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要提供された記事情報によると、日本大学の教員アカウント計5件に不正アクセスがあり、スパムメール送信の踏み台として使われた。アカウントが悪用された場合、送信元として組織の信用が損なわれるだけでなく、受信側での迷惑メール判定やメール配送の遅延・拒否につながるおそれがある。攻撃者は侵害したメール機能を使って外部へ一斉送信できるが、侵入経路、認証情報の取得方法、…",
       "article_path": "articles/84b64c456ae4d3fb.html",
       "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/05/56380.html"
     },
@@ -285,9 +228,9 @@
       "source_name": "ScanNetSecurity",
       "category": "reporting",
       "published_at": "2026-10-04T23:05:02+00:00",
-      "impact_level": "High",
+      "impact_level": "Medium",
       "threat_type": "Data Breach",
-      "summary_preview": "概要ECサイト「ビールの縁側」で不正アクセスが発生し、9名分のカード情報が漏えいした可能性が公表された。公開情報からは、どの侵入経路を使われたか、決済画面の改ざんがあったか、第三者が実際に情報を取得したかは未確認である。カード情報の漏えい可能性は、該当利用者への個別対応だけでなく、加盟店側のログ保全、決済代行事業者との切り分け、監督官庁やカードブランドへの…",
+      "summary_preview": "概要ScanNetSecurityの報道によると、ECサイト「ビールの縁側」への不正アクセスが発生し、9名分のカード情報が漏えいした可能性がある。カード情報は不正利用や追加の詐欺に直結し得るため、対象人数が限られていても、情報の種類や利用可能な状態を確認する必要がある。記事の見出しだけでは、侵入経路、攻撃者が閲覧・取得した情報、カード番号や有効期限などの具…",
       "article_path": "articles/e94e0caa5f6ceb94.html",
       "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/05/56379.html"
     },
@@ -299,7 +242,7 @@
       "published_at": "2026-10-04T23:00:03+00:00",
       "impact_level": "Medium",
       "threat_type": "Phishing",
-      "summary_preview": "概要クラウド請求書作成ソフト「Misoca」のメール送信機能を悪用し、正規サービス経由に見せかけた不審メールが送られているという注意喚起が出ている。攻撃者は送信元の信頼性を借りることで、受信側の警戒を下げ、本文中のリンク誘導や添付開封を通じて認証情報の窃取や二次侵入を狙う可能性がある。影響は受信者個人の被害にとどまらず、業務連絡へのなりすましや取引先を巻き…",
+      "summary_preview": "概要記事は、クラウド請求書作成ソフト「Misoca」のメール送信機能を悪用した不審メールについて、受信者に注意を呼びかけている。正規サービスの送信機能が使われた場合、受信者には通常の取引メールに見えやすく、送信元の信頼感を利用してリンクのクリックや添付ファイルの開封を促す可能性がある。ただし、記事タイトルから確認できるのは不審メール送信への注意喚起までであ…",
       "article_path": "articles/d104c34d28dc7406.html",
       "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/05/56378.html"
     }
