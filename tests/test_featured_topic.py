@@ -6,7 +6,7 @@ from pathlib import Path
 
 from notifyhub_digest.models import AnalysisResult, FeaturedTopic, InformationSource, Source
 from notifyhub_digest.rss import RawEntry
-from notifyhub_digest.featured_topic import FEATURED_SYSTEM_PROMPT, _build_user_prompt, _infer_category_policy, _looks_mismatched_for_category, _resolve_requested_category, _schema_hint, load_featured_topics_settings
+from notifyhub_digest.featured_topic import FEATURED_SYSTEM_PROMPT, GrokConfig, _build_user_prompt, _infer_category_policy, _looks_mismatched_for_category, _resolve_requested_category, _schema_hint, build_featured_topics, load_featured_topics_settings
 from notifyhub_digest.runner import build_digest_outputs
 from notifyhub_digest.timeutils import JST, compute_daily_window
 
@@ -236,6 +236,41 @@ def test_build_user_prompt_adds_generic_tech_trend_guidance() -> None:
     assert "cloud platform trends" in prompt
     assert "クラウド、開発者ツール、半導体、AI基盤" in prompt
     assert "サイバー攻撃・脆弱性・情報漏えい・インシデント対応そのものは原則として選ばない" in prompt
+
+
+def test_build_featured_topics_omits_blank_temperature_from_request() -> None:
+    captured_payload: dict[str, object] = {}
+
+    class _Response:
+        def raise_for_status(self) -> None:
+            return None
+
+        def json(self) -> dict[str, object]:
+            return {
+                "model": "grok-4.7",
+                "output_text": '{"topics": []}',
+            }
+
+    class _Client:
+        def post(self, _url: str, *, headers: dict[str, str], json: dict[str, object]):
+            captured_payload.update(json)
+            return _Response()
+
+    class _Settings:
+        count = 1
+        categories = ["AI"]
+
+    topics = build_featured_topics(
+        _Client(),
+        cfg=GrokConfig(api_key="test", model="grok-4.7", temperature=None),
+        window_start_utc=datetime(2026, 5, 8, 0, 0),
+        window_end_utc=datetime(2026, 5, 9, 0, 0),
+        settings=_Settings(),
+    )
+
+    assert topics == []
+    assert captured_payload["model"] == "grok-4.7"
+    assert "temperature" not in captured_payload
 
 
 def test_build_user_prompt_adds_generic_guidance_for_arbitrary_categories() -> None:

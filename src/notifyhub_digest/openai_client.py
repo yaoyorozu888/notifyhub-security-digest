@@ -16,7 +16,7 @@ from notifyhub_digest.models import AnalysisResult, Lesson
 logger = logging.getLogger(__name__)
 
 
-_TEMPERATURE_UNSUPPORTED_MODEL_RE = re.compile(r"^gpt-5(?:[.-]|$)", re.IGNORECASE)
+_TEMPERATURE_UNSUPPORTED_MODEL_RE = re.compile(r"^gpt-(?:5|6)(?:[.-]|$)", re.IGNORECASE)
 
 
 @dataclass(frozen=True)
@@ -25,7 +25,7 @@ class OpenAIConfig:
     model: str
     base_url: str = "https://api.openai.com/v1"
     max_tokens: int = 900
-    temperature: float = 0.4
+    temperature: float | None = 0.4
 
 
 SYSTEM_PROMPT = (
@@ -203,9 +203,25 @@ def _build_analysis_payload(cfg: OpenAIConfig, user: dict[str, Any]) -> dict[str
             },
         ],
     }
-    if _supports_temperature(cfg.model):
+    if cfg.temperature is not None and _supports_temperature(cfg.model):
         payload["temperature"] = cfg.temperature
     return payload
+
+
+def _parse_temperature_env(var_name: str, default: float | None) -> float | None:
+    raw = os.getenv(var_name)
+    if raw is None:
+        return default
+
+    normalized = raw.strip()
+    if not normalized:
+        return None
+
+    try:
+        value = float(normalized)
+    except Exception:
+        return default
+    return max(0.0, min(value, 1.0))
 
 
 def load_openai_config(*, prefix: str = "OPENAI") -> OpenAIConfig | None:
@@ -218,16 +234,13 @@ def load_openai_config(*, prefix: str = "OPENAI") -> OpenAIConfig | None:
         max_tokens = int(os.getenv(f"{prefix}_MAX_TOKENS", "900"))
     except Exception:
         max_tokens = 900
-    try:
-        temperature = float(os.getenv(f"{prefix}_TEMPERATURE", "0.4"))
-    except Exception:
-        temperature = 0.4
+    temperature = _parse_temperature_env(f"{prefix}_TEMPERATURE", 0.4)
     return OpenAIConfig(
         api_key=api_key,
         model=model,
         base_url=base_url,
         max_tokens=max(200, min(max_tokens, 5000)),
-        temperature=max(0.0, min(temperature, 1.0)),
+        temperature=temperature,
     )
 
 

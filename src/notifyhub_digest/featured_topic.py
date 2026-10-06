@@ -24,7 +24,7 @@ class GrokConfig:
     api_key: str
     model: str = "grok-4.3"
     max_tokens: int = 2200
-    temperature: float = 0.3
+    temperature: float | None = 0.3
 
 
 @dataclass(frozen=True)
@@ -272,6 +272,22 @@ def _extract_plain_text(summary_html: str) -> str:
     return " ".join(part.strip() for part in summary_html.replace("<", " ").replace(">", " ").split())
 
 
+def _parse_temperature_env(var_name: str, default: float | None) -> float | None:
+    raw = os.getenv(var_name)
+    if raw is None:
+        return default
+
+    normalized = raw.strip()
+    if not normalized:
+        return None
+
+    try:
+        value = float(normalized)
+    except Exception:
+        return default
+    return max(0.0, min(value, 1.0))
+
+
 def load_grok_config() -> GrokConfig | None:
     api_key = (os.getenv("GROK_API_KEY") or "").strip()
     if not api_key:
@@ -281,15 +297,12 @@ def load_grok_config() -> GrokConfig | None:
         max_tokens = int(os.getenv("GROK_MAX_TOKENS", "2200"))
     except Exception:
         max_tokens = 2200
-    try:
-        temperature = float(os.getenv("GROK_TEMPERATURE", "0.3"))
-    except Exception:
-        temperature = 0.3
+    temperature = _parse_temperature_env("GROK_TEMPERATURE", 0.3)
     return GrokConfig(
         api_key=api_key,
         model=model,
         max_tokens=max(800, min(max_tokens, 4000)),
-        temperature=max(0.0, min(temperature, 1.0)),
+        temperature=temperature,
     )
 
 
@@ -406,7 +419,6 @@ def build_featured_topics(
 
     payload = {
         "model": cfg.model,
-        "temperature": cfg.temperature,
         "max_output_tokens": cfg.max_tokens,
         "text": {"format": {"type": "json_object"}},
         "tools": [
@@ -425,6 +437,8 @@ def build_featured_topics(
             },
         ],
     }
+    if cfg.temperature is not None:
+        payload["temperature"] = cfg.temperature
 
     res = client.post(
         f"{GROK_BASE_URL}/responses",

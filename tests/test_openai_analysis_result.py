@@ -61,6 +61,15 @@ def test_build_analysis_payload_omits_temperature_for_gpt5_models() -> None:
     assert "temperature" not in payload
 
 
+def test_build_analysis_payload_omits_temperature_for_gpt6_models() -> None:
+    cfg = OpenAIConfig(api_key="test", model="gpt-6-luna", temperature=0.4)
+
+    payload = _build_analysis_payload(cfg, {"title": "sample"})
+
+    assert payload["model"] == "gpt-6-luna"
+    assert "temperature" not in payload
+
+
 def test_build_analysis_payload_keeps_temperature_for_non_gpt5_models() -> None:
     cfg = OpenAIConfig(api_key="test", model="gpt-4.1", temperature=0.4)
 
@@ -77,6 +86,16 @@ def test_load_openai_config_allows_up_to_5000_tokens(monkeypatch) -> None:
 
     assert cfg is not None
     assert cfg.max_tokens == 5000
+
+
+def test_load_openai_config_treats_blank_temperature_as_unset(monkeypatch) -> None:
+    monkeypatch.setenv("OPENAI_API_KEY", "test")
+    monkeypatch.setenv("OPENAI_TEMPERATURE", "")
+
+    cfg = load_openai_config()
+
+    assert cfg is not None
+    assert cfg.temperature is None
 
 
 def test_analysis_prompts_require_plain_japanese_style() -> None:
