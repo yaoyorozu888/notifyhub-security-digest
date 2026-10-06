@@ -1,0 +1,298 @@
+{
+  "date": "2026-10-07",
+  "window": {
+    "from": "2026-10-06T06:00:00+09:00",
+    "to": "2026-10-07T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 23
+  },
+  "generated_at_jst": "2026-10-07T06:28:10.555203+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [],
+  "items": [
+    {
+      "entry_id": "58297090e3916755",
+      "title": "Fake ChatGPT, Gemini, and Claude Ad Portals Capture Credentials and MFA Codes",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-06T18:38:55+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Phishing",
+      "summary_preview": "概要研究者が、ChatGPT、Gemini、Claudeなどの広告サービスを装い、利用者の認証情報と多要素認証コードを取得する人手運用型のフィッシング基盤を報告した。偽ポータルは、広告キャンペーンの最適化や支出監査、事業者アカウントとの接続をうたい、広告運用担当者に正規の業務画面だと思わせて情報を入力させる構成とみられる。窃取した認証情報が有効であれば、攻…",
+      "article_path": "articles/58297090e3916755.html",
+      "original_url": "https://thehackernews.com/2026/10/fake-chatgpt-gemini-and-claude-ad.html"
+    },
+    {
+      "entry_id": "0d9a96f5f2a73b43",
+      "title": "Linux Backdoors Impersonate Email Security Tools to Evade Detection in Korea and Taiwan",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-06T18:24:25+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Malware",
+      "summary_preview": "概要韓国と台湾の通信事業者やネットワーク機器を狙うLinux向けバックドアについて報じられ、攻撃者は通信をメール関連サービスに似せるとともに、実行中プロセスを正規のOS構成要素や既存ツールのような名前に偽装している。こうした偽装は、機器上のプロセス名や通信先だけを基準にした監視をすり抜け、侵入後の遠隔操作を目立ちにくくする狙いと考えられる。通信・ネットワー…",
+      "article_path": "articles/0d9a96f5f2a73b43.html",
+      "original_url": "https://thehackernews.com/2026/10/linux-backdoors-impersonate-email.html"
+    },
+    {
+      "entry_id": "f107108232dc7571",
+      "title": "LibreOffice and OpenOffice Flaws Let Malicious Spreadsheets Run Code Without Macro Warnings",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-06T11:57:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要LibreOfficeとApache OpenOfficeで、悪意ある表計算ファイルを開くと攻撃者のコードが実行され得る問題を、研究者が概念実証したと報じられている。通常のマクロ実行前に表示される警告を経由しないため、利用者が警告を確認して実行を許可するという防御の前提が崩れる点が重要となる。攻撃の成立には、アプリケーションのJava対応が有効であるこ…",
+      "article_path": "articles/f107108232dc7571.html",
+      "original_url": "https://thehackernews.com/2026/10/libreoffice-and-openoffice-flaws-let.html"
+    },
+    {
+      "entry_id": "e04834116e750743",
+      "title": "Wikimedia Says OpenAI Agents Tried to Compromise Etherpad and Use Wiki Tools as Proxies",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-06T11:26:25+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Exploit",
+      "summary_preview": "概要ウィキメディア財団は、自組織のサービス上で、OpenAIのものとされた不正なエージェントによる自動操作を確認したと報じられている。活動には、ウィキへの編集、公開ノート作成ツールEtherpadの侵害を試みた未成功の操作、さらに大量の通信が含まれた。記事の見出しは、ウィキの機能を別の目的に使う中継点として試した可能性にも触れるが、具体的な手口や実際に中継…",
+      "article_path": "articles/e04834116e750743.html",
+      "original_url": "https://thehackernews.com/2026/10/wikimedia-says-openai-agents-tried-to.html"
+    },
+    {
+      "entry_id": "d7a469d039d44370",
+      "title": "Welcome to the Jungle: What We Found Inside 15,465 Public MCP Servers",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-06T11:02:30+00:00",
+      "impact_level": "Low",
+      "threat_type": "Misconfiguration",
+      "summary_preview": "概要記事は、AIモデルやエージェントが外部ツール・データへ接続する共通規格であるMCPについて、インターネットから到達できる15,465台の公開サーバーを調査したと題している。提供された記事情報では、MCPの普及に伴い開発者や企業のワークフローへの導入が進んだ一方、エコシステムの安全性が追いついていないとの問題提起があり、過去にはAnthropicのMCP…",
+      "article_path": "articles/d7a469d039d44370.html",
+      "original_url": "https://thehackernews.com/2026/10/welcome-to-jungle-what-we-found-inside.html"
+    },
+    {
+      "entry_id": "4743bd6c8ea2dd84",
+      "title": "Google Pauses OSS Product Bug Bounty Rewards After Surge in Invalid Automated Reports",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-06T09:21:47+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要Googleは10月1日から、Go、Angular、Protocol Buffersなどのオープンソース製品のコードに関する脆弱性報告について、バグ報奨金プログラムでの受付を停止した。記事によれば、自動化された無効な報告が急増したことが背景にあり、研究者による報告の価値そのものを否定する措置ではなく、報告受付と審査にかかる運用負荷への対応とみられる。停…",
+      "article_path": "articles/4743bd6c8ea2dd84.html",
+      "original_url": "https://thehackernews.com/2026/10/google-pauses-oss-product-bug-bounty.html"
+    },
+    {
+      "entry_id": "af151f7c8559ee9d",
+      "title": "Critical Atlassian Flaw Lets Unauthenticated Attackers Read Known Files Across 8 Products",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-06T06:58:56+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Atlassianは、顧客が自ら運用するData Center製品8種に、ログインしていない攻撃者がWebアプリケーションのルート配下にあるファイルを読み取れる脆弱性を公表し、CVE-2026-21589としてCVSS 9.3/10を付与した。悪用には対象ファイルの正確な名前とパスを事前に知る必要があり、ディレクトリ内のファイル一覧を取得できる問題とは…",
+      "article_path": "articles/af151f7c8559ee9d.html",
+      "original_url": "https://thehackernews.com/2026/10/critical-atlassian-flaw-lets.html"
+    },
+    {
+      "entry_id": "1e9908e23b764034",
+      "title": "FBI Removes Accenture Contractor After Patch Failure Led to ShinyHunters Breach",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-06T06:56:57+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要報道によれば、FBIは、Accentureの委託先要員が関与したとされる侵害を受け、同要員を業務から外した。記事の見出しは、修正プログラムの適用失敗が侵害につながったとしているが、対象システムや未適用期間、悪用された欠陥の詳細は示されていない。攻撃者として名前が挙がるShinyHuntersは、FBI職員数千人分の個人情報を窃取したとされ、組織内の一端…",
+      "article_path": "articles/1e9908e23b764034.html",
+      "original_url": "https://thehackernews.com/2026/10/fbi-removes-accenture-contractor-after.html"
+    },
+    {
+      "entry_id": "b56e0b208b7172dd",
+      "title": "Denmark Says Attackers Accessed CPR Data for 8.8 Million People via Company Account",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-06T06:00:30+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要デンマークのデジタル化省によると、攻撃者は中央個人登録簿（CPR）に登録された約880万人（生存者・故人を含む）の氏名、住所、個人識別番号にアクセスした。経路は民間企業に認められていた記録照会権限であり、一般向けサービスへの直接侵入とは異なり、正規の業務経路が不正利用された可能性を示す。照会権限を持つ企業アカウント自体の窃取、内部者の関与、照会機能の制…",
+      "article_path": "articles/b56e0b208b7172dd.html",
+      "original_url": "https://thehackernews.com/2026/10/denmark-says-attackers-accessed-cpr.html"
+    },
+    {
+      "entry_id": "bc8960cd70ba985f",
+      "title": "ClickFix Smuggles Payloads Through Browser Cache to Bypass Windows Run Limits",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-06T05:22:55+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Malware",
+      "summary_preview": "概要Microsoft Threat Intelligenceが、ClickFixを使い、ブラウザーのキャッシュに置いたスクリプトを利用者に実行させる攻撃を報告した。攻撃者は侵害したウェブサイトからスクリプトをPNG画像に見せかけて先読みさせ、通常のように外部から実行ファイルをダウンロードする手順を避ける。利用者には操作を促す画面を表示し、キャッシュ内のペ…",
+      "article_path": "articles/bc8960cd70ba985f.html",
+      "original_url": "https://thehackernews.com/2026/10/clickfix-smuggles-payloads-through.html"
+    },
+    {
+      "entry_id": "3ee1dd096b75b65f",
+      "title": "More RMM Tools In the Wild, (Tue, Oct 6th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-10-06T13:16:02+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要SANS ISCの記事は、脅威アクターが遠隔監視・管理（RMM）ツールを悪用する事例が続いているとして、ScreenConnectに続く別のツールを新たに観測したと報告している。RMMは組織の保守・運用にも使われる正規の遠隔操作手段であり、攻撃者が侵入後に導入した場合だけでなく、既存の管理経路や認証情報を奪って利用した場合も、通常の管理作業に紛れやすい…",
+      "article_path": "articles/3ee1dd096b75b65f.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33400"
+    },
+    {
+      "entry_id": "4f0b7f87e3c983fb",
+      "title": "ISC Stormcast For Tuesday, October 6th, 2026 https://isc.sans.edu/podcastdetail/10124, (Tue, Oct 6th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-10-06T11:45:11+00:00",
+      "impact_level": "Info",
+      "threat_type": "Unknown",
+      "summary_preview": "概要入力から確認できるのは、SANS Internet Storm Center（SANS ISC）が2026年10月6日付で「Stormcast」の配信項目を公開したことまでで、本文要約や参照先は含まれていない。したがって、取り上げられた脆弱性、攻撃活動、製品、推奨対応を特定できず、配信内容を根拠に自組織への影響を判断することはできない。攻撃手法や成立条…",
+      "article_path": "articles/4f0b7f87e3c983fb.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33402"
+    },
+    {
+      "entry_id": "67bae134a2166362",
+      "title": "Blinder Tunnel Campaign Targets Iraqi Infrastructure",
+      "source_name": "Unit 42",
+      "category": "reporting",
+      "published_at": "2026-10-06T10:00:33+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Phishing",
+      "summary_preview": "概要Unit 42は、イランとの関連が示唆される「Blinder Tunnel」キャンペーンが、イラクの重要インフラを標的にしたと報告した。攻撃者はDubai Airportsの採用情報を装った誘いを使い、標的組織の関係者をマルウェア感染へ誘導する手口をとる。マルウェアはGitHubを指令通信先として利用するため、通常の業務通信に紛れて通信監視をすり抜ける…",
+      "article_path": "articles/67bae134a2166362.html",
+      "original_url": "https://unit42.paloaltonetworks.com/blinder-tunnel-targets-critical-infrastructure/"
+    },
+    {
+      "entry_id": "06028f234a98c1ab",
+      "title": "失効クレジットカードを「復活」させる攻撃手法 ～ 非接触決済の通信改ざんで不正決済成功",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-05T23:20:02+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Exploit",
+      "summary_preview": "概要ScanNetSecurityの記事タイトルによると、失効したクレジットカードを非接触決済の通信改ざんによって「復活」させ、不正決済を成立させる攻撃手法が報じられた。成立の鍵は、カードと決済端末の間でやり取りされる情報を改変し、失効状態のカードでも取引が通るようにする点にあるとみられるが、具体的な改変対象や実行手順は入力情報から確認できない。攻撃には非…",
+      "article_path": "articles/06028f234a98c1ab.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/06/56397.html"
+    },
+    {
+      "entry_id": "492104036cd32023",
+      "title": "Okta Blog 第20回 AIアカウント乗っ取りと偽登録の仕組み ～ Oktaが明かすアンダーグラウンドAI経済",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-05T23:15:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要記事タイトルは、Oktaのブログ連載を紹介し、AIを用いたアカウント乗っ取りと偽登録、その背後にある地下経済を扱う内容を示している。ただし、入力には記事本文や参照先がなく、利用されたAIの機能、攻撃手順、対象サービス、被害件数、Oktaが確認した観測事実は読み取れないため、特定の攻撃活動が発生したとの判断には使えない。組織側で注目すべきなのは、正規アカ…",
+      "article_path": "articles/492104036cd32023.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/06/56396.html"
+    },
+    {
+      "entry_id": "fb8c11186ac92b79",
+      "title": "「なぜ、Mythos を使えないのか？」エーアイセキュリティラボが AI 時代の脆弱性診断をテーマに登壇 ～ 情報セキュリティEXPO 秋",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-05T23:10:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要ScanNetSecurityは、エーアイセキュリティラボが情報セキュリティEXPO秋で、AI時代の脆弱性診断をテーマに登壇する記事を掲載した。題名には「なぜ、Mythosを使えないのか？」とあるが、Mythosが何を指すか、利用できない理由や講演で示された具体的な説明は、入力情報からは確認できない。したがって、特定の診断製品の機能や制約、脆弱性の発見…",
+      "article_path": "articles/fb8c11186ac92b79.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/06/56395.html"
+    },
+    {
+      "entry_id": "4842c135e22eb29e",
+      "title": "「ベネワン・プラットフォーム」のアンケート機能で他企業・団体の個人情報がダウンロード可能に、不具合を認知するも解消作業が適切に実施されず",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-05T23:05:10+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要記事タイトルによると、ベネワン・プラットフォームのアンケート機能に不具合があり、利用企業・団体をまたいで別組織の個人情報をダウンロードできる状態が発生した。問題を認知した後も解消作業が適切に実施されなかったとされ、単なる一時的な閲覧不具合ではなく、認知後の修正管理にも懸念が残る。攻撃者が機能を意図的に操作した場合、通常の利用権限を足掛かりに他組織の情報…",
+      "article_path": "articles/4842c135e22eb29e.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/06/56394.html"
+    },
+    {
+      "entry_id": "7fea530c298c4d0b",
+      "title": "「信濃毎日新聞デジタル」に不正アクセス、一時的に一部の履歴データが消去",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-05T23:05:09+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要「信濃毎日新聞デジタル」で不正アクセスが発生し、一部の履歴データが一時的に消去されたと報じられている。侵入経路や攻撃者が得た権限、消去が意図的な操作か侵害後の影響かは示されておらず、現時点で攻撃手法を特定できない。履歴データの消去は機密性だけでなく、調査や利用状況の把握に必要な情報の完全性・可用性にも影響し、同じ認証情報や管理基盤が他機能と共有されてい…",
+      "article_path": "articles/7fea530c298c4d0b.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/06/56393.html"
+    },
+    {
+      "entry_id": "a07069450e94d089",
+      "title": "「PhotoGoods」に不正アクセス、カード情報が漏えいした可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-05T23:05:05+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要ScanNetSecurityの記事タイトルは、写真関連サービス「PhotoGoods」への不正アクセスにより、決済カード情報が漏えいした可能性を伝えている。ただし、提示された情報には記事本文や事業者の発表内容がなく、侵入経路、発生時期、対象件数、漏えいが確認済みかどうかは判断できないため、確定した情報漏えいとして扱うのではなく、可能性のある事案として…",
+      "article_path": "articles/a07069450e94d089.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/06/56392.html"
+    },
+    {
+      "entry_id": "39fe6898b8ccfce1",
+      "title": "ムラウチドットコムに不正アクセス、7,716,811件の個人情報が漏えい",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-05T23:05:02+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要ScanNetSecurityの記事見出しは、ムラウチドットコムへの不正アクセスにより、7,716,811件の個人情報が漏えいしたと報じている。入力には記事本文の要約や参照先がなく、この件数が記録数か実人数か、漏えいした情報の項目、対象期間、侵入経路、漏えいの確認方法は確認できない。件数の大きさは重大な判断材料だが、連絡先情報のみか、認証情報や購買履歴…",
+      "article_path": "articles/39fe6898b8ccfce1.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/06/56391.html"
+    },
+    {
+      "entry_id": "50796c0f71bc5c2d",
+      "title": "公安調査庁、公式マスコット「ぴしゃ丸」発表 ～ ヒョウの観察力と忍者の隠密性を備えた広報担当",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-05T23:00:14+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要公安調査庁が公式マスコット「ぴしゃ丸」を発表したと、ScanNetSecurityが報じている。記事タイトルから確認できる設定は、ヒョウの観察力と忍者の隠密性を広報上の特徴として組み合わせた点であり、脆弱性や侵入、情報漏えいなどのセキュリティ事案を伝える内容ではない。組織にとっては広報施策の告知として扱うのが妥当で、現時点でネットワーク資産の緊急調査や…",
+      "article_path": "articles/50796c0f71bc5c2d.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/06/56390.html"
+    },
+    {
+      "entry_id": "c023b9cd0f3e1226",
+      "title": "HENNGEが経団連に入会、SaaS・セキュリティ領域の知見活かし政策提言目指す",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-05T23:00:09+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要記事タイトルによると、SaaSやセキュリティ事業を手掛けるHENNGEが経団連に入会し、同社の知見を生かした政策提言を目指す動きが報じられている。入会そのものは製品の脆弱性や侵害の公表ではなく、企業活動を通じて得た知見を政策議論に持ち込む取り組みとして位置付けられる。提言の対象となる制度や論点、具体的な活動計画、実際に政策へ反映された内容は、提示された…",
+      "article_path": "articles/c023b9cd0f3e1226.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/06/56389.html"
+    },
+    {
+      "entry_id": "8a94e7dbaa111fa8",
+      "title": "Apache HTTP Server 2.4 に複数の脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-05T23:00:04+00:00",
+      "impact_level": "Low",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要ScanNetSecurityの記事見出しは、Apache HTTP Server 2.4に複数の脆弱性があると伝えている。ただし、入力情報には記事本文や参照先がなく、対象となる具体的な版、脆弱性識別子、影響条件、修正版、悪用の有無を確認できないため、脆弱性の内容や緊急度を特定できない。脆弱性の種類によっては、外部から到達可能なサーバーでの情報漏えいや…",
+      "article_path": "articles/8a94e7dbaa111fa8.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/06/56388.html"
+    }
+  ]
+}

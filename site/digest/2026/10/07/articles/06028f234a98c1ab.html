@@ -1,0 +1,319 @@
+<!-- article.html テンプレート（生成用） (例: /digest/YYYY/MM/DD/articles/<entry_id>.html)
+     サーバ側（Function）で {{...}} を置換して出力してください。
+-->
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/favicon-192.png" />
+  <title>失効クレジットカードを「復活」させる攻撃手法 ～ 非接触決済の通信改ざんで不正決済成功 | NotifyHub Cybersecurity Daily Report</title>
+  <style>
+    :root{
+      --bg:#0b1020; --panel:#0f1730; --panel2:#121c3a;
+      --text:#e7ecff; --muted:#a9b4df; --line:#22305b;
+      --accent:#7aa2ff; --good:#4ade80; --warn:#fbbf24; --bad:#fb7185;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+      --radius:18px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      background: radial-gradient(1000px 700px at 20% -10%, rgba(122,162,255,.25), transparent 60%),
+                  radial-gradient(900px 600px at 90% 10%, rgba(251,113,133,.12), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+    }
+    a{color:inherit}
+    .wrap{max-width:960px; margin:0 auto; padding:22px 18px 44px}
+    .topbar{
+      display:flex; justify-content:space-between; align-items:center; gap:12px;
+      margin-bottom:12px;
+    }
+    .crumb a{
+      text-decoration:none;
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .crumb a:hover{border-color:rgba(122,162,255,.65)}
+    .chip{
+      display:inline-flex; align-items:center; gap:8px;
+      background:rgba(27,38,80,.75);
+      border:1px solid rgba(34,48,91,.9);
+      padding:7px 10px; border-radius:999px;
+      font-size:12px; color:var(--muted);
+      backdrop-filter: blur(10px);
+      white-space:nowrap;
+    }
+    .chip strong{color:var(--text); font-weight:650}
+    .panel{
+      background: linear-gradient(180deg, rgba(15,23,48,.9), rgba(15,23,48,.75));
+      border:1px solid rgba(34,48,91,.9);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .head{
+      padding:16px 16px 12px;
+      border-bottom:1px solid rgba(34,48,91,.9);
+      background:rgba(18,28,58,.55);
+    }
+    h1{
+      margin:0;
+      font-size:20px;
+      line-height:1.35;
+      letter-spacing:.15px;
+    }
+    .meta{
+      margin-top:10px;
+      display:flex; gap:10px; flex-wrap:wrap;
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.6;
+    }
+    .meta a{color:var(--muted)}
+    .meta a:hover{color:var(--accent)}
+    .tags{
+      margin-top:12px;
+      display:flex; gap:8px; flex-wrap:wrap;
+    }
+    .tag{
+      font-size:11px;
+      padding:6px 9px;
+      border-radius:999px;
+      background:rgba(27,38,80,.65);
+      border:1px solid rgba(34,48,91,.9);
+      color:var(--muted);
+      white-space:nowrap;
+    }
+    .tag.level-Critical{border-color:rgba(251,113,133,.65); color:#ffd0d7}
+    .tag.level-High{border-color:rgba(251,191,36,.65); color:#ffe9b0}
+    .tag.level-Medium{border-color:rgba(122,162,255,.65); color:#dbe6ff}
+    .tag.level-Low{border-color:rgba(74,222,128,.55); color:#d0ffe2}
+    .tag.level-Info{border-color:rgba(169,180,223,.55); color:rgba(169,180,223,.95)}
+    .body{
+      padding:16px;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+    }
+    .section{
+      background:rgba(18,28,58,.35);
+      border:1px solid rgba(34,48,91,.75);
+      border-radius:16px;
+      padding:14px;
+    }
+    .section h2{
+      margin:0 0 10px;
+      font-size:14px;
+      letter-spacing:.1px;
+    }
+    .ruleReason{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.65;
+      white-space:pre-wrap;
+    }
+    .infoSources{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.5;
+    }
+    .infoSourceRow{
+      margin:0;
+      padding:0;
+    }
+    .infoSourceRow + .infoSourceRow{
+      margin-top:2px;
+    }
+
+    /* --- summary_html styles (OpenAI output uses h4/p/ul/li/strong/code/br) --- */
+    .summary h4{
+      margin:14px 0 8px;
+      font-size:13px;
+      letter-spacing:.1px;
+      padding-left:10px;
+      border-left:3px solid rgba(122,162,255,.65);
+      color: rgba(231,236,255,.95);
+    }
+    .summary p{margin:8px 0; color:rgba(231,236,255,.92); line-height:1.75}
+    .summary ul, .summary ol{margin:8px 0 8px 1.2em; padding:0}
+    .summary li{margin:6px 0; color:rgba(231,236,255,.92); line-height:1.7}
+    .summary strong{
+      color:var(--text);
+      font-weight:750;
+      padding:0 .2em;
+      border-radius:8px;
+      background: linear-gradient(transparent 60%, rgba(122,162,255,.22) 60%);
+    }
+    .summary code{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 8px;
+      background: rgba(11,16,32,.6);
+      border: 1px solid rgba(34,48,91,.85);
+      color: rgba(231,236,255,.95);
+      white-space: nowrap;
+    }
+
+    .terms{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:10px;
+    }
+    @media (max-width: 860px){
+      .terms{grid-template-columns: 1fr}
+    }
+    .termCard{
+      background:rgba(11,16,32,.45);
+      border:1px solid rgba(34,48,91,.85);
+      border-radius:14px;
+      padding:12px;
+      min-width:0;
+    }
+    .termCard .term{
+      font-weight:700;
+      font-size:13px;
+      margin:0 0 8px;
+      word-break:break-word;
+    }
+    .termCard .exp{
+      margin:0;
+      color:rgba(231,236,255,.9);
+      line-height:1.7;
+      font-size:12px;
+      white-space:pre-wrap;
+    }
+    .subSectionTitle{
+      margin:16px 0 8px;
+      font-size:12px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:var(--muted);
+    }
+    .deepDive{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:10px;
+      margin-top:8px;
+    }
+    .deepDiveCard{
+      background:rgba(12,20,38,.6);
+    }
+
+    .footer{
+      margin-top:14px;
+      color:rgba(169,180,223,.75);
+      font-size:12px;
+      line-height:1.7;
+      text-align:center;
+    }
+    .btnRow{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px}
+    .linkbtn{
+      text-decoration:none;
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .linkbtn:hover{border-color:rgba(122,162,255,.65)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="crumb">
+        <!-- ../index.html は通常 "../index.html" でOK -->
+        <a href="../index.html">← 日次トップへ戻る</a>
+      </div>
+      <div class="chip">entry_id <strong class="mono">06028f234a98c1ab</strong></div>
+    </div>
+
+    <div class="panel">
+      <div class="head">
+        <h1>失効クレジットカードを「復活」させる攻撃手法 ～ 非接触決済の通信改ざんで不正決済成功</h1>
+
+        <div class="meta">
+          <span>🗞️ ScanNetSecurity</span>
+          <span>🕒 2026-10-06T08:20:02+09:00</span>
+          <span>🔗 <a href="https://scan.netsecurity.ne.jp/article/2026/10/06/56397.html" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
+        </div>
+
+        <div class="tags">
+          <span class="tag level-Medium">Impact: Medium</span>
+          <span class="tag">Exploit</span>
+        </div>
+
+        <div class="btnRow">
+          <a class="linkbtn" href="https://scan.netsecurity.ne.jp/article/2026/10/06/56397.html" target="_blank" rel="noopener noreferrer">原文リンク</a>
+          <a class="linkbtn" href="https://www.notifyhub.site/digest/2026/10/07/">日次トップ</a>
+        </div>
+      </div>
+
+      <div class="body">
+        
+        <div class="section">
+          <h2>Impact判定理由</h2>
+          <div class="ruleReason">失効カードで不正決済が成立するとの報告は金銭被害につながるが、攻撃条件・対象範囲・再現性が確認できず、実運用上の波及は評価できない。
+メディア記事であり、参照元や技術的詳細が入力にないため、悪用の広がりを示す一次情報補正は行わずMediumに据え置く。</div>
+        </div>
+        <div class="section summary">
+          <h2>🧾 要約（ChatGPT / gpt-6-luna）</h2>
+          <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
+          <div><h4>概要</h4><p>ScanNetSecurityの記事タイトルによると、失効したクレジットカードを非接触決済の通信改ざんによって「復活」させ、不正決済を成立させる攻撃手法が報じられた。成立の鍵は、カードと決済端末の間でやり取りされる情報を改変し、失効状態のカードでも取引が通るようにする点にあるとみられるが、具体的な改変対象や実行手順は入力情報から確認できない。攻撃には非接触通信を扱える環境や決済処理上の条件が必要と考えられるものの、端末への物理的接触の要否、必要な機材、追加の認証条件は未確認となる。決済が承認される場合、被害は一回の支払いにとどまらず、同じ方式を受け入れる端末や決済経路で繰り返される可能性がある一方、対象カード、加盟店、決済網の範囲は記事情報だけでは判断できない。組織では現時点で一律のカード停止を判断する材料は不足しており、決済事業者への照会と、否認・承認記録の不整合や失効カードに関する取引の確認を優先する必要がある。<strong>攻撃の再現性と対象範囲は未確認</strong>のため、広範な悪用が進行中とは断定できない。</p></div>
+        </div>
+
+        <div class="section">
+          <h2>📌 キーワード解説</h2>
+          <div class="terms">
+            <div class="termCard">
+  <div class="term">非接触決済（NFC決済）</div>
+  <p class="exp">カードと端末を近距離で通信させて支払う方式。通信の改ざん可能性と、発行会社側の承認判定の弱さは別の問題として切り分ける必要がある。</p>
+</div>
+<div class="termCard">
+  <div class="term">通信改ざん</div>
+  <p class="exp">通信中の情報を変更し、受信側の判断や処理に影響させる行為。通信の盗聴とは異なり、取引内容や有効性の判定を変え得る。</p>
+</div>
+          </div>
+          <h3 class="subSectionTitle">深掘り解説</h3>
+          <div class="deepDive">
+            <div class="termCard deepDiveCard">
+  <div class="term">カード情報の有効性と取引承認を分けて確認する</div>
+  <p class="exp">非接触決済では、カードと端末の通信が正常に完了したことと、発行会社が取引を承認したことは同じではない。カードの有効期限などの情報が端末側で処理されても、最終的な承認判断がどの段階で行われるかは、決済方式や取引経路によって異なる。したがって、通信改ざんの報告を受けた際は「失効カードが使えた」という結果だけで原因を決めず、カード側の応答、端末の判定、加盟店からの送信内容、発行会社の承認記録を時系列で分けて確認する。たとえば、失効カードの取引が端末では拒否されたのに売上記録では承認扱いとなっていれば、通信そのものだけでなく、オフライン処理や後続の照合、例外設定も調査対象になる。決済事業者には、対象となる取引方式、必要条件、影響範囲、暫定的な検知方法を確認する。自組織では、承認記録と売上記録の不一致や、通常と異なる失効カード関連の問い合わせを確認し、根拠がないまま全カード停止などの業務影響が大きい措置へ進まないことが重要となる。</p>
+</div>
+          </div>
+        </div>
+
+        
+
+        <div class="section">
+          <h2>🕘 生成情報</h2>
+          <div class="ruleReason">
+対象期間：2026-10-06T06:00:00+09:00 〜 2026-10-07T06:00:00+09:00
+生成時刻：2026-10-07T06:28:10.555203+09:00
+免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      notifyhub.site
+    </div>
+  </div>
+</body>
+</html>
