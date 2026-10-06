@@ -353,6 +353,93 @@ def test_build_featured_topics_retries_transient_transport_error(monkeypatch) ->
     assert attempts == 2
 
 
+def test_build_featured_topics_retries_server_error(monkeypatch, caplog) -> None:
+    attempts = 0
+
+    class _Response:
+        def __init__(self, status_code: int, payload: dict[str, object], text: str) -> None:
+            self.status_code = status_code
+            self._payload = payload
+            self.text = text
+
+        def raise_for_status(self) -> None:
+            request = httpx.Request("POST", "https://api.x.ai/v1/responses")
+            response = httpx.Response(self.status_code, request=request, text=self.text)
+            response.raise_for_status()
+
+        def close(self) -> None:
+            return None
+
+        def json(self) -> dict[str, object]:
+            return self._payload
+
+    class _Client:
+        def post(self, _url: str, *, headers: dict[str, str], json: dict[str, object], timeout=None):
+            nonlocal attempts
+            attempts += 1
+            if attempts == 1:
+                return _Response(500, {"error": "temporary upstream failure"}, '{"error":"temporary upstream failure"}')
+            return _Response(200, {"model": "grok-4.7", "output_text": '{"topics": []}'}, '{"topics": []}')
+
+    class _Settings:
+        count = 1
+        categories = ["AI"]
+
+    monkeypatch.setenv("FEATURED_TOPIC_HTTP_RETRIES", "1")
+
+    with caplog.at_level("WARNING"):
+        topics = build_featured_topics(
+            _Client(),
+            cfg=GrokConfig(api_key="test", model="grok-4.7", temperature=None),
+            window_start_utc=datetime(2026, 5, 8, 0, 0),
+            window_end_utc=datetime(2026, 5, 9, 0, 0),
+            settings=_Settings(),
+        )
+
+    assert topics == []
+    assert attempts == 2
+    assert "Retrying Grok featured topic request after server error" in caplog.text
+    assert "temporary upstream failure" in caplog.text
+
+
+def test_build_featured_topics_logs_server_error_body_on_final_failure(caplog) -> None:
+    class _Response:
+        status_code = 500
+        text = '{"error":"temporary upstream failure"}'
+
+        def raise_for_status(self) -> None:
+            request = httpx.Request("POST", "https://api.x.ai/v1/responses")
+            response = httpx.Response(self.status_code, request=request, text=self.text)
+            response.raise_for_status()
+
+        def close(self) -> None:
+            return None
+
+        def json(self) -> dict[str, object]:
+            return {"error": "temporary upstream failure"}
+
+    class _Client:
+        def post(self, _url: str, *, headers: dict[str, str], json: dict[str, object], timeout=None):
+            return _Response()
+
+    class _Settings:
+        count = 1
+        categories = ["AI"]
+
+    with caplog.at_level("WARNING"):
+        with pytest.raises(httpx.HTTPStatusError):
+            build_featured_topics(
+                _Client(),
+                cfg=GrokConfig(api_key="test", model="grok-4.7", temperature=None),
+                window_start_utc=datetime(2026, 5, 8, 0, 0),
+                window_end_utc=datetime(2026, 5, 9, 0, 0),
+                settings=_Settings(),
+            )
+
+    assert "Grok featured topic request failed with status=500" in caplog.text
+    assert "temporary upstream failure" in caplog.text
+
+
 def test_featured_topic_timeout_uses_longer_fallback() -> None:
     timeout = _featured_topic_timeout(120.0)
 

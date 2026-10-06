@@ -40,6 +40,10 @@ def _is_retryable_featured_topic_error(exc: Exception) -> bool:
     return isinstance(exc, (httpx.TimeoutException, httpx.TransportError))
 
 
+def _is_retryable_featured_topic_status(status_code: int) -> bool:
+    return 500 <= status_code < 600
+
+
 @dataclass(frozen=True)
 class GrokConfig:
     api_key: str
@@ -481,6 +485,19 @@ def build_featured_topics(
                 json=payload,
                 timeout=request_timeout,
             )
+            status_code = getattr(res, "status_code", 200)
+            if _is_retryable_featured_topic_status(status_code) and attempt < retries:
+                logger.warning(
+                    "Retrying Grok featured topic request after server error: attempt=%s/%s status=%s body_excerpt=%r",
+                    attempt + 2,
+                    retries + 1,
+                    status_code,
+                    _response_debug_excerpt(getattr(res, "text", "")),
+                )
+                close = getattr(res, "close", None)
+                if callable(close):
+                    close()
+                continue
             break
         except Exception as exc:
             if not _is_retryable_featured_topic_error(exc) or attempt >= retries:
@@ -495,7 +512,15 @@ def build_featured_topics(
     else:
         raise last_exc or RuntimeError("featured topic request failed without exception")
 
-    res.raise_for_status()
+    try:
+        res.raise_for_status()
+    except httpx.HTTPStatusError:
+        logger.warning(
+            "Grok featured topic request failed with status=%s body_excerpt=%r",
+            getattr(res, "status_code", "unknown"),
+            _response_debug_excerpt(getattr(res, "text", "")),
+        )
+        raise
 
     data = res.json()
     content = _extract_response_text(data)
