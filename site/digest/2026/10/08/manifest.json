@@ -7,7 +7,7 @@
   "counts": {
     "total": 1
   },
-  "generated_at_jst": "2026-10-08T01:48:21.803445+09:00",
+  "generated_at_jst": "2026-10-08T02:20:08.153218+09:00",
   "featured_topics_config": {
     "count": 3,
     "categories": [
@@ -26,7 +26,7 @@
       "published_at": "2026-10-07T15:34:53+00:00",
       "impact_level": "High",
       "threat_type": "Vulnerability",
-      "summary_preview": "概要大規模言語モデルの推論基盤でキャッシュ処理を高速化するLMCacheに、認証なしで遠隔からコードを実行される重大な脆弱性が報告された。問題は、キャッシュを独立したサーバーとして動かし、ZeroMQを介して推論ワーカーと通信するマルチプロセス構成に関係する。攻撃者がこのサーバーへネットワーク接続できる場合、認証を経ずにサーバー上でコードを実行する可能性が…",
+      "summary_preview": "概要大規模言語モデルの推論を高速化するオープンソースソフトウェア LMCache に、認証なしでキャッシュサーバー上の任意コード実行につながる脆弱性が報告された。問題が生じるのは、キャッシュを独立したサーバーとして稼働させ、推論ワーカーが ZeroMQ 経由で接続するマルチプロセス構成であり、攻撃者がそのサーバーへネットワーク到達できることが悪用の前提とな…",
       "article_path": "articles/1cc42cf044182b9a.html",
       "original_url": "https://thehackernews.com/2026/10/unpatched-critical-lmcache-flaw-lets.html"
     }
