@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-08",
+  "window": {
+    "from": "2026-10-07T06:00:00+09:00",
+    "to": "2026-10-08T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 1
+  },
+  "generated_at_jst": "2026-10-08T01:48:21.803445+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [],
+  "items": [
+    {
+      "entry_id": "1cc42cf044182b9a",
+      "title": "Unpatched Critical LMCache Flaw Lets Unauthenticated Attackers Run Code Remotely",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-07T15:34:53+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要大規模言語モデルの推論基盤でキャッシュ処理を高速化するLMCacheに、認証なしで遠隔からコードを実行される重大な脆弱性が報告された。問題は、キャッシュを独立したサーバーとして動かし、ZeroMQを介して推論ワーカーと通信するマルチプロセス構成に関係する。攻撃者がこのサーバーへネットワーク接続できる場合、認証を経ずにサーバー上でコードを実行する可能性が…",
+      "article_path": "articles/1cc42cf044182b9a.html",
+      "original_url": "https://thehackernews.com/2026/10/unpatched-critical-lmcache-flaw-lets.html"
+    }
+  ]
+}
