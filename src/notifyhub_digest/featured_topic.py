@@ -170,6 +170,15 @@ def _normalize_category_label(category: str) -> str:
     return " ".join((category or "").strip().lower().replace("/", " ").replace("-", " ").split())
 
 
+def _contains_placeholder_text(*values: str) -> bool:
+    placeholders = {"placeholder", "todo", "tbd", "lorem ipsum"}
+    for value in values:
+        normalized = " ".join(value.casefold().strip().strip(".,:;!?-_*").split())
+        if normalized in placeholders or normalized.startswith("lorem ipsum "):
+            return True
+    return False
+
+
 def _dedupe_categories(categories: list[str]) -> list[str]:
     deduped: list[str] = []
     seen: set[str] = set()
@@ -663,6 +672,7 @@ def build_featured_topics(
     rejection_counts = {
         "not_object": 0,
         "missing_required_fields": 0,
+        "placeholder_content": 0,
         "category_mismatch": 0,
         "invalid_published_at": 0,
     }
@@ -683,6 +693,16 @@ def build_featured_topics(
         raw_sources = raw_topic.get("information_sources")
         if not title or not original_url or not published_at_raw:
             rejection_counts["missing_required_fields"] += 1
+            continue
+        if _contains_placeholder_text(
+            title,
+            source_name,
+            original_url,
+            selection_reason,
+            analysis.summary_html,
+            analysis.impact_reason,
+        ):
+            rejection_counts["placeholder_content"] += 1
             continue
         if _looks_mismatched_for_category(
             requested_category=requested_category,

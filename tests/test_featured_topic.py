@@ -400,6 +400,36 @@ def test_build_featured_topics_logs_reasons_when_all_candidates_are_rejected(cap
     assert "missing_required_fields': 1" in caplog.text
 
 
+def test_build_featured_topics_rejects_placeholder_content(caplog) -> None:
+    class _Response:
+        def raise_for_status(self) -> None:
+            return None
+
+        def json(self) -> dict[str, object]:
+            return {
+                "model": "grok-4.6",
+                "output_text": '{"topics": [{"topic_id": "featured-topic-1", "title": "placeholder", '
+                '"source_name": "placeholder", "original_url": "https://example.com/story", '
+                '"published_at": "2026-10-07T12:00:00Z", "summary_html": "placeholder"}]}',
+            }
+
+    class _Client:
+        def post(self, _url: str, *, headers: dict[str, str], json: dict[str, object], timeout=None):
+            return _Response()
+
+    with caplog.at_level("WARNING"):
+        topics = build_featured_topics(
+            cast(httpx.Client, _Client()),
+            cfg=GrokConfig(api_key="test", model="grok-4.6", temperature=None),
+            window_start_utc=datetime(2026, 10, 7, 0, 0),
+            window_end_utc=datetime(2026, 10, 8, 0, 0),
+            settings=FeaturedTopicsSettings(count=3, categories=["AI"]),
+        )
+
+    assert topics == []
+    assert "placeholder_content': 1" in caplog.text
+
+
 def test_build_featured_topics_retries_transient_transport_error(monkeypatch) -> None:
     attempts = 0
 
