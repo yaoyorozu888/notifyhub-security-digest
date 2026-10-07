@@ -588,9 +588,10 @@ def build_featured_topics(
             status_code = getattr(res, "status_code", 200)
             if _is_retryable_featured_topic_status(status_code) and attempt < retries:
                 logger.warning(
-                    "Retrying Grok featured topic request after server error: attempt=%s/%s status=%s body_excerpt=%r",
+                    "Retrying Grok featured topic request after server error: attempt=%s/%s model=%s status=%s body_excerpt=%r",
                     attempt + 2,
                     retries + 1,
+                    cfg.model,
                     status_code,
                     _response_debug_excerpt(getattr(res, "text", "")),
                 )
@@ -603,7 +604,8 @@ def build_featured_topics(
                 res.raise_for_status()
             except httpx.HTTPStatusError:
                 logger.warning(
-                    "Grok featured topic request failed with status=%s body_excerpt=%r",
+                    "Grok featured topic request failed: model=%s status=%s body_excerpt=%r",
+                    cfg.model,
                     getattr(res, "status_code", "unknown"),
                     _response_debug_excerpt(getattr(res, "text", "")),
                 )
@@ -639,9 +641,10 @@ def build_featured_topics(
                 raise
             last_exc = exc
             logger.warning(
-                "Retrying Grok featured topic request after transient error: attempt=%s/%s error=%s",
+                "Retrying Grok featured topic request after transient error: attempt=%s/%s model=%s error=%s",
                 attempt + 2,
                 retries + 1,
+                cfg.model,
                 exc,
             )
     else:
@@ -649,11 +652,24 @@ def build_featured_topics(
 
     raw_topics = parsed.get("topics")
     if not isinstance(raw_topics, list):
+        logger.warning(
+            "Grok featured topic response has no topics array: model=%s response_type=%s",
+            model_version,
+            type(raw_topics).__name__,
+        )
         return []
 
     topics: list[FeaturedTopic] = []
-    for index, raw_topic in enumerate(raw_topics[: settings.count], start=1):
+    rejection_counts = {
+        "not_object": 0,
+        "missing_required_fields": 0,
+        "category_mismatch": 0,
+        "invalid_published_at": 0,
+    }
+    candidates = raw_topics[: settings.count]
+    for index, raw_topic in enumerate(candidates, start=1):
         if not isinstance(raw_topic, dict):
+            rejection_counts["not_object"] += 1
             continue
         analysis = _coerce_analysis_result(raw_topic)
         analysis.model_version = model_version
@@ -666,6 +682,7 @@ def build_featured_topics(
         requested_category = _resolve_requested_category(str(raw_topic.get("requested_category") or "").strip(), settings.categories)
         raw_sources = raw_topic.get("information_sources")
         if not title or not original_url or not published_at_raw:
+            rejection_counts["missing_required_fields"] += 1
             continue
         if _looks_mismatched_for_category(
             requested_category=requested_category,
@@ -673,10 +690,12 @@ def build_featured_topics(
             title=title,
             summary_html=analysis.summary_html,
         ):
+            rejection_counts["category_mismatch"] += 1
             continue
         try:
             published_at = datetime.fromisoformat(published_at_raw.replace("Z", "+00:00"))
         except Exception:
+            rejection_counts["invalid_published_at"] += 1
             continue
 
         information_sources: list[InformationSource] = []
@@ -705,5 +724,22 @@ def build_featured_topics(
                 requested_category=requested_category,
                 information_sources=information_sources,
             )
+        )
+    if not topics:
+        logger.warning(
+            "Grok featured topic response yielded no accepted topics: model=%s requested=%s candidates=%s rejected=%s",
+            model_version,
+            settings.count,
+            len(candidates),
+            rejection_counts,
+        )
+    elif any(rejection_counts.values()):
+        logger.info(
+            "Some Grok featured topic candidates were rejected: model=%s requested=%s candidates=%s accepted=%s rejected=%s",
+            model_version,
+            settings.count,
+            len(candidates),
+            len(topics),
+            rejection_counts,
         )
     return topics
