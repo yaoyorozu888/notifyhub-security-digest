@@ -406,6 +406,88 @@ def _schema_hint(count: int) -> str:
     )
 
 
+_FEATURED_TOPICS_RESPONSE_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "topics": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "topic_id": {"type": "string"},
+                    "requested_category": {"type": "string"},
+                    "title": {"type": "string"},
+                    "source_name": {"type": "string"},
+                    "published_at": {"type": "string"},
+                    "original_url": {"type": "string"},
+                    "selection_reason": {"type": "string"},
+                    "information_sources": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "title": {"type": "string"},
+                                "url": {"type": "string"},
+                                "source_type": {"type": "string"},
+                            },
+                            "required": ["title", "url", "source_type"],
+                            "additionalProperties": False,
+                        },
+                    },
+                    "summary_html": {"type": "string"},
+                    "technical_terms": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "term": {"type": "string"},
+                                "explanation": {"type": "string"},
+                            },
+                            "required": ["term", "explanation"],
+                            "additionalProperties": False,
+                        },
+                    },
+                    "lessons": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "title": {"type": "string"},
+                                "body": {"type": "string"},
+                            },
+                            "required": ["title", "body"],
+                            "additionalProperties": False,
+                        },
+                    },
+                    "impact_level": {"type": "string"},
+                    "impact_reason": {"type": "string"},
+                    "threat_type": {"type": "string"},
+                },
+                "required": [
+                    "topic_id",
+                    "requested_category",
+                    "title",
+                    "source_name",
+                    "published_at",
+                    "original_url",
+                    "selection_reason",
+                    "information_sources",
+                    "summary_html",
+                    "technical_terms",
+                    "lessons",
+                    "impact_level",
+                    "impact_reason",
+                    "threat_type",
+                ],
+                "additionalProperties": False,
+            },
+        }
+    },
+    "required": ["topics"],
+    "additionalProperties": False,
+}
+
+
 def _build_user_prompt(*, window_start_utc: datetime, window_end_utc: datetime, settings: FeaturedTopicsSettings) -> str:
     category_text = ", ".join(settings.categories) if settings.categories else "指定なし"
     return "\n".join(
@@ -455,7 +537,14 @@ def build_featured_topics(
     payload = {
         "model": cfg.model,
         "max_output_tokens": cfg.max_tokens,
-        "text": {"format": {"type": "json_object"}},
+        "text": {
+            "format": {
+                "type": "json_schema",
+                "name": "featured_topics",
+                "schema": _FEATURED_TOPICS_RESPONSE_SCHEMA,
+                "strict": True,
+            }
+        },
         "tools": [
             {"type": "web_search"},
             {"type": "x_search"},
@@ -477,6 +566,8 @@ def build_featured_topics(
 
     retries = _featured_topic_http_retries()
     last_exc: Exception | None = None
+    parsed: dict[str, Any] = {}
+    model_version = cfg.model
     for attempt in range(retries + 1):
         try:
             res = client.post(
@@ -498,6 +589,41 @@ def build_featured_topics(
                 if callable(close):
                     close()
                 continue
+
+            try:
+                res.raise_for_status()
+            except httpx.HTTPStatusError:
+                logger.warning(
+                    "Grok featured topic request failed with status=%s body_excerpt=%r",
+                    getattr(res, "status_code", "unknown"),
+                    _response_debug_excerpt(getattr(res, "text", "")),
+                )
+                raise
+
+            data = res.json()
+            content = _extract_response_text(data)
+            model_version = _extract_response_model(data) or cfg.model
+            try:
+                parsed = _extract_json_object(content)
+            except Exception:
+                if attempt >= retries:
+                    logger.exception(
+                        "Failed to parse Grok featured topic response as JSON: model=%s output_excerpt=%r",
+                        model_version,
+                        _response_debug_excerpt(content),
+                    )
+                    raise
+                logger.warning(
+                    "Retrying Grok featured topic request after invalid JSON object response: attempt=%s/%s model=%s output_excerpt=%r",
+                    attempt + 2,
+                    retries + 1,
+                    model_version,
+                    _response_debug_excerpt(content),
+                )
+                close = getattr(res, "close", None)
+                if callable(close):
+                    close()
+                continue
             break
         except Exception as exc:
             if not _is_retryable_featured_topic_error(exc) or attempt >= retries:
@@ -512,28 +638,6 @@ def build_featured_topics(
     else:
         raise last_exc or RuntimeError("featured topic request failed without exception")
 
-    try:
-        res.raise_for_status()
-    except httpx.HTTPStatusError:
-        logger.warning(
-            "Grok featured topic request failed with status=%s body_excerpt=%r",
-            getattr(res, "status_code", "unknown"),
-            _response_debug_excerpt(getattr(res, "text", "")),
-        )
-        raise
-
-    data = res.json()
-    content = _extract_response_text(data)
-    model_version = _extract_response_model(data) or cfg.model
-    try:
-        parsed: dict[str, Any] = _extract_json_object(content)
-    except Exception:
-        logger.exception(
-            "Failed to parse Grok featured topic response as JSON: model=%s output_excerpt=%r",
-            model_version,
-            _response_debug_excerpt(content),
-        )
-        raise
     raw_topics = parsed.get("topics")
     if not isinstance(raw_topics, list):
         return []

@@ -3,13 +3,14 @@ from __future__ import annotations
 import json
 from datetime import datetime, timedelta
 from pathlib import Path
+from typing import cast
 
 import httpx
 import pytest
 
 from notifyhub_digest.models import AnalysisResult, FeaturedTopic, InformationSource, Source
 from notifyhub_digest.rss import RawEntry
-from notifyhub_digest.featured_topic import FEATURED_SYSTEM_PROMPT, GrokConfig, _build_user_prompt, _infer_category_policy, _looks_mismatched_for_category, _resolve_requested_category, _schema_hint, build_featured_topics, load_featured_topics_settings
+from notifyhub_digest.featured_topic import FEATURED_SYSTEM_PROMPT, FeaturedTopicsSettings, GrokConfig, _build_user_prompt, _infer_category_policy, _looks_mismatched_for_category, _resolve_requested_category, _schema_hint, build_featured_topics, load_featured_topics_settings
 from notifyhub_digest.runner import _featured_topic_timeout, build_digest_outputs
 from notifyhub_digest.timeutils import JST, compute_daily_window
 
@@ -278,9 +279,14 @@ def test_build_featured_topics_omits_blank_temperature_from_request() -> None:
     assert captured_payload["model"] == "grok-4.7"
     assert "temperature" not in captured_payload
     assert captured_timeout is None
+    text_format = captured_payload["text"]["format"]
+    assert text_format["type"] == "json_schema"
+    assert text_format["strict"] is True
+    assert text_format["schema"]["type"] == "object"
+    assert text_format["schema"]["required"] == ["topics"]
 
 
-def test_build_featured_topics_logs_response_excerpt_when_json_parse_fails(caplog) -> None:
+def test_build_featured_topics_logs_response_excerpt_when_json_parse_fails(monkeypatch, caplog) -> None:
     class _Response:
         def raise_for_status(self) -> None:
             return None
@@ -299,6 +305,8 @@ def test_build_featured_topics_logs_response_excerpt_when_json_parse_fails(caplo
         count = 1
         categories = ["AI"]
 
+    monkeypatch.setenv("FEATURED_TOPIC_HTTP_RETRIES", "0")
+
     with caplog.at_level("ERROR"):
         with pytest.raises(ValueError, match="could not parse JSON object"):
             build_featured_topics(
@@ -312,6 +320,52 @@ def test_build_featured_topics_logs_response_excerpt_when_json_parse_fails(caplo
     assert "Failed to parse Grok featured topic response as JSON" in caplog.text
     assert "not json at all" in caplog.text
     assert "grok-4.7" in caplog.text
+
+
+def test_build_featured_topics_retries_non_object_json_response(monkeypatch, caplog) -> None:
+    attempts = 0
+
+    class _Response:
+        def __init__(self, output_text: str) -> None:
+            self.output_text = output_text
+
+        def raise_for_status(self) -> None:
+            return None
+
+        def json(self) -> dict[str, object]:
+            return {"model": "grok-4.7", "output_text": self.output_text}
+
+        def close(self) -> None:
+            return None
+
+    class _Client:
+        def post(self, _url: str, *, headers: dict[str, str], json: dict[str, object], timeout=None):
+            nonlocal attempts
+            attempts += 1
+            if attempts == 1:
+                return _Response("202610560.5E0")
+            return _Response(
+                '{"topics": [{"topic_id": "featured-topic-1", "title": "Recovered topic", '
+                '"original_url": "https://example.com/recovered", '
+                '"published_at": "2026-05-08T12:00:00+00:00", "requested_category": "AI"}]}'
+            )
+
+    monkeypatch.setenv("FEATURED_TOPIC_HTTP_RETRIES", "1")
+
+    with caplog.at_level("WARNING"):
+        topics = build_featured_topics(
+            cast(httpx.Client, _Client()),
+            cfg=GrokConfig(api_key="test", model="grok-4.7", temperature=None),
+            window_start_utc=datetime(2026, 5, 8, 0, 0),
+            window_end_utc=datetime(2026, 5, 9, 0, 0),
+            settings=FeaturedTopicsSettings(count=1, categories=["AI"]),
+        )
+
+    assert len(topics) == 1
+    assert topics[0].title == "Recovered topic"
+    assert attempts == 2
+    assert "Retrying Grok featured topic request after invalid JSON object response" in caplog.text
+    assert "202610560.5E0" in caplog.text
 
 
 def test_build_featured_topics_retries_transient_transport_error(monkeypatch) -> None:
