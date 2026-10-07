@@ -7,12 +7,14 @@ from typing import cast
 
 import httpx
 import pytest
+from typer.testing import CliRunner
 
+from notifyhub_digest.cli import app as cli_app
 from notifyhub_digest.models import AnalysisResult, FeaturedTopic, InformationSource, Source
 from notifyhub_digest.rss import RawEntry
 from notifyhub_digest.featured_topic import FEATURED_SYSTEM_PROMPT, FeaturedTopicsSettings, GrokConfig, _build_user_prompt, _infer_category_policy, _looks_mismatched_for_category, _resolve_requested_category, _schema_hint, build_featured_topics, load_featured_topics_settings
 from notifyhub_digest.runner import _featured_topic_timeout, build_digest_outputs
-from notifyhub_digest.timeutils import JST, compute_daily_window
+from notifyhub_digest.timeutils import compute_daily_window
 
 
 def _patch_digest_sources(monkeypatch, entry: RawEntry) -> None:
@@ -119,6 +121,109 @@ def test_build_digest_outputs_keeps_existing_items_when_featured_topics_enabled(
     assert 'class="infoSourceRow"' in article_html
 
 
+def test_build_digest_outputs_processes_grok_response_and_rejects_placeholder(tmp_path: Path, monkeypatch) -> None:
+    run_at_iso = "2026-01-12T06:00:00+09:00"
+    window = compute_daily_window(datetime.fromisoformat(run_at_iso))
+    digest_entry = RawEntry(
+        entry_id="digest-1",
+        title="Digest Title",
+        link="https://example.com/digest",
+        published_at_utc=window.start_utc + timedelta(minutes=1),
+        summary="digest summary",
+    )
+    _patch_digest_sources(monkeypatch, digest_entry)
+
+    def _topic(topic_id: str, title: str, source_name: str, summary_html: str) -> dict[str, object]:
+        return {
+            "topic_id": topic_id,
+            "requested_category": "AI",
+            "title": title,
+            "source_name": source_name,
+            "published_at": "2026-01-12T01:00:00Z",
+            "original_url": f"https://example.com/{topic_id}",
+            "selection_reason": "今日の実務判断に関係する更新が確認されたため。",
+            "information_sources": [
+                {"title": "Example source", "url": "https://example.com/source", "source_type": "web"}
+            ],
+            "summary_html": summary_html,
+            "technical_terms": [],
+            "lessons": [{"title": "なし", "body": "なし"}],
+            "impact_level": "Medium",
+            "impact_reason": "複数の利用者に影響するため。",
+            "threat_type": "Unknown",
+        }
+
+    response_body: dict[str, object] = {
+        "model": "grok-4.6",
+        "output_text": json.dumps(
+            {
+                "topics": [
+                    _topic(
+                        "featured-topic-valid",
+                        "新しいAIモデルの公開",
+                        "Example News",
+                        "<p>新モデルの公開により利用環境が変わる。</p>",
+                    ),
+                    _topic(
+                        "featured-topic-placeholder",
+                        "placeholder",
+                        "placeholder",
+                        "placeholder",
+                    ),
+                ]
+            },
+            ensure_ascii=False,
+        ),
+    }
+
+    class _Response:
+        def raise_for_status(self) -> None:
+            return None
+
+        def json(self) -> dict[str, object]:
+            return response_body
+
+    class _Client:
+        def __init__(self, *_args, **_kwargs) -> None:
+            pass
+
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *_args) -> None:
+            return None
+
+        def post(self, _url: str, *, headers: dict[str, str], json: dict[str, object], timeout=None):
+            return _Response()
+
+    monkeypatch.setattr("notifyhub_digest.runner.httpx.Client", _Client)
+    monkeypatch.setattr("notifyhub_digest.runner.load_openai_config", lambda: None)
+    monkeypatch.setattr(
+        "notifyhub_digest.runner.load_grok_config",
+        lambda: GrokConfig(api_key="test", model="grok-4.6", temperature=None),
+    )
+    monkeypatch.setattr(
+        "notifyhub_digest.runner.load_featured_topics_settings",
+        lambda: FeaturedTopicsSettings(count=2, categories=["AI"]),
+    )
+
+    built = build_digest_outputs(
+        out_dir=tmp_path / "out",
+        sources_path=tmp_path / "sources.json",
+        run_at_iso=run_at_iso,
+    )
+
+    manifest_path = built.digest_dir / "manifest.json"
+    payload = json.loads(manifest_path.read_text(encoding="utf-8"))
+    topic_article_path = built.digest_dir / "articles" / "featured-topic-valid.html"
+    assert len(built.items) == 1
+    assert [topic.title for topic in built.featured_topics] == ["新しいAIモデルの公開"]
+    assert [topic["topic_id"] for topic in payload["featured_topics"]] == ["featured-topic-valid"]
+    assert topic_article_path.exists()
+    assert "新しいAIモデルの公開" in topic_article_path.read_text(encoding="utf-8")
+    assert not (built.digest_dir / "articles" / "featured-topic-placeholder.html").exists()
+
+
 def test_build_digest_outputs_ignores_featured_topic_failures(tmp_path: Path, monkeypatch) -> None:
     run_at_iso = "2026-01-12T06:00:00+09:00"
     window = compute_daily_window(datetime.fromisoformat(run_at_iso))
@@ -148,6 +253,19 @@ def test_build_digest_outputs_ignores_featured_topic_failures(tmp_path: Path, mo
     assert len(built.items) == 1
     assert built.featured_topics == []
     assert (tmp_path / "out" / "digest" / "2026" / "01" / "12" / "manifest.json").exists()
+
+
+def test_grok_check_help_and_missing_key_are_offline(monkeypatch) -> None:
+    runner = CliRunner()
+    help_result = runner.invoke(cli_app, ["grok-check", "--help"])
+    assert help_result.exit_code == 0
+    assert "--hours" in help_result.stdout
+
+    monkeypatch.setattr("notifyhub_digest.cli._load_dotenv", lambda: None)
+    monkeypatch.delenv("GROK_API_KEY", raising=False)
+    missing_key_result = runner.invoke(cli_app, ["grok-check"])
+    assert missing_key_result.exit_code == 2
+    assert "no request was sent" in missing_key_result.output
 
 
 def test_build_digest_outputs_respects_max_items_and_stops_early(tmp_path: Path, monkeypatch) -> None:

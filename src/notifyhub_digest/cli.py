@@ -2,16 +2,34 @@ from __future__ import annotations
 
 import logging
 import os
+from datetime import UTC, datetime, timedelta
 from pathlib import Path
 
+import httpx
 import typer
 
 from notifyhub_digest import __version__
 from notifyhub_digest.acs_email import build_digest_email_html
-from notifyhub_digest.runner import build_digest_outputs, run_digest
+from notifyhub_digest.featured_topic import (
+    build_featured_topics,
+    load_featured_topics_settings,
+    load_grok_config,
+)
+from notifyhub_digest.runner import (
+    _featured_topic_timeout,
+    build_digest_outputs,
+    run_digest,
+)
 
 
 app = typer.Typer(add_completion=False, no_args_is_help=True)
+_GROK_CHECK_HOURS_OPTION = typer.Option(
+    24.0,
+    "--hours",
+    min=1.0,
+    max=168.0,
+    help="検索対象の直近時間",
+)
 
 
 def _load_dotenv(*, path: Path = Path(".env")) -> None:
@@ -78,6 +96,75 @@ def version() -> None:
     """バージョンを表示します。"""
 
     typer.echo(__version__)
+
+
+@app.command("grok-check")
+def grok_check(
+    hours: float = _GROK_CHECK_HOURS_OPTION,
+) -> None:
+    """サイトを書き換えずにGrokの実応答を確認します。"""
+
+    _load_dotenv()
+    _configure_logging()
+
+    cfg = load_grok_config()
+    if cfg is None:
+        typer.echo("GROK_API_KEY is not configured; no request was sent.", err=True)
+        raise typer.Exit(code=2)
+
+    settings = load_featured_topics_settings()
+    if settings.count <= 0:
+        typer.echo("FEATURED_TOPIC_COUNT must be greater than zero; no request was sent.", err=True)
+        raise typer.Exit(code=2)
+
+    window_end_utc = datetime.now(UTC)
+    window_start_utc = window_end_utc - timedelta(hours=hours)
+    base_timeout = float(os.getenv("NOTIFYHUB_HTTP_TIMEOUT", "20"))
+    timeout = _featured_topic_timeout(base_timeout)
+    typer.echo(
+        f"Grok live check: model={cfg.model} requested={settings.count} "
+        f"categories={settings.categories or ['(unspecified)']} "
+        f"hours={hours:g}"
+    )
+
+    try:
+        with httpx.Client(
+            timeout=timeout,
+            follow_redirects=True,
+            transport=httpx.HTTPTransport(retries=2),
+        ) as client:
+            topics = build_featured_topics(
+                client,
+                cfg=cfg,
+                window_start_utc=window_start_utc,
+                window_end_utc=window_end_utc,
+                settings=settings,
+                request_timeout=timeout,
+            )
+    except Exception as exc:
+        typer.echo(
+            f"Grok live check failed: {type(exc).__name__}",
+            err=True,
+        )
+        raise typer.Exit(code=1) from exc
+
+    if not topics:
+        typer.echo(
+            "Grok returned no acceptable topics. See the warning log for rejection details.",
+            err=True,
+        )
+        raise typer.Exit(code=1)
+
+    typer.echo(f"Accepted topics: {len(topics)}")
+    for index, topic in enumerate(topics, start=1):
+        typer.echo(f"\n[{index}] {topic.title}")
+        typer.echo(f"model={topic.analysis.model_version} source={topic.source_name}")
+        typer.echo(f"published_at={topic.published_at.isoformat()} category={topic.requested_category}")
+        typer.echo(f"url={topic.original_url}")
+        typer.echo(f"selection_reason={topic.selection_reason}")
+        typer.echo(f"summary_html={topic.analysis.summary_html}")
+        for source in topic.information_sources:
+            typer.echo(f"information_source={source.title} ({source.source_type}) {source.url}")
 
 
 @app.command()

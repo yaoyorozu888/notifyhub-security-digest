@@ -58,6 +58,25 @@ notifyhub-digest run --out-dir .\out
 - `manifest.json`
 - `articles/<entry_id>.html`
 
+## ローカルテスト
+
+開発依存をインストール後、次のコマンドでテストと静的チェックを実行できます。pytestは `src/` を自動で参照するため、`PYTHONPATH` の設定は不要です。
+
+```powershell
+python -m pytest
+ruff check --select E4,E7,E9,F src tests
+```
+
+Grokを含む生成テストも外部APIを呼び出しません。固定したRSS/Grok応答を使い、応答解析から `manifest.json` と記事HTMLの生成まで検証します。
+
+実際のxAI応答は、`.env` または環境変数に `GROK_API_KEY` を設定して次で確認できます。
+
+```powershell
+notifyhub-digest grok-check
+```
+
+`GROK_MODEL`、`FEATURED_TOPIC_COUNT`、`FEATURED_TOPIC_CATEGORIES` を使って直近24時間を検索します。検索範囲は `--hours 48` のように変更できます。このコマンドはGrok APIだけを呼び出し、サイトファイルやメールには触れません。APIキーと生のAPIレスポンス本文は表示せず、採用された記事内容を表示します。API利用料金が発生する場合があります。
+
 ### 5) Pagefindインデックスを生成（ローカル）
 
 検索UIは `/calendar/` で利用し、検索対象はサイト全体です（`/digest/YYYY/MM/DD/` と `articles` を含む）。

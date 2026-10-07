@@ -45,3 +45,4 @@ select = ["E", "F", "I", "B", "UP"]
 
 [tool.pytest.ini_options]
 addopts = "-q"
+pythonpath = ["src"]
