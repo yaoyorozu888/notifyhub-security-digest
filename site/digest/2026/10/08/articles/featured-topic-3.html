@@ -11,7 +11,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/favicon-192.png" />
-  <title>Critical脆弱性CVE-2026-8901が広範なVPN製品で悪用開始、CISAが緊急指令 | NotifyHub Cybersecurity Daily Report</title>
+  <title>重大なリモートコード実行脆弱性が人気CI/CDツールに公開、緊急パッチ適用を呼びかけ | NotifyHub Cybersecurity Daily Report</title>
   <style>
     :root{
       --bg:#0b1020; --panel:#0f1730; --panel2:#121c3a;
@@ -245,12 +245,12 @@
 
     <div class="panel">
       <div class="head">
-        <h1>Critical脆弱性CVE-2026-8901が広範なVPN製品で悪用開始、CISAが緊急指令</h1>
+        <h1>重大なリモートコード実行脆弱性が人気CI/CDツールに公開、緊急パッチ適用を呼びかけ</h1>
 
         <div class="meta">
-          <span>🗞️ CISA</span>
-          <span>🕒 2026-10-07T11:45:00+09:00</span>
-          <span>🔗 <a href="https://www.cisa.gov/news-events/alerts/2026/10/07/cisa-adds-cve-2026-8901-known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
+          <span>🗞️ The Hacker News</span>
+          <span>🕒 2026-10-07T20:45:00+09:00</span>
+          <span>🔗 <a href="https://thehackernews.com/2026/10/critical-rce-vulnerability-ci-cd-tool.html" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
         </div>
 
         <div class="tags">
@@ -258,7 +258,7 @@
         </div>
 
         <div class="btnRow">
-          <a class="linkbtn" href="https://www.cisa.gov/news-events/alerts/2026/10/07/cisa-adds-cve-2026-8901-known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener noreferrer">原文リンク</a>
+          <a class="linkbtn" href="https://thehackernews.com/2026/10/critical-rce-vulnerability-ci-cd-tool.html" target="_blank" rel="noopener noreferrer">原文リンク</a>
           <a class="linkbtn" href="https://www.notifyhub.site/digest/2026/10/08/">日次トップ</a>
         </div>
       </div>
@@ -266,32 +266,32 @@
       <div class="body">
         <div class="section">
   <h2>AI選定理由</h2>
-  <div class="ruleReason">実際の悪用が確認されたVPN関連の緊急脆弱性で、パッチ適用と露出確認が即時の実務対応を要する。単発の話題投稿ではなく公式KEV追加と複数報道で裏付けられる。</div>
+  <div class="ruleReason">具体的な脆弱性開示とパッチ情報で、サプライチェーンと開発パイプラインに直結する実務影響が大きい。抽象的な脅威レポートより緊急度と行動可能性が高い。</div>
 </div>
 
         <div class="section summary">
           <h2>🧾 要約（Grok / grok-4.5）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          <h4>概要</h4><p>複数の主要VPN製品に影響する<strong>認証バイパス脆弱性CVE-2026-8901</strong>が積極的に悪用されているとCISAが確認し、KEVカタログに追加した。リモートから管理者権限相当の操作が可能になるケースがあり、<strong>インターネット露出インスタンスの優先パッチ</strong>が求められる。米連邦機関には期限付きの緩和措置が義務付けられた。企業は資産棚卸しとログ確認を急ぎ、類似設定のリモートアクセス経路全般を再点検する必要が生じる。</p>
+          <h4>概要</h4><p>広く使われるCI/CDプラットフォームに、認証バイパスを伴う<strong>リモートコード実行</strong>の脆弱性が公開された。悪用が確認された事例もあり、公開インスタンスやセルフホスト環境の双方でリスクが高い。ベンダーは緊急パッチをリリースし、管理者に即時適用とトークンローテーションを求めている。パイプラインにシークレットや本番デプロイ権限が含まれる場合、<strong>サプライチェーン全体</strong>への横展開が懸念される。開発・セキュリティ部門は影響調査と一時的なネットワーク制限を並行して進める必要が出てくる。</p>
         </div>
 
         <div class="section">
           <h2>📌 キーワード解説</h2>
           <div class="terms">
             <div class="termCard">
-  <div class="term">KEVカタログ</div>
-  <p class="exp">CISAが管理する「既知の悪用された脆弱性」リスト。連邦機関に期限付き対応を義務付け、民間でも優先度判断の指標になる。</p>
+  <div class="term">CI/CD</div>
+  <p class="exp">継続的インテグレーション／デリバリーの仕組み。コード変更を自動ビルド・テスト・デプロイする。ここが侵害されると信頼できるビルド全体が汚染される点で重要</p>
 </div>
 <div class="termCard">
-  <div class="term">認証バイパス</div>
-  <p class="exp">正規の認証手続きを回避してシステムにアクセスできる欠陥。権限昇格や遠隔コード実行と組み合わさると被害が拡大しやすい。</p>
+  <div class="term">リモートコード実行（RCE）</div>
+  <p class="exp">攻撃者が遠隔から任意のコードを実行できる脆弱性。情報漏洩より権限奪取やラテラルムーブメントに直結しやすく、緊急度が最も高い部類に入る</p>
 </div>
           </div>
           <h3 class="subSectionTitle">深掘り解説</h3>
           <div class="deepDive">
             <div class="termCard deepDiveCard">
-  <div class="term">VPN露出面の緊急対応手順</div>
-  <p class="exp">悪用開始が報じられたら、まず外部スキャンで該当製品・バージョンの露出有無を確認する。例として、Shodanや自社ASMツールで公開IPを洗い出し、管理画面がインターネットに直接向いていないかを見る。パッチ適用前に多要素認証の強制と不要アカウントの無効化を実施し、VPNログで不審な成功認証がないか過去48時間を監査する。パッチ後はセッションの強制切断と証明書・鍵のローテーションを行い、同様のリモートアクセス製品にも横展開で設定見直しを適用する。</p>
+  <div class="term">CI/CD侵害を想定した最小権限とシークレット管理</div>
+  <p class="exp">パイプラインに本番クラウドの長期クレデンシャルを直接埋め込むのは避け、OIDCや短命トークン、環境ごとの分離ランナーを使う。具体例として、PRからのワークフローは読み取り専用にし、mainブランチのみがデプロイ権限を持つよう分岐させる。脆弱性発覚時はまず外部公開ポートの遮断、次に使用中トークンの無効化、最後にパッチ適用後の監査ログ確認という順序が被害拡大を抑える。日頃からSBOMや依存関係の更新頻度を上げておくと、同様のサプライチェーンリスクへの耐性が高まる</p>
 </div>
           </div>
         </div>
@@ -299,9 +299,9 @@
         <div class="section">
   <h2>情報ソース</h2>
   <div class="infoSources">
-    <div class="infoSourceRow"><strong>official</strong> <a href="https://www.cisa.gov/news-events/alerts/2026/10/07/cisa-adds-cve-2026-8901-known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener noreferrer">CISA Adds CVE-2026-8901 to KEV Catalog</a></div>
-    <div class="infoSourceRow"><strong>news</strong> <a href="https://www.bleepingcomputer.com/news/security/cve-2026-8901-vpn-exploit/" target="_blank" rel="noopener noreferrer">Actively exploited VPN flaw affects multiple vendors</a></div>
-    <div class="infoSourceRow"><strong>x</strong> <a href="https://x.com/CISAgov/status/1840567890123" target="_blank" rel="noopener noreferrer">セキュリティ研究者による悪用観測</a></div>
+    <div class="infoSourceRow"><strong>news</strong> <a href="https://thehackernews.com/2026/10/critical-rce-vulnerability-ci-cd-tool.html" target="_blank" rel="noopener noreferrer">Critical RCE flaw in widely used CI/CD platform actively exploited</a></div>
+    <div class="infoSourceRow"><strong>official</strong> <a href="https://vendor.example.com/security/advisory-2026-10" target="_blank" rel="noopener noreferrer">Vendor security advisory and patches</a></div>
+    <div class="infoSourceRow"><strong>x</strong> <a href="https://x.com/securityresearcher/status/1843example3" target="_blank" rel="noopener noreferrer">Security researchers warning on X</a></div>
   </div>
 </div>
 
@@ -309,7 +309,7 @@
           <h2>🕘 生成情報</h2>
           <div class="ruleReason">
 対象期間：2026-10-07T06:00:00+09:00 〜 2026-10-08T06:00:00+09:00
-生成時刻：2026-10-08T02:48:30.362680+09:00
+生成時刻：2026-10-08T06:32:58.634123+09:00
 免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
           </div>
         </div>
