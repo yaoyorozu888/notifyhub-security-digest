@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import logging
 import os
+from copy import deepcopy
 from dataclasses import dataclass
 from datetime import datetime
 from typing import Any
@@ -488,6 +489,14 @@ _FEATURED_TOPICS_RESPONSE_SCHEMA = {
 }
 
 
+def _featured_topics_response_schema(count: int) -> dict[str, Any]:
+    schema = deepcopy(_FEATURED_TOPICS_RESPONSE_SCHEMA)
+    topics_schema = schema["properties"]["topics"]
+    topics_schema["minItems"] = 1
+    topics_schema["maxItems"] = count
+    return schema
+
+
 def _build_user_prompt(*, window_start_utc: datetime, window_end_utc: datetime, settings: FeaturedTopicsSettings) -> str:
     category_text = ", ".join(settings.categories) if settings.categories else "指定なし"
     return "\n".join(
@@ -541,7 +550,7 @@ def build_featured_topics(
             "format": {
                 "type": "json_schema",
                 "name": "featured_topics",
-                "schema": _FEATURED_TOPICS_RESPONSE_SCHEMA,
+                "schema": _featured_topics_response_schema(settings.count),
                 "strict": True,
             }
         },

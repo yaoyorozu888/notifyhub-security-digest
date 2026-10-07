@@ -284,6 +284,8 @@ def test_build_featured_topics_omits_blank_temperature_from_request() -> None:
     assert text_format["strict"] is True
     assert text_format["schema"]["type"] == "object"
     assert text_format["schema"]["required"] == ["topics"]
+    assert text_format["schema"]["properties"]["topics"]["minItems"] == 1
+    assert text_format["schema"]["properties"]["topics"]["maxItems"] == 1
 
 
 def test_build_featured_topics_logs_response_excerpt_when_json_parse_fails(monkeypatch, caplog) -> None:
