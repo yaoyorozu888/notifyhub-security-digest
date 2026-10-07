@@ -7,7 +7,7 @@
   "counts": {
     "total": 1
   },
-  "generated_at_jst": "2026-10-08T02:20:08.153218+09:00",
+  "generated_at_jst": "2026-10-08T02:32:32.703546+09:00",
   "featured_topics_config": {
     "count": 3,
     "categories": [
@@ -16,7 +16,28 @@
       "Cybersecurity"
     ]
   },
-  "featured_topics": [],
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "placeholder",
+      "source_name": "placeholder",
+      "published_at": "2026-10-07T00:00:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要placeholder",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://example.com",
+      "selection_reason": "placeholder",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "placeholder",
+          "url": "https://example.com",
+          "source_type": "web"
+        }
+      ]
+    }
+  ],
   "items": [
     {
       "entry_id": "1cc42cf044182b9a",
@@ -26,7 +47,7 @@
       "published_at": "2026-10-07T15:34:53+00:00",
       "impact_level": "High",
       "threat_type": "Vulnerability",
-      "summary_preview": "概要大規模言語モデルの推論を高速化するオープンソースソフトウェア LMCache に、認証なしでキャッシュサーバー上の任意コード実行につながる脆弱性が報告された。問題が生じるのは、キャッシュを独立したサーバーとして稼働させ、推論ワーカーが ZeroMQ 経由で接続するマルチプロセス構成であり、攻撃者がそのサーバーへネットワーク到達できることが悪用の前提とな…",
+      "summary_preview": "概要大規模言語モデルの推論処理を高速化するオープンソースソフトウェアLMCacheで、未認証の攻撃者が遠隔からコードを実行できる重大な脆弱性が報告された。問題があるのは、キャッシュを独立したサーバーとして動かし、ZeroMQを介して推論ワーカーと接続するマルチプロセスモードであり、記事の説明では修正版はまだ提供されていない。攻撃者がこのサーバーへネットワー…",
       "article_path": "articles/1cc42cf044182b9a.html",
       "original_url": "https://thehackernews.com/2026/10/unpatched-critical-lmcache-flaw-lets.html"
     }

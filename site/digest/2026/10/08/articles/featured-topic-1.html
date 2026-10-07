@@ -11,7 +11,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/favicon-192.png" />
-  <title>Unpatched Critical LMCache Flaw Lets Unauthenticated Attackers Run Code Remotely | NotifyHub Cybersecurity Daily Report</title>
+  <title>placeholder | NotifyHub Cybersecurity Daily Report</title>
   <style>
     :root{
       --bg:#0b1020; --panel:#0f1730; --panel2:#121c3a;
@@ -240,71 +240,64 @@
         <!-- ../index.html は通常 "../index.html" でOK -->
         <a href="../index.html">← 日次トップへ戻る</a>
       </div>
-      <div class="chip">entry_id <strong class="mono">1cc42cf044182b9a</strong></div>
+      <div class="chip">entry_id <strong class="mono">featured-topic-1</strong></div>
     </div>
 
     <div class="panel">
       <div class="head">
-        <h1>Unpatched Critical LMCache Flaw Lets Unauthenticated Attackers Run Code Remotely</h1>
+        <h1>placeholder</h1>
 
         <div class="meta">
-          <span>🗞️ The Hacker News</span>
-          <span>🕒 2026-10-08T00:34:53+09:00</span>
-          <span>🔗 <a href="https://thehackernews.com/2026/10/unpatched-critical-lmcache-flaw-lets.html" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
+          <span>🗞️ placeholder</span>
+          <span>🕒 2026-10-07T09:00:00+09:00</span>
+          <span>🔗 <a href="https://example.com" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
         </div>
 
         <div class="tags">
-          <span class="tag level-High">Impact: High</span>
-          <span class="tag">Vulnerability</span>
+
         </div>
 
         <div class="btnRow">
-          <a class="linkbtn" href="https://thehackernews.com/2026/10/unpatched-critical-lmcache-flaw-lets.html" target="_blank" rel="noopener noreferrer">原文リンク</a>
+          <a class="linkbtn" href="https://example.com" target="_blank" rel="noopener noreferrer">原文リンク</a>
           <a class="linkbtn" href="https://www.notifyhub.site/digest/2026/10/08/">日次トップ</a>
         </div>
       </div>
 
       <div class="body">
-        
         <div class="section">
-          <h2>Impact判定理由</h2>
-          <div class="ruleReason">認証不要の遠隔コード実行で、該当モードのサーバーに到達できる場合は侵害と周辺環境への波及が懸念される一方、構成依存で全環境が対象とは限らない。
-修正版未提供との報告を踏まえ高評価とした。メディア記事であり、実際の悪用や詳細条件は示されていないため、追加の引き上げは行わない。</div>
-        </div>
+  <h2>AI選定理由</h2>
+  <div class="ruleReason">placeholder</div>
+</div>
+
         <div class="section summary">
-          <h2>🧾 要約（ChatGPT / gpt-6-luna）</h2>
+          <h2>🧾 要約（Grok / grok-4.6）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          <div><h4>概要</h4><p>大規模言語モデルの推論処理を高速化するオープンソースソフトウェアLMCacheで、未認証の攻撃者が遠隔からコードを実行できる重大な脆弱性が報告された。問題があるのは、キャッシュを独立したサーバーとして動かし、ZeroMQを介して推論ワーカーと接続する<strong>マルチプロセスモード</strong>であり、記事の説明では修正版はまだ提供されていない。攻撃者がこのサーバーへネットワーク接続できる場合、認証を経ずに悪用されるおそれがあり、侵害後はキャッシュサーバー上での処理実行にとどまらず、同一環境の推論ワーカーや保存データへ影響が及ぶ可能性もある。ただし、影響範囲はLMCacheの利用有無だけで決まらず、該当モードの使用、待受範囲、ネットワーク分離などの構成に左右されるため、全利用環境が露出しているとは限らない。提供情報にはCVE番号、攻撃の具体的条件、実際の悪用確認、侵害後の挙動が示されておらず、これらは未確認事項として扱い、まず自組織で該当プロセスと到達可能性を確認する必要がある。</p></div>
+          <h4>概要</h4><p>placeholder</p>
         </div>
 
         <div class="section">
           <h2>📌 キーワード解説</h2>
           <div class="terms">
             <div class="termCard">
-  <div class="term">マルチプロセスモード</div>
-  <p class="exp">キャッシュを推論処理とは別のサーバーとして動かす構成。組み込み型と異なり、ネットワーク到達性が攻撃面になる。</p>
-</div>
-<div class="termCard">
-  <div class="term">ZeroMQ</div>
-  <p class="exp">プロセス間のメッセージ交換に使う通信ライブラリ。暗号化や認証を自動的に保証する仕組みとは区別して確認する必要がある。</p>
-</div>
-<div class="termCard">
-  <div class="term">未認証の遠隔コード実行</div>
-  <p class="exp">ログイン前の攻撃者がネットワーク越しに処理を実行できる状態。権限昇格が必要な脆弱性より、到達可能な範囲の確認が先になる。</p>
+  <div class="term">placeholder</div>
+  <p class="exp">placeholder</p>
 </div>
           </div>
           <h3 class="subSectionTitle">深掘り解説</h3>
           <div class="deepDive">
             <div class="termCard deepDiveCard">
-  <div class="term">推論基盤の補助サービスを独立した攻撃面として扱う</div>
-  <p class="exp">推論サーバー本体だけを守っても、キャッシュ、モデル取得、監視などの補助サービスが同じ信頼境界に置かれていれば、そこが侵入口になる。特に独立プロセス化は、性能や運用上の分離を得る一方、通信ポートと接続元の管理を新たに必要とする。
-
-例えば、LMCacheの待受先が全インターフェースで公開され、推論ワーカー以外のセグメントからも到達できる構成なら、未認証の脆弱性は境界を越えて悪用され得る。初動では製品名の検索だけで終えず、実行プロセス、起動引数、待受ポート、コンテナの公開設定、実際の接続元を突き合わせる。修正版がない段階では、業務影響を確認しながら接続元を推論ワーカーに限定し、外部・利用者ネットワークからの経路を遮断する。ログが十分に残らない場合もあるため、ネットワーク機器やコンテナ基盤の接続記録を併せて確認する。</p>
+  <div class="term">placeholder</div>
+  <p class="exp">placeholder</p>
 </div>
           </div>
         </div>
 
-        
+        <div class="section">
+  <h2>情報ソース</h2>
+  <div class="infoSources">
+    <div class="infoSourceRow"><strong>web</strong> <a href="https://example.com" target="_blank" rel="noopener noreferrer">placeholder</a></div>
+  </div>
+</div>
 
         <div class="section">
           <h2>🕘 生成情報</h2>
