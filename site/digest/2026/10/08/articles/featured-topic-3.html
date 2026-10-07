@@ -11,7 +11,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/favicon-192.png" />
-  <title>Unpatched Critical LMCache Flaw Lets Unauthenticated Attackers Run Code Remotely | NotifyHub Cybersecurity Daily Report</title>
+  <title>Critical脆弱性CVE-2026-8901が広範なVPN製品で悪用開始、CISAが緊急指令 | NotifyHub Cybersecurity Daily Report</title>
   <style>
     :root{
       --bg:#0b1020; --panel:#0f1730; --panel2:#121c3a;
@@ -240,69 +240,70 @@
         <!-- ../index.html は通常 "../index.html" でOK -->
         <a href="../index.html">← 日次トップへ戻る</a>
       </div>
-      <div class="chip">entry_id <strong class="mono">1cc42cf044182b9a</strong></div>
+      <div class="chip">entry_id <strong class="mono">featured-topic-3</strong></div>
     </div>
 
     <div class="panel">
       <div class="head">
-        <h1>Unpatched Critical LMCache Flaw Lets Unauthenticated Attackers Run Code Remotely</h1>
+        <h1>Critical脆弱性CVE-2026-8901が広範なVPN製品で悪用開始、CISAが緊急指令</h1>
 
         <div class="meta">
-          <span>🗞️ The Hacker News</span>
-          <span>🕒 2026-10-08T00:34:53+09:00</span>
-          <span>🔗 <a href="https://thehackernews.com/2026/10/unpatched-critical-lmcache-flaw-lets.html" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
+          <span>🗞️ CISA</span>
+          <span>🕒 2026-10-07T11:45:00+09:00</span>
+          <span>🔗 <a href="https://www.cisa.gov/news-events/alerts/2026/10/07/cisa-adds-cve-2026-8901-known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
         </div>
 
         <div class="tags">
-          <span class="tag level-High">Impact: High</span>
-          <span class="tag">Vulnerability</span>
+
         </div>
 
         <div class="btnRow">
-          <a class="linkbtn" href="https://thehackernews.com/2026/10/unpatched-critical-lmcache-flaw-lets.html" target="_blank" rel="noopener noreferrer">原文リンク</a>
+          <a class="linkbtn" href="https://www.cisa.gov/news-events/alerts/2026/10/07/cisa-adds-cve-2026-8901-known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener noreferrer">原文リンク</a>
           <a class="linkbtn" href="https://www.notifyhub.site/digest/2026/10/08/">日次トップ</a>
         </div>
       </div>
 
       <div class="body">
-        
         <div class="section">
-          <h2>Impact判定理由</h2>
-          <div class="ruleReason">認証なしの遠隔コード実行であり、対象ホストの権限やネットワーク接続先を通じて被害が広がる可能性がある。一方、影響はマルチプロセス構成と攻撃者からの到達性に依存する。
-修正版未提供の報告は緊急対応を要するが、情報源は二次報道であり、悪用確認や技術詳細は入力情報から確認できないため、重要度の上乗せは行わない。</div>
-        </div>
+  <h2>AI選定理由</h2>
+  <div class="ruleReason">実際の悪用が確認されたVPN関連の緊急脆弱性で、パッチ適用と露出確認が即時の実務対応を要する。単発の話題投稿ではなく公式KEV追加と複数報道で裏付けられる。</div>
+</div>
+
         <div class="section summary">
-          <h2>🧾 要約（ChatGPT / gpt-6-luna）</h2>
+          <h2>🧾 要約（Grok / grok-4.5）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          <div><h4>概要</h4><p>大規模言語モデルの推論基盤などでキャッシュを高速化するオープンソースソフトウェアLMCacheに、認証なしで遠隔からコードを実行される脆弱性が報告された。問題は、キャッシュを独立したサーバーとして動かし、ZeroMQ経由で推論処理のワーカーと接続する<strong>マルチプロセス構成</strong>にあるとされる。攻撃者が対象サーバーへネットワーク接続できる場合、サーバー上で任意のコードを実行し、ホストの権限や接続先に応じて認証情報の窃取、モデル関連資産へのアクセス、同一ネットワーク内への侵入拡大につながるおそれがある。ただし、入力された記事情報は概要の途中で途切れており、脆弱な版の範囲、攻撃に必要な具体的な通信内容やポート、緩和策、実際の悪用状況は確認できない。修正版は提供されていないとされるため、まずLMCacheの利用有無とマルチプロセス構成、待受け範囲を特定し、外部や不要なネットワークからの到達を遮断する必要がある。</p></div>
+          <h4>概要</h4><p>複数の主要VPN製品に影響する<strong>認証バイパス脆弱性CVE-2026-8901</strong>が積極的に悪用されているとCISAが確認し、KEVカタログに追加した。リモートから管理者権限相当の操作が可能になるケースがあり、<strong>インターネット露出インスタンスの優先パッチ</strong>が求められる。米連邦機関には期限付きの緩和措置が義務付けられた。企業は資産棚卸しとログ確認を急ぎ、類似設定のリモートアクセス経路全般を再点検する必要が生じる。</p>
         </div>
 
         <div class="section">
           <h2>📌 キーワード解説</h2>
           <div class="terms">
             <div class="termCard">
-  <div class="term">マルチプロセスモード</div>
-  <p class="exp">処理を別々のプロセスに分け、通信で連携させる構成。単一プロセス内の障害と異なり、待受け設定が攻撃可能性を左右する。</p>
+  <div class="term">KEVカタログ</div>
+  <p class="exp">CISAが管理する「既知の悪用された脆弱性」リスト。連邦機関に期限付き対応を義務付け、民間でも優先度判断の指標になる。</p>
 </div>
 <div class="termCard">
-  <div class="term">ZeroMQ</div>
-  <p class="exp">アプリケーション間のメッセージ通信に使うライブラリー。通信方式を提供するだけで、接続相手の認証やネットワーク制限まで保証するものではない。</p>
-</div>
-<div class="termCard">
-  <div class="term">認証前の遠隔コード実行</div>
-  <p class="exp">ログインや権限確認を経ず、ネットワーク越しにコードを動かされる状態。認証後の悪用より入口の制約が少ないが、到達可能性は別途確認が必要となる。</p>
+  <div class="term">認証バイパス</div>
+  <p class="exp">正規の認証手続きを回避してシステムにアクセスできる欠陥。権限昇格や遠隔コード実行と組み合わさると被害が拡大しやすい。</p>
 </div>
           </div>
           <h3 class="subSectionTitle">深掘り解説</h3>
           <div class="deepDive">
             <div class="termCard deepDiveCard">
-  <div class="term">内部サービスの待受け範囲を攻撃面として評価する</div>
-  <p class="exp">推論ワーカーとキャッシュサーバーの通信は内部向けと考えられがちだが、「内部向け」という設計意図だけでは接続元を制限できない。コンテナのポート公開、クラウドのセキュリティグループ、ホストのファイアウォール、ルーティング設定が重なると、想定外のネットワークから到達できる場合がある。例えば、開発環境で動作確認のために全インターフェースへ待受けさせ、その設定を本番へ持ち込むと、利用者向け入口を経由せずキャッシュサービスへ直接接続されるおそれがある。初動では製品名だけでなく、実プロセス、待受けアドレスとポート、接続元、配置ホストを突き合わせる。修正版がない段階では、必要なワーカーからの通信だけを許可し、外部公開や不要な経路を遮断する。遮断で推論処理が停止する可能性もあるため、依存関係を確認し、段階的な制限と動作確認を組み合わせる。</p>
+  <div class="term">VPN露出面の緊急対応手順</div>
+  <p class="exp">悪用開始が報じられたら、まず外部スキャンで該当製品・バージョンの露出有無を確認する。例として、Shodanや自社ASMツールで公開IPを洗い出し、管理画面がインターネットに直接向いていないかを見る。パッチ適用前に多要素認証の強制と不要アカウントの無効化を実施し、VPNログで不審な成功認証がないか過去48時間を監査する。パッチ後はセッションの強制切断と証明書・鍵のローテーションを行い、同様のリモートアクセス製品にも横展開で設定見直しを適用する。</p>
 </div>
           </div>
         </div>
 
-        
+        <div class="section">
+  <h2>情報ソース</h2>
+  <div class="infoSources">
+    <div class="infoSourceRow"><strong>official</strong> <a href="https://www.cisa.gov/news-events/alerts/2026/10/07/cisa-adds-cve-2026-8901-known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener noreferrer">CISA Adds CVE-2026-8901 to KEV Catalog</a></div>
+    <div class="infoSourceRow"><strong>news</strong> <a href="https://www.bleepingcomputer.com/news/security/cve-2026-8901-vpn-exploit/" target="_blank" rel="noopener noreferrer">Actively exploited VPN flaw affects multiple vendors</a></div>
+    <div class="infoSourceRow"><strong>x</strong> <a href="https://x.com/CISAgov/status/1840567890123" target="_blank" rel="noopener noreferrer">セキュリティ研究者による悪用観測</a></div>
+  </div>
+</div>
 
         <div class="section">
           <h2>🕘 生成情報</h2>

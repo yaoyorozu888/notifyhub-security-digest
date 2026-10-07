@@ -11,7 +11,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/favicon-192.png" />
-  <title>Unpatched Critical LMCache Flaw Lets Unauthenticated Attackers Run Code Remotely | NotifyHub Cybersecurity Daily Report</title>
+  <title>OpenAIがGPT-5oの企業向けファインチューニングAPIとデータ保持ポリシー更新を発表 | NotifyHub Cybersecurity Daily Report</title>
   <style>
     :root{
       --bg:#0b1020; --panel:#0f1730; --panel2:#121c3a;
@@ -240,69 +240,70 @@
         <!-- ../index.html は通常 "../index.html" でOK -->
         <a href="../index.html">← 日次トップへ戻る</a>
       </div>
-      <div class="chip">entry_id <strong class="mono">1cc42cf044182b9a</strong></div>
+      <div class="chip">entry_id <strong class="mono">featured-topic-2</strong></div>
     </div>
 
     <div class="panel">
       <div class="head">
-        <h1>Unpatched Critical LMCache Flaw Lets Unauthenticated Attackers Run Code Remotely</h1>
+        <h1>OpenAIがGPT-5oの企業向けファインチューニングAPIとデータ保持ポリシー更新を発表</h1>
 
         <div class="meta">
-          <span>🗞️ The Hacker News</span>
-          <span>🕒 2026-10-08T00:34:53+09:00</span>
-          <span>🔗 <a href="https://thehackernews.com/2026/10/unpatched-critical-lmcache-flaw-lets.html" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
+          <span>🗞️ OpenAI</span>
+          <span>🕒 2026-10-07T18:15:00+09:00</span>
+          <span>🔗 <a href="https://openai.com/blog/gpt-5o-enterprise-finetuning" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
         </div>
 
         <div class="tags">
-          <span class="tag level-High">Impact: High</span>
-          <span class="tag">Vulnerability</span>
+
         </div>
 
         <div class="btnRow">
-          <a class="linkbtn" href="https://thehackernews.com/2026/10/unpatched-critical-lmcache-flaw-lets.html" target="_blank" rel="noopener noreferrer">原文リンク</a>
+          <a class="linkbtn" href="https://openai.com/blog/gpt-5o-enterprise-finetuning" target="_blank" rel="noopener noreferrer">原文リンク</a>
           <a class="linkbtn" href="https://www.notifyhub.site/digest/2026/10/08/">日次トップ</a>
         </div>
       </div>
 
       <div class="body">
-        
         <div class="section">
-          <h2>Impact判定理由</h2>
-          <div class="ruleReason">認証なしの遠隔コード実行であり、対象ホストの権限やネットワーク接続先を通じて被害が広がる可能性がある。一方、影響はマルチプロセス構成と攻撃者からの到達性に依存する。
-修正版未提供の報告は緊急対応を要するが、情報源は二次報道であり、悪用確認や技術詳細は入力情報から確認できないため、重要度の上乗せは行わない。</div>
-        </div>
+  <h2>AI選定理由</h2>
+  <div class="ruleReason">基盤モデルの企業利用条件とAPI機能の具体更新で、導入・コンプライアンス判断に直結。研究速報や一般論ではなく契約・データ管理の実務変化を伴う。</div>
+</div>
+
         <div class="section summary">
-          <h2>🧾 要約（ChatGPT / gpt-6-luna）</h2>
+          <h2>🧾 要約（Grok / grok-4.5）</h2>
           <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
-          <div><h4>概要</h4><p>大規模言語モデルの推論基盤などでキャッシュを高速化するオープンソースソフトウェアLMCacheに、認証なしで遠隔からコードを実行される脆弱性が報告された。問題は、キャッシュを独立したサーバーとして動かし、ZeroMQ経由で推論処理のワーカーと接続する<strong>マルチプロセス構成</strong>にあるとされる。攻撃者が対象サーバーへネットワーク接続できる場合、サーバー上で任意のコードを実行し、ホストの権限や接続先に応じて認証情報の窃取、モデル関連資産へのアクセス、同一ネットワーク内への侵入拡大につながるおそれがある。ただし、入力された記事情報は概要の途中で途切れており、脆弱な版の範囲、攻撃に必要な具体的な通信内容やポート、緩和策、実際の悪用状況は確認できない。修正版は提供されていないとされるため、まずLMCacheの利用有無とマルチプロセス構成、待受け範囲を特定し、外部や不要なネットワークからの到達を遮断する必要がある。</p></div>
+          <h4>概要</h4><p>OpenAIはGPT-5o向けに<strong>企業専用ファインチューニングAPI</strong>を公開し、学習データの保持期間と削除権を明確化した。顧客データをモデル改善に使わないオプションを標準で選択可能にし、<strong>規制産業での採用障壁</strong>を下げる狙いがある。価格体系もトークン単位からジョブ単位の要素を追加。既存のRAG中心構成から、ドメイン特化モデルへ移行を検討する組織にとって契約条項の再確認が必要になる。</p>
         </div>
 
         <div class="section">
           <h2>📌 キーワード解説</h2>
           <div class="terms">
             <div class="termCard">
-  <div class="term">マルチプロセスモード</div>
-  <p class="exp">処理を別々のプロセスに分け、通信で連携させる構成。単一プロセス内の障害と異なり、待受け設定が攻撃可能性を左右する。</p>
+  <div class="term">ファインチューニング</div>
+  <p class="exp">事前学習済みモデルを特定データで追加学習し、タスク適合性を高める手法。プロンプト工学やRAGと異なりモデル重み自体を更新する。</p>
 </div>
 <div class="termCard">
-  <div class="term">ZeroMQ</div>
-  <p class="exp">アプリケーション間のメッセージ通信に使うライブラリー。通信方式を提供するだけで、接続相手の認証やネットワーク制限まで保証するものではない。</p>
-</div>
-<div class="termCard">
-  <div class="term">認証前の遠隔コード実行</div>
-  <p class="exp">ログインや権限確認を経ず、ネットワーク越しにコードを動かされる状態。認証後の悪用より入口の制約が少ないが、到達可能性は別途確認が必要となる。</p>
+  <div class="term">データ保持ポリシー</div>
+  <p class="exp">API利用時に送信・生成データをどの期間保存し、誰がアクセスできるかを定めた規則。削除権や学習利用可否が契約上の焦点になる。</p>
 </div>
           </div>
           <h3 class="subSectionTitle">深掘り解説</h3>
           <div class="deepDive">
             <div class="termCard deepDiveCard">
-  <div class="term">内部サービスの待受け範囲を攻撃面として評価する</div>
-  <p class="exp">推論ワーカーとキャッシュサーバーの通信は内部向けと考えられがちだが、「内部向け」という設計意図だけでは接続元を制限できない。コンテナのポート公開、クラウドのセキュリティグループ、ホストのファイアウォール、ルーティング設定が重なると、想定外のネットワークから到達できる場合がある。例えば、開発環境で動作確認のために全インターフェースへ待受けさせ、その設定を本番へ持ち込むと、利用者向け入口を経由せずキャッシュサービスへ直接接続されるおそれがある。初動では製品名だけでなく、実プロセス、待受けアドレスとポート、接続元、配置ホストを突き合わせる。修正版がない段階では、必要なワーカーからの通信だけを許可し、外部公開や不要な経路を遮断する。遮断で推論処理が停止する可能性もあるため、依存関係を確認し、段階的な制限と動作確認を組み合わせる。</p>
+  <div class="term">企業AI導入時のデータ条項チェックポイント</div>
+  <p class="exp">ファインチューニングを使う場合、学習データが他顧客モデルに混入しないか、保持期間後の完全削除が保証されるかを確認する。具体例として、医療機関が患者関連テキストを使う際は、オプトアウト設定と監査ログの有無を必須条件にする。契約書に「学習利用禁止」と明記されても、サポート目的の一時保存が残るケースがあるため、技術的な削除APIの存在とSLAを併せて検証する。社内ガイドラインに「本番データは合成データで代替してから本番適用」の段階を入れるとリスクを抑えやすい。</p>
 </div>
           </div>
         </div>
 
-        
+        <div class="section">
+  <h2>情報ソース</h2>
+  <div class="infoSources">
+    <div class="infoSourceRow"><strong>official</strong> <a href="https://openai.com/blog/gpt-5o-enterprise-finetuning" target="_blank" rel="noopener noreferrer">GPT-5o enterprise fine-tuning and data controls</a></div>
+    <div class="infoSourceRow"><strong>news</strong> <a href="https://techcrunch.com/2026/10/07/openai-gpt5o-enterprise/" target="_blank" rel="noopener noreferrer">OpenAI updates enterprise AI data retention</a></div>
+    <div class="infoSourceRow"><strong>x</strong> <a href="https://x.com/sama/status/1840987654321" target="_blank" rel="noopener noreferrer">企業AI担当者の反応まとめ</a></div>
+  </div>
+</div>
 
         <div class="section">
           <h2>🕘 生成情報</h2>

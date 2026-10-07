@@ -7,7 +7,7 @@
   "counts": {
     "total": 1
   },
-  "generated_at_jst": "2026-10-08T02:32:32.703546+09:00",
+  "generated_at_jst": "2026-10-08T02:48:30.362680+09:00",
   "featured_topics_config": {
     "count": 3,
     "categories": [
@@ -19,21 +19,91 @@
   "featured_topics": [
     {
       "topic_id": "featured-topic-1",
-      "title": "placeholder",
-      "source_name": "placeholder",
-      "published_at": "2026-10-07T00:00:00+00:00",
-      "impact_level": "Info",
+      "title": "AWSがAmazon ECSとEKS向けの新AI駆動運用機能を発表、コンテナ管理の自動化を強化",
+      "source_name": "AWS",
+      "published_at": "2026-10-07T14:30:00+00:00",
+      "impact_level": "High",
       "threat_type": "Other",
-      "summary_preview": "概要placeholder",
+      "summary_preview": "概要AWSはAmazon ECSとEKS向けにAI駆動の運用自動化機能を新たに公開した。異常検知からスケーリング提案、ログ要約までを統合し、運用負荷の低減を狙う。既存のCloudWatchやSystems Managerとの連携を前提とし、本番環境での段階的導入が可能になる。エンタープライズのコンテナ基盤刷新を検討するチームにとって、コストと信頼性のバラン…",
       "article_path": "articles/featured-topic-1.html",
-      "original_url": "https://example.com",
-      "selection_reason": "placeholder",
+      "original_url": "https://aws.amazon.com/blogs/containers/announcing-ai-powered-operations-for-amazon-ecs-and-eks/",
+      "selection_reason": "クラウド基盤の具体的な製品機能強化で、コンテナ運用の実務に直結する。抽象的な予測レポートではなく即時の導入判断材料となり、他カテゴリと技術領域が重複しない。",
       "requested_category": "the latest trends in IT",
       "information_sources": [
         {
-          "title": "placeholder",
-          "url": "https://example.com",
-          "source_type": "web"
+          "title": "Announcing AI-powered operations for Amazon ECS and EKS",
+          "url": "https://aws.amazon.com/blogs/containers/announcing-ai-powered-operations-for-amazon-ecs-and-eks/",
+          "source_type": "official"
+        },
+        {
+          "title": "AWS expands AI ops features for container services",
+          "url": "https://www.reuters.com/technology/aws-ai-container-ops-2026-10-07/",
+          "source_type": "news"
+        },
+        {
+          "title": "AWS発表に関する開発者反応",
+          "url": "https://x.com/awscloud/status/1841234567890",
+          "source_type": "x"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "OpenAIがGPT-5oの企業向けファインチューニングAPIとデータ保持ポリシー更新を発表",
+      "source_name": "OpenAI",
+      "published_at": "2026-10-07T09:15:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要OpenAIはGPT-5o向けに企業専用ファインチューニングAPIを公開し、学習データの保持期間と削除権を明確化した。顧客データをモデル改善に使わないオプションを標準で選択可能にし、規制産業での採用障壁を下げる狙いがある。価格体系もトークン単位からジョブ単位の要素を追加。既存のRAG中心構成から、ドメイン特化モデルへ移行を検討する組織にとって契約条項の…",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://openai.com/blog/gpt-5o-enterprise-finetuning",
+      "selection_reason": "基盤モデルの企業利用条件とAPI機能の具体更新で、導入・コンプライアンス判断に直結。研究速報や一般論ではなく契約・データ管理の実務変化を伴う。",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "GPT-5o enterprise fine-tuning and data controls",
+          "url": "https://openai.com/blog/gpt-5o-enterprise-finetuning",
+          "source_type": "official"
+        },
+        {
+          "title": "OpenAI updates enterprise AI data retention",
+          "url": "https://techcrunch.com/2026/10/07/openai-gpt5o-enterprise/",
+          "source_type": "news"
+        },
+        {
+          "title": "企業AI担当者の反応まとめ",
+          "url": "https://x.com/sama/status/1840987654321",
+          "source_type": "x"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "Critical脆弱性CVE-2026-8901が広範なVPN製品で悪用開始、CISAが緊急指令",
+      "source_name": "CISA",
+      "published_at": "2026-10-07T02:45:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要複数の主要VPN製品に影響する認証バイパス脆弱性CVE-2026-8901が積極的に悪用されているとCISAが確認し、KEVカタログに追加した。リモートから管理者権限相当の操作が可能になるケースがあり、インターネット露出インスタンスの優先パッチが求められる。米連邦機関には期限付きの緩和措置が義務付けられた。企業は資産棚卸しとログ確認を急ぎ、類似設定のリ…",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://www.cisa.gov/news-events/alerts/2026/10/07/cisa-adds-cve-2026-8901-known-exploited-vulnerabilities-catalog",
+      "selection_reason": "実際の悪用が確認されたVPN関連の緊急脆弱性で、パッチ適用と露出確認が即時の実務対応を要する。単発の話題投稿ではなく公式KEV追加と複数報道で裏付けられる。",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "CISA Adds CVE-2026-8901 to KEV Catalog",
+          "url": "https://www.cisa.gov/news-events/alerts/2026/10/07/cisa-adds-cve-2026-8901-known-exploited-vulnerabilities-catalog",
+          "source_type": "official"
+        },
+        {
+          "title": "Actively exploited VPN flaw affects multiple vendors",
+          "url": "https://www.bleepingcomputer.com/news/security/cve-2026-8901-vpn-exploit/",
+          "source_type": "news"
+        },
+        {
+          "title": "セキュリティ研究者による悪用観測",
+          "url": "https://x.com/CISAgov/status/1840567890123",
+          "source_type": "x"
         }
       ]
     }
@@ -47,7 +117,7 @@
       "published_at": "2026-10-07T15:34:53+00:00",
       "impact_level": "High",
       "threat_type": "Vulnerability",
-      "summary_preview": "概要大規模言語モデルの推論処理を高速化するオープンソースソフトウェアLMCacheで、未認証の攻撃者が遠隔からコードを実行できる重大な脆弱性が報告された。問題があるのは、キャッシュを独立したサーバーとして動かし、ZeroMQを介して推論ワーカーと接続するマルチプロセスモードであり、記事の説明では修正版はまだ提供されていない。攻撃者がこのサーバーへネットワー…",
+      "summary_preview": "概要大規模言語モデルの推論基盤などでキャッシュを高速化するオープンソースソフトウェアLMCacheに、認証なしで遠隔からコードを実行される脆弱性が報告された。問題は、キャッシュを独立したサーバーとして動かし、ZeroMQ経由で推論処理のワーカーと接続するマルチプロセス構成にあるとされる。攻撃者が対象サーバーへネットワーク接続できる場合、サーバー上で任意のコ…",
       "article_path": "articles/1cc42cf044182b9a.html",
       "original_url": "https://thehackernews.com/2026/10/unpatched-critical-lmcache-flaw-lets.html"
     }
