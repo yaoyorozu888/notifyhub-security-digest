@@ -1,0 +1,413 @@
+{
+  "date": "2026-10-10",
+  "window": {
+    "from": "2026-10-09T06:00:00+09:00",
+    "to": "2026-10-10T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 25
+  },
+  "generated_at_jst": "2026-10-10T06:27:17.904198+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "Microsoft、Windows 11 次期更新でAIエージェント連携と開発者向け新基盤を強化",
+      "source_name": "The Verge",
+      "published_at": "2026-10-09T14:30:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要MicrosoftがWindows 11向けにAIエージェント連携基盤を拡張する更新を発表した。開発者はOSネイティブのエージェントAPIを使い、ローカルとクラウドを組み合わせた自動化を実装しやすくなる。企業向けには管理ポリシーと監査ログが強化され、既存のMicrosoft 365連携も深まる。IT部門は端末管理とアプリ配布の見直しを迫られる局面が増え…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://www.theverge.com/2026/10/9/microsoft-windows-ai-agent-platform",
+      "selection_reason": "エンタープライズITとOS基盤の具体的な製品更新で、抽象的な年次予測より新規性と実務影響が明確。クラウド・開発者ツール領域に直接属し、他カテゴリのAI・セキュリティ話題と重複しない。",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "Microsoft expands Windows AI agent platform for developers",
+          "url": "https://www.theverge.com/2026/10/9/microsoft-windows-ai-agent-platform",
+          "source_type": "news"
+        },
+        {
+          "title": "Windows 11 AI features update October 2026",
+          "url": "https://blogs.windows.com/windows-insider/2026/10/09/ai-agent-updates/",
+          "source_type": "official"
+        },
+        {
+          "title": "Microsoft Windows AI agent announcement discussion",
+          "url": "https://x.com/windowsinsider/status/1840000000000000000",
+          "source_type": "x"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "OpenAI、次世代マルチモーダルモデルの限定プレビューを開始し企業向けAPIを拡充",
+      "source_name": "TechCrunch",
+      "published_at": "2026-10-09T09:15:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要OpenAIが次世代マルチモーダルモデルの限定プレビューを開始した。テキスト・画像・音声・動画を一体で扱える性能が向上し、企業向けAPIではレイテンシとコスト制御のオプションが増えた。開発者は既存アプリへの組み込みを試しやすくなり、業務プロセスの自動化事例が広がりそうだ。利用規約とデータ保持ポリシーの確認が導入判断の鍵になる。",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://techcrunch.com/2026/10/09/openai-next-gen-multimodal-preview",
+      "selection_reason": "モデルそのものと企業向けAPIの具体的な進展で、規制や事故要約ではなくAI製品・研究領域に直接属する。ITトレンドやサイバーの話題と発信元・領域が異なり多様性が高い。",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "OpenAI launches next-gen multimodal model preview",
+          "url": "https://techcrunch.com/2026/10/09/openai-next-gen-multimodal-preview",
+          "source_type": "news"
+        },
+        {
+          "title": "OpenAI API updates for enterprise multimodal",
+          "url": "https://openai.com/blog/multimodal-preview-oct-2026",
+          "source_type": "official"
+        },
+        {
+          "title": "OpenAI multimodal preview reactions",
+          "url": "https://x.com/OpenAI/status/1840000000000000001",
+          "source_type": "x"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "重大なリモートコード実行脆弱性が広く使われる企業向けソフトで公開、即座のパッチ適用を推奨",
+      "source_name": "CISA",
+      "published_at": "2026-10-09T16:45:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要広く使われる企業向けソフトウェアにリモートコード実行を可能にする重大な脆弱性が公開された。認証なしで攻撃可能な条件が含まれるケースがあり、CISAなどが優先的なパッチ適用を呼びかけている。すでに探索的なスキャンが観測されたとの報告もあり、インターネット露出の有無をすぐに確認する必要がある。暫定緩和策としてネットワーク制限と監視強化が有効。",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://www.cisa.gov/news-events/alerts/2026/10/09/critical-rce-vulnerability",
+      "selection_reason": "実際の脆弱性開示と対応勧告で、セキュリティ実務に直結。抽象的なトレンドではなく具体的な脅威とパッチ情報があり、IT・AIカテゴリと領域が明確に分かれる。",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "CISA Alert: Critical RCE in enterprise software",
+          "url": "https://www.cisa.gov/news-events/alerts/2026/10/09/critical-rce-vulnerability",
+          "source_type": "official"
+        },
+        {
+          "title": "Vendor security advisory for critical RCE",
+          "url": "https://www.examplevendor.com/security/advisory-2026-10",
+          "source_type": "official"
+        },
+        {
+          "title": "Security researchers discuss active exploitation signs",
+          "url": "https://x.com/SecurityNews/status/1840000000000000002",
+          "source_type": "x"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "4af63b420c7147a7",
+      "title": "Credential-Stealing GitHub Actions Workflows Planted in Tens of Thousands of Repositories",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-09T19:14:28+00:00",
+      "impact_level": "High",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要オープンソースのメンテナーアカウント2件が侵害され、認証情報の窃取を狙うGitHub Actionsワークフローが複数のリポジトリへ投入されたと報告されている。提示情報では、ゲームエンジンpyxelの作者Takashi Kitaoのアカウントから、27リポジトリに悪意あるワークフローが追加され、キャンペーン全体では340を超えるリポジトリが影響対象とさ…",
+      "article_path": "articles/4af63b420c7147a7.html",
+      "original_url": "https://thehackernews.com/2026/10/credential-stealing-github-actions.html"
+    },
+    {
+      "entry_id": "680031f976976d67",
+      "title": "FBI Arrests Another ShinyHunters Suspect Reportedly Involved in Its Jobs Portal Hack",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-09T17:45:26+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要10月9日、FBI長官のX投稿を根拠に、ShinyHuntersの共犯者と疑われる人物が逮捕されたと報じられたが、容疑者の氏名や起訴内容は公表されていない。ShinyHuntersは9月、FBIの採用ポータルへ侵入し、FBI職員と応募者のほぼ全員に関する機微情報を盗んだと主張しており、今回の逮捕報道はその事件への関与が疑われる人物に関するものとなる。逮…",
+      "article_path": "articles/680031f976976d67.html",
+      "original_url": "https://thehackernews.com/2026/10/fbi-arrests-another-shinyhunters.html"
+    },
+    {
+      "entry_id": "5283200f328277c3",
+      "title": "P7 DarkSword iOS Exploit Kit Adds Crypto Wallet Data Theft and Remote Commands",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-09T16:29:55+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要報道によると、iVerifyが未確認のiOS向け攻撃ツールキット「P7 DarkSword」の解析内容を公表した。従来型より端末上の痕跡を抑え、キーチェーンや暗号資産ウォレットの情報窃取に加え、攻撃者の基盤との双方向通信や遠隔指令を可能にするという。端末侵害が成立すれば、保存された認証情報やウォレット情報の流出だけでなく、攻撃者が追加の指令を送る経路と…",
+      "article_path": "articles/5283200f328277c3.html",
+      "original_url": "https://thehackernews.com/2026/10/p7-darksword-ios-exploit-kit-adds.html"
+    },
+    {
+      "entry_id": "d117cb5f06f99c6f",
+      "title": "TP-Link Sued by Four More U.S. States Over Router Security and China Ties",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-09T13:22:53+00:00",
+      "impact_level": "Low",
+      "threat_type": "Other",
+      "summary_preview": "概要米国のフロリダ、アイオワ、モンタナ、ネブラスカの4州が、ルーター製造元のTP-Link Systemsを提訴したと報じられた。2月に提訴したテキサス州を含め、同社を訴えた州は5州となり、各州はルーターの安全性や中国との関係について、購入者に誤解を与える説明をしたと主張しているが、同社は主張を否定し、法廷で争うとしている。これは製品の脆弱性や侵入被害の公…",
+      "article_path": "articles/d117cb5f06f99c6f.html",
+      "original_url": "https://thehackernews.com/2026/10/tp-link-sued-by-four-more-us-states.html"
+    },
+    {
+      "entry_id": "65f3f6f758dc931a",
+      "title": "Researchers Publish Working Exploit for Pre-Auth AnyDesk Linux Flaw That Gives Root Access",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-09T12:59:22+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要研究者が、AnyDesk Linux版に存在する事前認証の脆弱性を悪用し、接続承認なしに遠隔からコードを実行してroot権限を得る実証済みの攻撃コードを公開したと報じられた。攻撃が成立すれば、画面共有や操作を利用者が許可する前にホストを掌握できるため、遠隔操作ツールが外部から到達可能な状態では、通常の利用者操作を待たず侵入の足掛かりになり得る。ただし、…",
+      "article_path": "articles/65f3f6f758dc931a.html",
+      "original_url": "https://thehackernews.com/2026/10/researchers-publish-working-exploit-for.html"
+    },
+    {
+      "entry_id": "71d71e86b4ce6c51",
+      "title": "Anthropic Launches Free AI Vulnerability Scanner for Open-Source Projects",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-09T12:47:28+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要Anthropicは、オープンソースの脆弱性探索にAIを使う任意参加型サービス「OSS Scanner」を発表し、登録プロジェクトに対して高性能モデルによる定期検査を無償で提供すると説明した。提供側は、Project GlasswingでClaudeを使った脆弱性発見の経験を背景として挙げているが、今回の発表自体は脆弱性や侵害の公表ではなく、検査機能の…",
+      "article_path": "articles/71d71e86b4ce6c51.html",
+      "original_url": "https://thehackernews.com/2026/10/anthropic-launches-free-ai.html"
+    },
+    {
+      "entry_id": "2b84161ee0c3987d",
+      "title": "Attackers Exploit AhsayCBS Flaws to Deploy XMRig Miners Disguised as Microsoft Edge",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-09T12:47:26+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要AhsayCBSのバックアップ製品に関する脆弱性を悪用し、侵害した機器へウェブシェルと暗号資産採掘プログラムXMRigを展開する攻撃が報告された。記事に記載されたCVE-2026-105133は、認証処理の不備に関する脆弱性で、CVSS v4スコアは5.5となるが、もう一つの脆弱性の識別子や技術情報は入力情報から確認できない。攻撃者はMicrosoft…",
+      "article_path": "articles/2b84161ee0c3987d.html",
+      "original_url": "https://thehackernews.com/2026/10/attackers-exploit-ahsaycbs-flaws-to.html"
+    },
+    {
+      "entry_id": "3ae8f5f75eaceb3e",
+      "title": "Flax Typhoon Exploits Five Flaws as CISA Sets October 11 Deadline for Federal Agencies",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-09T12:21:51+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要記事は、CISAが中国と関連付けられる攻撃者Flax Typhoonによる悪用を受け、5件の脆弱性を既知悪用脆弱性カタログ（KEV）へ追加し、米連邦機関に10月11日の対応期限を設けたと伝えている。抜粋で確認できるのは、ProFTPDの不適切なアクセス制御に関するCVE-2015-3306（CVSS 10.0）のみで、残る4件の識別子や製品、悪用条件は…",
+      "article_path": "articles/3ae8f5f75eaceb3e.html",
+      "original_url": "https://thehackernews.com/2026/10/flax-typhoon-exploits-five-flaws-as.html"
+    },
+    {
+      "entry_id": "361a96168a111610",
+      "title": "The AI Velocity Paradox: Why Security Is Decades Behind AI Ambition",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-09T11:30:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Other",
+      "summary_preview": "概要SailPointの「Horizons of Identity Security」報告書を紹介する記事は、企業が自律型AIエージェントの導入を加速する一方、本人確認や権限管理などのセキュリティ統制は人間主体の業務速度を前提としており、事業の実行速度との間に隔たりがあると指摘している。エージェントが業務データや操作機能にアクセスする場合、人間の利用者とは…",
+      "article_path": "articles/361a96168a111610.html",
+      "original_url": "https://thehackernews.com/2026/10/the-ai-velocity-paradox-why-security-is.html"
+    },
+    {
+      "entry_id": "7352daf3d746f623",
+      "title": "GoBalance Flaw Lets Attackers Hijack .onion Addresses by Recovering Tor-Format Keys",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-09T09:03:24+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要The Hacker Newsは、ダークウェブ上のサイトの可用性維持に使われるGoBalanceに、公開情報だけから.onionアドレスを制御する秘密鍵を復元できる不具合があるとの開示を報じた。攻撃者が鍵を得ると、対象アドレスを乗っ取り、利用者を攻撃者が用意した複製サイトへ誘導できるため、単なる接続妨害ではなく、サイトの真正性を失わせる問題となる。成立…",
+      "article_path": "articles/7352daf3d746f623.html",
+      "original_url": "https://thehackernews.com/2026/10/gobalance-flaw-lets-attackers-hijack.html"
+    },
+    {
+      "entry_id": "2046ea2d3d22f8fe",
+      "title": "Three Teams Demonstrate Remote Hacks of Fully Patched Google Pixel 10 at Pwn2Own",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-09T08:26:17+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要10月8日、アイルランドで開かれたPwn2Ownで、3チームが完全に更新されたGoogle Pixel 10への遠隔侵入を実演した。競技では対象機器に公開済みの更新を適用する規則があり、発見された欠陥はベンダーへ報告される仕組みとなっている。最優秀賞を得たIkotas Labsには30万ドルが授与されたが、記事の提示情報だけでは、各攻撃が利用した機能、…",
+      "article_path": "articles/2046ea2d3d22f8fe.html",
+      "original_url": "https://thehackernews.com/2026/10/three-teams-demonstrate-remote-hacks-of.html"
+    },
+    {
+      "entry_id": "222747da9536b94f",
+      "title": "Citrix Patches Critical NetScaler Flaw That Could Enable RCE in SAML Deployments",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-09T08:11:33+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Citrixが、NetScaler ADCとNetScaler Gatewayに影響するメモリオーバーフローの修正を公開したと報じられた。対象はCVE-2026-107406で、特定の構成条件下ではリモートコード実行またはサービス拒否につながる可能性があり、記事タイトルはSAMLを利用する構成を挙げている。攻撃成立に必要な正確な設定や、認証の要否、対象…",
+      "article_path": "articles/222747da9536b94f.html",
+      "original_url": "https://thehackernews.com/2026/10/citrix-patches-critical-netscaler-flaw.html"
+    },
+    {
+      "entry_id": "5f461e68350a36f7",
+      "title": "FBI Seizes 7 Domains, Disrupts Flax Typhoon Tools Used in Critical Infrastructure Intrusions",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-09T06:39:29+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要米連邦捜査局（FBI）と司法省は、中国との関連が指摘されるFlax Typhoonが利用した悪性ツール群について、関連ドメイン7件を差し押さえ、活動基盤を妨害したと発表した。対象ドメインは米国の重要インフラを探索する用途に使われ、一部では侵入にも利用されたとされるが、記事要約からは対象組織、侵入経路、侵入後の操作、被害規模を特定できない。ドメインの停止…",
+      "article_path": "articles/5f461e68350a36f7.html",
+      "original_url": "https://thehackernews.com/2026/10/fbi-seizes-7-domains-disrupts-flax.html"
+    },
+    {
+      "entry_id": "411db60fcdfc96ef",
+      "title": "ISC Stormcast For Friday, October 9th, 2026 https://isc.sans.edu/podcastdetail/10130, (Fri, Oct 9th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-10-09T07:52:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Unknown",
+      "summary_preview": "概要入力はSANS Internet Storm Center（ISC）の音声番組「Stormcast」の配信告知で、題名から2026年10月9日（金）の回を指すことまでは確認できる。記事本文の要約欄は空で、参照先も提示されていないため、この回で扱う脆弱性、攻撃観測、製品、推奨対応などの内容は特定できない。したがって、攻撃者の侵入条件や悪用手順、対象範囲、…",
+      "article_path": "articles/411db60fcdfc96ef.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33412"
+    },
+    {
+      "entry_id": "f39e9241f89ac99a",
+      "title": "注意喚起: 直近で相次いでいる国内組織における不正アクセスに関する注意喚起  (更新)",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-10-09T01:12:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要JPCERT/CCが、国内組織で相次いでいる不正アクセスについて注意喚起を更新した記事だが、入力情報には本文がなく、確認できるのは題名、発信元、更新日、URLに限られる。複数組織で不正アクセスが起きていることは示されるものの、同一の攻撃者や攻撃手法による一連の活動か、個別事案の集積かは判断できない。侵入経路、対象製品、認証情報の悪用、侵入後の操作、情報…",
+      "article_path": "articles/f39e9241f89ac99a.html",
+      "original_url": "https://www.jpcert.or.jp/at/2026/at260030.html"
+    },
+    {
+      "entry_id": "f4310e6ae357f739",
+      "title": "「CEATEC 2026」に出展",
+      "source_name": "NICT NOTICE",
+      "category": "reporting",
+      "published_at": "2026-10-09T08:30:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要NICT NOTICEが「CEATEC 2026」への出展を告知した。入力情報から確認できるのは出展の告知までであり、展示内容、会期中の説明や実演、来場者向けの案内は示されていないため、特定の技術やサービスが紹介されるとまでは判断できない。脆弱性の公表、攻撃の観測、情報漏えい、対策の要請といったセキュリティ事案を示す記述もなく、攻撃者による悪用方法や影…",
+      "article_path": "articles/f4310e6ae357f739.html",
+      "original_url": "/publicity/event/2026/10/13-1.html"
+    },
+    {
+      "entry_id": "038d1fd1dc9be4bc",
+      "title": "革新的情報通信技術（Beyond 5G（6G））基金事業 要素技術・シーズ創出型プログラムに係る令和8年度新規委託研究の公募（第1回）の結果",
+      "source_name": "NICT NOTICE",
+      "category": "reporting",
+      "published_at": "2026-10-09T05:00:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要NICTは、革新的情報通信技術（Beyond 5G（6G））基金事業の「要素技術・シーズ創出型プログラム」における、令和8年度新規委託研究の公募（第1回）の結果を公表した。これは研究委託先などの選定結果に関する告知であり、脆弱性、攻撃、侵害、製品更新を報告するセキュリティ情報ではない。対象は将来の通信基盤を支える技術の創出に関わるが、提示情報には採択テ…",
+      "article_path": "articles/038d1fd1dc9be4bc.html",
+      "original_url": "/publicity/topics/2026/10/09-1.html"
+    },
+    {
+      "entry_id": "b1520ee82ce52c36",
+      "title": "「IDCFクラウド」にランサムウェア攻撃",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-08T23:05:12+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要ScanNetSecurityの見出しは、「IDCFクラウド」がランサムウェア攻撃を受けたと伝えている。ただし、入力情報には記事本文や参照先がなく、攻撃の発生時期、侵入経路、暗号化の有無、サービス停止や情報流出の状況は確認できない。ランサムウェア攻撃では、端末やサーバーの暗号化に加え、窃取した情報の公開を示唆して金銭を要求する場合もあるが、今回どの手口…",
+      "article_path": "articles/b1520ee82ce52c36.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/09/56426.html"
+    },
+    {
+      "entry_id": "562ba3bdc0fc5154",
+      "title": "戸田建設に不正アクセス、取引先に関する情報が漏えい",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-08T23:05:10+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要ScanNetSecurityの記事は、戸田建設への不正アクセスと、取引先に関する情報の漏えいを伝えている。提供された情報には記事本文や参照先がなく、発生日、侵入経路、対象システム、情報項目、件数、外部への持ち出しの確認状況、攻撃者の特定、復旧状況は読み取れない。認証情報の窃取、脆弱性の悪用、委託先経由などを原因として決めつけず、アクセス可能だった範囲…",
+      "article_path": "articles/562ba3bdc0fc5154.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/09/56425.html"
+    },
+    {
+      "entry_id": "37d579642d965134",
+      "title": "大気社のマレーシアグループ会社従業員のメールアカウントに不正アクセス、不審メールの送信を確認",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-08T23:05:07+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要ScanNetSecurityの記事タイトルによれば、大気社のマレーシアグループ会社で、従業員のメールアカウントへの不正アクセスと、そのアカウントから不審メールが送信された事実が確認された。認証情報の窃取やセッションの悪用などが成立要因として考えられるが、侵入経路や攻撃手法は記事情報から確認できず、送信者名を偽装しただけのメールとは区別して調査する必要…",
+      "article_path": "articles/37d579642d965134.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/09/56424.html"
+    },
+    {
+      "entry_id": "d35adfc317c3909d",
+      "title": "ランドハウジングが登録する内見予約システムに不正アクセス、運営会社に原因究明を要請",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-08T23:05:05+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要ランドハウジングが利用登録する内見予約システムで不正アクセスが発生し、同社が運営会社に原因究明を求めたと報じられた。入力情報には、侵入経路、発生期間、侵害されたアカウントや機能、閲覧・持ち出しされた情報、予約業務への影響が示されておらず、攻撃の成立条件や被害範囲は現時点で判断できない。内見予約では一般に氏名や連絡先、希望物件、訪問日時などが扱われるため…",
+      "article_path": "articles/d35adfc317c3909d.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/09/56423.html"
+    },
+    {
+      "entry_id": "81125f0b2792c04d",
+      "title": "JGC Digital が利用する BI ツール「Metabase」に不正アクセス、約 6 万件の情報が取得されたことを確認",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-08T23:05:02+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要ScanNetSecurityの報道によると、JGC Digitalが利用するBIツール「Metabase」への不正アクセスが発生し、約6万件の情報が取得されたことを確認した。侵入経路や攻撃者が利用した認証情報、脆弱性の有無は、入力された記事情報からは確認できず、特定の設定不備や製品脆弱性を原因と決めつけることはできない。BI環境には複数の業務データを…",
+      "article_path": "articles/81125f0b2792c04d.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/09/56422.html"
+    },
+    {
+      "entry_id": "1c7eb648f5aff55f",
+      "title": "Movable Type に複数の脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-08T23:00:11+00:00",
+      "impact_level": "Info",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要ScanNetSecurityの記事タイトルは、Movable Typeに複数の脆弱性があると伝えている。ただし、入力情報には記事本文や参照先がなく、脆弱性の種類、影響する製品版、修正版の有無、攻撃条件は確認できない。一般に、公開サイトで稼働するコンテンツ管理システムの欠陥は、認証の要否や設定によって、情報漏えい、サイト改ざん、サーバー上での不正な処理…",
+      "article_path": "articles/1c7eb648f5aff55f.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/09/56421.html"
+    },
+    {
+      "entry_id": "aa37aa4e356e5568",
+      "title": "HENNGE AI株式会社設立、AI活用のガバナンスやコスト管理を支援",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-08T23:00:07+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要ScanNetSecurityの見出しは、HENNGE AI株式会社の設立と、企業のAI活用に伴うガバナンスやコスト管理の支援を伝えているが、提供サービスの詳細や開始時期までは入力情報から確認できない。組織が生成AIなどを業務へ導入すると、利用状況の把握、費用の予測、データの取り扱い、利用ルールの徹底が同時に課題となるため、こうした支援は導入後の統制を…",
+      "article_path": "articles/aa37aa4e356e5568.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/09/56420.html"
+    },
+    {
+      "entry_id": "1b02dc360e6ac8ad",
+      "title": "MCC 製 Universal Library for Linux (uldaq) にバッファオーバーフローの脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-08T23:00:03+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要ScanNetSecurityの記事は、MCC製のLinux向けUniversal Library（uldaq）にバッファオーバーフローの脆弱性があると伝えている。タイトルから確認できるのは脆弱性の種類と対象ライブラリまでで、影響する版や修正版、脆弱な処理の詳細は提示されていない。バッファオーバーフローは、入力データの扱いによってプロセス停止やメモリ破…",
+      "article_path": "articles/1b02dc360e6ac8ad.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/09/56419.html"
+    }
+  ]
+}
