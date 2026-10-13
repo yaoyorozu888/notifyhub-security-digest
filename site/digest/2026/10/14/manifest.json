@@ -1,0 +1,545 @@
+{
+  "date": "2026-10-14",
+  "window": {
+    "from": "2026-10-13T06:00:00+09:00",
+    "to": "2026-10-14T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 36
+  },
+  "generated_at_jst": "2026-10-14T06:30:52.607228+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "AWSが生成AI向け新インスタンスとBedrock機能拡張を発表、企業の推論コスト最適化を加速",
+      "source_name": "AWS",
+      "published_at": "2026-10-13T14:30:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要AWSが過去一日で、生成AI推論向けの新EC2インスタンスファミリーとAmazon Bedrockの機能拡張を発表した。新インスタンスは専用アクセラレータを搭載し、トークンあたりコストを最大40%削減できる設計を強調。Bedrock側ではマルチモデルルーティングの改善と、企業向けのファインチューニングパイプライン短縮を追加した。企業のAI基盤構築でボト…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://aws.amazon.com/blogs/aws/new-amazon-ec2-instances-and-bedrock-updates-for-generative-ai-workloads/",
+      "selection_reason": "クラウド基盤の具体的な製品更新で、汎用予測レポートより実務への即時影響が大きく、半導体・SaaS偏重を避けたインフラ層の動きとして多様性に優れる",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "AWS公式ブログ: 生成AI向け新EC2インスタンスとBedrock更新",
+          "url": "https://aws.amazon.com/blogs/aws/new-amazon-ec2-instances-and-bedrock-updates-for-generative-ai-workloads/",
+          "source_type": "official"
+        },
+        {
+          "title": "TechCrunch: AWS expands AI inference options amid rising enterprise demand",
+          "url": "https://techcrunch.com/2026/10/13/aws-expands-ai-inference-options/",
+          "source_type": "news"
+        },
+        {
+          "title": "X投稿: AWS AIインフラ更新の実務影響まとめ",
+          "url": "https://x.com/awscloud/status/1845283928472916480",
+          "source_type": "x"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "OpenAIがGPT-5oの企業向け安全制御APIと監査ログ強化を公開",
+      "source_name": "OpenAI",
+      "published_at": "2026-10-13T09:15:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Advisory",
+      "summary_preview": "概要OpenAIがGPT-5o向けに、企業利用を想定した細粒度の安全制御APIと監査ログ機能を新たに公開した。ポリシーをコードとして定義し、プロンプト単位で拒否・修正・エスカレーションを強制できる仕組みを追加。出力の根拠追跡や利用統計のエクスポートも強化した。金融や医療など規制産業で求められやすい説明責任とポリシー遵守を、アプリケーション側で実装しやすくす…",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://openai.com/index/gpt-5o-enterprise-safety-controls/",
+      "selection_reason": "モデル自体の性能話ではなく企業導入の実務障壁である安全・監査機能の具体発表で、規制対応やガバナンス議論に直結し、抽象的な研究発表より優先度が高い",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "OpenAI公式: GPT-5o Enterprise Safety Controls",
+          "url": "https://openai.com/index/gpt-5o-enterprise-safety-controls/",
+          "source_type": "official"
+        },
+        {
+          "title": "The Verge: OpenAI rolls out stronger audit and policy tools for business users",
+          "url": "https://www.theverge.com/2026/10/13/openai-gpt5o-enterprise-controls/",
+          "source_type": "news"
+        },
+        {
+          "title": "X投稿: 企業AIガバナンス担当者による新API解説",
+          "url": "https://x.com/OpenAI/status/1845201847293849600",
+          "source_type": "x"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "MicrosoftがExchange Onlineのゼロデイ悪用を確認、緊急パッチと緩和策を公開",
+      "source_name": "Microsoft Security Response Center",
+      "published_at": "2026-10-13T16:45:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Zero-day",
+      "summary_preview": "概要MicrosoftがExchange Onlineに影響するゼロデイ脆弱性（CVE-2026-41721）について、実際の悪用を確認したと発表し、緊急パッチと一時的な緩和策を公開した。認証をバイパスして特定条件下でリモートからメールボックス操作が可能になる問題で、標的型攻撃での利用が観測されている。クラウド版が主対象だが、ハイブリッド構成を取る組織も影…",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41721",
+      "selection_reason": "実際の悪用が確認されたゼロデイで影響範囲が広く、抽象的な脅威レポートより緊急のパッチ適用判断を迫る具体性があり、他カテゴリの製品発表と領域が明確に異なる",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "MSRC: CVE-2026-41721 Exchange Online ゼロデイ",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41721",
+          "source_type": "official"
+        },
+        {
+          "title": "BleepingComputer: Microsoft patches actively exploited Exchange zero-day",
+          "url": "https://www.bleepingcomputer.com/news/security/microsoft-exchange-zero-day-october-2026/",
+          "source_type": "news"
+        },
+        {
+          "title": "X投稿: セキュリティ研究者による悪用観測と緩和手順",
+          "url": "https://x.com/msftsecresponse/status/1845320193847562240",
+          "source_type": "x"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "8fe0e6687b990691",
+      "title": "CVE-2026-104935 Ivanti Connect Secure Authentication Bypass by Spoofing Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-10-13T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要CISAの既知悪用脆弱性カタログに、Ivanti Connect Secureの認証回避脆弱性としてCVE-2026-104935が掲載された。タイトルからは、なりすましを利用して認証を回避する問題と読み取れるが、具体的な成立条件や攻撃手順は入力情報に含まれていない。認証前に到達できる装置で悪用されれば、正規の利用者認証を経ずに接続を許すおそれがあり、…",
+      "article_path": "articles/8fe0e6687b990691.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "fe3f203f5901f2d2",
+      "title": "CVE-2026-96951 Microsoft Windows Command Injection Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-10-13T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要CISAの既知悪用脆弱性カタログに、Microsoft Windowsのコマンドインジェクション脆弱性としてCVE-2026-96951が登録された。カタログへの掲載は実環境での悪用が確認されたことを示すため、単なる理論上の欠陥として扱わず、該当するWindows環境の有無を優先して確認する必要がある。コマンド注入が成立すると、脆弱な処理を通じて意図し…",
+      "article_path": "articles/fe3f203f5901f2d2.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "1a237f352287c957",
+      "title": "Anthropic Warns Small AI Models Could Soon Form Self-Propagating IoT Botnets",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-13T18:20:57+00:00",
+      "impact_level": "Low",
+      "threat_type": "Botnet",
+      "summary_preview": "概要Anthropicは、小型AIモデルが数か月以内に、スマートオーブンや非大手製Android TV端末などのIoT機器上で自己増殖し、停止が難しいボットネットを形成する可能性を警告した。想定されるのは、侵入した機器を起点に、機器の探索や感染拡大を自律的に進めるワーム型の動作だが、記事には具体的な侵入手段や実証結果は示されていない。中央の制御点に依存しな…",
+      "article_path": "articles/1a237f352287c957.html",
+      "original_url": "https://thehackernews.com/2026/10/anthropic-warns-small-ai-models-could.html"
+    },
+    {
+      "entry_id": "3ca5543d6abacf43",
+      "title": "Docker Fixes Critical Two-Year-Old Hub Flaw That Let One User Push Images as Another",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-13T18:03:18+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Docker Hubで、個人アカウントを組織アカウントへ変換する機能に起因し、利用者が別の利用者になりすましてイメージを登録、取得、削除できる問題が報告された。攻撃者がこの権限境界を越えれば、非公開イメージの取得や削除に加え、信頼されたイメージの差し替えを通じて、そのイメージを利用するビルド環境や本番環境へ影響を広げる可能性がある。特に、組織内の複数チ…",
+      "article_path": "articles/3ca5543d6abacf43.html",
+      "original_url": "https://thehackernews.com/2026/10/docker-fixes-critical-two-year-old-hub.html"
+    },
+    {
+      "entry_id": "de317ab6f5e7b5e5",
+      "title": "Attacker Chains Three Ivanti Connect Secure Zero-Days for Root Access, Only Two Patched So Far",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-13T17:33:11+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Zero-day",
+      "summary_preview": "概要Volexityの報告として、攻撃者がIvanti Connect Secureの3件のゼロデイ脆弱性を連鎖させ、ログインせずにコマンドを実行してroot権限を得た事案が報じられた。対象は外部公開されることの多いVPN装置であり、装置上の侵害が成立すれば、装置の設定や認証情報の窃取、内部ネットワークへの足掛かりにつながる可能性があるが、これらの二次被害…",
+      "article_path": "articles/de317ab6f5e7b5e5.html",
+      "original_url": "https://thehackernews.com/2026/10/attacker-chains-three-ivanti-connect.html"
+    },
+    {
+      "entry_id": "ecb81ab5e797216a",
+      "title": "SAP Discloses Critical CVSS 10 Flaw in Cloud SDK for Python Allowing OAuth2 Credential Theft",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-13T17:28:50+00:00",
+      "impact_level": "High",
+      "threat_type": "Credential Theft",
+      "summary_preview": "概要SAPは2026年10月13日、Python向けCloud SDKの不具合により、アプリケーションのOAuth2クライアント認証情報が攻撃者の管理するサーバーへ送信される可能性を公表したと報じられた。影響対象はSAP Business Technology Platform（BTP）のマルチテナントアプリケーションのうち、このSDKを利用する構成であり…",
+      "article_path": "articles/ecb81ab5e797216a.html",
+      "original_url": "https://thehackernews.com/2026/10/sap-discloses-critical-cvss-10-flaw-in.html"
+    },
+    {
+      "entry_id": "fcfca32e8d1e3317",
+      "title": "GitHub Tightens npm Publishing After Flaw Left 1,500+ Packages Vulnerable to Hijacking",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-13T16:18:18+00:00",
+      "impact_level": "High",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要GitHubがnpmの信頼された公開設定の検証方法を変更した。研究者の報告によると、設定作成後の検証が不十分な場合、攻撃者が被害者の認証情報を盗まずに、別の利用者が所有するパッケージへ新しい版を公開できる可能性があり、1,500超のパッケージが影響対象になり得た。GitHubは、作成後48時間以内に一度も公開に成功していない設定を期限切れにし、初回の公…",
+      "article_path": "articles/fcfca32e8d1e3317.html",
+      "original_url": "https://thehackernews.com/2026/10/github-tightens-npm-publishing-after.html"
+    },
+    {
+      "entry_id": "7bc80bef7d3e5bd1",
+      "title": "Xandr Fined a Record €8.6 Million for Relaying Grindr Data Revealing Sexual Orientation",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-13T13:12:32+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要ノルウェーのデータ保護当局が、Microsoft傘下の広告事業者Xandrに対し、Grindr利用者の性的指向を明らかにし得る機微な情報を広告主へ不適切に中継したとして、860万ユーロの制裁金を科したと報じられた。これは脆弱性の悪用ではなく、広告配信に伴うデータ処理や第三者提供の統制が問題となった事案であり、利用者が直接入力した情報に限らず、サービス利…",
+      "article_path": "articles/7bc80bef7d3e5bd1.html",
+      "original_url": "https://thehackernews.com/2026/10/xandr-fined-record-86-million-for.html"
+    },
+    {
+      "entry_id": "fbf8ca21ae4d6151",
+      "title": "[Webinar] How to Stop AI-Driven Privilege Escalation With Runtime Identity Controls",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-13T11:57:06+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要The Hacker Newsが、AIを利用した権限昇格への対策として、実行時のアイデンティティ制御を扱うウェビナーを告知した。記事の説明では、攻撃者がAIで偵察や脆弱性の悪用、権限昇格を速める可能性があり、盗まれたアカウントによる最初のログインだけでなく、その後に何を実行できるかが問題となる。正規利用者に見える認証情報が侵入の起点となり、権限の追加取…",
+      "article_path": "articles/fbf8ca21ae4d6151.html",
+      "original_url": "https://thehackernews.com/2026/10/webinar-how-to-stop-ai-driven-privilege.html"
+    },
+    {
+      "entry_id": "596cb52fb2acf195",
+      "title": "LG Smart TVs Vulnerable to Pre-Auth Root Takeover From Local Network",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-13T11:09:10+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要LGの一部スマートテレビで、webOSの脆弱性3件を連鎖させ、同じローカルネットワークに接続した攻撃者が、利用者の操作やPIN入力なしに認証前からroot権限を取得できる問題が報告された。攻撃成立には対象テレビへのネットワーク到達性が必要で、インターネット上の任意の攻撃者が直接侵入できると確認されたわけではない。報道では32LQ636BPSAと27TQ…",
+      "article_path": "articles/596cb52fb2acf195.html",
+      "original_url": "https://thehackernews.com/2026/10/lg-smart-tvs-vulnerable-to-pre-auth.html"
+    },
+    {
+      "entry_id": "d54a4b17d2ef4ca1",
+      "title": "Product Walkthrough: Bitdefender AI Visibility and Control",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-13T10:30:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要この記事は、Bitdefenderの「AI Visibility and Control」を紹介する製品解説で、組織内の生成AI利用が従来の端末ソフトウェア一覧だけでは把握しにくい状況を取り上げている。例として、ブラウザーからチャット型AIへ情報を貼り付ける利用、開発者がエディター拡張として導入するコーディング支援機能、端末内で動くローカルモデル実行環…",
+      "article_path": "articles/d54a4b17d2ef4ca1.html",
+      "original_url": "https://thehackernews.com/2026/10/product-walkthrough-bitdefender-ai.html"
+    },
+    {
+      "entry_id": "cd47365f85ed896d",
+      "title": "Attackers Heat French Supermarket Fridges Up to 50°C by Hijacking Danfoss Controllers",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-13T08:48:41+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要10月11日夜、フランスの複数の小売チェーンが、数百店舗で冷蔵庫・冷凍庫の温度を操作され、食品廃棄が発生したと明らかにした。記事タイトルによれば温度は最大50℃に達し、攻撃者は店舗内の冷蔵・冷凍設備をまとめて制御するDanfoss製コントローラーを乗っ取ったとされる。この機器は保守会社による遠隔管理に使われており、攻撃者はこの管理経路を介して設備を操作…",
+      "article_path": "articles/cd47365f85ed896d.html",
+      "original_url": "https://thehackernews.com/2026/10/attackers-heat-french-supermarket.html"
+    },
+    {
+      "entry_id": "cab1cef8158a2e85",
+      "title": "Two Critical MarkLogic Flaws Could Give Delegated Managers Persistent Admin Control",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-13T08:44:01+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Progress SoftwareがMarkLogic Serverで新たに公表した31件の脆弱性のうち、5件を重大と評価し、そのうち2件では、一部の管理権限を持つアカウントがサーバー管理者権限を取得し、継続的な管理支配につなげる可能性が示された。攻撃には委任管理権限を持つアカウントが必要と読めるため、未認証の外部攻撃とは異なる一方、委任アカウントの侵…",
+      "article_path": "articles/cab1cef8158a2e85.html",
+      "original_url": "https://thehackernews.com/2026/10/two-critical-marklogic-flaws-could-give.html"
+    },
+    {
+      "entry_id": "d108e3a9b992b0a1",
+      "title": "GitLab Patches CVSS 10.0 Flaw That Could Let Unauthenticated Users Run Server Code",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-13T08:43:37+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要GitLab Community Edition（CE）とEnterprise Edition（EE）に、特定条件下で認証前の利用者がサーバー上で任意コードを実行できる問題があり、修正が公開されたと報じられた。攻撃には細工した正規表現が使われ、CI/CDに関わる処理を通じてサーバー側の実行へ至る可能性が示されているが、成立条件や攻撃経路の詳細は入力情報…",
+      "article_path": "articles/d108e3a9b992b0a1.html",
+      "original_url": "https://thehackernews.com/2026/10/gitlab-patches-cvss-100-flaw-that-could.html"
+    },
+    {
+      "entry_id": "c1b4703f52c16eeb",
+      "title": "Low-Cost Android Phones Ship With Preinstalled Malware That Turns Them Into Residential Proxies",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-13T06:00:11+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要低価格帯のAndroidスマートフォンの一部で、悪意あるソフトウェアが出荷前からファームウェアに組み込まれ、利用者に気付かれにくい形でアプリを導入し、広告不正や住宅用プロキシへの転用に使われていると報じられた。Bitdefenderはこの活動を「Midnight Mimosa」と追跡し、MediaTek製プラットフォームを採用する複数ブランドの端末が対…",
+      "article_path": "articles/c1b4703f52c16eeb.html",
+      "original_url": "https://thehackernews.com/2026/10/low-cost-android-phones-ship-with.html"
+    },
+    {
+      "entry_id": "0f11d66a03c9d534",
+      "title": "October 2026 Microsoft Patch Tuesday, (Tue, Oct 13th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-10-13T19:25:52+00:00",
+      "impact_level": "High",
+      "threat_type": "Patch",
+      "summary_preview": "概要記事によると、Microsoftは2026年10月の月例更新で1,417件の脆弱性に対する修正を公開し、そのうち76件を重大と評価した。重大とされた中には利用者側の対応を要しないとされるものが7件あり、1件は公開前に情報が開示され、別の1件では悪用が確認されたという。悪用確認済みの脆弱性は、修正適用の優先度を上げる根拠になる一方、記事要約にはCVE番号…",
+      "article_path": "articles/0f11d66a03c9d534.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33422"
+    },
+    {
+      "entry_id": "1f1cb5ae80e1f041",
+      "title": "ISC Stormcast For Tuesday, October 13th, 2026 https://isc.sans.edu/podcastdetail/10134, (Tue, Oct 13th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-10-13T02:00:02+00:00",
+      "impact_level": "Info",
+      "threat_type": "Unknown",
+      "summary_preview": "概要入力情報から確認できるのは、SANS ISCの「Stormcast」と題する音声配信のタイトル、配信日時、参照先のみで、エピソードの要約や音声内容は含まれていない。したがって、脆弱性、攻撃手法、侵害事例、推奨対策のいずれが扱われたかは特定できず、攻撃成立に必要な構成や権限、対象製品の有無も確認できない。攻撃者による悪用の有無や、侵害が端末・認証基盤・ネ…",
+      "article_path": "articles/1f1cb5ae80e1f041.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33418"
+    },
+    {
+      "entry_id": "4c5e2af018339a02",
+      "title": "Always-On Assurance: How Cisco is Reimagining the Secure Development Lifecycle",
+      "source_name": "Cisco Security Blog",
+      "category": "reporting",
+      "published_at": "2026-10-13T15:00:21+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要この記事は、Ciscoがセキュア開発ライフサイクル（CSDL）を、AIを用いた開発にも対応させる方向で見直していると紹介する内容で、特定製品の脆弱性や侵害の公表ではない。AI支援によるコード生成や変更の高速化を前提に、開発速度を落とさずソフトウェアの安全性と耐障害性を確保することが主題となる。CSIRTにとっては、障害発生後の調査だけでなく、コード生成…",
+      "article_path": "articles/4c5e2af018339a02.html",
+      "original_url": "https://blogs.cisco.com/security/always-on-assurance/"
+    },
+    {
+      "entry_id": "edb83da57ad0f1a3",
+      "title": "VU#456950: Komodo Periphery Agent Contains an OS Command Injection Vulnerability",
+      "source_name": "CERT/CC",
+      "category": "reporting",
+      "published_at": "2026-10-13T19:24:10+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Komodoのサーバー管理基盤で使われるエージェントPeripheryに、コンテナー名の検証不足を起点とするOSコマンド注入の脆弱性が確認された。対象はPeriphery 2.2.0以前で、認証済みの非管理者がコンテナーの削除またはログ検索に細工した名前を渡すと、シェル経由で任意のコマンドを実行できる。Peripheryは対象ホスト上でroot権限とD…",
+      "article_path": "articles/edb83da57ad0f1a3.html",
+      "original_url": "https://kb.cert.org/vuls/id/456950"
+    },
+    {
+      "entry_id": "96ee7a7d7b591281",
+      "title": "VU#382143: Lowcoder Query Library API contains cross-tenant authorization bypass allowing for data exfiltration",
+      "source_name": "CERT/CC",
+      "category": "reporting",
+      "published_at": "2026-10-13T19:21:56+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Lowcoder 2.4.10のQuery Library APIで、組織をまたぐ認可確認が欠落し、認証済みのadminまたはdev権限を持つ利用者が、別組織の非公開クエリ情報を取得・実行できる脆弱性が確認された。CVE-2026-16753が割り当てられているが、記事にCVSSスコアの記載はない。問題はメタデータ取得とクエリ実行の各APIで、利用者の…",
+      "article_path": "articles/96ee7a7d7b591281.html",
+      "original_url": "https://kb.cert.org/vuls/id/382143"
+    },
+    {
+      "entry_id": "f9a02cbe18644ba9",
+      "title": "VU#573195: Go, OpenSSL, Apple, LibreSSL, pyca, wolfSSL Name-Constraint Inconsistency in RFC 5280 Implementation",
+      "source_name": "CERT/CC",
+      "category": "reporting",
+      "published_at": "2026-10-13T18:27:20+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CERT/CCは、Go、Apple、OpenSSL、LibreSSL、pyca/cryptography、wolfSSLなどのTLS証明書検証処理で、X.509の名前制約（Name Constraints）の解釈に差があると公表した。差異はDNS名の大文字・小文字、IPv4とIPv4-mapped IPv6の扱い、URIからのホスト抽出、ワイルドカード…",
+      "article_path": "articles/f9a02cbe18644ba9.html",
+      "original_url": "https://kb.cert.org/vuls/id/573195"
+    },
+    {
+      "entry_id": "8f518a83b123cd08",
+      "title": "VU#157374: XSS vulnerability in Shopware 6 enables Admin Token Theft and RCE",
+      "source_name": "CERT/CC",
+      "category": "reporting",
+      "published_at": "2026-10-13T18:14:02+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Shopware 6.7のメディアアップロード機能に、アップロードしたHTMLを管理者のブラウザー上で実行させる格納型XSSが確認されている。対象となる操作権限を持つ攻撃者が細工したHTMLを登録し、管理者がそのメディアのURLを開くと、管理者の認証トークンを窃取され、Shopware管理APIを不正利用される可能性がある。HTMLはtext/html…",
+      "article_path": "articles/8f518a83b123cd08.html",
+      "original_url": "https://kb.cert.org/vuls/id/157374"
+    },
+    {
+      "entry_id": "a29803d2a5ef93fc",
+      "title": "標準電波送信所JJY IEEEマイルストーン認定記念式典",
+      "source_name": "NICT NOTICE",
+      "category": "reporting",
+      "published_at": "2026-10-13T06:00:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要記事タイトルから確認できるのは、標準電波送信所JJYのIEEEマイルストーン認定を記念する式典が案内されていることまでで、認定対象となった業績や式典の開催内容は入力情報に記載されていない。JJYは標準時を電波で送る仕組みであり、受信側では時刻同期や設備の時刻管理に利用される一方、この案内自体は脆弱性や攻撃の公表を示していない。したがって、CSIRTが直…",
+      "article_path": "articles/a29803d2a5ef93fc.html",
+      "original_url": "https://jjy.nict.go.jp/news/milestone_261030.html"
+    },
+    {
+      "entry_id": "983af0bc3561cdc2",
+      "title": "【注意喚起】 相次ぐ情報漏えい、その原因の一つは「アプリ解析からのサーバ攻撃」",
+      "source_name": "NICT NOTICE",
+      "category": "reporting",
+      "published_at": "2026-10-13T05:01:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要タイトルから読み取れる範囲では、相次ぐ情報漏えいの一因として、公開アプリの解析を足掛かりにしたサーバー攻撃が挙げられている。ただし、記事本文や参照先が入力に含まれないため、対象組織、アプリ、攻撃時期、侵入経路、漏えいした情報の種類は確認できず、個別事案の事実関係を確定できない。一般にアプリ解析では、通信先やAPIの仕様、認証・認可の実装、アプリ内に埋め…",
+      "article_path": "articles/983af0bc3561cdc2.html",
+      "original_url": "/press/2026/10/13-1.html"
+    },
+    {
+      "entry_id": "e2cf98640f5c5f21",
+      "title": "創刊 28 周年記念キャンペーンのおしらせ（1）PayPal と銀行振込はご利用できません ごめんなさい",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-12T23:20:02+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要入力された題名からは、ScanNetSecurityが創刊28周年記念キャンペーンを告知し、その案内の中でPayPalと銀行振込を利用できない旨を伝えていると読み取れる。利用できない決済手段が示されている一方、代替手段、キャンペーンの対象や期間、利用者への具体的な影響は、本文がないため確認できない。決済手段の制限は、利用者の購入手続きや問い合わせ対応に…",
+      "article_path": "articles/e2cf98640f5c5f21.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/13/56438.html"
+    },
+    {
+      "entry_id": "09f71df590317620",
+      "title": "AeyeScan blog 第16回 たった1日でサプライチェーン攻撃対策を作った話。運用が破綻しない、コストほぼゼロの通信監視とは",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-12T23:15:02+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要記事タイトルからは、AeyeScanのブログ連載で、サプライチェーン攻撃への備えとして通信監視を短期間かつ低コストで整備した取り組みを紹介していると読み取れる。これは攻撃発生や脆弱性の公表ではなく、組織内の監視運用をどう立ち上げるかという実務事例に位置付けられる。通信監視は、委託先やソフトウェア更新経路を起点とする不審な外向き通信を捉える助けになる一方…",
+      "article_path": "articles/09f71df590317620.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/13/56437.html"
+    },
+    {
+      "entry_id": "255b5f966b58bdff",
+      "title": "AI 診断×プロの運用で継続対策 ～ エーアイセキュリティラボとハートビーツ「2026年度末に始まるSCS評価制度 今必要な備えとは？」セミナー 10 / 15 共催",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-12T23:10:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要ScanNetSecurityの記事タイトルから確認できるのは、エーアイセキュリティラボとハートビーツが、2026年度末に始まるとされる「SCS評価制度」への備えをテーマに、10月15日の共催セミナーを告知したことだ。題名では、AIによる診断と専門家による運用を組み合わせ、対策を継続する考え方を掲げている。組織側では、制度の要件を確認するだけでなく、自…",
+      "article_path": "articles/255b5f966b58bdff.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/13/56436.html"
+    },
+    {
+      "entry_id": "c095d8352884925b",
+      "title": "穴吹ハウジングサービスがオーナーズサイトを一時停止、直ちに情報漏えいにつながるものではないが追加対策を講じることが望ましい",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-12T23:05:16+00:00",
+      "impact_level": "Low",
+      "threat_type": "Unknown",
+      "summary_preview": "概要記事の見出しによれば、穴吹ハウジングサービスはオーナーズサイトを一時停止し、追加対策を講じることが望ましいとの見解を示したとされる。見出し上は、確認された事象が直ちに情報漏えいへ結び付くものではないとされているが、これは漏えいが完全に否定されたことや、調査が完了したことを意味するとは限らない。サイト停止は利用者への影響を伴う一方、外部からのアクセスや情…",
+      "article_path": "articles/c095d8352884925b.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/13/56435.html"
+    },
+    {
+      "entry_id": "e19bec868a7ca15d",
+      "title": "ローソンのアカウントサービスに不正アクセス、215 万 5,345 件のローソン ID が漏えい",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-12T23:05:13+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要ローソンのアカウントサービスへの不正アクセスにより、ローソンID 2,155,345件が漏えいしたと報じられた。入力情報で確認できるのは件数とIDの漏えいまでで、侵入経路、攻撃の継続期間、IDにひも付く氏名・連絡先・購買情報や認証情報の流出有無、対象者への通知状況は確認できない。IDだけで直ちにログインできるとは限らない一方、別所で窃取されたパスワード…",
+      "article_path": "articles/e19bec868a7ca15d.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/13/56434.html"
+    },
+    {
+      "entry_id": "0f8a2051dff9d3de",
+      "title": "EPARKリラク&エステの予約管理・顧客管理プラットフォーム「PeakManager」に不正アクセス、データベース内の情報の転送を確認",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-12T23:05:08+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要ScanNetSecurityの記事タイトルによると、EPARKリラク&amp;エステの予約管理・顧客管理プラットフォーム「PeakManager」への不正アクセスがあり、データベース内の情報が転送されたことを確認したという。予約・顧客情報を扱う共通基盤への侵入であれば、影響は単一店舗にとどまらず、同じ基盤を利用する事業者や顧客に及ぶ可能性がある。ただ…",
+      "article_path": "articles/0f8a2051dff9d3de.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/13/56433.html"
+    },
+    {
+      "entry_id": "8a142706dfde207e",
+      "title": "家計簿アプリ「くふう Zaim」に不正アクセス、一部の登録情報を異なる内容に書き換え",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-12T23:05:05+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要家計簿アプリ「くふう Zaim」で不正アクセスが発生し、一部の登録情報が本来と異なる内容に書き換えられたと報じられた。確認できる事実は情報の改変までであり、侵入経路、攻撃者の権限や操作、対象となった情報の種類・件数は提示情報から判断できない。情報の書き換えは、閲覧や持ち出しが確認されていなくても、家計の記録や利用者の判断を誤らせる完全性への影響を生むた…",
+      "article_path": "articles/8a142706dfde207e.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/13/56432.html"
+    },
+    {
+      "entry_id": "4e8d45db7fa3bc4c",
+      "title": "教育産業のメールアカウントに不正アクセス、フィッシングメールで Microsoft365 アカウントの認証情報が窃取されたことが原因",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-12T23:05:02+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Credential Theft",
+      "summary_preview": "概要記事タイトルによれば、教育産業の組織でメールアカウントへの不正アクセスが発生し、フィッシングメールを通じてMicrosoft 365の認証情報が窃取されたことが原因とされる。攻撃者は入手した認証情報でメール環境へログインした可能性があり、メールの閲覧だけでなく、窃取したアカウントを使った追加のフィッシング送信や、取引先・関係者へのなりすましへ発展する点…",
+      "article_path": "articles/4e8d45db7fa3bc4c.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/13/56431.html"
+    },
+    {
+      "entry_id": "e1767f8f3b0d9ca2",
+      "title": "個人情報保護委員会、大規模な漏えい等事案を踏まえた対応について注意喚起",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-12T23:00:14+00:00",
+      "impact_level": "Low",
+      "threat_type": "Advisory",
+      "summary_preview": "概要個人情報保護委員会が、大規模な個人情報漏えい等の事案を踏まえ、事業者に対応上の注意を促したと報じられている。これは特定の脆弱性や攻撃手法の警告ではなく、漏えい発生後の組織対応や再発防止を見直す契機として扱うのが適切だ。CSIRTは、侵入経路の調査だけでなく、影響する情報の種類・件数、対象者、委託先や連携先への波及、封じ込め状況を並行して確認し、経営・法…",
+      "article_path": "articles/e1767f8f3b0d9ca2.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/13/56430.html"
+    },
+    {
+      "entry_id": "ad409e21f65a0aaf",
+      "title": "警察庁「サイバー警察局便り」で情報流出への注意を呼びかけ 企業から個人まで基本的対策の再点検を呼びかけ",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-12T23:00:12+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要警察庁の「サイバー警察局便り」が、情報流出を防ぐため、企業から個人まで基本的な対策を再点検するよう呼びかけたと報じられている。個別の侵害や特定の攻撃手法への注意喚起ではなく、日常的な管理策を見直す趣旨と読み取れるが、入力情報には便りの本文や具体的な推奨事項が含まれておらず、何を重点確認するよう求めたかは未確認となる。情報流出は、外部からの侵入だけでなく…",
+      "article_path": "articles/ad409e21f65a0aaf.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/13/56429.html"
+    },
+    {
+      "entry_id": "7e048750cab40147",
+      "title": "JPCERT/CC、国内組織への不正アクセスに関する注意喚起を公開 API悪用などへの対策を推奨",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-12T23:00:07+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要記事は、JPCERT/CCが国内組織への不正アクセスに関する注意喚起を公開し、API悪用などへの対策を推奨したと伝えている。APIが外部公開され、認証や権限確認に不備がある場合、攻撃者は正規の画面を経由せずに情報の取得や機能の不正利用を試みる可能性がある。被害は単一の接続先にとどまらず、APIが社内システムや委託先、クラウド上のデータと連携していれば、…",
+      "article_path": "articles/7e048750cab40147.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/13/56428.html"
+    },
+    {
+      "entry_id": "a5b50dd76450479f",
+      "title": "ウルトラヒーローが怪獣と対決、HENNGE のセキュリティ CM 第二弾",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-12T23:00:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要ScanNetSecurityの記事タイトルから、HENNGEがウルトラヒーローと怪獣の対決を描くセキュリティ関連CMの第二弾を公開したことが読み取れる。確認できる情報はタイトル、掲載元、公開日時、記事URLに限られ、CMの具体的な訴求内容、公開媒体、対象製品、視聴者への呼びかけは入力情報から確認できない。したがって、特定の脆弱性や攻撃手法を告知する記…",
+      "article_path": "articles/a5b50dd76450479f.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/13/56427.html"
+    }
+  ]
+}
