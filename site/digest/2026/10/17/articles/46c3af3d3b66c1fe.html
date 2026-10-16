@@ -1,0 +1,327 @@
+<!-- article.html テンプレート（生成用） (例: /digest/YYYY/MM/DD/articles/<entry_id>.html)
+     サーバ側（Function）で {{...}} を置換して出力してください。
+-->
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/favicon-192.png" />
+  <title>China-Linked Hackers Exploited BeyondTrust Zero-Day to Take Over Remote Support Servers | NotifyHub Cybersecurity Daily Report</title>
+  <style>
+    :root{
+      --bg:#0b1020; --panel:#0f1730; --panel2:#121c3a;
+      --text:#e7ecff; --muted:#a9b4df; --line:#22305b;
+      --accent:#7aa2ff; --good:#4ade80; --warn:#fbbf24; --bad:#fb7185;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+      --radius:18px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      background: radial-gradient(1000px 700px at 20% -10%, rgba(122,162,255,.25), transparent 60%),
+                  radial-gradient(900px 600px at 90% 10%, rgba(251,113,133,.12), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+    }
+    a{color:inherit}
+    .wrap{max-width:960px; margin:0 auto; padding:22px 18px 44px}
+    .topbar{
+      display:flex; justify-content:space-between; align-items:center; gap:12px;
+      margin-bottom:12px;
+    }
+    .crumb a{
+      text-decoration:none;
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .crumb a:hover{border-color:rgba(122,162,255,.65)}
+    .chip{
+      display:inline-flex; align-items:center; gap:8px;
+      background:rgba(27,38,80,.75);
+      border:1px solid rgba(34,48,91,.9);
+      padding:7px 10px; border-radius:999px;
+      font-size:12px; color:var(--muted);
+      backdrop-filter: blur(10px);
+      white-space:nowrap;
+    }
+    .chip strong{color:var(--text); font-weight:650}
+    .panel{
+      background: linear-gradient(180deg, rgba(15,23,48,.9), rgba(15,23,48,.75));
+      border:1px solid rgba(34,48,91,.9);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .head{
+      padding:16px 16px 12px;
+      border-bottom:1px solid rgba(34,48,91,.9);
+      background:rgba(18,28,58,.55);
+    }
+    h1{
+      margin:0;
+      font-size:20px;
+      line-height:1.35;
+      letter-spacing:.15px;
+    }
+    .meta{
+      margin-top:10px;
+      display:flex; gap:10px; flex-wrap:wrap;
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.6;
+    }
+    .meta a{color:var(--muted)}
+    .meta a:hover{color:var(--accent)}
+    .tags{
+      margin-top:12px;
+      display:flex; gap:8px; flex-wrap:wrap;
+    }
+    .tag{
+      font-size:11px;
+      padding:6px 9px;
+      border-radius:999px;
+      background:rgba(27,38,80,.65);
+      border:1px solid rgba(34,48,91,.9);
+      color:var(--muted);
+      white-space:nowrap;
+    }
+    .tag.level-Critical{border-color:rgba(251,113,133,.65); color:#ffd0d7}
+    .tag.level-High{border-color:rgba(251,191,36,.65); color:#ffe9b0}
+    .tag.level-Medium{border-color:rgba(122,162,255,.65); color:#dbe6ff}
+    .tag.level-Low{border-color:rgba(74,222,128,.55); color:#d0ffe2}
+    .tag.level-Info{border-color:rgba(169,180,223,.55); color:rgba(169,180,223,.95)}
+    .body{
+      padding:16px;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+    }
+    .section{
+      background:rgba(18,28,58,.35);
+      border:1px solid rgba(34,48,91,.75);
+      border-radius:16px;
+      padding:14px;
+    }
+    .section h2{
+      margin:0 0 10px;
+      font-size:14px;
+      letter-spacing:.1px;
+    }
+    .ruleReason{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.65;
+      white-space:pre-wrap;
+    }
+    .infoSources{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.5;
+    }
+    .infoSourceRow{
+      margin:0;
+      padding:0;
+    }
+    .infoSourceRow + .infoSourceRow{
+      margin-top:2px;
+    }
+
+    /* --- summary_html styles (OpenAI output uses h4/p/ul/li/strong/code/br) --- */
+    .summary h4{
+      margin:14px 0 8px;
+      font-size:13px;
+      letter-spacing:.1px;
+      padding-left:10px;
+      border-left:3px solid rgba(122,162,255,.65);
+      color: rgba(231,236,255,.95);
+    }
+    .summary p{margin:8px 0; color:rgba(231,236,255,.92); line-height:1.75}
+    .summary ul, .summary ol{margin:8px 0 8px 1.2em; padding:0}
+    .summary li{margin:6px 0; color:rgba(231,236,255,.92); line-height:1.7}
+    .summary strong{
+      color:var(--text);
+      font-weight:750;
+      padding:0 .2em;
+      border-radius:8px;
+      background: linear-gradient(transparent 60%, rgba(122,162,255,.22) 60%);
+    }
+    .summary code{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 8px;
+      background: rgba(11,16,32,.6);
+      border: 1px solid rgba(34,48,91,.85);
+      color: rgba(231,236,255,.95);
+      white-space: nowrap;
+    }
+
+    .terms{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:10px;
+    }
+    @media (max-width: 860px){
+      .terms{grid-template-columns: 1fr}
+    }
+    .termCard{
+      background:rgba(11,16,32,.45);
+      border:1px solid rgba(34,48,91,.85);
+      border-radius:14px;
+      padding:12px;
+      min-width:0;
+    }
+    .termCard .term{
+      font-weight:700;
+      font-size:13px;
+      margin:0 0 8px;
+      word-break:break-word;
+    }
+    .termCard .exp{
+      margin:0;
+      color:rgba(231,236,255,.9);
+      line-height:1.7;
+      font-size:12px;
+      white-space:pre-wrap;
+    }
+    .subSectionTitle{
+      margin:16px 0 8px;
+      font-size:12px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:var(--muted);
+    }
+    .deepDive{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:10px;
+      margin-top:8px;
+    }
+    .deepDiveCard{
+      background:rgba(12,20,38,.6);
+    }
+
+    .footer{
+      margin-top:14px;
+      color:rgba(169,180,223,.75);
+      font-size:12px;
+      line-height:1.7;
+      text-align:center;
+    }
+    .btnRow{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px}
+    .linkbtn{
+      text-decoration:none;
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .linkbtn:hover{border-color:rgba(122,162,255,.65)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="crumb">
+        <!-- ../index.html は通常 "../index.html" でOK -->
+        <a href="../index.html">← 日次トップへ戻る</a>
+      </div>
+      <div class="chip">entry_id <strong class="mono">46c3af3d3b66c1fe</strong></div>
+    </div>
+
+    <div class="panel">
+      <div class="head">
+        <h1>China-Linked Hackers Exploited BeyondTrust Zero-Day to Take Over Remote Support Servers</h1>
+
+        <div class="meta">
+          <span>🗞️ The Hacker News</span>
+          <span>🕒 2026-10-16T15:55:55+09:00</span>
+          <span>🔗 <a href="https://thehackernews.com/2026/10/china-linked-hackers-exploited.html" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
+        </div>
+
+        <div class="tags">
+          <span class="tag level-High">Impact: High</span>
+          <span class="tag">Zero-day</span>
+        </div>
+
+        <div class="btnRow">
+          <a class="linkbtn" href="https://thehackernews.com/2026/10/china-linked-hackers-exploited.html" target="_blank" rel="noopener noreferrer">原文リンク</a>
+          <a class="linkbtn" href="https://www.notifyhub.site/digest/2026/10/17/">日次トップ</a>
+        </div>
+      </div>
+
+      <div class="body">
+        
+        <div class="section">
+          <h2>Impact判定理由</h2>
+          <div class="ruleReason">ゼロデイ悪用が報じられ、CVSS 9.3の脆弱性がリモートサポート基盤の乗っ取りに結び付く場合、管理対象へ被害が広がるおそれがある。
+実際の悪用は重要なシグナルだが、提示情報では攻撃条件や自組織への該当性が不明。メディア記事のため上乗せ補正は行わず、一次情報で確認する前提でHighとする。</div>
+        </div>
+        <div class="section summary">
+          <h2>🧾 要約（ChatGPT / gpt-6-luna）</h2>
+          <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
+          <div><h4>概要</h4><p>中国と関連するサイバー諜報グループ「Armory Castle」（旧称 UNC5221、Warp Panda）が、BeyondTrust Remote Supportの脆弱性を修正前のゼロデイとして悪用したと報じられた。悪用は2026年8月下旬に確認されたとされ、記事タイトルはリモートサポートサーバーの乗っ取りを伝えている。対象は内部メッセージング機能における送信元検証の不備で、CVE-2026-102764として追跡され、CVSSは9.3とされるが、提示された要約だけでは具体的な攻撃条件や認証の要否を確認できない。リモートサポート基盤は、侵害されるとサポート対象機器へのアクセスや組織内の移動に悪用され得るため、単一サーバーの障害にとどまらず、管理対象の範囲に応じて影響が拡大する可能性がある。<strong>該当製品の稼働有無、外部公開状況、侵害の痕跡、修正情報は個別に確認する必要がある</strong>が、記事本文の提示範囲では侵入経路の詳細、影響を受ける版、被害組織、侵害後の操作は未確認となる。メディア記事に基づく情報のため、一次情報で悪用条件と対処策を照合しつつ、公開された管理画面やサポート経路を優先して調査する必要がある。</p></div>
+        </div>
+
+        <div class="section">
+          <h2>📌 キーワード解説</h2>
+          <div class="terms">
+            <div class="termCard">
+  <div class="term">ゼロデイ（Zero-day）</div>
+  <p class="exp">修正や防御が十分に行われる前に悪用された脆弱性を指す。未修正というだけの脆弱性とは異なり、実際の悪用情報が初動の優先度を押し上げる。</p>
+</div>
+<div class="termCard">
+  <div class="term">送信元検証（Origin validation）</div>
+  <p class="exp">要求が許可された送信元から来たかを確かめる処理。不備は認証突破と同義ではなく、攻撃成立に必要な条件や到達経路を別途確認する必要がある。</p>
+</div>
+<div class="termCard">
+  <div class="term">リモートサポート基盤</div>
+  <p class="exp">遠隔から利用者端末などを支援する管理機能を提供する仕組み。通常の業務サーバーと異なり、侵害時は接続先への操作権限が被害範囲を左右する。</p>
+</div>
+          </div>
+          <h3 class="subSectionTitle">深掘り解説</h3>
+          <div class="deepDive">
+            <div class="termCard deepDiveCard">
+  <div class="term">リモートサポート製品を管理面として評価する</div>
+  <p class="exp">リモートサポート製品は、単独の業務アプリケーションではなく、複数の端末へ操作を届ける管理面として扱う必要がある。侵害された場合の影響は、製品の脆弱性だけでなく、接続先の範囲、認証方式、セッション記録、ネットワーク分離によって変わる。したがって、製品名や脆弱性の点数だけで優先順位を決めず、「どの主体が、どの端末へ、どの経路で操作できるか」を資産情報と構成から確認する。
+
+例えば、サポートサーバーがインターネットから到達可能で、社内の多数の端末へ同じ管理経路で接続できる構成なら、外部公開を止めるだけでは不十分な場合がある。接続元制限や一時的な遮断を行い、管理者アカウントの不審な利用、認証設定や接続先一覧の変更、通常と異なる遠隔操作セッションを調べる。遮断は現場支援を止める可能性があるため、業務上必要な代替手段と例外を決めたうえで実施する。
+
+復旧時にはパッチ適用だけで完了とせず、認証情報やセッション用秘密情報の更新、永続化設定の確認、接続先端末の調査まで範囲に含める。侵害された管理面から正規機能を使って操作された場合、端末側の検知だけでは起点を特定できないことがあるため、製品側の操作履歴と端末側の記録を時刻で突き合わせる。</p>
+</div>
+          </div>
+        </div>
+
+        
+
+        <div class="section">
+          <h2>🕘 生成情報</h2>
+          <div class="ruleReason">
+対象期間：2026-10-16T06:00:00+09:00 〜 2026-10-17T06:00:00+09:00
+生成時刻：2026-10-17T06:26:34.884998+09:00
+免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      notifyhub.site
+    </div>
+  </div>
+</body>
+</html>

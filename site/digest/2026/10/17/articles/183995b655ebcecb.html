@@ -1,0 +1,327 @@
+<!-- article.html テンプレート（生成用） (例: /digest/YYYY/MM/DD/articles/<entry_id>.html)
+     サーバ側（Function）で {{...}} を置換して出力してください。
+-->
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/favicon-192.png" />
+  <title>楽天モバイルの複数のスマートフォンの Android Verified Boot 機能で既知のテスト用鍵がそのまま使用されている問題 | NotifyHub Cybersecurity Daily Report</title>
+  <style>
+    :root{
+      --bg:#0b1020; --panel:#0f1730; --panel2:#121c3a;
+      --text:#e7ecff; --muted:#a9b4df; --line:#22305b;
+      --accent:#7aa2ff; --good:#4ade80; --warn:#fbbf24; --bad:#fb7185;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+      --radius:18px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      background: radial-gradient(1000px 700px at 20% -10%, rgba(122,162,255,.25), transparent 60%),
+                  radial-gradient(900px 600px at 90% 10%, rgba(251,113,133,.12), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+    }
+    a{color:inherit}
+    .wrap{max-width:960px; margin:0 auto; padding:22px 18px 44px}
+    .topbar{
+      display:flex; justify-content:space-between; align-items:center; gap:12px;
+      margin-bottom:12px;
+    }
+    .crumb a{
+      text-decoration:none;
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .crumb a:hover{border-color:rgba(122,162,255,.65)}
+    .chip{
+      display:inline-flex; align-items:center; gap:8px;
+      background:rgba(27,38,80,.75);
+      border:1px solid rgba(34,48,91,.9);
+      padding:7px 10px; border-radius:999px;
+      font-size:12px; color:var(--muted);
+      backdrop-filter: blur(10px);
+      white-space:nowrap;
+    }
+    .chip strong{color:var(--text); font-weight:650}
+    .panel{
+      background: linear-gradient(180deg, rgba(15,23,48,.9), rgba(15,23,48,.75));
+      border:1px solid rgba(34,48,91,.9);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .head{
+      padding:16px 16px 12px;
+      border-bottom:1px solid rgba(34,48,91,.9);
+      background:rgba(18,28,58,.55);
+    }
+    h1{
+      margin:0;
+      font-size:20px;
+      line-height:1.35;
+      letter-spacing:.15px;
+    }
+    .meta{
+      margin-top:10px;
+      display:flex; gap:10px; flex-wrap:wrap;
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.6;
+    }
+    .meta a{color:var(--muted)}
+    .meta a:hover{color:var(--accent)}
+    .tags{
+      margin-top:12px;
+      display:flex; gap:8px; flex-wrap:wrap;
+    }
+    .tag{
+      font-size:11px;
+      padding:6px 9px;
+      border-radius:999px;
+      background:rgba(27,38,80,.65);
+      border:1px solid rgba(34,48,91,.9);
+      color:var(--muted);
+      white-space:nowrap;
+    }
+    .tag.level-Critical{border-color:rgba(251,113,133,.65); color:#ffd0d7}
+    .tag.level-High{border-color:rgba(251,191,36,.65); color:#ffe9b0}
+    .tag.level-Medium{border-color:rgba(122,162,255,.65); color:#dbe6ff}
+    .tag.level-Low{border-color:rgba(74,222,128,.55); color:#d0ffe2}
+    .tag.level-Info{border-color:rgba(169,180,223,.55); color:rgba(169,180,223,.95)}
+    .body{
+      padding:16px;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+    }
+    .section{
+      background:rgba(18,28,58,.35);
+      border:1px solid rgba(34,48,91,.75);
+      border-radius:16px;
+      padding:14px;
+    }
+    .section h2{
+      margin:0 0 10px;
+      font-size:14px;
+      letter-spacing:.1px;
+    }
+    .ruleReason{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.65;
+      white-space:pre-wrap;
+    }
+    .infoSources{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.5;
+    }
+    .infoSourceRow{
+      margin:0;
+      padding:0;
+    }
+    .infoSourceRow + .infoSourceRow{
+      margin-top:2px;
+    }
+
+    /* --- summary_html styles (OpenAI output uses h4/p/ul/li/strong/code/br) --- */
+    .summary h4{
+      margin:14px 0 8px;
+      font-size:13px;
+      letter-spacing:.1px;
+      padding-left:10px;
+      border-left:3px solid rgba(122,162,255,.65);
+      color: rgba(231,236,255,.95);
+    }
+    .summary p{margin:8px 0; color:rgba(231,236,255,.92); line-height:1.75}
+    .summary ul, .summary ol{margin:8px 0 8px 1.2em; padding:0}
+    .summary li{margin:6px 0; color:rgba(231,236,255,.92); line-height:1.7}
+    .summary strong{
+      color:var(--text);
+      font-weight:750;
+      padding:0 .2em;
+      border-radius:8px;
+      background: linear-gradient(transparent 60%, rgba(122,162,255,.22) 60%);
+    }
+    .summary code{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 8px;
+      background: rgba(11,16,32,.6);
+      border: 1px solid rgba(34,48,91,.85);
+      color: rgba(231,236,255,.95);
+      white-space: nowrap;
+    }
+
+    .terms{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:10px;
+    }
+    @media (max-width: 860px){
+      .terms{grid-template-columns: 1fr}
+    }
+    .termCard{
+      background:rgba(11,16,32,.45);
+      border:1px solid rgba(34,48,91,.85);
+      border-radius:14px;
+      padding:12px;
+      min-width:0;
+    }
+    .termCard .term{
+      font-weight:700;
+      font-size:13px;
+      margin:0 0 8px;
+      word-break:break-word;
+    }
+    .termCard .exp{
+      margin:0;
+      color:rgba(231,236,255,.9);
+      line-height:1.7;
+      font-size:12px;
+      white-space:pre-wrap;
+    }
+    .subSectionTitle{
+      margin:16px 0 8px;
+      font-size:12px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:var(--muted);
+    }
+    .deepDive{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:10px;
+      margin-top:8px;
+    }
+    .deepDiveCard{
+      background:rgba(12,20,38,.6);
+    }
+
+    .footer{
+      margin-top:14px;
+      color:rgba(169,180,223,.75);
+      font-size:12px;
+      line-height:1.7;
+      text-align:center;
+    }
+    .btnRow{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px}
+    .linkbtn{
+      text-decoration:none;
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .linkbtn:hover{border-color:rgba(122,162,255,.65)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="crumb">
+        <!-- ../index.html は通常 "../index.html" でOK -->
+        <a href="../index.html">← 日次トップへ戻る</a>
+      </div>
+      <div class="chip">entry_id <strong class="mono">183995b655ebcecb</strong></div>
+    </div>
+
+    <div class="panel">
+      <div class="head">
+        <h1>楽天モバイルの複数のスマートフォンの Android Verified Boot 機能で既知のテスト用鍵がそのまま使用されている問題</h1>
+
+        <div class="meta">
+          <span>🗞️ ScanNetSecurity</span>
+          <span>🕒 2026-10-16T08:00:18+09:00</span>
+          <span>🔗 <a href="https://scan.netsecurity.ne.jp/article/2026/10/16/56473.html" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
+        </div>
+
+        <div class="tags">
+          <span class="tag level-Medium">Impact: Medium</span>
+          <span class="tag">Vulnerability</span>
+        </div>
+
+        <div class="btnRow">
+          <a class="linkbtn" href="https://scan.netsecurity.ne.jp/article/2026/10/16/56473.html" target="_blank" rel="noopener noreferrer">原文リンク</a>
+          <a class="linkbtn" href="https://www.notifyhub.site/digest/2026/10/17/">日次トップ</a>
+        </div>
+      </div>
+
+      <div class="body">
+        
+        <div class="section">
+          <h2>Impact判定理由</h2>
+          <div class="ruleReason">既知のテスト用鍵が信頼対象なら、改変イメージの署名を偽装され、端末上で高権限の持続化につながるおそれがある。ただし書き込み等の成立条件があり、対象機種や悪用状況は不明。
+情報源はメディア記事で、入力には参照先や一次情報がないため、二次情報として評価を据え置き、影響範囲を限定できない点を考慮した。</div>
+        </div>
+        <div class="section summary">
+          <h2>🧾 要約（ChatGPT / gpt-6-luna）</h2>
+          <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
+          <h4>概要</h4><p>ScanNetSecurityの記事タイトルによると、楽天モバイルの複数のスマートフォンで、Android Verified Boot（AVB）に既知のテスト用鍵が使われている問題が取り上げられている。AVBは起動時にシステム領域などの改変を検証する仕組みであり、端末がその鍵を信頼している場合、対応する秘密鍵を持つ攻撃者が作成した改変イメージも検証を通過するおそれがある。一般にテスト用鍵は本番製品向けの秘密管理を前提としないため、鍵が広く入手可能なら、攻撃者が起動イメージを署名できる点が問題になる。ただし実際の侵害には、端末へのイメージ書き込みや起動経路への介入が必要となる場合があり、鍵の使用だけで遠隔侵入が成立するとは限らない。改変イメージが起動すれば、端末内のデータ窃取や高権限での持続化につながり得る一方、影響する機種・ソフトウェア版、攻撃成立条件、悪用の確認状況、修正の有無は入力情報から確認できない。機種別の対象確認に加え、ブートローダーの状態や更新状況を調べ、現時点で影響範囲を断定しないことが重要になる。</p>
+        </div>
+
+        <div class="section">
+          <h2>📌 キーワード解説</h2>
+          <div class="terms">
+            <div class="termCard">
+  <div class="term">Android Verified Boot（AVB、Android検証済み起動）</div>
+  <p class="exp">起動時にシステムイメージの署名や改変を検証する仕組み。アプリ署名とは異なり、OS起動前の完全性を扱う。</p>
+</div>
+<div class="termCard">
+  <div class="term">テスト用鍵</div>
+  <p class="exp">開発・検証向けに使う鍵で、本番用の秘密管理を前提としない。固有の本番鍵と異なり、既知なら第三者が署名を偽装できるおそれがある。</p>
+</div>
+<div class="termCard">
+  <div class="term">ブートローダー</div>
+  <p class="exp">OS起動前に起動イメージを読み込む部位。ロック状態は書き込みを制限するが、信頼する鍵自体が不適切なら検証の意味が弱まる。</p>
+</div>
+          </div>
+          <h3 class="subSectionTitle">深掘り解説</h3>
+          <div class="deepDive">
+            <div class="termCard deepDiveCard">
+  <div class="term">署名検証の強さは、信頼する鍵の管理で決まる</div>
+  <p class="exp">署名検証は、イメージが信頼できる鍵で作られたことを確認する仕組みであり、鍵の出所や管理まで自動的に保証するものではない。検証側が公開済みのテスト鍵を信頼していれば、攻撃者も同じ鍵で署名した改変イメージを正規品として受け入れさせられる可能性がある。
+
+例えば、端末の起動領域がテスト鍵で署名されており、攻撃者が端末を物理的に入手してイメージを書き換えられるなら、改変後も起動検証を通過し、利用者に気づかれず高権限のコードを動かす足掛かりになり得る。ここでは「鍵が既知であること」と「遠隔から書き換えられること」を分けて評価する必要がある。前者は署名の信頼性を損ない、後者は実際の侵入経路を左右する。
+
+運用側は、機種・ソフトウェア版ごとに信頼鍵とブートローダー状態を確認し、ベンダーの修正情報と照合する。修正ではイメージの再署名だけでなく、端末が信頼する鍵の変更や旧鍵の失効が必要となる場合もあるため、更新適用後に鍵の切り替えと起動検証の状態まで確認することが重要になる。</p>
+</div>
+          </div>
+        </div>
+
+        
+
+        <div class="section">
+          <h2>🕘 生成情報</h2>
+          <div class="ruleReason">
+対象期間：2026-10-16T06:00:00+09:00 〜 2026-10-17T06:00:00+09:00
+生成時刻：2026-10-17T06:26:34.884998+09:00
+免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      notifyhub.site
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,323 @@
+<!-- article.html テンプレート（生成用） (例: /digest/YYYY/MM/DD/articles/<entry_id>.html)
+     サーバ側（Function）で {{...}} を置換して出力してください。
+-->
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/favicon-192.png" />
+  <title>AI Decision Models and Their Impact on AI SOC Platforms | NotifyHub Cybersecurity Daily Report</title>
+  <style>
+    :root{
+      --bg:#0b1020; --panel:#0f1730; --panel2:#121c3a;
+      --text:#e7ecff; --muted:#a9b4df; --line:#22305b;
+      --accent:#7aa2ff; --good:#4ade80; --warn:#fbbf24; --bad:#fb7185;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+      --radius:18px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      background: radial-gradient(1000px 700px at 20% -10%, rgba(122,162,255,.25), transparent 60%),
+                  radial-gradient(900px 600px at 90% 10%, rgba(251,113,133,.12), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+    }
+    a{color:inherit}
+    .wrap{max-width:960px; margin:0 auto; padding:22px 18px 44px}
+    .topbar{
+      display:flex; justify-content:space-between; align-items:center; gap:12px;
+      margin-bottom:12px;
+    }
+    .crumb a{
+      text-decoration:none;
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .crumb a:hover{border-color:rgba(122,162,255,.65)}
+    .chip{
+      display:inline-flex; align-items:center; gap:8px;
+      background:rgba(27,38,80,.75);
+      border:1px solid rgba(34,48,91,.9);
+      padding:7px 10px; border-radius:999px;
+      font-size:12px; color:var(--muted);
+      backdrop-filter: blur(10px);
+      white-space:nowrap;
+    }
+    .chip strong{color:var(--text); font-weight:650}
+    .panel{
+      background: linear-gradient(180deg, rgba(15,23,48,.9), rgba(15,23,48,.75));
+      border:1px solid rgba(34,48,91,.9);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .head{
+      padding:16px 16px 12px;
+      border-bottom:1px solid rgba(34,48,91,.9);
+      background:rgba(18,28,58,.55);
+    }
+    h1{
+      margin:0;
+      font-size:20px;
+      line-height:1.35;
+      letter-spacing:.15px;
+    }
+    .meta{
+      margin-top:10px;
+      display:flex; gap:10px; flex-wrap:wrap;
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.6;
+    }
+    .meta a{color:var(--muted)}
+    .meta a:hover{color:var(--accent)}
+    .tags{
+      margin-top:12px;
+      display:flex; gap:8px; flex-wrap:wrap;
+    }
+    .tag{
+      font-size:11px;
+      padding:6px 9px;
+      border-radius:999px;
+      background:rgba(27,38,80,.65);
+      border:1px solid rgba(34,48,91,.9);
+      color:var(--muted);
+      white-space:nowrap;
+    }
+    .tag.level-Critical{border-color:rgba(251,113,133,.65); color:#ffd0d7}
+    .tag.level-High{border-color:rgba(251,191,36,.65); color:#ffe9b0}
+    .tag.level-Medium{border-color:rgba(122,162,255,.65); color:#dbe6ff}
+    .tag.level-Low{border-color:rgba(74,222,128,.55); color:#d0ffe2}
+    .tag.level-Info{border-color:rgba(169,180,223,.55); color:rgba(169,180,223,.95)}
+    .body{
+      padding:16px;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+    }
+    .section{
+      background:rgba(18,28,58,.35);
+      border:1px solid rgba(34,48,91,.75);
+      border-radius:16px;
+      padding:14px;
+    }
+    .section h2{
+      margin:0 0 10px;
+      font-size:14px;
+      letter-spacing:.1px;
+    }
+    .ruleReason{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.65;
+      white-space:pre-wrap;
+    }
+    .infoSources{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.5;
+    }
+    .infoSourceRow{
+      margin:0;
+      padding:0;
+    }
+    .infoSourceRow + .infoSourceRow{
+      margin-top:2px;
+    }
+
+    /* --- summary_html styles (OpenAI output uses h4/p/ul/li/strong/code/br) --- */
+    .summary h4{
+      margin:14px 0 8px;
+      font-size:13px;
+      letter-spacing:.1px;
+      padding-left:10px;
+      border-left:3px solid rgba(122,162,255,.65);
+      color: rgba(231,236,255,.95);
+    }
+    .summary p{margin:8px 0; color:rgba(231,236,255,.92); line-height:1.75}
+    .summary ul, .summary ol{margin:8px 0 8px 1.2em; padding:0}
+    .summary li{margin:6px 0; color:rgba(231,236,255,.92); line-height:1.7}
+    .summary strong{
+      color:var(--text);
+      font-weight:750;
+      padding:0 .2em;
+      border-radius:8px;
+      background: linear-gradient(transparent 60%, rgba(122,162,255,.22) 60%);
+    }
+    .summary code{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 8px;
+      background: rgba(11,16,32,.6);
+      border: 1px solid rgba(34,48,91,.85);
+      color: rgba(231,236,255,.95);
+      white-space: nowrap;
+    }
+
+    .terms{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:10px;
+    }
+    @media (max-width: 860px){
+      .terms{grid-template-columns: 1fr}
+    }
+    .termCard{
+      background:rgba(11,16,32,.45);
+      border:1px solid rgba(34,48,91,.85);
+      border-radius:14px;
+      padding:12px;
+      min-width:0;
+    }
+    .termCard .term{
+      font-weight:700;
+      font-size:13px;
+      margin:0 0 8px;
+      word-break:break-word;
+    }
+    .termCard .exp{
+      margin:0;
+      color:rgba(231,236,255,.9);
+      line-height:1.7;
+      font-size:12px;
+      white-space:pre-wrap;
+    }
+    .subSectionTitle{
+      margin:16px 0 8px;
+      font-size:12px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:var(--muted);
+    }
+    .deepDive{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:10px;
+      margin-top:8px;
+    }
+    .deepDiveCard{
+      background:rgba(12,20,38,.6);
+    }
+
+    .footer{
+      margin-top:14px;
+      color:rgba(169,180,223,.75);
+      font-size:12px;
+      line-height:1.7;
+      text-align:center;
+    }
+    .btnRow{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px}
+    .linkbtn{
+      text-decoration:none;
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .linkbtn:hover{border-color:rgba(122,162,255,.65)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="crumb">
+        <!-- ../index.html は通常 "../index.html" でOK -->
+        <a href="../index.html">← 日次トップへ戻る</a>
+      </div>
+      <div class="chip">entry_id <strong class="mono">3f4b5bc8b8988ee2</strong></div>
+    </div>
+
+    <div class="panel">
+      <div class="head">
+        <h1>AI Decision Models and Their Impact on AI SOC Platforms</h1>
+
+        <div class="meta">
+          <span>🗞️ The Hacker News</span>
+          <span>🕒 2026-10-16T20:30:00+09:00</span>
+          <span>🔗 <a href="https://thehackernews.com/2026/10/ai-decision-models-and-their-impact-on.html" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
+        </div>
+
+        <div class="tags">
+          <span class="tag level-Info">Impact: Info</span>
+          <span class="tag">Other</span>
+        </div>
+
+        <div class="btnRow">
+          <a class="linkbtn" href="https://thehackernews.com/2026/10/ai-decision-models-and-their-impact-on.html" target="_blank" rel="noopener noreferrer">原文リンク</a>
+          <a class="linkbtn" href="https://www.notifyhub.site/digest/2026/10/17/">日次トップ</a>
+        </div>
+      </div>
+
+      <div class="body">
+        
+        <div class="section">
+          <h2>Impact判定理由</h2>
+          <div class="ruleReason">新しい判断モデルやAPIの発表はSOC自動化に影響し得るが、実際の侵害、悪用、導入実績は入力情報から確認できず、直ちに対応を要する技術的影響は限定的。
+The Hacker Newsの二次報道で、記事要約も途中で切れているため、追加の重要度補正は行わず情報共有レベルとする。</div>
+        </div>
+        <div class="section summary">
+          <h2>🧾 要約（ChatGPT / gpt-6-luna）</h2>
+          <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
+          <h4>概要</h4><p>記事は、AIの判断を担う新しい種類のモデルが短期間に相次いで発表された動きを取り上げている。TypeSafe AIは9月15日にJevを公開し、直感的で速い思考になぞらえて「System One」モデルと位置付けたほか、OpenAIはDevDayでDecisions APIを発表し、10月6日に公開ベータを開始した。Criblはローカル環境で実行できるLoRAアダプター「cribl-decision」を公開しており、記事の要約にはLayaなど他の動きも触れられているが、記述は途中で切れている。SOCでこうしたモデルをアラートの優先順位付けや対応判断に使う場合、攻撃者が入力データや指示を操作できれば、誤った判定を誘発し、調査の遅延や不要な封じ込めにつながる可能性がある。ただし、この記事の情報からは、これらの製品が実際にSOCへ統合されたか、攻撃や誤判定が確認されたかは分からず、具体的な機能や精度も未確認となる。組織への影響はモデル名よりも、参照データの範囲、実行権限、人間の承認要否、判断履歴を監査できるかで変わるため、導入済み製品の有無と自動実行の境界を先に確認する必要がある。</p>
+        </div>
+
+        <div class="section">
+          <h2>📌 キーワード解説</h2>
+          <div class="terms">
+            <div class="termCard">
+  <div class="term">System One（システム1）</div>
+  <p class="exp">直感的で速い思考を指す比喩で、記事ではJevの位置付けに使われる。人間の認知概念であり、モデルの精度や安全性を保証する名称ではない。</p>
+</div>
+<div class="termCard">
+  <div class="term">LoRAアダプター</div>
+  <p class="exp">基盤モデル全体ではなく追加部分を学習・適用する方式。モデル本体の更新とは異なり、差し替えたアダプターの由来や設定管理が重要になる。</p>
+</div>
+<div class="termCard">
+  <div class="term">Decisions API</div>
+  <p class="exp">記事ではOpenAIが公開ベータを始めた判断機能のAPIとして紹介される。名称だけでは自動実行の有無やSOC向け機能までは確認できない。</p>
+</div>
+          </div>
+          <h3 class="subSectionTitle">深掘り解説</h3>
+          <div class="deepDive">
+            <div class="termCard deepDiveCard">
+  <div class="term">判断モデルをSOCに組み込む際の権限境界</div>
+  <p class="exp">SOCで判断モデルを使う際は、モデルの回答品質だけでなく、その回答が次に何を実行できるかを分けて評価する。アラートの要約や優先順位付けに使う段階と、端末隔離、アカウント停止、遮断設定の変更まで自動化する段階では、誤判定の影響が大きく異なる。例えば、侵害を示すログの一部が欠けた状態でモデルが低リスクと判定しても、調査チケットの作成にとどめれば被害を限定できる一方、対応を自動終了させれば見逃しが長期化する可能性がある。導入時は、モデルの入力元と変更可能な設定を棚卸しし、重要な操作には人間の承認を要求する。さらに、入力、出力、実行した操作、承認者を同じ事案の記録として追跡できるようにする。誤判定率だけでなく、権限の範囲と取り消し手段を含めて段階的に運用を広げることが、判断支援と自動対応を混同しないための要点となる。</p>
+</div>
+          </div>
+        </div>
+
+        
+
+        <div class="section">
+          <h2>🕘 生成情報</h2>
+          <div class="ruleReason">
+対象期間：2026-10-16T06:00:00+09:00 〜 2026-10-17T06:00:00+09:00
+生成時刻：2026-10-17T06:26:34.884998+09:00
+免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      notifyhub.site
+    </div>
+  </div>
+</body>
+</html>
