@@ -1,0 +1,137 @@
+{
+  "date": "2026-10-18",
+  "window": {
+    "from": "2026-10-17T06:00:00+09:00",
+    "to": "2026-10-18T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 2
+  },
+  "generated_at_jst": "2026-10-18T06:17:59.841556+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "中国がAI・半導体など40技術の輸出規制案を公表",
+      "source_name": "Reuters",
+      "published_at": "2026-10-16T08:31:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要中国商務省などが10月16日、AI大規模モデルやエージェント、計算クラスタ、半導体設計などを含む40技術の輸出禁止・制限カタログ改訂案を公表した。AI関連は23項目で、一定規模以上のモデル重みやソースコードの海外移転が対象となり、APIやSaaS経由の提供は除外される。意見募集は11月15日までで、暫定的な事前登録義務も即時適用された。グローバルなIT…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://www.reuters.com/world/asia-pacific/china-proposes-adding-40-ai-biotech-solar-technologies-export-control-list-2026-10-16/",
+      "selection_reason": "政策・サプライチェーンに直結する具体的な規制案で、単なる予測ではなく実務判断に影響する新規性があり、AI製品や脆弱性話題と領域が異なり日次の多様性を確保できるため選んだ",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "China proposes adding 40 AI, biotech, solar technologies to export control list",
+          "url": "https://www.reuters.com/world/asia-pacific/china-proposes-adding-40-ai-biotech-solar-technologies-export-control-list-2026-10-16/",
+          "source_type": "news"
+        },
+        {
+          "title": "China moves to curb tech exports, including AI",
+          "url": "https://www.washingtonpost.com/business/2026/10/16/china-export-restrictions-ai-chips-solar-us/216d5918-c95c-11f1-aefb-abe4112d087e_story.html",
+          "source_type": "news"
+        },
+        {
+          "title": "BREAKING | CHINA MOVES TO RESTRICT AI AND SEMICONDUCTOR TECHNOLOGY EXPORTS",
+          "url": "https://x.com/Cryptocratico/status/2111549213976711293",
+          "source_type": "x"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "ClaudeがNIST楕円曲線シードの25年謎を30分未満で解明",
+      "source_name": "Anthropic",
+      "published_at": "2026-10-16T17:02:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Other",
+      "summary_preview": "概要Anthropicが10月16日、内部Claude研究モデルがNISTのP-192〜P-521楕円曲線シード起源を30分未満で特定したと発表した。1990年代のCライブラリlrand48をUnixタイムスタンプで初期化した出力で、バックドア疑惑を大幅に弱める結果となった。曲線自体の脆弱性や攻撃手法ではなく、生成過程の再現に成功した点がポイント。暗号標準…",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://www.anthropic.com/research/ecdsa-curve-origins",
+      "selection_reason": "AIモデルの研究能力を示す具体的な成果で、製品発表や規制と異なり暗号・科学研究の切り口を持ち、実務理解と分野多様性に寄与するため優先した",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "Claude reveals ECDSA curve origins",
+          "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
+          "source_type": "official"
+        },
+        {
+          "title": "Claude Cracks a 25-Year Cryptography Mystery",
+          "url": "https://www.bitdoze.com/news/2026-10-17/",
+          "source_type": "news"
+        },
+        {
+          "title": "Anthropics' Claude cracks a 25-year-old NSA cryptography mystery",
+          "url": "https://the-decoder.com/anthropics-claude-cracks-a-25-year-old-nsa-cryptography-mystery-in-under-30-minutes/",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "BeyondTrust Remote Supportのゼロデイが中国系APTに悪用",
+      "source_name": "BeyondTrust",
+      "published_at": "2026-10-16T12:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Zero-day",
+      "summary_preview": "概要BeyondTrustがRemote SupportのCVE-2026-102764（CVSS 9.3）を開示した。中国系APT「Armory Castle」が8月末からゼロデイとして悪用し、ファイル操作からroot化、資格情報窃取、横展開を実施した。SaaSは自動パッチ済みだがセルフホストは即時適用が必要。エッジリモート支援機器が踏み台になる典型事例…",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://www.beyondtrust.com/blog/entry/bt26-05",
+      "selection_reason": "エッジ機器の実害あるゼロデイ悪用でパッチ緊急度が高く、ITトレンドやAI研究と領域が異なり、セキュリティ実務への即時影響が最大のため選んだ",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "ARMORY CASTLE and BT26-05: What Security Teams Need to Know",
+          "url": "https://www.beyondtrust.com/blog/entry/bt26-05",
+          "source_type": "official"
+        },
+        {
+          "title": "Chinese APT Exploited BeyondTrust Vulnerability as Zero-Day",
+          "url": "https://www.securityweek.com/chinese-apt-exploited-beyondtrust-vulnerability-as-zero-day/",
+          "source_type": "news"
+        },
+        {
+          "title": "BeyondTrust RSのゼロデイは、侵入後の手口こそ本題",
+          "url": "https://x.com/iss_kk_official/status/2111237572290826466",
+          "source_type": "x"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "ff1c23ec5a93528b",
+      "title": "MALFEX npm Package 'imgdecode' Hides Shellcode Loader in Windows Native Addon",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-17T11:11:56+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要The Hacker Newsは、MALFEXと呼ばれるソフトウェアサプライチェーン攻撃の一環として、悪性npmパッケージ「imgdecode」が確認されたと報じた。記事によれば、2026年9月30日に公開され、報道時点で979回ダウンロードされており、npm上で引き続き入手可能だった。パッケージはWindows向けネイティブアドオン内にシェルコードロ…",
+      "article_path": "articles/ff1c23ec5a93528b.html",
+      "original_url": "https://thehackernews.com/2026/10/malfex-npm-package-imgdecode-hides.html"
+    },
+    {
+      "entry_id": "b982e04808efb772",
+      "title": "Hackers Use Compromised ConnectWise Credential to Sign In to 173 Microsoft 365 Tenants",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-17T06:16:46+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要ConnectWise Cloud Backup（旧SkyKick）に関連するMicrosoft 365の認証情報が侵害され、攻撃者がそれを使って顧客のMicrosoft 365環境へ不正ログインした活動が報告され、記事では173テナントへのアクセスが取り上げられている。MSP向けバックアップサービスに結び付く認証情報が悪用された点から、個別利用者の侵…",
+      "article_path": "articles/b982e04808efb772.html",
+      "original_url": "https://thehackernews.com/2026/10/hackers-use-compromised-connectwise.html"
+    }
+  ]
+}
