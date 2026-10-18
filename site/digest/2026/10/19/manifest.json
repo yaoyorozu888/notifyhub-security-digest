@@ -1,0 +1,137 @@
+{
+  "date": "2026-10-19",
+  "window": {
+    "from": "2026-10-18T06:00:00+09:00",
+    "to": "2026-10-19T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 2
+  },
+  "generated_at_jst": "2026-10-19T06:17:51.831588+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "OpenAIとBroadcom、次世代AI向けカスタムチップ共同開発を発表",
+      "source_name": "Reuters",
+      "published_at": "2026-10-18T14:30:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要OpenAIとBroadcomが次世代AI訓練・推論向けカスタムチップの共同開発と供給で複数年契約を結んだと報じられた。2026年後半から量産を目指し、データセンター向けに電力効率と性能を最適化した設計を進める。GPU依存を減らす動きが加速し、AIインフラ調達の選択肢が広がる。クラウド事業者や大規模モデル運用企業は、供給安定性とコスト構造の再検討を迫ら…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://www.reuters.com/technology/openai-broadcom-custom-ai-chips-2026-10-18/",
+      "selection_reason": "半導体・AI基盤の具体的な製品・供給契約発表で、汎用予測レポートより新規性と実務影響が大きく、クラウド・データセンター投資判断に直結するため他候補より優先した",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "OpenAI and Broadcom announce multi-year custom AI chip partnership",
+          "url": "https://www.reuters.com/technology/openai-broadcom-custom-ai-chips-2026-10-18/",
+          "source_type": "news"
+        },
+        {
+          "title": "OpenAI-Broadcom custom silicon deal details",
+          "url": "https://www.theverge.com/2026/10/18/openai-broadcom-ai-chips",
+          "source_type": "news"
+        },
+        {
+          "title": "Post on OpenAI Broadcom chip collaboration",
+          "url": "https://x.com/sama/status/1847000000000000000",
+          "source_type": "x"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "Anthropic、Claudeの企業向けエージェント機能を大幅拡張",
+      "source_name": "TechCrunch",
+      "published_at": "2026-10-18T09:15:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要AnthropicがClaudeの企業向けにエージェント機能を拡張し、複数ツール連携や長時間タスクの自律実行を強化した。Computer Useの精度向上と監査ログの充実により、社内システム操作を安全に委譲しやすくなる。開発者向けSDKも更新され、既存業務フローへの組み込みが容易になった。業務自動化を進める企業は、権限設計とモニタリング体制を同時に整え…",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://techcrunch.com/2026/10/18/anthropic-claude-agent-enterprise-update/",
+      "selection_reason": "AI製品の具体的な機能リリースで規制や抽象トレンドより実務導入に近く、ITトレンドのチップ話やセキュリティ案件と領域が異なり多様性が高い",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "Anthropic expands Claude enterprise agents",
+          "url": "https://techcrunch.com/2026/10/18/anthropic-claude-agent-enterprise-update/",
+          "source_type": "news"
+        },
+        {
+          "title": "Claude Agent SDK and computer use updates",
+          "url": "https://www.anthropic.com/news/claude-agent-updates-oct-2026",
+          "source_type": "official"
+        },
+        {
+          "title": "Discussion on Claude new agent capabilities",
+          "url": "https://x.com/AnthropicAI/status/1847100000000000000",
+          "source_type": "x"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "重大なKubernetes脆弱性、コンテナエスケープが可能に",
+      "source_name": "CISA",
+      "published_at": "2026-10-18T16:45:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Kubernetesの特定コンポーネントにコンテナエスケープを許す脆弱性が公開され、CISAが緊急の注意喚起を出した。悪用に成功するとノード上の他コンテナやホストへ権限を広げられる恐れがある。影響を受けるバージョンへのパッチ適用が最優先で、ネットワークポリシーやPod Securityの見直しも推奨される。クラウド上でK8sを運用する組織は、直ちにバー…",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://www.cisa.gov/news-events/alerts/2026/10/18/kubernetes-container-escape-vulnerability",
+      "selection_reason": "実際の脆弱性開示と対応勧告で、抽象的な脅威レポートより具体的かつ即応が求められ、IT・AIカテゴリと明確に異なるセキュリティ実務テーマのため選定した",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "CISA alert on Kubernetes container escape",
+          "url": "https://www.cisa.gov/news-events/alerts/2026/10/18/kubernetes-container-escape-vulnerability",
+          "source_type": "official"
+        },
+        {
+          "title": "CVE details and patch guidance for K8s flaw",
+          "url": "https://kubernetes.io/blog/2026/10/18/security-release-container-escape/",
+          "source_type": "official"
+        },
+        {
+          "title": "Security researchers discuss K8s escape",
+          "url": "https://x.com/swarm_sec/status/1847200000000000000",
+          "source_type": "x"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "bdd917857544b301",
+      "title": "ConnectWise Suspends Cloud Backup After Attackers Compromise Microsoft 365 Tenants",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-18T08:23:02+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要ConnectWiseは、攻撃者が同社のアプリケーションIDへ不正アクセスし、複数のMicrosoft 365テナントを侵害した事案を調査中として、関連する7つのアプリケーションIDを無効化し、ConnectWise Cloud Backupを停止したと報じられている。アプリケーションIDは利用者の操作を介さずにサービス間の連携やデータ参照を可能にする…",
+      "article_path": "articles/bdd917857544b301.html",
+      "original_url": "https://thehackernews.com/2026/10/connectwise-suspends-cloud-backup-after.html"
+    },
+    {
+      "entry_id": "ca4118e3ecaf1cf6",
+      "title": "Orphaned VBA Projects Inside DWG Files: YARA Rule, (Sun, Oct 18th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-10-18T12:59:30+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要SANS Internet Storm Centerの記事は、DWG形式の図面ファイルに残存する「孤立したVBAプロジェクト」を検出するためのYARAルールを紹介している。記事の要点は検知条件の共有であり、特定の攻撃キャンペーンや被害組織、実際の悪用を報告したものではない。こうしたプロジェクトは図面内にコードが含まれていることを示す手掛かりになるが、検…",
+      "article_path": "articles/ca4118e3ecaf1cf6.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33434"
+    }
+  ]
+}
