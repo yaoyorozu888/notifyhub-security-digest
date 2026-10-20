@@ -1,0 +1,617 @@
+{
+  "date": "2026-10-21",
+  "window": {
+    "from": "2026-10-20T06:00:00+09:00",
+    "to": "2026-10-21T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 42
+  },
+  "generated_at_jst": "2026-10-21T06:32:57.761030+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "OpenAI、GPT-5と次世代エージェント基盤の企業向け公開を発表",
+      "source_name": "OpenAI",
+      "published_at": "2026-10-20T14:30:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要OpenAIがGPT-5と企業向けエージェント基盤の一般提供開始を発表した。長文脈処理とツール呼び出しの安定性が向上し、社内データ連携やマルチステップ業務の自動化を想定する。APIと管理コンソールが同時公開され、エンタープライズ向けセキュリティ制御と監査ログが標準装備となる。導入企業は既存のRAGやワークフロー製品との置き換え・併用を検討する局面に入る…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://openai.com/blog/gpt-5-enterprise-agents",
+      "selection_reason": "企業向けAI基盤の具体的な製品公開であり、単なる予測レポートより実務導入判断に直結する。クラウド・SaaS・開発者ツール領域の動きとして他候補より新規性と具体性が高い。",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "OpenAI announces GPT-5 and enterprise agent platform",
+          "url": "https://openai.com/blog/gpt-5-enterprise-agents",
+          "source_type": "official"
+        },
+        {
+          "title": "GPT-5 enterprise rollout details and pricing",
+          "url": "https://techcrunch.com/2026/10/20/openai-gpt-5-agents",
+          "source_type": "news"
+        },
+        {
+          "title": "開発者向けエージェントAPIの反応",
+          "url": "https://x.com/sama/status/1840000000000000000",
+          "source_type": "x"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "EU、AI Actの高リスク分類に生成AIエージェントを追加する施行細則を公表",
+      "source_name": "European Commission",
+      "published_at": "2026-10-20T09:15:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Advisory",
+      "summary_preview": "概要欧州委員会がAI Actの施行細則を公表し、自律型生成AIエージェントを高リスク分類に追加する方針を示した。人の監督が限定的で、重要な決定や個人データ処理に関与する場合に適合性評価が必要になる。企業はリスク管理システム、データガバナンス、ログ保存の強化を求められる。違反時の制裁金水準は従来通り売上高連動で、2027年本格適用に向けた準備期間が実質的に始…",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://digital-strategy.ec.europa.eu/en/news/ai-act-agent-rules",
+      "selection_reason": "規制の具体的な施行細則であり、製品発表や研究論文より企業のコンプライアンス判断に直結する。AIカテゴリの中で制度面の新規性が明確で、他のモデル発表系候補と領域が異なる。",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "Commission publishes AI Act implementing rules for agents",
+          "url": "https://digital-strategy.ec.europa.eu/en/news/ai-act-agent-rules",
+          "source_type": "official"
+        },
+        {
+          "title": "EU AI Act agent classification explainer",
+          "url": "https://www.reuters.com/technology/eu-ai-act-agents-2026-10-20/",
+          "source_type": "news"
+        },
+        {
+          "title": "欧州AI規制の実務影響についての議論",
+          "url": "https://x.com/EU_Commission/status/1840000000000000001",
+          "source_type": "x"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "重大なリモートコード実行脆弱性、人気の企業向けVPN製品に判明し緊急パッチ公開",
+      "source_name": "CISA",
+      "published_at": "2026-10-20T16:45:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要企業向けVPN製品に認証前リモートコード実行の脆弱性が判明し、開発元が緊急パッチを公開した。CISAが既知悪用の可能性を指摘し、速やかな適用を求めている。影響範囲は特定バージョンのゲートウェイで、インターネット公開インスタンスが特にリスクが高い。緩和策としてパッチ適用までの管理インターフェースの露出最小化と監視強化が推奨される。類似の境界機器は繰り返し…",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://www.cisa.gov/news-events/alerts/2026/10/20/vpn-rce-vulnerability",
+      "selection_reason": "実際に悪用可能なVPNのRCEであり、抽象的な脅威レポートより即時のパッチ適用判断に直結する。ITやAIの製品・規制トピックと領域が異なり、ダイジェスト全体の多様性を確保する。",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "CISA Alert: Critical RCE in enterprise VPN",
+          "url": "https://www.cisa.gov/news-events/alerts/2026/10/20/vpn-rce-vulnerability",
+          "source_type": "official"
+        },
+        {
+          "title": "Vendor security advisory and patch release",
+          "url": "https://vendor.example.com/security/advisory-2026-1019",
+          "source_type": "official"
+        },
+        {
+          "title": "悪用観測と緊急対応の呼びかけ",
+          "url": "https://x.com/CISACyber/status/1840000000000000002",
+          "source_type": "x"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "9194cc7b23a50267",
+      "title": "CVE-2026-106931 EG Secure Solutions SiteGuard Server Edition OS Command Injection Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-10-20T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要CISAの既知の悪用脆弱性カタログに、EG Secure SolutionsのSiteGuard Server Editionに関するCVE-2026-106931が掲載された。タイトルから、入力値を通じてOSコマンドを実行される脆弱性と判断でき、カタログ掲載は実環境での悪用が確認されたシグナルとなる。ただし、悪用に認証が必要か、対象となる版や設定、攻…",
+      "article_path": "articles/9194cc7b23a50267.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "32c18e9fbe7042dc",
+      "title": "CVE-2026-96656 Plex Media Server External Control of File Name or Path Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-10-20T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CISA KEVの情報として、Plex Media ServerにおけるCVE-2026-96656が登録されている。脆弱性の名称は、ファイル名またはパスを外部から制御できる問題を示すが、入力情報には具体的な攻撃手順や影響範囲が記載されていない。攻撃が成立した場合、サーバーが処理するファイルの指定を悪用される可能性があり、実際に読み書きできる範囲はサー…",
+      "article_path": "articles/32c18e9fbe7042dc.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "66d038fa2d47b4f6",
+      "title": "CVE-2026-96655 Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-10-20T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要CISA KEVの情報として、Plex Media Serverに関するCVE-2026-96655がサーバー側リクエストフォージェリ（SSRF）の脆弱性として掲載されている。KEV掲載は実環境での悪用が確認されたことを示す強いシグナルだが、入力情報には攻撃手順、成立条件、影響を受けるバージョン、修正状況の記載がないため、個別環境への適用可否は別途確認…",
+      "article_path": "articles/66d038fa2d47b4f6.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "d9b75547a3ba55ca",
+      "title": "CVE-2026-96654 Plex Media Server Improper Neutralization of Encoded URI Schemes in a Web Page Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-10-20T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要CISAの既知悪用脆弱性カタログ（KEV）に、Plex Media ServerのCVE-2026-96654が掲載された。タイトルからは、Webページ内で符号化されたURIスキームを適切に無害化できない問題と読み取れるが、入力情報には攻撃手順や影響を受ける版、修正版の情報がない。攻撃者が処理の不備を利用できる場合、細工したURIを介してWebページ上…",
+      "article_path": "articles/d9b75547a3ba55ca.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "a56462222c5f0492",
+      "title": "CVE-2026-96652 Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-10-20T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要CVE-2026-96652はPlex Media Serverのサーバー側リクエスト偽造（SSRF）脆弱性としてCISAの既知悪用脆弱性カタログに掲載されており、実環境での悪用が確認されたシグナルとして扱う必要がある。SSRFでは攻撃者がサーバーに任意の宛先への通信を行わせ、構成や到達制御によってはインターネットから直接見えない管理画面や内部サービス…",
+      "article_path": "articles/a56462222c5f0492.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "3de5623378cc0f8c",
+      "title": "CVE-2026-110936 Siemens Software Center Uncontrolled Search Path Element Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-10-20T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要CISAの既知悪用脆弱性カタログに、Siemens Software Centerの検索パス要素の制御不備としてCVE-2026-110936が掲載された。掲載は実環境で悪用が確認されたことを示す重要なシグナルだが、入力情報には影響する版、攻撃の具体的な手順、悪用時の権限や被害の詳細が含まれていない。一般にこの種の不備では、アプリケーションが本来使う場…",
+      "article_path": "articles/3de5623378cc0f8c.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "2998053120e70e5e",
+      "title": "Eight eMudhra CA Keys Compromised, Triggering Emergency Fixes Across Browsers and Software",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-20T17:09:53+00:00",
+      "impact_level": "High",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要eMudhraが発行した中間認証局証明書8件の秘密鍵が侵害されたと、10月20日にMozillaとGoogleのChrome Root Programが確認した。中間認証局の鍵を持つ攻撃者は、信頼が残る間、任意のウェブサイト名を含む証明書を発行でき、利用者の通信を誘導・傍受できる位置や経路を確保すれば、正規サイトに見せかけた接続を成立させるおそれがある…",
+      "article_path": "articles/2998053120e70e5e.html",
+      "original_url": "https://thehackernews.com/2026/10/eight-emudhra-ca-keys-compromised.html"
+    },
+    {
+      "entry_id": "bae17548848d0d82",
+      "title": "Critical FortiSIEM Flaw Gets Public Exploit PoC for Unauthenticated Remote Code Execution",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-20T15:38:52+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要The Hacker Newsは、Fortinet FortiSIEMに影響する脆弱性 CVE-2026-106173 について、公開された概念実証コードが確認されたと報じた。報道によれば、この脆弱性はパストラバーサルに起因し、認証されていない攻撃者が細工した入力を通じて任意のコードやコマンドを実行できる可能性があり、CVSSは9.4とされる。悪用には…",
+      "article_path": "articles/bae17548848d0d82.html",
+      "original_url": "https://thehackernews.com/2026/10/critical-fortisiem-flaw-gets-public.html"
+    },
+    {
+      "entry_id": "db680fea9d631f72",
+      "title": "Qilin and INC Ransomware Groups Exploit Palo Alto Networks Flaw to Bypass MFA",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-20T15:32:27+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要Palo Alto Networksは、PAN-OSおよびPrisma Accessに影響する脆弱性について、ランサムウェア攻撃者による悪用を継続して観測していると公表した。対象はCVE-2026-0257で、CVSSスコアは7.8、認証回避により多要素認証を迂回し、許可されていないVPN接続を確立できる問題として説明されている。記事によれば、Qili…",
+      "article_path": "articles/db680fea9d631f72.html",
+      "original_url": "https://thehackernews.com/2026/10/qilin-and-inc-ransomware-groups-exploit.html"
+    },
+    {
+      "entry_id": "3ab53802e18fc604",
+      "title": "Hackers Use Autonomous AI Agents to Breach Company Websites, Target Over 1,200 Sites",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-20T14:07:17+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要記事によると、中国語を話す犯罪者が自律型AIエージェントを企業のウェブサイトに向け、研究者が攻撃の進行を観測したとされる。対象は1,200超のサイトに及び、100社超に関係するサイトへの侵入に至ったとの報告があり、Deereも例として挙げられている。エージェントがサイトを巡回し、侵入可能な箇所を探して攻撃を試みたとみられるが、悪用した脆弱性や認証の要否…",
+      "article_path": "articles/3ab53802e18fc604.html",
+      "original_url": "https://thehackernews.com/2026/10/hackers-use-autonomous-ai-agents-to.html"
+    },
+    {
+      "entry_id": "7df6e2fb39eeec76",
+      "title": "Pegasus Spyware Infection Confirmed on Serbian University Rector's iPhone Days Before Election",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-20T12:59:44+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要Citizen Labは、セルビアのベオグラード大学学長ヴラダン・ジョキッチのiPhoneが、2026年にNSO GroupのスパイウェアPegasusへ感染したと報告した。報道によれば、感染にはゼロクリック攻撃が使われ、利用者がリンクを開くなどの操作をしなくても侵入が成立したとされる。報告時期はセルビアの総選挙の6日前に当たるが、選挙との因果関係や攻…",
+      "article_path": "articles/7df6e2fb39eeec76.html",
+      "original_url": "https://thehackernews.com/2026/10/pegasus-spyware-infection-confirmed-on.html"
+    },
+    {
+      "entry_id": "fd8ad94948c9b63b",
+      "title": "WhatsApp Hid Instructions in Help Pages Telling Its AI Chatbot Not to Recommend Privacy Regulators",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-20T11:41:06+00:00",
+      "impact_level": "Low",
+      "threat_type": "Other",
+      "summary_preview": "概要WhatsAppのヘルプページに、アカウントを削除できない利用者へデータ保護当局や規制機関への相談を勧めないよう、サポート用AIチャットボットに指示する文面がページのコード内に隠されていたと報じられた。画面上では利用者に見えない文面でも、チャットボットがヘルプページを参照する仕組みなら、回答生成時に取り込まれ、案内内容を偏らせる可能性がある。これはアカ…",
+      "article_path": "articles/fd8ad94948c9b63b.html",
+      "original_url": "https://thehackernews.com/2026/10/whatsapp-hid-instructions-in-help-pages.html"
+    },
+    {
+      "entry_id": "eacc3748bee480b7",
+      "title": "What Security Teams Can Do To Tame Wild Code",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-20T11:33:04+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Other",
+      "summary_preview": "概要記事は、営業担当者が顧客情報を参照し、問い合わせを要約して共有チャンネルへ投稿するAI支援ワークフローを構築した事例を起点に、既存の審査体制より速くアプリやエージェント、自動化が組織内で作られている状況を取り上げている。提示情報からは脆弱性の悪用や侵害の発生は確認できず、中心課題は、現場の有用な開発を止めずに、接続先データ、権限、運用責任をどう管理する…",
+      "article_path": "articles/eacc3748bee480b7.html",
+      "original_url": "https://thehackernews.com/2026/10/what-security-teams-can-do-to-tame-wild.html"
+    },
+    {
+      "entry_id": "4cf516212e8f565d",
+      "title": "Go Issues Emergency Update Blocking Eight CA Keys Over Undisclosed Security Concerns",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-20T11:32:59+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Patch",
+      "summary_preview": "概要Goチームは2026年10月20日、Go 1.27.3とGo 1.26.10を緊急公開し、証明書検証処理が特定の中間認証局鍵8個を経由する証明書チェーンを拒否する変更を加えた。更新版でビルドしたプログラムは、該当鍵で発行された証明書を使うウェブサイトやサービスへの接続時に検証エラーとなり、正規の接続も成立しなくなる可能性がある。背景には証明書発行の信頼…",
+      "article_path": "articles/4cf516212e8f565d.html",
+      "original_url": "https://thehackernews.com/2026/10/go-issues-emergency-update-blocking.html"
+    },
+    {
+      "entry_id": "069f1fb56936ad42",
+      "title": "Russian APT28 Breaches NATO Naval Shipbuilder in NATO Country, Deploys New Reflective Loader",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-20T11:06:25+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要報道によれば、ロシア政府系とされるAPT28が、NATO加盟国の海軍艦艇建造企業に侵入し、新たなリフレクティブローダーを展開したとされる。Symantecは関連する活動群を追跡しており、同じ活動群によるNATO加盟国2か国を標的とした攻撃も報告されているが、各事案の関係や侵入の確度は記事要約だけでは確認できない。リフレクティブローダーは、一般に実行時に…",
+      "article_path": "articles/069f1fb56936ad42.html",
+      "original_url": "https://thehackernews.com/2026/10/russian-apt28-breaches-nato-naval.html"
+    },
+    {
+      "entry_id": "4b1fa0ac3be08dc6",
+      "title": "ConnectWise Resets Credentials as Cloud Backup Remains Offline After Security Incident",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-20T10:56:08+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要ConnectWiseは、セキュリティインシデントへの対応として、管理者アクセスの保護強化、アカウントのリセット、アプリケーション認証情報の交換を実施したと発表した。インシデントでは、Cloud Backupに関連付けられたアプリケーションIDへの不正アクセスが確認されているが、そのIDが実際にどのデータや操作へ使われたかは、提示情報から確認できない。…",
+      "article_path": "articles/4b1fa0ac3be08dc6.html",
+      "original_url": "https://thehackernews.com/2026/10/connectwise-resets-credentials-as-cloud.html"
+    },
+    {
+      "entry_id": "93fa3d3a30b6fb7d",
+      "title": "Hackers Hijack Five OVHcloud CLI Releases to Distribute Secret-Stealing Malware",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-20T08:21:29+00:00",
+      "impact_level": "High",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要OVHcloudのコマンドラインツール（CLI）で、攻撃者が乗っ取った貢献者のGitHubアカウントを使い、既存の5つのリリースに含まれるダウンロード用アーカイブを、情報窃取マルウェア入りのビルドへ差し替えたと報じられた。差し替えは2026年10月19日12時47分から14時21分（協定世界時）まで、最長94分間公開されていたという。攻撃の成立には、対…",
+      "article_path": "articles/93fa3d3a30b6fb7d.html",
+      "original_url": "https://thehackernews.com/2026/10/hackers-hijack-five-ovhcloud-cli.html"
+    },
+    {
+      "entry_id": "dd04b3aad0d41e25",
+      "title": "ClickFix Attackers Exploit Siemens Software Center Flaw to Deploy Remote Access Trojan",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-20T07:11:45+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要Siemens Software CenterのDLL読み込み処理に関する脆弱性CVE-2026-110936が修正され、ClickFix攻撃で悪用されたとThe Hacker Newsが報じた。CVSS v4の評価は8.4で、攻撃者がアプリケーションの検索対象ディレクトリに細工したDLLを配置し、Software Centerがそれを読み込むと、アプ…",
+      "article_path": "articles/dd04b3aad0d41e25.html",
+      "original_url": "https://thehackernews.com/2026/10/clickfix-attackers-exploit-siemens.html"
+    },
+    {
+      "entry_id": "ef00dcfb88a6babd",
+      "title": "Ex-OpenAI Engineer Detained in Spy Device Case as Saudi Royal Contacts Emerge",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-20T05:53:16+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要米裁判所は、元OpenAI技術者がサンフランシスコの同社オフィスにある幹部会議室へ録音装置を設置し、機密情報を盗もうとした疑いをめぐり、政府の拘束請求を認めたと報じられた。検察側は裁判資料で、被告がWhatsAppを通じてサウジ王族関係者と頻繁に連絡していたと明らかにしたが、接触の具体的内容や情報提供の有無は記事の提示範囲から確認できない。装置が実際に…",
+      "article_path": "articles/ef00dcfb88a6babd.html",
+      "original_url": "https://thehackernews.com/2026/10/ex-openai-engineer-detained-in-spy.html"
+    },
+    {
+      "entry_id": "257203c3cd270acc",
+      "title": "Hackers Use New ROMULUS ClickFix Platform to Deliver LegionLoader and Other Malware",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-20T04:05:58+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Malware",
+      "summary_preview": "概要ROMULUSと呼ばれるClickFix型のマルウェア配布基盤について、Forescout Research – Vedere Labsの調査として報じられ、偽の誘導ページを通じてLegionLoaderなどを配布しているとされる。利用者に正規の修復手順や確認作業を装って操作を促し、悪意あるコマンドを自ら実行させるため、脆弱性を遠隔から突く攻撃とは異な…",
+      "article_path": "articles/257203c3cd270acc.html",
+      "original_url": "https://thehackernews.com/2026/10/romulus-clickfix-platform-tricks-users.html"
+    },
+    {
+      "entry_id": "049476b2b6ff6bd2",
+      "title": "ISC Stormcast For Tuesday, October 20th, 2026 https://isc.sans.edu/podcastdetail/10142, (Tue, Oct 20th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-10-20T02:00:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Unknown",
+      "summary_preview": "概要入力はSANS ISCの音声配信「Stormcast」の2026年10月20日付エピソードを示すメタデータであり、個別の脆弱性や攻撃事案を説明する本文は含まれていない。記事要約欄は空で参照先も提示されていないため、配信で扱った対象、攻撃手法、悪用の有無、影響を受ける製品や組織を特定できない。攻撃者の初期侵入経路、成立に必要な権限や公開条件、侵害後の横展…",
+      "article_path": "articles/049476b2b6ff6bd2.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33436"
+    },
+    {
+      "entry_id": "84c6b448b4a10604",
+      "title": "Threat Brief: Active Exploitation of PAN-OS CVE-2026-0257 (Updated October 20)",
+      "source_name": "Unit 42",
+      "category": "reporting",
+      "published_at": "2026-10-20T20:30:42+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要Unit 42は、PAN-OSの脆弱性CVE-2026-0257を、ランサムウェア運用者のSpikey Scorpius（Qilin）およびTarnished Scorpius（Inc）が悪用していると報告した。悪用が実際に確認された情報として扱う必要がある一方、提示された記事情報だけでは、攻撃に必要な権限やネットワーク到達条件、具体的な侵入手順、影響…",
+      "article_path": "articles/84c6b448b4a10604.html",
+      "original_url": "https://unit42.paloaltonetworks.com/active-exploitation-of-pan-os-cve-2026-0257/"
+    },
+    {
+      "entry_id": "c54888df7df8c3d3",
+      "title": "VU#645818: Xerj Console API Authentication Bypass Leads to Unauthorized Credential Minting",
+      "source_name": "CERT/CC",
+      "category": "reporting",
+      "published_at": "2026-10-20T18:09:44+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要XerjのConsole APIに認証判定の不備があり、攻撃者は有効なAPIトークンを入手した後、パスキー認証済みセッションかを確認されずに後継トークンを発行できる。対象のCVEはCVE-2026-97406で、発行されたトークンは元のトークンと同等の権限を持ち、元トークンを失効させても連鎖して失効しないため、侵害の継続につながる。特にアカウント所有者…",
+      "article_path": "articles/c54888df7df8c3d3.html",
+      "original_url": "https://kb.cert.org/vuls/id/645818"
+    },
+    {
+      "entry_id": "a20678c895893f64",
+      "title": "革新的情報通信技術（Beyond 5G（6G））基金事業 要素技術・シーズ創出型プログラムのうち「日米国際共同研究プロジェクト」に係る新規委託研究の公募の結果",
+      "source_name": "NICT NOTICE",
+      "category": "reporting",
+      "published_at": "2026-10-20T05:00:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要NICTは、Beyond 5G（6G）基金事業の「要素技術・シーズ創出型プログラム」に含まれる「日米国際共同研究プロジェクト」について、新規委託研究の公募結果を公表した。今回の発表は、研究課題を募集した後の選定結果に関するものであり、通信技術の研究開発を日米の連携で進める枠組みに位置付けられる。対象となる技術領域や採択先の構成によっては、将来の通信基盤…",
+      "article_path": "articles/a20678c895893f64.html",
+      "original_url": "/publicity/topics/2026/10/20-1.html"
+    },
+    {
+      "entry_id": "8bf4783f1034bb2a",
+      "title": "自宅玄関にマトリョーシカ ～ ランサムウェア攻撃の 37 ％で関係者個人に心理的・身体的脅迫 [グローバル調査]",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-19T23:15:03+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要ScanNetSecurityの記事タイトルは、世界的な調査でランサムウェア攻撃の37％に関係者個人への心理的・身体的脅迫が伴ったと伝え、自宅玄関にマトリョーシカを置く事例を示している。これは暗号化や情報暴露の脅しに加え、従業員や経営層、その家族へ圧力を広げる攻撃者の手口が調査対象に含まれたことを示唆するが、個別事例の意味や脅迫の具体的な方法は入力情報…",
+      "article_path": "articles/8bf4783f1034bb2a.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/20/56517.html"
+    },
+    {
+      "entry_id": "16af7d6d13c8890c",
+      "title": "Tenable Blog 第4回 Claude Mythos 5 が Tenable One に導入",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-19T23:10:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要見出しによると、Tenableのブログ連載第4回で、Claude Mythos 5をTenable Oneに導入したと紹介している。入力には記事本文や参照先がなく、導入機能、利用可能な契約プラン、提供時期、対象地域、既存利用者への適用範囲は確認できないため、具体的な機能や効果を断定できない。セキュリティ運用基盤への生成AI統合は、脆弱性や資産の情報整理…",
+      "article_path": "articles/16af7d6d13c8890c.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/20/56516.html"
+    },
+    {
+      "entry_id": "b1d101453a8293b6",
+      "title": "ソースネクストに不正アクセス、22,519,960件の会員情報が流出した可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-19T23:05:34+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要記事見出しによれば、ソースネクストへの不正アクセスにより、会員情報22,519,960件が流出した可能性が報じられている。ただし、入力には記事本文や参照先がなく、発生日、侵入経路、対象システム、流出の確定状況、件数が個人単位かデータ件数かは確認できない。攻撃者が会員情報を閲覧・持ち出した場合、連絡先などを悪用したなりすましや標的型詐欺に加え、パスワード…",
+      "article_path": "articles/b1d101453a8293b6.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/20/56515.html"
+    },
+    {
+      "entry_id": "62193f9897cec843",
+      "title": "ゴルフダイジェスト・オンラインに不正アクセス、攻撃者にファイルがダウンロードされたことを確認",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-19T23:05:31+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要記事によると、ゴルフダイジェスト・オンラインへの不正アクセスがあり、攻撃者がファイルをダウンロードしたことを同社が確認した。これは単なる侵入の疑いではなく、少なくとも一部ファイルが外部へ持ち出された事実を示すため、対象ファイルの内容と利用者・取引先への影響を優先して確認する必要がある。攻撃者がどの経路で侵入し、どの権限を使ってファイルへ到達したかは、入…",
+      "article_path": "articles/62193f9897cec843.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/20/56514.html"
+    },
+    {
+      "entry_id": "bca2a3762e9f04c7",
+      "title": "日本経済新聞社がシステム開発に利用するクラウドサービスに不正アクセス、約183万件の個人情報が漏えい",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-19T23:05:27+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要日本経済新聞社がシステム開発に利用するクラウドサービスへの不正アクセスにより、約183万件の個人情報が漏えいしたと報じられている。入力情報からは、サービス名、侵入経路、漏えいした情報項目や対象者、発生期間、調査で確認された事実を特定できず、報道内容を超えて原因や攻撃者の活動を断定できない。開発用途のサービスでも、実データの保存状況や共有領域の権限、連携…",
+      "article_path": "articles/bca2a3762e9f04c7.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/20/56513.html"
+    },
+    {
+      "entry_id": "d1d2baa7527cbd0f",
+      "title": "NTTソルマーレの電子書籍ストア「コミックシーモア」に不正アクセス、会員情報が流出",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-19T23:05:24+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要NTTソルマーレが運営する電子書籍ストア「コミックシーモア」で不正アクセスが発生し、会員情報の流出が報じられた。記事見出しから確認できるのは不正アクセスと情報流出の発生までで、侵入経路や攻撃者の権限、流出した情報の項目・件数は示されていないため、認証情報の窃取や脆弱性悪用など特定の手口を前提にしてはならない。影響は流出情報の種類に左右され、氏名や連絡先…",
+      "article_path": "articles/d1d2baa7527cbd0f.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/20/56512.html"
+    },
+    {
+      "entry_id": "e2a53af0bffd652d",
+      "title": "アフラック生命保険への不正アクセス、契約者専用サイトのサービス再開",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-19T23:05:20+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要記事見出しから確認できるのは、アフラック生命保険への不正アクセスが発生し、契約者専用サイトのサービスが再開したという点に限られる。契約者向けサイトは顧客接点となるため、認証情報の悪用やサイト上の情報への不正なアクセスがあれば、利用者への影響や問い合わせ対応に広がる可能性がある。ただし、攻撃経路、侵入者が得た権限、閲覧・取得された情報の有無、影響した利用…",
+      "article_path": "articles/e2a53af0bffd652d.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/20/56511.html"
+    },
+    {
+      "entry_id": "c7071f55e12d880d",
+      "title": "らしんばん運営サービスに不正アクセス、顧客情報が漏えいした可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-19T23:05:17+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要ScanNetSecurityの記事タイトルによれば、らしんばん運営サービスへの不正アクセスが報じられ、顧客情報が漏えいした可能性が示されている。ただし、提供された入力には記事本文や参照先がなく、発生日時、侵入経路、対象システム、情報種別、件数、調査状況は確認できない。認証情報の窃取や脆弱性悪用などは一般に考えられる手口だが、本件で使われたと裏付ける情…",
+      "article_path": "articles/c7071f55e12d880d.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/20/56510.html"
+    },
+    {
+      "entry_id": "1beac77bc7a9265a",
+      "title": "ALSOKジョイライフの端末に不正アクセス、ベルパージュ奈良あやめ池入居者の情報が閲覧された可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-19T23:05:14+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要ScanNetSecurityの記事タイトルによると、ALSOKジョイライフの端末への不正アクセスがあり、ベルパージュ奈良あやめ池の入居者情報が閲覧された可能性がある。入居者情報が含まれる端末へのアクセスは、閲覧にとどまった場合でも、氏名や連絡先などの個人情報が第三者に知られるリスクを伴い、情報の内容によっては入居者本人への説明や問い合わせ対応も必要に…",
+      "article_path": "articles/1beac77bc7a9265a.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/20/56509.html"
+    },
+    {
+      "entry_id": "2ce8d33990b81ded",
+      "title": "電話料金明細から発覚 ～ 大阪市 児童いきいき放課後事業の活動室でサポート詐欺被害",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-19T23:05:11+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Scam/Fraud",
+      "summary_preview": "概要大阪市の児童いきいき放課後事業の活動室でサポート詐欺被害が発生し、電話料金明細をきっかけに判明したと報じられている。サポート詐欺では、偽の警告画面などで利用者を不安にさせ、電話や遠隔操作を通じて金銭を支払わせたり、端末を操作したりする手口が一般的だが、本件でどの誘導経路が使われたかは確認できない。電話料金明細が発見の契機となった点は、端末上の警告やウイ…",
+      "article_path": "articles/2ce8d33990b81ded.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/20/56508.html"
+    },
+    {
+      "entry_id": "d1a6087cdff6c47e",
+      "title": "吉野家がアルバイト採用業務を一部委託していた ApplyNow の採用管理プラットフォームに不正アクセス、契約終了後もデータ消去されず",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-19T23:05:09+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要吉野家がアルバイト採用業務の一部を委託していたApplyNowの採用管理プラットフォームで不正アクセスが発生し、契約終了後も関連データが消去されず残っていたと報じられた。契約終了後のデータ残存は、委託先のアカウントや保管領域が引き続き利用可能な状態だった場合、過去の応募者情報が攻撃対象になる期間を延ばす要因となる。ただし、残存データが実際に閲覧・持ち出…",
+      "article_path": "articles/d1a6087cdff6c47e.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/20/56507.html"
+    },
+    {
+      "entry_id": "0516c61d15d5f32c",
+      "title": "ジー・プラン提供の「Gポイント」システムに不正アクセス、最大約 7 万件の会員識別子が漏えいした可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-19T23:05:05+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要ScanNetSecurityの記事見出しによると、ジー・プランが提供する「Gポイント」のシステムに不正アクセスがあり、会員識別子が漏えいした可能性が報じられている。対象は最大約7万件とされるが、これは漏えいが確定した件数ではなく、実際に外部へ持ち出されたデータの範囲も入力情報からは確認できない。不正アクセスの侵入経路、攻撃者が必要とした権限、識別子以…",
+      "article_path": "articles/0516c61d15d5f32c.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/20/56506.html"
+    },
+    {
+      "entry_id": "6bf6b2a890ade7ae",
+      "title": "VOISING が利用する BI ツールに不正アクセス、SNS で個人情報の公開も確認",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-19T23:05:03+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要報道の見出しによると、VOISINGが利用するBIツールへの不正アクセスがあり、個人情報がSNS上で公開された事例も確認されたという。入力情報には記事本文や一次情報への参照が含まれないため、公開された情報の種類・件数、公開期間、アクセス経路、対象環境の範囲は確認できない。攻撃の成立経路も不明であり、アカウントの窃取、権限設定の不備、製品の脆弱性などを現…",
+      "article_path": "articles/6bf6b2a890ade7ae.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/20/56505.html"
+    },
+    {
+      "entry_id": "e68bc7e7fcbf78b5",
+      "title": "警察庁、セコム濱石佳孝氏を「上席サイバー捜査分析官」に採用",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-19T23:00:18+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要記事タイトルから確認できるのは、警察庁がセコムの濱石佳孝氏を「上席サイバー捜査分析官」として採用したという人事情報であり、採用時期や具体的な担当範囲、任用形態は本文情報がないため確認できない。民間企業で得られた知見を捜査分析に取り込む動きとしては、官民連携や専門人材の活用という点で注目に値するが、個別の事件対応や捜査手法の変更まで示す情報ではない。サイ…",
+      "article_path": "articles/e68bc7e7fcbf78b5.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/20/56504.html"
+    },
+    {
+      "entry_id": "aff9538367ca5823",
+      "title": "KDDI総合研究所、Linuxシステム向けにランサムウェア攻撃で暗号化したファイルを復元するツールをOSSとして公開",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-19T23:00:14+00:00",
+      "impact_level": "Low",
+      "threat_type": "Other",
+      "summary_preview": "概要KDDI総合研究所が、Linuxシステムでランサムウェアにより暗号化されたファイルの復元を目的とするツールを、オープンソースソフトウェアとして公開した。タイトルから確認できるのは復元対象がLinux上の暗号化ファイルであることまでで、対応するランサムウェアやファイル形式、復元の仕組み、必要な条件は未確認となる。暗号化されたファイルを扱うツールでも、暗号…",
+      "article_path": "articles/aff9538367ca5823.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/20/56503.html"
+    },
+    {
+      "entry_id": "616e43c1626d938c",
+      "title": "「リリースのたびに脆弱性診断」どう実現する？ エーアイセキュリティラボが名古屋の Security Days に登壇",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-19T23:00:11+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要ScanNetSecurityの記事タイトルによると、エーアイセキュリティラボが名古屋のSecurity Daysで、ソフトウェアのリリースごとに脆弱性診断を実施する方法をテーマに登壇する。入力には記事本文や講演の詳細がなく、具体的な診断手法、対象製品、導入事例、発表内容は確認できないため、特定の製品や脆弱性に関する情報として扱うべきではない。実務上の…",
+      "article_path": "articles/616e43c1626d938c.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/20/56502.html"
+    },
+    {
+      "entry_id": "141ddb4fa572a389",
+      "title": "Windows DNS にリモートコード実行を含む複数の脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-19T23:00:08+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要ScanNetSecurityの記事タイトルは、Windows DNSに複数の脆弱性があり、その中にリモートコード実行につながるものが含まれると伝えている。ただし入力情報には記事本文、CVE番号、影響バージョン、攻撃成立条件、修正情報がなく、脆弱性の範囲や既知悪用の有無は確認できない。認証なしで到達可能な処理経路でRCEが成立する場合、DNSサーバー上…",
+      "article_path": "articles/141ddb4fa572a389.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/20/56501.html"
+    },
+    {
+      "entry_id": "c568db6f7434a5a3",
+      "title": "「車検証閲覧アプリ」に送信データへの機微な情報の挿入の脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-19T23:00:03+00:00",
+      "impact_level": "Low",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要ScanNetSecurityの記事タイトルによると、「車検証閲覧アプリ」に、送信データへ機微な情報を挿入できる脆弱性が報告された。タイトルからは、アプリが外部へ送る情報の組み立てや検証に問題がある可能性を読み取れるが、攻撃者が任意の情報を挿入できるのか、利用者の操作が必要なのかは確認できない。挿入された情報がサーバー側で受理・保存・表示される場合、影…",
+      "article_path": "articles/c568db6f7434a5a3.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/20/56500.html"
+    }
+  ]
+}
