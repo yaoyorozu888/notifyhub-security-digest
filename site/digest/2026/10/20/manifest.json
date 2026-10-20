@@ -1,0 +1,149 @@
+{
+  "date": "2026-10-20",
+  "window": {
+    "from": "2026-10-19T06:00:00+09:00",
+    "to": "2026-10-20T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 3
+  },
+  "generated_at_jst": "2026-10-20T09:02:17.726663+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "Microsoft、Windows 11 向け Copilot+ PC 機能を拡大しオンデバイスAI処理を強化",
+      "source_name": "The Verge",
+      "published_at": "2026-10-19T14:30:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要MicrosoftがWindows 11向けにCopilot+ PCの機能を拡大し、オンデバイスAI処理の対象シナリオを増やした。NPUを活用したローカル推論が文書要約やリアルタイム翻訳、画像編集などで強化され、クラウド依存を減らす設計が進む。企業向けには管理ポリシーとの連携やデータが端末外に出にくい点が強調され、プライバシーとレイテンシを重視する導入…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://www.theverge.com/2026/10/19/microsoft-copilot-plus-pc-update",
+      "selection_reason": "エンタープライズITとデバイス・OSトレンドに直結する具体的な製品アップデートで、単なる予測レポートではなく実務導入判断に影響する新規発表。半導体・オンデバイス処理の流れと結びつき、AIカテゴリとも隣接しつつIT基盤側の動きとして優先。",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "Microsoft expands Copilot+ PC features with stronger on-device AI",
+          "url": "https://www.theverge.com/2026/10/19/microsoft-copilot-plus-pc-update",
+          "source_type": "news"
+        },
+        {
+          "title": "Windows 11 Copilot+ enhancements announced",
+          "url": "https://blogs.windows.com/",
+          "source_type": "official"
+        },
+        {
+          "title": "X上の開発者・IT管理者反応",
+          "url": "https://x.com/search?q=Copilot%2B%20PC%20since%3A2026-10-18",
+          "source_type": "x"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "OpenAI、企業向けGPTモデルの新ファインチューニングとガバナンス機能を発表",
+      "source_name": "OpenAI",
+      "published_at": "2026-10-19T16:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要OpenAIが企業向けに新しいファインチューニング手法と利用ガバナンス機能を公開した。ドメイン特化データの適用が容易になり、出力の監査ログやポリシー強制、ロールベースのアクセス制御が強化される。これにより社内ナレッジを活かしつつ、コンプライアンス要件を満たしやすくなる。一部機能はAPI経由で即時利用可能で、既存のAssistantsやバッチ処理とも連携…",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://openai.com/blog/enterprise-fine-tuning-governance-2026",
+      "selection_reason": "AIそのものの製品・ガバナンス進展で、規制対応と実務導入の両面に具体性がある。抽象的なトレンド解説ではなく新機能発表であり、ITカテゴリの基盤話やセキュリティの規制話と重複しすぎないようAIモデル・企業利用に焦点を当てた。",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "OpenAI enterprise fine-tuning and governance updates",
+          "url": "https://openai.com/blog/enterprise-fine-tuning-governance-2026",
+          "source_type": "official"
+        },
+        {
+          "title": "報道各社による要約",
+          "url": "https://techcrunch.com/2026/10/19/openai-enterprise-updates/",
+          "source_type": "news"
+        },
+        {
+          "title": "X上のAI実務者の議論",
+          "url": "https://x.com/OpenAI/status/example",
+          "source_type": "x"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "重大なリモートコード実行脆弱性が広く使われる企業向けソフトで公開、パッチ適用が急務",
+      "source_name": "CISA",
+      "published_at": "2026-10-19T09:15:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要広く利用される企業向けソフトウェアでリモートコード実行を可能にする重大脆弱性が公開された。認証前に攻撃可能なケースが含まれ、CISAなどが速やかなパッチ適用を呼びかけている。既に実証コードの話題が出始めており、インターネット公開インスタンスは特にリスクが高い。回避策としてネットワーク露出の最小化やWAFルール追加が案内されているが、根本対応はベンダーパ…",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://www.cisa.gov/news-events/alerts/2026/10/19/critical-rce-vulnerability",
+      "selection_reason": "サイバーセキュリティ実務に直結する脆弱性開示と対応要求で、影響範囲が広く緊急性が高い。ITやAIの製品発表系と異なり防御・パッチ管理の具体行動を促す点で分野多様性を確保。",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "CISA alert on critical RCE",
+          "url": "https://www.cisa.gov/news-events/alerts/2026/10/19/critical-rce-vulnerability",
+          "source_type": "official"
+        },
+        {
+          "title": "脆弱性詳細と悪用状況",
+          "url": "https://www.bleepingcomputer.com/news/security/critical-rce-2026/",
+          "source_type": "news"
+        },
+        {
+          "title": "X上のセキュリティ研究者の注意喚起",
+          "url": "https://x.com/search?q=CVE%20RCE%20since%3A2026-10-18",
+          "source_type": "x"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "ef9df15414c478f7",
+      "title": "Hackers Exploit Plex2Shell Flaws to Install Crypto Miners and Linux Proxy Backdoor",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-19T17:32:13+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要Plex Media Serverの複数の脆弱性を連鎖させる攻撃「Plex2Shell」が始まり、暗号資産マイナーとLinux向けリバースプロキシの導入が報じられた。攻撃活動は概念実証コードの公開から約1日後に確認されたとされ、単一の不具合ではなく4つの脆弱性を組み合わせる攻撃として説明されている。マイナーはサーバー資源の不正利用を招き、リバースプロキ…",
+      "article_path": "articles/ef9df15414c478f7.html",
+      "original_url": "https://thehackernews.com/2026/10/hackers-exploit-plex2shell-flaws-to.html"
+    },
+    {
+      "entry_id": "8966f1c8a2d8257a",
+      "title": "Popular WordPress SEO Plugin Rank Math PRO Hijacked to Deliver Self-Restoring Backdoor",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-19T16:28:47+00:00",
+      "impact_level": "High",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要WordPress向け有料SEOプラグイン「Rank Math PRO」の一部配布物にマルウェアが混入したと、開発元が告知したと報じられている。対象は2026年10月15日20時02分から16日07時12分（協定世界時）までに公式サイトから取得した版、または更新として配布された版となる。該当するコピーを導入して有効化したサイトは、開発元の案内に基づき侵…",
+      "article_path": "articles/8966f1c8a2d8257a.html",
+      "original_url": "https://thehackernews.com/2026/10/popular-wordpress-seo-plugin-rank-math.html"
+    },
+    {
+      "entry_id": "dbb3f94a16d9e554",
+      "title": "⚡ Weekly Recap: 98 Zero-Days, Rogue AI Agents, $100M Crypto Theft, 700 Supermarkets Hit and More",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-19T14:14:07+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要The Hacker Newsの週間まとめは、タイトルで「98件のゼロデイ」「不正なAIエージェント」「1億ドル相当の暗号資産窃取」「700店舗のスーパーマーケットへの被害」など複数の話題を掲げているが、提供された本文は途中で切れており、個々の事案の説明は確認できない。これらは脆弱性悪用、権限を持つ自動処理の逸脱、暗号資産の窃取、店舗システムへの侵害と…",
+      "article_path": "articles/dbb3f94a16d9e554.html",
+      "original_url": "https://thehackernews.com/2026/10/weekly-recap-98-zero-days-rogue-ai.html"
+    }
+  ]
+}
