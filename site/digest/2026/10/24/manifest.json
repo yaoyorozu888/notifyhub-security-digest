@@ -1,0 +1,491 @@
+{
+  "date": "2026-10-24",
+  "window": {
+    "from": "2026-10-23T06:00:00+09:00",
+    "to": "2026-10-24T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 34
+  },
+  "generated_at_jst": "2026-10-24T06:31:10.538994+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-2",
+      "title": "Anthropic、能動型エージェントClaude Duetの研究プレビューを開始",
+      "source_name": "Anthropic",
+      "published_at": "2026-10-21T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要AnthropicはClaude Duetを研究プレビューとして公開した。朝のブリーフ配信、接続アプリの監視、タスク完了後の通知を行い、重要な操作前に必ず承認を求める能動型エージェントだ。米国のPro/Max加入者向けウェイトリストで、iOS/Androidアプリとclaude.aiから利用できる。基盤はClaude Opus 5.5で、Marketp…",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://claude.com/resources/articles/claude-duet",
+      "selection_reason": "プロアクティブな業務エージェントの製品化で、モデル単体の発表や資金調達より実務導入の具体性が高い。ITのDNS政策やサイバー脆弱性と領域が異なり、AIカテゴリの本流に直結する。",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "Introducing Claude Duet | Claude by Anthropic",
+          "url": "https://claude.com/resources/articles/claude-duet",
+          "source_type": "official"
+        },
+        {
+          "title": "Claude Duet app is Anthropic's bet on agents | TechCrunch",
+          "url": "https://techcrunch.com/2026/10/22/claude-duet-app-is-anthropics-bet-on-agents/",
+          "source_type": "news"
+        },
+        {
+          "title": "This Week in Tech: AI Agents Clock In as Apple Buyers Wait and IT Scrambles",
+          "url": "https://www.techrepublic.com/article/this-week-in-tech-ai-agents-clock-in-as-apple-buyers-wait-and-it-scrambles/",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "PHP2Shell深刻脆弱性、パッチ後も数百万規模の攻撃試行が継続",
+      "source_name": "BleepingComputer / Cloudflareほか",
+      "published_at": "2026-10-23T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要PHPのコアに存在する未認証リモートコード実行の連鎖（CVE-2026-109618/109619、通称PHP2Shell）向けに、10月21日に緊急パッチ（8.2.35など）が出た後も、数百万件規模の攻撃試行が観測されている。Cloudflareは公開直後から急増を報告し、AWSは10月17日からハニーポットで試行を捉えていた。セッション処理周りのヒ…",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://www.scyscan.com/news/php2shell-exploit-attempts-hit-millions-as-attackers-try-to-deploy-mirai-malware/",
+      "selection_reason": "ウェブ基盤の約7割を占めるPHPの未認証RCEで、影響範囲と緊急パッチの実務圧が極めて大きい。AI発見という点で話題性もあるが、脆弱性悪用そのものがサイバー実務の中心であり、他カテゴリと重複しない。",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "PHP2Shell Exploit Attempts Hit Millions as Attackers Try to Deploy Mirai Malware",
+          "url": "https://www.scyscan.com/news/php2shell-exploit-attempts-hit-millions-as-attackers-try-to-deploy-mirai-malware/",
+          "source_type": "news"
+        },
+        {
+          "title": "CVE-2026-109618, CVE-2026-109619: PHP2Shell Hits Began Oct 17",
+          "url": "https://cyberexperts.com/2026-10-23-php2shell-hunt-from-october-17/",
+          "source_type": "news"
+        },
+        {
+          "title": "AI & Tech News Digest — October 23, 2026",
+          "url": "https://www.bitdoze.com/news/2026-10-23/",
+          "source_type": "web"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "3f67bec6baeff5df",
+      "title": "CVE-2026-114625 Arista VeloCloud Orchestrator SQL Injection Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-10-23T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要CISAの既知悪用脆弱性カタログに、Arista VeloCloud OrchestratorのSQLインジェクション脆弱性としてCVE-2026-114625が掲載された。掲載は実環境での悪用を示す重要なシグナルだが、入力情報には攻撃手順、悪用条件、影響を受ける版、修正状況の記載がなく、認証の要否や外部から到達可能かどうかも確認できない。SQLインジ…",
+      "article_path": "articles/3f67bec6baeff5df.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "11b142fc9b4329b7",
+      "title": "CVE-2026-110447 Collabora Online – Built-in CODE Server OS Command Injection Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-10-23T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CISAの既知悪用脆弱性カタログに、Collabora Onlineの組み込みCODE ServerにおけるOSコマンドインジェクションとしてCVE-2026-110447が掲載されたという情報だが、入力記事には脆弱性の技術詳細や影響バージョンは記載されていない。コマンドインジェクションは、攻撃者が細工した入力を通じてサーバー上のコマンド実行を誘発する…",
+      "article_path": "articles/11b142fc9b4329b7.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "855aa05745e422e2",
+      "title": "BlackX UEFI Bootkit Bypasses Secure Boot on Patched Windows Systems Missing Revocations",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-23T18:50:13+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要中央アジアのタジキスタン、ウズベキスタン、トルクメニスタンにある外交機関が、2026年初頭にBlackXと呼ばれるUEFIブートキットを使った攻撃の標的になったと報告された。攻撃者は、Windowsに更新を適用済みでも、失効情報が更新されていない環境ではSecure Bootの検証を回避できる可能性を突くとされる。ブートキットが起動時に実行されれば、O…",
+      "article_path": "articles/855aa05745e422e2.html",
+      "original_url": "https://thehackernews.com/2026/10/blackx-uefi-bootkit-bypasses-secure.html"
+    },
+    {
+      "entry_id": "57d552e5228ffdd9",
+      "title": "Ruby Fixes Three Regex Engine Bugs Responsible for Four Critical GitLab RCE Flaws",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-23T17:54:08+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Rubyは、組み込みの正規表現エンジンOnigmoにある三つの不具合を修正する更新版4.0.9、3.4.12、3.3.13を公開した。これらの不具合は、GitLabが過去1か月に修正した四つの重大な遠隔コード実行（RCE）脆弱性の原因となったと報じられている。細工した正規表現パターンをRubyがコンパイルする際にメモリ破壊が起き、条件がそろえばサーバー…",
+      "article_path": "articles/57d552e5228ffdd9.html",
+      "original_url": "https://thehackernews.com/2026/10/ruby-fixes-three-regex-engine-bugs.html"
+    },
+    {
+      "entry_id": "8ee5d69cd7aa8e37",
+      "title": "Exposed Infrastructure Reveals How Ransomware Affiliates Used AI Agents to Execute Intrusions",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-23T17:50:47+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要研究者は、INCおよびThe Gentlemenのランサムウェア集団に関係する実行者が、AIを用いて侵入を進める活動基盤を運用していたと報告した。中核には「Phantom」と呼ばれる自律型レッドチーム実行フレームワークがあり、AIエージェントを侵入活動に使ったとされるが、記事の提示情報からは具体的な実行段階や人間の承認範囲までは確認できない。運用者はロ…",
+      "article_path": "articles/8ee5d69cd7aa8e37.html",
+      "original_url": "https://thehackernews.com/2026/10/exposed-infrastructure-reveals-how.html"
+    },
+    {
+      "entry_id": "d9b725e8d6316368",
+      "title": "Hackers Breach Enterprise Firewalls and VPNs, Exposing Over 70,000 Credentials",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-23T13:50:56+00:00",
+      "impact_level": "High",
+      "threat_type": "Credential Theft",
+      "summary_preview": "概要The Hacker Newsは、Fortinet FortiGateやPalo Alto Networks GlobalProtectなど、インターネットに公開されたネットワーク境界機器を狙う大規模な侵害活動について、研究者が詳細を公表したと報じている。見出しでは70,000件を超える認証情報の露出が示され、調査の痕跡から、世界各地の複数組織へのアク…",
+      "article_path": "articles/d9b725e8d6316368.html",
+      "original_url": "https://thehackernews.com/2026/10/hackers-breach-enterprise-firewalls-and.html"
+    },
+    {
+      "entry_id": "a54f4b2067ce2b3c",
+      "title": "PHP Warns of Another Unpatched RCE Risk Two Days After Emergency PHP2Shell Patches",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-23T11:25:43+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要PHPが、ウェブサーバー上で攻撃者にコードを実行されるおそれのある別の問題として、CVE-2026-115560を警告したと報じられている。これは緊急修正が出たPHP2Shellの問題から2日後の発表だが、今回の問題は特定の構成に限られるとされ、PHP側は発生可能性を低く見積もり、緊急修正を提供していない。攻撃成立には一般的な利用環境とは異なるウェブア…",
+      "article_path": "articles/a54f4b2067ce2b3c.html",
+      "original_url": "https://thehackernews.com/2026/10/urgent-php-warns-of-another-unpatched.html"
+    },
+    {
+      "entry_id": "44fb871690027f46",
+      "title": "Russia-Linked Hackers Used New Mesh Network Backdoor in Destructive Ukraine Attack",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-23T11:11:23+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Malware",
+      "summary_preview": "概要報道によると、Sandwormと別の脅威アクターが連携し、2025年にウクライナの物流企業へ破壊的な攻撃を実施したとされる。ESETの分析として、UAC-0099（Earth Sirrush）が7月16日に標的へ初期侵入し、マルウェアを含む添付ファイル付きの標的型メールを使ったと説明されている。記事見出しは新たなメッシュ型バックドアの使用を示すが、提供…",
+      "article_path": "articles/44fb871690027f46.html",
+      "original_url": "https://thehackernews.com/2026/10/russian-linked-hackers-used-new-mesh.html"
+    },
+    {
+      "entry_id": "2d9fd92a0376a8d7",
+      "title": "Critical Flaw in Python’s Popular Pillow Image Library Allows Code Execution via a Crafted Image",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-23T09:36:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Python向け画像処理ライブラリPillowのEPS画像処理に、画像を開く際のファイル名の扱いを悪用し、サーバー上でOSコマンドを実行されるおそれがある脆弱性が報告された。PillowはEPS画像の変換を別プログラムのGhostscriptに委ねており、記事によれば、渡すファイル名を事前に検証しない点が問題となる。攻撃成立には、攻撃者が細工したEPS…",
+      "article_path": "articles/2d9fd92a0376a8d7.html",
+      "original_url": "https://thehackernews.com/2026/10/critical-flaw-in-pythons-popular-pillow.html"
+    },
+    {
+      "entry_id": "635174f81207419f",
+      "title": "Researchers Demonstrate Node2Shell RCE Exploit on Node.js Build Using Crafted Brotli Data",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-23T08:40:43+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Impervaの研究者が、細工したBrotliデータをNode.jsの同梱デコーダーに処理させ、攻撃者のコードを実行する実証コードを公開したとThe Hacker Newsが報じた。対象例はLinux arm64向けの公式Node.js 24.22.0で、デバッガーや独自ビルドを必要とせず、関連する脆弱性にはCVE-2026-111497が付与されてい…",
+      "article_path": "articles/635174f81207419f.html",
+      "original_url": "https://thehackernews.com/2026/10/researchers-demonstrate-node2shell-rce.html"
+    },
+    {
+      "entry_id": "44e55da8ebdd48aa",
+      "title": "Critical x402 SDK Flaw Could Let Malicious APIs Drain AI Agents’ Token Balances",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-23T08:35:45+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要AIエージェントがAPI利用料をトークンで支払う際に使うx402 SDKについて、悪意あるAPIが支払いを要求すると、エージェントが保有する対応トークンの全残高を支払う内容に署名させられる欠陥が報告された。原因はSDKの既定クライアントに支出上限が設定されていなかった点にあり、上限を追加したリリースは8月18日に公開されたとされる。成立には、修正前のS…",
+      "article_path": "articles/44e55da8ebdd48aa.html",
+      "original_url": "https://thehackernews.com/2026/10/critical-x402-sdk-flaw-could-let.html"
+    },
+    {
+      "entry_id": "4732b05fcd0143df",
+      "title": "PHP2Shell Exploit Attempts Hit Millions as Attackers Try to Deploy Mirai Malware",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-23T07:40:45+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要PHP2Shellとして報じられた脆弱性を狙い、感染端末をMirai派生型のPotassiumボットネットへ取り込もうとする攻撃試行が観測されている。対象はCVE-2026-109618とCVE-2026-109619で、いずれも未認証の遠隔コード実行につながるとされ、CVSSスコアは9.2となっている。記事の見出しでは数百万件規模の試行が示される一方…",
+      "article_path": "articles/4732b05fcd0143df.html",
+      "original_url": "https://thehackernews.com/2026/10/php2shell-exploit-attempts-hit-millions.html"
+    },
+    {
+      "entry_id": "0b25226abd30085f",
+      "title": "(Reliable)&#x3f; php2shell exploitability, (Fri, Oct 23rd)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-10-23T20:04:47+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要記事は、php2shellと呼ばれる脆弱性を巡って懸念が急速に広がった状況を取り上げ、題名では悪用可能性の信頼性を問い直している。提供された要約は反応の大きさを述べるにとどまり、脆弱性の仕組み、成立条件、影響を受ける製品や版は示していない。したがって、攻撃者がどの入力や権限を利用して侵入するのか、実際にシェル実行へ至るのかは確認できない。影響範囲も、特…",
+      "article_path": "articles/0b25226abd30085f.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33452"
+    },
+    {
+      "entry_id": "4a46e2206b69d7a0",
+      "title": "PHP Vulnerability Wrap-Up, (Fri, Oct 23rd)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-10-23T13:43:20+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要SANS ISCは、PHPをめぐる状況が緊急の注意を要すると判断してInfoconを引き上げていたものの、今回の記事では通常水準のGreenへ戻したと伝えている。記事の記述からは、警戒水準を変更した事実は読み取れるが、対象となる脆弱性、影響するPHPの版、攻撃成立に必要な条件、実際の悪用の有無は確認できない。したがって、Greenへの復帰を脆弱性の解消…",
+      "article_path": "articles/4a46e2206b69d7a0.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33450"
+    },
+    {
+      "entry_id": "cccf397a15afbe5e",
+      "title": "ISC Stormcast For Friday, October 23rd, 2026 https://isc.sans.edu/podcastdetail/10148, (Fri, Oct 23rd)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-10-23T10:25:11+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要入力はSANS ISCの「Stormcast」配信を示すRSS項目で、公開日時と配信ページへのリンクは確認できる一方、記事本文に相当する要約や参照資料は含まれていない。したがって、配信で扱われた脆弱性、攻撃手法、被害事例、注意喚起の有無をこの情報だけから特定することはできず、攻撃者の前提条件や対象環境も評価できない。組織内で特定製品の緊急対応や封じ込め…",
+      "article_path": "articles/cccf397a15afbe5e.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33448"
+    },
+    {
+      "entry_id": "affd8bcccc10f6d8",
+      "title": "Threat Brief: Critical Vulnerabilities in PHP: CVE-2026-109618, CVE-2026-109619 (Updated October 23)",
+      "source_name": "Unit 42",
+      "category": "reporting",
+      "published_at": "2026-10-23T19:00:34+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Unit 42が、ウェブサーバーやコンテンツ管理システムで広く使われるPHPに関するCVE-2026-109618とCVE-2026-109619を、深刻度がCriticalの脆弱性として取り上げている。PHPの利用範囲が広いため、該当する版が外部公開サービスに使われていれば、侵害の入口になり、サービス停止やサーバー上の情報へのアクセスにつながる可能性…",
+      "article_path": "articles/affd8bcccc10f6d8.html",
+      "original_url": "https://unit42.paloaltonetworks.com/cve-2026-109618-cve-2026-109619/"
+    },
+    {
+      "entry_id": "33f35a9cdd9ac209",
+      "title": "VU#763488: Memory corruption vulnerabilities in PHP",
+      "source_name": "CERT/CC",
+      "category": "reporting",
+      "published_at": "2026-10-22T22:23:51+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要PHPの複数バージョンで、メモリ不足時の処理に伴うメモリ破壊と、ワーカーが解放済みのリクエスト状態を参照する解放後使用の二つの脆弱性が確認された。修正対象はPHP 8.2.35、8.3.36、8.4.27、8.5.12より前の版で、未認証の攻撃者がネットワーク経由で細工したHTTPリクエストを送ると、条件次第で任意コード実行に至る可能性がある。解放後使…",
+      "article_path": "articles/33f35a9cdd9ac209.html",
+      "original_url": "https://kb.cert.org/vuls/id/763488"
+    },
+    {
+      "entry_id": "f39e9241f89ac99a",
+      "title": "注意喚起: 直近で相次いでいる国内組織における不正アクセスに関する注意喚起  (更新)",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-10-23T02:37:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要JPCERT/CCは、国内組織で相次いでいる不正アクセスについて注意喚起を更新した。複数組織で事案が続いていることは、個別の端末やアカウントだけでなく、共通する外部公開資産や運用上の弱点が狙われていないか確認する契機となるが、入力情報からは攻撃経路、侵入手法、対象業種、被害の規模を特定できない。攻撃者が認証情報の悪用や公開システムの侵害などを用いる可能…",
+      "article_path": "articles/f39e9241f89ac99a.html",
+      "original_url": "https://www.jpcert.or.jp/at/2026/at260030.html"
+    },
+    {
+      "entry_id": "81d5275d504e7293",
+      "title": "第28回国際度量衡総会（CGPM）でうるう秒の実質的な廃⽌が決定",
+      "source_name": "NICT NOTICE",
+      "category": "reporting",
+      "published_at": "2026-10-23T05:00:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要NICT NOTICEの見出しは、第28回国際度量衡総会で、うるう秒を実質的に廃止する方針が決まったと伝えているが、入力には本文や参照先がなく、決議の具体的な内容や適用時期までは確認できない。うるう秒は地球の自転と原子時計に基づく時刻との差を調整する仕組みであり、廃止の実施は直ちに時計を変更することではなく、将来の時刻調整方法を変えることにつながる。企…",
+      "article_path": "articles/81d5275d504e7293.html",
+      "original_url": "/publicity/topics/2026/10/23-1.html"
+    },
+    {
+      "entry_id": "b143290492c5e5be",
+      "title": "革新的情報通信技術（Beyond 5G（6G））基金事業 電波有効利用研究開発プログラムに係る令和8年度新規委託研究の公募（第2回）を開始",
+      "source_name": "NICT NOTICE",
+      "category": "reporting",
+      "published_at": "2026-10-23T05:00:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要NICTが、Beyond 5G（6G）基金事業のうち「電波有効利用研究開発プログラム」について、令和8年度の新規委託研究の公募を第2回として開始したとの告知だ。題名から確認できるのは、公的資金による次世代通信関連の研究開発を委託する募集であることまでで、個別の研究課題、応募資格、締切、採択条件は入力情報に含まれていない。公募開始自体は、脆弱性の公開、攻…",
+      "article_path": "articles/b143290492c5e5be.html",
+      "original_url": "/press/2026/10/23-1.html"
+    },
+    {
+      "entry_id": "0b628834ecc1216e",
+      "title": "トホホすぎる 日本企業「内製化率５０％」目標",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-22T23:15:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要入力として確認できるのは、ScanNetSecurityの記事タイトルと掲載情報のみで、本文や参照資料は含まれていない。タイトルからは、日本企業の内製化率を50％とする目標を扱う記事と読み取れるが、目標の提唱主体、対象企業、調査方法、達成時期、記事が批判的に論じているのかは確認できない。したがって、特定企業が目標を採用した事実や、内製化率の現状を記事の…",
+      "article_path": "articles/0b628834ecc1216e.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/23/56557.html"
+    },
+    {
+      "entry_id": "35a8170accf2cdd6",
+      "title": "ふるさと納税ポータルサイト「ふるさとチョイス」に不正アクセス、泉大津市で寄附の受付ができない状況に",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-22T23:05:20+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要ふるさと納税ポータル「ふるさとチョイス」への不正アクセスが報じられ、泉大津市では同ポータル経由の寄附受付ができない状況になった。入力情報から確認できる影響は、少なくとも同市の受付業務に生じた停止であり、全国の利用者や自治体への波及、サイト全体の停止までは確認できない。攻撃者の侵入経路、侵害されたシステム、受付停止が予防措置か直接被害かは明らかでなく、寄…",
+      "article_path": "articles/35a8170accf2cdd6.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/23/56556.html"
+    },
+    {
+      "entry_id": "269f14320d429b4c",
+      "title": "中古車情報サイト「カーセンサーnet」と中古車販売店向け業務支援サービス「C-MATCH」への不正アクセス、最大3,709,551件の個人情報が漏えいした可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-22T23:05:18+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要中古車情報サイト「カーセンサーnet」と販売店向け業務支援サービス「C-MATCH」への不正アクセスにより、最大3,709,551件の個人情報が漏えいした可能性が報じられている。現時点で入力情報から確認できるのは対象サービス名と最大件数に限られ、侵入経路、攻撃者の権限、情報の持ち出しが確認されたかは分からない。両サービスの利用者や販売店に関する情報が含…",
+      "article_path": "articles/269f14320d429b4c.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/23/56555.html"
+    },
+    {
+      "entry_id": "5ded8417a941007e",
+      "title": "メール配信システム「ブラストメール」に不正アクセス、データ持ち出しを確認",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-22T23:05:16+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要メール配信システム「ブラストメール」への不正アクセスが発生し、データの持ち出しが確認されたと報じられている。記事タイトルから確認できるのは不正アクセスと持ち出しの事実までであり、侵入経路、攻撃者の権限、対象データの種類や件数、発生期間は明らかでない。メール配信サービスは、利用組織の連絡先情報や配信設定を集約している可能性があるため、侵害範囲によっては一…",
+      "article_path": "articles/5ded8417a941007e.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/23/56554.html"
+    },
+    {
+      "entry_id": "4be40619c4d69cce",
+      "title": "アバハウスインターナショナルに不正アクセス、複数の顧客からの問い合わせで発覚",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-22T23:05:13+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要アバハウスインターナショナルへの不正アクセスが、複数の顧客から寄せられた問い合わせをきっかけに発覚したと報じられている。記事の提示情報から確認できるのは、不正アクセスの発生と顧客問い合わせによる発覚までであり、侵入経路、対象システム、発生期間、攻撃者の権限、情報の閲覧・持ち出しの有無は分からない。顧客問い合わせは、実際の情報漏えいだけでなく、同社を装っ…",
+      "article_path": "articles/4be40619c4d69cce.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/23/56553.html"
+    },
+    {
+      "entry_id": "cab75d2ba9d75d8d",
+      "title": "講談社BECK 従業員のメールアカウントに不正アクセス、50件の不審なメールを送信",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-22T23:05:09+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要講談社BECKの従業員メールアカウントに不正アクセスがあり、当該アカウントから不審なメール約50件が送信されたと報じられた。攻撃者が正規アカウントを送信元として使うと、受信者には通常の社内連絡に見えやすく、リンクや添付ファイルを通じて被害が組織外へ広がるおそれがある。現時点で示された情報からは、侵入経路や不正アクセスの継続時間、メールの宛先・内容、受信…",
+      "article_path": "articles/cab75d2ba9d75d8d.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/23/56552.html"
+    },
+    {
+      "entry_id": "00f965b9514284c8",
+      "title": "ムーンスターのサーバに不正アクセス、オンラインストアを利用した顧客情報が漏えいした可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-22T23:05:07+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要ScanNetSecurityの記事タイトルによれば、ムーンスターのサーバへの不正アクセスがあり、オンラインストアを利用した顧客情報が漏えいした可能性があると報じられている。現時点で入力情報から確認できるのは、対象が同社サーバとオンラインストア利用者の情報であること、漏えいが確定ではなく可能性として扱われていることに限られる。侵入経路、攻撃者の権限、対…",
+      "article_path": "articles/00f965b9514284c8.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/23/56551.html"
+    },
+    {
+      "entry_id": "fddd72bad1e76f95",
+      "title": "セーファーインターネット協会が利用する「さくらのレンタルサーバ」に不正アクセス",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-22T23:05:05+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要記事タイトルは、セーファーインターネット協会が利用する「さくらのレンタルサーバ」に不正アクセスがあったと報じているが、提供された情報には記事本文や詳細な発表内容が含まれていない。侵入経路としては、管理用アカウントの窃取、脆弱な認証設定、運用端末の侵害などが考えられるものの、今回どの経路が使われたかは確認できない。レンタルサーバーへのアクセスが、ウェブサ…",
+      "article_path": "articles/fddd72bad1e76f95.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/23/56550.html"
+    },
+    {
+      "entry_id": "e582b20f7ba26924",
+      "title": "富士急ハイランド公式アプリ・会員サイト「CLUB フジQ」にリスト型攻撃、159名の会員情報が閲覧された可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-22T23:05:03+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Credential Theft",
+      "summary_preview": "概要富士急ハイランドの公式アプリおよび会員サイト「CLUB フジQ」に対するリスト型攻撃により、159名の会員情報が閲覧された可能性があると報じられた。リスト型攻撃では、他サービスなどから流出した可能性のある認証情報を使い、複数のアカウントへのログインを試みるため、個々の利用者がパスワードを再利用していると不正ログインにつながる。今回、攻撃者が閲覧できた可…",
+      "article_path": "articles/e582b20f7ba26924.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/23/56549.html"
+    },
+    {
+      "entry_id": "f286434f4dc0d10c",
+      "title": "大阪10/28・東京11/11・名古屋12/2開催 ネットワーク＆セキュリティ MeetUp! 2026 に「Cloudbase AI」を出展",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-22T23:00:15+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要ScanNetSecurityは、ネットワーク＆セキュリティ MeetUp! 2026の大阪10月28日、東京11月11日、名古屋12月2日の各開催回に「Cloudbase AI」が出展すると告知している。入力情報から確認できるのは出展予定と開催日程であり、脆弱性の公表、侵害の報告、製品更新を知らせる記事ではない。CSIRTにとっては、製品やサービスの…",
+      "article_path": "articles/f286434f4dc0d10c.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/23/56548.html"
+    },
+    {
+      "entry_id": "d5c901be1170fadd",
+      "title": "UnRTF に境界外書き込みの脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-22T23:00:12+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要ScanNetSecurityの記事タイトルから確認できるのは、RTF文書を扱うUnRTFに境界外書き込みの脆弱性が報じられた点までで、該当版、修正版、CVE、修正内容、悪用確認の有無は提示情報から確認できない。境界外書き込みは、入力データの処理時に想定領域を越えてメモリへ書き込む不具合を指し、異常終了にとどまる場合もあれば、条件次第でプロセス破壊やコ…",
+      "article_path": "articles/d5c901be1170fadd.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/23/56547.html"
+    },
+    {
+      "entry_id": "73ab8bb8830705b1",
+      "title": "複数の Lenovo 製タブレットの Android Verified Boot 機能に既知のテスト用鍵がそのまま使用されている問題",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-22T23:00:08+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要ScanNetSecurityは、複数のLenovo製タブレットで、Android Verified Boot（AVB）の検証に既知のテスト用鍵が使われている問題を報じている。AVBは起動時にシステム領域などの改変を検証する仕組みであり、対象端末が既知の鍵を信頼し続けている場合、対応する秘密鍵で署名した改変イメージを正規のものとして受け入れるおそれがあ…",
+      "article_path": "articles/73ab8bb8830705b1.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/23/56546.html"
+    },
+    {
+      "entry_id": "90b6704c1bf44da2",
+      "title": "アツミ電氣製 DVR に利用可能な非公開機能を悪用される問題",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-22T23:00:06+00:00",
+      "impact_level": "Low",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要ScanNetSecurityの記事タイトルから、アツミ電氣製DVRに存在する非公開機能が悪用可能な問題が報じられていると読み取れるが、入力には記事本文や参照先がなく、対象機種、脆弱な版、機能の内容は確認できない。非公開機能の悪用が成立する条件として、ネットワークからの到達性や認証の要否、特別な要求の送信が必要かが重要になるものの、現時点ではいずれも不…",
+      "article_path": "articles/90b6704c1bf44da2.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/23/56545.html"
+    },
+    {
+      "entry_id": "e6ddf2a827014b79",
+      "title": "GMOイエラエ 育休取得率 男性60％ 女性100％ ～ 厚労省「子育てサポート企業」に認定",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-22T23:00:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要GMOイエラエが、男性の育児休業取得率60％、女性100％を公表し、厚生労働省から「子育てサポート企業」として認定されたと報じられた。記事から確認できるのは取得率と認定の事実であり、集計期間、対象人数、取得率の算出方法、休業日数や復職後の状況までは示されていないため、数値だけで制度の利用しやすさや組織全体への定着度を判断することはできない。認定は子育て…",
+      "article_path": "articles/e6ddf2a827014b79.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/23/56544.html"
+    }
+  ]
+}
