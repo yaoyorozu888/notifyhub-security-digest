@@ -1,0 +1,173 @@
+{
+  "date": "2026-10-25",
+  "window": {
+    "from": "2026-10-24T06:00:00+09:00",
+    "to": "2026-10-25T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 5
+  },
+  "generated_at_jst": "2026-10-25T06:20:00.771028+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "Microsoft、新Outlook for Windowsに統合受信トレイを追加",
+      "source_name": "BetaNews",
+      "published_at": "2026-10-24T00:00:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Other",
+      "summary_preview": "概要Microsoftは新Outlook for Windowsに統合受信トレイ機能を導入した。複数アカウントのメールを単一ビューで扱えるようになり、他のメールクライアントに追随する形となる。企業ユーザーの日常業務効率向上を狙った変更で、OneDriveのCopilotショートカット一部廃止など関連UI調整も同時期に進む。IT管理者は展開計画やユーザー教育…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://betanews.com/",
+      "selection_reason": "エンタープライズ向けメールクライアントの実用機能追加で、他のAI資金調達や脆弱性話題と異なり、日常業務ツールの具体的改善を示すITトレンドとして新規性と実務影響が高い。発信元も製品発表系で多様。",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "Microsoft finally brings a unified inbox to new Outlook for Windows",
+          "url": "https://betanews.com/",
+          "source_type": "news"
+        },
+        {
+          "title": "Microsoft pulls eight Copilot shortcuts from OneDrive’s right-click menu",
+          "url": "https://betanews.com/",
+          "source_type": "news"
+        },
+        {
+          "title": "Technology News BetaNews Oct 24 2026",
+          "url": "https://betanews.com/page/122/?u=ublog.gq",
+          "source_type": "web"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "Anthropic、Claude DuetのプロアクティブエージェントをPro/Max向けにプレビュー公開",
+      "source_name": "TechCrunch / BetaNews",
+      "published_at": "2026-10-23T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要AnthropicはClaude DuetをProおよびMaxプラン向けにプレビュー公開した。ユーザーの作業を先回りして支援するプロアクティブエージェント機能を備え、API中心から直接使える製品へ移行する動きを示す。待機リスト経由で提供され、エージェント競争がアプリ層に広がる中、スタートアップの薄いラッパー層に圧力をかける。企業は自社エージェント戦略を…",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://betanews.com/",
+      "selection_reason": "エージェント製品の具体的プレビューで、資金調達ニュースや一般トレンド予測より製品・実務導入に直結。AIカテゴリの核心であるモデル活用進展を示し、他トピックと領域が異なる。",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "Claude Duet preview brings Anthropic’s proactive agent to Pro and Max",
+          "url": "https://betanews.com/",
+          "source_type": "news"
+        },
+        {
+          "title": "Claude Duet app is Anthropic’s bet on agents",
+          "url": "https://aiweekdaily.com/digest/2026-10-23",
+          "source_type": "web"
+        },
+        {
+          "title": "The Daily Debrief — 23 October 2026",
+          "url": "https://theairankings.com/daily/2026-10-23/",
+          "source_type": "web"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "PHPの深刻な脆弱性で数百万件の攻撃試行、企業サイトが緊急パッチでオフラインに",
+      "source_name": "The Hacker News / BetaNews",
+      "published_at": "2026-10-23T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要PHPの重大なリモートコード実行脆弱性（php2shell関連）に対し、数百万件の攻撃試行が観測された。パッチ適用のため企業や政府サイトが一時オフラインになる事例が相次ぐ。詳細漏洩後の早期悪用やPoC公開でリスクが急拡大し、CloudflareやAmazonもトラフィックを検知。PHPがウェブの約7割を支えるため影響範囲が広い。管理者は直ちにバージョン…",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://thehackernews.com/",
+      "selection_reason": "広範なウェブ基盤への即時脅威で、具体的な悪用・パッチ対応が確認でき、資金や製品発表と異なりセキュリティ実務直結。複数ソースで裏づけられ多様性が高い。",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "Millions of exploit attempts hit PHP as firms pull sites offline to patch",
+          "url": "https://betanews.com/",
+          "source_type": "news"
+        },
+        {
+          "title": "Websites taken offline in race to patch PHP security flaw",
+          "url": "https://www.ft.com/technology",
+          "source_type": "news"
+        },
+        {
+          "title": "Update on php2shell: exploitation attempts...",
+          "url": "https://telefonicatech.com/en/blog/cybersecurity-briefing-17-23-october-2026",
+          "source_type": "web"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "3b8530f16ddf1d63",
+      "title": "Brotli Decoder Flaw Behind Node.js RCE Also Affects Bun, Python and Other Widely Used Software",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-24T11:09:29+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要GoogleのBrotliデコーダーに、圧縮データの展開時にメモリーを破壊する脆弱性CVE-2026-111497があると報じられ、細工した入力によってバッファーの終端を越えて書き込み、対象プログラムの実行を妨げたり、条件次第でコード実行につながったりする可能性がある。記事の題名はNode.jsでのリモートコード実行を示しており、影響対象としてBun、…",
+      "article_path": "articles/3b8530f16ddf1d63.html",
+      "original_url": "https://thehackernews.com/2026/10/brotli-decoder-flaw-behind-nodejs-rce.html"
+    },
+    {
+      "entry_id": "f6b4a9873327b7b8",
+      "title": "Leaked LiteLLM Master Key Let Attackers Steal GitHub Tokens and Hijack Release Pipeline",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-24T11:03:33+00:00",
+      "impact_level": "High",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要LiteLLMの報告として、2026年5月27日に公開GitHubリポジトリへ登録された設定ファイルに、LiteLLMのデプロイ環境で使うマスターキーが含まれていたと伝えられている。このキーを得た攻撃者は、関連するGitHubトークンを窃取し、人気のPythonパッケージの悪意ある版を公開するために利用したとされる。問題の中心は鍵の漏えいだけでなく、運…",
+      "article_path": "articles/f6b4a9873327b7b8.html",
+      "original_url": "https://thehackernews.com/2026/10/leaked-litellm-master-key-let-attackers.html"
+    },
+    {
+      "entry_id": "b96da1c90472ac10",
+      "title": "Google Says Gmail and Photos Data Shared With AI Search Could Be Used for Targeted Ads",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-24T10:36:33+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要Googleがプライバシーポリシーを更新し、SearchやGeminiなどのAI機能に、利用者が選択して他のGoogleサービスのデータへのアクセスを許可した場合、その活動情報が広告の個別化に使われる可能性を明記したと報じられた。これは新たな侵入や情報漏えいの発生ではなく、連携したサービス間のデータ利用と広告表示の関係を説明する変更として扱う必要がある…",
+      "article_path": "articles/b96da1c90472ac10.html",
+      "original_url": "https://thehackernews.com/2026/10/google-says-gmail-and-photos-data.html"
+    },
+    {
+      "entry_id": "437953ba0af53e2b",
+      "title": "Researchers Push Over 2 Million Updates to Remotely Disable Popcorn Time Updater That Could Fuel a Botnet",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-24T09:04:24+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要オランダのEye Securityは、2025年11月から2026年3月にかけ、Time4Popcornのバックグラウンド更新機能を停止する更新を、所有者ではないコンピューターへ200万回超配信したと報じられている。Time4Popcornは、開発が放棄されたPopcorn Time系アプリで、BitTorrent経由の動画視聴に使われていた。研究者ら…",
+      "article_path": "articles/437953ba0af53e2b.html",
+      "original_url": "https://thehackernews.com/2026/10/researchers-push-over-2-million-updates.html"
+    },
+    {
+      "entry_id": "9e28116657c98afc",
+      "title": "CISA Flags Two Actively Exploited Critical Flaws in Collabora Online and Arista VeloCloud",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-24T06:25:57+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要CISAが、Collabora OnlineのBuilt-in CODE ServerとArista VeloCloud Orchestrator（VCO）に影響する悪用確認済みの脆弱性2件を、既知の悪用脆弱性カタログ（KEV）へ追加したと報じられている。提示された記事抜粋で識別できるのはCVE-2026-110447のみで、CVSSスコアは9.2とさ…",
+      "article_path": "articles/9e28116657c98afc.html",
+      "original_url": "https://thehackernews.com/2026/10/cisa-flags-two-actively-exploited.html"
+    }
+  ]
+}
