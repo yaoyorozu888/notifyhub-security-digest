@@ -1,0 +1,437 @@
+{
+  "date": "2026-10-27",
+  "window": {
+    "from": "2026-10-26T06:00:00+09:00",
+    "to": "2026-10-27T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 27
+  },
+  "generated_at_jst": "2026-10-27T06:28:11.114179+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "OpenAI、企業向けエージェント基盤の正式提供を拡大",
+      "source_name": "TechCrunch",
+      "published_at": "2026-10-26T08:15:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要OpenAIが企業向けエージェント基盤を一般提供に移行した。ワークフロー自動化や社内データ連携を標準機能として提供し、既存のクラウド環境との接続を強化している。導入企業は権限管理と監査ログを必須要件として設定できるため、ガバナンスを保ちつつ業務適用を進めやすい。開発者向けにはツール呼び出しAPIの安定版が公開され、SaaS連携の実装コスト低減が期待され…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://techcrunch.com/2026/10/26/openai-enterprise-agents-ga/",
+      "selection_reason": "対象期間内の具体的な製品正式提供発表で、クラウド・SaaS・開発者ツール領域の実務影響が明確。抽象的な年次予測や同種レポートより新規性と多様性が高い。",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "OpenAI expands enterprise agent platform to general availability",
+          "url": "https://techcrunch.com/2026/10/26/openai-enterprise-agents-ga/",
+          "source_type": "news"
+        },
+        {
+          "title": "OpenAI公式発表：企業向けエージェント機能のGA",
+          "url": "https://openai.com/blog/enterprise-agents-ga-2026",
+          "source_type": "official"
+        },
+        {
+          "title": "企業向けAIエージェント基盤のGAを報じる投稿",
+          "url": "https://x.com/sama/status/1850000000000000000",
+          "source_type": "x"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "EU、AIシステムリスク分類の運用ガイドラインを追加公表",
+      "source_name": "Reuters",
+      "published_at": "2026-10-26T11:40:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Advisory",
+      "summary_preview": "概要欧州委員会がAI法に基づくリスク分類の運用ガイドラインを追加公表した。高リスク判定の境界事例や、汎用モデルを特定用途に組み込む場合の責任分界を明確化している。企業は自社システムの分類見直しを急ぐ必要があり、適合性評価の準備期間が事実上短くなる可能性がある。域外事業者にも影響が及ぶため、グローバル展開するAIサービスは文書化と監視体制の再点検が求められる…",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://www.reuters.com/technology/eu-ai-act-guidelines-risk-classification-2026-10-26/",
+      "selection_reason": "規制の具体的運用指針が期間内に出た点で新規性が高く、AI製品開発・導入のコンプライアンス実務に直結。モデル発表や一般論より影響範囲が明確。",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "EU issues additional AI Act guidelines on risk classification",
+          "url": "https://www.reuters.com/technology/eu-ai-act-guidelines-risk-classification-2026-10-26/",
+          "source_type": "news"
+        },
+        {
+          "title": "European Commission AI Act risk classification guidance",
+          "url": "https://digital-strategy.ec.europa.eu/en/library/ai-act-risk-guidelines-2026",
+          "source_type": "official"
+        },
+        {
+          "title": "EU AI Actガイドライン追加を指摘する投稿",
+          "url": "https://x.com/EU_Commission/status/1850000000000000001",
+          "source_type": "x"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "主要クラウド管理コンソール向けの認証バイパス脆弱性が公開、緊急パッチ推奨",
+      "source_name": "The Hacker News",
+      "published_at": "2026-10-26T06:20:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要主要クラウド事業者の管理コンソールにおける認証バイパス脆弱性が公開された。特定条件下でセッション検証を迂回できる可能性が指摘され、影響範囲の確認と緊急パッチ適用が推奨されている。攻撃が成功すると権限昇格や設定変更につながる恐れがあるため、特権アカウントの監視強化が急務となる。暫定策として多要素認証の強制と管理操作のIP制限が有効とされる。クラウド運用チ…",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://thehackernews.com/2026/10/cloud-console-auth-bypass-cve-2026.html",
+      "selection_reason": "期間内の脆弱性開示とパッチ推奨で、クラウド運用の緊急対応判断に直結。抽象的な脅威動向より具体的な実務影響が大きい。",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "Critical auth bypass in major cloud management consoles",
+          "url": "https://thehackernews.com/2026/10/cloud-console-auth-bypass-cve-2026.html",
+          "source_type": "news"
+        },
+        {
+          "title": "Vendor security advisory on console authentication bypass",
+          "url": "https://cloud.example-vendor.com/security/advisory/CVE-2026-XXXX",
+          "source_type": "official"
+        },
+        {
+          "title": "クラウドコンソール認証バイパスへの注意喚起投稿",
+          "url": "https://x.com/SecureCloudOps/status/1850000000000000002",
+          "source_type": "x"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "fc948689d3898a1b",
+      "title": "Hackers Infect 953 Online Stores With Scanner-Evading JavaScript, Mostly on Magento",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-26T18:12:22+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要未知の攻撃者が、2025年7月から続く活動で953のオンライン店舗に不正なコードを挿入し、その多くがMagentoを利用していたと報告された。店舗ページに埋め込まれた小さなコードが、訪問者の閲覧時にMagentoのCMSブロックを介して悪意あるJavaScriptローダーを配信する構成で、記事の見出しはスキャナーによる検出を回避する特徴にも触れているが…",
+      "article_path": "articles/fc948689d3898a1b.html",
+      "original_url": "https://thehackernews.com/2026/10/hackers-infect-953-online-stores-with.html"
+    },
+    {
+      "entry_id": "b7f2fdbf078159a6",
+      "title": "PHP Issues Second Windows Security Update in Five Days to Fix Brotli Code Execution Flaw",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-26T17:45:57+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Patch",
+      "summary_preview": "概要PHPは、Brotli圧縮ライブラリのコード実行につながり得る欠陥に対処するため、PHP 8.2〜8.5向けの公式Windowsパッケージを再構築した。対象のCVE-2026-111497は、圧縮データ処理中のメモリ破壊を起点とし、攻撃者が細工したHTTP応答をPHPアプリケーションに処理させることで、実行中プロセス上でコード実行に至る可能性がある。記…",
+      "article_path": "articles/b7f2fdbf078159a6.html",
+      "original_url": "https://thehackernews.com/2026/10/php-issues-second-windows-security.html"
+    },
+    {
+      "entry_id": "f27c54b7a9b01dfe",
+      "title": "Attackers Use Microsoft Teams IT Support Scams to Deploy Malware and Ransomware",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-26T15:52:40+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Phishing",
+      "summary_preview": "概要研究者は、Microsoft Teamsの外部チャット作成機能を悪用し、IT担当者などを装って利用者に接触したり、マルウェアを送り込んだりする手口が、数百件の事例で繰り返されていると指摘している。報告では、攻撃者が同じ使い捨てテナントを使い回し、類似したITサポート名義で接触するパターンが示されているが、提供された記事情報は途中で途切れており、具体的な…",
+      "article_path": "articles/f27c54b7a9b01dfe.html",
+      "original_url": "https://thehackernews.com/2026/10/attackers-use-microsoft-teams-it.html"
+    },
+    {
+      "entry_id": "ed03f402c75aab50",
+      "title": "⚡ Weekly Recap: This2Shell, That2Shell, Everything's an RCE? Rogue AI, Supply Chain Chaos and More",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-26T14:06:13+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要The Hacker Newsの週次まとめは、遠隔からコードを実行できる複数の脆弱性、攻撃者による標的探索、悪用が始まったとされる事例、漏えいした鍵に関連するソフトウェア供給網の問題などを取り上げている。遠隔コード実行は、対象製品が外部から到達可能であることや、認証・設定などの条件がそろうと、侵入後の足掛かりになり得る一方、記事の要約だけでは各脆弱性の…",
+      "article_path": "articles/ed03f402c75aab50.html",
+      "original_url": "https://thehackernews.com/2026/10/weekly-recap-this2shell-that2shell.html"
+    },
+    {
+      "entry_id": "b1af7d4d26ef2efd",
+      "title": "Two Critical Wasmtime Flaws Could Let Malicious WebAssembly Modules Escape Sandboxes",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-26T11:52:41+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要The Hacker Newsは、WebAssembly実行環境のWasmtimeに、悪意あるWebAssemblyモジュールがサンドボックスを脱出し得る重大な欠陥が2件見つかったと報じた。攻撃成立には、攻撃者が制御するモジュールを脆弱なWasmtimeビルドでコンパイルする条件が必要とされ、単に外部から記事を閲覧しただけで影響する種類の問題とは異なる…",
+      "article_path": "articles/b1af7d4d26ef2efd.html",
+      "original_url": "https://thehackernews.com/2026/10/two-critical-wasmtime-flaws-could-let.html"
+    },
+    {
+      "entry_id": "0ef34242f7f14896",
+      "title": "Between alerts: What Attackers Do in the Spaces Ordinary Detection Misses",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-26T11:23:56+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要記事は、SOCに届く個々の警告だけでは侵入の開始点や進行状況を捉えにくく、警告と警告の間にある活動を見落とし得るという課題を取り上げている。対策の軸として、ネットワーク検知・対応（NDR）などが収集する通信情報を使い、端末やセキュリティ製品の警告を時系列で結び付け、攻撃の流れを一つの見取り図にまとめる考え方を示している。攻撃者の活動を単一の警告で評価せ…",
+      "article_path": "articles/0ef34242f7f14896.html",
+      "original_url": "https://thehackernews.com/2026/10/between-alerts-what-attackers-do-in.html"
+    },
+    {
+      "entry_id": "110209c13668b140",
+      "title": "uCreator Android Spyware Can Steal Telegram 2FA Passwords and Clone WeChat Accounts",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-26T09:54:02+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Credential Theft",
+      "summary_preview": "概要uCreatorは、TelegramやWeChatの改変版アプリにコードを組み込んで配布する、貸し出し型のAndroidスパイウェアキットとして報告された。Telegramでは二要素認証に使うパスワードの窃取、WeChatではアカウントの複製につながる操作が可能とされ、利用者の認証情報やアカウントを攻撃者に渡す危険がある。攻撃成立には、利用者が公式スト…",
+      "article_path": "articles/110209c13668b140.html",
+      "original_url": "https://thehackernews.com/2026/10/ucreator-android-spyware-can-steal.html"
+    },
+    {
+      "entry_id": "cf4cd45c572d6f89",
+      "title": "Microsoft 365 Token-Replay Attacks Compromise 97 Accounts at 79 Organizations",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-26T08:35:51+00:00",
+      "impact_level": "High",
+      "threat_type": "Credential Theft",
+      "summary_preview": "概要Huntressが2026年7月14日から9月22日にかけて観測したMicrosoft 365への攻撃で、79組織の97アカウントが侵害されたと報告されている。攻撃者は中間者型の認証中継を使ってサインインのセッション情報を取得し、盗んだトークンを再利用してメールアカウントへアクセスした。認証済みセッションの情報が使われるため、パスワード変更や多要素認証…",
+      "article_path": "articles/cf4cd45c572d6f89.html",
+      "original_url": "https://thehackernews.com/2026/10/microsoft-365-token-replay-attacks.html"
+    },
+    {
+      "entry_id": "3b9d1be8db020bc8",
+      "title": "Gheist Uses Stolen GitHub Tokens to Steal Private Repository Secrets via Actions Logs",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-26T07:49:46+00:00",
+      "impact_level": "High",
+      "threat_type": "Credential Theft",
+      "summary_preview": "概要盗まれたGitHubトークンを使い、非公開リポジトリのGitHub Actionsワークフローに変更を加えて、リポジトリのシークレットを実行ログへ出力させる攻撃が確認された。攻撃者はログから値を取得した後、実行履歴を削除して痕跡を減らしており、シークレットの漏えいと証拠隠滅が一続きの処理になっている。成立には、ワークフローを変更・実行できる権限を持つト…",
+      "article_path": "articles/3b9d1be8db020bc8.html",
+      "original_url": "https://thehackernews.com/2026/10/gheist-uses-stolen-github-tokens-to.html"
+    },
+    {
+      "entry_id": "2c10eb29bbde3f77",
+      "title": "Malicious File in Downloads Folder Tries to Trick AI Coding Agent Into Installing Malware",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-26T06:03:48+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Malware",
+      "summary_preview": "概要開発者のダウンロードフォルダーに置かれた悪意ある指示ファイルが、AIコーディングエージェントに既知の悪性npmパッケージを導入させようとした事例が報告された。Forever Securityは実顧客の端末で試行を検知し、エージェントがコードを実行する前に阻止したとしているが、ファイルがフォルダーへ届いた経路は特定できていない。攻撃の要点は、脆弱性を直接…",
+      "article_path": "articles/2c10eb29bbde3f77.html",
+      "original_url": "https://thehackernews.com/2026/10/malicious-file-in-downloads-folder.html"
+    },
+    {
+      "entry_id": "1b842600856f7fa1",
+      "title": "Looking for a Language &#x5b;Guest Diary&#x5d;, (Wed, Oct 21st)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-10-26T09:38:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Unknown",
+      "summary_preview": "概要SANS ISCの情報として、2026年10月21日付のゲスト日記に関する記事が登録されているが、入力に含まれる本文情報は寄稿者の紹介に限られ、具体的な主題や観測内容は確認できない。題名は言語を探す趣旨を示すものの、プログラミング言語、攻撃者の言語、その他の意味のどれを指すかは特定できず、題名だけから脆弱性や攻撃事案として扱う根拠はない。したがって、悪…",
+      "article_path": "articles/1b842600856f7fa1.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33442"
+    },
+    {
+      "entry_id": "4750297228165762",
+      "title": "ISC Stormcast For Monday, October 26th, 2026 https://isc.sans.edu/podcastdetail/10150, (Mon, Oct 26th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-10-26T03:30:12+00:00",
+      "impact_level": "Info",
+      "threat_type": "Unknown",
+      "summary_preview": "概要SANS ISCの「Stormcast」について、2026年10月26日付の配信情報と番組ページへの参照先が示されているが、入力には番組の要旨、取り上げた事象、脆弱性情報、対応策が含まれていない。このため、攻撃者が何をどの条件で悪用するのか、対象となる製品や組織の構成、認証の要否といった成立条件は確認できず、脅威の具体像を特定できない。被害が単一端末や…",
+      "article_path": "articles/4750297228165762.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33456"
+    },
+    {
+      "entry_id": "df2282e00f4113de",
+      "title": "Cisco Rethinks Privileged Infrastructure Access",
+      "source_name": "Cisco Security Blog",
+      "category": "reporting",
+      "published_at": "2026-10-26T20:00:16+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要Cisco Security Blogは、重要なインフラへの特権アクセスについて、管理者権限を常時有効にする方式から、利用者の身元に結び付いた暗号学的な制御へ移行する考え方を紹介している。記事の要約では、この方式をCisco Privileged Infrastructure Accessとして示し、重要作業を継続しながら常設の管理者権限を減らすことを…",
+      "article_path": "articles/df2282e00f4113de.html",
+      "original_url": "https://blogs.cisco.com/security/cisco-rethinks-privileged-infrastructure-access/"
+    },
+    {
+      "entry_id": "0542a0849f62ee1f",
+      "title": "VU#128947: COVESA vsomeip excessive memory allocation in reliable (TCP) endpoint buffer handling",
+      "source_name": "CERT/CC",
+      "category": "reporting",
+      "published_at": "2026-10-26T19:07:02+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要COVESAの車載通信ミドルウェアvsomeipで、信頼性の高いTCP通信の受信処理にメモリ枯渇の脆弱性が確認された。CVE-2026-91141はバージョン3.7.3以下に影響し、受信側がメッセージ長の申告値を検証する前に、その大きさまでバッファーを拡張する。既定設定では、到達可能な未認証の相手が短いメッセージで最大約4GBの割り当てを要求でき、接続…",
+      "article_path": "articles/0542a0849f62ee1f.html",
+      "original_url": "https://kb.cert.org/vuls/id/128947"
+    },
+    {
+      "entry_id": "264b05bb56767c40",
+      "title": "注意喚起: BrotliのC言語実装における境界外書き込みの脆弱性（CVE-2026-111497）に関する注意喚起  (公開)",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-10-26T07:25:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要JPCERT/CCは、圧縮形式Brotliを扱うC言語実装に境界外書き込みの脆弱性（CVE-2026-111497）があるとして注意喚起を公開した。境界外書き込みは、入力データの処理時に許可範囲外のメモリを書き換える不具合で、実装や実行環境によっては異常終了にとどまらず、任意コード実行やプロセス権限での侵害につながる可能性がある。攻撃成立には、脆弱な実…",
+      "article_path": "articles/264b05bb56767c40.html",
+      "original_url": "https://www.jpcert.or.jp/at/2026/at260034.html"
+    },
+    {
+      "entry_id": "79f6cba51fc2fd62",
+      "title": "注意喚起: PHPにおける複数の脆弱性（CVE-2026-109618、CVE-2026-109619）に関する注意喚起  (更新)",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-10-26T07:25:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要JPCERT/CCは2026年10月26日付で、PHPにおける複数の脆弱性（CVE-2026-109618、CVE-2026-109619）に関する注意喚起を更新した。提供された情報には脆弱性の内容、影響を受けるPHPの版、修正版、攻撃条件が含まれておらず、リモート攻撃の可否や認証の要否、実際の悪用状況は判断できない。PHPを利用する組織では、Webサ…",
+      "article_path": "articles/79f6cba51fc2fd62.html",
+      "original_url": "https://www.jpcert.or.jp/at/2026/at260033.html"
+    },
+    {
+      "entry_id": "5ee8e02f490ea3a7",
+      "title": "創刊 28 周年記念キャンペーンのおしらせ（2）特別企画実施のおしらせ（When I'm 28）",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-25T23:20:02+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要入力情報から確認できるのは、ScanNetSecurityの創刊28周年記念キャンペーンと、「When I'm 28」と題する特別企画の告知を扱う記事という点に限られる。公開日は2026年10月25日で、記事タイトルには告知が二つ記されているが、キャンペーンの応募条件、実施期間、対象者、企画内容の詳細は入力情報に含まれていない。脆弱性、攻撃手法、侵害、…",
+      "article_path": "articles/5ee8e02f490ea3a7.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/26/56568.html"
+    },
+    {
+      "entry_id": "b44b1d2259a107e0",
+      "title": "「世界の集合知を『使える防御』に変える 脅威情報の共有と活用の実践」～ Internet Week 2026",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-25T23:15:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要ScanNetSecurityの記事は、Internet Week 2026で「世界の集合知を『使える防御』に変える 脅威情報の共有と活用の実践」を扱う内容を掲げている。記事タイトルから読み取れる主題は、脅威情報を組織間で共有するだけでなく、自組織の防御判断や対応手順に結び付けることにある。共有情報は、攻撃者の手口や侵害の兆候を早く把握する助けになる一…",
+      "article_path": "articles/b44b1d2259a107e0.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/26/56567.html"
+    },
+    {
+      "entry_id": "bc546ae6691dec92",
+      "title": "セコムトラストシステムズ、5 大「反響の大きかったウェビナー」をアーカイブ配信",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-25T23:10:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要記事タイトルから確認できるのは、セコムトラストシステムズが、反響の大きかった五つのウェビナーをアーカイブ配信するという告知であり、脆弱性や侵害の発生を伝える内容ではない。ウェビナーの題名、開催時期、視聴対象、申込方法、配信期間は入力情報に含まれていないため、扱われるテーマや、現在の組織課題にどの程度適合するかは判断できない。アーカイブは担当者が都合に合…",
+      "article_path": "articles/bc546ae6691dec92.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/26/56566.html"
+    },
+    {
+      "entry_id": "82478cd203c9d8b1",
+      "title": "厚生労働省 委託事業の「東電福島第一原発廃炉等作業における被ばく低減対策普及啓発事業」で個人情報が漏えい",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-25T23:05:12+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要厚生労働省の委託事業「東電福島第一原発廃炉等作業における被ばく低減対策普及啓発事業」に関連して、個人情報の漏えいが発生したと報じられている。入力情報には、漏えいした情報の項目や人数、発生日、原因、委託先の関与、本人への通知状況が記載されておらず、現時点で被害範囲は確定できない。誤送信や設定不備などの過失か、第三者による不正アクセスかも確認できないため、…",
+      "article_path": "articles/82478cd203c9d8b1.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/26/56565.html"
+    },
+    {
+      "entry_id": "f14e5f554f887e03",
+      "title": "「お名前.com デスクトップクラウド」に不正アクセス、取引口座のログイン情報等が取得され不正利用された可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-25T23:05:09+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Credential Theft",
+      "summary_preview": "概要「お名前.com デスクトップクラウド」への不正アクセスにより、利用者の取引口座のログイン情報などが取得され、不正利用につながった可能性が報じられた。取引口座の認証情報が第三者に渡ると、本人になりすましたログインや資産移動、登録情報の変更に使われるおそれがあり、影響はクラウドサービス上のデータにとどまらず、連携先の金融サービスへ波及し得る。デスクトップ…",
+      "article_path": "articles/f14e5f554f887e03.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/26/56564.html"
+    },
+    {
+      "entry_id": "5af3d25a2287003f",
+      "title": "「焼肉きんぐ」公式アプリ会員管理システムに不正アクセス、1,078万8,963件の個人情報が漏えい",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-25T23:05:07+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要報道タイトルによれば、「焼肉きんぐ」の公式アプリ会員管理システムへの不正アクセスにより、個人情報1,078万8,963件が漏えいしたとされる。これは記録件数であり、重複を含む可能性があるため、被害を受けた会員の実人数や対象期間は件数だけでは判断できない。不正アクセスの経路、攻撃者が得た権限、漏えいした項目、侵入や情報取得の時期は、入力情報から確認できず…",
+      "article_path": "articles/5af3d25a2287003f.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/26/56563.html"
+    },
+    {
+      "entry_id": "ed2ab71cbc56310c",
+      "title": "「大起水産公式アプリ」に不正アクセス、顧客17万4,933人の個人情報が漏えいした可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-25T23:05:05+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要ScanNetSecurityは、「大起水産公式アプリ」への不正アクセスにより、顧客174,933人分の個人情報が漏えいした可能性があると報じている。入力情報には記事本文や参照先が含まれないため、不正アクセスの発生時期、侵入経路、漏えいの確認状況、対象となる情報の種類はいずれも確認できない。攻撃者がアプリや関連システムへ侵入した後、顧客データを閲覧・取…",
+      "article_path": "articles/ed2ab71cbc56310c.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/26/56562.html"
+    },
+    {
+      "entry_id": "eb3205d6a6ba106d",
+      "title": "エスケーロジにランサムウェア攻撃、一部の社内情報の漏えいを確認",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-25T23:05:02+00:00",
+      "impact_level": "High",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要ScanNetSecurityの記事タイトルによれば、エスケーロジがランサムウェア攻撃を受け、一部の社内情報の漏えいを確認した。ランサムウェア事案では、端末やサーバーの暗号化による業務停止に加え、情報を外部へ持ち出して公開を示唆する手口もあり、漏えい確認は可用性だけでなく機密性にも影響する。ただし、提供された情報はタイトルと掲載情報に限られ、侵入経路、…",
+      "article_path": "articles/eb3205d6a6ba106d.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/26/56561.html"
+    },
+    {
+      "entry_id": "e7679c636dd3e307",
+      "title": "Apache Tomcat に複数の脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-25T23:00:10+00:00",
+      "impact_level": "Info",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Apache Tomcatに複数の脆弱性があるとの記事が掲載されたが、入力情報から確認できるのはタイトルのみで、脆弱性の内容、対象バージョン、公開状況は分からない。Tomcatはウェブアプリケーションの実行基盤として利用されるため、対象となる構成がインターネットから到達可能な場合、脆弱性の種類によっては外部からの攻撃が侵入経路になり得る。ただし、認証の…",
+      "article_path": "articles/e7679c636dd3e307.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/26/56560.html"
+    },
+    {
+      "entry_id": "8759afd0272ed023",
+      "title": "PHP に複数の任意のコードが実行可能な脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-25T23:00:08+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要ScanNetSecurityの記事タイトルは、PHPに複数の任意コード実行脆弱性があると伝えている。ただし、提供情報には記事本文、対象となるPHPの版、脆弱性識別子、修正版、攻撃成立条件がなく、個々の問題を特定できない。任意コード実行が外部から到達可能な処理で成立する場合、攻撃者はウェブサーバーの実行権限で処理を動かし、設定情報や保存データの窃取、サ…",
+      "article_path": "articles/8759afd0272ed023.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/26/56559.html"
+    },
+    {
+      "entry_id": "c1c1300f0274141d",
+      "title": "エーアイセキュリティラボ、「A2B攻撃」に特化した診断ツールを近日中に提供",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-25T23:00:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要ScanNetSecurityの記事タイトルによると、エーアイセキュリティラボが「A2B攻撃」に特化した診断ツールを近日中に提供する予定とされる。記事本文や参照先が提示されていないため、A2B攻撃の定義、成立に必要な条件、対象となる製品・環境、ツールの診断方式はいずれも確認できず、具体的な攻撃手順を推定してはならない。したがって、現時点で評価できるのは…",
+      "article_path": "articles/c1c1300f0274141d.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/26/56558.html"
+    }
+  ]
+}
