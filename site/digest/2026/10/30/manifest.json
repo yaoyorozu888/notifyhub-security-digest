@@ -1,0 +1,427 @@
+{
+  "date": "2026-10-30",
+  "window": {
+    "from": "2026-10-29T06:00:00+09:00",
+    "to": "2026-10-30T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 32
+  },
+  "generated_at_jst": "2026-10-30T06:25:56.869548+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "該当期間の主要IT動向を確認できないため暫定停止",
+      "source_name": "N/A",
+      "published_at": "2026-10-29T00:00:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Unknown",
+      "summary_preview": "概要対象期間の可靠な情報が取得できなかった。",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://example.com",
+      "selection_reason": "検索ツール利用が必要だが結果不十分",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "placeholder",
+          "url": "https://example.com",
+          "source_type": "web"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "0c7af40fd7e4332c",
+      "title": "CVE-2026-97229 GitLab Community Edition and Enterprise Edition Integer Overflow or Wraparound Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-10-29T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CISAの既知悪用脆弱性カタログ（KEV）に、GitLab Community EditionおよびEnterprise Editionの整数オーバーフローまたはラップアラウンド脆弱性としてCVE-2026-97229が掲載された。KEV掲載は実際の悪用が確認されたことを示すため、未修正の対象システムがあれば、単なる脆弱性情報より優先して確認する必要が…",
+      "article_path": "articles/0c7af40fd7e4332c.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "972a8b447c1a702b",
+      "title": "CVE-2026-76418 Cisco Secure Firewall ASA Software and Cisco Secure FTD Software Unchecked Return Value to NULL Pointer Dereference Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-10-29T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要CISAの既知の悪用脆弱性カタログに、Cisco Secure Firewall ASA SoftwareおよびCisco Secure FTD SoftwareのCVE-2026-76418が掲載された。原因は、処理結果の確認漏れからNULLポインターを参照する不具合で、入力情報からは攻撃の成立条件や、対象となる具体的なバージョン、修正方法を確認でき…",
+      "article_path": "articles/972a8b447c1a702b.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "7987c47a3c2e09fd",
+      "title": "ThreatsDay: Critical Firewall Flaws, Banking Trojans Rented, Weaponized PDF, Token Theft + 26 More Stories",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-29T19:11:58+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Other",
+      "summary_preview": "概要The Hacker Newsが、ファイアウォールの重大な欠陥、銀行情報を狙うトロイの木馬の貸し出し、悪用目的に加工されたPDF、認証トークンの窃取などを含む複数の脅威をまとめている。記事の抜粋では、漏えいしたパスワードや古い脆弱性の継続的な悪用に加え、正規のアプリやウェブサイト、AIツールへの信頼を利用する攻撃も示されている。攻撃者は、露出した認証情…",
+      "article_path": "articles/7987c47a3c2e09fd.html",
+      "original_url": "https://thehackernews.com/2026/10/threatsday-critical-firewall-flaws.html"
+    },
+    {
+      "entry_id": "2ea6143451829665",
+      "title": "Linux Kernel TCP Flaw With 9.8 CVSS Score Affects Ubuntu, Red Hat and Other Distributions",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-29T15:57:05+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要LinuxカーネルのTCP処理に関する脆弱性CVE-2026-98432が報告され、Ubuntu、Red Hat Enterprise Linux（RHEL）など複数のLinuxディストリビューションが影響対象として挙げられている。記事によれば、カーネルのCVEチームはCVSSを10点中9.8と評価し、Anthropicは10月27日、同脆弱性を利用す…",
+      "article_path": "articles/2ea6143451829665.html",
+      "original_url": "https://thehackernews.com/2026/10/linux-kernel-tcp-flaw-with-98-cvss.html"
+    },
+    {
+      "entry_id": "48f09e096ed2a483",
+      "title": "Fake ChatGPT and Claude Apps Abuse Signed Executables to Deploy Crypto Miners",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-29T15:20:29+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Malware",
+      "summary_preview": "概要Yobaと呼ばれる活動で、攻撃者がAnthropic ClaudeやOpenAI ChatGPTのデスクトップ版を装う偽のGitHubプロジェクトを用い、ローダーや暗号資産マイナーを配布している。記事の記述では、実行ファイルの署名を悪用して不審なプログラムへの警戒を弱める手口が示されているが、署名の有効性や署名者の詳細は提供情報から確認できない。利用者…",
+      "article_path": "articles/48f09e096ed2a483.html",
+      "original_url": "https://thehackernews.com/2026/10/fake-chatgpt-and-claude-apps-abuse.html"
+    },
+    {
+      "entry_id": "b4dfb3825b0b267b",
+      "title": "Google's Gemini 4 Carbon Leads Benchmarks for Finding, Exploiting, and Patching Vulnerabilities",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-29T13:42:40+00:00",
+      "impact_level": "Low",
+      "threat_type": "Other",
+      "summary_preview": "概要Googleが、サイバーセキュリティ用途を含む能力を強化したとする生成AIモデル「Gemini 4 Carbon」を発表したと報じられている。記事要約によれば、脆弱性発見を測るSEC-bench Proで88.2%、悪用能力を測るExploitGymで54.8%を記録したという。これらは評価課題上の成績であり、実ネットワークで脆弱性を発見し、攻撃を成立…",
+      "article_path": "articles/b4dfb3825b0b267b.html",
+      "original_url": "https://thehackernews.com/2026/10/googles-gemini-4-carbon-leads.html"
+    },
+    {
+      "entry_id": "70011f883bf5f9fb",
+      "title": "Webinar: How to Build AI Threat Readiness Into Your Security Operations",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-29T11:39:41+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要この記事は、AIを利用した攻撃への備えをセキュリティ運用に組み込む方法を扱うウェビナーを紹介しており、具体的な侵害事例や製品の脆弱性を報じるものではない。記事の抜粋は、攻撃者が高度なAIモデルを使って脆弱性を探し、攻撃コードを生成し、従来の対応手順より速く弱点をたどる可能性を指摘している。攻撃者側の作業が短縮されれば、脆弱性の発見から悪用、侵入後の横展…",
+      "article_path": "articles/70011f883bf5f9fb.html",
+      "original_url": "https://thehackernews.com/2026/08/learn-how-to-build-security-operations.html"
+    },
+    {
+      "entry_id": "2f8b93303bcbce96",
+      "title": "Telegram Android Flaw Lets Attackers Run Code When Users Answer Voice Calls",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-29T11:39:18+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要NebuSecが報告したTelegram for Androidの脆弱性では、音声通話を起点に複数の不具合を連鎖させ、応答した利用者の端末を完全に制御できる可能性がある。攻撃者に必要なのは通常のTelegramアカウントとされ、専用の高い権限は不要だが、利用者が通話に応答する必要があるため、無操作で成立する攻撃とは異なる。攻撃者は標的に通話を応答させる…",
+      "article_path": "articles/2f8b93303bcbce96.html",
+      "original_url": "https://thehackernews.com/2026/10/telegram-android-flaw-lets-attackers.html"
+    },
+    {
+      "entry_id": "e4073a4be756a677",
+      "title": "The Rise of the Threat Operator: How AI Will Redefine Security Operations and Careers",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-29T11:33:41+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要記事は、AIがセキュリティ運用の中核業務を担い始め、分析担当者の役割や職務設計を変えるという見通しを示している。対象として挙げられているのは、警報の調査、証拠の収集、複数のツールをまたぐ活動の相関分析、対応操作の実行であり、これらをAIが自律的に進める段階へ移る可能性が論じられている。実現すれば、対応速度や処理量が増す一方、誤判定に基づく端末隔離やアカ…",
+      "article_path": "articles/e4073a4be756a677.html",
+      "original_url": "https://thehackernews.com/2026/10/the-rise-of-threat-operator-how-ai-will.html"
+    },
+    {
+      "entry_id": "472ce8262c963489",
+      "title": "26,400 Valid Cloud and AI Credentials Found Exposed in Public Gitee Repositories",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-29T11:33:15+00:00",
+      "impact_level": "High",
+      "threat_type": "Credential Theft",
+      "summary_preview": "概要中国のコード共有サービスGiteeの公開リポジトリを調査した研究者が、クラウドや人工知能サービスに関する有効な認証情報26,400件を確認した。調査対象は公開リポジトリ725万件で、研究者が実際に使用可能かを試した時点で有効だったと報告されている。攻撃者が公開コードから認証情報を取得すれば、付与された権限の範囲でクラウド資源や人工知能サービスを利用でき…",
+      "article_path": "articles/472ce8262c963489.html",
+      "original_url": "https://thehackernews.com/2026/10/26400-valid-cloud-and-ai-credentials.html"
+    },
+    {
+      "entry_id": "e47142d6b718e141",
+      "title": "Cisco Patches Actively Exploited ASA and FTD VPN Flaw That Can Crash Firewalls",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-29T10:44:46+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要Ciscoは、Secure Firewall ASA SoftwareとFTD Softwareに存在する脆弱性CVE-2026-76418への修正を公開し、実環境で悪用されていると報告した。CVSSは8.6で、記事の見出しと要約によれば、認証前の遠隔攻撃者がファイアウォールをクラッシュさせる可能性がある。成立すれば、単一機器の停止にとどまらず、VPN…",
+      "article_path": "articles/e47142d6b718e141.html",
+      "original_url": "https://thehackernews.com/2026/10/cisco-patches-actively-exploited-asa.html"
+    },
+    {
+      "entry_id": "afae4d2e408d5547",
+      "title": "GitHub Launches npm Firewall to Block Malicious Packages Before Installation",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-29T10:26:33+00:00",
+      "impact_level": "Low",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要GitHubは、npmパッケージのインストール時に不審なパッケージを遮断する「npm Firewall」を公開プレビューとして導入すると発表した。これはパッケージのメタデータ要求とダウンロード内容を調べ、インストール処理の途中でポリシー判定を行う仕組みであり、開発者や自動ビルド環境に悪意ある依存関係が取り込まれる前に止めることを狙う。攻撃者が侵害済みの…",
+      "article_path": "articles/afae4d2e408d5547.html",
+      "original_url": "https://thehackernews.com/2026/10/github-launches-npm-firewall-to-block.html"
+    },
+    {
+      "entry_id": "f5213486031c78d0",
+      "title": "Attacker Tried to Exploit Alpine Linux’s GitLab via CVSS 10.0 Flaw Its Ruby Left Open",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-29T09:05:39+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要Alpine Linuxプロジェクトが運用するGitLabサーバーに対し、攻撃者が脆弱性の悪用を試みたと報じられた。試行はGitLabが修正を公開した約1週間後に確認され、対象はCVE-2026-97229（CVSS 10.0）で、CI設定に細工した正規表現を含めることでGitLabサーバー上のコード実行につながる可能性がある。Alpine Linux…",
+      "article_path": "articles/f5213486031c78d0.html",
+      "original_url": "https://thehackernews.com/2026/10/attacker-tried-to-exploit-alpine-linuxs.html"
+    },
+    {
+      "entry_id": "eb79534b59ef382c",
+      "title": "Hackers Exploited Cisco SD-WAN Flaw to Plant Malware Built to Steal Encryption Keys",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-29T08:24:22+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要報道によると、攻撃者はCisco Catalyst SD-WANの重大な脆弱性を悪用し、組織のSD-WANを制御するシステムに侵入して、独自のマルウェア「KeyDrift」を設置した。脆弱性の修正は2月に提供済みとされ、Cisco Talosは攻撃を過去の事案として説明しているが、攻撃時期や侵入に必要な権限・ネットワーク到達条件は示されていない。Key…",
+      "article_path": "articles/eb79534b59ef382c.html",
+      "original_url": "https://thehackernews.com/2026/10/hackers-exploited-cisco-sd-wan-flaw-to.html"
+    },
+    {
+      "entry_id": "b8655ace24660257",
+      "title": "China-Linked Hackers Exploited VMware ESX Zero-Day to Reduce Audit Trail Visibility",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-29T06:22:33+00:00",
+      "impact_level": "High",
+      "threat_type": "Zero-day",
+      "summary_preview": "概要Broadcom VMware ESXのCVE-2026-41709が、米国の法務分野を狙った攻撃で悪用されたと報じられ、CISAの既知の悪用脆弱性カタログにも追加された。攻撃者として中国関連のWarp Pandaが挙げられ、ゼロデイ攻撃によって監査記録の可視性を下げたとされるが、具体的な操作や侵入後の権限、ログがどの範囲で確認しにくくなったかは、提示…",
+      "article_path": "articles/b8655ace24660257.html",
+      "original_url": "https://thehackernews.com/2026/10/china-linked-hackers-exploited-vmware.html"
+    },
+    {
+      "entry_id": "814956438bfc53db",
+      "title": "Attackers Exploit PHP2Shell Flaws in Internet-Exposed Palo Alto Networks Management Interfaces",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-10-29T05:50:17+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要Palo Alto Networksは、PHP2Shellと呼ばれる脆弱性群について、インターネットから到達可能な管理インターフェースを狙う悪用を確認したと警告している。脆弱性は最近修正されたとされるが、記事にはCVE番号、影響する製品・版、攻撃に必要な権限や設定などの詳細がなく、個々の機器が該当するかは別途確認が必要となる。管理インターフェースは通信…",
+      "article_path": "articles/814956438bfc53db.html",
+      "original_url": "https://thehackernews.com/2026/10/attackers-exploit-php2shell-flaws-in.html"
+    },
+    {
+      "entry_id": "d9a5dd27a98bf8ec",
+      "title": "Deploying a Local Ghidra Server for Your Malware Analysis Lab, (Thu, Oct 29th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-10-29T06:17:41+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要本記事は、マルウェア解析環境にローカルのGhidra Serverを導入する話題を扱い、提示された本文では仮想マシンのスナップショット運用と解析データの保管先が強調されている。スナップショットへ戻すと、その後に仮想マシン内で行った変更は失われるため、解析結果などを仮想マシンの外へ保存する必要がある。これは復旧性を高める一方、検体や解析成果物を共有領域へ…",
+      "article_path": "articles/d9a5dd27a98bf8ec.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33470"
+    },
+    {
+      "entry_id": "30fb2d1e5cb8bcbe",
+      "title": "ISC Stormcast For Thursday, October 29th, 2026 https://isc.sans.edu/podcastdetail/10156, (Thu, Oct 29th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-10-29T03:10:12+00:00",
+      "impact_level": "Info",
+      "threat_type": "Unknown",
+      "summary_preview": "概要入力はSANS Internet Storm Centerの音声番組「Stormcast」の配信情報で、題名と公開日時、番組ページへのURLだけが示されている。記事本文に相当する要約、音声の書き起こし、参照先は含まれていないため、番組で扱った脆弱性、攻撃手法、製品、組織への影響を特定できない。したがって、特定の攻撃者が何を悪用したか、攻撃に必要な公開状…",
+      "article_path": "articles/30fb2d1e5cb8bcbe.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33468"
+    },
+    {
+      "entry_id": "d3643272e9e3424d",
+      "title": "Yet Another ClickFix Campaign, (Wed, Oct 28th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-10-29T00:42:15+00:00",
+      "impact_level": "Info",
+      "threat_type": "Phishing",
+      "summary_preview": "概要入力された記事情報には、見出しと「Introduction」という短い記載しかなく、攻撃の観測内容、対象、使用された誘導文や実行手順は確認できない。見出しからはClickFixと呼ばれる手口を用いた新たなキャンペーンが扱われている可能性があるが、記事本文がないため、今回の活動に関する事実としては確定できない。一般にClickFixでは、偽のエラー表示や…",
+      "article_path": "articles/d3643272e9e3424d.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33466"
+    },
+    {
+      "entry_id": "affd8bcccc10f6d8",
+      "title": "Threat Brief: Critical Vulnerabilities in PHP: CVE-2026-109618, CVE-2026-109619 (Updated October 29)",
+      "source_name": "Unit 42",
+      "category": "reporting",
+      "published_at": "2026-10-29T18:00:34+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Unit 42は、ウェブサーバーやコンテンツ管理システムで広く使われるPHPに、CVE-2026-109618とCVE-2026-109619の2件の重大な脆弱性があるとして情報を更新した。PHPが実行環境として使われる組織では、該当する版を稼働させている場合、ウェブ経由の攻撃対象になり得るが、入力情報には攻撃成立に必要な条件や具体的な悪用手順が示され…",
+      "article_path": "articles/affd8bcccc10f6d8.html",
+      "original_url": "https://unit42.paloaltonetworks.com/cve-2026-109618-cve-2026-109619/"
+    },
+    {
+      "entry_id": "79f6cba51fc2fd62",
+      "title": "注意喚起: PHPにおける複数の脆弱性（CVE-2026-109618、CVE-2026-109619）に関する注意喚起  (更新)",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-10-29T06:43:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要JPCERT/CCが、PHPの複数の脆弱性としてCVE-2026-109618とCVE-2026-109619を挙げた注意喚起を更新している。入力情報から確認できるのは脆弱性の存在と識別子までであり、攻撃に必要な権限や構成、遠隔からの悪用可否、実際の攻撃観測は判断できない。影響範囲も、PHPのどの版や利用形態が対象か、ウェブ公開サーバーに限られるか、ア…",
+      "article_path": "articles/79f6cba51fc2fd62.html",
+      "original_url": "https://www.jpcert.or.jp/at/2026/at260033.html"
+    },
+    {
+      "entry_id": "95331844d5afd9e1",
+      "title": "AI の「ハッカー」が広く使われる産業制御ソフトの深刻な脆弱性 4 件を 4 時間足らずで発見",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-28T23:10:03+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要見出しによれば、AIを活用した「ハッカー」が、広く使われる産業制御ソフトウェアにある深刻な脆弱性4件を4時間足らずで発見したと報じられている。ただし、提供された記事情報には対象製品名、脆弱性の内容、発見者の立場、ベンダーへの報告や修正状況がなく、見出し以上の事実関係は確認できない。産業制御環境では、外部公開された管理系や保守用端末、脆弱なソフトウェアを…",
+      "article_path": "articles/95331844d5afd9e1.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/29/56622.html"
+    },
+    {
+      "entry_id": "c82ee256a6bf74cb",
+      "title": "三井住友DS投信直販ネットのマイページにログインできない状況に、取引委託業者のシステムで不正アクセスを検知",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-28T23:05:25+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要三井住友DS投信直販ネットでは、マイページにログインできない状態が生じ、背景として取引委託業者のシステムで不正アクセスが検知されたと報じられている。利用者から見えるのは認証・照会機能の停止だが、ログイン停止が予防措置か侵害の直接的な影響か、委託先のどの環境が対象かは入力情報から確認できない。委託先の侵害は接続口や運用権限、共有データを介して委託元へ波及…",
+      "article_path": "articles/c82ee256a6bf74cb.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/29/56621.html"
+    },
+    {
+      "entry_id": "20c7698c0ead159f",
+      "title": "「ショップサーブ」に不正アクセス、漏えい対象者数は約2,335万6,000人",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-28T23:05:22+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要ScanNetSecurityは、ECサイト構築サービス「ショップサーブ」への不正アクセスと、漏えい対象者が約2,335万6,000人に上るとの報道を伝えた。対象者数が大きく、利用事業者だけでなく、その顧客や問い合わせ窓口などへ影響が波及するおそれがあるため、サービスを利用する組織は自社の利用有無と対象データの保有状況を早期に確認する必要がある。ただし…",
+      "article_path": "articles/20c7698c0ead159f.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/29/56620.html"
+    },
+    {
+      "entry_id": "5e8fb3dbb99c66d6",
+      "title": "フジテレビの番組宣伝システムに不正アクセス、メディア関係者の個人情報が漏えいした可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-28T23:05:19+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要報道の題名によると、フジテレビの番組宣伝システムへの不正アクセスがあり、メディア関係者の個人情報が漏えいした可能性がある。番組宣伝の業務システムに関係者情報が保管されていた場合、情報の閲覧や持ち出しにより、本人へのなりすましや標的型の連絡に悪用される懸念がある。ただし、入力情報からは侵入経路、攻撃者が実行した操作、情報の取得を裏付ける証拠の有無を確認で…",
+      "article_path": "articles/5e8fb3dbb99c66d6.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/29/56619.html"
+    },
+    {
+      "entry_id": "5325f24d05ad0f4d",
+      "title": "医療機関業務支援システム「@link（アットリンク）」に不正アクセス、サービスの提供を一時停止",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-28T23:05:17+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要医療機関向け業務支援システム「@link（アットリンク）」への不正アクセスが確認され、サービス提供が一時停止されたと報じられた。停止は追加の不正操作や被害拡大を避ける措置である可能性がある一方、利用機関では予約・受付など関連業務に影響が及ぶおそれもあり、停止の範囲と継続時間が実務上の焦点となる。記事の提示情報からは、攻撃経路、侵入時期、攻撃者が得た権限…",
+      "article_path": "articles/5325f24d05ad0f4d.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/29/56618.html"
+    },
+    {
+      "entry_id": "a8dc293987002392",
+      "title": "ルールに違反し外部生成AIサービスにパナソニックグループ従業員の個人情報をアップロード",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-28T23:05:13+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要パナソニックグループの従業員が、社内ルールに反して個人情報を外部の生成AIサービスへアップロードした事案が報じられた。攻撃者による侵入や脆弱性悪用ではなく、業務上の入力を通じて組織外のサービスへ情報を送ったことが問題の中心となる。影響は入力された情報の種類・件数に加え、利用サービスの保存期間、学習利用の有無、運営者や委託先によるアクセス可能性によって変…",
+      "article_path": "articles/a8dc293987002392.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/29/56617.html"
+    },
+    {
+      "entry_id": "529134fb3d882c77",
+      "title": "BtoC通販向け決済「NP後払い」に不正アクセス",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-28T23:05:10+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要ScanNetSecurityの記事タイトルによると、BtoC通販向け決済サービス「NP後払い」で不正アクセスが発生した。記事本文や参照先が入力されていないため、侵入経路、発生時期、影響を受けたシステム、攻撃者の目的は確認できず、認証情報の窃取や脆弱性悪用など、具体的な手口を特定する材料もない。不正アクセスの発生だけで顧客情報の流出や決済情報の窃取が確…",
+      "article_path": "articles/529134fb3d882c77.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/29/56616.html"
+    },
+    {
+      "entry_id": "f3eb4f820d078525",
+      "title": "石油資源開発が利用するラクスライトクラウドのASPサービス「blastmail」に不正アクセス",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-28T23:05:06+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要石油資源開発が利用するラクスライトクラウドのメール配信サービス「blastmail」への不正アクセスが報じられたが、入力情報から確認できるのはサービス名と利用企業、事案の発生までで、攻撃経路や侵害されたアカウントは示されていない。メール配信サービスは宛先リストや配信内容を扱うため、管理画面の乗っ取りやサービス側の侵害があれば、情報閲覧だけでなく、正規企…",
+      "article_path": "articles/f3eb4f820d078525.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/29/56615.html"
+    },
+    {
+      "entry_id": "b6aee57f673d1afa",
+      "title": "丸木医科器械へのサイバー攻撃で基幹システムがダウン、FAX で注文受付",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-28T23:05:02+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要報道の見出しによると、丸木医科器械へのサイバー攻撃により基幹システムが停止し、注文をFAXで受け付ける運用へ切り替えた。受注処理を手作業に移したことから、少なくとも通常のシステム利用に支障が生じ、注文の照合や納期回答、在庫情報の更新に遅れや不整合が発生するおそれがある。医療機器の供給に関わる事業者であるため、影響が長期化すれば取引先や医療機関の調達にも…",
+      "article_path": "articles/b6aee57f673d1afa.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/29/56614.html"
+    },
+    {
+      "entry_id": "a43755dde24ae027",
+      "title": "Cloudbase、CNAPPに蓄積された情報を起点に重要資産への到達経路を検証する「コンテキスト・ドリブン・ペネトレーションテスト」提供",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-28T23:00:08+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要Cloudbaseが、CNAPPに蓄積された情報を起点に、重要資産へ至る攻撃経路を検証する「コンテキスト・ドリブン・ペネトレーションテスト」の提供を発表した。記事タイトルから確認できるのはサービスの狙いまでで、対象クラウドや連携製品、検証手法、提供開始時期などの詳細は確認できない。CNAPP上の資産や構成に関する情報を使えば、個別の脆弱性一覧にとどまら…",
+      "article_path": "articles/a43755dde24ae027.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/29/56613.html"
+    },
+    {
+      "entry_id": "bc1428bcac8355c5",
+      "title": "電子納品物検査支援システムにインストール時の不適切なファイルアクセス権設定の脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-10-28T23:00:03+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要ScanNetSecurityの記事タイトルから、電子納品物検査支援システムに、インストール時のファイルアクセス権設定が不適切となる脆弱性が取り上げられたことを確認できる。権限設定により、想定外の利用者やプロセスがファイルを読み取ったり変更したりできる場合、情報の閲覧にとどまらず、実行ファイルや設定ファイルの改変を通じた権限昇格につながる可能性もある。…",
+      "article_path": "articles/bc1428bcac8355c5.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/10/29/56612.html"
+    }
+  ]
+}
