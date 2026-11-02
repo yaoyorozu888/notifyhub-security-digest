@@ -1,0 +1,497 @@
+{
+  "date": "2026-11-03",
+  "window": {
+    "from": "2026-11-02T06:00:00+09:00",
+    "to": "2026-11-03T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 32
+  },
+  "generated_at_jst": "2026-11-03T06:23:45.577685+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "MarvellがLumentumを約1150億ドルで買収、AIデータセンター向け光接続を強化",
+      "source_name": "Reuters",
+      "published_at": "2026-11-02T12:10:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要Marvell Technologyが光部品メーカーLumentumを全株式取引で買収する契約を発表した。企業価値ベースで約1150億ドル規模となり、AIデータセンター向け接続需要を背景にした大型案件になる。[[1]](https://www.reuters.com/legal/transactional/marvell-buy-lumentum-11…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://www.reuters.com/legal/transactional/marvell-buy-lumentum-115-billion-deal-ai-data-center-bet-2026-11-02/",
+      "selection_reason": "半導体・光部品の大型買収で、AIインフラの物理層トレンドを具体的に示す。汎用予測レポートではなく、製品・市場構造に直結する企業行動を選び、他カテゴリのモデル・脆弱性話題と領域を分けた",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "Marvell to buy Lumentum in $115 billion deal in AI data-center bet",
+          "url": "https://www.reuters.com/legal/transactional/marvell-buy-lumentum-115-billion-deal-ai-data-center-bet-2026-11-02/",
+          "source_type": "news"
+        },
+        {
+          "title": "Marvell Reaches $115 Billion Deal for Lumentum Holdings",
+          "url": "https://finance.yahoo.com/technology/ai/articles/marvell-reaches-115-billion-deal-121511472.html",
+          "source_type": "news"
+        },
+        {
+          "title": "Marvell and Lumentum to Combine",
+          "url": "https://investor.marvell.com/news-events/press-releases/detail/1040/marvell-and-lumentum-to-combine-creating-a-category-leader-i",
+          "source_type": "official"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "OpenAI、12月からChatGPTとCodexの利用枠を共有化",
+      "source_name": "The Neuron",
+      "published_at": "2026-11-02T04:54:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Other",
+      "summary_preview": "概要OpenAIは12月から、Plus・Pro・BusinessプランでChatGPTとCodexの利用枠を1つのトークン許容量として共有すると案内した。高度モデルや複雑なエージェント作業ほど消費が大きく、Instantチャットは対象外になる。[[2]](https://www.theneuron.ai/digest/everything-that-hap…",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-monday-november-2-2026/",
+      "selection_reason": "開発者・業務利用者の日常コストとワークフローに直結する製品変更。資金調達や抽象トレンドではなく、具体的な利用制限の統合を選び、実務判断の材料になる点で他候補より優先した",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "Everything That Happened in AI Today Monday, November 2",
+          "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-monday-november-2-2026/",
+          "source_type": "news"
+        },
+        {
+          "title": "ChatGPT and Codex Will Share Usage Limits in December",
+          "url": "https://www.techrepublic.com/article/news-chatgpt-codex-shared-usage-limits/",
+          "source_type": "news"
+        },
+        {
+          "title": "OpenAI is putting ChatGPT and Codex on one meter",
+          "url": "https://x.com/AndruEdwards/status/2117363828513972466",
+          "source_type": "x"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "GoogleがXCPEボットネットを解体、OEM製Android TVボックス130万台超に仕込まれたバックドア",
+      "source_name": "Google Cloud Blog",
+      "published_at": "2026-11-02T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Botnet",
+      "summary_preview": "概要Google Threat Intelligence Groupは、Android TVセットトップボックスなど130万台超に仕込まれたXCPEバックドアを業界パートナーと連携して解体したと発表した。製造元のVideostrong Technologyが意図的にファームウェアへ組み込み、犯罪アフィリエイトにアクセスを販売していたと高確度で評価する。[[…",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://cloud.google.com/blog/topics/threat-intelligence/shutting-the-door-on-the-xcpe-botnet",
+      "selection_reason": "メーカー自身がファームウェアに意図的にバックドアを仕込み販売したサプライチェーン侵害で、影響規模と手口の具体性が高い。一般的な脆弱性報告より実務影響と多様性で優れる",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "Shutting the Door on the XCPE Botnet",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/shutting-the-door-on-the-xcpe-botnet",
+          "source_type": "official"
+        },
+        {
+          "title": "Google disrupts XCPE botnet, bans the company behind it",
+          "url": "https://www.helpnetsecurity.com/2026/11/02/xcpe-botnet-android-backdoor/",
+          "source_type": "news"
+        },
+        {
+          "title": "BREAKING: Google says Android TV box maker Videostrong infected its own users",
+          "url": "https://x.com/IntCyberDigest/status/2117366136207737087",
+          "source_type": "x"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "0b23aca36e0f39f9",
+      "title": "⚡ Weekly Recap: Critical CVEs, Linux DDoS Botnet, Device-Code Phishing, Android Spyware and More",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-02T16:57:56+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要The Hacker Newsの週次まとめは、重大なCVE、Linux機器を利用するDDoSボットネット、デバイスコードを悪用するフィッシング、Androidスパイウェアなど、異なる攻撃動向を取り上げている。要約では、偽のサポート電話、信頼された拡張機能、共有リンク、パスワードのない機器といった、日常業務で見過ごされやすい入口が被害につながると述べてい…",
+      "article_path": "articles/0b23aca36e0f39f9.html",
+      "original_url": "https://thehackernews.com/2026/11/weekly-recap-critical-cves-linux-ddos.html"
+    },
+    {
+      "entry_id": "110b64b419b02f57",
+      "title": "Google Disrupts 1.3 Million-Device Android Botnet, Says TV Box Maker Sold Criminal Access",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-02T15:50:26+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Botnet",
+      "summary_preview": "概要記事によると、Googleは10月下旬、主にAndroid搭載テレビ端末から成る130万台超のボットネットについて、制御サーバーを停止させた。Googleは、端末メーカーのVideostrongが意図的にバックドアを組み込み、犯罪者にアクセスを販売した可能性が高いと説明しているが、記事内では独立した裏付けや端末の具体的な型番は示されていない。攻撃者は感…",
+      "article_path": "articles/110b64b419b02f57.html",
+      "original_url": "https://thehackernews.com/2026/11/google-disrupts-13-million-device.html"
+    },
+    {
+      "entry_id": "c0494132f2cc5309",
+      "title": "DarkBlinders Compromises Israeli Target and Iraqi Kurdish Government Cloud Environment",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-02T14:46:05+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要Dream Research Labsの報告を引用した記事によると、イランと連携する脅威アクターが2026年8月から10月にかけてイスラエルとイラク・クルディスタン地域を標的にし、イスラエルの著名人と同地域の政府クラウド環境への侵害に成功したとされる。目的はサイバー諜報と説明されているが、侵入経路、認証情報の窃取や脆弱性悪用の有無、クラウド上で実行され…",
+      "article_path": "articles/c0494132f2cc5309.html",
+      "original_url": "https://thehackernews.com/2026/11/darkblinders-compromises-israeli-target.html"
+    },
+    {
+      "entry_id": "100eefa76d9a04a6",
+      "title": "Critical Langflow Flaws Could Let Unauthenticated Attackers Run Code on Servers",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-02T11:50:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要AIエージェントやワークフローの構築に使われるオープンソースのLangflowで、認証を経ずに攻撃できる二つの脆弱性が報告された。記事によれば、攻撃者は認証を回避したり、サーバー上で任意のコードを実行したりする可能性があり、外部から到達できる環境では侵入後の足場を与えかねない。影響範囲はLangflow 1.0.0から1.12.8までで、修正版として1…",
+      "article_path": "articles/100eefa76d9a04a6.html",
+      "original_url": "https://thehackernews.com/2026/11/critical-langflow-flaws-could-let.html"
+    },
+    {
+      "entry_id": "9eaca20beabf3675",
+      "title": "Is Your SOC Ready for AI Agents? A Maturity Check Before You Deploy",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-02T11:30:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要The Hacker Newsが、SOCにおけるAI活用の広がりと導入準備を扱う記事を掲載した。引用されたProphet Securityの2026年調査では、250人超のCISO、SOC責任者、実務者のうち40％がAIを日常的に使い、56％が試験中、4％が導入予定なしと回答したとされる。AIエージェントをSOC業務に組み込む場合、分析支援にとどまる利…",
+      "article_path": "articles/9eaca20beabf3675.html",
+      "original_url": "https://thehackernews.com/2026/11/is-your-soc-ready-for-ai-agents.html"
+    },
+    {
+      "entry_id": "f182ccff5532c1d8",
+      "title": "Attackers Pose as IT Support on Microsoft Teams, Abuse AD CS to Steal Company Data",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-02T11:08:45+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要Microsoft Teams上でIT支援担当者を装う攻撃者が従業員を説得し、端末の遠隔操作権限を得た侵入事例が報告された。攻撃者は続いて、不適切な設定のActive Directory Certificate Services（AD CS）を悪用し、特権アカウントに結び付くログイン証明書を取得したとされ、ドメインコントローラー用アカウントの証明書も含…",
+      "article_path": "articles/f182ccff5532c1d8.html",
+      "original_url": "https://thehackernews.com/2026/11/attackers-pose-as-it-support-on.html"
+    },
+    {
+      "entry_id": "d01189f7a67e2296",
+      "title": "Government Linux Servers Targeted With SysGoRAT and Suspected AI-Generated Scripts",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-02T10:49:59+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Malware",
+      "summary_preview": "概要Unit 42は、2025年10月から2026年4月にかけて、政府機関および政府関連基盤のLinuxサーバーを狙うサイバー諜報活動を観測し、活動群をCL-UNK-1211として追跡した。攻撃ではSysGoRATと呼ばれる遠隔操作型マルウェアや、生成AIで作られた可能性があるスクリプトが確認されたと報じられているが、スクリプトの生成元や判定根拠は提示情報…",
+      "article_path": "articles/d01189f7a67e2296.html",
+      "original_url": "https://thehackernews.com/2026/11/government-linux-servers-targeted-with.html"
+    },
+    {
+      "entry_id": "5f507373b6fb81cf",
+      "title": "New VOLTA Infostealer Uses Claude, Gemini, and Kimi AI to Rank Victims by Financial Value",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-02T05:51:07+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Malware",
+      "summary_preview": "概要報道によると、新たに確認されたWindows向け情報窃取型マルウェア「VOLTA-AUTODOXER（VOLTA）」は、窃取データをClaude、Gemini、Kimiなどの大規模言語モデルで評価し、金銭化しやすい被害者を順位付けする機能を持つとされる。対象データにはChromium系ブラウザーのパスワードやCookie、Outlookのプロファイル情…",
+      "article_path": "articles/5f507373b6fb81cf.html",
+      "original_url": "https://thehackernews.com/2026/11/new-volta-infostealer-uses-claude.html"
+    },
+    {
+      "entry_id": "e37ddb1f17645999",
+      "title": "Mutipath TCP: Use and Detection, (Mon, Nov 2nd)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-11-02T14:52:05+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要SANS ISCの記事は、LinuxのマルチパスTCP（MPTCP）実装に関する新たな脆弱性が報じられたことを受け、MPTCPの利用状況とネットワーク上での検出に目を向けている。MPTCPは単一の通信を複数の経路にまたがって維持できる拡張であり、通常のTCP通信と異なるオプションや追加の通信経路を使うため、境界装置や監視基盤で存在を見落とす可能性がある…",
+      "article_path": "articles/e37ddb1f17645999.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33482"
+    },
+    {
+      "entry_id": "2fd20e10c5cc6473",
+      "title": "ISC Stormcast For Monday, November 2nd, 2026 https://isc.sans.edu/podcastdetail/10160, (Mon, Nov 2nd)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-11-02T02:00:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Unknown",
+      "summary_preview": "概要入力はSANS ISCが公開した「Stormcast」の配信情報で、タイトルには2026年11月2日（月）の回とエピソード番号10160が記載されている。参照先としてポッドキャストのURLが示されている一方、記事本文に相当する要約は空で、追加の参照URLも含まれていない。このため、配信で扱われた脆弱性、攻撃活動、製品、組織への注意喚起などの具体的な内容…",
+      "article_path": "articles/2fd20e10c5cc6473.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33480"
+    },
+    {
+      "entry_id": "2adc5141125b5bfe",
+      "title": "Cisco AI Transit connects AI environments to your SD-WAN",
+      "source_name": "Cisco Security Blog",
+      "category": "reporting",
+      "published_at": "2026-11-02T16:00:32+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要Ciscoは、AI向けのクラウド環境を既存のSD-WAN基盤に接続する「Cisco AI Transit」を発表した。AI処理の実行先が専用クラウドなどへ分散する状況を受け、ネットワーク担当者が共通のポリシーモデルを維持しながら接続を管理することを狙う。接続先を既存のネットワーク運用に取り込めれば、環境ごとに異なる経路や制御を個別管理する負担を抑えられ…",
+      "article_path": "articles/2adc5141125b5bfe.html",
+      "original_url": "https://blogs.cisco.com/security/cisco-ai-transit-connects-ai-environments-to-your-sd-wan/"
+    },
+    {
+      "entry_id": "0b4d90690a421188",
+      "title": "VU#203719: INFINITT PACS System Manager Contains Multiple Code Execution Vulnerabilities",
+      "source_name": "CERT/CC",
+      "category": "reporting",
+      "published_at": "2026-11-02T15:38:19+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要INFINITTの医用画像管理基盤PACSに付属するSystem Managerの3.0.11.3および3.0.11.5で、任意コード実行につながる2件の脆弱性が報告された。CVE-2026-16305では、低権限の攻撃者が更新処理前に権限設定の不備があるコマンド一覧を書き換え、更新が承認された後に管理者権限で悪意あるコマンドを実行させる可能性があるた…",
+      "article_path": "articles/0b4d90690a421188.html",
+      "original_url": "https://kb.cert.org/vuls/id/203719"
+    },
+    {
+      "entry_id": "c2fd1bfee078a98d",
+      "title": "防災科学技術研究所、横浜国立大学、情報通信研究機構、横浜市が「安全・安心の判断支援に向けたゲリラ雷雨予測技術開発事業に関する連携協力協定」を締結",
+      "source_name": "NICT NOTICE",
+      "category": "reporting",
+      "published_at": "2026-11-02T05:05:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要防災科学技術研究所、横浜国立大学、情報通信研究機構、横浜市が、ゲリラ雷雨の予測技術開発に関する連携協力協定を締結した。協定の目的は、安全・安心に関する判断を支援するための予測技術を開発することであり、確認できるのは締結とその目的までとなる。局地的な豪雨の予測が実用化されれば、防災対応や住民への情報提供に役立つ可能性がある一方、予測精度、提供方法、利用者…",
+      "article_path": "articles/c2fd1bfee078a98d.html",
+      "original_url": "/publicity/topics/2026/11/02-4.html"
+    },
+    {
+      "entry_id": "51e43759e347cc52",
+      "title": "「脳情報通信に関する国際共同研究開発（第9回）」を開始",
+      "source_name": "NICT NOTICE",
+      "category": "reporting",
+      "published_at": "2026-11-02T05:00:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要NICT NOTICEは、「脳情報通信に関する国際共同研究開発（第9回）」の開始を知らせる記事を公開した。タイトルから確認できるのは、脳情報通信をテーマとする国際共同研究開発の第9回が始まったことまでで、参加機関、研究期間、具体的な研究課題や成果目標は提示情報から確認できない。研究開発の開始を扱う告知であり、脆弱性の公表、攻撃の発生、情報漏えいなどを示…",
+      "article_path": "articles/51e43759e347cc52.html",
+      "original_url": "/publicity/topics/2026/11/02-3.html"
+    },
+    {
+      "entry_id": "c7af2cd716003cb2",
+      "title": "「革新的情報通信技術（Beyond 5G（6G））基金事業」社会実装・海外展開志向型戦略的プログラム【事業戦略支援型】の予備調査（第6回）の実施",
+      "source_name": "NICT NOTICE",
+      "category": "reporting",
+      "published_at": "2026-11-02T05:00:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要NICTは、Beyond 5G（6G）基金事業のうち、社会実装と海外展開を志向する戦略的プログラム「事業戦略支援型」について、第6回の予備調査を実施すると告知した。これは次世代通信技術の研究開発成果を事業化や海外展開につなげる支援施策に関する案内であり、脆弱性の公表や攻撃発生の報告ではない。予備調査は事業の検討や候補把握を目的とする段階と読めるため、応…",
+      "article_path": "articles/c7af2cd716003cb2.html",
+      "original_url": "/press/2026/11/02-1.html"
+    },
+    {
+      "entry_id": "8420e4961254e952",
+      "title": "IoT機器調査及び利用者への注意喚起の取組「NOTICE」で使用するIPアドレスについて（2026年11月2日更新）",
+      "source_name": "NICT NOTICE",
+      "category": "reporting",
+      "published_at": "2026-11-01T23:00:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要NICTは、IoT機器の調査と利用者への注意喚起を行う「NOTICE」で使用するIPアドレスについて、2026年11月2日付で情報を更新した。今回の入力情報には更新対象の具体的なアドレスや変更内容、調査の実施時期、対象となる通信条件が含まれておらず、追加・削除の有無や自組織への直接的な影響は確認できない。この情報は脆弱性や侵害の発表ではなく、NOTIC…",
+      "article_path": "articles/8420e4961254e952.html",
+      "original_url": "/publicity/topics/2026/11/02-2.html"
+    },
+    {
+      "entry_id": "08242c2dfd328dfa",
+      "title": "IoT機器調査及び利用者への注意喚起の取組「NOTICE」で使用するIPアドレスについて",
+      "source_name": "NICT NOTICE",
+      "category": "reporting",
+      "published_at": "2026-11-01T23:00:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要記事タイトルから確認できるのは、IoT機器の調査と利用者への注意喚起を行う「NOTICE」で使用するIPアドレスについて、NICTが情報を公開した点に限られる。NOTICEは、インターネット上のIoT機器を調査し、利用者への注意喚起につなげる取り組みであり、組織の監視ログに関連する通信が記録された場合、直ちに侵害活動と断定しないための照合材料になり得る…",
+      "article_path": "articles/08242c2dfd328dfa.html",
+      "original_url": "/publicity/topics/2026/11/02-1.html"
+    },
+    {
+      "entry_id": "d1ec1e387cba2f56",
+      "title": "AIの進化がもたらす脆弱性対応の新たな波 ～ Internet Week 2026",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-01T23:10:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要入力情報で確認できるのは、ScanNetSecurityが「AIの進化がもたらす脆弱性対応の新たな波」を題材とするInternet Week 2026関連の記事を掲載したという点に限られる。記事本文、講演内容、対象となるAI技術や脆弱性の種類は提供されておらず、実際にどのような対応手法や事例が紹介されたかは判断できない。題名からは、AIが脆弱性の発見、…",
+      "article_path": "articles/d1ec1e387cba2f56.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/02/56650.html"
+    },
+    {
+      "entry_id": "509b4de4e7d65ef2",
+      "title": "AI を活用した総点検で発見 ～ デジタルアーツのクラウドサービス運用環境に不正アクセス",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-01T23:05:36+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要記事タイトルによると、デジタルアーツのクラウドサービス運用環境で不正アクセスが発見され、その把握にはAIを活用した総点検が関係した。アクセス経路、発生時期、攻撃者が得た権限や操作内容は、提示された情報から確認できないため、侵入の成立条件や継続性は判断できない。運用環境への侵入は、顧客向けサービスの稼働基盤や管理情報に接触する可能性があり、単一アカウント…",
+      "article_path": "articles/509b4de4e7d65ef2.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/02/56649.html"
+    },
+    {
+      "entry_id": "5b4a1e594eaf6691",
+      "title": "WPプラグインの脆弱性悪用 ～ ティエスエスリンクのウェブサイトに不正アクセス、製品にはセキュリティ上の問題 確認されておらず",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-01T23:05:33+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Exploit",
+      "summary_preview": "概要記事タイトルによると、WordPressプラグインの脆弱性が悪用され、ティエスエスリンクのウェブサイトへの不正アクセスが発生した。攻撃者は脆弱なプラグインを入口にサイトへ侵入した可能性があるが、対象プラグイン名、脆弱性の内容、侵入に必要な条件は入力情報から確認できない。ウェブサイトの改ざんや管理権限の奪取があれば、閲覧者への不正な誘導や追加侵入につなが…",
+      "article_path": "articles/5b4a1e594eaf6691.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/02/56648.html"
+    },
+    {
+      "entry_id": "af8a479d7a4272f8",
+      "title": "他の職員のIDとパスワードを使用し複数回にわたり庁内共有フォルダに不正アクセス、上司の印影の偽造も",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-01T23:05:29+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要報道タイトルによれば、職員が他の職員のIDとパスワードを使い、庁内共有フォルダへ複数回不正アクセスしたほか、上司の印影を偽造したとされる。認証を突破する脆弱性攻撃ではなく、正規の認証情報を別人が使うことで、通常の権限管理や監査記録をすり抜ける形になり得る点が焦点となる。影響範囲は当該アカウントが閲覧・操作できる共有フォルダと、その中の情報や業務文書に及…",
+      "article_path": "articles/af8a479d7a4272f8.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/02/56647.html"
+    },
+    {
+      "entry_id": "e4b6cdbf80c19176",
+      "title": "「楽天トラベル」海外ホテル予約サイトの一部ページと多言語予約サイトに不正アクセス",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-01T23:05:26+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要入力された見出しから確認できるのは、「楽天トラベル」の海外ホテル予約サイトの一部ページと多言語予約サイトで不正アクセスが発生したという点であり、発生時期や対象システムの詳細は示されていない。攻撃経路、侵入に使われた認証情報や脆弱性、攻撃者が得た権限も不明なため、サイトの改ざん、予約情報の閲覧、利用者情報の持ち出しなどを事実として扱うことはできないが、予…",
+      "article_path": "articles/e4b6cdbf80c19176.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/02/56646.html"
+    },
+    {
+      "entry_id": "df7a75f7a957a547",
+      "title": "ユミルリンクのメール配信サービスの一部サーバシステムに不正アクセス、延べ5,162万8,280件の情報が流出",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-01T23:05:23+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要ユミルリンクのメール配信サービスに関係する一部サーバシステムへの不正アクセスにより、延べ5,162万8,280件の情報が流出したと報じられた。件数は「延べ」とされており、実人数や重複の有無、流出情報の種類、対象期間は入力情報から確認できず、件数をそのまま被害者数として扱うことはできない。メール配信基盤は複数の顧客組織のデータを扱う可能性があるため、侵害…",
+      "article_path": "articles/df7a75f7a957a547.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/02/56645.html"
+    },
+    {
+      "entry_id": "73e2b2f09227b84f",
+      "title": "フジッコのキャンペーンの応募受付業務の委託先に不正アクセス",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-01T23:05:21+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要報道の見出しによると、フジッコのキャンペーン応募受付業務を委託された事業者で不正アクセスが発生した。応募受付を担う委託先が対象となった点は確認できるが、侵入経路、発生時期、侵害されたシステムやアカウント、攻撃者の特定状況は提示情報から確認できない。応募受付の仕組みには、氏名や連絡先などの応募者情報が扱われる場合があるものの、今回どの情報が保管され、実際…",
+      "article_path": "articles/73e2b2f09227b84f.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/02/56644.html"
+    },
+    {
+      "entry_id": "8be9934df476aacd",
+      "title": "「SHIPS CYCLE MARKET」で利用している外部アプリケーション「Swym Wishlist Plus」に不正アクセス、外部の疑似サイトに誘導",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-01T23:05:17+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Phishing",
+      "summary_preview": "概要「SHIPS CYCLE MARKET」が利用する外部アプリケーション「Swym Wishlist Plus」への不正アクセスが報じられ、利用者が外部の疑似サイトへ誘導される事象が確認された。攻撃者がアプリの機能や表示内容を改変した場合、利用者は正規の店舗サイト上の導線を信頼したまま、偽サイトで認証情報や個人情報を入力するおそれがある。侵害経路がアプリ…",
+      "article_path": "articles/8be9934df476aacd.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/02/56643.html"
+    },
+    {
+      "entry_id": "305ec864c97d09b2",
+      "title": "新菱冷熱工業にサイバー攻撃、システム障害で一部サービスにも影響",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-01T23:05:12+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要ScanNetSecurityの記事タイトルによると、新菱冷熱工業へのサイバー攻撃に伴いシステム障害が発生し、一部サービスにも影響が及んだと報じられている。攻撃経路や侵入の有無、障害の発生原因は確認できず、脆弱性悪用、認証情報の窃取、委託先経由など、具体的な手口を推定できる情報は示されていない。サービス影響は確認されているものの、対象システム、停止した…",
+      "article_path": "articles/305ec864c97d09b2.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/02/56642.html"
+    },
+    {
+      "entry_id": "0ce9fd3da1ebe101",
+      "title": "Sallyに2件の不正アクセス、問い合わせ情報が漏えいした可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-01T23:05:10+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要Sallyについて、2件の不正アクセスがあり、問い合わせ情報が漏えいした可能性があると報じられている。提供情報は見出しのみのため、2件が同じ手口による連続事象か別個の侵入か、アクセスの確認が情報の閲覧・取得まで裏付けるかは分からない。問い合わせ情報に氏名、連絡先、相談内容、認証情報などが含まれるか、対象期間・件数・利用者、侵入経路、攻撃者の権限、外部送…",
+      "article_path": "articles/0ce9fd3da1ebe101.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/02/56641.html"
+    },
+    {
+      "entry_id": "d874b5bb4f917f76",
+      "title": "PingCAPに不正アクセス、日本国内で最大約5万件の個人情報が漏えい",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-01T23:05:07+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要報道によると、PingCAPへの不正アクセスにより、日本国内で最大約5万件の個人情報が漏えいしたとされる。攻撃の侵入経路、侵害されたシステムやアカウント、情報が持ち出された方法は、入力された記事情報だけでは確認できず、脆弱性の悪用や認証情報の窃取などを前提にした評価は避ける必要がある。「最大約5万件」は影響し得る件数の上限を示す表現であり、実際に漏えい…",
+      "article_path": "articles/d874b5bb4f917f76.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/02/56640.html"
+    },
+    {
+      "entry_id": "a5d65def3510ba0f",
+      "title": "会員名簿とされるデータがアップロードされていると警察から報告 ～ 在宅ワーク求人サイト「ママワークス」に不正アクセス",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-01T23:05:05+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要在宅ワーク求人サイト「ママワークス」への不正アクセスに関連し、会員名簿とされるデータがインターネット上にアップロードされていると警察から報告があった、という記事だ。現時点で入力情報から確認できるのはこの報告の概要に限られ、運営事業者によるデータの真正性確認や公表内容、調査状況は不明となっている。攻撃者がどの認証情報や脆弱性を使ったのか、侵入後にどのシス…",
+      "article_path": "articles/a5d65def3510ba0f.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/02/56639.html"
+    },
+    {
+      "entry_id": "63c4f0b489f97a81",
+      "title": "越境ECサービス「WorldShopping」に不正アクセス、海外顧客301名の個人情報が漏えい",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-01T23:05:02+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要越境ECサービス「WorldShopping」への不正アクセスにより、海外顧客301名の個人情報が漏えいしたと報じられている。入力情報には記事の見出し以外の説明がないため、攻撃の入口、発生時期、漏えいした項目、発覚経緯、現在の封じ込め状況は確認できない。不正アクセスの経路として認証情報の悪用や公開システムの侵害などは考えられるが、今回はいずれも確認済み…",
+      "article_path": "articles/63c4f0b489f97a81.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/02/56638.html"
+    },
+    {
+      "entry_id": "671589f852f6c8e8",
+      "title": "HENNGE、東証プライム市場に市場区分変更",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-01T23:00:07+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要記事は、HENNGEが東京証券取引所の市場区分を変更したことを伝える企業・市場ニュースであり、サイバー攻撃、脆弱性の公表、顧客情報の漏えいを報告する内容ではない。市場区分の変更は企業の上場上の位置づけに関する情報で、製品やサービスの安全性、運用体制、顧客環境への影響が改善または悪化したことを直接示すものではない。提示された情報には、変更の適用時期や背景…",
+      "article_path": "articles/671589f852f6c8e8.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/02/56637.html"
+    },
+    {
+      "entry_id": "d0be640f864c7c0f",
+      "title": "Vex、php2shell に対応する検査シグネチャの正式版を追加",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-01T23:00:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要ScanNetSecurityの記事見出しは、Vexに「php2shell」に対応する検査シグネチャの正式版が追加されたと伝えている。これは検査機能の提供状況に関する情報であり、php2shell自体の脆弱性公表や実攻撃の確認を意味するとは限らない。見出しだけでは、php2shellが指す製品・機能・攻撃手法、成立に必要な設定や権限、シグネチャが検出す…",
+      "article_path": "articles/d0be640f864c7c0f.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/02/56636.html"
+    }
+  ]
+}
