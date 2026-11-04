@@ -1,0 +1,497 @@
+{
+  "date": "2026-11-05",
+  "window": {
+    "from": "2026-11-04T06:00:00+09:00",
+    "to": "2026-11-05T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 32
+  },
+  "generated_at_jst": "2026-11-05T06:22:14.369859+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "SpaceXがQualcommを選定、Starlink Mobileの地上5G網を2027年展開へ",
+      "source_name": "Qualcomm",
+      "published_at": "2026-11-04T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要SpaceXはStarlink Mobileの米国内地上5G網向けにQualcommのDragonwing Cellular Infrastructureを選定した。QRU100とQDU100プラットフォーム、商用級Layer 1ソフトを使い、Massive MIMO（64T64R）を採用してカバレッジと容量を高める。2027年から全国展開を始め、複数…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://www.qualcomm.com/news/releases/2026/11/spacex-selects-qualcomm-to-accelerate-starlink-mobile-s-nationwi",
+      "selection_reason": "衛星と地上を統合した全国規模モバイル網の具体的なインフラ選定で、単なる予測でなく商用展開の実務影響が明確。ネットワーク・半導体領域の動きとして他のAI/セキュリティ候補と多様性が高い",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "SpaceX Selects Qualcomm to Accelerate Starlink Mobile’s Nationwide 5G Network",
+          "url": "https://www.qualcomm.com/news/releases/2026/11/spacex-selects-qualcomm-to-accelerate-starlink-mobile-s-nationwi",
+          "source_type": "official"
+        },
+        {
+          "title": "Qualcomm signs major 5G infrastructure deal with SpaceX for Starlink Mobile network",
+          "url": "https://www.reuters.com/business/media-telecom/qualcomm-signs-major-5g-infrastructure-deal-with-spacex-starlink-mobile-network-2026-11-04/",
+          "source_type": "news"
+        },
+        {
+          "title": "SpaceX Taps Qualcomm to Build Nationwide Starlink Mobile Network",
+          "url": "https://x.com/NotATeslaApp/status/2118090097124135225",
+          "source_type": "x"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "AppleがSiri AIを全開発者に開放、iOS 27.3ベータでApp Intents連携開始",
+      "source_name": "Apple Developer",
+      "published_at": "2026-11-03T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要AppleはiOS 27.3など各OSのベータでSiri AIのDeveloper Previewを公開し、全開発者がApp Intents経由で自社アプリを連携できるようにした。個人コンテキスト理解や画面認識、自然言語を活用し、配達確認から予約・注文までカスタムアクションを実行可能になる。複数アクションをまとめるskillsも導入し、Calendar…",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://developer.apple.com/news/?id=gdk2umrf",
+      "selection_reason": "OS標準AIアシスタントのサードパーティ開放という具体的な製品・開発者向け変更で、モデル発表や規制論より実務導入の影響が直接的。ITインフラや脆弱性話題と領域が異なる",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "Siri AI is now open to all developers",
+          "url": "https://developer.apple.com/news/?id=gdk2umrf",
+          "source_type": "official"
+        },
+        {
+          "title": "Siri AI Gets More Capable in iOS 27.3",
+          "url": "https://www.macrumors.com/2026/11/03/ios-27-3-siri-ai/",
+          "source_type": "news"
+        },
+        {
+          "title": "Siri AI (Apple): iOS 27.3 beta unlocks cross-app actions",
+          "url": "https://x.com/TekonBurns/status/2118081052526903393",
+          "source_type": "x"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "Debian/UbuntuのAPTにMitMで検証済みパッケージを差し替えroot実行可能な欠陥",
+      "source_name": "The Hacker News",
+      "published_at": "2026-11-04T17:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要APTの欠陥（CVE-2026-109518）により、経路上の攻撃者や悪意あるミラーがHTTPリダイレクトと再試行を悪用し、検証後のパッケージを差し替えられる。差し替えられたものがroot権限でインストールされる。Debian 12以降やUbuntu 22.04以降はデフォルトでAcquire::Retriesが有効なため影響を受けやすい。Debian…",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://thehackernews.com/2026/11/debian-and-ubuntu-apt-flaw-lets-mitm.html",
+      "selection_reason": "主要Linuxディストリのパッケージマネージャにroot権限到達可能な新規開示で、即時パッチ適用が必要な具体的脆弱性。ITトレンドやAI製品発表と異なりセキュリティ実務直結",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "Debian and Ubuntu APT Flaw Lets MitM Attackers Swap Verified Packages and Run Code as Root",
+          "url": "https://thehackernews.com/2026/11/debian-and-ubuntu-apt-flaw-lets-mitm.html",
+          "source_type": "news"
+        },
+        {
+          "title": "CVE-2026-109518 APT vulnerability fixes available",
+          "url": "https://ubuntu.com/blog/apt-vulnerability-fixes-available",
+          "source_type": "official"
+        },
+        {
+          "title": "debian/ubuntu package manager bug: someone on the network can swap a package",
+          "url": "https://x.com/A1itis/status/2118089881008181301",
+          "source_type": "x"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "54c04eacd3c653a4",
+      "title": "CVE-2024-27834 Apple Multiple Products Improper Authentication Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-11-04T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要CISAの既知悪用脆弱性カタログに、Appleの複数製品に関するCVE-2024-27834が掲載されており、脆弱性の分類は不適切な認証となっている。認証処理の不備は、条件によっては本来許可されない操作や資源へのアクセスにつながるが、入力情報には具体的な攻撃手順、必要な権限、攻撃経路が記されていないため、成立条件を断定できない。カタログ掲載は実際の悪用…",
+      "article_path": "articles/54c04eacd3c653a4.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "ca57a8eee17bd169",
+      "title": "Debian and Ubuntu APT Flaw Lets MitM Attackers Swap Verified Packages and Run Code as Root",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-04T17:00:46+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要DebianとUbuntuのパッケージ管理機構APTに、ダウンロード時の再試行処理に関連して、通信を改変できる攻撃者が検証済みパッケージを攻撃者の用意したものへ差し替えられる脆弱性が報告された。差し替えたパッケージの処理を通じてコードがroot権限で実行されるため、単なるパッケージ取得妨害ではなく、端末やサーバーの完全な侵害につながる可能性がある。成立…",
+      "article_path": "articles/ca57a8eee17bd169.html",
+      "original_url": "https://thehackernews.com/2026/11/debian-and-ubuntu-apt-flaw-lets-mitm.html"
+    },
+    {
+      "entry_id": "390d00998282055f",
+      "title": "SonicWall Won't Patch EoL GMS Flaws That Could Expose Files, Alter Database Records",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-04T17:00:38+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要SonicWallは、サポート終了（EoL）となったGlobal Management System（GMS）に影響する2件の脆弱性を公表し、対象製品には修正を提供しないと説明した。入力記事で詳細が確認できるのはCVE-2026-109593で、GMS 9.5.2以前に影響し、ネットワーク到達性があれば認証なしで内部ファイルを読み取れるとされる。読み取…",
+      "article_path": "articles/390d00998282055f.html",
+      "original_url": "https://thehackernews.com/2026/11/sonicwall-wont-patch-eol-gms-flaws-that.html"
+    },
+    {
+      "entry_id": "d7423e7b87f24c1b",
+      "title": "Researchers Uncover Prompt Adware Hidden in OpenAI Codex Jailbreak Toolkit",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-04T16:06:43+00:00",
+      "impact_level": "Low",
+      "threat_type": "Other",
+      "summary_preview": "概要Check Point Researchは、OpenAI Codexの脱獄用ツールキットに、第三者のAIゲートウェイを宣伝する指示を埋め込む「プロンプト広告」を確認したと報告した。Haiouと名付けられたこの仕組みは、Codexの設定を書き換え、利用者が信頼している指示の中に広告を差し込むため、通常の広告表示ではなく、エージェントの判断に使われる指示の…",
+      "article_path": "articles/d7423e7b87f24c1b.html",
+      "original_url": "https://thehackernews.com/2026/11/researchers-uncover-prompt-adware.html"
+    },
+    {
+      "entry_id": "9d42f19950f41d40",
+      "title": "APT29-Linked Hackers Hijack Web Analytics Script to Deliver iOS and Android Exploits",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-04T14:27:52+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要APT29と関連付けられる攻撃者が、侵害したウェブサイトや偽装ドメインを使い、iOSおよびAndroid利用者へエクスプロイトを配布する大規模な水飲み場型攻撃を行ったと報じられている。攻撃経路には、ウクライナのウェブ解析サービスPlerdy SEO Trackerのスクリプトを悪用するサプライチェーン要素が含まれるとされ、サイト運営者だけでなく、外部ス…",
+      "article_path": "articles/9d42f19950f41d40.html",
+      "original_url": "https://thehackernews.com/2026/11/apt29-linked-hackers-hijack-web.html"
+    },
+    {
+      "entry_id": "c1c67408ccb25fca",
+      "title": "Critical Rails Flaw Lets Attackers Write Server Files via Crafted ImageMagick Uploads",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-04T12:07:04+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Ruby on RailsのActive Storageに、細工したファイルのアップロードを通じてサーバー上の任意ファイルを書き込まれる可能性がある脆弱性が公表された。攻撃には認証が不要とされる一方、対象アプリがアップロード処理でImageMagickを利用することが成立条件となり、Railsを使うすべてのアプリに一律で当てはまるわけではない。悪用され…",
+      "article_path": "articles/c1c67408ccb25fca.html",
+      "original_url": "https://thehackernews.com/2026/11/critical-rails-flaw-lets-attackers.html"
+    },
+    {
+      "entry_id": "c8ee375949c06833",
+      "title": "Xen Hypervisor Flaws Let One Malicious VM Read and Write Any Other VM's Memory",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-04T11:46:27+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要The Hacker Newsは、Xenハイパーバイザーにある2件の欠陥により、同じ物理ホスト上の別の仮想マシンのメモリーを、悪意ある仮想マシンから読み書きできると報じた。影響は通常のゲスト間にとどまらず、仮想マシンを管理する権限の強いdom0にも及ぶため、機密情報の窃取だけでなく、ホスト管理や同居する他のワークロードの侵害につながる可能性がある。攻撃…",
+      "article_path": "articles/c8ee375949c06833.html",
+      "original_url": "https://thehackernews.com/2026/11/xen-hypervisor-flaws-let-one-malicious.html"
+    },
+    {
+      "entry_id": "c2e429eadbca0162",
+      "title": "Radio With No Radar: Why Agent Runtime Security Fails Without the Layers Beneath It",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-04T11:34:20+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要記事は、AIエージェントの危険な操作を実行時に止めるという製品の約束が、企業管理下のゲートウェイを通る通信を前提にしている点を問題提起している。実際には、ゲートウェイを経由しないエージェントが多く、通信経路を監視するだけでは操作の検知や遮断が届かない可能性がある。記事の抜粋には、従業員がAIアシスタントに大量メール送信の自動化を依頼した事例が示されるが…",
+      "article_path": "articles/c2e429eadbca0162.html",
+      "original_url": "https://thehackernews.com/2026/11/radio-with-no-radar-why-agent-runtime.html"
+    },
+    {
+      "entry_id": "6813a52bb7f82a5e",
+      "title": "China-Aligned Hackers Hijack Sogou Input Method DNS Requests to Deploy DarkVigil Backdoor",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-04T11:24:31+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Malware",
+      "summary_preview": "概要中国と連携する攻撃者と評価されるSlippyNunchucksによる、Windows版Sogou Input Methodを足掛かりとした監視目的の侵入活動が報告された。攻撃者は同ソフトウェアの安全でないHTTP通信を悪用し、DNS要求に介入してDarkVigil（FDMTPとも呼ばれる）バックドアを展開したとされる。成立には、対象端末で該当ソフトウェ…",
+      "article_path": "articles/6813a52bb7f82a5e.html",
+      "original_url": "https://thehackernews.com/2026/11/china-aligned-hackers-hijack-sogou.html"
+    },
+    {
+      "entry_id": "63694852797a5fdf",
+      "title": "Russian Police Arrest 3 Suspected VasyGrek Hackers, Dismantle Criminal Infrastructure",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-04T08:17:11+00:00",
+      "impact_level": "Low",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要ロシア当局は、VasyGrek（Fluffy Wolfとも呼ばれる）に関与した疑いのある3人を逮捕し、同グループの犯罪インフラを解体したと発表した。記事の抜粋によると、同グループは2016年以降、ロシア国内外の企業を標的にしてきたとされ、当局は金銭の不正取得に関する容疑を示しているが、抜粋が途中で終わっているため具体的な手口は確認できない。摘発により活…",
+      "article_path": "articles/63694852797a5fdf.html",
+      "original_url": "https://thehackernews.com/2026/11/russian-police-arrest-3-suspected.html"
+    },
+    {
+      "entry_id": "6b34cfde34af96cb",
+      "title": "Google Issues Patches for Critical Android Flaw That Could Allow RCE Without User Interaction",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-04T07:46:15+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Googleは2026年11月のAndroidセキュリティ情報で、利用者の操作なしに遠隔からコードを実行される可能性がある脆弱性CVE-2026-58868への修正を公開し、影響範囲としてAndroid 14から17を挙げた。攻撃成立時には端末上で任意の処理を実行され得るが、抜粋記事からは攻撃に必要な通信経路や前提条件、実際の悪用の有無を確認できず、「…",
+      "article_path": "articles/6b34cfde34af96cb.html",
+      "original_url": "https://thehackernews.com/2026/11/google-patches-critical-android-flaw.html"
+    },
+    {
+      "entry_id": "6b0c0f3dd553994c",
+      "title": "CISA Confirms Hackers Exploiting WordPress Core Flaw During Software Upgrades",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-04T05:43:11+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要米国サイバーセキュリティ・インフラストラクチャ安全保障庁（CISA）が、WordPressコアの脆弱性CVE-2026-119977を既知の悪用脆弱性カタログ（KEV）へ追加し、実際の悪用を確認したと報じられた。記事要約によると、この問題はソフトウェア更新中に確認と使用の間で状態が変わる競合状態（TOCTOU）に起因し、条件がそろうと任意のコード実行に…",
+      "article_path": "articles/6b0c0f3dd553994c.html",
+      "original_url": "https://thehackernews.com/2026/11/cisa-confirms-hackers-exploiting.html"
+    },
+    {
+      "entry_id": "b850568c2bff2415",
+      "title": "The Classics Return: Vulnerable E-Mail Scripts, (Wed, Nov 4th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-11-04T13:24:13+00:00",
+      "impact_level": "Info",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要この記事は、初期のウェブアプリケーションで使われたメール送信CGIの弱点を振り返り、CVE-2000-0411を例に挙げている。URLに追加パラメーターを与えることでサーバーの環境変数が漏れる問題があり、別のメール送信スクリプトでは宛先を書き換えられ、迷惑メール送信に悪用された事例もあった。さらに、利用者の入力を十分に検証せずsendmailへ渡す実装…",
+      "article_path": "articles/b850568c2bff2415.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33488"
+    },
+    {
+      "entry_id": "e15066204c66d990",
+      "title": "ISC Stormcast For Wednesday, November 4th, 2026 https://isc.sans.edu/podcastdetail/10164, (Wed, Nov 4th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-11-04T02:10:02+00:00",
+      "impact_level": "Info",
+      "threat_type": "Unknown",
+      "summary_preview": "概要SANS ISCの「Stormcast For Wednesday, November 4th, 2026」は、2026年11月4日公開の音声配信を示す項目だが、入力には題名、公開日時、URL以外の説明が含まれていない。題名に記載された配信詳細ページと入力元のRSS項目は確認できるものの、音声の内容や参照資料は提供されていないため、扱われた脆弱性、攻撃…",
+      "article_path": "articles/e15066204c66d990.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33486"
+    },
+    {
+      "entry_id": "7db6c893ee1fdf13",
+      "title": "創刊 28 周年記念キャンペーンのおしらせ（3）特別企画『When I'm 28』寄稿者決定のおしらせ",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-03T23:25:02+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要提示された記事情報から確認できるのは、ScanNetSecurityの創刊28周年記念キャンペーンに関する告知であり、特別企画「When I'm 28」の寄稿者が決定したという内容までとなる。脆弱性、攻撃手法、侵害事案、製品更新など、セキュリティ上の事象を扱う記事とは読み取れない。本文や参照先が提供されていないため、企画の具体的な内容、寄稿者、掲載時期…",
+      "article_path": "articles/7db6c893ee1fdf13.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/04/56668.html"
+    },
+    {
+      "entry_id": "569c7a8abe0144a2",
+      "title": "WordPress バージョン 6 系および 7 系における遠隔からの任意のコード実行が可能となる複数の脆弱性（Scan Tech Report）",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-03T23:20:02+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要記事タイトルは、WordPressのバージョン6系および7系に、遠隔から任意のコードを実行される可能性がある複数の脆弱性が存在すると伝えている。攻撃が成立すれば、攻撃者がウェブサーバー上で不正な処理を実行し、サイト改ざんや情報窃取に加え、サーバー内の認証情報を足掛かりとした侵害拡大につながるおそれがある。実際の到達範囲は、認証の要否、影響を受ける機能や…",
+      "article_path": "articles/569c7a8abe0144a2.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/04/56667.html"
+    },
+    {
+      "entry_id": "8ebe24f56459b141",
+      "title": "Proofpoint Blog 第60回 日本のランサムウェア感染率が 2 年で約 2 倍に急増 ～ ランサムウェア感染率/身代金支払率 12 か国調査 2026",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-03T23:15:02+00:00",
+      "impact_level": "Low",
+      "threat_type": "Ransomware",
+      "summary_preview": "概要記事の見出しは、Proofpointの12か国調査として、日本のランサムウェア感染率が2年間で約2倍に上昇したと伝えている。ただし、入力情報には記事本文や調査への参照先がなく、感染率の実数、調査対象、質問方法、比較した期間は確認できないため、この数字だけで自組織の感染確率や被害増加を推定できない。感染率と身代金支払率は別の指標であり、感染が増えても支払…",
+      "article_path": "articles/8ebe24f56459b141.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/04/56666.html"
+    },
+    {
+      "entry_id": "d0974b69352ca579",
+      "title": "PQC 移行の現在地とこれから TLS 1.3 から学ぶ移行戦略 ～ Internet Week 2026",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-03T23:10:02+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要記事タイトルから確認できるのは、Internet Week 2026に関連し、耐量子計算機暗号（PQC）への移行状況と今後の進め方を、TLS 1.3の移行経験から考える内容だという点に限られる。脆弱性の公表や攻撃の発生ではなく、暗号基盤の更新に伴う計画・運用上の課題を扱う記事とみられるが、講演内容や登壇者の説明は入力情報から確認できない。量子計算機によ…",
+      "article_path": "articles/d0974b69352ca579.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/04/56665.html"
+    },
+    {
+      "entry_id": "a6e3efb2b7123dcb",
+      "title": "再開を断念 PHPの重大脆弱性受け「くみあいアプリ」がサービス終了",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-03T23:05:34+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要PHPの重大な脆弱性を受け、「くみあいアプリ」はサービス再開を断念し、終了することになった。記事タイトルから確認できるのは、脆弱性が再開判断に影響した点までで、対象となるPHPの版、脆弱性の識別番号、攻撃条件や悪用状況は示されていない。したがって、外部からの攻撃が可能だったのか、アプリ側の修正や実行環境の更新で解消できなかったのかは、現時点で判断できな…",
+      "article_path": "articles/a6e3efb2b7123dcb.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/04/56664.html"
+    },
+    {
+      "entry_id": "cbc07e373804291a",
+      "title": "外務省のネットワークに不正アクセス、7月27日に検知",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-03T23:05:31+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要外務省のネットワークで不正アクセスが発生し、7月27日に検知されたと報じられている。入力情報から確認できるのは検知日と対象組織に限られ、侵入経路、影響を受けた機器やアカウント、攻撃者の権限、対処状況は分からない。検知日は侵入開始日を示すとは限らず、認証情報の悪用や潜伏が先行していた可能性も、現時点では肯定も否定もできない。影響は単一端末にとどまる場合か…",
+      "article_path": "articles/cbc07e373804291a.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/04/56663.html"
+    },
+    {
+      "entry_id": "a7391e54b63a921c",
+      "title": "「MUJIアプリ」で最大 約2,726万件の顧客情報が流出した可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-03T23:05:28+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要ScanNetSecurityの記事見出しは、「MUJIアプリ」に関連する顧客情報について、最大約2,726万件が流出した可能性を伝えている。ただし、提示された入力には記事本文や一次発表への参照がなく、流出が確認済みか、件数が顧客数・登録情報数・記録数のどれを指すかは確認できない。攻撃経路、対象期間、情報の種類、外部への持ち出しの有無も不明であり、アプ…",
+      "article_path": "articles/a7391e54b63a921c.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/04/56662.html"
+    },
+    {
+      "entry_id": "ca1191060a284be9",
+      "title": "松屋公式アプリに不正アクセス 会員情報等が漏えい",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-03T23:05:25+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要見出しによれば、松屋公式アプリへの不正アクセスに伴い、会員情報などの漏えいが発生した。入力情報には記事本文や公式発表への参照がなく、侵入経路、発生期間、影響を受けた会員数、漏えい項目、攻撃者による情報取得の確認状況は分からない。漏えい情報にメールアドレスや電話番号が含まれる場合は、利用者を装った詐欺や標的型フィッシングに転用されるおそれがあり、認証情報…",
+      "article_path": "articles/ca1191060a284be9.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/04/56661.html"
+    },
+    {
+      "entry_id": "73b7d62aa2f69d36",
+      "title": "「アイリスプラザ」に不正アクセス、安全確保のため一時停止",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-03T23:05:22+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要ScanNetSecurityの記事タイトルから確認できるのは、アイリスプラザへの不正アクセスを受け、安全確保を理由にサービスを一時停止したとの報道までであり、発生時期や停止範囲、復旧状況は示されていない。侵入経路、攻撃者が得た権限、情報の閲覧・持ち出しの有無も確認できず、現時点で情報漏えいや顧客アカウント侵害が発生したとは断定できない。不正アクセスが…",
+      "article_path": "articles/73b7d62aa2f69d36.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/04/56660.html"
+    },
+    {
+      "entry_id": "17c8f34e45ed2cd8",
+      "title": "ELESTYLEのシステムに不正アクセス、加盟店の登録情報が外部に取得された可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-03T23:05:19+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要ScanNetSecurityの記事タイトルによると、ELESTYLEのシステムへの不正アクセスが発生し、加盟店の登録情報が外部に取得された可能性があると報じられている。現時点で入力情報から確認できるのはこの概要に限られ、侵入経路、発生時期、対象システム、取得された情報の項目や件数は分からない。したがって、情報への不正アクセスが確認された段階なのか、実…",
+      "article_path": "articles/17c8f34e45ed2cd8.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/04/56659.html"
+    },
+    {
+      "entry_id": "58d5503a2d358bf6",
+      "title": "競輪・オートレース投票サービス「チャリロト」に不正アクセス、点検で不審なログを発見",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-03T23:05:17+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要競輪・オートレースの投票サービス「チャリロト」で、不正アクセスに関連する点検中に不審なログが見つかったと報じられている。見出しは不正アクセスと表現する一方、提示情報だけでは、そのログが認証成功、操作実行、単なる試行のどれを示すかは分からず、攻撃経路や発生時期も確認できない。投票サービスでは、アカウント情報や投票・入出金に関わる処理が運用上の確認対象にな…",
+      "article_path": "articles/58d5503a2d358bf6.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/04/56658.html"
+    },
+    {
+      "entry_id": "c34e3db8fdb0b57e",
+      "title": "高速道路情報サイト「ドラとら」に不正アクセス、登録情報が閲覧された可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-03T23:05:13+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要ScanNetSecurityの記事タイトルは、高速道路情報サイト「ドラとら」への不正アクセスがあり、登録情報が閲覧された可能性を伝えている。タイトルから読み取れるのは不正アクセスと情報閲覧の可能性までで、侵入経路、攻撃者の権限、対象となった登録情報の項目や件数、発生時期は確認できない。情報を閲覧できる状態にされたことと、外部へ持ち出されたことは同義で…",
+      "article_path": "articles/c34e3db8fdb0b57e.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/04/56657.html"
+    },
+    {
+      "entry_id": "f111a5e4337a6dff",
+      "title": "東京都水道局で個人情報を含む外付けHDD4台が施錠されたキャビネットから紛失",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-03T23:05:09+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要東京都水道局で、個人情報を含む外付けHDD4台が施錠されたキャビネットから紛失したと報じられた。施錠保管されていた媒体の所在が確認できないため、保管場所へのアクセスだけでなく、貸出・返却、移動、棚卸しの記録を照合し、いつ誰が管理していたかを特定する必要がある。媒体が第三者の手に渡り、保存データを読み取れる状態なら、個人情報の不正利用や、対象者を狙った詐…",
+      "article_path": "articles/f111a5e4337a6dff.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/04/56656.html"
+    },
+    {
+      "entry_id": "fe9cecac9270427e",
+      "title": "ハウス電子マネー発行サービス「Value Card」に不正アクセス、ID番号等が流出",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-03T23:05:07+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要ScanNetSecurityの記事タイトルによれば、ハウス電子マネー発行サービス「Value Card」への不正アクセスがあり、ID番号などの情報流出が報じられた。入力には記事本文や参照先が含まれず、侵入経路、発生時期、流出件数、対象者、ID番号以外の情報は確認できない。ID番号が単なる照合用の識別子なのか、ログインや問い合わせ時にも使われるのかによ…",
+      "article_path": "articles/fe9cecac9270427e.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/04/56655.html"
+    },
+    {
+      "entry_id": "bc3a79efb559798d",
+      "title": "台東区のウェブサイト管理者トラベルジップに不正アクセス",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-03T23:05:05+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要台東区のウェブサイト管理を担うトラベルジップに不正アクセスがあったと報じられているが、提示情報には発生日時、侵入経路、侵害されたアカウントやシステム、区側サイトへの影響が示されていない。委託先の管理環境が侵害された場合、委託先内の情報にとどまらず、共有アカウントや管理用接続を経由して自治体サイトの更新機能に到達される可能性がある一方、今回その経路が使わ…",
+      "article_path": "articles/bc3a79efb559798d.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/04/56654.html"
+    },
+    {
+      "entry_id": "cac185b4d9d84972",
+      "title": "「グッドスマイルカンパニー公式ショップ」に不正アクセス",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-03T23:05:02+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要「グッドスマイルカンパニー公式ショップ」への不正アクセスが報じられた。提供された情報は記事の見出しと媒体名に限られ、発生日、侵入経路、攻撃者、調査状況は確認できないため、攻撃手法を特定したり、情報流出が起きたと断定したりすることはできない。通販サイトでは、管理者アカウントや委託先の認証情報が侵害されると、顧客情報や注文履歴の閲覧、商品情報の改変などに波…",
+      "article_path": "articles/cac185b4d9d84972.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/04/56653.html"
+    },
+    {
+      "entry_id": "0e8036c94fbcabeb",
+      "title": "首相官邸、個人情報流出の被害者への相談窓口を案内",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-03T23:00:05+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要記事の題名から確認できるのは、首相官邸が個人情報流出の被害者向けに相談窓口を案内したという点までで、流出元となった組織や具体的な事案は入力情報から特定できない。これは脆弱性の公表や攻撃手口の報告ではなく、被害者が相談先につながるための案内として捉えるのが妥当で、窓口の名称や対象範囲、受付方法も確認できていない。個人情報が悪用された場合、詐欺やなりすまし…",
+      "article_path": "articles/0e8036c94fbcabeb.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/04/56652.html"
+    },
+    {
+      "entry_id": "b9e099aa5a58d326",
+      "title": "HA8000V 対応 HAモニタオプション（管理サーバーレス）にローカルアクセスによりOSコマンドインジェクションの攻撃を受ける恐れがある脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-03T23:00:03+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要記事の見出しによれば、HA8000V対応のHAモニタオプション（管理サーバーレス）に、ローカルアクセスを前提とするOSコマンドインジェクションの脆弱性がある。攻撃者は対象ホスト上で入力を与えられる必要があり、見出しの情報だけからは、インターネット経由で未認証のまま攻撃できるとは判断できない。攻撃が成立すると、製品プロセスの実行権限でOSコマンドを実行さ…",
+      "article_path": "articles/b9e099aa5a58d326.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/04/56651.html"
+    }
+  ]
+}
