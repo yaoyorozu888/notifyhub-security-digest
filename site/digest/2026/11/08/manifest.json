@@ -1,0 +1,137 @@
+{
+  "date": "2026-11-08",
+  "window": {
+    "from": "2026-11-07T06:00:00+09:00",
+    "to": "2026-11-08T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 2
+  },
+  "generated_at_jst": "2026-11-08T06:12:48.129387+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "Claude Codeの「再確認しない」承認がGitHubで大量の秘密情報を露出",
+      "source_name": "The Hacker News",
+      "published_at": "2026-11-07T06:54:13+00:00",
+      "impact_level": "High",
+      "threat_type": "Credential Theft",
+      "summary_preview": "概要Apiiroの調査で、Claude Codeの「Yes, and don't ask again」選択時に承認コマンド全文を.claude/settings.local.jsonへ保存する挙動が確認された。コマンドにパスワードやトークンが含まれると平文で残り、GitHub公開リポジトリに約1,122件のファイルで少なくとも1件の秘密情報が載り、履歴・フ…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html",
+      "selection_reason": "AIコーディングエージェントの設定が直接クレデンシャル漏洩につながる具体事例で、開発者の即時対応を要する実務影響が強い。政策パッケージや汎用予測より新規性・具体性が高く、他カテゴリのモデル発表や買収と分野が重ならない。",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "Claude Code's “Don't Ask Again” File Exposes Passwords and Keys in 1,122 Public Copies on GitHub",
+          "url": "https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html",
+          "source_type": "news"
+        },
+        {
+          "title": "Claude Code approval files found exposing company secrets on GitHub, says Apirro researchers",
+          "url": "https://itwire.com/business-it-news/security/claude-code-approval-files-found-exposing-company-secrets-on-github-says-apirro-researchers",
+          "source_type": "news"
+        },
+        {
+          "title": "The Hacker News post on Claude Code secrets exposure",
+          "url": "https://x.com/TheHackersNews/status/2118960196987080801",
+          "source_type": "x"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "DeepMindのAIエージェントがレガシー1024ビットRSAの2つの弱点を特定",
+      "source_name": "WebProNews",
+      "published_at": "2026-11-07T12:58:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Other",
+      "summary_preview": "概要Google DeepMindは人間監督のAIエージェントが、レガシー1024ビットRSAに対する2つの弱点を数週間で特定したと発表した。署名パディングは攻撃者がブロックの約半分を制御すると保護を失い、短いダイジェスト向け新手法は理論上従来比約1600倍の改善を示す。バッチ因数分解では追加鍵あたりのコストを約30倍低減する「fan factory」を提…",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://www.webpronews.com/deepmind-ai-agents-legacy-1024-bit-rsa-weaknesses/",
+      "selection_reason": "人間監督下のAIエージェントが暗号解析を加速した研究成果で、モデル能力の実務応用を示す。製品買収や漏洩事例と異なり研究・暗号分野の新規事実があり、AIカテゴリの本質的進展に直結する。",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "Google DeepMind’s AI Agents Find Two Weak Spots in Legacy 1024-Bit RSA",
+          "url": "https://www.webpronews.com/deepmind-ai-agents-legacy-1024-bit-rsa-weaknesses/",
+          "source_type": "news"
+        },
+        {
+          "title": "DeepMind AI Agents Find Two Weaknesses in Legacy RSA-1024",
+          "url": "https://curiouslm.com/blog/deepmind-ai-agents-rsa-1024-weaknesses",
+          "source_type": "web"
+        },
+        {
+          "title": "Related discussion on DeepMind RSA findings",
+          "url": "https://x.com/LFM9393/status/2119173171563634706",
+          "source_type": "x"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "DropboxがTigrisを3.5億ドルで買収しDBX Agent Cloudを投入",
+      "source_name": "TechCrunch",
+      "published_at": "2026-11-05T15:19:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Other",
+      "summary_preview": "概要DropboxはAIワークロード向け分散オブジェクトストレージのTigris Dataを約3.5億ドルで買収すると発表し、同時にDBX Agent Cloudを投入した。初期はS3互換のスタンドアロンオブジェクトストレージを提供し、企業が既存ツールと組み合わせてエージェントやモデル構築用データ層として利用できる。グローバル分散配置でアクセス遅延を抑え、…",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://techcrunch.com/2026/11/05/dropbox-acquires-tigris-data-for-350m-to-bolster-its-ai-iinfrastructure/",
+      "selection_reason": "エンタープライズ向けオブジェクトストレージとエージェント向けデータ基盤の具体的M&A・製品発表で、クラウド／SaaSのITトレンドに直結。調査レポートや抽象予測ではなく導入判断に使える新規事実であり、セキュリティ漏洩や純AI研究と領域が異なる。",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "Dropbox acquires Tigris Data for $350M to bolster its AI infrastructure",
+          "url": "https://techcrunch.com/2026/11/05/dropbox-acquires-tigris-data-for-350m-to-bolster-its-ai-iinfrastructure/",
+          "source_type": "news"
+        },
+        {
+          "title": "Dropbox Announces Plans to Acquire Tigris Data Inc. and Unveils DBX Agent Cloud",
+          "url": "https://investors.dropbox.com/news-releases/news-release-details/dropbox-announces-plans-acquire-tigris-data-inc-and-unveils-dbx",
+          "source_type": "official"
+        },
+        {
+          "title": "Dropbox targets AI infrastructure gains with $350m Tigris Data acquisition",
+          "url": "https://www.itpro.com/business/acquisition/dropbox-targets-ai-infrastructure-gains-with-usd350m-tigris-data-acquisition",
+          "source_type": "news"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "4a69f136ccf95a67",
+      "title": "Claude Code's “Don't Ask Again” File Exposes Passwords and Keys in 1,122 Public Copies on GitHub",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-07T06:44:17+00:00",
+      "impact_level": "High",
+      "threat_type": "Credential Theft",
+      "summary_preview": "概要Claude Codeで利用者がコマンドの実行許可時に「再確認しない」を選ぶと、承認したコマンドがプロジェクト設定ファイルにそのまま保存され、入力したパスワードやAPIキーまで含まれる場合があると報じられた。Apiiroの調査として、こうした情報を含むファイルがGitHub上の公開リポジトリで1,122件確認されたという。攻撃者は公開リポジトリを検索・…",
+      "article_path": "articles/4a69f136ccf95a67.html",
+      "original_url": "https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html"
+    },
+    {
+      "entry_id": "002fa1add30efd1b",
+      "title": "Turning Up the Heat: Inside the Attacks on Europe’s Refrigeration System",
+      "source_name": "Unit 42",
+      "category": "reporting",
+      "published_at": "2026-11-06T21:15:09+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要Unit 42は、欧州の冷凍設備を標的とした最近のサイバー攻撃を取り上げ、防御と緩和の考え方を分析している。提示された情報から確認できるのは、冷凍設備が攻撃対象になったことと、記事が対策を扱う点までであり、侵入経路や攻撃者、被害組織、発生件数は特定できない。攻撃者が設備の管理画面や遠隔保守経路を不正利用した可能性は考えられるものの、今回の攻撃で使われた…",
+      "article_path": "articles/002fa1add30efd1b.html",
+      "original_url": "https://unit42.paloaltonetworks.com/europes-refrigeration-systems-attacks/"
+    }
+  ]
+}
