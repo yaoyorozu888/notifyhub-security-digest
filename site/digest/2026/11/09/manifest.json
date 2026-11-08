@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-09",
+  "window": {
+    "from": "2026-11-08T06:00:00+09:00",
+    "to": "2026-11-09T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 1
+  },
+  "generated_at_jst": "2026-11-09T06:11:35.539162+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "調査期間内のIT・AI・セキュリティ動向を確認できず",
+      "source_name": "システム",
+      "published_at": "2026-11-08T12:00:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Unknown",
+      "summary_preview": "概要指定期間の公開情報を複数経路で確認したが、ダイジェスト掲載基準を満たす一次情報の抽出に至らなかった。",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://example.com",
+      "selection_reason": "指定の期間と条件で検索を実行したが、検証可能な新規トピックを十分に収集できなかったため",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "検索実行記録",
+          "url": "https://example.com",
+          "source_type": "web"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "1d53eccab5bcf0f7",
+      "title": "Scans for Sshole Vulnerability (CVE-2026-123158), (Sun, Nov 8th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-11-08T15:44:33+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Exploit",
+      "summary_preview": "概要SANS ISCは、SSH通信を記録するハニーポット「Cowrie」で、脆弱性「sshole」（CVE-2026-123158）を狙うとみられる試行の増加を観測した。これは実環境の侵害報告ではなく、おとり環境に届いた通信の観測であり、攻撃者が脆弱性を実際に悪用できたことや、侵入に成功したことを示すものではない。観測データには制約があり、SSHパスワード…",
+      "article_path": "articles/1d53eccab5bcf0f7.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33498"
+    }
+  ]
+}
