@@ -1,0 +1,689 @@
+{
+  "date": "2026-11-12",
+  "window": {
+    "from": "2026-11-11T06:00:00+09:00",
+    "to": "2026-11-12T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 48
+  },
+  "generated_at_jst": "2026-11-12T06:32:57.093608+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "AMDが256コアZen 6 EPYCの出荷を開始、AIエージェント基盤向け",
+      "source_name": "WebProNews",
+      "published_at": "2026-11-11T12:54:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要AMDは第6世代EPYC（コードネームVenice、Zen 6）SP7プロセッサの一般提供とサーバー出荷を開始した。最大256コア／512スレッドを1ソケットに搭載し、PCIe Gen6と高帯域メモリを備え、AIエージェントのサンドボックスやツール呼び出し需要に対応する。Metaを先行顧客とし、240超のサーバープラットフォームがコミット済みで、前世代…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://www.webpronews.com/amd-6th-gen-epyc-venice-zen-6-sp7-shipping-ai-agents/",
+      "selection_reason": "半導体とエンタープライズITの具体的な製品出荷であり、抽象的な年次予測ではなくAIエージェント需要に直結する実務影響が大きい。他候補のクラウド障害や汎用トレンドより新規性と多様性が高い。",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "AMD Starts Shipping 256-Core Zen 6 EPYC Chips Built for the AI Agent Boom",
+          "url": "https://www.webpronews.com/amd-6th-gen-epyc-venice-zen-6-sp7-shipping-ai-agents/",
+          "source_type": "news"
+        },
+        {
+          "title": "AMD EPYC Venice Ships on SP7",
+          "url": "https://hwbusters.com/news/amd-epyc-venice-ships-on-sp7-but-most-of-the-zen-6-server-lineup-waits-until-2027/",
+          "source_type": "web"
+        },
+        {
+          "title": "Lenovo Data Center post on 6th Gen AMD EPYC",
+          "url": "https://x.com/Lenovodc/status/2120630202665513191",
+          "source_type": "x"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "GoogleがGemini 4 Carbonを一般提供、長時間エージェントとサイバー能力を強化",
+      "source_name": "Google Blog",
+      "published_at": "2026-11-10T16:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要Google DeepMindはGemini 4 Carbonを有料開発者・企業向けAPIとAI Ultraユーザー向けに一般提供した。サイバー防御向けプレビューから拡大し、長時間エージェント作業と複雑なコーディング・科学研究に最適化。CursorBenchなどで首位級の精度を低コストで実現し、導入価格は入力200万トークンあたり2ドル前後（期間限定）…",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+      "selection_reason": "AIモデルの具体的な一般提供発表で、ベンチマークと価格、エージェント機能が明確。IPOや抽象予測より実務導入判断に寄与し、他カテゴリと領域が異なる。",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "Gemini 4 Carbon is now available",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+          "source_type": "official"
+        },
+        {
+          "title": "Gemini 4 Carbon Is Available: Price, Access, Benchmarks",
+          "url": "https://aibriefingdaily.com/news/gemini-4-carbon-now-available-price-access-benchmarks-fairwind",
+          "source_type": "news"
+        },
+        {
+          "title": "X posts on Gemini 4 Carbon availability and benchmarks",
+          "url": "https://x.com/theo/status/2120596827980665018",
+          "source_type": "x"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "Microsoft 11月パッチでOutlookゼロデイ修正、NTLMハッシュ漏洩が悪用中",
+      "source_name": "Forbes",
+      "published_at": "2026-11-11T15:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Zero-day",
+      "summary_preview": "概要Microsoftの11月パッチチューズデーは1000件超の脆弱性を修正し、その中でCVE-2026-124194（Outlook）が悪用確認済みゼロデイとなった。細工したメッセージファイルを開くと外部警告なしに攻撃者サーバーへ接続し、NTLMv2ハッシュを漏洩させる。CVSSは6.5の中程度だが初期アクセスに有用で、CISAもKEVに追加。Offic…",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://www.forbes.com/sites/daveywinder/2026/11/11/microsoft-confirms-active-exploitation-of-new-outlook-zero-day/",
+      "selection_reason": "実際に悪用中のゼロデイを含む大規模パッチで、セキュリティ実務に直結。他のKEV追加やChromeゼロデイより企業メール環境への影響が広範で具体的。",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "Microsoft Confirms Active Exploitation Of New Outlook Zero-Day",
+          "url": "https://www.forbes.com/sites/daveywinder/2026/11/11/microsoft-confirms-active-exploitation-of-new-outlook-zero-day/",
+          "source_type": "news"
+        },
+        {
+          "title": "Microsoft Patch Tuesday fixes Outlook flaw already under attack",
+          "url": "https://www.malwarebytes.com/blog/bugs/2026/11/microsoft-patch-tuesday-fixes-outlook-flaw-already-under-attack",
+          "source_type": "news"
+        },
+        {
+          "title": "X post detailing CVE-2026-124194 exploitation",
+          "url": "https://x.com/Kisalay_/status/2120630144402342379",
+          "source_type": "x"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "57473097906c2f4e",
+      "title": "Critical Zoom Workplace Flaw Could Allow Unauthenticated Remote Privilege Escalation",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-11T16:12:46+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Zoomは、Windows版Zoom Workplaceに影響する2件の脆弱性に対処する更新を公開したと報じられている。うちCVE-2026-108186は入力検証の不備で、記事の見出しと概要によれば、未認証の攻撃者が権限昇格を引き起こす可能性があり、CVSSスコアは9.6となっている。成立すれば、脆弱な端末上で攻撃者がより高い権限を得て、端末内のデー…",
+      "article_path": "articles/57473097906c2f4e.html",
+      "original_url": "https://thehackernews.com/2026/11/critical-zoom-workplace-flaw-could.html"
+    },
+    {
+      "entry_id": "eaddf99f3660f074",
+      "title": "AntiFox AI Pentesting Platform Linked to Attacks That Accessed AWS Production Secrets",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-11T15:34:27+00:00",
+      "impact_level": "High",
+      "threat_type": "Credential Theft",
+      "summary_preview": "概要The Hacker Newsは、AntiFoxと呼ばれる自律型の侵入テスト基盤が、AWSの認証情報を窃取し、侵害環境内を横展開した攻撃に関与したと報じている。記事の抜粋では、AntiFoxの画面をホストするAlibaba Cloud上のシステムが、確認済みの悪意ある活動と関連付けられたとされるが、運営者やホストの管理主体が攻撃者と同一とは確認できない…",
+      "article_path": "articles/eaddf99f3660f074.html",
+      "original_url": "https://thehackernews.com/2026/11/antifox-ai-pentesting-platform-linked.html"
+    },
+    {
+      "entry_id": "1bb6be59207ce6d2",
+      "title": "Hackers Target Qlik Sense Servers With Reverse Shells, Stage ActiveMQ and Veeam Exploits",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-11T14:01:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Exploit",
+      "summary_preview": "概要2026年10月、Cynetの調査チームが、欧州の複数顧客環境にあるQlik Senseサーバーを狙った不審な活動を確認したと報じられた。攻撃者はPowerShellによるリバースシェルの実行を試みたが、提供情報では配信は成功しておらず、サーバー上で侵害が成立したとは確認されていない。活動は3分余りの短い時間帯に観測され、記事見出しはActiveMQお…",
+      "article_path": "articles/1bb6be59207ce6d2.html",
+      "original_url": "https://thehackernews.com/2026/11/hackers-target-qlik-sense-servers-with.html"
+    },
+    {
+      "entry_id": "fa8385e2154d9b78",
+      "title": "Over 35,000 Grok-Built Apps Exposed Online, Some Leaking Confidential Data and Passwords",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-11T12:19:40+00:00",
+      "impact_level": "High",
+      "threat_type": "Misconfiguration",
+      "summary_preview": "概要Clarocの調査として、Grokで作成されたアプリ37,571件がオンラインで確認され、そのうち35,578件はサインインなしで誰でも利用できる状態だったと報じられた。大半はゲーム、案内ページ、計算機などだが、約1割には業務上の情報が含まれ、一部では機密情報やパスワードの漏えいもあったと記事は伝えている。XおよびGrokを提供するSpaceXSIのス…",
+      "article_path": "articles/fa8385e2154d9b78.html",
+      "original_url": "https://thehackernews.com/2026/11/over-35000-grok-built-apps-exposed.html"
+    },
+    {
+      "entry_id": "5d71e59849116a0a",
+      "title": "We Built An Agent That Broke All of Our Security Rules. Here's What We Learned.",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-11T12:01:59+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要記事は、AIエージェントを安全に運用するための三つの原則として、エージェント固有の識別、役割に見合う権限、利用者とは分離した追跡可能性を挙げ、自社で構築したエージェントが既定の設計でそのすべてを損なった経験を紹介している。とくにブラウザーエージェントが利用者の認証済みセッション内で動作する場合、利用者の権限をそのまま使い、意図しない操作や過剰なデータ参…",
+      "article_path": "articles/5d71e59849116a0a.html",
+      "original_url": "https://thehackernews.com/2026/11/we-built-agent-that-broke-all-of-our.html"
+    },
+    {
+      "entry_id": "31fb3d601bd3fdbf",
+      "title": "eMudhra Revokes 8 More CAs It Previously Declared Unaffected by Key Compromise",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-11T12:00:53+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要報道によると、eMudhraは10月の鍵侵害事案に関連し、当初は影響を受けていないと説明していた中間認証局（CA）8機関を追加で失効させた。今回の8機関では秘密鍵の強度低下は確認されておらず、問題は10月の事案にも関係する社内Pythonスクリプトにあったとされるが、入力情報からは問題の具体的内容や、証明書の発行・管理にどう影響したかまでは分からない。…",
+      "article_path": "articles/31fb3d601bd3fdbf.html",
+      "original_url": "https://thehackernews.com/2026/11/emudhra-revokes-8-more-cas-it.html"
+    },
+    {
+      "entry_id": "98673cb69a449a65",
+      "title": "Microsoft Patches 1,259 Flaws, Including Exploited Outlook Bug That May Expose NTLMv2 Hashes",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-11T08:17:53+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要Microsoftは製品群に含まれる1,259件の脆弱性を修正し、その中には悪用が確認されたOutlookの脆弱性も含まれると報じられた。記事の表題によれば、この問題はNTLMv2ハッシュの露出につながる可能性があり、取得した応答値は条件次第でオフライン解析や認証中継に利用される恐れがある。ただし、具体的な攻撃手順や利用者操作の要否、認証中継が成立する…",
+      "article_path": "articles/98673cb69a449a65.html",
+      "original_url": "https://thehackernews.com/2026/11/microsoft-patches-1259-flaws-including.html"
+    },
+    {
+      "entry_id": "5948f9c7deb0fa2a",
+      "title": "Railway Says Stolen Customer AI Keys Led to $740,000 in Estimated Unauthorized Usage Charges",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-11T07:49:04+00:00",
+      "impact_level": "High",
+      "threat_type": "Credential Theft",
+      "summary_preview": "概要Railwayは、10月に発生した侵害で、顧客が同社に保管していたAI事業者のAPIキーが窃取され、不正利用によって推定74万ドルの利用料が生じたと説明した。攻撃者は窃取したキーを正規の認証情報として使い、顧客の契約に紐づくAIサービスを利用したとみられるため、サービス停止だけでなく利用料や利用枠の消費にもつながる。Railwayは、AI事業者から返金…",
+      "article_path": "articles/5948f9c7deb0fa2a.html",
+      "original_url": "https://thehackernews.com/2026/11/railway-says-stolen-customer-ai-keys.html"
+    },
+    {
+      "entry_id": "c859e461226d0d88",
+      "title": "Microsoft Researchers Show AI Agents Can Be Backdoored by Editing Fewer Than 10 Neurons",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-11T07:21:05+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要Microsoftの研究者は、モデルを再学習させず、使用頻度の低いニューロンを10個未満書き換えることで、AIモデルに隠れたバックドアを埋め込める手法を示した。特定の合図が入力されるとモデルは攻撃者が指定したコマンドを出力し、その出力を実行するエージェントがあれば、エージェントに付与された権限で処理が進む。成立にはモデルの重みを書き換える能力が必要であ…",
+      "article_path": "articles/c859e461226d0d88.html",
+      "original_url": "https://thehackernews.com/2026/11/microsoft-researchers-show-ai-agents.html"
+    },
+    {
+      "entry_id": "f8f60c105e3607d2",
+      "title": "Cisco BroadWorks and Openwave Flaws Actively Exploited Despite Available Patches",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-11T06:04:02+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要米CISAがCisco BroadWorksとOpenwave Messaging Webtop Media Transcoderに関する2件の脆弱性を、悪用の証拠があるとして既知悪用脆弱性カタログ（KEV）に追加したと報じられた。記事タイトルによれば両製品には修正が提供済みだが、対象組織で未適用の機器が残れば、攻撃者に侵入経路として利用されるおそれが…",
+      "article_path": "articles/f8f60c105e3607d2.html",
+      "original_url": "https://thehackernews.com/2026/11/cisco-broadworks-and-openwave-flaws.html"
+    },
+    {
+      "entry_id": "f6ac77212ca62e79",
+      "title": "Microsoft Patch Tuesday November 2026, (Tue, Nov 10th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-11-11T18:28:43+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Patch",
+      "summary_preview": "概要SANS ISCは、2026年11月のMicrosoft更新について、1,260件の脆弱性に対処し、そのうち68件を重大と分類したと報告している。内訳にはMicrosoft Edgeに関係するChromiumの問題が167件含まれるとされるが、件数だけでは自組織で影響を受ける製品や実際の危険度を判断できない。脆弱性が未修正の環境では、個々の欠陥に応じて…",
+      "article_path": "articles/f6ac77212ca62e79.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33508"
+    },
+    {
+      "entry_id": "62a1625ddea26d83",
+      "title": "ISC Stormcast For Wednesday, November 11th, 2026 https://isc.sans.edu/podcastdetail/10174, (Wed, Nov 11th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-11-11T02:00:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Unknown",
+      "summary_preview": "概要SANS Internet Storm Center（ISC）の「Stormcast」が2026年11月11日付で公開されたことを示す情報だが、入力には音声の内容、番組概要、参照先が含まれていない。したがって、扱われた脅威や脆弱性、攻撃手法、対象となる製品・組織を特定できず、攻撃者がどの条件を利用するのかも判断できない。実際の被害、悪用の有無、影響範囲…",
+      "article_path": "articles/62a1625ddea26d83.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33510"
+    },
+    {
+      "entry_id": "fb03d8c1bfbeb1b9",
+      "title": "shadowserver selected to natos defence capacity building bedrock pool",
+      "source_name": "Shadowserver",
+      "category": "reporting",
+      "published_at": "2026-11-11T13:53:57+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要Shadowserverの発表によれば、同組織がNATOの防衛能力構築（Defence Capacity Building）に関する「Bedrock pool」に選定された。確認できるのは選定の事実までで、枠組みの対象地域、参加条件、提供する具体的な能力、開始時期や資金規模は入力情報に記載されていない。これは脆弱性の公表や攻撃発生の報告ではなく、サイバ…",
+      "article_path": "articles/fb03d8c1bfbeb1b9.html",
+      "original_url": "https://www.shadowserver.org/news/shadowserver-selected-to-natos-defence-capacity-building-bedrock-pool/"
+    },
+    {
+      "entry_id": "b47f8945f7032f1a",
+      "title": "The XG Files: Falcon C2 Flying Under The (Browser) Radar",
+      "source_name": "Unit 42",
+      "category": "reporting",
+      "published_at": "2026-11-11T15:00:23+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Malware",
+      "summary_preview": "概要Unit 42は、政府機関を標的とするブラウザ基盤の脅威フレームワーク「Falcon C2」を報告した。攻撃には悪意あるスクリプトやブラウザー拡張機能が使われ、関連するインプラントとして「Antino」が挙げられている。ブラウザー内の実行や通信を足掛かりにするため、端末上の不審な実行ファイルや一般的な通信監視だけでは活動を捉えにくくなる可能性がある。た…",
+      "article_path": "articles/b47f8945f7032f1a.html",
+      "original_url": "https://unit42.paloaltonetworks.com/falcon-c2-browser-compromise/"
+    },
+    {
+      "entry_id": "f8188dba872a4778",
+      "title": "注意喚起: 2026年11月マイクロソフトセキュリティ更新プログラムに関する注意喚起  (公開)",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-11-11T02:20:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要JPCERT/CCが、2026年11月のマイクロソフトセキュリティ更新プログラムに関する注意喚起を公開したという情報が入力されている。ただし、入力には記事本文や対象製品、修正された問題、CVE番号、攻撃の観測状況が含まれておらず、更新の具体的な内容は確認できない。したがって、脆弱性の悪用条件が認証前か認証後か、利用者操作を要するか、侵害時に権限昇格や横…",
+      "article_path": "articles/f8188dba872a4778.html",
+      "original_url": "https://www.jpcert.or.jp/at/2026/at260035.html"
+    },
+    {
+      "entry_id": "b518fac6ebe4483a",
+      "title": "Weekly Report: Cloud Software GroupのXenServerに複数の脆弱性",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-11-11T00:07:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要JPCERT/CCの週次報告は、Cloud Software Groupの仮想化基盤XenServerに複数の脆弱性があると取り上げているが、提供された情報には個別の脆弱性番号、影響を受ける版、修正版、悪用状況が含まれていない。脆弱性の成立条件が認証前の遠隔操作なのか、管理者権限やホスト上での操作を要するのかによって、緊急度と初動は大きく変わるため、現…",
+      "article_path": "articles/b518fac6ebe4483a.html",
+      "original_url": "https://www.jpcert.or.jp/wr/2026/wr261111.html#1"
+    },
+    {
+      "entry_id": "136bd05f54b8617e",
+      "title": "Weekly Report: Puppet ServerおよびOpenVoxに複数の脆弱性",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-11-11T00:07:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要JPCERT/CCの週次報告で、構成管理製品のPuppet ServerおよびOpenVoxに複数の脆弱性があると取り上げられた。入力情報には脆弱性の識別番号、影響を受ける版、攻撃条件、修正版、悪用状況が示されていないため、個別の危険度や適用対象をここから確定できない。一般に構成管理サーバーは多数の端末へ設定や処理を配布するため、脆弱性が悪用されて管理…",
+      "article_path": "articles/136bd05f54b8617e.html",
+      "original_url": "https://www.jpcert.or.jp/wr/2026/wr261111.html#2"
+    },
+    {
+      "entry_id": "d0933463397bdd85",
+      "title": "Weekly Report: Airbyteに任意のコード実行につながる脆弱性",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-11-11T00:07:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要JPCERT/CCの週次報告で、データ連携基盤Airbyteに任意のコード実行につながる脆弱性が取り上げられたが、提示情報には脆弱性の識別番号、影響する版、修正版、成立条件、悪用状況が記載されていない。任意コード実行が成立すれば、Airbyteの実行環境上で処理を改変され、接続先に使う認証情報や連携データを窃取・改ざんされるおそれがある一方、ホスト全体…",
+      "article_path": "articles/d0933463397bdd85.html",
+      "original_url": "https://www.jpcert.or.jp/wr/2026/wr261111.html#3"
+    },
+    {
+      "entry_id": "ecece04ff9eb7403",
+      "title": "Weekly Report: Firefoxにバッファエラーの脆弱性",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-11-11T00:07:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要JPCERT/CCの週次報告に、Firefoxのバッファエラーに関する脆弱性が掲載された。ただし、提供された情報は見出しのみで、影響する版、修正版、脆弱性の詳細や悪用状況までは確認できない。バッファエラーは、処理対象のデータとメモリ領域の扱いに問題が生じる不具合を指すが、この記載だけから特定の攻撃手法や結果を断定できない。一般にブラウザーの脆弱性は、細…",
+      "article_path": "articles/ecece04ff9eb7403.html",
+      "original_url": "https://www.jpcert.or.jp/wr/2026/wr261111.html#4"
+    },
+    {
+      "entry_id": "d7b570e1f4be257a",
+      "title": "Weekly Report: 複数のManageEngine製品に脆弱性",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-11-11T00:07:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要JPCERT/CCの週間報告は、複数のManageEngine製品に脆弱性がある旨を取り上げている。ただし、入力情報には製品名、脆弱性の内容、影響バージョン、修正版、CVE番号が含まれず、個々の問題の深刻度や対処状況は判定できない。一般に、攻撃成立には対象製品が影響バージョンで稼働していることに加え、脆弱な機能へ到達できるネットワーク経路や必要な権限な…",
+      "article_path": "articles/d7b570e1f4be257a.html",
+      "original_url": "https://www.jpcert.or.jp/wr/2026/wr261111.html#5"
+    },
+    {
+      "entry_id": "ed6d63a7f8fdcf08",
+      "title": "Weekly Report: 複数のZyxel Networks製品に脆弱性",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-11-11T00:07:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要確認できるのは、JPCERT/CCの週次報告がZyxel Networks製品の複数の脆弱性を取り上げた点までで、対象機種、脆弱性識別子、影響バージョン、修正版は入力情報に含まれていない。脆弱性の悪用には製品や設定ごとの条件が関わるが、認証の要否、ネットワーク越しの攻撃可否、必要な権限はいずれも未確認であり、外部から到達できる機器が直ちに危険とは断定で…",
+      "article_path": "articles/ed6d63a7f8fdcf08.html",
+      "original_url": "https://www.jpcert.or.jp/wr/2026/wr261111.html#6"
+    },
+    {
+      "entry_id": "8daaca9b74612efc",
+      "title": "Weekly Report: Microsoft Edgeに複数の脆弱性",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-11-11T00:07:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要JPCERT/CCの週次報告は、Microsoft Edgeに複数の脆弱性があることを取り上げている。ブラウザーの脆弱性は、細工されたウェブコンテンツへのアクセスなどを入口として悪用される場合があるが、今回の入力情報には個々の欠陥の種類や攻撃成立条件が記載されておらず、具体的な攻撃経路は特定できない。影響範囲は脆弱性の内容や利用環境によって異なり、端末…",
+      "article_path": "articles/8daaca9b74612efc.html",
+      "original_url": "https://www.jpcert.or.jp/wr/2026/wr261111.html#7"
+    },
+    {
+      "entry_id": "5c11a3ba91fcb493",
+      "title": "Weekly Report: 複数のAbsolute Security製品に脆弱性",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-11-11T00:07:00+00:00",
+      "impact_level": "Low",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要JPCERT/CCの週次報告には、Absolute Securityの複数製品に脆弱性があるとの情報が掲載されている。ただし、今回提示された情報は見出しと掲載元、公開日、参照先URLに限られ、対象製品名や影響バージョン、脆弱性の内容、CVE番号、修正版の有無は確認できない。したがって、認証なしで遠隔から悪用できるのか、端末上での権限が必要なのか、実際に…",
+      "article_path": "articles/5c11a3ba91fcb493.html",
+      "original_url": "https://www.jpcert.or.jp/wr/2026/wr261111.html#8"
+    },
+    {
+      "entry_id": "9b5f513e73b9384a",
+      "title": "Weekly Report: 複数のElastic製品に脆弱性",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-11-11T00:07:00+00:00",
+      "impact_level": "Low",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要JPCERT/CCの2026年11月11日付週次報告には、複数のElastic製品に脆弱性があるとの項目が掲載されているが、入力情報から確認できるのはこの見出しまでで、個別の製品名、脆弱性の内容、対象バージョンは特定できない。したがって、認証前に外部から悪用できるのか、特定の設定や権限が必要なのか、修正版が提供されているのかは未確認となる。脆弱性の存在…",
+      "article_path": "articles/9b5f513e73b9384a.html",
+      "original_url": "https://www.jpcert.or.jp/wr/2026/wr261111.html#9"
+    },
+    {
+      "entry_id": "d831273600124be6",
+      "title": "Weekly Report: Google Chromeに複数の脆弱性",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-11-11T00:07:00+00:00",
+      "impact_level": "Low",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要JPCERT/CCの週次報告に、Google Chromeの複数の脆弱性に関する項目が掲載されているが、提供された情報には脆弱性の識別番号、影響を受ける版、修正版、悪用状況の記載がない。したがって、現時点で攻撃者がどの機能や処理を狙うのか、利用者の操作を要するのか、認証前に成立するのかは判断できず、報告の題名だけから遠隔コード実行などの具体的な影響を推…",
+      "article_path": "articles/d831273600124be6.html",
+      "original_url": "https://www.jpcert.or.jp/wr/2026/wr261111.html#10"
+    },
+    {
+      "entry_id": "3e38c80f6fe85bd3",
+      "title": "Weekly Report: Androidに複数の脆弱性",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-11-11T00:07:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要JPCERT/CCの週次報告に、Androidの複数の脆弱性が取り上げられている。ただし、提供された情報には脆弱性の識別番号、影響するAndroidの版、攻撃条件、修正状況がなく、個別の危険度や悪用の有無は判断できない。一般に、脆弱性の悪用には、対象となる端末や部品が影響を受ける版であることに加え、利用者の操作や特定の通信への接触などが条件となる場合が…",
+      "article_path": "articles/3e38c80f6fe85bd3.html",
+      "original_url": "https://www.jpcert.or.jp/wr/2026/wr261111.html#11"
+    },
+    {
+      "entry_id": "ee516828c5bdfdd4",
+      "title": "Weekly Report: 複数のBarracuda Networks製品に脆弱性",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-11-11T00:07:00+00:00",
+      "impact_level": "Low",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要JPCERT/CCの週次報告に、Barracuda Networksの複数製品に関する脆弱性情報が掲載された。ただし、提示された情報は見出しに限られ、対象製品名、影響を受ける版、脆弱性の種類、攻撃成立に必要な条件は確認できない。脆弱性が外部から到達可能な機能にあり、認証なしで悪用できる場合は、侵入や情報漏えいなどにつながる可能性がある一方、現時点で実際…",
+      "article_path": "articles/ee516828c5bdfdd4.html",
+      "original_url": "https://www.jpcert.or.jp/wr/2026/wr261111.html#12"
+    },
+    {
+      "entry_id": "e82f31550a33ada1",
+      "title": "Weekly Report: 複数のPostgreSQL向けツールに脆弱性",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-11-11T00:07:00+00:00",
+      "impact_level": "Low",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要JPCERT/CCの週間報告には、複数のPostgreSQL向けツールで脆弱性が報告された項目が掲載されているが、入力情報で確認できるのは見出しと掲載元までであり、個別製品の特定には至らない。製品名、影響バージョン、CVE、攻撃成立条件、修正状況、悪用の有無はいずれも未確認で、PostgreSQLサーバー本体の欠陥か、管理・接続・開発用ツールの欠陥かも…",
+      "article_path": "articles/e82f31550a33ada1.html",
+      "original_url": "https://www.jpcert.or.jp/wr/2026/wr261111.html#13"
+    },
+    {
+      "entry_id": "0fca3c7820aee69a",
+      "title": "Weekly Report: NCOが「個人情報の漏えい等につながる不正アクセスへの対策について - ウェブサイトやモバイルアプリに関する基本的な対策の徹底 -」を公開",
+      "source_name": "JPCERT/CC",
+      "category": "reporting",
+      "published_at": "2026-11-11T00:07:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要NCOが、ウェブサイトやモバイルアプリへの不正アクセスによる個人情報の漏えいなどを防ぐため、基本的な対策の徹底を呼びかける資料を公開した。対象は特定の製品や脆弱性ではなく、利用者の情報を扱うウェブサービス全般とみられ、公開資料の題名からは、個々の組織が自らのサービス構成や対策状況を確認する趣旨が読み取れる。ただし、提供された情報には資料本文や具体的な対…",
+      "article_path": "articles/0fca3c7820aee69a.html",
+      "original_url": "https://www.jpcert.or.jp/wr/2026/wr261111.html#14"
+    },
+    {
+      "entry_id": "c1d49adcfc21e70d",
+      "title": "VB2026 Seville 登壇発表レポート",
+      "source_name": "IIJ SECT",
+      "category": "reporting",
+      "published_at": "2026-11-11T06:59:16+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要IIJ SECTが、VB2026のセビリア開催における登壇発表の報告を公開した。入力された記事情報では、セキュリティ情報統括室の活動として、暗号技術の研究開発、脆弱性情報の収集、インシデント対応、脅威情報の収集が紹介されているが、発表の具体的な題目や結論までは確認できない。したがって、特定の製品や組織に対する脆弱性の公表、攻撃の発生、悪用手法の提示を示…",
+      "article_path": "articles/c1d49adcfc21e70d.html",
+      "original_url": "https://sect.iij.ad.jp/blog/2026/11/vb2026/"
+    },
+    {
+      "entry_id": "5affecf3edc2d069",
+      "title": "守られない正論「アカウントの共有利用ＮＧ」～ ではどう向き合うか？ HENNGE Password Manager に問い合わせ多数",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-10T23:20:02+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要記事タイトルからは、組織で「アカウントの共有利用を禁止する」という原則が現場で守られにくい問題を取り上げ、HENNGE Password Managerへの問い合わせが多い状況を紹介していると読み取れる。ただし、記事本文や問い合わせの内訳は入力に含まれず、どの業種・規模の組織で何が障壁になっているのか、製品がどう解決策として扱われているのかは確認できな…",
+      "article_path": "articles/5affecf3edc2d069.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/11/56747.html"
+    },
+    {
+      "entry_id": "0c71dca63485ad85",
+      "title": "今後も同種のサイバー攻撃続く恐れ 標的調査や侵害にAI使用の可能性 ～ 国家サイバー統括室",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-10T23:15:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要ScanNetSecurityの記事タイトルは、国家サイバー統括室が、同種のサイバー攻撃が今後も続く恐れと、標的調査や侵害の過程でAIが使われた可能性を示したと伝えている。AIの利用が示唆される範囲は標的調査と侵害だが、どの作業をAIが担ったのか、人手による操作とどう組み合わされたのかは、提示された情報から確認できない。攻撃者が調査や文面作成を効率化す…",
+      "article_path": "articles/0c71dca63485ad85.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/11/56746.html"
+    },
+    {
+      "entry_id": "ca753bf16b9cb0fb",
+      "title": "エーアイセキュリティラボ、製造業向けセミナーで SCS 評価制度に向けた脆弱性対策を解説",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-10T23:10:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要記事タイトルから確認できるのは、エーアイセキュリティラボが製造業向けセミナーで、SCS評価制度を見据えた脆弱性対策を解説したという点に限られる。制度の正式な要求事項や適用範囲、セミナーで示された具体策は入力情報に含まれておらず、記事タイトルだけから制度要件や推奨手順を断定できない。製造業では、脆弱性のある機器が外部公開されている場合や、保守用接続、認証…",
+      "article_path": "articles/ca753bf16b9cb0fb.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/11/56745.html"
+    },
+    {
+      "entry_id": "3948a930f42e9d7c",
+      "title": "NTTデータ委託先に不正アクセス、社債購入者に対する特典付与を支援する「STdirectServices」のサービス停止",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-10T23:05:25+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要ScanNetSecurityの記事タイトルによれば、NTTデータの委託先への不正アクセスを受け、社債購入者への特典付与を支援する「STdirectServices」が停止した。サービス停止は特典付与業務の継続性に直接影響する一方、これだけで社債の購入・管理システムや発行体の基幹システムまで侵害されたとは判断できない。攻撃の侵入経路、侵害された環境や権…",
+      "article_path": "articles/3948a930f42e9d7c.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/11/56744.html"
+    },
+    {
+      "entry_id": "5e9bac4b144919c0",
+      "title": "九州電力送配電に不正アクセス、電力量情報が漏えいした可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-10T23:05:21+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要報道見出しによれば、九州電力送配電への不正アクセスがあり、電力量に関する情報が外部に漏えいした可能性が取り上げられている。ただし、入力情報には記事本文や参照先がなく、侵入経路、発生時期、対象となった情報の種類・件数、漏えいの確認状況は分からない。電力量情報は単独では契約・請求に関する記録でも、粒度や期間によっては在宅状況や事業活動の周期を推し量る手掛か…",
+      "article_path": "articles/5e9bac4b144919c0.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/11/56743.html"
+    },
+    {
+      "entry_id": "693c848d44127b07",
+      "title": "電通総研「FACERE」に設定不備、第三者からの不正アクセス確認",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-10T23:05:19+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要電通総研の「FACERE」で設定不備があり、第三者による不正アクセスが確認されたと報じられたが、入力情報から確認できるのは事象の骨子に限られ、対象機能や設定内容、発生期間は特定できない。設定不備が外部からの到達制御や認可判定に関わる場合、攻撃者は正規の認証を経ずに機能や情報へアクセスできる可能性があるものの、今回の侵入経路や必要な前提条件は未確認となる…",
+      "article_path": "articles/693c848d44127b07.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/11/56742.html"
+    },
+    {
+      "entry_id": "ae513880c2a6667e",
+      "title": "ISM CloudOne に不正アクセス",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-10T23:05:14+00:00",
+      "impact_level": "Info",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要入力情報から確認できるのは、「ISM CloudOne に不正アクセス」とする記事の題名、配信元、掲載日のみで、侵入経路や影響範囲を裏付ける本文・参照先は含まれていない。したがって、サービス運営側の環境への侵入なのか、利用組織のアカウントが悪用されたのか、また不正アクセスが検知段階なのか実際の情報取得を伴ったのかは判断できない。クラウド型の端末管理機能…",
+      "article_path": "articles/ae513880c2a6667e.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/11/56741.html"
+    },
+    {
+      "entry_id": "312f4cc58654aa50",
+      "title": "モバイルオーダーサービス「PICKS」に不正アクセス、8,312人の個人情報が漏えい",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-10T23:05:12+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要モバイルオーダーサービス「PICKS」で不正アクセスが発生し、8,312人分の個人情報が漏えいしたと報じられた。対象人数は示されている一方、漏えいした情報の項目、情報が閲覧されたのか外部へ持ち出されたのか、決済情報や認証情報が含まれるかは、入力情報から確認できないため、件数だけで二次被害の種類や範囲を断定できない。侵入経路や攻撃者の権限、アクセス可能だ…",
+      "article_path": "articles/312f4cc58654aa50.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/11/56740.html"
+    },
+    {
+      "entry_id": "ad8708054af88afc",
+      "title": "ビジュアルアーツに不正アクセス、認証情報が保存されていた可能性のある端末で明確な痕跡は確認されず",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-10T23:05:10+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要ビジュアルアーツへの不正アクセスが報じられ、認証情報が保存されていた可能性のある端末では、明確な痕跡が確認されなかったという内容だ。ここでの「痕跡なし」は、調べた端末上で侵入や認証情報の利用を示す明確な証拠が見つからなかったことを示すにとどまり、不正アクセス自体や他の環境での活動を否定するものではない。仮に有効な認証情報が端末に存在し、攻撃者が取得して…",
+      "article_path": "articles/ad8708054af88afc.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/11/56739.html"
+    },
+    {
+      "entry_id": "a79cd26b9aeb5979",
+      "title": "ティンパンアレイに不正アクセス、延べ約120万件の会員情報が流出した可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-10T23:05:07+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要ScanNetSecurityの記事見出しによると、ティンパンアレイへの不正アクセスがあり、会員情報が延べ約120万件流出した可能性があると報じられた。見出しの表現は流出の可能性を示すもので、情報の外部取得や第三者による閲覧が確定したかは、入力された情報だけでは判断できない。侵入経路、対象システム、攻撃者の権限、情報の種類、対象期間、重複を除いた会員数…",
+      "article_path": "articles/a79cd26b9aeb5979.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/11/56738.html"
+    },
+    {
+      "entry_id": "eb167c4c3e010bea",
+      "title": "オンラインくじサイト「はにくじランド」に不正アクセス、第三者による不正なコマンド実行と認証情報の不正利用の形跡を確認",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-10T23:05:05+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要オンラインくじサイト「はにくじランド」への不正アクセスが公表され、運営側は第三者による不正なコマンド実行と認証情報の不正利用を示す形跡を確認した。これは単なるアクセス試行や脆弱性指摘ではなく、少なくともシステム上の操作と資格情報の利用が疑われる段階だが、どのホスト・アカウントで何が実行されたかは入力情報から分からない。攻撃者がサーバー上で処理を実行でき…",
+      "article_path": "articles/eb167c4c3e010bea.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/11/56737.html"
+    },
+    {
+      "entry_id": "ec3a547208f00a82",
+      "title": "JAL 委託先 Amadeus社に不正アクセス、予約情報の一部が外部から参照された形跡",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-10T23:05:02+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要報道によると、JALの委託先であるAmadeus社への不正アクセスに関連し、予約情報の一部が外部から参照された形跡が確認された。記事の題名だけでは侵入経路や認証情報の窃取、脆弱性悪用の有無は分からず、特定の攻撃手法を前提にした判断は避ける必要がある。外部からの参照は情報が閲覧可能だったことを示す一方、全件取得や持ち出しが確認されたことと同義ではなく、予…",
+      "article_path": "articles/ec3a547208f00a82.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/11/56736.html"
+    },
+    {
+      "entry_id": "3a8f2644b7ada07a",
+      "title": "SS1／SS1 クラウドおよびその ODM 製品 rocoeyes に複数の脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-10T23:00:21+00:00",
+      "impact_level": "Low",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要ScanNetSecurityの記事タイトルから、SS1、SS1 クラウドおよびODM製品のrocoeyesに複数の脆弱性が公表されたことが分かる。ただし、提示された情報には記事本文や参照先がなく、個々の脆弱性の内容、対象バージョン、攻撃に必要な権限やネットワーク条件は確認できない。したがって、認証なしでの遠隔攻撃が可能なのか、利用者の操作が必要なのか…",
+      "article_path": "articles/3a8f2644b7ada07a.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/11/56735.html"
+    },
+    {
+      "entry_id": "d43cce65b319e2a8",
+      "title": "AIエージェントに制限付き資格情報を付与する組織は22.4％、共有アカウントやハードコードも ～ Okta 調査",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-10T23:00:18+00:00",
+      "impact_level": "Low",
+      "threat_type": "Other",
+      "summary_preview": "概要記事タイトルから確認できる範囲では、Oktaの調査で、AIエージェントに制限付き資格情報を付与している組織は22.4％にとどまり、共有アカウントや認証情報のハードコードも確認されたという。調査対象や設問、各方式の割合、制限付き資格情報の定義は入力情報に含まれず、数字の比較可能性や実際の導入状況までは判断できない。資格情報を持つエージェントは、連携先のサ…",
+      "article_path": "articles/d43cce65b319e2a8.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/11/56734.html"
+    },
+    {
+      "entry_id": "01f37f224e0339e8",
+      "title": "DMARC設定しても届く「正規」のフィッシングメール、DKIM replay attack の仕組みと対策 ～ TwoFive 解説",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-10T23:00:15+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要題名から読み取れる範囲では、DKIMで正当な送信元として署名されたメールを再利用し、DMARCを通過するフィッシングが扱われている。DMARCは送信ドメインの認証とFromドメインとの整合性を確認する仕組みであり、メールの内容が安全か、送信者がその宛先への送信を意図したかまでは判定しないため、署名が有効なメールの再送を必ずしも防げない。攻撃者は、再利用…",
+      "article_path": "articles/01f37f224e0339e8.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/11/56733.html"
+    },
+    {
+      "entry_id": "ea249b36a322ad7b",
+      "title": "筑波銀行、2,400のIDをHENNGE Oneで一元管理",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-10T23:00:12+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要記事タイトルから確認できるのは、筑波銀行がHENNGE Oneを用い、2,400のIDを一元管理する取り組みを扱ったという点に限られる。導入の背景や対象となる利用者・システム、実際に集約する認証情報や管理機能は、提示された情報からは確認できない。ID管理の集約は、入退社や異動に伴う権限変更の統制を効率化し得る一方、管理基盤や特権アカウントが侵害された場…",
+      "article_path": "articles/ea249b36a322ad7b.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/11/56732.html"
+    },
+    {
+      "entry_id": "89169ab7bcdf5e47",
+      "title": "相次ぐ不正アクセスを受け IPA が「情報セキュリティ安心相談窓口」の体制強化",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-10T23:00:08+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要ScanNetSecurityの記事タイトルによると、相次ぐ不正アクセスを受け、IPAが「情報セキュリティ安心相談窓口」の体制を強化した。窓口の強化は、相談の集中時にも受付や案内を維持し、被害組織や個人が次の対応先を判断する助けになる可能性がある一方、具体的な増員・受付方法・対応範囲の変更は入力情報から確認できない。個別の不正アクセスについても、侵入経…",
+      "article_path": "articles/89169ab7bcdf5e47.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/11/56731.html"
+    },
+    {
+      "entry_id": "eaf4ab2594fe71a4",
+      "title": "九州7県の情報システム部門担当者 自社のセキュリティ評価 前回比12ポイント低下 ～ HENNGE・西日本新聞社調査",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-10T23:00:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要ScanNetSecurityの記事タイトルによると、九州7県の情報システム部門担当者を対象とした調査で、自社のセキュリティ評価が前回から12ポイント低下したという結果が示された。これは担当者による自己評価の変化を示す情報であり、特定の脆弱性や攻撃の発生、侵入の手口を報告するものではないため、攻撃者が本結果を直接悪用する経路は確認できない。低下が示す範…",
+      "article_path": "articles/eaf4ab2594fe71a4.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/11/56730.html"
+    }
+  ]
+}
