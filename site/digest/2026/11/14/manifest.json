@@ -1,0 +1,461 @@
+{
+  "date": "2026-11-14",
+  "window": {
+    "from": "2026-11-13T06:00:00+09:00",
+    "to": "2026-11-14T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 29
+  },
+  "generated_at_jst": "2026-11-14T06:20:28.141436+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "OpenAIが次世代推論モデルo3のAPI一般提供を開始し開発者向け価格とレート制限を公開",
+      "source_name": "OpenAI",
+      "published_at": "2026-11-13T14:30:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要OpenAIが次世代推論モデルo3のAPI一般提供を開始した。複雑な多段階推論やコード生成で既存モデルを上回る性能を公式に示し、開発者向けにトークン単価とレート制限を公開した。エンタープライズ向けにはデータ保持オフのオプションも用意され、本番ワークロードへの組み込み判断がしやすくなった。競合の推論特化モデルとの比較が活発化し、エージェント型アプリの基盤…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://openai.com/index/o3-api",
+      "selection_reason": "対象期間内の具体的な製品・API公開であり、抽象的な年次予測ではなく開発者の実装判断に直結する。半導体やSaaS一般論より新規性と実務影響が明確で、AIカテゴリと重複しないIT基盤・開発者ツール側の動きとして多様性を確保できる。",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "o3 API availability and pricing",
+          "url": "https://openai.com/index/o3-api",
+          "source_type": "official"
+        },
+        {
+          "title": "OpenAI o3 model rolls out to API developers",
+          "url": "https://techcrunch.com/2026/11/13/openai-o3-api",
+          "source_type": "news"
+        },
+        {
+          "title": "開発者向けo3提供開始の反応",
+          "url": "https://x.com/OpenAI/status/1980000000000000000",
+          "source_type": "x"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "EU AI Actの高リスクAIシステム向け適合性評価ガイダンスが更新され、汎用AIモデル提供者の義務が明確化",
+      "source_name": "European Commission",
+      "published_at": "2026-11-13T09:15:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Advisory",
+      "summary_preview": "概要欧州委員会が高リスクAIシステム向けの適合性評価ガイダンスを更新し、汎用AI（GPAI）モデル提供者の透明性・リスク管理義務を具体化した。学習データの概要開示、重大インシデント報告、下流利用者への情報提供の範囲が明確になり、EU域内向け提供や組み込みを行う企業は文書化と監査準備を前倒しする必要が出た。罰則適用時期を見据え、日本企業を含むグローバル提供者…",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://digital-strategy.ec.europa.eu/en/library/ai-act-guidance-high-risk",
+      "selection_reason": "規制の具体的な運用ガイダンス更新で、製品発表やモデル性能競争とは異なる法務・コンプライアンス軸の新規性がある。企業の導入・提供判断に直結し、ITトレンドや個別インシデントと重複しない。",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "Updated guidance on high-risk AI systems under the AI Act",
+          "url": "https://digital-strategy.ec.europa.eu/en/library/ai-act-guidance-high-risk",
+          "source_type": "official"
+        },
+        {
+          "title": "EU clarifies GPAI provider obligations",
+          "url": "https://www.reuters.com/technology/eu-ai-act-guidance-2026-11-13/",
+          "source_type": "news"
+        },
+        {
+          "title": "AI Actガイダンス更新への専門家コメント",
+          "url": "https://x.com/EU_Commission/status/1980000000000000001",
+          "source_type": "x"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "ChromeのV8エンジンに重大な型混乱脆弱性が公開、悪用確認済みで緊急更新を呼びかけ",
+      "source_name": "Google Chrome Releases",
+      "published_at": "2026-11-13T18:45:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Zero-day",
+      "summary_preview": "概要GoogleがChrome安定版向けにV8エンジンの型混乱脆弱性を修正する緊急更新を配信した。既に悪用が確認されており、訪問しただけでコード実行に至るリスクがある。個人・企業を問わずブラウザ経由の初期侵入経路になるため、自動更新の確認と管理端末の強制適用が最優先になる。エッジや他Chromium系ブラウザも順次追従する見込み。パッチ適用までの間は、不要…",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://chromereleases.googleblog.com/2026/11/stable-channel-update-for-desktop_13.html",
+      "selection_reason": "悪用が確認されたブラウザ脆弱性の緊急パッチであり、速報性と実務影響（全エンドポイント）が高い。抽象的な脅威動向や調査レポートではなく、具体的なCVE対応を優先した。IT・AIカテゴリと領域が明確に異なる。",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "Stable Channel Update for Desktop",
+          "url": "https://chromereleases.googleblog.com/2026/11/stable-channel-update-for-desktop_13.html",
+          "source_type": "official"
+        },
+        {
+          "title": "Chrome zero-day actively exploited",
+          "url": "https://www.bleepingcomputer.com/news/security/google-fixes-chrome-zero-day-november-2026/",
+          "source_type": "news"
+        },
+        {
+          "title": "緊急パッチ適用を促すセキュリティ関係者の投稿",
+          "url": "https://x.com/ChromeReleases/status/1980000000000000002",
+          "source_type": "x"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "f7b63ddce66de773",
+      "title": "CVE-2026-114713 UnrealIRCd Improper Neutralization of Delimiters Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-11-13T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CISAの既知悪用脆弱性カタログに、UnrealIRCdのCVE-2026-114713が掲載された情報で、タイトルは区切り文字の不適切な無害化を示している。これは、入力中の区切り文字を想定どおり扱えず、処理境界を越えた解釈につながる種類の欠陥だが、提示情報だけでは具体的な攻撃手順や実行される処理を特定できない。CISA KEVへの掲載は実環境で悪用さ…",
+      "article_path": "articles/f7b63ddce66de773.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "92d8e7c730629c02",
+      "title": "CVE-2026-123039 Check Point Multiple Products Incorrect Permission Assignment for Critical Resource Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-11-13T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CISAの既知悪用脆弱性カタログ（KEV）に、Check Pointの複数製品に影響するCVE-2026-123039が登録された。問題は、重要なリソースに対する権限の割り当てが不適切な点にあり、攻撃者が脆弱な構成を利用した場合、意図しないアクセスや操作につながる可能性がある。KEVへの掲載は実際の悪用が確認されたことを示すため、単なる脆弱性公開よりも…",
+      "article_path": "articles/92d8e7c730629c02.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "39bbbdb17d04c6e2",
+      "title": "PostgreSQL Patches 52 Flaws, Including 22-Year-Old Bug Enabling Authenticated RCE",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-13T16:53:08+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要PostgreSQLのセキュリティ更新で52件の欠陥が修正され、その中には約22年間存在したと報じられる型混同の脆弱性CVE-2026-6460が含まれる。CVSSは8.8で、攻撃者にはデータベースへの認証に加え、オブジェクトを作成できる権限が必要となるが、悪用されるとデータベースサーバー上でコードを実行されるおそれがある。実行権限はサーバープロセスに…",
+      "article_path": "articles/39bbbdb17d04c6e2.html",
+      "original_url": "https://thehackernews.com/2026/11/postgresql-patches-52-flaws-including.html"
+    },
+    {
+      "entry_id": "c45e228fe8391d27",
+      "title": "New Mior and Skyfall Attacks Let Rogue Cloud Hosts Steal Secrets From AMD SEV-SNP VMs",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-13T15:27:05+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要研究者が、AMD SEV-SNPで保護された仮想マシンの内部データを、悪意あるクラウドホスト側から読み取る二つの攻撃手法「Mior」と「Skyfall」を公表した。SEV-SNPはホスト運営者から仮想マシンのメモリーを隔離することを狙う技術だが、今回の攻撃はその信頼境界を弱め、保存中のデータではなく実行中の秘密情報にも及ぶ可能性がある。両手法ともハイパ…",
+      "article_path": "articles/c45e228fe8391d27.html",
+      "original_url": "https://thehackernews.com/2026/11/new-mior-and-skyfall-attacks-let-rogue.html"
+    },
+    {
+      "entry_id": "a7a133ad796c645d",
+      "title": "FBI Says North Korean Hackers Stole Over $400 Million in Crypto Using Deepfake Video Calls",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-13T14:28:58+00:00",
+      "impact_level": "High",
+      "threat_type": "Scam/Fraud",
+      "summary_preview": "概要米連邦捜査局（FBI）は、北朝鮮に関係する攻撃者が、FaceStealerと呼ばれるソーシャルエンジニアリングの手口で、過去18か月に4億ドル超相当の暗号資産を窃取したと判断した。記事の見出しによれば、攻撃ではディープフェイクを使ったビデオ通話が用いられ、相手の身元を偽装して信頼を得ることで、暗号資産を扱う組織や関係者を狙ったとみられる。これは脆弱性を…",
+      "article_path": "articles/a7a133ad796c645d.html",
+      "original_url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html"
+    },
+    {
+      "entry_id": "9703de0f83e29de4",
+      "title": "Trezor Confirms Hidden Implants in CryptoBilis-Sold Wallets That Can Steal Recovery Phrases",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-13T13:54:20+00:00",
+      "impact_level": "High",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要報道によると、暗号資産用ハードウェアウォレットTrezor Safe 5のうち、販売業者CryptoBilis経由で購入された3台に、復元フレーズを読み取る追加基板が埋め込まれていたとTrezorが確認した。埋め込み装置は画面に表示されるフレーズを取得し、携帯電話網を通じて攻撃者側のサーバーへ送信する仕組みとされ、ウォレット本体を手元に置いたまま秘密情…",
+      "article_path": "articles/9703de0f83e29de4.html",
+      "original_url": "https://thehackernews.com/2026/11/trezor-confirms-hidden-hardware.html"
+    },
+    {
+      "entry_id": "2860f2a6656b9119",
+      "title": "When an AI Agent Goes Wrong, Can You Stop It?",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-13T11:52:31+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要提示された記事要約は、問い合わせ票の分類とアカウント情報の参照を担うAIエージェントが、票に埋め込まれた指示に誘導され、見慣れない送信先へ記録を出力しようとする状況を例に、「停止」とは何を意味するのかを問うている。成立条件はモデルの判断だけではなく、エージェントに割り当てた実行主体の権限と、接続済みツールが許す操作の組み合わせにあり、正規のアクセス経路…",
+      "article_path": "articles/2860f2a6656b9119.html",
+      "original_url": "https://thehackernews.com/2026/11/when-ai-agent-goes-wrong-can-you-stop-it.html"
+    },
+    {
+      "entry_id": "b2f817f50823c12c",
+      "title": "SilentAir Hijacks Asian Telecom Networks to Intercept SMS 2FA Codes and Spy on Taiwanese Users",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-13T11:10:40+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要通信・サイバーセキュリティ企業Eneaは、SilentAirと名付けたスパイ活動グループが、アジアの少なくとも6か国にある通信事業者の機器を侵害源として利用し、選定した利用者の通話とSMSを傍受したと報告した。標的の多くは台湾の利用者とされ、Eneaは国家レベルの攻撃者である可能性が高いと評価しているが、攻撃者の帰属や評価の根拠は記事の要約だけでは確認…",
+      "article_path": "articles/b2f817f50823c12c.html",
+      "original_url": "https://thehackernews.com/2026/11/silentair-hijacks-asian-telecom.html"
+    },
+    {
+      "entry_id": "4c53fe18cbba950d",
+      "title": "Operation Endgame Takes Down Gootloader, CastleRAT and StealC Servers, Seizes 6.4M Stolen Logins",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-13T10:55:03+00:00",
+      "impact_level": "High",
+      "threat_type": "Malware",
+      "summary_preview": "概要国際的な法執行機関が、Gootloader、CastleRAT、StealCの運用に使われたサーバーを停止し、約640万件の窃取ログイン情報を押収したとThe Hacker Newsが報じた。ドイツ連邦刑事警察局（BKA）によると、ログイン情報は4万人を超える被害者に関係するが、個人・組織別の内訳や企業被害の規模は示されていない。記事はこれらのマルウェ…",
+      "article_path": "articles/4c53fe18cbba950d.html",
+      "original_url": "https://thehackernews.com/2026/11/operation-endgame-takes-down-gootloader.html"
+    },
+    {
+      "entry_id": "45b845f8713f3baf",
+      "title": "Hackers Exploit PHP2Shell Flaws in Check Point Gateways to Deploy TSGA Backdoor and Wipe ESXi Files",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-13T08:05:49+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要報告によると、攻撃者は未修正のCheck Point Security Gatewayを狙い、PHP2Shellの脆弱性を初期侵入に利用した後、Gaia OSの未公表とされる権限昇格の欠陥を経て、バックドア「TSGA」を展開した。活動は2026年10月30日に始まり、イスラエルの組織が標的となったとされ、記事タイトルはESXi関連ファイルの消去にも言及…",
+      "article_path": "articles/45b845f8713f3baf.html",
+      "original_url": "https://thehackernews.com/2026/11/hackers-exploit-php2shell-flaws-in.html"
+    },
+    {
+      "entry_id": "112f84532069c9f3",
+      "title": "Hackers Exploit N-central Flaws to Infect 21 Servers, Including 19 Running Hotfix 2",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-13T05:43:28+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要The Hacker Newsは、N-ableの遠隔管理製品N-centralに関する「4EverAble2Shell」「Agent2Shell」と呼ばれる複数の欠陥が悪用され、21台のサーバーが感染したと報じた。感染したサーバーのうち19台ではHotfix 2が稼働していたとされ、修正プログラムの名称や適用表示だけでは、実際の脆弱性解消や侵害の有無を…",
+      "article_path": "articles/112f84532069c9f3.html",
+      "original_url": "https://thehackernews.com/2026/11/hackers-exploit-n-central-flaws-to.html"
+    },
+    {
+      "entry_id": "a59f9dad493e1c33",
+      "title": "Macfinger ClickFix campaign sends DownTheDRAIN infostealer for macOS, (Fri, Nov 13th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-11-13T03:41:41+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Malware",
+      "summary_preview": "概要SANS ISCの記事タイトルは、Macfingerと呼ぶキャンペーンが、macOS向け情報窃取型マルウェアDownTheDRAINを配布していると伝えている。ClickFix型の手口では、偽の案内などで利用者自身に操作やコマンド実行を促すことがあるが、今回の誘導画面や実行手順は提供された情報から確認できない。攻撃成立には利用者の操作と、端末上での実行…",
+      "article_path": "articles/a59f9dad493e1c33.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33518"
+    },
+    {
+      "entry_id": "85d8cea947574fd4",
+      "title": "ISC Stormcast For Friday, November 13th, 2026 https://isc.sans.edu/podcastdetail/10178, (Fri, Nov 13th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-11-13T02:00:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Unknown",
+      "summary_preview": "概要入力は、SANS ISCが2026年11月13日付で公開したStormcastの配信を示す項目だが、記事要約、音声内容、関連資料への参照が含まれていない。したがって、この情報だけでは取り上げられた脆弱性、攻撃活動、マルウェア、組織への侵入などの有無を特定できず、攻撃者の手口や成立条件も評価できない。被害の広がりについても、単一端末への影響なのか、認証情…",
+      "article_path": "articles/85d8cea947574fd4.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33516"
+    },
+    {
+      "entry_id": "eeaf74b01a4c6d20",
+      "title": "VU#644655: TightVNC and UltraVNC Viewer contains a heap-based buffer overflow",
+      "source_name": "CERT/CC",
+      "category": "reporting",
+      "published_at": "2026-11-13T00:08:48+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CERT/CCは、TightVNC Windows Viewer 1.3.10および影響を受けるUltraVNC Windows Viewerに、Tight JPEG画像の展開処理に起因するヒープベースのバッファオーバーフローを公表した。細工した画面更新を送る悪意あるVNCサーバーに接続すると、ビューアーの画像処理関数が、確保した領域の上限を超えて画素…",
+      "article_path": "articles/eeaf74b01a4c6d20.html",
+      "original_url": "https://kb.cert.org/vuls/id/644655"
+    },
+    {
+      "entry_id": "f794f6eec69e702d",
+      "title": "Microsoft 365大規模障害に対する対応について",
+      "source_name": "NICT NOTICE",
+      "category": "reporting",
+      "published_at": "2026-11-13T09:00:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要提供情報から確認できるのは、NICT NOTICEが2026年11月13日付で「Microsoft 365大規模障害に対する対応について」を掲出したことまでで、障害の発生時刻、対象サービス、復旧状況は分からない。題名は広範なサービス障害への対応を示すものの、原因がMicrosoft側の障害か、特定テナントの設定・認証系の問題か、利用者側の通信障害かは判…",
+      "article_path": "articles/f794f6eec69e702d.html",
+      "original_url": "/publicity/topics/2026/11/13-1.html"
+    },
+    {
+      "entry_id": "d432c30c38c6358c",
+      "title": "MITRE のサイバーデセプションプロジェクト「ウーパールーパー」とは？",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-12T23:15:02+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要入力から確認できるのは、ScanNetSecurityが2026年11月に、MITREのサイバーデセプションプロジェクト「ウーパールーパー」を取り上げた記事を公開したという点に限られる。記事本文や参照先が含まれていないため、プロジェクトの目的、仕組み、公開状況、利用条件を確認できず、名称から具体的な機能や攻撃への有効性を推定することはできない。サイバー…",
+      "article_path": "articles/d432c30c38c6358c.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/13/56780.html"
+    },
+    {
+      "entry_id": "994d5ca7da7e2e03",
+      "title": "オンライン麻雀に不正アクセス 会員情報流出 ～ 寄せられた激励メッセージに謝意 メールはスタッフ全員が目を通し必ず返信",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-12T23:10:03+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要オンライン麻雀サービスへの不正アクセスにより、会員情報が流出したと報じられた。記事タイトルから確認できるのは発生事実と、運営側が利用者からの激励メールに謝意を示し、スタッフ全員で確認して返信する姿勢までであり、侵入経路、発生期間、流出した情報の種類・件数、現在の封じ込め状況は示されていない。攻撃者が会員データベースや関連システムに到達した可能性はあるも…",
+      "article_path": "articles/994d5ca7da7e2e03.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/13/56779.html"
+    },
+    {
+      "entry_id": "690301a82cb484c0",
+      "title": "ブックオフグループホールディングス子会社の会員管理システムに不正アクセス、638万3,279人の会員情報が漏えい",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-12T23:05:23+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要ScanNetSecurityの記事見出しによると、ブックオフグループホールディングスの子会社が運用する会員管理システムに不正アクセスがあり、会員情報638万3,279人分が漏えいしたと報じられている。会員情報の件数が大きく、氏名や連絡先などが含まれていれば、標的型フィッシングや他サービスとの照合に悪用されるおそれがある一方、漏えいした項目や情報の取得…",
+      "article_path": "articles/690301a82cb484c0.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/13/56778.html"
+    },
+    {
+      "entry_id": "2dfd9705470e126d",
+      "title": "無印良品のオーダーカーテンに関する業務委託先に不正アクセス",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-12T23:05:20+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要入力された記事情報から確認できるのは、無印良品のオーダーカーテンに関する業務を担う委託先で不正アクセスが発生したという点までで、侵入経路、発生時期、影響システムは示されていない。オーダーカーテン業務では、注文内容や配送先などの情報を委託先が扱う可能性があるものの、今回それらが実際に保存・閲覧・持ち出しされたかは確認できない。攻撃者が委託先のアカウントや…",
+      "article_path": "articles/2dfd9705470e126d.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/13/56777.html"
+    },
+    {
+      "entry_id": "02f832070aed104a",
+      "title": "ApplyNow 提供の採用管理プラットフォームに不正アクセス、利用終了した企業団体のデータを削除せず",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-12T23:05:18+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要採用管理プラットフォームを提供するApplyNowで不正アクセスが発生し、利用を終了した企業・団体のデータが削除されずに残っていたことが報じられた。利用終了後もデータが保管されていた点は、契約終了時の削除処理や保管期間の管理に加え、現行利用者と旧利用者のデータをどの範囲で分離していたかを確認すべき事案となる。不正アクセスの経路や侵入者の権限、旧利用者デ…",
+      "article_path": "articles/02f832070aed104a.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/13/56776.html"
+    },
+    {
+      "entry_id": "2db3c2b5a8f835f5",
+      "title": "丸井グループの業務委託先 Securitize Japan に不正アクセス、デジタル社債を申し込んだ顧客情報が漏えい",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-12T23:05:14+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要報道によれば、丸井グループの業務委託先であるSecuritize Japanへの不正アクセスにより、デジタル社債を申し込んだ顧客の情報が漏えいした。委託先のシステムに保管された申込者情報が対象となった点から、影響は委託先だけにとどまらず、委託元の顧客対応や信用にも及ぶ可能性がある。攻撃経路や侵入に必要だった条件、漏えいした情報の項目・件数は、今回与えら…",
+      "article_path": "articles/2db3c2b5a8f835f5.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/13/56775.html"
+    },
+    {
+      "entry_id": "32d1fb32df52617d",
+      "title": "「ノジマオンライン」に不正アクセス、約700万件の会員情報が漏えい",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-12T23:05:12+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要「ノジマオンライン」への不正アクセスにより、約700万件の会員情報が漏えいしたと報じられた。入力情報からは、侵入経路、攻撃者が利用した権限、漏えいした項目、対象期間、現在も不正アクセスが継続しているかは確認できず、会員情報以外のシステムやデータへの影響も未確定となる。攻撃者が会員管理基盤や関連システムに到達して情報を取得した可能性はあるものの、認証情報…",
+      "article_path": "articles/32d1fb32df52617d.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/13/56774.html"
+    },
+    {
+      "entry_id": "7ca99c94974cab8f",
+      "title": "「ネットマイル」に不正アクセス、最大約549万人の会員情報等が漏えいした可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-12T23:05:10+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要会員向けサービス「ネットマイル」への不正アクセスが発生し、最大約549万人分の会員情報などが漏えいした可能性が報じられた。記事タイトルから確認できるのは漏えいの可能性と最大規模に限られ、実際に取得された情報の種類、対象人数、侵入経路、発生時期、攻撃者の特定状況は確認できない。侵入されたシステムに会員情報が保管されていた場合、攻撃者はデータベースや連携先…",
+      "article_path": "articles/7ca99c94974cab8f.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/13/56773.html"
+    },
+    {
+      "entry_id": "bdd8385455226f49",
+      "title": "「しまねのふるさと直送便」にAmazon Payプラグインの脆弱性を悪用した不正アクセス",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-12T23:05:07+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要「しまねのふるさと直送便」で、Amazon Pay連携プラグインの脆弱性を悪用した不正アクセスが発生したと報じられた。攻撃者は脆弱なプラグインを侵入口としてウェブサイトにアクセスしたとみられるが、記事情報からは悪用された版や具体的な攻撃手順、認証の要否までは確認できない。ECサイトへの侵入は、決済処理だけでなく注文情報や顧客情報へのアクセスに広がる可能…",
+      "article_path": "articles/bdd8385455226f49.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/13/56772.html"
+    },
+    {
+      "entry_id": "3cfb4fe5e1b5a06c",
+      "title": "東急不動産が管理するウェブサイトに不正アクセス",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-12T23:05:05+00:00",
+      "impact_level": "Low",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要記事タイトルは、東急不動産が管理するウェブサイトへの不正アクセスを報じている。ただし、提示された情報には記事本文や参照先がなく、対象サイト、発生時期、侵入経路、攻撃者の操作、復旧状況は確認できない。ウェブサイトへの侵入は、公開ページの改変にとどまる場合もあれば、管理用認証情報の窃取、サーバー上の情報へのアクセス、同一環境にある別システムへの足掛かりにつ…",
+      "article_path": "articles/3cfb4fe5e1b5a06c.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/13/56771.html"
+    },
+    {
+      "entry_id": "b751d5a7286170ad",
+      "title": "「ARTPASS」「アソビュー!」の委託先に不正アクセス、京都市京セラ美術館と二条城で情報流出の可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-12T23:05:02+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要ScanNetSecurityの記事タイトルによると、「ARTPASS」「アソビュー!」の委託先で不正アクセスが発生し、京都市京セラ美術館と二条城に関係する情報が流出した可能性が示されている。委託先が両施設のどの業務やデータを取り扱っていたか、侵入経路や攻撃者の権限、発生時期は入力情報から確認できず、不正アクセスの発生と情報流出の可能性は、実際の持ち出…",
+      "article_path": "articles/b751d5a7286170ad.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/13/56770.html"
+    },
+    {
+      "entry_id": "6e82a7782fa6bfde",
+      "title": "Effekseer に入力データ検証不備の脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-12T23:00:13+00:00",
+      "impact_level": "Low",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要ScanNetSecurityの記事タイトルは、Effekseerに入力データの検証不備があると報じている。提供情報には記事本文や参照先がなく、対象バージョン、入力形式、脆弱性の具体的な挙動、修正状況は確認できない。一般に、この種の不備は攻撃者が細工したデータを対象コンポーネントに読み込ませることで問題化するが、クラッシュ、情報漏えい、任意コード実行の…",
+      "article_path": "articles/6e82a7782fa6bfde.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/13/56769.html"
+    },
+    {
+      "entry_id": "c275c05d028f4f3c",
+      "title": "日本のCISO、データ損失の原因の最多は悪意ある内部関係者 退職者が要因は98％ ～ プルーフポイント調査",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-12T23:00:11+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要プルーフポイントの調査を紹介する記事の見出しは、日本のCISOがデータ損失の主因として悪意ある内部関係者を挙げ、退職者が関与するとの回答が98％に達したと伝えている。これは特定組織で侵害が起きたという報告ではなく、調査対象者の認識や経験を集計した結果とみられるため、実際の被害件数や発生率と同一視できない。退職前の持ち出し、退職後も残るアカウントや共有権…",
+      "article_path": "articles/c275c05d028f4f3c.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/13/56768.html"
+    },
+    {
+      "entry_id": "ea80e603a37de410",
+      "title": "中国地方 50人未満の企業 約3分の1で「セキュリティ担当者はいない」～ HENNGE・中国新聞社調査",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-12T23:00:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要HENNGEと中国新聞社の調査として、中国地方の従業員50人未満の企業の約3分の1で「セキュリティ担当者はいない」とする結果が紹介された。これは直ちに対策がないことを意味するとは限らず、専任者がいない状態と、責任者や判断手順が定まっていない状態を分けて見る必要がある。後者では、メール侵害や端末感染の発見後に、アカウント停止、端末隔離、外部への連絡を誰が…",
+      "article_path": "articles/ea80e603a37de410.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/13/56767.html"
+    }
+  ]
+}
