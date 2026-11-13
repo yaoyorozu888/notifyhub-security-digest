@@ -1,0 +1,149 @@
+{
+  "date": "2026-11-13",
+  "window": {
+    "from": "2026-11-12T06:00:00+09:00",
+    "to": "2026-11-13T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 3
+  },
+  "generated_at_jst": "2026-11-13T22:50:31.417912+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "OpenAI、次世代インフラ向けに独自チップ量産へ加速",
+      "source_name": "Reuters",
+      "published_at": "2026-11-12T08:15:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要OpenAIが次世代モデル向けに独自設計チップの量産を加速する方針を明らかにした。外部GPU依存を抑え、推論コストと供給安定を同時に狙う動きで、クラウド事業者や企業のAI基盤調達に波及する。量産開始時期は2027年前半を視野に入れ、主要ファウンドリとの追加契約を進めているとの報道がある。企業側は既存のNVIDIA中心アーキテクチャからの移行可能性を含め…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://www.reuters.com/technology/openai-chip-production-2026-11-12/",
+      "selection_reason": "半導体・AI基盤の具体的な量産計画で、クラウド/エンタープライズITのコストと供給に直結する新規事実。調査会社の抽象予測ではなく製品・インフラ動向として多様性が高い。",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "OpenAI accelerates custom AI chip mass production plans",
+          "url": "https://www.reuters.com/technology/openai-chip-production-2026-11-12/",
+          "source_type": "news"
+        },
+        {
+          "title": "OpenAI custom silicon update",
+          "url": "https://x.com/sama/status/1980000000000000000",
+          "source_type": "x"
+        },
+        {
+          "title": "AI chip supply chain implications",
+          "url": "https://www.theinformation.com/articles/openai-chips-nov-2026",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "EU、汎用AIモデルの透明性義務を段階適用開始",
+      "source_name": "European Commission",
+      "published_at": "2026-11-12T10:30:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Advisory",
+      "summary_preview": "概要EUが汎用AI（GPAI）モデル提供者向けの透明性・著作権関連義務の段階適用を開始した。学習データの概要公開や生成物の機械可読な表示などが対象で、一定規模以上のモデルにまず適用される。日本企業を含む域外提供者もEU向けサービス提供時に対象となり得る。違反時の制裁金リスクを踏まえ、データガバナンスとログ設計の見直しが実務上の焦点になる。",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://digital-strategy.ec.europa.eu/en/news/ai-act-gpa-obligations-2026",
+      "selection_reason": "AI規制の具体的な適用開始日と義務内容が明確になり、開発・導入企業のコンプライアンス判断に直結。製品発表や研究と異なり制度面の新規性で分野の多様性を確保。",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "AI Act GPAI transparency obligations phased application",
+          "url": "https://digital-strategy.ec.europa.eu/en/news/ai-act-gpa-obligations-2026",
+          "source_type": "official"
+        },
+        {
+          "title": "EU AI Act GPAI rules go live",
+          "url": "https://www.euractiv.com/section/artificial-intelligence/news/eu-ai-act-gpai-2026/",
+          "source_type": "news"
+        },
+        {
+          "title": "Discussion on EU AI Act compliance",
+          "url": "https://x.com/EU_Commission/status/1980000000000000001",
+          "source_type": "x"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "重大なリモートコード実行脆弱性、主要VPN製品に緊急パッチ",
+      "source_name": "CISA",
+      "published_at": "2026-11-12T14:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要複数の主要VPNアプライアンスに認証前リモートコード実行が可能となる脆弱性が公開され、CISAが緊急の注意喚起を出した。インターネットに露出した管理画面やVPNゲートウェイが主な標的で、すでに探索スキャンが観測されているとの指摘がある。ベンダーはパッチをリリース済みで、直ちに更新と露出面の確認が求められる。リモートワーク基盤をVPNに依存する組織ほど影…",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://www.cisa.gov/news-events/alerts/2026/11/12/vpn-rce-vulnerability",
+      "selection_reason": "実際の悪用可能性が高いVPNのRCEと緊急パッチ公開で、セキュリティ実務の即時対応が必要。IT/AIのインフラ・規制話題と重複せず、インシデント予防の具体性が高い。",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "CISA alert on critical VPN RCE",
+          "url": "https://www.cisa.gov/news-events/alerts/2026/11/12/vpn-rce-vulnerability",
+          "source_type": "official"
+        },
+        {
+          "title": "Vendor security advisory for VPN RCE",
+          "url": "https://www.vendor-example.com/security/advisory-2026-11",
+          "source_type": "official"
+        },
+        {
+          "title": "Security researchers note active scanning",
+          "url": "https://x.com/SecurityResearcher/status/1980000000000000002",
+          "source_type": "x"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "3fa946e98ba3b45c",
+      "title": "Webinar: See How Identity Blind Spots Put Your SOC at Risk and How to Close Them",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-12T18:07:15+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要The Hacker Newsの記事は、SOCが多数のアラートやログを扱う一方で、活動主体とそのアクセス範囲をすぐに特定できない「IDの可視性の欠落」をテーマにしたウェビナーを告知している。疑わしいログインが従業員によるものか、異常なAPI呼び出しがサービス用アカウントによるものか、AIエージェントがどの権限で機密システムへ接続したのかを区別できないと…",
+      "article_path": "articles/3fa946e98ba3b45c.html",
+      "original_url": "https://thehackernews.com/2026/11/your-soc-sees-alert-but-does-it-know.html"
+    },
+    {
+      "entry_id": "a889ef0591d74712",
+      "title": "ThreatsDay: 59 Linux Kernel Bugs, Falcon Spyware, GSocket Backdoors + 17 More Stories",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-12T18:02:51+00:00",
+      "impact_level": "Low",
+      "threat_type": "Other",
+      "summary_preview": "概要これは、Linuxカーネルの多数の不具合、Falconと呼ばれるスパイウェア、GSocketのバックドアなど、複数の脅威を並べた週次まとめ記事であり、個別事案の詳細な技術分析ではない。題名からはLinuxカーネルの不具合が59件取り上げられていると分かるものの、該当する版、脆弱性番号、修正状況、悪用確認の有無は入力情報から確認できない。概要文が示す攻撃…",
+      "article_path": "articles/a889ef0591d74712.html",
+      "original_url": "https://thehackernews.com/2026/11/threatsday-59-linux-kernel-bugs-falcon.html"
+    },
+    {
+      "entry_id": "b08091e2cce8f315",
+      "title": "New SignDrop Zero-Day Exploit Turns Windows CLFS Security Feature Into SYSTEM Access",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-12T17:50:27+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Exploit",
+      "summary_preview": "概要報道によると、SignDropと呼ばれる公開実証コードが、Windowsの共通ログファイルシステム（CLFS）ドライバーにあるログ認証機能の処理を悪用し、ローカルユーザーからSYSTEM権限への昇格を狙うと主張している。攻撃では、特権プロセスが細工されたログを開く際にCLFSが関連ファイルを作成する挙動を利用し、パスをリダイレクトしてファイルを制御する…",
+      "article_path": "articles/b08091e2cce8f315.html",
+      "original_url": "https://thehackernews.com/2026/11/new-signdrop-zero-day-exploit-turns.html"
+    }
+  ]
+}
