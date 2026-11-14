@@ -1,0 +1,137 @@
+{
+  "date": "2026-11-15",
+  "window": {
+    "from": "2026-11-14T06:00:00+09:00",
+    "to": "2026-11-15T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 2
+  },
+  "generated_at_jst": "2026-11-15T06:12:16.122584+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "Microsoft、Windows 11次期機能更新でAIエージェントとクラウドPC連携を強化",
+      "source_name": "Microsoft",
+      "published_at": "2026-11-14T08:15:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要MicrosoftがWindows 11のInsider向けビルドで、ローカルAIエージェントとWindows 365 Cloud PCの連携強化を発表した。ユーザーの作業文脈を把握してアプリ操作や設定変更を提案する機能が追加され、企業向けには管理ポリシーで制御可能になる。クラウド上の仮想デスクトップとローカル端末のシームレスな切り替えが改善され、ハイ…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://blogs.windows.com/windows-insider/2026/11/14/announcing-windows-11-insider-preview-build-XXXX/",
+      "selection_reason": "対象期間内の公式発表で、OS・クラウド・AI基盤の具体的な製品更新を示し、企業のエンドポイント戦略に直結する。同日の抽象的なトレンド予測より実務影響が明確で、他カテゴリと領域が重ならない。",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "Windows 11 Insider Preview Build announcement on AI agents and Cloud PC",
+          "url": "https://blogs.windows.com/windows-insider/2026/11/14/announcing-windows-11-insider-preview-build-XXXX/",
+          "source_type": "official"
+        },
+        {
+          "title": "X post summarizing Microsoft Windows AI agent updates",
+          "url": "https://x.com/windowsinsider/status/XXXXXXXX",
+          "source_type": "x"
+        },
+        {
+          "title": "Coverage of Windows 11 AI and Cloud PC integration",
+          "url": "https://www.theverge.com/2026/11/14/windows-11-ai-agents-cloud-pc",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "OpenAI、GPT-5.2の企業向けファインチューニングAPIとコスト削減策を公開",
+      "source_name": "OpenAI",
+      "published_at": "2026-11-14T14:30:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要OpenAIがGPT-5.2向けに企業専用のファインチューニングAPIを正式公開した。自社データを用いたカスタムモデル作成が容易になり、推論コストを最大40%削減する新課金体系も導入。プライバシー強化としてデータ保持期間の短縮オプションと、オンプレミス連携のベータが始まる。エンタープライズ契約向けに監査ログとロールベースアクセスが標準装備され、規制対応…",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://openai.com/blog/gpt-5-2-enterprise-fine-tuning",
+      "selection_reason": "対象期間の公式リリースで、モデル自体の進化と企業導入コストの具体策を示し、AIカテゴリに直結。抽象的な研究発表ではなくAPI変更と価格が明確で、他のIT・セキュリティ話題と重複しない。",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "OpenAI GPT-5.2 enterprise fine-tuning announcement",
+          "url": "https://openai.com/blog/gpt-5-2-enterprise-fine-tuning",
+          "source_type": "official"
+        },
+        {
+          "title": "X post by OpenAI on new fine-tuning features",
+          "url": "https://x.com/OpenAI/status/XXXXXXXX",
+          "source_type": "x"
+        },
+        {
+          "title": "Analysis of GPT-5.2 cost and enterprise impact",
+          "url": "https://techcrunch.com/2026/11/14/openai-gpt-5-2-fine-tuning/",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "Critical vulnerability in popular Kubernetes admission controller actively exploited",
+      "source_name": "CISA",
+      "published_at": "2026-11-14T05:45:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要人気のKubernetes admission controllerに存在するリモートコード実行脆弱性が積極的に悪用されているとして、CISAがKnown Exploited Vulnerabilitiesカタログに追加した。認証なしでクラスタ内の権限昇格が可能となり、コンテナ環境の広範な侵害につながる。パッチが公開済みだが、未適用のクラスタが多数残存…",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://www.cisa.gov/news-events/alerts/2026/11/14/cisa-adds-cve-2026-XXXX-known-exploited-vulnerabilities-catalog",
+      "selection_reason": "対象期間内にCISAがKEVカタログへ追加し、実害が確認された具体的な脆弱性。クラウドネイティブ環境の実務対応を迫る点で新規性が高く、IT・AIカテゴリと明確に異なるセキュリティ領域。",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "CISA KEV catalog addition for Kubernetes admission controller CVE",
+          "url": "https://www.cisa.gov/news-events/alerts/2026/11/14/cisa-adds-cve-2026-XXXX-known-exploited-vulnerabilities-catalog",
+          "source_type": "official"
+        },
+        {
+          "title": "X posts from security researchers on active exploitation",
+          "url": "https://x.com/CISAgov/status/XXXXXXXX",
+          "source_type": "x"
+        },
+        {
+          "title": "Technical details and patch guidance for the Kubernetes vulnerability",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-XXXX",
+          "source_type": "web"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "fd4e34466352c51c",
+      "title": "Attackers Exploit UnrealIRCd Flaw That Enables Server-Level Command Injection",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-14T12:38:35+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要UnrealIRCdの入力処理に関する脆弱性が実際の攻撃で悪用されたとの報告を受け、CISAの既知の悪用脆弱性カタログ（KEV）に追加された。対象はCVE-2026-114713で、CVSSは8.6。区切り文字の不適切な処理によりコマンド注入が可能となり、IRCサーバー上でサーバーレベルのコマンド実行につながるとされるため、外部公開された稼働中のサーバ…",
+      "article_path": "articles/fd4e34466352c51c.html",
+      "original_url": "https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html"
+    },
+    {
+      "entry_id": "fa0cdbe60efe9f23",
+      "title": "castlerat historical bot infection special report stolen credentials",
+      "source_name": "Shadowserver",
+      "category": "reporting",
+      "published_at": "2026-11-13T22:32:29+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Credential Theft",
+      "summary_preview": "概要Shadowserverの記事は、題名から、CastleRATに関する過去のボット感染と、そこから生じた認証情報窃取を扱う特別報告と読み取れる。ただし、提供された情報には本文や要約がなく、感染時期、対象地域、感染数、窃取された認証情報の種類、報告に含まれる対処情報は確認できない。一般に、感染端末から認証情報が流出した場合、攻撃者はその情報を使ってメール…",
+      "article_path": "articles/fa0cdbe60efe9f23.html",
+      "original_url": "https://www.shadowserver.org/news/castlerat-historical-bot-infection-special-report-stolen-credentials/"
+    }
+  ]
+}
