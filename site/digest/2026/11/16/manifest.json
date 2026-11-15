@@ -1,0 +1,79 @@
+{
+  "date": "2026-11-16",
+  "window": {
+    "from": "2026-11-15T06:00:00+09:00",
+    "to": "2026-11-16T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 3
+  },
+  "generated_at_jst": "2026-11-16T06:12:33.244116+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "調査期間内の主要IT動向を確認中",
+      "source_name": "検索準備",
+      "published_at": "2026-11-15T12:00:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要検索中",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://example.com",
+      "selection_reason": "プレースホルダ",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "placeholder",
+          "url": "https://example.com",
+          "source_type": "web"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "126b3ad6575a9207",
+      "title": "Italy Fines Meta €805 Million Over Facebook's Android Gallery Access Without Explicit Consent",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-15T11:27:31+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Other",
+      "summary_preview": "概要イタリアのデータ保護当局Garanteが、FacebookのAndroidアプリにおける写真・動画の提案機能をめぐり、Metaに8億500万ユーロの制裁金を科したと報じられた。対象機能は初期設定で有効になり、利用者が投稿候補を選ぶために端末内の写真や動画、その関連メタデータへアクセスしていたが、当局は明示的な同意がなかったと判断した。これは外部から侵入…",
+      "article_path": "articles/126b3ad6575a9207.html",
+      "original_url": "https://thehackernews.com/2026/11/italy-fines-meta-805-million-over.html"
+    },
+    {
+      "entry_id": "50bc14eeff687fd2",
+      "title": "Cursor Says Stolen Fireworks AI Key Led to Trojanized Claude Code Extension Incident",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-15T08:22:04+00:00",
+      "impact_level": "High",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要Cursorの拡張機能マーケットプレイスで配布されていたAnthropic公式のClaude Code拡張機能が、トロイの木馬化された事案が報じられた。Cursorの説明によると、攻撃者はFireworks AIへの侵害後に露出した、Fireworks AI向けのアクセスキーを入手し、読み取り専用のデータを複製するために使ったとされる。ただし、提示され…",
+      "article_path": "articles/50bc14eeff687fd2.html",
+      "original_url": "https://thehackernews.com/2026/11/stolen-fireworks-ai-key-led-to-cursor.html"
+    },
+    {
+      "entry_id": "4f4b92340087f268",
+      "title": "YARA-X 1.23.0 Release, (Sun, Nov 15th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-11-15T18:17:27+00:00",
+      "impact_level": "Low",
+      "threat_type": "Other",
+      "summary_preview": "概要SANS ISCが、YARA-X 1.23.0の公開を紹介した。記事によれば、この版には4件の機能改善と16件の不具合修正が含まれるが、個々の変更内容や修正対象、従来版との互換性に関する説明は示されていない。YARA-Xは、組織が定義したルールに基づいてファイルなどを調べ、マルウェアや不審な痕跡を識別する用途で使われるため、利用中の環境では更新によって…",
+      "article_path": "articles/4f4b92340087f268.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33496"
+    }
+  ]
+}
