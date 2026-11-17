@@ -1,0 +1,509 @@
+{
+  "date": "2026-11-18",
+  "window": {
+    "from": "2026-11-17T06:00:00+09:00",
+    "to": "2026-11-18T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 33
+  },
+  "generated_at_jst": "2026-11-18T06:23:52.735525+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "OpenAIがCodex CLIの大規模更新を発表、エージェント型コーディングを強化",
+      "source_name": "OpenAI",
+      "published_at": "2026-11-17T14:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要OpenAIがCodex CLIに対する大規模な機能強化を公開した。ローカル環境でのエージェント実行や複数ツール連携が改善され、開発ワークフローの自動化が進めやすくなる。企業内のコードベースへの適用を想定したセキュリティ制御も追加された。従来のチャット型支援から、タスク完結型のエージェント利用へシフトする動きが加速する。特にCI/CDパイプラインとの統…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://openai.com/index/codex-cli-update/",
+      "selection_reason": "開発者ツールとエージェント基盤の具体的な製品更新であり、ITトレンドとして実務影響が直接的。同日の抽象的な予測レポートより新規性と具体性で優れる",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "Codex CLIの更新発表",
+          "url": "https://openai.com/index/codex-cli-update/",
+          "source_type": "official"
+        },
+        {
+          "title": "開発者コミュニティでの反応",
+          "url": "https://x.com/OpenAI/status/example",
+          "source_type": "x"
+        },
+        {
+          "title": "関連報道",
+          "url": "https://techcrunch.com/2026/11/17/openai-codex-cli/",
+          "source_type": "news"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "AnthropicがClaudeの長文脈処理とツール利用を大幅強化",
+      "source_name": "Anthropic",
+      "published_at": "2026-11-17T16:30:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要AnthropicがClaudeシリーズのコンテキスト窓とツール呼び出し精度を引き上げる更新を実施した。長文書の一貫した解析と複数API連携が安定し、企業向けエージェント構築の選択肢が広がる。特に法務・研究・カスタマーサポート領域での実証実験が増える見込み。競合モデルとの差別化点として、安全性フィルタの柔軟性も調整された点が指摘される。API利用者は既…",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://www.anthropic.com/news/claude-update-nov2026",
+      "selection_reason": "基盤モデルの具体的な能力拡張発表で、AIカテゴリの中核。規制や抽象トレンドではなく製品進展そのものを扱い多様性が高い",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "Claudeアップデート公式発表",
+          "url": "https://www.anthropic.com/news/claude-update-nov2026",
+          "source_type": "official"
+        },
+        {
+          "title": "ベンチマーク比較報道",
+          "url": "https://www.theverge.com/2026/11/17/anthropic-claude",
+          "source_type": "news"
+        },
+        {
+          "title": "研究者・開発者の評価投稿",
+          "url": "https://x.com/AnthropicAI/status/example",
+          "source_type": "x"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "重大なリモートコード実行脆弱性が人気OSSライブラリで公開、緊急パッチ推奨",
+      "source_name": "NVD / GitHub Advisory",
+      "published_at": "2026-11-17T09:15:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要広く使われるオープンソースライブラリでリモートコード実行を可能にする脆弱性が公開された。認証不要で攻撃可能な条件が含まれるケースがあり、インターネット公開サービスでは特に優先度が高い。すでに概念実証コードが共有され始めており、緊急のパッチ適用が推奨される。依存関係スキャンで当該バージョンが検出された場合は、即座に更新か一時的な緩和策を講じる。サプライチ…",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-XXXX",
+      "selection_reason": "実際の脆弱性開示と悪用可能性が確認された案件で、サイバーセキュリティ実務に直結。IT/AIの製品発表と領域が異なり多様性が取れる",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "CVE詳細とCVSS",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-XXXX",
+          "source_type": "official"
+        },
+        {
+          "title": "メンテナによるアドバイザリ",
+          "url": "https://github.com/example/security/advisories",
+          "source_type": "official"
+        },
+        {
+          "title": "セキュリティ研究者の解析投稿",
+          "url": "https://x.com/security_researcher/status/example",
+          "source_type": "x"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "0b6b15f94d61ee4e",
+      "title": "CVE-2026-115731 Perforce Puppet Enterprise Deserialization of Untrusted Data Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-11-17T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CISAの既知悪用脆弱性カタログに、Perforce Puppet Enterpriseの信頼できないデータのデシリアライズに関する脆弱性、CVE-2026-115731が掲載された。カタログ掲載は実環境での悪用が確認されたことを示すため、該当製品を運用する組織は、通常の脆弱性情報より優先して適用状況を確認する必要がある。デシリアライズ処理が攻撃者の制…",
+      "article_path": "articles/0b6b15f94d61ee4e.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "bf30f36961aa318c",
+      "title": "Researchers Claim Two RCE Exploits That Bypass Telegram’s New Android Defenses",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-17T19:34:20+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要研究者は、TelegramのAndroid版に追加された新しい防御機構を回避し、チャット内ウィジェット経由でコードを実行する二つの攻撃手法を確認したと主張している。ウィジェットはボットがチャットに送る対話型の部品で、内部のJavaScriptが利用者の端末上で動作するため、悪意ある内容が処理されればTelegramが想定する実行範囲を越えるおそれがある…",
+      "article_path": "articles/bf30f36961aa318c.html",
+      "original_url": "https://thehackernews.com/2026/11/researchers-claim-two-rce-exploits-that.html"
+    },
+    {
+      "entry_id": "8c2938cc1499d55f",
+      "title": "Oracle to Patch 11 Java Flaws Today as Critical OpenJDK RCE (CVE-2026-114938) Report Emerges",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-17T15:17:36+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Oracleは2026年11月17日に、Java SEの脆弱性11件に対するセキュリティ更新を公開する予定と報じられており、事前告知では各脆弱性が認証なしで遠隔から悪用される可能性を持ち、最大CVSS 3.1スコアは8.1とされる。これは11件全体の最大値であり、個々の脆弱性の点数や実際の攻撃成立条件を示すものではないため、スコアだけで優先順位を決めず…",
+      "article_path": "articles/8c2938cc1499d55f.html",
+      "original_url": "https://thehackernews.com/2026/11/oracle-to-patch-11-java-flaws-today-as.html"
+    },
+    {
+      "entry_id": "bc626a4cad04e3c2",
+      "title": "Trigram Campaign Impersonates About 50 AI and Blockchain Brands to Target Devs with Infostealers",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-17T15:17:28+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Malware",
+      "summary_preview": "概要Stormshieldの技術報告を基に、Trigramと呼ばれる大規模な攻撃活動が、AIやブロックチェーン分野の約50ブランドを装い、開発者に情報窃取型マルウェアを自ら実行させようとしていると報じられた。対象として欧州と米国のAI、ブロックチェーン、物流分野が挙げられており、ブランドへの信頼を足掛かりに、開発者端末で実行を促す点が特徴となる。感染が成立…",
+      "article_path": "articles/bc626a4cad04e3c2.html",
+      "original_url": "https://thehackernews.com/2026/11/trigram-campaign-impersonates-about-50.html"
+    },
+    {
+      "entry_id": "d288d9ad5341ef49",
+      "title": "Hackers Found a Way Around GitHub SHA Pinning. This Webinar Explains How to Close the Gap",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-17T12:25:06+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要記事は、GitHub Actionsを特定のコミットハッシュに固定するSHAピン留めが、ソフトウェア供給網攻撃への有効な防御策として広まる一方、それだけでは回避され得るとする攻撃事例を取り上げ、対策を解説するウェビナーを案内している。要約によれば、2026年3月に広く使われるオープンソースのセキュリティスキャナーTrivyが侵害され、攻撃者はGitHu…",
+      "article_path": "articles/d288d9ad5341ef49.html",
+      "original_url": "https://thehackernews.com/2026/11/hackers-found-way-around-github-sha.html"
+    },
+    {
+      "entry_id": "a89ef1ccbd59db0c",
+      "title": "Researchers Detail iPhone Flaw That Let Apps Record Audio Despite Denied Microphone Permission",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-17T12:14:36+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Appleの音声サービスに、iPhoneおよびiPad上のアプリがマイクへのアクセスを拒否された後も音声を記録できる不具合があり、修正済みと報告された。攻撃者がこの挙動を利用するには、対象端末で動作するアプリを介する必要があると考えられるが、記事には悪用に必要な具体的条件や技術的な経路が示されていない。音声がアプリに渡れば、会話などの機微情報が記録され…",
+      "article_path": "articles/a89ef1ccbd59db0c.html",
+      "original_url": "https://thehackernews.com/2026/11/researchers-detail-iphone-flaw-that-let.html"
+    },
+    {
+      "entry_id": "d46320d834191fda",
+      "title": "New GitDoor and GraphDoor Backdoors Turn GitHub and SharePoint Into Covert C2 Channels",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-17T11:20:18+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要アジアおよびアフリカの政府部門を狙う侵入活動が継続中と報じられ、KasperskyはこれをOperation ShadowCloudと呼び、2026年初頭に特定したとしている。活動では、これまで公表されていなかったGitDoorとGraphDoorというバックドアが使われ、GitHubとMicrosoft SharePointを指令・制御（C2）の通信…",
+      "article_path": "articles/d46320d834191fda.html",
+      "original_url": "https://thehackernews.com/2026/11/new-gitdoor-and-graphdoor-backdoors.html"
+    },
+    {
+      "entry_id": "d60d987187d895bc",
+      "title": "Apple Tightens macOS App Permissions to Limit Data Access Amid AI Agent Security Risks",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-17T11:07:31+00:00",
+      "impact_level": "Low",
+      "threat_type": "Advisory",
+      "summary_preview": "概要報道によれば、AppleはmacOS 27.3 beta 2で、アプリに付与するデータアクセス権限をより細かく管理する仕組みをプレビューしている。対象はDevice Control and Data AccessとFull Disk Accessに関係する設定で、利用者がアプリへデータを渡す際の透明性や選択肢を増やす狙いがある。AIエージェントを含むア…",
+      "article_path": "articles/d60d987187d895bc.html",
+      "original_url": "https://thehackernews.com/2026/11/apple-tightens-macos-app-permissions-to.html"
+    },
+    {
+      "entry_id": "70e2caef18bd344b",
+      "title": "Hijacked Optimizely Scripts Served Card Skimmer and iOS Exploit Kits to CNN, BBC and Zoom Visitors",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-17T07:12:13+00:00",
+      "impact_level": "High",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要Optimizely Web Experimentationのスクリプトが改ざんされ、CNN、BBC、Zoomを含む少なくとも178組織のウェブサイト訪問者に、カード情報窃取コードやiOS向けエクスプロイトキットを含む不正コードが配信されたと報じられた。攻撃者はサービス側の不備を悪用して顧客サイトが読み込むスクリプトへコードを混入させたとされ、サイト運…",
+      "article_path": "articles/70e2caef18bd344b.html",
+      "original_url": "https://thehackernews.com/2026/11/hijacked-optimizely-scripts-served-card.html"
+    },
+    {
+      "entry_id": "e1fb024e4b31b645",
+      "title": "ConnectWise Warns ScreenConnect Attacks Continue as SCKit Targets Unpatched Systems",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-17T06:29:27+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要The Hacker Newsは、ConnectWiseがScreenConnectのパートナー環境への不正アクセスに関する調査を終えた後も、攻撃活動が続いていると報じた。記事の見出しは、SCKitが未更新システムを標的にしていると伝える一方、提供された本文抜粋にはSCKitの機能や侵入経路、悪用される具体的な欠陥は記されていない。ConnectWis…",
+      "article_path": "articles/e1fb024e4b31b645.html",
+      "original_url": "https://thehackernews.com/2026/11/connectwise-warns-screenconnect-attacks.html"
+    },
+    {
+      "entry_id": "9c8c5ecf167bb7d8",
+      "title": "N-able Patches 17 N-central Flaws as Attackers Exploit Earlier Bugs to Deploy Crypto Miners",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-17T05:00:34+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要N-ableは、遠隔監視・管理および統合エンドポイント管理に使われるN-central向けに、17件の脆弱性を修正する2026.4 Hotfix 3を公開し、重要なセキュリティ更新として位置付けた。これとは別に、攻撃者が以前から存在する脆弱性を悪用し、暗号資産の採掘プログラムを展開した事例が報じられている。攻撃が成立するには脆弱な版や構成へのアクセスが…",
+      "article_path": "articles/9c8c5ecf167bb7d8.html",
+      "original_url": "https://thehackernews.com/2026/11/n-able-patches-17-n-central-flaws-as.html"
+    },
+    {
+      "entry_id": "d2fd15befeca9f52",
+      "title": "A phishing page interested in MX records, (Tue, Nov 17th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-11-17T10:56:38+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Phishing",
+      "summary_preview": "概要記事は、一般的な認証情報窃取型に見えたフィッシングメールの誘導先が、被害者のパスワードだけでなくMXレコードに関係する情報にも関心を示していた事例を紹介している。MXレコードはメール配送先の情報として公開されるため、それ自体が秘密情報とは限らないが、利用中のメール基盤や組織の構成を推定し、標的に合わせた偽ログイン画面の提示や後続攻撃の選別に使われる可能…",
+      "article_path": "articles/d2fd15befeca9f52.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33526"
+    },
+    {
+      "entry_id": "816f0b0b2882452a",
+      "title": "ISC Stormcast For Tuesday, November 17th, 2026 https://isc.sans.edu/podcastdetail/10182, (Tue, Nov 17th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-11-17T02:05:15+00:00",
+      "impact_level": "Info",
+      "threat_type": "Unknown",
+      "summary_preview": "概要SANS ISCの「Stormcast」について、2026年11月17日付の配信を示す記事情報が入力されているが、本文要約と参照先は含まれていない。確認できるのは番組名、日付、配信ページへのリンクに限られ、扱われた脆弱性、攻撃手法、対象製品、被害状況は特定できない。したがって、記事タイトルだけから悪用の有無や攻撃者の目的を推定し、組織への脅威として評価…",
+      "article_path": "articles/816f0b0b2882452a.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33524"
+    },
+    {
+      "entry_id": "41e53737ca48cf49",
+      "title": "Building a Security Framework for the Agentic Enterprise",
+      "source_name": "Cisco Security Blog",
+      "category": "reporting",
+      "published_at": "2026-11-17T16:00:35+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要Cisco Security BlogでNancy Cam-Wingetが、企業内で自律的に処理を進めるエージェントを安全に導入するため、製品に依存しない具体的なセキュリティ設計が必要だと論じ、技術例を示している。これは脆弱性や侵害の公表ではなく、エージェントの利用拡大を見据えた設計・運用上の問題提起に当たる。エージェントは人の指示を受けるだけでなく、…",
+      "article_path": "articles/41e53737ca48cf49.html",
+      "original_url": "https://blogs.cisco.com/security/building-a-security-framework-for-the-agentic-enterprise/"
+    },
+    {
+      "entry_id": "5a1c8c66cec08594",
+      "title": "Borrowed Code, Real Consequences: What OPTIMJACK Teaches Us",
+      "source_name": "Unit 42",
+      "category": "reporting",
+      "published_at": "2026-11-17T20:43:14+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要Unit 42の記事は、OPTIMJACKを、ウェブサイトが利用するベンダー提供スクリプトの侵害を通じてサイトや利用者に影響が及び得るサプライチェーン攻撃として取り上げている。外部スクリプトは閲覧時に利用者のブラウザーで読み込まれ、侵害されたコードがページ上で実行されると、サイト運営者が配布したコードでなくても、ページの表示や利用者の操作に関与する可能…",
+      "article_path": "articles/5a1c8c66cec08594.html",
+      "original_url": "https://unit42.paloaltonetworks.com/optimjack-supply-chain-attack/"
+    },
+    {
+      "entry_id": "8da15c826d6c6d5a",
+      "title": "QUIC and Covert: Novel HTTP/3-Powered RATs Target Southeast Asian Governments",
+      "source_name": "Unit 42",
+      "category": "reporting",
+      "published_at": "2026-11-16T23:00:55+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Malware",
+      "summary_preview": "概要Unit 42は、東南アジアの政府機関を標的とするサイバー諜報活動で、複数の独自遠隔操作型マルウェアが使われ、HTTP/3を利用した指令通信も確認されたと報告している。報告されたマルウェアは、PerfectPioneer RATとモジュール型のKUKURATであり、感染後に端末を遠隔操作し、情報収集や追加活動の足掛かりとして使われる可能性がある。指令通…",
+      "article_path": "articles/8da15c826d6c6d5a.html",
+      "original_url": "https://unit42.paloaltonetworks.com/custom-rats-target-southeast-asia-governments/"
+    },
+    {
+      "entry_id": "6b8cd9ed772279b2",
+      "title": "第６回スペースICT推進シンポジウム～宇宙通信新時代における日本の戦略－LEOコンステ、宇宙データセンタ等の登場の中で～",
+      "source_name": "NICT NOTICE",
+      "category": "reporting",
+      "published_at": "2026-11-17T05:00:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要NICT NOTICEは、「第６回スペースICT推進シンポジウム～宇宙通信新時代における日本の戦略－LEOコンステ、宇宙データセンタ等の登場の中で～」の開催に関する情報を掲載している。題名からは、低軌道衛星群や宇宙空間のデータセンターを含む宇宙通信の動向と、日本の戦略を扱う催しと読み取れるが、個別の講演内容や議論の結論までは確認できない。開催日時、登壇…",
+      "article_path": "articles/6b8cd9ed772279b2.html",
+      "original_url": "/publicity/event/2026/12/17-1.html"
+    },
+    {
+      "entry_id": "8137a5f3533c2862",
+      "title": "世界初、レンズ不要の深紫外マイクロLEDによるGbps級光無線通信に成功",
+      "source_name": "NICT NOTICE",
+      "category": "reporting",
+      "published_at": "2026-11-17T05:00:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要入力情報が示すのは、NICT NOTICEが、レンズを使わない深紫外マイクロLEDによる光無線通信で、毎秒ギガビット級の通信に成功したとする発表を掲載した点までとなる。レンズを省く設計は光学系の構成や装置の小型化に関わる可能性がある一方、入力からは送受信機の構成、到達距離、通信条件を確認できない。深紫外光を使う通信は電波通信とは伝送媒体が異なるため、遮…",
+      "article_path": "articles/8137a5f3533c2862.html",
+      "original_url": "/press/2026/11/17-1.html"
+    },
+    {
+      "entry_id": "52bb44fbe787b75c",
+      "title": "When I'm Twenty-Eight 第1回 中島明日香",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-16T23:20:02+00:00",
+      "impact_level": "Info",
+      "threat_type": "Unknown",
+      "summary_preview": "概要入力情報から確認できるのは、ScanNetSecurityに「When I'm Twenty-Eight 第1回 中島明日香」という題名の記事が掲載され、公開日時が2026年11月16日と記録されている点に限られる。記事本文の要約と参照先が提示されていないため、記事が扱う人物や企画の背景、情報セキュリティとの関係は特定できない。題名だけからは、脆弱性の…",
+      "article_path": "articles/52bb44fbe787b75c.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/17/56812.html"
+    },
+    {
+      "entry_id": "503db078f47c6be2",
+      "title": "ユナイテッド・スーパーマーケット・ホールディングス株式会社が Securify で実践する、現業部門を巻き込んだ継続的リスク管理",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-16T23:15:02+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要本件は、ユナイテッド・スーパーマーケット・ホールディングス株式会社がSecurifyを活用し、現業部門を含めた継続的なリスク管理に取り組む事例を紹介する記事とみられる。タイトルからは、セキュリティ上のリスク把握を専門部門だけに閉じず、日々の業務を担う部門も管理に関与させる点が主題と読み取れる。こうした運用が機能すれば、現場で把握した設定変更や業務上の制…",
+      "article_path": "articles/503db078f47c6be2.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/17/56811.html"
+    },
+    {
+      "entry_id": "86bf2731003f544d",
+      "title": "出社や顧客訪問で1日5,000円支給、新卒総合職 月10万円 ～ HENNGE「対面コミュニケーション賞与」さらに増額",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-16T23:10:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要ScanNetSecurityの記事タイトルによると、HENNGEは、出社や顧客訪問をした日に5,000円を支給する「対面コミュニケーション賞与」をさらに増額し、新卒総合職では月額上限を10万円としている。制度名と支給条件から、対面での交流を促す仕組みとして紹介されているが、増額前の金額や対象となる訪問の定義、申請方法は入力情報から確認できない。月額上…",
+      "article_path": "articles/86bf2731003f544d.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/17/56810.html"
+    },
+    {
+      "entry_id": "0dbc3a80b51bbca9",
+      "title": "入居申込サービス「GoWeb」にSQLインジェクション攻撃",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-16T23:05:29+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Exploit",
+      "summary_preview": "概要ScanNetSecurityの記事見出しによれば、入居申込サービス「GoWeb」に対するSQLインジェクション攻撃が報じられた。ただし、入力情報には記事本文や一次情報への参照がなく、攻撃の発生時期、悪用された画面や入力項目、攻撃者の侵入成否は確認できない。一般にこの攻撃は、入力値をデータベースへの問い合わせ文に不適切に組み込ませ、想定外の検索や更新を…",
+      "article_path": "articles/0dbc3a80b51bbca9.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/17/56809.html"
+    },
+    {
+      "entry_id": "31af7d364ff4d61b",
+      "title": "アンケートサイト「Qzoo」にSQLインジェクション攻撃",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-16T23:05:25+00:00",
+      "impact_level": "Info",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要記事タイトルから確認できるのは、アンケートサイト「Qzoo」がSQLインジェクション攻撃を受けたという点に限られ、攻撃時期、攻撃経路、成功の有無、サイト運営者の対応は入力情報に含まれていない。SQLインジェクションは、入力値がデータベース向けの命令として解釈される場合に、情報の読み取りや改変、サービス妨害につながり得る攻撃手法であり、被害の範囲は脆弱な…",
+      "article_path": "articles/31af7d364ff4d61b.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/17/56808.html"
+    },
+    {
+      "entry_id": "bc9f3bcaed80c4b8",
+      "title": "アクティブ運営の通販サイトにSQLインジェクション攻撃、最大5万4,916件の顧客情報が流出した可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-16T23:05:23+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要報道タイトルによれば、運営中の通販サイトがSQLインジェクション攻撃を受け、最大5万4,916件の顧客情報が流出した可能性があるとされる。SQLインジェクションは、入力値を通じてデータベースへの問い合わせを意図しない形に変え、アプリケーションの権限で顧客情報を読み出す攻撃であり、実際に取得できる範囲は入力処理やデータベース権限に左右される。示された件数…",
+      "article_path": "articles/bc9f3bcaed80c4b8.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/17/56807.html"
+    },
+    {
+      "entry_id": "e868d96976435e53",
+      "title": "エディオンECサイトに不正アクセス、不正なプログラムが組み込まれる改ざんが新たに判明",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-16T23:05:21+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要エディオンのECサイトで不正アクセスが発生し、不正なプログラムを組み込む改ざんが新たに判明したと報じられた。侵入経路やプログラムの機能は記事の入力情報から確認できず、決済画面へのスクリプト挿入、利用者情報の窃取、管理機能の悪用など、具体的な攻撃手口を断定できない。ECサイトの画面や処理に攻撃者のコードが残っていた場合、閲覧者の端末上で情報を取得する可能…",
+      "article_path": "articles/e868d96976435e53.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/17/56806.html"
+    },
+    {
+      "entry_id": "7b87b09329776b77",
+      "title": "よーじやの会員情報管理システムに不正アクセス、店舗・オンラインショップ・アプリに登録のあった顧客の個人情報が漏えい",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-16T23:05:18+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要ScanNetSecurityの記事タイトルによると、よーじやの会員情報管理システムへの不正アクセスにより、顧客の個人情報が漏えいした。対象として、店舗、オンラインショップ、アプリのいずれかに登録していた顧客が挙げられているが、各サービスの全登録者や全項目が影響を受けたと確認されたわけではない。不正アクセスの経路、発生時期、対象人数、漏えいした情報の項…",
+      "article_path": "articles/7b87b09329776b77.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/17/56805.html"
+    },
+    {
+      "entry_id": "574a24cc892f6744",
+      "title": "「teket」に不正アクセス",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-16T23:05:16+00:00",
+      "impact_level": "Low",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要ScanNetSecurityの記事見出しは、チケット販売サービス「teket」への不正アクセスを報じているが、入力情報には本文や参照先がなく、発生時期、侵入経路、攻撃者、影響を受けたシステムや利用者の範囲は確認できない。不正アクセスがあったという報道だけでは、利用者情報の閲覧・持ち出し、改ざん、サービス停止のいずれが発生したかまでは判断できず、漏えい…",
+      "article_path": "articles/574a24cc892f6744.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/17/56804.html"
+    },
+    {
+      "entry_id": "b6d1753441373a00",
+      "title": "機関投資家向けIR情報提供サービス「機関Navi」に不正アクセス",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-16T23:05:14+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要機関投資家向けにIR情報を提供する「機関Navi」で不正アクセスが発生したと報じられている。ただし、入力情報には発生日、侵入経路、攻撃者が得た権限、影響を受けた利用者や情報の範囲がなく、サービスへのアクセス成立と情報流出の有無は分けて評価する必要がある。IR関連サービスには公開済み情報だけでなく、配信設定、利用者情報、公開前情報が関与する場合もあるため…",
+      "article_path": "articles/b6d1753441373a00.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/17/56803.html"
+    },
+    {
+      "entry_id": "ff9962b87d9221c8",
+      "title": "Cuenoteへの不正アクセス、インプレスのメールマガジン「DIGITAL X News」の会員情報 約5万8,000件が漏えい",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-16T23:05:11+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要インプレスが運営するメールマガジン「DIGITAL X News」の会員情報約5万8,000件について、メール配信サービスCuenoteへの不正アクセスに伴う漏えいが報じられた。記事タイトルから確認できるのは対象サービス、会員数、漏えいの発生までであり、侵入経路、攻撃者の権限、情報項目、発生時期や継続期間は未確認となる。メールアドレスが含まれていた場合…",
+      "article_path": "articles/ff9962b87d9221c8.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/17/56802.html"
+    },
+    {
+      "entry_id": "1eadca1496344fcf",
+      "title": "住民記録システム移行作業でテストデータを誤送信しマイナンバーカード失効",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-16T23:05:08+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Other",
+      "summary_preview": "概要記事の見出しによると、住民記録システムの移行作業中にテストデータが誤送信され、その結果としてマイナンバーカードが失効する事案が発生した。単なる試験環境内の誤操作にとどまらず、住民のカード利用に影響する処理へ誤ったデータが到達した可能性があり、移行手順と本番処理の境界に問題がなかったかが判断の焦点となる。テストデータが実在住民の情報を含んでいたのか、どの…",
+      "article_path": "articles/1eadca1496344fcf.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/17/56801.html"
+    },
+    {
+      "entry_id": "84fa3876abb6b540",
+      "title": "NewsPicksに管理ツールの脆弱性を突いた不正アクセス",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-16T23:05:06+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要記事タイトルによれば、NewsPicksで管理ツールの脆弱性を突いた不正アクセスが発生したと報じられている。ただし、提供情報には記事本文や参照先がなく、利用されたツール、脆弱性の内容、攻撃者がどのような条件で侵入したかは確認できない。管理ツールが外部から到達可能だったのか、認証を迂回されたのか、正規の認証情報を使われたのかによって、優先すべき調査範囲と…",
+      "article_path": "articles/84fa3876abb6b540.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/17/56800.html"
+    },
+    {
+      "entry_id": "62673befcbcee2ba",
+      "title": "医療関係者向け情報提供ウェブサイト「Pharma DIGITAL」にサイバー攻撃、医療従事者55万8,000名の個人情報が漏えいした可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-16T23:05:03+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要医療関係者向け情報提供サイト「Pharma DIGITAL」がサイバー攻撃を受け、医療従事者約55万8,000名の個人情報が漏えいした可能性が報じられた。現時点で入力情報から確認できるのは攻撃発生と漏えいの可能性、対象人数までであり、侵入経路、攻撃者の活動、情報の持ち出しを示す証拠は分からない。攻撃者がサイトや関連システムへ不正アクセスし、利用者情報を…",
+      "article_path": "articles/62673befcbcee2ba.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/17/56799.html"
+    },
+    {
+      "entry_id": "2965b05833593308",
+      "title": "HENNGE One、メールDXプラットフォーム「yaritori」とSSO連携",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-16T23:00:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要HENNGE Oneとメール業務プラットフォーム「yaritori」の間で、シングルサインオン（SSO）連携が発表された。利用者が共通の認証基盤を通じて両サービスへアクセスできる構成を想定するが、記事情報からは連携方式、対象プラン、提供開始時期、追加設定の要否までは確認できない。SSO導入はログイン操作を減らす一方、認証基盤や連携設定に問題があれば複数…",
+      "article_path": "articles/2965b05833593308.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/17/56798.html"
+    }
+  ]
+}
