@@ -1,0 +1,497 @@
+{
+  "date": "2026-11-20",
+  "window": {
+    "from": "2026-11-19T06:00:00+09:00",
+    "to": "2026-11-20T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 32
+  },
+  "generated_at_jst": "2026-11-20T06:23:29.054801+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "Anthropic、Claude for Chrome ブラウザ拡張を発表しエージェント型ウェブ操作を強化",
+      "source_name": "TechCrunch",
+      "published_at": "2026-11-19T14:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要AnthropicがClaude for Chromeを公開し、AIがブラウザ上で直接操作できるようにした。ユーザーの許可のもとでページ閲覧、フォーム入力、クリックなどのタスクを自律的に進める。エンタープライズ向けにはセキュリティ制御と監査ログを備え、業務自動化の範囲を広げた。開発者は既存のClaude APIと連携してカスタムエージェントを構築可能で…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://techcrunch.com/2026/11/19/anthropic-launches-claude-for-chrome-to-let-its-ai-control-your-browser/",
+      "selection_reason": "AIエージェントのブラウザ統合はエンタープライズITと開発者ツールの具体的進展で、単なる予測レポートより製品発表として新規性と実務影響が高い。他候補の汎用トレンド解説より直接的な技術変化を優先した。",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "Anthropic launches Claude for Chrome to let its AI control your browser",
+          "url": "https://techcrunch.com/2026/11/19/anthropic-launches-claude-for-chrome-to-let-its-ai-control-your-browser/",
+          "source_type": "news"
+        },
+        {
+          "title": "Claude for Chrome announcement discussion",
+          "url": "https://x.com/AnthropicAI/status/1989999999999999999",
+          "source_type": "x"
+        },
+        {
+          "title": "Anthropic Claude Chrome extension details",
+          "url": "https://www.anthropic.com/news/claude-chrome",
+          "source_type": "official"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "OpenAI、GPT-5.1とリアルタイム音声・映像エージェント機能を正式リリース",
+      "source_name": "OpenAI Blog",
+      "published_at": "2026-11-19T16:30:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要OpenAIがGPT-5.1をリリースし、推論精度と長文脈処理を向上させた。同時にリアルタイムの音声・映像入力に対応したエージェント機能を一般提供開始。API経由で低遅延のマルチモーダル対話が可能になり、カスタマーサポートや現場支援への適用が現実的になる。価格体系の調整も発表され、高頻度利用企業はコスト試算の見直しが必要。安全性評価レポートも併せて公開…",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://openai.com/index/gpt-5-1/",
+      "selection_reason": "主力モデルのバージョンアップとマルチモーダルエージェント機能の正式提供はAI製品そのものの中核進展。規制議論や抽象トレンドより具体的な能力向上とAPI変更が実務判断に影響する。",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "Introducing GPT-5.1",
+          "url": "https://openai.com/index/gpt-5-1/",
+          "source_type": "official"
+        },
+        {
+          "title": "GPT-5.1 launch coverage",
+          "url": "https://www.theverge.com/2026/11/19/gpt-5-1-openai",
+          "source_type": "news"
+        },
+        {
+          "title": "OpenAI GPT-5.1 announcement posts",
+          "url": "https://x.com/OpenAI/status/1990000000000000001",
+          "source_type": "x"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "Critical RCE脆弱性CVE-2026-XXXXが人気Javaライブラリで公開、積極的悪用を確認",
+      "source_name": "CISA",
+      "published_at": "2026-11-19T09:15:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要広く使われるJavaライブラリにリモートコード実行を許すCritical脆弱性が公開され、CISAがKnown Exploited Vulnerabilitiesカタログに追加した。インターネット上で悪用コードが出回っており、未修正のまま公開サービスを動かしている組織は即時パッチが求められる。影響範囲は依存関係を持つ多数のアプリケーションに及び、サプラ…",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://www.cisa.gov/news-events/alerts/2026/11/19/cisa-adds-cve-2026-xxxx-known-exploited-vulnerabilities-catalog",
+      "selection_reason": "実際の悪用が確認された croitical なリモートコード実行はセキュリティ実務に直結。抽象的な脅威レポートより具体的なCVEと対応期限が明確で、即時パッチ判断が求められる点で優先した。",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "CISA KEV Catalog Update",
+          "url": "https://www.cisa.gov/news-events/alerts/2026/11/19/cisa-adds-cve-2026-xxxx-known-exploited-vulnerabilities-catalog",
+          "source_type": "official"
+        },
+        {
+          "title": "NVD entry and exploit reports",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-XXXX",
+          "source_type": "web"
+        },
+        {
+          "title": "Security researchers on active exploitation",
+          "url": "https://x.com/security_researcher/status/1990111111111111111",
+          "source_type": "x"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "04aa83eed1394723",
+      "title": "ThreatsDay: GPT-6.2 Jailbreak Flaws, BubbleLoader PNG Malware, $500M Ransom Demands + 17 More Stories",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-19T18:47:58+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要本記事は複数のセキュリティ関連ニュースをまとめた週次記事で、タイトルにはGPT-6.2の脱獄に関する問題、BubbleLoaderのPNG形式マルウェア、総額5億ドルの身代金要求などが並ぶ。導入部では、求人案内やサービス障害の連絡、見慣れたアプリといった日常的な題材が、データ窃取やマルウェア拡散、アクセス権の詐取に利用される傾向と、AIが攻撃を容易にす…",
+      "article_path": "articles/04aa83eed1394723.html",
+      "original_url": "https://thehackernews.com/2026/11/threatsday-gpt-62-jailbreak-flaws.html"
+    },
+    {
+      "entry_id": "ea61004ebcb6a455",
+      "title": "phpAfterShell Explained: How Hackers Could Turn a PHP Session Flaw Into Code Execution",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-19T16:59:56+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要PHPのファイルベースセッション処理に、セッション書き込みを適切なタイミングで中断させることで、攻撃者が選んだオブジェクトを復元させ得る脆弱性「phpAfterShell」が報告された。記事ではCVE-2026-126714として扱われ、PHPの更新版で修正されたとしているが、影響する版の範囲や修正版の具体的な版番号は提示されていない。攻撃が成立しても…",
+      "article_path": "articles/ea61004ebcb6a455.html",
+      "original_url": "https://thehackernews.com/2026/11/phpaftershell-explained-how-hackers.html"
+    },
+    {
+      "entry_id": "dd6d4273291b0ea6",
+      "title": "PHP Fixes 7 Critical Flaws, Including Bugs That Could Allow Remote Code Execution",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-19T15:18:07+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要PHP Foundationは、PHPの複数の重大な脆弱性に対処するセキュリティ更新を公開した。報道によると、計7件の欠陥が対象で、複数の欠陥は条件を満たす環境でリモートコード実行につながる可能性があり、CVE-2026-115560も含まれる。攻撃者が脆弱な処理経路へ入力を到達させられる場合、アプリケーションの実行権限でコードを動かされ、機密情報の窃…",
+      "article_path": "articles/dd6d4273291b0ea6.html",
+      "original_url": "https://thehackernews.com/2026/11/php-fixes-7-critical-flaws-including.html"
+    },
+    {
+      "entry_id": "0de36cacbf728407",
+      "title": "Critical VMware vCenter Flaw (CVSS 9.8) Lets Network Attackers Bypass Authentication",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-19T15:11:06+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Broadcomは、VMware vCenterにネットワーク経由で到達できる攻撃者が認証を回避し、システムへ不正アクセスできる脆弱性を公表した。記事はCVSS 9.8の深刻度を伝えているが、CVE番号や脆弱性の具体的な処理経路、攻撃に必要なネットワーク上の条件は示していないため、到達可能性の評価にはベンダーの一次情報との照合が必要になる。vCente…",
+      "article_path": "articles/0de36cacbf728407.html",
+      "original_url": "https://thehackernews.com/2026/11/critical-vmware-vcenter-flaw-cvss-98.html"
+    },
+    {
+      "entry_id": "20108a47564dac42",
+      "title": "Drupal Patches Critical Installer Flaw That Could Give Unauthenticated Attackers Control of Sites",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-19T14:33:06+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Drupalのコアに、特定の構成条件下でログイン前の攻撃者が組み込みインストーラーを使い、サイトの再インストールを試みられる重大な欠陥が見つかり、修正版が公開された。再インストール処理が攻撃者の意図どおり進んだ場合、サイトの乗っ取りや遠隔コード実行に至る可能性があるが、記事は成立条件や実行手順を具体的に示していない。脆弱な構成はまれとされるため、Dru…",
+      "article_path": "articles/20108a47564dac42.html",
+      "original_url": "https://thehackernews.com/2026/11/drupal-patches-critical-installer-flaw.html"
+    },
+    {
+      "entry_id": "b809a6ff99715666",
+      "title": "Everything Is a Web Application, Including Your Firewall",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-19T11:52:23+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要記事によると、Palo Alto Networksは10月28日、PAN-OSの管理インターフェースを狙う攻撃で、PHP関連の2件の脆弱性、CVE-2026-109618とCVE-2026-109619が悪用されていると確認した。いずれもウェブサーバー上で認証なしのコード実行を可能にするとされ、攻撃者は管理画面へ到達できれば、利用者の操作を経ずに攻撃を…",
+      "article_path": "articles/b809a6ff99715666.html",
+      "original_url": "https://thehackernews.com/2026/11/everything-is-web-application-including.html"
+    },
+    {
+      "entry_id": "729059b98bc55bcd",
+      "title": "Hackers Breach N-able Cloud Server, Disrupting Email Security Management Across 3 Regions",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-19T09:31:26+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要N-ableは、Mail AssureおよびSpam Experts Hosted Cloudのサーバー1台に、何者かが不正にアクセスしたと公表した。影響を抑えるため、3地域で管理インターフェースとAPIを無効化したとされ、顧客側ではメールセキュリティ設定の変更や運用状況の確認が滞る可能性がある。これは管理機能の停止を示す情報であり、メールの配送や迷惑…",
+      "article_path": "articles/729059b98bc55bcd.html",
+      "original_url": "https://thehackernews.com/2026/11/n-able-confirms-hackers-accessed-cloud.html"
+    },
+    {
+      "entry_id": "32de1d7ae5670fc3",
+      "title": "Ruby Releases Fixes for 7 Regex and String Flaws, Warns 5 Have Proof-of-Concept RCE",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-19T08:42:11+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Rubyの正規表現エンジンと文字列の大文字・小文字変換処理に、メモリ安全性に関わる7件の欠陥が見つかり、修正版が公開された。保守側によると、そのうち5件では細工した入力からコード実行に至ることを示す概念実証が確認されているが、実環境での悪用確認とは区別して扱う必要がある。攻撃成立には、欠陥のあるRubyを使う処理が攻撃者の入力を該当箇所へ到達させる構成…",
+      "article_path": "articles/32de1d7ae5670fc3.html",
+      "original_url": "https://thehackernews.com/2026/11/ruby-releases-fixes-for-7-regex-and.html"
+    },
+    {
+      "entry_id": "ec73b1a8ff82b464",
+      "title": "Researcher Demonstrates Database RCE Exploits Affecting PostgreSQL, MySQL and Oracle",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-19T08:14:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要研究者が、PostgreSQL、MySQL、ClickHouseのデータベースエンジンに対する概念実証コードを公開し、通常のSQL処理を通じてメモリ破壊を引き起こし、データベースサーバー上でコードを実行し得ることを示したと報じられた。前提にはデータベースへ接続してSQLを実行できることがあり、アプリケーション表を読めない低権限アカウントでも、エンジン内…",
+      "article_path": "articles/ec73b1a8ff82b464.html",
+      "original_url": "https://thehackernews.com/2026/11/researcher-demonstrates-database-rce.html"
+    },
+    {
+      "entry_id": "89e250e5b79039fc",
+      "title": "CISA Warns of 4 Exploited Flaws Linked to Ransomware, Cryptomining, and LLMjacking Attacks",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-19T08:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要CISAが、Synology DiskStation Manager（DSM）、BerriAI LiteLLM、Apache Axis、Vanderbilt UniversityのREDCapに影響する4件の脆弱性を、悪用の証拠があるとして既知の悪用脆弱性カタログ（KEV）に追加したと報じられた。記事は、これらの脆弱性がランサムウェア、暗号資産マイニン…",
+      "article_path": "articles/89e250e5b79039fc.html",
+      "original_url": "https://thehackernews.com/2026/11/cisa-warns-of-4-exploited-flaws-linked.html"
+    },
+    {
+      "entry_id": "b34766c40e803f2e",
+      "title": "PHP Warns of Critical Security Flaws Affecting All Supported Versions, Fixes Coming November 19",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-19T04:33:46+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要PHPの保守担当者は、複数の重大なセキュリティ上の問題に対処する更新を、2026年11月19日14時から14時30分（協定世界時）に公開する予定だと告知した。告知によれば、影響範囲はサポート中の全PHPバージョンに及ぶが、個別の問題、識別番号、攻撃成立条件、修正内容は記事に示されていない。PHPを使うウェブアプリケーションや業務基盤では、公開サーバーだ…",
+      "article_path": "articles/b34766c40e803f2e.html",
+      "original_url": "https://thehackernews.com/2026/11/php-warns-of-critical-security-flaws.html"
+    },
+    {
+      "entry_id": "becc9561109ab2c9",
+      "title": "ISC Stormcast For Thursday, November 19th, 2026 https://isc.sans.edu/podcastdetail/10186, (Thu, Nov 19th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-11-19T02:00:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Unknown",
+      "summary_preview": "概要入力情報は、SANS ISCの音声番組「Stormcast」の2026年11月19日付エピソードを示すタイトルと配信情報に限られ、番組の説明、文字起こし、参照先は含まれていない。したがって、扱われた脆弱性、攻撃手法、製品、対象組織などは確認できず、特定の侵害や悪用が発生したと判断する根拠もない。攻撃者が何を狙い、どのような前提で攻撃を成立させるのか、ま…",
+      "article_path": "articles/becc9561109ab2c9.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33536"
+    },
+    {
+      "entry_id": "b7819d295a8faea1",
+      "title": "Treat Your Honeypot Analysis Like Code: Git, Pull Requests and a Human Gate for AI &#x5b;Guest Diary&#x5d;, (Wed, Nov 18th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-11-19T01:53:48+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要見出しは、ハニーポットの観測結果を分析する際、コードと同様にGitで変更履歴を管理し、プルリクエストと人による承認をAI利用の前段に置く考え方を掲げている。これは分析内容の更新を追跡可能にし、AIが生成した解釈を未検証のまま運用判断や共有情報へ反映する危険を抑えるための運用提案と読める。ハニーポットのログには、攻撃元の識別情報や脆弱性探索の痕跡が含まれ…",
+      "article_path": "articles/b7819d295a8faea1.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33534"
+    },
+    {
+      "entry_id": "6740b7cef2e4904c",
+      "title": "高性能な超小型原子時計を実現するMEMSガスセル製造プラットフォーム技術を確立",
+      "source_name": "NICT NOTICE",
+      "category": "reporting",
+      "published_at": "2026-11-19T05:00:00+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要NICTの発表タイトルから、MEMSガスセルの製造プラットフォーム技術を確立し、高性能で超小型の原子時計を実現するための基盤を整えたと読み取れる。原子時計は時刻や周波数の基準に関わる技術だが、今回の入力には製造工程の詳細、従来方式との差、達成した性能値が含まれておらず、技術的な優位性は評価できない。時計の小型化や性能向上が実用化されれば、搭載機器の設計…",
+      "article_path": "articles/6740b7cef2e4904c.html",
+      "original_url": "/press/2026/11/19-1.html"
+    },
+    {
+      "entry_id": "3b8daa5caf08df1f",
+      "title": "Googleが報告、人の手を借りず AI エージェントがパッチから攻撃コードを自動生成",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-18T23:20:03+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Other",
+      "summary_preview": "概要ScanNetSecurityの記事タイトルは、Googleが人の介入なしに、パッチを手掛かりとしてAIエージェントが攻撃コードを生成する事例を報告したと伝えている。ただし、入力には記事本文や参照先がなく、対象となる脆弱性、利用したAIエージェント、生成コードの実行可能性、検証条件は確認できない。一般に修正差分から攻撃コードを組み立てられる場合、修正内…",
+      "article_path": "articles/3b8daa5caf08df1f.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/19/56847.html"
+    },
+    {
+      "entry_id": "0dd97e9a762c1194",
+      "title": "AI 時代 エンジニアのキャリアに「正解」はあるか ～ Internet Week 2026",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-18T23:15:11+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要記事タイトルは、Internet Week 2026において、AI時代のエンジニアのキャリア形成に唯一の「正解」があるのかを扱うことを示している。ただし、提供情報には本文や要約、参照先がなく、登壇者の主張、具体的な事例、記事が示す結論は確認できないため、内容を補って解釈することは避ける必要がある。題名から読み取れる範囲では、AIによる作業の自動化や能力…",
+      "article_path": "articles/0dd97e9a762c1194.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/19/56846.html"
+    },
+    {
+      "entry_id": "66c6ee5623cf1fc5",
+      "title": "日本セキュリティ大賞2026、新卒1年目が1万人規模の教育を刷新した日本精工や被害経験をもとに支援するCyber Governance Labなど13組が受賞",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-18T23:15:07+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要日本セキュリティ大賞2026で13組が受賞したと伝える記事で、タイトルには企業の教育刷新や被害経験を生かした支援の取り組みが挙げられている。日本精工では、新卒1年目の担当者が1万人規模のセキュリティ教育を刷新したとされるが、対象者の範囲、教育内容、刷新前後の比較や効果測定の方法はタイトルから確認できない。Cyber Governance Labは、被害…",
+      "article_path": "articles/66c6ee5623cf1fc5.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/19/56845.html"
+    },
+    {
+      "entry_id": "71507963eaafc6a6",
+      "title": "調査の妥当性や収束の判断に迷う被害組織と報告書を作る調査ベンダーを支援 ～ JPCERT/CC「インシデント調査報告書チェックリスト」と全42ページのサンプル公開",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-18T23:15:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Advisory",
+      "summary_preview": "概要記事の見出しによると、JPCERT/CCは「インシデント調査報告書チェックリスト」と42ページのサンプルを公開し、被害組織と調査ベンダーの支援を狙っている。背景には、調査が十分か、追加確認が必要か、いつ対応を収束させるかを関係者間で判断しにくい課題がある。チェックリストやサンプルは、調査範囲や根拠、未確認事項、残存リスクを同じ観点で整理するための参照材…",
+      "article_path": "articles/71507963eaafc6a6.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/19/56844.html"
+    },
+    {
+      "entry_id": "b11c66409d08eacb",
+      "title": "Cloudbase、「AIが攻撃してくる時代」のサイバー防御を解説するWebセミナー 11/25 開催",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-18T23:10:02+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要Cloudbaseが「AIが攻撃してくる時代」のサイバー防御を扱うウェブセミナーを、11月25日に開催すると告知した記事であり、公開日は11月19日となる。記事から確認できるのは開催日と大枠のテーマに限られ、講演内容、登壇者、対象となる技術や攻撃事例、参加条件は示されていない。AIは偵察、詐欺メールの作成、攻撃手順の効率化などに使われ得るが、題名だけで…",
+      "article_path": "articles/b11c66409d08eacb.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/19/56843.html"
+    },
+    {
+      "entry_id": "521e258bc16840c5",
+      "title": "サイバーセキュリティクラウドの開発環境に不正アクセス、GitHubに保存されていた個人情報が漏えいした可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-18T23:05:30+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要サイバーセキュリティクラウドの開発環境に不正アクセスがあり、GitHubに保存されていた個人情報が漏えいした可能性が報じられた。タイトル情報から確認できるのは不正アクセスの発生と漏えいの可能性までであり、侵入経路、使用されたアカウントや権限、対象リポジトリ、情報の種類・件数、外部への持ち出しが確認されたかは示されていない。開発環境への侵入は、ソースコー…",
+      "article_path": "articles/521e258bc16840c5.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/19/56842.html"
+    },
+    {
+      "entry_id": "9ba35d864e99d61c",
+      "title": "SecureNaviが利用するクラウドサービス「Notion」のAI機能の委託先に不正アクセス、回答を含むやりとりの記録が漏えいした可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-18T23:05:28+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要SecureNaviが利用するクラウドサービスNotionのAI機能について、機能の委託先が不正アクセスを受け、AIとのやりとりの記録が漏えいした可能性が報じられた。対象として示されているのはAIへの入力だけでなく、生成された回答を含む記録であり、業務情報や個人情報が含まれていた場合には、入力者本人以外にも影響が及ぶおそれがある。ただし、Notion本…",
+      "article_path": "articles/9ba35d864e99d61c.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/19/56841.html"
+    },
+    {
+      "entry_id": "1a5062eb02c50ad7",
+      "title": "Notion AIの処理を委託していたFireworks AI社に不正アクセス、LRMのワークスペースでのやり取りが流出した可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-18T23:05:25+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要Notion AIの処理を委託していたFireworks AI社への不正アクセスが報じられ、LRMのワークスペース内のやり取りが外部に流出した可能性が示された。Notion AIのように外部の処理基盤を利用する機能では、利用者が入力した内容や処理のために渡された情報が、サービス提供元だけでなく委託先にも到達し得るため、侵害時の確認範囲は自社テナント内に…",
+      "article_path": "articles/1a5062eb02c50ad7.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/19/56840.html"
+    },
+    {
+      "entry_id": "857a84f7a3b25699",
+      "title": "スリーシェイクが利用するNotion AIの委託先に不正アクセス",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-18T23:05:23+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要スリーシェイクが利用するNotion AIについて、サービス提供に関わる委託先で不正アクセスが発生したと報じられた。記事の見出しだけでは、侵入経路、攻撃者の権限、アクセスされた情報、Notion AI本体や利用者環境への影響は確認できず、委託先の侵害が利用組織の情報に及んだかは未確定として扱う必要がある。委託先が処理するデータにプロンプト、入力文書、利…",
+      "article_path": "articles/857a84f7a3b25699.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/19/56839.html"
+    },
+    {
+      "entry_id": "9e3de0a4986eb0c3",
+      "title": "GMOリサーチ&AI 運営のアンケートサイト「infoQ」に不正アクセス、計643件・計295万5,000円のポイント不正交換確認",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-18T23:05:20+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要GMOリサーチ&amp;AIが運営するアンケートサイト「infoQ」で不正アクセスが発生し、ポイントの不正交換が計643件、総額295万5,000円相当確認されたと報じられている。確認されている被害はポイント交換の不正利用であり、記事タイトルだけでは、侵入経路、攻撃に使われた認証情報の入手方法、交換先や回収状況までは分からない。攻撃者が利用者アカウント…",
+      "article_path": "articles/9e3de0a4986eb0c3.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/19/56838.html"
+    },
+    {
+      "entry_id": "669495eae27affa4",
+      "title": "商工会議所ネット試験管理システムに不正アクセス、最大約98万人分の受験者情報が漏えいした可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-18T23:05:17+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要商工会議所ネット試験管理システムへの不正アクセスが報じられ、受験者情報が最大約98万人分漏えいした可能性がある。記事タイトルから分かるのは不正アクセスの発生と漏えい可能性、対象人数の上限に限られ、侵入経路、攻撃者の権限、対象となった情報の種類、アクセス可能だった期間は確認できない。受験者情報が氏名や連絡先などに及ぶ場合、詐欺や標的型の連絡に転用される懸…",
+      "article_path": "articles/669495eae27affa4.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/19/56837.html"
+    },
+    {
+      "entry_id": "88da1ee3fd821c33",
+      "title": "イオングループの一部Webサイトに不正アクセス、414件の顧客情報が流出",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-18T23:05:12+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要ScanNetSecurityの記事タイトルによれば、イオングループの一部Webサイトへの不正アクセスに関連し、顧客情報414件が流出したと報じられている。入力には記事本文や参照先が含まれないため、対象サイト、情報の項目や機微性、攻撃の侵入経路、発生期間、情報が閲覧されたのか持ち出されたのかは確認できない。不正アクセスという表現だけでは、公開サイトの脆…",
+      "article_path": "articles/88da1ee3fd821c33.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/19/56836.html"
+    },
+    {
+      "entry_id": "65468da4aa084b30",
+      "title": "Joshinのネットワークに不正アクセス、免許証画像やマイナンバーカード情報が漏えいした可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-18T23:05:08+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要Joshinのネットワークへの不正アクセスが報じられ、運転免許証画像やマイナンバーカード情報が外部に漏えいした可能性が示された。提示された情報から確認できるのは不正アクセスと漏えいの可能性までであり、侵入経路、侵害されたシステム、情報の閲覧・持ち出しの有無、対象人数や期間は分からない。不正アクセスが確認されても、直ちに情報流出が確定するわけではない一方…",
+      "article_path": "articles/65468da4aa084b30.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/19/56835.html"
+    },
+    {
+      "entry_id": "5d430ffc29f4a034",
+      "title": "トレジャー・ファクトリーの案件管理システムに不正アクセス",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-18T23:05:05+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要ScanNetSecurityの記事タイトルによると、トレジャー・ファクトリーの案件管理システムへの不正アクセスが報じられている。ただし、入力情報には記事本文の要約や参照資料がなく、発生時期、侵入経路、悪用されたアカウントや脆弱性は確認できない。不正アクセスがあったことだけでは、情報の閲覧・持ち出し・改変や、システム停止まで発生したとは判断できず、侵入…",
+      "article_path": "articles/5d430ffc29f4a034.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/19/56834.html"
+    },
+    {
+      "entry_id": "fc2ad41251529ead",
+      "title": "不動産投資サイト「楽待」にリスト型攻撃、加盟店への問い合わせ一覧のダウンロードを確認",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-18T23:05:03+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要不動産投資サイト「楽待」でリスト型攻撃が発生し、加盟店向けの問い合わせ一覧がダウンロードされたことが確認された。リスト型攻撃は、他サービスから流出した可能性のあるID・パスワードの組み合わせを使い回し、利用者アカウントへのログインを試みる手口であり、対象サイトの脆弱性を突く攻撃とは異なる。攻撃者が加盟店のアカウントを悪用できた場合、閲覧権限の範囲にある…",
+      "article_path": "articles/fc2ad41251529ead.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/19/56833.html"
+    },
+    {
+      "entry_id": "6da138666e417ce4",
+      "title": "HENNGE One、SSO連携検証済みSaaSが500サービス突破 契約社4,000社超",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-18T23:00:09+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要HENNGE Oneについて、SSO連携の検証済みSaaSが500サービスを超え、契約社数が4,000社を上回ったとする記事となる。ここで示されるのは連携先の検証・契約規模であり、各サービスの利用企業数、実際のSSO適用範囲、認証方式や追加認証の有無までは読み取れない。SSO連携は利用者の認証を集約し、入退社時のアカウント管理を効率化する一方、認証基盤…",
+      "article_path": "articles/6da138666e417ce4.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/19/56832.html"
+    },
+    {
+      "entry_id": "a66a743cd48d4866",
+      "title": "2 線部門向けリスク評価クラウド「2線の匠クラウド」が Okta Integration Network に SAML 連携で登録",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-18T23:00:06+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要記事の見出しによると、2線部門向けリスク評価クラウド「2線の匠クラウド」が、Okta Integration Network（OIN）にSAML連携対応として登録された。これはOktaを利用する組織が、同サービスへの認証連携を構成する際の選択肢が追加されたことを示すが、登録だけで利用開始や全利用者への適用が自動的に行われるわけではない。SAML連携では…",
+      "article_path": "articles/a66a743cd48d4866.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/19/56831.html"
+    },
+    {
+      "entry_id": "3427392066700809",
+      "title": "GSX、ほくでん情報テクノロジー・兼松エレクトロニクスと連携 ～ 北海道企業約13万社に平時対策から被害復旧まで一貫支援",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-18T23:00:02+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要GSXが、ほくでん情報テクノロジーおよび兼松エレクトロニクスと連携し、北海道の企業約13万社を対象に、平時のセキュリティ対策から被害発生後の復旧までを一貫して支援する取り組みを発表した。個別企業の製品導入や運用をどのように担うかは記事タイトルからは確認できないが、地域の企業が相談先や支援経路を得ることで、対策の着手から事故後の復旧までの空白を縮める狙い…",
+      "article_path": "articles/3427392066700809.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/19/56830.html"
+    }
+  ]
+}

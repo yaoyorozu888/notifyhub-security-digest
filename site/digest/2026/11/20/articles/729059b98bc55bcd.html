@@ -1,0 +1,323 @@
+<!-- article.html テンプレート（生成用） (例: /digest/YYYY/MM/DD/articles/<entry_id>.html)
+     サーバ側（Function）で {{...}} を置換して出力してください。
+-->
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/favicon-192.png" />
+  <title>Hackers Breach N-able Cloud Server, Disrupting Email Security Management Across 3 Regions | NotifyHub Cybersecurity Daily Report</title>
+  <style>
+    :root{
+      --bg:#0b1020; --panel:#0f1730; --panel2:#121c3a;
+      --text:#e7ecff; --muted:#a9b4df; --line:#22305b;
+      --accent:#7aa2ff; --good:#4ade80; --warn:#fbbf24; --bad:#fb7185;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+      --radius:18px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      background: radial-gradient(1000px 700px at 20% -10%, rgba(122,162,255,.25), transparent 60%),
+                  radial-gradient(900px 600px at 90% 10%, rgba(251,113,133,.12), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+    }
+    a{color:inherit}
+    .wrap{max-width:960px; margin:0 auto; padding:22px 18px 44px}
+    .topbar{
+      display:flex; justify-content:space-between; align-items:center; gap:12px;
+      margin-bottom:12px;
+    }
+    .crumb a{
+      text-decoration:none;
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .crumb a:hover{border-color:rgba(122,162,255,.65)}
+    .chip{
+      display:inline-flex; align-items:center; gap:8px;
+      background:rgba(27,38,80,.75);
+      border:1px solid rgba(34,48,91,.9);
+      padding:7px 10px; border-radius:999px;
+      font-size:12px; color:var(--muted);
+      backdrop-filter: blur(10px);
+      white-space:nowrap;
+    }
+    .chip strong{color:var(--text); font-weight:650}
+    .panel{
+      background: linear-gradient(180deg, rgba(15,23,48,.9), rgba(15,23,48,.75));
+      border:1px solid rgba(34,48,91,.9);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .head{
+      padding:16px 16px 12px;
+      border-bottom:1px solid rgba(34,48,91,.9);
+      background:rgba(18,28,58,.55);
+    }
+    h1{
+      margin:0;
+      font-size:20px;
+      line-height:1.35;
+      letter-spacing:.15px;
+    }
+    .meta{
+      margin-top:10px;
+      display:flex; gap:10px; flex-wrap:wrap;
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.6;
+    }
+    .meta a{color:var(--muted)}
+    .meta a:hover{color:var(--accent)}
+    .tags{
+      margin-top:12px;
+      display:flex; gap:8px; flex-wrap:wrap;
+    }
+    .tag{
+      font-size:11px;
+      padding:6px 9px;
+      border-radius:999px;
+      background:rgba(27,38,80,.65);
+      border:1px solid rgba(34,48,91,.9);
+      color:var(--muted);
+      white-space:nowrap;
+    }
+    .tag.level-Critical{border-color:rgba(251,113,133,.65); color:#ffd0d7}
+    .tag.level-High{border-color:rgba(251,191,36,.65); color:#ffe9b0}
+    .tag.level-Medium{border-color:rgba(122,162,255,.65); color:#dbe6ff}
+    .tag.level-Low{border-color:rgba(74,222,128,.55); color:#d0ffe2}
+    .tag.level-Info{border-color:rgba(169,180,223,.55); color:rgba(169,180,223,.95)}
+    .body{
+      padding:16px;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+    }
+    .section{
+      background:rgba(18,28,58,.35);
+      border:1px solid rgba(34,48,91,.75);
+      border-radius:16px;
+      padding:14px;
+    }
+    .section h2{
+      margin:0 0 10px;
+      font-size:14px;
+      letter-spacing:.1px;
+    }
+    .ruleReason{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.65;
+      white-space:pre-wrap;
+    }
+    .infoSources{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.5;
+    }
+    .infoSourceRow{
+      margin:0;
+      padding:0;
+    }
+    .infoSourceRow + .infoSourceRow{
+      margin-top:2px;
+    }
+
+    /* --- summary_html styles (OpenAI output uses h4/p/ul/li/strong/code/br) --- */
+    .summary h4{
+      margin:14px 0 8px;
+      font-size:13px;
+      letter-spacing:.1px;
+      padding-left:10px;
+      border-left:3px solid rgba(122,162,255,.65);
+      color: rgba(231,236,255,.95);
+    }
+    .summary p{margin:8px 0; color:rgba(231,236,255,.92); line-height:1.75}
+    .summary ul, .summary ol{margin:8px 0 8px 1.2em; padding:0}
+    .summary li{margin:6px 0; color:rgba(231,236,255,.92); line-height:1.7}
+    .summary strong{
+      color:var(--text);
+      font-weight:750;
+      padding:0 .2em;
+      border-radius:8px;
+      background: linear-gradient(transparent 60%, rgba(122,162,255,.22) 60%);
+    }
+    .summary code{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 8px;
+      background: rgba(11,16,32,.6);
+      border: 1px solid rgba(34,48,91,.85);
+      color: rgba(231,236,255,.95);
+      white-space: nowrap;
+    }
+
+    .terms{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:10px;
+    }
+    @media (max-width: 860px){
+      .terms{grid-template-columns: 1fr}
+    }
+    .termCard{
+      background:rgba(11,16,32,.45);
+      border:1px solid rgba(34,48,91,.85);
+      border-radius:14px;
+      padding:12px;
+      min-width:0;
+    }
+    .termCard .term{
+      font-weight:700;
+      font-size:13px;
+      margin:0 0 8px;
+      word-break:break-word;
+    }
+    .termCard .exp{
+      margin:0;
+      color:rgba(231,236,255,.9);
+      line-height:1.7;
+      font-size:12px;
+      white-space:pre-wrap;
+    }
+    .subSectionTitle{
+      margin:16px 0 8px;
+      font-size:12px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:var(--muted);
+    }
+    .deepDive{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:10px;
+      margin-top:8px;
+    }
+    .deepDiveCard{
+      background:rgba(12,20,38,.6);
+    }
+
+    .footer{
+      margin-top:14px;
+      color:rgba(169,180,223,.75);
+      font-size:12px;
+      line-height:1.7;
+      text-align:center;
+    }
+    .btnRow{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px}
+    .linkbtn{
+      text-decoration:none;
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(34,48,91,.9);
+      background:rgba(11,16,32,.55);
+      font-size:12px;
+      color:var(--text);
+    }
+    .linkbtn:hover{border-color:rgba(122,162,255,.65)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="crumb">
+        <!-- ../index.html は通常 "../index.html" でOK -->
+        <a href="../index.html">← 日次トップへ戻る</a>
+      </div>
+      <div class="chip">entry_id <strong class="mono">729059b98bc55bcd</strong></div>
+    </div>
+
+    <div class="panel">
+      <div class="head">
+        <h1>Hackers Breach N-able Cloud Server, Disrupting Email Security Management Across 3 Regions</h1>
+
+        <div class="meta">
+          <span>🗞️ The Hacker News</span>
+          <span>🕒 2026-11-19T18:31:26+09:00</span>
+          <span>🔗 <a href="https://thehackernews.com/2026/11/n-able-confirms-hackers-accessed-cloud.html" target="_blank" rel="noopener noreferrer">原文を開く</a></span>
+        </div>
+
+        <div class="tags">
+          <span class="tag level-Medium">Impact: Medium</span>
+          <span class="tag">Intrusion</span>
+        </div>
+
+        <div class="btnRow">
+          <a class="linkbtn" href="https://thehackernews.com/2026/11/n-able-confirms-hackers-accessed-cloud.html" target="_blank" rel="noopener noreferrer">原文リンク</a>
+          <a class="linkbtn" href="https://www.notifyhub.site/digest/2026/11/20/">日次トップ</a>
+        </div>
+      </div>
+
+      <div class="body">
+        
+        <div class="section">
+          <h2>Impact判定理由</h2>
+          <div class="ruleReason">不正アクセスにより3地域の管理機能とAPIが停止し、顧客の設定変更や運用確認に広く影響する一方、メール処理停止や情報流出、顧客環境への侵害は未確認となる。
+報道記事に基づく情報であり、公的な悪用認定や詳細な一次情報は提示されていないため、影響範囲の不確実性を踏まえて評価を引き上げていない。</div>
+        </div>
+        <div class="section summary">
+          <h2>🧾 要約（ChatGPT / gpt-6-luna）</h2>
+          <!-- 注意：summary_html は「許可タグのみ」にサーバ側でバリデーションしてから埋め込む想定 -->
+          <h4>概要</h4><p>N-ableは、Mail AssureおよびSpam Experts Hosted Cloudのサーバー1台に、何者かが不正にアクセスしたと公表した。影響を抑えるため、3地域で管理インターフェースとAPIを無効化したとされ、顧客側ではメールセキュリティ設定の変更や運用状況の確認が滞る可能性がある。これは管理機能の停止を示す情報であり、メールの配送や迷惑メール判定そのものが停止したかどうかは確認できないため、管理面とデータ処理面を分けて影響を評価する必要がある。クラウド事業者の管理基盤に複数地域で影響が及ぶ場合、単一組織の障害にとどまらず、同じサービスを利用する顧客の変更作業や障害対応が同時に制約されるおそれがある。一方、侵入経路、アクセスされた情報、顧客環境への波及、影響期間、現在の復旧状況は、提示された情報からは判明しない。N-ableは脅威を抑える措置とサービス強化を進め、調査を継続中としているため、利用組織は管理画面の可用性だけでなくメール防御の実効性を別経路で確認し、追加情報が出るまで設定変更やログ取得の代替手段を確保する必要がある。</p>
+        </div>
+
+        <div class="section">
+          <h2>📌 キーワード解説</h2>
+          <div class="terms">
+            <div class="termCard">
+  <div class="term">制御プレーン（Control Plane）</div>
+  <p class="exp">設定や管理操作を担い、実際のメール処理を担うデータ面とは役割が異なる。管理機能の停止だけで配送停止と判断しないための区別となる。</p>
+</div>
+<div class="termCard">
+  <div class="term">管理API（管理用インターフェース）</div>
+  <p class="exp">システム設定や状態確認を自動化して行う窓口となる。停止時はメール処理が続いても、変更や監視の自動化が止まる可能性がある。</p>
+</div>
+          </div>
+          <h3 class="subSectionTitle">深掘り解説</h3>
+          <div class="deepDive">
+            <div class="termCard deepDiveCard">
+  <div class="term">管理機能の障害とメール防御の停止を切り分ける</div>
+  <p class="exp">クラウド型メール防御では、管理画面やAPIを通じて設定を変える機能と、受信メールを検査して配送を制御する機能が別の経路で動く場合がある。管理機能への侵入を受けて画面やAPIが止まっても、すでに適用済みの判定ルールが処理系で動き続けることはあり得る。反対に、管理画面が表示されていても、判定処理やメール経路が正常とは限らない。
+
+例えば、迷惑メール対策サービスの管理APIが停止した場合、まずメール配送ログやメールゲートウェイ側の記録で、受信・判定・隔離が継続しているかを確認する。次に、設定変更、隔離解除、利用者への通知など、管理機能に依存する業務を洗い出し、停止中の代替手順を決める。事業者の状態ページだけに依存せず、自組織のメール経路や利用者報告とも突き合わせることが重要となる。
+
+障害や侵害の初動では「画面が使えるか」ではなく、管理操作、メール処理、監査記録の三つを分けて確認すると、影響範囲を過大にも過小にも見積もりにくくなる。特に設定変更ができない状況では、復旧後の差分確認に備えて、手元に残る構成情報や変更履歴を保全する必要がある。</p>
+</div>
+          </div>
+        </div>
+
+        
+
+        <div class="section">
+          <h2>🕘 生成情報</h2>
+          <div class="ruleReason">
+対象期間：2026-11-19T06:00:00+09:00 〜 2026-11-20T06:00:00+09:00
+生成時刻：2026-11-20T06:23:29.054801+09:00
+免責：本ページは自動生成です。最終判断は原文の確認を推奨します。
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      notifyhub.site
+    </div>
+  </div>
+</body>
+</html>
