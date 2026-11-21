@@ -1,0 +1,185 @@
+{
+  "date": "2026-11-22",
+  "window": {
+    "from": "2026-11-21T06:00:00+09:00",
+    "to": "2026-11-22T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 6
+  },
+  "generated_at_jst": "2026-11-22T06:14:48.146751+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "Cairn自律AIエージェントがMONAI Labelのゼロデイを発見・悪用",
+      "source_name": "AWS Security Blog",
+      "published_at": "2026-11-20T17:30:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Zero-day",
+      "summary_preview": "概要Amazon Threat Intelligenceが、中国系とみられる脅威アクターの公開Cairnサーバを調査した結果を公表した。オペレータは「シェルアクセスを得よ」という単純な目標だけを与え、自律AIエージェントがMONAI Labelのパス・トラバーサルゼロデイを約11分で発見・悪用し、大学サーバでrootシェルを確立した。キャンペーンは東アジア…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://aws.amazon.com/blogs/security/chinese-nexus-actors-cairn-ai-agents-found-a-zero-day-on-their-own/",
+      "selection_reason": "対象期間内にAWS公式が詳細を公開した具体的なエージェント型攻撃事例で、ゼロデイ発見からroot取得までの時間軸が明確。抽象的な脅威予測や同種のARTEX警告より新規性と実務影響が大きく、サイバー分野の多様性を確保できる。",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "Chinese-nexus actor’s Cairn AI agents found a zero-day on their own",
+          "url": "https://aws.amazon.com/blogs/security/chinese-nexus-actors-cairn-ai-agents-found-a-zero-day-on-their-own/",
+          "source_type": "official"
+        },
+        {
+          "title": "Amazon says attackers' AI agents found and exploited a zero-day in 11 minutes",
+          "url": "https://venturebeat.com/security/amazon-says-attackers-ai-agents-found-and-exploited-a-zero-day-in-11-minutes-but-no-patched-release-is-available",
+          "source_type": "news"
+        },
+        {
+          "title": "Amazon says a suspected China-nexus actor used the Cairn AI agent platform",
+          "url": "https://x.com/Ern97a/status/2124153810616459325",
+          "source_type": "x"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "Anthropic研究者、Claudeと共にリーマン予想の証明を主張",
+      "source_name": "SiliconANGLE",
+      "published_at": "2026-11-20T21:28:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Other",
+      "summary_preview": "概要Anthropicの数学者Levent Alpögeが、Claudeと共同でリーマン予想および一般化版の証明を得たとする声明を個人サイトで公開した。証明本体は未公開で、検証用にLean形式の巨大コード（数百万行規模）を分割アーカイブとして置いている。タイミングは同社の記録的IPO直後で、本人は「タイミングは最悪だが意図的ではない」と説明し、CEOへの事…",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://siliconangle.com/2026/11/20/anthropic-researcher-claims-to-have-proven-riemann-hypothesis-using-claude/",
+      "selection_reason": "IPO直後の同日帯に出た数学分野の具体的なモデル活用主張で、製品・研究の進展そのものを扱う。汎用トレンド予測や単なる資金調達話よりAI能力の実証性が高く、他カテゴリと重複しにくい。",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "Anthropic researcher claims to have proven Riemann hypothesis using Claude",
+          "url": "https://siliconangle.com/2026/11/20/anthropic-researcher-claims-to-have-proven-riemann-hypothesis-using-claude/",
+          "source_type": "news"
+        },
+        {
+          "title": "Anthropic mathematician says he and Claude proved the Riemann hypothesis",
+          "url": "https://thenextweb.com/news/anthropic-alpoge-claude-riemann-hypothesis-proof-lean",
+          "source_type": "news"
+        },
+        {
+          "title": "The Daily · Saturday 21 November 2026 — the day in AI",
+          "url": "https://ai.info/daily/2026-11-21",
+          "source_type": "web"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "Signal、OS組み込みAIエージェント対策でスクリーンショット制限",
+      "source_name": "The Verge",
+      "published_at": "2026-11-20T12:30:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Advisory",
+      "summary_preview": "概要SignalがiOS 27およびAndroid向けに、スクリーンショット制限を既定で有効化し、GeminiやSiriなどのOS組み込みAIエージェントが画面上のチャットを読み取るのを防ぐ措置を発表した。Meredith Whittaker会長はエージェント統合を「プライバシーに敵対的」と位置づけ、アプリ層の保証を崩す存在的脅威だと述べた。ユーザーは設定…",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://www.theverge.com/ai-artificial-intelligence/1038390/signal-blocking-ai-agent-screenshots-mobile-app",
+      "selection_reason": "モバイルOSのエージェント機能とアプリ層プライバシーの衝突というIT基盤トレンドを直接扱い、クラウドや半導体予測ではなく具体的な製品・UX変更。サイバー侵害そのものではなくデバイス・OS・SaaS設計の意思決定に寄与する。",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "Signal is blocking Gemini and Siri AI from reading your screen",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1038390/signal-blocking-ai-agent-screenshots-mobile-app",
+          "source_type": "news"
+        },
+        {
+          "title": "EXCLUSIVE: Signal restricts screenshots to block AI agents from reading messages",
+          "url": "https://www.reuters.com/legal/litigation/signal-restricts-screenshots-block-ai-agents-reading-messages-2026-11-20/",
+          "source_type": "news"
+        },
+        {
+          "title": "Signal Calls OS-Level AI an 'Existential Threat' and Blocks Screenshots",
+          "url": "https://decrypt.co/383750/signal-os-level-ai-existential-threat-blocks-screenshots",
+          "source_type": "web"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "36654661f0cd7b87",
+      "title": "A Single Malicious Webpage Let Researchers Hijack Meta Muse and Access Private Chats",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-21T11:53:07+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要研究者は、悪意あるウェブページを起点にMeta Museを乗っ取り、利用者の承認画面を経ずに、アシスタント内の会話履歴や保存された記憶情報を取り出せることを実験環境で示した。攻撃が成立すれば、ウェブ閲覧をきっかけに、利用者がアシスタントへ預けた情報が本人の認識しないまま外部へ流出するおそれがある。さらに、接続済みアカウントの認証情報へ到達する攻撃にも拡…",
+      "article_path": "articles/36654661f0cd7b87.html",
+      "original_url": "https://thehackernews.com/2026/11/a-single-malicious-webpage-let.html"
+    },
+    {
+      "entry_id": "1ca5cd3c75ea6393",
+      "title": "GnuPG Warns Critical GPGME Flaw Could Expose App Data via Malicious OpenPGP Keys",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-21T11:05:53+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要GnuPGプロジェクトは、OpenPGP鍵に含まれる異常に長いユーザーIDを処理した際、GPGMEでメモリ上の問題が発生し、利用アプリケーションのデータが漏えいする可能性があると警告した。対象はCVE-2026-129975で、GPGME 2.3.0より前の版を組み込むソフトウェアに影響し、修正版が公開されている。攻撃には、細工した鍵を対象アプリケーシ…",
+      "article_path": "articles/1ca5cd3c75ea6393.html",
+      "original_url": "https://thehackernews.com/2026/11/gnupg-warns-critical-gpgme-flaw-could.html"
+    },
+    {
+      "entry_id": "2151c7c2435107d5",
+      "title": "Attackers' AI Agents Found a Zero-Day in Medical-Imaging Software and Gained Root Access",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-21T11:03:17+00:00",
+      "impact_level": "High",
+      "threat_type": "Zero-day",
+      "summary_preview": "概要Amazon Threat Intelligenceの報告をThe Hacker Newsが伝えたところ、MONAI Labelの未知の脆弱性を悪用し、大学のサーバーでroot権限を得た事例が確認された。対象は医用画像のラベル付けに使われるオープンソースのサーバーで、MONAI Label 0.8.5以前の既定構成が影響を受ける。攻撃者はアカウントなし…",
+      "article_path": "articles/2151c7c2435107d5.html",
+      "original_url": "https://thehackernews.com/2026/11/attackers-ai-agents-found-zero-day-in.html"
+    },
+    {
+      "entry_id": "04388a5dc44be3f9",
+      "title": "Signal Blocks AI Agents From Reading Private Chats via Screenshots on Android and iOS",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-21T08:49:20+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要Signalは、AndroidおよびiOS端末上でAIエージェントが非公開チャットを読み取ることを抑えるため、既定でスクリーンショットを制限する機能を導入すると発表した。対象はiOS 27に組み込まれるエージェント機能と、SignalがAIアシスタントによる読み取りを検知できる一部のAndroid環境であり、すべての端末や読み取り経路を一律に遮断するも…",
+      "article_path": "articles/04388a5dc44be3f9.html",
+      "original_url": "https://thehackernews.com/2026/11/signal-blocks-ai-agents-from-reading.html"
+    },
+    {
+      "entry_id": "59185d8f05f1d4e7",
+      "title": "Hackers Exploit Critical VMware, Cisco, and Apache Flaws as Espionage Attacks Emerge",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-21T08:49:13+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要記事は、CISAがApache Roller、Cisco Expressway、SAP NetWeaver、Broadcom VMware vCenterに関わる4件の脆弱性をKEVに追加し、悪用の証拠を示したと伝えている。提示された情報で確認できるのは、CVE-2026-129448が信頼できないデータのデシリアライズに関する脆弱性で、CVSS 9.…",
+      "article_path": "articles/59185d8f05f1d4e7.html",
+      "original_url": "https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html"
+    },
+    {
+      "entry_id": "3acd356a47ed78ec",
+      "title": "Dialing for Data: Inside the Com’s High-Profile Heists",
+      "source_name": "Unit 42",
+      "category": "reporting",
+      "published_at": "2026-11-20T22:00:25+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要Unit 42は、Com系の攻撃者が電話を使った音声フィッシングを起点に、医療・金融組織を狙い、クラウド上のデータ窃取と恐喝に至る活動を分析した。攻撃者は利用者や組織の窓口を電話で誘導し、組織のクラウド環境へのアクセスを足掛かりに機密情報を持ち出す構図が示されているが、具体的な認証突破手順や侵入後の操作は入力要約だけでは確認できない。被害は単一端末にと…",
+      "article_path": "articles/3acd356a47ed78ec.html",
+      "original_url": "https://unit42.paloaltonetworks.com/com-affiliate-vishing-attacks/"
+    }
+  ]
+}
