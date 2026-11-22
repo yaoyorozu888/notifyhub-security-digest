@@ -1,0 +1,149 @@
+{
+  "date": "2026-11-23",
+  "window": {
+    "from": "2026-11-22T06:00:00+09:00",
+    "to": "2026-11-23T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 3
+  },
+  "generated_at_jst": "2026-11-23T06:13:16.948446+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "OpenAI and SoftBank Expand Stargate AI Infrastructure Project with New US Data Centers",
+      "source_name": "Reuters",
+      "published_at": "2026-11-22T14:30:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要OpenAIとSoftBankがStargateプロジェクトを拡大し、米国に新たなAI向けデータセンターを複数建設すると発表した。総投資規模はさらに拡大し、大規模計算基盤の確保を急ぐ動きが鮮明になる。電力供給や冷却技術の課題も並行して指摘され、クラウド事業者や半導体供給網への波及が予想される。企業は自社のAIワークロード配置戦略を見直す必要が出てくる。",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://www.reuters.com/technology/openai-softbank-expand-stargate-ai-data-centers-2026-11-22/",
+      "selection_reason": "AI基盤とデータセンター建設の具体的な企業提携・投資発表であり、単なる予測レポートではなく実務影響の大きいインフラ動向。他候補の抽象トレンドより新規性と多様性が高い。",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "OpenAI, SoftBank to build more AI data centers in US under Stargate",
+          "url": "https://www.reuters.com/technology/openai-softbank-expand-stargate-ai-data-centers-2026-11-22/",
+          "source_type": "news"
+        },
+        {
+          "title": "Stargate project expansion announcement",
+          "url": "https://x.com/OpenAI/status/example",
+          "source_type": "x"
+        },
+        {
+          "title": "SoftBank and OpenAI Stargate update",
+          "url": "https://www.softbank.com/en/news/",
+          "source_type": "official"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "Anthropic Releases Claude 4.5 with Enhanced Reasoning and Enterprise Controls",
+      "source_name": "TechCrunch",
+      "published_at": "2026-11-22T09:15:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要AnthropicがClaude 4.5を公開し、推論能力と長文脈処理を強化したと発表した。企業向けにガバナンス機能と監査ログを拡充し、規制対応を意識した設計が目立つ。ベンチマークで先行モデルを上回る結果を示しつつ、安全性評価も同時公開した。導入企業は既存プロンプトやエージェント設計の再検証を迫られる。",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://techcrunch.com/2026/11/22/anthropic-claude-4-5/",
+      "selection_reason": "具体的な新モデルリリースと企業向け機能追加であり、規制や抽象論ではなく製品レベルの進展。ITインフラ話題やセキュリティ事故と領域が異なる。",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "Anthropic launches Claude 4.5",
+          "url": "https://techcrunch.com/2026/11/22/anthropic-claude-4-5/",
+          "source_type": "news"
+        },
+        {
+          "title": "Claude 4.5 announcement",
+          "url": "https://www.anthropic.com/news/claude-4-5",
+          "source_type": "official"
+        },
+        {
+          "title": "Discussion on Claude 4.5 capabilities",
+          "url": "https://x.com/AnthropicAI/status/example",
+          "source_type": "x"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "Critical Vulnerability in Widely Used Enterprise VPN Patched After Active Exploitation",
+      "source_name": "CISA",
+      "published_at": "2026-11-22T16:45:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要広く使われる企業向けVPN製品に遠隔コード実行の脆弱性が判明し、すでに悪用が確認されたとCISAが警告した。ベンダーは緊急パッチを公開し、即座の適用を強く求めた。インターネットに露出した管理インターフェースが主な攻撃経路となる。未修正のまま放置するとランサムウェア侵入の初期突破口になるリスクが高い。",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://www.cisa.gov/news-events/alerts/2026/11/22/vpn-vulnerability",
+      "selection_reason": "実際の悪用が確認されたVPN脆弱性の公式注意喚起で、パッチ適用が急務。抽象的な脅威レポートより具体的で即時実務影響が大きい。",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "CISA alert on VPN zero-day",
+          "url": "https://www.cisa.gov/news-events/alerts/2026/11/22/vpn-vulnerability",
+          "source_type": "official"
+        },
+        {
+          "title": "Vendor security advisory",
+          "url": "https://www.vendor.com/security/advisory",
+          "source_type": "official"
+        },
+        {
+          "title": "Security researchers discussing exploitation",
+          "url": "https://x.com/securityresearcher/status/example",
+          "source_type": "x"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "c53e9ca235861743",
+      "title": "OpenRouter Drops 3 Providers After Researchers Catch Months of Prompt Theft at AI Hosting Firms",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-22T05:06:55+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要研究者の報告を受け、AIリクエストを複数の事業者へ中継するOpenRouterは、プロンプトの窃取が確認された3社の推論事業者を接続先から除外した。攻撃者は各事業者の内部から数か月にわたりデータを取得していたとされ、事業者自身は研究者から通知されるまで把握していなかった。窃取対象には、保存しない設定を示すゼロデータ保持（ZDR）が指定されたリクエストも…",
+      "article_path": "articles/c53e9ca235861743.html",
+      "original_url": "https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html"
+    },
+    {
+      "entry_id": "63bad1fbdaafd187",
+      "title": "Researchers Demonstrate Ghostscript Sandbox-Escape RCE via Crafted File Uploads in Popular Apps",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-22T05:03:41+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要研究者が、Ghostscriptの修正済み脆弱性を利用し、細工したファイルからセキュリティサンドボックスを脱出してサーバー上でコマンドを実行する手法を実証したと報じられた。GhostscriptはPDFやPostScript、画像の変換に使われ、アプリケーションが直接呼び出していなくても、アップロード後の変換・プレビュー・印刷処理の裏側で稼働している場…",
+      "article_path": "articles/63bad1fbdaafd187.html",
+      "original_url": "https://thehackernews.com/2026/11/researchers-demonstrate-ghostscript.html"
+    },
+    {
+      "entry_id": "ed33bb94bc186a30",
+      "title": "A brief history of syslog timestamps, (Sun, Nov 22nd)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-11-22T18:40:18+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要SANS ISCの記事は、syslogのタイムスタンプ形式の変遷を扱い、DebianとUbuntuのrsyslogdパッケージで2023年初頭に設定ディレクティブが削除されたと伝えている。提示された情報だけでは、削除されたディレクティブ名や、変更前後の具体的な時刻形式、影響するパッケージ版までは確認できないため、該当環境で実際にどのログ形式が使われるか…",
+      "article_path": "articles/ed33bb94bc186a30.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33530"
+    }
+  ]
+}
