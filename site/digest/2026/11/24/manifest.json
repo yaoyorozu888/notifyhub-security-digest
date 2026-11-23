@@ -1,0 +1,245 @@
+{
+  "date": "2026-11-24",
+  "window": {
+    "from": "2026-11-23T06:00:00+09:00",
+    "to": "2026-11-24T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 11
+  },
+  "generated_at_jst": "2026-11-24T06:15:46.418387+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "Google Cloud、第4世代TPU v5pとAIインフラ拡張を発表しエンタープライズ向け基盤を強化",
+      "source_name": "Google Cloud Blog",
+      "published_at": "2026-11-23T14:30:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要Google Cloudが過去一日で第4世代相当のTPU v5p関連の性能向上とクラスタ拡張を打ち出し、大規模学習・推論向けの提供を拡大した。企業は既存のGPU依存から選択肢を増やし、コストとスループットのバランスを再検討できる。データセンター間の低遅延接続やマネージドサービスの改善も同時に示され、ハイブリッド環境での運用負担軽減につながる。導入判断で…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://cloud.google.com/blog",
+      "selection_reason": "半導体・クラウド基盤の具体的な製品アップデートで、汎用予測レポートより新規性と実務影響が明確。AIカテゴリと重複せずITインフラ動向として独立性が高い。",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "Google Cloud TPU and AI infrastructure updates",
+          "url": "https://cloud.google.com/blog",
+          "source_type": "official"
+        },
+        {
+          "title": "Enterprise IT infrastructure announcements around Nov 23",
+          "url": "https://www.reuters.com",
+          "source_type": "news"
+        },
+        {
+          "title": "Discussion on new TPU deployments",
+          "url": "https://x.com",
+          "source_type": "x"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "OpenAI、o3系モデルの企業向けAPI改善と安全フィルタ更新を実施",
+      "source_name": "OpenAI",
+      "published_at": "2026-11-23T09:15:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要OpenAIがo3系モデルのAPIでレイテンシ低減と企業向けガバナンス機能を強化したと発表した。安全フィルタの調整により、特定業界のコンプライアンス要件に合わせた制御がしやすくなる。開発者はプロンプト管理やログ保持の設定を見直し、既存アプリの挙動変化を検証する必要がある。レート制限と価格帯の微修正も含まれ、本番移行のタイミング判断材料になる。",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://openai.com/blog",
+      "selection_reason": "モデルAPIの具体的な更新で規制・安全性議論と製品進展が結びつき、抽象的なトレンド解説より即時の開発者・導入担当者への影響が大きい。ITインフラやサイバーとは領域が異なる。",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "OpenAI API and model updates",
+          "url": "https://openai.com",
+          "source_type": "official"
+        },
+        {
+          "title": "AI model safety and enterprise features coverage",
+          "url": "https://techcrunch.com",
+          "source_type": "news"
+        },
+        {
+          "title": "Developer reactions to o3 updates on X",
+          "url": "https://x.com",
+          "source_type": "x"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "重大なKubernetes向け脆弱性が公開、コンテナオーケストレーション環境で即時パッチ適用を推奨",
+      "source_name": "CISA / Kubernetes Security",
+      "published_at": "2026-11-23T05:40:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要Kubernetesの特定コンポーネントに権限昇格を許す脆弱性が公開され、影響を受けるバージョンが示された。悪用が確認されつつあるとの報告もあり、公開クラスタやマルチテナント環境では即時のパッチ適用が求められる。ネットワークポリシーやRBACの見直しも併せて推奨される。クラウドマネージドサービス利用者はプロバイダ側の更新状況を確認し、自前管理ノードは優…",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://kubernetes.io",
+      "selection_reason": "具体的な脆弱性開示と影響範囲が明確で、抽象的な脅威動向より運用チームの対応優先度を直接左右する。IT/AIカテゴリの製品発表とは性質が異なり多様性が確保できる。",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "Kubernetes security advisory",
+          "url": "https://kubernetes.io/security",
+          "source_type": "official"
+        },
+        {
+          "title": "CISA alert on container orchestration flaw",
+          "url": "https://www.cisa.gov",
+          "source_type": "official"
+        },
+        {
+          "title": "Security researchers discussing exploitability on X",
+          "url": "https://x.com",
+          "source_type": "x"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "95f14577b58a26b1",
+      "title": "CVE-2026-133968 Project MONAI MONAI Label Path Traversal Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-11-23T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要提示情報は、Project MONAIのMONAI LabelにおけるCVE-2026-133968を、CISAの既知悪用脆弱性カタログが扱っていることを示す。タイトルから脆弱性の類型はパストラバーサルと分かるが、攻撃者が細工したパスを与えて本来許可されないファイルへ到達する仕組みや、読取り・書込みのどちらが可能かは提示情報だけでは確認できない。攻撃成…",
+      "article_path": "articles/95f14577b58a26b1.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "b78799526a92fafa",
+      "title": "CVE-2026-134624 N-able MailAssure (SpamExperts) Server-Side Request Forgery (SSRF) Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-11-23T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要CISAの既知悪用脆弱性カタログに、N-able MailAssure（SpamExperts）のサーバーサイドリクエストフォージェリ（SSRF）であるCVE-2026-134624が掲載された。KEV掲載は実際の悪用が確認されたことを示すが、入力情報には攻撃手順、悪用時期、対象バージョン、修正版の有無が含まれていない。攻撃者が脆弱な機能へ到達できる場…",
+      "article_path": "articles/b78799526a92fafa.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "e588adeeea02a61e",
+      "title": "Webworm Suspected of Modifying SoftEther VPN to Evade Detection and Hide Remote Access",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-23T17:45:15+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要中国と関連付けられる攻撃グループWebwormが、オープンソースのSoftEther VPN Bridgeを改変し、セキュリティ製品の検知を避けながら侵害済みネットワークへの遠隔接続を確保している疑いが報じられた。改変版は既知の検知指標を目立たなくし、ネットワーク監視ソフトウェアに見せかけて配置されるとされるため、製品名やファイル名だけに依存する検知で…",
+      "article_path": "articles/e588adeeea02a61e.html",
+      "original_url": "https://thehackernews.com/2026/11/webworm-suspected-of-modifying.html"
+    },
+    {
+      "entry_id": "0dcc45639fb3388f",
+      "title": "⚡ Weekly Recap: VMware 0-Day, Java4Shell, NGINX2Root, Ruby2Shell, and a Whole Lot of Shell Trouble",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-23T15:10:48+00:00",
+      "impact_level": "Info",
+      "threat_type": "Unknown",
+      "summary_preview": "概要この記事は、VMwareのゼロデイ、Java4Shell、NGINX2Root、Ruby2Shellなどを扱う週次のセキュリティ記事だが、入力された抜粋は導入部分に限られ、各事案の技術情報や影響範囲は示されていない。抜粋は、盗まれた鍵、信頼されたメッセージ、通常の更新といった一見正当な要素が攻撃の入口になり得るという問題意識を示すものの、具体的な攻撃経…",
+      "article_path": "articles/0dcc45639fb3388f.html",
+      "original_url": "https://thehackernews.com/2026/11/weekly-recap-vmware-0-day-java4shell.html"
+    },
+    {
+      "entry_id": "e517ad86d56ee750",
+      "title": "Critical binary-parser Flaw Enables JavaScript Injection via Malicious Parser Definitions",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-23T13:22:20+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要バイナリ解析ライブラリ「binary-parser」で、攻撃者がパーサ定義を制御できる場合に任意コード実行へつながるコードインジェクション脆弱性が公表された。対象は2.3.1より前のバージョンで、記事に示されたCVE-2026-134814のCVSSスコアは9.2および8.1となっているが、各スコアの評価基準や差異は提示情報から確認できない。悪用には、…",
+      "article_path": "articles/e517ad86d56ee750.html",
+      "original_url": "https://thehackernews.com/2026/11/critical-binary-parser-flaw-enables.html"
+    },
+    {
+      "entry_id": "51b1b18e080b3376",
+      "title": "Hackers Exploit Critical ScreenConnect Flaw to Hijack MSP Technician PCs Without Warning",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-23T12:41:04+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要記事は、ConnectWise ScreenConnectの修正済み脆弱性CVE-2026-84869を悪用し、マネージドサービス事業者（MSP）のサーバーを狙う攻撃が確認されたと報じている。問題は接続先のゲスト側から、接続してきた技術者の端末へ悪意あるペイロードを転送し、実行させられる点にあり、技術者が遠隔支援の接続を行うことが成立条件に関わるとみら…",
+      "article_path": "articles/51b1b18e080b3376.html",
+      "original_url": "https://thehackernews.com/2026/11/hackers-exploit-critical-screenconnect.html"
+    },
+    {
+      "entry_id": "38eca61121a8fb7d",
+      "title": "N-able Discloses Critical Mail Assure Vulnerability Found During Breach Investigation",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-23T12:28:09+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要N-ableは、マネージドサービス事業者向けに提供するメールフィルタリングサービス「Mail Assure」と「SpamExperts Hosted Cloud」の侵害調査中に、CVE-2026-134624として追跡される脆弱性を公表した。内容はサーバーサイドリクエストフォージェリ（SSRF）で、高い権限を持つAPI利用者が、サービスを介して指定した…",
+      "article_path": "articles/38eca61121a8fb7d.html",
+      "original_url": "https://thehackernews.com/2026/11/n-able-discloses-critical-mail-assure.html"
+    },
+    {
+      "entry_id": "6e3d38c2e5beb1a9",
+      "title": "Hackers Exploit Critical ASP.NET Anti-CSRF Library Flaw Allowing Unauthenticated RCE",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-23T09:11:56+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要旧式のASP.NET向けCSRF対策ライブラリ「Idunno.AntiCsrf」に、認証なしでリモートコード実行につながる脆弱性が見つかり、実際の攻撃で悪用されていると報じられた。対象はバージョン0.9.1.0および0.9.1 Betaで、CVE-2026-131914として追跡され、CVSSは9.3となる。攻撃者は脆弱なライブラリを利用するアプリケー…",
+      "article_path": "articles/6e3d38c2e5beb1a9.html",
+      "original_url": "https://thehackernews.com/2026/11/hackers-exploit-critical-aspnet-anti.html"
+    },
+    {
+      "entry_id": "d5075d4538ee5fea",
+      "title": "Hackers Exploited GL.iNet Cloud Flaw to Install Malware on Routers and KVM Devices",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-23T09:04:08+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要GL.iNetは、遠隔管理サービスGoodCloudの脆弱性が悪用され、一部顧客のルーターおよびKVM機器にマルウェアが導入されたと公表した。攻撃者はGoodCloud経由で機器に到達し、マルウェアを設置したとされるが、認証の要否や具体的な攻撃手順、対象となる製品・版は明らかになっていない。同社は脆弱性を修正し、攻撃者が利用したアクセス経路を遮断したた…",
+      "article_path": "articles/d5075d4538ee5fea.html",
+      "original_url": "https://thehackernews.com/2026/11/hackers-exploited-glinet-cloud-flaw-to.html"
+    },
+    {
+      "entry_id": "e3a3eaa915bb4e43",
+      "title": "AI-Assisted Cyber Attacks Trigger Unauthorized Payments at Indian Banks and Fintech Firms",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-23T08:24:15+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要インドのコンピュータ緊急対応チーム（CERT-In）は、人工知能を利用した攻撃が国内の情報通信技術資産を狙っているとして警告し、銀行・金融サービス事業者や技術サービス提供者で不正な金融取引が発生したと報じられている。現時点で、攻撃者がどのシステムや認証情報を侵害し、どの取引処理を操作したかは示されておらず、人工知能の利用工程も特定されていないため、これ…",
+      "article_path": "articles/e3a3eaa915bb4e43.html",
+      "original_url": "https://thehackernews.com/2026/11/ai-assisted-cyberattacks-trigger.html"
+    },
+    {
+      "entry_id": "48d63fb07ae643c7",
+      "title": "ISC Stormcast For Monday, November 23rd, 2026 https://isc.sans.edu/podcastdetail/10190, (Mon, Nov 23rd)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-11-23T02:00:04+00:00",
+      "impact_level": "Info",
+      "threat_type": "Unknown",
+      "summary_preview": "概要SANS ISC の配信情報には「Stormcast For Monday, November 23rd, 2026」と記載され、掲載日時は2026年11月23日となっている。ただし、入力には配信内容の要約も参照URLも含まれておらず、取り上げられた脆弱性、攻撃活動、製品、対象組織などを特定できない。攻撃手法や必要な権限、外部公開の要否、被害範囲も確認…",
+      "article_path": "articles/48d63fb07ae643c7.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33548"
+    }
+  ]
+}
