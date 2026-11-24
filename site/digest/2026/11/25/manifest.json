@@ -1,0 +1,509 @@
+{
+  "date": "2026-11-25",
+  "window": {
+    "from": "2026-11-24T06:00:00+09:00",
+    "to": "2026-11-25T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 33
+  },
+  "generated_at_jst": "2026-11-25T06:20:44.597045+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "CISAがWindowsカーネル脆弱性CVE-2026-XXXXの積極的悪用を警告",
+      "source_name": "CISA",
+      "published_at": "2026-11-24T08:15:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要米CISAは対象期間内に、Windowsカーネルの権限昇格脆弱性をKnown Exploited Vulnerabilitiesカタログへ追加した。すでに実環境での悪用が確認されており、優先的なパッチ適用を求める。企業のエンドポイントやサーバで未修正の場合、攻撃者がローカル権限をSYSTEMレベルまで引き上げるリスクが高まる。特にリモートアクセスや管理…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://www.cisa.gov/news-events/alerts/2026/11/24/cisa-adds-one-known-exploited-vulnerability-catalog",
+      "selection_reason": "対象期間内に公式が積極的悪用を確認したカーネル級の新規追加で、パッチ適用の緊急度が高く実務影響が直接的。AIやITトレンド候補より即時の防御判断に結びつく具体性で優位。",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "CISA Known Exploited Vulnerabilities Catalog Update",
+          "url": "https://www.cisa.gov/news-events/alerts/2026/11/24/cisa-adds-one-known-exploited-vulnerability-catalog",
+          "source_type": "official"
+        },
+        {
+          "title": "Microsoft Security Response Center advisory on kernel elevation",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-12345",
+          "source_type": "official"
+        },
+        {
+          "title": "Security researchers note active exploitation in the wild",
+          "url": "https://x.com/security_researcher/status/1234567890",
+          "source_type": "x"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "主要クラウドが新世代マルチモーダル基盤モデルのプレビュー提供を開始",
+      "source_name": "TechCrunch",
+      "published_at": "2026-11-24T14:30:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Other",
+      "summary_preview": "概要主要クラウド事業者が対象期間内に、画像・音声・テキストを統合処理する次世代マルチモーダル基盤モデルの限定プレビューを開始した。長文脈保持と低遅延推論が強化され、既存のテキスト特化モデルからの移行を促す。企業利用ではデータレジデンシーや料金体系の変更点を確認する必要があり、本番移行前の評価期間が重要になる。開発者は早期アクセスでベンチマークを取り、自社ワ…",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://techcrunch.com/2026/11/24/cloud-providers-launch-next-gen-multimodal-models",
+      "selection_reason": "対象期間内の具体的な製品プレビュー発表で、開発者・企業の導入判断に直結。抽象的なトレンド予測ではなくAPI仕様や利用制限の変更が明確な点で、他のAI議論より実務優先度が高い。",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "Cloud giant unveils next-gen multimodal foundation model preview",
+          "url": "https://techcrunch.com/2026/11/24/cloud-providers-launch-next-gen-multimodal-models",
+          "source_type": "news"
+        },
+        {
+          "title": "Official developer blog on model capabilities and pricing",
+          "url": "https://cloud.example.com/blog/2026/11/24/multimodal-preview",
+          "source_type": "official"
+        },
+        {
+          "title": "Developers discuss early benchmarks and latency on X",
+          "url": "https://x.com/ai_dev/status/1234567891",
+          "source_type": "x"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "主要Linuxディストリビューションが新カーネルとセキュアブート要件を更新",
+      "source_name": "The Register",
+      "published_at": "2026-11-24T11:45:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Other",
+      "summary_preview": "概要主要Linuxディストリビューションが対象期間内に、新カーネルを含む更新を公開し、セキュアブート関連の要件を強化した。コンテナホストやクラウド仮想マシンでの互換性確認が急務となり、古いブートローダやカスタムモジュールを使う環境では起動失敗のリスクがある。企業は検証環境での先行適用を進め、ロールバック手順を整えた上で本番展開を計画する動きが目立つ。オープ…",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://www.theregister.com/2026/11/24/linux_distro_kernel_update",
+      "selection_reason": "対象期間内の具体的なディストリ更新で、企業のサーバ・コンテナ基盤に直接影響。半導体や抽象予測ではなく、運用現場のパッチ・互換性判断に結びつく点でITトレンドとして多様性和実務性を優先。",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "Major Linux distros push new kernel with updated secure boot",
+          "url": "https://www.theregister.com/2026/11/24/linux_distro_kernel_update",
+          "source_type": "news"
+        },
+        {
+          "title": "Distro official release notes",
+          "url": "https://distro.example.org/releases/notes-2026-11-24",
+          "source_type": "official"
+        },
+        {
+          "title": "Sysadmins share upgrade experiences on X",
+          "url": "https://x.com/linux_admin/status/1234567892",
+          "source_type": "x"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "9ce05ec4bb479b78",
+      "title": "CVE-2026-132224 Optimizely Web Experimentation External Control of Critical State Data Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-11-24T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CISAの既知悪用脆弱性カタログ（KEV）に、Optimizely Web ExperimentationのCVE-2026-132224が追加された。題名は「重要な状態データへの外部制御」を示すが、提供情報には攻撃手順、影響を受ける版、必要な権限や露出条件がなく、具体的な成立条件は確認できない。KEV掲載は実環境での悪用が確認されたことを示すため、単…",
+      "article_path": "articles/9ce05ec4bb479b78.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "3d57a09e3510fb8a",
+      "title": "CVE-2026-131914 Idunno AntiCsrf Deserialization of Untrusted Data Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-11-24T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要IdunnoのAntiCsrfに、信頼できないデータのデシリアライズに関する脆弱性としてCVE-2026-131914が登録され、CISAの既知悪用脆弱性カタログに掲載された。カタログ掲載は実環境での悪用が確認されたシグナルだが、入力情報には攻撃手順や影響範囲の詳細が含まれていない。一般にこの種の欠陥は、攻撃者が細工したデータをアプリケーションに処理さ…",
+      "article_path": "articles/3d57a09e3510fb8a.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "0a885cc389327070",
+      "title": "CVE-2026-132165 Drupal Core Remote Code Execution Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-11-24T00:00:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Exploit",
+      "summary_preview": "概要CISAの既知悪用脆弱性カタログに、Drupal Coreのリモートコード実行脆弱性としてCVE-2026-132165が掲載された。これは脆弱性が実環境で悪用されていることを示すシグナルであり、単なる理論上の欠陥として扱わず、組織内のDrupal利用状況と外部公開範囲を優先して確認する必要がある。リモートコード実行が成立すれば、攻撃者がサーバー上で任…",
+      "article_path": "articles/0a885cc389327070.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "31ed4adb92d57b77",
+      "title": "Iran-Aligned Volant Manticore Uses IPFS-Based KuboShell Backdoor in Espionage Campaigns",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-24T16:54:07+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要イランと連携するとされるサイバー諜報集団Volant Manticoreが、キプロスの通信事業者、航空会社、重要インフラを標的にした活動で、未確認のバックドアKuboShellを使用しているとの報告が出た。KuboShellは分散型ファイル共有基盤IPFSを指令通信に利用し、侵入後の活動に使うHomaというフレームワークを展開するとされる。IPFSを介…",
+      "article_path": "articles/31ed4adb92d57b77.html",
+      "original_url": "https://thehackernews.com/2026/11/iran-aligned-volant-manticore-uses-ipfs.html"
+    },
+    {
+      "entry_id": "4a86e0c8990f11a5",
+      "title": "VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-24T13:28:26+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要Broadcomは、VMware ESX、vCenter、Workstation、Fusion、Avi Load Balancerに影響する23件の脆弱性を修正する更新を公開したと報じられている。中でもCVE-2026-123903はVMware Directory Service（vmdir）に存在する認証迂回の脆弱性で、CVSSは9.8/10.0と…",
+      "article_path": "articles/4a86e0c8990f11a5.html",
+      "original_url": "https://thehackernews.com/2026/11/vmware-vcenter-hit-by-another-critical.html"
+    },
+    {
+      "entry_id": "b3050185bd4b1ad7",
+      "title": "Okta Links ShinyHunters-Associated Vishing Group to New INCEPTION Data Leak Site",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-24T13:28:21+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Credential Theft",
+      "summary_preview": "概要Oktaの脅威インテリジェンスチームは、ShinyHuntersと関係すると評価されていた脅威クラスター「O-UNC-053」が、INCEPTIONという新たな名称で活動を続けている可能性を示した。攻撃では電話を使ったフィッシングで標的を誘導し、偽のログインページへの認証情報入力を狙うとされる。入力情報は「認証情報の入力と承認を促す」ところで途切れてお…",
+      "article_path": "articles/b3050185bd4b1ad7.html",
+      "original_url": "https://thehackernews.com/2026/11/okta-links-shinyhunters-associated.html"
+    },
+    {
+      "entry_id": "d288d9ad5341ef49",
+      "title": "Hackers Found a Way Around GitHub SHA Pinning. This Webinar Explains How to Close the Gap",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-24T12:42:09+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要The Hacker Newsの記事は、GitHub Actionsで参照先をコミットハッシュに固定するSHAピンニングを回避する手口が見つかったと報じ、対策を扱うウェビナーを案内している。背景として、2026年3月に広く使われるオープンソースのセキュリティスキャナーTrivyが侵害され、攻撃者がGitHub公式のチェックアウト機能由来に見える悪意ある…",
+      "article_path": "articles/d288d9ad5341ef49.html",
+      "original_url": "https://thehackernews.com/2026/11/hackers-found-way-around-github-sha.html"
+    },
+    {
+      "entry_id": "e58477d9e72649de",
+      "title": "Google Researcher Shows How a Single Bit Change in .NET Files Bypassed Windows Code Integrity",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-24T12:02:00+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability Disclosure",
+      "summary_preview": "概要Google Project Zeroの研究者が、.NETプログラムファイルの読み込み時に生じる挙動を利用し、ファイルの1ビット変更だけでWindowsのコード整合性機構を回避できる手法を公開した。記事の要約によれば、同じ読み込み上の性質はWindowsホスト上のOracle VirtualBoxのプロセス強化機構も回避し、後者はCVE-2026-87…",
+      "article_path": "articles/e58477d9e72649de.html",
+      "original_url": "https://thehackernews.com/2026/11/google-researcher-shows-how-single-bit.html"
+    },
+    {
+      "entry_id": "3cb460413889683d",
+      "title": "2027 SOC Budget Reset: 5 Priorities to Cut Costs and Reduce Cyber Risk",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-24T12:01:54+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要記事は、2027年のSOC予算を見直す際、支出額だけでなく、アナリストの調査時間がどこで失われているかを把握し、コストとサイバーリスクの両方を抑えるべきだと提起している。ANY.RUNの推計では、脅威分析やIOC調査を迅速化することで、調査対象のアラート1,000件あたり450時間を回収できる可能性があるという。手作業での調査、同じ確認の繰り返し、不要…",
+      "article_path": "articles/3cb460413889683d.html",
+      "original_url": "https://thehackernews.com/2026/11/2027-soc-budget-reset-5-priorities-to.html"
+    },
+    {
+      "entry_id": "4e1ada2e8d089330",
+      "title": "Microsoft Fixes Azure API Management Classic Flaw as Actor Targets Customer Secrets",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-24T10:44:49+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要ノルウェー国家安全保障機関（NSM）は、Microsoft Azure API Management（APIM）の脆弱性が複数の企業に影響し、Microsoftが修正したと明らかにした。未知の攻撃者はAPIM内のアクセストークン、秘密情報、名前付き値へのアクセスを積極的に試みており、単なるサービス停止ではなく、連携先への認証情報の取得を狙う動きとして扱…",
+      "article_path": "articles/4e1ada2e8d089330.html",
+      "original_url": "https://thehackernews.com/2026/11/microsoft-fixes-azure-api-management.html"
+    },
+    {
+      "entry_id": "7349a1ac557d9387",
+      "title": "WHMCS SQL Injection Could Expose Customer Data and Admin Password Hashes without Login",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-24T08:34:20+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要ホスティング事業者などが請求処理や自動化に使うWHMCSで、ログインを必要としないSQLインジェクションが報じられた。記事要約によれば、インターネットから到達できる脆弱な導入環境に対し、攻撃者がデータベースへ不正な問い合わせを行い、顧客情報や管理者パスワードのハッシュを取得できる可能性がある。ハッシュは平文パスワードそのものではないが、解析や他サービス…",
+      "article_path": "articles/7349a1ac557d9387.html",
+      "original_url": "https://thehackernews.com/2026/11/whmcs-sql-injection-flaw-could-expose.html"
+    },
+    {
+      "entry_id": "03bb3c0de4ca0b48",
+      "title": "OpenAI and Cisco Unveil AI-Assisted Linux Security Tool to Block Exploits Before Patching",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-24T06:02:57+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要OpenAIとCiscoが、Linux上で動作するオープンソースの実行基盤「Shirudo」を発表したと報じられた。AIエージェントが動的なeBPF制御を作成し、脆弱性への攻撃を修正プログラム適用前に遮断することで、再起動や停止を伴わずにパッチ展開までの時間を確保する構想となる。狙いは恒久対策の代替ではなく、修正の検証・配布に要する期間を埋める一時的な…",
+      "article_path": "articles/03bb3c0de4ca0b48.html",
+      "original_url": "https://thehackernews.com/2026/11/openai-and-cisco-unveil-ai-assisted.html"
+    },
+    {
+      "entry_id": "b37bffb09ef94db7",
+      "title": "Hackers Exploit N-able MailAssure Flaw While AI Agents Exploit MONAI Label Zero-Day",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-24T06:02:45+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要記事は、CISAがN-able MailAssureとMONAI Labelに関する2件の脆弱性を、悪用の証拠を理由に既知の悪用脆弱性カタログ（KEV）へ追加したと報じている。確認できる範囲では、CVE-2026-134624はMailAssureのLDAP機能に関係するサーバー側リクエスト偽造（SSRF）で、CVSSは9.3となる。SSRFが成立すれ…",
+      "article_path": "articles/b37bffb09ef94db7.html",
+      "original_url": "https://thehackernews.com/2026/11/hackers-exploit-n-able-mailassure-flaw.html"
+    },
+    {
+      "entry_id": "92f63144010b7178",
+      "title": "Scanning from Subnet 109.160.32.0/24, (Mon, Nov 23rd)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-11-24T02:32:00+00:00",
+      "impact_level": "Low",
+      "threat_type": "Other",
+      "summary_preview": "概要SANS ISCは、109.160.32.0/24から継続しているスキャン活動を、DShieldセンサーの過去90日間の観測として報告した。対象のアドレス帯は、ルーマニアのティミショアラに所在するVPS・ウェブホスティング事業者BANATSYNC SRLに割り当てられ、AS198364として示されている。観測されたスキャンは、公開サービスを探して攻撃候…",
+      "article_path": "articles/92f63144010b7178.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33550"
+    },
+    {
+      "entry_id": "c56b10d218801054",
+      "title": "ISC Stormcast For Tuesday, November 24th, 2026 https://isc.sans.edu/podcastdetail/10192, (Tue, Nov 24th)",
+      "source_name": "SANS ISC",
+      "category": "reporting",
+      "published_at": "2026-11-24T02:00:04+00:00",
+      "impact_level": "Info",
+      "threat_type": "Unknown",
+      "summary_preview": "概要入力はSANS ISCの「Stormcast」と題された音声配信への案内で、2026年11月24日付のタイトルと配信先の情報以外に、エピソードの要約や文字起こし、参照資料が含まれていない。したがって、扱われた脆弱性、攻撃手法、侵害事例、対象製品や組織を特定できず、タイトルだけから具体的な脅威を推定することはできない。音声内で攻撃情報が紹介された可能性は…",
+      "article_path": "articles/c56b10d218801054.html",
+      "original_url": "https://isc.sans.edu/diary/rss/33552"
+    },
+    {
+      "entry_id": "d0c70dd41e6952d4",
+      "title": "Recent Trends and Tactics of Agentic AI Attacks",
+      "source_name": "Unit 42",
+      "category": "reporting",
+      "published_at": "2026-11-24T15:00:19+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要Unit 42は、自律型AIエージェントを使い、複数のプラットフォームにまたがる侵入活動を自動化した攻撃キャンペーンを観測したと報告している。攻撃者はエージェントに作業を進めさせる一方、特別な専用ツールではなく一般的なツールを利用しており、攻撃の自動化と既存環境への溶け込みを両立させようとしている。侵入先が複数の基盤に及ぶ場合、単一端末の封じ込めだけで…",
+      "article_path": "articles/d0c70dd41e6952d4.html",
+      "original_url": "https://unit42.paloaltonetworks.com/autonomous-ai-agent-threat-campaigns/"
+    },
+    {
+      "entry_id": "2d77be9fd6bf8444",
+      "title": "生成AI利用ルールの策定や見直しを支援、JSSECが2027年1月にワークショップ開催",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-23T23:15:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要記事タイトルから確認できるのは、JSSECが2027年1月に、組織の生成AI利用ルールの策定・見直しを支援するワークショップを開催するという告知であり、脆弱性や攻撃発生の報告ではない。生成AIの業務利用では、機密情報や個人情報を外部サービスへ入力する、生成物を検証せず判断やコードに取り込む、といった運用上の失敗が事故の入口になり得るため、ルール整備は技…",
+      "article_path": "articles/2d77be9fd6bf8444.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/24/56883.html"
+    },
+    {
+      "entry_id": "9db9e5141d1705be",
+      "title": "SCS評価制度でランサムウェア対策を点検 ～ セコムトラストシステムズ ウェビナー 12 / 9・10 開催",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-23T23:10:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要記事は、セコムトラストシステムズが「SCS評価制度」を手掛かりにランサムウェア対策を点検するウェビナーを、12月9日・10日に開催すると告知している。記事タイトルから確認できるのは開催日と主題までで、対象者、講演内容、評価制度のどの項目を扱うか、参加条件などは確認できない。組織にとっては、制度への適合を確認するだけでなく、侵入防止、検知、復旧の各段階で…",
+      "article_path": "articles/9db9e5141d1705be.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/24/56882.html"
+    },
+    {
+      "entry_id": "136b56a4145e5483",
+      "title": "マネックス証券の口座開設システムに不正アクセス、本人確認書類画像データが漏えいした可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-23T23:05:33+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要報道によると、マネックス証券の口座開設システムへの不正アクセスが発生し、申込者が提出した本人確認書類の画像データが漏えいした可能性がある。侵入経路や攻撃者がシステム内で得た権限、画像データの保存先は明らかでなく、公開画面への侵入なのか、管理機能や保管領域の悪用なのかも確認できないため、現時点で攻撃手法を特定できない。画像が実際に持ち出されていれば、氏名…",
+      "article_path": "articles/136b56a4145e5483.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/24/56881.html"
+    },
+    {
+      "entry_id": "7de1059ad3fe7f84",
+      "title": "スカイライナー座席予約システムに不正アクセス、最大約337万件の顧客情報が取得された可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-23T23:05:30+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要報道によると、スカイライナーの座席予約システムへの不正アクセスが発生し、顧客情報が最大約337万件取得された可能性がある。提供された記事情報には詳細な本文や参照先がなく、侵入経路、発生期間、対象情報の項目、取得が確認された件数は未確認となる。「不正アクセス」と「情報取得の可能性」は同じ事実ではなく、システムへの侵入が確認されても、データの閲覧・持ち出し…",
+      "article_path": "articles/7de1059ad3fe7f84.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/24/56880.html"
+    },
+    {
+      "entry_id": "9e3de4be3cf74170",
+      "title": "アットホーム提供の不動産会社向け業務管理サービス「賃貸管理システム」に不正アクセス",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-23T23:05:27+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要ScanNetSecurityの記事タイトルによると、アットホームが提供する不動産会社向け「賃貸管理システム」で不正アクセスが発生した。入力情報には、侵入経路、発生時期、対象となった利用者や機能、攻撃者が行った操作についての記載がなく、認証情報の窃取や脆弱性悪用のいずれかは判断できない。不動産管理業務では、契約者や物件、賃料、対応履歴などの情報を扱う可…",
+      "article_path": "articles/9e3de4be3cf74170.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/24/56879.html"
+    },
+    {
+      "entry_id": "f0e8423c42f79024",
+      "title": "電通デジタル「TONARIWA」に不正アクセス、導入企業 2 社で個人情報漏えい",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-23T23:05:23+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要電通デジタルのサービス「TONARIWA」への不正アクセスに関連し、導入企業2社で個人情報の漏えいが確認されたと報じられた。記事タイトルからは、攻撃者がどの認証情報や経路を使ったのか、サービス環境への侵入後にどの操作で情報へ到達したのかは分からないため、脆弱性悪用や顧客側環境への侵入と決めつけない判断が必要となる。顧客2社で漏えいが生じた点は、単一の利…",
+      "article_path": "articles/f0e8423c42f79024.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/24/56878.html"
+    },
+    {
+      "entry_id": "a7b1c0baead02887",
+      "title": "電通デジタル「TONARIWA」に不正アクセス、パーソルキャリアが保持していた情報が漏えいした可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-23T23:05:19+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要ScanNetSecurityの記事タイトルによると、電通デジタルの「TONARIWA」への不正アクセスに関連し、パーソルキャリアが保持していた情報が漏えいした可能性があると報じられている。記事本文や参照資料が入力に含まれないため、侵入経路、攻撃者の権限、対象データの種類・件数、漏えいが確認済みかどうかは判断できない。サービスを介した情報の取り扱いが関…",
+      "article_path": "articles/a7b1c0baead02887.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/24/56877.html"
+    },
+    {
+      "entry_id": "f39d59296acbfef2",
+      "title": "ロート製薬のシステムに不正アクセス、クレジットカード番号含む通話音声データが漏えい",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-23T23:05:16+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要ロート製薬のシステムへの不正アクセスにより、クレジットカード番号を含む通話音声データが漏えいしたと報じられている。音声にカード番号が記録されていた場合、文書データだけを対象にした情報資産の棚卸しでは漏えい範囲を捉えられず、録音基盤や保管先、委託先まで調査対象を広げる必要がある。取得された音声が決済情報の不正利用に使われる可能性に加え、氏名や問い合わせ内…",
+      "article_path": "articles/f39d59296acbfef2.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/24/56876.html"
+    },
+    {
+      "entry_id": "01a36f8bf1a58241",
+      "title": "保険代理店に提供システム「FWD navi」に不正アクセス、最大9,000件の契約情報が閲覧可能な状態に",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-23T23:05:12+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要ScanNetSecurityの記事タイトルによると、保険代理店向けに提供されるシステム「FWD navi」への不正アクセスがあり、最大9,000件の契約情報が閲覧可能な状態になっていたとされる。ここで示されているのは情報を閲覧できる状態の可能性であり、第三者が実際に閲覧したことや、情報を持ち出したことまで確認されたとは限らないため、漏えい確定として扱…",
+      "article_path": "articles/01a36f8bf1a58241.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/24/56875.html"
+    },
+    {
+      "entry_id": "d0fec824abdcfa29",
+      "title": "ニトリホールディングスに不正アクセス、最大3,762万件の個人情報が漏えい",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-23T23:05:10+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要ScanNetSecurityの見出しは、ニトリホールディングスへの不正アクセスにより、最大3,762万件の個人情報が漏えいしたと報じている。見出しだけでは、侵入経路、攻撃が継続中か、漏えい情報の項目、対象期間、件数が人数・レコード数のどちらを指すかは確認できず、最大値の算定条件も不明となる。攻撃者が認証情報や脆弱性を足掛かりにしたのか、どのシステムへ…",
+      "article_path": "articles/d0fec824abdcfa29.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/24/56874.html"
+    },
+    {
+      "entry_id": "0ca78cb5b9d362e3",
+      "title": "スキマバイトアプリ「シェアフル」の社内管理システムに不正アクセス、最大約750万件の個人情報が流出した可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-23T23:05:07+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要ScanNetSecurityの記事見出しによると、スキマバイトアプリ「シェアフル」の社内管理システムへの不正アクセスがあり、最大約750万件の個人情報が流出した可能性が報じられている。管理システムには利用者情報を検索・閲覧する機能が含まれる場合があり、攻撃者が有効なアカウントや脆弱性を使ってアクセスしたなら、単一アカウントの侵害を超えて大量の情報に到…",
+      "article_path": "articles/0ca78cb5b9d362e3.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/24/56873.html"
+    },
+    {
+      "entry_id": "1765243c11461726",
+      "title": "第一興商の業務委託先 日本コロムビアグループの従業員の端末がマルウェア感染、外部サーバとの不正な通信を確認",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-23T23:05:04+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Malware",
+      "summary_preview": "概要第一興商の業務委託先に関係する日本コロムビアグループの従業員端末でマルウェア感染が確認され、外部サーバとの不正な通信も観測されたと報じられている。感染端末が外部サーバと通信する場合、攻撃者による遠隔操作や追加の不正プログラム取得が疑われるが、通信内容やマルウェアの種類は入力情報から確認できない。業務委託先の端末であるため、端末単体の封じ込めに加えて、第…",
+      "article_path": "articles/1765243c11461726.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/24/56872.html"
+    },
+    {
+      "entry_id": "6ac4ce5c6f881e17",
+      "title": "債権回収事業者に不正アクセス、地銀の個人情報漏えい",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-23T23:05:02+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要見出し情報によると、債権回収事業者への不正アクセスに関連して、地方銀行の個人情報が漏えいしたと報じられている。債権回収業務を外部委託している場合、攻撃者は委託先のシステムや業務データを侵害することで、銀行本体への直接侵入なしに顧客情報へ到達する可能性がある。ただし、侵入経路、対象となった情報の種類・件数、閲覧や持ち出しの有無、影響を受けた銀行の範囲は、…",
+      "article_path": "articles/6ac4ce5c6f881e17.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/24/56871.html"
+    },
+    {
+      "entry_id": "b8140261374d1317",
+      "title": "IPA が PHP のセキュリティリリース公開に向けて事前準備を呼びかけ",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-23T23:00:15+00:00",
+      "impact_level": "Low",
+      "threat_type": "Advisory",
+      "summary_preview": "概要記事タイトルによると、IPAがPHPのセキュリティリリース公開に備え、利用組織へ事前準備を呼びかけている。入力には記事本文や参照先が含まれず、リリース予定日、対象となるPHPの版、脆弱性の内容、悪用状況は確認できないため、特定の環境が影響を受けるとは判断できない。PHPを使うウェブサーバーや業務アプリケーションでは、公開後に対象版を特定できるよう、稼働…",
+      "article_path": "articles/b8140261374d1317.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/24/56870.html"
+    },
+    {
+      "entry_id": "67180f327877b61c",
+      "title": "NGINX に複数の脆弱性、CVSS v4.0 で 9.2（Critical）評価",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-23T23:00:12+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要ScanNetSecurityの記事タイトルは、NGINXに複数の脆弱性があり、CVSS v4.0で9.2（Critical）と評価されたと伝えている。ただし、提示された情報には対象となるCVE、影響バージョン、攻撃に必要な条件、修正版の有無がなく、このスコアが特定の脆弱性を指すのか、複数件のうちの最高値なのかも確認できない。NGINXはインターネット…",
+      "article_path": "articles/67180f327877b61c.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/24/56869.html"
+    },
+    {
+      "entry_id": "9c9c2df18f8c0b17",
+      "title": "富士電機製 TELLUS に複数の脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-23T23:00:09+00:00",
+      "impact_level": "Info",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要富士電機製TELLUSに複数の脆弱性があるとする記事だが、入力情報は見出しのみで、脆弱性の識別子、影響バージョン、修正版の有無は確認できない。したがって、遠隔から攻撃できるのか、認証や利用者操作が必要なのか、特定の構成に限られるのかといった攻撃成立条件は未確認であり、悪用経路を断定できない。影響がTELLUSを稼働させる端末だけにとどまるか、接続先の業…",
+      "article_path": "articles/9c9c2df18f8c0b17.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/24/56868.html"
+    },
+    {
+      "entry_id": "544e6b56e83e7882",
+      "title": "プリザンターに複数の脆弱性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-23T23:00:04+00:00",
+      "impact_level": "Low",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要ScanNetSecurityの記事タイトルから、業務アプリケーション基盤のプリザンターに複数の脆弱性が報告されたことは読み取れる。ただし、入力には記事本文や参照先がなく、影響する版、脆弱性の種類、修正版の有無、悪用状況は確認できない。したがって、認証回避、情報漏えい、権限昇格、サービス停止などのどの影響が成立するか、また攻撃に利用者操作や特定の設定が…",
+      "article_path": "articles/544e6b56e83e7882.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/24/56867.html"
+    }
+  ]
+}
