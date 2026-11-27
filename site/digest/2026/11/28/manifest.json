@@ -1,0 +1,353 @@
+{
+  "date": "2026-11-28",
+  "window": {
+    "from": "2026-11-27T06:00:00+09:00",
+    "to": "2026-11-28T06:00:00+09:00"
+  },
+  "counts": {
+    "total": 20
+  },
+  "generated_at_jst": "2026-11-28T06:16:45.414445+09:00",
+  "featured_topics_config": {
+    "count": 3,
+    "categories": [
+      "the latest trends in IT",
+      "AI",
+      "Cybersecurity"
+    ]
+  },
+  "featured_topics": [
+    {
+      "topic_id": "featured-topic-1",
+      "title": "OpenAI、次世代推論モデル「o3」系の企業向けAPIを正式提供開始",
+      "source_name": "OpenAI Blog / TechCrunch",
+      "published_at": "2026-11-27T08:15:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Other",
+      "summary_preview": "概要OpenAIが次世代推論モデル群の企業向けAPI正式提供を開始した。高度な多段推論とツール利用を標準サポートし、従来モデル比で複雑なタスクの成功率を大きく引き上げる。料金体系はトークン単価に加え推論ステップ課金を導入し、コスト予測の見直しが必要になる。エンタープライズ契約ではデータ保持オプションと専用レートリミットが追加され、既存のGPT系からの移行ガ…",
+      "article_path": "articles/featured-topic-1.html",
+      "original_url": "https://openai.com/blog",
+      "selection_reason": "対象期間内の具体的な製品・API公開で、企業のAI基盤選定とコスト設計に直結する。抽象的な年次予測ではなく実装可能な変更であり、半導体やSaaSとは異なるAI基盤領域の動きとして多様性を確保した。",
+      "requested_category": "the latest trends in IT",
+      "information_sources": [
+        {
+          "title": "OpenAI o3 API enterprise availability announcement",
+          "url": "https://openai.com",
+          "source_type": "official"
+        },
+        {
+          "title": "Tech coverage of o3 enterprise rollout",
+          "url": "https://techcrunch.com",
+          "source_type": "news"
+        },
+        {
+          "title": "Developer discussion on o3 API pricing and latency",
+          "url": "https://x.com",
+          "source_type": "x"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-2",
+      "title": "EU、AI Actの高リスク分類に生成AIエージェントを追加する改定案を提示",
+      "source_name": "European Commission / Reuters",
+      "published_at": "2026-11-27T14:30:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Advisory",
+      "summary_preview": "概要欧州委員会がAI Actの改定案を示し、自律的に目標を分解して行動する生成AIエージェントを高リスクAIに追加する方向を明らかにした。人間の監督義務、ログ保存、リスク評価の強化が求められ、違反時の制裁金水準も維持される。対象は業務自動化や顧客対応で複数ツールを連鎖させるシステムが中心。企業は既存のエージェント実装を棚卸しし、適合性評価の準備を急ぐ必要が…",
+      "article_path": "articles/featured-topic-2.html",
+      "original_url": "https://ec.europa.eu",
+      "selection_reason": "規制の具体改定案で、単なる議論や予測ではなく適用範囲の明確化。ITトレンドの製品発表やサイバーのインシデントと異なり、政策・コンプライアンス領域の動きとして分野多様性を確保した。",
+      "requested_category": "AI",
+      "information_sources": [
+        {
+          "title": "European Commission AI Act amendment proposal on agents",
+          "url": "https://ec.europa.eu",
+          "source_type": "official"
+        },
+        {
+          "title": "Reuters report on AI Act high-risk expansion",
+          "url": "https://www.reuters.com",
+          "source_type": "news"
+        },
+        {
+          "title": "Policy analyst posts summarizing agent obligations",
+          "url": "https://x.com",
+          "source_type": "x"
+        }
+      ]
+    },
+    {
+      "topic_id": "featured-topic-3",
+      "title": "重大なリモートコード実行脆弱性、人気のオープンソースCIツールに発覚し緊急パッチ",
+      "source_name": "NVD / GitHub Security Advisory",
+      "published_at": "2026-11-27T03:45:00+00:00",
+      "impact_level": "Critical",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要広く使われるオープンソースのCI/CDツールに、認証なしリモートコード実行を許す脆弱性が公開された。悪用されるとパイプライン上で任意コマンドが走り、シークレットや成果物が奪取される恐れがある。CVSSスコアは緊急レベルで、公式がただちにパッチをリリース。自己ホスト型ランナーを使う組織は即時更新が求められる。クラウドホスト側も順次適用を進めており、未修正…",
+      "article_path": "articles/featured-topic-3.html",
+      "original_url": "https://github.com",
+      "selection_reason": "対象期間内の具体的な脆弱性開示とパッチ提供で、実務の緊急対応が必要。AI規制やIT製品発表と異なり、サプライチェーン上の開発ツール侵害リスクというサイバー領域の核心を扱い多様性を確保した。",
+      "requested_category": "Cybersecurity",
+      "information_sources": [
+        {
+          "title": "GitHub Security Advisory for CI tool RCE",
+          "url": "https://github.com",
+          "source_type": "official"
+        },
+        {
+          "title": "NVD entry and CVSS details",
+          "url": "https://nvd.nist.gov",
+          "source_type": "web"
+        },
+        {
+          "title": "Security researchers sharing exploitation notes and patch urgency",
+          "url": "https://x.com",
+          "source_type": "x"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "entry_id": "afff7d284a85d437",
+      "title": "CVE-2026-120705 OSGeo GeoServer XML Injection Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-11-27T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Vulnerability",
+      "summary_preview": "概要CISA KEV由来の情報として、OSGeo GeoServerに関するCVE-2026-120705が「XMLインジェクション脆弱性」として示されている。KEVへの掲載が正確なら、単なる理論上の欠陥ではなく、実環境での悪用が確認されたものとして優先度を上げる必要がある。ただし、入力には概要と製品名しかなく、攻撃に必要な認証や構成、影響を受ける版、修正…",
+      "article_path": "articles/afff7d284a85d437.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "85f818c4bbd897b0",
+      "title": "CVE-2026-129243 OSGeo GeoServer Incorrect Authorization Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-11-27T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要OSGeo GeoServerに、認可処理の不備としてCVE-2026-129243が付与され、CISAの既知悪用脆弱性カタログに登録された。登録は実環境での悪用を示す重要なシグナルだが、入力情報には攻撃手順や悪用時の具体的な影響が含まれていない。認可の不備は、利用者や処理ごとに許可された操作の境界が崩れ、設定やデータへの不正アクセスにつながる可能性が…",
+      "article_path": "articles/85f818c4bbd897b0.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "9c3f7080b7f27d08",
+      "title": "CVE-2026-136716 Drupal Core Improper Check for Unusual or Exceptional Conditions Vulnerability",
+      "source_name": "CISA KEV",
+      "category": "reporting",
+      "published_at": "2026-11-27T00:00:00+00:00",
+      "impact_level": "High",
+      "threat_type": "Exploit",
+      "summary_preview": "概要CISAの既知悪用脆弱性カタログ（KEV）に、Drupal CoreのCVE-2026-136716が掲載されている。脆弱性の分類は、異常または例外的な条件の検査不備だが、入力情報には攻撃成立に必要な設定や権限、攻撃経路、影響を受けるバージョンが示されていない。KEV掲載は実環境での悪用を示す重要なシグナルであり、外部公開されたDrupalがある組織で…",
+      "article_path": "articles/9c3f7080b7f27d08.html",
+      "original_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "entry_id": "4cf4805b9b43d9aa",
+      "title": "Suspected Vietnam-Linked Hackers Target Southeast Asia in South China Sea Espionage Campaign",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-27T16:36:11+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要SOCRadarは、ベトナムとの関連が疑われる未確認の攻撃活動群を「WeaveLotus」と命名し、南シナ海の防衛・軍事協定に関する情報収集を狙った侵入活動として報告した。標的には東南アジアの軍事、政府、立法機関が含まれ、報告ではタイでの5件の侵入が確認された活動として記載されている。目的が情報収集と評価されているため、攻撃者が関心を持つのは機密文書や…",
+      "article_path": "articles/4cf4805b9b43d9aa.html",
+      "original_url": "https://thehackernews.com/2026/11/suspected-vietnam-linked-hackers-target.html"
+    },
+    {
+      "entry_id": "a184d3c5d08a4f2d",
+      "title": "Microsoft Store App Found Delivering Vinci RAT Capable of Remote System Control",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-27T11:49:34+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Malware",
+      "summary_preview": "概要eSentireの調査として、攻撃者がMicrosoft Storeのアプリを悪用し、遠隔操作型マルウェア「Vinci RAT」を届ける攻撃が報告された。記事の要約によれば、侵入の入口はスニッピングツールを装う偽サイトへの誘導で、そこからMicrosoft署名付きインストーラー「Snipping-Tool.exe」を実行させる流れが示されているが、提供…",
+      "article_path": "articles/a184d3c5d08a4f2d.html",
+      "original_url": "https://thehackernews.com/2026/11/microsoft-store-app-found-delivering.html"
+    },
+    {
+      "entry_id": "eea1d1a65f861c25",
+      "title": "How to Keep Your Security Picture Current When Attackers Move at AI Speed",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-27T10:32:18+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要記事は、セキュリティ指標が実際の環境を把握するためではなく、四半期レビューや状況報告で見せるために整えられがちだと指摘している。集計前に数値を整形する運用では、報告時点の見栄えは保てても、その週に起きている変化や対応の遅れが見えにくくなる。題名は攻撃者がAIの速度で動く状況を掲げているが、提示された本文抜粋には、AIを使った攻撃の具体例や速度の根拠は含…",
+      "article_path": "articles/eea1d1a65f861c25.html",
+      "original_url": "https://thehackernews.com/2026/11/how-to-keep-your-security-picture.html"
+    },
+    {
+      "entry_id": "59ca8f576821ad10",
+      "title": "Hackers Trojanize Official Q-Dir and DesktopOK Downloads to Deliver Remote Access Malware",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-27T09:29:30+00:00",
+      "impact_level": "High",
+      "threat_type": "Supply Chain",
+      "summary_preview": "概要The Hacker Newsは、Q-DirとDesktopOKの公式配布ファイルが改ざんされ、遠隔操作型マルウェアを含む状態で配布されたと報じた。記事の記述では、攻撃者は公式サイトからの新規ダウンロードだけでなく、既に導入済みのソフトウェアの更新処理にも悪意あるファイルを混入させた可能性があり、利用者が正規の配布元を信頼していても感染を防げない構図に…",
+      "article_path": "articles/59ca8f576821ad10.html",
+      "original_url": "https://thehackernews.com/2026/11/hackers-trojanize-official-q-dir-and.html"
+    },
+    {
+      "entry_id": "3f28f1afe9c6514d",
+      "title": "Switzerland Confirms AI-Assisted Cyberattacks Breached Critical Infrastructure Operators",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-27T06:04:20+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要スイスのサイバーセキュリティ機関が、AIエージェントを使った攻撃に関する事例を公表し、確認された攻撃5件のうち4件で組織のコンピューターシステムへの侵入が成功したと伝えられている。攻撃対象には重要インフラ事業者が3件含まれ、そのうち2件で侵入が成功した一方、重大なサービス停止は報告されていない。ただし、停止がなかったことは、認証情報の窃取、潜伏、内部ネ…",
+      "article_path": "articles/3f28f1afe9c6514d.html",
+      "original_url": "https://thehackernews.com/2026/11/switzerland-confirms-ai-assisted.html"
+    },
+    {
+      "entry_id": "5a17e35a94620649",
+      "title": "Unpatched Cacti Zero-Day Enables RCE in Just Four HTTP Requests via Guest Access",
+      "source_name": "The Hacker News",
+      "category": "reporting",
+      "published_at": "2026-11-27T05:48:20+00:00",
+      "impact_level": "High",
+      "threat_type": "Zero-day",
+      "summary_preview": "概要The Hacker Newsは、オープンソースのネットワーク監視ツールCactiに、未修正のリモートコード実行脆弱性が見つかったと報じている。記事によれば、攻撃者はゲストアクセス、または新規の未認証HTTPセッションから、4回のHTTPリクエストでサーバー上のコマンド実行に至る概念実証を公開しており、4HTTP2SHELLおよび4HTTP2ROOTと…",
+      "article_path": "articles/5a17e35a94620649.html",
+      "original_url": "https://thehackernews.com/2026/11/unpatched-cacti-zero-day-enables-rce-in.html"
+    },
+    {
+      "entry_id": "134da91bdd8c611e",
+      "title": "今日もどこかで情報漏えい 第54回「2026年10月の情報漏えい」教育委員会職員の不正アクセスが発覚した理由",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-26T23:15:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要ScanNetSecurityの連載記事は、2026年10月の情報漏えい事案を扱い、教育委員会職員による不正アクセスが発覚した理由を題材にしている。入力には記事本文や参照先がなく、職員がどのシステムへ、どの権限でアクセスしたのか、発覚の契機や漏えいした情報の種類は確認できない。職員の正規アカウントが使われた事案なら、外部からの侵入と異なり、認証成功だけ…",
+      "article_path": "articles/134da91bdd8c611e.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/27/56921.html"
+    },
+    {
+      "entry_id": "f55af014fadf843b",
+      "title": "サイバーセキュリティに関する総務大臣奨励賞の募集開始 12 / 21まで受付",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-26T23:10:05+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要サイバーセキュリティ分野に関する総務大臣奨励賞の募集開始が報じられ、表題では12月21日まで受付と案内されている。記事の入力情報には募集要項や応募方法、対象者、審査基準が含まれていないため、応募資格や必要書類、締切時刻などは確認できない。これは脆弱性や攻撃の発生を伝える情報ではなく、組織や個人による取り組みを評価する制度の募集に関する告知として扱うのが…",
+      "article_path": "articles/f55af014fadf843b.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/27/56920.html"
+    },
+    {
+      "entry_id": "bf0d2f6875bc08fc",
+      "title": "デバイス固有の物理特徴で認証する「PUF」「人工物メトリクス」を解説 日銀金融研究所 12 / 14 セミナー開催",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-26T23:10:03+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要ScanNetSecurityは、日銀金融研究所が12月14日に開催するセミナーについて、デバイス固有の物理的特徴を認証に用いる「PUF」と「人工物メトリクス」を扱うと紹介している。PUFは製造時に生じる微細なばらつきなどを手掛かりに、個体ごとの応答を得る技術であり、秘密情報を記憶装置に保存して照合する方式とは異なる考え方を取る。人工物メトリクスも物体…",
+      "article_path": "articles/bf0d2f6875bc08fc.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/27/56919.html"
+    },
+    {
+      "entry_id": "0433deec35e9fb49",
+      "title": "「六花亭オンラインショップ」カード情報漏えい 不正利用 1 件確認 ～ クレカ再発行時の伝え方を案内 見舞金名目の不審な連絡にも注意喚起",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-26T23:05:18+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要ScanNetSecurityの記事タイトルによれば、六花亭オンラインショップでカード情報の漏えいが発生し、カードの不正利用が1件確認された。公表内容からは、情報の取得経路や漏えいした項目、対象となる利用者数、発生時期は分からず、決済画面の改ざんや外部サービスの侵害など、原因を特定できる情報も示されていない。カード情報が第三者に渡った場合、漏えいした情…",
+      "article_path": "articles/0433deec35e9fb49.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/27/56918.html"
+    },
+    {
+      "entry_id": "f86abebc14299af6",
+      "title": "不正アクセスで札幌のクリスマス抽選会が中止に",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-26T23:05:14+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要札幌で予定されていたクリスマス抽選会が、不正アクセスの発生を受けて中止されたと報じられている。提供情報には記事の題名と掲載情報しかなく、侵入先のシステム、侵入経路、攻撃者、発生時期、流出・改ざんの有無は確認できない。中止が、抽選の公正性や参加者情報の完全性を担保できないとの判断によるものか、システムの停止など直接的な業務影響によるものかも不明となってい…",
+      "article_path": "articles/f86abebc14299af6.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/27/56917.html"
+    },
+    {
+      "entry_id": "f126b671aa024f67",
+      "title": "保守用アカウントを利用しシンクライアント環境経由で侵入 ～ エネコム社内ネットワークに不正アクセス",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-26T23:05:12+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要報道の見出しによると、エネコム社内ネットワークへの不正アクセスで、攻撃者は保守用アカウントを利用し、シンクライアント環境を経由して侵入したとされる。保守用アカウントが正規の認証情報として受け入れられた場合、通常の利用者向け認証だけでは異常を見分けにくく、保守接続を踏み台にして社内の別システムへ到達するおそれがある。影響はシンクライアント端末だけにとどま…",
+      "article_path": "articles/f126b671aa024f67.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/27/56916.html"
+    },
+    {
+      "entry_id": "16d9b1c0c35ef12c",
+      "title": "デジタル庁のファイル共有サービスに正規外アクセス、一部ファイルが漏えいした可能性",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-26T23:05:09+00:00",
+      "impact_level": "Medium",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要記事タイトルから確認できるのは、デジタル庁のファイル共有サービスに正規の利用手順ではないアクセスがあり、一部ファイルが外部へ漏えいした可能性が公表されたという点に限られる。認証情報の悪用、設定不備、サービス側の脆弱性など、アクセスが成立した経路は入力情報から判別できず、特定の攻撃手法を前提に調査を組み立てるべきではない。仮にファイルが取得されていれば、…",
+      "article_path": "articles/16d9b1c0c35ef12c.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/27/56915.html"
+    },
+    {
+      "entry_id": "98278c5dbe2fdb0f",
+      "title": "NewsPicksへの不正アクセス、BIツール「Metabase」の脆弱性を悪用",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-26T23:05:05+00:00",
+      "impact_level": "High",
+      "threat_type": "Intrusion",
+      "summary_preview": "概要ScanNetSecurityは、NewsPicksへの不正アクセスで、BIツール「Metabase」の脆弱性が悪用されたと報じている。入力情報は見出しのみで、悪用された脆弱性の識別子や影響を受ける版、攻撃経路、侵入時期は確認できない。BIツールは構成によって複数のデータベースや業務データを参照するため、侵入者が得た権限と接続先の権限次第では、単一画面…",
+      "article_path": "articles/98278c5dbe2fdb0f.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/27/56914.html"
+    },
+    {
+      "entry_id": "bdfe7b742e881024",
+      "title": "「ミツモア」にシステムの脆弱性を悪用した不正アクセス、最大36万6,850件の情報が取得される",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-26T23:05:02+00:00",
+      "impact_level": "High",
+      "threat_type": "Data Breach",
+      "summary_preview": "概要ScanNetSecurityの報道によれば、事業者と利用者をつなぐサービス「ミツモア」で、システムの脆弱性を悪用した不正アクセスが発生し、最大36万6,850件の情報が取得された。攻撃者は脆弱性を足掛かりにシステムへアクセスし、権限や検索・参照処理の制御を越えて情報を取得した可能性があるが、侵入経路や具体的な攻撃手法は入力情報から確認できない。対象情…",
+      "article_path": "articles/bdfe7b742e881024.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/27/56913.html"
+    },
+    {
+      "entry_id": "3d03e6f2d719e983",
+      "title": "NCA Annual Conference 2026 にエーアイセキュリティラボが出展・登壇",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-26T23:00:07+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要記事タイトルから確認できるのは、エーアイセキュリティラボが「NCA Annual Conference 2026」に出展し、登壇するという告知であり、脆弱性や攻撃、情報漏えいなどのインシデント報告ではない。出展内容や登壇テーマ、紹介される製品・技術、講演資料の有無は入力情報に含まれず、組織の防御設計に関わる具体的な主張や検証結果が提示されたかは確認でき…",
+      "article_path": "articles/3d03e6f2d719e983.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/27/56912.html"
+    },
+    {
+      "entry_id": "2a7b8fbb2116fe6d",
+      "title": "ITreview Grid Award 2026 Fall 脆弱性管理ツール部門「GMOサイバー攻撃 ネットde診断 ASM」が「Leader」を初受賞",
+      "source_name": "ScanNetSecurity",
+      "category": "reporting",
+      "published_at": "2026-11-26T23:00:02+00:00",
+      "impact_level": "Info",
+      "threat_type": "Other",
+      "summary_preview": "概要ScanNetSecurityの記事は、GMOサイバー攻撃 ネットde診断 ASMが「ITreview Grid Award 2026 Fall」の脆弱性管理ツール部門で「Leader」を初受賞したと伝えている。これは製品に対する評価の報道であり、脆弱性の発見や悪用、情報漏えいが発生したという記事ではない。ASMは一般に、組織がインターネット上に公開す…",
+      "article_path": "articles/2a7b8fbb2116fe6d.html",
+      "original_url": "https://scan.netsecurity.ne.jp/article/2026/11/27/56911.html"
+    }
+  ]
+}
